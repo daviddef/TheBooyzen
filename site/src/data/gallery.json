@@ -663,6 +663,30 @@
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/sterfkennis-1940-stephanus-francois.jpg",
+   "alt": "1940 Sterfkennis for Stephanus Francois Booyzen, estate 2428/40, Pretoria.",
+   "cap": "Sterfkennis under the Estates Act 1913, filed at Pretoria 29 July 1940 .",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1940-ouers-oorlede.jpg",
+   "alt": "Line three of the 1940 Sterfkennis: Name en adresse van ouers van oorledene — Vader oorlede, Moeder oorlede.",
+   "cap": "\"Name en adresse van ouers van oorledene\" — Vader: oorlede · Moeder: oorlede",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1940-messelaar.jpg",
+   "alt": "Line five of the 1940 Sterfkennis, occupation: Messelaar.",
+   "cap": "5. Beroep van oorledene — Messelaar",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
   }
  ]
 }

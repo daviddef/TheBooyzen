@@ -8,12 +8,12 @@ const off = pl.places.filter(p => p.off);
 /* A plotted chart, not a drawn map: positions come from latitude and longitude
    on a plain graticule. No coastline is drawn, because this archive would be
    inventing its shape. */
-const LA0 = -33.4, LA1 = -25.2, LO0 = 23.8, LO1 = 28.6;
+const LA0 = -34.6, LA1 = -25.0, LO0 = 21.6, LO1 = 28.9;
 const W = 720, H = 560, M = 54;
 const x = lo => M + ((lo - LO0) / (LO1 - LO0)) * (W - M * 2);
 const y = la => M + ((LA1 - la) / (LA1 - LA0)) * (H - M * 2);
-const lats = [-26, -28, -30, -32];
-const lons = [24, 25, 26, 27, 28];
+const lats = [-26, -28, -30, -32, -34];
+const lons = [22, 24, 26, 28];
 const journey = ["Graaff-Reinet", "Cradock", "Barkly East", "Indwe", "Johannesburg"];
 const byName = Object.fromEntries(pl.places.map(p => [p.n, p]));
 const path = journey.map(n => byName[n]).filter(Boolean);
@@ -34,13 +34,13 @@ groups.forEach((g, i) => {
   g.town = g.members.some(m => !m.approx);
   /* In the crowded north-eastern block, throw alternate labels to the left so
      they do not sit on top of one another. */
-  const crowded = g.lon > 26.8 && g.lat < -29.5;
+  const crowded = g.lon > 26.6 && g.lat < -29.5;
   g.left = crowded ? (i % 2 === 0) : (g.lon > 27.6);
 });
 ---
 <Base title="The atlas"
       eyebrow={`${on.length} places at ${groups.length} positions · ${off.length} off the map`}
-      dek="Where this family actually was, plotted from latitude and longitude. Two clusters and one line between them: a hundred miles of Karoo and north-eastern Cape districts, and then the Rand."
+      dek="Where this family actually was, plotted from latitude and longitude. A band of Karoo and north-eastern Cape districts, a jump of four hundred miles to the Rand — and, at the top left, a district that shares the surname and is not the family at all."
 
 >
 <section class="blk">
@@ -121,6 +121,22 @@ groups.forEach((g, i) => {
         <a href={u("/name/")}>The name &rarr;</a></p>
     </div>
   </div>
+</section>
+
+<section class="blk">
+  <h2>The cluster that is not this family</h2>
+  <p>
+    <b>Marico</b>, top left, is a warning drawn on the map. Seven <b>Booyzen</b> claims for compensation
+    as burghers were filed from that district in 1903&ndash;04, and the Booyzen children who died in the
+    Johannesburg and Vereeniging camps came from farms there. It is a substantial Booyzen family who
+    fought, were burnt out and were compensated &mdash; <b>everything the testimony describes</b>.
+  </p>
+  <p style="margin-top:12px">
+    <b>They are not this family.</b> This one was in the Cape until about 1907, and reached the Transvaal
+    by railway rather than by commando. The distance between the two clusters on this map is the distance
+    between a story that fits and a story that is true.
+    <a href={u("/rebels/")}>The testimony &rarr;</a>
+  </p>
 </section>
 
 {off.length > 0 && (

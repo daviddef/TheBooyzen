@@ -1219,3 +1219,43 @@ The series is named correctly now. The Cape equivalent is still untouched.
 ## Other repositories
 **VAB** (Free State) holds five more Booyzen estates 1901–1929; **NAB** (Natal) two illiquid cases of
 1846–48; **SAB** several twentieth-century appointments. None yet tied to this family.
+
+---
+
+## 36. STERFKENNIS, 1940 — Stephanus Francois Booyzen (TAB MHG 2428/40)
+`ark:/61903/1:1:QPJX-WFT9` · image `3:1:3Q9M-CSSD-V3DY-J` · apid `TH-909-56178-92627-98`
+Filed Pretoria **29 July 1940**; signed by his widow at Pretoria **26 July 1940**.
+
+| Field | As written |
+|---|---|
+| 1. Naam | **Stephanus Francois Booyzen** |
+| 2. Geboorteplek / nasionaliteit | **Kaap Provinsie — Afrikaner** |
+| 3. **Name en adresse van ouers** | **Vader: oorlede · Moeder: oorlede** |
+| 4. Ouderdom | **65 jaar 7 maande** → born about **October 1874** |
+| 5. **Beroep** | **Messelaar** — mason |
+| 6. Woonplek | East Lynne, Pk. Silverton, dist. Pretoria |
+| 7. Getroud | **Beatrix Magdalena Catharina, geb. Boshoff**, in gemeenskap; last married **Mosselbaai, K.P.** |
+| 8. Sterfdag | **14 Mei 1940** |
+| 10. Kinders | **eleven**, youngest born 18 Aug 1930 |
+| 11–14 | moveable **and** immovable property; estate over £300; **a will** |
+
+### Why it was fetched, and what it refused
+He is a **son of the second marriage**, and a Sterfkennis names its subject's parents — so **his mother
+should have been on line 3**. She is the woman this archive has proved to exist and cannot name.
+
+His widow wrote **"oorlede"** for both. The form asks for *names and addresses*; she answered a question
+about identity with a question about mortality, and the Master's office accepted it.
+
+**Four death notices in this family now ask who the parents were. Four fail:**
+1840 *"Not Known"* · 1884 *"mother's name, not known"* · 1915 *"Mother: Unknown"* · 1940 *"oorlede"*.
+
+### A second mason
+**Messelaar.** His half-brother **Willem Hermanus Booyzen** is a **mason** on his 1905 death
+registration at Indwe. Two brothers in stone.
+
+Of every occupation this archive has now read for the men of this family — **saddler, farmer, mason,
+tree nurseryman, railway clerk, mason** — **not one is a miner.**
+
+### And he did better than either of them
+Immovable property, an estate over £300, and a will — against his father's *"moveables only"* in 1884
+and his half-brother's **no estate at all**.

@@ -673,6 +673,100 @@
    "p": [],
    "slug": "brisbane",
    "off": "Brisbane"
+  },
+  {
+   "n": "Pretoria",
+   "k": "City",
+   "r": "Transvaal",
+   "s": "doc",
+   "lat": -25.746,
+   "lon": 28.188,
+   "approx": false,
+   "w": "Where the Transvaal Master of the Supreme Court sat, and so where this family's later estates were filed — the depot this archive spent its whole life not searching. Stephanus Francois Booyzen died at East Lynne, on its eastern edge, in 1940.",
+   "e": [
+    [
+     "14 May 1940",
+     "Stephanus Francois Booyzen, mason, dies at East Lynne"
+    ],
+    [
+     "29 Jul 1940",
+     "his Sterfkennis filed — “Vader: oorlede. Moeder: oorlede.”"
+    ]
+   ],
+   "p": [
+    "Stephanus Francois Booyzen",
+    "Beatrix Magdalena Catharina Boshoff"
+   ],
+   "slug": "pretoria"
+  },
+  {
+   "n": "Marico",
+   "k": "District",
+   "r": "Western Transvaal",
+   "s": "doc",
+   "lat": -25.55,
+   "lon": 26.2,
+   "approx": false,
+   "w": "A substantial Booyzen farming district — and not this family. Seven Booyzen claims for compensation as burghers were filed here in 1903–04, and the Booyzen children who died in the Johannesburg and Vereeniging camps came from farms in this district. It is the clearest case in the archive of a same-surname family that is emphatically someone else's.",
+   "e": [
+    [
+     "1898",
+     "JGL Booyzen of Kwaggafontein, district Marico, in the field-cornet's papers"
+    ],
+    [
+     "1903–1904",
+     "seven Booyzen claims for compensation, burghers — CJC 76, 77, 104, 109, 123, 125, 126"
+    ],
+    [
+     "1901–02",
+     "Gert Jacobus Booyzen, aged 2, of the farm Rietvallei, dies in the Johannesburg camp"
+    ]
+   ],
+   "p": [],
+   "slug": "marico"
+  },
+  {
+   "n": "Mossel Bay",
+   "k": "Town",
+   "r": "Southern Cape",
+   "s": "doc",
+   "lat": -34.183,
+   "lon": 22.146,
+   "approx": false,
+   "w": "Where Stephanus Francois Booyzen married Beatrix Magdalena Catharina Boshoff — six hundred miles from where he was born and eight hundred from where he died.",
+   "e": [
+    [
+     "bef. 1940",
+     "the last marriage of Stephanus Francois Booyzen, per his death notice"
+    ]
+   ],
+   "p": [
+    "Stephanus Francois Booyzen",
+    "Beatrix Magdalena Catharina Boshoff"
+   ],
+   "slug": "mossel-bay"
+  },
+  {
+   "n": "Potchefstroom",
+   "k": "Town",
+   "r": "Transvaal",
+   "s": "doc",
+   "lat": -26.716,
+   "lon": 27.097,
+   "approx": false,
+   "w": "A Booyzen presence from at least 1860, when Jan Booyzen paid his marriage fee to the government here. Whether the line connects to this family is unproven.",
+   "e": [
+    [
+     "1860",
+     "Jan Booyzen, Potchefstroom — receipt for marriage fee paid to the government"
+    ],
+    [
+     "10 Dec 1869",
+     "Jacobus Petrus Johannes Booysen m. Martha Elizabeth Weyer"
+    ]
+   ],
+   "p": [],
+   "slug": "potchefstroom"
   }
  ]
 }
