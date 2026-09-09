@@ -827,3 +827,119 @@ propagating the correction to her age.
 
 Born **25 March 1929**, she was **eighteen** when her father died. Her mother died in February 1944, when
 she was **fourteen**. **Corrected throughout.**
+
+---
+
+# SIXTH EXTRACTION
+
+## 24. BAPTISM REGISTER, 1851 — Willem Hermanus, entry No. 2809
+`sources/booyzen-photos/willem-hermanus/willem-hermanus-birth-1851.jpg`
+Dutch Reformed Church register, page 149.
+
+| Field | As written |
+|---|---|
+| Het Kind | **Willem Hermanus** |
+| **Geboren** | **4 Mei 1851** |
+| **Vader** | **Petrus Jacobus Boo[i]j[s/z]en** — *surname underlined in the register* |
+| **Moeder** | **Johanna Catharina Mountjoy** |
+| **Gedoopt** | **31 October 1851** |
+| **Getuigen** | **Willem Hermanus Pietersen · Maria Catharina Magdalena Potgieter · Iwerus Hermanus Pietersen** |
+| Place | **achter Sneeuw[berg]** — Achter-Sneeuberg, not Cradock town |
+
+### Four findings
+
+1. **Born 4 May 1851 is now DOCUMENTED**, matching the tree exactly, from a contemporary register.
+   That **settles the age question** the archive had flagged as a serious contradiction:
+   - 1851 baptism: **b. 4 May 1851** ← primary and contemporary
+   - 1905 death registration: **age 55** → implies c. 1850. Off by one year; acceptable.
+   - **1879 marriage register: age 22** → implies c. 1857. **He was 28. The marriage entry is wrong by
+     six years**, and it is the outlier, not the baptism.
+
+2. **His parentage is confirmed from an original register**: **Petrus Jacobus Booysen** and
+   **Johanna Catharina Mountjoy**. That link is no longer taken on the tree's word.
+
+3. **He was named after his godfather, who was his mother's half-brother.** The first witness is
+   **Willem Hermanus Pietersen** — and Johanna Catharina Mountjoy's half-brothers were the
+   **Pietersens** (Willem Hermanus b. 1808, Johan Christiaan b. 1809, Andries Jacobus b. 1811, Hermanus
+   b. 1813), sons of **Anna Catharina Schleher** by her first marriage. The archive had those half-
+   brothers only as names in a list; here one of them is standing at the font, and the child takes his
+   name. <span>Documented</span>
+
+4. **The family was farming behind the Sneeuberg**, not living in Cradock — the register's place column
+   reads *achter Sneeuwberg*.
+
+### And a qualification the archive must make about its own central claim
+
+At **9× magnification** the father's surname reads **"Booij_en"** — with **exactly the same ambiguous
+medial letter** as Willem Hermanus's own 1879 signature. In this Cape Dutch hand a long **s** and a **z**
+both descend below the line with a leftward loop, and the register's underline runs straight through both.
+**I cannot separate them from an image.**
+
+**The ambiguity is systematic, not incidental.** That matters, and it cuts two ways:
+
+- It means the **1879 signature question cannot be settled from photographs at all**. It needs the
+  original register and an eye trained on these hands. The archive should stop implying a photograph
+  could resolve it.
+- It raises a real possibility the archive had not stated: that some part of the apparent
+  *Booysen → Booyzen* variation in nineteenth-century records is **a matter of reading rather than of
+  change** — modern transcribers, including this one, resolving an ambiguous letter differently.
+
+**What is NOT weakened.** The change itself is still well evidenced, and by evidence that does *not*
+depend on this letterform:
+- On the **1905 death registration** both spellings are unambiguous and printed clearly enough to read:
+  the clerk's **Booysen** and the son's signed **Booyzen**, four lines apart.
+- MyHeritage carries **"Former name: Booysen"** as a recorded fact.
+- The **distribution data** — 646 Booyzens against 53,764 Booysens, and Gauteng against the Cape — is
+  independent of any handwriting.
+
+So: **the change is real; its date is not established, and the archive should not pretend a scan can
+establish it.**
+
+## 25–26. THE TWO GERTRUDES — a recorded contradiction, resolved
+`gertrude-elizabeth-booyzen-death.jpg` · `gertrude-booyzen-2-death.jpg`
+
+This archive flagged as **Serious**: *"Born 11 May 1946 (died 15 May 1946) and 11 May 1947 — the same day
+of the year … Either two daughters given the same name and the same birthday, or one record duplicated a
+year out."*
+
+**Both certificates exist, and they are irreconcilably different documents.**
+
+| | **Gertrude Elizabeth Booyzen** | **Gertrude Booyzen** |
+|---|---|---|
+| Entry | **4256**, Johannesburg | **3920**, Johannesburg |
+| Registered | **16 May 1946** | **13 Mei 1947** |
+| Date of death | **May Fifteenth 1946** | **Eleventh May 1947** |
+| **Age** | **4 days** | **6 hours** |
+| **Place of death** | **Queen Victoria Hospital, Johannesburg** | **Turf Club Nursing Home, Johannesburg** |
+| **Cause** | **Prematurity ± 30 weeks** | **Atelectasis; Prematurity (7½ months)** |
+| Duration | 4 days | 6 hours |
+| **Doctor** | **Dr Dennis W. P. Lavery, M.B., B.Ch.** | **J. S. Porter** |
+| **Burial** | **West Park Cemetery, Johannesburg** | **Primrose Cemetery, district Germiston** |
+| Informant | **C. J. Thompson**, "Occupier", Queen Victoria Hospital | **M. van Zyl**, "Causing burial", 49 Joubert St, Germiston |
+| Father | George Downing Mount Joy Booyzen | George Downing Mountjoy Booyzen |
+
+**Two hospitals. Two cemeteries. Two doctors. Two registration entries a year apart. Two ages — four days
+and six hours. Two causes.**
+
+⇒ <span>Resolved</span> **There were two children.** The record is not duplicated.
+
+**And the coincidence the archive doubted is real: both were born on 11 May, exactly one year apart** —
+11 May 1946 and 11 May 1947. Both were badly premature: the first at about **30 weeks**, the second at
+**7½ months**. The first lived four days; the second lived six hours.
+
+### Corrections that fall out
+1. **The first Gertrude did not die at 85 Rheeden Street.** The tree places her death there; the
+   certificate gives **Queen Victoria Hospital**, and names 85 Rheeder Street only as **the mother's
+   residence**. Corrected.
+2. **The second child is registered simply "Gertrude"**, not Gertrude Elizabeth as the tree has it.
+3. **The sisters are not buried together** — one at **West Park**, one at **Primrose, Germiston**.
+4. The street is written **"Rheeder Street"** here, **"Rheeders Street"** on Anna's 1944 form, and
+   **"Rheeden Street"** in the tree. Three spellings of one address.
+5. Nothing here is posthumous. With George's death corrected to **11 December 1947**, the second
+   Gertrude died **seven months before her father**, and his death notice's *"no children of last
+   marriage"* is consistent: both infants had died.
+
+### What it means for the household
+Within **three years and ten months**, at 85 Rheeder Street and in two Johannesburg nursing homes:
+**Anna** died in February 1944; **Gertrude Elizabeth** in May 1946, aged four days; **Gertrude** in May
+1947, aged six hours; **George** in December 1947. Catherine Mary Sophia Booyzen was eighteen.

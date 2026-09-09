@@ -189,6 +189,27 @@ to. Under FEBRUARY 1803:
    her father, which this archive had itself corrected to 11 December 1947 without carrying the fix
    through to her age. **Corrected in all four places.**
 
+## The 1851 baptism, and the two Gertrudes
+
+- **Willem Hermanus was born 4 May 1851** — documented, entry 2809, baptised 31 October at
+  *achter Sneeuwberg*. That **settles the age question**: the 1905 death registration (55) is right within
+  a year, and **the 1879 marriage entry is wrong by six years** — he was 28, not 22.
+- **His parents are confirmed from the register**: Petrus Jacobus Booysen and Johanna Catharina Mountjoy.
+- **He was named for his godfather.** The first witness is **Willem Hermanus Pietersen** — one of his
+  mother's Pietersen half-brothers, sons of Anna Catharina Schleher by her first marriage. The archive
+  had them only as names in a list; here one stands at the font and the child takes his name.
+- **A qualification the archive owes itself.** At 9× the father's surname shows *the same ambiguous
+  medial letter* as the 1879 signature: in this hand a long **s** and a **z** are not separable from an
+  image. **The ambiguity is systematic.** So the 1879 question cannot be settled from photographs at all
+  — and some of the apparent Booysen/Booyzen variation may be *reading* rather than change. What survives
+  untouched is the 1905 form (both spellings unambiguous, four lines apart) and the distribution data.
+  **The change is real; its date is not established, and no scan will establish it.**
+- **THE TWO GERTRUDES WERE TWO CHILDREN.** Both certificates exist and differ in every particular —
+  entries 4256 and 3920, ages **four days** and **six hours**, Queen Victoria Hospital and Turf Club
+  Nursing Home, two doctors, buried at **West Park** and at **Primrose, Germiston**. The shared **11 May**
+  birthday, a year apart, is real coincidence. Both were badly premature.
+- Which means the household lost **a mother, two infants and a father inside three years and ten months**.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
