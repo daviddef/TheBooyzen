@@ -3,16 +3,21 @@
  "people": {
   "gerthardus-lodewikus-booysen": {
    "n": "Gerthardus Lodewikus Booysen",
+   "v": "Gerthardus Lödewikus Booijsen (1876)",
    "b": "—",
    "d": "—",
    "l": "Booyzen",
    "g": 7,
-   "s": "open",
-   "r": "The top of the male line. No birth date, no death date, no father, no mother.",
+   "s": "doc",
+   "r": "The top of the male line — and, since the 1876 Sterfkennis was read, no longer a name held up by the family tree alone. His son’s death notice names him and his wife in line 3. He still has no birth date, no death date, and no parents: the oldest open question on this site is about him.",
    "p": [
     [
      "The Line",
      "/direct-line/"
+    ],
+    [
+     "The Documents",
+     "/documents/"
     ],
     [
      "Open Questions",
@@ -20,7 +25,7 @@
     ]
    ],
    "slug": "gerthardus-lodewikus-booysen",
-   "mentions": 7,
+   "mentions": 13,
    "pages": [
     {
      "h": "/direct-line/",
@@ -29,6 +34,14 @@
     {
      "h": "/disputed/",
      "t": "Disputed"
+    },
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
     },
     {
      "h": "/name/",
@@ -43,6 +56,10 @@
      "t": "Everyone"
     },
     {
+     "h": "/sources/",
+     "t": "Sources"
+    },
+    {
      "h": "/tree/",
      "t": "The tree"
     },
@@ -55,12 +72,27 @@
     {
      "page": "/direct-line/",
      "title": "The line",
-     "text": "His mother Cheryl Anne Lerena (b. 1955) is living and is omitted from this build, as he is. This is the spine only. For everyone else the archive names — siblings, cousins, godparents, witnesses and in-laws — see Everyone , which is searchable by name, place, year or spelling variant. Gen Name Born Died Married 7 Gerthardus Lodewikus Booysen no dates, no parents — the frontier — — Magdelena Elisabeth De Beer (1754–1843) 6 Petrus Jacobus Booysen married at about seventeen; died in the Transvaal c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Anna Maria van der Merwe (1785 – bef. Mar 1825), m."
+     "text": "Seven generations up, the male line simply ends. One thing has changed here, and it is worth being precise about how little. Until the 1876 Sterfkennis was read, generation seven existed only because a family tree said so. It now exists because a nineteenth-century clerk wrote \"Gerthardus Lödewikus Booijsen\" and \"Magdalena de Beer\" on his son's death notice. See the line → That converts an assertion into a record. It does not add a generation. The buttons above him are still empty, the dates below are still arithmetic, and the question of who his own parents were is exactly as open as it was. What can be said is arithmetic rather than evidence."
+    },
+    {
+     "page": "/direct-line/",
+     "title": "The line",
+     "text": "His mother Cheryl Anne Lerena (b. 1955) is living and is omitted from this build, as he is. This is the spine only. For everyone else the archive names — siblings, cousins, godparents, witnesses and in-laws — see Everyone , which is searchable by name, place, year or spelling variant. Gen Name Born Died Married 7 Gerthardus Lodewikus Booysen no dates, no parents — but both names now DOCUMENTED, on his son's 1876 death notice — — Magdelena Elisabeth De Beer (1754–1843) 6 Petrus Jacobus Booysen married at about seventeen; died a widower in the Transvaal with nothing to leave c. 21 Sep 1788, Graaff-Reinet — DOCUMENTED 1 Sep 1876, district Rustenburg — DOCUMENTED Anna Maria van der Merwe (1785 – bef. Mar 1825), m."
     },
     {
      "page": "/disputed/",
      "title": "Disputed",
      "text": "All three are checkable. Forty-four Cape colonists were executed for high treason , and that list is closed. What would settle it → What is not in dispute It is worth ending on this. The direct descent itself is unbroken and well sourced from Gerthardus Lodewikus Booysen to David Defranceski. The contradictions above sit on side branches, spouses' records and dates of death — not on the parent-to-child links of the line. Nothing on this page moves anybody out of the family. The single exception is the Barry line above 1819 , where the link to a father genuinely fails."
+    },
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "It is the document this archive has been looking for since the first page was written. Notice 678 . Countersigned by the veldkornet and by H. S. Booijsen — Hendrik Stefanus, one of the sons listed four lines above his own signature. The form, as completed 1. Naam Petrus Jacobus Booijsen 2. Geboorteplaats Graaffreinet 3. Ouders Gerthardus Lödewikus Booijsen Magdalena de Beer 4. Ouderdom 88 jaar 5. Beroep Landbouwer 6. Staat Gehuwd — weduwenaar 7. Overleden 1 September 1876 8. Waar Destrikt Rustenburg 9. Testament Neen 10. Goederen Niets nagelaten 11. Boven £25 Niets bekend 12."
+    },
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "10 Sep 2026 Found The oldest document in this archive — and the two names above the line Sterfkennis No. 678, written at the farm Brakfontein, district Rustenburg, on 14 September 1876. Petrus Jacobus Booijsen, born Graaffreinet, aged 88, landbouwer, widower, died 1 September 1876. Line 3: “Gerthardus Lödewikus Booijsen — Magdalena de Beer.” Generation seven has stood at the head of the direct line since this archive began with the flattest entry on the site — no dates, no parents, no document. He has a document now."
     },
     {
      "page": "/name/",
@@ -70,12 +102,27 @@
     {
      "page": "/open-questions/",
      "title": "Open questions",
+     "text": "It shows Booysen–de Beer was not a unique pairing, which is a warning about the tree rather than a lead. WHAT HAS CHANGED, 10 September 2026: the 1876 Rustenburg Sterfkennis of his son now names BOTH of them in line 3 — \"Gerthardus Lödewikus Booijsen\" and \"Magdalena de Beer\". That does not answer this question, which is about HIS parents, and the entry stays blocking."
+    },
+    {
+     "page": "/open-questions/",
+     "title": "Open questions",
      "text": "The enquiry did reach archive@dod.mil.za , which has not replied. \"Sent\" and \"delivered\" are not the same word, and this archive used the wrong one. The research log → The queue § 0 · Blocking Who were Gerthardus Lodewikus Booysen's parents? STILL BLOCKING, and the named lead is now exhausted at the Cape depot. The queue pointed at the estate papers of his wife MAGDELENA ELISABETH DE BEER, d. 1843."
     },
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "She died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape, and still to be read. The Documents The Women The Name What Was Searched David Schalk Booysen Documented 3 mentions 9 Jun 1848 — Fourth on the 1863 list. The Documents Gerthardus Lodewikus Booysen · generation 7 Open 7 mentions — — The top of the male line. No birth date, no death date, no father, no mother. The Line Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died. The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 2 mentions bef."
+     "text": "The Documents The Women The Name What Was Searched David Schalk Booysen Documented 3 mentions 9 Jun 1848 — Fourth on the 1863 list. The Documents Gerthardus Lodewikus Booysen · generation 7 also written Gerthardus Lödewikus Booijsen (1876) Documented 7 mentions — — The top of the male line — and, since the 1876 Sterfkennis was read, no longer a name held up by the family tree alone. His son’s death notice names him and his wife in line 3. He still has no birth date, no death date, and no parents: the oldest open question on this site is about him."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "People the records name only once — a witness, a neighbour, an official — are on The Documents in the transcription of the record that names them, rather than here."
+    },
+    {
+     "page": "/sources/",
+     "title": "Sources",
+     "text": "The first of them is the oldest document in this archive. Reference Person Died Status Sterfkennis 678 Transvaal, Weeskamer Petrus Jacobus Booijsen — generation six, b. Graaff-Reinet c. 1788 1876 Read Parents named : Gerthardus Lödewikus Booijsen and Magdalena de Beer. Eight children. Nothing to leave. Transcribed → Sterfkennis 6332 Anna Johanna Booijzen, born Alberts — b. district Cradock c. 1823 1891 Read, kinship unproven Died Boekfontein, district Rustenburg. Parents Ocken Johannes Alberts and Anna Johanna Botha. Sterfkennis 44420 Magdalena Susanna Maria van den Berg, born Booyzen — b. c."
     },
     {
      "page": "/tree/",
@@ -93,15 +140,20 @@
   },
   "magdelena-elisabeth-de-beer": {
    "n": "Magdelena Elisabeth de Beer",
+   "v": "Magdalena de Beer (1876)",
    "b": "1754",
    "d": "1843",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all.",
+   "r": "Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all — and her name, beside his, is what the 1876 notice puts on the record. That matters because a 1793 Cape will names a different “Jan Booysen, married to the late Magdalena de Beer”: the pairing was never unique, and now this line’s version of it is documented.",
    "p": [
     [
      "The Line",
      "/direct-line/"
+    ],
+    [
+     "The Documents",
+     "/documents/"
     ],
     [
      "The Women",
@@ -109,11 +161,23 @@
     ]
    ],
    "slug": "magdelena-elisabeth-de-beer",
-   "mentions": 4,
+   "mentions": 11,
    "pages": [
+    {
+     "h": "/direct-line/",
+     "t": "The line"
+    },
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
     {
      "h": "/log/",
      "t": "The research log"
+    },
+    {
+     "h": "/open-questions/",
+     "t": "Open questions"
     },
     {
      "h": "/people/",
@@ -124,25 +188,64 @@
      "t": "What has been searched"
     },
     {
+     "h": "/sources/",
+     "t": "Sources"
+    },
+    {
      "h": "/tree/",
      "t": "The tree"
     }
    ],
    "hits": [
     {
+     "page": "/direct-line/",
+     "title": "The line",
+     "text": "Seven generations up, the male line simply ends. One thing has changed here, and it is worth being precise about how little. Until the 1876 Sterfkennis was read, generation seven existed only because a family tree said so. It now exists because a nineteenth-century clerk wrote \"Gerthardus Lödewikus Booijsen\" and \"Magdalena de Beer\" on his son's death notice. See the line → That converts an assertion into a record. It does not add a generation. The buttons above him are still empty, the dates below are still arithmetic, and the question of who his own parents were is exactly as open as it was. What can be said is arithmetic rather than evidence."
+    },
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Notice 678 . Countersigned by the veldkornet and by H. S. Booijsen — Hendrik Stefanus, one of the sons listed four lines above his own signature. The form, as completed 1. Naam Petrus Jacobus Booijsen 2. Geboorteplaats Graaffreinet 3. Ouders Gerthardus Lödewikus Booijsen Magdalena de Beer 4. Ouderdom 88 jaar 5. Beroep Landbouwer 6. Staat Gehuwd — weduwenaar 7. Overleden 1 September 1876 8. Waar Destrikt Rustenburg 9. Testament Neen 10. Goederen Niets nagelaten 11. Boven £25 Niets bekend 12."
+    },
+    {
      "page": "/log/",
      "title": "The research log",
      "text": "Twenty documents before 1930 were never opened. They include JAMES MOUNTJOY'S OWN WILLS of 1818 and 1827, and an 1834 Colonial Office memorial from his widow. A filter applied for convenience was reported as if it were the whole search. 9 Sep 2026 Found No death notice for Magdelena Elisabeth de Beer — twice over The Master's Office own index of death notices 1834–1912 was read on film at the “Beer, de” pages. She is not in it, which confirms the NAAIRS result from a second and older source. 10 Sep 2026 Taken back CORRECTED — the SANDF request was only half delivered Reported here as sent."
     },
     {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "10 Sep 2026 Found The oldest document in this archive — and the two names above the line Sterfkennis No. 678, written at the farm Brakfontein, district Rustenburg, on 14 September 1876. Petrus Jacobus Booijsen, born Graaffreinet, aged 88, landbouwer, widower, died 1 September 1876. Line 3: “Gerthardus Lödewikus Booijsen — Magdalena de Beer.” Generation seven has stood at the head of the direct line since this archive began with the flattest entry on the site — no dates, no parents, no document. He has a document now."
+    },
+    {
+     "page": "/open-questions/",
+     "title": "Open questions",
+     "text": "It shows Booysen–de Beer was not a unique pairing, which is a warning about the tree rather than a lead. WHAT HAS CHANGED, 10 September 2026: the 1876 Rustenburg Sterfkennis of his son now names BOTH of them in line 3 — \"Gerthardus Lödewikus Booijsen\" and \"Magdalena de Beer\". That does not answer this question, which is about HIS parents, and the entry stays blocking. But generation seven is no longer an assertion of the family tree, the 1793 Jan Booysen will can be set aside rather than merely resisted, and the search has a new country to run in: the Transvaal probate series, where this family turns out to have been living from at least the 1870s."
+    },
+    {
      "page": "/people/",
      "title": "Everyone",
-     "text": "A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven. The Rebels The Barrys The Documents Ruben Jacobus Josuah Barry Documented 2 mentions — — Carries the Schoeman given name Ruben into the Barry family. The Documents Magdelena Elisabeth de Beer Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first."
+     "text": "A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven. The Rebels The Barrys The Documents Ruben Jacobus Josuah Barry Documented 2 mentions — — Carries the Schoeman given name Ruben into the Barry family. The Documents Magdelena Elisabeth de Beer also written Magdalena de Beer (1876) Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all — and her name, beside his, is what the 1876 notice puts on the record."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "Her 1754 birth is what dates him at all — and her name, beside his, is what the 1876 notice puts on the record. That matters because a 1793 Cape will names a different “Jan Booysen, married to the late Magdalena de Beer”: the pairing was never unique, and now this line’s version of it is documented. The Line The Documents The Women Anna Eliezabet Booijsen Documented — — Fourth on the 1876 notice. The Documents The Women Anna Maria Booijsen Documented — — Eighth and last on the 1876 notice, named for her mother Anna Maria van der Merwe."
     },
     {
      "page": "/searched/",
      "title": "What has been searched",
      "text": "BOOYZEN 39 documents Found Earliest 1779 — KAB CJ 2633: 29, the testament of Christina Booyzen. The z is a hundred and twenty years older than the war. BOOIJZEN 3 documents Found Earliest 1792. DE BEER + MAGDELENA 0 Nothing No estate for Magdelena Elisabeth de Beer, d. 1843. BEER + MAGDELENA + ELISABETH 0 Nothing Nothing. BOOYSEN + MAGDELENA 0 Nothing Nothing. BOOIJSEN + MAGDELENA 0 Nothing Nothing. BOOYSEN + GERTHARDUS 0 Nothing No estate for the man at the top of the male line. BOOYSEN + GERHARDUS 15 documents Nothing None of them his. BOOYZEN + GERHARDUS 0 Nothing Nothing."
+    },
+    {
+     "page": "/searched/",
+     "title": "What has been searched",
+     "text": "BOOYZEN + GERHARDUS 0 Nothing Nothing. BOOYSEN + LODEWIKUS / LODEWICUS 7 documents Nothing All one later man, Willem Johannes Lodewicus. BOOYSEN + BEER 3 documents Nothing One near-miss deliberately NOT adopted: KAB NCD 2/1: 49, a notarial will of 1793 for “Jan Booysen, married to the late Magdalena de Beer”. Wrong husband's name, and a wife dead fifty years before ours. FamilySearch records and full text · searched 9 Sep 2026 · where it is used → Query Result Full-text search: “Johannes Mountjoy” 0 Nothing The full-text collection does not cover Cape probate. Probate collection, MONTJOY / MOUNTJOY 2 indexed Partly Only the 1863 pair."
+    },
+    {
+     "page": "/sources/",
+     "title": "Sources",
+     "text": "The first of them is the oldest document in this archive. Reference Person Died Status Sterfkennis 678 Transvaal, Weeskamer Petrus Jacobus Booijsen — generation six, b. Graaff-Reinet c. 1788 1876 Read Parents named : Gerthardus Lödewikus Booijsen and Magdalena de Beer. Eight children. Nothing to leave. Transcribed → Sterfkennis 6332 Anna Johanna Booijzen, born Alberts — b. district Cradock c. 1823 1891 Read, kinship unproven Died Boekfontein, district Rustenburg. Parents Ocken Johannes Alberts and Anna Johanna Botha. Sterfkennis 44420 Magdalena Susanna Maria van den Berg, born Booyzen — b. c."
     },
     {
      "page": "/tree/",
@@ -155,16 +258,21 @@
   },
   "petrus-jacobus-booysen": {
    "n": "Petrus Jacobus Booysen",
+   "v": "Petrus Jacobus Booijsen (1876)",
    "b": "c. 21 Sep 1788, Graaff-Reinet",
-   "d": "1 Sep 1876, Rustenburg",
+   "d": "1 Sep 1876, district Rustenburg",
    "l": "Booyzen",
    "g": 6,
    "s": "doc",
-   "r": "Married at about seventeen; died in the Transvaal, eighty-eight years old.",
+   "r": "Married at about seventeen; died a widower in the Transvaal, eighty-eight years old, on a farm called Brakfontein. His Sterfkennis — No. 678, written 14 September 1876 — is the oldest document about this family that this archive has read, it names his parents, and it lists eight children. Estate: NOTHING. “Niets nagelaten. Niets bekend.”",
    "p": [
     [
      "The Line",
      "/direct-line/"
+    ],
+    [
+     "The Documents",
+     "/documents/"
     ],
     [
      "Sources",
@@ -172,7 +280,7 @@
     ]
    ],
    "slug": "petrus-jacobus-booysen",
-   "mentions": 10,
+   "mentions": 15,
    "pages": [
     {
      "h": "/direct-line/",
@@ -187,6 +295,10 @@
      "t": "The documents"
     },
     {
+     "h": "/log/",
+     "t": "The research log"
+    },
+    {
      "h": "/name/",
      "t": "The name"
     },
@@ -197,6 +309,10 @@
     {
      "h": "/people/",
      "t": "Everyone"
+    },
+    {
+     "h": "/searched/",
+     "t": "What has been searched"
     },
     {
      "h": "/sources/",
@@ -219,7 +335,7 @@
     {
      "page": "/direct-line/",
      "title": "The line",
-     "text": "This is the spine only. For everyone else the archive names — siblings, cousins, godparents, witnesses and in-laws — see Everyone , which is searchable by name, place, year or spelling variant. Gen Name Born Died Married 7 Gerthardus Lodewikus Booysen no dates, no parents — the frontier — — Magdelena Elisabeth De Beer (1754–1843) 6 Petrus Jacobus Booysen married at about seventeen; died in the Transvaal c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet 5 Petrus Jacobus Booysen died fifteen years before the war began; signed his wife's death notice 10 May 1812, Graaff-Reinet 1884 (probate) Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) — DOCUMENTED, m."
+     "text": "Gen Name Born Died Married 7 Gerthardus Lodewikus Booysen no dates, no parents — but both names now DOCUMENTED, on his son's 1876 death notice — — Magdelena Elisabeth De Beer (1754–1843) 6 Petrus Jacobus Booysen married at about seventeen; died a widower in the Transvaal with nothing to leave c. 21 Sep 1788, Graaff-Reinet — DOCUMENTED 1 Sep 1876, district Rustenburg — DOCUMENTED Anna Maria van der Merwe (1785 – bef. Mar 1825), m."
     },
     {
      "page": "/disputed/",
@@ -229,7 +345,17 @@
     {
      "page": "/documents/",
      "title": "The documents",
+     "text": "It is the document this archive has been looking for since the first page was written. Notice 678 . Countersigned by the veldkornet and by H. S. Booijsen — Hendrik Stefanus, one of the sons listed four lines above his own signature. The form, as completed 1. Naam Petrus Jacobus Booijsen 2. Geboorteplaats Graaffreinet 3. Ouders Gerthardus Lödewikus Booijsen Magdalena de Beer 4. Ouderdom 88 jaar 5. Beroep Landbouwer 6. Staat Gehuwd — weduwenaar 7. Overleden 1 September 1876 8. Waar Destrikt Rustenburg 9. Testament Neen 10. Goederen Niets nagelaten 11. Boven £25 Niets bekend 12."
+    },
+    {
+     "page": "/documents/",
+     "title": "The documents",
      "text": "KAB MOOC 13/1/221, 6 1866 Filed 25 July 1863 , reference 499 . The form, as completed 1. Name of the Deceased Johanna Catharina Montjoy 2. Birth-place Graaff Reinet 3. Names of the Parents James Montjoy and Anna Catharina Sleer 4. Age 44 years & 19 days 5. Condition in life farmer's wife 6. Married or unmarried Married to Petrus Jacobus Booysen 7. Day of decease 19th May 1863 8. At what House Zevenfontein, Brak River 10. Property Moveable property Line 3 — the generation the archive did not have from any document: James Montjoy and Anna Catharina Sleer . An age given to the day The form asks for years. The informant wrote \"44 years & 19 days\" . Counted back from 19 May 1863, that puts her birth at 30 April 1819 , at Graaff-Reinet."
+    },
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "1840, 1884, 1915 and 1940 fail; 1942 and 1944 work. 10 Sep 2026 Found The oldest document in this archive — and the two names above the line Sterfkennis No. 678, written at the farm Brakfontein, district Rustenburg, on 14 September 1876. Petrus Jacobus Booijsen, born Graaffreinet, aged 88, landbouwer, widower, died 1 September 1876. Line 3: “Gerthardus Lödewikus Booijsen — Magdalena de Beer.” Generation seven has stood at the head of the direct line since this archive began with the flattest entry on the site — no dates, no parents, no document. He has a document now."
     },
     {
      "page": "/name/",
@@ -244,7 +370,22 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Married at about seventeen; died in the Transvaal, eighty-eight years old. The Line Sources Petrus Jacobus Booysen · generation 5 also written Booyzen (1851 register), Booÿse, Bovysen Documented 10 mentions 10 May 1812, Graaff-Reinet 1884 (probate) Farmer at Zevenfontein, Brak River."
+     "text": "The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 also written Petrus Jacobus Booijsen (1876) Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, district Rustenburg Married at about seventeen; died a widower in the Transvaal, eighty-eight years old, on a farm called Brakfontein. His Sterfkennis — No. 678, written 14 September 1876 — is the oldest document about this family that this archive has read, it names his parents, and it lists eight children. Estate: NOTHING."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "His Sterfkennis — No. 678, written 14 September 1876 — is the oldest document about this family that this archive has read, it names his parents, and it lists eight children. Estate: NOTHING. “Niets nagelaten. Niets bekend.” The Line The Documents Sources Petrus Jacobus Booysen · generation 5 also written Booyzen (1851 register), Booÿse, Bovysen Documented 10 mentions 10 May 1812, Graaff-Reinet 1884 (probate) Farmer at Zevenfontein, Brak River. Signed his wife's 1863 death notice. Died fifteen years before the war. The Line The Documents The Name Petrus Jacobus Booysen Documented 10 mentions 10 Sep 1839 — Third child. Baptised Graaff-Reinet."
+    },
+    {
+     "page": "/searched/",
+     "title": "What has been searched",
+     "text": "FamilySearch · Transvaal probate, reading the whole surname what happens when you stop searching for a person and search for a name · searched 10 Sep 2026 · where it is used → Query Result BOOYSEN + PETRUS JACOBUS, exact surname, collection 2520237 Two personas, one document Found Sterfkennis No. 678 of 1876 — Petrus Jacobus Booijsen, b. Graaffreinet, d. 1 Sep 1876 district Rustenburg, aged 88, parents NAMED. The oldest document this archive has read, and it was sitting in a name index the whole time. Found only because the search stopped asking for the nine references NAAIRS had given and started reading the surname."
+    },
+    {
+     "page": "/sources/",
+     "title": "Sources",
+     "text": "Particles index separately, so de Beer files under B. The Transvaal, before anyone thought this family was there Three notices found by reading a surname rather than chasing a reference. The first of them is the oldest document in this archive. Reference Person Died Status Sterfkennis 678 Transvaal, Weeskamer Petrus Jacobus Booijsen — generation six, b. Graaff-Reinet c. 1788 1876 Read Parents named : Gerthardus Lödewikus Booijsen and Magdalena de Beer. Eight children. Nothing to leave. Transcribed → Sterfkennis 6332 Anna Johanna Booijzen, born Alberts — b. district Cradock c. 1823 1891 Read, kinship unproven Died Boekfontein, district Rustenburg. Parents Ocken Johannes Alberts and Anna Johanna Botha."
     },
     {
      "page": "/sources/",
@@ -309,6 +450,373 @@
     }
    ]
   },
+  "david-schalk-booijsen": {
+   "n": "David Schalk Booijsen",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ],
+   "slug": "david-schalk-booijsen",
+   "mentions": 2,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "It still is not. But the pairing in this line is no longer an assertion, and the 1793 will can now be set aside for good rather than merely resisted. Eight children, and three names that come back All eight entered mondig — the eldest was in his sixties. Child, as written What this archive already knew David Schalk Booijsen — Magdalena Johanna Booijsen — Petrus Jacobus Booijsen generation five , b. 10 May 1812, the farmer at Zevenfontein who signed the 1863 death notice Anna Eliezabet Booijsen — Jan Gerthardus Lodewikus Booijsen — Eliezabet Cornelia Booijsen — Hendrik Stefanus Booijsen signed this notice Anna Maria Booijsen — Seven of these eight were unknown to this archive an hour ago."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "The Line The Documents The Women Anna Eliezabet Booijsen Documented — — Fourth on the 1876 notice. The Documents The Women Anna Maria Booijsen Documented — — Eighth and last on the 1876 notice, named for her mother Anna Maria van der Merwe. The Documents The Women David Schalk Booijsen Documented — — First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation. The Documents Eliezabet Cornelia Booijsen Documented — — Sixth on the 1876 notice."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "magdalena-johanna-booijsen": {
+   "n": "Magdalena Johanna Booijsen",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Second on the 1876 notice, named for her mother Magdalena de Beer. A niece born 1853 carries the name again.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ],
+   "slug": "magdalena-johanna-booijsen",
+   "mentions": 2,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "It still is not. But the pairing in this line is no longer an assertion, and the 1793 will can now be set aside for good rather than merely resisted. Eight children, and three names that come back All eight entered mondig — the eldest was in his sixties. Child, as written What this archive already knew David Schalk Booijsen — Magdalena Johanna Booijsen — Petrus Jacobus Booijsen generation five , b. 10 May 1812, the farmer at Zevenfontein who signed the 1863 death notice Anna Eliezabet Booijsen — Jan Gerthardus Lodewikus Booijsen — Eliezabet Cornelia Booijsen — Hendrik Stefanus Booijsen signed this notice Anna Maria Booijsen — Seven of these eight were unknown to this archive an hour ago."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "A 1920 death notice at Lichtenburg gives a Magdalena Susanna Maria van den Berg, born Booyzen and born about 1860, whose father is entered as Jan Gerhardus Lodewicus Booyzen — the right name in the right district at the right time, and NOT proved to be him. The Documents Open Questions Magdalena Johanna Booijsen Documented — — Second on the 1876 notice, named for her mother Magdalena de Beer. A niece born 1853 carries the name again. The Documents The Women Anna Johanna Booijzen also written born Alberts Inferred c. Sep 1823, district Cradock 9 May 1891, Boekfontein, district Rustenburg NOT PROVED TO BE KIN, and recorded here so that the question is not lost."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "anna-eliezabet-booijsen": {
+   "n": "Anna Eliezabet Booijsen",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Fourth on the 1876 notice.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ],
+   "slug": "anna-eliezabet-booijsen",
+   "mentions": 2,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Eight children, and three names that come back All eight entered mondig — the eldest was in his sixties. Child, as written What this archive already knew David Schalk Booijsen — Magdalena Johanna Booijsen — Petrus Jacobus Booijsen generation five , b. 10 May 1812, the farmer at Zevenfontein who signed the 1863 death notice Anna Eliezabet Booijsen — Jan Gerthardus Lodewikus Booijsen — Eliezabet Cornelia Booijsen — Hendrik Stefanus Booijsen signed this notice Anna Maria Booijsen — Seven of these eight were unknown to this archive an hour ago."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "Her 1754 birth is what dates him at all — and her name, beside his, is what the 1876 notice puts on the record. That matters because a 1793 Cape will names a different “Jan Booysen, married to the late Magdalena de Beer”: the pairing was never unique, and now this line’s version of it is documented. The Line The Documents The Women Anna Eliezabet Booijsen Documented — — Fourth on the 1876 notice. The Documents The Women Anna Maria Booijsen Documented — — Eighth and last on the 1876 notice, named for her mother Anna Maria van der Merwe. The Documents The Women David Schalk Booijsen Documented — — First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "jan-gerthardus-lodewikus-booijsen": {
+   "n": "Jan Gerthardus Lodewikus Booijsen",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Fifth on the 1876 notice, and named for the man at the top of the line. A 1920 death notice at Lichtenburg gives a Magdalena Susanna Maria van den Berg, born Booyzen and born about 1860, whose father is entered as Jan Gerhardus Lodewicus Booyzen — the right name in the right district at the right time, and NOT proved to be him.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "Open Questions",
+     "/open-questions/"
+    ]
+   ],
+   "slug": "jan-gerthardus-lodewikus-booijsen",
+   "mentions": 2,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Child, as written What this archive already knew David Schalk Booijsen — Magdalena Johanna Booijsen — Petrus Jacobus Booijsen generation five , b. 10 May 1812, the farmer at Zevenfontein who signed the 1863 death notice Anna Eliezabet Booijsen — Jan Gerthardus Lodewikus Booijsen — Eliezabet Cornelia Booijsen — Hendrik Stefanus Booijsen signed this notice Anna Maria Booijsen — Seven of these eight were unknown to this archive an hour ago. And three of the names — David Schalk , Magdalena Johanna , Jan Gerthardus Lodewikus — are the same names that appear on the 1863 death notice as children of Petrus Jacobus the younger , born 1848, 1853 and 1855."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "The Documents Eliezabet Cornelia Booijsen Documented — — Sixth on the 1876 notice. The Documents The Women Hendrik Stefanus Booijsen Documented — — Seventh on the 1876 notice — and the man who signed it, four lines under his own name, beside the veldkornet. The Documents Jan Gerthardus Lodewikus Booijsen Documented — — Fifth on the 1876 notice, and named for the man at the top of the line. A 1920 death notice at Lichtenburg gives a Magdalena Susanna Maria van den Berg, born Booyzen and born about 1860, whose father is entered as Jan Gerhardus Lodewicus Booyzen — the right name in the right district at the right time, and NOT proved to be him."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "eliezabet-cornelia-booijsen": {
+   "n": "Eliezabet Cornelia Booijsen",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Sixth on the 1876 notice.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ],
+   "slug": "eliezabet-cornelia-booijsen",
+   "mentions": 2,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Child, as written What this archive already knew David Schalk Booijsen — Magdalena Johanna Booijsen — Petrus Jacobus Booijsen generation five , b. 10 May 1812, the farmer at Zevenfontein who signed the 1863 death notice Anna Eliezabet Booijsen — Jan Gerthardus Lodewikus Booijsen — Eliezabet Cornelia Booijsen — Hendrik Stefanus Booijsen signed this notice Anna Maria Booijsen — Seven of these eight were unknown to this archive an hour ago. And three of the names — David Schalk , Magdalena Johanna , Jan Gerthardus Lodewikus — are the same names that appear on the 1863 death notice as children of Petrus Jacobus the younger , born 1848, 1853 and 1855."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "The Documents The Women David Schalk Booijsen Documented — — First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation. The Documents Eliezabet Cornelia Booijsen Documented — — Sixth on the 1876 notice. The Documents The Women Hendrik Stefanus Booijsen Documented — — Seventh on the 1876 notice — and the man who signed it, four lines under his own name, beside the veldkornet. The Documents Jan Gerthardus Lodewikus Booijsen Documented — — Fifth on the 1876 notice, and named for the man at the top of the line."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "hendrik-stefanus-booijsen": {
+   "n": "Hendrik Stefanus Booijsen",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Seventh on the 1876 notice — and the man who signed it, four lines under his own name, beside the veldkornet.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ],
+   "slug": "hendrik-stefanus-booijsen",
+   "mentions": 2,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Child, as written What this archive already knew David Schalk Booijsen — Magdalena Johanna Booijsen — Petrus Jacobus Booijsen generation five , b. 10 May 1812, the farmer at Zevenfontein who signed the 1863 death notice Anna Eliezabet Booijsen — Jan Gerthardus Lodewikus Booijsen — Eliezabet Cornelia Booijsen — Hendrik Stefanus Booijsen signed this notice Anna Maria Booijsen — Seven of these eight were unknown to this archive an hour ago. And three of the names — David Schalk , Magdalena Johanna , Jan Gerthardus Lodewikus — are the same names that appear on the 1863 death notice as children of Petrus Jacobus the younger , born 1848, 1853 and 1855."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "The Documents The Women David Schalk Booijsen Documented — — First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation. The Documents Eliezabet Cornelia Booijsen Documented — — Sixth on the 1876 notice. The Documents The Women Hendrik Stefanus Booijsen Documented — — Seventh on the 1876 notice — and the man who signed it, four lines under his own name, beside the veldkornet. The Documents Jan Gerthardus Lodewikus Booijsen Documented — — Fifth on the 1876 notice, and named for the man at the top of the line."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "anna-maria-booijsen": {
+   "n": "Anna Maria Booijsen",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Eighth and last on the 1876 notice, named for her mother Anna Maria van der Merwe.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ],
+   "slug": "anna-maria-booijsen",
+   "mentions": 2,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "10 May 1812, the farmer at Zevenfontein who signed the 1863 death notice Anna Eliezabet Booijsen — Jan Gerthardus Lodewikus Booijsen — Eliezabet Cornelia Booijsen — Hendrik Stefanus Booijsen signed this notice Anna Maria Booijsen — Seven of these eight were unknown to this archive an hour ago. And three of the names — David Schalk , Magdalena Johanna , Jan Gerthardus Lodewikus — are the same names that appear on the 1863 death notice as children of Petrus Jacobus the younger , born 1848, 1853 and 1855."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "That matters because a 1793 Cape will names a different “Jan Booysen, married to the late Magdalena de Beer”: the pairing was never unique, and now this line’s version of it is documented. The Line The Documents The Women Anna Eliezabet Booijsen Documented — — Fourth on the 1876 notice. The Documents The Women Anna Maria Booijsen Documented — — Eighth and last on the 1876 notice, named for her mother Anna Maria van der Merwe. The Documents The Women David Schalk Booijsen Documented — — First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation. The Documents Eliezabet Cornelia Booijsen Documented — — Sixth on the 1876 notice."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "anna-johanna-booijzen": {
+   "n": "Anna Johanna Booijzen",
+   "v": "born Alberts",
+   "b": "c. Sep 1823, district Cradock",
+   "d": "9 May 1891, Boekfontein, district Rustenburg",
+   "l": "Booyzen",
+   "s": "inf",
+   "r": "NOT PROVED TO BE KIN, and recorded here so that the question is not lost. Her 1891 Sterfkennis gives her parents as Ocken Johannes Alberts and Anna Johanna Botha, her age as 67 years 8 months and 1 day, and her children as Petrus Jacobus, Ocken Johannes, Anna Johanna Maria, Elisabetha Maria Cornelya, Alettha Catrina Johanna, Magdalena Johanna and Hendrik Stephanus Nicolaas — four of those forenames are on the 1876 notice. Born in the district where this family married in 1838; died in the district where the direct ancestor died in 1876.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "Open Questions",
+     "/open-questions/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ],
+   "slug": "anna-johanna-booijzen",
+   "mentions": 4,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    },
+    {
+     "h": "/searched/",
+     "t": "What has been searched"
+    },
+    {
+     "h": "/sources/",
+     "t": "Sources"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Two other notices read the same afternoon sit in the same country: a Magdalena Susanna Maria van den Berg, born Booyzen , who died at Vaalbank in the district of Lichtenburg in 1920 and whose father is entered as Jan Gerhardus Lodewicus Booyzen ; and an Anna Johanna Booijzen, born Alberts , born in the district of Cradock about 1823, who died on the farm Boekfontein, district Rustenburg, in 1891, leaving children called Petrus Jacobus, Magdalena Johanna and Hendrik Stephanus Nicolaas. Neither is proved to be kin. Both are the right names in the right district at the right time, and this archive can no longer say what it has been saying."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "The Documents Open Questions Magdalena Johanna Booijsen Documented — — Second on the 1876 notice, named for her mother Magdalena de Beer. A niece born 1853 carries the name again. The Documents The Women Anna Johanna Booijzen also written born Alberts Inferred c. Sep 1823, district Cradock 9 May 1891, Boekfontein, district Rustenburg NOT PROVED TO BE KIN, and recorded here so that the question is not lost."
+    },
+    {
+     "page": "/searched/",
+     "title": "What has been searched",
+     "text": "BOOYZEN, exact surname, same collection, second page of results Two more notices read in full Partly Magdalena Susanna Maria van den Berg, born Booyzen (d. 1920, Vaalbank, district Lichtenburg), whose father is entered as Jan Gerhardus Lodewicus Booyzen; and Anna Johanna Booijzen, born Alberts, born district Cradock about 1823, died 1891 on the farm Boekfontein, district Rustenburg, with children called Petrus Jacobus, Magdalena Johanna and Hendrik Stephanus Nicolaas. Right names, right districts, right decades. NEITHER IS PROVED TO BE KIN and neither has been adopted."
+    },
+    {
+     "page": "/sources/",
+     "title": "Sources",
+     "text": "The first of them is the oldest document in this archive. Reference Person Died Status Sterfkennis 678 Transvaal, Weeskamer Petrus Jacobus Booijsen — generation six, b. Graaff-Reinet c. 1788 1876 Read Parents named : Gerthardus Lödewikus Booijsen and Magdalena de Beer. Eight children. Nothing to leave. Transcribed → Sterfkennis 6332 Anna Johanna Booijzen, born Alberts — b. district Cradock c. 1823 1891 Read, kinship unproven Died Boekfontein, district Rustenburg. Parents Ocken Johannes Alberts and Anna Johanna Botha. Sterfkennis 44420 Magdalena Susanna Maria van den Berg, born Booyzen — b. c. 1860 1920 Read, kinship unproven Died Vaalbank, district Lichtenburg. Father entered as Jan Gerhardus Lodewicus Booyzen ."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
   "anna-maria-van-der-merwe": {
    "n": "Anna Maria van der Merwe",
    "b": "1785",
@@ -354,7 +862,7 @@
     {
      "page": "/direct-line/",
      "title": "The line",
-     "text": "Gen Name Born Died Married 7 Gerthardus Lodewikus Booysen no dates, no parents — the frontier — — Magdelena Elisabeth De Beer (1754–1843) 6 Petrus Jacobus Booysen married at about seventeen; died in the Transvaal c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet 5 Petrus Jacobus Booysen died fifteen years before the war began; signed his wife's death notice 10 May 1812, Graaff-Reinet 1884 (probate) Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) — DOCUMENTED, m."
+     "text": "21 Sep 1788, Graaff-Reinet — DOCUMENTED 1 Sep 1876, district Rustenburg — DOCUMENTED Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet 5 Petrus Jacobus Booysen died fifteen years before the war began; signed his wife's death notice 10 May 1812, Graaff-Reinet 1884 (probate) Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) — DOCUMENTED, m."
     },
     {
      "page": "/disputed/",
@@ -369,7 +877,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Her estate is the file immediately after his, ref 58380. Open Questions Sources Nuno Fernando Lerena Documented 7 mentions 1924 1971 Her husband, married 15 Jan 1949 at St Joseph's, Mayfair. The Line Johannesburg Anna Maria van der Merwe Documented 5 mentions 1785 bef. Mar 1825 His wife, married 1805 at Graaff-Reinet. The Line The Women David Schalk van der Merwe Documented 1 mention — — Married Jacoba Catharina Mountjoy at Cradock, 24 Mar 1838. The Women James Montjoy also written Mountjoy, Montyoy Documented 11 mentions c. 1782, “Europe” Sep 1827, Cradock Saddler. Owned a house and erf at Cradock worth £90."
+     "text": "The Line The Documents The Women Anna Eliezabet Booijsen Documented — — Fourth on the 1876 notice. The Documents The Women Anna Maria Booijsen Documented — — Eighth and last on the 1876 notice, named for her mother Anna Maria van der Merwe. The Documents The Women David Schalk Booijsen Documented — — First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation. The Documents Eliezabet Cornelia Booijsen Documented — — Sixth on the 1876 notice."
     },
     {
      "page": "/women/",
@@ -446,7 +954,7 @@
     {
      "page": "/direct-line/",
      "title": "The line",
-     "text": "21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet 5 Petrus Jacobus Booysen died fifteen years before the war began; signed his wife's death notice 10 May 1812, Graaff-Reinet 1884 (probate) Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) — DOCUMENTED, m. 4 Nov 1838 Cradock 4 Willem Hermanus “William Henry” Booyzen parentage DOCUMENTED by two registers; farmer in 1879, mason in 1905; died of a stomach ulcer 4 May 1851, achter Sneeuberg — DOCUMENTED 13 Sep 1905, Indwe — DOCUMENTED Catherine Maria Sophia “Kathleen” Barry (1859–1940), m. 22 Dec 1879 3 George Downing Mountjoy Booyzen S.A.R."
+     "text": "21 Sep 1788, Graaff-Reinet — DOCUMENTED 1 Sep 1876, district Rustenburg — DOCUMENTED Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet 5 Petrus Jacobus Booysen died fifteen years before the war began; signed his wife's death notice 10 May 1812, Graaff-Reinet 1884 (probate) Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) — DOCUMENTED, m. 4 Nov 1838 Cradock 4 Willem Hermanus “William Henry” Booyzen parentage DOCUMENTED by two registers; farmer in 1879, mason in 1905; died of a stomach ulcer 4 May 1851, achter Sneeuberg — DOCUMENTED 13 Sep 1905, Indwe — DOCUMENTED Catherine Maria Sophia “Kathleen” Barry (1859–1940), m. 22 Dec 1879 3 George Downing Mountjoy Booyzen S.A.R."
     },
     {
      "page": "/disputed/",
@@ -1196,7 +1704,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Rebels The Barrys The Documents Ruben Jacobus Josuah Barry Documented 2 mentions — — Carries the Schoeman given name Ruben into the Barry family. The Documents Magdelena Elisabeth de Beer Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe."
+     "text": "Born in the district where this family married in 1838; died in the district where the direct ancestor died in 1876. The Documents Open Questions The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 4 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe."
     }
    ],
    "shared": false,
@@ -1235,7 +1743,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Eleven children, five of them carrying Booyzen and Barry forenames. She died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape, and still to be read. The Documents The Women The Name What Was Searched David Schalk Booysen Documented 3 mentions 9 Jun 1848 — Fourth on the 1863 list. The Documents Gerthardus Lodewikus Booysen · generation 7 Open 7 mentions — — The top of the male line. No birth date, no death date, no father, no mother. The Line Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died."
+     "text": "Eleven children, five of them carrying Booyzen and Barry forenames. She died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape, and still to be read. The Documents The Women The Name What Was Searched David Schalk Booysen Documented 3 mentions 9 Jun 1848 — Fourth on the 1863 list. The Documents Gerthardus Lodewikus Booysen · generation 7 also written Gerthardus Lödewikus Booijsen (1876) Documented 7 mentions — — The top of the male line — and, since the 1876 Sterfkennis was read, no longer a name held up by the family tree alone. His son’s death notice names him and his wife in line 3."
     },
     {
      "page": "/rebels/",
@@ -1276,7 +1784,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Married at about seventeen; died in the Transvaal, eighty-eight years old."
+     "text": "Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 also written Petrus Jacobus Booijsen (1876) Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, district Rustenburg Married at about seventeen; died a widower in the Transvaal, eighty-eight years old, on a farm called Brakfontein. His Sterfkennis — No."
     }
    ],
    "shared": false,
@@ -1342,7 +1850,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents The Women The Name What Was Searched David Schalk Booysen Documented 3 mentions 9 Jun 1848 — Fourth on the 1863 list. The Documents Gerthardus Lodewikus Booysen · generation 7 Open 7 mentions — — The top of the male line. No birth date, no death date, no father, no mother. The Line Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died. The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 2 mentions bef. 1842 1923 The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal."
+     "text": "His son’s death notice names him and his wife in line 3. He still has no birth date, no death date, and no parents: the oldest open question on this site is about him. The Line The Documents Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died. The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 2 mentions bef. 1842 1923 The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal."
     }
    ],
    "shared": false,
@@ -1377,7 +1885,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Estate TAB MHG 52653 — he ended in the Transvaal. The Documents What Was Searched Jan Gerhardus Lodewicus Booysen Documented 1 mention 4 Dec 1855 1885 Seventh on the 1863 list, and carries the name of the man at the top of the line. Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Married at about seventeen; died in the Transvaal, eighty-eight years old."
+     "text": "Estate TAB MHG 52653 — he ended in the Transvaal. The Documents What Was Searched Jan Gerhardus Lodewicus Booysen Documented 1 mention 4 Dec 1855 1885 Seventh on the 1863 list, and carries the name of the man at the top of the line. Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 also written Petrus Jacobus Booijsen (1876) Documented 10 mentions c."
     },
     {
      "page": "/sources/",
@@ -1635,7 +2143,7 @@
     {
      "page": "/gallery/",
      "title": "The plates",
-     "text": "22 April 1891 . \"Name en adresse van ouers van oorledene\" — Vader: oorlede · Moeder: oorlede 5. Beroep van oorledene — Messelaar Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius Both parents, and their address — 96 James Street, Germiston. (Alle Minderjarig) \"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)\" — and below it, \"Indwe, Cape Colony.\" Six majors, then five minors with dates — because the form demands a date only where the child i Joseph Daschner — deceased. Sophia Daschner (Stoter) — deceased."
+     "text": "22 April 1891 . \"Name en adresse van ouers van oorledene\" — Vader: oorlede · Moeder: oorlede 5. Beroep van oorledene — Messelaar Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius Both parents, and their address — 96 James Street, Germiston. (Alle Minderjarig) \"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)\" — and below it, \"Indwe, Cape Colony.\" Joseph Daschner — deceased. Sophia Daschner (Stoter) — deceased."
     },
     {
      "page": "/log/",
@@ -2016,7 +2524,7 @@
     ]
    ],
    "slug": "catharina-maria-sophia-booysen",
-   "mentions": 4,
+   "mentions": 5,
    "pages": [
     {
      "h": "/barry/",
@@ -2025,6 +2533,10 @@
     {
      "h": "/documents/",
      "t": "The documents"
+    },
+    {
+     "h": "/gallery/",
+     "t": "The plates"
     },
     {
      "h": "/people/",
@@ -2047,9 +2559,14 @@
      "text": "A daughter named for her mother The child takes her mother's name entire: Catharina Maria Sophia . And it goes on: 1859 Catherine Maria Sophia \"Kathleen\" Barry — the mother 1891 Catharina Maria Sophia Booysen — this entry 1929 Catherine Mary Sophia Booyzen — the granddaughter, and the starting point of this archive Three women, seventy years, one name — and the spelling of the surname shifts underneath it while the given names hold. The women → New to this archive Catharina Maria Sophia Booysen, born 22 April 1891 , is a daughter of Willem Hermanus and Kathleen that the archive did not have."
     },
     {
+     "page": "/gallery/",
+     "title": "The plates",
+     "text": "The register opening, pages 1296–1297 . The entry is low on the right-hand page. Estate 2945/44 . Signed by her husband, G. D. M. Booyzen . Estate 1928/42 , stamped 13-5-1942, Pretoria . Typewritten throughout — the first document in th 40 details, magnified The children of Catharina Maria Sophia Booysen — Kathleen Barry's daughter — on her husband's 19 The clerk, September 1905: Willem Hermanus Boo y sen His son, the same day: J. B. Boo y z en The groom's own signature, 1879, at maximum available magnification. \"The day of the decease: On 11th December 1947 \" — died at 85 Rheeden St, Forest Hill , Johannes Age 46 years 6 months ; occupation S.A.R. & H."
+    },
+    {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Magdelena Elisabeth de Beer Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands."
+     "text": "Born in the district where this family married in 1838; died in the district where the direct ancestor died in 1876. The Documents Open Questions The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 4 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands."
     },
     {
      "page": "/timeline/",
@@ -2115,7 +2632,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands. Eleven children, five of them carrying Booyzen and Barry forenames. She died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape, and still to be read."
+     "text": "The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 4 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands. Eleven children, five of them carrying Booyzen and Barry forenames. She died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape, and still to be read."
     },
     {
      "page": "/searched/",
@@ -2169,12 +2686,12 @@
     {
      "page": "/gallery/",
      "title": "The plates",
-     "text": "(Alle Minderjarig) \"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)\" — and below it, \"Indwe, Cape Colony.\" Six majors, then five minors with dates — because the form demands a date only where the child i Joseph Daschner — deceased. Sophia Daschner (Stoter) — deceased."
+     "text": "Beroep van oorledene — Messelaar Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius Both parents, and their address — 96 James Street, Germiston. (Alle Minderjarig) \"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)\" — and below it, \"Indwe, Cape Colony.\" Joseph Daschner — deceased. Sophia Daschner (Stoter) — deceased."
     },
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Henry James Daschner Documented 2 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named. The Documents Joseph Heinrich Daschner Documented 5 mentions c. Nov 1883, Stutterheim 19 Apr 1942, Kenilworth, Johannesburg Her husband. A PENSIONER (ELECTRICIAN) of 132 Sheffield Street, Kenilworth."
+     "text": "The Documents Henry James Daschner Documented 3 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named. The Documents Joseph Heinrich Daschner Documented 5 mentions c. Nov 1883, Stutterheim 19 Apr 1942, Kenilworth, Johannesburg Her husband. A PENSIONER (ELECTRICIAN) of 132 Sheffield Street, Kenilworth."
     }
    ],
    "shared": false,
@@ -2236,22 +2753,22 @@
     {
      "page": "/gallery/",
      "title": "The plates",
-     "text": "(Alle Minderjarig) \"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)\" — and below it, \"Indwe, Cape Colony.\" Six majors, then five minors with dates — because the form demands a date only where the child i Joseph Daschner — deceased. Sophia Daschner (Stoter) — deceased."
+     "text": "Beroep van oorledene — Messelaar Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius Both parents, and their address — 96 James Street, Germiston. (Alle Minderjarig) \"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)\" — and below it, \"Indwe, Cape Colony.\" Joseph Daschner — deceased. Sophia Daschner (Stoter) — deceased."
     },
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands. Eleven children, five of them carrying Booyzen and Barry forenames."
+     "text": "The Documents Open Questions The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 4 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands. Eleven children, five of them carrying Booyzen and Barry forenames."
     },
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "She signed the notice: “Surviving Spouse — Saw body after death.” The Documents What Was Searched Richard Peter Daschner Documented 2 mentions 8 May 1922 — Named for his great-uncle Richard Peter Barry. FamilySearch’s index gives 1923; the document reads 1922. The Documents The Barrys Sophia Daschner also written Sophia Stoter Documented 6 mentions — bef. 1942 His mother, entered on the 1942 death notice as “Sophia Daschner (Stoter)” — the maiden name in brackets, which is what a completed question three looks like. The Documents William Herman Daschner Documented 2 mentions — — Named for his grandfather Willem Hermanus Booyzen — and so, at four removes, for a step-father with no blood tie to this family at all."
+     "text": "She signed the notice: “Surviving Spouse — Saw body after death.” The Documents What Was Searched Richard Peter Daschner Documented 3 mentions 8 May 1922 — Named for his great-uncle Richard Peter Barry. FamilySearch’s index gives 1923; the document reads 1922. The Documents The Barrys Sophia Daschner also written Sophia Stoter Documented 7 mentions — bef. 1942 His mother, entered on the 1942 death notice as “Sophia Daschner (Stoter)” — the maiden name in brackets, which is what a completed question three looks like. The Documents William Herman Daschner Documented 3 mentions — — Named for his grandfather Willem Hermanus Booyzen — and so, at four removes, for a step-father with no blood tie to this family at all."
     },
     {
      "page": "/searched/",
      "title": "What has been searched",
-     "text": "Recorded because the failure is instructive — an exact-match toggle exists for surnames in this API and not for given names. Surname DASCHNER — Minnie Bertha Sophia One notice, unrelated Nothing Charles Bruce Rennie, miner, of Booysens, Johannesburg, died 1936; his pre-deceased wife was a Minnie Bertha Sophia Daschner. No Booyzen connection. Kept as the archive's cleanest example of the Booysens-suburb trap. What the zeros are worth A zero with a stated scope is evidence. There is no estate file for Hercules Johannes Mountjoy in the Cape archives, and because the estates on either side of him run unbroken from 1938 to 1948, that absence means something: an estate too small to report."
+     "text": "Recorded because the failure is instructive — an exact-match toggle exists for surnames in this API and not for given names. Surname DASCHNER — Minnie Bertha Sophia One notice, unrelated Nothing Charles Bruce Rennie, miner, of Booysens, Johannesburg, died 1936; his pre-deceased wife was a Minnie Bertha Sophia Daschner. No Booyzen connection. Kept as the archive's cleanest example of the Booysens-suburb trap. FamilySearch · Transvaal probate, reading the whole surname what happens when you stop searching for a person and search for a name · searched 10 Sep 2026 · where it is used → Query Result BOOYSEN + PETRUS JACOBUS, exact surname, collection 2520237 Two personas, one document Found Sterfkennis No."
     },
     {
      "page": "/sources/",
@@ -2313,7 +2830,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands. Eleven children, five of them carrying Booyzen and Barry forenames."
+     "text": "The Documents Open Questions The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 4 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands. Eleven children, five of them carrying Booyzen and Barry forenames."
     },
     {
      "page": "/sources/",
@@ -2358,7 +2875,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 2 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named. The Documents Joseph Heinrich Daschner Documented 5 mentions c. Nov 1883, Stutterheim 19 Apr 1942, Kenilworth, Johannesburg Her husband. A PENSIONER (ELECTRICIAN) of 132 Sheffield Street, Kenilworth."
+     "text": "A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 3 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named. The Documents Joseph Heinrich Daschner Documented 5 mentions c. Nov 1883, Stutterheim 19 Apr 1942, Kenilworth, Johannesburg Her husband. A PENSIONER (ELECTRICIAN) of 132 Sheffield Street, Kenilworth."
     }
    ],
    "shared": false,
@@ -2460,7 +2977,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "FamilySearch’s index gives 1923; the document reads 1922. The Documents The Barrys Sophia Daschner also written Sophia Stoter Documented 6 mentions — bef. 1942 His mother, entered on the 1942 death notice as “Sophia Daschner (Stoter)” — the maiden name in brackets, which is what a completed question three looks like. The Documents William Herman Daschner Documented 2 mentions — — Named for his grandfather Willem Hermanus Booyzen — and so, at four removes, for a step-father with no blood tie to this family at all. The Documents The Name Yvonne Muriel Daschner Documented 2 mentions 15 Jul 1935 — The youngest — seven when her father died."
+     "text": "FamilySearch’s index gives 1923; the document reads 1922. The Documents The Barrys Sophia Daschner also written Sophia Stoter Documented 7 mentions — bef. 1942 His mother, entered on the 1942 death notice as “Sophia Daschner (Stoter)” — the maiden name in brackets, which is what a completed question three looks like. The Documents William Herman Daschner Documented 3 mentions — — Named for his grandfather Willem Hermanus Booyzen — and so, at four removes, for a step-father with no blood tie to this family at all. The Documents The Name Yvonne Muriel Daschner Documented 2 mentions 15 Jul 1935 — The youngest — seven when her father died."
     }
    ],
    "shared": false,
@@ -2541,7 +3058,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 2 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named. The Documents Joseph Heinrich Daschner Documented 5 mentions c. Nov 1883, Stutterheim 19 Apr 1942, Kenilworth, Johannesburg Her husband."
+     "text": "A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 3 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named. The Documents Joseph Heinrich Daschner Documented 5 mentions c. Nov 1883, Stutterheim 19 Apr 1942, Kenilworth, Johannesburg Her husband."
     }
    ],
    "shared": false,
@@ -2594,7 +3111,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Estate TAB MHG 1928/42, filed at Pretoria on 13 May 1942 — the first typewritten document in this archive, and one of only two whose question three names both parents. He had not been married before. She signed the notice: “Surviving Spouse — Saw body after death.” The Documents What Was Searched Richard Peter Daschner Documented 2 mentions 8 May 1922 — Named for his great-uncle Richard Peter Barry. FamilySearch’s index gives 1923; the document reads 1922. The Documents The Barrys Sophia Daschner also written Sophia Stoter Documented 6 mentions — bef."
+     "text": "Estate TAB MHG 1928/42, filed at Pretoria on 13 May 1942 — the first typewritten document in this archive, and one of only two whose question three names both parents. He had not been married before. She signed the notice: “Surviving Spouse — Saw body after death.” The Documents What Was Searched Richard Peter Daschner Documented 3 mentions 8 May 1922 — Named for his great-uncle Richard Peter Barry. FamilySearch’s index gives 1923; the document reads 1922. The Documents The Barrys Sophia Daschner also written Sophia Stoter Documented 7 mentions — bef."
     }
    ],
    "shared": false,
@@ -2634,7 +3151,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Most likely the “Maria Sophia Mountjoy” standing witness at the 1889 font, aged 62. The Women The Documents Isabella Frederika Coetsee also written Coetzee Documented 1 mention — 1943 Married Gerrit Jacobus at Middelburg, 23 March 1896. Her estate is KAB MOOC 6/9/9954: 84992 (1943) — filed under BOOYZEN. Open Questions Albert Alfred Daschner Documented 2 mentions 3 Mar 1927 — A minor in 1942. The Documents Catherine Mary Sophia Daschner Documented 3 mentions — — Eldest daughter, and the third of that name in three generations — Kathleen Barry, then her daughter, then her granddaughter. A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942."
+     "text": "Most likely the “Maria Sophia Mountjoy” standing witness at the 1889 font, aged 62. The Women The Documents Isabella Frederika Coetsee also written Coetzee Documented 1 mention — 1943 Married Gerrit Jacobus at Middelburg, 23 March 1896. Her estate is KAB MOOC 6/9/9954: 84992 (1943) — filed under BOOYZEN. Open Questions Albert Alfred Daschner Documented 2 mentions 3 Mar 1927 — A minor in 1942. The Documents Catherine Mary Sophia Daschner Documented 4 mentions — — Eldest daughter, and the third of that name in three generations — Kathleen Barry, then her daughter, then her granddaughter. A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942."
     }
    ],
    "shared": false,
@@ -2674,7 +3191,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Open Questions Albert Alfred Daschner Documented 2 mentions 3 Mar 1927 — A minor in 1942. The Documents Catherine Mary Sophia Daschner Documented 3 mentions — — Eldest daughter, and the third of that name in three generations — Kathleen Barry, then her daughter, then her granddaughter. A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 2 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef."
+     "text": "Open Questions Albert Alfred Daschner Documented 2 mentions 3 Mar 1927 — A minor in 1942. The Documents Catherine Mary Sophia Daschner Documented 4 mentions — — Eldest daughter, and the third of that name in three generations — Kathleen Barry, then her daughter, then her granddaughter. A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 3 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef."
     }
    ],
    "shared": false,
@@ -2727,7 +3244,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Catherine Mary Sophia Daschner Documented 3 mentions — — Eldest daughter, and the third of that name in three generations — Kathleen Barry, then her daughter, then her granddaughter. A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 2 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named."
+     "text": "The Documents Catherine Mary Sophia Daschner Documented 4 mentions — — Eldest daughter, and the third of that name in three generations — Kathleen Barry, then her daughter, then her granddaughter. A major by 1942. The Documents The Women Edith Dorothy Daschner Documented 2 mentions 20 Jan 1930 — A minor in 1942. The Documents Henry James Daschner Documented 3 mentions 25 Feb 1932 — Named for his uncle Henry James Booyzen. The Documents The Barrys John Frederick Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Charles Daschner Documented 2 mentions — — A major by 1942. The Documents Joseph Daschner Documented 3 mentions — bef. 1942 His father, named on the 1942 death notice — “Deceased”, but named."
     }
    ],
    "shared": false,
@@ -2767,7 +3284,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents William Herman Daschner Documented 2 mentions — — Named for his grandfather Willem Hermanus Booyzen — and so, at four removes, for a step-father with no blood tie to this family at all. The Documents The Name Yvonne Muriel Daschner Documented 2 mentions 15 Jul 1935 — The youngest — seven when her father died. The Documents Martha Magdeline van Deventer also written born Daschner Documented 2 mentions — — Married a van Deventer; a major by 1942. The Documents John Paul Downing Documented 4 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 10 mentions c."
+     "text": "The Documents William Herman Daschner Documented 3 mentions — — Named for his grandfather Willem Hermanus Booyzen — and so, at four removes, for a step-father with no blood tie to this family at all. The Documents The Name Yvonne Muriel Daschner Documented 2 mentions 15 Jul 1935 — The youngest — seven when her father died. The Documents Martha Magdeline van Deventer also written born Daschner Documented 2 mentions — — Married a van Deventer; a major by 1942. The Documents John Paul Downing Documented 4 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 10 mentions c."
     }
    ],
    "shared": false,
@@ -2900,7 +3417,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Gerthardus Lodewikus Booysen · generation 7 Open 7 mentions — — The top of the male line. No birth date, no death date, no father, no mother. The Line Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died. The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 2 mentions bef. 1842 1923 The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal."
+     "text": "He still has no birth date, no death date, and no parents: the oldest open question on this site is about him. The Line The Documents Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died. The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 2 mentions bef. 1842 1923 The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal."
     },
     {
      "page": "/sources/",
@@ -3109,7 +3626,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Type to filter by name, family, place, spelling variant or anything in the notes. Search Filter — name, family, year, place, or a spelling variant such as Montjoy , Kumm or Booÿse All 101 Booyzen 36 Mountjoy 19 Barry 12 Kolbe 8 Downing 2 Pretorius 4 Daschner 14 Schoeman 4 Lerena 1 Testimony 1 Name Born Died In this archive Georgina Jeanette Booyzen (Boshoff) Documented 1 mention 22 Sep 1932, Johannesburg deceased Fifth child. The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner."
+     "text": "Type to filter by name, family, place, spelling variant or anything in the notes. Search Filter — name, family, year, place, or a spelling variant such as Montjoy , Kumm or Booÿse All 109 Booyzen 44 Mountjoy 19 Barry 12 Kolbe 8 Downing 2 Pretorius 4 Daschner 14 Schoeman 4 Lerena 1 Testimony 1 Name Born Died In this archive Georgina Jeanette Booyzen (Boshoff) Documented 1 mention 22 Sep 1932, Johannesburg deceased Fifth child. The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner."
     }
    ],
    "shared": false,
@@ -3460,7 +3977,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Rebels Home Open Questions Ruben Schoeman Documented 5 mentions — — Of Barkly Oost. Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 101 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet ."
+     "text": "The Rebels Home Open Questions Ruben Schoeman Documented 5 mentions — — Of Barkly Oost. Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 109 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet ."
     },
     {
      "page": "/timeline/",
@@ -3500,7 +4017,7 @@
     ]
    ],
    "slug": "willem-hermanus-pieterzen",
-   "mentions": 10,
+   "mentions": 9,
    "pages": [
     {
      "h": "/direct-line/",
@@ -3556,17 +4073,12 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Women Open Questions Maria Sophia van Niekerk Documented 5 mentions 1868 1961 His wife, married at Dordrecht 8 Oct 1888 aged 20. The Women Willem Hermanus Pieterzen also written Harmanus Pieterze (1817) · William Pietersen (1840) Inferred 9 mentions — bef. 1817 Anna Catharina Slier's FIRST husband, and the origin of the name Willem Hermanus in this family — which therefore comes from a step-relation with no blood tie to the Booyzens. Three documents name him differently; the 1851 godfather, his son, carries both forms in full."
+     "text": "The Women Open Questions Maria Sophia van Niekerk Documented 5 mentions 1868 1961 His wife, married at Dordrecht 8 Oct 1888 aged 20. The Women Willem Hermanus Pieterzen also written Harmanus Pieterze (1817) · William Pietersen (1840) Inferred 10 mentions — bef. 1817 Anna Catharina Slier's FIRST husband, and the origin of the name Willem Hermanus in this family — which therefore comes from a step-relation with no blood tie to the Booyzens. Three documents name him differently; the 1851 godfather, his son, carries both forms in full."
     },
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Women Open Questions Maria Sophia van Niekerk Documented 5 mentions 1868 1961 His wife, married at Dordrecht 8 Oct 1888 aged 20. The Women Willem Hermanus Pieterzen also written Harmanus Pieterze (1817) · William Pietersen (1840) Inferred 9 mentions — bef. 1817 Anna Catharina Slier's FIRST husband, and the origin of the name Willem Hermanus in this family — which therefore comes from a step-relation with no blood tie to the Booyzens. Three documents name him differently; the 1851 godfather, his son, carries both forms in full."
-    },
-    {
-     "page": "/people/",
-     "title": "Everyone",
-     "text": "Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 101 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet . Who is not here Living people are omitted. David Defranceski, for whom this archive was made, and his mother Cheryl Anne Lerena (b."
+     "text": "Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 109 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet . Who is not here Living people are omitted. David Defranceski, for whom this archive was made, and his mother Cheryl Anne Lerena (b."
     },
     {
      "page": "/timeline/",
@@ -4062,7 +4574,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Married 4 Nov 1838 at Cradock. Her death notice gives her age to the day and names her parents. The Documents The Women The Line Thomas Jacobus Mountjoy Inferred 1 mention 1818 1827 Absent from the four children listed at his father's death in Sept 1827, which supports a death that year rather than in infancy. The Women Open Questions Maria Sophia van Niekerk Documented 5 mentions 1868 1961 His wife, married at Dordrecht 8 Oct 1888 aged 20. The Women Willem Hermanus Pieterzen also written Harmanus Pieterze (1817) · William Pietersen (1840) Inferred 9 mentions — bef. 1817 Anna Catharina Slier's FIRST husband, and the origin of the name Willem Hermanus in this family — which therefore comes from a step-relation with no blood tie to the Booyzens."
+     "text": "Married 4 Nov 1838 at Cradock. Her death notice gives her age to the day and names her parents. The Documents The Women The Line Thomas Jacobus Mountjoy Inferred 1 mention 1818 1827 Absent from the four children listed at his father's death in Sept 1827, which supports a death that year rather than in infancy. The Women Open Questions Maria Sophia van Niekerk Documented 5 mentions 1868 1961 His wife, married at Dordrecht 8 Oct 1888 aged 20. The Women Willem Hermanus Pieterzen also written Harmanus Pieterze (1817) · William Pietersen (1840) Inferred 10 mentions — bef. 1817 Anna Catharina Slier's FIRST husband, and the origin of the name Willem Hermanus in this family — which therefore comes from a step-relation with no blood tie to the Booyzens."
     },
     {
      "page": "/timeline/",
@@ -4288,7 +4800,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents The Women Willem Hermanus Pieterzen Documented 9 mentions — — Godfather at the 1851 font and the boy's namesake — Johanna Catharina's half-brother by her mother's first marriage. His surname, spelled with a z by the same clerk, is what emptied this archive's name argument. The Name The Documents Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism."
+     "text": "The Documents The Women Willem Hermanus Pieterzen Documented 10 mentions — — Godfather at the 1851 font and the boy's namesake — Johanna Catharina's half-brother by her mother's first marriage. His surname, spelled with a z by the same clerk, is what emptied this archive's name argument. The Name The Documents Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism."
     }
    ],
    "shared": false,
@@ -4705,7 +5217,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 7 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East."
+     "text": "The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 8 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East."
     },
     {
      "page": "/rebels/",
@@ -4781,7 +5293,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 5 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus."
+     "text": "The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 6 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus."
     },
     {
      "page": "/sources/",
@@ -4931,7 +5443,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 7 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven."
+     "text": "Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 8 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven."
     },
     {
      "page": "/rebels/",
@@ -5007,7 +5519,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 5 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus."
+     "text": "The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 6 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus."
     },
     {
      "page": "/rebels/",
@@ -5057,7 +5569,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven. The Rebels The Barrys The Documents Ruben Jacobus Josuah Barry Documented 2 mentions — — Carries the Schoeman given name Ruben into the Barry family. The Documents Magdelena Elisabeth de Beer Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef."
+     "text": "Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven. The Rebels The Barrys The Documents Ruben Jacobus Josuah Barry Documented 2 mentions — — Carries the Schoeman given name Ruben into the Barry family. The Documents Magdelena Elisabeth de Beer also written Magdalena de Beer (1876) Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all — and her name, beside his, is what the 1876 notice puts on the record."
     }
    ],
    "shared": false,
@@ -5109,7 +5621,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Barrys The Documents Fred J. Barry Open 5 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus. The Kolbes The Women Hendrik Nicholaas Barry Documented 5 mentions — — Married Anna Johanna Maria Schoeman. The second Barry–Schoeman link. The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice."
+     "text": "The Barrys The Documents Fred J. Barry Open 6 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus. The Kolbes The Women Hendrik Nicholaas Barry Documented 5 mentions — — Married Anna Johanna Maria Schoeman. The second Barry–Schoeman link. The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice."
     },
     {
      "page": "/rebels/",
@@ -5186,7 +5698,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice. The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 7 mentions — — Kathleen's brother."
+     "text": "The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice. The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 8 mentions — — Kathleen's brother."
     }
    ],
    "shared": false,

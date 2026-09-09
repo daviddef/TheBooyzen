@@ -504,15 +504,26 @@
    "k": "Town",
    "r": "Transvaal",
    "s": "doc",
-   "w": "Petrus Jacobus Booysen the elder died here on 1 September 1876, eighty-eight years old and far north of where he was baptised.",
+   "w": "Where the male line's oldest documented man died. Petrus Jacobus Booysen, born at Graaff-Reinet about 1788, died in this district on 1 September 1876, eighty-eight years old, a widower, with nothing to leave — \"Niets nagelaten. Niets bekend.\" His Sterfkennis was written at the farm Brakfontein on 14 September and signed by his son Hendrik Stefanus. It is the single most important place on this map, because it destroys the idea that this family reached the Transvaal by railway in the twentieth century.",
    "e": [
     [
      "1 Sep 1876",
-     "Petrus Jacobus Booysen (b. 1788) dies"
+     "Petrus Jacobus Booysen (b. 1788) dies — parents named on the notice"
+    ],
+    [
+     "14 Sep 1876",
+     "the Sterfkennis written at the farm Brakfontein"
+    ],
+    [
+     "9 May 1891",
+     "Anna Johanna Booijzen, born Alberts, dies at Boekfontein — kinship NOT proved"
     ]
    ],
    "p": [
-    "Petrus Jacobus Booysen"
+    "Petrus Jacobus Booysen",
+    "Gerthardus Lodewikus Booysen",
+    "Hendrik Stefanus Booijsen",
+    "Anna Johanna Booijzen"
    ],
    "slug": "rustenburg",
    "lat": -25.667,
@@ -714,11 +725,11 @@
    "n": "Marico",
    "k": "District",
    "r": "Western Transvaal",
-   "s": "doc",
+   "s": "open",
    "lat": -25.55,
    "lon": 26.2,
    "approx": false,
-   "w": "A substantial Booyzen farming district — and not this family. Seven Booyzen claims for compensation as burghers were filed here in 1903–04, and the Booyzen children who died in the Johannesburg and Vereeniging camps came from farms in this district. It is the clearest case in the archive of a same-surname family that is emphatically someone else's.",
+   "w": "A substantial Booyzen farming district — and this archive can no longer say whose. Seven Booyzen claims for compensation as burghers were filed here in 1903–04, and the Booyzen children who died in the Johannesburg and Vereeniging camps came from farms in this district. This entry used to call them \"emphatically someone else's\". That judgement rested on the belief that this family was in the Cape until about 1907 — and the 1876 Sterfkennis at Rustenburg, one district east, shows it was not. No document links this family to any of the seven claims. No document rules it out either. Unresolved is the honest word.",
    "e": [
     [
      "1898",
@@ -731,6 +742,10 @@
     [
      "1901–02",
      "Gert Jacobus Booyzen, aged 2, of the farm Rietvallei, dies in the Johannesburg camp"
+    ],
+    [
+     "10 Sep 2026",
+     "this archive withdraws “emphatically someone else's”"
     ]
    ],
    "p": [],
@@ -796,6 +811,47 @@
    ],
    "p": [],
    "slug": "booysens"
+  },
+  {
+   "n": "Brakfontein",
+   "k": "Farm",
+   "r": "District Rustenburg, Transvaal",
+   "s": "doc",
+   "lat": -25.75,
+   "lon": 27.3,
+   "approx": true,
+   "w": "The farm where the oldest document in this archive was written. On 14 September 1876, thirteen days after the death, somebody at Brakfontein filled in Sterfkennis No. 678 for Petrus Jacobus Booijsen, aged 88, and wrote the names of his parents on line 3. The coordinates are approximate: the district is certain, the farm is not yet placed.",
+   "e": [
+    [
+     "14 Sep 1876",
+     "Sterfkennis No. 678 written and signed here"
+    ]
+   ],
+   "p": [
+    "Petrus Jacobus Booysen",
+    "Hendrik Stefanus Booijsen"
+   ],
+   "slug": "brakfontein"
+  },
+  {
+   "n": "Lichtenburg",
+   "k": "District",
+   "r": "Western Transvaal",
+   "s": "inf",
+   "lat": -26.15,
+   "lon": 26.16,
+   "approx": false,
+   "w": "A lead, not a finding. Magdalena Susanna Maria van den Berg, born Booyzen about 1860, died at the farm Vaalbank in this district on 1 May 1920; her 1920 Sterfkennis enters her father as Jan Gerhardus Lodewicus Booyzen — a name carried by a son on the 1876 Rustenburg notice, and by a grandson born in 1855. Right name, right district, right decade. NOT PROVED, and recorded so that it can be tested rather than assumed.",
+   "e": [
+    [
+     "1 May 1920",
+     "Magdalena Susanna Maria van den Berg, born Booyzen, dies at Vaalbank"
+    ]
+   ],
+   "p": [
+    "Jan Gerthardus Lodewikus Booijsen"
+   ],
+   "slug": "lichtenburg"
   }
  ]
 }

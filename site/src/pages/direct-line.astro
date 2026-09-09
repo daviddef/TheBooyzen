@@ -3,8 +3,8 @@ import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 const line = [
-  ["7", "Gerthardus Lodewikus Booysen", "—", "—", "Magdelena Elisabeth De Beer (1754–1843)", "no dates, no parents — the frontier"],
-  ["6", "Petrus Jacobus Booysen", "c. 21 Sep 1788, Graaff-Reinet", "1 Sep 1876, Rustenburg", "Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet", "married at about seventeen; died in the Transvaal"],
+  ["7", "Gerthardus Lodewikus Booysen", "—", "—", "Magdelena Elisabeth De Beer (1754–1843)", "no dates, no parents — but both names now DOCUMENTED, on his son's 1876 death notice"],
+  ["6", "Petrus Jacobus Booysen", "c. 21 Sep 1788, Graaff-Reinet — DOCUMENTED", "1 Sep 1876, district Rustenburg — DOCUMENTED", "Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet", "married at about seventeen; died a widower in the Transvaal with nothing to leave"],
   ["5", "Petrus Jacobus Booysen", "10 May 1812, Graaff-Reinet", "1884 (probate)", "Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) — DOCUMENTED, m. 4 Nov 1838 Cradock", "died fifteen years before the war began; signed his wife's death notice"],
   ["4", "Willem Hermanus “William Henry” Booyzen", "4 May 1851, achter Sneeuberg — DOCUMENTED", "13 Sep 1905, Indwe — DOCUMENTED", "Catherine Maria Sophia “Kathleen” Barry (1859–1940), m. 22 Dec 1879", "parentage DOCUMENTED by two registers; farmer in 1879, mason in 1905; died of a stomach ulcer"],
   ["3", "George Downing Mountjoy Booyzen", "1 Jun 1901, Cape Province", "11 Dec 1947, Forest Hill — buried West Park 14 Dec", "Anna Johanna Maria Pretorius (1906–1944), m. 30 Dec 1924 Vereeniging", "S.A.R. &amp; H.; married his first cousin once removed"],
@@ -59,8 +59,20 @@ const sibs = [
     <p><b>Gerthardus Lodewikus Booysen has no birth date, no death date, no father and no mother.</b>
       MyHeritage offers the buttons "Add father" and "Add mother", and there is nothing behind them. Seven
       generations up, the male line simply ends.</p>
+    <div class="note">
+      <b>One thing has changed here, and it is worth being precise about how little.</b> Until the 1876
+      Sterfkennis was read, generation seven existed only because a family tree said so. It now exists
+      because a nineteenth-century clerk wrote <b>"Gerthardus L&ouml;dewikus Booijsen"</b> and
+      <b>"Magdalena de Beer"</b> on his son's death notice.
+      <a href={u("/documents/#sterfkennis-1876")}>See the line &rarr;</a>
+      <br /><br />
+      That converts an assertion into a record. <b>It does not add a generation.</b> The buttons above him
+      are still empty, the dates below are still arithmetic, and the question of who his own parents were
+      is exactly as open as it was.
+    </div>
     <p>What can be said is arithmetic rather than evidence. His wife <b>Magdelena Elisabeth De Beer</b> was
-      born in <b>1754</b> and his son in <b>1788</b>. He was therefore probably born somewhere around
+      born in <b>1754</b> and his son in <b>1788</b> — the second of those is now confirmed by an age of
+      <b>88</b> on a document of 1876. He was therefore probably born somewhere around
       <b>1745–1760</b> — which places him precisely in the generation that would connect to the
       documented Cape progenitor of the surname.</p>
     <p>That progenitor is known independently of this family. <b>Boij Boijeszoon</b> — in modern spelling

@@ -759,6 +759,38 @@
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/sterfkennis-1876-petrus-jacobus.jpg",
+   "alt": "1876 Sterfkennis No. 678 for Petrus Jacobus Booijsen, born Graaff-Reinet, died district Rustenburg.",
+   "cap": "Notice 678 . Countersigned by the veldkornet and by H. S. Booijsen — Hendrik Stefanus, one of the sons listed four lines above his own signature.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1876-parents-named.jpg",
+   "alt": "Line three of the 1876 Sterfkennis reading Gerthardus Lodewikus Booijsen and Magdalena de Beer.",
+   "cap": "\"Gerthardus Lödewikus Booijsen\" — \"Magdalena de Beer\"",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1876-eight-children.jpg",
+   "alt": "Line twelve of the 1876 Sterfkennis listing eight Booijsen children, all majors.",
+   "cap": "All eight entered mondig — the eldest was in his sixties.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1876-niets-nagelaten.jpg",
+   "alt": "Lines eight to eleven: district Rustenburg; no will; nothing left; nothing known.",
+   "cap": "Destrikt Rustenburg · Neen · Niets nagelaten · Niets bekend",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
   }
  ]
 }

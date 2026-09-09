@@ -466,6 +466,32 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "FamilySearch · Transvaal probate, reading the whole surname",
+   "n": "what happens when you stop searching for a person and search for a name",
+   "d": "10 Sep 2026",
+   "h": "/documents/",
+   "rows": [
+    [
+     "BOOYSEN + PETRUS JACOBUS, exact surname, collection 2520237",
+     "Two personas, one document",
+     "Sterfkennis No. 678 of 1876 — Petrus Jacobus Booijsen, b. Graaffreinet, d. 1 Sep 1876 district Rustenburg, aged 88, parents NAMED. The oldest document this archive has read, and it was sitting in a name index the whole time. Found only because the search stopped asking for the nine references NAAIRS had given and started reading the surname.",
+     "yes"
+    ],
+    [
+     "BOOYZEN, exact surname, same collection, second page of results",
+     "Two more notices read in full",
+     "Magdalena Susanna Maria van den Berg, born Booyzen (d. 1920, Vaalbank, district Lichtenburg), whose father is entered as Jan Gerhardus Lodewicus Booyzen; and Anna Johanna Booijzen, born Alberts, born district Cradock about 1823, died 1891 on the farm Boekfontein, district Rustenburg, with children called Petrus Jacobus, Magdalena Johanna and Hendrik Stephanus Nicolaas. Right names, right districts, right decades. NEITHER IS PROVED TO BE KIN and neither has been adopted.",
+     "part"
+    ],
+    [
+     "TAB MHG O/2899 — Jan Gerhardus Lodewikus Booyzen, 1885",
+     "Not this document",
+     "The persona indexed under that name in the Transvaal probate collection turned out to be a FATHER named on somebody else’s 1920 death notice, not the 1885 estate. The NAAIRS reference stands and is still unread. Recorded because the two were briefly conflated here.",
+     "no"
+    ]
+   ]
   }
  ]
 }
