@@ -265,6 +265,27 @@ rebel farm.**
 any roll. And it does not prove he was *Commandant* D. Schoeman of Labuschagne's Nek: the Commando field
 is blank, and there is a cluster of D. W. Schoemans in the same division.
 
+## The Farm List — a negative result that turned out to be void
+
+Searched for **Caerlaverock** and **Manorowen** in the museum's **Farm List (10,282 records)**. Both
+returned **zero**. That looked like a negative result for the burned-farm claim. **It is not a result at
+all.**
+
+The register's fields are *farm number, morgen, square roods, number of owners* — **a land and property
+roll**, not a record of destruction. And sampling **≈1,280 records** across the full set, every district
+is in the **Orange Free State**: Winburg, Fauresmith, Vrede, Rouxville, Bethlehem, Bloemfontein,
+Hoopstad, Kroonstad, Philippolis. A control confirms it — **"Dordrecht" returns 670 Cape Rebels and 0
+farms.**
+
+> The Farm List is an **Orange Free State land register**. Caerlaverock and Manorowen are **Cape** farms.
+> Their absence carries **no information whatever** — a category error, not a finding.
+
+**The burned-farm claim therefore remains completely untested**, and this database was never capable of
+testing it. It needs Cape compensation claims and the post-war farm-burning returns.
+
+*(Manorowen returns nothing in any of the fifteen registers — so John Barry's farm, unlike Caerlaverock,
+has no wartime record here at all.)*
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on

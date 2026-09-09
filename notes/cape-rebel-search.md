@@ -114,3 +114,53 @@ Caerlaverock was not incidentally connected to the rebellion; **it was a rebel f
 - The museum's **Farm List (10,282 records)** — the burned-farm returns — has not been searched for
   Caerlaverock, Manorowen, Wolwekloof or the Booysens.
 - **Barry** was seen in the database's own front-page sample of head families. Not yet searched.
+
+---
+
+# 5. The Farm List, searched — and why the result is VOID
+
+**Searched:** `Caerlaverock`, `Manorowen`, `Wolwekloof`, `Booysen`.
+
+| Term | Farm List | Elsewhere |
+|---|---|---|
+| **Caerlaverock** | **0** | Cape Rebels **2** (Schoeman, Klopper) |
+| **Manorowen** | **0** | **0 in all fifteen registers** |
+| Wolwekloof | 0 | Cape Rebels (Schoeman ×2) |
+| Booysen | 1 | — |
+
+At first sight that reads as a negative result for the burned-farm testimony. **It is not a result at all.**
+
+## What the Farm List actually is
+
+The single Booysen record resolves to:
+
+> **Booysen, Petrus Gerhardus · Farm Name: Blydschap · Number: 316 · District: KROONSTAD ·
+> Morgen: 2002 · SRds: 56 · Number of Owners: N/A**
+
+Those fields — *farm number, morgen, square roods, number of owners* — are a **land and property roll**,
+not a record of destruction. **It is not the farm-burning return this archive assumed it might be.**
+
+## And it does not cover the Cape at all
+
+Sampled **≈1,280 records** drawn from across the full 10,282 via the site's own REST endpoint, taking the
+district from each record's slug. **Every district returned is in the Orange Free State:**
+
+**Winburg · Fauresmith · Vrede · Rouxville · Bethlehem · Bloemfontein · Hoopstad · Kroonstad ·
+Philippolis** — and nothing else. Nine districts, no Cape entries.
+
+A control confirms it: **"Dordrecht" returns 670 Cape Rebels and 0 Farm List records.** A major Cape
+district is wholly absent from the register.
+
+> ⇒ **The Farm List is an Orange Free State land register.** Caerlaverock and Manorowen are **Cape**
+> farms. Their absence from it carries **no information whatever** — it is a category error, not a
+> finding, and this archive should not present it as one.
+
+## What follows
+1. **The burned-farm claim remains completely untested.** This database was never capable of testing it.
+2. The right sources are elsewhere: **Cape Colony compensation claims**, the post-war **farm-burning
+   returns**, and the Cape's own **refugee-camp and district records**. None has been touched.
+3. **Manorowen returns nothing in any of the fifteen registers** — so John Barry's farm, unlike
+   Caerlaverock, has no wartime record here at all.
+
+*(An incidental note: **Philippolis** appears among the Free State districts — the LMS mission station
+where George Augustus Kolbe's daughter Harriet Hachilah was born in 1831.)*
