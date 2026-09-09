@@ -397,3 +397,123 @@ Johan Gottlieb Kolbe's **last Will and Testament in five parts** (ids 4502058, 4
 his death certificate (4503045) and burial (4503624), and a photograph captioned
 **"34 Lamb's Conduit Street"** (4502059). Also the death records of five Kolbe children,
 "Jan Hendrik Kolbe Baptism 1849 Fauresmith", and George's 1803 baptism (downloaded, not yet read).
+
+---
+---
+
+# THIRD EXTRACTION — Johan Gottlieb Kolbe's will, death and burial
+Extracted 9 September 2026. Files in `sources/booyzen-photos/johan-gottlieb-kolbe/`.
+
+## 11. THE WILL — Prerogative Court of Canterbury
+`will-1.jpg` … `will-5.jpg`. A PCC register copy, Public Record Office (TNA PROB 11), image reference 137.
+Five fragments, read in sequence.
+
+> "**This is the last Will and Testament** of me **John Gottlob Kolbe of Conduit Street, Bond Street, in
+> the County of Middlesex, Tailor**. I give devise and bequeath all my Estate both **Real and Personal** …
+> **unto Timothy Duke of Lombard Street in the City of London, Gentleman, Christian William Kent of
+> Bentinck Street, Poland Street, Tailor, and my daughter Marian Kolbe**, their heirs executors and
+> administrators **upon Trust** …"
+
+### The terms
+- **Trustees and Executors: Timothy Duke** (gentleman, of Lombard Street), **Christian William Kent**
+  (a fellow tailor, of Bentinck Street, Poland Street) and **his own daughter Marian Kolbe** — appointed
+  at the end as *"Executors and Executrix"*, and sworn at probate as **"Marian Kolbe Spinster the
+  daughter."** A woman named executrix of a substantial estate in 1842 is worth noting.
+- Legacies of **£10 each** to Duke and Kent for their trouble.
+- **He had a business partner.** *"…an agreement with my present partner **Mr Richard Davies** that the
+  Executors … should permit the capital to be invested by me in our **partnership business of Tailors**
+  at the time of my death to remain in such business …"* — for a term of **fourteen years** after his death.
+- During those fourteen years the **profits were to be divided among such of his daughters "as shall
+  continue sole and unmarried"** — and a daughter's share **ceased entirely on her marriage** and was
+  added to her unmarried sisters'. A maintenance fund for spinster daughters, and an incentive structure
+  with a sting in it.
+- After fourteen years the capital fell into residue, to be divided **"unto for and amongst all and every
+  my child and children who may be living at the time of my decease in equal shares"** — with **the issue
+  of any child already dead taking that child's share by representation**.
+- A later clause refers explicitly to **"my said children or grandchildren."**
+
+### Why that last clause matters here
+**George Augustus Kolbe died on 1 December 1844. His father died on 18 November 1845 — a year later.**
+Under the residue clause, George's share therefore passed **to his own children** — that is, to
+**Margaret Downing's children at Burgersdorp**, among them **Margaretha Wilhelmina Elizabeth Kolbe**, who
+married **John Augustus Barry** and is David Defranceski's great-great-great-grandmother.
+
+<span>Inferred</span> **There is, on paper, a line of money from a Bond Street tailor's estate to the
+Barkly East family.** Whether any of it ever arrived is unknown and untested. It would be visible in the
+PCC estate papers and in the Cape estate files.
+
+### Execution and probate
+- **Signed "J. G. Kolbe", 25 May 1842**, "written in one sheet of paper".
+- Witnesses: **Wm Gribble Jr** and **William A. Rubrooke(?)**, described as **"Clerks to Mr Duke,
+  Lombard Street"** — the executor's own clerks.
+- **PROVED at London, 23 February 1846**, before **Herbert Thomas Pratt, Doctor of Laws and Surrogate**,
+  on the oaths of Timothy Duke, Christian William Kent and Marian Kolbe, spinster, the daughter.
+
+## 12. DEATH CERTIFICATE — General Register Office, 1845
+`death-certificate.jpg`
+
+| Field | As written |
+|---|---|
+| Superintendent Registrar's District | **Saint George Hanover Square** |
+| Registrar's District | **May Fair** |
+| County | Middlesex |
+| Entry No. | **206** |
+| **When died** | **Eighteenth of November 1845, at 34 Conduit Street** |
+| Name | **John Gottlob Kolbe** |
+| Age | **80 years** |
+| **Rank or Profession** | **Tailor** |
+| **Cause of death** | **"Decay of Nature"** (certified) |
+| Informant | **S. Leather, in attendance, 34 Conduit Street** |
+| When registered | 24 November 1845 |
+| Registrar | John Butter Ashford, Deputy Registrar |
+
+## 13. BURIAL REGISTER — the German Savoy Church, 1845
+`burial-register.jpg`
+
+**"BURIALS in the Parish of St John Baptist, in the GERMAN SAVOY CHURCH, in the County of Middlesex,
+in the Year 1845–46."** Entry **No. 55**:
+
+| | |
+|---|---|
+| Name | **Mr John Gottlob Kolbe** |
+| **Abode** | **Conduit Street, Regent Street** |
+| When | **died Nov 18 1845 · buried Nov 26 1845** |
+| Age | **81 years** |
+| Ceremony by | **Revd Dr Steinkopff** — **Grave 7, Rows 1–2** |
+
+The surrounding entries are almost all German: Wüst, Nitsch, Wuleko, Stürcke, Kollmann, Schnitzlein,
+Grubusch, Wettig. This is a **German Lutheran congregation in London**, burying its own.
+
+---
+
+# TWO CORRECTIONS THE TREE NEEDS
+
+## A. He was NOT buried at Leamington, Warwickshire
+The tree records **"Burial: St John the Baptist, Leamington, Warwickshire."**
+The register says **"St John Baptist, in the German Savoy Church, in the County of Middlesex."**
+
+⇒ Someone matched the dedication *St John the Baptist* to the parish church at **Leamington Spa**. It is
+the **German Lutheran Chapel Royal of the Savoy**, in the **Strand, London** — a hundred miles away, and
+the same congregation whose children's burial ground already holds **five of his children and his wife
+Mary Larman**. The officiant, **Revd Dr Steinkopff**, is Karl Friedrich Adolf Steinkopf (1773–1859),
+minister of the German Savoy Church and a founder of the British and Foreign Bible Society.
+**The correction makes the family more coherent, not less: they are German Lutherans of the Savoy from
+first to last.**
+
+## B. He did NOT die in Lamb's Conduit Street
+The tree records **"Died: 18 Nov 1845, 34 Lamb's Conduit Street, London."**
+
+- The **death certificate** gives **34 Conduit Street**, registered in the district of **MAY FAIR**,
+  within **St George Hanover Square**.
+- The **burial register** gives his abode as **"Conduit Street, Regent Street."**
+- The **will** describes him as **"of Conduit Street, Bond Street, in the County of Middlesex, Tailor."**
+
+**Conduit Street** runs between Regent Street and New Bond Street in **Mayfair**. **Lamb's Conduit
+Street** is in **Bloomsbury**, over a mile away, and lies in the Holborn registration district — it could
+never have been registered at May Fair. **Three independent documents say Conduit Street.**
+
+⇒ **The address is 34 Conduit Street, W1.** And the consequence: the photograph in the tree captioned
+**"34 Lamb's Conduit Street"** — a modern colour shot of a shopfront reading **"LANGHAM GALLERY"**, doors
+34 and 34A — **is a picture of the wrong building, in the wrong part of London.**
+
+He lived and died **above his own shop, in Mayfair**, and was carried to the German church in the Strand.

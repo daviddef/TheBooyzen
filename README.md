@@ -76,6 +76,31 @@ A second extraction, from the 1820 Settler's own profile and his wife's:
   **Downing to 1683** in England — through **Trick**, **Heard** and **Hooper**, all Devon surnames.
   Untested, and Margaret's death notice names neither of her parents.
 
+## The will of a Bond Street tailor
+
+A third extraction, from Johan Gottlieb Kolbe's profile — his will, his death certificate and his burial
+register. It corrected the tree twice and opened a financial thread across two continents.
+
+- **The will** (Prerogative Court of Canterbury, signed 25 May 1842, proved 23 February 1846) shows not a
+  jobbing tailor but a **firm**: a partner, **Mr Richard Davies**, and capital directed to stay in the
+  **partnership business of Tailors for fourteen years** after his death.
+- **His daughter Marian Kolbe was named Executrix**, and sworn at probate as *"Marian Kolbe Spinster the
+  daughter."*
+- Profits for those fourteen years went to daughters **"as shall continue sole and unmarried"** — a
+  share **ceasing entirely on marriage** and passing to the unmarried sisters.
+- The residue went to **all children living at his death, with the issue of any dead child taking that
+  child's share**. **George Augustus Kolbe died eleven months before his father.**
+  ⇒ On paper, **a line of money runs from a Bond Street estate to the Barkly East family**. Untested.
+- **CORRECTION — he did not die in Lamb's Conduit Street.** His death certificate gives **34 Conduit
+  Street**, registered at **May Fair**; the burial register says *"Conduit Street, Regent Street"*; his
+  will says *"of Conduit Street, Bond Street."* Lamb's Conduit Street is in Bloomsbury, in the Holborn
+  district. **The tree's photograph of "34 Lamb's Conduit Street" is the wrong building.**
+- **CORRECTION — he was not buried in Warwickshire.** The register reads **"St John Baptist, in the
+  GERMAN SAVOY CHURCH, in the County of Middlesex"** — the German Lutheran chapel in the Strand, not the
+  parish church at Leamington. It is the same congregation that already holds five of his children and
+  his wife. **The correction makes the family more coherent, not less.**
+- Cause of death: **"Decay of Nature."** Buried 26 November 1845, Grave 7, by **Revd Dr Steinkopff**.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
