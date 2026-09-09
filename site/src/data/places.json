@@ -274,8 +274,12 @@
    "k": "Colliery town",
    "r": "North-eastern Cape",
    "s": "doc",
-   "w": "Where the story of a man shot by the British ends. Willem Hermanus Booyzen died at Doorn Street, Indwe, on 13 September 1905 of an ulcer of the stomach, after fourteen months' illness and under a doctor's care.",
+   "w": "Where the story of a man shot by the British ends — and, it turns out, where one of his daughters was married. Willem Hermanus Booyzen died at Doorn Street, Indwe, on 13 September 1905 of an ulcer of the stomach, after fourteen months' illness and under a doctor's care. His daughter Catharina Maria Sophia married Joseph Heinrich Daschner here; his 1942 death notice gives the place of last marriage as “Indwe, Cape Colony”. The archive found the village through a death and only later learned it had also been a wedding.",
    "e": [
+    [
+     "bef. 1921",
+     "Catharina Maria Sophia Booysen m. Joseph Heinrich Daschner — “Indwe, Cape Colony”"
+    ],
     [
      "13 Sep 1905",
      "Willem Hermanus Booyzen dies; the clerk writes Booysen and his son signs Booyzen"
@@ -283,7 +287,9 @@
    ],
    "p": [
     "Willem Hermanus “William Henry” Booyzen",
-    "John Barry Booyzen"
+    "John Barry Booyzen",
+    "Catharina Maria Sophia Booysen",
+    "Joseph Heinrich Daschner"
    ],
    "slug": "indwe",
    "lat": -31.47,
@@ -642,8 +648,12 @@
    "k": "Town",
    "r": "Eastern Cape",
    "s": "doc",
-   "w": "Ferdinand Kumm died here on 20 October 1903 — and his death notice is the document an external source mistook for James Jonathan Mountjoy's.",
+   "w": "Ferdinand Kumm died here on 20 October 1903 — and his death notice is the document an external source mistook for James Jonathan Mountjoy's. The town returned to this archive from a different direction entirely: Joseph Heinrich Daschner, who married a Booyzen daughter at Indwe, was born here about November 1883.",
    "e": [
+    [
+     "c. Nov 1883",
+     "Joseph Heinrich Daschner born"
+    ],
     [
      "20 Oct 1903",
      "Ferdinand Kumm, farmer, dies"
@@ -651,7 +661,8 @@
    ],
    "p": [
     "Ferdinand Kumm",
-    "James Jonathan Mountjoy"
+    "James Jonathan Mountjoy",
+    "Joseph Heinrich Daschner"
    ],
    "slug": "stutterheim",
    "lat": -32.573,
@@ -767,6 +778,24 @@
    ],
    "p": [],
    "slug": "potchefstroom"
+  },
+  {
+   "n": "Booysens",
+   "k": "Suburb, Johannesburg",
+   "r": "Witwatersrand",
+   "s": "doc",
+   "lat": -26.245,
+   "lon": 28.008,
+   "approx": true,
+   "w": "Not a family place — a trap. Booysens is a mining suburb south of the Johannesburg city centre, a couple of miles from Forest Hill and Kenilworth where this family actually lived in the 1940s. It means every name-index search for Booysen in Johannesburg returns people whose only connection to the word is an address. The archive met it head-on: a death notice indexed under the surname Daschner turned out to belong to Charles Bruce Rennie, a miner of Booysens, and nothing else about him touches this family at all.",
+   "e": [
+    [
+     "1936",
+     "Charles Bruce Rennie, miner of Booysens — a false hit, recorded so it is not found twice"
+    ]
+   ],
+   "p": [],
+   "slug": "booysens"
   }
  ]
 }

@@ -530,7 +530,7 @@
    "d": "1946",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner and died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape.",
+   "r": "Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner AT INDWE — the same village — and his 1942 death notice names her “born Booyzen”, with a z, in a Johannesburg typist’s hands. Eleven children, five of them carrying Booyzen and Barry forenames. She died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape, and still to be read.",
    "p": [
     [
      "The Documents",
@@ -541,6 +541,10 @@
      "/women/"
     ],
     [
+     "The Name",
+     "/name/"
+    ],
+    [
      "What Was Searched",
      "/searched/"
     ]
@@ -548,15 +552,228 @@
   },
   {
    "n": "Joseph Heinrich Daschner",
-   "b": "—",
-   "d": "1942",
-   "l": "Booyzen",
+   "b": "c. Nov 1883, Stutterheim",
+   "d": "19 Apr 1942, Kenilworth, Johannesburg",
+   "l": "Daschner",
    "s": "doc",
-   "r": "Her husband. Estate TAB MHG 1928/42.",
+   "r": "Her husband. A PENSIONER (ELECTRICIAN) of 132 Sheffield Street, Kenilworth. Estate TAB MHG 1928/42, filed at Pretoria on 13 May 1942 — the first typewritten document in this archive, and one of only two whose question three names both parents. He had not been married before. She signed the notice: “Surviving Spouse — Saw body after death.”",
    "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
     [
      "What Was Searched",
      "/searched/"
+    ]
+   ]
+  },
+  {
+   "n": "Joseph Daschner",
+   "b": "—",
+   "d": "bef. 1942",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "His father, named on the 1942 death notice — “Deceased”, but named.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "Sophia Daschner",
+   "v": "Sophia Stoter",
+   "b": "—",
+   "d": "bef. 1942",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "His mother, entered on the 1942 death notice as “Sophia Daschner (Stoter)” — the maiden name in brackets, which is what a completed question three looks like.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "Catherine Mary Sophia Daschner",
+   "b": "—",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "Eldest daughter, and the third of that name in three generations — Kathleen Barry, then her daughter, then her granddaughter. A major by 1942.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "Joseph Charles Daschner",
+   "b": "—",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "A major by 1942.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "Margaret Wilhelmina Elizabeth Jeanette van Jaarsveld",
+   "v": "born Daschner",
+   "b": "—",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "Married a van Jaarsveld and was a major by 1942. Her first three names are the Barry name, carried into a third surname.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Barrys",
+     "/barry/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "William Herman Daschner",
+   "b": "—",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "Named for his grandfather Willem Hermanus Booyzen — and so, at four removes, for a step-father with no blood tie to this family at all.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Name",
+     "/name/"
+    ]
+   ]
+  },
+  {
+   "n": "Martha Magdeline van Deventer",
+   "v": "born Daschner",
+   "b": "—",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "Married a van Deventer; a major by 1942.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "John Frederick Daschner",
+   "b": "—",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "A major by 1942.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "Richard Peter Daschner",
+   "b": "8 May 1922",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "Named for his great-uncle Richard Peter Barry. FamilySearch’s index gives 1923; the document reads 1922.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Barrys",
+     "/barry/"
+    ]
+   ]
+  },
+  {
+   "n": "Albert Alfred Daschner",
+   "b": "3 Mar 1927",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "A minor in 1942.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "Edith Dorothy Daschner",
+   "b": "20 Jan 1930",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "A minor in 1942.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "Henry James Daschner",
+   "b": "25 Feb 1932",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "Named for his uncle Henry James Booyzen.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Barrys",
+     "/barry/"
+    ]
+   ]
+  },
+  {
+   "n": "Yvonne Muriel Daschner",
+   "b": "15 Jul 1935",
+   "d": "—",
+   "l": "Daschner",
+   "s": "doc",
+   "r": "The youngest — seven when her father died.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
     ]
    ]
   },
@@ -645,11 +862,11 @@
   },
   {
    "n": "Margaretha Wilhelmina Elizabeth “Maggie” Booyzen",
-   "b": "1 Oct 1926",
+   "b": "14 Oct 1926",
    "d": "1966",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Second child.",
+   "r": "Second child. Birth date corrected from 1 October on her mother’s 1944 death notice.",
    "p": [
     [
      "The Line",
@@ -1575,6 +1792,7 @@
   "Kolbe",
   "Downing",
   "Pretorius",
+  "Daschner",
   "Schoeman",
   "Lerena",
   "Testimony"

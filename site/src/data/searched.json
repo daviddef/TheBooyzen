@@ -434,6 +434,38 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "FamilySearch · Transvaal probate index, by collection",
+   "n": "searching the index instead of guessing the film",
+   "d": "10 Sep 2026",
+   "h": "/documents/",
+   "rows": [
+    [
+     "Surname BOOYZEN, exact, collection 2520237 (Transvaal probate, 1869–1961)",
+     "150 personas",
+     "The whole indexed surname in one Transvaal collection, read in two pages of a hundred and fifty. Confirms the Stephanus Francois file (1940) and the Jan Gerhardus Lodewikus file, and shows that the 1946–1957 estates this archive is chasing are NOT name-indexed — they will have to be found by browsing film.",
+     "part"
+    ],
+    [
+     "Surname DASCHNER, exact, same collection",
+     "16 personas, 12 on one page",
+     "TAB MHG 1928/42 in full: Joseph Heinrich Daschner, his parents, his wife “born Booyzen”, and eleven children. Read from the image, not the index — the index gives one child's birth year as 1923 where the document says 1922.",
+     "yes"
+    ],
+    [
+     "Given name MOUNTJOY, same collection",
+     "15,558 results, first 40 read",
+     "Useless as run: the engine treats Mountjoy as fuzzy and returns every Montgomery, Montjoy and Montmorency in the Transvaal. Recorded because the failure is instructive — an exact-match toggle exists for surnames in this API and not for given names.",
+     "no"
+    ],
+    [
+     "Surname DASCHNER — Minnie Bertha Sophia",
+     "One notice, unrelated",
+     "Charles Bruce Rennie, miner, of Booysens, Johannesburg, died 1936; his pre-deceased wife was a Minnie Bertha Sophia Daschner. No Booyzen connection. Kept as the archive's cleanest example of the Booysens-suburb trap.",
+     "no"
+    ]
+   ]
   }
  ]
 }

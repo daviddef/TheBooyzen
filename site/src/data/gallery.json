@@ -9,6 +9,14 @@
    "detail": false
   },
   {
+   "src": "/TheBooyzen/docs/detail-1942-eleven-children.jpg",
+   "alt": "Eleven Daschner children listed on a 1942 death notice, several carrying Barry and Booyzen forenames.",
+   "cap": "The children of Catharina Maria Sophia Booysen — Kathleen Barry's daughter — on her husband's 1942 death notice.",
+   "page": "/barry/",
+   "pagetitle": "The Barrys",
+   "detail": true
+  },
+  {
    "src": "/TheBooyzen/docs/death-1905-willem-hermanus.jpg",
    "alt": "Cape Colony death registration form for Willem Hermanus Booysen, 1905, handwritten in ink.",
    "cap": "Death registration of Willem Hermanus Booysen , Indwe, 1905. MyHeritage tree Defranceski Family Site (23andMe) , extracted 9 September 2026.",
@@ -724,6 +732,30 @@
    "src": "/TheBooyzen/docs/detail-1944-six-children.jpg",
    "alt": "Line ten of the 1944 Sterfkennis listing six children with their birth dates, all minors.",
    "cap": "(Alle Minderjarig)",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/death-notice-1942-daschner.jpg",
+   "alt": "Typewritten 1942 death notice for Joseph Heinrich Daschner, estate 1928/42, filed at Pretoria.",
+   "cap": "Estate 1928/42 , stamped 13-5-1942, Pretoria . Typewritten throughout — the first document in this archive that is.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1942-born-booyzen.jpg",
+   "alt": "Question seven of the 1942 death notice: Catherine Mary Sophia Daschner, born Booyzen, married in community of property; place of last marriage, Indwe, Cape Colony.",
+   "cap": "\"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)\" — and below it, \"Indwe, Cape Colony.\"",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1942-daschner-parents.jpg",
+   "alt": "Question three of the 1942 death notice: Father, Joseph Daschner, Deceased; Mother, Sophia Daschner born Stoter, Deceased.",
+   "cap": "Joseph Daschner — deceased. Sophia Daschner (Stoter) — deceased.",
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true

@@ -3,6 +3,7 @@
 # build → derive → build again so the pages carry the fresh indexes.
 set -e
 cd "$(dirname "$0")"
+node tools/people-json.mjs
 cd site && npm run build >/dev/null && cd ..
 python3 tools/dossiers.py
 python3 tools/gallery.py
