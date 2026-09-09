@@ -66,9 +66,12 @@ export const people = [
 {n:"Petrus Jacobus Booyzen", b:"29 Dec 1904", d:"—", l:"Booyzen", s:"doc",
  r:"Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet.",
  p:[["The Name","/name/"],["Open Questions","/open-questions/"]]},
-{n:"— unnamed second wife of Petrus Jacobus Booysen", b:"—", d:"after 1884", l:"Booyzen", s:"open",
- r:"Proven to exist and still unnamed. He is recorded as Married at his death in 1884, twenty-one years after Johanna Catharina died, and three children — Izak 1864, Gerrit Jacobus 1870, Stephanus Francois 1875 — can only be hers. The form never asks her name.",
- p:[["Open Questions","/open-questions/"],["The Documents","/documents/"]]},
+{n:"Johanna Margaritha Pretorius", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"The second wife of Petrus Jacobus Booysen, named at last from the 1870 baptism of her son Gert Jacobus — not from any death notice, none of which would give her. Mother of Gert Jacobus (1870) and, with the tree's misattributions corrected, of Izak (1864) and Stephanus Francois (1874).",
+ p:[["The Documents","/documents/"],["Open Questions","/open-questions/"],["The Women","/women/"]]},
+{n:"Andries Gottlieb Pretorius", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family.",
+ p:[["The Documents","/documents/"]]},
 
 // ───────────────── children of Willem Hermanus & Kathleen Barry ─────────────────
 {n:"John Barry Booyzen", b:"c. 1884", d:"—", l:"Booyzen", s:"doc",

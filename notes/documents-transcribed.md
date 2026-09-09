@@ -1259,3 +1259,46 @@ tree nurseryman, railway clerk, mason** — **not one is a miner.**
 ### And he did better than either of them
 Immovable property, an estate over £300, and a will — against his father's *"moveables only"* in 1884
 and his half-brother's **no estate at all**.
+
+---
+
+## 37. DOOP REGISTER, 1870 — Gert Jacobus (pages 1296–1297)
+`ark:/61903/1:1:6JBG-BPFH` · image `3:1:3Q9M-CSKD-19Y3-4` · apid `TH-909-71489-51397-95`
+
+> **Junij 19** — **Gert Jacobus**, geb. **19 Jan. 1870**
+> *Oud:* **Petrus Jacobus Booyzen** en **Johanna Margaritha Pretorius**
+> *Get:* **Petrus Jacobus Booijzen jr** · **Magdalena Johanna Francina Booijzen** ·
+> **Andries Gottlieb Pretorius**
+
+**THE SECOND WIFE IS NAMED: JOHANNA MARGARITHA PRETORIUS.** Open Question 7, open since the first
+week of this archive, is closed.
+
+### Why it took so long — a lesson about document types
+The archive went at this question through **deaths**, every time, and deaths are exactly where this
+family stops recording its women:
+
+| Attempt | Outcome |
+|---|---|
+| His 1884 death notice | Proves her — entered **married**, twenty-one years after wife one died — but the form **has no line for a wife's name** |
+| Her son Stephanus Francois's 1940 Sterfkennis | Has a line for his mother. His widow wrote **"oorlede"** |
+| Her own death notice | Never found, under any spelling, in any repository |
+
+**A baptism asks for both parents at a moment when everyone is alive and in the same room.** The child
+whose birth date the 1884 notice gives *to the day* was christened five months later, and the register
+simply says who his mother was.
+
+### The witnesses matter as much
+**Petrus Jacobus Booijzen jr** (b. 10 Sep 1839) and **Magdalena Johanna Francina Booijzen**
+(b. 16 Jul 1853) are the **third and sixth children on the 1863 death notice** — Johanna Catharina
+Mountjoy's children. **Two children of the first marriage stood godparent to the first child of the
+second.** Whatever that household was after 1863, it was not divided.
+
+### Spelling, again
+Father **Booyzen**; both witnesses **Booijzen** — same hand, 1870. Read **from the image**, because this
+archive has already been caught trusting a volunteer index (the Pieterzen witnesses of 1851).
+
+### A coincidence, flagged so nobody later mistakes it for a link
+**Pretorius** is also the surname of **Anna Johanna Maria Pretorius**, who married George Downing
+Mountjoy Booyzen in 1924 — a marriage this archive has already shown to be between cousins *through her
+Barry mother*. A second Pretorius connection fifty-four years earlier is **not evidence of anything**.
+Pretorius is among the commonest surnames in the Cape.

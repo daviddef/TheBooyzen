@@ -687,6 +687,22 @@
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1870-second-wife.jpg",
+   "alt": "1870 baptism register entry naming the parents as Petrus Jacobus Booyzen and Johanna Margaritha Pretorius.",
+   "cap": "Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/doopregister-1870-gert-jacobus.jpg",
+   "alt": "",
+   "cap": "",
+   "page": "",
+   "pagetitle": "",
+   "detail": false
   }
  ]
 }
