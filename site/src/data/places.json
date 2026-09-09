@@ -1,0 +1,604 @@
+{
+ "note": "Every place this archive can put a named person in, with the document that puts them there. Farms, villages, churches, hospitals and cemeteries — not a gazetteer, a list of where the evidence actually lands.",
+ "places": [
+  {
+   "n": "Graaff-Reinet",
+   "k": "Town, Cape Colony",
+   "r": "Karoo",
+   "s": "doc",
+   "w": "Where this family is oldest. Johanna Catharina Montjoy was born here on 30 April 1819 and James Montjoy married Anna Catharina Slier here on 9 March 1817. The Dutch Reformed baptism registers here carry the family from 1788 to 1857.",
+   "e": [
+    [
+     "1788",
+     "Petrus Jacobus Booysen baptised"
+    ],
+    [
+     "9 Mar 1817",
+     "James Montjoy m. Anna Catharina Slier"
+    ],
+    [
+     "30 Apr 1819",
+     "Johanna Catharina Montjoy born"
+    ],
+    [
+     "1839–1857",
+     "seven Booysen children baptised"
+    ]
+   ],
+   "p": [
+    "James Montjoy",
+    "Anna Catharina Sleer",
+    "Johanna Catharina Mountjoy",
+    "Petrus Jacobus Booysen"
+   ],
+   "slug": "graaff-reinet"
+  },
+  {
+   "n": "Cradock",
+   "k": "Town, Cape Colony",
+   "r": "Karoo",
+   "s": "doc",
+   "w": "A saddler's town, and the top of the Mountjoy line. James Montjoy died here in September 1827 owning a house and erf worth £90; his son George learned his trade here and married here in 1848.",
+   "e": [
+    [
+     "Sep 1827",
+     "James Montjoy dies; house and erf worth £90"
+    ],
+    [
+     "24 Mar 1838",
+     "Jacoba Catharina Mountjoy m. David Schalk van der Merwe"
+    ],
+    [
+     "4 Nov 1838",
+     "Petrus Jacobus Booysen m. Johanna Catharina Mountjoy"
+    ],
+    [
+     "20 Aug 1848",
+     "George Mountjoy m. Maria Sophia Botha, cert. 735"
+    ]
+   ],
+   "p": [
+    "James Montjoy",
+    "George Mountjoy",
+    "Maria Sophia Botha",
+    "Jacoba Catharina Mountjoy"
+   ],
+   "slug": "cradock"
+  },
+  {
+   "n": "Achter Sneeuwberg",
+   "k": "Farming district",
+   "r": "Karoo",
+   "s": "doc",
+   "w": "“Behind the Sneeuberg.” The place column of the 1851 baptism register, which tells us the family was farming out beyond the mountain rather than living in Cradock town.",
+   "e": [
+    [
+     "31 Oct 1851",
+     "Willem Hermanus Booyzen baptised, entry 2809"
+    ]
+   ],
+   "p": [
+    "Willem Hermanus “William Henry” Booyzen",
+    "Petrus Jacobus Booysen",
+    "Willem Hermanus Pieterzen"
+   ],
+   "slug": "achter-sneeuwberg"
+  },
+  {
+   "n": "Zevenfontein",
+   "k": "Farm",
+   "r": "Brak River, later Middelburg district",
+   "s": "doc",
+   "w": "The family farm across two death notices twenty-one years apart — and the district boundary moved under it. Johanna Catharina died here in 1863 when it was reckoned Brak River, Port Elizabeth; her husband died here in 1884 when it was Middelburg.",
+   "e": [
+    [
+     "19 May 1863",
+     "Johanna Catharina Booysen née Montjoy dies"
+    ],
+    [
+     "30 Mar 1884",
+     "Petrus Jacobus Booysen dies, leaving moveables only"
+    ]
+   ],
+   "p": [
+    "Johanna Catharina Mountjoy",
+    "Petrus Jacobus Booysen"
+   ],
+   "slug": "zevenfontein"
+  },
+  {
+   "n": "Barkly East",
+   "k": "Town and district",
+   "r": "North-eastern Cape",
+   "s": "doc",
+   "a": "Barkly Oost",
+   "w": "The district the family belongs to for two generations, and the most rebellious corner of the Colony in 1899–1902. Its Doop Register holds the Booyzen and Mountjoy baptisms on facing pages.",
+   "e": [
+    [
+     "15 Sep 1889",
+     "Johanna Catharina Booyzen baptised; both maternal grandparents stand"
+    ],
+    [
+     "6 Oct 1889",
+     "George Mountjoy baptised, facing page"
+    ],
+    [
+     "24 May 1891",
+     "Catharina Maria Sophia Booysen baptised, entry 120"
+    ],
+    [
+     "13 May 1915",
+     "R. P. Barry signs his mother's death notice at Manorowen"
+    ],
+    [
+     "22 Dec 1937",
+     "James Jonathan Mountjoy dies"
+    ]
+   ],
+   "p": [
+    "Johanna Catharina Booyzen",
+    "Catharina Maria Sophia Booysen",
+    "Hercules Johannes Mountjoy",
+    "James Jonathan Mountjoy",
+    "Richard Peter Barry"
+   ],
+   "slug": "barkly-east"
+  },
+  {
+   "n": "Manorowen",
+   "k": "Farm",
+   "r": "Barkly East",
+   "s": "doc",
+   "w": "Named for a village in Pembrokeshire. Margaret Elizabeth Barry née Kolbe died in her son's house here on 2 August 1912, and it is where the “Father: Kolbe … Mother: Unknown” notice was written three years later.",
+   "e": [
+    [
+     "2 Aug 1912",
+     "Margaret Elizabeth Barry née Kolbe dies here"
+    ],
+    [
+     "13 May 1915",
+     "her death notice completed by R. P. Barry"
+    ]
+   ],
+   "p": [
+    "Margaretha Wilhelmina Elizabeth Mary Kolbe",
+    "Richard Peter Barry"
+   ],
+   "slug": "manorowen"
+  },
+  {
+   "n": "Jerpoint",
+   "k": "Farm",
+   "r": "Cape Colony",
+   "s": "inf",
+   "w": "Named for an abbey in County Kilkenny — the first Irish place name this archive has found anywhere near the Barrys, whose Irish origin it has never been able to place. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll.",
+   "e": [
+    [
+     "1899–1902",
+     "Richard Peter Barry, plaasboer of Jerpoint, on the Cape Rebel register"
+    ]
+   ],
+   "p": [
+    "Richard Peter Barry"
+   ],
+   "slug": "jerpoint"
+  },
+  {
+   "n": "Ivanhoe",
+   "k": "Farm",
+   "r": "Barkly East / Wodehouse",
+   "s": "doc",
+   "w": "Fred J. Barry farmed here and was tried as a Cape Rebel in June 1901 — the same district and the same month as Schoeman of Caerlaverock.",
+   "e": [
+    [
+     "June 1901",
+     "Fred J. Barry tried as a Cape Rebel"
+    ]
+   ],
+   "p": [
+    "Fred J. Barry"
+   ],
+   "slug": "ivanhoe"
+  },
+  {
+   "n": "Caerlaverock",
+   "k": "Farm",
+   "r": "Wodehouse / Barkly East",
+   "s": "doc",
+   "w": "Named for a castle in Dumfriesshire. The family married in this house in July 1901 — five weeks after its owner, Daniel Willem Schoeman, was tried as a Cape Rebel. He signed the register.",
+   "e": [
+    [
+     "June 1901",
+     "D. W. Schoeman, plaasboer of Caerlaverock, tried as a Cape Rebel"
+    ],
+    [
+     "July 1901",
+     "a family marriage held in the house; Schoeman signs the register"
+    ]
+   ],
+   "p": [
+    "Daniel Willem Schoeman"
+   ],
+   "slug": "caerlaverock"
+  },
+  {
+   "n": "Dordrecht",
+   "k": "Town",
+   "r": "Wodehouse",
+   "s": "doc",
+   "w": "Where Hercules Johannes Mountjoy married Maria Sophia van Niekerk on 8 October 1888, aged 22 — a year before the 1889 font at Barkly Oost.",
+   "e": [
+    [
+     "8 Oct 1888",
+     "Hercules Johannes Mountjoy m. Maria Sophia van Niekerk"
+    ]
+   ],
+   "p": [
+    "Hercules Johannes Mountjoy",
+    "Maria Sophia van Niekerk"
+   ],
+   "slug": "dordrecht"
+  },
+  {
+   "n": "Indwe",
+   "k": "Colliery town",
+   "r": "North-eastern Cape",
+   "s": "doc",
+   "w": "Where the story of a man shot by the British ends. Willem Hermanus Booyzen died at Doorn Street, Indwe, on 13 September 1905 of an ulcer of the stomach, after fourteen months' illness and under a doctor's care.",
+   "e": [
+    [
+     "13 Sep 1905",
+     "Willem Hermanus Booyzen dies; the clerk writes Booysen and his son signs Booyzen"
+    ]
+   ],
+   "p": [
+    "Willem Hermanus “William Henry” Booyzen",
+    "John Barry Booyzen"
+   ],
+   "slug": "indwe"
+  },
+  {
+   "n": "Lady Grey",
+   "k": "Town",
+   "r": "North-eastern Cape",
+   "s": "doc",
+   "w": "He is entered as a boer — farmer — of Lady Grey at his marriage in 1879, and a mason at his death in 1905. Something took the land away in between, and the 1884 estate says it may already have been gone.",
+   "e": [
+    [
+     "22 Dec 1879",
+     "Willem Hermanus Booyzen, boer of Lady Grey, m. Catherine Maria Sophia Barry"
+    ]
+   ],
+   "p": [
+    "Willem Hermanus “William Henry” Booyzen",
+    "Catherine Maria Sophia “Kathleen” Barry"
+   ],
+   "slug": "lady-grey"
+  },
+  {
+   "n": "Wodehouse",
+   "k": "District",
+   "r": "North-eastern Cape",
+   "s": "doc",
+   "w": "Hercules Johannes Mountjoy died here on 12 May 1941, aged 74 — and the Cape Town Archives hold no estate file for him under any spelling.",
+   "e": [
+    [
+     "12 May 1941",
+     "Hercules Johannes Mountjoy dies, aged 74"
+    ]
+   ],
+   "p": [
+    "Hercules Johannes Mountjoy"
+   ],
+   "slug": "wodehouse"
+  },
+  {
+   "n": "Colesberg",
+   "k": "Town",
+   "r": "Northern Cape midlands",
+   "s": "doc",
+   "w": "George Augustus Kolbe, the 1820 Settler, died on the farm “Wurtemburg” in this district on 1 December 1844. His widow signed the death notice here in January 1845, and the 1840 Montjoy notice was signed here too.",
+   "e": [
+    [
+     "25 Jun 1840",
+     "the James Montjoy death notice signed at Colesberg"
+    ],
+    [
+     "1 Dec 1844",
+     "George Augustus Kolbe dies at Wurtemburg"
+    ],
+    [
+     "Jan 1845",
+     "M. Kolbe signs his death notice"
+    ]
+   ],
+   "p": [
+    "George Augustus Kolbe",
+    "Margaret Downing",
+    "James Montjoy"
+   ],
+   "slug": "colesberg"
+  },
+  {
+   "n": "Burgersdorp",
+   "k": "Town",
+   "r": "North-eastern Cape",
+   "s": "doc",
+   "w": "George Augustus Kolbe and Margaret Downing lie under a cut-stone monument in the old cemetery here — names, London birthplaces, farm and dates carved on it, about forty miles from where their grandson wrote that he could not name them.",
+   "e": [
+    [
+     "25 Nov 1867",
+     "Margaret Downing dies, aged 64 years 9 months and 2 days"
+    ],
+    [
+     "—",
+     "the Kolbe–Downing monument, still standing"
+    ]
+   ],
+   "p": [
+    "George Augustus Kolbe",
+    "Margaret Downing"
+   ],
+   "slug": "burgersdorp"
+  },
+  {
+   "n": "Johannesburg",
+   "k": "City",
+   "r": "Witwatersrand",
+   "s": "doc",
+   "w": "Where the family arrives with nothing and where the archive's starting point was born. Forest Hill, Mayfair, Fordsburg and Germiston all appear on its certificates.",
+   "e": [
+    [
+     "1940",
+     "Kathleen Barry dies at No. 1, Fifteenth Avenue, Mayfair"
+    ],
+    [
+     "26 Feb 1944",
+     "Anna Pretorius dies at 85 Rheeders Street, Forest Hill"
+    ],
+    [
+     "11 Dec 1947",
+     "George Downing Mountjoy Booyzen dies at the same address"
+    ],
+    [
+     "15 Jan 1949",
+     "Catherine Mary Sophia Booyzen m. Nuno Fernando Lerena at St Joseph's, Mayfair"
+    ],
+    [
+     "25 Dec 2013",
+     "Catherine Mary Sophia Booyzen dies"
+    ]
+   ],
+   "p": [
+    "Catherine Mary Sophia Booyzen",
+    "George Downing Mountjoy Booyzen",
+    "Anna Johanna Maria Pretorius",
+    "Catherine Maria Sophia “Kathleen” Barry",
+    "Nuno Fernando Lerena"
+   ],
+   "slug": "johannesburg"
+  },
+  {
+   "n": "West Park Cemetery",
+   "k": "Cemetery",
+   "r": "Johannesburg",
+   "s": "doc",
+   "w": "Anna Pretorius was buried here in 1944 and her husband three years later, three days after he died.",
+   "e": [
+    [
+     "Feb 1944",
+     "Anna Johanna Maria Pretorius buried"
+    ],
+    [
+     "14 Dec 1947",
+     "George Downing Mountjoy Booyzen buried"
+    ]
+   ],
+   "p": [
+    "Anna Johanna Maria Pretorius",
+    "George Downing Mountjoy Booyzen"
+   ],
+   "slug": "west-park-cemetery"
+  },
+  {
+   "n": "Brixton Cemetery",
+   "k": "Cemetery",
+   "r": "Johannesburg",
+   "s": "doc",
+   "w": "Kathleen Barry's intended place of burial on her 1940 death form — a mile and a half from the Mayfair house, and a long way from Barkly East.",
+   "e": [
+    [
+     "1940",
+     "Catherine Maria Sophia “Kathleen” Barry buried"
+    ]
+   ],
+   "p": [
+    "Catherine Maria Sophia “Kathleen” Barry"
+   ],
+   "slug": "brixton-cemetery"
+  },
+  {
+   "n": "Vereeniging",
+   "k": "Town",
+   "r": "Transvaal",
+   "s": "doc",
+   "w": "Where George Downing Mountjoy Booyzen married Anna Johanna Maria Pretorius on 30 December 1924 — she aged eighteen, with her father's written consent.",
+   "e": [
+    [
+     "30 Dec 1924",
+     "George Downing Mountjoy Booyzen m. Anna Johanna Maria Pretorius"
+    ]
+   ],
+   "p": [
+    "George Downing Mountjoy Booyzen",
+    "Anna Johanna Maria Pretorius",
+    "Petrus Jacobus Pretorius"
+   ],
+   "slug": "vereeniging"
+  },
+  {
+   "n": "Rustenburg",
+   "k": "Town",
+   "r": "Transvaal",
+   "s": "doc",
+   "w": "Petrus Jacobus Booysen the elder died here on 1 September 1876, eighty-eight years old and far north of where he was baptised.",
+   "e": [
+    [
+     "1 Sep 1876",
+     "Petrus Jacobus Booysen (b. 1788) dies"
+    ]
+   ],
+   "p": [
+    "Petrus Jacobus Booysen"
+   ],
+   "slug": "rustenburg"
+  },
+  {
+   "n": "Soho, London",
+   "k": "Parish",
+   "r": "Middlesex",
+   "s": "doc",
+   "w": "St Anne's, Soho, where George Augustus Kolbe was baptised on 2 February 1803, son of John Gottlob and Mary. The register notes 410 baptisms for the year 1802.",
+   "e": [
+    [
+     "7 Dec 1802",
+     "George Augustus Kolbe born"
+    ],
+    [
+     "2 Feb 1803",
+     "baptised at St Anne's, Soho"
+    ]
+   ],
+   "p": [
+    "George Augustus Kolbe",
+    "Johan Gottlieb Kolbe"
+   ],
+   "slug": "soho-london"
+  },
+  {
+   "n": "Shoreditch",
+   "k": "Parish",
+   "r": "London",
+   "s": "doc",
+   "w": "St Leonard's, where George Augustus Kolbe married Margaret Downing in 1819 on a sworn falsehood — both swore they were twenty-one; he was sixteen and she fifteen. She signed with a mark.",
+   "e": [
+    [
+     "1819",
+     "Kolbe–Downing marriage; the allegation is a sworn lie"
+    ]
+   ],
+   "p": [
+    "George Augustus Kolbe",
+    "Margaret Downing"
+   ],
+   "slug": "shoreditch"
+  },
+  {
+   "n": "Conduit Street",
+   "k": "Street",
+   "r": "Mayfair, London",
+   "s": "doc",
+   "w": "34 Conduit Street, where Johan Gottlieb Kolbe the tailor died in 1845 — not Lamb's Conduit Street, which is where the family tree put him and where its photograph shows the wrong building.",
+   "e": [
+    [
+     "18 Nov 1845",
+     "Johan Gottlieb Kolbe dies at 34 Conduit Street"
+    ],
+    [
+     "25 May 1842",
+     "his will signed, of Conduit Street, Bond Street"
+    ]
+   ],
+   "p": [
+    "Johan Gottlieb Kolbe"
+   ],
+   "slug": "conduit-street"
+  },
+  {
+   "n": "German Savoy Church",
+   "k": "Church",
+   "r": "Strand, London",
+   "s": "doc",
+   "w": "Where Johan Gottlieb Kolbe was actually buried on 26 November 1845, entry 55, grave 7 — not St John the Baptist, Leamington, Warwickshire, as the tree has it. The correction makes the family more coherent, not less: they are German Lutherans of the Savoy.",
+   "e": [
+    [
+     "26 Nov 1845",
+     "Johan Gottlieb Kolbe buried, aged 81, by Revd Dr Steinkopff"
+    ]
+   ],
+   "p": [
+    "Johan Gottlieb Kolbe"
+   ],
+   "slug": "german-savoy-church"
+  },
+  {
+   "n": "Heilbron",
+   "k": "Town",
+   "r": "Orange Free State",
+   "s": "doc",
+   "w": "Where the only Booysen in the whole joiners register comes from — J. J. Booysen, four hundred miles from Barkly East and in a different country at the time. It matters because the family's account of the name change rests on there having been Booysen joiners.",
+   "e": [
+    [
+     "1899–1902",
+     "J. J. Booysen, the register's single Booysen joiner"
+    ]
+   ],
+   "p": [],
+   "slug": "heilbron"
+  },
+  {
+   "n": "Middelburg",
+   "k": "Town and district",
+   "r": "Cape Colony",
+   "s": "inf",
+   "w": "Zevenfontein fell in this district by 1884. And a P. J. Booyzen — spelled with the z — was a police constable at the Middelburg police office in 1904, 1905 and 1907, with mortgage bonds in 1904 and 1906. Not shown to be a relative.",
+   "e": [
+    [
+     "30 Mar 1884",
+     "Petrus Jacobus Booysen dies at Zevenfontein, district Middelburg"
+    ],
+    [
+     "1904–1907",
+     "P. J. Booyzen, constable, Middelburg police office"
+    ]
+   ],
+   "p": [
+    "Petrus Jacobus Booysen"
+   ],
+   "slug": "middelburg"
+  },
+  {
+   "n": "Stutterheim",
+   "k": "Town",
+   "r": "Eastern Cape",
+   "s": "doc",
+   "w": "Ferdinand Kumm died here on 20 October 1903 — and his death notice is the document an external source mistook for James Jonathan Mountjoy's.",
+   "e": [
+    [
+     "20 Oct 1903",
+     "Ferdinand Kumm, farmer, dies"
+    ]
+   ],
+   "p": [
+    "Ferdinand Kumm",
+    "James Jonathan Mountjoy"
+   ],
+   "slug": "stutterheim"
+  },
+  {
+   "n": "Brisbane",
+   "k": "City",
+   "r": "Queensland, Australia",
+   "s": "doc",
+   "w": "Where the line reaches now. The sixteen Booyzens recorded in Australia are likely a separate migration; this family arrived through the Lerena and Defranceski marriages rather than under the Booyzen name.",
+   "e": [
+    [
+     "today",
+     "the archive's reader, and the reason it was built"
+    ]
+   ],
+   "p": [],
+   "slug": "brisbane"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+---
+import Base from "../../layouts/Base.astro";
+import Rule from "../../components/Rule.astro";
+import { u } from "../../lib/url.js";
+import pl from "../../data/places.json";
+import d from "../../data/dossiers.json";
+export function getStaticPaths() {
+  return pl.places.map(p => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props;
+const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
+const byName = {};
+for (const x of Object.values(d.people)) byName[x.n] = x;
+const folk = (p.p || []).map(n => byName[n]).filter(Boolean);
+const near = pl.places.filter(x => x.slug !== p.slug && x.r === p.r).slice(0, 6);
+---
+<Base title={p.n} eyebrow={`${p.k} · ${p.r}`} dek={p.w}>
+
+<section class="blk">
+  <div class="grid g2" style="margin-top:4px">
+    <div class="panel">
+      <h3 style="margin-top:0">The place</h3>
+      <table style="width:100%">
+        <tbody>
+          <tr><td style="width:7rem">Name</td><td><strong>{p.n}</strong></td></tr>
+          {p.a && <tr><td>Also</td><td>{p.a}</td></tr>}
+          <tr><td>Kind</td><td>{p.k}</td></tr>
+          <tr><td>Region</td><td>{p.r}</td></tr>
+          <tr><td>Standing</td><td><span class={"chip " + p.s}>{label[p.s]}</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Why it is here</h3>
+      <p style="font-size:15.5px">{p.w}</p>
+    </div>
+  </div>
+</section>
+
+{(p.e || []).length > 0 && <Rule name="wagon" label="What happened here" />}
+{(p.e || []).length > 0 && (
+<section class="blk">
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="m" style="width:11rem">When</th><th>What</th></tr></thead>
+      <tbody>{p.e.map(([when, what]) => (<tr><td class="m">{when}</td><td>{what}</td></tr>))}</tbody>
+    </table>
+  </div>
+</section>
+)}
+
+{folk.length > 0 && <Rule name="thorn" label="Who the archive puts here" />}
+{folk.length > 0 && (
+<section class="blk">
+  <div class="grid g3" style="margin-top:10px">
+    {folk.map(f => (
+      <a class="cardlink" href={u("/who/" + f.slug + "/")}>
+        <div class="nm" style="font-size:16px">{f.n}</div>
+        <div class="txt">{f.b !== "—" || f.d !== "—" ? `${f.b} – ${f.d}` : f.l}</div>
+      </a>
+    ))}
+  </div>
+</section>
+)}
+
+{near.length > 0 && (
+<section class="blk">
+  <h2>Nearby in this archive</h2>
+  <p style="margin-top:12px;display:flex;flex-wrap:wrap;gap:7px">
+    {near.map(x => (<a class="plink" href={u("/places/" + x.slug + "/")}>{x.n}</a>))}
+  </p>
+</section>
+)}
+
+<section class="blk">
+  <p class="cap"><a href={u("/places/")}>All {pl.places.length} places &rarr;</a> ·
+    <a href={u("/people/")}>The people &rarr;</a> ·
+    <a href={u("/search/")}>Search the archive &rarr;</a></p>
+</section>
+</Base>

@@ -3,11 +3,12 @@ import { u } from "../lib/url.js";
 const { title, dek, eyebrow, bare } = Astro.props;
 const SITE = "The Booyzen Archive";
 const nav = [
-  ["Start", [["/", "Home"], ["/direct-line/", "The Line"], ["/people/", "Everyone"], ["/method/", "Method"]]],
+  ["Start", [["/", "Home"], ["/direct-line/", "The Line"], ["/method/", "Method"], ["/search/", "Search"]]],
   ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"],
                     ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
   ["The work", [["/documents/", "The Documents"], ["/name/", "The Name"], ["/rebels/", "The Rebels"],
                 ["/johannesburg/", "Johannesburg"]]],
+  ["Who and where", [["/people/", "Everyone"], ["/places/", "The Places"]]],
   ["Open", [["/disputed/", "Disputed"], ["/open-questions/", "Open Questions"], ["/sources/", "Sources"]]],
 ];
 const here = Astro.url.pathname;
@@ -39,6 +40,7 @@ const here = Astro.url.pathname;
           </div>
         </details>
       ))}
+      <a class="findbtn" href={u("/search/")} aria-label="Search the archive">Search</a>
     </nav>
   </div>
   <div class="drawer" id="drawer" hidden>
@@ -46,7 +48,12 @@ const here = Astro.url.pathname;
       <div class="dgrp"><span class="gl">{label}</span>
         {links.map(([h, l]) => <a href={u(h)} class={here === u(h) ? "on" : ""}>{l}</a>)}
       </div>
-    ))}</div>
+    ))}
+    <div class="dgrp"><span class="gl">Find</span>
+      <a href={u("/search/")} class={here === u("/search/") ? "on" : ""}>Search the archive</a>
+      <a href={u("/people/")}>Everyone</a>
+      <a href={u("/places/")}>The places</a>
+    </div></div>
   </div>
 </header>
 
@@ -59,6 +66,7 @@ const here = Astro.url.pathname;
         {dek && <p class="dek lead">{dek}</p>}
       </div>
     )}
+    <div id="onthispage" hidden></div>
     <slot />
   </div>
 </main>
@@ -101,5 +109,53 @@ const here = Astro.url.pathname;
     });
   })();
 </script>
+<script is:inline define:vars={{ searchUrl: u("/search/") }}>
+  /* "/" opens the search from anywhere, the way an archive catalogue should. */
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target;
+    if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+    e.preventDefault();
+    location.href = searchUrl;
+  });
+</script>
+<script is:inline>
+  /* On a long page, build a jump list from the section headings, in the browser,
+     so no page has to declare its own contents. */
+  (function () {
+    var host = document.getElementById("onthispage");
+    if (!host) return;
+    var hs = [].slice.call(document.querySelectorAll("main section > h2"));
+    if (hs.length < 4) return;
+    var sl = function (t) {
+      return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 48);
+    };
+    var seen = {}, items = [];
+    hs.forEach(function (h) {
+      var t = (h.textContent || "").trim();
+      if (!t) return;
+      var id = h.id || sl(t) || "s";
+      if (seen[id]) id = id + "-" + (++seen[id]); else seen[id] = 1;
+      h.id = id; items.push([id, t]);
+    });
+    if (items.length < 4) return;
+    var det = document.createElement("details"); det.className = "toc";
+    var sum = document.createElement("summary");
+    sum.textContent = "On this page · " + items.length + " sections";
+    det.appendChild(sum);
+    var nav = document.createElement("nav");
+    items.forEach(function (it) {
+      var a = document.createElement("a"); a.href = "#" + it[0]; a.textContent = it[1];
+      nav.appendChild(a);
+    });
+    det.appendChild(nav); host.appendChild(det); host.hidden = false;
+    var mq = window.matchMedia("(min-width: 901px)");
+    det.addEventListener("click", function (ev) {
+      if (!mq.matches && ev.target.closest("nav a")) det.open = false;
+    });
+  })();
+</script>
+<script src={u("/wholink.js")} defer></script>
 </body>
 </html>

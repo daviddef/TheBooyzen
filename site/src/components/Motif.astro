@@ -1,0 +1,25 @@
+---
+/* Small line motifs for section rules. Karoo, Cape Dutch and the road north. */
+const { name = "koppie", size = 26 } = Astro.props;
+const s = { width: size, height: size, viewBox: "0 0 32 32", fill: "none",
+  stroke: "currentColor", "stroke-width": 1.1, "stroke-linecap": "round",
+  "stroke-linejoin": "round", "aria-hidden": "true", style: "color:var(--rule-strong)" };
+---
+{name === "koppie" && (
+  <svg {...s}><path d="M2 24h28M6 24l7-11 4 6 3-4 6 9" /><path d="M11 13h4" /></svg>
+)}
+{name === "windpump" && (
+  <svg {...s}><path d="M16 28V13M11 28h10M16 13l-5-3M16 13l5-3M16 13l0-6M16 13l-4 4M16 13l4 4" /><circle cx="16" cy="13" r="1.6" /></svg>
+)}
+{name === "gable" && (
+  <svg {...s}><path d="M4 27h24V15L16 6 4 15z" /><path d="M13 27v-7h6v7" /><path d="M16 6v-3" /></svg>
+)}
+{name === "wagon" && (
+  <svg {...s}><circle cx="10" cy="23" r="4.5" /><circle cx="23" cy="24" r="3.5" /><path d="M5 15h18l3 6M8 15l1-5h9" /></svg>
+)}
+{name === "awl" && (
+  <svg {...s}><path d="M8 26l9-9M17 17l6-6a3 3 0 0 0-4-4l-6 6z" /><path d="M6 28l2-2" /></svg>
+)}
+{name === "thorn" && (
+  <svg {...s}><path d="M16 28V12" /><path d="M16 16c-5 0-8-2-9-5 4-1 7 1 9 5zM16 16c5 0 8-2 9-5-4-1-7 1-9 5z" /><path d="M11 24l-4-2M21 24l4-2" /></svg>
+)}

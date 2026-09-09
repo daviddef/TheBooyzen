@@ -1,0 +1,61 @@
+---
+import Base from "../../layouts/Base.astro";
+import Rule from "../../components/Rule.astro";
+import { u } from "../../lib/url.js";
+import pl from "../../data/places.json";
+const places = pl.places;
+const regions = [...new Set(places.map(p => p.r))];
+const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
+---
+<Base title="The places"
+      eyebrow={`${places.length} places, ${regions.length} regions`}
+      dek="Every place this archive can put a named person in, with the document that puts them there. Farms, villages, churches, hospitals and cemeteries — not a gazetteer, a list of where the evidence actually lands.">
+
+<section class="blk">
+  <h2>Search</h2>
+  <div class="panel" style="margin-top:16px">
+    <label for="q" style="display:block;font-size:14px;margin-bottom:8px"><strong>Filter</strong> —
+      place, farm, district, person or year</label>
+    <input id="q" type="search" autocomplete="off" placeholder="Try Cradock, Barkly, cemetery, 1901…"
+           style="width:100%;padding:11px 13px;font-size:16px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
+    <p id="count" class="cap" style="margin:12px 0 0" aria-live="polite"></p>
+  </div>
+</section>
+
+<Rule name="koppie" label="Where the evidence lands" />
+
+<section class="blk">
+  <div class="grid g2" id="plist" style="margin-top:10px">
+    {places.map(p => (
+      <a class="door" href={u("/places/" + p.slug + "/")}
+         data-hay={[p.n, p.a ?? "", p.k, p.r, p.w, (p.p || []).join(" "), (p.e || []).map(e => e.join(" ")).join(" ")].join(" ").toLowerCase()}>
+        <div class="dn">{p.n}</div>
+        <div class="cap" style="margin-top:-2px">{p.k} · {p.r}</div>
+        <div class="dd">{p.w.length > 190 ? p.w.slice(0, 190) + "…" : p.w}</div>
+        <div class="go">{(p.e || []).length} dated event{(p.e || []).length === 1 ? "" : "s"} &rarr;</div>
+      </a>
+    ))}
+  </div>
+  <p id="empty" class="note" hidden style="margin-top:18px">Nothing here matches that.</p>
+</section>
+
+<script is:inline>
+(function () {
+  var q = document.getElementById("q"), c = document.getElementById("count"),
+      e = document.getElementById("empty"),
+      rows = [].slice.call(document.querySelectorAll("#plist .door"));
+  function go() {
+    var terms = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
+    rows.forEach(function (r) {
+      var hay = r.getAttribute("data-hay");
+      var ok = terms.every(function (w) { return hay.indexOf(w) !== -1; });
+      r.hidden = !ok; if (ok) shown++;
+    });
+    c.textContent = shown === rows.length ? "Showing all " + rows.length + " places."
+      : "Showing " + shown + " of " + rows.length + ".";
+    e.hidden = shown !== 0;
+  }
+  q.addEventListener("input", go); go();
+})();
+</script>
+</Base>

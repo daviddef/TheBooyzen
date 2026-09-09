@@ -811,3 +811,27 @@ body.is-home #onthispage{display:none}
 .wideplate{margin:0 0 34px;background:var(--panel);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
 .wideplate img{display:block;width:100%;height:auto;border-bottom:1px solid var(--rule)}
 .wideplate figcaption{padding:13px 16px 15px;margin-top:0}
+
+/* ---------- who / places / search: the connective tissue ---------- */
+a.wholink{color:inherit;text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--accent) 45%,transparent);
+  text-underline-offset:2px}
+a.wholink:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.plink{font-size:13px;padding:3px 9px;border:1px solid var(--rule);border-radius:999px;
+  text-decoration:none;white-space:nowrap;display:inline-block}
+.plink:hover{border-color:var(--accent)}
+.fbtn{font:500 13px/1 var(--sans);padding:7px 11px;border:1px solid var(--rule);
+  background:transparent;color:inherit;border-radius:999px;cursor:pointer}
+.fbtn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* on-this-page contents */
+.toc{margin:0 0 26px;border:1px solid var(--rule);border-radius:3px;background:var(--panel)}
+.toc summary{cursor:pointer;padding:11px 15px;font-family:var(--sans);font-size:13px;
+  letter-spacing:.02em;color:var(--ink-2)}
+.toc summary::marker{color:var(--ink-3)}
+.toc nav{display:flex;flex-direction:column;gap:2px;padding:2px 15px 14px}
+.toc nav a{font-family:var(--sans);font-size:13.5px;color:var(--ink-2);text-decoration:none;
+  padding:4px 0;border-bottom:1px solid transparent}
+.toc nav a:hover{color:var(--accent)}
+@media(min-width:901px){.toc nav{columns:2;column-gap:26px;display:block}
+  .toc nav a{display:block;break-inside:avoid}}

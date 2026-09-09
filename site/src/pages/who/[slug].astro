@@ -1,0 +1,101 @@
+---
+import Base from "../../layouts/Base.astro";
+import Rule from "../../components/Rule.astro";
+import { u } from "../../lib/url.js";
+import d from "../../data/dossiers.json";
+export function getStaticPaths() {
+  return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props;
+const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
+const all = Object.values(d.people);
+const kin = all.filter(x => x.slug !== p.slug && x.l === p.l).slice(0, 14);
+const byPage = {};
+for (const h of p.hits) (byPage[h.page] ||= { title: h.title, hits: [] }).hits.push(h);
+const groups = Object.entries(byPage);
+---
+<Base title={p.n}
+      eyebrow={`${p.l} · ${p.mentions === 0 ? "not yet discussed on any page" : p.mentions + " mention" + (p.mentions === 1 ? "" : "s") + " across " + p.pages.length + " page" + (p.pages.length === 1 ? "" : "s")}`}
+      dek={p.r}>
+
+<section class="blk">
+  <div class="grid g2" style="margin-top:4px">
+    <div class="panel">
+      <h3 style="margin-top:0">The record</h3>
+      <table style="width:100%">
+        <tbody>
+          <tr><td style="width:7rem">Name</td><td><strong>{p.n}</strong></td></tr>
+          {p.v && <tr><td>Also written</td><td>{p.v}</td></tr>}
+          <tr><td>Born</td><td class="m">{p.b}</td></tr>
+          <tr><td>Died</td><td class="m">{p.d}</td></tr>
+          <tr><td>Line</td><td><a href={u("/people/")}>{p.l}</a></td></tr>
+          {p.g && <tr><td>Generation</td><td class="m">{p.g} — on the direct line</td></tr>}
+          <tr><td>Confidence</td><td><span class={"chip " + p.s}>{label[p.s]}</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">What the archive holds</h3>
+      <p style="font-size:15.5px">{p.r}</p>
+      {p.p && p.p.length > 0 && (
+        <p style="margin-top:14px;display:flex;flex-wrap:wrap;gap:6px">
+          {p.p.map(([t, h]) => (<a class="plink" href={u(h)}>{t}</a>))}
+        </p>
+      )}
+    </div>
+  </div>
+</section>
+
+{p.shared && (
+<section class="blk">
+  <div class="note">
+    <strong>Two people share this page.</strong> This archive holds more than one person of this name and
+    they are gathered here together, because merging them silently would be worse than saying so. The
+    surrounding text on each page below usually makes it clear which is which.
+  </div>
+</section>
+)}
+
+{groups.length > 0 && <Rule name="koppie" label="Every mention, page by page" />}
+
+{groups.map(([route, g]) => (
+  <section class="blk">
+    <h2><a href={u(route)}>{g.title}</a></h2>
+    <div style="margin-top:14px;display:flex;flex-direction:column;gap:13px">
+      {g.hits.map(h => (
+        <div class="panel" style="padding:14px 16px">
+          <p style="font-size:14.5px;line-height:1.66;margin:0">…{h.text}…</p>
+        </div>
+      ))}
+    </div>
+  </section>
+))}
+
+{groups.length === 0 && (
+<section class="blk">
+  <p class="note">This person is recorded in the archive's index but is not yet discussed on any page.
+    That is itself worth knowing — it usually means a name read off a single document and not yet
+    followed up. <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+</section>
+)}
+
+<Rule name="thorn" />
+
+<section class="blk">
+  <h2>Others on the {p.l} side</h2>
+  <div class="grid g3" style="margin-top:16px">
+    {kin.map(k => (
+      <a class="cardlink" href={u("/who/" + k.slug + "/")}>
+        <div class="nm" style="font-size:16px">{k.n}</div>
+        <div class="txt">{k.b !== "—" || k.d !== "—" ? `${k.b} – ${k.d}` : k.r.slice(0, 70)}</div>
+      </a>
+    ))}
+  </div>
+  <p class="cap" style="margin-top:18px">
+    <a href={u("/people/")}>All {all.length} people &rarr;</a> ·
+    <a href={u("/places/")}>The places &rarr;</a> ·
+    <a href={u("/search/")}>Search the archive &rarr;</a>
+  </p>
+  <p class="note" style="margin-top:18px">{d.note}</p>
+</section>
+</Base>

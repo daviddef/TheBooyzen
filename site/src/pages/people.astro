@@ -1,7 +1,10 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
-import { people, lines } from "../data/people.js";
+import d from "../data/dossiers.json";
+import pj from "../data/people.json";
+const people = Object.values(d.people);
+const lines = pj.lines;
 const counted = lines.map(l => [l, people.filter(p => p.l === l).length]).filter(([, n]) => n > 0);
 const sorted = [...people].sort((a, b) => {
   const s = (x) => (x.n.split(" ").slice(-1)[0] + " " + x.n).toLowerCase();
@@ -39,12 +42,13 @@ const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Op
       </tr></thead>
       <tbody>
         {sorted.map((p) => (
-          <tr data-line={p.l} data-hay={[p.n, p.v ?? "", p.b, p.d, p.l, p.r, label[p.s]].join(" ").toLowerCase()}>
+          <tr data-line={p.l} data-hay={[p.n, p.v ?? "", p.b, p.d, p.l, p.r, label[p.s], (p.pages||[]).map(x=>x.t).join(" ")].join(" ").toLowerCase()}>
             <td>
-              <strong>{p.n}</strong>
+              <a href={u("/who/" + p.slug + "/")}><strong>{p.n}</strong></a>
               {p.g ? <span class="m cap"> · generation {p.g}</span> : null}
               {p.v ? <div class="cap" style="margin-top:3px">also written {p.v}</div> : null}
-              <div style="margin-top:6px"><span class={"chip " + p.s}>{label[p.s]}</span></div>
+              <div style="margin-top:6px"><span class={"chip " + p.s}>{label[p.s]}</span>
+                {p.mentions > 0 && <span class="cap" style="margin-left:8px">{p.mentions} mention{p.mentions === 1 ? "" : "s"}</span>}</div>
             </td>
             <td class="m">{p.b}</td>
             <td class="m">{p.d}</td>

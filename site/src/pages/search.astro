@@ -1,0 +1,107 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+---
+<Base title="Search"
+      eyebrow="People · places · pages · sections"
+      dek="One box over the whole archive. It searches every person, every place, every page and every section heading with the text under it — including spelling variants, so Montjoy finds Mountjoy.">
+
+<section class="blk">
+  <div class="panel">
+    <label for="sq" style="display:block;font-size:14px;margin-bottom:8px"><strong>Search everything</strong></label>
+    <input id="sq" type="search" autocomplete="off" autofocus
+           placeholder="A name, a farm, a year, a word from a document…"
+           style="width:100%;padding:13px 15px;font-size:17px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:7px" id="kinds"></div>
+    <p id="scount" class="cap" style="margin:12px 0 0" aria-live="polite">Loading the index…</p>
+  </div>
+</section>
+
+<section class="blk"><div id="sres" style="display:flex;flex-direction:column;gap:12px"></div></section>
+
+<section class="blk">
+  <h2>If you don't know what to look for</h2>
+  <p style="margin-top:12px;display:flex;flex-wrap:wrap;gap:7px">
+    {["Booyzen","Montjoy","not known","Caerlaverock","saddler","Cape Rebel","Indwe","1901","Kolbe","joiners","Zevenfontein","Pieterzen"].map(t => (
+      <button class="plink seed" type="button">{t}</button>))}
+  </p>
+</section>
+
+<style>
+  .sr { display:block; text-decoration:none; color:inherit; background:var(--panel);
+        border:1px solid var(--rule); border-left:3px solid var(--accent);
+        border-radius:3px; padding:14px 16px; }
+  .sr:hover { border-color:var(--accent); }
+  .sr .k { font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+           color:var(--ink-3); }
+  .sr .t { font-family:var(--serif); font-size:19px; margin-top:3px; }
+  .sr .s { font-family:var(--sans); font-size:12.5px; color:var(--ink-3); margin-top:2px; }
+  .sr .x { font-size:14px; color:var(--ink-2); margin-top:8px; line-height:1.6; }
+  .sr mark { background:var(--accent-wash); color:inherit; padding:0 2px; border-radius:2px; }
+  button.seed { cursor:pointer; background:transparent; color:inherit; font-family:var(--sans); }
+</style>
+
+<script is:inline define:vars={{ BASE: u("") }}>
+(function () {
+  var q = document.getElementById("sq"), res = document.getElementById("sres"),
+      cnt = document.getElementById("scount"), kinds = document.getElementById("kinds");
+  var DATA = [], kind = "";
+  var base = BASE.replace(/\/+$/, "");
+  function esc(s){ return String(s).replace(/[&<>]/g, function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];}); }
+  function hl(s, terms) {
+    s = esc(s);
+    terms.forEach(function (t) {
+      if (t.length < 2) return;
+      s = s.replace(new RegExp("(" + t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&") + ")", "gi"), "<mark>$1</mark>");
+    });
+    return s;
+  }
+  function run() {
+    var raw = q.value.trim();
+    var terms = raw.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!terms.length) { res.innerHTML = ""; cnt.textContent = DATA.length + " entries indexed. Type to search."; return; }
+    var hits = DATA.filter(function (r) {
+      if (kind && r.k !== kind) return false;
+      var hay = (r.t + " " + r.s + " " + r.x).toLowerCase();
+      return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+    });
+    var rank = { Person: 0, Place: 1, Page: 2, Section: 3 };
+    hits.sort(function (a, b) {
+      var at = a.t.toLowerCase().indexOf(terms[0]), bt = b.t.toLowerCase().indexOf(terms[0]);
+      if ((at === 0) !== (bt === 0)) return at === 0 ? -1 : 1;
+      if ((at > -1) !== (bt > -1)) return at > -1 ? -1 : 1;
+      return rank[a.k] - rank[b.k];
+    });
+    cnt.textContent = hits.length + " result" + (hits.length === 1 ? "" : "s") + " for “" + raw + "”";
+    res.innerHTML = hits.slice(0, 60).map(function (r) {
+      return '<a class="sr" href="' + base + r.h + '"><div class="k">' + r.k + '</div>' +
+        '<div class="t">' + hl(r.t, terms) + '</div>' +
+        '<div class="s">' + hl(r.s, terms) + '</div>' +
+        (r.x ? '<div class="x">' + hl(r.x, terms) + '</div>' : '') + '</a>';
+    }).join("");
+  }
+  fetch(base + "/searchindex.json").then(function (r) { return r.json(); }).then(function (j) {
+    DATA = j;
+    var ks = ["", "Person", "Place", "Page", "Section"];
+    kinds.innerHTML = ks.map(function (k) {
+      var n = k ? DATA.filter(function (r) { return r.k === k; }).length : DATA.length;
+      return '<button class="fbtn' + (k === "" ? " on" : "") + '" data-k="' + k + '">' +
+             (k || "Everything") + ' <span class="m">' + n + '</span></button>';
+    }).join("");
+    [].forEach.call(kinds.querySelectorAll(".fbtn"), function (b) {
+      b.addEventListener("click", function () {
+        [].forEach.call(kinds.querySelectorAll(".fbtn"), function (x) { x.classList.remove("on"); });
+        b.classList.add("on"); kind = b.getAttribute("data-k"); run();
+      });
+    });
+    var p = new URLSearchParams(location.search).get("q");
+    if (p) q.value = p;
+    run();
+  }).catch(function () { cnt.textContent = "The search index could not be loaded."; });
+  q.addEventListener("input", run);
+  [].forEach.call(document.querySelectorAll("button.seed"), function (b) {
+    b.addEventListener("click", function () { q.value = b.textContent; q.focus(); run(); });
+  });
+})();
+</script>
+</Base>
