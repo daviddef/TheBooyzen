@@ -59,6 +59,12 @@ export const people = [
  r:"Seventh on the 1863 list; carries the name of the man at the top of the line.", p:[["The Documents","/documents/"]]},
 {n:"Jacoba Catharina Booysen", b:"21 Sep 1857", d:"—", l:"Booyzen", s:"doc", r:"Youngest on the 1863 list, five years old when her mother died.", p:[["The Documents","/documents/"]]},
 {n:"Johanna Catharina Booysen", b:"—", d:"—", l:"Booyzen", s:"doc", r:"Second on the 1863 list, named for her mother.", p:[["The Documents","/documents/"]]},
+{n:"Gerrit Jacobus Booÿsen", b:"19 Jan 1870", d:"—", l:"Booyzen", s:"doc",
+ r:"The only child entered on his father's 1884 death notice, and born seven years after the first wife died — so a child of the second marriage. New to this archive.",
+ p:[["The Documents","/documents/"],["Open Questions","/open-questions/"]]},
+{n:"— unnamed second wife of Petrus Jacobus Booysen", b:"—", d:"after 1884", l:"Booyzen", s:"open",
+ r:"Proven to exist and still unnamed. He is recorded as Married at his death in 1884, twenty-one years after Johanna Catharina died, and three children — Izak 1864, Gerrit Jacobus 1870, Stephanus Francois 1875 — can only be hers. The form never asks her name.",
+ p:[["Open Questions","/open-questions/"],["The Documents","/documents/"]]},
 
 // ───────────────── children of Willem Hermanus & Kathleen Barry ─────────────────
 {n:"John Barry Booyzen", b:"c. 1884", d:"—", l:"Booyzen", s:"doc",

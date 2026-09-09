@@ -1074,3 +1074,47 @@ Mountjoys living in the same district and baptising in the same register**, twen
 death. <span>Lead</span> **Hercules Johannes Mountjoy, Jakobus Jonathan Mountjoy and Maria Sophia
 Mountjoy** are a searchable cluster that may connect back to **James Mountjoy (1786–1827)** and
 **Anna Catharina Schleher**. Entirely incidental, and one of the better leads in the archive.
+
+---
+
+## 34. DEATH NOTICE, 1884 — Petrus Jacobus Booysen Snr (KAB, estate 8907)
+`ark:/61903/3:1:3Q9M-CSQX-HSHP-Z` · apid `TH-909-58028-61900-88` · filed 1 August 1884
+
+| Field | As written |
+|---|---|
+| 1. Name | **Petrus Jacobus Booysen, Senior** |
+| 2. Birth-place | **Graaff Reinet District** |
+| 3. **Parents** | **Petrus Jacobus Booÿsen — "mother's name, not known"** *(underlined)* |
+| 4. Age | **72 years** |
+| 5. Condition in life | **Farmer** |
+| 6. Married or unmarried | **Married** |
+| 7. Day of decease | **30 March 1884** |
+| 8. At what house | **Zevenfontein, District Middelburg** |
+| 9. Children | **Gerrit Jacobus Booÿsen, geboren 19 Januarij 1870** |
+| 10. Property | **Moveables only. Such as wearing apparel &c.** |
+| Signed | J. M. Pretorius |
+
+### What it gives
+1. **The third "not known"** — and the pattern is directional. 1840 loses both parents; 1884 keeps the
+   father in full and loses **the mother**; 1915 keeps the father as a surname plus a guess and loses
+   **the mother**. Her name was **Anna Maria van der Merwe**, d. before March 1825 when he was twelve.
+2. **The second wife is proven.** He is **Married** at death in 1884, twenty-one years after Johanna
+   Catharina died. Open Question 7 moves from speculation to fact.
+3. **Gerrit Jacobus Booÿsen, b. 19 Jan 1870** — a person new to this archive, and necessarily a child of
+   the second marriage. With Izak (1864) and Stephanus Francois (1875), three post-1863 children.
+4. **Age 72 → b. c.1812**, matching the register exactly. Identity confirmed.
+5. **Zevenfontein again.** His first wife died there in 1863 (then Brak River / Port Elizabeth district);
+   he dies there in 1884 (then Middelburg district). Same farm, redistricted.
+6. **"Moveables only… wearing apparel."** A farmer who died owning no fixed property. Compare James
+   Montjoy, a saddler, who died in 1827 owning a house and erf at Cradock worth **£90**.
+
+### Caution on the land inference
+The 1884 estate shows the family landless **fifteen years before the war** — but **Willem Hermanus is a
+*boer*, farmer, of Lady Grey at his 1879 marriage**, five years *after*. A son can farm land his father
+never owned. The honest statement: landlessness at this level predates the war, so any account beginning
+with a prosperous farm being burned must account for 1884 first. It does not disprove the claim.
+
+### Still not answered
+**The second wife's name.** The form does not ask it. The marriage (Cradock or Middelburg, 1863–1870,
+now bounded by Gerrit Jacobus's birth in January 1870) would give it, as would the liquidation and
+distribution account for estate 8907.
