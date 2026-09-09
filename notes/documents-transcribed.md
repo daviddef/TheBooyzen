@@ -737,3 +737,93 @@ So does his **death certificate** — *"John Gottlob Kolbe"*. So does his **buri
 Four independent documents, and not one of them says *Johan Gottlieb*. **"Johan Gottlieb" is the German
 original the tree leads with; "John Gottlob" is the name he actually used, and was buried under, in
 England.** The archive should follow the documents.
+
+---
+
+# FIFTH EXTRACTION — the last four, and two corrections to this archive's own work
+
+## 20. BAPTISM REGISTER, Gereformeerde Kerk, 1906 — **Anna was born in 1906, not 1905**
+`anna-pretorius-baptism.jpg`. Entry **29**, right column:
+
+> **"Gedoopt 11 Nov. 1906 / 29. Anna Johanna Maria, geb. 3 Oct. 1906 /
+> Petrus Jacobus Pretorius / Margaretha Wilhelmina Elizabeth Berry } ouders"**
+
+The year is written identically to the "1906" in the *Gedoopt* line directly above it. Birth and baptism
+are **five weeks apart**, which is normal.
+
+**The tree gives her birth as 3 October 1905** and her christening as 11 November 1906 — a thirteen-month
+gap. It plainly took the christening from *this* register and mistranscribed the birth year by one digit.
+
+Note also the mother's surname written **"Berry"**, not Barry.
+
+## 21. DEATH FORM of ANNA JOHANNA MARIA BOOYSEN (born Pretorius), 1944 — **which confirms it**
+`anna-booyzen-death-typed.jpg`. Entry **2045**, Johannesburg, registered 29 February 1944.
+
+| Field | As typed |
+|---|---|
+| Name | **Anna Johanna Maria Booysen (Born Pretorius)** — note the **-sen** spelling |
+| **Age** | **37 years** |
+| Birthplace | Cape Province · **Married** · Occupation **Home-duties** |
+| Date of death | **Twenty-sixth day of February 1944** |
+| Place of death | **85, Rheeders Street, Forrest Hill, Johannesburg** |
+| **Intended place of burial** | **WEST PARK CEMETERY, Johannesburg** |
+| **Causes of death** | **"Haemorrhage due to Ruptured Tubal Pregnancy (extra-uterine). Not 1st child."** |
+| Duration | unknown · Medical practitioner **C. J. N. Joubert** |
+| Informant | qualification *"Causing Burial"*, of **9–11 Jack Street, Germiston** |
+
+**Age 37 at 26 February 1944 gives a birth in late 1906.** Two independent documents — a contemporary
+baptism register and a death registration — agree against the tree.
+⇒ **Anna Johanna Maria Pretorius was born 3 October 1906.** <span>Documented</span>
+
+Two further gains: she is buried at **West Park Cemetery**, the same ground as her husband George — the
+tree gives only "Johannesburg". And the cause is fuller than the tree's "FALLOPIAN TUBE PREGNANCY":
+**haemorrhage from a ruptured extra-uterine pregnancy, and not a first child.**
+
+## 22. DEATH FORM of MARGERIETHA WILHELMINA ELIZABETH PRETORIUS (Barry), 1961
+`margarietha-barry-death-1961.jpg`. Typewritten. Entry **180/61**, district **Germiston**.
+
+- **Age and date of birth: 81 years, 16.3.1880** — confirming the tree exactly.
+- **Place of birth: Barclay East, Cape Province.**
+- Died **First April 1961** at the **General Hospital, Germiston**.
+- **Causes: Uraemia — Hypertensive Congestive Cardiac Failure.** Duration 3 weeks / 3 years.
+  Medical practitioner **Dr. Bernard**.
+- Residence **5 Plaza Court, Rietfontein Road, Primrose, Germiston**; **buried Primrose Cemetery** ✓
+- Occupation **Home duties**; allowance **Old Age**.
+- Identity Number: **"Unobtainable"**.
+- Informant **P. Gouws**, *"Causing Burial"*, of **9 Jack Street, Germiston** — the same address as the
+  informant on Anna's 1944 form seventeen years earlier. Almost certainly an **undertaker's premises**,
+  not a relative.
+
+Note the contrast with her mother-in-law: Kathleen Barry drew a **Military** pension in 1940;
+Margarietha drew an **Old Age** allowance in 1961. The military pension really is exceptional.
+
+## 23. THE ORIGINAL 1901 MARRIAGE REGISTER
+`pretorius-barry-marriage-1901-register.jpg` — headed **ORIGINEEL REGISTER**, where the other copy is the
+*Duplicaat*. Same entry, same book number 4584, same No. 5.
+
+It confirms everything: 8 Julie 1901, ages 22 and 21, *Jonkman* and *Jongedochter*, **Veeboer**,
+*Na huwelyksgeboden*, *Toestemming Ouders*, married **"in woonhuis D. Schoeman te Caerlaverock"** by
+**J. G. van der Walt**, witnesses **J. J. Parsons** and **D. W. Schoeman**.
+
+---
+
+# TWO CORRECTIONS TO THIS ARCHIVE'S OWN WORK
+
+## A. The groom's farm is not "Armadale"
+This archive read the groom's residence as **Armadale** and built a small argument on it —
+that Barkly East farms carried **Scottish** names. At maximum magnification on the original register the
+word is **genuinely ambiguous**: it reads as **"Arundale"**, possibly *Armsdale* or *Ormsdale*.
+**"Armadale" was an over-reading, and it is withdrawn.**
+
+The wider point survives, on the two names that *are* certain: **Caerlaverock** (Dumfriesshire) and
+**Manorowen** (Pembrokeshire), with a third English-form *-dale* name beside them. But the archive should
+not have leant on a word it could not read.
+
+## B. Catherine was orphaned at eighteen, not seventeen
+This archive wrote in four places that **Catherine Mary Sophia Booyzen was "seventeen years old and had
+no parents."** That figure was calculated from the *wrong* death date for her father — the tree's
+21 February 1947, which this archive later corrected to **11 December 1947** from his death notice, without
+propagating the correction to her age.
+
+Born **25 March 1929**, she was **eighteen** when her father died. Her mother died in February 1944, when
+she was **fourteen**. **Corrected throughout.**

@@ -110,9 +110,9 @@ A fourth extraction, from Kathleen Barry's, Anna Pretorius's and Margarietha Bar
   Set that against **Commandant D. Schoeman**, who held Labuschagne's Nek with ~400 Cape Rebels in
   March 1900, one district away. A specific, searchable identity where there was only an initial.
   **Still not proof.**
-- **Two more British farm names.** The groom was of **Armadale**, the bride of **Caerlaverock** — beside
-  John Barry's **Manorowen**. Scottish and Welsh place-names on the farms of families siding with the
-  republics.
+- **More British farm names.** The bride was of **Caerlaverock** (Dumfriesshire), beside John Barry's
+  **Manorowen** (Pembrokeshire); the groom's farm reads as **"Arundale"**, though that word is genuinely
+  ambiguous. British place-names on the farms of families siding with the republics.
 - **A family photograph, c. 1909** — **Anna Johanna Maria Pretorius aged about four**, with her brother
   Dirk and her parents. Apparently the only picture of Petrus Jacobus Pretorius and Margarietha Barry
   together, eight years after they married in Schoeman's house.
@@ -164,6 +164,30 @@ to. Under FEBRUARY 1803:
 - **And a correction of emphasis.** The register says *John Gottlob*. So does his will, his death
   certificate and his burial entry. **Four documents, and not one says "Johan Gottlieb"** — the German
   original the tree leads with. This archive now follows the documents.
+
+## The last four documents — and two corrections of my own
+
+- **Anna Pretorius was born in 1906, not 1905.** Her **baptism register** gives *"geb. 3 Oct. 1906"*, five
+  weeks before her christening; the tree gives 1905 and a thirteen-month gap, having taken the christening
+  date from that very register. Her **1944 death form** independently gives her age as **37**, which
+  agrees. Two documents against the tree.
+- **She is buried at West Park Cemetery** — the same ground as her husband; the tree gives only
+  "Johannesburg". Her cause of death in full: *"Haemorrhage due to Ruptured Tubal Pregnancy
+  (extra-uterine). Not 1st child."*
+- **Margarietha Barry's 1961 form** confirms her birth as **16.3.1880** exactly, gives her death as uraemia
+  and hypertensive congestive cardiac failure at the General Hospital, Germiston, and records her
+  allowance as **Old Age** — which is what makes Kathleen Barry's **Military** pension exceptional.
+- **The 1901 original register** confirms the duplicate in every particular, including the witnesses
+  **J. J. Parsons** and **D. W. Schoeman**.
+
+**And two errors of this archive's own, both found by these documents:**
+
+1. **The groom's farm is not "Armadale."** At full magnification the word is genuinely ambiguous —
+   *"Arundale"*, possibly *Armsdale*. The archive had built a small argument on the Scottish reading.
+   **Withdrawn.**
+2. **Catherine was orphaned at eighteen, not seventeen.** That figure came from the *wrong* death date for
+   her father, which this archive had itself corrected to 11 December 1947 without carrying the fix
+   through to her age. **Corrected in all four places.**
 
 ## What this archive found
 
