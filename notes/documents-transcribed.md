@@ -1149,3 +1149,73 @@ distribution account for estate 8907.
 - *"george death information"* — **is** the 1947 death form already published.
 
 Exactly **one** image on those profiles was genuinely unread: the 1891 baptism above.
+
+---
+
+# THE TRANSVAAL GAP (10 Sep 2026)
+
+## The failure
+Every NAAIRS search in this project — every one — was run against **KAB, the Cape Town Archives
+Repository**. This family left the Cape about 1907 and the whole last generation died in Johannesburg.
+Their estate files are in **TAB**, and I never looked.
+
+NAAIRS offers an **RSA** database — *All Archives Repositories and National Registers* — on the same
+selection page I used every time. Searching it:
+
+| Query | KAB alone | All repositories |
+|---|---|---|
+| **BOOYZEN** | 39 | **184** |
+
+**145 documents unseen**, for the whole life of the project.
+
+## The direct line's estates, all of them in the Transvaal
+
+| Reference | Person | Year |
+|---|---|---|
+| **TAB MHG 2945/44** | **BOOYZEN, JOHANNA MARIA, born PRETORIUS** — Anna | 1944 |
+| **TAB MHG 1095/48** | **BOOYZEN, GEORGE DOWNING MOUNTJOY** | 1947 |
+| **TAB MHG 769/52** | **BOOYZEN, JOHN BARRY** — the son who signed the 1905 form | 1952 |
+| **TAB MHG 10/57** | **BOOYZEN, HENRY JAMES** | 1956 |
+| **TAB MHG 3734/46** | **DASCHNER, CATHERINE MARY SOPHIA, born BOOYZEN** | 1946 |
+
+That fifth one is new to the archive as a life: **Catharina Maria Sophia Booysen, baptised at Barkly
+Oost on 24 May 1891** — the daughter found only last week — married a **Joseph Heinrich Daschner**
+(his own estate, **TAB MHG 1928/42**, 1942) and died in the Transvaal in **1946**, aged 55.
+
+## Two of the eight children on the 1863 death notice
+
+| Reference | Person | Year |
+|---|---|---|
+| **TAB MHG O/2899** | **BOOYZEN, JAN GERHARDUS LODEWIKUS** — the seventh child, b. 4 Dec 1855 | 1885 |
+| **TAB MHG 52653** | **BOOYZEN, JACOBUS NICHOLS** — the eldest, the only "Major" on that list | 1923 |
+
+## And both sons of the second marriage
+
+| Reference | Person | Year |
+|---|---|---|
+| **TAB MHG 2428/40** | **BOOYZEN, STEPHANUS FRANCOIS** — b. 1875 | 1940 |
+| **TAB MHG 5155/51** | **BOOYZEN, GERT JACOBUS** — b. 19 Jan 1870 | 1951 |
+
+So both children the tree had wrongly attached to the *first* wife have Transvaal estates, and both
+are filed under **BOOYZEN with a z**.
+
+## Kathleen Barry — still nothing
+No estate for **Catherine Mary Sophia Booyzen née Barry**, who died at Mayfair in 1940, under any
+search. Her "Military Pensioner" entry remains unexplained, and the SANDF route is half-dead.
+
+## Compensation claims — the series exists, and it is not ours
+Open Question 11 has been asking for post-war compensation claims. They exist as **TAB CJC — "Claims
+for Compensation, Burghers"** — and there are **seven Booyzen claims**, 1903–04:
+
+> CJC 76 (JPJ, 1903) · CJC 77 (PJ, 1903) · CJC 104 (GL, 1904) · CJC 109 (JPJ, 1904) ·
+> CJC 123 (L, 1904) · CJC 125 (JC, 1904) · CJC 126 (HE, 1904)
+
+**Every one of them is MARICO, Transvaal** — the same district as the Booyzen children who died in the
+Johannesburg and Vereeniging camps. That is a substantial Booyzen burgher family in the western
+Transvaal who *were* compensated, and it is **not this family**, who were Cape.
+
+The series is named correctly now. The Cape equivalent is still untouched.
+
+## Other repositories
+**VAB** (Free State) holds five more Booyzen estates 1901–1929; **NAB** (Natal) two illiquid cases of
+1846–48; **SAB** several twentieth-century appointments. None yet tied to this family.

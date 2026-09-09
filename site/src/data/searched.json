@@ -2,6 +2,56 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "n": "the gap",
+   "d": "10 Sep 2026",
+   "h": "/log/",
+   "rows": [
+    [
+     "BOOYZEN — Cape depot only (KAB)",
+     "39 documents",
+     "What this archive searched, every time, for the whole project.",
+     "part"
+    ],
+    [
+     "BOOYZEN — all repositories (RSA)",
+     "184 documents",
+     "What it should have searched. 145 documents unseen. This family left the Cape about 1907 and the entire last generation died in Johannesburg, so their estates are in the TRANSVAAL depot — and NAAIRS offers an “All Archives Repositories” database on the same selection page used every time.",
+     "yes"
+    ],
+    [
+     "TAB MHG — the direct line",
+     "5 estate files",
+     "BOOYZEN, JOHANNA MARIA born PRETORIUS (2945/44); BOOYZEN, GEORGE DOWNING MOUNTJOY (1095/48); BOOYZEN, JOHN BARRY (769/52) — the son who signed the 1905 form; BOOYZEN, HENRY JAMES (10/57); and DASCHNER, CATHERINE MARY SOPHIA born BOOYZEN (3734/46).",
+     "yes"
+    ],
+    [
+     "TAB MHG — two of the 1863 children",
+     "2 estate files",
+     "BOOYZEN, JAN GERHARDUS LODEWIKUS (O/2899, 1885), the seventh child; and BOOYZEN, JACOBUS NICHOLS (52653, 1923), the eldest and the only “Major” on that list.",
+     "yes"
+    ],
+    [
+     "TAB MHG — both sons of the second marriage",
+     "2 estate files",
+     "BOOYZEN, STEPHANUS FRANCOIS (2428/40) and BOOYZEN, GERT JACOBUS (5155/51). Both filed with a z.",
+     "yes"
+    ],
+    [
+     "BOOYZEN + KATHLEEN · BOOYZEN + CATHERINE",
+     "nothing for her",
+     "Still no estate for Catherine Mary Sophia Booyzen née Barry, who died at Mayfair in 1940. Her “Military Pensioner” entry remains unexplained.",
+     "no"
+    ],
+    [
+     "TAB CJC — Claims for Compensation, Burghers",
+     "7 Booyzen claims",
+     "The post-war compensation series Open Question 11 has been asking for. It exists. But all seven claims are MARICO, Transvaal — the same district as the Booyzen children who died in the camps — and that is NOT this family, who were Cape. The series is now named correctly; the Cape equivalent is still untouched.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Anglo-Boer War Museum · Cape Rebel register",
    "n": "12,792 names",
    "d": "9 Sep 2026",

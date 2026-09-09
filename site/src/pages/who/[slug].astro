@@ -3,6 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Rule from "../../components/Rule.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
+import pl from "../../data/places.json";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
@@ -10,6 +11,8 @@ const { p } = Astro.props;
 const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
 const all = Object.values(d.people);
 const kin = all.filter(x => x.slug !== p.slug && x.l === p.l).slice(0, 14);
+/* Places name their people, so a person can be given their places for free. */
+const places = pl.places.filter(x => (x.p || []).includes(p.n));
 const byPage = {};
 for (const h of p.hits) (byPage[h.page] ||= { title: h.title, hits: [] }).hits.push(h);
 const groups = Object.entries(byPage);
@@ -45,6 +48,22 @@ const groups = Object.entries(byPage);
     </div>
   </div>
 </section>
+
+{places.length > 0 && (
+<section class="blk">
+  <h2>Where the archive puts {p.n.split(" ")[0]}</h2>
+  <div class="grid g3" style="margin-top:14px">
+    {places.map(x => (
+      <a class="cardlink" href={u("/places/" + x.slug + "/")}>
+        <div class="nm" style="font-size:16px">{x.n}</div>
+        <div class="txt">{x.k} · {x.r}</div>
+      </a>
+    ))}
+  </div>
+  <p class="cap" style="margin-top:12px">Each carries the document that puts them there.
+    <a href={u("/atlas/")}>The atlas &rarr;</a></p>
+</section>
+)}
 
 {p.shared && (
 <section class="blk">

@@ -258,20 +258,6 @@
    ]
   },
   {
-   "n": "Jacobus Nicholas Booysen",
-   "b": "bef. 1842",
-   "d": "—",
-   "l": "Booyzen",
-   "s": "doc",
-   "r": "Eldest son; the only Major among the eight children on the 1863 death notice.",
-   "p": [
-    [
-     "The Documents",
-     "/documents/"
-    ]
-   ]
-  },
-  {
    "n": "Petrus Jacobus Booysen",
    "b": "10 Sep 1839",
    "d": "—",
@@ -330,14 +316,18 @@
   {
    "n": "Jan Gerhardus Lodewicus Booysen",
    "b": "4 Dec 1855",
-   "d": "—",
+   "d": "1885",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Seventh on the 1863 list; carries the name of the man at the top of the line.",
+   "r": "Seventh on the 1863 list, and carries the name of the man at the top of the line. Estate TAB MHG O/2899 — he died in the Transvaal at about thirty.",
    "p": [
     [
      "The Documents",
      "/documents/"
+    ],
+    [
+     "What Was Searched",
+     "/searched/"
     ]
    ]
   },
@@ -517,11 +507,12 @@
   },
   {
    "n": "Catharina Maria Sophia Booysen",
+   "v": "Catherine Mary Sophia Daschner",
    "b": "22 Apr 1891",
-   "d": "—",
+   "d": "1946",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Baptised at Barkly Oost 24 May 1891, entry 120, and named for her mother entire. New to this archive. She was fourteen when her father died at Indwe.",
+   "r": "Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner and died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape.",
    "p": [
     [
      "The Documents",
@@ -530,6 +521,61 @@
     [
      "The Women",
      "/women/"
+    ],
+    [
+     "What Was Searched",
+     "/searched/"
+    ]
+   ]
+  },
+  {
+   "n": "Joseph Heinrich Daschner",
+   "b": "—",
+   "d": "1942",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Her husband. Estate TAB MHG 1928/42.",
+   "p": [
+    [
+     "What Was Searched",
+     "/searched/"
+    ]
+   ]
+  },
+  {
+   "n": "Stephanus Francois Booyzen",
+   "b": "1875",
+   "d": "1940",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "A son of the second marriage — one of the children the tree had wrongly attached to Johanna Catharina, who died twelve years before he was born. Estate TAB MHG 2428/40, filed with a z.",
+   "p": [
+    [
+     "Open Questions",
+     "/open-questions/"
+    ],
+    [
+     "What Was Searched",
+     "/searched/"
+    ]
+   ]
+  },
+  {
+   "n": "Jacobus Nicholas Booysen",
+   "v": "Jacobus Nichols Booyzen",
+   "b": "bef. 1842",
+   "d": "1923",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "What Was Searched",
+     "/searched/"
     ]
    ]
   },
