@@ -1118,3 +1118,34 @@ with a prosperous farm being burned must account for 1884 first. It does not dis
 **The second wife's name.** The form does not ask it. The marriage (Cradock or Middelburg, 1863–1870,
 now bounded by Gerrit Jacobus's birth in January 1870) would give it, as would the liquidation and
 distribution account for estate 8907.
+
+---
+
+## 35. DOOP REGISTER, BARKLY OOST, 1891 — entry 120
+`sources/booyzen-photos/willem-hermanus/1891-birth-catherine-mary-sophia.jpg` · pages 262–263
+
+| Field | As written |
+|---|---|
+| **Kind** | **Catharina Maria Sophia** |
+| **Geboren** | **22 April 1891** |
+| **Gedoopt** | **24 Mei 1891** |
+| **Ouders** | **Willem Hermanus Booysen** · **Catharina Maria Sophia Barry** |
+| **Getuigen** | Philippus Rudolph Olivier · Elizabeth Susanna Germishuizen · Gert Francois Botha · Catharina Anna Susanna Botha |
+
+**The same register as the 1889 baptisms**, fifty pages on. Father entered **Booysen**, with an s.
+
+### What it gives
+1. **A daughter new to this archive** — Catharina Maria Sophia Booysen, b. 22 Apr 1891, **fourteen when
+   her father died at Indwe in 1905**.
+2. **A three-generation name chain**: Catherine Maria Sophia Barry (1859) → Catharina Maria Sophia
+   Booysen (1891) → Catherine Mary Sophia Booyzen (1929), the archive's own starting point. The given
+   names hold across seventy years while the surname's spelling shifts underneath them.
+
+## Queue correction — Open Question 8 was carrying three stale claims
+- *"George Kolbe's 1803 baptism, downloaded and unread"* — **it had been read and published** (b. 7 Dec
+  1802, bapt. 2 Feb 1803, son of John Gottlob & Mary, St Anne's Soho).
+- *"a Johanna Catharina birth"* — that image **is** the 1889 Doop Register spread already transcribed
+  (pp. 212–213), Booyzen baptism on one page, Mountjoy on the other.
+- *"george death information"* — **is** the 1947 death form already published.
+
+Exactly **one** image on those profiles was genuinely unread: the 1891 baptism above.

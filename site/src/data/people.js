@@ -73,6 +73,12 @@ export const people = [
 {n:"David Kolbe Booyzen", b:"—", d:"—", l:"Booyzen", s:"doc", r:"Carries the Kolbe name three generations after the 1820 Settler.", p:[["The Name","/name/"],["Johannesburg","/johannesburg/"]]},
 {n:"Henry James Booyzen", b:"—", d:"—", l:"Booyzen", s:"doc", r:"Son of Willem Hermanus and Kathleen Barry.", p:[["The Barrys","/barry/"],["The Cousin Marriage","/cousins/"]]},
 {n:"Gertruida Alexandra Booyzen", b:"—", d:"—", l:"Booyzen", s:"doc", r:"Daughter of Willem Hermanus and Kathleen Barry.", p:[["The Documents","/documents/"]]},
+{n:"Catharina Maria Sophia Booysen", b:"22 Apr 1891", d:"—", l:"Booyzen", s:"doc",
+ r:"Baptised at Barkly Oost 24 May 1891, entry 120, and named for her mother entire. New to this archive. She was fourteen when her father died at Indwe.",
+ p:[["The Documents","/documents/"],["The Women","/women/"]]},
+{n:"Johanna Catharina Booyzen", b:"20 Jun 1889", d:"—", l:"Booyzen", s:"doc",
+ r:"Baptised at Barkly Oost 15 Sep 1889 with both maternal grandparents standing as godparents — and on the facing page of the same register, the Mountjoy baptism three weeks later.",
+ p:[["The Documents","/documents/"]]},
 
 // ───────────────── children of George Downing Mountjoy & Anna Pretorius ─────────────────
 {n:"Willem Hermanus “Willy” Booyzen", b:"15 Oct 1925", d:"1996", l:"Booyzen", s:"doc", r:"Eldest of the Johannesburg family.", p:[["The Line","/direct-line/"],["Johannesburg","/johannesburg/"]]},
