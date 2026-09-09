@@ -352,3 +352,18 @@ Not name-indexed, and the probate collection's 846 films are catalogued by film 
 Nothing further is recoverable inside South Africa. Above James Montjoy the search must move **outside
 the Cape**: English, Irish or Continental records for a **saddler named Montjoy/Mountjoy, born c. 1782,
 in the Cape before 1818** (his eldest child was born at Graaff-Reinet that year).
+
+## The 1817 marriage — indexed twice, imaged neither time
+**James Montjoy m. Anna C[atharina] —, 9 March 1817, Graaff-Reinet**, DRC registers. Two separate
+indexings exist and neither carries a linked image:
+- `1:1:62VT-S9JX` — bride as **"Anna C Sher"**
+- `1:1:6L4L-15ZR` — bride as **"Anna Catharina Hier"**
+
+That makes **five** renderings of her surname across independent sources: **Schleher** (tree),
+**Slier** (FamilySearch), **Sleer** (1863 death notice), **Sher**, **Hier**. All begin with a tall
+ascender and end in -er.
+
+The register image would state the groom's origin (Cape entries of this date routinely give
+*"van ..."*) and would be the single most likely place to break the "Not Known" wall from inside South
+Africa. **Not yet located as an image.** Next step: browse the Graaff-Reinet marriage register for
+March 1817 in the DRC collection (`1478678`) by waypoint rather than by index.

@@ -71,6 +71,7 @@ td.m,th.m{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nu
 .chip.doc{border-color:var(--accent);color:var(--accent);background:var(--accent-wash)}
 .chip.inf{border-color:var(--ochre);color:var(--ochre)}
 .chip.lore{border-color:var(--rule-strong);color:var(--ink-3);border-style:dashed}
+.chip.open{border-color:var(--ink-3);color:var(--ink-3);border-style:dotted}
 .note{border-left:2px solid var(--ochre);padding:2px 0 2px 18px;font-family:var(--sans);
   font-size:14.5px;line-height:1.62;color:var(--ink-2);max-width:82ch}
 
@@ -535,6 +536,12 @@ nav.grouped a.on{color:var(--ink);border-bottom-color:var(--terra)}
   border-radius:3px;padding:20px 20px 22px;transition:border-color .15s,transform .15s}
 .door:hover{border-color:var(--accent);transform:translateY(-2px)}
 .door:nth-child(2){border-left-color:var(--terra)}
+/* a 4th door is the searchable index — a tool, not an essay; let it run the full width */
+.doors .door:nth-child(4):last-child{grid-column:1/-1;flex-direction:row;align-items:baseline;
+  flex-wrap:wrap;gap:4px 18px;border-left-color:var(--rule-strong)}
+.doors .door:nth-child(4):last-child .dd{flex:1 1 22rem}
+@media(max-width:820px){.doors .door:nth-child(4):last-child{flex-direction:column}}
+
 .door:nth-child(3){border-left-color:var(--ochre)}
 .door .dn{font-size:23px;line-height:1.15;color:var(--ink)}
 .door .dd{font-family:var(--sans);font-size:13px;line-height:1.55;color:var(--ink-2)}

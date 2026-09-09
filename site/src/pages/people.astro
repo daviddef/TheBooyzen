@@ -1,0 +1,129 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import { people, lines } from "../data/people.js";
+const counted = lines.map(l => [l, people.filter(p => p.l === l).length]).filter(([, n]) => n > 0);
+const sorted = [...people].sort((a, b) => {
+  const s = (x) => (x.n.split(" ").slice(-1)[0] + " " + x.n).toLowerCase();
+  return s(a) < s(b) ? -1 : 1;
+});
+const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
+---
+<Base title="Everyone"
+      eyebrow={`${people.length} people, ${counted.length} families`}
+      dek="Every named person in this archive, with the records that carry them and the pages where they are discussed. Type to filter by name, family, place, spelling variant or anything in the notes.">
+
+<section class="blk">
+  <h2>Search</h2>
+  <div class="panel" style="margin-top:16px">
+    <label for="q" style="display:block;font-size:14px;margin-bottom:8px">
+      <strong>Filter</strong> — name, family, year, place, or a spelling variant such as
+      <em class="m">Montjoy</em>, <em class="m">Kumm</em> or <em class="m">Booÿse</em>
+    </label>
+    <input id="q" type="search" autocomplete="off" placeholder="Start typing…"
+           style="width:100%;padding:11px 13px;font-size:16px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:7px">
+      <button class="fbtn on" data-f="">All <span class="m">{people.length}</span></button>
+      {counted.map(([l, n]) => (<button class="fbtn" data-f={l}>{l} <span class="m">{n}</span></button>))}
+    </div>
+    <p id="count" class="cap" style="margin:12px 0 0" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="scroll">
+    <table id="ptable">
+      <thead><tr>
+        <th style="width:19rem">Name</th><th class="m" style="width:11rem">Born</th>
+        <th class="m" style="width:11rem">Died</th><th>In this archive</th>
+      </tr></thead>
+      <tbody>
+        {sorted.map((p) => (
+          <tr data-line={p.l} data-hay={[p.n, p.v ?? "", p.b, p.d, p.l, p.r, label[p.s]].join(" ").toLowerCase()}>
+            <td>
+              <strong>{p.n}</strong>
+              {p.g ? <span class="m cap"> · generation {p.g}</span> : null}
+              {p.v ? <div class="cap" style="margin-top:3px">also written {p.v}</div> : null}
+              <div style="margin-top:6px"><span class={"chip " + p.s}>{label[p.s]}</span></div>
+            </td>
+            <td class="m">{p.b}</td>
+            <td class="m">{p.d}</td>
+            <td>
+              <div>{p.r}</div>
+              <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">
+                {p.p.map(([t, h]) => (<a class="plink" href={u(h)}>{t}</a>))}
+              </div>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p id="empty" class="note" hidden style="margin-top:18px">
+    Nobody here matches that. The archive holds {people.length} named people — try a surname,
+    a year, or a place such as <em>Cradock</em>, <em>Barkly</em> or <em>Graaff-Reinet</em>.
+  </p>
+</section>
+
+<section class="blk">
+  <h2>Who is not here</h2>
+  <div class="prose">
+    <p><b>Living people are omitted.</b> David Defranceski, for whom this archive was made, and his mother
+      <b>Cheryl Anne Lerena</b> (b. 1955) are both living and are left out of this build, as are living
+      descendants of the Johannesburg family.</p>
+    <p><b>People the records name only once</b> — a witness, a neighbour, an official — are on
+      <a href={u("/documents/")}>The Documents</a> in the transcription of the record that names them,
+      rather than here.</p>
+    <p><b>The people who should be here and are not</b> are the point of
+      <a href={u("/open-questions/")}>Open Questions</a>: the parents of Gerthardus Lodewikus Booysen, and
+      the parents of James Montjoy, which a relative in 1840 recorded as <em>Not Known</em>.</p>
+  </div>
+</section>
+
+<style>
+  .fbtn { font: 500 13px/1 var(--sans, inherit); padding:7px 11px; border:1px solid var(--rule);
+          background:transparent; color:inherit; border-radius:999px; cursor:pointer; }
+  .fbtn.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .plink { font-size:13px; padding:3px 9px; border:1px solid var(--rule); border-radius:999px;
+           text-decoration:none; white-space:nowrap; }
+  .plink:hover { border-color:var(--accent); }
+  #ptable td { vertical-align:top; }
+</style>
+
+<script is:inline>
+(function () {
+  var q = document.getElementById("q");
+  var rows = Array.prototype.slice.call(document.querySelectorAll("#ptable tbody tr"));
+  var count = document.getElementById("count");
+  var empty = document.getElementById("empty");
+  var btns = Array.prototype.slice.call(document.querySelectorAll(".fbtn"));
+  var line = "";
+  function apply() {
+    var t = q.value.trim().toLowerCase();
+    var terms = t ? t.split(/\s+/) : [];
+    var shown = 0;
+    rows.forEach(function (r) {
+      var hay = r.getAttribute("data-hay");
+      var ok = (!line || r.getAttribute("data-line") === line) &&
+               terms.every(function (w) { return hay.indexOf(w) !== -1; });
+      r.hidden = !ok;
+      if (ok) shown++;
+    });
+    count.textContent = shown === rows.length
+      ? "Showing all " + rows.length + " people."
+      : "Showing " + shown + " of " + rows.length + ".";
+    empty.hidden = shown !== 0;
+  }
+  q.addEventListener("input", apply);
+  btns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      btns.forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      line = b.getAttribute("data-f");
+      apply();
+    });
+  });
+  apply();
+})();
+</script>
+</Base>

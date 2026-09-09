@@ -4,9 +4,9 @@ import { u } from "../lib/url.js";
 const line = [
   ["7", "Gerthardus Lodewikus Booysen", "—", "—", "Magdelena Elisabeth De Beer (1754–1843)", "no dates, no parents — the frontier"],
   ["6", "Petrus Jacobus Booysen", "c. 21 Sep 1788, Graaff-Reinet", "1 Sep 1876, Rustenburg", "Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet", "married at about seventeen; died in the Transvaal"],
-  ["5", "Petrus Jacobus Booysen", "10 May 1812, Graaff-Reinet", "1884 (probate)", "Johanna Catharina Mountjoy (1819–1863), m. 4 Nov 1838 Cradock", "died fifteen years before the war began"],
-  ["4", "Willem Hermanus “William Henry” Booyzen", "4 May 1851, achter Sneeuberg — DOCUMENTED", "13 Sep 1905, Indwe — DOCUMENTED", "Catherine Maria Sophia “Kathleen” Barry (1859–1940), m. 22 Dec 1879", "farmer in 1879, mason in 1905; died of a stomach ulcer"],
-  ["3", "George Downing Mountjoy Booyzen", "1 Jun 1901, Cape Province", "11 Dec 1947, Forest Hill — buried West Park 14 Dec", "Anna Johanna Maria Pretorius (1905–1944), m. 30 Dec 1924 Vereeniging", "S.A.R. &amp; H.; married his first cousin once removed"],
+  ["5", "Petrus Jacobus Booysen", "10 May 1812, Graaff-Reinet", "1884 (probate)", "Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) — DOCUMENTED, m. 4 Nov 1838 Cradock", "died fifteen years before the war began; signed his wife's death notice"],
+  ["4", "Willem Hermanus “William Henry” Booyzen", "4 May 1851, achter Sneeuberg — DOCUMENTED", "13 Sep 1905, Indwe — DOCUMENTED", "Catherine Maria Sophia “Kathleen” Barry (1859–1940), m. 22 Dec 1879", "parentage DOCUMENTED by two registers; farmer in 1879, mason in 1905; died of a stomach ulcer"],
+  ["3", "George Downing Mountjoy Booyzen", "1 Jun 1901, Cape Province", "11 Dec 1947, Forest Hill — buried West Park 14 Dec", "Anna Johanna Maria Pretorius (1906–1944), m. 30 Dec 1924 Vereeniging", "S.A.R. &amp; H.; married his first cousin once removed"],
   ["2", "Catherine Mary Sophia Booyzen", "25 Mar 1929", "25 Dec 2013, Johannesburg", "Nuno Fernando Lerena (1924–1971), m. 15 Jan 1949, St Joseph’s, Mayfair", "orphaned at eighteen; the hinge to the Lerena archive"],
 ];
 const sibs = [
@@ -28,6 +28,9 @@ const sibs = [
   <h2>The descent</h2>
   <p class="dek">Generations counted upward from David Defranceski. His mother
     <strong>Cheryl Anne Lerena</strong> (b. 1955) is living and is omitted from this build, as he is.</p>
+  <p class="cap">This is the spine only. For everyone else the archive names — siblings, cousins,
+    godparents, witnesses and in-laws — see <a href={u("/people/")}>Everyone</a>, which is searchable by
+    name, place, year or spelling variant.</p>
   <div class="scroll" style="margin-top:20px">
     <table>
       <thead><tr><th class="m">Gen</th><th style="width:15rem">Name</th><th>Born</th><th>Died</th><th>Married</th></tr></thead>
@@ -66,6 +69,54 @@ const sibs = [
       from him. <b>This family's link to him is not demonstrated here, and must not be assumed.</b>
       <a href={u("/name/")}>The name &rarr;</a></p>
   </div>
+</section>
+
+<section class="blk">
+  <h2>The other line — through his mother</h2>
+  <p class="dek">The male line stops at generation 7 with a man who has no dates. The line through
+    <strong>Johanna Catharina Mountjoy</strong> runs a generation deeper, and every step of it is now on
+    paper.</p>
+  <div class="scroll" style="margin-top:20px">
+    <table>
+      <thead><tr><th style="width:16rem">Name</th><th>Born</th><th>Died</th><th>Carried by</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>James Montjoy</strong><div class="cap" style="margin-top:4px">saddler at Cradock;
+            his parents recorded as <em>Not Known</em></div></td>
+          <td class="m">c. 1782, "Europe"</td><td class="m">Sep 1827, Cradock</td>
+          <td>His 1840 death notice, <span class="m">KAB MOOC 6/9/21: 4393</span></td>
+        </tr>
+        <tr>
+          <td><strong>Anna Catharina Sleer</strong><div class="cap" style="margin-top:4px">his wife, m.
+            9 Mar 1817 Graaff-Reinet; previously widow of William Pietersen</div></td>
+          <td class="m">1787</td><td class="m">1885 — aged 98</td>
+          <td>The 1840 death notice; the 1817 marriage index</td>
+        </tr>
+        <tr>
+          <td><strong>Johanna Catharina Mountjoy</strong><div class="cap" style="margin-top:4px">m. Petrus
+            Jacobus Booysen, 4 Nov 1838 Cradock</div></td>
+          <td class="m">30 Apr 1819, Graaff-Reinet</td><td class="m">19 May 1863, Zevenfontein</td>
+          <td>Her 1863 death notice, <span class="m">KAB MOOC 6/9/104: 499</span></td>
+        </tr>
+        <tr>
+          <td><strong>Willem Hermanus Booyzen</strong><div class="cap" style="margin-top:4px">generation 4
+            of the line above — her fifth child</div></td>
+          <td class="m">4 May 1851, achter Sneeuberg</td><td class="m">13 Sep 1905, Indwe</td>
+          <td>His 1851 baptism; his mother's 1863 death notice</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note" style="margin-top:22px">
+    <p style="margin:0">Her age on the 1863 form is given as <b>"44 years &amp; 19 days"</b> when the form
+      asked only for years — which fixes her birth at <b>30 April 1819</b>. And <b>Willem Hermanus is the
+      fifth of the eight children listed on that form</b>, which is how the Mountjoy descent enters this
+      family: <b>through his mother, not his father</b>.</p>
+  </div>
+  <p style="margin-top:18px">This line stops for a different reason than the Booysen one. It does not run
+    out of records — it runs out of memory. Asked for James Montjoy's parents in 1840, thirteen years after
+    his death, a relative who knew his trade, his house and its value wrote <b>"Not Known."</b>
+    <a href={u("/documents/")}>The 1840 notice &rarr;</a></p>
 </section>
 
 <section class="blk">
