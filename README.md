@@ -149,6 +149,22 @@ Two more findings from the same pass:
   family in exactly the right district and generation to hold **D. W. Schoeman** of Caerlaverock.
   The notice is signed **"D. Booyzen"** — Dorothea Regina Barry, who married Henry James Booyzen.
 
+## The London end, closed
+
+**The 1803 baptism register of St Anne's, Soho** was the last big one, and it did exactly what it needed
+to. Under FEBRUARY 1803:
+
+> **"1802 Dec: 7 — George Augustus Kolbe of John Gottlob & Mary — 2"**
+
+- **Born 7 December 1802** — matching, to the day, the inscription cut on the Burgersdorp monument:
+  *"BORN IN LONDON 7 DECEMBER 1802."* A Westminster register and a Karoo gravestone, ninety years and
+  six thousand miles apart, in exact agreement.
+- **His parents are named in an original register.** The link from the 1820 Settler to **John Gottlob
+  Kolbe**, tailor of Conduit Street, and **Mary Larman** is no longer taken on the tree's word.
+- **And a correction of emphasis.** The register says *John Gottlob*. So does his will, his death
+  certificate and his burial entry. **Four documents, and not one says "Johan Gottlieb"** — the German
+  original the tree leads with. This archive now follows the documents.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on

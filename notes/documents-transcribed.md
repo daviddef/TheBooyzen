@@ -705,3 +705,35 @@ That is the case for this archive in one line.
    sons, and they disagree with each other.
 3. **"Afrikander of European extraction"** — her nationality as her son described it in 1915. The
    family had become Afrikaans in two generations from a London-born settler.
+
+## 19. BAPTISM REGISTER, February 1803 — the London end of the line closed
+`sources/booyzen-photos/kolbe/kolbe-george-baptism-1803.jpg`
+FindMyPast reference **GBPRS_WSMTN_005109304_00342** — Westminster parish records; **St Anne's, Soho**.
+
+A register **index** page, arranged month by month, birth date at the left and day of baptism at the
+right. A note on the same page reads *"The Register contains 410 Baptisms for the Year 1802."*
+
+Under the heading **FEBRUARY 1803**, the second entry:
+
+> **"1802 Dec: 7 — George Augustus Kolbe of John Gottlob & Mary — 2"**
+
+That is: **born 7 December 1802; baptised 2 February 1803; son of John Gottlob and Mary.**
+
+### What it settles
+1. **Born 7 December 1802** — matching, to the day, the inscription cut on the Burgersdorp monument:
+   *"BORN IN LONDON 7 DECEMBER 1802."* An English parish register and a Karoo gravestone, ninety years
+   and six thousand miles apart, agreeing exactly.
+2. **Baptised 2 February 1803**, as the tree has it.
+3. **His parents are named in an original register: JOHN GOTTLOB and MARY.**
+   <span>Documented</span> The link from **George Augustus Kolbe** to **Johan Gottlieb "John Gottlob"
+   Kolbe** and **Mary Larman** is no longer inferred from a family tree. **It is on the parish register.**
+   **The London end of this line is closed.**
+
+### And a small point about his name
+The register writes the father **"John Gottlob"**. So does his **will** — *"of me John Gottlob Kolbe"*.
+So does his **death certificate** — *"John Gottlob Kolbe"*. So does his **burial register** —
+*"Mr John Gottlob Kolbe"*.
+
+Four independent documents, and not one of them says *Johan Gottlieb*. **"Johan Gottlieb" is the German
+original the tree leads with; "John Gottlob" is the name he actually used, and was buried under, in
+England.** The archive should follow the documents.
