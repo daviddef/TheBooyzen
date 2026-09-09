@@ -287,3 +287,68 @@ the archive was hoping for.
 - **Anna Catharina Schleher / Slier** — resolved to **Sleer / Slier** by a document.
 - **Johanna Catharina Montjoy's birth**, previously "1819", is now **30 April 1819, Graaff-Reinet**,
   computed from an age given to the day.
+
+---
+
+# Pass three — the 1840 death notice (9 Sep 2026)
+
+## How it was found
+Not name-indexed, and the probate collection's 846 films are catalogued by film number alone. Route:
+
+1. Search collection `2517051` for any **indexed** 1840 death → James Edwards, d. 28 Oct 1840
+   (`1:1:QGTD-QLCP`), image ark `3:1:3Q9M-CSQX-MQ2G-6`.
+2. Its waypoint is `WV44-SZV:1598082367` = film **007844936**, *"Cape Province. Probate Records
+   1840–1843"*, **2,223 images**. Our image sits at index **700**.
+3. Reference numbers are pencilled in the top-right corner and **ascend by ~1 per image**:
+   image 700 = 4726 · 720 = 4745 · 740 = 4765 · 760 = 4785 · 780 = 4803 · 800 = 4822 · 820 = 4840 ·
+   840 = 4861. Target **4393** is therefore *earlier*: 4726 − 4393 = 333, so ≈ image 367.
+4. Sampled 330–420: 330 = 4386 · 345 = 4401 · 360 = 4415 · 375 = 4428 · 390 = 4442 · 405 = 4455 ·
+   420 = 4470. Bracketed to 330–345, then stepped one by one:
+   333 = 4389 · 334 = 4390 · 335 = 4391 · 337 = 4392 · **338 = 4393**.
+
+**Image 338, apid `TH-909-58020-130103-43`.** Method worth reusing for any unindexed MOOC reference.
+
+## The document
+**KAB MOOC 6/9/21, reference 4393. Filed 9 July 1840. Signed at Colesberg 25 June 1840.**
+
+| Field | As written |
+|---|---|
+| 1. Name of the Deceased | **James Montjoy** |
+| 2. Birth-place | **Europe** |
+| 3. **Names of the Parents** | **Not Known** |
+| 4. Age | **About 45 years** |
+| 5. Condition in life | **Saddler** |
+| 6. Married or unmarried | **Married to Catharina Sl[i/e]er, widow of William Pietersen** |
+| 7. Day of decease | **September 1827** |
+| 8. At what House | **In the village of Cradock** |
+| 9. Children | 1. James, a minor · 2. George, do. · 3. Johanna, do. · 4. Jacoba, do. |
+| 10. Property | **A house and erf at Cradock, of the value of £90** |
+| Signed | a Montjoy — the initial is not legible with confidence |
+
+## What it gives
+1. **"Not Known."** The document sought to break the wall *is* the wall. Written **thirteen years after
+   the death**, by someone who knew his trade, his house, its value, the village and the name of his
+   wife's first husband — and could not name his parents. The line stops here, and it stops for a
+   reason internal to the family. Exact parallel to the 1915 Kolbe notice ("Father: Kolbe, thinks James
+   was christian name. Mother: Unknown") — same box, same printed form, seventy-five years apart.
+2. **"Europe."** Not a country. This is now the only statement of origin in hand.
+3. **Saddler.** His son George Mountjoy is a **saddle maker** at Cradock at his 1848 marriage. George was
+   **four** when his father died. The trade survived the father. The note in pass one calling George's
+   trade "the first recorded for a Mountjoy" is wrong — it is the second.
+4. **The Pietersen marriage, documented.** Pass two inferred, from a godparent at the 1851 font, that
+   Johanna Catharina's half-brothers were Pieterzens. Line 6 names the first marriage outright.
+5. **Property.** A house and erf at Cradock, £90. He was a town tradesman with freehold, not a bywoner.
+
+## Corrections this makes
+- **The 1827/1840 contradiction was mine, not the tree's.** He died September 1827; the file is dated
+  by its **filing** year, 1840. The tree's 1827 is right. Recorded on the site as such.
+- **Age "about 45" in Sept 1827 → born c. 1782.** The tree has 1786. Close, and the notice says "about".
+- **Thomas Jacobus (b. 1818) is absent from the children.** Independent support for his death in 1827.
+- **James Mountjoy is NOT "1826–1826".** He is listed **alive, a minor**, in September 1827. The tree's
+  infant-death date is wrong.
+- The four children fix the family at Sept 1827: Johanna Catharina 8, Jacoba 7, George 4, James 1.
+
+## Where the line goes now
+Nothing further is recoverable inside South Africa. Above James Montjoy the search must move **outside
+the Cape**: English, Irish or Continental records for a **saddler named Montjoy/Mountjoy, born c. 1782,
+in the Cape before 1818** (his eldest child was born at Graaff-Reinet that year).
