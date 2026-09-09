@@ -22,6 +22,39 @@ const q = [
       dek="Everything this archive knows it does not know, with the specific record set that would answer each. Nothing here is rhetorical — every line names somewhere to look.">
 
 <section class="blk">
+  <h2>Two letters</h2>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="panel">
+      <h3 style="margin-top:0">Western Cape Archives — <span class="m">drafted, not sent</span></h3>
+      <p>Three documents have been identified that are the likeliest in existence to break this
+        archive's oldest wall, and none is digitised:</p>
+      <table style="width:100%;margin-top:10px">
+        <tbody>
+          <tr><td class="m" style="width:11rem">MOOC 7/1/104: 42</td><td><b>James Mountjoy's will, 1818</b> — joint with Anna Catharina Slier, made a year after their marriage</td></tr>
+          <tr><td class="m">MOOC 7/1/104: 43</td><td>the same pair again, <b>1827</b>, the year he died</td></tr>
+          <tr><td class="m">CO 3972: 17</td><td><b>a Colonial Office memorial, 1834</b> — "the widow of J Mountjoy, requesting remission of a fine". A petition in her own voice.</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:12px">A Cape will of 1818 will often state where the testator came from, and a
+        memorial to the Colonial Office very often does. The letter also asks whether a liquidation
+        account survives for <b>estate 8907</b>, which would name the second wife.</p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">SANDF Documentation Centre — <span class="m">half delivered</span></h3>
+      <p><span class="chip inf">Correction</span> This archive recorded the pension enquiry as
+        <b>sent</b> on 9 September 2026. It was sent, and <b>one of the two addresses bounced</b>:</p>
+      <p style="margin-top:10px" class="m">550 5.7.1 &lt;sandfdoc@mweb.co.za&gt;: Relay access denied</p>
+      <p style="margin-top:10px">That is the address published almost everywhere for the Centre — the
+        National Archives directory, the university guides, the genealogy sites — and it refuses mail at
+        the server. The enquiry <b>did</b> reach <span class="m">archive@dod.mil.za</span>, which has not
+        replied.</p>
+      <p style="margin-top:12px"><b>"Sent" and "delivered" are not the same word, and this archive used
+        the wrong one.</b> <a href={u("/log/")}>The research log &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
   <h2>The queue</h2>
   {q.map(([n, title, why, where, pri]) => (
     <div class="panel" style="margin-top:16px">

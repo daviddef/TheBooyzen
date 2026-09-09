@@ -1,3 +1,26 @@
+# CORRECTION, 10 September 2026 — this was only half delivered
+
+Reported here and in the archive as **SENT**. It was sent, and one of the two addresses **bounced**.
+
+| Address | Result |
+|---|---|
+| `archive@dod.mil.za` | **Delivered.** No bounce, no reply as at 10 September 2026. |
+| `sandfdoc@mweb.co.za` | **BLOCKED.** `550 5.7.1 <sandfdoc@mweb.co.za>: Relay access denied` — rejected by mx.spamexperts.com, the mail exchanger for mweb.co.za, 9 September 2026. |
+
+The mweb address is the one published almost everywhere for the Documentation Centre — it is on the
+National Archives directory, the Stellenbosch library guide and the genealogy sites — and it is
+refusing mail at the server. Re-checked on 10 September 2026: those are still the only two published
+addresses, so there is no better one to switch to.
+
+**The enquiry did reach the Department of Defence** on the dod.mil.za address. If nothing comes back,
+the fallbacks are the Centre's telephone, **(012) 339-4600**, and its street address, Schweikert
+Building, 20 Visagie Street, Pretoria.
+
+**Reported as sent when it was half sent.** The correction belongs here, at the top, rather than
+further down.
+
+---
+
 # Request — Union Defence Force service and pension records, SANDF Documentation Centre
 
 > ## *** SENT — 9 September 2026 ***
