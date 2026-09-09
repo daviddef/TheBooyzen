@@ -1,6 +1,7 @@
 # Request — Western Cape Archives and Records Service
 
-**Status:** DRAFTED, NOT SENT. Sending requires David's say-so.
+**Status: SENT** — 10 September 2026, to `archives.clientservices@westerncape.gov.za`.
+Gmail message id `1a087cc0896aa124`. Delivery checked; no bounce.
 
 **To:** archives.clientservices@westerncape.gov.za
 **Confirmed:** westerncape.gov.za official service page, 10 September 2026.
