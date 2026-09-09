@@ -286,6 +286,29 @@ testing it. It needs Cape compensation claims and the post-war farm-burning retu
 *(Manorowen returns nothing in any of the fifteen registers — so John Barry's farm, unlike Caerlaverock,
 has no wartime record here at all.)*
 
+## The WWI search — the guess was wrong
+
+Kathleen Barry's 1940 certificate calls her a **"Military Pensioner"**, and this archive guessed a **son
+killed in the First World War**. Searched — and **the guess does not hold**.
+
+- **No Booyzen among the First World War dead.** The South Africa War Graves Project's two Booyzens died
+  in **1944** (SAAF, Alamein Memorial) and **1993**.
+- **Thirteen Booysen deaths in 1914–18**, and **not one matches a son by forename**. Most are in the
+  **South African Native Labour Corps**, **Cape Coloured Labour Regiment** and **Military Labour
+  Bureau/Corps** — units not open to a family recorded as **"European"** on every certificate read here.
+  The nearest echo, *"Fred Booysens"* (Military Labour Bureau, Tanzania 1916), has the wrong unit and
+  would have been seventeen.
+- **Decisively: all her identifiable sons survived** — dying in 1932, 1952, 1956, 1966 and 1980. A
+  dependant's pension for a killed son does not fit this family at all.
+
+⇒ **The pension belongs to a man who served and came home** — a disabled son with his mother as
+dependant, or another entitlement entirely.
+
+**Where it goes next:** the **SANDF Documentation Centre, Pretoria**, which holds Union Defence Force
+attestation, personnel and pension files from 1912. **None of it is online.** Noted also: the CWGC site
+is behind a bot check and was not searched, and FamilySearch's South African Defence collection is
+browse-by-image, not name-indexed.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
