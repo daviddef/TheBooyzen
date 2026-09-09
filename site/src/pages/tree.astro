@@ -1,0 +1,124 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import ped from "../data/pedigree.json";
+import d from "../data/dossiers.json";
+const slugOf = {};
+for (const p of Object.values(d.people)) slugOf[p.n] = p.slug;
+/* Lay the chart out: generations are columns, and a node sits at the midpoint
+   of whatever it has above it. Leaves are stacked in the order they are met. */
+const COLW = 176, ROWH = 34, BOXW = 158, BOXH = 26;
+let cursor = 0;
+function layout(n, g) {
+  if (!n) return null;
+  const node = { ...n, g };
+  const kids = [n.f, n.m].filter(Boolean).map(k => layout(k, g + 1)).filter(Boolean);
+  node.kids = kids;
+  node.y = kids.length ? (kids[0].y + kids[kids.length - 1].y) / 2 : (cursor++) * ROWH;
+  node.x = g * COLW;
+  return node;
+}
+const root = layout(ped.root, 0);
+const flat = [];
+(function walk(n) { flat.push(n); (n.kids || []).forEach(walk); })(root);
+const maxY = Math.max(...flat.map(n => n.y));
+const maxG = Math.max(...flat.map(n => n.g));
+const W = (maxG + 1) * COLW + 40, H = maxY + BOXH + 74;
+const wallLabel = { hard: "The wall", searched: "Searched, nothing", notknown: "“Not Known”", disputed: "Disputed" };
+const wallFill = { hard: "--terra", searched: "--ink-3", notknown: "--terra", disputed: "--ochre" };
+const gens = [...Array(maxG + 1).keys()];
+---
+<Base title="The tree"
+      eyebrow={`${flat.filter(n => !n.wall).length} named ancestors · ${flat.filter(n => n.wall).length} walls`}
+      dek={ped.note}>
+
+<section class="blk">
+  <div class="scroll">
+    <svg viewBox={`0 0 ${W} ${H}`} width={W} style="min-width:900px;display:block" role="img"
+         aria-label="Ancestor chart for Catherine Mary Sophia Booyzen, seven generations, with four points where the line stops.">
+      {gens.map(g => (
+        <text x={g * COLW + BOXW / 2} y="16" text-anchor="middle" font-size="10"
+              style="fill:var(--ink-3);font-family:var(--mono);letter-spacing:.08em">
+          {g === 0 ? "SELF" : "GEN " + g}</text>
+      ))}
+      {flat.map(n => (n.kids || []).map(k => (
+        <path d={`M ${n.x + BOXW} ${n.y + 30 + BOXH / 2} H ${n.x + BOXW + 12} V ${k.y + 30 + BOXH / 2} H ${k.x}`}
+              style={`fill:none;stroke:var(${k.wall ? wallFill[k.k] : "--rule-strong"});stroke-width:1;${k.wall ? "stroke-dasharray:3 3" : ""}`} />
+      )))}
+      {flat.map(n => (n.wall ? (
+        <g>
+          <rect x={n.x} y={n.y + 30} width={BOXW} height={BOXH} rx="13"
+                style={`fill:none;stroke:var(${wallFill[n.k]});stroke-width:1.2;stroke-dasharray:3 3`} />
+          <text x={n.x + BOXW / 2} y={n.y + 30 + 17} text-anchor="middle" font-size="10.5"
+                style={`fill:var(${wallFill[n.k]});font-family:var(--sans);letter-spacing:.04em`}>{wallLabel[n.k]}</text>
+          <title>{n.wall}</title>
+        </g>
+      ) : (
+        <a href={slugOf[n.n] ? u("/who/" + slugOf[n.n] + "/") : u("/direct-line/")}>
+          <g>
+            <rect x={n.x} y={n.y + 30} width={BOXW} height={BOXH} rx="2"
+                  style={`fill:var(--panel);stroke:var(${n.s === "open" ? "--ochre" : "--rule"});stroke-width:1`} />
+            <text x={n.x + 8} y={n.y + 30 + 12} font-size="10.5"
+                  style="fill:var(--ink);font-family:var(--sans)">{n.n.length > 27 ? n.n.slice(0, 26) + "…" : n.n}</text>
+            <text x={n.x + 8} y={n.y + 30 + 22} font-size="9.5"
+                  style="fill:var(--ink-3);font-family:var(--mono)">{n.b} – {n.d}</text>
+            <title>{n.n} · {n.b} – {n.d}</title>
+          </g>
+        </a>
+      )))}
+    </svg>
+  </div>
+  <p class="cap">Each box is a person a document names; click one for everything the archive holds on
+    them. Dashed rings are where the line stops.</p>
+</section>
+
+<Rule name="thorn" label="Four walls, four different reasons" />
+
+<section class="blk">
+  <div class="grid g2">
+    <div class="panel">
+      <h3 style="margin-top:0">“Not Known” — <span class="m">James Montjoy, 1840</span></h3>
+      <p>The strongest wall, because it is not a gap in the archive but a gap in the family. His death
+        notice was completed <b>thirteen years after he died</b> by a relative who knew his trade, his
+        house, its value and his wife's first husband — and wrote <b>Not Known</b> where it asked for his
+        parents. His 1817 marriage records no origin either.
+        <a href={u("/documents/")}>The notice &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">The male line stops — <span class="m">Gerthardus Lodewikus Booysen</span></h3>
+      <p>No birth date, no death date, no father, no mother. Seven generations up the surname simply ends,
+        and the tree offers buttons with nothing behind them.
+        <a href={u("/open-questions/")}>Open question 0 &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Searched and empty — <span class="m">Magdelena Elisabeth de Beer</span></h3>
+      <p>The one named lead at the top of that line was her 1843 estate. The Cape archives were searched
+        under eight forms of both surnames. There is no file for her, and none for him.
+        <a href={u("/searched/")}>The searches &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Disputed — <span class="m">John Barry, 1796–1853</span></h3>
+      <p>Not a wall so much as a knot: one profile holding two men, a Yorkshire farmer of Bilsdale and a
+        man who died at de Bruins Poort in the Cape. Until they are separated nothing above it can be
+        trusted. <a href={u("/disputed/")}>Disputed &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What the shape says</h2>
+  <div class="prose">
+    <p>The chart is <b>lopsided on purpose</b>. The Booyzen male line runs seven generations and stops at a
+      man with no dates. The <b>Kolbe and Downing lines reach London</b> — a Soho font, a Shoreditch
+      wedding, a Bond Street tailor's will. The <b>Mountjoy line stops hardest of all</b>, at a saddler
+      born in “Europe” whose own family could not name his parents.</p>
+    <p>And the whole of the right-hand side is thin for the same reason: <b>this family did not keep
+      records, it appeared in other people's</b>. Almost everything here was recovered from civil
+      registration, church registers and the Master's Office — not from anything handed down.</p>
+    <p><a href={u("/direct-line/")}>The line in full &rarr;</a> ·
+       <a href={u("/people/")}>All {Object.keys(d.people).length} people &rarr;</a> ·
+       <a href={u("/timeline/")}>The timeline &rarr;</a></p>
+  </div>
+</section>
+</Base>

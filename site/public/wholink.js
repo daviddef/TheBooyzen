@@ -26,6 +26,9 @@
         var p = node.parentElement;
         while (p && p !== main) {
           var t = p.tagName;
+          /* Never touch anything inside an SVG: an HTML <a> injected there does
+             not render, and the label silently disappears from the chart. */
+          if (p.ownerSVGElement || t === "svg" || t === "SVG") return NodeFilter.FILTER_REJECT;
           if (t === "A" || t === "CODE" || t === "PRE" || t === "SCRIPT" || t === "STYLE" ||
               t === "TITLE" || t === "OPTION" || p.classList.contains("noauto"))
             return NodeFilter.FILTER_REJECT;
