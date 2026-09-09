@@ -4,11 +4,11 @@ import { u } from "../lib/url.js";
 const stats = [
   ["646", "people in the whole world carry the spelling Booyzen — against 53,764 Booysens", "/name/"],
   ["1820", "the Nautilus lands at Algoa Bay with a seventeen-year-old London tailor's son aboard", "/kolbe/"],
-  ["550", "men of Barkly East and Dordrecht went out as Cape Rebels before Stormberg", "/rebels/"],
+  ["1779", "the year the spelling Booyzen is already on a Cape document — 120 years before the war", "/name/"],
   ["1915", "the year a grandson wrote “Father: Kolbe, thinks James was christian name. Mother: Unknown” — three years after the death", "/documents/"],
   ["7", "generations up, the male line stops at a man with no dates and no parents", "/direct-line/"],
   ["1905", "the year both spellings appear on one sheet of paper — father Booysen, son Booyzen", "/documents/"],
-  ["16", "his age when he swore on oath he was twenty-one, and married her at Shoreditch", "/documents/"],
+  ["1840", "“Names of the Parents of the Deceased. Not Known.” — written thirteen years after the death", "/documents/"],
 ];
 ---
 <Base title="The Booyzen Archive"
@@ -69,12 +69,17 @@ const stats = [
         caught the surname changing.</div>
       <div class="go">The documents &rarr;</div>
     </a>
-    <a class="door" href={u("/people/")}>
-      <div class="dn">Look someone up</div>
-      <div class="dd">Every named person in the archive in one searchable list — with the record that
-        carries them, the spelling variants they appear under, and where each is discussed.</div>
-      <div class="go">Everyone &rarr;</div>
-    </a>
+  </div>
+  <div class="ways">
+    <span class="wl">Ways in</span>
+    <a href={u("/search/")}>Search everything</a>
+    <a href={u("/people/")}>Everyone <span class="m">78</span></a>
+    <a href={u("/places/")}>The places <span class="m">28</span></a>
+    <a href={u("/tree/")}>The tree</a>
+    <a href={u("/timeline/")}>The timeline <span class="m">43</span></a>
+    <a href={u("/atlas/")}>The atlas</a>
+    <a href={u("/gallery/")}>The plates <span class="m">83</span></a>
+    <a href={u("/searched/")}>What was searched <span class="m">30</span></a>
   </div>
 </section>
 
@@ -89,18 +94,24 @@ const stats = [
       <thead><tr><th style="width:17rem">The claim</th><th>Where it stands</th></tr></thead>
       <tbody>
         <tr><td><strong>The family were Cape Rebels</strong></td>
-          <td><span class="chip inf">The household, yes. The family, not yet.</span> The Cape Rebel
-            register has been searched. <strong>The man in whose house they married in July 1901 —
-            Daniel Willem Schoeman of Caerlaverock — was tried as a Cape Rebel the month before</strong>,
-            and signed their register. But of the <strong>26 Booysens</strong> on the roll,
-            <strong>not one is from this district</strong>.
+          <td><span class="chip doc">Yes — but under the other surname</span> Of the
+            <strong>26 Booysens</strong> on the roll not one is from this district, and
+            <strong>Booyzen returns nothing at all</strong>. The surname <strong>BARRY</strong> had never
+            been searched. It returns four, and two are here: <strong>Fred J. Barry of Ivanhoe, Barkly
+            East / Wodehouse, tried June 1901</strong> — the same month as <strong>Daniel Willem Schoeman
+            of Caerlaverock</strong>, in whose house the family married five weeks later — and
+            <strong>Richard Peter Barry of Jerpoint</strong>, which is Kathleen Barry's brother's name.
+            Identity unproven; the district is not.
             <a href={u("/rebels/")}>The rebels &rarr;</a></td></tr>
         <tr><td><strong>The spelling was changed to avoid the "joiners"</strong></td>
-          <td><span class="chip doc">The change is on paper</span> On the <strong>1905 death form the
-            clerk writes Boo<em>y</em>sen and the dead man's son signs Boo<em>y</em>zen</strong>, four lines
-            apart. The <em>motive</em> remains testimony — and the groom's own 1879 signature may already
-            show a z, which would move the break back twenty years.
-            <a href={u("/documents/")}>The documents &rarr;</a></td></tr>
+          <td><span class="chip doc">The change is on paper. The spelling was not new.</span> On the
+            <strong>1905 death form the clerk writes Boo<em>y</em>sen and the dead man's son signs
+            Boo<em>y</em>zen</strong>, four lines apart. But the z was <strong>never invented</strong>:
+            the Cape archives hold <strong>39 documents under BOOYZEN, the earliest 1779</strong> — a
+            hundred and twenty years before the war — and an 1851 register writes the family
+            <em>Booyzen</em> in the same hand that writes the godparents <em>Pieterzen</em>. As for the
+            motive, the joiners register holds <strong>one</strong> Booysen in the country, and he is a
+            Free State man from Heilbron. <a href={u("/name/")}>The name &rarr;</a></td></tr>
         <tr><td><strong>A forebear was shot and killed by the British</strong></td>
           <td><span class="chip lore">Disproved for both candidates</span> Petrus Jacobus died in
             <strong>1884</strong>, fifteen years before the war. And <strong>Willem Hermanus died of an
@@ -108,14 +119,20 @@ const stats = [
             under a doctor's care — the death registration has now been read. Whoever the story means,
             <strong>it is neither of them</strong>. <a href={u("/documents/")}>The document &rarr;</a></td></tr>
         <tr><td><strong>The farm was burned out</strong></td>
-          <td><span class="chip inf">One new piece of evidence</span> He is a <strong>Boer</strong> —
+          <td><span class="chip inf">Support, and a complication</span> He is a <strong>Boer</strong> —
             farmer, of Lady Grey — at his marriage in 1879, and a <strong>Mason</strong> at his death in
-            1905. A man who works land and then works stone has often lost the land, and the war sits in
-            that interval. Circumstantial, and the first support this claim has ever had.
+            1905; a man who works land and then works stone has often lost the land, and the war sits in
+            that interval. But his father's 1884 estate leaves <strong>“moveables only, such as wearing
+            apparel”</strong>, so this household was landless <strong>fifteen years before the war</strong>.
+            Any account beginning with a prosperous farm being burned has to account for 1884 first.
             <a href={u("/documents/")}>The documents &rarr;</a></td></tr>
         <tr><td><strong>The women and children were put in a concentration camp</strong></td>
-          <td><span class="chip lore">Untested</span> Camp registers survive and are indexed. Nobody has
-            searched them for this family yet. <a href={u("/open-questions/")}>Open questions &rarr;</a></td></tr>
+          <td><span class="chip lore">Searched, and not found</span> The University of Cape Town's camp
+            database has now been searched: <strong>Barry returns nothing at all</strong>, and the five
+            Booyzens in it are <strong>every one Transvaal</strong>. But that database is built largely
+            from camp <em>death</em> lists — it records who died far better than who was interned and
+            walked out — so the claim is <strong>unsupported, not disproved</strong>.
+            <a href={u("/searched/")}>What was searched &rarr;</a></td></tr>
         <tr><td><strong>They came to Johannesburg and the boys went onto the mines</strong></td>
           <td><span class="chip inf">Half-confirmed</span> The birthplaces move from <strong>Barkly
             East</strong> (to 1907) to <strong>Johannesburg</strong> (from 1932), and the family is at

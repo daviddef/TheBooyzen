@@ -521,14 +521,21 @@ nav.grouped a.on{color:var(--ink);border-bottom-color:var(--terra)}
 
 /* Opening statement */
 /* ---------- home hero: house style, headline over the picture ---------- */
+/* The ground under the hero is fixed, not themed: --accent is a light green in
+   dark mode and washed the photograph out entirely. */
 .hero{position:relative;margin:0 0 8px;border-radius:18px;overflow:hidden;
-  background:linear-gradient(160deg,var(--accent) 0%,#24412C 55%,#15251A 100%)}
-.hero img{width:100%;height:clamp(260px,42vw,470px);object-fit:cover;object-position:50% 42%;
-  display:block;opacity:.62;filter:saturate(.92)}
+  background:linear-gradient(160deg,#3E6B4A 0%,#24412C 55%,#15251A 100%)}
+/* The source is 3:1 and the box is wider than it is tall, so centre the crop
+   LOW — at 42% the band was all sky and the escarpment fell out of frame. */
+.hero img{width:100%;height:clamp(260px,42vw,470px);object-fit:cover;object-position:50% 68%;
+  display:block;opacity:.86;filter:saturate(.95)}
 .hero .cap{position:absolute;left:0;right:0;bottom:0;padding:26px clamp(18px,4vw,44px) 24px;
-  background:linear-gradient(to top,rgba(14,24,16,.88),rgba(14,24,16,.36) 55%,transparent)}
+  background:linear-gradient(to top,rgba(14,24,16,.92),rgba(14,24,16,.55) 50%,rgba(14,24,16,.06))}
+/* The crop moves with the viewport, so the type has to stay legible over sky
+   as well as over veld. */
+.hero .cap > *{text-shadow:0 1px 14px rgba(10,18,12,.75),0 1px 3px rgba(10,18,12,.55)}
 .hero .kick{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
-  color:#E3C58A}
+  color:#F0D9A6}
 .hero h1{color:#FBF8F1;font-size:clamp(27px,4.4vw,50px);line-height:1.07;margin-top:8px;max-width:21ch}
 .hero .sub{font-family:var(--sans);font-size:15px;color:#DCE4D6;margin-top:12px;max-width:62ch}
 .opener{padding:26px 0 40px}
@@ -792,16 +799,7 @@ body.is-home #onthispage{display:none}
 #onthispage .toc[open] > summary{color:var(--ink-2)}
 
 /* ---------- home: colour and pictures --------------------------------- */
-.hero{position:relative;margin:0 0 8px;border-radius:18px;overflow:hidden;
-  background:linear-gradient(160deg,var(--accent) 0%,#123f4b 55%,#0d2f39 100%)}
-.hero img{width:100%;height:clamp(260px,42vw,470px);object-fit:cover;display:block;
-  opacity:.62;filter:saturate(.92)}
-.hero .cap{position:absolute;left:0;right:0;bottom:0;padding:26px clamp(18px,4vw,44px) 24px;
-  background:linear-gradient(to top,rgba(8,22,28,.86),rgba(8,22,28,.34) 55%,transparent)}
-.hero .kick{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
-  color:#EBC98A}
-.hero h1{color:#FBF8F1;font-size:clamp(30px,5.2vw,58px);line-height:1.06;margin-top:8px;max-width:16ch}
-.hero .sub{font-family:var(--sans);font-size:15px;color:#D6E3E7;margin-top:12px;max-width:62ch}
+/* (the .hero rules live higher up, with the rest of the home page) */
 .feat{margin-top:44px;padding:26px clamp(16px,3vw,32px) 30px;border-radius:16px;
   background:var(--panel);border:1px solid var(--rule)}
 .feat > h2{font-size:clamp(24px,3.4vw,34px)}
@@ -835,3 +833,13 @@ a.wholink:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .toc nav a:hover{color:var(--accent)}
 @media(min-width:901px){.toc nav{columns:2;column-gap:26px;display:block}
   .toc nav a{display:block;break-inside:avoid}}
+
+/* “Ways in” — the index strip under the home page doors */
+.ways{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px;padding:14px 16px;
+  background:var(--panel);border:1px solid var(--rule);border-radius:3px}
+.ways .wl{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-3);margin-right:4px}
+.ways a{font-family:var(--sans);font-size:13.5px;text-decoration:none;color:var(--ink-2);
+  border:1px solid var(--rule);border-radius:999px;padding:5px 12px}
+.ways a:hover{border-color:var(--accent);color:var(--accent)}
+.ways a .m{color:var(--ink-3);font-size:11.5px}
