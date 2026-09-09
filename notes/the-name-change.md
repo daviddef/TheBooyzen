@@ -55,3 +55,45 @@ Within a single sibling group the tree records **Booysen**, **Booyzen**, and **B
 diaeresis — older Cape Dutch). That is not carelessness in the tree; it reflects registers that
 themselves varied. It also means the "change" may have been a *hardening* of one variant already in
 use rather than an invention.
+
+---
+
+# Pass three — the Cape Archives index (9 Sep 2026)
+
+## The z is 120 years older than the war
+NAAIRS, **Cape Town Archives Repository (KAB)**, searched for the z spellings:
+
+| Spelling | Documents | Earliest |
+|---|---|---|
+| **BOOYZEN** | **39** | **1779** — `KAB CJ 2633: 29`, *"BOOYZEN, CHRISTINA. TESTAMENT."* |
+| **BOOIJZEN** | **3** | **1792** — `KAB MOOC 13/1/33: 5`, *"BOOIJZEN, SUSANNA. L&D account."* |
+
+Then continuously: a will 1808, a Colonial Office memorial 1810, an L&D account 1820, a Stellenbosch
+testament 1821, and on through the century without a gap.
+
+**The war began in 1899.** This confirms, from a second and completely independent direction, what the
+1851 Pieterzen control showed: **the spelling was not invented by this family.**
+
+### What survives
+- **Killed:** any account in which the *spelling itself* was created — coined by a great-grandfather,
+  made up on the road north, invented to escape the joiners.
+- **Standing:** that *this family switched* between two spellings that both already existed. The 1905
+  sheet still shows it inside one document — clerk **Booysen**, son **Booyzen**, four lines apart.
+- **Untouched:** the distribution data. 646 vs 53,764, wrong province.
+
+### Caveat recorded
+NAAIRS descriptions are archivists' transcriptions and may normalise. But 42 documents spanning
+1779–1943 is not a transcription artefact.
+
+## A Booyzen in Cape government service, 1904–07
+| Reference | Description | Year |
+|---|---|---|
+| KAB AG 1393: 1547 | BOOYZEN, PJ. Leave of absence, **Middelburg Police Office** | 1904 |
+| KAB AG 1648: 8946 | BOOYZEN, PJ. **Constable.** Application for leave. Middelburg | 1905 |
+| KAB AG 1772: 11084 | BOOYZEN, PJ. **Constable.** Leave of. Middelburg | 1907 |
+| KAB DOC 4/1/1075: 5377 | Mortgage bond, Pieter Ignatius du Plessis and **Petrus Jacobus Booyzen** | 1904 |
+| KAB DOC 4/1/1185: 1256 | Mortgage bond, the same two men | 1906 |
+
+**Petrus Jacobus** is this family's core male name. **Middelburg** is where Petrus Jacobus Booysen died
+at Zevenfontein in 1884. **Unproven** that this is a relative — but if it is, it sits very oddly against
+a testimony that says the spelling was changed to avoid being taken for men who served the British.
