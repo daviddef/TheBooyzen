@@ -233,6 +233,38 @@ to. Under FEBRUARY 1803:
   Mountjoy, baptising at Barkly Oost in 1889 — a named, searchable cluster in the right district for a
   family the archive had as little more than a surname.
 
+## The Cape Rebel rolls, searched
+
+The **Anglo-Boer War Museum** (Bloemfontein) publishes fifteen registers, including **Cape Rebels —
+12,792 records**. Searched 9 September 2026.
+
+**No Booysen of this district is on the roll.** Twenty-six Booysens appear — all of them from the
+**Northern Cape and Griqualand West** (Kenhardt, Campbell, Koopmansfontein, Daniel's Kuil, Aberdeen).
+**Not one** from Barkly East, Dordrecht, Wodehouse, Indwe, Lady Grey or Elliot. *"Booyzen"* returns
+nothing at all — though the z-form is 83× rarer, so its absence proves nothing on its own.
+
+The **Joiners** register (952 names) holds **exactly one Booysen** — **J. J. Booysen of Heilbron**,
+Orange Free State. Not a Cape colonist, not this district. The "joiners" claim is neither confirmed nor
+refuted.
+
+**But searching the farm name instead of the surname returned this:**
+
+> **SCHOEMAN, DANIEL WILLEM** — plaasboer — **tried as a Cape Rebel, JUNE 1901** — **CAERLAVEROCK** —
+> district **Wodehouse–Barkly East**
+> **KLOPPER, CHRISTIAAN F.** — plaasboer — **JUNE 1901** — **CAERLAVEROCK** — same district
+
+And the marriage register already transcribed here reads: **8 July 1901**, Petrus Jacobus Pretorius
+married Magrita Barry *"in **woonhuis D. Schoeman** te **Caerlaverock**"*, witnessed and signed by
+**D. W. SCHOEMAN**.
+
+**The family married in a Cape Rebel's house the month after his treason trial, and he signed the
+register.** A second rebel farmed the same place and was tried the same month. **Caerlaverock was a
+rebel farm.**
+
+**What it does not establish:** the rebel here is the *host*, not the family — no Booysen or Barry is on
+any roll. And it does not prove he was *Commandant* D. Schoeman of Labuschagne's Nek: the Commando field
+is blank, and there is a cluster of D. W. Schoemans in the same division.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
