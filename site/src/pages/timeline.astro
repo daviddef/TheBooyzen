@@ -1,0 +1,93 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import tl from "../data/timeline.json";
+import d from "../data/dossiers.json";
+import pl from "../data/places.json";
+const ev = [...tl.events].sort((a, b) => a.y - b.y || (a.d < b.d ? -1 : 1));
+const byName = {}; for (const x of Object.values(d.people)) byName[x.n] = x.slug;
+const byPlace = {}; for (const x of pl.places) byPlace[x.n] = x.slug;
+const kinds = { doc: "Document", life: "Life", name: "The name", war: "The war" };
+const lo = ev[0].y, hi = ev[ev.length - 1].y;
+const decades = [];
+for (let y = 1770; y <= 2020; y += 10) decades.push(y);
+---
+<Base title="The timeline"
+      eyebrow={`${ev.length} dated events · ${lo}–${hi}`}
+      dek="Everything this archive can put a document behind, in order. Where a document was written long after the event it records, both dates are given — that gap is one of the things this archive is about.">
+
+<section class="blk">
+  <h2>Two hundred and thirty-four years</h2>
+  <div class="scroll" style="margin-top:18px">
+    <svg viewBox="0 0 700 96" width="700" style="min-width:640px;display:block" role="img"
+         aria-label="All dated events between 1779 and 2013">
+      <line x1="20" y1="58" x2="680" y2="58" style="stroke:var(--rule)" stroke-width="1" />
+      {decades.map(y => (
+        <g>
+          <line x1={20 + ((y - 1770) / 250) * 660} y1="54" x2={20 + ((y - 1770) / 250) * 660} y2="62"
+                style="stroke:var(--rule-strong)" stroke-width="1" />
+          {y % 50 === 0 && <text x={20 + ((y - 1770) / 250) * 660} y="78" text-anchor="middle" font-size="10.5"
+                style="fill:var(--ink-3);font-family:var(--mono)">{y}</text>}
+        </g>
+      ))}
+      {ev.map(e => (
+        <circle cx={20 + ((e.y - 1770) / 250) * 660} cy="58" r={e.big ? 5 : 3}
+                style={`fill:var(${e.big ? "--terra" : "--accent"});opacity:${e.big ? 1 : .7}`}>
+          <title>{e.d} — {e.t}</title>
+        </circle>
+      ))}
+      <text x="20" y="30" font-size="11" style="fill:var(--ink-3);font-family:var(--sans)">
+        the spelling is already in use</text>
+      <text x="680" y="30" text-anchor="end" font-size="11" style="fill:var(--ink-3);font-family:var(--sans)">
+        Johannesburg</text>
+    </svg>
+  </div>
+  <p class="cap">Larger marks are the documents this archive turns on.</p>
+</section>
+
+<Rule name="wagon" label="In order" />
+
+<section class="blk">
+  <div class="tline">
+    {ev.map(e => (
+      <div class={"tev" + (e.big ? " big" : "")}>
+        <div class="when">
+          <span class="m yr">{e.d}</span>
+          <span class="kind">{kinds[e.k]}</span>
+        </div>
+        <div class="what">
+          <h3><a href={u(e.h)}>{e.t}</a></h3>
+          <p>{e.w}</p>
+          {(e.p.length > 0 || e.pl.length > 0) && (
+            <p class="tags">
+              {e.p.map(n => byName[n] && (<a class="plink" href={u("/who/" + byName[n] + "/")}>{n}</a>))}
+              {e.pl.map(n => byPlace[n] && (<a class="plink pl" href={u("/places/" + byPlace[n] + "/")}>{n}</a>))}
+            </p>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .tline { border-left:2px solid var(--rule); margin-top:10px; }
+  .tev { position:relative; padding:0 0 26px 26px; }
+  .tev::before { content:""; position:absolute; left:-7px; top:7px; width:11px; height:11px;
+    border-radius:50%; background:var(--ground); border:2px solid var(--accent); }
+  .tev.big::before { background:var(--terra); border-color:var(--terra); width:13px; height:13px; left:-8px; }
+  .tev .when { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  .tev .yr { font-size:13px; color:var(--ink-2); }
+  .tev .kind { font-family:var(--sans); font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink-3); border:1px solid var(--rule); border-radius:999px; padding:2px 8px; }
+  .tev h3 { margin:5px 0 0; font-size:20px; line-height:1.24; }
+  .tev.big h3 { font-size:23px; }
+  .tev h3 a { text-decoration:none; color:inherit; }
+  .tev h3 a:hover { color:var(--accent); }
+  .tev .what p { font-family:var(--sans); font-size:14.5px; line-height:1.62; color:var(--ink-2);
+    margin:7px 0 0; max-width:70ch; }
+  .tev .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+  .tev .tags .pl { border-style:dashed; }
+</style>
+</Base>

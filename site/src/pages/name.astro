@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
+import Distribution from "../components/Distribution.astro";
+import ProvinceSplit from "../components/ProvinceSplit.astro";
 import { u } from "../lib/url.js";
 const zrows = [
   ["South Africa", "616", "1:87,951", "10,814"],
@@ -232,6 +234,11 @@ const srows = [
     <strong>507,320th</strong> commonest surname on earth, an incidence of
     <strong>1 in 11,281,031</strong>. Ninety-six per cent are in Africa.
   </p>
+  <Distribution rows={[["South Africa", 616], ["Australia", 16], ["United Arab Emirates", 6],
+                        ["United States", 3], ["Botswana", 1], ["Ireland", 1], ["England", 1],
+                        ["Saudi Arabia", 1], ["Turkey", 1]]} />
+  <p class="cap" style="margin:6px 0 20px">Where the 646 Booyzens are. Ninety-five per cent of them are
+    in one country.</p>
   <div class="scroll">
     <table>
       <thead><tr><th>Country</th><th>Bearers</th><th>Incidence</th><th>Rank in country</th></tr></thead>
@@ -246,13 +253,7 @@ const srows = [
 
 <section class="blk">
   <h2>And how common Booysen is</h2>
-  <div class="scroll">
-    <table>
-      <thead><tr><th>Country</th><th>Bearers</th><th>Incidence</th><th></th></tr></thead>
-      <tbody>{srows.map(([c, b, i, r]) => (
-        <tr><td>{c}</td><td class="m">{b}</td><td class="m">{i}</td><td class="m">{r}</td></tr>))}</tbody>
-    </table>
-  </div>
+  <ProvinceSplit />
   <p style="margin-top:16px">
     <strong>53,764 worldwide</strong>, the 10,459th commonest surname on earth, and
     <strong>52,009 of them in South Africa</strong> — one South African in a thousand.

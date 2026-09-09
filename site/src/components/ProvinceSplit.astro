@@ -1,0 +1,44 @@
+---
+/* The whole argument of this page in one picture: the parent surname sits in
+   the Cape, the rare spelling sits on the Rand.
+   Only the four provinces the source actually reports are drawn. A dash in the
+   source means "not reported", not "zero", and is drawn as a gap, not a bar. */
+const rows = [
+  ["Western Cape", 39, 10, "the parent name's heartland"],
+  ["Eastern Cape", 17, null, "the old Cape Colony districts"],
+  ["Gauteng", 15, 45, "the Witwatersrand — Johannesburg"],
+  ["Limpopo", null, 9, ""],
+];
+const W = 660, RH = 40, MID = 316, ARM = 208;
+const H = rows.length * RH + 56;
+const max = 45;
+---
+<div class="scroll">
+<svg viewBox={`0 0 ${W} ${H}`} width={W} style="min-width:580px;display:block" role="img"
+     aria-label="Share of each spelling by South African province: Booysen concentrates in the Western and Eastern Cape, Booyzen in Gauteng.">
+  <text x={MID - 62} y="15" text-anchor="end" font-size="11.5"
+        style="fill:var(--ink-3);font-family:var(--sans);letter-spacing:.1em">BOOYSEN</text>
+  <text x={MID + 62} y="15" font-size="11.5"
+        style="fill:var(--accent);font-family:var(--sans);letter-spacing:.1em">BOOY<tspan style="font-weight:600">Z</tspan>EN</text>
+  <line x1={MID} y1="22" x2={MID} y2={H - 18} style="stroke:var(--rule)" stroke-width="1" />
+  {rows.map(([p, s, z, note], i) => {
+    const y = i * RH + 34;
+    const sw = s == null ? 0 : (s / max) * ARM;
+    const zw = z == null ? 0 : (z / max) * ARM;
+    return (<g>
+      {s != null && <rect x={MID - 60 - sw} y={y} width={Math.max(2, sw)} height={16} rx="1" style="fill:var(--rule-strong)" />}
+      {z != null && <rect x={MID + 60} y={y} width={Math.max(2, zw)} height={16} rx="1" style="fill:var(--accent)" />}
+      <text x={MID} y={y + 12.5} text-anchor="middle" font-size="12.5"
+            style="fill:var(--ink);font-family:var(--sans)">{p}</text>
+      <text x={MID - 66 - sw} y={y + 12.5} text-anchor="end" font-size="11.5"
+            style="fill:var(--ink-3);font-family:var(--mono)">{s == null ? "—" : s + "%"}</text>
+      <text x={MID + 66 + zw} y={y + 12.5} font-size="11.5"
+            style="fill:var(--ink-3);font-family:var(--mono)">{z == null ? "—" : z + "%"}</text>
+      {note && <text x={MID} y={y + 28} text-anchor="middle" font-size="10.5"
+            style="fill:var(--ink-3);font-family:var(--sans)">{note}</text>}
+    </g>);
+  })}
+</svg>
+</div>
+<p class="cap" style="margin-top:8px">Forebears, accessed 9 September 2026. Only the four provinces the
+  source reports are shown; a dash is <em>not reported</em>, not zero.</p>
