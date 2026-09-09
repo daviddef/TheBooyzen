@@ -309,6 +309,34 @@ attestation, personnel and pension files from 1912. **None of it is online.** No
 is behind a bot check and was not searched, and FamilySearch's South African Defence collection is
 browse-by-image, not name-indexed.
 
+## The Mountjoys of Barkly Oost — identified
+
+The accidental find on the facing page of an 1889 register turned out to be **family**, and it adds a
+whole branch.
+
+**George Mountjoy (b. 11 June 1823, Cradock), saddle maker**, was **Johanna Catharina Mountjoy's younger
+brother**. He married **Maria Sophia Botha** at Cradock on 20 August 1848 and had **thirteen children**.
+Two of them are the men on that register page:
+
+- **James Jonathan Mountjoy** (1854, Burgersdorp – 1937, **Barkly East**) — the witness *"Jakobus
+  Jonathan Mountjoy"*
+- **Hercules Johannes Mountjoy** (c.1866 – 1941, Wodehouse) — the father, who married **Maria Sophia van
+  Niekerk** at **Dordrecht on 8 October 1888**; their first child **George** was born 21 July 1889 and
+  baptised at Barkly Oost that October.
+
+**And the two baptisms sit three weeks apart in the same register.** Johanna Catharina Booyzen was born
+20 June 1889 and baptised 15 September; George Mountjoy was born 21 July 1889 and baptised 6 October.
+**They were second cousins**, their fathers first cousins — and the Booyzen daughter was christened
+*Johanna Catharina*, after the great-aunt who is the link between them.
+
+**The Mountjoys stayed.** James Jonathan died at Barkly East in 1937, Hercules Johannes in Wodehouse in
+1941, Maria Sophia van Niekerk in 1961 — half a century after the Booyzens took the train to
+Johannesburg.
+
+**Four corrections it offers our own tree:** Anna Catharina is recorded as **Slier**, not Schleher; her
+marriage to James Mountjoy is dated **9 March 1817 at Graaff-Reinet**; **Thomas Jacobus lived to 1827**,
+not 1818; and there is a sibling the tree lacks entirely — **Jacoba Catharina Mountjoy (1820–1842)**.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
