@@ -563,7 +563,7 @@
   {
    "src": "/TheBooyzen/docs/detail-1840-saddler.jpg",
    "alt": "Line five of the 1840 death notice, reading Saddler.",
-   "cap": "",
+   "cap": "1840, line 5 — Saddler",
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
@@ -571,7 +571,7 @@
   {
    "src": "/TheBooyzen/docs/detail-1840-married-pietersen.jpg",
    "alt": "Line six of the 1840 death notice: Married to Catharina Slier, widow of William Pietersen.",
-   "cap": "",
+   "cap": "1840, line 6 — \"Married to Catharina Sl[i/e]er, widow of William Pietersen\"",
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
@@ -689,20 +689,20 @@
    "detail": true
   },
   {
+   "src": "/TheBooyzen/docs/doopregister-1870-gert-jacobus.jpg",
+   "alt": "Dutch Reformed baptism register opening for 1870, pages 1296 and 1297.",
+   "cap": "The register opening, pages 1296–1297 . The entry is low on the right-hand page.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
    "src": "/TheBooyzen/docs/detail-1870-second-wife.jpg",
    "alt": "1870 baptism register entry naming the parents as Petrus Jacobus Booyzen and Johanna Margaritha Pretorius.",
    "cap": "Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius",
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
-  },
-  {
-   "src": "/TheBooyzen/docs/doopregister-1870-gert-jacobus.jpg",
-   "alt": "",
-   "cap": "",
-   "page": "",
-   "pagetitle": "",
-   "detail": false
   }
  ]
 }

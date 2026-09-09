@@ -88,7 +88,8 @@
      "text": "Everything else about it — its forenames, its politics, its religion, its 1820 Settler descent and its German origins — arrived through the women. This page puts them back at the front. The wives of the direct line Name Dates Family Magdelena Elisabeth De Beer 1754–1843 Huguenot-descended Cape m. Gerthardus Lodewikus Booysen. Lived to 89. Her husband has no dates at all — she is better recorded than he is. Anna Maria van der Merwe 1785 – bef. Mar 1825 one of the largest Cape families m. 2 Nov 1805, Graaff-Reinet. Her husband was about seventeen. Johanna Catharina Mountjoy 1819–1863 English m. 4 Nov 1838, Cradock. Died at Zevenfontein aged 44. Gives “Mountjoy” to the family."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "magdelena-elisabeth-de-beer": {
    "n": "Magdelena Elisabeth de Beer",
@@ -149,7 +150,8 @@
      "text": "No dates. Nothing behind the button. Magdelena Elisabeth de Beer 1754 – 1843 Magdelena Elisabeth de Beer · 1754 – 1843 Searched, nothing No estate file for her in the Cape archives. Searched eight ways. Johanna Catharina Mountjoy 1819 – 1863 Johanna Catharina Mountjoy · 1819 – 1863 James Montjoy c.1782 – 1827 James Montjoy · c.1782 – 1827 “Not Known” “Names of the Parents of the Deceased. Not Known.” Written 1840, thirteen years after he died."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "petrus-jacobus-booysen": {
    "n": "Petrus Jacobus Booysen",
@@ -242,7 +244,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Married at about seventeen; died in the Transvaal, eighty-eight years old. The Line Sources Catherine Mary Sophia Booyzen · generation 2 Documented 13 mentions 25 Mar 1929 25 Dec 2013, Johannesburg Orphaned at eighteen. The hinge to the Lerena archive, and the starting point of this one."
+     "text": "Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Married at about seventeen; died in the Transvaal, eighty-eight years old. The Line Sources Petrus Jacobus Booysen · generation 5 also written Booyzen (1851 register), Booÿse, Bovysen Documented 10 mentions 10 May 1812, Graaff-Reinet 1884 (probate) Farmer at Zevenfontein, Brak River."
     },
     {
      "page": "/sources/",
@@ -265,7 +267,47 @@
      "text": "They turned out to be family. JAMES MOUNTJOY (1786-1827) === ANNA CATHARINA SLIER / SCHLEHER (1787- ) m. 9 March 1817, GRAAFF-REINET | +--------------------+---------------------+ | | JOHANNA CATHARINA MOUNTJOY GEORGE MOUNTJOY (b. 1823, Cradock) (1819-1863) SADDLE MAKER === Petrus Jacobus Booysen === Maria Sophia Botha (1827-1911) m. 1838, Cradock m. 20 Aug 1848, CRADOCK | | (13 children) THE BOOYZEN LINE +-----------------+-----------------+ | | JAMES JONATHAN MOUNTJOY HERCULES JOHANNES MOUNTJOY (1854 Burgersdorp - (c.1866 - 1941 Wodehouse) 1937 BARKLY EAST) === Maria Sophia van Niekerk = the 1889 witness m."
     }
    ],
-   "shared": true
+   "shared": true,
+   "also": [
+    {
+     "n": "Petrus Jacobus Booysen",
+     "v": "Booyzen (1851 register), Booÿse, Bovysen",
+     "b": "10 May 1812, Graaff-Reinet",
+     "d": "1884 (probate)",
+     "l": "Booyzen",
+     "g": 5,
+     "s": "doc",
+     "r": "Farmer at Zevenfontein, Brak River. Signed his wife's 1863 death notice. Died fifteen years before the war.",
+     "p": [
+      [
+       "The Line",
+       "/direct-line/"
+      ],
+      [
+       "The Documents",
+       "/documents/"
+      ],
+      [
+       "The Name",
+       "/name/"
+      ]
+     ]
+    },
+    {
+     "n": "Petrus Jacobus Booysen",
+     "b": "10 Sep 1839",
+     "d": "—",
+     "l": "Booyzen",
+     "s": "doc",
+     "r": "Third child. Baptised Graaff-Reinet.",
+     "p": [
+      [
+       "The Documents",
+       "/documents/"
+      ]
+     ]
+    }
+   ]
   },
   "anna-maria-van-der-merwe": {
    "n": "Anna Maria van der Merwe",
@@ -335,7 +377,8 @@
      "text": "This page puts them back at the front. The wives of the direct line Name Dates Family Magdelena Elisabeth De Beer 1754–1843 Huguenot-descended Cape m. Gerthardus Lodewikus Booysen. Lived to 89. Her husband has no dates at all — she is better recorded than he is. Anna Maria van der Merwe 1785 – bef. Mar 1825 one of the largest Cape families m. 2 Nov 1805, Graaff-Reinet. Her husband was about seventeen. Johanna Catharina Mountjoy 1819–1863 English m. 4 Nov 1838, Cradock. Died at Zevenfontein aged 44. Gives “Mountjoy” to the family. Catherine Maria Sophia “Kathleen” Barry 1859–1940 Irish / English at the Cape m. 22 Dec 1879 in the DRC at Barkly, after banns. Thirteen children."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "johanna-catharina-mountjoy": {
    "n": "Johanna Catharina Mountjoy",
@@ -446,7 +489,8 @@
      "text": "Gerthardus Lodewikus Booysen. Lived to 89. Her husband has no dates at all — she is better recorded than he is. Anna Maria van der Merwe 1785 – bef. Mar 1825 one of the largest Cape families m. 2 Nov 1805, Graaff-Reinet. Her husband was about seventeen. Johanna Catharina Mountjoy 1819–1863 English m. 4 Nov 1838, Cradock. Died at Zevenfontein aged 44. Gives “Mountjoy” to the family. Catherine Maria Sophia “Kathleen” Barry 1859–1940 Irish / English at the Cape m. 22 Dec 1879 in the DRC at Barkly, after banns. Thirteen children. Occupation: Needle Woman. Died at Mayfair, Johannesburg. Anna Johanna Maria Pretorius 1906–1944 Afrikaner — and a Barry granddaughter m."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "willem-hermanus-william-henry-booyzen": {
    "n": "Willem Hermanus “William Henry” Booyzen",
@@ -508,7 +552,8 @@
      "text": "George Mountjoy Maria Sophia Botha Cradock 31 Oct 1851 Document Willem Hermanus Booyzen baptised at Achter Sneeuwberg Entry 2809. The father is written BOOYZEN with a z — and so, three lines below in the same hand, are the godparents PIETERZEN. The z is the clerk's Dutch, not the family's claim. Willem Hermanus “William Henry” Booyzen Willem Hermanus Pieterzen Achter Sneeuwberg 19 May 1863 Document Johanna Catharina dies at Zevenfontein Her death notice names her parents — James Montjoy and Anna Catharina Sleer — gives her age to the day, and lists eight children. KAB MOOC 6/9/104: 499."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "catherine-maria-sophia-kathleen-barry": {
    "n": "Catherine Maria Sophia “Kathleen” Barry",
@@ -600,7 +645,8 @@
      "text": "Anna Maria van der Merwe 1785 – bef. Mar 1825 one of the largest Cape families m. 2 Nov 1805, Graaff-Reinet. Her husband was about seventeen. Johanna Catharina Mountjoy 1819–1863 English m. 4 Nov 1838, Cradock. Died at Zevenfontein aged 44. Gives “Mountjoy” to the family. Catherine Maria Sophia “Kathleen” Barry 1859–1940 Irish / English at the Cape m. 22 Dec 1879 in the DRC at Barkly, after banns. Thirteen children. Occupation: Needle Woman. Died at Mayfair, Johannesburg. Anna Johanna Maria Pretorius 1906–1944 Afrikaner — and a Barry granddaughter m. 30 Dec 1924, Vereeniging. Six children. Died at 37 of a ruptured extra-uterine pregnancy. Born 1906, not 1905 as the tree has it."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "george-downing-mountjoy-booyzen": {
    "n": "George Downing Mountjoy Booyzen",
@@ -747,7 +793,8 @@
      "text": "Occupation: Needle Woman. Died at Mayfair, Johannesburg. Anna Johanna Maria Pretorius 1906–1944 Afrikaner — and a Barry granddaughter m. 30 Dec 1924, Vereeniging. Six children. Died at 37 of a ruptured extra-uterine pregnancy. Born 1906, not 1905 as the tree has it. Gertruida Alexandra Kinnear / Kinnier — Scottish second wife of George Downing Mountjoy Booyzen. Two daughters, both named Gertrude Elizabeth, both died as infants. A Cape Dutch male line that married British women in three successive generations — Mountjoy in 1838, Barry in 1879, Kinnear in the 1940s — is not a coincidence of the district. It is the whole character of the family."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "anna-johanna-maria-pretorius": {
    "n": "Anna Johanna Maria Pretorius",
@@ -843,7 +890,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 1 mention — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family. The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family. The Documents Isaak Pretorius Documented 4 mentions — — Of the Pretorius family."
+     "text": "The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 2 mentions — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family. The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family. The Documents Isaak Pretorius Documented 4 mentions — — Of the Pretorius family."
     },
     {
      "page": "/sources/",
@@ -866,7 +913,8 @@
      "text": "Johanna Catharina Mountjoy 1819–1863 English m. 4 Nov 1838, Cradock. Died at Zevenfontein aged 44. Gives “Mountjoy” to the family. Catherine Maria Sophia “Kathleen” Barry 1859–1940 Irish / English at the Cape m. 22 Dec 1879 in the DRC at Barkly, after banns. Thirteen children. Occupation: Needle Woman. Died at Mayfair, Johannesburg. Anna Johanna Maria Pretorius 1906–1944 Afrikaner — and a Barry granddaughter m. 30 Dec 1924, Vereeniging. Six children. Died at 37 of a ruptured extra-uterine pregnancy. Born 1906, not 1905 as the tree has it. Gertruida Alexandra Kinnear / Kinnier — Scottish second wife of George Downing Mountjoy Booyzen. Two daughters, both named Gertrude Elizabeth, both died as infants."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "catherine-mary-sophia-booyzen": {
    "n": "Catherine Mary Sophia Booyzen",
@@ -985,7 +1033,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Married at about seventeen; died in the Transvaal, eighty-eight years old. The Line Sources Catherine Mary Sophia Booyzen · generation 2 Documented 13 mentions 25 Mar 1929 25 Dec 2013, Johannesburg Orphaned at eighteen. The hinge to the Lerena archive, and the starting point of this one. The Line Johannesburg Method David Kolbe Booyzen Documented 4 mentions — — Carries the Kolbe name three generations after the 1820 Settler."
+     "text": "Signed his wife's 1863 death notice. Died fifteen years before the war. The Line The Documents The Name Petrus Jacobus Booysen Documented 10 mentions 10 Sep 1839 — Third child. Baptised Graaff-Reinet. The Documents Catherine Mary Sophia Booyzen · generation 2 Documented 13 mentions 25 Mar 1929 25 Dec 2013, Johannesburg Orphaned at eighteen. The hinge to the Lerena archive, and the starting point of this one. The Line Johannesburg Method David Kolbe Booyzen Documented 4 mentions — — Carries the Kolbe name three generations after the 1820 Settler."
     },
     {
      "page": "/searched/",
@@ -1013,7 +1061,8 @@
      "text": "The dead children are named after each other Catherina Maria Sophia Barry died at Burgersdorp on 30 July 1859 , aged four. Her sister Catherine Maria Sophia Barry was born on 4 August 1859 — five days later , and was given her name. That name then travelled: Catherine Mary Sophia Booyzen (1891–1946) , and Catherine Mary Sophia Booyzen (1929–2013) — David Defranceski's grandmother, who died on Christmas Day 2013 in Johannesburg still carrying the name of a four-year-old who died in a Karoo village in 1859. It happens again, and harder."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "nuno-fernando-lerena": {
    "n": "Nuno Fernando Lerena",
@@ -1101,7 +1150,8 @@
      "text": "She left six children, the eldest eighteen and the youngest ten. Catherine was fourteen. Her husband remarried, lost two infant daughters, and died himself of a heart attack on 21 February 1947. Catherine Mary Sophia Booyzen was eighteen years old and had no parents. Two years later she married Nuno Fernando Lerena at St Joseph's, Mayfair. Johannesburg → Margaret Downing signed with a cross The 1819 marriage register at St Leonard's Shoreditch records the entry in the usual form — and then, where the bride should sign: Margaret Downing † her mark. She could not write her own name. She was fifteen years old, and had that morning been sworn to be twenty-one and upwards."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "anna-catharina-booysen": {
    "n": "Anna Catharina Booysen",
@@ -1140,7 +1190,8 @@
      "text": "The Rebels The Barrys The Documents Ruben Jacobus Josuah Barry Documented 2 mentions — — Carries the Schoeman given name Ruben into the Barry family. The Documents Magdelena Elisabeth de Beer Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "david-schalk-booysen": {
    "n": "David Schalk Booysen",
@@ -1188,7 +1239,8 @@
      "text": "970 3:1:3Q9M-CSV8-8SD4-8 Willem Hermanus Booyzen (jr) — birth 1885, Barkly East DRC Registers (Cape Town Archives) 3:1:3Q9M-CSK6-W963-Q Frederik Fortsenatus Booÿsen — birth 1899 DRC Registers (Cape Town Archives) 3:1:3Q9M-CSKD-1S76-F Johanna Catharina Booysen — birth 1844, Cape Town DRC Registers (Cape Town Archives) 3:1:3Q9M-CSVZ-WSL6-8 David Schalk Booysen — birth 1848, Brakrivier, Calvinia DRC Registers — entry names Johanna Catharina Mountjoy 1:1:6DTY-MSPJ Kathleen Barry — birth 1859, Barkly East FamilySearch image 3:1:3Q9M-CSV8-85FP Petrus Jacobus Booysen (1812) — birth FindMyPast transcript R_177176049779 Petrus Jacobus Booysen (1788) — marriage 1805 via FindMyPast / FamilySearch 3:1:3Q9M-CSFQ-S11J Johanna Catharina Mountjoy — death 1863, Zeven"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "magdalena-johanna-francina-booysen": {
    "n": "Magdalena Johanna Francina Booysen",
@@ -1218,7 +1270,8 @@
      "text": "Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother. The Documents Magdalena Johanna Francina Booysen Documented 1 mention 16 Jul 1853 — Sixth on the 1863 list. The Documents Petrus Jacobus Booysen · generation 6 Documented 10 mentions c. 21 Sep 1788, Graaff-Reinet 1 Sep 1876, Rustenburg Married at about seventeen; died in the Transvaal, eighty-eight years old."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "jan-gerhardus-lodewicus-booysen": {
    "n": "Jan Gerhardus Lodewicus Booysen",
@@ -1252,7 +1305,8 @@
      "text": "The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 1 mention bef. 1842 1923 The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal. The Documents What Was Searched Jan Gerhardus Lodewicus Booysen Documented 1 mention 4 Dec 1855 1885 Seventh on the 1863 list, and carries the name of the man at the top of the line. Estate TAB MHG O/2899 — he died in the Transvaal at about thirty. The Documents What Was Searched Johanna Catharina Booysen Documented 2 mentions — — Second on the 1863 list, named for her mother."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "jacoba-catharina-booysen": {
    "n": "Jacoba Catharina Booysen",
@@ -1282,7 +1336,8 @@
      "text": "The Documents The Women What Was Searched David Schalk Booysen Documented 3 mentions 9 Jun 1848 — Fourth on the 1863 list. The Documents Gerthardus Lodewikus Booysen · generation 7 Open 7 mentions — — The top of the male line. No birth date, no death date, no father, no mother. The Line Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died. The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 1 mention bef. 1842 1923 The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "johanna-catharina-booysen": {
    "n": "Johanna Catharina Booysen",
@@ -1321,7 +1376,8 @@
      "text": "s Booyzen — birth 1851, Cradock South Africa, Dutch Reformed Church Registers (Cape Town Archives), 1660–1970 3:1:3Q9M-CSV8-8SD4-8 Willem Hermanus Booyzen (jr) — birth 1885, Barkly East DRC Registers (Cape Town Archives) 3:1:3Q9M-CSK6-W963-Q Frederik Fortsenatus Booÿsen — birth 1899 DRC Registers (Cape Town Archives) 3:1:3Q9M-CSKD-1S76-F Johanna Catharina Booysen — birth 1844, Cape Town DRC Registers (Cape Town Archives) 3:1:3Q9M-CSVZ-WSL6-8 David Schalk Booysen — birth 1848, Brakrivier, Calvinia DRC Registers — entry names Johanna Catharina Mountjoy 1:1:6DTY-MSPJ Kathleen Barry — birth 1859, Barkly East FamilySearch image 3:1:3Q9M-CSV8-85FP Petrus Jacobus Booysen (1812) — birth FindMyPast transcript R_177176049779 Petrus Jacobus Booysen (1788) — marriage"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "gerrit-jacobus-booysen": {
    "n": "Gerrit Jacobus Booÿsen",
@@ -1384,7 +1440,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Name The Documents Johannesburg Margaretha Wilhelmina Elizabeth “Maggie” Booyzen Documented 1 mention 1 Oct 1926 1966 Second child. The Line Petrus Jacobus Booyzen Documented 5 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet. The Name Open Questions Petrus Jacobus “Piet” Booyzen Documented 2 mentions 10 Jan 1934, Johannesburg 2003 Sixth child. The Line Stephanus Francois Booyzen Documented 3 mentions c."
+     "text": "The Name The Documents Johannesburg Margaretha Wilhelmina Elizabeth “Maggie” Booyzen Documented 1 mention 1 Oct 1926 1966 Second child. The Line Petrus Jacobus Booyzen Documented 6 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet. The Name Open Questions Petrus Jacobus “Piet” Booyzen Documented 2 mentions 10 Jan 1934, Johannesburg 2003 Sixth child. The Line Stephanus Francois Booyzen Documented 3 mentions c."
     },
     {
      "page": "/timeline/",
@@ -1392,7 +1448,8 @@
      "text": "e buried at the German Savoy Church 20 Aug 1848 — George Mountjoy, saddle maker, marries Maria Sophia Botha 31 Oct 1851 — Willem Hermanus Booyzen baptised at Achter Sneeuwberg 19 May 1863 — Johanna Catharina dies at Zevenfontein 16 Jul 1866 — Hercules Johannes Mountjoy born 25 Nov 1867 — Margaret Downing dies at Burgersdorp 19 Jan 1870 — Gerrit Jacobus Booÿsen born 1 Sep 1876 — Petrus Jacobus Booysen dies at Rustenburg, aged 88 22 Dec 1879 — Willem Hermanus Booyzen, boer of Lady Grey, marries Kathleen Barry 30 Mar 1884 — A farmer dies owning his clothes 8 Oct 1888 — Hercules Johannes Mountjoy marries at Dordrecht, aged 22 15 Sep 1889 — Two grandparents at a font 24 May 1891 — Catharina Maria Sophia Booysen baptised Oct 1899 — The Anglo-Boer War begins"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "isabella-frederika-coetsee": {
    "n": "Isabella Frederika Coetsee",
@@ -1423,7 +1480,8 @@
      "text": "The Line Johannesburg Gerrit Jacobus Booÿsen also written Gert Jacobus Booyzen Documented 5 mentions 19 Jan 1870 — The only child entered on his father's 1884 death notice, and born seven years after the first wife died — so a child of the second marriage. He married Isabella Frederika Coetsee at Middelburg on 23 March 1896, and his own son was baptised BOOYZEN, with a z, in 1904. The Documents Open Questions The Name Beatrix Magdalena Catharina Boshoff Documented 1 mention — — His widow, who signed the 1940 death notice at Pretoria on 26 July 1940 — and who could not name her husband's parents. The Documents Magdalena Johanna Botha Documented 4 mentions — — Ruben Schoeman's wife."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "petrus-jacobus-booyzen": {
    "n": "Petrus Jacobus Booyzen",
@@ -1494,7 +1552,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents John Barry Booyzen Documented 7 mentions c. 1884 — Eldest son. Present at his father's death in 1905 and the informant — he signs Booyzen four lines under the clerk's Booysen. The Name The Documents Johannesburg Margaretha Wilhelmina Elizabeth “Maggie” Booyzen Documented 1 mention 1 Oct 1926 1966 Second child. The Line Petrus Jacobus Booyzen Documented 5 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet. The Name Open Questions Petrus Jacobus “Piet” Booyzen Documented 2 mentions 10 Jan 1934, Johannesburg 2003 Sixth child."
+     "text": "The Documents John Barry Booyzen Documented 7 mentions c. 1884 — Eldest son. Present at his father's death in 1905 and the informant — he signs Booyzen four lines under the clerk's Booysen. The Name The Documents Johannesburg Margaretha Wilhelmina Elizabeth “Maggie” Booyzen Documented 1 mention 1 Oct 1926 1966 Second child. The Line Petrus Jacobus Booyzen Documented 6 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet. The Name Open Questions Petrus Jacobus “Piet” Booyzen Documented 2 mentions 10 Jan 1934, Johannesburg 2003 Sixth child."
     },
     {
      "page": "/women/",
@@ -1502,7 +1560,8 @@
      "text": "Every route ran through a death, and death is exactly where this family stops remembering its women. She was named by a christening. A baptism register asks for both parents, at the moment when everyone concerned is alive and standing in the same room. Gert Jacobus was baptised on 19 June 1870 : Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius And at the font stood Petrus Jacobus Booijzen junior (b. 1839) and Magdalena Johanna Francina Booijzen (b. 1853) — the third and sixth children of the first marriage, on the 1863 death notice. Two of the dead wife's children godparented the new wife's first baby."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "johanna-margaritha-pretorius": {
    "n": "Johanna Margaritha Pretorius",
@@ -1553,7 +1612,7 @@
     {
      "page": "/documents/",
      "title": "The documents",
-     "text": "Not his death notice, which does not ask. Not her son Stephanus Francois's, read this morning, where the widow wrote only \"oorlede\" . The mistake was looking at deaths. A baptism names both parents, and the child whose birth date the 1884 notice gives to the day was baptised 19 June 1870 . Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius The entry Kind Gert Jacobus Geboren 19 January 1870 — the exact date on the 1884 death notice Gedoopt 19 June 1870 , Cape Colony Ouders Petrus Jacobus Booyzen Johanna Margaritha Pretorius Getuigen Petrus Jacobus Booijzen jr · Magdalena Johanna Francina Booijzen · Andries Gottlieb Pretorius Look at who stood at the font Petrus Jacobus Booijzen junior , born 10 September 1839."
+     "text": "The mistake was looking at deaths. A baptism names both parents, and the child whose birth date the 1884 notice gives to the day was baptised 19 June 1870 . The register opening, pages 1296–1297 . The entry is low on the right-hand page. Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius The entry Kind Gert Jacobus Geboren 19 January 1870 — the exact date on the 1884 death notice Gedoopt 19 June 1870 , Cape Colony Ouders Petrus Jacobus Booyzen Johanna Margaritha Pretorius Getuigen Petrus Jacobus Booijzen jr · Magdalena Johanna Francina Booijzen · Andries Gottlieb Pretorius Look at who stood at the font Petrus Jacobus Booijzen junior , born 10 September 1839."
     },
     {
      "page": "/gallery/",
@@ -1568,7 +1627,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 1 mention — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family. The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family."
+     "text": "The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 2 mentions — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family. The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family."
     },
     {
      "page": "/women/",
@@ -1576,7 +1635,8 @@
      "text": "The death notice → Four corrections it offers our own tree: Anna Catharina is recorded there as Slier , not Schleher; her marriage to James Mountjoy is dated 9 March 1817 at Graaff-Reinet ; Thomas Jacobus lived to 1827 , not 1818; and there is a sibling our tree lacks entirely — Jacoba Catharina Mountjoy (1820–1842) . Johanna Margaritha Pretorius — the woman four documents refused to name She was the hardest person in this archive to find, and the reason is worth as much as the answer. Petrus Jacobus Booysen's first wife died in 1863 . His own death notice of 1884 enters him as married — twenty-one years later — and names a child, Gerrit Jacobus, born 19 January 1870 , who could only be another woman's."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "andries-gottlieb-pretorius": {
    "n": "Andries Gottlieb Pretorius",
@@ -1612,10 +1672,11 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents The Women Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 1 mention — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family. The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905."
+     "text": "The Name The Documents Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 2 mentions — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family. The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "john-barry-booyzen": {
    "n": "John Barry Booyzen",
@@ -1707,7 +1768,8 @@
      "text": "And Frederik Fortsenatus Booÿsen (b. 1899) is a worn-down copy of Frederik Fortunatus Kolbe (b. 1839), by way of Frederick Fortunatus Barry (b. 1863). The women's families did not vanish into the Booyzen name. They were carried inside it."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "david-kolbe-booyzen": {
    "n": "David Kolbe Booyzen",
@@ -1760,7 +1822,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Line Sources Catherine Mary Sophia Booyzen · generation 2 Documented 13 mentions 25 Mar 1929 25 Dec 2013, Johannesburg Orphaned at eighteen. The hinge to the Lerena archive, and the starting point of this one. The Line Johannesburg Method David Kolbe Booyzen Documented 4 mentions — — Carries the Kolbe name three generations after the 1820 Settler. The Name Johannesburg George Downing Mountjoy Booyzen · generation 3 Documented 13 mentions 1 Jun 1901, Cape Province 11 Dec 1947, Forest Hill Buried West Park three days later. Boomkweker, then Clerk, South African Railways. Married his first cousin once removed."
+     "text": "Baptised Graaff-Reinet. The Documents Catherine Mary Sophia Booyzen · generation 2 Documented 13 mentions 25 Mar 1929 25 Dec 2013, Johannesburg Orphaned at eighteen. The hinge to the Lerena archive, and the starting point of this one. The Line Johannesburg Method David Kolbe Booyzen Documented 4 mentions — — Carries the Kolbe name three generations after the 1820 Settler. The Name Johannesburg George Downing Mountjoy Booyzen · generation 3 Documented 13 mentions 1 Jun 1901, Cape Province 11 Dec 1947, Forest Hill Buried West Park three days later. Boomkweker, then Clerk, South African Railways. Married his first cousin once removed."
     },
     {
      "page": "/women/",
@@ -1768,7 +1830,8 @@
      "text": "And Frederik Fortsenatus Booÿsen (b. 1899) is a worn-down copy of Frederik Fortunatus Kolbe (b. 1839), by way of Frederick Fortunatus Barry (b. 1863). The women's families did not vanish into the Booyzen name."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "henry-james-booyzen": {
    "n": "Henry James Booyzen",
@@ -1847,7 +1910,8 @@
      "text": "St Johannesburg, Transvaal, South Africa records 3:1:3Q9M-C9BY-59Q2-1 Catherine Booyzen & Nuno Lerena — marriage 1949, St Joseph's Mayfair Johannesburg, Transvaal, South Africa records 3:1:3Q9M-CS27-23NL Johanna Catharina Booyzen & Johannes Pool — marriage 1910 South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS) 3:1:3Q9M-C91V-LBN Henry James Booyzen & Dorothea Regina Barry — marriage 1912, Elliot South Africa, Civil Marriage Records, 1840–1973 3:1:3Q9M-C9BP-3SZW-J Dirk Jacobus Pretorius — marriage 1926, Vereeniging South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS) 3:1:3Q9M-C912-4Q9K-3 Dirk Jacobus Pretorius — death 1957, Germiston South Africa, Civil Death Registration, 1955–1966 3:1:3Q9M-C91P-D9S7-5 FamilySearch arks resolve at fam"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "gertruida-alexandra-booyzen": {
    "n": "Gertruida Alexandra Booyzen",
@@ -1895,7 +1959,8 @@
      "text": "Entry 3920, a different hospital and a different cemetery. Two children, one year apart, on the same date. The Documents Johannesburg Gertrude Elizabeth Booyzen Documented 4 mentions 11 May 1946 15 May 1946 Four days old, Queen Victoria Hospital. Entry 4256 — not the same child as the Gertrude of 1947. The Documents Johannesburg Gertruida Alexandra Booyzen Documented 3 mentions — — Daughter of Willem Hermanus and Kathleen Barry. The Documents Henry James Booyzen Documented 6 mentions — — Son of Willem Hermanus and Kathleen Barry."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "catharina-maria-sophia-booysen": {
    "n": "Catharina Maria Sophia Booysen",
@@ -1944,7 +2009,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner and died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape."
+     "text": "The Documents Magdelena Elisabeth de Beer Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef. 1863 Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first. The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner and died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape."
     },
     {
      "page": "/timeline/",
@@ -1952,7 +2017,8 @@
      "text": "t Jacobus Booÿsen born 1 Sep 1876 — Petrus Jacobus Booysen dies at Rustenburg, aged 88 22 Dec 1879 — Willem Hermanus Booyzen, boer of Lady Grey, marries Kathleen Barry 30 Mar 1884 — A farmer dies owning his clothes 8 Oct 1888 — Hercules Johannes Mountjoy marries at Dordrecht, aged 22 15 Sep 1889 — Two grandparents at a font 24 May 1891 — Catharina Maria Sophia Booysen baptised Oct 1899 — The Anglo-Boer War begins 1 Jun 1901 — George Downing Mountjoy Booyzen born July 1901 — A wedding in a rebel's house June 1901 — Two men of this district are tried as Cape Rebels 13 Sep 1905 — The name changes on one sheet of paper 2 Aug 1912 — Margaret Elizabeth Barry née Kolbe dies at Manorowen 13 May 1915 — “Father: Kolbe, thinks James was christian name. Mother: Unknown.”"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "joseph-heinrich-daschner": {
    "n": "Joseph Heinrich Daschner",
@@ -1982,7 +2048,8 @@
      "text": "The Documents Catharina Maria Sophia Booysen also written Catherine Mary Sophia Daschner Documented 3 mentions 22 Apr 1891 1946 Baptised at Barkly Oost 24 May 1891, entry 120, named for her mother entire, and fourteen when her father died at Indwe. She married Joseph Heinrich Daschner and died in the Transvaal in 1946 — estate TAB MHG 3734/46, found only when this archive finally searched outside the Cape. The Documents The Women What Was Searched David Schalk Booysen Documented 3 mentions 9 Jun 1848 — Fourth on the 1863 list. The Documents Gerthardus Lodewikus Booysen · generation 7 Open 7 mentions — — The top of the male line."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "stephanus-francois-booyzen": {
    "n": "Stephanus Francois Booyzen",
@@ -2034,7 +2101,8 @@
      "text": "The Name Open Questions Petrus Jacobus “Piet” Booyzen Documented 2 mentions 10 Jan 1934, Johannesburg 2003 Sixth child. The Line Stephanus Francois Booyzen Documented 3 mentions c. Oct 1874, Cape Province 14 May 1940, East Lynne, Pretoria A son of the second marriage, and a MESSELAAR — a mason, like his half-brother Willem Hermanus at Indwe. His 1940 Sterfkennis was fetched because it should have named his mother; his widow wrote only “oorlede” for both parents."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "beatrix-magdalena-catharina-boshoff": {
    "n": "Beatrix Magdalena Catharina Boshoff",
@@ -2064,7 +2132,8 @@
      "text": "Oct 1874, Cape Province 14 May 1940, East Lynne, Pretoria A son of the second marriage, and a MESSELAAR — a mason, like his half-brother Willem Hermanus at Indwe. His 1940 Sterfkennis was fetched because it should have named his mother; his widow wrote only “oorlede” for both parents. Married Beatrix Magdalena Catharina Boshoff at Mossel Bay; eleven children; left immovable property and a will. The Documents Open Questions Tersia Booyzen Testimony 6 mentions living — Recorded the name-change and Anglo-Boer War account on the MyHeritage tree, as told to her by her father."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "jacobus-nicholas-booysen": {
    "n": "Jacobus Nicholas Booysen",
@@ -2099,7 +2168,8 @@
      "text": "The Documents Gerthardus Lodewikus Booysen · generation 7 Open 7 mentions — — The top of the male line. No birth date, no death date, no father, no mother. The Line Open Questions Jacoba Catharina Booysen Documented 1 mention 21 Sep 1857 — Youngest on the 1863 list, five years old when her mother died. The Documents Jacobus Nicholas Booysen also written Jacobus Nichols Booyzen Documented 1 mention bef. 1842 1923 The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "johanna-catharina-booyzen": {
    "n": "Johanna Catharina Booyzen",
@@ -2156,7 +2226,8 @@
      "text": "The two Mountjoy men on that register page — Hercules Johannes as father and Jakobus Jonathan as witness — are his sons. It fits to the month: Hercules Johannes married at Dordrecht on 8 October 1888 ; his first child George was born 21 July 1889 and baptised at Barkly Oost that October. Booyzen Mountjoy Child Johanna Catharina Booyzen , b. 20 June 1889 George Mountjoy , b. 21 July 1889 Baptised 15 September 1889 , Barkly Oost 6 October 1889 , Barkly Oost Father Willem Hermanus Booysen Hercules Johannes Mountjoy Godparents John Barry and Margaret W. E. Kolby — her grandparents van Niekerk and Mountjoy kin The two children were second cousins, born a month apart and baptised three weeks apart in the same church."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "willem-hermanus-willy-booyzen": {
    "n": "Willem Hermanus “Willy” Booyzen",
@@ -2199,7 +2270,8 @@
      "text": "Died of an ulcer of the stomach after fourteen months — he was not shot by the British. The Line The Documents The Name The Rebels Willem Hermanus “Willy” Booyzen Documented 2 mentions 15 Oct 1925 1996 Eldest of the Johannesburg family. The Line Johannesburg Gerrit Jacobus Booÿsen also written Gert Jacobus Booyzen Documented 5 mentions 19 Jan 1870 — The only child entered on his father's 1884 death notice, and born seven years after the first wife died — so a child of the second marriage."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "margaretha-wilhelmina-elizabeth-maggie-booyzen": {
    "n": "Margaretha Wilhelmina Elizabeth “Maggie” Booyzen",
@@ -2226,10 +2298,11 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents John Barry Booyzen Documented 7 mentions c. 1884 — Eldest son. Present at his father's death in 1905 and the informant — he signs Booyzen four lines under the clerk's Booysen. The Name The Documents Johannesburg Margaretha Wilhelmina Elizabeth “Maggie” Booyzen Documented 1 mention 1 Oct 1926 1966 Second child. The Line Petrus Jacobus Booyzen Documented 5 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet."
+     "text": "The Documents John Barry Booyzen Documented 7 mentions c. 1884 — Eldest son. Present at his father's death in 1905 and the informant — he signs Booyzen four lines under the clerk's Booysen. The Name The Documents Johannesburg Margaretha Wilhelmina Elizabeth “Maggie” Booyzen Documented 1 mention 1 Oct 1926 1966 Second child. The Line Petrus Jacobus Booyzen Documented 6 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "anna-johanna-maria-booyzen-vermaak": {
    "n": "Anna Johanna Maria Booyzen (Vermaak)",
@@ -2259,7 +2332,8 @@
      "text": "The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "georgina-jeanette-booyzen-boshoff": {
    "n": "Georgina Jeanette Booyzen (Boshoff)",
@@ -2286,10 +2360,11 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Type to filter by name, family, place, spelling variant or anything in the notes. Search Filter — name, family, year, place, or a spelling variant such as Montjoy , Kumm or Booÿse All 84 Booyzen 35 Mountjoy 17 Barry 12 Kolbe 8 Downing 2 Pretorius 4 Schoeman 4 Lerena 1 Testimony 1 Name Born Died In this archive Georgina Jeanette Booyzen (Boshoff) Documented 1 mention 22 Sep 1932, Johannesburg deceased Fifth child. The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner."
+     "text": "Type to filter by name, family, place, spelling variant or anything in the notes. Search Filter — name, family, year, place, or a spelling variant such as Montjoy , Kumm or Booÿse All 88 Booyzen 37 Mountjoy 19 Barry 12 Kolbe 8 Downing 2 Pretorius 4 Schoeman 4 Lerena 1 Testimony 1 Name Born Died In this archive Georgina Jeanette Booyzen (Boshoff) Documented 1 mention 22 Sep 1932, Johannesburg deceased Fifth child. The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "petrus-jacobus-piet-booyzen": {
    "n": "Petrus Jacobus “Piet” Booyzen",
@@ -2325,10 +2400,11 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Line Petrus Jacobus Booyzen Documented 5 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet. The Name Open Questions Petrus Jacobus “Piet” Booyzen Documented 2 mentions 10 Jan 1934, Johannesburg 2003 Sixth child. The Line Stephanus Francois Booyzen Documented 3 mentions c. Oct 1874, Cape Province 14 May 1940, East Lynne, Pretoria A son of the second marriage, and a MESSELAAR — a mason, like his half-brother Willem Hermanus at Indwe."
+     "text": "The Line Petrus Jacobus Booyzen Documented 6 mentions 29 Dec 1904 — Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet. The Name Open Questions Petrus Jacobus “Piet” Booyzen Documented 2 mentions 10 Jan 1934, Johannesburg 2003 Sixth child. The Line Stephanus Francois Booyzen Documented 3 mentions c. Oct 1874, Cape Province 14 May 1940, East Lynne, Pretoria A son of the second marriage, and a MESSELAAR — a mason, like his half-brother Willem Hermanus at Indwe."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "gertrude-elizabeth-booyzen": {
    "n": "Gertrude Elizabeth Booyzen",
@@ -2389,7 +2465,8 @@
      "text": "Q9M-C91V-TQKX-F Anna Johanna Maria Pretorius — death 1944, Forest Hill Transvaal, South Africa records 3:1:3Q9M-CS9R-Y9LN-M George Downing Mountjoy Booyzen — death 1947 Transvaal, South Africa records 3:1:3Q9M-CS34-696T-M George Downing Mountjoy Booyzen — burial 1947, West Park Randburg, Transvaal, South Africa records 3:1:3QHK-93PY-2FS2 Gertrude Elizabeth Booyzen — death 1946, 85 Rheeden St Johannesburg, Transvaal, South Africa records 3:1:3Q9M-C9BY-59Q2-1 Catherine Booyzen & Nuno Lerena — marriage 1949, St Joseph's Mayfair Johannesburg, Transvaal, South Africa records 3:1:3Q9M-CS27-23NL Johanna Catharina Booyzen & Johannes Pool — marriage 1910 South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS) 3:1:3Q9M-C91V-LBN Henry James Booyzen & Dorothea Regi"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "gertrude-booyzen": {
    "n": "Gertrude Booyzen",
@@ -2441,7 +2518,8 @@
      "text": "The Name Johannesburg George Downing Mountjoy Booyzen · generation 3 Documented 13 mentions 1 Jun 1901, Cape Province 11 Dec 1947, Forest Hill Buried West Park three days later. Boomkweker, then Clerk, South African Railways. Married his first cousin once removed. The Line The Cousin Marriage Johannesburg Gertrude Booyzen Documented 3 mentions 11 May 1947 11 May 1947 Six hours old, Turf Club Nursing Home. Entry 3920, a different hospital and a different cemetery. Two children, one year apart, on the same date. The Documents Johannesburg Gertrude Elizabeth Booyzen Documented 4 mentions 11 May 1946 15 May 1946 Four days old, Queen Victoria Hospital. Entry 4256 — not the same child as the Gertrude of 1947."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "james-montjoy": {
    "n": "James Montjoy",
@@ -2570,7 +2648,8 @@
      "text": "The register → Three times the form asked, and three times it was the mother who was gone This is the clearest thing the documents say about women in this family, and it was not visible until the third one was read. Written Death notice of \"Names of the Parents of the Deceased\" 1840 James Montjoy \"Not Known.\" Both parents, together. 1884 Petrus Jacobus Booysen Father written out in full. \"Mother's name, not known\" — underlined. 1915 Margaret Elizabeth Barry née Kolbe \"Father: Kolbe, thinks James was christian name. Mother: Unknown .\" Read down the right-hand column. In 1884 the father has a full name and the mother has none."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "anna-catharina-sleer": {
    "n": "Anna Catharina Sleer",
@@ -2632,7 +2711,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Rebels Home Open Questions Ruben Schoeman Documented 5 mentions — — Of Barkly Oost. Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 84 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet ."
+     "text": "The Rebels Home Open Questions Ruben Schoeman Documented 5 mentions — — Of Barkly Oost. Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 88 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet ."
     },
     {
      "page": "/timeline/",
@@ -2650,7 +2729,8 @@
      "text": "Anna Maria van der Merwe is the 1884 blank. She had died before March 1825, when her son was twelve; fifty-nine years later nobody in his house could give her name. The three notices → The oldest woman in the archive Anna Catharina Sleer / Slier / Schleher (1787–1885), mother of Johanna Catharina Mountjoy, lived to ninety-eight . Documented Her daughter's 1863 death notice names her, in the informant's hand, as Anna Catharina Sleer — the first time this archive has had her from a document rather than from a tree."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "willem-hermanus-pieterzen": {
    "n": "Willem Hermanus Pieterzen",
@@ -2737,7 +2817,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 84 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet . Who is not here Living people are omitted. David Defranceski, for whom this archive was made, and his mother Cheryl Anne Lerena (b."
+     "text": "Father of Anna Johanna Maria Schoeman. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 6 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Nobody here matches that. The archive holds 88 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet . Who is not here Living people are omitted. David Defranceski, for whom this archive was made, and his mother Cheryl Anne Lerena (b."
     },
     {
      "page": "/timeline/",
@@ -2750,7 +2830,27 @@
      "text": "Three renderings, three independent sources, all with an l and none with a t . Documented Her first marriage is now on record too: her second husband's 1840 death notice describes her as \"Catharina Sl[i/e]er, widow of William Pietersen\" . The archive had only inferred the Pieterzen marriage, from a godparent standing at an 1851 font. Here it is named, in a document eleven years older. She married a Pieterzen first — four sons between 1808 and 1813 — and then James Mountjoy , who died in 1827 leaving her with a son, Willem Jan , born and dead in 1828. She outlived her second husband by fifty-eight years ."
     }
    ],
-   "shared": true
+   "shared": true,
+   "also": [
+    {
+     "n": "Willem Hermanus Pieterzen",
+     "b": "—",
+     "d": "—",
+     "l": "Mountjoy",
+     "s": "doc",
+     "r": "Godfather at the 1851 font and the boy's namesake — Johanna Catharina's half-brother by her mother's first marriage. His surname, spelled with a z by the same clerk, is what emptied this archive's name argument.",
+     "p": [
+      [
+       "The Name",
+       "/name/"
+      ],
+      [
+       "The Documents",
+       "/documents/"
+      ]
+     ]
+    }
+   ]
   },
   "thomas-jacobus-mountjoy": {
    "n": "Thomas Jacobus Mountjoy",
@@ -2784,7 +2884,8 @@
      "text": "The Documents Johanna Catharina Mountjoy also written Montjoy, Montjoÿ Documented 9 mentions 30 Apr 1819, Graaff-Reinet 19 May 1863, Zevenfontein, Brak River The Mountjoy–Booysen junction. Married 4 Nov 1838 at Cradock. Her death notice gives her age to the day and names her parents. The Documents The Women The Line Thomas Jacobus Mountjoy Inferred 1 mention 1818 1827 Absent from the four children listed at his father's death in Sept 1827, which supports a death that year rather than in infancy. The Women Open Questions Maria Sophia van Niekerk Documented 5 mentions 1868 1961 His wife, married at Dordrecht 8 Oct 1888 aged 20."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "jacoba-catharina-mountjoy": {
    "n": "Jacoba Catharina Mountjoy",
@@ -2823,7 +2924,8 @@
      "text": "The death notice → Four corrections it offers our own tree: Anna Catharina is recorded there as Slier , not Schleher; her marriage to James Mountjoy is dated 9 March 1817 at Graaff-Reinet ; Thomas Jacobus lived to 1827 , not 1818; and there is a sibling our tree lacks entirely — Jacoba Catharina Mountjoy (1820–1842) . Johanna Margaritha Pretorius — the woman four documents refused to name She was the hardest person in this archive to find, and the reason is worth as much as the answer. Petrus Jacobus Booysen's first wife died in 1863 ."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "george-mountjoy": {
    "n": "George Mountjoy",
@@ -2878,7 +2980,7 @@
     {
      "page": "/documents/",
      "title": "The documents",
-     "text": "Two families, two centuries, the same box on the same printed form, the same answer. Why this archive exists → \"Birth-place: Europe.\" Not a country. The most that was remembered of where he came from was that it was not here. A trade, passed down Documented James Montjoy was a saddler at Cradock. His son George Mountjoy — four years old when his father died — is recorded at his own 1848 marriage as a saddle maker , in the same town. The archive had George's trade already and treated it as the first recorded for a Mountjoy. It was the second. The boy learned his dead father's trade."
+     "text": "Two families, two centuries, the same box on the same printed form, the same answer. Why this archive exists → \"Birth-place: Europe.\" Not a country. The most that was remembered of where he came from was that it was not here. A trade, passed down 1840, line 5 — Saddler Documented James Montjoy was a saddler at Cradock. His son George Mountjoy — four years old when his father died — is recorded at his own 1848 marriage as a saddle maker , in the same town. The archive had George's trade already and treated it as the first recorded for a Mountjoy. It was the second. The boy learned his dead father's trade."
     },
     {
      "page": "/open-questions/",
@@ -2906,7 +3008,27 @@
      "text": "8 Oct 1888, DORDRECHT | GEORGE MOUNTJOY (1889-1963) = the child baptised at Barkly Oost, 6 Oct 1889 George Mountjoy, saddle maker of Cradock, was Johanna Catharina's younger brother. The two Mountjoy men on that register page — Hercules Johannes as father and Jakobus Jonathan as witness — are his sons. It fits to the month: Hercules Johannes married at Dordrecht on 8 October 1888 ; his first child George was born 21 July 1889 and baptised at Barkly Oost that October."
     }
    ],
-   "shared": true
+   "shared": true,
+   "also": [
+    {
+     "n": "George Mountjoy",
+     "b": "1889",
+     "d": "1963",
+     "l": "Mountjoy",
+     "s": "doc",
+     "r": "The child baptised at Barkly Oost on 6 Oct 1889 — second cousin to the Booyzen daughter baptised in the same register three weeks earlier.",
+     "p": [
+      [
+       "The Documents",
+       "/documents/"
+      ],
+      [
+       "The Cousin Marriage",
+       "/cousins/"
+      ]
+     ]
+    }
+   ]
   },
   "james-mountjoy": {
    "n": "James Mountjoy",
@@ -2964,7 +3086,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Women James Jonathan Mountjoy also written James John · Jakobus Jonathan Documented 9 mentions 1854 22 Dec 1937, Barkly East Witness at the 1889 font. Estate KAB MOOC 6/9/5047 ref 58379 (1938). Entered in his children's baptisms under both name forms. Open Questions Sources James Mountjoy Documented 5 mentions 1826 — Listed alive, a minor, at his father's death in Sept 1827 — so the tree's “1826–1826” infant death is wrong. The Documents Johanna Catharina Mountjoy also written Montjoy, Montjoÿ Documented 9 mentions 30 Apr 1819, Graaff-Reinet 19 May 1863, Zevenfontein, Brak River The Mountjoy–Booysen junction. Married 4 Nov 1838 at Cradock."
+     "text": "The Women James Jonathan Mountjoy also written James John · Jakobus Jonathan Documented 10 mentions 1854 22 Dec 1937, Barkly East Witness at the 1889 font. Estate KAB MOOC 6/9/5047 ref 58379 (1938). Entered in his children's baptisms under both name forms. Open Questions Sources James Mountjoy Documented 5 mentions 1826 — Listed alive, a minor, at his father's death in Sept 1827 — so the tree's “1826–1826” infant death is wrong. The Documents Johanna Catharina Mountjoy also written Montjoy, Montjoÿ Documented 9 mentions 30 Apr 1819, Graaff-Reinet 19 May 1863, Zevenfontein, Brak River The Mountjoy–Booysen junction. Married 4 Nov 1838 at Cradock."
     },
     {
      "page": "/women/",
@@ -2972,7 +3094,8 @@
      "text": "Counted back from 19 May 1863 that is 30 April 1819 , at Graaff Reinet , which the same document gives as her birthplace. The death notice → Four corrections it offers our own tree: Anna Catharina is recorded there as Slier , not Schleher; her marriage to James Mountjoy is dated 9 March 1817 at Graaff-Reinet ; Thomas Jacobus lived to 1827 , not 1818; and there is a sibling our tree lacks entirely — Jacoba Catharina Mountjoy (1820–1842) . Johanna Margaritha Pretorius — the woman four documents refused to name She was the hardest person in this archive to find, and the reason is worth as much as the answer. Petrus Jacobus Booysen's first wife died in 1863 ."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "maria-sophia-botha": {
    "n": "Maria Sophia Botha",
@@ -3033,7 +3156,8 @@
      "text": "They turned out to be family. JAMES MOUNTJOY (1786-1827) === ANNA CATHARINA SLIER / SCHLEHER (1787- ) m. 9 March 1817, GRAAFF-REINET | +--------------------+---------------------+ | | JOHANNA CATHARINA MOUNTJOY GEORGE MOUNTJOY (b. 1823, Cradock) (1819-1863) SADDLE MAKER === Petrus Jacobus Booysen === Maria Sophia Botha (1827-1911) m. 1838, Cradock m. 20 Aug 1848, CRADOCK | | (13 children) THE BOOYZEN LINE +-----------------+-----------------+ | | JAMES JONATHAN MOUNTJOY HERCULES JOHANNES MOUNTJOY (1854 Burgersdorp - (c.1866 - 1941 Wodehouse) 1937 BARKLY EAST) === Maria Sophia van Niekerk = the 1889 witness m."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "hercules-johannes-mountjoy": {
    "n": "Hercules Johannes Mountjoy",
@@ -3112,7 +3236,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Home Open Questions George Mountjoy Documented 6 mentions 11 Jun 1823, Cradock — Saddle maker — his father's trade, learned after his father died when he was four. Married Maria Sophia Botha at Cradock, 20 Aug 1848, certificate 735. Thirteen children. The Documents The Women Open Questions Hercules Johannes Mountjoy also written Herculas · Herklaas · Montjoy · Mondjoy Documented 8 mentions 16 Jul 1866 12 May 1941, Wodehouse Baptised 29 Jul 1866, parents George Mountjoy and Maria Sophia Botha. Married at Dordrecht 8 Oct 1888, aged 22. Father at the 1889 font. No estate file exists for him under any spelling."
+     "text": "Thirteen children. The Documents The Women Open Questions George Mountjoy Documented 6 mentions 1889 1963 The child baptised at Barkly Oost on 6 Oct 1889 — second cousin to the Booyzen daughter baptised in the same register three weeks earlier. The Documents The Cousin Marriage Hercules Johannes Mountjoy also written Herculas · Herklaas · Montjoy · Mondjoy Documented 8 mentions 16 Jul 1866 12 May 1941, Wodehouse Baptised 29 Jul 1866, parents George Mountjoy and Maria Sophia Botha. Married at Dordrecht 8 Oct 1888, aged 22. Father at the 1889 font. No estate file exists for him under any spelling."
     },
     {
      "page": "/searched/",
@@ -3135,7 +3259,8 @@
      "text": "Booyzen Mountjoy Child Johanna Catharina Booyzen , b. 20 June 1889 George Mountjoy , b. 21 July 1889 Baptised 15 September 1889 , Barkly Oost 6 October 1889 , Barkly Oost Father Willem Hermanus Booysen Hercules Johannes Mountjoy Godparents John Barry and Margaret W. E. Kolby — her grandparents van Niekerk and Mountjoy kin The two children were second cousins, born a month apart and baptised three weeks apart in the same church. Their fathers were first cousins. And the Booyzen daughter was christened Johanna Catharina — after the great-aunt who is the link between them. And the Mountjoys stayed."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "maria-sophia-van-niekerk": {
    "n": "Maria Sophia van Niekerk",
@@ -3201,7 +3326,8 @@
      "text": "1838, Cradock m. 20 Aug 1848, CRADOCK | | (13 children) THE BOOYZEN LINE +-----------------+-----------------+ | | JAMES JONATHAN MOUNTJOY HERCULES JOHANNES MOUNTJOY (1854 Burgersdorp - (c.1866 - 1941 Wodehouse) 1937 BARKLY EAST) === Maria Sophia van Niekerk = the 1889 witness m. 8 Oct 1888, DORDRECHT | GEORGE MOUNTJOY (1889-1963) = the child baptised at Barkly Oost, 6 Oct 1889 George Mountjoy, saddle maker of Cradock, was Johanna Catharina's younger brother. The two Mountjoy men on that register page — Hercules Johannes as father and Jakobus Jonathan as witness — are his sons."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "james-jonathan-mountjoy": {
    "n": "James Jonathan Mountjoy",
@@ -3222,7 +3348,7 @@
     ]
    ],
    "slug": "james-jonathan-mountjoy",
-   "mentions": 9,
+   "mentions": 10,
    "pages": [
     {
      "h": "/documents/",
@@ -3277,7 +3403,12 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Married at Dordrecht 8 Oct 1888, aged 22. Father at the 1889 font. No estate file exists for him under any spelling. Open Questions The Documents Sources Jacoba Catharina Mountjoy Documented 2 mentions 1820 1842 A sibling our tree lacked entirely. Married David Schalk van der Merwe at Cradock, 24 Mar 1838. The Women James Jonathan Mountjoy also written James John · Jakobus Jonathan Documented 9 mentions 1854 22 Dec 1937, Barkly East Witness at the 1889 font. Estate KAB MOOC 6/9/5047 ref 58379 (1938). Entered in his children's baptisms under both name forms. Open Questions Sources James Mountjoy Documented 5 mentions 1826 — Listed alive, a minor, at his father's death in Sept 1827 — so the tree's “1826–1826” infant death is wrong."
+     "text": "Married at Dordrecht 8 Oct 1888, aged 22. Father at the 1889 font. No estate file exists for him under any spelling. Open Questions The Documents Sources Jacoba Catharina Mountjoy Documented 2 mentions 1820 1842 A sibling our tree lacked entirely. Married David Schalk van der Merwe at Cradock, 24 Mar 1838. The Women James Jonathan Mountjoy also written James John · Jakobus Jonathan Documented 10 mentions 1854 22 Dec 1937, Barkly East Witness at the 1889 font. Estate KAB MOOC 6/9/5047 ref 58379 (1938). Entered in his children's baptisms under both name forms. Open Questions Sources James Mountjoy Documented 5 mentions 1826 — Listed alive, a minor, at his father's death in Sept 1827 — so the tree's “1826–1826” infant death is wrong."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "Father at the 1889 font. No estate file exists for him under any spelling. Open Questions The Documents Sources Jacoba Catharina Mountjoy Documented 2 mentions 1820 1842 A sibling our tree lacked entirely. Married David Schalk van der Merwe at Cradock, 24 Mar 1838. The Women James Jonathan Mountjoy also written James John · Jakobus Jonathan Documented 10 mentions 1854 22 Dec 1937, Barkly East Witness at the 1889 font. Estate KAB MOOC 6/9/5047 ref 58379 (1938). Entered in his children's baptisms under both name forms. Open Questions Sources James Mountjoy Documented 5 mentions 1826 — Listed alive, a minor, at his father's death in Sept 1827 — so the tree's “1826–1826” infant death is wrong."
     },
     {
      "page": "/sources/",
@@ -3300,7 +3431,8 @@
      "text": "8 Oct 1888, DORDRECHT | GEORGE MOUNTJOY (1889-1963) = the child baptised at Barkly Oost, 6 Oct 1889 George Mountjoy, saddle maker of Cradock, was Johanna Catharina's younger brother. The two Mountjoy men on that register page — Hercules Johannes as father and Jakobus Jonathan as witness — are his sons. It fits to the month: Hercules Johannes married at Dordrecht on 8 October 1888 ; his first child George was born 21 July 1889 and baptised at Barkly Oost that October. Booyzen Mountjoy Child Johanna Catharina Booyzen , b. 20 June 1889 George Mountjoy , b."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "maria-louisa-bertha-kumm": {
    "n": "Maria Louisa Bertha Kumm",
@@ -3335,7 +3467,8 @@
      "text": "The Kolbes Peter Benjamin Kolbe Documented 2 mentions — — Of the Kolbe children. The Documents Ferdinand Kumm Documented 2 mentions — 20 Oct 1903, Stutterheim Farmer, married Wilhelmina née Nass. Her father — and the man whose death notice an external source mistook for James Jonathan's. Sources Maria Louisa Bertha Kumm also written Kuen · Kunn · Kum · Keem — five spellings across seven baptisms Documented 1 mention — 3 Jul 1934 His wife. Her estate is the file immediately after his, ref 58380. Open Questions Sources Nuno Fernando Lerena Documented 7 mentions 1924 1971 Her husband, married 15 Jan 1949 at St Joseph's, Mayfair. The Line Johannesburg Anna Maria van der Merwe Documented 5 mentions 1785 bef."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "ferdinand-kumm": {
    "n": "Ferdinand Kumm",
@@ -3374,7 +3507,8 @@
      "text": "His parentage is instead carried by his 1866 baptism register entry , which is better evidence than a death notice would have been. One correction to an external source. The FamilySearch ark cited by 1820settlers.com for James Jonathan Mountjoy ( 3:1:3Q9M-CSQ8-S3QM-6 ) is not him. It is the death notice of Ferdinand Kumm , d. 20 October 1903 at Stutterheim — his father-in-law. Published and reference sources Forebears — surname incidence and distribution for Booyzen and Booysen , accessed 9 September 2026. Forebears figures are modelled estimates from name-frequency data, not a census. The name → Wikipedia , Booysen — surname etymology and the progenitor Boij Boijeszoon of Barlt, Northern Friesland."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "xaverius-hermanus-pieterzen": {
    "n": "Xaverius Hermanus Pieterzen",
@@ -3410,10 +3544,11 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "1817 Anna Catharina Slier's FIRST husband, and the origin of the name Willem Hermanus in this family — which therefore comes from a step-relation with no blood tie to the Booyzens. Three documents name him differently; the 1851 godfather, his son, carries both forms in full. The Documents The Women Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism."
+     "text": "The Documents The Women Willem Hermanus Pieterzen Documented 9 mentions — — Godfather at the 1851 font and the boy's namesake — Johanna Catharina's half-brother by her mother's first marriage. His surname, spelled with a z by the same clerk, is what emptied this archive's name argument. The Name The Documents Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "maria-catharina-magdalena-potgieter": {
    "n": "Maria Catharina Magdalena Potgieter",
@@ -3449,10 +3584,11 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Three documents name him differently; the 1851 godfather, his son, carries both forms in full. The Documents The Women Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 1 mention — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family."
+     "text": "His surname, spelled with a z by the same clerk, is what emptied this archive's name argument. The Name The Documents Xaverius Hermanus Pieterzen Documented 2 mentions — — Third witness at the 1851 baptism. The given name is not certain. The Documents Maria Catharina Magdalena Potgieter Documented 2 mentions — — Second witness at the 1851 baptism. The Documents Andries Gottlieb Pretorius Documented 2 mentions — — Third witness at the 1870 font, and presumably the bride's people — the only trace the archive has of Johanna Margaritha Pretorius's own family."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "david-schalk-van-der-merwe": {
    "n": "David Schalk van der Merwe",
@@ -3482,7 +3618,8 @@
      "text": "Open Questions Sources Nuno Fernando Lerena Documented 7 mentions 1924 1971 Her husband, married 15 Jan 1949 at St Joseph's, Mayfair. The Line Johannesburg Anna Maria van der Merwe Documented 5 mentions 1785 bef. Mar 1825 His wife, married 1805 at Graaff-Reinet. The Line The Women David Schalk van der Merwe Documented 1 mention — — Married Jacoba Catharina Mountjoy at Cradock, 24 Mar 1838. The Women James Montjoy also written Mountjoy, Montyoy Documented 11 mentions c. 1782, “Europe” Sep 1827, Cradock Saddler. Owned a house and erf at Cradock worth £90. His 1840 death notice gives his parents as NOT KNOWN — the oldest document here, and the top of this line."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "john-barry": {
    "n": "John Barry",
@@ -3509,7 +3646,8 @@
    "mentions": 0,
    "pages": [],
    "hits": [],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "john-augustus-barry-i": {
    "n": "John Augustus Barry I",
@@ -3601,7 +3739,8 @@
      "text": "Not Known.” Written 1840, thirteen years after he died. Anna Catharina Sleer 1787 – 1885 Anna Catharina Sleer · 1787 – 1885 Catherine Maria Sophia “Ka… 1859 – 1940 Catherine Maria Sophia “Kathleen” Barry · 1859 – 1940 John Augustus Barry I 1819 – 1903 John Augustus Barry I · 1819 – 1903 John Barry 1796 – 1853 John Barry · 1796 – 1853 Disputed One profile holding two men — a Yorkshire farmer and a man who died at de Bruins Poort. Margaretha W. E. M. Kolbe 1826 – 1912 Margaretha W. E. M."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "margaretha-wilhelmina-elizabeth-mary-kolbe": {
    "n": "Margaretha Wilhelmina Elizabeth Mary Kolbe",
@@ -3684,7 +3823,8 @@
      "text": "1899) is a worn-down copy of Frederik Fortunatus Kolbe (b. 1839), by way of Frederick Fortunatus Barry (b. 1863). The women's families did not vanish into the Booyzen name. They were carried inside it. They worked Three occupations are recorded for women in this ancestry. All three are manual. Name Dates Occupation as recorded Margaretha Wilhelmina Elizabeth Mary Kolbe 1826–1912 LAUNDRESS Catherine Maria Sophia “Kathleen” Barry 1859–1940 Needle Woman — and, at her death, “Home Duties” and “Military Pensioner”. No son of hers is among the First World War dead; the pension must come from one who served and survived."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "hendrik-nicholaas-barry": {
    "n": "Hendrik Nicholaas Barry",
@@ -3754,7 +3894,8 @@
      "text": "E. Barry 1880 – 1961 Margarietha W. E. Barry · 1880 – 1961 Hendrik Nicholaas Barry — – — Hendrik Nicholaas Barry · — – — Anna Johanna Maria Schoeman — – — Anna Johanna Maria Schoeman · — – — Ruben Schoeman — – — Ruben Schoeman · — – — Magdalena Johanna Botha — – — Magdalena Johanna Botha · — – — Each box is a person a document names; click one for everything the archive holds on them. Dashed rings are where the line stops."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "margarietha-wilhelmina-elizabeth-barry": {
    "n": "Margarietha Wilhelmina Elizabeth Barry",
@@ -3833,7 +3974,8 @@
      "text": "Name Dates Occupation as recorded Margaretha Wilhelmina Elizabeth Mary Kolbe 1826–1912 LAUNDRESS Catherine Maria Sophia “Kathleen” Barry 1859–1940 Needle Woman — and, at her death, “Home Duties” and “Military Pensioner”. No son of hers is among the First World War dead; the pension must come from one who served and survived. Margarietha Wilhelmina Elizabeth Barry 1880–1961 Housewife Set beside the men — carpenter , builder , grocer , labourer , tailor , chemist — this is not a gentry family at any point in its recorded history, on either side of the marriage. The Barrys of Swellendam , the great Cape merchant house, are a different Barry family unless and until a document says otherwise, and this archive makes no claim on them."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "dorothea-regina-barry": {
    "n": "Dorothea Regina Barry",
@@ -3903,7 +4045,8 @@
      "text": "svaal, South Africa records 3:1:3Q9M-C9BY-59Q2-1 Catherine Booyzen & Nuno Lerena — marriage 1949, St Joseph's Mayfair Johannesburg, Transvaal, South Africa records 3:1:3Q9M-CS27-23NL Johanna Catharina Booyzen & Johannes Pool — marriage 1910 South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS) 3:1:3Q9M-C91V-LBN Henry James Booyzen & Dorothea Regina Barry — marriage 1912, Elliot South Africa, Civil Marriage Records, 1840–1973 3:1:3Q9M-C9BP-3SZW-J Dirk Jacobus Pretorius — marriage 1926, Vereeniging South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS) 3:1:3Q9M-C912-4Q9K-3 Dirk Jacobus Pretorius — death 1957, Germiston South Africa, Civil Death Registration, 1955–1966 3:1:3Q9M-C91P-D9S7-5 FamilySearch arks resolve at familysearch.org/ark:/61903"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "james-henry-barry": {
    "n": "James Henry Barry",
@@ -3955,7 +4098,8 @@
      "text": "1859; four Booyzen children b. 1885–1907; Margarietha Barry b. 1880; Anna Pretorius b. 1905; John Augustus Barry died at Manor Owen, 1903 Dordrecht part of ~550; in rebel hands 1899 Kathleen Barry christened there, 1859; Hendrik Nicholaas Barry b. 1857; James Henry Barry married there, 1867 Lady Grey part of 1,268 Richard Peter Barry b. 1866 The family was not near the Cape rebellion. The family was inside it — living, marrying and burying across the four districts that supplied the largest share of its manpower. Inferred This establishes overwhelming opportunity and milieu ."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "richard-peter-barry": {
    "n": "Richard Peter Barry",
@@ -4038,7 +4182,8 @@
      "text": "Margaretha Wilhelmina Elizabeth Mary Kolbe Manorowen 13 May 1915 Document “Father: Kolbe, thinks James was christian name. Mother: Unknown.” Written three years after her death by her son, with the 1820 Settler's monument still standing at Burgersdorp. Richard Peter Barry George Augustus Kolbe Manorowen Burgersdorp 30 Dec 1924 Document A tree nurseryman marries at Vereeniging George Downing Mountjoy Booyzen and Anna Johanna Maria Pretorius, she aged eighteen with her father's written consent — and a first cousin once removed."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "fred-j-barry": {
    "n": "Fred J. Barry",
@@ -4104,7 +4249,8 @@
      "text": "George Downing Mountjoy Booyzen July 1901 The war A wedding in a rebel's house Five weeks after Schoeman was tried, the family marries in his house at Caerlaverock. He signs the register. Daniel Willem Schoeman Caerlaverock June 1901 The war Two men of this district are tried as Cape Rebels Daniel Willem Schoeman of Caerlaverock, and Fred J. Barry of Ivanhoe, Barkly East / Wodehouse. Daniel Willem Schoeman Fred J. Barry Caerlaverock Ivanhoe 13 Sep 1905 The name The name changes on one sheet of paper Willem Hermanus Booyzen dies at Indwe of an ulcer of the stomach after fourteen months' illness — not shot by the British. The clerk writes BOOYSEN; his son signs BOOYZEN four lines below."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "ruben-jacobus-josuah-barry": {
    "n": "Ruben Jacobus Josuah Barry",
@@ -4143,7 +4289,8 @@
      "text": "Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven. The Rebels The Barrys The Documents Ruben Jacobus Josuah Barry Documented 2 mentions — — Carries the Schoeman given name Ruben into the Barry family. The Documents Magdelena Elisabeth de Beer Documented 4 mentions 1754 1843 Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all. The Line The Women Anna Catharina Booysen Documented 2 mentions 21 Sep 1842 bef."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "frederick-fortunatus-barry": {
    "n": "Frederick Fortunatus Barry",
@@ -4204,7 +4351,8 @@
      "text": "And Frederik Fortsenatus Booÿsen (b. 1899) is a worn-down copy of Frederik Fortunatus Kolbe (b. 1839), by way of Frederick Fortunatus Barry (b. 1863). The women's families did not vanish into the Booyzen name. They were carried inside it. They worked Three occupations are recorded for women in this ancestry. All three are manual."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "kathleen-mary-barry": {
    "n": "Kathleen Mary Barry",
@@ -4270,7 +4418,8 @@
      "text": "The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice. The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 6 mentions — — Kathleen's brother."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "johan-gottlieb-kolbe": {
    "n": "Johan Gottlieb Kolbe",
@@ -4349,7 +4498,8 @@
      "text": "Margaretha W. E. M. Kolbe 1826 – 1912 Margaretha W. E. M. Kolbe · 1826 – 1912 George Augustus Kolbe 1802 – 1844 George Augustus Kolbe · 1802 – 1844 Johan Gottlieb Kolbe 1765 – 1845 Johan Gottlieb Kolbe · 1765 – 1845 Margaret Downing c.1804 – 1867 Margaret Downing · c.1804 – 1867 John Paul Downing — – — John Paul Downing · — – — Anna Johanna Maria Pretori… 1906 – 1944 Anna Johanna Maria Pretorius · 1906 – 1944 Petrus Jacobus Pretorius 1878 – 1941 Petrus Jacobus Pretorius · 1878 – 1941 Margarietha W. E. Barry 1880 – 1961 Margarietha W. E."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "george-augustus-kolbe": {
    "n": "George Augustus Kolbe",
@@ -4504,7 +4654,8 @@
      "text": "It is the whole character of the family. They are inside the men's names David Defranceski's great-grandfather was christened George Downing Mountjoy Booyzen . On an Afrikaans surname that reads like an affectation. It is the opposite: every one of those forenames is a woman's surname."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "margaret-downing": {
    "n": "Margaret Downing",
@@ -4623,7 +4774,8 @@
      "text": "Catherine was fourteen. Her husband remarried, lost two infant daughters, and died himself of a heart attack on 21 February 1947. Catherine Mary Sophia Booyzen was eighteen years old and had no parents. Two years later she married Nuno Fernando Lerena at St Joseph's, Mayfair. Johannesburg → Margaret Downing signed with a cross The 1819 marriage register at St Leonard's Shoreditch records the entry in the usual form — and then, where the bride should sign: Margaret Downing † her mark. She could not write her own name. She was fifteen years old, and had that morning been sworn to be twenty-one and upwards. Her husband signed — after striking through a first attempt."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "john-paul-downing": {
    "n": "John Paul Downing",
@@ -4680,7 +4832,8 @@
      "text": "Margaretha W. E. M. Kolbe 1826 – 1912 Margaretha W. E. M. Kolbe · 1826 – 1912 George Augustus Kolbe 1802 – 1844 George Augustus Kolbe · 1802 – 1844 Johan Gottlieb Kolbe 1765 – 1845 Johan Gottlieb Kolbe · 1765 – 1845 Margaret Downing c.1804 – 1867 Margaret Downing · c.1804 – 1867 John Paul Downing — – — John Paul Downing · — – — Anna Johanna Maria Pretori… 1906 – 1944 Anna Johanna Maria Pretorius · 1906 – 1944 Petrus Jacobus Pretorius 1878 – 1941 Petrus Jacobus Pretorius · 1878 – 1941 Margarietha W. E. Barry 1880 – 1961 Margarietha W. E."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "john-gottlob-kolbe": {
    "n": "John Gottlob Kolbe",
@@ -4746,7 +4899,8 @@
      "text": "D. O."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "marian-kolbe": {
    "n": "Marian Kolbe",
@@ -4794,7 +4948,8 @@
      "text": "Disputed The Documents Margaretha Wilhelmina Elizabeth Mary Kolbe Documented 6 mentions 1826 1912 His wife, married 1846. Daughter of the 1820 Settler — and the reason the Kolbe name runs through the Booyzens. The Kolbes The Women The Barrys Marian Kolbe Documented 3 mentions — — Of the London Kolbes. The Kolbes Peter Benjamin Kolbe Documented 2 mentions — — Of the Kolbe children. The Documents Ferdinand Kumm Documented 2 mentions — 20 Oct 1903, Stutterheim Farmer, married Wilhelmina née Nass. Her father — and the man whose death notice an external source mistook for James Jonathan's."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "julia-kolbe": {
    "n": "Julia Kolbe",
@@ -4846,7 +5001,8 @@
      "text": "Died at 34 Conduit Street, Mayfair — not Lamb's Conduit Street; the tree's photograph is of the wrong building. Buried at the German Savoy Church, Strand. The Kolbes The Documents John Gottlob Kolbe Documented 5 mentions — — Of the London Kolbes. The Kolbes Julia Kolbe Documented 3 mentions — — One of the five Kolbe children whose death records are not yet read. Disputed The Documents Margaretha Wilhelmina Elizabeth Mary Kolbe Documented 6 mentions 1826 1912 His wife, married 1846. Daughter of the 1820 Settler — and the reason the Kolbe name runs through the Booyzens. The Kolbes The Women The Barrys Marian Kolbe Documented 3 mentions — — Of the London Kolbes."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "frederik-fortunatus-kolbe": {
    "n": "Frederik Fortunatus Kolbe",
@@ -4898,7 +5054,8 @@
      "text": "And Frederik Fortsenatus Booÿsen (b. 1899) is a worn-down copy of Frederik Fortunatus Kolbe (b. 1839), by way of Frederick Fortunatus Barry (b. 1863). The women's families did not vanish into the Booyzen name. They were carried inside it. They worked Three occupations are recorded for women in this ancestry. All three are manual."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "peter-benjamin-kolbe": {
    "n": "Peter Benjamin Kolbe",
@@ -4937,7 +5094,8 @@
      "text": "Disputed The Documents Margaretha Wilhelmina Elizabeth Mary Kolbe Documented 6 mentions 1826 1912 His wife, married 1846. Daughter of the 1820 Settler — and the reason the Kolbe name runs through the Booyzens. The Kolbes The Women The Barrys Marian Kolbe Documented 3 mentions — — Of the London Kolbes. The Kolbes Peter Benjamin Kolbe Documented 2 mentions — — Of the Kolbe children. The Documents Ferdinand Kumm Documented 2 mentions — 20 Oct 1903, Stutterheim Farmer, married Wilhelmina née Nass. Her father — and the man whose death notice an external source mistook for James Jonathan's."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "petrus-jacobus-pretorius": {
    "n": "Petrus Jacobus Pretorius",
@@ -5025,7 +5183,8 @@
      "text": "E. Barry 1880 – 1961 Margarietha W. E."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "anna-johanna-maria-schoeman": {
    "n": "Anna Johanna Maria Schoeman",
@@ -5077,7 +5236,8 @@
      "text": "E. Barry 1880 – 1961 Margarietha W. E. Barry · 1880 – 1961 Hendrik Nicholaas Barry — – — Hendrik Nicholaas Barry · — – — Anna Johanna Maria Schoeman — – — Anna Johanna Maria Schoeman · — – — Ruben Schoeman — – — Ruben Schoeman · — – — Magdalena Johanna Botha — – — Magdalena Johanna Botha · — – — Each box is a person a document names; click one for everything the archive holds on them. Dashed rings are where the line stops."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "dirk-jacobus-pretorius": {
    "n": "Dirk Jacobus Pretorius",
@@ -5117,7 +5277,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family. The Documents Isaak Pretorius Documented 4 mentions — — Of the Pretorius family. The Documents Johanna Margaritha Pretorius Documented 3 mentions — — The second wife of Petrus Jacobus Booysen, named at last from the 1870 baptism of her son Gert Jacobus — not from any death notice, none of which would give her."
+     "text": "The Documents Anna Johanna Maria Pretorius Documented 10 mentions 3 Oct 1906 1944 His wife, married 30 Dec 1924 at Vereeniging aged eighteen, with parental consent. Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family. The Documents Isaak Pretorius Documented 4 mentions — — Of the Pretorius family. The Documents Johanna Margaritha Pretorius Documented 5 mentions — — The second wife of Petrus Jacobus Booysen, named at last from the 1870 baptism of her son Gert Jacobus — not from any death notice, none of which would give her."
     },
     {
      "page": "/sources/",
@@ -5125,7 +5285,8 @@
      "text": "ir Johannesburg, Transvaal, South Africa records 3:1:3Q9M-CS27-23NL Johanna Catharina Booyzen & Johannes Pool — marriage 1910 South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS) 3:1:3Q9M-C91V-LBN Henry James Booyzen & Dorothea Regina Barry — marriage 1912, Elliot South Africa, Civil Marriage Records, 1840–1973 3:1:3Q9M-C9BP-3SZW-J Dirk Jacobus Pretorius — marriage 1926, Vereeniging South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS) 3:1:3Q9M-C912-4Q9K-3 Dirk Jacobus Pretorius — death 1957, Germiston South Africa, Civil Death Registration, 1955–1966 3:1:3Q9M-C91P-D9S7-5 FamilySearch arks resolve at familysearch.org/ark:/61903/<reference> . Collections citing the State Archives, Cape Province and Pietermaritzburg Archives are named as Famil"
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "isaak-pretorius": {
    "n": "Isaak Pretorius",
@@ -5174,7 +5335,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family. The Documents Isaak Pretorius Documented 4 mentions — — Of the Pretorius family. The Documents Johanna Margaritha Pretorius Documented 3 mentions — — The second wife of Petrus Jacobus Booysen, named at last from the 1870 baptism of her son Gert Jacobus — not from any death notice, none of which would give her."
+     "text": "Three documents put her birth in 1906, not 1905. The Women The Documents The Cousin Marriage Dirk Jacobus Pretorius Documented 3 mentions — — Of the Pretorius family. The Documents Isaak Pretorius Documented 4 mentions — — Of the Pretorius family. The Documents Johanna Margaritha Pretorius Documented 5 mentions — — The second wife of Petrus Jacobus Booysen, named at last from the 1870 baptism of her son Gert Jacobus — not from any death notice, none of which would give her."
     },
     {
      "page": "/sources/",
@@ -5182,7 +5343,8 @@
      "text": "925 ; signed James H. Barry Death notice, George Downing Mountjoy Booyzen, 1948 Administration of Estates Act 1913; Johannesburg; signed 21 Feb 1948; Master's Office stamp 1948 Photograph — \"George Booyzen and Isaak Pretorius In Transkei\" captioned in the tree; undated, c. 1930s Three uncaptioned photographs attached to George's profile; identifications inferred and flagged as unverified Death notice, George Augustus Kolbe, 1845 Section 9, Ordinance 104; estate 7698 = KAB MOOC 6/9/35 (1845); signed by his widow at Colesberg Death notice, Margaret Downing, 1868 Ordinance 104; estate 4094 ; filed 30 Jan 1868, signed G."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "ruben-schoeman": {
    "n": "Ruben Schoeman",
@@ -5252,7 +5414,8 @@
      "text": "And Anna Johanna Maria Pretorius was named after her own grandmother, Anna Johanna Maria Schoemann — the tree records the intention explicitly, and the 1923 Sterfkennis of that grandmother names her parents in turn as Ruben Schoeman and Magdalena Johanna Botha of Barkly Oost. The documents → A correction. This archive previously wrote that Anna was born on 3 October 1905, \"five weeks after her infant brother Hendrik Nikolaas died.\" Her baptism register gives her birth as 3 October 1906 , and her death form gives her age as 37 , which agrees. The gap was thirteen months , not five weeks, and the sentence is withdrawn ."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "magdalena-johanna-botha": {
    "n": "Magdalena Johanna Botha",
@@ -5313,7 +5476,8 @@
      "text": "And Anna Johanna Maria Pretorius was named after her own grandmother, Anna Johanna Maria Schoemann — the tree records the intention explicitly, and the 1923 Sterfkennis of that grandmother names her parents in turn as Ruben Schoeman and Magdalena Johanna Botha of Barkly Oost. The documents → A correction. This archive previously wrote that Anna was born on 3 October 1905, \"five weeks after her infant brother Hendrik Nikolaas died.\" Her baptism register gives her birth as 3 October 1906 , and her death form gives her age as 37 , which agrees. The gap was thirteen months , not five weeks, and the sentence is withdrawn ."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "daniel-willem-schoeman": {
    "n": "Daniel Willem Schoeman",
@@ -5387,7 +5551,8 @@
      "text": "Barkly East 1 Jun 1901 Life George Downing Mountjoy Booyzen born In the middle of the war. George Downing Mountjoy Booyzen July 1901 The war A wedding in a rebel's house Five weeks after Schoeman was tried, the family marries in his house at Caerlaverock. He signs the register. Daniel Willem Schoeman Caerlaverock June 1901 The war Two men of this district are tried as Cape Rebels Daniel Willem Schoeman of Caerlaverock, and Fred J. Barry of Ivanhoe, Barkly East / Wodehouse. Daniel Willem Schoeman Fred J."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   },
   "tersia-booyzen": {
    "n": "Tersia Booyzen",
@@ -5470,7 +5635,8 @@
      "text": "Kolbe FamilySearch Family Tree — both Petrus Jacobus Booysens Testimony Tersia Booyzen , recorded on the MyHeritage profile of Willem Hermanus Booyzen — the name-change and Anglo-Boer War account, given as told to her by her father. Quoted in full → An unattributed earlier researcher , recorded on the profiles of John Augustus Barry I and Margaretha Kolbe — the account of the three conflicting birth records, the \"Neagle\" maiden name, and the anti-English reputation."
     }
    ],
-   "shared": false
+   "shared": false,
+   "also": []
   }
  }
 }

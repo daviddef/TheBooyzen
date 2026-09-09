@@ -68,9 +68,14 @@ const groups = Object.entries(byPage);
 {p.shared && (
 <section class="blk">
   <div class="note">
-    <strong>Two people share this page.</strong> This archive holds more than one person of this name and
-    they are gathered here together, because merging them silently would be worse than saying so. The
-    surrounding text on each page below usually makes it clear which is which.
+    <strong>More than one person of this name.</strong> This archive holds
+    {1 + (p.also || []).length} people called <strong>{p.n}</strong>, and they are gathered here together
+    because merging them silently would be worse than saying so. The surrounding text on each page below
+    usually makes it clear which is which.
+    <ul style="margin:10px 0 0">
+      <li><b>{p.n}</b> — {p.b} to {p.d}. {p.r}</li>
+      {(p.also || []).map(a => (<li><b>{a.n}</b> — {a.b} to {a.d}. {a.r}</li>))}
+    </ul>
   </div>
 </section>
 )}

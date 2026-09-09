@@ -96,8 +96,9 @@ dossiers, index = {}, []
 for p in people:
     name = p["n"]
     sl = slug(name)
-    if sl in dossiers:            # two people, one name — merge and flag
+    if sl in dossiers:            # two people, one name — merge, flag, and keep both records
         dossiers[sl]["shared"] = True
+        dossiers[sl].setdefault("also", []).append(p)
         continue
     hits, seen, hitpages = [], set(), []
     for route, pg in sorted(pages.items()):
@@ -115,7 +116,8 @@ for p in people:
             for f in found[:4]:
                 hits.append({"page": route, "title": pg["title"], "text": f})
         seen = set()
-    dossiers[sl] = {**p, "slug": sl, "mentions": len(hits), "pages": hitpages, "hits": hits[:26], "shared": False}
+    dossiers[sl] = {**p, "slug": sl, "mentions": len(hits), "pages": hitpages,
+                    "hits": hits[:26], "shared": False, "also": []}
     if hits:
         # every safe variant links to the dossier, not only the canonical name
         for v in variants(p):

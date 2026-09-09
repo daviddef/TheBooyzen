@@ -10,18 +10,19 @@ An evidence-first family archive for the **Booyzen** family — of Graaff-Reinet
 
 ## The site
 
-Published at **https://daviddef.github.io/TheBooyzen/** — 128 pages, built with Astro.
+Published at **https://daviddef.github.io/TheBooyzen/** — 139 pages, built with Astro.
 
 | | |
 |---|---|
 | **[The tree](https://daviddef.github.io/TheBooyzen/tree/)** | An ancestor chart with the four walls marked, and why each one is different |
 | **[The timeline](https://daviddef.github.io/TheBooyzen/timeline/)** | 43 dated events, 1779–2013, each with a document behind it |
-| **[The atlas](https://daviddef.github.io/TheBooyzen/atlas/)** | 23 places plotted from latitude and longitude — two clusters and a line |
-| **[Everyone](https://daviddef.github.io/TheBooyzen/people/)** | 78 people, each with a dossier gathering every mention of them anywhere on the site |
+| **[The atlas](https://daviddef.github.io/TheBooyzen/atlas/)** | 32 places, plotted from latitude and longitude |
+| **[Everyone](https://daviddef.github.io/TheBooyzen/people/)** | 84 people, each with a dossier gathering every mention of them anywhere on the site |
 | **[The places](https://daviddef.github.io/TheBooyzen/places/)** | 28 places, each with what happened there and who the archive puts there |
-| **[The plates](https://daviddef.github.io/TheBooyzen/gallery/)** | All 83 document images, with a lightbox |
-| **[What was searched](https://daviddef.github.io/TheBooyzen/searched/)** | 30 queries, 19 of which returned nothing — with their exact wording |
-| **[Search](https://daviddef.github.io/TheBooyzen/search/)** | One box over people, places, pages and 262 section headings |
+| **[The plates](https://daviddef.github.io/TheBooyzen/gallery/)** | All 88 document images, with a lightbox |
+| **[What was searched](https://daviddef.github.io/TheBooyzen/searched/)** | 53 queries, 28 of which returned nothing — with their exact wording |
+| **[The research log](https://daviddef.github.io/TheBooyzen/log/)** | 29 entries, 14 of them retractions |
+| **[Search](https://daviddef.github.io/TheBooyzen/search/)** | One box over people, places, pages and 310 section headings |
 
 Person names anywhere on the site link themselves to that person's dossier, including spelling
 variants — *Montjoy*, *Mondjoy* and *Herklaas* all reach the right page.

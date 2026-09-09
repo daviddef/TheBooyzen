@@ -3,7 +3,15 @@ import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import d from "../data/dossiers.json";
 import pj from "../data/people.json";
-const people = Object.values(d.people);
+/* Iterate the FULL people list, not the deduped dossiers: three names are
+   carried by more than one person here and the index must not hide them. */
+const bySlug = d.people;
+const slugOf = (n) => Object.values(bySlug).find(x => x.n === n || (x.also || []).some(a => a.n === n));
+const people = pj.people.map(p => {
+  const host = Object.values(bySlug).find(x => x.n === p.n || (x.also || []).some(a => a.n === p.n && a.b === p.b));
+  return { ...p, slug: host ? host.slug : "", mentions: host ? host.mentions : 0,
+           pages: host ? host.pages : [], shared: host ? host.shared : false };
+});
 const lines = pj.lines;
 const counted = lines.map(l => [l, people.filter(p => p.l === l).length]).filter(([, n]) => n > 0);
 const sorted = [...people].sort((a, b) => {
