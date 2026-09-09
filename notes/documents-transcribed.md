@@ -943,3 +943,134 @@ and six hours. Two causes.**
 Within **three years and ten months**, at 85 Rheeder Street and in two Johannesburg nursing homes:
 **Anna** died in February 1944; **Gertrude Elizabeth** in May 1946, aged four days; **Gertrude** in May
 1947, aged six hours; **George** in December 1947. Catherine Mary Sophia Booyzen was eighteen.
+
+---
+
+# SEVENTH EXTRACTION — the last of the photo store
+
+## 27. THE PAINTED PORTRAIT of George Augustus Kolbe
+`kolbe/kolbe-george-35-1.jpg` · `-35-3.jpg` (same image, one colour-corrected) · `-35-2.jpg` (a profile)
+
+**It is a painting, photographed under glass** — the flare across the chest and the green cast in 35-1
+are the glazing. A young man with **reddish-brown curling hair**, clean-shaven, in a **high white stock**
+and a **tan coat with wide lapels**: dress of the **1820s–30s**.
+
+<span>Resolved</span> This archive had cautioned that a likeness of a man who died in **1844** could not be
+a photograph from life and would have to be **a painting**. **It is.** The small vignetted
+`kolbe-george-portrait.jpg` is a crop of this same work.
+
+**Caution on 35-2:** a left-facing profile, extremely heavily processed — posterised, speckled,
+colour-fringed. It is either a second image or a modern "restoration" that has invented a great deal.
+**Not to be relied on for likeness.**
+
+## 28. MARRIAGE REGISTER, St Leonard's Shoreditch, 20 January 1819 — entry No. 858
+`kolbe/kolbe-downing-marriage.jpg`
+
+> "**George Kolbe** of this Parish, Bachelor, and **Margaret Downing** of this Parish, Spinster, were
+> married in this **Church** by **Licence** with Consent of ———— this **Twentieth** Day of **January** in
+> the Year One thousand eight hundred and **Nineteen**. By me **Tho: Baxter, Min<sup>r</sup>**."
+> Solemnized between us: ~~G⸻~~ **George Kolbe** · **Margaret Downing † her mark**
+> In the Presence of: **John Paul** · **Mary Downing**
+
+### Three findings
+1. **MARGARET DOWNING COULD NOT WRITE HER NAME.** She signed **with a mark**. She was fifteen.
+   Her husband signed — after striking through a first attempt.
+   > A girl who made a cross in a Shoreditch register in 1819 died in 1867 owning **a dwelling house in
+   > Burgersdorp and a farm in the division of Albert**, having buried a husband at 41 and raised ten
+   > children on a mission circuit. It is the single steepest arc in this archive.
+2. **The "with Consent of" line is left blank.** Under Hardwicke's Act a minor marrying by licence needed
+   a named consenting parent. The blank is the **visible consequence of the false oath** they had sworn
+   that morning — they claimed to be twenty-one and upwards, so no consent was required.
+3. **A witness is "John Paul."** The tree records Johan Gottlieb Kolbe as also known as
+   **"John Paul" Kolbe**. <span>Inferred</span> The groom's own father may therefore have **witnessed the
+   marriage** — which makes this more complicated than an elopement: a father standing by while his
+   sixteen-year-old son swore he was of age. **Unproved** — "John Paul" could be an unrelated man.
+   The other witness, **Mary Downing**, is presumably the bride's mother or sister.
+
+## 29. MARRIAGE REGISTER, 30 December 1924 — George and Anna
+`george-downing-mountjoy/anna-george-marriage-certificate.jpg`
+*Duplicate Original Marriage Register*, No. **15/24**, No. **00859**. Solemnized at **Vereeniging**,
+district **Heidelberg**, province **Transvaal**, by **H. F. Steyn**, *Ned. Herv. of Geref. Kerk*.
+
+| | Husband | Wife |
+|---|---|---|
+| Name | **George Downing Montjoy Booyzen** | **Anna Johanna Maria Pretorius** |
+| **Age** | **24** | **18** |
+| Country of birth | Zuid Afrika | Zuid Afrika |
+| Status | Jonkman | Jongedochter |
+| **Occupation** | **BOOMKWEKER** — tree nurseryman | Geen |
+| **Residence** | **Evaton, Tvl** | **Evaton, Tvl** |
+| Consent | **Eigen** (his own) | **Ouders** (parents) |
+| Contract | **Zonder** — no antenuptial contract |  |
+
+Witnesses: **D. S. Hennop** and **W. C. Booysen**.
+
+### Findings
+1. **Anna's age is 18** — a **third** independent document giving her birth as **1906**, after the
+   baptism register and the death form. And her consent is recorded as **"Ouders"** — parental consent,
+   required because she was a **minor**. The tree's 1905 is wrong three times over.
+2. **George was a BOOMKWEKER — a tree nurseryman.** Not a miner, and not yet a railwayman. A wholly new
+   occupation for him.
+3. **Both were living at EVATON** — the same place where Anna's grandmother Anna Johanna Maria Schoeman
+   died in 1923. The Pretorius–Barry–Schoeman connection had already moved to the Transvaal, and George
+   was there with them.
+4. A witness signs **W. C. Booysen** — the *-sen* spelling again, in 1924, inside the family.
+
+## 30. DEATH REGISTRATION of George Downing Mountjoy Booyzen, 1947
+`george-downing-mountjoy/george-death-information.jpg` — entry **10,899**, Johannesburg,
+registered 12 December 1947. *Distinct from the death notice already read.*
+
+| Field | As written |
+|---|---|
+| Age | **46 years** · Birthplace **Cape Province** · **Married** |
+| **Occupation** | **CLERK, SOUTH AFRICAN RAILWAYS, JOHANNESBURG** |
+| **Date of death** | **Eleventh December 1947** |
+| Place of death | **85 Rheeders Street, Forest Hill, Johannesburg** |
+| Burial | **West Park, Johannesburg** |
+| **Causes** | **Coronary Thrombosis; Chronic Myocarditis** |
+| Duration | **2 days / 11 months** |
+| Doctor | **Dr J. S. Porter** |
+| Informant | **M. van Zyl**, "person causing burial", **49 Joubert Street, Germiston** |
+
+### Findings
+1. **The 11 December 1947 death date is confirmed by a second, independent document.** The tree's
+   21 February 1947 is now wrong twice over.
+2. **His occupation is legible at last: CLERK, South African Railways.** The death notice's abbreviated
+   "S.A.R. & H." with a half-legible role is now resolved.
+3. **The tree's cryptic note "Cause: HEART ATTACK 1946" turns out to be substantially right.**
+   *Chronic myocarditis, 11 months* + *coronary thrombosis, 2 days*. A year-long cardiac illness ending
+   in a heart attack. A garbled memory, but a true one.
+4. **The same doctor (J. S. Porter) and the same informant (M. van Zyl of 49 Joubert Street)** handled
+   both this death and the infant Gertrude's seven months earlier.
+
+## 31–32. TWO BARKLY OOST BAPTISMS, 1889 and 1891
+`willem-hermanus/johanna-catharina-booyzen-birth.jpg` · `1891-birth-catherine-mary-sophia.jpg`
+Both **Doop Register, Barkly Oost**.
+
+**1889, entry 40** — gedoopt 15 Sept 1889: **Johanna Catharina**, geb. **20 Juni 1889**.
+Ouders **Willem Hermanus Booijsen** and **Catharina Maria Sophia Barry**.
+**Getuigen: JOHN BARRY and MARGARET WILHELMINA ELIZABETH KOLBY.**
+
+**1891, entry 120** — gedoopt 24 Mei 1891: **Catharina Maria Sophia**, geb. **22 April 1891**.
+Ouders **Willem Hermanus Booysen** and **Catharina Maria Sophia Barry**.
+Getuigen: Philippus Arnoldus Olivier · Elizabeth Susanna Germishuizen · Gert Francois Botha ·
+Catharina Anna Susanna Botha.
+
+### Findings
+1. **The 1889 godparents are the child's own maternal grandparents** — **John Augustus Barry I** and
+   **Margaretha Kolbe** (written *Kolby*), standing at a font in Barkly East in September 1889.
+   The Irishman born at sea and the Bond Street tailor's granddaughter, in person, at a named event.
+2. Both baptisms confirm the parentage and place the family firmly at **Barkly Oost** in 1889 and 1891.
+
+## 33. AN INCIDENTAL FIND — MOUNTJOYS AT BARKLY OOST, 1889
+On the **facing page** of the 1889 register, entry of 6 October 1889:
+
+> **George**, geb. 21 Juli 1889. Ouders: **Hercules Johannes MOUNTJOY** and **Maria Sophia van Niekerk**.
+> Getuigen: Jan Dirk Abraham Francois van Niekerk · Isabella Margaretha van Niekerk ·
+> **Jakobus Jonathan MOUNTJOY** · Maria Kuny · **Maria Sophia MOUNTJOY**.
+
+The Booyzen line descends from **Johanna Catharina Mountjoy** (1819–1863). Here are **three named
+Mountjoys living in the same district and baptising in the same register**, twenty-six years after her
+death. <span>Lead</span> **Hercules Johannes Mountjoy, Jakobus Jonathan Mountjoy and Maria Sophia
+Mountjoy** are a searchable cluster that may connect back to **James Mountjoy (1786–1827)** and
+**Anna Catharina Schleher**. Entirely incidental, and one of the better leads in the archive.

@@ -7,6 +7,12 @@
       "runtimeArgs": ["run", "dev"],
       "port": 4324,
       "cwd": "site"
+    },
+    {
+      "name": "ourfamily",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/daviddefranceski/Claude/Projects/Our Family/site", "run", "dev"],
+      "port": 4325
     }
   ]
 }

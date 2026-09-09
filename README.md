@@ -210,6 +210,29 @@ to. Under FEBRUARY 1803:
   birthday, a year apart, is real coincidence. Both were badly premature.
 - Which means the household lost **a mother, two infants and a father inside three years and ten months**.
 
+## The last of the photo store
+
+- **The 1819 marriage entry.** *"Margaret Downing † **her mark**."* **She could not write her own name**
+  — at fifteen, having that morning been sworn to be twenty-one and upwards. The *"with Consent of"* line
+  is left blank: the visible consequence of the lie. Forty-eight years later she died at Burgersdorp
+  owning a house and a farm. **The steepest arc in this archive begins with a cross in a Shoreditch
+  register.** A witness signs **"John Paul"** — the name the groom's own father also went by.
+- **The portrait of George Augustus Kolbe is a painting**, photographed under glass, in the dress of the
+  1820s–30s — exactly as the archive had cautioned it must be for a man who died in 1844.
+- **1924: George was a BOOMKWEKER — a tree nurseryman**, living at Evaton. And Anna is **18** on the
+  register, with **parental consent** recorded: a **third** independent document putting her birth in
+  **1906**, not 1905.
+- **George's death registration** confirms **11 December 1947** a second time, and gives his occupation
+  legibly at last: **Clerk, South African Railways, Johannesburg**. It also vindicates the tree's
+  strangest note — *"Cause: HEART ATTACK 1946"* — with **chronic myocarditis of eleven months ending in
+  coronary thrombosis**. A garbled memory, but a true one.
+- **1889: the godparents were the child's own grandparents** — **John Barry** and **Margaret Wilhelmina
+  Elizabeth Kolby**, standing together at a font in Barkly East. Twenty-six years before their grandson
+  told a magistrate he thought his grandfather's name was *James*.
+- **And on the facing page, by accident: MOUNTJOYS.** Hercules Johannes, Jakobus Jonathan and Maria Sophia
+  Mountjoy, baptising at Barkly Oost in 1889 — a named, searchable cluster in the right district for a
+  family the archive had as little more than a surname.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
