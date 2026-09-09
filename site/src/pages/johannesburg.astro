@@ -4,10 +4,11 @@ import { u } from "../lib/url.js";
 const places = [
   ["85 Rheeden Street, Forest Hill", "1946", "where the infant Gertrude Elizabeth Booyzen died, four days old"],
   ["Forest Hill, Johannesburg", "1944", "where Anna Johanna Maria Pretorius died of an ectopic pregnancy, aged 38"],
-  ["Mayfair, Johannesburg", "1940", "where Kathleen Barry died, aged 81 — forty years after leaving the Cape"],
+  ["No. 1, Fifteenth Avenue, Mayfair", "1940", "where Kathleen Barry died of carcinoma of the uterus, aged 82 — forty years after leaving the Cape"],
   ["St Joseph's Catholic Church, Mayfair", "15 Jan 1949", "where Catherine Mary Sophia Booyzen married Nuno Fernando Lerena"],
   ["West Park Cemetery, Johannesburg", "14 Dec 1947", "where George Downing Mountjoy Booyzen was buried, three days after his death"],
   ["96 James Street, Germiston", "1941", "where Petrus Jacobus Pretorius died"],
+  ["Brixton Cemetery, Johannesburg", "1940", "where Kathleen Barry was buried — a fact the tree does not record at all"],
   ["Primrose Cemetery, Germiston", "1961", "where Margarietha Wilhelmina Elizabeth Barry was buried"],
   ["Vereeniging", "30 Dec 1924", "where George and Anna married"],
   ["Alberton", "2004", "where Pieter Carel Le Roux, Catherine's second husband, died"],
@@ -112,8 +113,14 @@ const drift = [
     <b>S.A.R. &amp; H.</b> — the South African Railways and Harbours. The mines belong to the generation
     that came off the train, not to his. <a href={u("/documents/")}>The documents &rarr;</a>
   </div>
-  <p><b>West Park Cemetery</b> holds George. Kathleen Barry's Mayfair burial place is not recorded at all,
-    and Anna Pretorius's is given only as "Johannesburg". Both are findable.
-    <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+  <p><b>West Park Cemetery</b> holds George. <b>Kathleen Barry is at Brixton Cemetery</b> — her 1940
+    death certificate says so, and the tree records no burial place for her at all. Anna Pretorius's is
+    still given only as "Johannesburg". <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+  <div class="note" style="margin:18px 0">
+    <b>And one word on that certificate opens a new line entirely.</b> Kathleen Barry is recorded as a
+    <b>"Military Pensioner"</b>. Her husband died in 1905 of a stomach ulcer, so the pension is not his.
+    The likeliest route is a <b>son's First World War service</b> — and no son of hers has ever been
+    looked for in a service record. <a href={u("/documents/")}>The certificate &rarr;</a>
+  </div>
 </section>
 </Base>

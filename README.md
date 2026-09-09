@@ -101,6 +101,29 @@ register. It corrected the tree twice and opened a financial thread across two c
   his wife. **The correction makes the family more coherent, not less.**
 - Cause of death: **"Decay of Nature."** Buried 26 November 1845, Grave 7, by **Revd Dr Steinkopff**.
 
+## Barry, Pretorius and Schoeman
+
+A fourth extraction, from Kathleen Barry's, Anna Pretorius's and Margarietha Barry's profiles.
+
+- **The 1901 wartime marriage register gives the Schoeman his initials.** The wedding was held
+  *"in woonhuis D. Schoeman te Caerlaverock"* — and the witness signs in full: **D. W. SCHOEMAN**.
+  Set that against **Commandant D. Schoeman**, who held Labuschagne's Nek with ~400 Cape Rebels in
+  March 1900, one district away. A specific, searchable identity where there was only an initial.
+  **Still not proof.**
+- **Two more British farm names.** The groom was of **Armadale**, the bride of **Caerlaverock** — beside
+  John Barry's **Manorowen**. Scottish and Welsh place-names on the farms of families siding with the
+  republics.
+- **A family photograph, c. 1909** — **Anna Johanna Maria Pretorius aged about four**, with her brother
+  Dirk and her parents. Apparently the only picture of Petrus Jacobus Pretorius and Margarietha Barry
+  together, eight years after they married in Schoeman's house.
+- **Kathleen Barry's 1940 death certificate names her a "MILITARY PENSIONER".** Her husband had been
+  dead thirty-five years and died of an ulcer, so it is not his service — most likely a son's, in the
+  First World War, and no son of hers has ever been looked for in a service record. A family that
+  remembers fighting the British ends with its matriarch on a military pension in a British dominion.
+- Two smaller gains from the same document: she died at **No. 1, Fifteenth Avenue, Mayfair** — the archive
+  had only "Mayfair" — of **carcinoma of the uterus** after thirteen months, and she is buried at
+  **Brixton Cemetery**, which the tree does not record at all.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on

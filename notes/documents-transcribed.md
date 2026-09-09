@@ -517,3 +517,112 @@ never have been registered at May Fair. **Three independent documents say Condui
 34 and 34A — **is a picture of the wrong building, in the wrong part of London.**
 
 He lived and died **above his own shop, in Mayfair**, and was carried to the German church in the Strand.
+
+---
+---
+
+# FOURTH EXTRACTION — Barry, Pretorius and Schoeman
+Extracted 9 September 2026. Files in `sources/booyzen-photos/barry-pretorius/`.
+
+## 14. MARRIAGE REGISTER, 8 July 1901 — the wartime wedding at Caerlaverock
+`pretorius-barry-marriage-1901-original.jpg` — *Duplicaat Origineel Register*, Book No. **4584**,
+entry **5**, page 4433. Photographed by the Department of Home Affairs (their damage-notice card is in
+the frame).
+
+Huwelijk bevestigd te **Caerlaverock**, in de Parochie van **Barkly Oost**, District **Barkly Oost**.
+
+| | Groom | Bride |
+|---|---|---|
+| Namen en Toenamen | **Petrus Jacobus Pretorius** | **Magrita Wilhelmina Elizabeth Barry** |
+| Ouderdom | **22** | **21** |
+| Staat | Jonkman | Jongedochter |
+| **Rang of Beroep** | **Veeboer** (stock farmer) | — |
+| **Woonplaats** | **Armadale** (Barkly Oost) | **Caerlaverock** (Barkly Oost) |
+| | *Na Huwelijksgeboden* — after banns | *Toestemming Ouders* — parents' consent |
+
+> "Getrouwd in **woonhuis D. Schoeman** te **Caerlaverock** voormeld, na huwelijksgeboden, door mij:
+> **J. G. van der Walt, Pred. Geref. Kerk**."
+
+**Signed by the parties:** P. J. Pretorius · M. W. E. Barry
+**In de tegenwoordigheid van ons (witnesses): J. J. PARSONS and D. W. SCHOEMAN.**
+
+### Findings
+1. **The witness's initials are now known: D. W. SCHOEMAN.** The tree recorded only "the home of
+   D Schoeman". The register gives a signature. The Cape Rebel commandant who held **Labuschagne's Nek**
+   north of Dordrecht with about 400 men in **March 1900** is recorded as **Commandant D. Schoeman**.
+   <span>Hypothesis, sharpened</span> A **D. W. Schoeman of Caerlaverock, Barkly East district**, signing
+   in July 1901 under martial law, is now a specific and searchable identity to test against the
+   commandant lists. Still not proof.
+2. **They married in a private house, not a church**, in the middle of the war.
+3. **A different denomination.** This is the **Gereformeerde Kerk** (the "Dopper" church), not the
+   *Nederduitse* Gereformeerde Kerk in which Willem Hermanus Booysen married in 1879.
+4. **Two more British farm names.** The groom was of **Armadale**; the bride of **Caerlaverock**. Set
+   beside John Barry's **Manorowen**, the Barkly East district's farms carry **Scottish and Welsh
+   place-names** — Caerlaverock is in Dumfriesshire, Armadale in Scotland, Manorowen in Pembrokeshire.
+   <span>Inferred</span> These are British settlers' farms, and their families were siding with the
+   republics. That complicates the picture usefully.
+5. Petrus Jacobus Pretorius's occupation: **veeboer**, a stock farmer.
+
+## 15. FAMILY PHOTOGRAPH — "anna johanna maria pretorius with brother and parents"
+`anna-with-brother-and-parents.jpg` (1628 × 2416)
+
+A studio portrait against a painted backdrop, green-toned. Four people:
+
+- **Left, a boy of about seven**, in a pleated tunic with a wide white collar — **Dirk Jacobus Pretorius**
+  (b. 8 June 1902).
+- **Centre, a man with a heavy moustache**, light three-piece suit and bow tie —
+  **Petrus Jacobus Pretorius** (1878–1941).
+- **Right, a woman** in a high-necked white blouse, dark skirt and wide belt, hair dressed in a pompadour —
+  **Margarietha Wilhelmina Elizabeth Barry** (1880–1961).
+- **Front, a small girl of about four** in a white dress — **Anna Johanna Maria Pretorius** (b. 3 Oct 1905).
+
+<span>Inferred</span> The pompadour and high-necked blouse date it to **about 1908–1912**; the children's
+apparent ages put it at roughly **1909**, when Anna was four and Dirk seven.
+
+**This is David Defranceski's great-grandmother as a small child**, with the parents who married at
+Caerlaverock in the war. It appears to be the only photograph of Petrus Jacobus Pretorius and Margarietha
+Barry together.
+
+## 16. DEATH CERTIFICATE of CATHERINE MARY SOPHIA BOOYZEN (born Barry), 1940
+`kathleen-barry-death-certificate-1940.jpg` — *Form of Information of a Death / Aangifte van 'n
+Sterfgeval*, Act No. 17 of 1923. Entry No. **5970**, district **Johannesburg**.
+
+| Field | As written |
+|---|---|
+| Christian names and surname | **Catherine Mary Sophia Booyzen** — *"(Born Barry.)"* |
+| Age | **82 years** |
+| Birthplace | **Cape Province** |
+| Condition | **Widow** |
+| **Occupation** | **Home Duties** |
+| **Pensioner or dependent of pensioner** | **MILITARY PENSIONER** |
+| Date of death | **Fifth day of September 1940** |
+| **Place of death** | **No. 1, Fifteenth Avenue, Mayfair, Johannesburg** |
+| Usual residence | 1 Fifteenth Avenue, Mayfair |
+| **Intended place of burial** | **BRIXTON CEMETERY, Johannesburg** |
+| **Causes of death** | **Carcinoma of the Uterus; Senility** |
+| Duration of last illness | **One year one month** |
+| Medical practitioner | **Dr J. Friedman** |
+| Informant | **M. v. Rensburg**, qualification *"Causing Burial"*, of **20 Commercial Road, Fordsburg** |
+| Signed before | **F. B. Oppermann**, J.P., Johannesburg, 6 September 1940 |
+
+### Findings
+1. **"MILITARY PENSIONER."** An 81-year-old widow in Mayfair drawing a military pension in 1940. Her
+   husband died in 1905 of a stomach ulcer, so it is not his service.
+   <span>Untested</span> The likeliest route is a **son's First World War service** — several were of
+   age — with a dependant's pension. **This is a hard, searchable fact and an entirely new thread.**
+   It also carries an irony the archive should not smooth away: a family that remembers fighting the
+   British ends with its matriarch on a military pension in a British dominion.
+2. **A precise address at last: No. 1, Fifteenth Avenue, Mayfair.** The archive previously had only
+   "Mayfair".
+3. **She is buried at BRIXTON CEMETERY, Johannesburg.** The tree records no burial place for her at all.
+4. **Cause: carcinoma of the uterus, thirteen months.** Her occupation is now given as *Home Duties*;
+   the "Needle Woman" of the earlier record belongs to her younger life.
+5. The informant, **M. van Rensburg**, is very likely connected to the **van Rensburg Web Site** (Wayne
+   van Rensburg, South Africa) already listed among the trees holding this family.
+
+## Downloaded in this pass and not yet read
+`pretorius-barry-marriage-1901-register` (the second copy) · `anna-schoeman-barry-death`
+(Anna Johanna Maria Schoemann, the Schoeman matriarch) · `margarietha-barry-death-1961` ·
+`anna-pretorius-baptism` · `anna-booyzen-death-typed` · `margaretha-kolbe-death-1912`.
+Also still unread from earlier passes: George Kolbe's 1803 baptism, the 1891 birth of Catherine Mary
+Sophia, the Johanna Catharina birth entry, and the Anna–George marriage certificate.
