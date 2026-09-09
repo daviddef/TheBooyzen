@@ -367,3 +367,53 @@ The register image would state the groom's origin (Cape entries of this date rou
 *"van ..."*) and would be the single most likely place to break the "Not Known" wall from inside South
 Africa. **Not yet located as an image.** Next step: browse the Graaff-Reinet marriage register for
 March 1817 in the DRC collection (`1478678`) by waypoint rather than by index.
+
+---
+
+# Pass four — the 1817 marriage register (9 Sep 2026)
+
+**Found.** Two index entries for this marriage carried no image; a **third** indexing, under the spelling
+**Montyoy** (`1:1:6L4L-15ZR`), did — image ark `3:1:3Q9M-CSV8-QDF5`, apid `TH-909-70534-11274-57`,
+DGS `008121025`, image 167. Graaff-Reinet marriage register, folios 60–61.
+
+> **Den 9 Maart 1817 getrouwd**
+> *Dito* ✗ **James Montjoy** ————————— Met
+> **Anna Catharina Slier**, weduwe van
+> **Harmanus Pieterze[n]**
+
+## 1. The origin is not there — and that is the finding
+The archive went to this register expecting *"van ..."*. Cape entries of this date record it routinely,
+and **this very page does it three times** — *"beide van Uitenhage"*. Against James Montjoy: **a long
+ruled dash and nothing else.**
+
+**So the blank is not an artefact of the 1840 notice being written thirteen years after his death.**
+It was already there in **1817**, at his own wedding. Open Question 12 is now bounded properly: nothing
+further is recoverable inside South Africa.
+
+## 2. Her surname, sixth rendering — and the contemporary source agrees with the index
+**Slier** (1817 register) · **Sleer** (1863 death notice) · **Slier** (FamilySearch) ·
+**Schleher** (tree) · **Sher** and **Hier** (the two indexers). The 1817 register is the earliest and
+agrees with FamilySearch **against the tree**.
+
+## 3. WILLEM HERMANUS IS NOT A BOOYZEN NAME
+Three documents name Anna Catharina's first husband and look like three men:
+
+| Source | As written |
+|---|---|
+| 1817 marriage register (contemporary) | **Harmanus Pieterze[n]** |
+| 1840 death notice (written by a relative) | **William Pietersen** |
+| 1851 baptism, the godfather — *his son* | **Willem Hermanus Pieterzen** |
+
+The third contains both of the first two. The man was **Willem Hermanus Pieterzen**; the 1817 clerk took
+the second given name, the 1840 informant the first, and the son carried the whole of it.
+
+**Therefore the given name *Willem Hermanus* enters this family through Anna Catharina's FIRST marriage
+— a Pieterzen household with no blood relation to the Booyzens at all.** Her son by that marriage stood
+godfather at the 1851 Booyzen font and the child took his name:
+
+- **Willem Hermanus Booyzen (1851–1905)** — Lady Grey, Indwe, the stomach ulcer, the 1905 name-change sheet
+- **Willem Hermanus "Willy" Booyzen (1925–1996)** — Johannesburg
+
+Four generations carried a step-relation's name. This also corrects pass one's framing, which treated
+*Willem Hermanus* as "a Booysen name" crossing into the Mountjoys. **It is neither: it is a Pieterzen
+name that crossed into both.**
