@@ -31,7 +31,10 @@
     "Johanna Catharina Mountjoy",
     "Petrus Jacobus Booysen"
    ],
-   "slug": "graaff-reinet"
+   "slug": "graaff-reinet",
+   "lat": -32.252,
+   "lon": 24.533,
+   "approx": false
   },
   {
    "n": "Cradock",
@@ -63,7 +66,10 @@
     "Maria Sophia Botha",
     "Jacoba Catharina Mountjoy"
    ],
-   "slug": "cradock"
+   "slug": "cradock",
+   "lat": -32.164,
+   "lon": 25.619,
+   "approx": false
   },
   {
    "n": "Achter Sneeuwberg",
@@ -82,7 +88,10 @@
     "Petrus Jacobus Booysen",
     "Willem Hermanus Pieterzen"
    ],
-   "slug": "achter-sneeuwberg"
+   "slug": "achter-sneeuwberg",
+   "lat": -31.95,
+   "lon": 24.75,
+   "approx": true
   },
   {
    "n": "Zevenfontein",
@@ -104,7 +113,10 @@
     "Johanna Catharina Mountjoy",
     "Petrus Jacobus Booysen"
    ],
-   "slug": "zevenfontein"
+   "slug": "zevenfontein",
+   "lat": -31.49,
+   "lon": 25.01,
+   "approx": true
   },
   {
    "n": "Barkly East",
@@ -142,7 +154,10 @@
     "James Jonathan Mountjoy",
     "Richard Peter Barry"
    ],
-   "slug": "barkly-east"
+   "slug": "barkly-east",
+   "lat": -30.515,
+   "lon": 27.596,
+   "approx": false
   },
   {
    "n": "Manorowen",
@@ -164,7 +179,10 @@
     "Margaretha Wilhelmina Elizabeth Mary Kolbe",
     "Richard Peter Barry"
    ],
-   "slug": "manorowen"
+   "slug": "manorowen",
+   "lat": -30.515,
+   "lon": 27.596,
+   "approx": true
   },
   {
    "n": "Jerpoint",
@@ -181,7 +199,10 @@
    "p": [
     "Richard Peter Barry"
    ],
-   "slug": "jerpoint"
+   "slug": "jerpoint",
+   "lat": -30.6,
+   "lon": 27.4,
+   "approx": true
   },
   {
    "n": "Ivanhoe",
@@ -198,7 +219,10 @@
    "p": [
     "Fred J. Barry"
    ],
-   "slug": "ivanhoe"
+   "slug": "ivanhoe",
+   "lat": -31.1,
+   "lon": 27.2,
+   "approx": true
   },
   {
    "n": "Caerlaverock",
@@ -219,7 +243,10 @@
    "p": [
     "Daniel Willem Schoeman"
    ],
-   "slug": "caerlaverock"
+   "slug": "caerlaverock",
+   "lat": -31.1,
+   "lon": 27.1,
+   "approx": true
   },
   {
    "n": "Dordrecht",
@@ -237,7 +264,10 @@
     "Hercules Johannes Mountjoy",
     "Maria Sophia van Niekerk"
    ],
-   "slug": "dordrecht"
+   "slug": "dordrecht",
+   "lat": -31.372,
+   "lon": 27.041,
+   "approx": false
   },
   {
    "n": "Indwe",
@@ -255,7 +285,10 @@
     "Willem Hermanus “William Henry” Booyzen",
     "John Barry Booyzen"
    ],
-   "slug": "indwe"
+   "slug": "indwe",
+   "lat": -31.47,
+   "lon": 27.339,
+   "approx": false
   },
   {
    "n": "Lady Grey",
@@ -273,7 +306,10 @@
     "Willem Hermanus “William Henry” Booyzen",
     "Catherine Maria Sophia “Kathleen” Barry"
    ],
-   "slug": "lady-grey"
+   "slug": "lady-grey",
+   "lat": -30.71,
+   "lon": 27.22,
+   "approx": false
   },
   {
    "n": "Wodehouse",
@@ -290,7 +326,10 @@
    "p": [
     "Hercules Johannes Mountjoy"
    ],
-   "slug": "wodehouse"
+   "slug": "wodehouse",
+   "lat": -31.372,
+   "lon": 27.041,
+   "approx": true
   },
   {
    "n": "Colesberg",
@@ -317,7 +356,10 @@
     "Margaret Downing",
     "James Montjoy"
    ],
-   "slug": "colesberg"
+   "slug": "colesberg",
+   "lat": -30.719,
+   "lon": 25.098,
+   "approx": false
   },
   {
    "n": "Burgersdorp",
@@ -339,7 +381,10 @@
     "George Augustus Kolbe",
     "Margaret Downing"
    ],
-   "slug": "burgersdorp"
+   "slug": "burgersdorp",
+   "lat": -30.996,
+   "lon": 26.329,
+   "approx": false
   },
   {
    "n": "Johannesburg",
@@ -376,7 +421,10 @@
     "Catherine Maria Sophia “Kathleen” Barry",
     "Nuno Fernando Lerena"
    ],
-   "slug": "johannesburg"
+   "slug": "johannesburg",
+   "lat": -26.204,
+   "lon": 28.047,
+   "approx": false
   },
   {
    "n": "West Park Cemetery",
@@ -398,7 +446,10 @@
     "Anna Johanna Maria Pretorius",
     "George Downing Mountjoy Booyzen"
    ],
-   "slug": "west-park-cemetery"
+   "slug": "west-park-cemetery",
+   "lat": -26.155,
+   "lon": 27.983,
+   "approx": false
   },
   {
    "n": "Brixton Cemetery",
@@ -415,7 +466,10 @@
    "p": [
     "Catherine Maria Sophia “Kathleen” Barry"
    ],
-   "slug": "brixton-cemetery"
+   "slug": "brixton-cemetery",
+   "lat": -26.191,
+   "lon": 27.995,
+   "approx": false
   },
   {
    "n": "Vereeniging",
@@ -434,7 +488,10 @@
     "Anna Johanna Maria Pretorius",
     "Petrus Jacobus Pretorius"
    ],
-   "slug": "vereeniging"
+   "slug": "vereeniging",
+   "lat": -26.673,
+   "lon": 27.928,
+   "approx": false
   },
   {
    "n": "Rustenburg",
@@ -451,7 +508,10 @@
    "p": [
     "Petrus Jacobus Booysen"
    ],
-   "slug": "rustenburg"
+   "slug": "rustenburg",
+   "lat": -25.667,
+   "lon": 27.242,
+   "approx": false
   },
   {
    "n": "Soho, London",
@@ -473,7 +533,8 @@
     "George Augustus Kolbe",
     "Johan Gottlieb Kolbe"
    ],
-   "slug": "soho-london"
+   "slug": "soho-london",
+   "off": "London"
   },
   {
    "n": "Shoreditch",
@@ -491,7 +552,8 @@
     "George Augustus Kolbe",
     "Margaret Downing"
    ],
-   "slug": "shoreditch"
+   "slug": "shoreditch",
+   "off": "London"
   },
   {
    "n": "Conduit Street",
@@ -512,7 +574,8 @@
    "p": [
     "Johan Gottlieb Kolbe"
    ],
-   "slug": "conduit-street"
+   "slug": "conduit-street",
+   "off": "London"
   },
   {
    "n": "German Savoy Church",
@@ -529,7 +592,8 @@
    "p": [
     "Johan Gottlieb Kolbe"
    ],
-   "slug": "german-savoy-church"
+   "slug": "german-savoy-church",
+   "off": "London"
   },
   {
    "n": "Heilbron",
@@ -544,7 +608,10 @@
     ]
    ],
    "p": [],
-   "slug": "heilbron"
+   "slug": "heilbron",
+   "lat": -27.283,
+   "lon": 27.971,
+   "approx": false
   },
   {
    "n": "Middelburg",
@@ -565,7 +632,10 @@
    "p": [
     "Petrus Jacobus Booysen"
    ],
-   "slug": "middelburg"
+   "slug": "middelburg",
+   "lat": -31.494,
+   "lon": 25.01,
+   "approx": false
   },
   {
    "n": "Stutterheim",
@@ -583,7 +653,10 @@
     "Ferdinand Kumm",
     "James Jonathan Mountjoy"
    ],
-   "slug": "stutterheim"
+   "slug": "stutterheim",
+   "lat": -32.573,
+   "lon": 27.424,
+   "approx": false
   },
   {
    "n": "Brisbane",
@@ -598,7 +671,8 @@
     ]
    ],
    "p": [],
-   "slug": "brisbane"
+   "slug": "brisbane",
+   "off": "Brisbane"
   }
  ]
 }

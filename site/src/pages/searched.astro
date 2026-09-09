@@ -1,0 +1,71 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import sr from "../data/searched.json";
+const sets = sr.sets;
+const rows = sets.reduce((n, s) => n + s.rows.length, 0);
+const nothing = sets.reduce((n, s) => n + s.rows.filter(r => r[3] === "no").length, 0);
+const found = sets.reduce((n, s) => n + s.rows.filter(r => r[3] === "yes").length, 0);
+const badge = { yes: ["Found", "doc"], part: ["Partly", "inf"], no: ["Nothing", "lore"],
+                void: ["Void", "open"], blocked: ["Blocked", "open"] };
+---
+<Base title="What has been searched"
+      eyebrow={`${rows} queries · ${nothing} returned nothing · ${found} found something`}
+      dek={sr.note}>
+
+<section class="blk">
+  <div class="note">
+    <strong>Why a page of failures.</strong> Most family history records only what was found. That makes
+    it impossible to tell the difference between <em>“there is nothing there”</em> and <em>“nobody has
+    looked”</em> — and those are completely different statements about an ancestor. Everything below was
+    actually run, and the wording of each query is given so it can be run again and checked.
+  </div>
+</section>
+
+{sets.map((s, i) => (
+  <>
+    <Rule name={["koppie", "thorn", "windpump", "gable", "awl", "wagon"][i % 6]} />
+    <section class="blk">
+      <h2>{s.g}</h2>
+      <p class="dek">{s.n} · searched {s.d} · <a href={u(s.h)}>where it is used &rarr;</a></p>
+      <div class="scroll" style="margin-top:16px">
+        <table>
+          <thead><tr><th style="width:17rem">Query</th><th class="m" style="width:8rem">Result</th><th></th></tr></thead>
+          <tbody>
+            {s.rows.map(([q, res, note, k]) => (
+              <tr>
+                <td><strong class="m">{q}</strong></td>
+                <td class="m">{res}<div style="margin-top:5px"><span class={"chip " + badge[k][1]}>{badge[k][0]}</span></div></td>
+                <td>{note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </>
+))}
+
+<Rule name="koppie" />
+
+<section class="blk">
+  <h2>What the zeros are worth</h2>
+  <div class="prose">
+    <p><b>A zero with a stated scope is evidence.</b> There is no estate file for Hercules Johannes
+      Mountjoy in the Cape archives, and because the estates on either side of him run unbroken from 1938
+      to 1948, that absence means something: an estate too small to report.</p>
+    <p><b>A zero without a scope is not.</b> The camp database returns nothing for this family — but it is
+      built largely from camp <em>death</em> lists, so it records who died far better than who was interned
+      and walked out. That claim is <em>unsupported</em>, not disproved, and the page says so.</p>
+    <p><b>And a zero from the wrong index is worth less than nothing</b>, because it can mislead for years.
+      The Farm List result above is void: the register is an Orange Free State land roll and was never
+      going to hold a Cape farm. It took a control search to notice.</p>
+    <blockquote>The searches that found something are on the other pages. These are the ones that make
+      those worth believing.</blockquote>
+    <p><a href={u("/open-questions/")}>What is still open &rarr;</a> ·
+       <a href={u("/method/")}>How this archive works &rarr;</a> ·
+       <a href={u("/sources/")}>Sources &rarr;</a></p>
+  </div>
+</section>
+</Base>

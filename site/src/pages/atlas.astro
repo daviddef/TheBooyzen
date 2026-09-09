@@ -1,0 +1,144 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import pl from "../data/places.json";
+const on = pl.places.filter(p => p.lat != null);
+const off = pl.places.filter(p => p.off);
+/* A plotted chart, not a drawn map: positions come from latitude and longitude
+   on a plain graticule. No coastline is drawn, because this archive would be
+   inventing its shape. */
+const LA0 = -33.4, LA1 = -25.2, LO0 = 23.8, LO1 = 28.6;
+const W = 720, H = 560, M = 54;
+const x = lo => M + ((lo - LO0) / (LO1 - LO0)) * (W - M * 2);
+const y = la => M + ((LA1 - la) / (LA1 - LA0)) * (H - M * 2);
+const lats = [-26, -28, -30, -32];
+const lons = [24, 25, 26, 27, 28];
+const journey = ["Graaff-Reinet", "Cradock", "Barkly East", "Indwe", "Johannesburg"];
+const byName = Object.fromEntries(pl.places.map(p => [p.n, p]));
+const path = journey.map(n => byName[n]).filter(Boolean);
+/* Several places share a position — Manorowen is at Barkly East, Wodehouse at
+   Dordrecht, two cemeteries at Johannesburg. Plot one marker per position and
+   let it carry the others, rather than stacking labels on top of each other. */
+const groups = [];
+for (const p of on) {
+  const key = `${p.lat.toFixed(1)},${p.lon.toFixed(1)}`;   // ~11 km
+  let g = groups.find(g => g.key === key);
+  if (!g) groups.push(g = { key, lat: p.lat, lon: p.lon, members: [] });
+  g.members.push(p);
+}
+groups.sort((a, b) => a.lat - b.lat);
+groups.forEach((g, i) => {
+  g.members.sort((a, b) => (a.approx === b.approx) ? 0 : (a.approx ? 1 : -1));
+  g.head = g.members[0];
+  g.town = g.members.some(m => !m.approx);
+  /* In the crowded north-eastern block, throw alternate labels to the left so
+     they do not sit on top of one another. */
+  const crowded = g.lon > 26.8 && g.lat < -29.5;
+  g.left = crowded ? (i % 2 === 0) : (g.lon > 27.6);
+});
+---
+<Base title="The atlas"
+      eyebrow={`${on.length} places at ${groups.length} positions · ${off.length} off the map`}
+      dek="Where this family actually was, plotted from latitude and longitude. Two clusters and one line between them: a hundred miles of Karoo and north-eastern Cape districts, and then the Rand."
+
+>
+<section class="blk">
+  <div class="scroll">
+    <svg viewBox={`0 0 ${W} ${H}`} width={W} style="min-width:680px;display:block" role="img"
+         aria-label="The places in this archive plotted by latitude and longitude, from Graaff-Reinet in the south-west to Johannesburg in the north-east.">
+      <rect x={M} y={M} width={W - M * 2} height={H - M * 2} rx="2"
+            style="fill:var(--panel);stroke:var(--rule)" />
+      {lats.map(la => (
+        <g>
+          <line x1={M} y1={y(la)} x2={W - M} y2={y(la)} style="stroke:var(--rule)" stroke-dasharray="2 4" />
+          <text x={M - 8} y={y(la) + 4} text-anchor="end" font-size="10"
+                style="fill:var(--ink-3);font-family:var(--mono)">{Math.abs(la)}°S</text>
+        </g>
+      ))}
+      {lons.map(lo => (
+        <g>
+          <line x1={x(lo)} y1={M} x2={x(lo)} y2={H - M} style="stroke:var(--rule)" stroke-dasharray="2 4" />
+          <text x={x(lo)} y={H - M + 16} text-anchor="middle" font-size="10"
+                style="fill:var(--ink-3);font-family:var(--mono)">{lo}°E</text>
+        </g>
+      ))}
+
+      <polyline points={path.map(p => `${x(p.lon)},${y(p.lat)}`).join(" ")}
+                style="fill:none;stroke:var(--terra);stroke-width:1.4;opacity:.55" stroke-dasharray="5 4" />
+
+      {groups.map(g => (
+        <a href={u("/places/" + g.head.slug + "/")}>
+          <g>
+            {g.town
+              ? <circle cx={x(g.lon)} cy={y(g.lat)} r="4.6" style="fill:var(--accent)" />
+              : <rect x={x(g.lon) - 3.6} y={y(g.lat) - 3.6} width="7.2" height="7.2"
+                      style="fill:none;stroke:var(--ochre);stroke-width:1.6" />}
+            <text x={g.left ? x(g.lon) - 9 : x(g.lon) + 9} y={y(g.lat) + 3.6}
+                  text-anchor={g.left ? "end" : "start"} font-size="10.5"
+                  style="fill:var(--ink-2);font-family:var(--sans)">{g.head.n}</text>
+            {g.members.length > 1 && (
+              <text x={g.left ? x(g.lon) - 9 : x(g.lon) + 9} y={y(g.lat) + 14.5}
+                    text-anchor={g.left ? "end" : "start"} font-size="9.5"
+                    style="fill:var(--ink-3);font-family:var(--sans)">+ {g.members.slice(1).map(m => m.n).join(", ")}</text>
+            )}
+            <title>{g.members.map(m => m.n + " — " + m.k + (m.approx ? " (placed at its district town)" : "")).join(" · ")}</title>
+          </g>
+        </a>
+      ))}
+
+      <g>
+        <circle cx={M + 14} cy={H - M - 34} r="4.6" style="fill:var(--accent)" />
+        <text x={M + 26} y={H - M - 30} font-size="10.5" style="fill:var(--ink-3);font-family:var(--sans)">town, plotted</text>
+        <rect x={M + 10.4} y={H - M - 21.6} width="7.2" height="7.2" style="fill:none;stroke:var(--ochre);stroke-width:1.6" />
+        <text x={M + 26} y={H - M - 14} font-size="10.5" style="fill:var(--ink-3);font-family:var(--sans)">farm, placed at its district town</text>
+      </g>
+    </svg>
+  </div>
+  <p class="cap">A plotted chart, not a drawn map. Positions are latitude and longitude on a plain
+    graticule — <strong>no coastline is drawn, because this archive would be inventing its shape</strong>.
+    The dashed line is the family's own route, not a road.</p>
+</section>
+
+<Rule name="wagon" label="Two clusters and a line" />
+
+<section class="blk">
+  <div class="grid g2">
+    <div class="panel">
+      <h3 style="margin-top:0">The Cape cluster</h3>
+      <p>Everything before 1900 sits in a band about a hundred and eighty miles across —
+        <b>Graaff-Reinet</b> and <b>Cradock</b> in the Karoo, then east to <b>Colesberg</b>,
+        <b>Burgersdorp</b>, <b>Lady Grey</b>, <b>Barkly East</b>, <b>Dordrecht</b> and <b>Indwe</b>.</p>
+      <p style="margin-top:12px">The whole of the Mountjoy line, the whole of the Barry line, the 1820
+        Settler's grave and every farm in the testimony fall inside it.</p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">And then the Rand</h3>
+      <p>After 1905 the family is at <b>Johannesburg</b> — roughly <b>four hundred miles</b> north of
+        Indwe, in a place that did not exist as a settlement until 1886.</p>
+      <p style="margin-top:12px">That jump is the testimony's train, and it is the same jump the surname
+        statistics show: <b>Booysen is a Cape name, Booyzen is a Gauteng one</b>.
+        <a href={u("/name/")}>The name &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+{off.length > 0 && (
+<section class="blk">
+  <h2>Off this map</h2>
+  <p class="dek">Five places in the archive are nowhere near southern Africa.</p>
+  <p style="margin-top:14px;display:flex;flex-wrap:wrap;gap:7px">
+    {off.map(p => (<a class="plink" href={u("/places/" + p.slug + "/")}>{p.n} <span class="m">· {p.off}</span></a>))}
+  </p>
+  <p style="margin-top:16px">Four of them are within two miles of each other in <b>London</b> — a Soho
+    font, a Shoreditch wedding, a Mayfair deathbed and a Strand burial, all belonging to the
+    <a href={u("/kolbe/")}>Kolbes</a>. The fifth is where the line reads this.</p>
+</section>
+)}
+
+<section class="blk">
+  <p class="cap"><a href={u("/places/")}>All {pl.places.length} places &rarr;</a> ·
+    <a href={u("/timeline/")}>The timeline &rarr;</a> ·
+    <a href={u("/people/")}>Everyone &rarr;</a></p>
+</section>
+</Base>
