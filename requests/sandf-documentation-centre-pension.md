@@ -1,12 +1,26 @@
 # Request — Union Defence Force service and pension records, SANDF Documentation Centre
 
-> ## *** NOT SENT — THIS ONE NEEDS DAVID'S GO-AHEAD ***
+> ## *** SENT — 9 September 2026 ***
 >
-> **Drafted 9 September 2026. Nothing has been sent.** Writing to a government archive on someone's
-> behalf is not something this archive's researcher does without being asked, and the request identifies
-> David as the enquirer. **Say the word and it goes; otherwise copy the text below and send it yourself.**
+> **Sent from David's own Gmail account on his explicit instruction**, to both published addresses in a
+> single message so that a bounce identifies which is dead while the other still delivers.
 >
-> **Where to send it**
+> - **To:** `sandfdoc@mweb.co.za` **and** `archive@dod.mil.za`
+> - **Subject:** *Research enquiry — UDF service and pension records, BOOYZEN / BOOYSEN family,
+>   Barkly East and Johannesburg, 1914–1945*
+> - **Gmail message id:** `1a085121bd59a4a2`
+>
+> **Two departures from the draft, both deliberate:**
+> 1. **No postal address was given.** The archive does not have one for David and did not invent one; the
+>    letter offers to supply it on request for any certified copies.
+> 2. **A fourth section was added — "A note on searching"** — putting the reverse-search argument to them
+>    directly: if personnel records cannot be searched by name without a service number, ask them to
+>    search the **pension registers on the pensioner's name** instead.
+>
+> **Watch for a bounce from the mweb address.** If one arrives, the request has still reached
+> `archive@dod.mil.za` and no resend is needed.
+
+> **Where it was sent**
 > - **`sandfdoc@mweb.co.za`** — the address published in the FamilySearch wiki, the Stellenbosch
 >   University library guide and ancestors.co.za
 > - **`archive@dod.mil.za`** — a second address given in the same guides
@@ -14,10 +28,12 @@
 >   South Africa · *Schweikert Building, 20 Visagie Street, Pretoria*
 > - **Tel** +27 12 339 4600 · **Fax** +27 12 339 4631
 >
-> **A caution on the addresses.** All of the above come from **third-party research guides**, not from a
-> page on the Department of Defence's own site that this archive has read and verified.
-> **Confirm by telephone before posting anything, and send the two emails separately** rather than
-> together, so a bounce identifies which address is dead.
+> **A caution on the addresses, recorded as it stood before sending.** All of the above come from
+> **third-party research guides** — the FamilySearch wiki, a Stellenbosch University library guide and
+> ancestors.co.za — not from a page on the Department of Defence's own site that this archive has read
+> and verified. Three independent guides agree, which is why the message was sent to both at once rather
+> than held back; but **if nothing is heard, telephone +27 12 339 4600 before assuming the request was
+> received.**
 
 ---
 

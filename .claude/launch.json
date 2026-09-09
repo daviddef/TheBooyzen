@@ -21,17 +21,6 @@
         "dev"
       ],
       "port": 4325
-    },
-    {
-      "name": "ourfamily",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": [
-        "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/Our Family/site",
-        "run",
-        "dev"
-      ],
-      "port": 4325
     }
   ]
 }
