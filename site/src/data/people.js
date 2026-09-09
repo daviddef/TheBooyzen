@@ -100,7 +100,7 @@ export const people = [
 
 // ───────────────── children of George Downing Mountjoy & Anna Pretorius ─────────────────
 {n:"Willem Hermanus “Willy” Booyzen", b:"15 Oct 1925", d:"1996", l:"Booyzen", s:"doc", r:"Eldest of the Johannesburg family.", p:[["The Line","/direct-line/"],["Johannesburg","/johannesburg/"]]},
-{n:"Margaretha Wilhelmina Elizabeth “Maggie” Booyzen", b:"1 Oct 1926", d:"1966", l:"Booyzen", s:"doc", r:"Second child.", p:[["The Line","/direct-line/"]]},
+{n:"Margaretha Wilhelmina Elizabeth “Maggie” Booyzen", b:"14 Oct 1926", d:"1966", l:"Booyzen", s:"doc", r:"Second child. Birth date corrected from 1 October on her mother’s 1944 death notice.", p:[["The Line","/direct-line/"]]},
 {n:"Anna Johanna Maria Booyzen (Vermaak)", b:"12 Oct 1930", d:"deceased", l:"Booyzen", s:"doc", r:"Fourth child.", p:[["The Line","/direct-line/"]]},
 {n:"Georgina Jeanette Booyzen (Boshoff)", b:"22 Sep 1932, Johannesburg", d:"deceased", l:"Booyzen", s:"doc", r:"Fifth child.", p:[["The Line","/direct-line/"]]},
 {n:"Petrus Jacobus “Piet” Booyzen", b:"10 Jan 1934, Johannesburg", d:"2003", l:"Booyzen", s:"doc", r:"Sixth child.", p:[["The Line","/direct-line/"]]},

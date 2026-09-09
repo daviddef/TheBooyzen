@@ -201,6 +201,20 @@
    "k": "find",
    "w": "The oldest open question in the archive, answered by a christening rather than a death. Every attempt had gone at death notices, which either do not ask for a wife's name or got “oorlede” for an answer. A baptism names both parents: Gert Jacobus, born 19 January 1870 — the exact date on the 1884 death notice — baptised 19 June 1870, “Oud: Petrus Jacobus Booyzen en Johanna Margaritha Pretorius.” Read from the register image, not the index. And two children of the first marriage stood godparent to the first child of the second.",
    "h": "/documents/"
+  },
+  {
+   "d": "10 Sep 2026",
+   "t": "The one death notice where line 3 works",
+   "k": "find",
+   "w": "TAB MHG 2945/44, read at full resolution off the film. Anna Johanna Maria Booyzen, born Pretorius, died Forest Hill 26 February 1944, aged 37. The parents line — blank or evasive on all four earlier notices in this archive — is filled in completely: Petrus Jacobus Pretorius and Margareth Wilhelmina Elizabeth Pretorius, both at 96 James Street, Germiston. The form did not change. The person filling it in did. Her husband signed it, and her parents were alive and reachable.",
+   "h": "/documents/"
+  },
+  {
+   "d": "10 Sep 2026",
+   "t": "Withdrawn — Maggie born 1 October 1926",
+   "k": "back",
+   "w": "This archive carried Margaretha Wilhelmina Elizabeth “Maggie” Booyzen’s birth as 1 October 1926, taken from the family tree. Her mother’s 1944 death notice, written and signed by her father three months before he lost her, gives 14 October 1926. Every other child’s date on that list matches what the archive already held, which is what makes the one mismatch worth taking seriously. Corrected to 14 October.",
+   "h": "/direct-line/"
   }
  ]
 }

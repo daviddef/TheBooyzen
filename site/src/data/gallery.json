@@ -703,6 +703,30 @@
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/sterfkennis-1944-anna-pretorius.jpg",
+   "alt": "1944 Sterfkennis for Anna Johanna Maria Booyzen born Pretorius, estate 2945/44.",
+   "cap": "Estate 2945/44 . Signed by her husband, G. D. M. Booyzen .",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1944-parents-named.jpg",
+   "alt": "Line three of the 1944 Sterfkennis, naming both parents with their address at 96 James Street, Germiston.",
+   "cap": "Both parents, and their address — 96 James Street, Germiston.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1944-six-children.jpg",
+   "alt": "Line ten of the 1944 Sterfkennis listing six children with their birth dates, all minors.",
+   "cap": "(Alle Minderjarig)",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
   }
  ]
 }
