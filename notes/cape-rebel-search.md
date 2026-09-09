@@ -164,3 +164,58 @@ district is wholly absent from the register.
 
 *(An incidental note: **Philippolis** appears among the Free State districts — the LMS mission station
 where George Augustus Kolbe's daughter Harriet Hachilah was born in 1831.)*
+
+---
+
+# Pass two — the Barrys, the joiners, and the camps (9 Sep 2026)
+
+## 1. THE FAMILY IS ON THE CAPE REBEL ROLL — under BARRY
+The previous pass ended: *"the surname BARRY, which has not been searched at all."* It has now been.
+
+| Cape Rebel | Occupation | Address | District | Tried |
+|---|---|---|---|---|
+| **BARRY, FRED J.** | plaasboer | **Ivanhoe** | **Barkley-Oos, Wodehouse** | **June 1901** |
+| **BARRY, RICHARD PETER** | plaasboer | **Jerpoint** | — | — |
+| Barry, Adolf | plaasboer | Keimoes | (Northern Cape) | — |
+| Barry, Thomas Andrew | — | Vlakteplaats | Oudtshoorn | 21 Mar 1902 |
+
+- **Richard Peter Barry** is **Kathleen Barry's brother** — the *R. P. Barry* who signed his mother's
+  1915 death notice as *"Son in whose house deceased died"*, at **Manorowen, Barkly East**.
+- **Fred J. Barry** farmed **Ivanhoe**, Barkly East/Wodehouse, **tried June 1901** — the same district
+  and the **same month** as **D. W. Schoeman of Caerlaverock**, in whose house the family married five
+  weeks later.
+
+**Identity not proven** (no birth dates or parents in the register). Fred J. does not match this family's
+*Frederick Fortunatus* on the middle initial.
+
+**Jerpoint** — an abbey in County Kilkenny. Joins **Ivanhoe**, **Manorowen** (Pembrokeshire) and
+**Caerlaverock** (Dumfriesshire). It is the **first Irish place name found near the Barrys**, whose
+Irish origin the archive has never been able to place.
+
+## 2. The joiners register: ONE Booysen, in the Free State
+ABW Museum **Joiners** register, 952 names. `Booysen` → **1**: **J.J. BOOYSEN, Heilbron**, from the
+*Vrystaatse Argieflys*. Heilbron is ~400 miles from Barkly East and was a different country.
+`Booyzen` → **0**.
+
+Does not kill the motive — joiner lists are incomplete, and a family need only have *believed* the
+association existed. But **"some Booysens" is not what the record shows.**
+
+## 3. The camps: searched, not found
+The ABW Museum has **no camp register** — this archive's queue named the wrong source. The right one is
+**UCT's *British Concentration Camps of the South African War 1900–1902*.** Searched:
+
+| Query | Result |
+|---|---|
+| **Booyzen** | **5** — all **Transvaal**: Gert Jacobus (2, d. Johannesburg camp, farm Rietvallei, Marico); Gertruida Magdalena (19, d. Vereeniging camp, farm Rietvlei, Heidelberg); Jan Gerhardus Lodewicus (2) |
+| **Barry** | **0** in the entire database |
+| Booysen + Catherine / Kathleen / John Barry / Willem Hermanus | **0 each** |
+| Booyzen + Catharina | **0** |
+| Booysen (all) | 334 — none matching this family's given names |
+
+**Caveat that matters:** the UCT database is built largely from camp **death lists** and surviving
+registers. It records who *died* far better than who was interned and walked out. **Absence is weak
+evidence here.** The claim is *unsupported*, not disproved.
+
+Note the coincidence, and do not build on it: a **Jan Gerhardus Lodewicus Booyzen** died aged 2 — the
+same distinctive three-part name as the seventh child on the 1863 death notice, and carrying
+*Gerthardus Lodewikus* from the top of the male line. He is a Transvaal child, not ours.
