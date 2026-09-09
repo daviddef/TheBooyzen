@@ -626,3 +626,82 @@ Sterfgeval*, Act No. 17 of 1923. Entry No. **5970**, district **Johannesburg**.
 `anna-pretorius-baptism` · `anna-booyzen-death-typed` · `margaretha-kolbe-death-1912`.
 Also still unread from earlier passes: George Kolbe's 1803 baptism, the 1891 birth of Catherine Mary
 Sophia, the Johanna Catharina birth entry, and the Anna–George marriage certificate.
+
+## 17. STERFKENNIS of ANNA JOHANNA MARIA BARRY, née SCHOEMAN, 1923
+`anna-schoeman-barry-death.jpg` — *Unie van Zuid-Afrika, Sterfkennis*, Boedelwet 1913. U.D.J. 294.
+Magistrate's stamp 21.5.23. Dated at **Evaton, 25 April 1923**.
+
+| Field | As written |
+|---|---|
+| Naam | **Anna Johanna Maria Barry, née Schoeman** |
+| Geboorteplaats | **Queenstown, K. Prov.** — European |
+| **Vader** | **RUBEN SCHOEMAN, Barkly Oost, K. Prov.** |
+| **Moeder** | **MAGDALENA JOHANNA BOTHA, Barkly Oost, K. Prov.** |
+| Ouderdom | **63 jaren 4 maanden** |
+| Beroep | Huisvrouw |
+| Woonplaats | **Evaton, distrikt Potchefstroom** |
+| Echtgenoot | **Hendrik Nicolaas Barry**, gehuwd in gemeenschap van goederen |
+| Plaats van laatste huwelik | **Barkly Oost, Kaap Prov.** |
+| Sterfdag | **24 Februarie 1923**, at Evaton, district Potchefstroom |
+| Estate | movable **yes**, immovable **yes**, **under £300**, **a will** |
+| Signed | **D. Booyzen**, *"dochter van overledene"*, present at the death |
+
+**Children named:** Anna Maria (m. Jacobus Reijnders) · **Margaretha Elizabeth (m. Petrus Pretorius)** ·
+Jan Petrus (m. Johanna Marais) · **Ruben Jacobus Josuah** (m. Nellie Barry) · Maria Magdalena
+(m. Frederik Jacobus Janse van Rensburg) · **Dorothea Regina (m. Henry James Booysen)** ·
+Allen Frederika (m. Hermanus Scholtz).
+
+### Findings
+1. **The Schoeman family of Barkly East now has a name: RUBEN SCHOEMAN, married to MAGDALENA JOHANNA
+   BOTHA.** This does not identify **D. W. Schoeman** — but it plants the family firmly at Barkly Oost
+   with a named patriarch, in the right generation to be his father or brother. Confirmed by the naming:
+   her fourth son is **Ruben Jacobus Josuah Barry**, after his maternal grandfather.
+2. **The signature is "D. Booyzen"** — **Dorothea Regina Barry**, who married **Henry James Booyzen** in
+   1912. She signs as a Booyzen, daughter of the deceased, present at the death. The third
+   Barry–Booyzen marriage, confirmed from a third document.
+3. The family had moved north: she died at **Evaton, district Potchefstroom**, in the Transvaal.
+
+## 18. DEATH NOTICE of MARGARET(HA) ELIZABETH BARRY, born KOLBE, d. 1912
+`margaretha-kolbe-death-1912.jpg` — Death Notice No. 52 C, Administration of Estates Act; Barkly East
+magistrate's stamp **25 May 1915**, No. **1291**. Dated at Barkly East, 13 May 1915.
+
+| Field | As written |
+|---|---|
+| Name | **Margaret [Louisa?] Elizabeth Barry, born Kolbe** |
+| **Birthplace and nationality** | **"Believe Colesberg District. Afrikander of European extraction"** |
+| **Father** | **"Kolbe, thinks James was christian name"** |
+| **Mother** | **"Unknown"** |
+| Age | 84 years |
+| Occupation of husband | **Farmer** |
+| Residence | **Manorowen** |
+| Condition | **Widow** — previous spouse **"John Barry, in August 1904"** |
+| Place of last marriage | **"Unknown"** |
+| Day of decease | **2nd August 1912** |
+| Where died | **house of son R. P. Barry, Manorowen, district Barkly East** |
+| Estate | movable **No** · immovable **No** · exceeds £300 **Nil** · will **No** |
+| Signed | **R. P. Barry**, *"Son in whose house deceased died"* |
+
+### The finding that matters most in this archive
+
+> **"Father: Kolbe, thinks James was christian name. Mother: Unknown."**
+
+Her son, filling in his own mother's death notice in 1915, **did not know his grandfather's name**. He
+guessed *James*. Of his grandmother he knew nothing at all.
+
+His grandfather was **GEORGE AUGUSTUS KOLBE** — who sailed on the *Nautilus* in 1819, preached across the
+Orange River, and lies under a cut-stone monument at **Burgersdorp** with his name, his London birth and
+his farm on it. His grandmother was **MARGARET DOWNING** of London, buried in the same grave.
+
+**The family forgot them inside seventy years, while the headstone stood forty miles up the road.**
+That is the case for this archive in one line.
+
+### Two further findings
+1. **She died with nothing.** Movable property: *No*. Immovable: *No*. Estate: *Nil*. No will. She died in
+   her son's house. Set that beside her mother Margaret Downing, who in 1867 left a house in Burgersdorp
+   and a farm in the division of Albert, and beside her husband John Barry, whose 1915 notice records an
+   estate **over £300**. The Kolbe money did not last.
+2. **A third date for John Barry's death.** This notice says **August 1904**; his own 1915 notice says
+   **3 August 1903**; the tree says **25 August 1903**. Both notices were made in 1915, by two different
+   sons, and they disagree with each other.
+3. **"Afrikander of European extraction"** — her nationality as her son described it in 1915. The
+   family had become Afrikaans in two generations from a London-born settler.

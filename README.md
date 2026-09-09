@@ -124,6 +124,31 @@ A fourth extraction, from Kathleen Barry's, Anna Pretorius's and Margarietha Bar
   had only "Mayfair" — of **carcinoma of the uterus** after thirteen months, and she is buried at
   **Brixton Cemetery**, which the tree does not record at all.
 
+## The line that justifies the archive
+
+In 1915 a man at Barkly East filled in his own mother's death notice. Asked for her parents' names,
+he wrote:
+
+> **"Father: Kolbe, thinks James was christian name. Mother: Unknown."**
+
+His grandfather was **George Augustus Kolbe** — married at sixteen on a sworn lie in Shoreditch, sailed
+on the *Nautilus* as an **1820 Settler**, preached across the Orange River, named a Karoo farm after his
+father's Württemberg. His grandmother was **Margaret Downing** of London. **Both lie under a cut-stone
+monument at Burgersdorp, about forty miles from where that notice was written.**
+
+The family forgot them inside seventy years, with the headstone still standing. Everything on this site
+was recovered from documents **already in the family's own tree** — scanned, attached, never transcribed.
+
+Two more findings from the same pass:
+
+- **She died with nothing.** Movable property *No*, immovable *No*, estate *Nil*, no will — in her son's
+  house at Manorowen. Her mother had left a house and a farm; her great-grandfather a Bond Street
+  partnership. **The Kolbe money did not last three generations.**
+- **The Schoemans are named at last.** Anna Johanna Maria Schoemann's 1923 *Sterfkennis* gives her
+  parents as **Ruben Schoeman** and **Magdalena Johanna Botha**, *both of Barkly Oost* — a named Schoeman
+  family in exactly the right district and generation to hold **D. W. Schoeman** of Caerlaverock.
+  The notice is signed **"D. Booyzen"** — Dorothea Regina Barry, who married Henry James Booyzen.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
