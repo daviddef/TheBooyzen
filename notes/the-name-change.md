@@ -97,3 +97,40 @@ NAAIRS descriptions are archivists' transcriptions and may normalise. But 42 doc
 **Petrus Jacobus** is this family's core male name. **Middelburg** is where Petrus Jacobus Booysen died
 at Zevenfontein in 1884. **Unproven** that this is a relative — but if it is, it sits very oddly against
 a testimony that says the spelling was changed to avoid being taken for men who served the British.
+
+---
+
+# Pass four — one constable, both spellings (10 Sep 2026)
+
+Cape **Attorney-General** registry files, Middelburg, 1904–07. Plainly one man: one rank, one station,
+one run of leave applications.
+
+| Reference | As filed | Year |
+|---|---|---|
+| KAB AG 1393: 1547 | **BOOYZEN, PJ.** Leave of absence, Middelburg Police Office | 1904 |
+| KAB AG 1543: 14632 | Five pound note found by **PJ BOOYSEN**, Middelburg | 1904 |
+| KAB AG 1594: 3531 | **BOOYSEN, PJ.** Constable. Application for leave. Middelburg, Cape | 1905 |
+| KAB AG 1628: 6598 | **BOOYSEN, PJ.** Constable. Application for leave. Middelburg | 1905 |
+| KAB AG 1648: 8946 | **BOOYZEN, PJ.** Constable. Application for leave. Middelburg | 1905 |
+| KAB AG 1659: 10381 | **BOOYSEN, PJ.** Constable. Application for leave. Middelburg | 1905 |
+| KAB AG 1772: 11084 | **BOOYZEN, PJ.** Constable. Leave of. Middelburg | 1907 |
+
+**Four s, three z — and both ways twice inside 1905.**
+
+## What it costs the archive's centrepiece
+This site has leaned hard on the 1905 death registration: clerk writes *Booysen*, son signs *Booyzen*,
+four lines apart, read as the change caught in the act.
+
+These files show that **in exactly those years the two spellings were interchangeable in official Cape
+writing, for one person**. So the clerk's *Booysen* is **not** an older spelling being displaced — it is
+what a Cape clerk in 1905 might write on any day, for anybody.
+
+**What survives is narrower and was always the stronger half: the son *signed*.** A clerk's hand records
+a clerk's habit; a signature records a man's own choice. **John Barry Booyzen chose the z.** The contrast
+with the clerk beside him is no longer the point.
+
+## Not shown to be family
+**Petrus Jacobus** is this family's core male name; **Middelburg** is where Petrus Jacobus Booysen died
+at Zevenfontein in 1884, where his son **Gerrit Jacobus married in 1896**, and where a grandson was
+baptised **Booyzen** in **1904**. The constable sits in the middle of that and may well be one of them.
+Unproven.
