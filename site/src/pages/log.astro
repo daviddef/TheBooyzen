@@ -1,0 +1,81 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import lg from "../data/log.json";
+const e = lg.entries;
+const back = e.filter(x => x.k === "back").length;
+const find = e.filter(x => x.k === "find").length;
+const kind = { find: ["Found", "doc"], work: ["Worked", "inf"], back: ["Taken back", "lore"] };
+---
+<Base title="The research log"
+      eyebrow={`${e.length} entries · ${find} findings · ${back} retractions`}
+      dek={lg.note}>
+
+<section class="blk">
+  <div class="note">
+    <strong>There are more retractions here than findings, and that is the point.</strong> Every claim on
+    this site that was later withdrawn is listed below with what replaced it. Nothing has been quietly
+    deleted — where a page carried a wrong reading, the page still says so.
+  </div>
+</section>
+
+<Rule name="awl" label="In order" />
+
+<section class="blk">
+  <div class="tline">
+    {e.map(x => (
+      <div class={"tev" + (x.k === "back" ? " back" : "")}>
+        <div class="when">
+          <span class="m yr">{x.d}</span>
+          <span class={"chip " + kind[x.k][1]}>{kind[x.k][0]}</span>
+        </div>
+        <div class="what">
+          <h3>{x.h ? <a href={u(x.h)}>{x.t}</a> : x.t}</h3>
+          <p>{x.w}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<Rule name="koppie" />
+
+<section class="blk">
+  <h2>What the retractions have in common</h2>
+  <div class="prose">
+    <p>Read them together and they fall into three kinds, and only one is about the records.</p>
+    <p><b>Reading a document too eagerly.</b> “Armadale”, the two Barry sisters, the z in an 1879
+      signature. In each case a faint or ambiguous mark was resolved in the direction that made the better
+      story, and the correction came from looking harder or from a better scan.</p>
+    <p><b>Not propagating a correction.</b> “Orphaned at seventeen” survived in four places after the date
+      behind it had already been fixed. A correction is not finished when the fact changes; it is finished
+      when everything that leaned on the fact changes.</p>
+    <p><b>Reporting a search as wider than it was.</b> The worst of them. The Farm List negative was
+      recorded before checking what the register held. A filtered search of the Cape archives was written
+      up as though it were the whole search, and twenty documents went unread — including
+      <b>James Mountjoy's own wills</b>. Both were failures of description, not of luck, and both would
+      have misled a later reader for years.</p>
+    <blockquote>The distinction this archive keeps insisting on — “there is nothing there” against
+      “nobody has looked” — is exactly the one it broke twice itself.</blockquote>
+    <p><a href={u("/searched/")}>What has been searched &rarr;</a> ·
+       <a href={u("/method/")}>How this archive works &rarr;</a> ·
+       <a href={u("/open-questions/")}>What is still open &rarr;</a></p>
+  </div>
+</section>
+
+<style>
+  .tline { border-left:2px solid var(--rule); margin-top:10px; }
+  .tev { position:relative; padding:0 0 24px 26px; }
+  .tev::before { content:""; position:absolute; left:-7px; top:6px; width:11px; height:11px;
+    border-radius:50%; background:var(--ground); border:2px solid var(--accent); }
+  .tev.back::before { border-color:var(--terra); background:var(--terra); }
+  .tev .when { display:flex; align-items:baseline; gap:11px; flex-wrap:wrap; }
+  .tev .yr { font-size:12.5px; color:var(--ink-3); }
+  .tev h3 { margin:5px 0 0; font-size:19px; line-height:1.26; }
+  .tev h3 a { text-decoration:none; color:inherit; }
+  .tev h3 a:hover { color:var(--accent); }
+  .tev .what p { font-family:var(--sans); font-size:14.5px; line-height:1.62; color:var(--ink-2);
+    margin:6px 0 0; max-width:74ch; }
+</style>
+</Base>

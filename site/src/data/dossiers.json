@@ -108,8 +108,12 @@
     ]
    ],
    "slug": "magdelena-elisabeth-de-beer",
-   "mentions": 3,
+   "mentions": 4,
    "pages": [
+    {
+     "h": "/log/",
+     "t": "The research log"
+    },
     {
      "h": "/people/",
      "t": "Everyone"
@@ -124,6 +128,11 @@
     }
    ],
    "hits": [
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "Twenty documents before 1930 were never opened. They include JAMES MOUNTJOY'S OWN WILLS of 1818 and 1827, and an 1834 Colonial Office memorial from his widow. A filter applied for convenience was reported as if it were the whole search. 9 Sep 2026 Found No death notice for Magdelena Elisabeth de Beer — twice over The Master's Office own index of death notices 1834–1912 was read on film at the “Beer, de” pages. She is not in it, which confirms the NAAIRS result from a second and older source. What the retractions have in common Read them together and they fall into three kinds, and only one is about the records. Reading a document too eagerly."
+    },
     {
      "page": "/people/",
      "title": "Everyone",
@@ -228,7 +237,7 @@
     {
      "page": "/open-questions/",
      "title": "Open questions",
-     "text": "Where to look: The 1841 and 1851 England censuses for Holly Bower, Bilsdale; St Hilda's Bilsdale burial register; the Cape death record for de Bruins Poort. Separate them and see which, if either, is the father. § 7 · High priority Who was Petrus Jacobus Booysen's second wife? — HER EXISTENCE IS NOW PROVEN. ANSWERED IN PART, from his own 1884 death notice (KAB, estate 8907), which the tree had carried unread under its own citation. He is entered as MARRIED at his death on 30 March 1884 — twenty-one years after Johanna Catharina died in 1863. So there was a second wife."
+     "text": "Where to look: The 1841 and 1851 England censuses for Holly Bower, Bilsdale; St Hilda's Bilsdale burial register; the Cape death record for de Bruins Poort. Separate them and see which, if either, is the father. § 7 · High priority Who was Petrus Jacobus Booysen's second wife? — HER LINE IS FOUND. SHE IS NOT. Her existence is proven by his 1884 death notice, which enters him as MARRIED twenty-one years after Johanna Catharina died and names a child new to this archive, GERRIT JACOBUS BOOŸSEN, born 19 January 1870."
     },
     {
      "page": "/people/",
@@ -1315,11 +1324,12 @@
   },
   "gerrit-jacobus-booysen": {
    "n": "Gerrit Jacobus Booÿsen",
+   "v": "Gert Jacobus Booyzen",
    "b": "19 Jan 1870",
    "d": "—",
    "l": "Booyzen",
    "s": "doc",
-   "r": "The only child entered on his father's 1884 death notice, and born seven years after the first wife died — so a child of the second marriage. New to this archive.",
+   "r": "The only child entered on his father's 1884 death notice, and born seven years after the first wife died — so a child of the second marriage. He married Isabella Frederika Coetsee at Middelburg on 23 March 1896, and his own son was baptised BOOYZEN, with a z, in 1904.",
    "p": [
     [
      "The Documents",
@@ -1328,6 +1338,10 @@
     [
      "Open Questions",
      "/open-questions/"
+    ],
+    [
+     "The Name",
+     "/name/"
     ]
    ],
    "slug": "gerrit-jacobus-booysen",
@@ -1370,6 +1384,78 @@
      "page": "/timeline/",
      "title": "The timeline",
      "text": "e buried at the German Savoy Church 20 Aug 1848 — George Mountjoy, saddle maker, marries Maria Sophia Botha 31 Oct 1851 — Willem Hermanus Booyzen baptised at Achter Sneeuwberg 19 May 1863 — Johanna Catharina dies at Zevenfontein 16 Jul 1866 — Hercules Johannes Mountjoy born 25 Nov 1867 — Margaret Downing dies at Burgersdorp 19 Jan 1870 — Gerrit Jacobus Booÿsen born 1 Sep 1876 — Petrus Jacobus Booysen dies at Rustenburg, aged 88 22 Dec 1879 — Willem Hermanus Booyzen, boer of Lady Grey, marries Kathleen Barry 30 Mar 1884 — A farmer dies owning his clothes 8 Oct 1888 — Hercules Johannes Mountjoy marries at Dordrecht, aged 22 15 Sep 1889 — Two grandparents at a font 24 May 1891 — Catharina Maria Sophia Booysen baptised Oct 1899 — The Anglo-Boer War begins"
+    }
+   ],
+   "shared": false
+  },
+  "isabella-frederika-coetsee": {
+   "n": "Isabella Frederika Coetsee",
+   "v": "Coetzee",
+   "b": "—",
+   "d": "1943",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Married Gerrit Jacobus at Middelburg, 23 March 1896. Her estate is KAB MOOC 6/9/9954: 84992 (1943) — filed under BOOYZEN.",
+   "p": [
+    [
+     "Open Questions",
+     "/open-questions/"
+    ]
+   ],
+   "slug": "isabella-frederika-coetsee",
+   "mentions": 0,
+   "pages": [],
+   "hits": [],
+   "shared": false
+  },
+  "petrus-jacobus-booyzen": {
+   "n": "Petrus Jacobus Booyzen",
+   "b": "29 Dec 1904",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Baptised in the Dutch Reformed register with a Z, son of Gert Jacobus Booyzen and Isabella Frederika Coetzee — the second marriage's line, at Middelburg, spelled Booyzen a year before the Indwe sheet.",
+   "p": [
+    [
+     "The Name",
+     "/name/"
+    ],
+    [
+     "Open Questions",
+     "/open-questions/"
+    ]
+   ],
+   "slug": "petrus-jacobus-booyzen",
+   "mentions": 3,
+   "pages": [
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/gallery/",
+     "t": "The plates"
+    },
+    {
+     "h": "/name/",
+     "t": "The name"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Born 25 March 1929, she was eighteen when her father died, and fourteen when her mother did. Corrected throughout. 1851 · The baptism that settles an age, and names a godfather The register opening, entries 2808–2815 . Entry 2809 is second down on the left. Entry No. 2809 : Het Kind Willem Hermanus , Geboren 4 Mei 1851 , Vader Petrus Jacobus Booyzen , Moeder Johanna Catharina Mountjoy , Gedoopt 31 October 1851 . The age question is settled Documented Born 4 May 1851 , from a contemporary register, matching the tree exactly. So of the three figures the archive had, the marriage register is the outlier : it gives his age as 22 in December 1879, when he was 28 . His 1905 death registration says 55 , which is right within a year."
+    },
+    {
+     "page": "/gallery/",
+     "title": "The plates",
+     "text": "Anna Johanna Maria, geb. 3 Oct. 1906 — Petrus Jacobus Pretorius, Margaretha Wilhelmina Eliz Entry No. 2809 : Het Kind Willem Hermanus , Geboren 4 Mei 1851 , Vader Petrus Jacobus Booyzen , The father: Petrus Jacobus Boo y z en The witnesses, same hand, same ink: Pieter z en , twice Doop Register, Barkly Oost , entry 40 , 15 September 1889: Johanna Catharina , geb. 20 Juni 1889 6 October 1889: George , geb."
+    },
+    {
+     "page": "/name/",
+     "title": "The name",
+     "text": "Leave of absence, Middelburg Police Office.\" 1904 KAB AG 1648: 8946 \"BOOYZEN, PJ. Constable. Application for leave. Middelburg.\" 1905 KAB AG 1772: 11084 \"BOOYZEN, PJ. Constable. Leave of. Middelburg.\" 1907 KAB DOC 4/1/1075: 5377 Mortgage bond, Pieter Ignatius du Plessis and Petrus Jacobus Booyzen 1904 KAB DOC 4/1/1185: 1256 Mortgage bond, the same two men 1906 Not connected to this family — yet Petrus Jacobus is this family's core male name, carried by three generations of it. Middelburg is the district where Petrus Jacobus Booysen died at Zevenfontein in 1884 ."
     }
    ],
    "shared": false
@@ -2076,7 +2162,7 @@
     ]
    ],
    "slug": "james-montjoy",
-   "mentions": 9,
+   "mentions": 11,
    "pages": [
     {
      "h": "/",
@@ -2095,12 +2181,20 @@
      "t": "The plates"
     },
     {
+     "h": "/log/",
+     "t": "The research log"
+    },
+    {
      "h": "/open-questions/",
      "t": "Open questions"
     },
     {
      "h": "/people/",
      "t": "Everyone"
+    },
+    {
+     "h": "/searched/",
+     "t": "What has been searched"
     },
     {
      "h": "/timeline/",
@@ -2137,6 +2231,11 @@
      "text": "20 Juni 1889 6 October 1889: George , geb. 21 Juli 1889; Ouders Hercules Johannes Mountjoy and Maria Sophia v Line 3 — the generation the archive did not have from any document: James Montjoy and Anna Catha One Major , seven Minors . The widower signs. Names of the Parents of the Deceased. Not Known. Line 7: September 1827 . Line 9: James · George · Johanna · Jacoba , all minors. \" Petrus Jacobus Booÿsen — mother's name, not known \" — and the informant underlined it. The only child entered: Gerrit Jacobus Booÿsen, geboren 19 Januarij 1870 . \" Moveables only."
     },
     {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "It is an Orange Free State land roll and was never going to hold a Cape farm. A control search on “Dordrecht” — 670 rebels, 0 farms — caught it. 9 Sep 2026 Taken back CORRECTED — my contradiction, not the tree's The archive flagged a conflict between the tree's 1827 death for James Montjoy and the 1840 date on his file. Both are right: he died in 1827 and the notice was filed thirteen years later. The error was mine. 9 Sep 2026 Found “Names of the Parents of the Deceased. Not Known.” Found by interpolating reference numbers across 2,223 images of an unindexed film. The oldest document in the archive, and it answers the question it was fetched to answer by refusing it."
+    },
+    {
      "page": "/open-questions/",
      "title": "Open questions",
      "text": "The negative result is VOID, not informative. Where to look: Cape Colony compensation claims and post-war farm-burning returns; Cape deeds and quitrent records for Barkly East, Lady Grey and Wodehouse; Cape district and refugee-camp records. None touched. § 12 · Blocking Who were James Montjoy's parents? — ANSWERED, AND THE ANSWER IS THAT NOBODY KNEW. READ. KAB MOOC 6/9/21 ref 4393 was located by interpolating reference numbers across film 007844936 and found at image 338 of 2,223. James Montjoy, saddler, born in 'Europe' about 1782, died at Cradock in September 1827 leaving a house and erf worth £90 and four children under nine."
@@ -2145,6 +2244,11 @@
      "page": "/people/",
      "title": "Everyone",
      "text": "The Line Johannesburg Anna Maria van der Merwe Documented 5 mentions 1785 bef. Mar 1825 His wife, married 1805 at Graaff-Reinet. The Line The Women David Schalk van der Merwe Documented 1 mention — — Married Jacoba Catharina Mountjoy at Cradock, 24 Mar 1838. The Women James Montjoy also written Mountjoy, Montyoy Documented 9 mentions c. 1782, “Europe” Sep 1827, Cradock Saddler. Owned a house and erf at Cradock worth £90. His 1840 death notice gives his parents as NOT KNOWN — the oldest document here, and the top of this line."
+    },
+    {
+     "page": "/searched/",
+     "title": "What has been searched",
+     "text": "There is NO Magdelena Elisabeth, and nothing dated 1843. BOOYSEN — the whole run read on film Partly Page 436 onward, alphabetical by christian name with a death-notice number and year against each. A working index of every Booysen death notice reported to the Master between 1834 and 1912. FindMyPast · world records for James Montjoy's origin · searched 9 Sep 2026 · where it is used → Query Result MOUNTJOY, born about 1782 ±5 12,984 results Nothing Not tractable. The archive has no discriminator beyond a trade and a date — “a saddler, in the Cape by March 1817” — and thirteen thousand results cannot be narrowed by that."
     },
     {
      "page": "/timeline/",
@@ -2304,12 +2408,12 @@
     {
      "page": "/documents/",
      "title": "The documents",
-     "text": "It was there. Filed 9 July 1840 , reference 4393 . The form, as completed 1. Name of the Deceased James Montjoy 2. Birth-place Europe 3. Names of the Parents Not Known 4. Age About 45 years 5. Condition in life Saddler 6. Married or unmarried Married to Catharina Sl[i/e]er, widow of William Pietersen 7. Day of decease September 1827 8. At what House In the village of Cradock 9. Children James, George, Johanna, Jacoba — all minors 10. Property A house and erf at Cradock, of the value of £90 Signed Colesberg, 25 June 1840 , by a Montjoy Line 3 Names of the Parents of the Deceased. Not Known."
+     "text": "A third indexing, under the spelling Montyoy , did. Graaff-Reinet marriage register, folios 60–61. \"Den 9 Maart 1817 getrouwd\" — married on 9 March 1817. The entry, with a pencil cross beside it: \"James Montjoy — Met · Anna Catharina Slier, weduwe van Harmanus Pieterze[n]\" What it does not say, and that is the point This archive went to this register expecting an origin . Cape marriage entries of this date routinely record where a party came from, and this very page does it repeatedly — three couples in the right-hand column are entered \"beide van Uitenhage\" . Against James Montjoy's name there is a long ruled dash and nothing else ."
     },
     {
      "page": "/documents/",
      "title": "The documents",
-     "text": "A third indexing, under the spelling Montyoy , did. Graaff-Reinet marriage register, folios 60–61. \"Den 9 Maart 1817 getrouwd\" — married on 9 March 1817. The entry, with a pencil cross beside it: \"James Montjoy — Met · Anna Catharina Slier, weduwe van Harmanus Pieterze[n]\" What it does not say, and that is the point This archive went to this register expecting an origin . Cape marriage entries of this date routinely record where a party came from, and this very page does it repeatedly — three couples in the right-hand column are entered \"beide van Uitenhage\" . Against James Montjoy's name there is a long ruled dash and nothing else ."
+     "text": "It was there. Filed 9 July 1840 , reference 4393 . The form, as completed 1. Name of the Deceased James Montjoy 2. Birth-place Europe 3. Names of the Parents Not Known 4. Age About 45 years 5. Condition in life Saddler 6. Married or unmarried Married to Catharina Sl[i/e]er, widow of William Pietersen 7. Day of decease September 1827 8. At what House In the village of Cradock 9. Children James, George, Johanna, Jacoba — all minors 10. Property A house and erf at Cradock, of the value of £90 Signed Colesberg, 25 June 1840 , by a Montjoy Line 3 Names of the Parents of the Deceased. Not Known."
     },
     {
      "page": "/gallery/",
@@ -2500,11 +2604,15 @@
     ]
    ],
    "slug": "james-mountjoy",
-   "mentions": 3,
+   "mentions": 4,
    "pages": [
     {
      "h": "/documents/",
      "t": "The documents"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
     },
     {
      "h": "/people/",
@@ -2520,6 +2628,11 @@
      "page": "/documents/",
      "title": "The documents",
      "text": "Johanna Catharina was eight — her own 1863 death notice puts her birth at 30 April 1819. Jacoba was seven, George four, James one. And Thomas Jacobus , born 1818, is not on the list — which independently supports the correction that he died in 1827 rather than in infancy in 1818. A correction the tree needs Our tree records James Mountjoy as born and died in 1826 . He is listed here alive, as a minor , at his father's death in September 1827. The infant-death date is wrong. Where the line now ends, and why it is a real end. James Montjoy, a saddler born in \"Europe\" about 1782, who owned a house and erf at Cradock worth £90 and died there in September 1827 leaving four children under nine."
+    },
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "Reporting a search as wider than it was. The worst of them. The Farm List negative was recorded before checking what the register held. A filtered search of the Cape archives was written up as though it were the whole search, and twenty documents went unread — including James Mountjoy's own wills . Both were failures of description, not of luck, and both would have misled a later reader for years. The distinction this archive keeps insisting on — “there is nothing there” against “nobody has looked” — is exactly the one it broke twice itself."
     },
     {
      "page": "/people/",
@@ -3366,7 +3479,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 4 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East."
+     "text": "The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 5 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East."
     },
     {
      "page": "/rebels/",
@@ -3441,7 +3554,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 3 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus."
+     "text": "The Line Anna Johanna Maria Booyzen (Vermaak) Documented 1 mention 12 Oct 1930 deceased Fourth child. The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 4 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus."
     },
     {
      "page": "/sources/",
@@ -3525,11 +3638,15 @@
     ]
    ],
    "slug": "richard-peter-barry",
-   "mentions": 5,
+   "mentions": 6,
    "pages": [
     {
      "h": "/",
      "t": "The Booyzen Archive"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
     },
     {
      "h": "/open-questions/",
@@ -3555,6 +3672,11 @@
      "text": "The surname BARRY had never been searched. It returns four, and two are here: Fred J. Barry of Ivanhoe, Barkly East / Wodehouse, tried June 1901 — the same month as Daniel Willem Schoeman of Caerlaverock , in whose house the family married five weeks later — and Richard Peter Barry of Jerpoint , which is Kathleen Barry's brother's name. Identity unproven; the district is not. The rebels → The spelling was changed to avoid the \"joiners\" The change is on paper. The spelling was not new. On the 1905 death form the clerk writes Boo y sen and the dead man's son signs Boo y zen , four lines apart."
     },
     {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "9 Sep 2026 Found The family is on the Cape Rebel roll — under Barry Acting at last on the note above. Fred J. Barry of Ivanhoe, Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman; and Richard Peter Barry of Jerpoint, which is Kathleen Barry's brother's name. Identity unproven, district not. 9 Sep 2026 Taken back CORRECTED — a chart with five invented rows The first province chart drew nine provinces. The source reports four; I had filled in the rest to make the picture look complete. It now draws four, and a province the source does not report is a gap with a dash rather than a zero bar."
+    },
+    {
      "page": "/open-questions/",
      "title": "Open questions",
      "text": "P. Barry who signed his mother's 1915 death notice at Manorowen, Barkly East; plus Adolf Barry of Keimoes and Thomas Andrew Barry of Oudtshoorn, neither relevant. Identity is not proven — the register gives no birth dates or parents — but the claim that this family was rebel country now has two men of its own surname in its own district."
@@ -3562,7 +3684,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 4 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven."
+     "text": "Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 5 mentions — — Kathleen's brother. Signed his mother's 1915 death notice as \"Son in whose house deceased died\", at Manorowen, Barkly East. A Richard Peter Barry, plaasboer of Jerpoint, is on the Cape Rebel roll — same name, right region, identity not proven."
     },
     {
      "page": "/rebels/",
@@ -3591,11 +3713,15 @@
     ]
    ],
    "slug": "fred-j-barry",
-   "mentions": 4,
+   "mentions": 5,
    "pages": [
     {
      "h": "/",
      "t": "The Booyzen Archive"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
     },
     {
      "h": "/people/",
@@ -3617,9 +3743,14 @@
      "text": "The claim Where it stands The family were Cape Rebels Yes — but under the other surname Of the 26 Booysens on the roll not one is from this district, and Booyzen returns nothing at all . The surname BARRY had never been searched. It returns four, and two are here: Fred J. Barry of Ivanhoe, Barkly East / Wodehouse, tried June 1901 — the same month as Daniel Willem Schoeman of Caerlaverock , in whose house the family married five weeks later — and Richard Peter Barry of Jerpoint , which is Kathleen Barry's brother's name. Identity unproven; the district is not. The rebels → The spelling was changed to avoid the \"joiners\" The change is on paper. The spelling was not new."
     },
     {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "It is neither: it enters through Anna Catharina Slier's FIRST marriage, to a Pieterzen, and four generations carried a step-relation's name. 9 Sep 2026 Found The family is on the Cape Rebel roll — under Barry Acting at last on the note above. Fred J. Barry of Ivanhoe, Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman; and Richard Peter Barry of Jerpoint, which is Kathleen Barry's brother's name. Identity unproven, district not. 9 Sep 2026 Taken back CORRECTED — a chart with five invented rows The first province chart drew nine provinces. The source reports four; I had filled in the rest to make the picture look complete."
+    },
+    {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 3 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus."
+     "text": "The Line Catherine Maria Sophia “Kathleen” Barry Documented 7 mentions 1859 1940 His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. The Barrys The Women The Documents Dorothea Regina Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys The Documents Fred J. Barry Open 4 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus."
     },
     {
      "page": "/rebels/",
@@ -3719,7 +3850,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Barrys The Documents Fred J. Barry Open 3 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus. The Kolbes The Women Hendrik Nicholaas Barry Documented 5 mentions — — Married Anna Johanna Maria Schoeman. The second Barry–Schoeman link. The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice."
+     "text": "The Barrys The Documents Fred J. Barry Open 4 mentions — — Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus. The Rebels Frederick Fortunatus Barry Documented 4 mentions — — Carries the Kolbe given name Fortunatus. The Kolbes The Women Hendrik Nicholaas Barry Documented 5 mentions — — Married Anna Johanna Maria Schoeman. The second Barry–Schoeman link. The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice."
     },
     {
      "page": "/rebels/",
@@ -3795,7 +3926,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice. The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 4 mentions — — Kathleen's brother."
+     "text": "The Cousin Marriage The Documents James Henry Barry Documented 3 mentions — — Named on the 1915 death notice. The Barrys The Rebels John Barry Open 1796 1853 One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved. Disputed The Barrys Open Questions Kathleen Mary Barry Documented 5 mentions — — Named on the 1915 death notice. The Barrys Margarietha Wilhelmina Elizabeth Barry Documented 6 mentions 1880 1961 Her 1961 pension is ordinary, not military — the archive checked. The Documents The Women Richard Peter Barry Documented 5 mentions — — Kathleen's brother."
     }
    ],
    "shared": false
@@ -3901,7 +4032,7 @@
     ]
    ],
    "slug": "george-augustus-kolbe",
-   "mentions": 13,
+   "mentions": 14,
    "pages": [
     {
      "h": "/",
@@ -3926,6 +4057,10 @@
     {
      "h": "/kolbe/",
      "t": "The Kolbes"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
     },
     {
      "h": "/open-questions/",
@@ -3986,6 +4121,11 @@
      "page": "/kolbe/",
      "title": "The Kolbes",
      "text": "George Augustus Kolbe, 1802–1844 — an 1820 Settler The family's research notes wonder whether John Augustus Barry was born at sea with the 1820 Settlers. He was not. But the family does have a documented settler, on the other side of that marriage, and his record is unusually complete."
+    },
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "Catherine was eighteen. 9 Sep 2026 Taken back CORRECTED — Anna Pretorius born 1906, not 1905 Three documents beat the tree: the baptism register, her death form's age, and her marriage register's age with parental consent. A derived claim built on the wrong year was withdrawn with it. 9 Sep 2026 Found The 1820 Settler his family forgot George Augustus Kolbe — the Nautilus, Owen's party, Algoa Bay 1820 — whose grandson wrote “Father: Kolbe, thinks James was christian name. Mother: Unknown” with the man's carved headstone standing forty miles away. 9 Sep 2026 Worked The Cape Rebel rolls searched, and the wrong surname noticed Twenty-six Booysens on the roll, every one Northern Cape. But the man in whose house the family married in July 1901 — D. W."
     },
     {
      "page": "/open-questions/",

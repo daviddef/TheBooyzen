@@ -1,47 +1,319 @@
 {
-"note":"A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
-"sets":[
-{"g":"Anglo-Boer War Museum · Cape Rebel register","n":"12,792 names","d":"9 Sep 2026","h":"/rebels/","rows":[
- ["BOOYSEN","26 found","Every one from the Northern Cape or Griqualand West — Kenhardt, Campbell, Koopmansfontein, Daniel's Kuil, Aberdeen. None from Barkly East, Dordrecht, Wodehouse, Indwe, Lady Grey or Elliot.","no"],
- ["BOOYZEN","0","Nothing, in any of the fifteen registers.","no"],
- ["BARRY","4 found","And two of them are in this family's district: FRED J. BARRY of Ivanhoe, Barkly East / Wodehouse, tried June 1901; and RICHARD PETER BARRY of Jerpoint. Identity unproven.","yes"],
- ["SCHOEMAN, D. W.","1 found","DANIEL WILLEM SCHOEMAN, plaasboer of CAERLAVEROCK, tried June 1901 — the month before the family married in his house.","yes"]]},
-
-{"g":"Anglo-Boer War Museum · Joiners register","n":"952 names","d":"9 Sep 2026","h":"/rebels/","rows":[
- ["BOOYSEN","1 found","J. J. BOOYSEN of HEILBRON, Orange Free State — four hundred miles away, in a different country at the time.","part"],
- ["BOOYZEN","0","Nothing.","no"]]},
-
-{"g":"University of Cape Town · British Concentration Camps of the South African War","n":"the camp database","d":"9 Sep 2026","h":"/open-questions/","rows":[
- ["BOOYZEN","5 found","All Transvaal: Gert Jacobus, aged 2, died Johannesburg camp, farm Rietvallei, Marico; Gertruida Magdalena, aged 19, died Vereeniging camp, farm Rietvlei, Heidelberg; Jan Gerhardus Lodewicus, aged 2. None from the Cape.","no"],
- ["BARRY","0","Nothing in the entire database.","no"],
- ["BOOYSEN + Catherine / Kathleen / John Barry / Willem Hermanus","0 each","None of this family's given names appears.","no"],
- ["BOOYZEN + Catharina","0","Nothing.","no"]]},
-
-{"g":"National Archives · Cape Town Archives Repository (NAAIRS)","n":"the KAB database","d":"9 Sep 2026","h":"/sources/","rows":[
- ["MOUNTJOY","42 documents","All 22 dated 1930 or later were retrieved and read.","part"],
- ["MONTJOY","4 documents","The spelling nobody had tried — and two of the four are the Mountjoy–Booysen junction itself, including the 1840 and 1863 death notices.","yes"],
- ["MOUNTJOY + HERKLAAS / HERCULES / WODEHOUSE / BARKLY","0 each","There is no estate file for Hercules Johannes Mountjoy under any spelling. The estates around him run 1938, 1939, 1943, 1946, 1948 unbroken, so this is an absence, not a gap in the index.","no"],
- ["BOOYZEN","39 documents","Earliest 1779 — KAB CJ 2633: 29, the testament of Christina Booyzen. The z is a hundred and twenty years older than the war.","yes"],
- ["BOOIJZEN","3 documents","Earliest 1792.","yes"],
- ["DE BEER + MAGDELENA","0","No estate for Magdelena Elisabeth de Beer, d. 1843.","no"],
- ["BEER + MAGDELENA + ELISABETH","0","Nothing.","no"],
- ["BOOYSEN + MAGDELENA","0","Nothing.","no"],
- ["BOOIJSEN + MAGDELENA","0","Nothing.","no"],
- ["BOOYSEN + GERTHARDUS","0","No estate for the man at the top of the male line.","no"],
- ["BOOYSEN + GERHARDUS","15 documents","None of them his.","no"],
- ["BOOYZEN + GERHARDUS","0","Nothing.","no"],
- ["BOOYSEN + LODEWIKUS / LODEWICUS","7 documents","All one later man, Willem Johannes Lodewicus.","no"],
- ["BOOYSEN + BEER","3 documents","One near-miss deliberately NOT adopted: KAB NCD 2/1: 49, a notarial will of 1793 for “Jan Booysen, married to the late Magdalena de Beer”. Wrong husband's name, and a wife dead fifty years before ours.","no"]]},
-
-{"g":"FamilySearch","n":"records and full text","d":"9 Sep 2026","h":"/sources/","rows":[
- ["Full-text search: “Johannes Mountjoy”","0","The full-text collection does not cover Cape probate.","no"],
- ["Probate collection, MONTJOY / MOUNTJOY","2 indexed","Only the 1863 pair. The 1840 death notice is NOT name-indexed and had to be found by interpolating reference numbers across 2,223 images.","part"],
- ["Marriage, MONTJOY 1817","3 indexings","Two carried no image. The third, under the spelling MONTYOY, did.","yes"]]},
-
-{"g":"Anglo-Boer War Museum · Farm List","n":"10,282 records","d":"9 Sep 2026","h":"/open-questions/","rows":[
- ["Caerlaverock / Manorowen / Wolwekloof","0","VOID, not informative. This register turns out to be an ORANGE FREE STATE land roll — farm number, morgen, square roods, owners — covering only Winburg, Fauresmith, Vrede, Rouxville, Bethlehem, Bloemfontein, Hoopstad, Kroonstad and Philippolis. A control search on “Dordrecht” returns 670 Cape Rebels and 0 farms.","void"]]},
-
-{"g":"First World War service records","n":"for Kathleen Barry's sons","d":"9 Sep 2026","h":"/documents/","rows":[
- ["Sons of Kathleen Barry, killed in service","0","The archive's own hypothesis — that a son died in the war and that is why she is recorded a “Military Pensioner” — was searched and DISPROVED. The claim was reframed on the page rather than quietly dropped.","no"],
- ["Commonwealth War Graves Commission","not searched","Behind a bot check. This archive did not attempt to circumvent it, and records that as the reason.","blocked"]]}
-]}
+ "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
+ "sets": [
+  {
+   "g": "Anglo-Boer War Museum · Cape Rebel register",
+   "n": "12,792 names",
+   "d": "9 Sep 2026",
+   "h": "/rebels/",
+   "rows": [
+    [
+     "BOOYSEN",
+     "26 found",
+     "Every one from the Northern Cape or Griqualand West — Kenhardt, Campbell, Koopmansfontein, Daniel's Kuil, Aberdeen. None from Barkly East, Dordrecht, Wodehouse, Indwe, Lady Grey or Elliot.",
+     "no"
+    ],
+    [
+     "BOOYZEN",
+     "0",
+     "Nothing, in any of the fifteen registers.",
+     "no"
+    ],
+    [
+     "BARRY",
+     "4 found",
+     "And two of them are in this family's district: FRED J. BARRY of Ivanhoe, Barkly East / Wodehouse, tried June 1901; and RICHARD PETER BARRY of Jerpoint. Identity unproven.",
+     "yes"
+    ],
+    [
+     "SCHOEMAN, D. W.",
+     "1 found",
+     "DANIEL WILLEM SCHOEMAN, plaasboer of CAERLAVEROCK, tried June 1901 — the month before the family married in his house.",
+     "yes"
+    ]
+   ]
+  },
+  {
+   "g": "Anglo-Boer War Museum · Joiners register",
+   "n": "952 names",
+   "d": "9 Sep 2026",
+   "h": "/rebels/",
+   "rows": [
+    [
+     "BOOYSEN",
+     "1 found",
+     "J. J. BOOYSEN of HEILBRON, Orange Free State — four hundred miles away, in a different country at the time.",
+     "part"
+    ],
+    [
+     "BOOYZEN",
+     "0",
+     "Nothing.",
+     "no"
+    ]
+   ]
+  },
+  {
+   "g": "University of Cape Town · British Concentration Camps of the South African War",
+   "n": "the camp database",
+   "d": "9 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "BOOYZEN",
+     "5 found",
+     "All Transvaal: Gert Jacobus, aged 2, died Johannesburg camp, farm Rietvallei, Marico; Gertruida Magdalena, aged 19, died Vereeniging camp, farm Rietvlei, Heidelberg; Jan Gerhardus Lodewicus, aged 2. None from the Cape.",
+     "no"
+    ],
+    [
+     "BARRY",
+     "0",
+     "Nothing in the entire database.",
+     "no"
+    ],
+    [
+     "BOOYSEN + Catherine / Kathleen / John Barry / Willem Hermanus",
+     "0 each",
+     "None of this family's given names appears.",
+     "no"
+    ],
+    [
+     "BOOYZEN + Catharina",
+     "0",
+     "Nothing.",
+     "no"
+    ]
+   ]
+  },
+  {
+   "g": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "n": "a correction",
+   "d": "9 Sep 2026",
+   "h": "/log/",
+   "rows": [
+    [
+     "MOUNTJOY (re-run, no date filter)",
+     "18 documents ≤1930",
+     "The archive previously reported MOUNTJOY as 42 documents of which “all 22 dated 1930 or later were read”. Twenty earlier documents were never opened. They include JAMES MOUNTJOY'S OWN WILLS of 1818 and 1827 and an 1834 Colonial Office memorial from his widow. A filter applied for convenience was written up as if it were the whole search.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY, wills",
+     "2 references",
+     "KAB MOOC 7/1/104: 42 — MOUNTJOY, JAMES. WILL (1818), joint with SLIER, ANNA CATHARINA, WIFE OF JAMES MOUNTJOY; and MOOC 7/1/104: 43 — the same pair again in 1827, the year he died. Made a year after their 1817 marriage and again at his death.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY, Colonial Office",
+     "1 reference",
+     "KAB CO 3972: 17 — “MEMORIALS RECEIVED. THE WIDOW OF J MOUNTJOY. REQUESTING REMISSION OF A FINE”, 1834. A petition in her own voice, seven years after his death.",
+     "yes"
+    ],
+    [
+     "BARRY + RICHARD + PETER",
+     "7 documents",
+     "Five of them mortgage bonds in the name RICHARD PETER BARRY — 1895, 1897 twice, and 1903 twice. A property-holding farmer of that name in the Cape across the war years. Corroboration for the Cape Rebel of Jerpoint, not proof.",
+     "part"
+    ],
+    [
+     "JERPOINT",
+     "0",
+     "The farm name does not appear anywhere in the Cape Town Archives index.",
+     "no"
+    ],
+    [
+     "BARRY + JERPOINT / BARRY + IVANHOE",
+     "0 each",
+     "Nothing.",
+     "no"
+    ]
+   ]
+  },
+  {
+   "g": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "n": "the KAB database",
+   "d": "9 Sep 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "MOUNTJOY",
+     "42 documents",
+     "All 22 dated 1930 or later were retrieved and read.",
+     "part"
+    ],
+    [
+     "MONTJOY",
+     "4 documents",
+     "The spelling nobody had tried — and two of the four are the Mountjoy–Booysen junction itself, including the 1840 and 1863 death notices.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY + HERKLAAS / HERCULES / WODEHOUSE / BARKLY",
+     "0 each",
+     "There is no estate file for Hercules Johannes Mountjoy under any spelling. The estates around him run 1938, 1939, 1943, 1946, 1948 unbroken, so this is an absence, not a gap in the index.",
+     "no"
+    ],
+    [
+     "BOOYZEN",
+     "39 documents",
+     "Earliest 1779 — KAB CJ 2633: 29, the testament of Christina Booyzen. The z is a hundred and twenty years older than the war.",
+     "yes"
+    ],
+    [
+     "BOOIJZEN",
+     "3 documents",
+     "Earliest 1792.",
+     "yes"
+    ],
+    [
+     "DE BEER + MAGDELENA",
+     "0",
+     "No estate for Magdelena Elisabeth de Beer, d. 1843.",
+     "no"
+    ],
+    [
+     "BEER + MAGDELENA + ELISABETH",
+     "0",
+     "Nothing.",
+     "no"
+    ],
+    [
+     "BOOYSEN + MAGDELENA",
+     "0",
+     "Nothing.",
+     "no"
+    ],
+    [
+     "BOOIJSEN + MAGDELENA",
+     "0",
+     "Nothing.",
+     "no"
+    ],
+    [
+     "BOOYSEN + GERTHARDUS",
+     "0",
+     "No estate for the man at the top of the male line.",
+     "no"
+    ],
+    [
+     "BOOYSEN + GERHARDUS",
+     "15 documents",
+     "None of them his.",
+     "no"
+    ],
+    [
+     "BOOYZEN + GERHARDUS",
+     "0",
+     "Nothing.",
+     "no"
+    ],
+    [
+     "BOOYSEN + LODEWIKUS / LODEWICUS",
+     "7 documents",
+     "All one later man, Willem Johannes Lodewicus.",
+     "no"
+    ],
+    [
+     "BOOYSEN + BEER",
+     "3 documents",
+     "One near-miss deliberately NOT adopted: KAB NCD 2/1: 49, a notarial will of 1793 for “Jan Booysen, married to the late Magdalena de Beer”. Wrong husband's name, and a wife dead fifty years before ours.",
+     "no"
+    ]
+   ]
+  },
+  {
+   "g": "FamilySearch",
+   "n": "records and full text",
+   "d": "9 Sep 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "Full-text search: “Johannes Mountjoy”",
+     "0",
+     "The full-text collection does not cover Cape probate.",
+     "no"
+    ],
+    [
+     "Probate collection, MONTJOY / MOUNTJOY",
+     "2 indexed",
+     "Only the 1863 pair. The 1840 death notice is NOT name-indexed and had to be found by interpolating reference numbers across 2,223 images.",
+     "part"
+    ],
+    [
+     "Marriage, MONTJOY 1817",
+     "3 indexings",
+     "Two carried no image. The third, under the spelling MONTYOY, did.",
+     "yes"
+    ]
+   ]
+  },
+  {
+   "g": "Anglo-Boer War Museum · Farm List",
+   "n": "10,282 records",
+   "d": "9 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "Caerlaverock / Manorowen / Wolwekloof",
+     "0",
+     "VOID, not informative. This register turns out to be an ORANGE FREE STATE land roll — farm number, morgen, square roods, owners — covering only Winburg, Fauresmith, Vrede, Rouxville, Bethlehem, Bloemfontein, Hoopstad, Kroonstad and Philippolis. A control search on “Dordrecht” returns 670 Cape Rebels and 0 farms.",
+     "void"
+    ]
+   ]
+  },
+  {
+   "g": "First World War service records",
+   "n": "for Kathleen Barry's sons",
+   "d": "9 Sep 2026",
+   "h": "/documents/",
+   "rows": [
+    [
+     "Sons of Kathleen Barry, killed in service",
+     "0",
+     "The archive's own hypothesis — that a son died in the war and that is why she is recorded a “Military Pensioner” — was searched and DISPROVED. The claim was reframed on the page rather than quietly dropped.",
+     "no"
+    ],
+    [
+     "Commonwealth War Graves Commission",
+     "not searched",
+     "Behind a bot check. This archive did not attempt to circumvent it, and records that as the reason.",
+     "blocked"
+    ]
+   ]
+  },
+  {
+   "g": "Master of the Supreme Court · the office's own index of death notices, 1834–1912",
+   "n": "film 007844477, 612 images",
+   "d": "9 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "“Beer, de” — the whole run",
+     "read on film",
+     "Particles are indexed separately in this book, so de Beer files under B. The Magdalena entries are Magda Catha du Plessis (1872), Magda de Beer (1865), Magda Vermeulen (1883), Magda Eliz Troskie (1863), Magda Jacomina Nel (1850) and Magda Greef (1839/40). There is NO Magdelena Elisabeth, and nothing dated 1843.",
+     "no"
+    ],
+    [
+     "BOOYSEN — the whole run",
+     "read on film",
+     "Page 436 onward, alphabetical by christian name with a death-notice number and year against each. A working index of every Booysen death notice reported to the Master between 1834 and 1912.",
+     "part"
+    ]
+   ]
+  },
+  {
+   "g": "FindMyPast · world records",
+   "n": "for James Montjoy's origin",
+   "d": "9 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "MOUNTJOY, born about 1782 ±5",
+     "12,984 results",
+     "Not tractable. The archive has no discriminator beyond a trade and a date — “a saddler, in the Cape by March 1817” — and thirteen thousand results cannot be narrowed by that. Recorded so the next person does not repeat it: the way in is a Cape arrival record, not an English birth record.",
+     "no"
+    ]
+   ]
+  }
+ ]
+}

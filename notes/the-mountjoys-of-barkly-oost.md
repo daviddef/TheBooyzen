@@ -417,3 +417,73 @@ godfather at the 1851 Booyzen font and the child took his name:
 Four generations carried a step-relation's name. This also corrects pass one's framing, which treated
 *Willem Hermanus* as "a Booysen name" crossing into the Mountjoys. **It is neither: it is a Pieterzen
 name that crossed into both.**
+
+---
+
+# Pass five — the searches I had reported as complete (9 Sep 2026)
+
+## The failure first
+This archive stated, on the page and in a commit message, that **MOUNTJOY returned 42 documents in the
+Cape Town Archives Repository and that "all 22 dated 1930 or later" had been read**. Twenty documents
+dated before 1930 were never opened. A filter applied for convenience was written up as though it were
+the whole search — the precise error this archive spends a page warning other people about.
+
+## What was in them
+
+| Reference | Description | Year |
+|---|---|---|
+| **KAB MOOC 7/1/104: 42** | **MOUNTJOY, JAMES. WILL** — and **SLIER, ANNA CATHARINA, WIFE OF JAMES MOUNTJOY. WILL** | **1818** |
+| **KAB MOOC 7/1/104: 43** | the same pair again | **1827** |
+| **KAB CO 3972: 17** | **"MEMORIALS RECEIVED. THE WIDOW OF J MOUNTJOY. REQUESTING REMISSION OF A FINE."** | **1834** |
+| KAB MOOC 6/9/379: 2345 | BRUMMER, WILHELMINA, née MOUNTJOY. DEATH NOTICE | 1898 |
+| KAB DOC 4/1/1164: 6415 · 4/1/1328: 2950 | Mortgage bonds, **GEORGE MOUNTJOY** | 1905, 1908 |
+| KAB DOC 4/1/1313: 1594 | Mortgage bond, **JAMES JOHN MOUNTJOY** | 1908 |
+| KAB MOOC 6/9/1967: 989 | MOUNTJOY, SUSAN ELIZABETH, née DIESEL. ESTATE | 1921 |
+| KAB MOOC 13/1/4406: 162 | L&D account, **Susan Elizabeth AND George Mountjoy** | 1922 |
+| KAB MOOC 6/9/2480: 1656 | DIESEL, LOUISA ELIZABETH, née MOUNTJOY. ESTATE | 1923 |
+
+### Why the wills matter
+**A joint will in 1818, one year after the 1817 marriage; and a second in 1827, the year he died.**
+These are now **the most likely documents in existence to break the "Not Known" wall**, because a Cape
+will of 1818 will often state where the testator came from. The 1834 **Colonial Office memorial** is
+better still in one respect: it is a petition **in Anna Catharina's own voice**, seven years widowed.
+
+None of the three is digitised. They must be ordered from the Cape Town Archives Repository.
+
+### And the surname, settled again
+The Master's Office indexes her as **SLIER** — a seventh rendering, and the archival form. Slier now has
+the 1817 register and the Master's index against the tree's Schleher.
+
+### One more thing the mortgage bonds say
+**George Mountjoy and James John Mountjoy were raising money on land in 1905 and 1908**, while their
+Booyzen cousins were landless — Willem Hermanus a mason at Indwe in 1905, his father having left
+"moveables only" in 1884. The two branches diverge sharply in property.
+
+## The Master's own index, on film
+FamilySearch film **007844477** (612 images) is the Master of the Supreme Court's **index of death
+notices 1834–1912** — surname, christian name, notice number and year. Particles are indexed separately,
+so *de Beer* files under **B**.
+
+- **"Beer, de", images 149–150 (pages 278–280):** the Magdalena de Beers are Magda Catha du Plessis
+  (1872), Magda de Beer (1865), Magda Vermeulen (1883), Magda Eliz Troskie (1863), Magda Jacomina Nel
+  (1850) and Magda Greef (1839/40). **No Magdelena Elisabeth. Nothing in 1843.** Open Question 0's
+  negative is now confirmed from the Master's own book, not just from NAAIRS.
+- **"Booysen", image 233 (page 436) onward:** a working index of every Booysen death notice reported
+  between 1834 and 1912.
+
+## The second marriage's line, found
+- **Gerrit Jacobus Booÿsen** (b. 19 Jan 1870, the child on the 1884 notice) married **Isabella Frederika
+  Coetsee at MIDDELBURG on 23 March 1896** — the district of Zevenfontein.
+- Their son **Petrus Jacobus Booyzen, b. 29 December 1904**, is entered in the DRC register **with a Z**.
+- Her estate is **KAB MOOC 6/9/9954: 84992 (1943)**, filed under **BOOYZEN**.
+
+So the second marriage's descendants are at Middelburg, spelled **Booyzen**, entirely independently of
+the Indwe branch — which sits beside the NAAIRS finding of a **P. J. Booyzen, constable at Middelburg,
+1904–07**, with mortgage bonds in 1904 and 1906. **The second wife herself is still unnamed.**
+
+## A contradiction to check, not to adopt
+FamilySearch carries a DRC marriage: **Petrus Jacobus Booÿzen and Anna Maria van der Merwe, 9 March
+1825, Cape Town** (`1:1:6DSN-7SBW`, and twice more). Our tree marries that couple in **1805 at
+Graaff-Reinet** and has her dead "**before March 1825**". Either the tree's death date was derived from
+this very record, or it is a different couple — Cape Town is a long way from Graaff-Reinet. **Flagged,
+not resolved.**
