@@ -1,0 +1,185 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const claims = [
+  ["They were living in the Cape Colony", "doc", "Confirmed", "Every birth, marriage and death in the line from 1788 to 1907 is in the Cape Colony — Graaff-Reinet, Cradock, Barkly East, Dordrecht, Indwe."],
+  ["They were rebels fighting for the Boer republics", "inf", "Strongly supported, unproved", "They lived in the two districts that produced roughly 550 rebel combatants before Stormberg, and a commando of their own. No Booysen has yet been matched to a rebel roll."],
+  ["Some Booysens were joiners on the British side", "lore", "Untested", "The National Scouts and colonial irregular rolls survive. Nobody has looked for Booysens in them."],
+  ["Our great-grandfather changed the spelling", "doc", "The change is recorded", "MyHeritage carries “Former name: Booysen” on Willem Hermanus Booyzen (1851–1905) as a formal fact. The motive is testimony; the surname distribution independently fits it."],
+  ["Our great-great-grandfather was shot and killed by the British", "lore", "Disproved for both candidates", "Petrus Jacobus died in 1884, fifteen years before the war. Willem Hermanus died in 1905 of a stomach ulcer after fourteen months\u2019 illness — the death registration is now read. Whoever the story means, it is neither of them."],
+  ["The women and children were put in a concentration camp", "lore", "Untested", "Camp registers survive and are indexed by name. This is the single most answerable claim on the list and it has not been searched."],
+  ["The farm was burned under Kitchener\u2019s scorched earth", "inf", "One new piece of evidence", "No farm has been identified. But he is a Boer — a farmer — at his marriage in 1879, and a Mason at his death in 1905. A man who works land and then works stone has often lost the land, and the war sits in that interval."],
+  ["Great-great-grandmother put the family on a train to Johannesburg; the boys went onto the mines", "inf", "Consistent with the record", "Birthplaces move from Barkly East (1907) to Johannesburg (1932). The family is at Forest Hill and Mayfair by the 1940s. No mine record found."],
+];
+---
+<Base title="The rebels"
+      eyebrow="Barkly East and Dordrecht, 1899–1902"
+      dek="One paragraph of family testimony carries this archive. It names a war, a betrayal, an execution, a camp, a burned farm and a train. Here it is in full, and here is each of its claims taken apart and tested.">
+
+<section class="blk">
+  <h2>The testimony, in full</h2>
+  <blockquote style="font-size:1.02em">
+    "According to my dad the story goes that they were living in the Cape Colony and were rebels fighting
+    on the side of the Boer republics at the turn of the century but there were some Booysens who were
+    joiners, fighting on the side of the British, so our great grandfather changed the spelling to Booyzen
+    so as not to be associated with them. Our great great grandfather was shot and killed by the British
+    and all the women and children were put in a concentration camp and the family farm in the Eastern
+    Cape was burned to the ground with Kitchener's scorched earth policy. After the war our great great
+    grandmother (with nothing but a pumpkin to eat) put herself and her kids on a train to Johannesburg
+    where the boys initially all got jobs on the mines to make ends meet."
+  </blockquote>
+  <p class="cap">Recorded on the MyHeritage profile of Willem Hermanus "William Henry" Booyzen and
+    attributed there to <strong>Tersia Booyzen</strong>, who gives her own father as her source. It is
+    therefore third-hand at best, and none the worse for saying so.</p>
+</section>
+
+<section class="blk">
+  <h2>Eight claims, one at a time</h2>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:19rem">The claim</th><th>Status</th><th>Why</th></tr></thead>
+      <tbody>{claims.map(([c, k, s, w]) => (
+        <tr><td><strong>{c}</strong></td>
+            <td><span class={"chip " + k}>{s}</span></td>
+            <td>{w}</td></tr>))}</tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What the documents did to the story</h2>
+  <p class="dek">Four civil records were read for the first time in September 2026. They cost the testimony
+    one of its central claims, and handed it a new piece of support it never had.</p>
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel">
+      <h3 style="margin-top:0">Lost: the murdered forebear</h3>
+      <p><span class="chip doc">Documented</span> <b>Willem Hermanus Booysen died of an ulcer of the
+        stomach</b> at Doorn Street, Indwe, on 13 September 1905, after <b>fourteen months</b> of illness,
+        attended by <b>Dr W. C. Macdonald</b>, with his eldest son present at the death.</p>
+      <p style="margin-top:12px">Neither he nor his father was shot. The claim survives only if it belongs
+        to a man this archive has not yet identified.
+        <a href={u("/disputed/")}>The three surviving readings &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Gained: a farmer who became a mason</h3>
+      <p>At his marriage in <b>1879</b> his occupation is <b>Boer</b> — farmer, of Lady Grey. At his death
+        in <b>1905</b> it is <b>Mason</b>.</p>
+      <p style="margin-top:12px"><span class="chip inf">Inferred</span> A man who works land and then works
+        stone has, in the interval, very often <b>lost the land</b>. The war sits in that interval. It is
+        the first documentary support the burned-farm claim has ever had — and it is circumstantial.
+        <a href={u("/documents/")}>The documents &rarr;</a></p>
+    </div>
+  </div>
+  <div class="note" style="margin-top:22px">
+    And a third thing, which belongs to the name rather than the war: on the 1905 form the clerk writes the
+    dead man as <b>Booysen</b>, and four lines below his son signs as <b>Booyzen</b>.
+    <b>Both spellings are on one sheet of paper, three years after the war ended.</b>
+    <a href={u("/name/")}>The name &rarr;</a>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>They lived in the most rebellious corner of the Colony</h2>
+  <div class="prose">
+    <p>This is the strongest thing the archive can currently say, and it does not depend on the family at
+      all. It depends on where they were.</p>
+    <p>A <b>Cape Rebel</b> was a British subject of the Cape Colony who took up arms with the Transvaal and
+      Orange Free State against British forces — that is, a man committing <b>high treason</b> in his own
+      country. Roughly <b>15,433</b> of them have been documented.</p>
+    <p>The districts that produced them are not evenly spread. <b>Burgersdorp alone produced 1,048.</b>
+      <b>Aliwal North and Lady Grey together produced 1,268.</b> And
+      <b>Barkly East and Dordrecht supplied about 550 combatants before the Battle of Stormberg</b> in
+      December 1899 — with a commando known as the <b>Barkly East Rebels</b> under Commandant J. F. de Wet.</p>
+    <p>Now place the family on that map:</p>
+  </div>
+  <div class="scroll" style="margin-top:20px">
+    <table>
+      <thead><tr><th>District</th><th>Rebel contribution</th><th>The family there</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Burgersdorp</strong></td><td class="m">1,048 rebels</td>
+          <td>six Barry children born 1847–1863; George Augustus Kolbe buried in the Old Cemetery, 1844</td></tr>
+        <tr><td><strong>Barkly East</strong></td><td class="m">part of ~550, own commando</td>
+          <td>Kathleen Barry b. 1859; four Booyzen children b. 1885–1907; Margarietha Barry b. 1880; Anna Pretorius b. 1905; John Augustus Barry died at Manor Owen, 1903</td></tr>
+        <tr><td><strong>Dordrecht</strong></td><td class="m">part of ~550; in rebel hands 1899</td>
+          <td>Kathleen Barry christened there, 1859; Hendrik Nicholaas Barry b. 1857; James Henry Barry married there, 1867</td></tr>
+        <tr><td>Lady Grey</td><td class="m">part of 1,268</td><td>Richard Peter Barry b. 1866</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <blockquote>
+    The family was not near the Cape rebellion. <strong>The family was inside it</strong> — living, marrying
+    and burying across the four districts that supplied the largest share of its manpower.
+  </blockquote>
+  <p><span class="chip inf">Inferred</span> This establishes overwhelming <em>opportunity and milieu</em>.
+    It does not put a rifle in any named ancestor's hands, and the archive will not pretend otherwise until
+    a name is found on a roll. <a href={u("/open-questions/")}>What would settle it &rarr;</a></p>
+</section>
+
+<section class="blk">
+  <h2>A coincidence worth chasing: Commandant D. Schoeman</h2>
+  <div class="prose">
+    <p>On <b>8 July 1901</b> — with martial law in force and the war still running —
+      <b>Margarietha Wilhelmina Elizabeth Barry married Petrus Jacobus Pretorius</b>. The tree records the
+      venue with unusual precision:</p>
+    <blockquote>"At the home of <strong>D Schoeman</strong>, <strong>'Caerlaverock'</strong>, Barkly East
+      district, Cape Colony."</blockquote>
+    <p>In <b>March 1900</b>, about <b>400 Cape Rebels under Commandant D. Schoeman</b> held
+      <b>Labuschagne's Nek, north of Dordrecht</b> — the next district over.</p>
+    <p>The bride's mother was <b>Anna Johanna Maria Schoemann</b>. The wedding was held at a Schoeman house.
+      The couple's granddaughter's line is the one that carries the rebel story.</p>
+    <p>And there is now a third Schoeman, twenty-two years earlier. The <b>1879 marriage register</b> for
+      Willem Hermanus Booysen and Kathleen Barry names its two witnesses:
+      <b>J. Sutherland and P. Schoeman</b>. <a href={u("/documents/")}>The register &rarr;</a></p>
+    <p><span class="chip inf">Hypothesis</span> <b>The family married in the house of a Cape Rebel
+      commandant, sixteen months after he commanded on the Nek, and he was a relative by marriage.</b></p>
+    <p><b>It may be nothing.</b> Schoeman is a common Afrikaner surname and "D." is one initial. But the
+      district is right, the years are right, and the family connection is documented. This is the most
+      promising single lead in the archive, and it is cheap to test: the rebel rolls name their
+      commandants. <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What happened to rebels who were caught</h2>
+  <p class="dek">Because the testimony says one of them was shot, it matters what the British actually did.</p>
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel">
+      <h3 style="margin-top:0">The system</h3>
+      <p>Lord Roberts split surrendered rebels into <b>Class 1 — leaders</b>, who faced fines and prison,
+        and <b>Class 2 — rank and file</b>, who got <b>five years' disenfranchisement</b>. The
+        <b>Special Tribunals Act</b> of October 1900 handled the cases. From <b>April 1901</b> martial law
+        took over and <b>military courts tried some 800 cases</b>.</p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">The sentences</h3>
+      <p><b>Forty-four Cape colonists were hanged or shot for high treason.</b> <b>409</b> younger rebels
+        were transported for life to <b>St Helena and Bermuda</b>. Named men from these districts were
+        imprisoned — <b>Johannes de Wet</b>, three years and a £1,000 fine; <b>Octavius Vermooten</b>, a
+        Dordrecht lawyer, four years in Tokai Gaol.</p>
+    </div>
+  </div>
+  <div class="note" style="margin-top:22px">
+    <b>Forty-four is a small, closed, checkable list.</b> If a Booysen was "shot and killed by the British"
+    as a rebel, he is on it — or the story means something else: killed in action, killed in a farm
+    clearance, or died in a camp. Those are different searches, and the archive should run all of them
+    before it decides the testimony is wrong. <a href={u("/disputed/")}>The chronology problem &rarr;</a>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The camps</h2>
+  <div class="prose">
+    <p>The MyHeritage biography for Willem Hermanus Booyzen carries a long passage, quoted from a published
+      history of the war, on <b>Kitchener's reasoning</b> for clearing the farms: that Boer women sustained
+      the commandos with food and intelligence, that removing them would starve the war of both, and that
+      men might surrender for their families' sake. <span class="cap">The passage is a copyrighted
+      extract and is summarised rather than reproduced here; it is not evidence about this family, but it
+      is evidence about what the family understood its own story to mean.</span></p>
+    <p>Whoever attached that passage to Willem Hermanus's profile did so because they believed his wife and
+      children were among the women and children it describes. <b>That belief has never been checked.</b></p>
+    <p>Kathleen Barry was <b>forty</b> when the war began, with children aged from an infant to fifteen. If
+      the family was cleared off a farm in the Barkly East district, she and they would appear in a camp
+      register by name, with ages. <b>Those registers are indexed.</b></p>
+  </div>
+</section>
+</Base>

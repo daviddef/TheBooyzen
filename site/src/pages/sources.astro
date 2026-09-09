@@ -1,0 +1,165 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const fs = [
+  ["Willem Hermanus Booyzen — birth 1851, Cradock", "South Africa, Dutch Reformed Church Registers (Cape Town Archives), 1660–1970", "3:1:3Q9M-CSV8-8SD4-8"],
+  ["Willem Hermanus Booyzen (jr) — birth 1885, Barkly East", "DRC Registers (Cape Town Archives)", "3:1:3Q9M-CSK6-W963-Q"],
+  ["Frederik Fortsenatus Booÿsen — birth 1899", "DRC Registers (Cape Town Archives)", "3:1:3Q9M-CSKD-1S76-F"],
+  ["Johanna Catharina Booysen — birth 1844, Cape Town", "DRC Registers (Cape Town Archives)", "3:1:3Q9M-CSVZ-WSL6-8"],
+  ["David Schalk Booysen — birth 1848, Brakrivier, Calvinia", "DRC Registers — entry names Johanna Catharina Mountjoy", "1:1:6DTY-MSPJ"],
+  ["Kathleen Barry — birth 1859, Barkly East", "FamilySearch image", "3:1:3Q9M-CSV8-85FP"],
+  ["Petrus Jacobus Booysen (1812) — birth", "FindMyPast transcript", "R_177176049779"],
+  ["Petrus Jacobus Booysen (1788) — marriage 1805", "via FindMyPast / FamilySearch", "3:1:3Q9M-CSFQ-S11J"],
+  ["Johanna Catharina Mountjoy — death 1863, Zevenfontein", "Cape Province, Probate Records of the Master of the High Court, 1834–1989", "3:1:3Q9M-CSQF-XSMD-B"],
+  ["Petrus Jacobus Booysen (1812) — death 1884", "Cape Province, Probate Records of the Master of the High Court", "3:1:3Q9M-CSQX-HSHP-Z"],
+  ["Petrus Jacobus Booysen (1788) — death 1876, Rustenburg", "Transvaal, Probate Records from the Master of the Supreme Court, 1869–1958", "3:1:3Q9M-CS4F-VSDP-F"],
+  ["Magdalena Johanna Booysen — death 1811", "Transvaal, Probate Records from the Master of the Supreme Court", "3:1:3Q9M-CS92-DWY4"],
+  ["Hendrik Stefanus Booysen — marriage 1850, Potchefstroom", "Transvaal, Probate Records from the Master of the Supreme Court", "3:1:3Q9M-CSQH-LS9Z-9"],
+  ["George Booyzen & Anna Pretorius — marriage 1924, Vereeniging", "Heidelberg, Transvaal, South Africa records", "3:1:3Q9M-C91V-TQKX-F"],
+  ["Anna Johanna Maria Pretorius — death 1944, Forest Hill", "Transvaal, South Africa records", "3:1:3Q9M-CS9R-Y9LN-M"],
+  ["George Downing Mountjoy Booyzen — death 1947", "Transvaal, South Africa records", "3:1:3Q9M-CS34-696T-M"],
+  ["George Downing Mountjoy Booyzen — burial 1947, West Park", "Randburg, Transvaal, South Africa records", "3:1:3QHK-93PY-2FS2"],
+  ["Gertrude Elizabeth Booyzen — death 1946, 85 Rheeden St", "Johannesburg, Transvaal, South Africa records", "3:1:3Q9M-C9BY-59Q2-1"],
+  ["Catherine Booyzen & Nuno Lerena — marriage 1949, St Joseph's Mayfair", "Johannesburg, Transvaal, South Africa records", "3:1:3Q9M-CS27-23NL"],
+  ["Johanna Catharina Booyzen & Johannes Pool — marriage 1910", "South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS)", "3:1:3Q9M-C91V-LBN"],
+  ["Henry James Booyzen & Dorothea Regina Barry — marriage 1912, Elliot", "South Africa, Civil Marriage Records, 1840–1973", "3:1:3Q9M-C9BP-3SZW-J"],
+  ["Dirk Jacobus Pretorius — marriage 1926, Vereeniging", "South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS)", "3:1:3Q9M-C912-4Q9K-3"],
+  ["Dirk Jacobus Pretorius — death 1957, Germiston", "South Africa, Civil Death Registration, 1955–1966", "3:1:3Q9M-C91P-D9S7-5"],
+];
+---
+<Base title="Sources"
+      eyebrow="What is behind each claim"
+      dek="Everything documented in this archive traces to one of the records below. Where a claim is inferred or is family testimony, the page carrying it says so.">
+
+<section class="blk">
+  <h2>The primary tree</h2>
+  <p><b>MyHeritage — <em>Defranceski Family Site (23andMe)</em></b>, the family tree
+    <em>"Defranceski, Lerena, Taylor, Barry, Blazevic, Booyzen"</em>, 15,643 people. Read
+    <b>9 September 2026</b> from David Defranceski's account.</p>
+  <p class="cap">The tree is private and its profile pages are not publicly linkable. Everything taken from
+    it is reproduced here with its own citation where it carries one, and marked as uncited where it does
+    not. MyHeritage interface marks — confirmed Smart Matches, direct-ancestor stars — are
+    <b>not</b> treated as sources. <a href={u("/method/")}>Method &rarr;</a></p>
+</section>
+
+<section class="blk">
+  <h2>Records cited within that tree</h2>
+  <p class="dek">Each of these is a FamilySearch ark or a FindMyPast transcript recorded against a specific
+    fact. They are listed so that anyone can go and look at the image rather than take this archive's word
+    for it. <b>None has yet been independently re-read by this archive.</b></p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:20rem">Fact</th><th>Collection</th><th class="m">Reference</th></tr></thead>
+      <tbody>{fs.map(([f, c, a]) => (
+        <tr><td>{f}</td><td class="cap">{c}</td><td class="m">{a}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <p class="cap">FamilySearch arks resolve at <span class="m">familysearch.org/ark:/61903/&lt;reference&gt;</span>.
+    Collections citing the <em>State Archives, Cape Province</em> and <em>Pietermaritzburg Archives</em> are
+    named as FamilySearch gives them.</p>
+</section>
+
+<section class="blk">
+  <h2>Original documents read by this archive</h2>
+  <p class="dek">Extracted at full resolution from the MyHeritage photo store on 9 September 2026 and
+    transcribed directly. Images and transcriptions are on <a href={u("/documents/")}>The documents</a>;
+    originals are kept in <span class="m">sources/booyzen-photos/</span>.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:20rem">Document</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Death registration, Willem Hermanus Booysen, 1905</strong></td>
+          <td>Cape Colony, <em>Form of Information of a Death, Act No. 7 of 1894</em>; entry <strong>299</strong>,
+            sub-district <strong>Indwe</strong>, district <strong>Wodehouse</strong>; registered 14 Sep 1905</td></tr>
+        <tr><td><strong>Marriage register, Booysen–Barry, 1879</strong></td>
+          <td><em>Duplicaat Origineel Register</em>, entry <strong>15</strong>, Barkly, district Wodehouse;
+            Ned. Ger. Kerk; officiant <strong>David Ross</strong></td></tr>
+        <tr><td><strong>Death notice, John Barry, 1915</strong></td>
+          <td>Administration of Estates Act 24 of 1913; Barkly East; stamped 18 Apr 1915,
+            <strong>No. 925</strong>; signed James H. Barry</td></tr>
+        <tr><td><strong>Death notice, George Downing Mountjoy Booyzen, 1948</strong></td>
+          <td>Administration of Estates Act 1913; Johannesburg; signed 21 Feb 1948; Master's Office stamp 1948</td></tr>
+        <tr><td>Photograph — "George Booyzen and Isaak Pretorius In Transkei"</td>
+          <td>captioned in the tree; undated, c. 1930s</td></tr>
+        <tr><td>Three uncaptioned photographs</td>
+          <td>attached to George's profile; identifications inferred and flagged as unverified</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Estate and archival references in hand</h2>
+  <div class="scroll">
+    <table>
+      <tbody>
+        <tr><td style="width:16rem"><strong class="m">KAB: MOOC 6/9/35: 7698 (1845)</strong></td>
+          <td>Estate of <strong>George Augustus Kolbe</strong>, d. 1 December 1844 at the farm
+            "Wurtemburg", Colesberg district. Cape Archives, Master's Office. <b>Not yet ordered.</b></td></tr>
+        <tr><td><strong class="m">SAG "b3"</strong></td>
+          <td>The generation code recorded against <strong>Margaretha Wilhelmina Elizabeth Mary Kolbe</strong>
+            at her 1846 marriage — a pointer into the published
+            <em>Suid-Afrikaanse Geslagsregisters</em>. <b>Not yet followed.</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Published and reference sources</h2>
+  <div class="prose">
+    <p><b>Forebears</b> — surname incidence and distribution for <em>Booyzen</em> and <em>Booysen</em>,
+      accessed 9 September 2026. Forebears figures are modelled estimates from name-frequency data, not a
+      census. <a href={u("/name/")}>The name &rarr;</a></p>
+    <p><b>Wikipedia</b>, <em>Booysen</em> — surname etymology and the progenitor Boij Boijeszoon of Barlt,
+      Northern Friesland.</p>
+    <p><b>Hilary Anne Shearing</b>, <em>The Cape Rebel of the South African War, 1899–1902</em>
+      (Stellenbosch University) — the standard study; the source of the rebel classification system and the
+      scale of the rebellion.</p>
+    <p><b>The Van Plettenberg Historical Society</b>, "Cape Rebels 1899–1902" — district rebel numbers,
+      trial and sentencing outcomes, the 44 executions and the 409 transportations.</p>
+    <p><b>angloboerwar.com</b> — Barkly East and Dordrecht rebel numbers, Commandant D. Schoeman at
+      Labuschagne's Nek, Commandant J. F. de Wet and the Barkly East Rebels.
+      <a href={u("/rebels/")}>The rebels &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Other trees holding this family</h2>
+  <p class="dek">Recorded on the MyHeritage profiles as saved records. They are <b>leads, not sources</b> —
+    listed here because they are where corroboration or contradiction is most likely to come from.</p>
+  <div class="scroll" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:18rem">Tree</th><th>Held by</th><th>Attached to</th></tr></thead>
+      <tbody>
+        <tr><td>Barry Web Site</td><td>Peter Barry, New Zealand</td><td>Willem Hermanus Booyzen</td></tr>
+        <tr><td>Daschner Web Site</td><td>Hilary Bird, Australia</td><td>George D. M. Booyzen; Anna Pretorius</td></tr>
+        <tr><td>van Rensburg Web Site</td><td>Wayne van Rensburg, South Africa</td><td>George D. M. Booyzen; Anna Pretorius</td></tr>
+        <tr><td>Davis Web Site</td><td>Gillian Davis, South Africa</td><td>George D. M. Booyzen</td></tr>
+        <tr><td>Turner Web Site</td><td>Warren Turner, New Zealand</td><td>George D. M. Booyzen</td></tr>
+        <tr><td>Martin Hardy Ellis and Family</td><td>Martin Hardy Ellis, United Kingdom</td><td>George D. M. Booyzen</td></tr>
+        <tr><td>Labuschagne Web Site</td><td>Herman Labuschagne, South Africa</td><td>Willem Hermanus Booyzen</td></tr>
+        <tr><td>Fick family Web Site</td><td>Paula Wiegmink, Australia</td><td>Willem Hermanus Booyzen</td></tr>
+        <tr><td>Rademeyer Web Site</td><td>Michael Vincent Rademeyer, South Africa</td><td>Willem Hermanus Booyzen</td></tr>
+        <tr><td>du Plessis Web Site</td><td>Etienne Muller du Plessis, South Africa</td><td>Anna Pretorius</td></tr>
+        <tr><td>Wandrag–Pretorius–Vermaak–Nortje</td><td>Glen Pretorius, South Africa</td><td>Anna Pretorius</td></tr>
+        <tr><td>Štāle Web Site</td><td>Renāte Štāle, Latvia</td><td>Anna Pretorius</td></tr>
+        <tr><td>Geni World Family Tree</td><td>—</td><td>Kathleen Barry; John Augustus Barry; George A. Kolbe</td></tr>
+        <tr><td>FamilySearch Family Tree</td><td>—</td><td>both Petrus Jacobus Booysens</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Testimony</h2>
+  <p><b>Tersia Booyzen</b>, recorded on the MyHeritage profile of Willem Hermanus Booyzen — the name-change
+    and Anglo-Boer War account, given as told to her by her father.
+    <a href={u("/rebels/")}>Quoted in full &rarr;</a></p>
+  <p><b>An unattributed earlier researcher</b>, recorded on the profiles of John Augustus Barry I and
+    Margaretha Kolbe — the account of the three conflicting birth records, the "Neagle" maiden name, and
+    the anti-English reputation. <a href={u("/barry/")}>The Barrys &rarr;</a></p>
+  <p><b>David Defranceski</b>, September 2026 — the brief for this archive and the identification of
+    Catherine Mary Sophia Booyzen as its starting point.</p>
+</section>
+</Base>

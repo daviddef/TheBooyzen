@@ -1,0 +1,131 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const wives = [
+  ["Magdelena Elisabeth De Beer", "1754–1843", "Huguenot-descended Cape", "m. Gerthardus Lodewikus Booysen. Lived to 89. Her husband has no dates at all — she is better recorded than he is."],
+  ["Anna Maria van der Merwe", "1785 – bef. Mar 1825", "one of the largest Cape families", "m. 2 Nov 1805, Graaff-Reinet. Her husband was about seventeen."],
+  ["Johanna Catharina Mountjoy", "1819–1863", "English", "m. 4 Nov 1838, Cradock. Died at Zevenfontein aged 44. Gives “Mountjoy” to the family."],
+  ["Catherine Maria Sophia “Kathleen” Barry", "1859–1940", "Irish / English at the Cape", "m. 22 Dec 1879 in the DRC at Barkly, after banns. Thirteen children. Occupation: Needle Woman. Died at Mayfair, Johannesburg."],
+  ["Anna Johanna Maria Pretorius", "1905–1944", "Afrikaner — and a Barry granddaughter", "m. 30 Dec 1924, Vereeniging. Six children. Died at 38 of an ectopic pregnancy."],
+  ["Gertruida Alexandra Kinnear / Kinnier", "—", "Scottish", "second wife of George Downing Mountjoy Booyzen. Two daughters, both named Gertrude Elizabeth, both died as infants."],
+];
+const jobs = [
+  ["Margaretha Wilhelmina Elizabeth Mary Kolbe", "1826–1912", "LAUNDRESS"],
+  ["Catherine Maria Sophia “Kathleen” Barry", "1859–1940", "Needle Woman"],
+  ["Margarietha Wilhelmina Elizabeth Barry", "1880–1961", "Housewife"],
+];
+---
+<Base title="The women"
+      eyebrow="Mountjoy · Barry · Kolbe · Downing · Pretorius · Schleher · van der Merwe · De Beer"
+      dek="The male line of this family is Cape Dutch and almost unbroken. Everything else about it — its forenames, its politics, its religion, its 1820 Settler descent and its German origins — arrived through the women. This page puts them back at the front.">
+
+<section class="blk">
+  <h2>The wives of the direct line</h2>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:17rem">Name</th><th>Dates</th><th>Family</th><th></th></tr></thead>
+      <tbody>{wives.map(([n, d, f, x]) => (
+        <tr><td><strong>{n}</strong></td><td class="m">{d}</td><td>{f}</td><td class="cap">{x}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <blockquote style="margin-top:22px">
+    A Cape Dutch male line that married <strong>British women in three successive generations</strong> —
+    Mountjoy in 1838, Barry in 1879, Kinnear in the 1940s — is not a coincidence of the district. It is the
+    whole character of the family.
+  </blockquote>
+</section>
+
+<section class="blk">
+  <h2>They are inside the men's names</h2>
+  <p class="dek">David Defranceski's great-grandfather was christened <b>George Downing Mountjoy
+    Booyzen</b>. On an Afrikaans surname that reads like an affectation. It is the opposite: every one of
+    those forenames is a woman's surname.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:9rem">Name</th><th>Comes from</th><th>Who</th></tr></thead>
+      <tbody>
+        <tr><td><strong>George</strong></td><td><strong>George Augustus Kolbe</strong> (1802–1844)</td>
+          <td>his great-great-grandfather — the 1820 Settler</td></tr>
+        <tr><td><strong>Downing</strong></td><td><strong>Margaret Georgina Elizabeth Downing</strong> (1803–1867)</td>
+          <td>George Kolbe's wife; married at Shoreditch aged about fifteen</td></tr>
+        <tr><td><strong>Mountjoy</strong></td><td><strong>Johanna Catharina Mountjoy</strong> (1819–1863)</td>
+          <td>his great-grandmother, married at Cradock in 1838</td></tr>
+        <tr><td><em>Booyzen</em></td><td><strong>Willem Hermanus Booyzen</strong> (1851–1905)</td>
+          <td>his father — who changed it from <em>Booysen</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:18px">The pattern repeats across the family: <b>David Kolbe Booyzen</b> (1896–1980)
+    carries the Kolbe surname outright; <b>John Barry Booyzen</b> (1884–1952) carries Barry;
+    <b>Augustas Kolbe Enslin</b> (1853–1937) carries Kolbe into a third family. And
+    <b>Frederik Fortsenatus Booÿsen</b> (b. 1899) is a worn-down copy of <b>Frederik Fortunatus Kolbe</b>
+    (b. 1839), by way of <b>Frederick Fortunatus Barry</b> (b. 1863).</p>
+  <blockquote>The women's families did not vanish into the Booyzen name. <strong>They were carried inside
+    it.</strong></blockquote>
+</section>
+
+<section class="blk">
+  <h2>They worked</h2>
+  <p class="dek">Three occupations are recorded for women in this ancestry. All three are manual.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:20rem">Name</th><th>Dates</th><th>Occupation as recorded</th></tr></thead>
+      <tbody>{jobs.map(([n, d, o]) => (
+        <tr><td>{n}</td><td class="m">{d}</td><td><strong>{o}</strong></td></tr>))}</tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px">Set beside the men — <b>carpenter</b>, <b>builder</b>, <b>grocer</b>,
+    <b>labourer</b>, <b>tailor</b>, <b>chemist</b> — this is not a gentry family at any point in its
+    recorded history, on either side of the marriage. The <b>Barrys of Swellendam</b>, the great Cape
+    merchant house, are a different Barry family unless and until a document says otherwise, and this
+    archive makes no claim on them.</p>
+</section>
+
+<section class="blk">
+  <h2>The dead children are named after each other</h2>
+  <div class="prose">
+    <p><b>Catherina Maria Sophia Barry</b> died at Burgersdorp on <b>30 July 1859</b>, aged four. Her sister
+      <b>Catherine Maria Sophia Barry</b> was born on <b>4 August 1859 — five days later</b>, and was given
+      her name.</p>
+    <p>That name then travelled: <b>Catherine Mary Sophia Booyzen (1891–1946)</b>, and
+      <b>Catherine Mary Sophia Booyzen (1929–2013)</b> — David Defranceski's grandmother, who died on
+      Christmas Day 2013 in Johannesburg still carrying the name of a four-year-old who died in a Karoo
+      village in 1859.</p>
+    <p>It happens again, and harder. After Anna Pretorius died in 1944, George remarried and had a daughter
+      <b>Gertrude Elizabeth</b>, born 11 May 1946, dead four days later at <b>85 Rheeden Street, Forest
+      Hill</b>. A second <b>Gertrude Elizabeth</b> is recorded born <b>11 May 1947</b> — the same day of the
+      year — and dead within it. <span class="chip inf">Unverified</span> The exact date repetition may
+      mean a duplicated record rather than a second child; it needs checking either way.</p>
+    <p>And <b>Anna Johanna Maria Pretorius</b> was born on <b>3 October 1905</b>, five weeks after her
+      infant brother <b>Hendrik Nikolaas</b> died on 26 August. She was named after her own grandmother,
+      <b>Anna Johanna Maria Schoemann</b> — the tree records the intention explicitly.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Anna Johanna Maria Pretorius, 1905–1944</h2>
+  <div class="prose">
+    <p>Born at <b>Barkly East</b>. Married at <b>Vereeniging</b> on 30 December 1924, aged nineteen.
+      Six children between 1925 and 1934.</p>
+    <p>She died on <b>26 February 1944 at Forest Hill, Johannesburg</b>, aged <b>38</b>. The cause is
+      recorded on her death registration in three words: <b>"FALLOPIAN TUBE PREGNANCY"</b> — an ectopic
+      pregnancy, which in 1944 in a Johannesburg suburb was very often fatal.</p>
+    <p>She left six children, the eldest eighteen and the youngest ten. <b>Catherine was fourteen.</b> Her
+      husband remarried, lost two infant daughters, and died himself of a heart attack on 21 February 1947.
+      <b>Catherine Mary Sophia Booyzen was seventeen years old and had no parents.</b> Two years later she
+      married Nuno Fernando Lerena at St Joseph's, Mayfair.
+      <a href={u("/johannesburg/")}>Johannesburg &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The oldest woman in the archive</h2>
+  <p><b>Anna Catharina Schleher</b> (1787–1885), mother of Johanna Catharina Mountjoy, lived to
+    <b>ninety-eight</b>. She married a <b>Pietersen</b> first — four sons between 1808 and 1813 — and then
+    <b>James Mountjoy</b>, who died in 1827 leaving her with a son, <b>Willem Jan</b>, born and dead in
+    1828. She outlived her second husband by <b>fifty-eight years</b>.</p>
+  <p class="cap">Schleher is a third German surname in this ancestry, alongside Kolbe of Württemberg and
+    the Kohlbeck/Larman circle of German Lutheran Soho — and, if the Booysen progenitor is right, a fourth
+    on the male line. <a href={u("/name/")}>The name &rarr;</a></p>
+</section>
+</Base>

@@ -1,0 +1,105 @@
+---
+import { u } from "../lib/url.js";
+const { title, dek, eyebrow, bare } = Astro.props;
+const SITE = "The Booyzen Archive";
+const nav = [
+  ["Start", [["/", "Home"], ["/direct-line/", "The Line"], ["/method/", "Method"]]],
+  ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"],
+                    ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
+  ["The work", [["/documents/", "The Documents"], ["/name/", "The Name"], ["/rebels/", "The Rebels"],
+                ["/johannesburg/", "Johannesburg"]]],
+  ["Open", [["/disputed/", "Disputed"], ["/open-questions/", "Open Questions"], ["/sources/", "Sources"]]],
+];
+const here = Astro.url.pathname;
+---
+<html lang="en" data-base={u("")}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title === SITE ? SITE : `${title} — ${SITE}`}</title>
+<meta name="description" content={dek ?? "An evidence-first archive of the Booyzen family — the north-eastern Cape, the Anglo-Boer War, and Johannesburg."} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href={u("/styles.css")} />
+</head>
+<body class={bare ? "is-home" : ""}>
+<header class="site">
+  <div class="wrap sitein">
+    <a class="brand" href={u("/")}>The Booyzen <em>Archive</em></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer">
+      <span class="bars" aria-hidden="true"></span>Menu
+    </button>
+    <nav class="topnav" aria-label="Main">
+      {nav.map(([label, links]) => (
+        <details class="menu">
+          <summary>{label}</summary>
+          <div class="panel">
+            {links.map(([h, l]) => <a href={u(h)} class={here === u(h) ? "on" : ""}>{l}</a>)}
+          </div>
+        </details>
+      ))}
+    </nav>
+  </div>
+  <div class="drawer" id="drawer" hidden>
+    <div class="wrap">{nav.map(([label, links]) => (
+      <div class="dgrp"><span class="gl">{label}</span>
+        {links.map(([h, l]) => <a href={u(h)} class={here === u(h) ? "on" : ""}>{l}</a>)}
+      </div>
+    ))}</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    {!bare && (
+      <div class="pagehead">
+        {eyebrow && <div class="lab">{eyebrow}</div>}
+        <h1>{title}</h1>
+        {dek && <p class="dek lead">{dek}</p>}
+      </div>
+    )}
+    <slot />
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="foot">An evidence-first family archive for the Booyzen family — of Graaff-Reinet and Cradock,
+    of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. Living people are
+    excluded from this build.</p>
+    <p class="foot dim">Built {new Date().getFullYear()} · Sources listed on <a href={u("/sources/")}>Sources</a> · Corrections welcome</p>
+  </div>
+</footer>
+
+<script is:inline>
+  (function () {
+    var bar = document.querySelector(".topnav");
+    var burger = document.querySelector(".burger");
+    var drawer = document.getElementById("drawer");
+    if (burger && drawer) {
+      burger.addEventListener("click", function () {
+        var open = drawer.hasAttribute("hidden");
+        if (open) { drawer.removeAttribute("hidden"); } else { drawer.setAttribute("hidden", ""); }
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    if (!bar) return;
+    var menus = [].slice.call(bar.querySelectorAll("details.menu"));
+    menus.forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        if (!d.open) return;
+        menus.forEach(function (o) { if (o !== d) o.open = false; });
+      });
+    });
+    document.addEventListener("click", function (e) {
+      if (e.target.closest(".topnav")) return;
+      menus.forEach(function (d) { d.open = false; });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") menus.forEach(function (d) { d.open = false; });
+    });
+  })();
+</script>
+</body>
+</html>

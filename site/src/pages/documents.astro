@@ -1,0 +1,317 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+---
+<Base title="The documents"
+      eyebrow="Four civil records, read for the first time"
+      dek="The family tree carried these scans for years with nobody transcribing them. They are not snapshots — they are death registrations, a death notice and a marriage register. Reading them corrected three dates, killed one family legend, and caught the surname changing on a single sheet of paper.">
+
+<section class="blk">
+  <h2>1905 · The death registration that settles the biggest question</h2>
+  <p class="dek">Cape Colony, <em>Form of Information of a Death, Act No. 7 of 1894</em>. Entry 299,
+    sub-district Indwe, district Wodehouse. Registered 14 September 1905.</p>
+  <figure style="margin:22px 0 0">
+    <img src={u("/docs/death-1905-willem-hermanus.jpg")} loading="lazy" decoding="async"
+         alt="Cape Colony death registration form for Willem Hermanus Booysen, 1905, handwritten in ink." />
+    <figcaption class="cap">Death registration of <strong>Willem Hermanus Booysen</strong>, Indwe, 1905.
+      MyHeritage tree <em>Defranceski Family Site (23andMe)</em>, extracted 9 September 2026.</figcaption>
+  </figure>
+  <div class="scroll" style="margin-top:24px">
+    <table>
+      <tbody>
+        <tr><td style="width:14rem">Usual place of residence</td><td><strong>Doorn Street, Indwe</strong></td></tr>
+        <tr><td>Age</td><td>Fifty Five years</td></tr>
+        <tr><td><strong>Occupation</strong></td><td><strong>Mason</strong></td></tr>
+        <tr><td><strong>Date of death</strong></td><td><strong>September Thirteenth 1905</strong></td></tr>
+        <tr><td>Intended place of burial</td><td>Public Cemetery, Indwe</td></tr>
+        <tr><td><strong>Cause of death</strong></td><td><strong>Ulcer of Stomach</strong></td></tr>
+        <tr><td>Duration of last illness</td><td><strong>Fourteen months</strong></td></tr>
+        <tr><td>Medical man</td><td>W. C. Macdonald, M.B.</td></tr>
+        <tr><td>Informant</td><td><strong>J. B. Booyzen</strong> — qualification: <strong>Present at Death</strong></td></tr>
+        <tr><td>Total children</td><td>Twelve</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid g2" style="margin-top:24px">
+    <div class="panel">
+      <h3 style="margin-top:0">What it proves</h3>
+      <p><span class="chip doc">Documented</span> The death date the tree flagged
+        <em>"To be confirmed, not sure"</em> is <strong>correct</strong>. He died at Indwe on
+        <strong>13 September 1905</strong>.</p>
+      <p style="margin-top:12px"><span class="chip doc">Documented</span> <strong>He was not shot by the
+        British.</strong> He died of a <strong>stomach ulcer after fourteen months of illness</strong>,
+        under a doctor's care, in his own house, three years after the war ended.
+        <a href={u("/rebels/")}>What that does to the testimony &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">A farmer who became a mason</h3>
+      <p>At his marriage in 1879 his occupation is <strong>Boer</strong> — farmer. At his death in 1905 it
+        is <strong>Mason</strong>.</p>
+      <p style="margin-top:12px">A man who works land and then works stone has, in between, very often
+        <strong>lost the land</strong>. The war sits in that interval.
+        <span class="chip inf">Inferred</span> Suggestive, not probative — but it is exactly the
+        trajectory the burned-farm testimony describes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The name changing, on one sheet of paper</h2>
+  <p class="dek">The registering clerk writes the deceased's surname. Four lines below, his son signs his
+    own. They are not the same word.</p>
+  <div class="grid g2" style="margin-top:22px">
+    <figure style="margin:0">
+      <img src={u("/docs/detail-1905-clerk-booysen.jpg")} loading="lazy" decoding="async"
+           alt="Handwritten name on the 1905 form reading Willem Hermanus Booysen, with an s." />
+      <figcaption class="cap">The clerk, September 1905: <strong>Willem Hermanus Boo<em>y</em>sen</strong></figcaption>
+    </figure>
+    <figure style="margin:0">
+      <img src={u("/docs/detail-1905-signature-booyzen.jpg")} loading="lazy" decoding="async"
+           alt="Informant signature on the 1905 form reading J B Booyzen, with a clear z." />
+      <figcaption class="cap">His son, the same day: <strong>J. B. Boo<em>y</em><em>z</em>en</strong></figcaption>
+    </figure>
+  </div>
+  <blockquote style="margin-top:24px">
+    The father is registered under the old spelling. The son signs the new one. <strong>Both are on the
+    same page, in September 1905 — three years after the Anglo-Boer War ended.</strong>
+  </blockquote>
+  <p style="margin-top:16px">The informant is <strong>John Barry Booyzen</strong> (b. 1884), the eldest
+    son, then twenty-one, recorded as <em>present at the death</em>. This is as close to a photograph of
+    the surname changing as the archive is ever likely to find.
+    <a href={u("/name/")}>The name &rarr;</a></p>
+</section>
+
+<section class="blk">
+  <h2>1879 · The marriage register — and one ambiguous letter</h2>
+  <p class="dek"><em>Duplicaat Origineel Register</em>, in Dutch. Entry 15, 22 December 1879. Married in
+    the <strong>Nederduits Gereformeerde Kerk at Barkly</strong>, after banns, by <strong>David Ross</strong>,
+    <em>consulent</em>.</p>
+  <figure style="margin:22px 0 0">
+    <img src={u("/docs/marriage-1879-booysen-barry.jpg")} loading="lazy" decoding="async"
+         alt="Dutch-language duplicate marriage register page for 1879, Barkly, Wodehouse district." />
+    <figcaption class="cap">Marriage of Willem Hermanus Booysen and Catharine Mary Barry, Barkly, 1879.</figcaption>
+  </figure>
+  <div class="scroll" style="margin-top:24px">
+    <table>
+      <thead><tr><th></th><th>Groom</th><th>Bride</th></tr></thead>
+      <tbody>
+        <tr><td>Name as entered</td><td><strong>Willem Hermanus Booysen</strong></td><td><strong>Catharine Mary Barry</strong></td></tr>
+        <tr><td>Age</td><td class="m">22</td><td class="m">21</td></tr>
+        <tr><td>Status</td><td>Jongman</td><td>Jongedochter</td></tr>
+        <tr><td><strong>Rank or occupation</strong></td><td><strong>Boer</strong> (farmer)</td><td>—</td></tr>
+        <tr><td>Residence</td><td><strong>Lady Grey</strong></td><td><strong>Barkly</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:18px"><strong>Witnesses: J. Sutherland and P. Schoeman.</strong> Set that beside
+    Anna Johanna Maria <strong>Schoemann</strong> marrying Hendrik Nicholaas Barry in 1877, the 1901
+    Pretorius–Barry wedding held <em>at the home of D. Schoeman, "Caerlaverock", Barkly East</em>, and a
+    <strong>Commandant D. Schoeman</strong> leading Cape Rebels at Labuschagne's Nek in 1900. The Schoemans
+    are braided through this family across three generations.
+    <a href={u("/rebels/")}>The rebels &rarr;</a></p>
+
+  <h3 style="margin-top:32px">The most consequential letter in the archive</h3>
+  <figure style="margin:18px 0 0;max-width:520px">
+    <img src={u("/docs/detail-1879-groom-signature.jpg")} loading="lazy" decoding="async"
+         alt="Extreme magnification of the groom's 1879 signature surname, reading Booij-something-en." />
+    <figcaption class="cap">The groom's own signature, 1879, at maximum available magnification.</figcaption>
+  </figure>
+  <div class="prose" style="margin-top:20px">
+    <p>The clerk wrote <b>Booysen</b>. The groom signed what reads as <b>"Booij_en"</b> — using the older
+      Dutch <b>ij</b> digraph, with a medial letter whose descending loop is more consistent with
+      <b>z</b> than <b>s</b>.</p>
+    <blockquote>
+      If that reading is right, <strong>he was already signing with a z in 1879</strong> — twenty years
+      before the Anglo-Boer War — and the testimony's explanation of <em>why</em> the spelling changed is
+      a later rationalisation of something that had already happened.
+    </blockquote>
+    <p><span class="chip inf">Not established</span> <b>The reading is not certain.</b> Cursive Dutch
+      <em>s</em> and <em>z</em> are genuinely confusable, and this is a photograph of a duplicate register,
+      not the original. The archive states both readings and prefers neither.</p>
+    <p><b>This single letter is now the most consequential unresolved question here.</b> It wants an eye
+      trained on nineteenth-century Cape Dutch hands, and the original register at the Cape Archives.
+      <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>1915 · John Barry's death notice — typewritten, and therefore unarguable</h2>
+  <p class="dek">Prepared by solicitors at Barkly East, stamped 18 April 1915, No. 925. Signed by
+    <strong>James H. Barry, "Son (second)"</strong>. <b>This is the very document the family's earlier
+    research note describes</b> — it can now be quoted rather than paraphrased.</p>
+  <figure style="margin:22px 0 0">
+    <img src={u("/docs/death-notice-1915-john-barry.jpg")} loading="lazy" decoding="async"
+         alt="Typewritten 1915 death notice for John Barry, Barkly East." />
+    <figcaption class="cap">Death Notice of John Barry, died 1903, notice prepared 1915.</figcaption>
+  </figure>
+  <div class="scroll" style="margin-top:24px">
+    <table>
+      <tbody>
+        <tr><td style="width:15rem"><strong>Birthplace and nationality</strong></td>
+            <td><strong>"At sea (exact whereabouts unknown), British."</strong></td></tr>
+        <tr><td>Father</td><td>John Barry (address unknown)</td></tr>
+        <tr><td><strong>Mother</strong></td><td><strong>Barry, born Neagle</strong> (Christian names and address unknown)</td></tr>
+        <tr><td>Age</td><td>83 years (about)</td></tr>
+        <tr><td>Occupation</td><td><strong>Carpenter and builder</strong></td></tr>
+        <tr><td>Residence</td><td><strong>Manorowen</strong>, Barkly East District</td></tr>
+        <tr><td>Spouse</td><td>Margaret Wilhelmina Elizabeth Barry, born <strong>Kolbe</strong> (died 2 August 1912). In community.</td></tr>
+        <tr><td>Place of last marriage</td><td><strong>"Burghersdorp (probably)"</strong></td></tr>
+        <tr><td><strong>Day of decease</strong></td><td><strong>3rd August 1903</strong></td></tr>
+        <tr><td>Where died</td><td>on farm <strong>Manorowen</strong>, district Barkly East</td></tr>
+        <tr><td>Estate</td><td>movable <strong>Yes</strong> · immovable <strong>No</strong> · exceeds £300 <strong>Yes</strong> · will <strong>No</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid g2" style="margin-top:24px">
+    <div class="panel">
+      <h3 style="margin-top:0">"At sea" is official, not folklore</h3>
+      <p>The Irish/High-Seas ambiguity is <strong>contemporaneous and legal</strong>, sworn by his own son.
+        The mother's maiden name <strong>Neagle</strong> — almost certainly <strong>Nagle</strong>, of
+        County Cork — is on a state document, not a family memory.
+        <a href={u("/barry/")}>The Barrys &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Manorowen is Welsh</h3>
+      <p>The tree renders the farm "Manor Owen", which hides it. The notice types it as one word:
+        <strong>Manorowen</strong> — <strong>a village in Pembrokeshire, Wales</strong>. He also owned
+        <strong>no immovable property</strong>: he lived on Manorowen but did not own it. Both are new and
+        entirely unexplored.</p>
+    </div>
+  </div>
+  <div class="note" style="margin-top:24px">
+    <b>Two corrections fall out of this page.</b><br />
+    <b>1. The death date is 3 August 1903</b>, not the 25 August the tree carries — a 22-day discrepancy.<br />
+    <b>2. A duplicate person is resolved.</b> The tree lists both <em>Catherine Maria Sophia "Kathleen"
+    Barry (1859–1940), married Booyzen</em> and a separate sister <em>Kathleen Mary Barry (Booysen)</em>
+    with no dates. This notice lists <b>only one</b> Barry daughter married to a Boyson. The arithmetic
+    closes exactly: the tree's <b>11</b> children = the notice's <b>8</b> surviving + <b>2</b> who
+    predeceased him + <b>1 duplicate</b>. They are the same woman, and the archive's earlier claim of
+    "two Barry sisters marrying Booysens" is <b>withdrawn</b>.
+  </div>
+</section>
+
+<section class="blk">
+  <h2>1947 · George's death notice corrects his own death date</h2>
+  <p class="dek">Signed by <strong>G. Booyzen</strong> at Johannesburg on 21 February 1948 under the
+    Administration of Estates Act 1913.</p>
+  <figure style="margin:22px 0 0">
+    <img src={u("/docs/death-notice-1947-george.jpg")} loading="lazy" decoding="async"
+         alt="Handwritten 1947 death notice for George Downing Mountjoy Booyzen, Johannesburg." />
+    <figcaption class="cap">Death Notice of <strong>George Downing Mountjoy Booyzen</strong>, died
+      11 December 1947 at Forest Hill, Johannesburg.</figcaption>
+  </figure>
+  <figure style="margin:24px 0 0">
+    <img src={u("/docs/detail-1947-death-date.jpg")} loading="lazy" decoding="async"
+         alt="Detail of the 1947 death notice showing the day of decease as 11th December 1947." />
+    <figcaption class="cap">"The day of the decease: On <strong>11th December 1947</strong>" — died at
+      <strong>85 Rheeden St, Forest Hill</strong>, Johannesburg.</figcaption>
+  </figure>
+  <blockquote style="margin-top:22px">
+    <strong>He died on 11 December 1947 — not 21 February 1947.</strong><br />
+    21 February is the date the notice was <em>signed</em>, and it was signed in <strong>1948</strong>.
+    A transcriber conflated the two and lost ten months.
+  </blockquote>
+  <p style="margin-top:16px">This also dissolves an anomaly this archive had itself flagged: a burial at
+    West Park recorded on <b>14 December 1947</b> looked like a ten-month delay. It was not.
+    <b>He died on the 11th and was buried on the 14th — three days later</b>, exactly as one would expect.</p>
+  <figure style="margin:26px 0 0">
+    <img src={u("/docs/detail-1947-occupation.jpg")} loading="lazy" decoding="async"
+         alt="Detail showing age 46 years 6 months and occupation S.A.R. and H." />
+    <figcaption class="cap">Age <strong>46 years 6 months</strong>; occupation
+      <strong>S.A.R. &amp; H.</strong> — the South African Railways and Harbours; residence
+      <strong>85 Rheeden Street, Forest Hill</strong>.</figcaption>
+  </figure>
+  <figure style="margin:22px 0 0">
+    <img src={u("/docs/detail-1947-spouses.jpg")} loading="lazy" decoding="async"
+         alt="Detail showing surviving spouse Gertruida Alexandra born Kinnear and pre-deceased spouse Anna Johanna Maria born Pretorius." />
+    <figcaption class="cap">Surviving spouse <strong>Gertruida Alexandra Booyzen, born Kinnear</strong>, in
+      community of property; pre-deceased spouse <strong>Anna Johanna Maria Booyzen (Pretorius), died 26
+      February 1944</strong>.</figcaption>
+  </figure>
+  <figure style="margin:22px 0 0">
+    <img src={u("/docs/detail-1947-children.jpg")} loading="lazy" decoding="async"
+         alt="Detail listing the children of the prior marriage with birth dates for the minors." />
+    <figcaption class="cap">Children of the prior marriage. The two eldest are entered as majors; the four
+      minors carry birth dates — <strong>25/3/29, 12/10/30, 22/9/32, 10/1/34</strong> — which
+      <strong>match the tree exactly</strong>, independently confirming Catherine Mary Sophia's birth on
+      25 March 1929. The second daughter is given a married name the tree does not have:
+      <strong>Kelly</strong>.</figcaption>
+  </figure>
+
+  <div class="note" style="margin-top:24px">
+    <b>He worked for the railways, not the mines.</b> The testimony's "the boys all got jobs on the mines"
+    belongs to an earlier generation. By the 1940s this branch was <b>S.A.R. &amp; H.</b>
+    <a href={u("/johannesburg/")}>Johannesburg &rarr;</a><br /><br />
+    The notice also records <b>"no children of last marriage"</b> — consistent with both infant Gertrude
+    Elizabeths having died before him.
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The photographs</h2>
+  <figure style="margin:20px 0 0;max-width:560px">
+    <img src={u("/docs/photo-george-isaak-transkei.jpg")} loading="lazy" decoding="async"
+         alt="Two men shaking hands in open grassland, one young in a 1930s suit, one elderly with a white moustache and walking stick." />
+    <figcaption class="cap"><strong>"George Booyzen and Isaak Pretorius In Transkei"</strong> — the tree's
+      own caption. Left: <strong>George Downing Mountjoy Booyzen</strong>, in his thirties, in the wide
+      trousers of the 1930s. Right: <strong>Isaak Pretorius</strong>, a relative of George's wife, walking
+      stick planted in the grass behind him. <strong>This appears to be the only photograph of George in
+      the tree</strong> — his profile still carries MyHeritage's prompt to add a personal photo.</figcaption>
+  </figure>
+
+  <h3 style="margin-top:34px">Three uncaptioned photographs</h3>
+  <p class="dek">Attached to George's profile with no caption, no date and no tagging. The identifications
+    below are <span class="chip inf">Inferred</span> — reasoning is given so it can be overturned.</p>
+  <div class="grid g3" style="margin-top:20px;align-items:start">
+    <figure style="margin:0">
+      <img src={u("/docs/photo-untitled-43.jpg")} loading="lazy" decoding="async"
+           alt="A young woman in a patterned dress, an elderly woman seated in black, and a young man outside a house." />
+      <figcaption class="cap">An <strong>elderly woman seated in full black</strong> between two young
+        people, outside a plastered house. <em>Hypothesis:</em> the seated woman is
+        <strong>Kathleen Barry (1859–1940)</strong> in widow's black — the dress and print date the image
+        to the 1930s, when she was in her seventies and living in Johannesburg. <strong>Unverified.</strong></figcaption>
+    </figure>
+    <figure style="margin:0">
+      <img src={u("/docs/photo-untitled-45.jpg")} loading="lazy" decoding="async"
+           alt="A young man in a dark uniform tunic and peaked cap standing in a yard by a bare tree." />
+      <figcaption class="cap">A young man in a <strong>dark uniform tunic and peaked cap</strong>.
+        <em>Hypothesis:</em> <strong>George Downing Mountjoy Booyzen in South African Railways and
+        Harbours uniform</strong> — the employer his 1947 death notice names.
+        <strong>Unverified.</strong></figcaption>
+    </figure>
+    <figure style="margin:0">
+      <img src={u("/docs/photo-untitled-46.jpg")} loading="lazy" decoding="async"
+           alt="A man in a light suit and fedora leaning on a late-1920s sedan with a small boy beside him." />
+      <figcaption class="cap">A man in a light suit and fedora on a late-1920s sedan, registration
+        <strong class="m">TAS 486</strong>, a small boy beside him. The registration is a hard,
+        researchable detail. <strong>Unidentified.</strong></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What is still in there</h2>
+  <p class="dek">This was one pass over two profiles. The tree holds far more.</p>
+  <div class="scroll" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:22rem">Profile</th><th class="m">Photos</th><th></th></tr></thead>
+      <tbody>
+        <tr><td><strong>George Augustus Kolbe</strong> (1802–1844)</td><td class="m">23</td><td>plus <strong>4 biographies</strong> — the 1820 Settler; by far the richest record in the ancestry</td></tr>
+        <tr><td>Johan Gottlieb Kolbe (1765–1845)</td><td class="m">10</td><td>the Bond Street tailor</td></tr>
+        <tr><td>Anna Johanna Maria Pretorius (1905–1944)</td><td class="m">9</td><td></td></tr>
+        <tr><td>Margarietha Wilhelmina Elizabeth Barry (1880–1961)</td><td class="m">9</td><td></td></tr>
+        <tr><td>Catherine Maria Sophia "Kathleen" Barry (1859–1940)</td><td class="m">8</td><td></td></tr>
+        <tr><td>John Augustus Barry I (1819–1903)</td><td class="m">6</td><td>plus 2 biographies</td></tr>
+        <tr><td>Margaretha Kolbe (1826–1912)</td><td class="m">6</td><td></td></tr>
+        <tr><td>Petrus Jacobus Booysen (1788–1876)</td><td class="m">4</td><td></td></tr>
+        <tr><td>Johanna Catharina Mountjoy (1819–1863)</td><td class="m">3</td><td></td></tr>
+        <tr><td>Catherine Mary Sophia Booyzen (1929–2013)</td><td class="m">2</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px">Six further images already downloaded from Willem Hermanus's and George's
+    profiles are not yet read: the <strong>1851 baptism</strong>, the <strong>1891 birth</strong> of
+    Catherine Mary Sophia, a <strong>Johanna Catharina birth</strong> entry, the
+    <strong>Anna–George marriage certificate</strong>, and two further pages of death information.</p>
+</section>
+</Base>

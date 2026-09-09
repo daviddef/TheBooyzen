@@ -1,0 +1,227 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const zrows = [
+  ["South Africa", "616", "1:87,951", "10,814"],
+  ["Australia", "16", "1:1,687,231", "81,699"],
+  ["United Arab Emirates", "6", "1:1,527,046", "51,993"],
+  ["United States", "3", "1:120,819,644", "1,331,040"],
+  ["Botswana", "1", "1:2,186,929", "30,250"],
+  ["Ireland", "1", "1:4,708,939", "29,543"],
+  ["England", "1", "1:55,718,059", "489,080"],
+  ["Saudi Arabia", "1", "1:30,855,817", "63,028"],
+  ["Turkey", "1", "1:77,821,422", "191,047"],
+];
+const srows = [
+  ["South Africa", "52,009", "1:1,042", "—"],
+  ["Namibia", "1,020", "—", "—"],
+  ["England", "175", "—", "—"],
+  ["Saudi Arabia", "159", "—", "—"],
+  ["Australia", "99", "—", "—"],
+  ["United States", "77", "—", "—"],
+];
+---
+<Base title="The name"
+      eyebrow="646 in the world, against 53,764"
+      dek="Booyzen is not a variant spelling that drifted. It is one family's deliberate break from a mass surname — and the distribution figures, gathered a century later and entirely independently of the family, say exactly that.">
+
+<section class="blk">
+  <h2>The claim being tested</h2>
+  <blockquote>
+    "There were some Booysens who were joiners, fighting on the side of the British, so our great
+    grandfather <strong>changed the spelling to Booyzen</strong> so as not to be associated with them."
+    <span class="cap" style="display:block;margin-top:8px">— family testimony recorded on the MyHeritage
+    tree from Tersia Booyzen. <a href={u("/rebels/")}>The full account &rarr;</a></span>
+  </blockquote>
+  <p>
+    <span class="chip doc">Documented</span> That a change happened is on the record twice over. MyHeritage
+    carries <strong>"Former name: Booysen"</strong> as a formal Name Change fact on
+    <strong>Willem Hermanus "William Henry" Booyzen (1851–1905)</strong> — and, far better, both spellings
+    appear <strong>on a single sheet of paper in September 1905</strong>.
+  </p>
+  <div class="grid g2" style="margin:22px 0">
+    <figure style="margin:0">
+      <img src={u("/docs/detail-1905-clerk-booysen.jpg")} loading="lazy" decoding="async"
+           alt="1905 death form, clerk's hand, reading Willem Hermanus Booysen with an s." />
+      <figcaption class="cap">The registering clerk names the dead man:
+        <strong>Willem Hermanus Boo<em>y</em>sen</strong></figcaption>
+    </figure>
+    <figure style="margin:0">
+      <img src={u("/docs/detail-1905-signature-booyzen.jpg")} loading="lazy" decoding="async"
+           alt="1905 death form, informant signature reading J B Booyzen with a clear z." />
+      <figcaption class="cap">Four lines below, his son signs:
+        <strong>J. B. Boo<em>y</em><em>z</em>en</strong></figcaption>
+    </figure>
+  </div>
+  <p>
+    The informant is <strong>John Barry Booyzen</strong>, the eldest son, twenty-one, recorded as
+    <em>present at the death</em>. His father is buried under the old spelling; he signs the new one.
+    <a href={u("/documents/")}>The full document &rarr;</a>
+  </p>
+  <p>
+    <span class="chip lore">Family lore</span> The <em>motive</em> — the joiners — is testimony, and
+    cannot be proved from a spelling alone.
+  </p>
+  <p>
+    But a deliberate break from a large surname should leave a very particular fingerprint in the
+    population a century later: <strong>a tiny name, in the wrong province.</strong> That is precisely what
+    is there.
+  </p>
+</section>
+
+<section class="blk">
+  <h2>The complication: he may have been signing a z in 1879</h2>
+  <figure style="margin:18px 0;max-width:520px">
+    <img src={u("/docs/detail-1879-groom-signature.jpg")} loading="lazy" decoding="async"
+         alt="Extreme magnification of an 1879 signature surname reading Booij, then an ambiguous letter, then en." />
+    <figcaption class="cap">The groom's own signature on the 1879 marriage register, at maximum available
+      magnification. The clerk, on the same page, wrote <strong>Booysen</strong>.</figcaption>
+  </figure>
+  <p>
+    He signed what reads as <strong>"Booij_en"</strong> — the older Dutch <strong>ij</strong> digraph, with
+    a medial letter whose descending loop is more consistent with <strong>z</strong> than <strong>s</strong>.
+  </p>
+  <blockquote>
+    If that reading is right, the z was already his own hand in <strong>1879</strong> — twenty years before
+    the war — and the testimony explains a <em>motive</em> for something that had already happened.
+  </blockquote>
+  <p>
+    <span class="chip inf">Not established</span> The reading is <strong>not certain</strong>. Cursive Dutch
+    <em>s</em> and <em>z</em> are genuinely confusable, and this is a photograph of a duplicate register
+    rather than the original. The archive states both readings and prefers neither.
+  </p>
+  <p>
+    Note what it would and would not overturn. It would not touch the <strong>distribution evidence</strong>
+    below — the name would still be a tiny, Gauteng-concentrated break from a Cape surname. It would move
+    the <em>date</em> of the break back a generation, and make the joiners a remembered reason rather than
+    the original one. <a href={u("/documents/")}>The register &rarr;</a>
+  </p>
+</section>
+
+<section class="blk">
+  <h2>How rare Booyzen is</h2>
+  <p>
+    Forebears, accessed 9 September 2026: <strong>646 bearers worldwide</strong>, the
+    <strong>507,320th</strong> commonest surname on earth, an incidence of
+    <strong>1 in 11,281,031</strong>. Ninety-six per cent are in Africa.
+  </p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Country</th><th>Bearers</th><th>Incidence</th><th>Rank in country</th></tr></thead>
+      <tbody>{zrows.map(([c, b, i, r]) => (
+        <tr><td>{c}</td><td class="m">{b}</td><td class="m">{i}</td><td class="m">{r}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <p class="cap">Note the sixteen in <strong>Australia</strong>. David Defranceski's own family is in
+    Brisbane; the Booyzen descent reached it through the Lerena and Defranceski marriages rather than
+    under the Booyzen name, so those sixteen are likely to be a separate migration. Unchecked.</p>
+</section>
+
+<section class="blk">
+  <h2>And how common Booysen is</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Country</th><th>Bearers</th><th>Incidence</th><th></th></tr></thead>
+      <tbody>{srows.map(([c, b, i, r]) => (
+        <tr><td>{c}</td><td class="m">{b}</td><td class="m">{i}</td><td class="m">{r}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px">
+    <strong>53,764 worldwide</strong>, the 10,459th commonest surname on earth, and
+    <strong>52,009 of them in South Africa</strong> — one South African in a thousand.
+  </p>
+  <blockquote>
+    <strong>Booysen is 83 times commoner than Booyzen.</strong><br />
+    In South Africa the gap is wider still: <strong>1 in 1,042</strong> against <strong>1 in 87,951</strong>
+    — a factor of <strong>84</strong>.
+  </blockquote>
+</section>
+
+<section class="blk">
+  <h2>The finding: the two names live in different provinces</h2>
+  <p>This is the part that is hard to explain any other way.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th>Province</th><th>Share of <em>Booysen</em></th><th>Share of <em>Booyzen</em></th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Western Cape</strong></td><td class="m">39%</td><td class="m">10%</td>
+          <td>the parent name's heartland</td></tr>
+        <tr><td><strong>Eastern Cape</strong></td><td class="m">17%</td><td class="m">—</td>
+          <td>the old Cape Colony districts</td></tr>
+        <tr><td><strong>Gauteng</strong></td><td class="m">15%</td><td class="m"><strong>45%</strong></td>
+          <td><strong>the Witwatersrand — Johannesburg</strong></td></tr>
+        <tr><td>Limpopo</td><td class="m">—</td><td class="m">9%</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:22px">
+    <p><b>Booysen is a Cape surname.</b> Fifty-six per cent of its South African bearers are in the
+      Western and Eastern Cape, which is where the family arrived in the seventeenth century and stayed.</p>
+    <p><b>Booyzen is a Johannesburg surname.</b> Nearly half of all the Booyzens in the world are in
+      <b>Gauteng</b> — a province that did not exist as a settlement until 1886.</p>
+    <p>Now set that against the testimony, which was recorded without any reference to statistics:
+      a family in the <b>Eastern Cape</b> changes its spelling during the war, is burned out, and
+      <b>puts itself on a train to Johannesburg</b>, where the boys go onto the mines.</p>
+    <blockquote>
+      The surname data was not collected to test that story, and cannot have been shaped by it. It says
+      the same thing: <strong>a small group broke off a Cape name and reproduced on the Rand.</strong>
+    </blockquote>
+    <p><span class="chip inf">Inferred</span> This is corroboration, not proof. Distribution cannot show
+      <em>why</em> a spelling changed, and 616 people is a small enough number that founder effects and
+      simple clerical drift both remain live explanations. What it does establish is that
+      <b>Booyzen behaves like a young name with a single origin</b>, not like a long-standing spelling
+      variant scattered through the Cape alongside its parent.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What the name means</h2>
+  <div class="grid g2">
+    <div class="panel">
+      <h3 style="margin-top:0">A patronymic</h3>
+      <p><b>Booysen</b> is Dutch and means <b>"son of Booy"</b>. <em>Booy</em> is itself a short form of
+        <b>Boudewijn</b> — the Dutch form of <b>Baldwin</b>, from Germanic <em>bald</em> ("bold") and
+        <em>win</em> ("friend"). The English cousin of the name is <b>Boyce</b>; the North German and
+        Danish is <b>Boysen</b>.</p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">A progenitor</h3>
+      <p>The South African family descends from <b>Boij Boijeszoon</b> — modernised to <b>Boy Booysen</b> —
+        who entered <b>Dutch East India Company</b> service giving his home as <b>Barlt, in Northern
+        Friesland, Schleswig-Holstein</b>, and settled at <b>Stellenbosch and Drakenstein</b> in the
+        mid-seventeenth century.</p>
+    </div>
+  </div>
+  <div class="note" style="margin-top:22px">
+    If that progenitor is right, then this family is <b>German or Frisian on the male line as well</b> —
+    and joins <b>Kolbe</b> of Württemberg, <b>Schleher</b>, and the German Lutheran community of Soho on
+    the female lines. <b>A family that reads as Afrikaans and English is, underneath, substantially
+    German.</b> <span class="chip inf">Inferred</span> The link from Gerthardus Lodewikus Booysen to Boy
+    Booysen is <b>not demonstrated in this archive</b>. <a href={u("/direct-line/")}>Where the line stops &rarr;</a>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The family could not spell it either</h2>
+  <p class="dek">These four spellings all appear inside this one family's records, sometimes among
+    brothers and sisters.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th>Spelling</th><th>Where it appears here</th></tr></thead>
+      <tbody>
+        <tr><td class="m"><strong>Booysen</strong></td><td>the parent name; used by Gerthardus Lodewikus, both Petrus Jacobuses, and most of the nineteenth-century siblings</td></tr>
+        <tr><td class="m"><strong>Booyzen</strong></td><td>Willem Hermanus from the name change onward; the whole line since</td></tr>
+        <tr><td class="m"><strong>Booÿsen</strong></td><td><strong>Frederik Fortsenatus Booÿsen</strong>, b. 1899 — with the diaeresis, the older Cape Dutch orthography, in the year the war began</td></tr>
+        <tr><td class="m"><strong>Kolbe-Booysen</strong></td><td>a compound recorded for Maria Jacoba Smit, who married David Kolbe Booyzen in 1921</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px">Within a single sibling group the tree records <b>Jacobus Nicolaas Booysen</b>
+    (b. 1840) and <b>Jacobus Nicolaas Booyzen</b> (b. 1841), both dying on <b>17 November 1882</b>. That is
+    almost certainly <b>one man entered twice</b> under two spellings — a small demonstration of how
+    easily this name splits. <a href={u("/disputed/")}>Disputed &rarr;</a></p>
+  <p class="cap">Sources: Forebears (Booyzen; Booysen), accessed 9 September 2026; Wikipedia,
+    <em>Booysen</em>; the MyHeritage tree <em>Defranceski Family Site (23andMe)</em>. Forebears figures are
+    modelled estimates from name-frequency data, not a census, and should be read as orders of magnitude.</p>
+</section>
+</Base>

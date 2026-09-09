@@ -1,0 +1,134 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const kids = [
+  ["John Gerson Eliezar “Jan”", "1822", "Uitenhage", ""],
+  ["Catherine Maria Sophia (Joubert)", "1825", "Graaff-Reinet", ""],
+  ["Margaretha Wilhelmina Elizabeth Mary (Barry)", "1826", "Graaff-Reinet", "the line to David"],
+  ["Augusta Louisa “Louise” (Werdmuller Von Elgg)", "1829", "Graaff-Reinet", ""],
+  ["Harriet Hachilah Machilah (Spiller)", "1831", "Philippolis, Orange Free State", "mission station"],
+  ["Mary Elizabeth Margaret Willemina (Enslin)", "1833", "Burgersdorp", ""],
+  ["John", "1834–1835", "—", "died an infant"],
+  ["Charlotte Felicia (twin) (Snook)", "1836", "Burgersdorp", "twin"],
+  ["George Augustus (twin)", "1836", "Burgersdorp", "twin"],
+  ["Frederik Fortunatus", "1839", "Bethulie, Orange Free State", "mission station"],
+  ["Keetor Peter Benjamin", "1840", "Colesberg", ""],
+  ["Johan Casimir “Casiner”", "1844", "Bethulie", "born the year his father died"],
+];
+---
+<Base title="The Kolbes"
+      eyebrow="Württemberg · Soho · the Nautilus · the Karoo"
+      dek="A German tailor's family in Bond Street, a boy married at sixteen and a settler at seventeen, a missionary's circuit through the Orange Free State, and a Karoo farm named for a country its owner had never seen.">
+
+<section class="blk">
+  <h2>George Augustus Kolbe, 1802–1844 — an 1820 Settler</h2>
+  <p class="dek">The family's research notes wonder whether John Augustus Barry was born at sea with the
+    1820 Settlers. He was not. But the family <em>does</em> have a documented settler, on the other side of
+    that marriage, and his record is unusually complete.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <tbody>
+        <tr><td style="width:11rem">Born</td><td>7 December 1802, <strong>Westminster St Anne, London</strong></td></tr>
+        <tr><td>Christened</td><td>2 February 1803, <strong>St Anne's, Soho</strong></td></tr>
+        <tr><td>Married</td><td><strong>20 January 1819, St Leonard's, Shoreditch</strong> — Margaret Georgina Elizabeth <strong>Downing</strong></td></tr>
+        <tr><td>Sailed</td><td><strong>Gravesend, 3 December 1819</strong>, on the ship <strong><em>Nautilus</em></strong>, in <strong>Thomas Owen's party</strong></td></tr>
+        <tr><td>Landed</td><td><strong>Algoa Bay, 14 April 1820</strong></td></tr>
+        <tr><td>Trades</td><td><strong>Reverend Missionary, London Missionary Society</strong> · <strong>Chemist</strong> · <strong>Tailor</strong></td></tr>
+        <tr><td>Died</td><td>1 December 1844, the farm <strong>"Wurtemburg"</strong>, field-cornetcy of Rhenosterberg, Knapdaar, district Colesberg</td></tr>
+        <tr><td>Buried</td><td>December 1844, <strong>Burgersdorp Old Cemetery</strong></td></tr>
+        <tr><td>Estate</td><td class="m"><strong>KAB: MOOC 6/9/35: 7698 (1845)</strong> — Cape Archives, Master's Office</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px">He was <b>sixteen</b> when he married at Shoreditch and <b>seventeen</b> when
+    he stepped ashore at Algoa Bay. His wife was about <b>fifteen</b>.</p>
+  <div class="note" style="margin-top:20px">
+    The burial record carries a note in Dutch: <em>"Zijn vrouw is later bijgezet in het graf"</em> —
+    <b>"his wife was later laid in the same grave."</b> She outlived him by twenty-three years and was
+    buried beside him at Burgersdorp.
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The children are a missionary's itinerary</h2>
+  <p class="dek">Not a settler farm but a circuit — and two of the stops are London Missionary Society
+    stations north of the Orange River.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:20rem">Child</th><th>Born</th><th>Place</th><th></th></tr></thead>
+      <tbody>{kids.map(([n, b, p, x]) => (
+        <tr><td>{n}</td><td class="m">{b}</td><td>{p}</td><td class="cap">{x}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:20px">
+    <p>The forenames are extraordinary — <b>Hachilah Machilah</b>, <b>Gerson Eliezar</b>, <b>Casimir</b>,
+      <b>Fortunatus</b>. They read exactly as a missionary's children's names should: scriptural, Latinate,
+      chosen rather than inherited.</p>
+    <p>And one of them travels. <b>Frederik Fortunatus Kolbe (1839)</b> becomes
+      <b>Frederick Fortunatus Barry (1863)</b> becomes <b>Frederik Fortsenatus Booÿsen (1899)</b> — one
+      name carried across three surnames and sixty years, degrading slightly at each handover.
+      <a href={u("/women/")}>The women &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Johan Gottlieb Kolbe, 1765–1845 — a tailor of Bond Street</h2>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <tbody>
+        <tr><td style="width:11rem">Born</td><td>1765, <strong>Württemberg, Germany</strong></td></tr>
+        <tr><td>Trade</td><td><strong>Tailor</strong>, of <strong>34 Conduit Street, Bond Street, Middlesex</strong></td></tr>
+        <tr><td>His will</td><td>written of <em class="m">"JOHN GOTTLOB KOLBE of Conduit Street … in the county of Middlesex Tailor"</em></td></tr>
+        <tr><td>Married</td><td>1793, London — <strong>Mary Larman</strong> (1768–1814)</td></tr>
+        <tr><td>Died</td><td>18 November 1845, <strong>34 Lamb's Conduit Street, London</strong></td></tr>
+        <tr><td>Buried</td><td><strong>St John the Baptist, Leamington, Warwickshire</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px">He appears under <b>three versions of his own name</b> — <em>Johan
+    Gottlieb</em>, <em>John Gottlob</em>, <em>John Paul</em>. That is what assimilation looks like in a
+    parish register. His eldest daughter married <b>George Kottlich Kohlbeck</b> at St Anne's Soho in 1811,
+    which suggests the family's German original was nearer <b>Kohlbeck</b> than <b>Kolbe</b>.</p>
+</section>
+
+<section class="blk">
+  <h2>German by burial, English by baptism</h2>
+  <div class="prose">
+    <p>The living children were christened at <b>St Anne's, Soho</b> — the Anglican parish. The dead were
+      not.</p>
+    <p>At least five of them were buried at <b>"St Marien's Children's Churchyard, The Strand"</b> — the
+      burial ground of the <b>German Lutheran church</b> in the Strand. <b>Charles Samuel</b> (1806–1807),
+      <b>Edward</b> (born and dead on 15 November 1808), <b>Frederick Charles</b> (d. 1809),
+      <b>Frederica Carolina</b> (1813–1814) and <b>John Henry</b> (d. 1832) are all recorded there — and so
+      is their mother <b>Mary Larman</b>, who died at St Marien's on 2 August 1814.</p>
+    <p>A family standing in both communities at once: Anglican for the living, German for the dead.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The detail that ties the two continents together</h2>
+  <blockquote>
+    A tailor's son from Bond Street sailed at seventeen, preached across the Orange River, and died in 1844
+    on a Karoo farm he had named <strong>Wurtemburg</strong> — after the German country his father left and
+    he had never seen.
+  </blockquote>
+  <p>He died three years before his own father, who was still alive at Lamb's Conduit Street in London.</p>
+  <div class="note" style="margin-top:22px">
+    <b>Not yet extracted.</b> MyHeritage holds <b>23 photographs</b> and <b>4 biographies</b> on George
+    Augustus Kolbe — by a wide margin the richest person in this ancestry — and <b>10 photographs</b> on
+    Johan Gottlieb. None has been pulled into this archive.
+    <a href={u("/open-questions/")}>Open questions &rarr;</a>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Seven moves in seven generations</h2>
+  <p class="dek">The whole route, end to end.</p>
+  <p style="font-family:var(--sans);font-size:15px;line-height:2;margin-top:14px">
+    <b>Württemberg</b> (1765) &rarr; <b>Soho and Bond Street, London</b> (1793–1819) &rarr;
+    <b><em>Nautilus</em>, Gravesend</b> (3 Dec 1819) &rarr; <b>Algoa Bay</b> (14 Apr 1820) &rarr;
+    <b>Uitenhage · Graaff-Reinet · Philippolis · Bethulie · Burgersdorp · Colesberg</b> (1822–1844) &rarr;
+    <b>Barkly East</b> (1859–1907) &rarr; <b>Johannesburg</b> (1900s) &rarr; <b>Brisbane</b>
+  </p>
+</section>
+</Base>

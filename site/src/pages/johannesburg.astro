@@ -1,0 +1,119 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const places = [
+  ["85 Rheeden Street, Forest Hill", "1946", "where the infant Gertrude Elizabeth Booyzen died, four days old"],
+  ["Forest Hill, Johannesburg", "1944", "where Anna Johanna Maria Pretorius died of an ectopic pregnancy, aged 38"],
+  ["Mayfair, Johannesburg", "1940", "where Kathleen Barry died, aged 81 — forty years after leaving the Cape"],
+  ["St Joseph's Catholic Church, Mayfair", "15 Jan 1949", "where Catherine Mary Sophia Booyzen married Nuno Fernando Lerena"],
+  ["West Park Cemetery, Johannesburg", "14 Dec 1947", "where George Downing Mountjoy Booyzen was buried, three days after his death"],
+  ["96 James Street, Germiston", "1941", "where Petrus Jacobus Pretorius died"],
+  ["Primrose Cemetery, Germiston", "1961", "where Margarietha Wilhelmina Elizabeth Barry was buried"],
+  ["Vereeniging", "30 Dec 1924", "where George and Anna married"],
+  ["Alberton", "2004", "where Pieter Carel Le Roux, Catherine's second husband, died"],
+];
+const drift = [
+  ["1884", "Cape Colony", "John Barry Booyzen"],
+  ["1885", "Barkly East", "Willem Hermanus Booyzen"],
+  ["1891", "Barkly East", "Catherine Mary Sophia Booyzen"],
+  ["1896", "Barkly East", "David Kolbe Booyzen"],
+  ["1901", "South Africa (unspecified)", "George Downing Mountjoy Booyzen"],
+  ["1907", "Barkley Oos, Kaap Provinsie", "David Schalk Booyzen — the last Cape birth"],
+  ["1925", "South Africa (unspecified)", "Willem Hermanus “Willy” Booyzen"],
+  ["1932", "Johannesburg", "Georgina Jeanette Booyzen — the first recorded Johannesburg birth"],
+  ["1934", "Johannesburg", "Petrus Jacobus “Piet” Booyzen"],
+];
+---
+<Base title="Johannesburg"
+      eyebrow="Forest Hill · Mayfair · Germiston · West Park"
+      dek="The testimony ends with a train and a pumpkin. This is what the record shows at the other end of that journey: a family that arrived from the Cape, settled in the southern and western suburbs, and buried most of itself there inside fifty years.">
+
+<section class="blk">
+  <h2>The move, as the birthplaces record it</h2>
+  <p class="dek">Nobody wrote down the date the family left the Cape. But children have to be born
+    somewhere, and the register moves.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th class="m">Year</th><th style="width:18rem">Birthplace</th><th>Child</th></tr></thead>
+      <tbody>{drift.map(([y, p, c]) => (
+        <tr><td class="m">{y}</td><td><strong>{p}</strong></td><td>{c}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:20px">
+    <p><span class="chip inf">Inferred</span> The last Cape birth is <b>1907</b>; the first recorded
+      Johannesburg birth is <b>1932</b>. The gap is wide, and two births in between are recorded only as
+      "South Africa" — so the record cannot date the move more closely than <b>somewhere between 1907 and
+      1932</b>.</p>
+    <p>That is a much looser bracket than the testimony implies. The story says the family went to
+      Johannesburg <b>"after the war"</b> — that is, from 1902. If so, the 1907 birth at <b>Barkley Oos</b>
+      means either they went and came back, or they left later than the story remembers.</p>
+    <p>What the record does show plainly is <b>Kathleen Barry dying at Mayfair in 1940</b>. She was born at
+      Barkly East in 1859 and buried out of a Johannesburg suburb eighty-one years later.
+      <b>She made the journey.</b></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The addresses</h2>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:19rem">Place</th><th class="m">When</th><th></th></tr></thead>
+      <tbody>{places.map(([p, w, x]) => (
+        <tr><td><strong>{p}</strong></td><td class="m">{w}</td><td>{x}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <p class="cap">Every one of these comes from a FamilySearch-cited record in the MyHeritage tree —
+    Transvaal and Johannesburg civil registration, and Randburg burial records. The citations are on
+    <a href={u("/sources/")}>Sources</a>.</p>
+</section>
+
+<section class="blk">
+  <h2>Mayfair closes a circle</h2>
+  <blockquote>
+    <strong>Kathleen Barry died at Mayfair in September 1940.</strong> Nine years later, in January 1949,
+    her granddaughter and namesake <strong>Catherine Mary Sophia Booyzen</strong> married at
+    <strong>St Joseph's Catholic Church, Mayfair</strong>.
+  </blockquote>
+  <p style="margin-top:16px">The family that came off the train stayed in one part of the city. And a
+    Dutch Reformed family out of the Karoo — Kathleen Barry was married in the DRC, her mother christened
+    in it at Graaff-Reinet — put its granddaughter's wedding in a <b>Catholic</b> church, because she was
+    marrying an Argentine-descended Catholic named <b>Lerena</b>.
+    <span class="cap">That marriage is the hinge between this archive and <em>The Lerena Archive</em>.</span></p>
+</section>
+
+<section class="blk">
+  <h2>Three years that emptied a house</h2>
+  <div class="prose">
+    <p><b>26 February 1944.</b> Anna Johanna Maria Pretorius dies at Forest Hill of an ectopic pregnancy,
+      aged 38. Six children survive her; Catherine is fourteen.</p>
+    <p><b>11–15 May 1946.</b> A daughter, Gertrude Elizabeth, is born to George's second wife at
+      <b>85 Rheeden Street, Forest Hill</b>, and dies four days later.</p>
+    <p><b>11 May 1947.</b> A second daughter, also Gertrude Elizabeth, is recorded born, and dies within
+      the year. <span class="chip inf">Unverified</span></p>
+    <p><b>11 December 1947.</b> George Downing Mountjoy Booyzen dies at <b>85 Rheeden Street</b>, aged
+      <b>46 years and 6 months</b>. He is buried at <b>West Park Cemetery</b> three days later, on
+      14 December. <span class="chip doc">Documented</span> His death notice gives his employer as the
+      <b>South African Railways and Harbours</b>. <a href={u("/documents/")}>The document &rarr;</a></p>
+    <blockquote>Catherine Mary Sophia Booyzen was <strong>seventeen years old and had no parents</strong>.
+      Two years later she was married at St Joseph's, Mayfair.</blockquote>
+    <p>She lived another sixty-four years, buried a husband in 1971 and a second in 2004, buried two of her
+      own five children — <b>Catherine Tersia in 1999</b> and <b>Paul Raymond on Christmas Eve 2000</b> —
+      and died in Johannesburg on <b>Christmas Day 2013</b>, aged 84.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What has not been searched</h2>
+  <p>The testimony says <b>"the boys initially all got jobs on the mines."</b> That is the one part of the
+    Johannesburg story with an obvious documentary home and no work done on it: Witwatersrand mining
+    company employment registers, and the Rand's own trade directories.</p>
+  <div class="note" style="margin:18px 0">
+    <b>One generation down, it was the railways.</b> George's 1947 death notice gives his employer as
+    <b>S.A.R. &amp; H.</b> — the South African Railways and Harbours. The mines belong to the generation
+    that came off the train, not to his. <a href={u("/documents/")}>The documents &rarr;</a>
+  </div>
+  <p><b>West Park Cemetery</b> holds George. Kathleen Barry's Mayfair burial place is not recorded at all,
+    and Anna Pretorius's is given only as "Johannesburg". Both are findable.
+    <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+</section>
+</Base>

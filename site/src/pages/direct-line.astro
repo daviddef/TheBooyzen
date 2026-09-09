@@ -1,0 +1,114 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const line = [
+  ["7", "Gerthardus Lodewikus Booysen", "—", "—", "Magdelena Elisabeth De Beer (1754–1843)", "no dates, no parents — the frontier"],
+  ["6", "Petrus Jacobus Booysen", "c. 21 Sep 1788, Graaff-Reinet", "1 Sep 1876, Rustenburg", "Anna Maria van der Merwe (1785 – bef. Mar 1825), m. 1805 Graaff-Reinet", "married at about seventeen; died in the Transvaal"],
+  ["5", "Petrus Jacobus Booysen", "10 May 1812, Graaff-Reinet", "1884 (probate)", "Johanna Catharina Mountjoy (1819–1863), m. 4 Nov 1838 Cradock", "died fifteen years before the war began"],
+  ["4", "Willem Hermanus “William Henry” Booyzen", "4 May 1851, Cradock", "13 Sep 1905, Indwe — DOCUMENTED", "Catherine Maria Sophia “Kathleen” Barry (1859–1940), m. 22 Dec 1879", "farmer in 1879, mason in 1905; died of a stomach ulcer"],
+  ["3", "George Downing Mountjoy Booyzen", "1 Jun 1901, Cape Province", "11 Dec 1947, Forest Hill — buried West Park 14 Dec", "Anna Johanna Maria Pretorius (1905–1944), m. 30 Dec 1924 Vereeniging", "S.A.R. &amp; H.; married his first cousin once removed"],
+  ["2", "Catherine Mary Sophia Booyzen", "25 Mar 1929", "25 Dec 2013, Johannesburg", "Nuno Fernando Lerena (1924–1971), m. 15 Jan 1949, St Joseph’s, Mayfair", "orphaned at seventeen; the hinge to the Lerena archive"],
+];
+const sibs = [
+  ["Willem Hermanus “Willy”", "15 Oct 1925", "1996"],
+  ["Margaretha Wilhelmina Elizabeth “Maggie”", "1 Oct 1926", "1966"],
+  ["Catherine Mary Sophia", "25 Mar 1929", "25 Dec 2013"],
+  ["Anna Johanna Maria (Vermaak)", "12 Oct 1930", "deceased"],
+  ["Georgina Jeanette (Boshoff)", "22 Sep 1932, Johannesburg", "deceased"],
+  ["Petrus Jacobus “Piet”", "10 Jan 1934, Johannesburg", "2003"],
+  ["Gertrude Elizabeth", "11 May 1946", "15 May 1946 — four days"],
+  ["Gertrude Elizabeth", "11 May 1947", "1947"],
+];
+---
+<Base title="The line"
+      eyebrow="Seven generations, and where they stop"
+      dek="From David Defranceski's grandmother back to a man with no dates and no parents. The descent is continuous and the tree is unusually well sourced — but it ends abruptly, and two links inside it are in dispute.">
+
+<section class="blk">
+  <h2>The descent</h2>
+  <p class="dek">Generations counted upward from David Defranceski. His mother
+    <strong>Cheryl Anne Lerena</strong> (b. 1955) is living and is omitted from this build, as he is.</p>
+  <div class="scroll" style="margin-top:20px">
+    <table>
+      <thead><tr><th class="m">Gen</th><th style="width:15rem">Name</th><th>Born</th><th>Died</th><th>Married</th></tr></thead>
+      <tbody>
+        {line.map(([g, n, b, d, m, note]) => (
+          <tr>
+            <td class="m">{g}</td>
+            <td><strong>{n}</strong><div class="cap" style="margin-top:4px">{note}</div></td>
+            <td class="m">{b}</td>
+            <td class="m">{d}</td>
+            <td>{m}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="cap">All from the MyHeritage tree <em>Defranceski Family Site (23andMe)</em>, read 9 September
+    2026. Most dates there carry a FamilySearch citation to Dutch Reformed Church registers or to Cape and
+    Transvaal probate records; those citations are listed on <a href={u("/sources/")}>Sources</a>.</p>
+</section>
+
+<section class="blk">
+  <h2>Where it stops, and why that is the whole problem</h2>
+  <div class="prose">
+    <p><b>Gerthardus Lodewikus Booysen has no birth date, no death date, no father and no mother.</b>
+      MyHeritage offers the buttons "Add father" and "Add mother", and there is nothing behind them. Seven
+      generations up, the male line simply ends.</p>
+    <p>What can be said is arithmetic rather than evidence. His wife <b>Magdelena Elisabeth De Beer</b> was
+      born in <b>1754</b> and his son in <b>1788</b>. He was therefore probably born somewhere around
+      <b>1745–1760</b> — which places him precisely in the generation that would connect to the
+      documented Cape progenitor of the surname.</p>
+    <p>That progenitor is known independently of this family. <b>Boij Boijeszoon</b> — in modern spelling
+      <b>Boy Booysen</b> — came into Dutch East India Company service from <b>Barlt, in Northern
+      Friesland, Schleswig-Holstein</b>, and settled at Stellenbosch and Drakenstein in the mid-seventeenth
+      century. <span class="chip inf">Inferred</span> Every South African Booysen is presumed to descend
+      from him. <b>This family's link to him is not demonstrated here, and must not be assumed.</b>
+      <a href={u("/name/")}>The name &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Two links inside the line are in dispute</h2>
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel">
+      <h3 style="margin-top:0">Willem Hermanus — now settled</h3>
+      <p><span class="chip doc">Documented</span> The tree doubted its own date. The
+        <b>1905 death registration</b> confirms it: he died at <b>Doorn Street, Indwe, on 13 September
+        1905</b>, of a <b>stomach ulcer</b> after fourteen months' illness. His son <b>David Schalk,
+        recorded born 1907</b>, therefore still cannot be his — that child, not the date, is the error.
+        <a href={u("/documents/")}>The document &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Johanna Catharina died when?</h3>
+      <p>Her death at <b>Zevenfontein on 19 May 1863</b> is supported by a probate record. But
+        <b>Izak (1864)</b> and <b>Stephanus Francois (1875)</b> are both recorded as her sons. They cannot
+        be. <span class="chip inf">Inferred</span> Petrus Jacobus almost certainly
+        <b>remarried, and the second wife is missing from the tree entirely.</b></p>
+    </div>
+  </div>
+  <p style="margin-top:18px">Neither breaks the descent to David — both sit on side branches — but both
+    are warnings about how the tree was assembled. <a href={u("/disputed/")}>The full list &rarr;</a></p>
+</section>
+
+<section class="blk">
+  <h2>Catherine's brothers and sisters</h2>
+  <p class="dek">The children of George Downing Mountjoy Booyzen — six by Anna Pretorius, then two by
+    Gertruida Kinnear.</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:22rem">Name</th><th>Born</th><th>Died</th></tr></thead>
+      <tbody>{sibs.map(([n, b, d]) => (<tr><td>{n}</td><td class="m">{b}</td><td class="m">{d}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <div class="note" style="margin-top:22px">
+    Read the last two rows slowly. After Anna died in February 1944, George remarried. A daughter
+    <b>Gertrude Elizabeth</b> was born on <b>11 May 1946</b> and died four days later at
+    <b>85 Rheeden Street, Forest Hill</b>. A second daughter, also <b>Gertrude Elizabeth</b>, is recorded
+    born on <b>11 May 1947</b> and dead the same year. The repetition of the exact date needs checking; it
+    may be a duplicated record rather than a second child — and George's own death notice, signed in
+    February 1948, records <b>"no children of last marriage"</b>, consistent with both infants having died
+    before him. Either way, the household lost a mother, two infants and a father inside four years.
+  </div>
+</section>
+</Base>

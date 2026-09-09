@@ -1,0 +1,150 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const stats = [
+  ["646", "people in the whole world carry the spelling Booyzen — against 53,764 Booysens", "/name/"],
+  ["1820", "the Nautilus lands at Algoa Bay with a seventeen-year-old London tailor's son aboard", "/kolbe/"],
+  ["550", "men of Barkly East and Dordrecht went out as Cape Rebels before Stormberg", "/rebels/"],
+  ["4", "Barry–Booyzen marriages across three generations — the tree folds back on itself", "/cousins/"],
+  ["7", "generations up, the male line stops at a man with no dates and no parents", "/direct-line/"],
+  ["1905", "the year both spellings appear on one sheet of paper — father Booysen, son Booyzen", "/documents/"],
+];
+---
+<Base title="The Booyzen Archive"
+      eyebrow="Graaff-Reinet · Cradock · Barkly East · Johannesburg · Brisbane"
+      dek="A Cape Dutch family that kept marrying British women, changed one letter of its name in a war, and came off the train at Johannesburg with nothing."
+      bare={true}>
+
+<section class="opener">
+  <div class="lab">A family history, kept honestly</div>
+  <h1 style="font-size:clamp(30px,4.4vw,50px);line-height:1.1;margin:14px 0 18px">
+    One letter of this surname was changed on purpose, and the reason was a war.
+  </h1>
+  <p class="lede">
+    This archive was built for <b>David Defranceski</b>, born in Johannesburg, living in Brisbane. It runs
+    backwards from his grandmother <b>Catherine Mary Sophia Booyzen</b> (1929–2013) — who married
+    <b>Nuno Fernando Lerena</b> at St Joseph's, Mayfair, in 1949 — into the north-eastern Cape: to
+    <b>Barkly East</b> and <b>Dordrecht</b>, to <b>Cradock</b> and <b>Graaff-Reinet</b>, and out again to
+    <b>Württemberg</b>, to <b>Soho</b>, and to a <b>County Cork</b> that may or may not be real.
+  </p>
+  <p class="lede" style="margin-top:14px">
+    It is a public archive with one rule: <b>the living are left out</b> — omitted, not hidden. And a
+    second rule, which is harder: every claim says how well it is known.
+    <span class="chip doc" style="padding:2px 8px;font-size:10px">Documented</span>
+    <span class="chip inf" style="padding:2px 8px;font-size:10px">Inferred</span>
+    <span class="chip lore" style="padding:2px 8px;font-size:10px">Family lore</span>
+  </p>
+
+  <div class="doors">
+    <a class="door" href={u("/name/")}>
+      <div class="dn">Why <em>Booyzen</em>, not <em>Booysen</em></div>
+      <div class="dd">The family says the spelling was changed in the Anglo-Boer War to avoid being taken
+        for men who fought on the British side. The surname statistics agree with them.</div>
+      <div class="go">The name &rarr;</div>
+    </a>
+    <a class="door" href={u("/rebels/")}>
+      <div class="dn">Read the testimony</div>
+      <div class="dd">A farm burned, a man shot, women and children in a camp, and a train to Johannesburg
+        with nothing but a pumpkin. Seven claims, tested one at a time.</div>
+      <div class="go">The rebels &rarr;</div>
+    </a>
+    <a class="door" href={u("/documents/")}>
+      <div class="dn">Read the documents</div>
+      <div class="dd">Four civil records the family tree had carried for years without anyone transcribing
+        them. They corrected three dates, killed one legend, and caught the surname changing.</div>
+      <div class="go">The documents &rarr;</div>
+    </a>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What the family remembers, and how it has held up</h2>
+  <p class="dek">One long piece of testimony sits at the centre of this archive — recorded on the family
+    tree from <b>Tersia Booyzen</b>, told to her by her father. It carries seven separate claims. None of
+    them has yet been proved. Two are already in trouble, and three now have strong circumstantial
+    support that did not exist before this archive was built.</p>
+  <div class="scroll" style="margin-top:22px">
+    <table>
+      <thead><tr><th style="width:17rem">The claim</th><th>Where it stands</th></tr></thead>
+      <tbody>
+        <tr><td><strong>The family were Cape Rebels</strong></td>
+          <td><span class="chip inf">Strongly supported, unproved</span> They lived at
+            <strong>Barkly East and Dordrecht</strong> — the districts that produced roughly
+            <strong>550 rebel combatants</strong> before the Battle of Stormberg, and a rebel commando of
+            their own. No Booysen has yet been found on a rebel roll.
+            <a href={u("/rebels/")}>The rebels &rarr;</a></td></tr>
+        <tr><td><strong>The spelling was changed to avoid the "joiners"</strong></td>
+          <td><span class="chip doc">The change is on paper</span> On the <strong>1905 death form the
+            clerk writes Boo<em>y</em>sen and the dead man's son signs Boo<em>y</em>zen</strong>, four lines
+            apart. The <em>motive</em> remains testimony — and the groom's own 1879 signature may already
+            show a z, which would move the break back twenty years.
+            <a href={u("/documents/")}>The documents &rarr;</a></td></tr>
+        <tr><td><strong>A forebear was shot and killed by the British</strong></td>
+          <td><span class="chip lore">Disproved for both candidates</span> Petrus Jacobus died in
+            <strong>1884</strong>, fifteen years before the war. And <strong>Willem Hermanus died of an
+            ulcer of the stomach</strong> at Indwe on 13 September 1905, after fourteen months' illness,
+            under a doctor's care — the death registration has now been read. Whoever the story means,
+            <strong>it is neither of them</strong>. <a href={u("/documents/")}>The document &rarr;</a></td></tr>
+        <tr><td><strong>The farm was burned out</strong></td>
+          <td><span class="chip inf">One new piece of evidence</span> He is a <strong>Boer</strong> —
+            farmer, of Lady Grey — at his marriage in 1879, and a <strong>Mason</strong> at his death in
+            1905. A man who works land and then works stone has often lost the land, and the war sits in
+            that interval. Circumstantial, and the first support this claim has ever had.
+            <a href={u("/documents/")}>The documents &rarr;</a></td></tr>
+        <tr><td><strong>The women and children were put in a concentration camp</strong></td>
+          <td><span class="chip lore">Untested</span> Camp registers survive and are indexed. Nobody has
+            searched them for this family yet. <a href={u("/open-questions/")}>Open questions &rarr;</a></td></tr>
+        <tr><td><strong>They came to Johannesburg and the boys went onto the mines</strong></td>
+          <td><span class="chip inf">Half-confirmed</span> The birthplaces move from <strong>Barkly
+            East</strong> (to 1907) to <strong>Johannesburg</strong> (from 1932), and the family is at
+            <strong>Forest Hill</strong> and <strong>Mayfair</strong> by the 1940s. But no mine record has
+            been found, and one generation down the employer is documented as the
+            <strong>South African Railways and Harbours</strong>.
+            <a href={u("/johannesburg/")}>Johannesburg &rarr;</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Six numbers</h2>
+  <div class="grid g3" style="margin-top:24px">
+    {stats.map(([n, l, h]) => (
+      <a class="cardlink" href={u(h)}>
+        <div class="nm" style="font-variant-numeric:tabular-nums">{n}</div>
+        <div class="txt">{l}</div>
+      </a>
+    ))}
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The shape of it</h2>
+  <div class="prose">
+    <p>Strip the archive to one sentence and it is this: <b>a Cape Dutch male line that married British
+      women for three generations running</b>, and then, in one war, chose a spelling that put it on the
+      Boer side of a family argument.</p>
+    <p>The men are Booysen — <b>Gerthardus Lodewikus</b>, then four <b>Petrus Jacobuses</b>, then
+      <b>Willem Hermanus</b>, at Graaff-Reinet and Cradock and Barkly East. The women are not.
+      <b>Mountjoy</b> (1838). <b>Barry</b> (1879). <b>Kinnear</b> (1940s). Behind the Barrys,
+      <b>Kolbe</b> — a German tailor's family out of Soho who sailed as <b>1820 Settlers</b> and named a
+      Karoo farm <em>Wurtemburg</em>. Behind the Kolbes, <b>Downing</b>.</p>
+    <p>That is why David Defranceski's great-grandfather, born on a farm in the Eastern Cape in 1901, was
+      christened <b>George Downing Mountjoy Booyzen</b>. Every one of those forenames is a woman's
+      surname. <a href={u("/women/")}>The women &rarr;</a></p>
+    <p>And it is why the tree folds back on itself: in 1924 <b>George married his own first cousin once
+      removed</b>, so his daughter Catherine descends from one Barry–Kolbe couple twice over.
+      <a href={u("/cousins/")}>The cousin marriage &rarr;</a></p>
+  </div>
+  <div class="note" style="margin-top:26px">Corrections are the most valuable thing anyone can send. A
+    family member with a date, a photograph of a document, or a flat contradiction of something written
+    here will change this archive, and the change will be recorded rather than quietly made.</div>
+</section>
+
+<section class="blk">
+  <h2>Sibling archives</h2>
+  <p class="dek">Same method, same author. <b>The Defranceski</b> (Istria), <b>The Falco</b> (Arienzo,
+    Campania) and <b>The Lerena</b> (Rosario, the Cape, Brisbane). Catherine Mary Sophia Booyzen's
+    marriage to Nuno Fernando Lerena in 1949 is the hinge between this archive and that one.</p>
+</section>
+</Base>

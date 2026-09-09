@@ -1,0 +1,95 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+---
+<Base title="Method"
+      eyebrow="How to read this archive"
+      dek="Every claim here carries a label saying how well it is known. The labels are the point: an archive that presents testimony and documents in the same voice is not a history, it is a story with footnotes.">
+
+<section class="blk">
+  <h2>The five labels</h2>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:11rem">Label</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td><span class="chip doc">Documented</span></td>
+          <td>A named source with a reference, and where possible the scan. Most of this archive's
+            documented claims trace to <strong>Dutch Reformed Church registers</strong> and to
+            <strong>Cape and Transvaal probate records</strong>, cited by FamilySearch ark.</td></tr>
+        <tr><td><span class="chip inf">Inferred</span></td>
+          <td>A reasoned conclusion drawn from documented facts, with the reasoning written out so it can be
+            overturned. The cousin marriage, the reading of the surname distribution, and the identification
+            of the 1820 Settler are all inferences.</td></tr>
+        <tr><td><span class="chip lore">Family lore</span></td>
+          <td>Told, remembered, not corroborated. Kept because it is precious; labelled because pretending
+            otherwise is how family myths become family history.</td></tr>
+        <tr><td><span class="chip inf">Superseded</span></td>
+          <td>Asserted in the family record, and now displaced by a document that says otherwise.</td></tr>
+        <tr><td><span class="chip" style="border-color:var(--terra);color:var(--terra)">Disputed</span></td>
+          <td>Asserted somewhere in the record and contradicted somewhere else in it. Every one is listed.
+            <a href={u("/disputed/")}>Disputed &rarr;</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The living are left out</h2>
+  <div class="prose">
+    <p><b>Living people are omitted from this build entirely</b> — not hidden, not gated, not present in
+      the output.</p>
+    <p>Because this line reaches the present within three generations of Catherine Mary Sophia Booyzen,
+      that removes a large part of the story from public view. <b>Cheryl Anne Lerena</b>, David
+      Defranceski's mother, appears only as a name and a birth year where the descent cannot be explained
+      without her. Her siblings' living descendants do not appear at all.</p>
+    <p>A removal request is honoured within days, without argument and without requiring a reason.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Where this one starts</h2>
+  <div class="prose">
+    <p>Unusually well. The <b>Lerena</b> archive began with almost nothing documented. This one begins with
+      a MyHeritage tree of <b>15,643 people</b> in which the Booyzen line is already carried back
+      <b>seven generations</b>, and in which a large proportion of births, marriages and deaths already
+      carry a <b>FamilySearch citation to an original register</b>.</p>
+    <p>That changes the job. The work here is not to find the family. It is to <b>test what has been
+      assembled</b> — because a tree that good will be believed, and parts of it are wrong.</p>
+    <p>So this archive did three things the tree does not do:</p>
+    <ul style="font-family:var(--sans);font-size:15px;line-height:1.7;padding-left:22px">
+      <li><b>Listed every contradiction</b> rather than choosing between them silently.</li>
+      <li><b>Tested the family testimony against outside evidence</b> — surname distribution, Cape Rebel
+        district figures, the 1820 Settler record — instead of repeating it.</li>
+      <li><b>Named what has not been searched</b>, so the gaps are visible.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What "verified" on the tree does and does not mean</h2>
+  <p>Many people in the source tree carry a tick and a star. Those are <b>MyHeritage interface marks</b> —
+    confirmed Smart Matches and direct-ancestor flags. <b>They are not source citations</b>, and this
+    archive does not treat them as evidence. A Smart Match means another user's tree agrees; it does not
+    mean a register does.</p>
+  <p>Where this archive says <span class="chip doc">Documented</span>, there is a named record behind it,
+    listed on <a href={u("/sources/")}>Sources</a>.</p>
+</section>
+
+<section class="blk">
+  <h2>On quotation</h2>
+  <p>The family's own testimony is quoted in full, because it is the family's and because paraphrasing it
+    would smooth away exactly the details that make it testable. A long passage on Kitchener's clearance
+    policy also sits in the source tree, copied there from a published history of the war; that passage is
+    <b>summarised and not reproduced</b>, and its presence is reported as evidence of what the family
+    believed rather than as evidence of what happened to them.
+    <a href={u("/rebels/")}>The rebels &rarr;</a></p>
+</section>
+
+<section class="blk">
+  <h2>Sibling archives</h2>
+  <p class="dek">Same method, same author: <b>The Defranceski</b> (Istria), <b>The Falco</b> (Arienzo,
+    Campania), <b>The Lerena</b> (Rosario, the Cape, Brisbane). The marriage of
+    <b>Catherine Mary Sophia Booyzen</b> to <b>Nuno Fernando Lerena</b> at Mayfair in 1949 is the hinge
+    between this archive and the Lerena one.</p>
+</section>
+</Base>

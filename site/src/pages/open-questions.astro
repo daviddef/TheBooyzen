@@ -1,0 +1,66 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const q = [
+  ["0", "Who were Gerthardus Lodewikus Booysen's parents?", "The male line stops dead seven generations up: no dates, no father, no mother. Everything before it is presumed rather than shown.", "Cape Dutch Reformed Church baptism registers for Graaff-Reinet and Paarl, 1740–1790; the published Suid-Afrikaanse Geslagsregisters (SAG) Booysen genealogy; the estate papers (MOOC) of Magdelena Elisabeth De Beer, d. 1843.", "Blocking"],
+  ["1", "Is there a Booysen on a Cape Rebel roll?", "The whole rebel narrative rests on testimony. The family lived in the right districts; no individual has been placed.", "The three-volume Cape Rebel registers (c. 15,433 names); Special Tribunal and military court records from October 1900; the Barkly East and Dordrecht commando rolls.", "High"],
+  ["2", "Who was “Commandant D. Schoeman”?", "The family married in his house at “Caerlaverock”, Barkly East, in July 1901. A Commandant D. Schoeman led ~400 rebels at Labuschagne's Nek in March 1900. The bride's mother was a Schoemann.", "Rebel commandant lists; the Barkly East district treason files; the marriage register entry itself, which should name witnesses.", "High"],
+  ["3", "Were the women and children in a camp?", "The single most answerable claim in the testimony, and nobody has looked.", "Anglo-Boer War concentration camp registers, indexed by name — searching Booysen, Booyzen and Barry for Kathleen Barry (b. 1859) and children born 1884–1899.", "High"],
+  ["4", "Is the letter in the 1879 signature a z or an s?", "The clerk wrote Booysen. The groom appears to have signed Booijzen. If he did, the z predates the Anglo-Boer War by twenty years and the joiners are a remembered motive rather than the original one. ANSWERED in part: his 1905 death is now documented — ulcer of the stomach, Indwe, 13 September 1905.", "The ORIGINAL 1879 marriage register at the Cape Archives, not the duplicate; and an eye trained on nineteenth-century Cape Dutch hands. The magnified image is on The documents page.", "High"],
+  ["5", "Was John Augustus Barry Irish, English, or born at sea?", "PARTLY ANSWERED. The 1915 death notice is now read: it types his birthplace as “At sea (exact whereabouts unknown), British” and his mother as “born Neagle”. What remains is the other two documents, and the question of who his parents actually were.", "The two 1903 death certificates named in the tree note; Cape Mounted Rifles records at Johnson’s Leap; Cork Nagle/Neagle baptisms around 1819; passenger lists 1819–1820. Also new: why a farm in Barkly East is called MANOROWEN, a village in Pembrokeshire, Wales.", "High"],
+  ["6", "Break the John Barry (1796–1853) conflation.", "One profile holds a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape.", "The 1841 and 1851 England censuses for Holly Bower, Bilsdale; St Hilda's Bilsdale burial register; the Cape death record for de Bruins Poort. Separate them and see which, if either, is the father.", "High"],
+  ["7", "Who was Petrus Jacobus Booysen's second wife?", "Johanna Catharina Mountjoy died in 1863, yet Izak (1864) and Stephanus Francois (1875) are recorded as her sons. The same pattern appears a generation earlier with Anna Maria van der Merwe.", "Cape marriage registers for Cradock and Middelburg, 1863–1875; the 1884 estate file of Petrus Jacobus Booysen, which should name a surviving widow.", "Medium"],
+  ["8", "Extract the remaining photographs and biographies.", "PARTLY DONE. Two profiles were extracted on 9 September 2026 — George Downing Mountjoy Booyzen (12) and Willem Hermanus Booyzen (8) — and they turned out to hold civil records, not snapshots. Still untouched: George Augustus Kolbe (23 photos + 4 biographies), Johan Gottlieb Kolbe (10), Anna Pretorius (9), Margarietha Barry (9), Kathleen Barry (8), John Augustus Barry (6), Margaretha Kolbe (6), and six already-downloaded images not yet read.", "The MyHeritage photo pages for each profile; each individual photo page carries a full-resolution original in its embedded JSON.", "High"],
+  ["9", "Confirm the 1820 Settler voyage independently.", "The Nautilus, Owen's party, Gravesend 3 December 1819, Algoa Bay 14 April 1820 — all from the tree, none yet checked against a settler list.", "The published 1820 Settler party lists and ship rolls; Colonial Office settler papers.", "Medium"],
+  ["10", "Did the boys work on the mines?", "The last line of the testimony, and the least investigated.", "Witwatersrand mining company employment registers; Johannesburg trade directories and street directories, 1905–1935, for Booyzen at Forest Hill and Mayfair.", "Medium"],
+  ["11", "Find the farm.", "Strengthened. He is a BOER — farmer, of Lady Grey — at his marriage in 1879, and a MASON at his death in 1905. Something took the land away in between. No farm has yet been identified for the Booyzens; three farm names are known in the wider family: MANOROWEN (Barry, Barkly East — and he owned no immovable property), CAERLAVEROCK (Schoeman, Barkly East) and WURTEMBURG (Kolbe, Colesberg).", "Cape deeds and quitrent records for Barkly East, Lady Grey and Wodehouse; post-war compensation claims and farm-burning returns.", "High"],
+];
+---
+<Base title="Open questions"
+      eyebrow="Twelve — two of them now partly answered"
+      dek="Everything this archive knows it does not know, with the specific record set that would answer each. Nothing here is rhetorical — every line names somewhere to look.">
+
+<section class="blk">
+  <h2>The queue</h2>
+  {q.map(([n, title, why, where, pri]) => (
+    <div class="panel" style="margin-top:16px">
+      <div class="lab">
+        <span class="m">§ {n}</span> · {pri === "Blocking" ? "Blocking" : pri + " priority"}
+      </div>
+      <h3 style="margin:8px 0 10px">{title}</h3>
+      <p style="font-size:16px">{why}</p>
+      <p class="cap" style="margin-top:12px"><strong>Where to look:</strong> {where}</p>
+    </div>
+  ))}
+</section>
+
+<section class="blk">
+  <h2>Archives identified and not yet worked</h2>
+  <div class="prose">
+    <p><b>NAAIRS</b> — the National Automated Archival Information Retrieval System, South Africa. The
+      single most important unopened door: it indexes <b>Cape (KAB) and Transvaal (TAB) estate files and
+      death notices</b>, which is where a death notice for Willem Hermanus Booyzen would be found.</p>
+    <p><b>Cape Archives (KAB), Master's Office (MOOC)</b> — one reference is already in hand:
+      <span class="m">MOOC 6/9/35: 7698 (1845)</span>, the estate of George Augustus Kolbe. It has not been
+      ordered or read.</p>
+    <p><b>The Dutch Reformed Church registers</b> for Graaff-Reinet, Cradock, Colesberg, Burgersdorp,
+      Dordrecht and Barkly East — already the backbone of the tree's citations, but read only where
+      FamilySearch has indexed them.</p>
+    <p><b>Anglo-Boer War records</b> — camp registers, Cape Rebel registers, Special Tribunal files, the
+      list of the 44 executed for high treason, and the National Scouts rolls that would test the "joiners"
+      half of the story.</p>
+    <p><b>FindMyPast and FamilySearch</b> — both hold transcripts already cited in the tree (one FindMyPast
+      transcript reference, <span class="m">R_177176049779</span>, is recorded against the 1812 birth) and
+      neither has been systematically searched for this surname.</p>
+  </div>
+  <div class="note" style="margin-top:24px">
+    <b>The last version of this page said one document would change more than any amount of further
+    reasoning — the death record of Willem Hermanus Booyzen. It was found, and it did.</b> It gave a date
+    (13 September 1905), a place (Doorn Street, Indwe), a cause (ulcer of the stomach, fourteen months), an
+    occupation (mason), an informant (his eldest son), and — four lines apart on one page — <b>both
+    spellings of the surname</b>. <a href={u("/documents/")}>The documents &rarr;</a><br /><br />
+    It had been sitting in the family tree's own photo store, unread, the whole time. That is the lesson
+    worth keeping: <b>look at what you already have before you go looking for more.</b>
+  </div>
+</section>
+</Base>

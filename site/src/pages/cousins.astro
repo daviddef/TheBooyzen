@@ -1,0 +1,104 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+const marriages = [
+  ["Catherine Maria Sophia “Kathleen” Barry (1859–1940)", "Willem Hermanus Booyzen (1851–1905)", "22 Dec 1879", "the direct line"],
+  ["— withdrawn —", "—", "—", "the tree\u2019s separate \u201cKathleen Mary Barry (Booysen)\u201d is the same woman as row one; John Barry\u2019s 1915 death notice lists only one Barry daughter married to a Boyson"],
+  ["Dorothea Regina Barry (1892–1956)", "Henry James Booyzen (1887–1956)", "17 Jul 1912, Elliot", "her father is Hendrik Nicholaas Barry; his mother is Kathleen Barry"],
+  ["Anna Johanna Maria Pretorius (1905–1944), via her Barry mother", "George Downing Mountjoy Booyzen (1901–1947)", "30 Dec 1924, Vereeniging", "the cousin marriage"],
+];
+const tree = `        John Augustus Barry I (1819-1903)  ===  Margaretha W. E. M. Kolbe (1826-1912)
+                          |                                  |
+      +-------------------+--------------+-------------------+
+      |                                  |
+Catherine Maria Sophia            Hendrik Nicholaas Barry (1857-1931)
+"Kathleen" Barry (1859-1940)       ===  Anna Johanna Maria Schoemann (1859-1923)
+ === Willem Hermanus Booyzen                |
+     (1851-1905)                            |
+      |                            Margarietha W. E. Barry (1880-1961)
+      |                             ===  Petrus Jacobus Pretorius (1878-1941)
+      |                                    |
+GEORGE DOWNING MOUNTJOY  ==============  ANNA JOHANNA MARIA
+ BOOYZEN (1901-1947)                      PRETORIUS (1905-1944)
+                         |
+                m. 30 December 1924
+                    Vereeniging
+                         |
+        CATHERINE MARY SOPHIA BOOYZEN (1929-2013)`;
+---
+<Base title="The cousin marriage"
+      eyebrow="Two descents from one couple"
+      dek="When George Booyzen married Anna Pretorius at Vereeniging in 1924, they were not strangers who happened to share a district. They were cousins — and their marriage folds the family tree back on itself.">
+
+<section class="blk">
+  <h2>The two descents</h2>
+  <div class="scroll" style="margin-top:12px">
+    <pre class="mono" style="line-height:1.5;white-space:pre;margin:0;padding:20px;background:var(--panel);border:1px solid var(--rule);border-radius:3px">{tree}</pre>
+  </div>
+  <div class="prose" style="margin-top:24px">
+    <p><b>Kathleen Barry and Hendrik Nicholaas Barry were brother and sister</b>, two of the eleven children
+      of John Augustus Barry I and Margaretha Kolbe.</p>
+    <p>George was Kathleen's son. Anna was Hendrik's granddaughter.
+      <b>They were first cousins once removed</b>, and their common ancestors are
+      <b>John Augustus Barry I</b> and <b>Margaretha Wilhelmina Elizabeth Mary Kolbe</b>.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What follows from it</h2>
+  <blockquote>
+    <strong>Catherine Mary Sophia Booyzen descends from John Augustus Barry I and Margaretha Kolbe twice</strong>
+    — once through her father, once through her mother.
+  </blockquote>
+  <div class="prose" style="margin-top:18px">
+    <p>This is <b>pedigree collapse</b>: she has fewer distinct ancestors than the arithmetic of generations
+      predicts. Where a person five generations back should have thirty-two separate ancestors, she has
+      thirty — because one couple occupies two of the slots.</p>
+    <p>It also means the two most interesting descents in the archive each reach her <b>twice</b>: the
+      <b>1820 Settler Kolbe line</b> out of Württemberg and Soho, and the
+      <b>Irish Barry line</b>, whatever it turns out to be.
+      <a href={u("/kolbe/")}>The Kolbes &rarr;</a>&nbsp;&nbsp;<a href={u("/barry/")}>The Barrys &rarr;</a></p>
+    <p><b>And it changes how DNA has to be read.</b> Autosomal matches through this line will look closer
+      than the paper relationship suggests, because shared segments arrive by two routes. Any cousin-match
+      estimate that assumes a single path will overstate how recently two people connect. This matters
+      directly: the tree is hosted on a <b>23andMe-linked</b> MyHeritage site.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>It was not an isolated match</h2>
+  <p class="dek">Three Barry–Booyzen unions across three generations — a fourth, which this archive previously counted, turned out to be the same marriage entered twice. <a href={u("/documents/")}>How that was settled &rarr;</a></p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:18rem">Barry</th><th style="width:15rem">married</th><th>When</th><th></th></tr></thead>
+      <tbody>{marriages.map(([a, b, w, x]) => (
+        <tr><td>{a}</td><td><strong>{b}</strong></td><td class="m">{w}</td><td class="cap">{x}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:20px">
+    <p>Look at row three closely. <b>Hendrik Nicholaas Barry's daughter Dorothea married George Booyzen's
+      brother Henry James</b> — in 1912, twelve years before George married Hendrik's granddaughter. The two
+      families were marrying each other in both directions at once.</p>
+    <p>In a district the size of Barkly East this is not scandalous, and it was not unusual. It is simply
+      what a small settler population does. But <b>it has to be stated plainly</b>, because everything
+      downstream — relationship estimates, DNA matches, and the apparent breadth of the family tree —
+      depends on knowing that the tree is narrower than it looks.</p>
+    <p>The Schoemans sit alongside the Barrys in the same way. <b>P. Schoeman witnessed the 1879
+      Booysen–Barry marriage</b>; Anna Johanna Maria <b>Schoemann</b> married Hendrik Nicholaas Barry in
+      1877; and the 1901 Pretorius–Barry wedding was held <b>at the home of D. Schoeman</b>.
+      <a href={u("/rebels/")}>Why that matters &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The names give it away</h2>
+  <p>Anna's mother was christened <b>Margarietha Wilhelmina Elizabeth Barry</b> — the same four names, in
+    the same order, as her own grandmother <b>Margaretha Wilhelmina Elizabeth Mary Kolbe</b>. And Anna
+    herself was <b>"named after Anna Johanna Maria Schoemann"</b>, her father's mother, a fact the tree
+    records explicitly rather than leaving to be inferred.</p>
+  <p>Two Booyzen sisters in the next generation are <b>Margaretha Wilhelmina Elizabeth "Maggie"</b> (1926)
+    and <b>Catherine Mary Sophia</b> (1929) — the Kolbe name and the Barry name, side by side, in
+    Johannesburg, ninety years after Margaretha Kolbe was christened at Graaff-Reinet.
+    <a href={u("/women/")}>The women &rarr;</a></p>
+</section>
+</Base>
