@@ -5,25 +5,26 @@ const rows = [
   ["John Barry (1796–1853)", "Buried at St Hilda's, Bilsdale, Yorkshire on 3 January 1853 — and dies at de Bruins Poort, Eastern Cape, on 8 January 1853, five days later.", "Fatal", "Two men merged. A Yorkshire farmer of Bilsdale (christened 1796, at Holly Bower in the 1841 and 1851 censuses, buried at St Hilda's) has been welded to a John Barry who died in the Cape. Separate them.", "/barry/"],
   ["John Barry — his parents", "Recorded as “Unknown Barry” and “Unknown Barry”, with a brother entered as “Other Barry's - South Africa Barry”.", "Fatal", "These are placeholders, not people. The Barry line ends here, whatever the profile suggests.", "/barry/"],
   ["John Augustus Barry I & James Barry", "Both sons recorded born 8 June 1819 — one at “?Sunderland? Ireland? High Seas?”, the other in County Cork.", "Serious", "Twins born in two countries, or one man duplicated. If duplicated, “County Cork” is John Augustus's own birthplace and the Irish claim strengthens.", "/barry/"],
-  ["Margaretha Kolbe (1826–1912)", "Marries George Frederick Enslin on 20 November 1850 while her husband John Augustus Barry is alive until 1903 — and then bears Barry and Enslin children in alternating years.", "Fatal", "John Adrian Enslin is born 31 August 1851 and Margaretha Louisa Maria Barry on 14 December 1851 — three and a half months apart, to one mother. Her sister Mary Elizabeth Margaret Willemina Kolbe married an Enslin; the Enslin children are very probably hers.", null],
+  ["Margaretha Kolbe (1826–1912)", "Marries George Frederick Enslin in 1850 while married to John Augustus Barry, then bears Barry and Enslin children three and a half months apart in 1851.", "Resolved", "RESOLVED by Margaret Downing\u2019s 1867 death notice, which lists among her children \u201cMary Elizabeth (dead) who was married to George F. Enslin \u2014 left issue of 6 minor children.\u201d The Enslin marriage and children belong to Margaretha\u2019s SISTER. The archive\u2019s own hypothesis, confirmed.", "/documents/"],
   ["Margaretha Kolbe — census", "Recorded in the 1881 census at 52 Arthur Street, Chelsea, London.", "Reject", "She was in the Cape Colony throughout. A wrong automated match.", null],
   ["John Augustus Barry I — census", "Recorded in a census at Biddulph, Huron, Canada West, on 12 January 1852.", "Reject", "He had children born at Burgersdorp in 1851 and 1855. A different John Barry.", "/barry/"],
   ["Willem Hermanus Booyzen (1851–1905)", "Death at Indwe annotated “To be confirmed, not sure” — and his son David Schalk is born in 1907.", "Resolved", "RESOLVED by the 1905 death registration: he died at Doorn Street, Indwe on 13 September 1905 of a stomach ulcer. The date is right; David Schalk cannot be his son.", "/documents/"],
   ["Johanna Catharina Mountjoy (1819–1863)", "Dies 19 May 1863 (probate-sourced) — but Izak (1864) and Stephanus Francois (1875) are recorded as her sons. She also carries three conflicting birth facts.", "Serious", "Petrus Jacobus remarried and the second wife is missing from the tree. Two “sons” belong to her.", "/direct-line/"],
   ["Anna Maria van der Merwe (1785–1825)", "Dies before 8 March 1825 — but Hendrik Stefanus is recorded born 23 August 1829.", "Serious", "The same pattern one generation earlier: an unrecorded second marriage.", null],
+  ["The “Kolbe–Downing” couple photograph", "A carte-de-visite captioned “Margaret Elizabeth Georgina Downing and George Kolbe” and attached to both their profiles. The woman wears a bustle and cuirass bodice; the man a full beard and watch chain — costume of about 1875–1885.", "Fatal", "George Kolbe died in 1844 and Margaret Downing in 1867. Neither can be in a photograph taken in the late 1870s. Probably their son George Augustus Kolbe (b. 1836) and his wife — the repeated forename is the obvious route by which the caption went astray.", "/documents/"],
   ["Kathleen Mary Barry (Booysen)", "Listed in the tree as a sister of Catherine Maria Sophia “Kathleen” Barry, also married to a Booysen, with no dates.", "Resolved", "RESOLVED by John Barry's 1915 death notice, which lists only ONE Barry daughter married to a Boyson. The arithmetic closes: 8 surviving + 2 predeceased + 1 duplicate = the tree's 11. They are the same woman.", "/documents/"],
   ["John Augustus Barry I — date of death", "The tree gives 25 August 1903; his 1915 death notice, sworn by his second son, gives 3 August 1903.", "Serious", "A 22-day discrepancy between the tree and the legal document. The notice was made twelve years after the death, so neither is automatically superior — but the notice is the one on paper.", "/documents/"],
   ["Willem Hermanus Booyzen — age", "Age 22 at his marriage in December 1879 implies birth about 1857. Age 55 at death in 1905 implies about 1850. The tree gives 4 May 1851.", "Serious", "The two civil records disagree with each other by six years. The DRC baptism entry of 1851 should outrank both, but it has not been re-read.", "/documents/"],
   ["Jacobus Nicolaas Booysen / Booyzen", "Two brothers, born 1840 and 1841, both dying on 17 November 1882.", "Serious", "Almost certainly one man entered twice under the two spellings of the surname.", "/name/"],
   ["Anna Catharina Booysen", "1842–1960.", "Reject", "One hundred and eighteen years old. A typing error, probably for 1860 or 1906.", null],
-  ["George Augustus Kolbe (1802–1844)", "Julia Kolbe born 1846, two years after his death; seven consistency issues in all.", "Serious", "Either the death date, the child, or the parentage is wrong. His estate record (KAB MOOC 6/9/35: 7698, 1845) should settle the death.", "/kolbe/"],
+  ["George Augustus Kolbe (1802–1844)", "Julia Kolbe born 1846, two years after his death; seven consistency issues in all.", "Resolved", "RESOLVED. His 1845 death notice (estate 7698) and his gravestone both give 1 December 1844, and neither his notice nor his widow\u2019s 1867 notice lists a Julia. Reject the child, keep the date. The same two documents also drop KEETOR PETER BENJAMIN KOLBE, whom the tree gives a 1840 birth \u2014 he is in neither list.", "/documents/"],
   ["George Downing Mountjoy Booyzen (1901–1947)", "Death dated 21 February 1947, with burial ten months later on 14 December 1947.", "Resolved", "RESOLVED by his death notice: he died 11 December 1947 and was buried on the 14th. “21 February” is the date the notice was signed — in 1948. A transcriber merged the two and lost ten months.", "/documents/"],
   ["The two Gertrude Elizabeths", "Born 11 May 1946 (died 15 May 1946) and 11 May 1947 — the same day of the year; the second after her father's death in February 1947.", "Serious", "Either two daughters given the same name and the same birthday, or one record duplicated a year out.", "/direct-line/"],
 ];
 const sev = { "Fatal": "terra", "Serious": "ochre", "Reject": "ink-3" };
 ---
 <Base title="Disputed"
-      eyebrow="Seventeen problems — four of them now solved"
+      eyebrow="Eighteen problems — six of them now solved"
       dek="The MyHeritage tree behind this archive is unusually well sourced and, in places, impossible. Rather than quietly choosing the readings that suit, this page lists every contradiction found — including the ones that damage the family's own story.">
 
 <section class="blk">
@@ -39,8 +40,9 @@ const sev = { "Fatal": "terra", "Serious": "ochre", "Reject": "ink-3" };
       <span class="chip inf">Serious</span> a real conflict that changes a conclusion. &nbsp;
       <span class="chip lore">Reject</span> an obvious wrong match or typing error, safely discarded. &nbsp;
       <span class="chip doc">Resolved</span> settled by a document read in September 2026.</p>
-    <p style="margin-top:12px"><b>Four were settled in a single afternoon</b>, by reading scans the family
-      tree had been carrying, untranscribed, for years. <a href={u("/documents/")}>The documents &rarr;</a></p>
+    <p style="margin-top:12px"><b>Six have now been settled</b>, all of them by reading scans the family
+      tree had been carrying, untranscribed, for years — and one of them confirmed a guess this archive had
+      already written down. <a href={u("/documents/")}>The documents &rarr;</a></p>
   </div>
 </section>
 

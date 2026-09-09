@@ -225,3 +225,175 @@ Petrus Jacobus Booysen 1788 (4) · Johanna Catharina Mountjoy (3) · John Barry 
 Also on this profile but not yet read: `willem-hermanus-birth-1851`, `1891-birth-catherine-mary-sophia`,
 `johanna-catharina-booyzen-birth`, `anna-george-marriage-certificate`, `george-death-information`,
 `george-death-blurred`, and the three Gertrude/Anna death images.
+
+---
+---
+
+# SECOND EXTRACTION — the Kolbe and Downing documents
+Extracted 9 September 2026. Files in `sources/booyzen-photos/kolbe/`.
+
+## 6. The gravestone — Burgersdorp Old Cemetery
+`grave-monument-whole.jpg`, `grave-inscription.jpg`
+
+A tall urn-topped monument inside a cast-iron railed enclosure. Cut in stone:
+
+> **SACRED / TO THE MEMORY OF / GEORGE AUGUSTUS KOLBE, / BORN IN LONDON 7 DECEMBER 1802, /
+> AND DIED AT HIS FARM WURTHEMBURG, / DIVISION OF ALBERT, 1 DECEMBER 1844. / ALSO HIS RELICT /
+> MARGARET DOWNING, / BORN IN LONDON 23 FEBRUARY 1803, / AND DIED AT BURGHERSDORP / 25 NOVEMBER 1867.**
+
+- Confirms **both birth dates in London**, both deaths, and the farm name — spelled **WURTHEMBURG** on the
+  stone, with a *th*. The tree spells it *Wurtemburg*.
+- **"DIVISION OF ALBERT"** — not Colesberg. Both are right: the 1845 death notice says *district of
+  Colesberg*; the division of **Albert** (seat Burgersdorp) was carved out afterwards. The stone is later.
+- **"HIS FARM"** — he owned it. Confirmed independently by Margaret's 1867 death notice (below).
+- She is commemorated under her **maiden name**, as "his relict".
+
+## 7. Death Notice of GEORGE AUGUSTUS KOLBE, estate 7698
+`kolbe-george-death-notice-1844.jpg` — *Death Notice, Section 9, Ordinance 104*. Dated Colesberg,
+January 1845. **Estate number 7698 — this is KAB MOOC 6/9/35: 7698 (1845), the reference already in hand.**
+
+| Field | As written |
+|---|---|
+| Name | **George Augustus Kolbe** |
+| Birth-place | **London** |
+| Names of the Parents | *(left blank)* |
+| Age | **42 Years** |
+| **Condition in life** | **AGRICULTURIST** |
+| Married | **Married to Margaret Downing** |
+| Day of the decease | **1 December 1844** |
+| Where died | **At Knapdaar, in the field cornetcy of Rhenosterberg, District of Colesberg** |
+| Property | **"Left property of the value of about £1000 Sterling"** |
+| Signed | **M. Kolbe** — Margaret, the widow — at Colesberg, January 1845 |
+
+**Ten children named:** John Gherson (major) · Catherine Mary Sophia (major) · George Augustus (minor) ·
+Frederick Fortunatus · Johan Casimir · Margaret Wilhelmina Elizabeth · Augusta Louisa ·
+Harriet Hachilah · Mary Elizabeth · Charlotte Felicia.
+
+### Findings
+1. **His recorded occupation at death is "AGRICULTURIST"** — a farmer. The tree gives *Reverend
+   Missionary (LMS)*, *Chemist* and *Tailor*. Those may all be true of earlier phases, but **the official
+   record at the end of his life calls him a farmer**, and he died on his own farm.
+2. **£1000 sterling in 1844** is a substantial estate.
+3. **Keetor Peter Benjamin Kolbe (b. 1840) is NOT among the ten children.** He is also absent from
+   Margaret's 1867 notice. ⇒ He died young, or he does not belong in this family.
+4. **Julia Kolbe (b. 1846)**, whom MyHeritage flags as born after her father's death, is absent too —
+   as she must be.
+
+## 8. MARRIAGE ALLEGATION, London Diocese, 20 January 1819 — *a sworn falsehood*
+`marriage-bonds-allegations-1819.jpg`
+
+> "Appeared personally **George Kolbe** and made Oath, that he is of the Parish of **Saint Leonard
+> Shoreditch** in the County of Middlesex, **a Bachelor of the age of Twenty-one Years and upwards**, and
+> intendeth to marry with **Margaret Downing** of the same Parish, **a Spinster of the age of Twenty-one
+> Years and upwards** … and prayed a Licence to solemnize the same in the Parish Church of Saint Leonard
+> Shoreditch aforesaid … the usual Place of Abode of him the appearer hath been in the said Parish …
+> **for the Space of four Weeks last past**."
+> Signed **G. Kolbe**. Fee 2/6.
+
+### The finding
+**Both ages are false, and the document is an oath.**
+
+- George Augustus Kolbe was born **7 December 1802**. On 20 January 1819 he was **sixteen years and six
+  weeks old**.
+- Margaret Downing was born **23 February 1803**. She was **fifteen years and eleven months**.
+
+Under **Hardwicke's Marriage Act (1753)**, a minor under 21 could not marry by licence without parental
+consent. Swearing to be "of the age of twenty-one years and upwards" was the standard way round it — and
+it was perjury. The four-weeks' residence was very often nominal too.
+
+> **The archive's 1820 Settler married at sixteen, by lying under oath about his age, and sailed for
+> Africa eleven months later.**
+
+## 9. Death Notice of MARGARET DOWNING, estate 4094
+`downing-margaret-death-1867.jpg` — filed 30 January 1868.
+
+| Field | As written |
+|---|---|
+| Name | **Margaret Downing, widow of the late George Augustus Kolbe** |
+| Birthplace | **London** |
+| **Names of the Parents** | **"Both dead"** — *no names given* |
+| **Age** | **64 years 9 months & 2 days** |
+| Condition | **Widow** |
+| Day of the decease | **25 November 1867** |
+| Where died | **at her own residence in Burghersdorp** |
+| Property | **"Landed property consisting of a dwelling house in Burghersdorp & farm in the division of Albert. Household furniture, live stock or sheep and cattle."** |
+| Signed | **G. D. O. Werdmuller** — her son-in-law |
+
+**Children, with married names:** John G. E. Kolbe · Catharine Mary Sophia m. **P. J. Joubert** ·
+**Margaret Wilhelmina m. J. Barry** · Augusta Louisa m. **G. D. O. Werdmuller** · Harriet Hachilah ·
+George Augustus · Charlotte Felicia m. **J. Snook** · Frederick Fortunatus · Johan Casimir ·
+**Mary Elizabeth (dead), who was married to George F. Enslin — left issue of 6 minor children**.
+
+### Three findings
+1. **"64 years 9 months & 2 days"** on 25 November 1867 computes to a birth of **23 February 1803** —
+   exactly the tree's date and the gravestone's. A rare three-way agreement.
+2. **THE ENSLIN PROBLEM IS SOLVED.** This archive flagged an impossibility: *Margaretha Kolbe* appearing
+   to marry **George Frederick Enslin** in 1850 while married to John Augustus Barry, and bearing Enslin
+   and Barry children three and a half months apart in 1851. The archive's own hypothesis was that the
+   Enslin children belonged to her **sister Mary Elizabeth**.
+   **This notice confirms it: "Mary Elizabeth (dead) who was married to George F. Enslin."**
+   ⇒ The Enslin marriage and the three Enslin sons are **Mary Elizabeth's, not Margaretha's**. The tree
+   has attached one sister's family to the other. **Resolved.**
+3. **Her parents are recorded only as "Both dead"** — unnamed. The tree's **John Paul Downing** and
+   **Mary P King** are therefore **not corroborated by this document**, and the Downing pedigree above
+   Margaret still rests on other evidence not yet examined.
+
+## 10. The portraits — one of them cannot be who it says
+`kolbe-downing-couple.jpg` (also filed as `downing-margaret-portrait-b`)
+
+Captioned in the tree **"Margaret Elizabeth Georgina Downing and George Kolbe"** and attached to both
+their profiles. It is a **carte-de-visite**: albumen print on a card mount with rounded corners.
+
+**The costume dates it to roughly 1875–1885.** The woman wears a cuirass bodice with a long buttoned
+front, a ruched overskirt and a **bustle**; her hair is centre-parted into a tight low bun. The man has a
+full beard and moustache and a three-piece suit with a watch chain.
+
+> **George Augustus Kolbe died in 1844. Margaret Downing died in 1867.**
+> **Neither of them can be in a photograph taken in the late 1870s or 1880s.**
+
+<span>Disputed</span> **The identification is wrong.** A pencilled inscription on the mount does not
+appear to read "Kolbe". **Working hypothesis:** it is their son **George Augustus Kolbe (b. 1836)** — who
+would be about forty in 1876, matching the sitter — with his wife. The repeated forename is the obvious
+route by which the caption went astray. **Unproved.**
+
+### The other portraits
+- `downing-margaret-portrait-c.jpg` — a heavily hand-retouched head-and-shoulders of a woman, centre
+  parting, plain white collar over a dark bodice. The style is consistent with **the 1850s–60s**, which
+  **does** fit Margaret Downing (d. 1867). Photography was well established at the Cape by then.
+  <span>Plausible, unproved.</span>
+- `kolbe-george-portrait.jpg` — a vignetted portrait of a young man with dark curling hair and a high
+  collar, very heavily processed. **Treat with caution:** George Kolbe died in **1844**, when photography
+  was five years old and vanishingly rare in the Cape interior. If it is him at all it is a copy of a
+  **painted miniature**, not a photograph from life. <span>Unverified.</span>
+- `st-annes-westminster.jpg`, `st-leonards-church.jpg` — modern images of the two London churches: where
+  he was christened, and where he married.
+
+## The Kolbe and Downing lines go much deeper than the tree view showed
+Retrieved via the tree's own card API. **Neither line is on the site yet.**
+
+**Kolbe (Württemberg → London):**
+Johann Gottlieb Kolbe (1699 – 29 Jan 1775) m. Maria Barbara **Jung** (c. 1700)
+→ Johann Micheal "John" Kolbe (5 Oct 1736 – 1780) [and Hannah Kolbe, 1699–1754]
+→ Johan Gottlieb "John Paul" Kolbe (1765–1845) m. Mary **Larman** (1768–1814)
+→ **George Augustus Kolbe (1802–1844)**
+
+**Larman:** Thomas Hall Larman (c. 1740 – c. 1800) m. Mary? Larman
+
+**Downing (English):**
+John **Trick** (b. 7 Oct 1683) m. Margaret **Hooper** (7 Jun 1691 – 8 Jul 1741)
+Edward Downing (31 Dec 1700 – 15 Mar 1792) m. Mary **Heard** (b. 2 Feb 1702)
+→ Thomas Downing (21 Jan 1736 – Oct 1801) m. Mary Trick (b. 25 Mar 1731)
+→ John Paul Downing (26 Nov 1769 – 12 Jan 1839) m. Mary P **King** (1768–1834)
+→ **Margaret Georgina Elizabeth Downing (1803–1867)**
+
+**Neagle (Irish):** Catherine Neagle (1788–1863), parents recorded only as *David? Neagle* and
+*Elizabeth Neagle* — no dates.
+
+⇒ **Kolbe now reaches 1699 and Downing 1683** — four generations deeper than the site currently shows.
+The Downing surnames **Trick, Heard, Hooper** are distinctively **Devon** names. Untested.
+
+## Still not extracted
+Johan Gottlieb Kolbe's **last Will and Testament in five parts** (ids 4502058, 4502061–63, 4502060),
+his death certificate (4503045) and burial (4503624), and a photograph captioned
+**"34 Lamb's Conduit Street"** (4502059). Also the death records of five Kolbe children,
+"Jan Hendrik Kolbe Baptism 1849 Fauresmith", and George's 1803 baptism (downloaded, not yet read).

@@ -53,6 +53,29 @@ The tree's photo store held **civil records nobody had transcribed** — not sna
 - **A duplicate person resolved:** "Kathleen Mary Barry (Booysen)" is the same woman as Catherine Maria
   Sophia "Kathleen" Barry. The claim of "two Barry sisters married Booysens" is **withdrawn**.
 
+## The Kolbe and Downing documents
+
+A second extraction, from the 1820 Settler's own profile and his wife's:
+
+- **The gravestone still stands at Burgersdorp** and names them both: *"…DIED AT HIS FARM **WURTHEMBURG**,
+  DIVISION OF ALBERT, 1 DECEMBER 1844. ALSO HIS RELICT **MARGARET DOWNING**…"*
+- **The estate reference this archive had listed as "not yet ordered" was in the tree all along.**
+  Estate **7698** — KAB MOOC 6/9/35 (1845). Value **about £1000 sterling**. His condition in life is
+  given not as missionary but as **AGRICULTURIST**.
+- **The 1819 marriage allegation is a sworn falsehood.** George Kolbe swore he was *"a Bachelor of the age
+  of Twenty-one Years and upwards"* and Margaret Downing *"a Spinster"* of the same. **He was sixteen.
+  She was fifteen.** Under Hardwicke's Marriage Act a minor could not marry by licence without a parent's
+  consent. He sailed for Africa eleven months later.
+- **Margaret's 1867 death notice solved a problem this archive had raised.** It lists *"Mary Elizabeth
+  (dead) who was married to George F. Enslin"* — confirming the archive's own guess that the impossible
+  Enslin marriage and children belonged to **Margaretha's sister**, not to Margaretha.
+- **A photograph is misattributed.** The carte-de-visite captioned *"Margaret Elizabeth Georgina Downing
+  and George Kolbe"* shows a bustle and a full beard — costume of **c. 1875–1885**. They died in 1844 and
+  1867. Probably their son **George Augustus Kolbe (b. 1836)** and his wife.
+- **The lines go deeper than the tree view showed:** **Kolbe to 1699** in Württemberg (Jung, Larman) and
+  **Downing to 1683** in England — through **Trick**, **Heard** and **Hooper**, all Devon surnames.
+  Untested, and Margaret's death notice names neither of her parents.
+
 ## What this archive found
 
 - **The name change is on the record.** MyHeritage carries *"Former name: Booysen"* as a formal fact on
