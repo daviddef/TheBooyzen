@@ -31,17 +31,37 @@ for p in people:
         if len(v.split()) > 1:
             known.setdefault(v.lower(), slugify(p["n"]))
 
-SURNAMES = ["BOOYZEN", "BOOIJZEN", "BOOYSEN", "BOOIJSEN", "BOOYSE", "MOUNTJOY", "MONTJOY",
-            "MOUNTJAY", "MONTJAY", "DASCHNER", "DASCHNER", "KUMM", "SLIER", "SLEER", "SCHLEHER",
-            "PIETERZEN", "PIETERSEN", "KOLBE", "BARRY", "DOWNING", "NEPGEN", "LERENA"]
+# Spellings collapse; the archive still shows each row's own. A name is grouped by
+# the first pattern it matches, on a diacritic-stripped uppercase form — so BOOŸZEN,
+# BOOIJZEN and BOOYZEN sit together, but the z and the s stay apart, because the
+# difference between them is an argument this archive is still having.
+GROUPS = [
+    ("BOOYZEN",   r"BOO(?:Y|IJ|I|YJ)?Z[EI]?N|BOOZSEN|ROOYZEN|BOOYZ"),
+    ("BOOYSEN",   r"BOO(?:Y|IJ|I)?S[EI]N|BOOYSE\b"),
+    ("MOUNTJOY",  r"M[OU]*[NU]*T?JO?[YAO]|MOUNTJ|MONTJ|MOINTJOY"),
+    ("DASCHNER",  r"DASCHNER|DASCHNE|DASHNE"),
+    ("KUMM",      r"^K[UÜ]M|KUMM|KUNN|KRUMM|KUMAN|KUMON|KUMREN|RUMM"),
+    ("SLIER",     r"SL[IEĒ]{1,2}[ER]S?$|SLIER|SLEER|SLIES"),
+    ("SCHLEHER",  r"SCHLEHER"),
+    ("PIETERZEN", r"PIETERZ|PIETERSZ"),
+    ("KOLBE",     r"KOLB[EÉÊ]|ROLBE"),
+    ("NEPGEN",    r"N[EU]P[GJS][EO]?[NR]|PGEN|MEPGEN"),
+    ("DOWNING",   r"DOWNING|DAWNING|DOWNIN"),
+    ("BARRY",     r"\bBARRY\b"),
+    ("LERENA",    r"\bLERENA\b"),
+]
+
+def strip_marks(t):
+    t = unicodedata.normalize("NFD", t)
+    return "".join(c for c in t if unicodedata.category(c) != "Mn")
 
 def group_for(name):
-    up = name.upper()
-    for s in SURNAMES:
-        if re.search(r"\b" + s + r"\b", up):
-            return s
-    parts = [x for x in re.split(r"[^A-Za-zÀ-ɏ]+", name) if x]
-    return parts[-1].upper() if parts else "—"
+    up = strip_marks(name).upper()
+    for label, pat in GROUPS:
+        for word in re.split(r"[^A-Z]+", up):
+            if word and re.search(pat, word):
+                return label
+    return "OTHER NAMES"
 
 titles = json.load(open(os.path.join(HARVEST, "titles.json"), encoding="utf-8"))
 meta = json.load(open(os.path.join(HARVEST, "meta.json"), encoding="utf-8"))

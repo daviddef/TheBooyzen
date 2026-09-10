@@ -1,0 +1,133 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import reg from "../data/register.json";
+const rows = reg.rows;
+const linked = rows.filter(r => r.u).length;
+const groups = reg.groups;
+const kindLabel = { index: "surname index", read: "reconstructed", tree: "family tree" };
+const byGroup = {};
+for (const r of rows) (byGroup[r.g] ||= []).push(r);
+const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total);
+---
+<Base title="The register"
+      eyebrow="Every named individual this archive has found"
+      dek={`${rows.length.toLocaleString()} entries for ${new Set(rows.map(r => r.n)).size.toLocaleString()} distinct names, ${linked.toLocaleString()} of them with a link to the source that names them. This is the raw catch — not a family tree, and most of it is not this family.`}>
+
+<section class="blk">
+  <h2>Read this before you read the list</h2>
+  <div class="panel" style="margin-top:16px">
+    <p><b>Most of these entries come from surname indexes.</b> They are every BOOYZEN, MOUNTJOY,
+      DASCHNER and the rest that FamilySearch's South African collections hold, pulled a whole surname
+      at a time. <b>A shared surname is not a relationship.</b> The Booysens of the northern Cape and
+      the Booyzens of Marico are, on the evidence this archive has, largely other people's families.</p>
+    <p style="margin-top:12px">Entries marked <span class="chip doc">reconstructed</span> are the people
+      this archive has actually joined into households from the words of a record, or met while reading a
+      document line by line — the eight children on the 1876 Sterfkennis, the eleven Daschners of 1942,
+      the eleven heirs of Barkly East in 1938. Those names link to a person page. Everything else links
+      out to the source and is offered as <b>a lead, not a conclusion</b>.</p>
+    <p style="margin-top:12px"><b>The living are not here</b>, as everywhere else in this archive.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What was harvested, and what was left alone</h2>
+  <p class="dek">Every count below is the number of people FamilySearch's South African collections hold
+    under that spelling. They are worth reading as figures in their own right.</p>
+  <div class="scroll" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:11rem">Spelling</th><th class="m" style="width:9rem">In the records</th><th class="m" style="width:9rem">Taken</th><th>Note</th></tr></thead>
+      <tbody>
+        {Object.entries(reg.caps).map(([name, c]) => (
+          <tr>
+            <td class="m"><strong>{name.toUpperCase()}</strong></td>
+            <td class="m">{c.total.toLocaleString()}</td>
+            <td class="m">{c.got ? c.got.toLocaleString() : "—"}</td>
+            <td>{c.total === 0
+                  ? <span><b>Nothing. Not one record in the country.</b></span>
+                  : c.got === 0
+                    ? <span><b>Not harvested.</b> Too common to be evidence — a name this frequent would
+                        fill this page without telling anyone anything.</span>
+                    : c.got >= c.total
+                      ? <span>Complete.</span>
+                      : <span><b>Capped.</b> The index stops paging past this point.</span>}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <div class="note" style="margin-top:18px">
+    <b>Three of those rows are findings, not housekeeping.</b>
+    <b>BOOYZEN returns 1,350 people in the whole country and BOOYSEN returns 40,592</b> — thirty times as
+    many — which is the scale behind everything this archive says about
+    <a href={u("/name/")}>the name</a>.
+    And <b>SCHLEHER returns nothing at all</b>, against 851 for <em>Slier</em> and 7 for <em>Sleer</em>:
+    the family tree's spelling of Anna Catharina's surname is the one form of it that no South African
+    record uses. <a href={u("/women/")}>The women &rarr;</a>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Filter</h2>
+  <div class="panel" style="margin-top:16px">
+    <label for="q" style="display:block;font-size:14px;margin-bottom:8px">
+      <strong>Filter by name, place, year or source</strong>
+    </label>
+    <input id="q" type="search" autocomplete="off" placeholder="Start typing…"
+           style="width:100%;padding:11px 13px;font-size:16px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
+    <p id="count" class="cap" style="margin:12px 0 0" aria-live="polite">{rows.length.toLocaleString()} entries shown</p>
+  </div>
+</section>
+
+{groups.map(([g, n]) => (
+  <section class="blk" data-grp={g}>
+    <h2>{g} <span class="m" style="font-weight:400">{n.toLocaleString()}</span></h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th style="width:20rem">Name</th><th>What the source says</th><th style="width:16rem">Source</th></tr></thead>
+        <tbody>
+          {byGroup[g].map(r => (
+            <tr data-hay={[r.n, r.w, r.s].join(" ").toLowerCase()}>
+              <td>{r.p
+                    ? <a href={u("/who/" + r.p + "/")}><strong>{r.n}</strong></a>
+                    : <strong>{r.n}</strong>}
+                {r.k === "read" && <div style="margin-top:5px"><span class="chip doc">reconstructed</span></div>}
+              </td>
+              <td>{r.w}</td>
+              <td class="cap">
+                {r.u ? <a href={r.u} rel="noopener">record &#8599;</a> : <span class="m">no public link</span>}
+                <div style="margin-top:3px">{r.s}</div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+))}
+
+<script is:inline>
+(function () {
+  var q = document.getElementById("q"), out = document.getElementById("count");
+  if (!q) return;
+  var rows = Array.prototype.slice.call(document.querySelectorAll("tr[data-hay]"));
+  var secs = Array.prototype.slice.call(document.querySelectorAll("section[data-grp]"));
+  var t;
+  function run() {
+    var v = q.value.trim().toLowerCase();
+    var n = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var hit = !v || rows[i].getAttribute("data-hay").indexOf(v) > -1;
+      rows[i].hidden = !hit;
+      if (hit) n++;
+    }
+    for (var j = 0; j < secs.length; j++) {
+      secs[j].hidden = !secs[j].querySelector("tr[data-hay]:not([hidden])");
+    }
+    out.textContent = n.toLocaleString() + (n === 1 ? " entry shown" : " entries shown");
+  }
+  q.addEventListener("input", function () { clearTimeout(t); t = setTimeout(run, 120); });
+  run();
+})();
+</script>
+</Base>
