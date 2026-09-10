@@ -63,12 +63,23 @@ export const families = [
     src: ["The name", "/name/"],
     kids: [
       { n: "John Barry Booyzen", via: "doc" },
+      { n: "Willem Hermanus Booyzen of Indwe", via: "inf" },
       { n: "David Kolbe Booyzen", via: "tree" },
       { n: "Henry James Booyzen", via: "tree" },
       { n: "Gertruida Alexandra Booyzen", via: "tree" },
       { n: "Johanna Catharina Booyzen|1889", via: "doc" },
       { n: "Catharina Maria Sophia Booysen", via: "doc" },
       { n: "George Downing Mountjoy Booyzen", via: "line" }] },
+
+  { h: "Willem Hermanus Booyzen of Indwe", w: "Susanna Adriana Roodt", via: "doc",
+    why: "Married at Indwe on 21 September 1908, certificate 13 — he 22 and a mijnwerker, she 16 and her parents consenting, both living at Dugmore Mijn.",
+    src: ["Indwe, 1907–1910", "/documents/#indwe-1907"],
+    kids: [{ n: "Willem Hermanus Booyzen of Dugmore", via: "doc" }] },
+
+  { h: "Willem Hermanus Booyzen of Indwe", w: "Catharina Maria Elizabeth Roodt", via: "doc",
+    why: "Not a marriage. She is named as the mother on the Indwe baptism of 22 September 1910, and the entry is marked onecht. She was confirmed in the same class as him and as Susanna Adriana Roodt on 31 May 1907.",
+    src: ["Indwe, 1907–1910", "/documents/#indwe-1907"],
+    kids: [{ n: "Catharina Willemina Levina Booyzen", via: "doc" }] },
 
   { h: "George Downing Mountjoy Booyzen", w: "Anna Johanna Maria Pretorius", via: "doc",
     why: "Married at Vereeniging, 30 December 1924 — a tree nurseryman and a girl of eighteen who were first cousins once removed.",

@@ -300,22 +300,54 @@
    "k": "Colliery town",
    "r": "North-eastern Cape",
    "s": "doc",
-   "w": "Where the story of a man shot by the British ends — and, it turns out, where one of his daughters was married. Willem Hermanus Booyzen died at Doorn Street, Indwe, on 13 September 1905 of an ulcer of the stomach, after fourteen months' illness and under a doctor's care. His daughter Catharina Maria Sophia married Joseph Heinrich Daschner here; his 1942 death notice gives the place of last marriage as “Indwe, Cape Colony”. The archive found the village through a death and only later learned it had also been a wedding.",
+   "w": "A COLLIERY TOWN, and this archive took three passes to notice that the word matters. Willem Hermanus Booyzen died at Doorn Street, Indwe, on 13 September 1905 of an ulcer of the stomach. His daughter Catharina Maria Sophia married Joseph Heinrich Daschner here. And his son — a son this archive did not know it had — was confirmed here in 1907 at twenty-one, married here in 1908 as a MIJNWERKER of DUGMORE MIJN, and had two children baptised here in 1908 and 1910, both entered ONECHT. Their grandmother Kathleen Barry stood godmother at the first font, three years after she was widowed in this town. Indwe is where the family testimony's last line turns out to be true, in the wrong province.",
    "e": [
+    [
+     "13 Sep 1905",
+     "Willem Hermanus Booyzen dies; the clerk writes Booysen and his son signs Booyzen"
+    ],
+    [
+     "31 May 1907",
+     "his son Willem Hermanus confirmed, aged 21 — entered “Booijzen” — alongside five Roodts"
+    ],
+    [
+     "31 May 1908",
+     "Willem Hermanus jr born to Susanna Adriana Roodt"
+    ],
+    [
+     "21 Sep 1908",
+     "the son marries Susanna Adriana Roodt, 16 — “Mijnwerker, Dugmore Mijn”, certificate 13"
+    ],
+    [
+     "6 Dec 1908",
+     "the boy baptised “onecht”; Catharina Maria Sophia Barry stands godmother"
+    ],
+    [
+     "8 Feb 1909",
+     "Catharina Willemina Levina born to Catharina Maria Elizabeth Roodt"
+    ],
+    [
+     "22 Sep 1910",
+     "she is baptised “onecht, gratis”"
+    ],
     [
      "bef. 1921",
      "Catharina Maria Sophia Booysen m. Joseph Heinrich Daschner — “Indwe, Cape Colony”"
     ],
     [
-     "13 Sep 1905",
-     "Willem Hermanus Booyzen dies; the clerk writes Booysen and his son signs Booyzen"
+     "11 Mar 1909",
+     "their daughter Catharina Mary Sophia Daschner born at Indwe"
     ]
    ],
    "p": [
     "Willem Hermanus “William Henry” Booyzen",
     "John Barry Booyzen",
     "Catharina Maria Sophia Booysen",
-    "Joseph Heinrich Daschner"
+    "Joseph Heinrich Daschner",
+    "Willem Hermanus Booyzen of Indwe",
+    "Susanna Adriana Roodt",
+    "Catharina Maria Elizabeth Roodt",
+    "Catherine Maria Sophia “Kathleen” Barry"
    ],
    "slug": "indwe",
    "lat": -31.47,
@@ -878,6 +910,27 @@
     "Jan Gerthardus Lodewikus Booijsen"
    ],
    "slug": "lichtenburg"
+  },
+  {
+   "n": "Dugmore Mine",
+   "k": "Colliery",
+   "r": "Indwe, district Wodehouse",
+   "s": "doc",
+   "lat": -31.47,
+   "lon": 27.35,
+   "approx": true,
+   "w": "Where a Booyzen worked underground. The Indwe marriage register of 21 September 1908 gives both bride and groom's dwelling place as “Dugmore Mijn” and the groom's trade as “Mijnwerker”. It is the only mine anywhere in this archive attached to a named member of this family, and it is coal in the Cape rather than gold on the Rand. The coordinates are approximate — the workings were at Indwe and the exact site is not yet fixed.",
+   "e": [
+    [
+     "21 Sep 1908",
+     "William Hermanus Booyzen, mijnwerker of Dugmore Mijn, marries Susanna Adriana Roodt"
+    ]
+   ],
+   "p": [
+    "Willem Hermanus Booyzen of Indwe",
+    "Susanna Adriana Roodt"
+   ],
+   "slug": "dugmore-mine"
   }
  ]
 }

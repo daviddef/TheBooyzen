@@ -271,6 +271,20 @@
    "k": "work",
    "w": "Brought into line with the sibling archives. 110 of the 119 person pages now open with a lineage chart — parents, the person and their spouses, the children of each marriage, and the siblings — and every box is colour-coded by how it is known: the direct line, a record this archive has read, an inference from a record, or the family tree unverified. Each chart ends with a count: “15 of the 18 relationships shown are written in a record this archive has read. 3 come from the family tree and are unverified.” The nine pages with no chart say so in words, because a witness at a font with no recorded kin is a statement about the sources rather than about the person. Twenty-eight households, sourced one at a time in site/src/data/kin.js. Drawn in plain boxes and rules, deliberately not in SVG — this archive once injected auto-links into an SVG tree and silently erased half the names in it.",
    "h": "/people/"
+  },
+  {
+   "d": "10 Sep 2026",
+   "t": "MIJNWERKER — an eighth child, and the last line of the testimony",
+   "k": "find",
+   "w": "Four documents from the Dutch Reformed congregation at Indwe, found by typing “Indwe” into the register that was built yesterday. A Willem Hermanus BOOIJZEN, aged 21, is confirmed there on 31 May 1907, in a class that also holds Catharina Maria Elizabeth Roodt, 17, and Susanna Adriana Roodt, 15. On 21 September 1908 he marries Susanna Adriana Roodt, sixteen, at Indwe — certificate 13, her parents consenting — and under Rang of Beroep the register writes MIJNWERKER, of DUGMORE MIJN. Two children are baptised at Indwe, both entered ONECHT: Willem Hermanus, born 31 May 1908 to Susanna Adriana, and Catharina Willemina Levina, born 8 February 1909 to Catharina Maria Elizabeth — eight months and eight days apart, so the second name cannot be a slip for the first. At the first font, the third godparent is CATHARINA MARIA SOPHIA BARRY. This archive holds one woman of that name: Kathleen, widowed at Indwe in 1905. So the miner is her son, and this archive had no idea he existed.",
+   "h": "/documents/"
+  },
+  {
+   "d": "10 Sep 2026",
+   "t": "Withdrawn — “Not one miner among them”",
+   "k": "back",
+   "w": "Open question 10 said the mines claim was unsupported and that the occupations pointed away from it: saddler, farmer, mason, tree nurseryman, railway clerk, mason. “Not one miner among them.” There is one, and the reason the archive missed him is worth stating plainly: the negative was built out of the occupations it happened to have read, and it had not read his because it did not know the man existed. A list of six is not a population. What replaces it is better than a simple yes — the boys did go onto the mines, and the first one this archive can name did it on CAPE COAL at Indwe in 1908, years before the family reached Johannesburg and while his widowed mother was still living in the same town. The testimony compressed a slow migration into one train.",
+   "h": "/open-questions/"
   }
  ]
 }

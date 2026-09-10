@@ -518,6 +518,32 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The register, used as a search tool for the first time",
+   "n": "one word typed into the filter",
+   "d": "10 Sep 2026",
+   "h": "/documents/#indwe-1907",
+   "rows": [
+    [
+     "Filter the register for INDWE",
+     "68 entries, four of them new",
+     "A Willem Hermanus Booijzen taking church membership at Indwe in 1907, and two Booyzen children baptised there in 1908 and 1910 — two and five years after the Willem Hermanus this archive had dying at Indwe in 1905. All four read from the register images. The register was built to hold leads; this is the first one it handed over.",
+     "yes"
+    ],
+    [
+     "FamilySearch, South Africa, Civil Marriage Records — BOOYZEN + ROODT",
+     "One certificate",
+     "Indwe, 21 September 1908, certificate 13. The document that carries the word MIJNWERKER.",
+     "yes"
+    ],
+    [
+     "Booyzen + Roodt, any later marriage or death",
+     "Nothing further",
+     "No death record and no second marriage found for Willem Hermanus Booyzen of Indwe, and nothing yet for either Roodt woman after 1910. The Indwe registers past 1910 have not been read forward.",
+     "no"
+    ]
+   ]
   }
  ]
 }
