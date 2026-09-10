@@ -124,7 +124,7 @@
    "r": "North-eastern Cape",
    "s": "doc",
    "a": "Barkly Oost",
-   "w": "The district the family belongs to for two generations, and the most rebellious corner of the Colony in 1899–1902. Its Doop Register holds the Booyzen and Mountjoy baptisms on facing pages.",
+   "w": "The district the family belongs to for two generations, and the most rebellious corner of the Colony in 1899–1902. Its Doop Register holds the Booyzen and Mountjoy baptisms on facing pages. It is also the only place in this archive where an estate is itemised: a retired builder's savings-bank deposit, a house on Lot 380 let at fifty shillings a month, and a village's worth of unpaid accounts — two butchers, a doctor and a burial society.",
    "e": [
     [
      "15 Sep 1889",
@@ -145,6 +145,18 @@
     [
      "22 Dec 1937",
      "James Jonathan Mountjoy dies"
+    ],
+    [
+     "3 Jul 1934",
+     "Maria Louisa Bertha Mountjoy, born Kumm, dies — her death is never reported"
+    ],
+    [
+     "19 Feb 1938",
+     "G. Mountjoy signs both death notices in one afternoon, hers three and a half years late"
+    ],
+    [
+     "1938",
+     "estate 58379 wound up: £300 3s 1d, divided eleven ways"
     ]
    ],
    "p": [
@@ -152,7 +164,9 @@
     "Catharina Maria Sophia Booysen",
     "Hercules Johannes Mountjoy",
     "James Jonathan Mountjoy",
-    "Richard Peter Barry"
+    "Richard Peter Barry",
+    "Maria Louisa Bertha Kumm",
+    "George Mountjoy of Barkly East"
    ],
    "slug": "barkly-east",
    "lat": -30.515,
@@ -253,16 +267,28 @@
    "k": "Town",
    "r": "Wodehouse",
    "s": "doc",
-   "w": "Where Hercules Johannes Mountjoy married Maria Sophia van Niekerk on 8 October 1888, aged 22 — a year before the 1889 font at Barkly Oost.",
+   "w": "Where this side of the family married, and where its in-laws lived. Hercules Johannes Mountjoy married Maria Sophia van Niekerk here on 8 October 1888, aged 22 — a year before the 1889 font at Barkly Oost. James John Mountjoy and Maria Louisa Bertha Kumm gave Dordrecht as their place of last marriage too, on two death notices filed at Barkly East fifty years later. And it is where Maria Sophia’s mother died, at her own house, in December 1902.",
    "e": [
     [
      "8 Oct 1888",
      "Hercules Johannes Mountjoy m. Maria Sophia van Niekerk"
+    ],
+    [
+     "bef. 1890",
+     "James John Mountjoy m. Maria Louisa Bertha Kumm — “place of last marriage, Dordrecht”"
+    ],
+    [
+     "18 Dec 1902",
+     "Carolina Deybella Margrietta Alletta van Niekerk, born Botha, dies at her own house"
     ]
    ],
    "p": [
     "Hercules Johannes Mountjoy",
-    "Maria Sophia van Niekerk"
+    "Maria Sophia van Niekerk",
+    "James Jonathan Mountjoy",
+    "Maria Louisa Bertha Kumm",
+    "Carolina Deybella Margrietta Alletta Botha",
+    "Jan Dirk Abram Frans van Niekerk"
    ],
    "slug": "dordrecht",
    "lat": -31.372,

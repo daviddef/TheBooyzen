@@ -791,6 +791,70 @@
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/death-notice-1937-james-john-mountjoy.jpg",
+   "alt": "1938 death notice number 58379 for James John Mountjoy, retired builder of Barkly East.",
+   "cap": "58379 — James John Mountjoy , retired builder, Barkly East. Died 22 December 1937, aged 83 years 6 months .",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/death-notice-1938-maria-kumm.jpg",
+   "alt": "1938 death notice number 58380 for Maria Louisa Bertha Mountjoy, born Kumm.",
+   "cap": "58380 — Maria Louisa Bertha Mountjoy, born Kumm . Died 3 July 1934, aged 73 years 9 months .",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1937-kumm-not-reported.jpg",
+   "alt": "Question seven of the 1938 notice: Maria Louisa Bertha Mountjoy, born Kumm, died 3rd July 1934 — death not reported.",
+   "cap": "\"died 3rd July, 1934 — death not reported.\"",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1937-parents-deceased.jpg",
+   "alt": "Question three of the 1938 death notice: Father, Deceased. Mother, Deceased.",
+   "cap": "Father — \"Deceased.\" Mother — \"Deceased.\" The same answer on both forms.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/liquidation-1938-mountjoy.jpg",
+   "alt": "First and final liquidation and distribution account in the estate of James John Mountjoy, Barkly East 58379.",
+   "cap": "The debit side. £87. 19. 2. in costs and debts.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1938-died-intestate.jpg",
+   "alt": "Distribution account: the deceased died intestate and the balance is awarded to his heirs ab intestato, in tenth shares of twenty-one pounds four shillings and five pence.",
+   "cap": "£21. 4. 5. — one tenth share.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/distribution-1938-mountjoy.jpg",
+   "alt": "The full distribution account for estate 58379, listing eleven heirs and their shares.",
+   "cap": "The whole page. Eleven heirs , and the balance £212. 3. 11. spent to the penny.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/death-notice-1902-van-niekerk.jpg",
+   "alt": "1902 Kennisgeving van Sterfgeval for Carolina Deybella Margrietta Alletta van Niekerk, born Botha, of Dordrecht.",
+   "cap": "Kennisgeving van Sterfgeval , filed 3 January 1903. Carolina Deybella Margrietta Alletta van Niekerk, geboren Botha , died at her own house at Dordrecht , 18 December 1902.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
   }
  ]
 }
