@@ -1,0 +1,116 @@
+---
+/* The lineage chart. Plain boxes and rules — no SVG, because this archive once
+   injected links into an SVG tree and quietly erased half the names in it. */
+import { u } from "../lib/url.js";
+import { treeFor, dates, provenance } from "../lib/kin.js";
+const { person, showKey = true } = Astro.props;
+const t = treeFor(person);
+const prov = provenance(t);
+const viaLabel = { line: "direct line", doc: "record", inf: "inferred", tree: "family tree" };
+const empty = t.parents.length === 0 && t.siblings.length === 0 && t.unions.length === 0;
+const warns = [
+  ...(t.origin && t.origin.f.warn ? [t.origin.f.warn] : []),
+  ...t.unions.filter(x => x.f.warn).map(x => x.f.warn),
+];
+---
+{!empty && (
+<figure class="ptree">
+  {t.parents.length > 0 && (
+    <div class="tier">
+      <div class="lab">Parents</div>
+      <div class="row">
+        {t.parents.map(p => (
+          <a class={"node via-" + t.parentVia} href={u("/who/" + p.slug + "/")}
+             title={"Recorded by: " + viaLabel[t.parentVia]}>
+            <span class="nm">{p.n}</span>
+            {dates(p) && <span class="dt">{dates(p)}</span>}
+            <span class="via">{viaLabel[t.parentVia]}</span>
+          </a>
+        ))}
+      </div>
+      <div class="drop" aria-hidden="true"></div>
+    </div>
+  )}
+
+  <div class="tier self">
+    <div class="row">
+      <div class="node me">
+        <span class="nm">{person.n}</span>
+        {dates(person) && <span class="dt">{dates(person)}</span>}
+        {person.g
+          ? <a class="via gen" href={u("/direct-line/")}>{`generation ${person.g} — see the spine \u2192`}</a>
+          : <span class="via">{person.l}</span>}
+      </div>
+      {t.unions.map(un => un.spouse && (
+        <a class={"node spouse via-" + un.f.via} href={u("/who/" + un.spouse.slug + "/")}
+           title={"Recorded by: " + viaLabel[un.f.via]}>
+          <span class="mar">married</span>
+          <span class="nm">{un.spouse.n}</span>
+          {dates(un.spouse) && <span class="dt">{dates(un.spouse)}</span>}
+          <span class="via">{viaLabel[un.f.via]}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  {t.unions.filter(un => un.kids.length > 0).map(un => (
+    <div class="tier">
+      <div class="drop up" aria-hidden="true"></div>
+      <div class="lab">{`${un.kids.length} ${un.kids.length === 1 ? "child" : "children"}${un.spouse ? " with " + un.spouse.n.split(" ")[0] : ""}`}</div>
+      <div class="row">
+        {un.kids.map(k => (
+          <a class={"node small via-" + k.via} href={u("/who/" + k.slug + "/")}
+             title={"Recorded by: " + viaLabel[k.via]}>
+            <span class="nm">{k.n}</span>
+            {dates(k) && <span class="dt">{dates(k)}</span>}
+            <span class="via">{viaLabel[k.via]}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+
+  {t.siblings.length > 0 && (
+    <div class="tier sibs">
+      <div class="lab">{`${t.siblings.length} ${t.siblings.length === 1 ? "sibling" : "siblings"}`}</div>
+      <div class="row">
+        {t.siblings.map(s => (
+          <a class={"node small via-" + s.via} href={u("/who/" + s.slug + "/")}
+             title={"Recorded by: " + viaLabel[s.via]}>
+            <span class="nm">{s.n}</span>
+            {dates(s) && <span class="dt">{dates(s)}</span>}
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {warns.map(w => <p class="warn cap">{w}</p>)}
+
+  <figcaption>
+    {showKey && (
+      <span>
+        <span class="key"><i class="sw line"></i> the direct line, argued on <a href={u("/direct-line/")}>the line</a></span>
+        <span class="key"><i class="sw doc"></i> from a record this archive has read</span>
+        <span class="key"><i class="sw inf"></i> inferred, not stated</span>
+        <span class="key"><i class="sw tree"></i> from the family tree, unverified</span>
+      </span>
+    )}
+    <span style="display:block;margin-top:8px">
+      <b>{prov.doc === prov.n
+            ? `All ${prov.n} relationships shown`
+            : `${prov.doc} of the ${prov.n} relationships shown`}</b>{" "}are written in a record this archive has read.
+      {prov.inf > 0 && <span>{` ${prov.inf} ${prov.inf === 1 ? "is" : "are"} inferred from one.`}</span>}
+      {prov.tree > 0 && <span>{` ${prov.tree} ${prov.tree === 1 ? "comes" : "come"} from the family tree and ${prov.tree === 1 ? "is" : "are"} unverified.`}</span>}
+      {t.origin && t.origin.f.src && (
+        <span>{" "}<a href={u(t.origin.f.src[1])}>{t.origin.f.src[0]} &rarr;</a></span>
+      )}
+    </span>
+    {t.origin && t.origin.f.why && <span style="display:block;margin-top:6px">{t.origin.f.why}</span>}
+    {t.unions.filter(x => x.f.why).map(x => (
+      <span style="display:block;margin-top:6px">{x.f.why}
+        {x.f.src && <span>{" "}<a href={u(x.f.src[1])}>{x.f.src[0]} &rarr;</a></span>}</span>
+    ))}
+  </figcaption>
+</figure>
+)}

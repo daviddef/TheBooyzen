@@ -4,6 +4,9 @@ import Rule from "../../components/Rule.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
 import pl from "../../data/places.json";
+import pj from "../../data/people.json";
+import Ptree from "../../components/Ptree.astro";
+import { treeFor } from "../../lib/kin.js";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
@@ -13,6 +16,15 @@ const all = Object.values(d.people);
 const kin = all.filter(x => x.slug !== p.slug && x.l === p.l).slice(0, 14);
 /* Places name their people, so a person can be given their places for free. */
 const places = pl.places.filter(x => (x.p || []).includes(p.n));
+/* A page may hold more than one person of the same name; each gets its own
+   chart, because merging their families would be the error this archive most
+   wants to avoid. */
+const selves = [{ n: p.n, b: p.b, d: p.d, r: p.r }, ...(p.also || [])]
+  .map(x => pj.people.find(y => y.n === x.n && y.b === x.b) || x);
+const hasKin = (self) => {
+  const t = treeFor(self);
+  return t.parents.length > 0 || t.siblings.length > 0 || t.unions.length > 0;
+};
 const byPage = {};
 for (const h of p.hits) (byPage[h.page] ||= { title: h.title, hits: [] }).hits.push(h);
 const groups = Object.entries(byPage);
@@ -20,6 +32,30 @@ const groups = Object.entries(byPage);
 <Base title={p.n}
       eyebrow={`${p.l} · ${p.mentions === 0 ? "not yet discussed on any page" : p.mentions + " mention" + (p.mentions === 1 ? "" : "s") + " across " + p.pages.length + " page" + (p.pages.length === 1 ? "" : "s")}`}
       dek={p.r}>
+
+<section class="blk">
+  {selves.map((self, i) => (
+    <div>
+      {selves.length > 1 && (
+        <h2 style={i ? "margin-top:34px" : "margin-top:0"}>{self.n}<span class="m" style="font-weight:400">{` · ${self.b} – ${self.d}`}</span></h2>
+      )}
+      <Ptree person={self} showKey={i === 0} />
+      <p class="cap" style="margin:-10px 0 22px">
+        <a href={u("/register/?q=" + encodeURIComponent(self.n.replace(/[“”]/g, "")))}>
+          Every record naming {self.n.replace(/[“”]/g, "")} &rarr;</a>
+      </p>
+      {!hasKin(self) && (
+        <p class="note">
+          <b>No family is drawn here, because none is recorded.</b> This archive holds
+          {" "}{self.n}{" "} as a name on a document &mdash; a witness at a font, a signature on a form, a
+          person named in someone else's list &mdash; and has no record of who their parents, spouse or
+          children were. That is a statement about the sources, not about the person.
+          <a href={u("/register/")}> Every record naming them &rarr;</a>
+        </p>
+      )}
+    </div>
+  ))}
+</section>
 
 <section class="blk">
   <div class="grid g2" style="margin-top:4px">

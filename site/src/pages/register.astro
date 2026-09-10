@@ -127,6 +127,10 @@ const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total)
     out.textContent = n.toLocaleString() + (n === 1 ? " entry shown" : " entries shown");
   }
   q.addEventListener("input", function () { clearTimeout(t); t = setTimeout(run, 120); });
+  try {
+    var pre = new URLSearchParams(location.search).get("q");
+    if (pre) { q.value = pre; }
+  } catch (e) {}
   run();
 })();
 </script>

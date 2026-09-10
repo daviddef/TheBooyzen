@@ -843,3 +843,48 @@ a.wholink:hover{color:var(--accent);border-bottom-color:var(--accent)}
   border:1px solid var(--rule);border-radius:999px;padding:5px 12px}
 .ways a:hover{border-color:var(--accent);color:var(--accent)}
 .ways a .m{color:var(--ink-3);font-size:11.5px}
+
+/* ─── the lineage chart on a person page ─────────────────────────────────────
+   Boxes and rules, no SVG: an earlier version of this archive injected links
+   into an SVG tree and silently erased half the names in it. */
+.ptree{margin:0 0 24px;padding:18px 18px 14px;border:1px solid var(--rule);
+  border-radius:4px;background:var(--panel)}
+.ptree .tier{position:relative}
+.ptree .lab{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);margin:4px 0 8px}
+.ptree .row{display:flex;flex-wrap:wrap;gap:9px;align-items:stretch}
+.ptree .node{display:flex;flex-direction:column;gap:2px;min-width:10.5rem;max-width:17rem;
+  padding:8px 11px;border:1px solid var(--rule);border-radius:3px;
+  text-decoration:none;color:inherit;background:var(--ground)}
+.ptree a.node:hover{border-color:var(--accent)}
+.ptree a.node:hover .nm{color:var(--accent)}
+.ptree .node.me{border-width:2px;border-color:var(--ink)}
+.ptree .node.small{min-width:9rem;padding:7px 9px}
+.ptree .nm{font-family:var(--serif);font-weight:600;font-size:15px;line-height:1.22;color:var(--ink)}
+.ptree .node.small .nm{font-size:14px}
+.ptree .dt{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.ptree .mar{font-family:var(--sans);font-size:9px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3)}
+.ptree .via{font-family:var(--sans);font-size:9px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin-top:3px}
+.ptree .via.gen{color:var(--accent);font-weight:600}
+.ptree .node.via-doc{border-left:3px solid var(--accent)}
+.ptree .node.via-doc .via{color:var(--accent)}
+.ptree .node.via-line{border-left:4px solid var(--ink)}
+.ptree .node.via-inf{border-left:3px dashed var(--accent)}
+.ptree .node.via-tree{border-left:3px dotted var(--ink-3);border-style:solid solid solid dotted}
+.ptree .drop{height:15px;margin-left:22px;border-left:1px solid var(--rule-strong)}
+.ptree .sibs{margin-top:15px;padding-top:12px;border-top:1px dashed var(--rule)}
+.ptree .warn{margin:12px 0 0;padding:10px 12px;border-left:3px solid var(--rule-strong);
+  background:var(--panel-2);border-radius:2px;color:var(--ink-2)}
+.ptree figcaption{margin-top:15px;padding-top:11px;border-top:1px solid var(--rule);
+  font-family:var(--sans);font-size:12px;line-height:1.6;color:var(--ink-3)}
+.ptree figcaption b{color:var(--ink-2);font-weight:600}
+.ptree .key{display:inline-flex;align-items:center;gap:6px;margin:0 16px 4px 0}
+.ptree .sw{width:15px;height:0;border-top:3px solid var(--accent);display:inline-block}
+.ptree .sw.line{border-top-width:4px;border-top-color:var(--ink)}
+.ptree .sw.inf{border-top-style:dashed}
+.ptree .sw.tree{border-top-style:dotted;border-top-color:var(--ink-3)}
+@media (max-width:640px){ .ptree .node{min-width:100%;max-width:100%} }
+.ptree a.via.gen{text-decoration:none;border-bottom:1px solid var(--accent)}
+.ptree a.via.gen:hover{color:var(--ink)}

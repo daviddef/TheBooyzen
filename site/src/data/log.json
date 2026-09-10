@@ -264,6 +264,13 @@
    "k": "work",
    "w": "Built to match the sibling archives, which have carried one for a while: every named individual this archive has found, one row for every source that names them. Fourteen spellings pulled whole out of FamilySearch's South African collections — BOOYZEN complete at 1,350, MOUNTJOY at 575, PIETERZEN at 236, DASCHNER at 46. Two were deliberately left alone: BOOYSEN returns 40,592 people in this country and BARRY 7,198, and a name that common fills a page without telling anyone anything. Three of the counts are findings in their own right. BOOYZEN 1,350 against BOOYSEN 40,592 is the scale behind everything this archive says about the name. And SCHLEHER — the family tree's spelling of Anna Catharina's surname — returns NOTHING AT ALL, against 851 for Slier and 7 for Sleer.",
    "h": "/register/"
+  },
+  {
+   "d": "10 Sep 2026",
+   "t": "Every person page now draws its family, and says whose word it is on",
+   "k": "work",
+   "w": "Brought into line with the sibling archives. 110 of the 119 person pages now open with a lineage chart — parents, the person and their spouses, the children of each marriage, and the siblings — and every box is colour-coded by how it is known: the direct line, a record this archive has read, an inference from a record, or the family tree unverified. Each chart ends with a count: “15 of the 18 relationships shown are written in a record this archive has read. 3 come from the family tree and are unverified.” The nine pages with no chart say so in words, because a witness at a font with no recorded kin is a statement about the sources rather than about the person. Twenty-eight households, sourced one at a time in site/src/data/kin.js. Drawn in plain boxes and rules, deliberately not in SVG — this archive once injected auto-links into an SVG tree and silently erased half the names in it.",
+   "h": "/people/"
   }
  ]
 }
