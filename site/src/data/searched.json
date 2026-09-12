@@ -602,6 +602,38 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "FamilySearch · the whole BOOYZEN surname in the CAPE probate collection",
+   "n": "twenty-nine people, and the z spelling is the Master's own",
+   "d": "13 Sep 2026",
+   "h": "/documents/#coetzee-1943",
+   "rows": [
+    [
+     "BOOYZEN, exact, collection 2517051 (Cape probate, 1822–1990)",
+     "29 personas — small enough to read entire",
+     "The Transvaal collection holds 150 under this spelling; the Cape holds 29. Two of them are estate 84992 of 1943 — Isabella Fredrika Booyzen born Coetzee, and her husband and son — and the file is spelled with a z by the Master's office throughout.",
+     "yes"
+    ],
+    [
+     "Estate 84992, read from the image",
+     "A death in 1930, filed in 1943",
+     "Corrected a date this archive had taken off the reference number. Also gave her parents, her three children, and the death of a son it had been carrying as living.",
+     "yes"
+    ],
+    [
+     "The oldest Booyzen in the Cape probate series",
+     "1843, and not this family",
+     "Johanna Booyzen, born about 20 March 1754, died 16 June 1843 at Cape Town. Read because her dates match the only two this archive has for Magdelena Elisabeth de Beer. They match to the year and she is somebody else entirely.",
+     "part"
+    ],
+    [
+     "MOOC 7/1/268: 87 (the 1845 will) and MOOC 13/1/221: 6 (the 1866 account)",
+     "Still not located",
+     "Neither is name-indexed. The Cape films carry readable target boards — DEATH NOTICES, or DECEASED ESTATES with a year and a starting estate number — and every 19th-century board read so far says DEATH NOTICES. The separate wills and liquidation-account volumes are not evidently in this collection at all. The catalogue, which would settle it, is blocked to this archive: every catalog API path returns 403 from FamilySearch's security service.",
+     "no"
+    ]
+   ]
   }
  ]
 }

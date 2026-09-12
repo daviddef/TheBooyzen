@@ -327,6 +327,20 @@
    "k": "find",
    "w": "Second on the 1863 death notice and until now nothing but a position in a list. The Dutch Reformed index gives her born 15 May 1844 and baptised at BRAK RIVIER on 4 August 1844 — the farm her father was still on nineteen years later when her mother died there. A small thing, and the kind the register was built to hand over.",
    "h": "/who/johanna-catharina-booysen/"
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "Withdrawn — Isabella Frederika Coetsee died in 1943",
+   "k": "back",
+   "w": "She died on 31 MARCH 1930, at Church Street, Middelburg. 1943 is when her husband finally filed. This archive had taken the year off the estate reference and written it in as a death date — the same error it corrected on O/2899 three days ago, sitting undetected in the next record along. Two instances in one week of one habit: trusting a file number to tell you when somebody died. The notice also names her parents, three children, and a son this archive had been carrying as living who was already dead.",
+   "h": "/documents/#coetzee-1943"
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "The oldest Booyzen death notice in the Cape — and why it is dangerous",
+   "k": "find",
+   "w": "Death notice 6167, filed Cape Town 21 June 1843, under Section 9 of Ordinance 104 — a generation older in form than anything else here. JOHANNA BOOYZEN, born in the Colony about 20 March 1754, died 16 June 1843 at 28 Roze Street, widow of Charles du Plessis, one daughter married to Benjamin Solomon, and “no property whatever except a Bond amounting per balance to £15”. Line 3 reads “both dead” — the seventh failure of that question in this archive and the earliest. She is NOT this family. She is recorded because the only two dates this archive holds for Magdelena Elisabeth de Beer are born 1754 and died 1843, both off the family tree with no source, and here is a Booyzen woman who matches both to the year and is demonstrably somebody else. That is exactly the material a bad merge is made of, and it is better to have met it deliberately than to meet it by accident.",
+   "h": "/documents/#johanna-1843"
   }
  ]
 }

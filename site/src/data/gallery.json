@@ -927,6 +927,54 @@
    "page": "/documents/",
    "pagetitle": "The documents",
    "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/death-notice-1943-isabella-coetzee.jpg",
+   "alt": "1943 death notice number 84992 for Isabella Fredrika Booyzen, born Coetzee, of Middelburg, Cape.",
+   "cap": "Stamped No. 84992 · 12 April 1943 . Signed G. J. Booyzen — \"Survivor, Present at death\".",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1930-married-and-died.jpg",
+   "alt": "Questions seven and eight: married to Gert Jacobus Booyzen in community of property, at Middelburg Cape; died 31st March 1930.",
+   "cap": "\"31st March 1930.\" The form is dated 1 April 1943 .",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1943-coetzee-parents.jpg",
+   "alt": "Question three of the 1943 notice: Father Pieter Coetzee, deceased; Mother Isabella Fredrika Coetzee, deceased.",
+   "cap": "Question three, answered. Pieter Coetzee and Isabella Fredrika Coetzee — and the daughter carries her mother's whole name. The namesakes →",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/death-notice-1843-johanna-booyzen.jpg",
+   "alt": "1843 death notice number 6167 for Johanna Booyzen, widow of Charles du Plessis, of 28 Roze Street, Cape Town.",
+   "cap": "Under Section 9, Ordinance 104 — a generation older than every other form in this archive.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": false
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1843-both-dead.jpg",
+   "alt": "Line three of the 1843 death notice: Names of the Parents of the Deceased — both dead.",
+   "cap": "\"both dead.\" 1843 — and the printed question is the same one that is still failing a century later.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
+   "src": "/TheBooyzen/docs/detail-1843-age-89.jpg",
+   "alt": "",
+   "cap": "",
+   "page": "",
+   "pagetitle": "",
+   "detail": true
   }
  ]
 }

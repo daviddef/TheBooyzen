@@ -61,7 +61,15 @@ export const families = [
 
   { h: "Gerrit Jacobus Booÿsen", w: "Isabella Frederika Coetsee", via: "doc",
     why: "Married at Middelburg, 23 March 1896.",
-    kids: [{ n: "Petrus Jacobus Booyzen|1904", via: "doc" }] },
+    kids: [
+      { n: "Isabella Fredrika du Plessis", via: "doc" },
+      { n: "Petrus Jacobus Booyzen|1904", via: "doc" },
+      { n: "Gerhardus Jacobus Booyzen", via: "doc" }] },
+
+  { h: "Pieter Coetzee", w: "Isabella Fredrika Coetzee", via: "doc",
+    why: "Named together in line 3 of their daughter's 1943 death notice, both already dead.",
+    src: ["The 1943 notice", "/documents/#coetzee-1943"],
+    kids: [{ n: "Isabella Frederika Coetsee", via: "doc" }] },
 
   { h: "Willem Hermanus “William Henry” Booyzen", w: "Catherine Maria Sophia “Kathleen” Barry", via: "doc",
     why: "Married 22 December 1879 — the marriage register that carries the disputed signature.",
