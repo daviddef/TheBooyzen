@@ -544,6 +544,32 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "The Transvaal probate index, read against itself",
+   "n": "no new document — an index line and two already read",
+   "d": "13 Sep 2026",
+   "h": "/documents/#o2899",
+   "rows": [
+    [
+     "TAB MHG O/2899 — who is actually the deceased?",
+     "Jan Gerardus Lodewicus Booijzen, 67, b. district Graaff-Reinet, d. 25 May 1885 Vaalbank",
+     "Two index passes over the same estate (arks 1:1:QPTJ-R6KB and 1:1:Q2DG-52P9) agree, and one of them states the relationship: Deceased. Born about 1818, so not the nephew born in 1855 this archive had attached it to for months.",
+     "yes"
+    ],
+    [
+     "An image for estate O/2899",
+     "None offered",
+     "The FamilySearch record page says “Check Image Availability” where every other estate in this archive says “View original document”. The file is at the Transvaal Archives in Pretoria and has not been seen. The correction above rests on the index, checked against the 1876 and 1920 Sterfkennisse, both read from the image.",
+     "no"
+    ],
+    [
+     "Any death record for Jan Gerhardus Lodewicus Booysen, b. 4 Dec 1855",
+     "Nothing",
+     "With the estate taken off him there is no date and no place. Recorded as an open name rather than a closed life.",
+     "no"
+    ]
+   ]
   }
  ]
 }

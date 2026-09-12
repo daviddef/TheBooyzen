@@ -54,6 +54,11 @@ export const families = [
       { n: "Gerrit Jacobus Booÿsen", via: "doc" },
       { n: "Stephanus Francois Booyzen", via: "inf" }] },
 
+  { h: "Jan Gerthardus Lodewikus Booijsen", w: null, via: "doc",
+    why: "Named as her father on her 1920 Sterfkennis at Vaalbank — the same farm in the district of Lichtenburg where he had died thirty-five years earlier.",
+    src: ["The 1885 estate, corrected", "/documents/#o2899"],
+    kids: [{ n: "Magdalena Susanna Maria van den Berg", via: "doc" }] },
+
   { h: "Gerrit Jacobus Booÿsen", w: "Isabella Frederika Coetsee", via: "doc",
     why: "Married at Middelburg, 23 March 1896.",
     kids: [{ n: "Petrus Jacobus Booyzen|1904", via: "doc" }] },

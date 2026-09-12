@@ -123,19 +123,47 @@
   },
   {
    "n": "Jan Gerthardus Lodewikus Booijsen",
-   "b": "—",
-   "d": "—",
+   "v": "Jan Gerardus Lodewicus Booijzen (1885 estate)",
+   "b": "1818, district Graaff-Reinet",
+   "d": "25 May 1885, Vaalbank, district Lichtenburg",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Fifth on the 1876 notice, and named for the man at the top of the line. A 1920 death notice at Lichtenburg gives a Magdalena Susanna Maria van den Berg, born Booyzen and born about 1860, whose father is entered as Jan Gerhardus Lodewicus Booyzen — the right name in the right district at the right time, and NOT proved to be him.",
+   "r": "Fifth on his father’s 1876 notice, and named for the man at the top of the line. HIS is the estate TAB MHG O/2899, which this archive had spent months attributing to his nephew of the same name born in 1855 — the Transvaal probate index gives him as the deceased, aged 67, born district Graaff-Reinet, died 25 May 1885 at Vaalbank in the district of Lichtenburg. His daughter Magdalena Susanna Maria died on the same farm in 1920, and her death notice names him. He is how this family reaches the western Transvaal.",
    "p": [
     [
      "The Documents",
      "/documents/"
     ],
     [
-     "Open Questions",
-     "/open-questions/"
+     "Sources",
+     "/sources/"
+    ],
+    [
+     "The Atlas",
+     "/atlas/"
+    ]
+   ]
+  },
+  {
+   "n": "Magdalena Susanna Maria van den Berg",
+   "v": "born Booyzen",
+   "b": "c. Aug 1860",
+   "d": "1 May 1920, Vaalbank, district Lichtenburg",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "His daughter, and the first person in the western Transvaal this archive can attach to the line rather than merely set beside it. Her 1920 Sterfkennis — estate 44420, stamped Pretoria 16 August 1920 — names her parents as Jan Gerhardus Lodewicus Booyzen and Magdalena Susanna Maria, gives her age as 59 years 9 months, and lists seven children. Her son-in-law B. J. van den Berg signed it.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ],
+    [
+     "The Atlas",
+     "/atlas/"
     ]
    ]
   },
@@ -472,10 +500,10 @@
   {
    "n": "Jan Gerhardus Lodewicus Booysen",
    "b": "4 Dec 1855",
-   "d": "1885",
+   "d": "—",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Seventh on the 1863 list, and carries the name of the man at the top of the line. Estate TAB MHG O/2899 — he died in the Transvaal at about thirty.",
+   "r": "Seventh on the 1863 list, and carries the name of the man at the top of the line. THIS ARCHIVE HAD HIM DYING IN 1885 AND HAS TAKEN IT BACK: estate TAB MHG O/2899 belongs to his uncle of the same name, born 1818, and the death date was never anything but the estate’s year read backwards onto the wrong man. Nothing is known about what became of him.",
    "p": [
     [
      "The Documents",
@@ -484,6 +512,10 @@
     [
      "What Was Searched",
      "/searched/"
+    ],
+    [
+     "Open Questions",
+     "/open-questions/"
     ]
    ]
   },

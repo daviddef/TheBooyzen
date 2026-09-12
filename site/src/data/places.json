@@ -895,19 +895,24 @@
    "n": "Lichtenburg",
    "k": "District",
    "r": "Western Transvaal",
-   "s": "inf",
+   "s": "doc",
    "lat": -26.15,
    "lon": 26.16,
    "approx": false,
-   "w": "A lead, not a finding. Magdalena Susanna Maria van den Berg, born Booyzen about 1860, died at the farm Vaalbank in this district on 1 May 1920; her 1920 Sterfkennis enters her father as Jan Gerhardus Lodewicus Booyzen — a name carried by a son on the 1876 Rustenburg notice, and by a grandson born in 1855. Right name, right district, right decade. NOT PROVED, and recorded so that it can be tested rather than assumed.",
+   "w": "Where this family's western Transvaal branch is, and it is a branch rather than a lead now. Jan Gerthardus Lodewikus Booijsen — fifth of the eight children on the 1876 Sterfkennis, born district Graaff-Reinet about 1818 — died on the farm Vaalbank in this district on 25 May 1885, estate TAB MHG O/2899. His daughter Magdalena Susanna Maria died on the same farm on 1 May 1920, and her Sterfkennis names him. Lichtenburg is one district west of Rustenburg, where his father died in 1876, and one district east of Marico.",
    "e": [
     [
+     "25 May 1885",
+     "Jan Gerthardus Lodewikus Booijsen dies at Vaalbank, aged 67"
+    ],
+    [
      "1 May 1920",
-     "Magdalena Susanna Maria van den Berg, born Booyzen, dies at Vaalbank"
+     "his daughter Magdalena Susanna Maria van den Berg, born Booyzen, dies on the same farm"
     ]
    ],
    "p": [
-    "Jan Gerthardus Lodewikus Booijsen"
+    "Jan Gerthardus Lodewikus Booijsen",
+    "Magdalena Susanna Maria van den Berg"
    ],
    "slug": "lichtenburg"
   },
@@ -931,6 +936,31 @@
     "Susanna Adriana Roodt"
    ],
    "slug": "dugmore-mine"
+  },
+  {
+   "n": "Vaalbank",
+   "k": "Farm",
+   "r": "District Lichtenburg, Transvaal",
+   "s": "doc",
+   "lat": -26.2,
+   "lon": 26.3,
+   "approx": true,
+   "w": "One farm, two deaths, thirty-five years apart, and the same family on it both times. Jan Gerthardus Lodewikus Booijsen — born district Graaff-Reinet about 1818, fifth child on the 1876 Sterfkennis — died here on 25 May 1885. His daughter Magdalena Susanna Maria, born about 1860, died here on 1 May 1920. It is the clearest evidence this archive has that the family did not merely pass through the western Transvaal but settled in it, two generations before anyone reached Johannesburg. The coordinates are approximate: the district is certain, the farm is not yet placed.",
+   "e": [
+    [
+     "25 May 1885",
+     "Jan Gerthardus Lodewikus Booijsen dies here, aged 67"
+    ],
+    [
+     "1 May 1920",
+     "Magdalena Susanna Maria van den Berg, born Booyzen, dies here, aged 59 years 9 months"
+    ]
+   ],
+   "p": [
+    "Jan Gerthardus Lodewikus Booijsen",
+    "Magdalena Susanna Maria van den Berg"
+   ],
+   "slug": "vaalbank"
   }
  ]
 }
