@@ -1,0 +1,131 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import c from "../data/corrections.json";
+const rows = c.rows;
+const causes = c.causes;
+const counted = Object.keys(causes)
+  .map(k => [k, rows.filter(r => r[3] === k).length])
+  .sort((a, b) => b[1] - a[1]);
+const label = { population: "A list mistaken for a population", scope: "A part searched, reported as the whole",
+  circular: "A fact cited back to itself", tree: "The tree repeated before it was tested",
+  reading: "A document read past what it says", process: "The archive's own working" };
+---
+<Base title="What was taken back"
+      eyebrow={`${rows.length} corrections, and why each happened`}
+      dek="Every claim this archive has published and then withdrawn, in one place, with the cause named. Nothing here has been quietly edited away: each of these sentences was on the site, and some of them were on it for weeks.">
+
+<section class="blk">
+  <h2>Why this page exists</h2>
+  <div class="prose">
+    <p>A family history that only shows its conclusions is asking to be believed on trust. This one has
+      been wrong nineteen times, and the corrections are more useful than most of the findings, because
+      they are the only part of the site that says anything about <b>how the work goes wrong</b>.</p>
+    <p>The right-hand column is the point. Sort by it and a pattern appears that no single correction
+      would have shown.</p>
+  </div>
+  <div class="grid g3" style="margin-top:20px">
+    {counted.map(([k, n]) => (
+      <div class="panel">
+        <div class="lab">{n} {n === 1 ? "time" : "times"}</div>
+        <h3 style="margin:6px 0 8px;font-size:17px">{label[k]}</h3>
+        <p style="font-size:14.5px;margin:0">{causes[k]}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<Rule name="awl" label="One at a time" />
+
+<section class="blk">
+  <h2>The list</h2>
+  <div class="panel" style="margin-top:16px">
+    <label for="q" style="display:block;font-size:14px;margin-bottom:8px">
+      <strong>Filter</strong> — a name, a year, a word from any of them</label>
+    <input id="q" type="search" autocomplete="off" placeholder="Start typing…"
+           style="width:100%;padding:11px 13px;font-size:16px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
+    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:7px">
+      <button class="fbtn on" data-f="">All <span class="m">{rows.length}</span></button>
+      {counted.map(([k, n]) => (<button class="fbtn" data-f={k}>{label[k]} <span class="m">{n}</span></button>))}
+    </div>
+    <p id="count" class="cap" style="margin:12px 0 0" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="scroll">
+    <table id="ctable">
+      <thead><tr>
+        <th class="m" style="width:7rem">Published</th>
+        <th style="width:20rem">What it said</th>
+        <th>What replaced it</th>
+        <th style="width:13rem">Cause</th>
+      </tr></thead>
+      <tbody>
+        {rows.map(([d, was, now, cause, href]) => (
+          <tr data-cause={cause} data-hay={[d, was, now, label[cause]].join(" ").toLowerCase()}>
+            <td class="m">{d}</td>
+            <td><b>&ldquo;{was}&rdquo;</b></td>
+            <td>{now} {href && <a href={u(href)}>&rarr;</a>}</td>
+            <td class="cap">{label[cause]}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>What the pattern says</h2>
+  <div class="prose">
+    <p><b>Three of the nineteen are the same mistake, and it is the one worth naming.</b> The archive
+      searched what it happened to have, found nothing, and reported the absence as a fact about the
+      world. <em>"Not one miner among them"</em> came from six occupations. <em>"The one time the form
+      worked"</em> came from five death notices. <em>"They are not this family"</em> came from a
+      geography the archive had never actually tested.</p>
+    <blockquote>A list is not a population. Every negative on this site now carries the scope it was run
+      over, and where the scope is small the page says so.
+      <a href={u("/searched/")}>What was searched &rarr;</a></blockquote>
+    <p>Three more were the reverse: a search run over part of the ground and written up as the whole.
+      One province out of nine. Twenty-two documents out of forty-two. A register that turned out to
+      cover a different colony entirely.</p>
+    <p>And one, the most recent, is the worst kind: <b>a fact this archive manufactured from a reference
+      number and then quoted back to itself.</b> An estate file numbered O/2899 was dated 1885; the
+      archive wrote 1885 into a man's life as a death date, and then cited the death date as though it
+      were evidence for the attribution. <a href={u("/documents/#o2899")}>How that unwound &rarr;</a></p>
+    <p class="cap">Every correction is also in <a href={u("/log/")}>the research log</a>, in the order it
+      happened, with what was being worked on at the time.</p>
+  </div>
+</section>
+
+<script is:inline>
+(function () {
+  var q = document.getElementById("q"), out = document.getElementById("count");
+  if (!q) return;
+  var rows = Array.prototype.slice.call(document.querySelectorAll("#ctable tbody tr"));
+  var btns = Array.prototype.slice.call(document.querySelectorAll(".fbtn"));
+  var filter = "";
+  function run() {
+    var v = q.value.trim().toLowerCase(), n = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var hit = (!v || rows[i].getAttribute("data-hay").indexOf(v) > -1) &&
+                (!filter || rows[i].getAttribute("data-cause") === filter);
+      rows[i].hidden = !hit;
+      if (hit) n++;
+    }
+    out.textContent = n + (n === 1 ? " correction shown" : " corrections shown");
+  }
+  q.addEventListener("input", run);
+  btns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      btns.forEach(function (x) { x.classList.remove("on"); });
+      b.classList.add("on");
+      filter = b.getAttribute("data-f");
+      run();
+    });
+  });
+  run();
+})();
+</script>
+</Base>
