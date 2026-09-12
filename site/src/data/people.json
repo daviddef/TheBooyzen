@@ -535,15 +535,19 @@
   },
   {
    "n": "Johanna Catharina Booysen",
-   "b": "—",
+   "b": "15 May 1844, Brak Rivier",
    "d": "—",
    "l": "Booyzen",
    "s": "doc",
-   "r": "Second on the 1863 list, named for her mother.",
+   "r": "Second on the 1863 list, named for her mother — and now dated. The Dutch Reformed index gives her born 15 May 1844 and baptised at BRAK RIVIER on 4 August 1844, which is the farm her father was still on nineteen years later when her mother died there.",
    "p": [
     [
      "The Documents",
      "/documents/"
+    ],
+    [
+     "The Register",
+     "/register/"
     ]
    ]
   },
@@ -1944,6 +1948,150 @@
     [
      "Sources",
      "/sources/"
+    ]
+   ]
+  },
+  {
+   "n": "Jan Dirk Abraham Francois Mountjoy",
+   "b": "3 Sep 1891",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised at Barkly Oost, 8 November 1891, and named for his mother's father Jan Dirk Abram Frans van Niekerk of Dordrecht. FROM THE INDEX; the register page has not been read.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Fritz Johannes Mountjoy",
+   "b": "5 Oct 1893",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised 5 August 1894. FROM THE INDEX, which mangles the place to “Barkly, Queensland, Australia” — it is Barkly East.",
+   "p": [
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Carolina Isabella Margaretha Aletta Mountjoy",
+   "b": "15 Aug 1896",
+   "d": "25 Oct 1897, Wodehouse",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised at Dordrecht on 6 September 1896, named for her mother's mother entire, and dead at fourteen months. Her name was given again to the next daughter but one. FROM THE INDEX.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Maria Sophia Mountjoy of Dordrecht",
+   "b": "23 Oct 1898",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised at Dordrecht 6 November 1898, named for her mother. FROM THE INDEX.",
+   "p": [
+    [
+     "The Women",
+     "/women/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Carolina Isabella Margaretha Aletta Mountjoy the second",
+   "b": "8 Nov 1901",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised at Aberdeen, 13 April 1902 — four years after the first of the name died. She married Hendrik Stefanus Palm, and a granddaughter born in 1920 carries the name again. FROM THE INDEX.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Herklaus Johannes Mountjoy",
+   "b": "16 Feb 1904",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised at Barkly Oost, 17 April 1904, his father's namesake. FROM THE INDEX.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Willem Hermanus Mountjoy",
+   "b": "10 Apr 1915",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised 27 June 1915 — and the Booyzen name crossing into the Mountjoys, twenty-six years after the two families stood at the same font. FROM THE INDEX.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Hendrik Stefanus Palm",
+   "b": "—",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Married the second Carolina Isabella Margaretha Aletta. FROM THE INDEX.",
+   "p": [
+    [
+     "The Register",
+     "/register/"
     ]
    ]
   },

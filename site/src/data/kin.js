@@ -134,7 +134,15 @@ export const families = [
   { h: "Hercules Johannes Mountjoy", w: "Maria Sophia van Niekerk", via: "doc",
     why: "Married at Dordrecht, 8 October 1888, aged 22 and 20.",
     src: ["Two grandparents at a font", "/documents/"],
-    kids: [{ n: "George Mountjoy|1889", via: "doc" }] },
+    kids: [
+      { n: "George Mountjoy|1889", via: "doc" },
+      { n: "Jan Dirk Abraham Francois Mountjoy", via: "inf" },
+      { n: "Fritz Johannes Mountjoy", via: "inf" },
+      { n: "Carolina Isabella Margaretha Aletta Mountjoy", via: "inf" },
+      { n: "Maria Sophia Mountjoy of Dordrecht", via: "inf" },
+      { n: "Carolina Isabella Margaretha Aletta Mountjoy the second", via: "inf" },
+      { n: "Herklaus Johannes Mountjoy", via: "inf" },
+      { n: "Willem Hermanus Mountjoy", via: "inf" }] },
 
   { h: "Jan Dirk Abram Frans van Niekerk", w: "Carolina Deybella Margrietta Alletta Botha", via: "doc",
     why: "He signed her death notice at Dordrecht on 29 December 1902 as “nablyvende echtgenoot”. It lists eleven children.",
