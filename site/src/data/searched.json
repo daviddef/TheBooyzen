@@ -634,6 +634,64 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "The Marico question, tested on names",
+   "n": "no new search — the data this archive already holds, put against itself",
+   "d": "13 Sep 2026",
+   "h": "/atlas/",
+   "rows": [
+    [
+     "The seven TAB CJC compensation claims, by initials, against the eight children on the 1876 Sterfkennis",
+     "Three fit, four do not",
+     "JPJ, PJ, GL, JPJ, L, JC, HE against David Schalk, Magdalena Johanna, Petrus Jacobus, Anna Eliezabet, Jan Gerthardus Lodewikus, Eliezabet Cornelia, Hendrik Stefanus, Anna Maria. PJ, GL and L fit; JPJ, JC and HE do not. With a family this repetitive about forenames that is roughly what chance gives you, and by 1903 the 1876 children were dead or in their eighties — a real claimant would be a grandson, a generation beyond what this archive can name.",
+     "no"
+    ],
+    [
+     "Where the Marico JPJ was born",
+     "Pietermaritzburg, Natal, 1841",
+     "The index gives the man behind two of the seven claims as born at Pietermaritzburg and dead at Rhenosterfontein, district Marico, in November 1900. This family is Graaff-Reinet. It is the one hard fact in the comparison and it points away.",
+     "no"
+    ]
+   ]
+  },
+  {
+   "g": "NAAIRS · the Cape compensation series, found and then tested",
+   "n": "the burned-farm question, taken as far as a keyboard can take it",
+   "d": "13 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "What IS the Cape equivalent of the Transvaal CJC?",
+     "THE WAR LOSSES COMPENSATION COMMISSION, 1902",
+     "Named at last. KAB, source NA, volume 564, reference A1068: “War Losses Compensation Commission, Sub-Commissioners Captain E. J. Whindus and Mr H. H. Bunn”, 1902. This archive has been asking for “Cape Colony compensation claims” for weeks without knowing what they were called.",
+     "yes"
+    ],
+    [
+     "KAB · BOOYZEN and BOOYSEN against COMPENSATION and LOSSES",
+     "Nothing, except one 1947 workmen's claim",
+     "BOOYZEN returns 39 documents in the Cape depot and none of them mention compensation or losses. BOOYSEN returns 2,370 and exactly one in combination: a Workmen's Compensation Act 1941 claim at King William's Town, 1947–49, naming D. B. Booysen. Nothing to do with the war.",
+     "no"
+    ],
+    [
+     "The control — is the Commission indexed by claimant at all?",
+     "NO, AND THE ZERO ABOVE IS THEREFORE WEAK",
+     "SMIT, SCHOEMAN and BARRY also return nothing under LOSSES in the Cape depot. The two BOTHA hits are a 1935 locust and arsenical-poisoning stock claim from a magistrate's series. The Commission's records are catalogued by sub-commissioner and volume, not by the people who claimed. A name search cannot reach them, so a name search finding nothing means very little.",
+     "no"
+    ],
+    [
+     "NAAIRS wildcards",
+     "THE ASTERISK RETURNS ZERO",
+     "Recorded because it silently manufactures false negatives. BOOY* in the Cape depot returns 0 documents. BOOYZEN, spelled out, returns 39. Four searches run here with an asterisk were discarded and re-run. Anyone using NAAIRS should assume the wildcard does not expand.",
+     "no"
+    ],
+    [
+     "The NAAIRS address",
+     "The bare hostname no longer resolves",
+     "national.archsrch.gov.za does not resolve at all. www.national.archsrch.gov.za does, and is the address the National Archives' own help page links to. Noted because the database on which much of this archive rests appears dead if you type it from memory.",
+     "yes"
+    ]
+   ]
   }
  ]
 }

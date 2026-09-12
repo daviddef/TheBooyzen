@@ -341,6 +341,20 @@
    "k": "find",
    "w": "Death notice 6167, filed Cape Town 21 June 1843, under Section 9 of Ordinance 104 — a generation older in form than anything else here. JOHANNA BOOYZEN, born in the Colony about 20 March 1754, died 16 June 1843 at 28 Roze Street, widow of Charles du Plessis, one daughter married to Benjamin Solomon, and “no property whatever except a Bond amounting per balance to £15”. Line 3 reads “both dead” — the seventh failure of that question in this archive and the earliest. She is NOT this family. She is recorded because the only two dates this archive holds for Magdelena Elisabeth de Beer are born 1754 and died 1843, both off the family tree with no source, and here is a Booyzen woman who matches both to the year and is demonstrably somebody else. That is exactly the material a bad merge is made of, and it is better to have met it deliberately than to meet it by accident.",
    "h": "/documents/#johanna-1843"
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "The post, checked",
+   "k": "work",
+   "w": "Three enquiries out, none answered. Western Cape Archives (sent 9 Sep, four days): silence. SANDF Documentation Centre (9 Sep): one of the two addresses bounced within seconds — 550 5.7.1, relay access denied — and the other has said nothing in four days. National Archives, Pretoria (12 Sep): no bounce, too early for anything else. Recorded with the date because silence and inaction are indistinguishable on a page that does not say which it is, and this archive has already had to correct itself once for calling a half-delivered letter sent.",
+   "h": "/open-questions/"
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "The Cape compensation series, named — and then shown to be unsearchable by name",
+   "k": "work",
+   "w": "Open question 11 has asked for “Cape Colony compensation claims” for weeks without knowing what they were called. They are the WAR LOSSES COMPENSATION COMMISSION, 1902 — KAB, source NA, volume 564, reference A1068. The Cape depot holds 454 documents mentioning compensation and war, and 679 mentioning losses. BOOYZEN appears in none of them. That would ordinarily be worth something, and here it is worth very little: SMIT, SCHOEMAN and BARRY also return nothing, and the two BOTHA hits are a 1935 locust and arsenical-poisoning stock claim from a magistrate's series. The Commission is catalogued by sub-commissioner and volume, not by claimant. A name search cannot reach these files, so a name search failing to reach them proves nothing. The question stays open and the way in is the Reading Room. Two working notes recorded with it: the NAAIRS asterisk wildcard returns ZERO rather than expanding — BOOY* gives 0 in a depot where BOOYZEN gives 39 — and the bare hostname national.archsrch.gov.za no longer resolves at all, though www.national.archsrch.gov.za does.",
+   "h": "/open-questions/"
   }
  ]
 }
