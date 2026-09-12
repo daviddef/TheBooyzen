@@ -299,6 +299,13 @@
    "k": "find",
    "w": "The same correction does the opposite favour. Vaalbank, in the district of Lichtenburg, is where the 1876 man's son died in 1885 — and this archive had already read a 1920 Sterfkennis from that farm for Magdalena Susanna Maria van den Berg, born Booyzen about 1860, father entered as Jan Gerhardus Lodewicus Booyzen, filed under “NOT PROVED”. She is his daughter. Two deaths on one farm thirty-five years apart, which is settlement rather than passage. Read west along the atlas: Rustenburg 1876, Lichtenburg 1885 and 1920, Marico 1903. Three neighbouring districts, and this archive spent months insisting the third of them was somebody else's family.",
    "h": "/atlas/"
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "The last six Transvaal estates are blocked, not missing",
+   "k": "work",
+   "w": "Six estates have sat on the Sources page as “Located” for weeks, on the assumption that they were simply not name-indexed and would yield to film browsing. They will not. The collection runs on 762 films; every film up to 007830062 serves its images and every film from 007830063 onward returns 403 — twenty-eight tested, twenty-eight refused — and those are precisely the films carrying 1946 and later. Five of the six are behind that line. The sixth, 52653 of 1923, is in the open half but is not name-indexed, and the films are not ordered by estate number: image 100 of three films in the same numeric neighbourhood gave a 1920 Sterfkennis, a 1938 death notice, and a Chinese clan genealogy. There is nothing to interpolate along. The queue moves off the screen and onto a letter to Pretoria. One trap recorded on the way: q.filmNumber works as a search term alone and is silently ignored the moment a surname is added, returning a whole-collection result that looks like a film result.",
+   "h": "/sources/"
   }
  ]
 }

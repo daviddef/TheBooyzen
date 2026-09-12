@@ -570,6 +570,38 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "FamilySearch · can the last six Transvaal estates be read at all?",
+   "n": "a negative with its scope written down",
+   "d": "13 Sep 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "Film access across the whole collection, 762 films, 007805260 to 007831001",
+     "Open to 007830062. Closed from 007830063.",
+     "Twenty-eight films from 007830063 onward were requested and twenty-eight returned HTTP 403. Those are the films whose indexed records reach 1946 and later. Film 007830062, the one immediately before the line, serves its images normally. This is an access boundary, not a gap in the index.",
+     "no"
+    ],
+    [
+     "TAB MHG 3734/46, 1095/48, 5155/51, 769/52, 10/57",
+     "All five behind the line",
+     "Nothing to be done from here. The originals are at the Transvaal Archives Depot in Pretoria.",
+     "no"
+    ],
+    [
+     "TAB MHG 52653 (1923) — in the open half",
+     "Cannot be located",
+     "Not name-indexed under any spelling of Booyzen, Booysen or Booijzen. And the films are NOT ordered by estate number: image 100 of three films in the same numeric neighbourhood produced a 1920 Sterfkennis, a 1938 death notice, and a Chinese clan genealogy. The interpolation trick that found the 1840 Montjoy notice has nothing to interpolate along here.",
+     "no"
+    ],
+    [
+     "q.filmNumber as a search term",
+     "Works alone; silently ignored with a surname",
+     "Recorded because it nearly produced a false negative. q.filmNumber=007830063 alone returns 211 personas. Add q.surname=Booyzen and the result is 150 — which is the count for the surname across the WHOLE collection. The film filter is dropped without a word. Any search combining the two is a search of the whole collection wearing a disguise.",
+     "no"
+    ]
+   ]
   }
  ]
 }
