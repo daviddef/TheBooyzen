@@ -1,0 +1,70 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import Motif from "../components/Motif.astro";
+import { u } from "../lib/url.js";
+import ns from "../data/namesakes.json";
+const sets = ns.sets;
+const total = sets.reduce((n, s) => n + s.who.length, 0);
+const motifs = ["koppie", "windpump", "gable", "wagon", "awl", "thorn", "koppie"];
+---
+<Base title="The namesakes"
+      eyebrow={`${sets.length} names, ${total} people`}
+      dek="In this family a forename is inherited property. It travels through daughters as reliably as a surname travels through sons, it survives a change of surname, and it goes on being given long after the person it came from is dead.">
+
+<section class="blk">
+  <h2>Why this is not decoration</h2>
+  <div class="prose">
+    <p>{ns.note}</p>
+    <blockquote>Read these lists and the family's own idea of itself is visible in a way no document
+      states: who was worth remembering, whose side of the family was being honoured, and which
+      relationships mattered enough to be carried for a century.</blockquote>
+    <p>The first list is the strangest. <b>The name this family has repeated for five generations
+      belongs to a man with no blood relation to any of them.</b></p>
+  </div>
+</section>
+
+{sets.map((s, i) => (
+  <div>
+    <Rule name={motifs[i % motifs.length]} />
+    <section class="blk">
+      <div class="lab">{s.sub}</div>
+      <h2 style="margin-top:6px">{s.n}</h2>
+      <p class="dek" style="margin-top:8px">{s.kick}</p>
+      <div class="scroll" style="margin-top:18px">
+        <table>
+          <thead><tr><th style="width:21rem">Who</th><th class="m" style="width:9rem">When</th><th>What they are to the name</th></tr></thead>
+          <tbody>
+            {s.who.map(([n, when, why, href]) => (
+              <tr>
+                <td>{href ? <a href={u(href)}><strong>{n}</strong></a> : <strong>{n}</strong>}</td>
+                <td class="m">{when}</td>
+                <td>{why}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {s.note && <p class="note" style="margin-top:16px">{s.note}</p>}
+    </section>
+  </div>
+))}
+
+<Rule name="thorn" />
+
+<section class="blk">
+  <h2>What it costs</h2>
+  <div class="prose">
+    <p>The same habit that makes this family legible makes it dangerous to index.
+      <b>Three of this archive's corrections are name collisions</b>, and one of them stood for
+      weeks: an estate filed in 1885 was given to the wrong Jan Gerhardus Lodewicus, and a death date
+      was invented to fit.</p>
+    <p>So this site does not merge people on a name. Where two people share one, they share a page and
+      the page says so out loud; where a name is carried by more than one person, every chart and every
+      register row keeps them apart.
+      <a href={u("/corrections/")}>What was taken back &rarr;</a> ·
+      <a href={u("/people/")}>Everyone &rarr;</a> ·
+      <a href={u("/name/")}>The surname &rarr;</a></p>
+  </div>
+</section>
+</Base>
