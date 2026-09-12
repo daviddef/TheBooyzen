@@ -178,20 +178,27 @@
    "k": "Farm",
    "r": "Barkly East",
    "s": "doc",
-   "w": "Named for a village in Pembrokeshire. Margaret Elizabeth Barry née Kolbe died in her son's house here on 2 August 1912, and it is where the “Father: Kolbe … Mother: Unknown” notice was written three years later.",
+   "w": "The Barry farm, and now documented as John Barry's own house rather than only his son's. The 1903 registration of his death gives his residence and his place of death as MANOR OWEN, WARD IV, with his son Richard Barry living at the same address and signing as “son present at death”. Margaretha Kolbe died here in 1915. Harriet Louisa Barry, eighteen, lived here and was buried here in 1912. Three deaths in this family on one farm in twelve years.",
    "e": [
     [
-     "2 Aug 1912",
-     "Margaret Elizabeth Barry née Kolbe dies here"
+     "25 Aug 1903",
+     "John Barry dies here, aged 84 — “Irishman born in Ireland”, carpenter"
+    ],
+    [
+     "7 Sep 1912",
+     "Harriet Louisa Barry buried here, dead of typhoid at Cherryville"
     ],
     [
      "13 May 1915",
-     "her death notice completed by R. P. Barry"
+     "R. P. Barry signs his mother's death notice here"
     ]
    ],
    "p": [
-    "Margaretha Wilhelmina Elizabeth Mary Kolbe",
-    "Richard Peter Barry"
+    "John Augustus Barry I",
+    "Richard Peter Barry",
+    "Harriet Louisa Barry",
+    "Hendrik Nicholaas Barry",
+    "Margaretha Wilhelmina Elizabeth Mary Kolbe"
    ],
    "slug": "manorowen",
    "lat": -30.515,
@@ -961,6 +968,46 @@
     "Magdalena Susanna Maria van den Berg"
    ],
    "slug": "vaalbank"
+  },
+  {
+   "n": "Cherryville",
+   "k": "Farm",
+   "r": "District Barkly East",
+   "s": "doc",
+   "lat": -30.97,
+   "lon": 27.6,
+   "approx": true,
+   "w": "The third named Barry farm, after Manorowen and Jerpoint. Harriet Louisa Barry, eighteen, died here of typhoid on 7 September 1912 after thirty days' illness and was carried back to Manorowen to be buried. Her father, who signed the form, gave his own residence as Manorowen — so Cherryville is somewhere the family worked rather than lived, or another Barry household entirely. The coordinates are approximate.",
+   "e": [
+    [
+     "7 Sep 1912",
+     "Harriet Louisa Barry dies here of typhoid, aged eighteen"
+    ]
+   ],
+   "p": [
+    "Harriet Louisa Barry"
+   ],
+   "slug": "cherryville"
+  },
+  {
+   "n": "Slang River",
+   "k": "Locality",
+   "r": "North-eastern Cape",
+   "s": "inf",
+   "lat": -30.95,
+   "lon": 27.45,
+   "approx": true,
+   "w": "Where Dorothea Regina Barry, daughter of Hendrik Nicholaas Barry and Anna Johanna Maria Schoeman, was baptised on 3 April 1892. From the index rather than the register, and placed only approximately.",
+   "e": [
+    [
+     "3 Apr 1892",
+     "Dorothea Regina Barry baptised"
+    ]
+   ],
+   "p": [
+    "Dorothea Regina Barry of Slang River"
+   ],
+   "slug": "slang-river"
   }
  ]
 }

@@ -242,8 +242,18 @@ export const families = [
       { n: "Kathleen Mary Barry", via: "doc" }] },
 
   { h: "Hendrik Nicholaas Barry", w: "Anna Johanna Maria Schoeman", via: "doc",
-    why: "The second Barry–Schoeman link, and part of why the 1924 marriage was between cousins.",
-    src: ["The cousin marriage", "/cousins/"], kids: [] },
+    why: "The second Barry–Schoeman link, and part of why the 1924 marriage was between cousins. Four of their children are in the baptism registers at Dordrecht, Slang River and Barkly West between 1888 and 1900, and he signed his eldest daughter's death registration in 1912 as “Father present when died”.",
+    src: ["Harriet's registration, 1912", "/documents/#harriet-1912"],
+    kids: [
+      { n: "Ruben Jacobus Hosea Barry", via: "inf" },
+      { n: "Dorothea Regina Barry of Slang River", via: "inf" },
+      { n: "Harriet Louisa Barry", via: "doc" },
+      { n: "Ellen Hendrika Barry", via: "inf" }] },
+
+  { h: "Richard Peter Barry", w: "Jeannie Maria Catharina Botha", via: "doc",
+    why: "Named together on their son's baptism at Barkly West, 26 April 1898.",
+    src: ["The 1903 registration", "/documents/#barry-1903"],
+    kids: [{ n: "Richard Pieter Kolbe Barry", via: "doc" }] },
 
   { h: "George Augustus Kolbe", w: "Margaret Downing", via: "doc",
     why: "Married 1819 — both were sixteen, and the Nautilus passenger roll of 1820 overstates both their ages by four years.",
