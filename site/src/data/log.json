@@ -306,6 +306,13 @@
    "k": "work",
    "w": "Six estates have sat on the Sources page as “Located” for weeks, on the assumption that they were simply not name-indexed and would yield to film browsing. They will not. The collection runs on 762 films; every film up to 007830062 serves its images and every film from 007830063 onward returns 403 — twenty-eight tested, twenty-eight refused — and those are precisely the films carrying 1946 and later. Five of the six are behind that line. The sixth, 52653 of 1923, is in the open half but is not name-indexed, and the films are not ordered by estate number: image 100 of three films in the same numeric neighbourhood gave a 1920 Sterfkennis, a 1938 death notice, and a Chinese clan genealogy. There is nothing to interpolate along. The queue moves off the screen and onto a letter to Pretoria. One trap recorded on the way: q.filmNumber works as a search term alone and is silently ignored the moment a surname is added, returning a whole-collection result that looks like a film result.",
    "h": "/sources/"
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "A third letter, to Pretoria",
+   "k": "work",
+   "w": "Sent to enquiries2@dsac.gov.za, the research address on the National Archives Repository's own contact page, copied to the Head of Client Services. Six estate files — MHG 1095/48, 3734/46, 769/52, 5155/51, 10/57 and 52653 — with the death notice asked for ahead of the will and the account in each, because six death notices are worth more to this archive than one complete file. Their own page states that records older than twenty years carry a public right of access free of charge. Whether it was DELIVERED is a separate question from whether it was sent, and this archive will not use the second word until it has checked for the first.",
+   "h": "/open-questions/"
   }
  ]
 }
