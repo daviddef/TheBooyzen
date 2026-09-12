@@ -2403,11 +2403,11 @@
   },
   {
    "n": "James Henry Barry",
-   "b": "—",
-   "d": "—",
+   "b": "c. 1847",
+   "d": "23 Jun 1939, Barkly East",
    "l": "Barry",
    "s": "doc",
-   "r": "Named on the 1915 death notice.",
+   "r": "Named on the 1915 death notice, which he swore himself. The index now dates him: born about 1847, dead at Barkly East on 23 June 1939, having outlived his father by thirty-six years.",
    "p": [
     [
      "The Barrys",
@@ -2416,6 +2416,10 @@
     [
      "The Rebels",
      "/rebels/"
+    ],
+    [
+     "The Register",
+     "/register/"
     ]
    ]
   },
@@ -2438,6 +2442,180 @@
     [
      "The Documents",
      "/documents/"
+    ]
+   ]
+  },
+  {
+   "n": "Richard Pieter Kolbe Barry",
+   "b": "1899",
+   "d": "—",
+   "l": "Barry",
+   "s": "inf",
+   "r": "CARRIES BOTH NAMES AT ONCE — Richard Pieter, for the Barry of Manorowen, and Kolbe, for the 1820 Settler family his great-grandmother married out of. Married Maria Magdalena Siebert. FROM THE INDEX; no image read.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Barrys",
+     "/barry/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Harriet Louisa Barry",
+   "b": "1894",
+   "d": "7 Sep 1912, Barkly East",
+   "l": "Barry",
+   "s": "inf",
+   "r": "Of MANOROWEN, Barkly East district — the farm where Richard Peter Barry signed his mother’s death notice in 1915. Dead at eighteen. FROM THE INDEX.",
+   "p": [
+    [
+     "The Barrys",
+     "/barry/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "John Gerson Eliazer Barry",
+   "b": "1893",
+   "d": "8 Mar 1941, Barkly East",
+   "l": "Barry",
+   "s": "inf",
+   "r": "Married Elizabeth Johanna Magdalena Botha. FROM THE INDEX.",
+   "p": [
+    [
+     "The Barrys",
+     "/barry/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Theunis Christoffel Barry",
+   "b": "1895, Barkly East",
+   "d": "11 Jul 1963, East London",
+   "l": "Barry",
+   "s": "inf",
+   "r": "FROM THE INDEX.",
+   "p": [
+    [
+     "The Barrys",
+     "/barry/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Cornelia Herculena Petronella Barry",
+   "b": "—",
+   "d": "21 Dec 1909, Cherryville, Barkly East",
+   "l": "Barry",
+   "s": "inf",
+   "r": "Of CHERRYVILLE, Barkly East — a third named Barry farm, after Manorowen and Jerpoint. FROM THE INDEX.",
+   "p": [
+    [
+     "The Barrys",
+     "/barry/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Johanna Catharina Mountjoy of Indwe",
+   "b": "—",
+   "d": "Jun 1911, Indwe",
+   "l": "Mountjoy",
+   "s": "doc",
+   "r": "She joined the Dutch Reformed congregation at Indwe on 23 JULY 1907, arriving FROM BARKLY OOST — six weeks after Willem Hermanus Booijzen was confirmed in the same church — and the register’s last column records her dead there in June 1911. A Mountjoy and a Booyzen in one small colliery congregation, twenty-two years after the two families stood at the same font at Barkly Oost.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/#indwe-1907"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "William Henry Keys",
+   "b": "1854",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Married a Johanna Catharina Mountjoy and had children baptised at Dordrecht, Burgersdorp and Barkly East between 1878 and 1897 — among them JAMES JONATHAN KEYS and HERKLAAS EDWARD JOHANNES KEYS. The Mountjoy forenames crossing into a third surname, exactly as the Barry names crossed into the Daschners. FROM THE INDEX.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "James Jonathan Keys",
+   "b": "18 Nov 1883",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Baptised at Dordrecht, 2 December 1883, and named for James Jonathan Mountjoy. FROM THE INDEX.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Register",
+     "/register/"
+    ]
+   ]
+  },
+  {
+   "n": "Herklaas Edward Johannes Keys",
+   "b": "9 Feb 1897",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "inf",
+   "r": "Barkly West, and named for Herklaas — Hercules Johannes Mountjoy. FROM THE INDEX.",
+   "p": [
+    [
+     "The Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Register",
+     "/register/"
     ]
    ]
   },
