@@ -1,0 +1,102 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import mg from "../data/marriages.json";
+import { resolve, dates } from "../lib/kin.js";
+const rows = mg.rows.map(r => ({ ...r, H: resolve(r.h), W: resolve(r.w) }))
+  .sort((a, b) => (a.ds < b.ds ? -1 : 1));
+const placed = rows.filter(r => r.p !== "—");
+const byPlace = {};
+for (const r of placed) (byPlace[r.p] ||= []).push(r);
+const places = Object.entries(byPlace).sort((a, b) => b[1].length - a[1].length);
+const docCount = rows.filter(r => r.via === "doc").length;
+---
+<Base title="The marriages"
+      eyebrow={`${rows.length} marriages · ${placed.length} with a place`}
+      dek="Every marriage in this archive that a document places, in order. A marriage is where two lines join — and it is also the moment a family chooses a town, a church and a witness, which is why the column that matters most here is not the date.">
+
+<section class="blk">
+  <h2>What the places say</h2>
+  <div class="prose">
+    <p><b>{docCount} of the {rows.length}</b> rest on a record this archive has read. Read the right-hand
+      column down and the family's whole movement is in it: three marriages at
+      <b>Graaff-Reinet and Cradock</b> before 1850, then the north-eastern Cape for fifty years &mdash;
+      <b>Lady Grey, Dordrecht, Caerlaverock, Indwe</b> &mdash; then, once and finally,
+      <b>Vereeniging</b> and <b>Johannesburg</b>.</p>
+    <blockquote>Two of them are the hinges of this archive. <b>Cradock, 4 November 1838</b> joins Booysen
+      to Mountjoy. <b>Mayfair, 15 January 1949</b> is where this archive stops and the Lerena one
+      begins.</blockquote>
+  </div>
+  <div class="grid g3" style="margin-top:20px">
+    {places.slice(0, 9).map(([p, rs]) => (
+      <div class="panel">
+        <div class="lab">{rs.length === 1 ? "one marriage" : rs.length + " marriages"}</div>
+        <h3 style="margin:6px 0 8px;font-size:17px">{p}</h3>
+        <p class="cap" style="margin:0">{rs.map(r => r.d).join(" · ")}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<Rule name="gable" label="In order" />
+
+<section class="blk">
+  <div class="scroll">
+    <table>
+      <thead><tr>
+        <th class="m" style="width:9rem">When</th><th style="width:11rem">Where</th>
+        <th style="width:22rem">Who</th><th>What the record says</th>
+      </tr></thead>
+      <tbody>
+        {rows.map(r => (
+          <tr>
+            <td class="m">{r.d}</td>
+            <td>{r.p === "—" ? <span class="m">not recorded</span> : <b>{r.p}</b>}</td>
+            <td>
+              {r.H && <a href={u("/who/" + r.H.slug + "/")}>{r.H.n}</a>}
+              {r.H && r.W ? <span class="m"> &amp; </span> : null}
+              {r.W && <a href={u("/who/" + r.W.slug + "/")}>{r.W.n}</a>}
+              <div style="margin-top:5px">
+                <span class={"chip " + (r.via === "tree" ? "lore" : "doc")}>
+                  {r.via === "tree" ? "family tree" : "a record read here"}</span>
+              </div>
+            </td>
+            <td>{r.n} {r.src && <a href={u(r.src[1])}>{r.src[0]} &rarr;</a>}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Three of them are not ordinary</h2>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="panel">
+      <div class="lab">8 July 1901</div>
+      <h3 style="margin:6px 0 8px;font-size:17px">A wedding under martial law</h3>
+      <p style="font-size:15px">Pretorius and Barry married <em>"in woonhuis D. Schoeman"</em> at
+        Caerlaverock &mdash; in the house of a man tried as a Cape Rebel <b>the month before</b>, and
+        witnessed by him. <a href={u("/rebels/")}>The rebels &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <div class="lab">21 September 1908</div>
+      <h3 style="margin:6px 0 8px;font-size:17px">Four months after the child</h3>
+      <p style="font-size:15px">A miner of twenty-two and a girl of sixteen whose parents had to consent,
+        at Indwe. Their son had been born on 31 May and was baptised <em>onecht</em> in December, because
+        the register records status at birth. <a href={u("/documents/#indwe-1907")}>Indwe &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <div class="lab">30 December 1924</div>
+      <h3 style="margin:6px 0 8px;font-size:17px">The line closing on itself</h3>
+      <p style="font-size:15px">First cousins once removed, sixty-five years after the Barry surname left
+        this family. The names had never left. <a href={u("/cousins/")}>The cousin marriage &rarr;</a></p>
+    </div>
+  </div>
+  <p class="cap" style="margin-top:20px">
+    <a href={u("/households/")}>The households &rarr;</a> ·
+    <a href={u("/namesakes/")}>The namesakes &rarr;</a> ·
+    <a href={u("/places/")}>The places &rarr;</a></p>
+</section>
+</Base>

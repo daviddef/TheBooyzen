@@ -47,7 +47,8 @@ const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total)
                   ? <span><b>Nothing. Not one record in the country.</b></span>
                   : c.got === 0
                     ? <span><b>Not harvested.</b> Too common to be evidence — a name this frequent would
-                        fill this page without telling anyone anything.</span>
+                        fill this page without telling anyone anything, and an arbitrary few hundred out
+                        of it would be worse than nothing.</span>
                     : c.got >= c.total
                       ? <span>Complete.</span>
                       : <span><b>Capped.</b> The index stops paging past this point.</span>}</td>
@@ -61,6 +62,10 @@ const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total)
     <b>BOOYZEN returns 1,350 people in the whole country and BOOYSEN returns 40,592</b> — thirty times as
     many — which is the scale behind everything this archive says about
     <a href={u("/name/")}>the name</a>.
+    The eight in-law surnames added on 13 September &mdash; Keys, Buitendag, Dormehl, Siebert, Roodt,
+    Olivier, Grobelaar, Palm &mdash; were all tested and all left out for the same reason. <b>OLIVIER
+    alone returns 81,327 people in this country</b>, and four hundred of them chosen by a search
+    engine's idea of relevance is not a sample of anything.
     And <b>SCHLEHER returns nothing at all</b>, against 851 for <em>Slier</em> and 7 for <em>Sleer</em>:
     the family tree's spelling of Anna Catharina's surname is the one form of it that no South African
     record uses. <a href={u("/women/")}>The women &rarr;</a>

@@ -1,0 +1,65 @@
+---
+import Base from "../layouts/Base.astro";
+import Rule from "../components/Rule.astro";
+import { u } from "../lib/url.js";
+import er from "../data/errands.json";
+const places = er.places;
+const total = places.reduce((n, p) => n + p.asks.length, 0);
+const motifs = ["windpump", "gable", "wagon", "koppie"];
+---
+<Base title="Errands"
+      eyebrow={`${places.length} doors · ${total} things that could be settled behind them`}
+      dek="Four questions in this archive now end at a building rather than a search box. This page is what somebody standing at each door could settle, with the references written out so nobody has to find them twice.">
+
+<section class="blk">
+  <h2>Why this page exists</h2>
+  <div class="prose">
+    <p>{er.note}</p>
+    <blockquote>Everything on this site was read from Australia, off microfilm, through a browser. That
+      has taken the work a long way and it has now stopped in four specific places &mdash; not for want
+      of searching, but because the records are <b>restricted, unfilmed, or catalogued in a way no name
+      search can reach</b>.</blockquote>
+    <p>Three letters are out and none has been answered. If you are near any of these buildings, or know
+      somebody who is, <b>the references below are complete</b> and every one has been checked against a
+      catalogue or a film. <a href={u("/sources/")}>Sources &rarr;</a></p>
+  </div>
+</section>
+
+{places.map((pl, i) => (
+  <div>
+    <Rule name={motifs[i % motifs.length]} />
+    <section class="blk">
+      <h2>{pl.where}</h2>
+      <p class="cap" style="margin-top:4px">{pl.addr}</p>
+      <p class="dek" style="margin-top:14px">{pl.why}</p>
+      <div class="scroll" style="margin-top:18px">
+        <table>
+          <thead><tr><th class="m" style="width:16rem">Reference</th><th>What it should give</th></tr></thead>
+          <tbody>
+            {pl.asks.map(([ref, what]) => (
+              <tr><td class="m"><strong>{ref}</strong></td><td>{what}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {pl.note && <p class="note" style="margin-top:16px">{pl.note}</p>}
+    </section>
+  </div>
+))}
+
+<Rule name="thorn" />
+
+<section class="blk">
+  <h2>And one thing anybody can do</h2>
+  <div class="prose">
+    <p><b>Read the corrections page before you trust anything here.</b> This archive has published
+      twenty-one things it had to take back, and the pattern in them is the most useful thing on the
+      site: a negative built from a list mistaken for a population, a search run over part of the ground
+      and written up as the whole, a fact read off a reference number and then quoted back as evidence.
+      <a href={u("/corrections/")}>What was taken back &rarr;</a></p>
+    <p>If you find something here that is wrong, it is wrong on purpose in only one sense: it was
+      published so that it could be checked. <a href={u("/method/")}>Method &rarr;</a> ·
+      <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+  </div>
+</section>
+</Base>
