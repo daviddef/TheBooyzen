@@ -794,7 +794,7 @@
    "lat": -25.55,
    "lon": 26.2,
    "approx": false,
-   "w": "A substantial Booyzen farming district — and this archive can no longer say whose. Seven Booyzen claims for compensation as burghers were filed here in 1903–04, and the Booyzen children who died in the Johannesburg and Vereeniging camps came from farms in this district. This entry used to call them \"emphatically someone else's\". That judgement rested on the belief that this family was in the Cape until about 1907 — and the 1876 Sterfkennis at Rustenburg, one district east, shows it was not. No document links this family to any of the seven claims. No document rules it out either. Unresolved is the honest word.",
+   "w": "A substantial Booyzen farming district — and this archive can no longer say whose. Seven Booyzen claims for compensation as burghers were filed here in 1903–04, and the Booyzen children who died in the Johannesburg and Vereeniging camps came from farms in this district. This entry used to call them \"emphatically someone else's\". That judgement rested on the belief that this family was in the Cape until about 1907 — and the 1876 Sterfkennis at Rustenburg, one district east, shows it was not. No document links this family to any of the seven claims. No document rules it out either. Unresolved is the honest word. 13 SEPTEMBER 2026: and now a documented Booysen marriage IN the district. Hendrik Stephanus Booysen — seventh child on the 1876 Sterfkennis, son of the direct ancestor — married Charlotta Elizabetha Dormehl at ZEERUST, the principal town of Marico. It still links this family to none of the seven compensation claims. It does mean the last of the three districts has had one of these people standing in it, and the sentence this archive withdrew was wronger than it knew.",
    "e": [
     [
      "1898",
@@ -811,9 +811,16 @@
     [
      "10 Sep 2026",
      "this archive withdraws “emphatically someone else's”"
+    ],
+    [
+     "bef. 1908",
+     "Hendrik Stephanus Booysen marries at Zeerust, district Marico"
     ]
    ],
-   "p": [],
+   "p": [
+    "Hendrik Stefanus Booijsen",
+    "Charlotta Elizabetha Dormehl"
+   ],
    "slug": "marico"
   },
   {
@@ -1008,6 +1015,27 @@
     "Dorothea Regina Barry of Slang River"
    ],
    "slug": "slang-river"
+  },
+  {
+   "n": "Koedoesfontein",
+   "k": "Farm",
+   "r": "District Rustenburg, Transvaal",
+   "s": "doc",
+   "lat": -25.6,
+   "lon": 27.1,
+   "approx": true,
+   "w": "Where Hendrik Stephanus Booysen died on 11 May 1908, aged seventy-nine, in the house of his son-in-law Willem Grobelaar. A farmer with no movable property, some land, and mutual wills with both of his dead wives. Thirty-two years earlier he had signed his own father's Sterfkennis at Brakfontein, one district over. The coordinates are approximate.",
+   "e": [
+    [
+     "11 May 1908",
+     "Hendrik Stephanus Booysen dies here, aged 79 years 11 months"
+    ]
+   ],
+   "p": [
+    "Hendrik Stefanus Booijsen",
+    "Anna Catharina Grobelaar"
+   ],
+   "slug": "koedoesfontein"
   }
  ]
 }

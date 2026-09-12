@@ -33,6 +33,24 @@ export const families = [
       { n: "Hendrik Stefanus Booijsen", via: "doc" },
       { n: "Anna Maria Booijsen", via: "doc" }] },
 
+  { h: "Petrus Jacobus Booysen|1788", w: "Elizabetha van der Merwe", via: "doc",
+    why: "A second marriage, and a second van der Merwe. Named as the mother on their son Hendrik Stephanus's 1908 death notice — his age puts his birth about June 1828, three years after the first wife died. It resolves the contradiction this archive had marked Serious, and it means the eight children on the 1876 Sterfkennis cannot all belong to one mother.",
+    src: ["The 1908 death notice", "/documents/#hendrik-1908"],
+    kids: [{ n: "Hendrik Stefanus Booijsen", via: "doc" }] },
+
+  { h: "Hendrik Stefanus Booijsen", w: "Charlotta Elizabetha Dormehl", via: "doc",
+    why: "His second marriage, at ZEERUST in the district of Marico. They made mutual wills, and she died before him.",
+    src: ["The 1908 death notice", "/documents/#hendrik-1908"],
+    kids: [
+      { n: "Petrus Jacobus Booysen of Rustenburg", via: "inf" },
+      { n: "Ockert Johannes Stephanus Booysen", via: "inf" },
+      { n: "Anna Catharina Grobelaar", via: "inf" },
+      { n: "Aletta Catharina Johanna Venter", via: "inf" }] },
+
+  { h: "Hendrik Stefanus Booijsen", w: "Anna Catharina Johanna Olivier", via: "doc",
+    why: "His first marriage. She is named on his 1908 notice as pre-deceased; which of his four children are hers is not stated.",
+    src: ["The 1908 death notice", "/documents/#hendrik-1908"], kids: [] },
+
   { h: "Petrus Jacobus Booysen|1812", w: "Johanna Catharina Mountjoy", via: "doc",
     why: "Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children.",
     src: ["The 1863 death notice", "/documents/"],

@@ -782,6 +782,38 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "An audit of this archive's own negatives",
+   "n": "checking whether the wildcard fault had contaminated anything already published",
+   "d": "13 Sep 2026",
+   "h": "/corrections/",
+   "rows": [
+    [
+     "Every search recorded on this site, checked for an asterisk",
+     "CLEAN — none",
+     "The NAAIRS wildcard returns zero rather than expanding, which would silently turn any wildcard search into a false negative. Every row on this page and every query in the working notes was re-read. The only asterisk in the notes is markdown emphasis. No negative published by this archive was built with one.",
+     "yes"
+    ],
+    [
+     "The estates of the 1876 children",
+     "Hendrik Stephanus found; the others not yet",
+     "David Schalk, Magdalena Johanna, Anna Eliezabet, Eliezabet Cornelia and Anna Maria remain unsearched or unfound. Their brother's estate turned out to carry their mother's name, so the rest are worth the same effort.",
+     "part"
+    ],
+    [
+     "Johanna Catharina Mountjoy, died Indwe June 1911",
+     "Not in the Cape civil death index",
+     "The church register records her death; the civil index does not return her under Mountjoy or Montjoy at Indwe or Wodehouse. Recorded as a scoped negative.",
+     "no"
+    ],
+    [
+     "The Roodts of Indwe",
+     "A large family, and the two mothers not separable yet",
+     "The Indwe registers carry Roodt baptisms through 1906–1926 under Jan Gabriel, Hermanus Johannes, Andries Johannes Taylor and Pieter Johannes. A Susanna Adrana Elizabeth Roodt was baptised at Indwe on 19 September 1908 and a Cornelis de Klerk Roodt on 31 May 1907. Which household the two mothers of 1908 and 1909 belong to is not yet established.",
+     "part"
+    ]
+   ]
   }
  ]
 }
