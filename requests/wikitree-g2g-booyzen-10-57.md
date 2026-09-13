@@ -1,6 +1,21 @@
 # G2G post — WikiTree, estate MHG 10/57 and the Booyzen line
 
-**Status: DRAFTED, NOT POSTED** — 13 September 2026.
+**Status: POST 1 IS LIVE** — posted 13 September 2026 from the account Defranceski-1.
+`https://www.wikitree.com/g2g/2082757/has-anyone-seen-sterfkennis-transvaal-estate-booyzen-1956`
+Category Genealogy Help; tags `south_africa` `south_african_roots` `booysen` `death_notice`;
+WikiTree ID field set to Booyzen-12, which renders as a profile link at the foot of the post;
+email notification on answers is on.
+
+**One thing had to be fixed after posting.** The draft used G2G's double-bracket profile
+syntax, `[[Booyzen-12]]`. That does NOT work in the body of a G2G post — the rich-text
+editor stores it literally, and it published as visible brackets. Edited within the minute
+to a plain anchor. **Use a real link in a G2G body; the double-bracket form is for wiki
+pages.** The ID/URL field below the body is the one that produces a proper profile link.
+
+**POST 2 below is still unposted** — it was drafted as a separate thread and no one has
+been asked for yet.
+
+**Original status line:** DRAFTED, NOT POSTED — 13 September 2026.
 **Same blocker as the private message.** G2G's ask page answers, in as many words,
 *"Please log in or register to ask a question."* Verified 13 September. The forum is
 public to READ without an account and not to POST, so moving from the private message

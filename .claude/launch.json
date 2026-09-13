@@ -10,6 +10,17 @@
       ],
       "port": 4324,
       "cwd": "site"
+    },
+    {
+      "name": "darcy",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/daviddefranceski/Claude/Projects/D'arcy Family/site",
+        "run",
+        "dev"
+      ],
+      "port": 4325
     }
   ]
 }
