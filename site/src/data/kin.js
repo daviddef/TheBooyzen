@@ -246,17 +246,17 @@ export const families = [
     kids: [{ n: "John Augustus Barry I", via: "tree" }] },
 
   { h: "John Augustus Barry I", w: "Margaretha Wilhelmina Elizabeth Mary Kolbe", via: "doc",
-    why: "Married 1850. Both of their death notices survive, and the two disagree about the date he died.",
+    why: "Married about 1850 at BURGHERSDORP — “probably”, says their own son on the 1915 notice, who did not know. His 1903 registration says they had ELEVEN children; the 1915 notice names EIGHT. Three are missing and this archive cannot name one of them.",
     src: ["The Barrys", "/barry/"],
     kids: [
       { n: "Catherine Maria Sophia “Kathleen” Barry", via: "line" },
       { n: "Hendrik Nicholaas Barry", via: "doc" },
       { n: "Margarietha Wilhelmina Elizabeth Barry", via: "doc" },
-      { n: "Dorothea Regina Barry", via: "doc" },
       { n: "James Henry Barry", via: "doc" },
+      { n: "George Augustus Barry", via: "doc" },
       { n: "Richard Peter Barry", via: "doc" },
-      { n: "Ruben Jacobus Josuah Barry", via: "doc" },
       { n: "Frederick Fortunatus Barry", via: "doc" },
+      { n: "Margaret Mary Bedford", via: "doc" },
       { n: "Kathleen Mary Barry", via: "doc" }] },
 
   { h: "Hendrik Nicholaas Barry", w: "Anna Johanna Maria Schoeman", via: "doc",

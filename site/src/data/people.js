@@ -405,7 +405,9 @@ export const people = [
 {n:"Fred J. Barry", b:"—", d:"—", l:"Barry", s:"open",
  r:"Cape Rebel, plaasboer of Ivanhoe, district Barkly East / Wodehouse, tried June 1901 — the same month as Schoeman of Caerlaverock. Relationship to this family unproven; the middle initial does not match Frederick Fortunatus.",
  p:[["The Rebels","/rebels/"]]},
-{n:"Ruben Jacobus Josuah Barry", b:"—", d:"—", l:"Barry", s:"doc", r:"Carries the Schoeman given name Ruben into the Barry family.", p:[["The Documents","/documents/"]]},
+{n:"Ruben Jacobus Josuah Barry", b:"—", d:"—", l:"Barry", s:"open",
+ r:"WITHDRAWN AS A SON, for the same reason as Dorothea Regina: the 1915 death notice, read entire, does not name him. The register holds a RUBEN JACOBUS HOSEA baptised at Dordrecht in 1888, a grandson. The Schoeman name Ruben does come into this family — one generation later than this archive said.",
+ p:[["The Documents","/documents/#barry-1915"],["What Was Taken Back","/corrections/"]]},
 {n:"Frederick Fortunatus Barry", b:"—", d:"—", l:"Barry", s:"doc", r:"Carries the Kolbe given name Fortunatus.", p:[["The Kolbes","/kolbe/"],["The Women","/women/"]]},
 {n:"Kathleen Mary Barry", b:"—", d:"—", l:"Barry", s:"doc", r:"Named on the 1915 death notice.", p:[["The Barrys","/barry/"]]},
 
