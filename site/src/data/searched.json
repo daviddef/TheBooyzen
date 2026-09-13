@@ -2,6 +2,32 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "n": "a name-indexed land register, and Booyzen in it",
+   "d": "14 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "Full-text search, q.text=Barry Kolbe, South Africa",
+     "0 results",
+     "The first hope was that full-text search — which reads unindexed images rather than volunteer indexes — could reach the two missing Barry children. It cannot. South African full-text coverage does NOT include the Dutch Reformed church registers. That is a clean negative and it closes the last screen route to those two children.",
+     "no"
+    ],
+    [
+     "Full-text search, q.text=Booyzen",
+     "~140 hits, 7 pages, 4 collections",
+     "What the coverage DOES include, and what this archive has never once searched: VOTER RECORDS, SOUTH AFRICA, VOTING RECORDS 1925–1931 · DE LIST, CAPE PROVINCE, MILITARY RECORDS 1901–1903 · LAND RECORDS, SOUTH AFRICA, FARM RECORDS 1895 and 1895–1955. The military one lands on the Anglo-Boer War years and the rebel question; the land ones land on Question 11, the farm. All four are full-text searchable, which is a different kind of access from anything this archive has used.",
+     "yes"
+    ],
+    [
+     "RAK 2508, “Ewaton Book 2” — the land-register index, images 14 and 15",
+     "Four Booyzen entries, with folios",
+     "An alphabetical index in three columns, SURNAME · CHRISTIAN NAME · FOLIO, read from the image and not from the AI transcript, which is unreliable. The Booyzen block reads: “Booyzen · Catharine Mary [S…] · 2492” and “Jacobus Nicolaas · 201”; “Booijzen · Matthys Joh… · 1866”; “Booijzen · Jacobus Nicholas · 2267”; “Booyzen · Jacobus Nicolaas · 1931, 1939”. TWO OF THOSE NAMES ARE IN THIS ARCHIVE. Jacobus Nicolaas Booyzen is the eldest of the eight on the 1863 death notice, who “ended in the Transvaal” with estate TAB MHG 52653 and nothing else attached to him — and Evaton is in the Transvaal. The Catharine Mary reading is the family's signature female name and the hardest of the four to be sure of. NOTHING IS ADOPTED: a surname in a land index is not an identification, the folios have not been followed, and the ledgers those folios point into are a different volume from this index.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "FamilySearch, back after two days — the queued queries, and one that paid",
    "n": "the 1788 baptism is not in the index; a nine-child household is",
    "d": "14 Sep 2026",
