@@ -195,8 +195,20 @@ export const people = [
  p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Line","/direct-line/"],["The Documents","/documents/"]]},
 
 {n:"Johanna Elena Stols", v:"Lowies · Booyzen", b:"c. 1854, Potchefstroom district", d:"—", l:"Booyzen", s:"doc",
- r:"His second wife, married at Pretoria on 27 November 1905 — she 51 and a WIDOW LOWIES of Skinners Court, he 56 and a widower of Goede Hoop. Her own remarriage certificate from the Master is cited in the register as No. 7081, so she too had an estate behind her that this archive has not opened.",
- p:[["The 1905 marriage","/documents/#pretoria-1905"],["The Women","/women/"],["What Is Still To Ask","/errands/"]]},
+ r:"His second wife, married at Pretoria on 27 November 1905 — she 51 and a WIDOW LOWIES of Skinners Court, he 56 and a widower of Goede Hoop. Her first husband was CHARLES PETRUS BAREND LOWIES, born in the district of Cradock about 1849 and dead at Pretoria on 5 JUNE 1905 — FIVE MONTHS AND TWENTY-TWO DAYS before she married again. Estate 7081, which the marriage register cites beside his 4795. TWELVE children by Lowies.",
+ p:[["Estate 7081","/documents/#estate-7081"],["The 1905 marriage","/documents/#pretoria-1905"],["The Women","/women/"]]},
+
+{n:"Charles Petrus Barend Lowies", b:"c. 1849, district Cradock", d:"5 Jun 1905, Pretoria", l:"Booyzen", s:"doc",
+ r:"Her first husband, and estate 7081 — the OTHER number cited in the Remarks column of the 1905 marriage register. Born in the district of CRADOCK about 1849, within a year of David Schalk Booysen and in the same Karoo district; dead at Pretoria, where David Schalk had been widowed five years earlier. His parents were JAN LOWIES and ELISABETHA MARIA LUBBE, and he left TWELVE children. INDEX ONLY — the estate file itself has not been opened.",
+ p:[["Estate 7081","/documents/#estate-7081"]]},
+
+{n:"Jan Lowies", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named with Elisabetha Maria Lubbe as the parents on estate 7081. Index only.",
+ p:[["Estate 7081","/documents/#estate-7081"]]},
+
+{n:"Elisabetha Maria Lubbe", v:"Lowies", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named as his mother on estate 7081. Index only.",
+ p:[["Estate 7081","/documents/#estate-7081"],["The Women","/women/"]]},
 {n:"Elizabetha Margaretha Marais", v:"Elizabetha Margaretha Booijzen, born Marais", b:"c. Apr 1850, district Cradock", d:"1 Jun 1900, Market Street, Pretoria", l:"Booyzen", s:"doc",
  r:"His wife, married at Lady Grey near Aliwal North. Daughter of STEPHANUS FRANCOIS MARAIS and ELIZABETHA MARGARETHA MARAIS, born in the district of Cradock about April 1850. She died in a ZINC BUILDING IN MARKET STREET, PRETORIA on 1 June 1900 — four days before Lord Roberts entered the town — and her husband did not file the notice for three years and nine months. Nothing movable left, and a compensation claim filed.",
  p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Women","/women/"]]},

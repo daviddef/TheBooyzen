@@ -113,6 +113,15 @@ export const families = [
       { n: "Elizabeth Margarietha Booijzen", via: "doc" },
       { n: "David Schalk Booijzen the younger", via: "doc" }] },
 
+  { h: "Charles Petrus Barend Lowies", w: "Johanna Elena Stols", via: "doc",
+    why: "Her first marriage. He was born in the district of Cradock about 1849 — within a year of David Schalk Booysen, and in the same district — and died at Pretoria on 5 June 1905, five months and twenty-two days before she married again. Estate 7081, which the 1905 marriage register cites beside David Schalk's 4795. TWELVE children, none of them in this archive beyond their names.",
+    src: ["Estate 7081", "/documents/#estate-7081"], kids: [] },
+
+  { h: "Jan Lowies", w: "Elisabetha Maria Lubbe", via: "doc",
+    why: "Named as his parents on estate 7081, and that is the whole of what this archive holds on them.",
+    src: ["Estate 7081", "/documents/#estate-7081"],
+    kids: [{ n: "Charles Petrus Barend Lowies", via: "doc" }] },
+
   { h: "David Schalk Booysen", w: "Johanna Elena Stols", via: "doc",
     why: "His second marriage, at Pretoria on 27 November 1905 — he 56 and a widower of Goede Hoop, she 51 and a widow Lowies of Skinners Court. The register's Remarks column cites his remarriage certificate from the Master, No. 4795, which is the estate number of his FIRST wife's death notice: the two documents cite each other.",
     src: ["The 1905 marriage", "/documents/#pretoria-1905"], kids: [] },

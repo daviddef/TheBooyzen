@@ -1122,8 +1122,12 @@
    "d": "—",
    "l": "Booyzen",
    "s": "doc",
-   "r": "His second wife, married at Pretoria on 27 November 1905 — she 51 and a WIDOW LOWIES of Skinners Court, he 56 and a widower of Goede Hoop. Her own remarriage certificate from the Master is cited in the register as No. 7081, so she too had an estate behind her that this archive has not opened.",
+   "r": "His second wife, married at Pretoria on 27 November 1905 — she 51 and a WIDOW LOWIES of Skinners Court, he 56 and a widower of Goede Hoop. Her first husband was CHARLES PETRUS BAREND LOWIES, born in the district of Cradock about 1849 and dead at Pretoria on 5 JUNE 1905 — FIVE MONTHS AND TWENTY-TWO DAYS before she married again. Estate 7081, which the marriage register cites beside his 4795. TWELVE children by Lowies.",
    "p": [
+    [
+     "Estate 7081",
+     "/documents/#estate-7081"
+    ],
     [
      "The 1905 marriage",
      "/documents/#pretoria-1905"
@@ -1131,10 +1135,53 @@
     [
      "The Women",
      "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "Charles Petrus Barend Lowies",
+   "b": "c. 1849, district Cradock",
+   "d": "5 Jun 1905, Pretoria",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Her first husband, and estate 7081 — the OTHER number cited in the Remarks column of the 1905 marriage register. Born in the district of CRADOCK about 1849, within a year of David Schalk Booysen and in the same Karoo district; dead at Pretoria, where David Schalk had been widowed five years earlier. His parents were JAN LOWIES and ELISABETHA MARIA LUBBE, and he left TWELVE children. INDEX ONLY — the estate file itself has not been opened.",
+   "p": [
+    [
+     "Estate 7081",
+     "/documents/#estate-7081"
+    ]
+   ]
+  },
+  {
+   "n": "Jan Lowies",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Named with Elisabetha Maria Lubbe as the parents on estate 7081. Index only.",
+   "p": [
+    [
+     "Estate 7081",
+     "/documents/#estate-7081"
+    ]
+   ]
+  },
+  {
+   "n": "Elisabetha Maria Lubbe",
+   "v": "Lowies",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Named as his mother on estate 7081. Index only.",
+   "p": [
+    [
+     "Estate 7081",
+     "/documents/#estate-7081"
     ],
     [
-     "What Is Still To Ask",
-     "/errands/"
+     "The Women",
+     "/women/"
     ]
    ]
   },

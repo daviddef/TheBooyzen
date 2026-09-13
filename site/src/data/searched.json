@@ -2,6 +2,32 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Following the estate numbers out of a marriage register's last column",
+   "n": "2 for 2",
+   "d": "13 Sep 2026",
+   "h": "/documents/#estate-7081",
+   "rows": [
+    [
+     "Estate 4795, cited for the groom",
+     "found and read",
+     "Elizabetha Margaretha Booijzen, born Marais — the death notice that opened David Schalk Booysen's whole household. Read entire.",
+     "yes"
+    ],
+    [
+     "Estate 7081, cited for the bride",
+     "found, index only",
+     "Charles Petrus Barend Lowies, born district Cradock about 1849, died Pretoria 5 June 1905, twelve children, parents Jan Lowies and Elisabetha Maria Lubbe. The IMAGE was not opened: FamilySearch began refusing record-page requests part-way through the session — “Access Denied, Error 15, this request was blocked by our security service”.",
+     "part"
+    ],
+    [
+     "Richard Peter Booyzen's wife",
+     "not found",
+     "His 1918 death registration says MARRIED, so there is a widow. The South African civil marriage index carries no Richard Peter Booyzen who can be him — the Richards it does carry belong to other families. She has no name.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The Johannesburg Booyzens who are NOT claimed",
    "n": "4 tested, 0 adopted",
    "d": "13 Sep 2026",
