@@ -450,7 +450,7 @@ export const families = [
       { n: "Mary Elizabeth Kolbe", via: "doc" },
       { n: "John Kolbe", via: "inf" },
       { n: "George Kolbe", via: "inf" },
-      { n: "Catharine Kolbe", via: "inf" },
+      { n: "Catharine Sophia Maria Kolbe", via: "inf" },
       { n: "Marian Kolbe", via: "doc" },
       { n: "Julia Kolbe", via: "doc" },
       { n: "Frederik Fortunatus Kolbe", via: "doc" },
