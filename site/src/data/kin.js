@@ -225,8 +225,25 @@ export const families = [
     kids: [{ n: "Anna Johanna Maria Pretorius", via: "doc" }] },
 
   { h: "Stephanus Francois Booyzen", w: "Beatrix Magdalena Catharina Boshoff", via: "doc",
-    why: "Married at Mossel Bay. She signed his 1940 Sterfkennis and could not name his parents.",
-    kids: [] },
+    why: "Married at MOSSELBAAI on 5 September 1905, certificate 1318 — he 30 and a jonkman of PRETORIA, she SIXTEEN with her parents consenting. ELEVEN children, all of them named on his 1940 estate, which she signed and on which she could not name his parents. Two of the eleven carry her own parents' names entire.",
+    src: ["Two hard ones", "/documents/#two-hard-ones"],
+    kids: [
+      { n: "David Schalk Booyzen of 1940", via: "doc" },
+      { n: "Susanna Fredrika Aletta Booyzen", via: "doc" },
+      { n: "Elizabeth Magrieta Booyzen", via: "doc" },
+      { n: "Beatrix Magdalena Catharina Booyzen", via: "doc" },
+      { n: "Johanna Catharina Booyzen of 1940", via: "doc" },
+      { n: "Ewert Philippus Booyzen", via: "doc" },
+      { n: "Stephanus Francois Booyzen the younger", via: "doc" },
+      { n: "Willem Hendrik Booyzen", via: "doc" },
+      { n: "Petrus Jacobus Booyzen of 1940", via: "doc" },
+      { n: "Johan Abraham Frederik Booyzen", via: "doc" },
+      { n: "Hendrik Rudolph Philippus Booyzen", via: "doc" }] },
+
+  { h: "Evert Philip Boshoff", w: "Susanna Frederika Aletta Meyer", via: "doc",
+    why: "Named together on their daughter's baptism at Mossel Bay, 16 February 1890. Two of her eleven children are called after them — Ewert Philippus and Susanna Fredrika Aletta.",
+    src: ["Two hard ones", "/documents/#two-hard-ones"],
+    kids: [{ n: "Beatrix Magdalena Catharina Boshoff", via: "doc" }] },
 
   { h: "Willem Hermanus Pieterzen|bef. 1817", w: "Anna Catharina Sleer", via: "doc",
     why: "Her first husband. The 1817 marriage register calls her “widow of Harmanus Pieterze”; the 1840 death notice calls him “William Pietersen”.",
