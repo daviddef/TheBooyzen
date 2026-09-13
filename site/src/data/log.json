@@ -418,6 +418,24 @@
    "k": "find",
    "w": "The 1903 registration answers the printed question “the total number of children deceased has had” with ELEVEN. The 1915 death notice names EIGHT. Three children of John Barry and Margaretha Kolbe died before 1915 and this archive cannot name one of them. It is the first hard count of that generation it has ever had, and it is three short.",
    "h": "/documents/#barry-1915"
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "The ancestor chart had every wife one generation too high",
+   "k": "back",
+   "w": "The tree page has been drawing each man's WIFE in his MOTHER's box since it was built — four slots, all shifted by one, and the woman at the root of the whole chart had no mother drawn at all. Rebuilt. The slot that is genuinely empty, the mother of the 1812 man, is now a fifth wall marked Disputed: a family tree supplies Anna Maria van der Merwe and no document does."
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "A drift checker, and the three things it found in its first run",
+   "k": "work",
+   "w": "tools/drift.py now runs in build.sh beside tools/links.py and fails the build when a narrative page contradicts the data. Its first real run found the pedigree missing two documented wives, the direct line showing one wife where kin.js has two, and two men named in a household who had no page at all. A family history that only shows its conclusions is asking to be believed on trust; a build that will not publish a contradiction is cheaper than another month of reading by eye."
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "1892 — the Zeerust marriage, and four children move mother",
+   "k": "find",
+   "w": "The 1908 death notice said the last marriage was at Zeerust and nothing more. The register gives entry 13 on 14 April 1892: Hendrik Stefanus Booijzen, 63, weduwnaar of Brakfontein in Rustenburg, and Charlotta Elizabeth Roos born Dormehl, 51, weduwe of Driefontein in Marico, BOTH BORN AT GRAAFF-REINET. Three things follow. His birthplace is now a town and not a colony, and it is the same town as three other men of this line. He was still at Brakfontein sixteen years after he signed his father's Sterfkennis there. And his four children cannot be hers: she was fifty-one at the wedding and they were adults by 1908, so they belong to the first wife, Anna Catharina Johanna Olivier. The clerk writes him Booijzen; he signs himself Booysen."
   }
  ]
 }

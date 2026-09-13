@@ -39,17 +39,19 @@ export const families = [
     kids: [{ n: "Hendrik Stefanus Booijsen", via: "doc" }] },
 
   { h: "Hendrik Stefanus Booijsen", w: "Charlotta Elizabetha Dormehl", via: "doc",
-    why: "His second marriage, at ZEERUST in the district of Marico. They made mutual wills, and she died before him.",
-    src: ["The 1908 death notice", "/documents/#hendrik-1908"],
+    why: "His second marriage: entry 13 at ZEERUST in the district of Marico, 14 April 1892. He was 63 and a widower of Brakfontein, Rustenburg; she was 51 and a widow of Driefontein, Marico, and both were born at Graaff-Reinet. They made mutual wills, and she died before him.",
+    warn: "NO CHILDREN. This archive drew his four children here for a month because it could name this marriage and not the other. She was fifty-one at the wedding and every one of the four was an adult by 1908.",
+    src: ["The 1892 marriage register", "/documents/#huwelijk-1892"],
+    kids: [] },
+
+  { h: "Hendrik Stefanus Booijsen", w: "Anna Catharina Johanna Olivier", via: "doc",
+    why: "His first marriage, and the one that produced the children. She is named on his 1908 notice as pre-deceased and the notice does not say which wife the four children belong to — but the second marriage is dated 1892, when the bride was fifty-one and a widow, so they are all hers.",
+    src: ["The 1892 marriage register", "/documents/#huwelijk-1892"],
     kids: [
       { n: "Petrus Jacobus Booysen of Rustenburg", via: "inf" },
       { n: "Ockert Johannes Stephanus Booysen", via: "inf" },
       { n: "Anna Catharina Grobelaar", via: "inf" },
       { n: "Aletta Catharina Johanna Venter", via: "inf" }] },
-
-  { h: "Hendrik Stefanus Booijsen", w: "Anna Catharina Johanna Olivier", via: "doc",
-    why: "His first marriage. She is named on his 1908 notice as pre-deceased; which of his four children are hers is not stated.",
-    src: ["The 1908 death notice", "/documents/#hendrik-1908"], kids: [] },
 
   { h: "Petrus Jacobus Booysen|1812", w: "Johanna Catharina Mountjoy", via: "doc",
     why: "Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children.",
