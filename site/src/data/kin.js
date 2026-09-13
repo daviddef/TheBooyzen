@@ -217,8 +217,24 @@ export const families = [
       { n: "James Mountjoy|1826", via: "doc" }] },
 
   { h: "George Mountjoy|1823", w: "Maria Sophia Botha", via: "doc",
-    why: "Married at Cradock, 20 August 1848, certificate 735. Thirteen children.",
-    kids: [{ n: "Hercules Johannes Mountjoy", via: "doc" }] },
+    why: "Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. Seven more are here, and the places track the family across the Cape–Free State border: Graaff-Reinet in 1858, Burgersdorp in 1860, Smithfield in 1862 and 1864.",
+    warn: "A Petronella Christina Aletta baptised at SWELLENDAM in 1871 carries both parents' names and is NOT adopted — Swellendam is six hundred miles west of everywhere else this family stood.",
+    src: ["The thirteen Mountjoy children", "/documents/#mountjoy-thirteen"],
+    kids: [
+      { n: "Anna Catharina Mountjoy", via: "doc" },
+      { n: "Maria Elizabeth Mountjoy", via: "doc" },
+      { n: "Johanna Catharina Mountjoy of Burgersdorp", via: "doc" },
+      { n: "George Herkules Johannes Mountjoy", via: "doc" },
+      { n: "Elsje Petronella Frederika Mountjoy", via: "doc" },
+      { n: "Hercules Johannes Mountjoy", via: "doc" },
+      { n: "Jacoba Regina Mountjoy", via: "doc" }] },
+
+  { h: "William Henry Keys", w: "Johanna Catharina Mountjoy of Burgersdorp", via: "doc",
+    why: "Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898. She is George Mountjoy's daughter, baptised at Burgersdorp on a leap day in 1860 — which is the question this archive has been asking since the Keys index was read.",
+    src: ["The thirteen Mountjoy children", "/documents/#mountjoy-thirteen"],
+    kids: [
+      { n: "James Jonathan Keys", via: "doc" },
+      { n: "Herklaas Edward Johannes Keys", via: "doc" }] },
 
   { h: "Hercules Johannes Mountjoy", w: "Maria Sophia van Niekerk", via: "doc",
     why: "Married at Dordrecht, 8 October 1888, aged 22 and 20.",

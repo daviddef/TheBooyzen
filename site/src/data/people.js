@@ -514,9 +514,33 @@ export const people = [
 {n:"Johanna Catharina Mountjoy of Indwe", b:"—", d:"Jun 1911, Indwe", l:"Mountjoy", s:"doc",
  r:"She joined the Dutch Reformed congregation at Indwe on 23 JULY 1907, arriving FROM BARKLY OOST — six weeks after Willem Hermanus Booijzen was confirmed in the same church — and the register’s last column records her dead there in June 1911. A Mountjoy and a Booyzen in one small colliery congregation, twenty-two years after the two families stood at the same font at Barkly Oost.",
  p:[["The Documents","/documents/#indwe-1907"],["The Women","/women/"]]},
-{n:"William Henry Keys", b:"1854", d:"—", l:"Mountjoy", s:"inf",
- r:"Married a Johanna Catharina Mountjoy and had children baptised at Dordrecht, Burgersdorp and Barkly East between 1878 and 1897 — among them JAMES JONATHAN KEYS and HERKLAAS EDWARD JOHANNES KEYS. The Mountjoy forenames crossing into a third surname, exactly as the Barry names crossed into the Daschners. FROM THE INDEX.",
- p:[["The Namesakes","/namesakes/"],["The Register","/register/"]]},
+{n:"William Henry Keys", b:"1854", d:"—", l:"Mountjoy", s:"doc",
+ r:"Married JOHANNA CATHARINA MOUNTJOY, baptised at Burgersdorp on 29 February 1860 — a daughter of George Mountjoy and Maria Sophia Botha, which this archive had been asking about and can now answer. Eight children baptised across Dordrecht, Barkly East and Barkly West between 1878 and 1898: Robert Byron, William Henry, JAMES JONATHAN, George, Lancelott Byron, Cecil Frederik, Rachel Anna Maria and HERKLAAS EDWARD JOHANNES. The Mountjoy forenames crossing into a third surname, exactly as the Barry names crossed into the Daschners — and BYRON twice, which appears nowhere else in this archive.",
+ p:[["The thirteen Mountjoy children","/documents/#mountjoy-thirteen"],["The Namesakes","/namesakes/"],["The Register","/register/"]]},
+
+{n:"Johanna Catharina Mountjoy of Burgersdorp", v:"Keys", b:"28 Jan 1860, baptised 29 Feb 1860 at Burgersdorp", d:"—", l:"Mountjoy", s:"doc",
+ r:"A daughter of George Mountjoy and Maria Sophia Botha, baptised on a LEAP DAY, and the woman who married William Henry Keys. This archive has carried “a Johanna Catharina Mountjoy” married to Keys since the index was read and could not say which one. This one.",
+ p:[["The thirteen Mountjoy children","/documents/#mountjoy-thirteen"],["The Women","/women/"]]},
+
+{n:"Anna Catharina Mountjoy", b:"5 Aug 1852, baptised 11 Jan 1854", d:"—", l:"Mountjoy", s:"doc",
+ r:"Eldest of the eight children of George Mountjoy and Maria Sophia Botha this archive can name, out of the thirteen their marriage certificate says they had.",
+ p:[["The thirteen Mountjoy children","/documents/#mountjoy-thirteen"],["The Women","/women/"]]},
+
+{n:"Maria Elizabeth Mountjoy", b:"12 Jun 1858, baptised at Graaff-Reinet", d:"—", l:"Mountjoy", s:"doc",
+ r:"Baptised two days after she was born, at Graaff-Reinet — which is where this family keeps turning up.",
+ p:[["The thirteen Mountjoy children","/documents/#mountjoy-thirteen"],["The Women","/women/"]]},
+
+{n:"George Herkules Johannes Mountjoy", b:"16 Jan 1862, baptised at Smithfield", d:"—", l:"Mountjoy", s:"doc",
+ r:"Baptised 27 April 1862 at SMITHFIELD in the Orange Free State — the family had crossed the border. He carries his father's name and his brother's.",
+ p:[["The thirteen Mountjoy children","/documents/#mountjoy-thirteen"],["Namesakes","/namesakes/"]]},
+
+{n:"Elsje Petronella Frederika Mountjoy", b:"10 Jun 1864, baptised at Smithfield", d:"—", l:"Mountjoy", s:"doc",
+ r:"Baptised 17 July 1864 at Smithfield, Orange Free State. Elsje appears nowhere else in this archive.",
+ p:[["The thirteen Mountjoy children","/documents/#mountjoy-thirteen"],["The Women","/women/"]]},
+
+{n:"Jacoba Regina Mountjoy", b:"14 Jun 1868, baptised 15 Aug 1868", d:"—", l:"Mountjoy", s:"doc",
+ r:"Named for her aunt Jacoba Catharina Mountjoy, who married David Schalk van der Merwe at Cradock in 1838 and died in 1842.",
+ p:[["The thirteen Mountjoy children","/documents/#mountjoy-thirteen"],["Namesakes","/namesakes/"]]},
 {n:"James Jonathan Keys", b:"18 Nov 1883", d:"—", l:"Mountjoy", s:"inf",
  r:"Baptised at Dordrecht, 2 December 1883, and named for James Jonathan Mountjoy. FROM THE INDEX.",
  p:[["The Namesakes","/namesakes/"],["The Register","/register/"]]},
