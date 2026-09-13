@@ -64,11 +64,36 @@ if missing:
 #     a stub written from the 1908 notice and a full record written from the 1891
 #     one. A machine cannot tell that from two real people of one name, so this
 #     warns and a human checks the shared page reads as two lives and not one.
+#     A warning that fires on every build is a warning nobody reads, so the
+#     collisions that HAVE been checked are listed here with the reason, and only
+#     a NEW one is reported. Adding a name below is a claim that somebody looked.
+CHECKED_SHARED = {
+    # name: how many records, and what separates them
+    "George Mountjoy": (2, "the 1823 Cradock saddle maker and his 1889–1963 descendant"),
+    "Petrus Jacobus Booysen": (3, "generations 6 (b. 1788), 5 (b. 1812) and the boy of 1839"),
+    "Willem Hermanus Pieterzen": (2, "Anna Catharina Slier's first husband, d. bef. 1817, "
+                                    "and the godfather at the 1851 font"),
+}
 from collections import Counter
-dupes = sorted(n for n, c in Counter(p["n"] for p in people).items() if c > 1)
-if dupes:
-    warns.append("%d name(s) shared by more than one record — check each is really two "
-                 "people and not one entered twice: %s" % (len(dupes), ", ".join(dupes)))
+counts = Counter(p["n"] for p in people)
+dupes = sorted(n for n, c in counts.items() if c > 1)
+fresh, moved = [], []
+for n in dupes:
+    if n not in CHECKED_SHARED:
+        fresh.append(n)
+    elif counts[n] != CHECKED_SHARED[n][0]:
+        moved.append("%s (was %d records, now %d)" % (n, CHECKED_SHARED[n][0], counts[n]))
+stale = sorted(n for n in CHECKED_SHARED if counts.get(n, 0) < 2)
+if fresh:
+    warns.append("%d NEW name(s) shared by more than one record — check each is really two "
+                 "people and not one entered twice, then list it in CHECKED_SHARED with the "
+                 "reason: %s" % (len(fresh), ", ".join(fresh)))
+if moved:
+    warns.append("%d checked name(s) changed count since somebody looked — re-check: %s"
+                 % (len(moved), ", ".join(moved)))
+if stale:
+    warns.append("%d name(s) in CHECKED_SHARED no longer collide — drop them so the list "
+                 "stays a record of real checks: %s" % (len(stale), ", ".join(stale)))
 
 # 2. the direct line's spouse column must not contradict kin.js
 dl = page("direct-line.astro")
