@@ -250,13 +250,17 @@
   },
   {
    "n": "Charlotta Elizabetha Dormehl",
-   "v": "Charlotta Elizabeth Roos, geboren Dormehl (1892)",
-   "b": "c. 1841, Graaff-Reinet",
-   "d": "bef. 1908",
+   "v": "Charlotta Elizabeth Roos, geboren Dormehl (1892) · Charlotta Elizabetta Booysen, born Dormehl (1902)",
+   "b": "c. Oct 1841, Graaff-Reinet",
+   "d": "6 Feb 1902, Driefontein, Groot Marico",
    "l": "Booyzen",
    "s": "doc",
-   "r": "His second wife, married at Zeerust on 14 April 1892 and pre-deceasing him; they made mutual wills. The register calls her CHARLOTTA ELIZABETH ROOS, GEBOREN DORMEHL, condition WEDUWE, of Driefontein in Marico, and she signs C. E. Roos geb. Dormehl: Dormehl was her maiden name, Roos her first husband’s. She was FIFTY-ONE at the wedding, which is why the four children this archive once drew under her are not hers.",
+   "r": "His second wife, married at Zeerust on 14 April 1892 when she was fifty-one and he sixty-three, and her own Death Notice 844 gives the rest: born Graaff-Reinet about October 1841, FARMER'S WIFE, father JACOB DORMEHL and mother UNKNOWN, dead at Driefontein in Groot Marico on 6 February 1902 aged 60 years 4 months, leaving ONE WAGON AND HOUSEHOLD FURNITURE worth £51 8s 0d and a will. THREE HUSBANDS — Jacob van Staden, then Matthys Roos, then Booysen — and SIX CHILDREN, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. That is why the four children this archive once drew under her are not hers.",
    "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
+    ],
     [
      "The 1892 marriage",
      "/documents/#huwelijk-1892"
@@ -268,6 +272,52 @@
     [
      "What Was Taken Back",
      "/corrections/"
+    ]
+   ]
+  },
+  {
+   "n": "Jacob Dormehl",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Named as her father on the 1902 death notice. Her mother is entered UNKNOWN — the seventh parent this archive's documents fail to name.",
+   "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
+    ],
+    [
+     "Open Questions",
+     "/open-questions/"
+    ]
+   ]
+  },
+  {
+   "n": "Jacob van Staden",
+   "b": "—",
+   "d": "bef. 1902",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Her first husband, named on her 1902 death notice with the date of his death given as unknown. Two sons, Jacob Alewyn and Coenrad Sybert.",
+   "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
+    ]
+   ]
+  },
+  {
+   "n": "Matthys Roos",
+   "b": "—",
+   "d": "bef. 1892",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Her second husband, and the reason the 1892 marriage register writes her in as CHARLOTTA ELIZABETH ROOS, GEBOREN DORMEHL. Four children. The date of his death is entered unknown.",
+   "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
     ]
    ]
   },

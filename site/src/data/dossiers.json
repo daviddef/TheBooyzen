@@ -918,7 +918,7 @@
     {
      "page": "/corrections/",
      "title": "What was taken back",
-     "text": "She is Anna Catharina Johanna OLIVIER, she died at BRAKFONTEIN — the family's own farm, where the archive's oldest document was written — and she is the first wife of Hendrik Stefanus Booijsen. The maiden name reads Oliefier and contains no b, r, t or s; her son gives OLIVIER on the 1908 notice. Two misreadings on one page kept a documented wife, seven children and a whole Olivier line off this site for a week. → A document read past what it says 13 Sep 2026 “Hendrik Stefanus Booysen had four children” He had at least seven."
+     "text": "→ A part searched, reported as the whole 13 Sep 2026 “Anna Johanna Booijzen, born Alberts, died at Boekfontein and is not this family” Every clause of that was wrong. She is Anna Catharina Johanna OLIVIER, she died at BRAKFONTEIN — the family's own farm, where the archive's oldest document was written — and she is the first wife of Hendrik Stefanus Booijsen. The maiden name reads Oliefier and contains no b, r, t or s; her son gives OLIVIER on the 1908 notice. Two misreadings on one page kept a documented wife, seven children and a whole Olivier line off this site for a week. → A document read past what it says 13 Sep 2026 “Hendrik Stefanus Booysen had four children” He had at least seven."
     },
     {
      "page": "/disputed/",
@@ -1200,13 +1200,17 @@
   },
   "charlotta-elizabetha-dormehl": {
    "n": "Charlotta Elizabetha Dormehl",
-   "v": "Charlotta Elizabeth Roos, geboren Dormehl (1892)",
-   "b": "c. 1841, Graaff-Reinet",
-   "d": "bef. 1908",
+   "v": "Charlotta Elizabeth Roos, geboren Dormehl (1892) · Charlotta Elizabetta Booysen, born Dormehl (1902)",
+   "b": "c. Oct 1841, Graaff-Reinet",
+   "d": "6 Feb 1902, Driefontein, Groot Marico",
    "l": "Booyzen",
    "s": "doc",
-   "r": "His second wife, married at Zeerust on 14 April 1892 and pre-deceasing him; they made mutual wills. The register calls her CHARLOTTA ELIZABETH ROOS, GEBOREN DORMEHL, condition WEDUWE, of Driefontein in Marico, and she signs C. E. Roos geb. Dormehl: Dormehl was her maiden name, Roos her first husband’s. She was FIFTY-ONE at the wedding, which is why the four children this archive once drew under her are not hers.",
+   "r": "His second wife, married at Zeerust on 14 April 1892 when she was fifty-one and he sixty-three, and her own Death Notice 844 gives the rest: born Graaff-Reinet about October 1841, FARMER'S WIFE, father JACOB DORMEHL and mother UNKNOWN, dead at Driefontein in Groot Marico on 6 February 1902 aged 60 years 4 months, leaving ONE WAGON AND HOUSEHOLD FURNITURE worth £51 8s 0d and a will. THREE HUSBANDS — Jacob van Staden, then Matthys Roos, then Booysen — and SIX CHILDREN, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. That is why the four children this archive once drew under her are not hers.",
    "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
+    ],
     [
      "The 1892 marriage",
      "/documents/#huwelijk-1892"
@@ -1221,8 +1225,12 @@
     ]
    ],
    "slug": "charlotta-elizabetha-dormehl",
-   "mentions": 5,
+   "mentions": 6,
    "pages": [
+    {
+     "h": "/corrections/",
+     "t": "What was taken back"
+    },
     {
      "h": "/documents/",
      "t": "The documents"
@@ -1246,6 +1254,11 @@
    ],
    "hits": [
     {
+     "page": "/corrections/",
+     "title": "What was taken back",
+     "text": "It also gives her father as Jacob Dormehl, her mother as unknown, her age as 60 years 4 months, her estate as one wagon and her furniture, and THREE husbands where this archive had one — Jacob van Staden, Matthys Roos, then Booysen."
+    },
+    {
      "page": "/documents/",
      "title": "The documents",
      "text": "In April 1892 he gives his home as Brakfontein, Rustenburg . He did not leave. The family that this archive spent weeks placing in the north-eastern Cape had a branch sitting on one farm in the Transvaal for at least sixteen years. The 1876 notice → She was a widow, and her name is not what we published This archive has called her Charlotta Elizabetha Dormehl . The register writes Charlotta Elizabeth Roos, geboren Dormehl , condition weduwe , and she signs C. E. Roos geb. Dormehl . Dormehl was her maiden name and Roos was her first husband's. She came to this marriage from Driefontein in Marico with a married name of her own. And he signs with an s The clerk writes him into the register as Booijzen ."
@@ -1253,7 +1266,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Hendrik Stefanus Booijsen & Charlotta Elizabetha Dormehl Hendrik c. 1828 – 11 May 1908 · Charlotta c. 1841 – bef. 1908 On whose word a record read here His second marriage: entry 13 at ZEERUST in the district of Marico, 14 April 1892. He was 63 and a widower of Brakfontein, Rustenburg; she was 51 and a widow of Driefontein, Marico, and both were born at Graaff-Reinet. They made mutual wills, and she died before him."
+     "text": "The 1908 death notice 1 child Hendrik Stefanus Booijsen · c. 1828 – 11 May 1908 Jacob Dormehl On whose word a record read here Named as her father on her 1902 death notice. Her mother is entered UNKNOWN by a husband of ten years. Her 1902 death notice 1 child Charlotta Elizabetha Dormehl · c. Oct 1841 – 6 Feb 1902 Ockert Johannes Stephanus Booysen & Elisabetta Johanna Sophia Myburgh Ockert 15 Sep 1852 – 16 Jan 1921 · Elisabetta b. c. 1862 On whose word a record read here Named together as the parents on their son's baptism at Rustenburg, 30 January 1882. The entry is indexed and the image is not available, so this household rests on an index and says so."
     },
     {
      "page": "/people/",
@@ -1263,12 +1276,298 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "1890 no public link reconstructed by this archive Catharina Willemina Levina Buitendag reconstructed — no public link reconstructed by this archive Charlotta Elizabetha Dormehl reconstructed c. 1841, Graaff-Reinet · bef."
+     "text": "1890 no public link reconstructed by this archive Catharina Willemina Levina Buitendag reconstructed — no public link reconstructed by this archive Charlotta Elizabetha Dormehl reconstructed c."
     },
     {
      "page": "/timeline/",
      "title": "The timeline",
      "text": "Both born at Graaff-Reinet. The clerk writes him Booijzen and he signs himself Booysen. Because she was fifty-one, his four children are his FIRST wife's — which this archive had wrong. Hendrik Stefanus Booijsen Charlotta Elizabetha Dormehl Graaff-Reinet Rustenburg 26 Apr 1898 Document Richard Pieter Kolbe Barry baptised at Barkly West Son of Richard Pieter Barry. He carries the forename of the man on the Cape Rebel roll and the surname of the 1820 Settler family in one name. Richard Pieter Kolbe Barry Barkly East Oct 1899 The war The Anglo-Boer War begins The family is living in the most rebellious corner of the Colony."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "jacob-dormehl": {
+   "n": "Jacob Dormehl",
+   "b": "—",
+   "d": "—",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Named as her father on the 1902 death notice. Her mother is entered UNKNOWN — the seventh parent this archive's documents fail to name.",
+   "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
+    ],
+    [
+     "Open Questions",
+     "/open-questions/"
+    ]
+   ],
+   "slug": "jacob-dormehl",
+   "mentions": 8,
+   "pages": [
+    {
+     "h": "/corrections/",
+     "t": "What was taken back"
+    },
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/gallery/",
+     "t": "The plates"
+    },
+    {
+     "h": "/households/",
+     "t": "The households"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    },
+    {
+     "h": "/register/",
+     "t": "The register"
+    },
+    {
+     "h": "/timeline/",
+     "t": "The timeline"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/corrections/",
+     "title": "What was taken back",
+     "text": "It also gives her father as Jacob Dormehl, her mother as unknown, her age as 60 years 4 months, her estate as one wagon and her furniture, and THREE husbands where this archive had one — Jacob van Staden, Matthys Roos, then Booysen. → A part searched, reported as the whole 13 Sep 2026 “Anna Johanna Booijzen, born Alberts, died at Boekfontein and is not this family” Every clause of that was wrong."
+    },
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "Under The Administration of Estates Ordinance, 1901 — the ordinance imposed on the Transvaal by the British administration during the war. She died three months before the peace. The form, as completed 1. Name Charlotta Elizabetta Booysen (born Dormehl) 2. Birthplace Graaff-Reinet, C.C. 3. Father Jacob Dormehl 3. Mother unknown 4. Age 60 years 4 months — born about October 1841 5. Condition Farmer’s wife 6. Married surviving spouse Hendrik Stefanus Booysen 6b. Previous spouses Jacob van Staden — date unknown Matthys Roos — date unknown 7. Died 6 February 1902 8. Where Driefontein, Groot Marico, Marico 10. Property one wagon and household furniture, £51 8s 0d . She left a will . Signed H. S."
+    },
+    {
+     "page": "/gallery/",
+     "title": "The plates",
+     "text": "Booyzen Catherine M.S. · 82 · 6 [September] · D.R. · 9760. “Hendrik Stefanus Booysen · Jacob van Staden. unknown. · Matthys Roos. unknown.” Her husband cou Question nine asks for the children “stating separately those born of different marriages” , and “Father: Jacob Dormehl. Mother: unknown.” \"died 2nd August 1912.\" This archive has carried her death as 1912 and nothing more. Question ten, entire."
+    },
+    {
+     "page": "/households/",
+     "title": "The households",
+     "text": "It resolves the contradiction this archive had marked Serious, and it means the eight children on the 1876 Sterfkennis cannot all belong to one mother. The 1908 death notice 1 child Hendrik Stefanus Booijsen · c. 1828 – 11 May 1908 Jacob Dormehl On whose word a record read here Named as her father on her 1902 death notice. Her mother is entered UNKNOWN by a husband of ten years. Her 1902 death notice 1 child Charlotta Elizabetha Dormehl · c. Oct 1841 – 6 Feb 1902 Ockert Johannes Stephanus Booysen & Elisabetta Johanna Sophia Myburgh Ockert 15 Sep 1852 – 16 Jan 1921 · Elisabetta b. c."
+    },
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "DEATH NOTICE 844, filed September 1902: Charlotta Elizabetta Booysen, born Dormehl, dead at Driefontein in Groot Marico on 6 February 1902, aged 60 years 4 months — THREE husbands, Jacob van Staden then Matthys Roos then Booysen, and SIX children, two van Stadens and four Rooses, and NOT ONE BOOYSEN. Her father was Jacob Dormehl; her mother is entered UNKNOWN, by a husband of ten years, which makes seven death notices in this archive that fail to name a parent. She had one wagon and her furniture, worth £51 8s 0d, and she left a will. What the retractions have in common Read them together and they fall into three kinds, and only one is about the records. Reading a document too eagerly."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "THREE HUSBANDS — Jacob van Staden, then Matthys Roos, then Booysen — and SIX CHILDREN, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. That is why the four children this archive once drew under her are not hers. Her 1902 death notice The 1892 marriage The Women What Was Taken Back Jacob Dormehl Documented 3 mentions — — Named as her father on the 1902 death notice. Her mother is entered UNKNOWN — the seventh parent this archive's documents fail to name. Her 1902 death notice Open Questions John Paul Downing Documented 6 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 13 mentions c. 1804, London — Married at fifteen in Shoreditch, signing with a mark."
+    },
+    {
+     "page": "/register/",
+     "title": "The register",
+     "text": "May 1874, Middelburg · 31 Mar 1930, Church Street, Middelburg no public link reconstructed by this archive Isabella Fredrika Coetzee reconstructed bef. 1930 no public link reconstructed by this archive Isabella Fredrika du Plessis reconstructed — no public link reconstructed by this archive Jacob Dormehl reconstructed — no public link reconstructed by this archive Jacob van Staden reconstructed bef."
+    },
+    {
+     "page": "/timeline/",
+     "title": "The timeline",
+     "text": "THREE husbands — Jacob van Staden, Matthys Roos, Hendrik Stefanus Booysen — and SIX children, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. One wagon and household furniture, £51 8s 0d, and a will. Signed at Zeerust by her husband six months later. Charlotta Elizabetha Dormehl Hendrik Stefanus Booijsen Jacob Dormehl Marico Graaff-Reinet 25 Aug 1903 Document John Barry dies at Manorowen — “Irishman born in Ireland” Entry 74, Barkly East, made by his son Richard, present at the death. A carpenter, eighty-four, with eleven children. It answers the oldest question on the Barry side and corrects two things this archive had published."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "jacob-van-staden": {
+   "n": "Jacob van Staden",
+   "b": "—",
+   "d": "bef. 1902",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Her first husband, named on her 1902 death notice with the date of his death given as unknown. Two sons, Jacob Alewyn and Coenrad Sybert.",
+   "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
+    ]
+   ],
+   "slug": "jacob-van-staden",
+   "mentions": 8,
+   "pages": [
+    {
+     "h": "/corrections/",
+     "t": "What was taken back"
+    },
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/gallery/",
+     "t": "The plates"
+    },
+    {
+     "h": "/households/",
+     "t": "The households"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    },
+    {
+     "h": "/register/",
+     "t": "The register"
+    },
+    {
+     "h": "/timeline/",
+     "t": "The timeline"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/corrections/",
+     "title": "What was taken back",
+     "text": "It also gives her father as Jacob Dormehl, her mother as unknown, her age as 60 years 4 months, her estate as one wagon and her furniture, and THREE husbands where this archive had one — Jacob van Staden, Matthys Roos, then Booysen. → A part searched, reported as the whole 13 Sep 2026 “Anna Johanna Booijzen, born Alberts, died at Boekfontein and is not this family” Every clause of that was wrong. She is Anna Catharina Johanna OLIVIER, she died at BRAKFONTEIN — the family's own farm, where the archive's oldest document was written — and she is the first wife of Hendrik Stefanus Booijsen."
+    },
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "The form, as completed 1. Name Charlotta Elizabetta Booysen (born Dormehl) 2. Birthplace Graaff-Reinet, C.C. 3. Father Jacob Dormehl 3. Mother unknown 4. Age 60 years 4 months — born about October 1841 5. Condition Farmer’s wife 6. Married surviving spouse Hendrik Stefanus Booysen 6b. Previous spouses Jacob van Staden — date unknown Matthys Roos — date unknown 7. Died 6 February 1902 8. Where Driefontein, Groot Marico, Marico 10. Property one wagon and household furniture, £51 8s 0d . She left a will . Signed H. S. Booysen , at Zeerust , 21 August 1902, in the capacity of Husband Three husbands, in her own notice “Hendrik Stefanus Booysen · Jacob van Staden. unknown. · Matthys Roos."
+    },
+    {
+     "page": "/gallery/",
+     "title": "The plates",
+     "text": "Booyzen Catherine M.S. · 82 · 6 [September] · D.R. · 9760. “Hendrik Stefanus Booysen · Jacob van Staden. unknown. · Matthys Roos. unknown.” Her husband cou Question nine asks for the children “stating separately those born of different marriages” , and “Father: Jacob Dormehl. Mother: unknown.” \"died 2nd August 1912.\" This archive has carried her death as 1912 and nothing more. Question ten, entire."
+    },
+    {
+     "page": "/households/",
+     "title": "The households",
+     "text": "Richard Peter Barry & Jeannie Maria Catharina Botha On whose word a record read here Named together on their son's baptism at Barkly West, 26 April 1898. The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Jacob van Staden & Charlotta Elizabetha Dormehl Jacob d. bef. 1902 · Charlotta c. Oct 1841 – 6 Feb 1902 On whose word a record read here Her first marriage, named on her 1902 death notice with the date of his death unknown. Two sons, both of age by 1902 — neither of them in this archive beyond their names. Her 1902 death notice No children recorded No document read here places a child under this marriage."
+    },
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "Her own death notice now says it outright. DEATH NOTICE 844, filed September 1902: Charlotta Elizabetta Booysen, born Dormehl, dead at Driefontein in Groot Marico on 6 February 1902, aged 60 years 4 months — THREE husbands, Jacob van Staden then Matthys Roos then Booysen, and SIX children, two van Stadens and four Rooses, and NOT ONE BOOYSEN. Her father was Jacob Dormehl; her mother is entered UNKNOWN, by a husband of ten years, which makes seven death notices in this archive that fail to name a parent. She had one wagon and her furniture, worth £51 8s 0d, and she left a will."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "THREE HUSBANDS — Jacob van Staden, then Matthys Roos, then Booysen — and SIX CHILDREN, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. That is why the four children this archive once drew under her are not hers. Her 1902 death notice The 1892 marriage The Women What Was Taken Back Jacob Dormehl Documented 3 mentions — — Named as her father on the 1902 death notice."
+    },
+    {
+     "page": "/register/",
+     "title": "The register",
+     "text": "1930 no public link reconstructed by this archive Isabella Fredrika du Plessis reconstructed — no public link reconstructed by this archive Jacob Dormehl reconstructed — no public link reconstructed by this archive Jacob van Staden reconstructed bef."
+    },
+    {
+     "page": "/timeline/",
+     "title": "The timeline",
+     "text": "CHARLOTTA ELIZABETTA BOOYSEN, BORN DORMEHL, farmer's wife, 60 years 4 months, born Graaff-Reinet, father JACOB DORMEHL and mother UNKNOWN, dead at Driefontein in Groot Marico three months before the peace. THREE husbands — Jacob van Staden, Matthys Roos, Hendrik Stefanus Booysen — and SIX children, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. One wagon and household furniture, £51 8s 0d, and a will. Signed at Zeerust by her husband six months later."
+    }
+   ],
+   "shared": false,
+   "also": []
+  },
+  "matthys-roos": {
+   "n": "Matthys Roos",
+   "b": "—",
+   "d": "bef. 1892",
+   "l": "Booyzen",
+   "s": "doc",
+   "r": "Her second husband, and the reason the 1892 marriage register writes her in as CHARLOTTA ELIZABETH ROOS, GEBOREN DORMEHL. Four children. The date of his death is entered unknown.",
+   "p": [
+    [
+     "Her 1902 death notice",
+     "/documents/#charlotta-1902"
+    ]
+   ],
+   "slug": "matthys-roos",
+   "mentions": 8,
+   "pages": [
+    {
+     "h": "/corrections/",
+     "t": "What was taken back"
+    },
+    {
+     "h": "/documents/",
+     "t": "The documents"
+    },
+    {
+     "h": "/gallery/",
+     "t": "The plates"
+    },
+    {
+     "h": "/households/",
+     "t": "The households"
+    },
+    {
+     "h": "/log/",
+     "t": "The research log"
+    },
+    {
+     "h": "/people/",
+     "t": "Everyone"
+    },
+    {
+     "h": "/register/",
+     "t": "The register"
+    },
+    {
+     "h": "/timeline/",
+     "t": "The timeline"
+    }
+   ],
+   "hits": [
+    {
+     "page": "/corrections/",
+     "title": "What was taken back",
+     "text": "It also gives her father as Jacob Dormehl, her mother as unknown, her age as 60 years 4 months, her estate as one wagon and her furniture, and THREE husbands where this archive had one — Jacob van Staden, Matthys Roos, then Booysen. → A part searched, reported as the whole 13 Sep 2026 “Anna Johanna Booijzen, born Alberts, died at Boekfontein and is not this family” Every clause of that was wrong. She is Anna Catharina Johanna OLIVIER, she died at BRAKFONTEIN — the family's own farm, where the archive's oldest document was written — and she is the first wife of Hendrik Stefanus Booijsen."
+    },
+    {
+     "page": "/documents/",
+     "title": "The documents",
+     "text": "The form, as completed 1. Name Charlotta Elizabetta Booysen (born Dormehl) 2. Birthplace Graaff-Reinet, C.C. 3. Father Jacob Dormehl 3. Mother unknown 4. Age 60 years 4 months — born about October 1841 5. Condition Farmer’s wife 6. Married surviving spouse Hendrik Stefanus Booysen 6b. Previous spouses Jacob van Staden — date unknown Matthys Roos — date unknown 7. Died 6 February 1902 8. Where Driefontein, Groot Marico, Marico 10. Property one wagon and household furniture, £51 8s 0d . She left a will . Signed H. S. Booysen , at Zeerust , 21 August 1902, in the capacity of Husband Three husbands, in her own notice “Hendrik Stefanus Booysen · Jacob van Staden. unknown. · Matthys Roos."
+    },
+    {
+     "page": "/gallery/",
+     "title": "The plates",
+     "text": "Booyzen Catherine M.S. · 82 · 6 [September] · D.R. · 9760. “Hendrik Stefanus Booysen · Jacob van Staden. unknown. · Matthys Roos. unknown.” Her husband cou Question nine asks for the children “stating separately those born of different marriages” , and “Father: Jacob Dormehl. Mother: unknown.” \"died 2nd August 1912.\" This archive has carried her death as 1912 and nothing more. Question ten, entire."
+    },
+    {
+     "page": "/households/",
+     "title": "The households",
+     "text": "Two sons, both of age by 1902 — neither of them in this archive beyond their names. Her 1902 death notice No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. Matthys Roos & Charlotta Elizabetha Dormehl Matthys d. bef. 1892 · Charlotta c. Oct 1841 – 6 Feb 1902 On whose word a record read here Her second marriage, and the reason the Zeerust register of 1892 writes her in as Charlotta Elizabeth ROOS, geboren Dormehl. Four children, all of age by 1902. Her 1902 death notice No children recorded No document read here places a child under this marriage."
+    },
+    {
+     "page": "/log/",
+     "title": "The research log",
+     "text": "Her own death notice now says it outright. DEATH NOTICE 844, filed September 1902: Charlotta Elizabetta Booysen, born Dormehl, dead at Driefontein in Groot Marico on 6 February 1902, aged 60 years 4 months — THREE husbands, Jacob van Staden then Matthys Roos then Booysen, and SIX children, two van Stadens and four Rooses, and NOT ONE BOOYSEN. Her father was Jacob Dormehl; her mother is entered UNKNOWN, by a husband of ten years, which makes seven death notices in this archive that fail to name a parent. She had one wagon and her furniture, worth £51 8s 0d, and she left a will."
+    },
+    {
+     "page": "/people/",
+     "title": "Everyone",
+     "text": "THREE HUSBANDS — Jacob van Staden, then Matthys Roos, then Booysen — and SIX CHILDREN, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. That is why the four children this archive once drew under her are not hers. Her 1902 death notice The 1892 marriage The Women What Was Taken Back Jacob Dormehl Documented 3 mentions — — Named as her father on the 1902 death notice."
+    },
+    {
+     "page": "/register/",
+     "title": "The register",
+     "text": "sel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Matthys Roos reconstructed bef. 1892 no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Frederick Kolbe · Charlotte Kolbe record ↗ South Africa, Church of the Province of South Africa, Parish Registers, 1801-2004 Pe"
+    },
+    {
+     "page": "/timeline/",
+     "title": "The timeline",
+     "text": "CHARLOTTA ELIZABETTA BOOYSEN, BORN DORMEHL, farmer's wife, 60 years 4 months, born Graaff-Reinet, father JACOB DORMEHL and mother UNKNOWN, dead at Driefontein in Groot Marico three months before the peace. THREE husbands — Jacob van Staden, Matthys Roos, Hendrik Stefanus Booysen — and SIX children, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. One wagon and household furniture, £51 8s 0d, and a will. Signed at Zeerust by her husband six months later."
     }
    ],
    "shared": false,
@@ -1406,7 +1705,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "It resolves the contradiction this archive had marked Serious, and it means the eight children on the 1876 Sterfkennis cannot all belong to one mother. The 1908 death notice 1 child Hendrik Stefanus Booijsen · c. 1828 – 11 May 1908 Ockert Johannes Stephanus Booysen & Elisabetta Johanna Sophia Myburgh Ockert 15 Sep 1852 – 16 Jan 1921 · Elisabetta b. c. 1862 On whose word a record read here Named together as the parents on their son's baptism at Rustenburg, 30 January 1882. The entry is indexed and the image is not available, so this household rests on an index and says so."
+     "text": "1828 – 11 May 1908 Jacob Dormehl On whose word a record read here Named as her father on her 1902 death notice. Her mother is entered UNKNOWN by a husband of ten years. Her 1902 death notice 1 child Charlotta Elizabetha Dormehl · c. Oct 1841 – 6 Feb 1902 Ockert Johannes Stephanus Booysen & Elisabetta Johanna Sophia Myburgh Ockert 15 Sep 1852 – 16 Jan 1921 · Elisabetta b. c. 1862 On whose word a record read here Named together as the parents on their son's baptism at Rustenburg, 30 January 1882. The entry is indexed and the image is not available, so this household rests on an index and says so."
     },
     {
      "page": "/people/",
@@ -1605,7 +1904,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 9 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Aletta Catharina Johanna Venter also written born Booysen Documented 4 mentions — — Married in community of property to Stephanus Andries Venter. The Documents The Women James John Mountjoy the younger Documented 3 mentions 30 May 1895, Barkly East 20 Jul 1948, East London The second of the name — son of the man who died in 1937, and a major heir in his estate. His own estate is KAB MOOC 6/9/15220: 3786/48."
+     "text": "Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Jacob van Staden Documented 3 mentions — bef. 1902 Her first husband, named on her 1902 death notice with the date of his death given as unknown. Two sons, Jacob Alewyn and Coenrad Sybert. Her 1902 death notice Aletta Catharina Johanna Venter also written born Booysen Documented 4 mentions — — Married in community of property to Stephanus Andries Venter. The Documents The Women James John Mountjoy the younger Documented 3 mentions 30 May 1895, Barkly East 20 Jul 1948, East London The second of the name — son of the man who died in 1937, and a major heir in his estate. His own estate is KAB MOOC 6/9/15220: 3786/48."
     },
     {
      "page": "/register/",
@@ -1666,7 +1965,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Mother of the boy born 31 May 1908. The Documents The Women Cornelia Elizabeth Gertruida Ross also written born van Niekerk Documented 3 mentions — — Eighth on the list, married to James Ross. The Documents The Women Petrus Jacobus Booysen of Rustenburg Documented 4 mentions 20 Apr 1851 bef. 1908 Eldest on his father’s 1908 notice, and already dead when it was written; eldest of the seven on his mother’s 1891 notice too. The fourth Petrus Jacobus in the male line. Confirmed at Rustenburg on 3 April 1869, aged seventeen, on the same day as his brother Ockert."
+     "text": "Four children. The date of his death is entered unknown. Her 1902 death notice Cornelia Elizabeth Gertruida Ross also written born van Niekerk Documented 3 mentions — — Eighth on the list, married to James Ross. The Documents The Women Petrus Jacobus Booysen of Rustenburg Documented 4 mentions 20 Apr 1851 bef. 1908 Eldest on his father’s 1908 notice, and already dead when it was written; eldest of the seven on his mother’s 1891 notice too. The fourth Petrus Jacobus in the male line. Confirmed at Rustenburg on 3 April 1869, aged seventeen, on the same day as his brother Ockert."
     },
     {
      "page": "/register/",
@@ -1959,7 +2258,7 @@
     {
      "page": "/gallery/",
      "title": "The plates",
-     "text": "\"Gebooren Oliefier.\" Question twelve, entire. \"Allen mondig.\" \"ongehuwd\" · \"14 Mei 1891\" · \"op de plaas Brakfontijn, Destrict Rustenburg.\" The same farm as hi Line three, enlarged. \"Hendrick Stefanes Booijsen en Anna Catrena gebooren Oliefier.\" The same w Entry thirteen, Duplicaat Origineel Register , Huwelijk bevestigd te Indwe , District Wodehouse \"47 years\" · \"Cape Province\" · \"Married\" · \"Ex Miner (told) Underground.\" FamilySearch indexes t Her row, enlarged and sharpened. Booyzen Catherine M.S. · 82 · 6 [September] · D.R. · 9760."
+     "text": "\"Gebooren Oliefier.\" Question twelve, entire. \"Allen mondig.\" \"ongehuwd\" · \"14 Mei 1891\" · \"op de plaas Brakfontijn, Destrict Rustenburg.\" The same farm as hi Line three, enlarged. \"Hendrick Stefanes Booijsen en Anna Catrena gebooren Oliefier.\" The same w Entry thirteen, Duplicaat Origineel Register , Huwelijk bevestigd te Indwe , District Wodehouse \"47 years\" · \"Cape Province\" · \"Married\" · \"Ex Miner (told) Underground.\" FamilySearch indexes t Her row, enlarged and sharpened. Booyzen Catherine M.S. · 82 · 6 [September] · D.R. · 9760. “Hendrik Stefanus Booysen · Jacob van Staden. unknown."
     },
     {
      "page": "/households/",
@@ -2037,7 +2336,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "sel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Frederick Kolbe · Charlotte Kolbe record ↗ South Africa, Church of the Province of South Africa, Parish Registers, 1801-2004 Petrus Jacobus Pretorius reconstructed — no public link reconstructed by this archive Philip R"
+     "text": "Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Matthys Roos reconstructed bef. 1892 no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Frederick Kolbe · Charlotte Kolbe record ↗ South Africa, Church of the Province of South Africa, Parish Registers, 1801-2004 Petrus Jacobus Pretorius reconstructed — no public link reconstructed by this archive Philip R"
     }
    ],
    "shared": false,
@@ -2652,7 +2951,7 @@
     {
      "page": "/log/",
      "title": "The research log",
-     "text": "His father died of a stomach ulcer at Indwe in 1905. FamilySearch indexes the age as 44; the form says 47 and the burial register agrees with the form. Read the image, not the index — the third time today. 13 Sep 2026 Found Grave 9760 A direct-line ancestor has had two bare years on this site since it was built: Catherine Maria Sophia “Kathleen” Barry, 1859–1940. The City of Johannesburg burial register gives the rest — buried 6 SEPTEMBER 1940 at the New Cemetery (Brixton), aged 82, section D.R., GRAVE 9760. It is the first grave number this archive has for anybody, and it is one a family could walk to. What the retractions have in common Read them together and they fall into three kinds, and only one is about the records."
+     "text": "His father died of a stomach ulcer at Indwe in 1905. FamilySearch indexes the age as 44; the form says 47 and the burial register agrees with the form. Read the image, not the index — the third time today. 13 Sep 2026 Found Grave 9760 A direct-line ancestor has had two bare years on this site since it was built: Catherine Maria Sophia “Kathleen” Barry, 1859–1940. The City of Johannesburg burial register gives the rest — buried 6 SEPTEMBER 1940 at the New Cemetery (Brixton), aged 82, section D.R., GRAVE 9760. It is the first grave number this archive has for anybody, and it is one a family could walk to."
     },
     {
      "page": "/marriages/",
@@ -2870,7 +3169,7 @@
     {
      "page": "/timeline/",
      "title": "The timeline",
-     "text": "— Five days later, her son 24 May 1891 — Catharina Maria Sophia Booysen baptised 9 May 1891 — The first wife dies at Brakfontein, and the archive misreads her twice 14 Apr 1892 — Two widows of Graaff-Reinet marry at Zeerust 26 Apr 1898 — Richard Pieter Kolbe Barry baptised at Barkly West Oct 1899 — The Anglo-Boer War begins 1 Jun 1901 — George Downing Mountjoy Booyzen born July 1901 — A wedding in a rebel's house June 1901 — Two men of this district are tried as Cape Rebels 18 Dec 1902 — Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht 25 Aug 1903 — John Barry dies at Manorowen — “Irishman born in Ireland” 13 Sep 1905 — The name changes on one sheet of paper 31 May 1907 — Willem Hermanus Booijzen confirmed at Indwe, aged 21 11 May 1908 — Hend"
+     "text": "— Five days later, her son 24 May 1891 — Catharina Maria Sophia Booysen baptised 9 May 1891 — The first wife dies at Brakfontein, and the archive misreads her twice 14 Apr 1892 — Two widows of Graaff-Reinet marry at Zeerust 26 Apr 1898 — Richard Pieter Kolbe Barry baptised at Barkly West Oct 1899 — The Anglo-Boer War begins 1 Jun 1901 — George Downing Mountjoy Booyzen born July 1901 — A wedding in a rebel's house June 1901 — Two men of this district are tried as Cape Rebels 18 Dec 1902 — Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht 6 Feb 1902 — Charlotta Dormehl dies at Driefontein, and her notice ends an argument 25 Aug 1903 — John Barry dies at Manorowen — “Irishman born in Ireland” 13 Sep 1905 — The name changes on one sheet of paper 3"
     },
     {
      "page": "/tree/",
@@ -3292,7 +3591,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "That is a statement about the records, not about the marriage. NO CHILDREN. This archive drew his four children here for a month because it could name this marriage and not the other. She was fifty-one at the wedding and every one of the four was an adult by 1908. Nuno Fernando Lerena & Catherine Mary Sophia Booyzen Nuno 1924 – 1971 · Catherine 25 Mar 1929 – 25 Dec 2013 On whose word a record read here Married 15 January 1949 at St Joseph's, Mayfair — the hinge to the Lerena archive. No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage."
+     "text": "That is a statement about the records, not about the marriage. NO CHILDREN BY HIM. This archive drew his four children here for a month because it could name this marriage and not the other. She was fifty-one at the wedding; and her own 1902 death notice lists SIX children — two van Stadens and four Rooses — and not one Booysen. Nuno Fernando Lerena & Catherine Mary Sophia Booyzen Nuno 1924 – 1971 · Catherine 25 Mar 1929 – 25 Dec 2013 On whose word a record read here Married 15 January 1949 at St Joseph's, Mayfair — the hinge to the Lerena archive. No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage."
     },
     {
      "page": "/johannesburg/",
@@ -4090,7 +4389,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "May 1874, Middelburg · 31 Mar 1930, Church Street, Middelburg no public link reconstructed by this archive Isabella Fredrika Coetzee reconstructed bef."
+     "text": "May 1874, Middelburg · 31 Mar 1930, Church Street, Middelburg no public link reconstructed by this archive Isabella Fredrika Coetzee reconstructed bef. 1930 no public link reconstructed by this archive Isabella Fredrika du Plessis reconstructed — no public link reconstructed by this archive Jacob Dormehl reconstructed — no public link reconstructed by this archive Jacob van Staden reconstructed bef."
     }
    ],
    "shared": false,
@@ -4153,7 +4452,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "May 1874, Middelburg · 31 Mar 1930, Church Street, Middelburg no public link reconstructed by this archive Isabella Fredrika Coetzee reconstructed bef."
+     "text": "May 1874, Middelburg · 31 Mar 1930, Church Street, Middelburg no public link reconstructed by this archive Isabella Fredrika Coetzee reconstructed bef. 1930 no public link reconstructed by this archive Isabella Fredrika du Plessis reconstructed — no public link reconstructed by this archive Jacob Dormehl reconstructed — no public link reconstructed by this archive Jacob van Staden reconstructed bef."
     }
    ],
    "shared": false,
@@ -4947,7 +5246,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The 1892 marriage The Women What Was Taken Back John Paul Downing Documented 6 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 13 mentions c. 1804, London — Married at fifteen in Shoreditch, signing with a mark. Died owning a house and a farm. The Women The Kolbes The Documents Willem Hermanus Booyzen of Dugmore Documented 5 mentions 31 May 1908, Indwe — Baptised at Indwe 6 December 1908, entry 15, and entered ONECHT — born four months before his parents married. His godmother was his grandmother, Catharina Maria Sophia Barry. The fourth Willem Hermanus in four generations, and the name still comes from a step-relation with no blood tie."
+     "text": "Her 1902 death notice Open Questions John Paul Downing Documented 6 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 13 mentions c. 1804, London — Married at fifteen in Shoreditch, signing with a mark. Died owning a house and a farm. The Women The Kolbes The Documents Willem Hermanus Booyzen of Dugmore Documented 5 mentions 31 May 1908, Indwe — Baptised at Indwe 6 December 1908, entry 15, and entered ONECHT — born four months before his parents married. His godmother was his grandmother, Catharina Maria Sophia Barry. The fourth Willem Hermanus in four generations, and the name still comes from a step-relation with no blood tie."
     },
     {
      "page": "/register/",
@@ -5067,7 +5366,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "1890 no public link reconstructed by this archive Catharina Willemina Levina Buitendag reconstructed — no public link reconstructed by this archive Charlotta Elizabetha Dormehl reconstructed c. 1841, Graaff-Reinet · bef."
+     "text": "1890 no public link reconstructed by this archive Catharina Willemina Levina Buitendag reconstructed — no public link reconstructed by this archive Charlotta Elizabetha Dormehl reconstructed c."
     }
    ],
    "shared": false,
@@ -5116,7 +5415,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "1841, Graaff-Reinet · bef."
+     "text": "arlotta Elizabetha Dormehl reconstructed c. Oct 1841, Graaff-Reinet · 6 Feb 1902, Driefontein, Groot Marico no public link reconstructed by this archive Christiaan Jacobus van Niekerk reconstructed — no public link reconstructed by this archive Cornelia Elizabeth Gertruida Ross reconstructed — no public link reconstructed by this archive Cornelis Philippus Roodt reconstructed — no public link reconstructed by this archive Cornelius van Niekerk reconstructed — no public link reconstructed by this archive Daniel Willem Schoeman reconstructed — no public link reconstructed by this archive David Schalk van der Merwe reconstructed — no public link reconstructed by this archive Dirk Jacobus Pretorius reconstructed — no public link reconstructed by this archive"
     }
    ],
    "shared": false,
@@ -5594,7 +5893,7 @@
     {
      "page": "/gallery/",
      "title": "The plates",
-     "text": "DUPLICAAT ORIGINEEL REGISTER · Huwelijk bevestigd te Indwe, in de Parochie van Indwe, in het Dis Informasievorm van Sterfgeval , under Act 17 of 1923. Registered at Johannesburg 30 July 1932, e Dated Barkly East, 29 March 1915 . Signed James H. Barry — \"Son (second)\" . 74 details, magnified The children of Catharina Maria Sophia Booysen — Kathleen Barry's daughter — on her husband's 19 The clerk, September 1905: Willem Hermanus Boo y sen His son, the same day: J. B. Boo y z en The groom's own signature, 1879, at maximum available magnification. \"The day of the decease: On 11th December 1947 \" — died at 85 Rheeden St, Forest Hill , Johannes Age 46 years 6 months ; occupation S.A.R. & H."
+     "text": "Name, age in years months and Under The Administration of Estates Ordinance, 1901 — the ordinance imposed on the Transvaal by Dated Barkly East, 29 March 1915 . Signed James H. Barry — \"Son (second)\" . 78 details, magnified The children of Catharina Maria Sophia Booysen — Kathleen Barry's daughter — on her husband's 19 The clerk, September 1905: Willem Hermanus Boo y sen His son, the same day: J. B. Boo y z en The groom's own signature, 1879, at maximum available magnification. \"The day of the decease: On 11th December 1947 \" — died at 85 Rheeden St, Forest Hill , Johannes Age 46 years 6 months ; occupation S.A.R. & H."
     },
     {
      "page": "/households/",
@@ -6287,7 +6586,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "lia Olivier reconstructed — no public link reconstructed by this archive Maria Sophia Botha reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Frederick Kolbe · Charlotte Kolbe record ↗ Sout"
+     "text": "lia Olivier reconstructed — no public link reconstructed by this archive Maria Sophia Botha reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Matthys Roos reconstructed bef. 1892 no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, Bellville, Cape Prov"
     }
    ],
    "shared": false,
@@ -7258,7 +7557,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Type to filter by name, family, place, spelling variant or anything in the notes. Search Filter — name, family, year, place, or a spelling variant such as Montjoy , Kumm or Booÿse All 190 Booyzen 73 Mountjoy 56 Barry 24 Kolbe 8 Downing 2 Pretorius 4 Daschner 15 Schoeman 4 Olivier 2 Lerena 1 Testimony 1 Name Born Died In this archive Georgina Jeanette Booyzen (Boshoff) Documented 3 mentions 22 Sep 1932, Johannesburg deceased Fifth child. The Line Anna Johanna Maria Booyzen (Vermaak) Documented 3 mentions 12 Oct 1930 deceased Fourth child. The Line Petrus Jacobus Booijsen of 1889 Documented 3 mentions 21 Jun 1889 — Baptised at Rustenburg in 1889, son of Petrus Jacobus Booijsen and Anna Catharina Sofia Benadi."
+     "text": "Type to filter by name, family, place, spelling variant or anything in the notes. Search Filter — name, family, year, place, or a spelling variant such as Montjoy , Kumm or Booÿse All 193 Booyzen 76 Mountjoy 56 Barry 24 Kolbe 8 Downing 2 Pretorius 4 Daschner 15 Schoeman 4 Olivier 2 Lerena 1 Testimony 1 Name Born Died In this archive Georgina Jeanette Booyzen (Boshoff) Documented 3 mentions 22 Sep 1932, Johannesburg deceased Fifth child. The Line Anna Johanna Maria Booyzen (Vermaak) Documented 3 mentions 12 Oct 1930 deceased Fourth child. The Line Petrus Jacobus Booijsen of 1889 Documented 3 mentions 21 Jun 1889 — Baptised at Rustenburg in 1889, son of Petrus Jacobus Booijsen and Anna Catharina Sofia Benadi."
     },
     {
      "page": "/register/",
@@ -7771,7 +8070,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "She married Hendrik Stefanus Palm, and a granddaughter born in 1920 carries the name again. FROM THE INDEX. The Namesakes The Women The Register Mathilda Elizabeth Shooter also written born Mountjoy Documented 4 mentions — — Daughter; married out of community of property to Douglas Gilmore Shooter. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 9 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen."
+     "text": "She married Hendrik Stefanus Palm, and a granddaughter born in 1920 carries the name again. FROM THE INDEX. The Namesakes The Women The Register Mathilda Elizabeth Shooter also written born Mountjoy Documented 4 mentions — — Daughter; married out of community of property to Douglas Gilmore Shooter. The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 9 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Jacob van Staden Documented 3 mentions — bef."
     },
     {
      "page": "/register/",
@@ -7913,7 +8212,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 9 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Aletta Catharina Johanna Venter also written born Booysen Documented 4 mentions — — Married in community of property to Stephanus Andries Venter. The Documents The Women James John Mountjoy the younger Documented 3 mentions 30 May 1895, Barkly East 20 Jul 1948, East London The second of the name — son of the man who died in 1937, and a major heir in his estate."
+     "text": "The Documents The Women Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources Documented 9 mentions 1787 1885 Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Jacob van Staden Documented 3 mentions — bef. 1902 Her first husband, named on her 1902 death notice with the date of his death given as unknown. Two sons, Jacob Alewyn and Coenrad Sybert. Her 1902 death notice Aletta Catharina Johanna Venter also written born Booysen Documented 4 mentions — — Married in community of property to Stephanus Andries Venter."
     },
     {
      "page": "/register/",
@@ -8561,7 +8860,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "alena Potgieter reconstructed — no public link reconstructed by this archive Maria Francina Cecilia Olivier reconstructed — no public link reconstructed by this archive Maria Sophia Botha reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, B"
+     "text": "alena Potgieter reconstructed — no public link reconstructed by this archive Maria Francina Cecilia Olivier reconstructed — no public link reconstructed by this archive Maria Sophia Botha reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Matthys Roos reconstructed bef. 1892 no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed"
     },
     {
      "page": "/timeline/",
@@ -8671,7 +8970,7 @@
     {
      "page": "/timeline/",
      "title": "The timeline",
-     "text": "Barry of Ivanhoe, Barkly East / Wodehouse. Daniel Willem Schoeman Fred J. Barry Caerlaverock Ivanhoe 18 Dec 1902 Document Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht Hercules Johannes Mountjoy's mother-in-law — the only Cape probate hit that comes up under his name, because his name is written on her form. Carolina Deybella Margrietta Alletta Botha Dordrecht 25 Aug 1903 Document John Barry dies at Manorowen — “Irishman born in Ireland” Entry 74, Barkly East, made by his son Richard, present at the death. A carpenter, eighty-four, with eleven children. It answers the oldest question on the Barry side and corrects two things this archive had published."
+     "text": "Barry of Ivanhoe, Barkly East / Wodehouse. Daniel Willem Schoeman Fred J. Barry Caerlaverock Ivanhoe 18 Dec 1902 Document Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht Hercules Johannes Mountjoy's mother-in-law — the only Cape probate hit that comes up under his name, because his name is written on her form. Carolina Deybella Margrietta Alletta Botha Dordrecht 6 Feb 1902 Document Charlotta Dormehl dies at Driefontein, and her notice ends an argument Death Notice 844. CHARLOTTA ELIZABETTA BOOYSEN, BORN DORMEHL, farmer's wife, 60 years 4 months, born Graaff-Reinet, father JACOB DORMEHL and mother UNKNOWN, dead at Driefontein in Groot Marico three months before the peace."
     }
    ],
    "shared": false,
@@ -8742,7 +9041,7 @@
     {
      "page": "/timeline/",
      "title": "The timeline",
-     "text": "s her twice 14 Apr 1892 — Two widows of Graaff-Reinet marry at Zeerust 26 Apr 1898 — Richard Pieter Kolbe Barry baptised at Barkly West Oct 1899 — The Anglo-Boer War begins 1 Jun 1901 — George Downing Mountjoy Booyzen born July 1901 — A wedding in a rebel's house June 1901 — Two men of this district are tried as Cape Rebels 18 Dec 1902 — Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht 25 Aug 1903 — John Barry dies at Manorowen — “Irishman born in Ireland” 13 Sep 1905 — The name changes on one sheet of paper 31 May 1907 — Willem Hermanus Booijzen confirmed at Indwe, aged 21 11 May 1908 — Hendrik Stephanus Booysen dies at Koedoesfontein, Rustenburg 2 Aug 1912 — Margaret Elizabeth Barry née Kolbe dies at Manorowen 7 Sep 1912 — Harriet Louisa Barry dies of typhoi"
+     "text": "s her twice 14 Apr 1892 — Two widows of Graaff-Reinet marry at Zeerust 26 Apr 1898 — Richard Pieter Kolbe Barry baptised at Barkly West Oct 1899 — The Anglo-Boer War begins 1 Jun 1901 — George Downing Mountjoy Booyzen born July 1901 — A wedding in a rebel's house June 1901 — Two men of this district are tried as Cape Rebels 18 Dec 1902 — Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht 6 Feb 1902 — Charlotta Dormehl dies at Driefontein, and her notice ends an argument 25 Aug 1903 — John Barry dies at Manorowen — “Irishman born in Ireland” 13 Sep 1905 — The name changes on one sheet of paper 31 May 1907 — Willem Hermanus Booijzen confirmed at Indwe, aged 21 11 May 1908 — Hendrik Stephanus Booysen dies at Koedoesfontein, Rustenburg 2 Aug 1912 — Margaret Elizabet"
     }
    ],
    "shared": false,
@@ -8791,7 +9090,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "1908 no public link reconstructed by this archive Christiaan Jacobus van Niekerk reconstructed — no public link reconstructed by this archive Cornelia Elizabeth Gertruida Ross reconstructed — no public link reconstructed by this archive Cornelis Philippus Roodt reconstructed — no public link reconstructed by this archive Cornelius van Niekerk reconstructed — no public link reconstructed by this archive Daniel Willem Schoeman reconstructed — no public link reconstructed by this archive David Schalk van der Merwe reconstructed — no public link reconstructed by this archive Dirk Jacobus Pretorius reconstructed — no public link reconstructed by this archive Elisabetta Johanna Sophia Myburgh reconstructed c."
+     "text": "fontein, Groot Marico no public link reconstructed by this archive Christiaan Jacobus van Niekerk reconstructed — no public link reconstructed by this archive Cornelia Elizabeth Gertruida Ross reconstructed — no public link reconstructed by this archive Cornelis Philippus Roodt reconstructed — no public link reconstructed by this archive Cornelius van Niekerk reconstructed — no public link reconstructed by this archive Daniel Willem Schoeman reconstructed — no public link reconstructed by this archive David Schalk van der Merwe reconstructed — no public link reconstructed by this archive Dirk Jacobus Pretorius reconstructed — no public link reconstructed by this archive Elisabetta Johanna Sophia Myburgh reconstructed c. 1862 no public link reconstruct"
     }
    ],
    "shared": false,
@@ -8889,7 +9188,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents The Women James John Mountjoy the younger Documented 3 mentions 30 May 1895, Barkly East 20 Jul 1948, East London The second of the name — son of the man who died in 1937, and a major heir in his estate. His own estate is KAB MOOC 6/9/15220: 3786/48. The Documents Sources Jan Dirk Abram Frans van Niekerk the younger Documented 3 mentions — — Fourth on the list, and his father's namesake. The Documents Nobody here matches that. The archive holds 190 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet . Who is not here Living people are omitted. David Defranceski, for whom this archive was made, and his mother Cheryl Anne Lerena (b."
+     "text": "The Documents The Women James John Mountjoy the younger Documented 3 mentions 30 May 1895, Barkly East 20 Jul 1948, East London The second of the name — son of the man who died in 1937, and a major heir in his estate. His own estate is KAB MOOC 6/9/15220: 3786/48. The Documents Sources Jan Dirk Abram Frans van Niekerk the younger Documented 3 mentions — — Fourth on the list, and his father's namesake. The Documents Nobody here matches that. The archive holds 193 named people — try a surname, a year, or a place such as Cradock , Barkly or Graaff-Reinet . Who is not here Living people are omitted. David Defranceski, for whom this archive was made, and his mother Cheryl Anne Lerena (b."
     },
     {
      "page": "/register/",
@@ -8992,7 +9291,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "1890 no public link reconstructed by this archive Catharina Willemina Levina Buitendag reconstructed — no public link reconstructed by this archive Charlotta Elizabetha Dormehl reconstructed c. 1841, Graaff-Reinet · bef."
+     "text": "1890 no public link reconstructed by this archive Catharina Willemina Levina Buitendag reconstructed — no public link reconstructed by this archive Charlotta Elizabetha Dormehl reconstructed c."
     }
    ],
    "shared": false,
@@ -9041,12 +9340,12 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "The Documents Susanna Adriana Roodt Documented 7 mentions c. 1892 — Fifteen at her confirmation at Indwe on 31 May 1907, sixteen at her marriage on 21 September 1908 — her parents had to consent. Mother of the boy born 31 May 1908. The Documents The Women Cornelia Elizabeth Gertruida Ross also written born van Niekerk Documented 3 mentions — — Eighth on the list, married to James Ross. The Documents The Women Petrus Jacobus Booysen of Rustenburg Documented 4 mentions 20 Apr 1851 bef. 1908 Eldest on his father’s 1908 notice, and already dead when it was written; eldest of the seven on his mother’s 1891 notice too. The fourth Petrus Jacobus in the male line."
+     "text": "Mother of the boy born 31 May 1908. The Documents The Women Matthys Roos Documented 3 mentions — bef. 1892 Her second husband, and the reason the 1892 marriage register writes her in as CHARLOTTA ELIZABETH ROOS, GEBOREN DORMEHL. Four children. The date of his death is entered unknown. Her 1902 death notice Cornelia Elizabeth Gertruida Ross also written born van Niekerk Documented 3 mentions — — Eighth on the list, married to James Ross. The Documents The Women Petrus Jacobus Booysen of Rustenburg Documented 4 mentions 20 Apr 1851 bef. 1908 Eldest on his father’s 1908 notice, and already dead when it was written; eldest of the seven on his mother’s 1891 notice too. The fourth Petrus Jacobus in the male line."
     },
     {
      "page": "/register/",
      "title": "The register",
-     "text": "1841, Graaff-Reinet · bef."
+     "text": "rina Willemina Levina Buitendag reconstructed — no public link reconstructed by this archive Charlotta Elizabetha Dormehl reconstructed c. Oct 1841, Graaff-Reinet · 6 Feb 1902, Driefontein, Groot Marico no public link reconstructed by this archive Christiaan Jacobus van Niekerk reconstructed — no public link reconstructed by this archive Cornelia Elizabeth Gertruida Ross reconstructed — no public link reconstructed by this archive Cornelis Philippus Roodt reconstructed — no public link reconstructed by this archive Cornelius van Niekerk reconstructed — no public link reconstructed by this archive Daniel Willem Schoeman reconstructed — no public link reconstructed by this archive David Schalk van der Merwe reconstructed — no public link reconstructed by this archi"
     }
    ],
    "shared": false,
@@ -9565,7 +9864,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "reconstructed — no public link reconstructed by this archive Maria Catharina Magdalena Potgieter reconstructed — no public link reconstructed by this archive Maria Francina Cecilia Olivier reconstructed — no public link reconstructed by this archive Maria Sophia Botha reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstru"
+     "text": "reconstructed — no public link reconstructed by this archive Maria Catharina Magdalena Potgieter reconstructed — no public link reconstructed by this archive Maria Francina Cecilia Olivier reconstructed — no public link reconstructed by this archive Maria Sophia Botha reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Matthys Roos reconstructed bef. 1892 no public link reconstruct"
     }
    ],
    "shared": false,
@@ -9797,7 +10096,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen. The Women The Documents Aletta Catharina Johanna Venter also written born Booysen Documented 4 mentions — — Married in community of property to Stephanus Andries Venter. The Documents The Women James John Mountjoy the younger Documented 3 mentions 30 May 1895, Barkly East 20 Jul 1948, East London The second of the name — son of the man who died in 1937, and a major heir in his estate. His own estate is KAB MOOC 6/9/15220: 3786/48. The Documents Sources Jan Dirk Abram Frans van Niekerk the younger Documented 3 mentions — — Fourth on the list, and his father's namesake. The Documents Nobody here matches that."
+     "text": "1902 Her first husband, named on her 1902 death notice with the date of his death given as unknown. Two sons, Jacob Alewyn and Coenrad Sybert. Her 1902 death notice Aletta Catharina Johanna Venter also written born Booysen Documented 4 mentions — — Married in community of property to Stephanus Andries Venter. The Documents The Women James John Mountjoy the younger Documented 3 mentions 30 May 1895, Barkly East 20 Jul 1948, East London The second of the name — son of the man who died in 1937, and a major heir in his estate. His own estate is KAB MOOC 6/9/15220: 3786/48. The Documents Sources Jan Dirk Abram Frans van Niekerk the younger Documented 3 mentions — — Fourth on the list, and his father's namesake. The Documents Nobody here matches that."
     },
     {
      "page": "/register/",
@@ -9927,7 +10226,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Frederick Kolbe · Charlotte Kolbe record ↗ South Africa, Church of the Province of South Africa, Parish Registers, 1801-2004 Petrus Jac"
+     "text": "reconstructed 1827 · 1911 no public link reconstructed by this archive Maria Sophia Diesel reconstructed — no public link reconstructed by this archive Maria Sophia van Niekerk reconstructed 1868 · 1961 no public link reconstructed by this archive Martha Magdeline van Deventer reconstructed — no public link reconstructed by this archive Mathilda Elizabeth Shooter reconstructed — no public link reconstructed by this archive Matthys Roos reconstructed bef. 1892 no public link reconstructed by this archive Ocken Johannes Olivier reconstructed — no public link reconstructed by this archive Peter John Birth 15 May 1927 | Baptism 4 Sep 1927 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Frederick Kolbe · Charlotte Kolbe record ↗ South Afri"
     }
    ],
    "shared": false,
@@ -10414,7 +10713,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "Her tenth share went to her two children. She is on her mother’s notice and not on her father’s — his was typed first and ran out of page. The Documents The Women Maria Sophia Diesel also written born Mountjoy Documented 4 mentions — — Daughter; married in community of property to Marthinus Frederick Diesel. The Documents The Women Maria Sophia Mountjoy of Dordrecht Inferred 3 mentions 23 Oct 1898 — Baptised at Dordrecht 6 November 1898, named for her mother. FROM THE INDEX. The Women The Register Charlotta Elizabetha Dormehl also written Charlotta Elizabeth Roos, geboren Dormehl (1892) Documented 5 mentions c. 1841, Graaff-Reinet bef. 1908 His second wife, married at Zeerust on 14 April 1892 and pre-deceasing him; they made mutual wills."
+     "text": "Her tenth share went to her two children. She is on her mother’s notice and not on her father’s — his was typed first and ran out of page. The Documents The Women Maria Sophia Diesel also written born Mountjoy Documented 4 mentions — — Daughter; married in community of property to Marthinus Frederick Diesel. The Documents The Women Maria Sophia Mountjoy of Dordrecht Inferred 3 mentions 23 Oct 1898 — Baptised at Dordrecht 6 November 1898, named for her mother. FROM THE INDEX. The Women The Register Charlotta Elizabetha Dormehl also written Charlotta Elizabeth Roos, geboren Dormehl (1892) · Charlotta Elizabetta Booysen, born Dormehl (1902) Documented 5 mentions c."
     },
     {
      "page": "/register/",
@@ -10707,7 +11006,7 @@
     {
      "page": "/register/",
      "title": "The register",
-     "text": "| Birth 02 Jul 1868 · with: Willem Petrus Jacobus Pieterzen · Elisabetha Margaretha Botma record ↗ South Africa, Free State Dutch Reformed Church Records, 1848-1956 Willem Petrus Jacobus Pieterzen with: Willem Petrus Erasmus Pieterzen · Elisabetha Margaretha Botma record ↗ South Africa, Free State Dutch Reformed Church Records, 1848-1956 Xaverius Hermanus Pieterzen reconstructed — no public link reconstructed by this archive Zara Johanna Pieterzen Probate from 1836 to 1840 Cape Province, South Africa record ↗ South Africa, Cape, Probate Records of the Master of the High Court, 1822-1990 OTHER NAMES 76 Name What the source says Source Abraham Jacobus Birth 8 Jun 1925 | Baptism 4 Oct 1925 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Fd"
+     "text": "| Birth 02 Jul 1868 · with: Willem Petrus Jacobus Pieterzen · Elisabetha Margaretha Botma record ↗ South Africa, Free State Dutch Reformed Church Records, 1848-1956 Willem Petrus Jacobus Pieterzen with: Willem Petrus Erasmus Pieterzen · Elisabetha Margaretha Botma record ↗ South Africa, Free State Dutch Reformed Church Records, 1848-1956 Xaverius Hermanus Pieterzen reconstructed — no public link reconstructed by this archive Zara Johanna Pieterzen Probate from 1836 to 1840 Cape Province, South Africa record ↗ South Africa, Cape, Probate Records of the Master of the High Court, 1822-1990 OTHER NAMES 79 Name What the source says Source Abraham Jacobus Birth 8 Jun 1925 | Baptism 4 Oct 1925 Parow, Parow, Bellville, Cape Province, South Africa · with: Charles Fd"
     }
    ],
    "shared": false,
@@ -11571,7 +11870,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "Disputed 1 child John Augustus Barry I · 1819 – 1903 (the family tree) This is the archive's clearest example of two men merged into one profile. The link below him is drawn because the tree draws it, and for no other reason. Richard Peter Barry & Jeannie Maria Catharina Botha On whose word a record read here Named together on their son's baptism at Barkly West, 26 April 1898. The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Hendrik Stefanus Booijsen & Charlotta Elizabetha Dormehl Hendrik c. 1828 – 11 May 1908 · Charlotta c. 1841 – bef."
+     "text": "Disputed 1 child John Augustus Barry I · 1819 – 1903 (the family tree) This is the archive's clearest example of two men merged into one profile. The link below him is drawn because the tree draws it, and for no other reason. Richard Peter Barry & Jeannie Maria Catharina Botha On whose word a record read here Named together on their son's baptism at Barkly West, 26 April 1898. The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Jacob van Staden & Charlotta Elizabetha Dormehl Jacob d. bef. 1902 · Charlotta c."
     },
     {
      "page": "/people/",
@@ -11885,7 +12184,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "The link below him is drawn because the tree draws it, and for no other reason. Richard Peter Barry & Jeannie Maria Catharina Botha On whose word a record read here Named together on their son's baptism at Barkly West, 26 April 1898. The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Hendrik Stefanus Booijsen & Charlotta Elizabetha Dormehl Hendrik c. 1828 – 11 May 1908 · Charlotta c. 1841 – bef. 1908 On whose word a record read here His second marriage: entry 13 at ZEERUST in the district of Marico, 14 April 1892."
+     "text": "The link below him is drawn because the tree draws it, and for no other reason. Richard Peter Barry & Jeannie Maria Catharina Botha On whose word a record read here Named together on their son's baptism at Barkly West, 26 April 1898. The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Jacob van Staden & Charlotta Elizabetha Dormehl Jacob d. bef. 1902 · Charlotta c. Oct 1841 – 6 Feb 1902 On whose word a record read here Her first marriage, named on her 1902 death notice with the date of his death unknown."
     },
     {
      "page": "/namesakes/",
@@ -11910,7 +12209,7 @@
     {
      "page": "/timeline/",
      "title": "The timeline",
-     "text": "Johannes Mountjoy marries at Dordrecht, aged 22 15 Sep 1889 — Two grandparents at a font 14 May 1891 — Five days later, her son 24 May 1891 — Catharina Maria Sophia Booysen baptised 9 May 1891 — The first wife dies at Brakfontein, and the archive misreads her twice 14 Apr 1892 — Two widows of Graaff-Reinet marry at Zeerust 26 Apr 1898 — Richard Pieter Kolbe Barry baptised at Barkly West Oct 1899 — The Anglo-Boer War begins 1 Jun 1901 — George Downing Mountjoy Booyzen born July 1901 — A wedding in a rebel's house June 1901 — Two men of this district are tried as Cape Rebels 18 Dec 1902 — Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht 25 Aug 1903 — John Barry dies at Manorowen — “Irishman born in Ireland” 13 Sep 1905 — The name changes o"
+     "text": "Johannes Mountjoy marries at Dordrecht, aged 22 15 Sep 1889 — Two grandparents at a font 14 May 1891 — Five days later, her son 24 May 1891 — Catharina Maria Sophia Booysen baptised 9 May 1891 — The first wife dies at Brakfontein, and the archive misreads her twice 14 Apr 1892 — Two widows of Graaff-Reinet marry at Zeerust 26 Apr 1898 — Richard Pieter Kolbe Barry baptised at Barkly West Oct 1899 — The Anglo-Boer War begins 1 Jun 1901 — George Downing Mountjoy Booyzen born July 1901 — A wedding in a rebel's house June 1901 — Two men of this district are tried as Cape Rebels 18 Dec 1902 — Carolina Deybella Margrietta Alletta van Niekerk dies at Dordrecht 6 Feb 1902 — Charlotta Dormehl dies at Driefontein, and her notice ends an argument 25 Aug 1903 — John B"
     }
    ],
    "shared": false,
@@ -13336,7 +13635,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "E. Roos geb. Dormehl: Dormehl was her maiden name, Roos her first husband’s. She was FIFTY-ONE at the wedding, which is why the four children this archive once drew under her are not hers. The 1892 marriage The Women What Was Taken Back John Paul Downing Documented 6 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 13 mentions c. 1804, London — Married at fifteen in Shoreditch, signing with a mark. Died owning a house and a farm. The Women The Kolbes The Documents Willem Hermanus Booyzen of Dugmore Documented 5 mentions 31 May 1908, Indwe — Baptised at Indwe 6 December 1908, entry 15, and entered ONECHT — born four months before his parents married."
+     "text": "Her mother is entered UNKNOWN — the seventh parent this archive's documents fail to name. Her 1902 death notice Open Questions John Paul Downing Documented 6 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 13 mentions c. 1804, London — Married at fifteen in Shoreditch, signing with a mark. Died owning a house and a farm. The Women The Kolbes The Documents Willem Hermanus Booyzen of Dugmore Documented 5 mentions 31 May 1908, Indwe — Baptised at Indwe 6 December 1908, entry 15, and entered ONECHT — born four months before his parents married."
     },
     {
      "page": "/register/",
@@ -13417,7 +13716,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "The link below him is drawn because the tree draws it, and for no other reason. Richard Peter Barry & Jeannie Maria Catharina Botha On whose word a record read here Named together on their son's baptism at Barkly West, 26 April 1898. The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Hendrik Stefanus Booijsen & Charlotta Elizabetha Dormehl Hendrik c. 1828 – 11 May 1908 · Charlotta c. 1841 – bef. 1908 On whose word a record read here His second marriage: entry 13 at ZEERUST in the district of Marico, 14 April 1892."
+     "text": "The link below him is drawn because the tree draws it, and for no other reason. Richard Peter Barry & Jeannie Maria Catharina Botha On whose word a record read here Named together on their son's baptism at Barkly West, 26 April 1898. The 1903 registration 1 child Richard Pieter Kolbe Barry · b. 1899 John Paul Downing On whose word a record read here Margaret's father. 1 child Margaret Downing · b. c. 1804 Jacob van Staden & Charlotta Elizabetha Dormehl Jacob d. bef. 1902 · Charlotta c. Oct 1841 – 6 Feb 1902 On whose word a record read here Her first marriage, named on her 1902 death notice with the date of his death unknown. Two sons, both of age by 1902 — neither of them in this archive beyond their names."
     },
     {
      "page": "/kolbe/",
@@ -13427,7 +13726,7 @@
     {
      "page": "/people/",
      "title": "Everyone",
-     "text": "E. Roos geb. Dormehl: Dormehl was her maiden name, Roos her first husband’s. She was FIFTY-ONE at the wedding, which is why the four children this archive once drew under her are not hers. The 1892 marriage The Women What Was Taken Back John Paul Downing Documented 6 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 13 mentions c. 1804, London — Married at fifteen in Shoreditch, signing with a mark. Died owning a house and a farm."
+     "text": "Her 1902 death notice The 1892 marriage The Women What Was Taken Back Jacob Dormehl Documented 3 mentions — — Named as her father on the 1902 death notice. Her mother is entered UNKNOWN — the seventh parent this archive's documents fail to name. Her 1902 death notice Open Questions John Paul Downing Documented 6 mentions — — Margaret's father. The Kolbes Margaret Downing Documented 13 mentions c. 1804, London — Married at fifteen in Shoreditch, signing with a mark. Died owning a house and a farm."
     },
     {
      "page": "/register/",
@@ -14201,7 +14500,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "The women No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. Ruben Schoeman & Magdalena Johanna Botha On whose word a record read here Named together on the 1901 marriage record kept in a rebel's house under martial law. The documents No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. 35 of the 40 households have a child placed in them."
+     "text": "The women No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. Ruben Schoeman & Magdalena Johanna Botha On whose word a record read here Named together on the 1901 marriage record kept in a rebel's house under martial law. The documents No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. 36 of the 43 households have a child placed in them."
     },
     {
      "page": "/open-questions/",
@@ -14286,7 +14585,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "The women No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. Ruben Schoeman & Magdalena Johanna Botha On whose word a record read here Named together on the 1901 marriage record kept in a rebel's house under martial law. The documents No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. 35 of the 40 households have a child placed in them."
+     "text": "The women No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. Ruben Schoeman & Magdalena Johanna Botha On whose word a record read here Named together on the 1901 marriage record kept in a rebel's house under martial law. The documents No children recorded No document read here places a child under this marriage. That is a statement about the records, not about the marriage. 36 of the 43 households have a child placed in them."
     },
     {
      "page": "/people/",

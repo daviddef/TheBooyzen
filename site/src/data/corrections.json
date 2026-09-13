@@ -1,5 +1,5 @@
 {
- "note": "Thirty things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
+ "note": "Thirty-one things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
  "causes": {
   "population": "A negative built from a list mistaken for a population — the archive searched what it happened to have and reported the answer as though it had searched everything.",
   "scope": "A search run over part of the ground and written up as though it covered all of it.",
@@ -9,6 +9,13 @@
   "process": "A mistake in the archive's own working — a bug, a bad build, or a word used loosely."
  },
  "rows": [
+  [
+   "13 Sep 2026",
+   "Charlotta Elizabetha Dormehl died before 1908",
+   "She died on 6 February 1902, at Driefontein in Groot Marico, and her own Death Notice 844 says so. It also gives her father as Jacob Dormehl, her mother as unknown, her age as 60 years 4 months, her estate as one wagon and her furniture, and THREE husbands where this archive had one — Jacob van Staden, Matthys Roos, then Booysen.",
+   "scope",
+   "/documents/#charlotta-1902"
+  ],
   [
    "13 Sep 2026",
    "Anna Johanna Booijzen, born Alberts, died at Boekfontein and is not this family",

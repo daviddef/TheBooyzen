@@ -38,9 +38,22 @@ export const families = [
     src: ["The 1908 death notice", "/documents/#hendrik-1908"],
     kids: [{ n: "Hendrik Stefanus Booijsen", via: "doc" }] },
 
+  { h: "Jacob Dormehl", w: null, via: "doc",
+    why: "Named as her father on her 1902 death notice. Her mother is entered UNKNOWN by a husband of ten years.",
+    src: ["Her 1902 death notice", "/documents/#charlotta-1902"],
+    kids: [{ n: "Charlotta Elizabetha Dormehl", via: "doc" }] },
+
+  { h: "Jacob van Staden", w: "Charlotta Elizabetha Dormehl", via: "doc",
+    why: "Her first marriage, named on her 1902 death notice with the date of his death unknown. Two sons, both of age by 1902 — neither of them in this archive beyond their names.",
+    src: ["Her 1902 death notice", "/documents/#charlotta-1902"], kids: [] },
+
+  { h: "Matthys Roos", w: "Charlotta Elizabetha Dormehl", via: "doc",
+    why: "Her second marriage, and the reason the Zeerust register of 1892 writes her in as Charlotta Elizabeth ROOS, geboren Dormehl. Four children, all of age by 1902.",
+    src: ["Her 1902 death notice", "/documents/#charlotta-1902"], kids: [] },
+
   { h: "Hendrik Stefanus Booijsen", w: "Charlotta Elizabetha Dormehl", via: "doc",
     why: "His second marriage: entry 13 at ZEERUST in the district of Marico, 14 April 1892. He was 63 and a widower of Brakfontein, Rustenburg; she was 51 and a widow of Driefontein, Marico, and both were born at Graaff-Reinet. They made mutual wills, and she died before him.",
-    warn: "NO CHILDREN. This archive drew his four children here for a month because it could name this marriage and not the other. She was fifty-one at the wedding and every one of the four was an adult by 1908.",
+    warn: "NO CHILDREN BY HIM. This archive drew his four children here for a month because it could name this marriage and not the other. She was fifty-one at the wedding; and her own 1902 death notice lists SIX children — two van Stadens and four Rooses — and not one Booysen.",
     src: ["The 1892 marriage register", "/documents/#huwelijk-1892"],
     kids: [] },
 

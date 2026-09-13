@@ -38,9 +38,21 @@ export const people = [
  p:[["The Documents","/documents/#hendrik-1908"],["The Women","/women/"],["Disputed","/disputed/"]]},
 {n:"Anna Catharina Johanna Olivier", b:"—", d:"bef. 1908", l:"Booyzen", s:"doc",
  r:"His first wife, named on his 1908 death notice as pre-deceased.", p:[["The Documents","/documents/#hendrik-1908"],["The Women","/women/"]]},
-{n:"Charlotta Elizabetha Dormehl", v:"Charlotta Elizabeth Roos, geboren Dormehl (1892)", b:"c. 1841, Graaff-Reinet", d:"bef. 1908", l:"Booyzen", s:"doc",
- r:"His second wife, married at Zeerust on 14 April 1892 and pre-deceasing him; they made mutual wills. The register calls her CHARLOTTA ELIZABETH ROOS, GEBOREN DORMEHL, condition WEDUWE, of Driefontein in Marico, and she signs C. E. Roos geb. Dormehl: Dormehl was her maiden name, Roos her first husband’s. She was FIFTY-ONE at the wedding, which is why the four children this archive once drew under her are not hers.", p:[["The 1892 marriage","/documents/#huwelijk-1892"],["The Women","/women/"],["What Was Taken Back","/corrections/"]]},
-{n:"Ockert Johannes Stephanus Booysen", v:"Ceker Johannes Stephanus Booÿsen (1869) · Okker Johannis Stephanus Booysen (1921)", b:"15 Sep 1852", d:"16 Jan 1921, Klerksdorp", l:"Booyzen", s:"doc",
+{n:"Charlotta Elizabetha Dormehl", v:"Charlotta Elizabeth Roos, geboren Dormehl (1892) · Charlotta Elizabetta Booysen, born Dormehl (1902)", b:"c. Oct 1841, Graaff-Reinet", d:"6 Feb 1902, Driefontein, Groot Marico", l:"Booyzen", s:"doc",
+ r:"His second wife, married at Zeerust on 14 April 1892 when she was fifty-one and he sixty-three, and her own Death Notice 844 gives the rest: born Graaff-Reinet about October 1841, FARMER'S WIFE, father JACOB DORMEHL and mother UNKNOWN, dead at Driefontein in Groot Marico on 6 February 1902 aged 60 years 4 months, leaving ONE WAGON AND HOUSEHOLD FURNITURE worth £51 8s 0d and a will. THREE HUSBANDS — Jacob van Staden, then Matthys Roos, then Booysen — and SIX CHILDREN, two van Stadens and four Rooses, NOT ONE OF THEM A BOOYSEN. That is why the four children this archive once drew under her are not hers.",
+ p:[["Her 1902 death notice","/documents/#charlotta-1902"],["The 1892 marriage","/documents/#huwelijk-1892"],["The Women","/women/"],["What Was Taken Back","/corrections/"]]},
+
+{n:"Jacob Dormehl", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named as her father on the 1902 death notice. Her mother is entered UNKNOWN — the seventh parent this archive's documents fail to name.",
+ p:[["Her 1902 death notice","/documents/#charlotta-1902"],["Open Questions","/open-questions/"]]},
+
+{n:"Jacob van Staden", b:"—", d:"bef. 1902", l:"Booyzen", s:"doc",
+ r:"Her first husband, named on her 1902 death notice with the date of his death given as unknown. Two sons, Jacob Alewyn and Coenrad Sybert.",
+ p:[["Her 1902 death notice","/documents/#charlotta-1902"]]},
+
+{n:"Matthys Roos", b:"—", d:"bef. 1892", l:"Booyzen", s:"doc",
+ r:"Her second husband, and the reason the 1892 marriage register writes her in as CHARLOTTA ELIZABETH ROOS, GEBOREN DORMEHL. Four children. The date of his death is entered unknown.",
+ p:[["Her 1902 death notice","/documents/#charlotta-1902"]]},{n:"Ockert Johannes Stephanus Booysen", v:"Ceker Johannes Stephanus Booÿsen (1869) · Okker Johannis Stephanus Booysen (1921)", b:"15 Sep 1852", d:"16 Jan 1921, Klerksdorp", l:"Booyzen", s:"doc",
  r:"Signed his father’s 1908 death notice as “son of the deceased” — thirty-two years after his father had signed his own father’s at Brakfontein. Second of the seven children on his mother’s 1891 notice, and he carries HER father’s name: Ocken Johannes Oliefier. Confirmed at Rustenburg on 3 April 1869, the same day as his brother Petrus Jacobus. He died at Klerksdorp on 16 January 1921, aged 69 — a civil registration, which names no parents.",
  p:[["The 1891 notices","/documents/#brakfontein-1891"],["The Rustenburg register","/documents/#rustenburg-register"],["The Documents","/documents/#hendrik-1908"]]},
 
