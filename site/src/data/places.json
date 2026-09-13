@@ -58,13 +58,18 @@
     [
      "20 Aug 1848",
      "George Mountjoy m. Maria Sophia Botha, cert. 735"
+    ],
+    [
+     "c. Sep 1823",
+     "Anna Catharina Johanna Olivier born in this district"
     ]
    ],
    "p": [
-    "James Montjoy",
+    "Anna Catharina Johanna Olivier",
     "George Mountjoy",
-    "Maria Sophia Botha",
-    "Jacoba Catharina Mountjoy"
+    "Jacoba Catharina Mountjoy",
+    "James Montjoy",
+    "Maria Sophia Botha"
    ],
    "slug": "cradock",
    "lat": -32.164,
@@ -581,14 +586,19 @@
     ],
     [
      "9 May 1891",
-     "Anna Johanna Booijzen, born Alberts, dies at Boekfontein — kinship NOT proved"
+     "Anna Catharina Johanna Olivier dies at Brakfontein — the first wife, found"
+    ],
+    [
+     "14 May 1891",
+     "her son Hendrik Stefanus Nicolaas dies there, aged 29"
     ]
    ],
    "p": [
-    "Petrus Jacobus Booysen",
+    "Anna Catharina Johanna Olivier",
     "Gerthardus Lodewikus Booysen",
     "Hendrik Stefanus Booijsen",
-    "Anna Johanna Booijzen"
+    "Hendrik Stefanus Nicolaas Booijsen",
+    "Petrus Jacobus Booysen"
    ],
    "slug": "rustenburg",
    "lat": -25.667,
@@ -892,16 +902,30 @@
    "lat": -25.75,
    "lon": 27.3,
    "approx": true,
-   "w": "The farm where the oldest document in this archive was written. On 14 September 1876, thirteen days after the death, somebody at Brakfontein filled in Sterfkennis No. 678 for Petrus Jacobus Booijsen, aged 88, and wrote the names of his parents on line 3. The coordinates are approximate: the district is certain, the farm is not yet placed.",
+   "w": "The farm where the oldest document in this archive was written. On 14 September 1876, thirteen days after the death, somebody at Brakfontein filled in Sterfkennis No. 678 for Petrus Jacobus Booijsen, aged 88, and wrote the names of his parents on line 3. Fifteen years later it takes two more: his son's wife on 9 May 1891 and their son five days after her. And in 1892 Hendrik Stefanus, marrying again at Zeerust, still gives Brakfontein as his home — sixteen years on the same ground. The coordinates are approximate: the district is certain, the farm is not yet placed.",
    "e": [
     [
      "14 Sep 1876",
      "Sterfkennis No. 678 written and signed here"
+    ],
+    [
+     "9 May 1891",
+     "Anna Catharina Johanna Olivier, the first wife, dies here"
+    ],
+    [
+     "14 May 1891",
+     "her son Hendrik Stefanus Nicolaas dies here, aged 29, unmarried"
+    ],
+    [
+     "14 Apr 1892",
+     "Hendrik Stefanus gives Brakfontein as his home, marrying at Zeerust"
     ]
    ],
    "p": [
-    "Petrus Jacobus Booysen",
-    "Hendrik Stefanus Booijsen"
+    "Anna Catharina Johanna Olivier",
+    "Hendrik Stefanus Booijsen",
+    "Hendrik Stefanus Nicolaas Booijsen",
+    "Petrus Jacobus Booysen"
    ],
    "slug": "brakfontein"
   },

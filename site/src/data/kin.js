@@ -45,13 +45,22 @@ export const families = [
     kids: [] },
 
   { h: "Hendrik Stefanus Booijsen", w: "Anna Catharina Johanna Olivier", via: "doc",
-    why: "His first marriage, and the one that produced the children. She is named on his 1908 notice as pre-deceased and the notice does not say which wife the four children belong to — but the second marriage is dated 1892, when the bride was fifty-one and a widow, so they are all hers.",
-    src: ["The 1892 marriage register", "/documents/#huwelijk-1892"],
+    why: "His first marriage, and the one that produced every child. She died on 9 May 1891 at BRAKFONTEIN, district Rustenburg — the family farm — still married, aged 67 years 8 months and 1 day, and her own Sterfkennis 6332 lists SEVEN children, all of age. Her husband remarried at Zeerust eleven months later. The four on his 1908 notice are the four of these seven who were still alive in 1908.",
+    warn: "This archive filed her for a week as a stranger called Anna Johanna Booijzen BORN ALBERTS who died at BOEKFONTEIN. Both readings were wrong, and together they kept a documented wife and two documented children off this family.",
+    src: ["The 1891 notices", "/documents/#brakfontein-1891"],
     kids: [
-      { n: "Petrus Jacobus Booysen of Rustenburg", via: "inf" },
-      { n: "Ockert Johannes Stephanus Booysen", via: "inf" },
-      { n: "Anna Catharina Grobelaar", via: "inf" },
-      { n: "Aletta Catharina Johanna Venter", via: "inf" }] },
+      { n: "Petrus Jacobus Booysen of Rustenburg", via: "doc" },
+      { n: "Ockert Johannes Stephanus Booysen", via: "doc" },
+      { n: "Anna Johanna Maria Booijsen", via: "doc" },
+      { n: "Elesabettha Maria Cornelya Booijsen", via: "doc" },
+      { n: "Aletta Catharina Johanna Venter", via: "doc" },
+      { n: "Magdalena Johanna Booijsen of Brakfontein", via: "doc" },
+      { n: "Hendrik Stefanus Nicolaas Booijsen", via: "doc" }] },
+
+  { h: "Ocken Johannes Olivier", w: "Anna Johanna Botha", via: "doc",
+    why: "Named together on line 3 of their daughter's 1891 Sterfkennis, and that is the whole of what this archive holds on them. Their forename is why a Booysen grandson in the Transvaal was called Ockert Johannes Stephanus.",
+    src: ["The 1891 notices", "/documents/#brakfontein-1891"],
+    kids: [{ n: "Anna Catharina Johanna Olivier", via: "doc" }] },
 
   { h: "Petrus Jacobus Booysen|1812", w: "Johanna Catharina Mountjoy", via: "doc",
     why: "Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children.",

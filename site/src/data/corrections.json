@@ -1,5 +1,5 @@
 {
- "note": "Twenty-eight things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
+ "note": "Thirty things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
  "causes": {
   "population": "A negative built from a list mistaken for a population — the archive searched what it happened to have and reported the answer as though it had searched everything.",
   "scope": "A search run over part of the ground and written up as though it covered all of it.",
@@ -9,6 +9,20 @@
   "process": "A mistake in the archive's own working — a bug, a bad build, or a word used loosely."
  },
  "rows": [
+  [
+   "13 Sep 2026",
+   "Anna Johanna Booijzen, born Alberts, died at Boekfontein and is not this family",
+   "Every clause of that was wrong. She is Anna Catharina Johanna OLIVIER, she died at BRAKFONTEIN — the family's own farm, where the archive's oldest document was written — and she is the first wife of Hendrik Stefanus Booijsen. The maiden name reads Oliefier and contains no b, r, t or s; her son gives OLIVIER on the 1908 notice. Two misreadings on one page kept a documented wife, seven children and a whole Olivier line off this site for a week.",
+   "reading",
+   "/documents/#brakfontein-1891"
+  ],
+  [
+   "13 Sep 2026",
+   "Hendrik Stefanus Booysen had four children",
+   "He had at least seven. His first wife's 1891 Sterfkennis lists them all, of age: Petrus Jacobus, Ocken Johannes, Anna Johanna Maria, Elesabettha Maria Cornelya, Alettha Catrina Johanna, Magdalena Johanna and Hendrick Stefanus Nicolaas. The 1908 notice names four because by 1908 only four were left.",
+   "scope",
+   "/documents/#brakfontein-1891"
+  ],
   [
    "13 Sep 2026",
    "Hendrik Stefanus Booysen's four children were his second wife's",

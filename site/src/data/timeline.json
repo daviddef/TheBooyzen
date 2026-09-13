@@ -476,6 +476,22 @@
   },
   {
    "y": 1891,
+   "d": "14 May 1891",
+   "t": "Five days later, her son",
+   "k": "doc",
+   "w": "Sterfkennis 6361. Hendrick Stefanes Booijsen, 29 jaar 3 maanden en 14 dagen, landbouwer, ONGEHUWD, dies on the same farm. Line 3 names his parents: Hendrick Stefanus Booijsen and Anna Catrena gebooren Oliefier. Movables only, not above £25. Nobody on this site knew he existed.",
+   "p": [
+    "Hendrik Stefanus Nicolaas Booijsen",
+    "Anna Catharina Johanna Olivier"
+   ],
+   "pl": [
+    "Brakfontein",
+    "Rustenburg"
+   ],
+   "h": "/documents/#brakfontein-1891"
+  },
+  {
+   "y": 1891,
    "d": "24 May 1891",
    "t": "Catharina Maria Sophia Booysen baptised",
    "w": "Entry 120, same register, fifty pages on — a daughter named for her mother, and new to this archive.",
@@ -491,16 +507,19 @@
   {
    "y": 1891,
    "d": "9 May 1891",
-   "t": "Anna Johanna Booijzen, born Alberts, dies at Boekfontein, Rustenburg",
-   "w": "Born in the district of Cradock about 1823. Kinship NOT proved, and recorded so the question is not lost.",
-   "k": "open",
+   "t": "The first wife dies at Brakfontein, and the archive misreads her twice",
+   "w": "Sterfkennis 6332. Anna Johanna Booijzen, gebooren OLIEFIER — Anna Catharina Johanna Olivier — born in the district of Cradock about September 1823, daughter of Ocken Johannes Oliefier and Anna Johanna Botha, dies GEHUWD at the farm BRAKFONTEIN in the district of Rustenburg, leaving seven children all of age. This site published her as “born Alberts”, at “Boekfontein”, NOT PROVED TO BE KIN. She is the first wife of Hendrik Stefanus Booijsen and she died on the family's own farm.",
+   "k": "doc",
    "p": [
-    "Anna Johanna Booijzen"
+    "Anna Catharina Johanna Olivier",
+    "Hendrik Stefanus Booijsen"
    ],
    "pl": [
-    "Rustenburg"
+    "Brakfontein",
+    "Rustenburg",
+    "Cradock"
    ],
-   "h": "/documents/"
+   "h": "/documents/#brakfontein-1891"
   },
   {
    "y": 1892,
