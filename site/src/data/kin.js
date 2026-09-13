@@ -44,11 +44,23 @@ export const families = [
     kids: [{ n: "Charlotta Elizabetha Dormehl", via: "doc" }] },
 
   { h: "Jacob van Staden", w: "Charlotta Elizabetha Dormehl", via: "doc",
-    why: "Her first marriage, named on her 1902 death notice with the date of his death unknown. Two sons, both of age by 1902 — neither of them in this archive beyond their names.",
-    src: ["Her 1902 death notice", "/documents/#charlotta-1902"], kids: [] },
+    why: "Her first marriage, named on her 1902 death notice with the date of his death entered unknown. Two sons, both of age by 1902, braced apart on the form from the four Roos children below them.",
+    src: ["Her 1902 death notice", "/documents/#charlotta-1902"],
+    kids: [
+      { n: "Jacob Alewyn van Staden", via: "doc" },
+      { n: "Coenrad Sybert van Staden", via: "doc" }] },
 
   { h: "Matthys Roos", w: "Charlotta Elizabetha Dormehl", via: "doc",
     why: "Her second marriage, and the reason the Zeerust register of 1892 writes her in as Charlotta Elizabeth ROOS, geboren Dormehl. Four children, all of age by 1902.",
+    src: ["Her 1902 death notice", "/documents/#charlotta-1902"],
+    kids: [
+      { n: "Gert Johannes Roos", via: "doc" },
+      { n: "Matthys Johannes Roos", via: "doc" },
+      { n: "Johannes Sybert Roos", via: "doc" },
+      { n: "Anna Francisa Roos", via: "doc" }] },
+
+  { h: "Gert Johannes Laubeschagne", w: "Anna Francisa Roos", via: "doc",
+    why: "Married in community of property — the only marriage of the six step-children that the 1902 notice records.",
     src: ["Her 1902 death notice", "/documents/#charlotta-1902"], kids: [] },
 
   { h: "Hendrik Stefanus Booijsen", w: "Charlotta Elizabetha Dormehl", via: "doc",
@@ -100,6 +112,10 @@ export const families = [
       { n: "Anna Susanna Booijzen", via: "doc" },
       { n: "Elizabeth Margarietha Booijzen", via: "doc" },
       { n: "David Schalk Booijzen the younger", via: "doc" }] },
+
+  { h: "David Schalk Booysen", w: "Johanna Elena Stols", via: "doc",
+    why: "His second marriage, at Pretoria on 27 November 1905 — he 56 and a widower of Goede Hoop, she 51 and a widow Lowies of Skinners Court. The register's Remarks column cites his remarriage certificate from the Master, No. 4795, which is the estate number of his FIRST wife's death notice: the two documents cite each other.",
+    src: ["The 1905 marriage", "/documents/#pretoria-1905"], kids: [] },
 
   { h: "Stephanus Francois Marais", w: "Elizabetha Margaretha Marais the elder", via: "doc",
     why: "Named together as her parents on the 1900 death notice — mother and daughter carrying the same two forenames, which is how the name Stephanus Francois gets into a Booijzen household.",
@@ -233,7 +249,13 @@ export const families = [
     why: "Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898. She is George Mountjoy's daughter, baptised at Burgersdorp on a leap day in 1860 — which is the question this archive has been asking since the Keys index was read.",
     src: ["The thirteen Mountjoy children", "/documents/#mountjoy-thirteen"],
     kids: [
+      { n: "Robert Byron Keys", via: "doc" },
+      { n: "William Henry Keys the younger", via: "doc" },
       { n: "James Jonathan Keys", via: "doc" },
+      { n: "George Keys", via: "doc" },
+      { n: "Lancelott Byron Keys", via: "doc" },
+      { n: "Cecil Frederik Keys", via: "doc" },
+      { n: "Rachel Anna Maria Keys", via: "doc" },
       { n: "Herklaas Edward Johannes Keys", via: "doc" }] },
 
   { h: "Hercules Johannes Mountjoy", w: "Maria Sophia van Niekerk", via: "doc",
