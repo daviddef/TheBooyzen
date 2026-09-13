@@ -21,17 +21,6 @@
         "dev"
       ],
       "port": 4325
-    },
-    {
-      "name": "mazza",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": [
-        "run",
-        "preview",
-        "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/Mazza Family/site"
-      ],
-      "port": 4324
     }
   ]
 }
