@@ -3,7 +3,7 @@
  "sets": [
   {
    "g": "Three questions put to the index directly — and one that answered back",
-   "n": "three negatives and two names that may be the missing Barrys",
+   "n": "three negatives and one name the notices never gave",
    "d": "13 Sep 2026",
    "h": "/barry/",
    "rows": [
@@ -27,8 +27,8 @@
     ],
     [
      "q.surname=Barry · q.motherSurname=Kolbe · recordCountry=South Africa",
-     "Two names not on either notice",
-     "John Barry's 1903 registration says ELEVEN children; his notice names eight and his wife's names nine. This query — asking the index for every Barry child of a Kolbe mother rather than for a person — returns the known ones and two that are on neither notice: HENRY JAONAS BARRY, born 13 July 1848, baptised 13 November 1868 at twenty years old, and WILLIAM FREDERICK THOMAS BARRY, baptised 29 September 1861. Both are INDEX ONLY and both are ambiguous: the first may be this archive's James Henry Barry under a clerk's ear, and the second may be the William baptised at Burgersdorp in 1853 re-entered. Each is also double-indexed to two different villages. Nothing has been added to the family on this. The registers have to be read.",
+     "One new name, one already held",
+     "John Barry's 1903 registration says ELEVEN children; his notice names eight and his wife's names nine. This query — asking the index for every Barry child of a Kolbe mother rather than for a person — returns the known ones and two that are on neither notice. Only ONE of the two is new. WILLIAM FREDERICK THOMAS BARRY, baptised 29 September 1861, was already on William Barry's page, entered the day the Burgersdorp register was read; this archive wrote him up as a find for an hour before checking its own data, and the correction is logged. The new name is HENRY JAONAS BARRY, born 13 July 1848 and baptised at twenty years old on 13 November 1868 — a date that fits the sixteen-month gap after John Augustus II better than the “about 1847” this archive carries for James Henry. INDEX ONLY, double-indexed to two villages, and nothing has been added to the family on it. The register has to be read.",
      "part"
     ],
     [
