@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Three questions put to the index directly — and one that answered back",
+   "n": "three negatives and two names that may be the missing Barrys",
+   "d": "13 Sep 2026",
+   "h": "/barry/",
+   "rows": [
+    [
+     "q.givenName=Elesabettha Maria Cornelya · q.surname=Booy*",
+     "One hit, already held",
+     "Her mother's 1891 estate 6332 returns her persona and nothing else — no baptism, no marriage, no death, no estate. Elesabettha Maria Cornelya Booijsen exists in this archive because a clerk listed her among seven children in 1891, and after this search she still exists on that single line. The other two untraced Olivier daughters return the same nothing.",
+     "no"
+    ],
+    [
+     "q.surname=Booij* · q.motherGivenName=Elizabetha · q.motherSurname=Van der Merwe · births 1824–1840",
+     "No child of that couple",
+     "The search asks the index for anyone born to Petrus Jacobus Booijzen and Elizabetha van der Merwe across the whole plausible span of their marriage. It returns other Booijens and Booijzen households and not one child of theirs. If she bore children who were baptised, the register carrying them is not indexed.",
+     "no"
+    ],
+    [
+     "q.givenName=Hendrik Stef* · q.surname=Booij* · births 1824–1834",
+     "Only the 1850 marriage",
+     "This was the direct test. His own baptism would have named both his parents in one line and settled her in a second document. It is not there — the only return is Q29M-ZJGY, the 1850 Potchefstroom marriage this archive already has. So ELIZABETHA VAN DER MERWE still rests on exactly one piece of paper: the 1908 death notice of her son. Three routes tried, three closed.",
+     "no"
+    ],
+    [
+     "q.surname=Barry · q.motherSurname=Kolbe · recordCountry=South Africa",
+     "Two names not on either notice",
+     "John Barry's 1903 registration says ELEVEN children; his notice names eight and his wife's names nine. This query — asking the index for every Barry child of a Kolbe mother rather than for a person — returns the known ones and two that are on neither notice: HENRY JAONAS BARRY, born 13 July 1848, baptised 13 November 1868 at twenty years old, and WILLIAM FREDERICK THOMAS BARRY, baptised 29 September 1861. Both are INDEX ONLY and both are ambiguous: the first may be this archive's James Henry Barry under a clerk's ear, and the second may be the William baptised at Burgersdorp in 1853 re-entered. Each is also double-indexed to two different villages. Nothing has been added to the family on this. The registers have to be read.",
+     "part"
+    ],
+    [
+     "The same query, re-run for the record identifiers",
+     "HTTP 403",
+     "FamilySearch closed the window after two calls. The identifiers needed to reach the two baptism images were not retrieved, so this lead is parked exactly where the paragraph above leaves it — a search result written down, not a finding.",
+     "blocked"
+    ]
+   ]
+  },
+  {
    "g": "David Schalk Booysen after November 1905 — and the rest of the 1876 eight",
    "n": "both negative",
    "d": "13 Sep 2026",
