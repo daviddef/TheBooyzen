@@ -57,6 +57,18 @@ export const families = [
       { n: "Magdalena Johanna Booijsen of Brakfontein", via: "doc" },
       { n: "Hendrik Stefanus Nicolaas Booijsen", via: "doc" }] },
 
+  { h: "Ockert Johannes Stephanus Booysen", w: "Elisabetta Johanna Sophia Myburgh", via: "doc",
+    why: "Named together as the parents on their son's baptism at Rustenburg, 30 January 1882. The entry is indexed and the image is not available, so this household rests on an index and says so.",
+    src: ["The Rustenburg register", "/documents/#rustenburg-register"],
+    kids: [{ n: "Hendrik Stephanus Nicolaas Booyen", via: "doc" }] },
+
+  { h: "Petrus Jacobus Booysen of Rustenburg", w: "Anna Catharina Sophia Benadie", via: "doc",
+    why: "Named together on two baptisms at Rustenburg, in 1889 and 1894. Both entries are indexed and neither image is available.",
+    src: ["The Rustenburg register", "/documents/#rustenburg-register"],
+    kids: [
+      { n: "Petrus Jacobus Booijsen of 1889", via: "doc" },
+      { n: "Ockert Johannes Stefanus Booysen of 1894", via: "doc" }] },
+
   { h: "Ocken Johannes Olivier", w: "Anna Johanna Botha", via: "doc",
     why: "Named together on line 3 of their daughter's 1891 Sterfkennis, and that is the whole of what this archive holds on them. Their forename is why a Booysen grandson in the Transvaal was called Ockert Johannes Stephanus.",
     src: ["The 1891 notices", "/documents/#brakfontein-1891"],

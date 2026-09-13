@@ -317,6 +317,22 @@
    "big": true
   },
   {
+   "y": 1862,
+   "d": "25 Dec 1862",
+   "t": "A baptism at Rustenburg that spells the name this archive got wrong",
+   "k": "doc",
+   "w": "Hendrik Nicolaas Stephanus Booijsen, born 31 January 1862, baptised on Christmas Day at Rustenburg. Father Hendrik Stephanus Booijsen; mother ANNA JOHANNA OLIVIER. The birth date agrees to the day with the age on his 1891 death notice, and the mother's surname — indexed by somebody who never saw this site — is the one the archive read as Alberts. Index only: no image.",
+   "p": [
+    "Hendrik Stefanus Nicolaas Booijsen",
+    "Anna Catharina Johanna Olivier",
+    "Hendrik Stefanus Booijsen"
+   ],
+   "pl": [
+    "Rustenburg"
+   ],
+   "h": "/documents/#rustenburg-register"
+  },
+  {
    "y": 1863,
    "d": "19 May 1863",
    "t": "Johanna Catharina dies at Zevenfontein",
@@ -356,6 +372,21 @@
     "Burgersdorp"
    ],
    "h": "/women/"
+  },
+  {
+   "y": 1869,
+   "d": "3 Apr 1869",
+   "t": "Two brothers admitted to membership at Rustenburg on one Sunday",
+   "k": "doc",
+   "w": "Petrus Jacobus Booÿsen, born 20 April 1851, and “Ceker” — Ockert — Johannes Stephanus Booÿsen, born 15 September 1852. Seventeen and sixteen. They are the first two names on their mother's 1891 list and the two who turn up again on their father's 1908 notice. Index only: no image.",
+   "p": [
+    "Petrus Jacobus Booysen of Rustenburg",
+    "Ockert Johannes Stephanus Booysen"
+   ],
+   "pl": [
+    "Rustenburg"
+   ],
+   "h": "/documents/#rustenburg-register"
   },
   {
    "y": 1870,
@@ -413,6 +444,21 @@
     "Lady Grey"
    ],
    "h": "/documents/"
+  },
+  {
+   "y": 1882,
+   "d": "4 Jan 1882",
+   "t": "A nephew named for an uncle who had nine years to live",
+   "k": "doc",
+   "w": "Hendrik Stephanus Nicolaas Booyen born, baptised at Rustenburg on 30 January; father Ockert Johannes Stephanus Booysen, mother Elisabetta Johanna Sophia Myburgh. His uncle of the same name was twenty and would die at Brakfontein in 1891. The nephew lived until 1959 and outlived him by sixty-eight years.",
+   "p": [
+    "Hendrik Stephanus Nicolaas Booyen",
+    "Ockert Johannes Stephanus Booysen"
+   ],
+   "pl": [
+    "Rustenburg"
+   ],
+   "h": "/documents/#rustenburg-register"
   },
   {
    "y": 1884,
@@ -757,6 +803,18 @@
     "Lichtenburg"
    ],
    "h": "/documents/#o2899"
+  },
+  {
+   "y": 1921,
+   "d": "16 Jan 1921",
+   "t": "Ockert Johannes Stephanus Booysen dies at Klerksdorp",
+   "k": "doc",
+   "w": "Aged sixty-nine. The man who signed his father's death notice in 1908, and who carried his mother's father's name out of the district of Cradock and into the western Transvaal. A civil registration, which names no parents.",
+   "p": [
+    "Ockert Johannes Stephanus Booysen"
+   ],
+   "pl": [],
+   "h": "/documents/#rustenburg-register"
   },
   {
    "y": 1924,
