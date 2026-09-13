@@ -3052,22 +3052,26 @@
   {
    "n": "Margaretha Wilhelmina Elizabeth Mary Kolbe",
    "b": "1826",
-   "d": "1912",
+   "d": "2 Aug 1912, Manorowen, Barkly East — estate 1291",
    "l": "Kolbe",
    "s": "doc",
-   "r": "His wife, married 1846. Daughter of the 1820 Settler — and the reason the Kolbe name runs through the Booyzens.",
+   "r": "His wife, married 1846. Daughter of the 1820 Settler — and the reason the Kolbe name runs through the Booyzens. Her own DEATH NOTICE 1291, filed by her son R. P. Barry at Barkly East in May 1915, THREE YEARS after she died, gives her age as 84, her nationality as AFRIKANDER OF EUROPEAN EXTRACTION, her father as “Kolbe, thinks James was Christian name” and her mother as UNKNOWN. She died in R. P. Barry’s house at Manorowen and left NOTHING — no movable property, no immovable, estate Nil, no will. And she names NINE children where her husband’s notice names eight. The ninth is WILLIAM.",
    "p": [
+    [
+     "Estate 1291",
+     "/documents/#kolbe-1291"
+    ],
     [
      "The Kolbes",
      "/kolbe/"
     ],
     [
-     "The Women",
-     "/women/"
-    ],
-    [
      "The Barrys",
      "/barry/"
+    ],
+    [
+     "The Women",
+     "/women/"
     ]
    ]
   },
@@ -3462,6 +3466,28 @@
     [
      "The Women",
      "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "William Barry",
+   "b": "—",
+   "d": "—",
+   "l": "Barry",
+   "s": "doc",
+   "r": "NEW, and on one document only: the 1915 death notice of his mother Margaretha Kolbe, estate 1291, which names NINE children where his father's names eight. He is not on his father's notice, not on the Cape Rebel roll, and nowhere else in this archive. His father's 1903 registration said ELEVEN children; with William there are nine named and two still missing.",
+   "p": [
+    [
+     "Estate 1291",
+     "/documents/#kolbe-1291"
+    ],
+    [
+     "The Barrys",
+     "/barry/"
+    ],
+    [
+     "Open Questions",
+     "/open-questions/"
     ]
    ]
   },

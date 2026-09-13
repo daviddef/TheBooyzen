@@ -309,10 +309,11 @@ export const families = [
     kids: [{ n: "John Augustus Barry I", via: "tree" }] },
 
   { h: "John Augustus Barry I", w: "Margaretha Wilhelmina Elizabeth Mary Kolbe", via: "doc",
-    why: "Married about 1850 at BURGHERSDORP — “probably”, says their own son on the 1915 notice, who did not know. His 1903 registration says they had ELEVEN children; the 1915 notice names EIGHT. Three are missing and this archive cannot name one of them.",
+    why: "Married about 1850 at BURGHERSDORP — “probably”, says their own son on the 1915 notice, and “Unknown” says the same son on his mother's notice three months earlier. His 1903 registration says they had ELEVEN children; his own death notice names EIGHT; HER death notice, estate 1291, names NINE. The ninth is WILLIAM, who appears on nothing else. Two are still missing.",
     src: ["The Barrys", "/barry/"],
     kids: [
       { n: "John Augustus Barry II", via: "doc" },
+      { n: "William Barry", via: "doc" },
       { n: "James Henry Barry", via: "doc" },
       { n: "George Augustus Barry", via: "doc" },
       { n: "Hendrik Nicholaas Barry", via: "doc" },
