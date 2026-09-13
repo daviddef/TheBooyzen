@@ -1,5 +1,5 @@
 {
- "note": "Nineteen things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
+ "note": "Twenty-seven things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
  "causes": {
   "population": "A negative built from a list mistaken for a population — the archive searched what it happened to have and reported the answer as though it had searched everything.",
   "scope": "A search run over part of the ground and written up as though it covered all of it.",
@@ -9,6 +9,27 @@
   "process": "A mistake in the archive's own working — a bug, a bad build, or a word used loosely."
  },
  "rows": [
+  [
+   "13 Sep 2026",
+   "Margarietha Wilhelmina Elizabeth Barry was John Augustus Barry I’s daughter",
+   "She was his granddaughter. The 1915 death notice names eight children and she is not among them; her father is Hendrik Nicholaas Barry, whose other children were baptised at Dordrecht and Slang River between 1888 and 1900. Moved down a generation — which is where the cousin marriage of 1924 needs her to be, and the archive had her in the wrong place while asserting it.",
+   "reading",
+   "/cousins/"
+  ],
+  [
+   "13 Sep 2026",
+   "The 1915 notice named eight children and the archive listed nine",
+   "Two men on that list — John Augustus Barry II and George Augustus Barry — had no page at all, while a ninth name stood in their place. All three fixed together; the build now refuses to publish a household naming somebody who does not exist.",
+   "process",
+   "/documents/#barry-1915"
+  ],
+  [
+   "13 Sep 2026",
+   "The ancestor chart, every wife one generation too high",
+   "The chart put each man's wife in his mother's box. Kathleen Barry stood as Willem Hermanus Booyzen's mother when she was his wife; Johanna Catharina Mountjoy stood as Petrus Jacobus Booysen's mother when she was his; and the woman at the root had no mother drawn at all. Four slots, all shifted by one. Rebuilt, and the genuinely empty slot — the mother of the 1812 man — is now a wall.",
+   "process",
+   "/tree/"
+  ],
   [
    "9 Sep 2026",
    "Two Barry sisters married Booysens",

@@ -8,5 +8,7 @@ cd site && npm run build >/dev/null && cd ..
 python3 tools/dossiers.py
 python3 tools/gallery.py
 python3 tools/searchindex.py
-cd site && npm run build >/dev/null
+cd site && npm run build >/dev/null && cd ..
+python3 tools/links.py
+python3 tools/drift.py
 echo "build complete"

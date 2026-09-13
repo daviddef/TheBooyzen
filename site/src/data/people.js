@@ -410,6 +410,15 @@ export const people = [
  p:[["The Documents","/documents/#barry-1915"],["What Was Taken Back","/corrections/"]]},
 {n:"Frederick Fortunatus Barry", b:"—", d:"—", l:"Barry", s:"doc", r:"Carries the Kolbe given name Fortunatus.", p:[["The Kolbes","/kolbe/"],["The Women","/women/"]]},
 {n:"Kathleen Mary Barry", b:"—", d:"—", l:"Barry", s:"doc", r:"Named on the 1915 death notice.", p:[["The Barrys","/barry/"]]},
+{n:"John Augustus Barry II", b:"—", d:"—", l:"Barry", s:"doc",
+ r:"The eldest son on the 1915 notice, carrying his father's name exactly — which is why this archive calls the father John Augustus Barry I. His own documents call him simply John Barry, and that is the third man in this family the name has to be shared out between.",
+ p:[["The Documents","/documents/#barry-1915"],["The Barrys","/barry/"],["Namesakes","/namesakes/"]]},
+{n:"George Augustus Barry", b:"—", d:"—", l:"Barry", s:"doc",
+ r:"NEW. Named on his father's 1915 death notice and nowhere else this archive has looked. He carries his grandfather George Augustus Kolbe's names entire.",
+ p:[["The Documents","/documents/#barry-1915"],["The Kolbes","/kolbe/"],["Namesakes","/namesakes/"]]},
+{n:"Margaret Mary Bedford", b:"—", d:"—", l:"Barry", s:"doc",
+ r:"Born Barry, and on the 1915 notice as married to Tom Bedford. The tree carries a Margaretha Louisa Maria who married Thomas Bedford in 1875; the notice gives her as Margaret Mary, and the archive has not reconciled the two.",
+ p:[["The Documents","/documents/#barry-1915"],["The Women","/women/"],["The Barrys","/barry/"]]},
 
 // ───────────────────────── the Kolbes and Downings ─────────────────────────
 {n:"Johan Gottlieb Kolbe", b:"1765", d:"1845", l:"Kolbe", s:"doc",

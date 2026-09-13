@@ -28,15 +28,22 @@ const W = (maxG + 1) * COLW + 40, H = maxY + BOXH + 74;
 const wallLabel = { hard: "The wall", searched: "Searched, nothing", notknown: "“Not Known”", disputed: "Disputed" };
 const wallFill = { hard: "--terra", searched: "--ink-3", notknown: "--terra", disputed: "--ochre" };
 const gens = [...Array(maxG + 1).keys()];
+const label = n => n.sn || n.n;
+/* The two things a strict ancestor chart cannot draw: a second wife, and a line
+   that reaches the same couple twice. Both are listed under the chart instead. */
+const alts = flat.filter(n => n.alt).flatMap(n => n.alt.map(a => ({ ...a, of: n })));
+const folds = flat.filter(n => n.same);
+const named = flat.filter(n => !n.wall);
+const walls = flat.filter(n => n.wall);
 ---
 <Base title="The tree"
-      eyebrow={`${flat.filter(n => !n.wall).length} named ancestors · ${flat.filter(n => n.wall).length} walls`}
+      eyebrow={`${named.length} named ancestors · ${walls.length} walls`}
       dek={ped.note}>
 
 <section class="blk">
   <div class="scroll">
     <svg viewBox={`0 0 ${W} ${H}`} width={W} style="min-width:900px;display:block" role="img"
-         aria-label="Ancestor chart for Catherine Mary Sophia Booyzen, seven generations, with four points where the line stops.">
+         aria-label="Ancestor chart for Catherine Mary Sophia Booyzen, six generations, with five points where the line stops.">
       {gens.map(g => (
         <text x={g * COLW + BOXW / 2} y="16" text-anchor="middle" font-size="10"
               style="fill:var(--ink-3);font-family:var(--mono);letter-spacing:.08em">
@@ -60,20 +67,25 @@ const gens = [...Array(maxG + 1).keys()];
             <rect x={n.x} y={n.y + 30} width={BOXW} height={BOXH} rx="2"
                   style={`fill:var(--panel);stroke:var(${n.s === "open" ? "--ochre" : "--rule"});stroke-width:1`} />
             <text x={n.x + 8} y={n.y + 30 + 12} font-size="10.5"
-                  style="fill:var(--ink);font-family:var(--sans)">{n.n.length > 27 ? n.n.slice(0, 26) + "…" : n.n}</text>
+                  style="fill:var(--ink);font-family:var(--sans)">{label(n).length > 27 ? label(n).slice(0, 26) + "…" : label(n)}</text>
             <text x={n.x + 8} y={n.y + 30 + 22} font-size="9.5"
                   style="fill:var(--ink-3);font-family:var(--mono)">{n.b} – {n.d}</text>
-            <title>{n.n} · {n.b} – {n.d}</title>
+            {n.alt && <circle cx={n.x + BOXW - 8} cy={n.y + 30 + 8} r="3" style="fill:var(--ochre)" />}
+            {n.same && <circle cx={n.x + BOXW - 8} cy={n.y + 30 + 8} r="3" style="fill:var(--accent)" />}
+            <title>{n.n} · {n.b} – {n.d}{n.alt ? " · also married " + n.alt.map(a => a.n).join(", ") : ""}{n.same ? " · the line folds back here" : ""}</title>
           </g>
         </a>
       )))}
     </svg>
   </div>
   <p class="cap">Each box is a person a document names; click one for everything the archive holds on
-    them. Dashed rings are where the line stops.</p>
+    them. Dashed rings are where the line stops. An <b style="color:var(--ochre)">ochre dot</b> means
+    that man married more than once and the chart can only draw one wife; a
+    <b style="color:var(--accent)">green dot</b> means the line arrives at a couple it has already
+    passed. Both are set out below.</p>
 </section>
 
-<Rule name="thorn" label="Four walls, four different reasons" />
+<Rule name="thorn" label="Five walls, five different reasons" />
 
 <section class="blk">
   <div class="grid g2">
@@ -87,7 +99,7 @@ const gens = [...Array(maxG + 1).keys()];
     </div>
     <div class="panel">
       <h3 style="margin-top:0">The male line stops — <span class="m">Gerthardus Lodewikus Booysen</span></h3>
-      <p>No birth date, no death date, no father, no mother. Seven generations up the surname simply ends,
+      <p>No birth date, no death date, no father, no mother. Six generations up the surname simply ends,
         and the tree offers buttons with nothing behind them.
         <a href={u("/open-questions/")}>Open question 0 &rarr;</a></p>
     </div>
@@ -100,24 +112,80 @@ const gens = [...Array(maxG + 1).keys()];
     <div class="panel">
       <h3 style="margin-top:0">Disputed — <span class="m">John Barry, 1796–1853</span></h3>
       <p>Not a wall so much as a knot: one profile holding two men, a Yorkshire farmer of Bilsdale and a
-        man who died at de Bruins Poort in the Cape. Until they are separated nothing above it can be
-        trusted. <a href={u("/disputed/")}>Disputed &rarr;</a></p>
+        man who died at de Bruins Poort in the Cape. His son's 1903 registration will say only
+        <b>an Irishman, born in Ireland</b>. Until they are separated nothing above it can be trusted.
+        <a href={u("/disputed/")}>Disputed &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Disputed — <span class="m">Anna Maria van der Merwe, 1785–bef. 1825</span></h3>
+      <p>The newest wall, and it opened rather than closed. No document names the mother of
+        <b>Petrus Jacobus Booysen of 1812</b>; a family tree supplies her, and the 1876 Sterfkennis that
+        names his seven brothers and sisters names no mother for any of them. Then the 1908 notice
+        produced <b>a second van der Merwe wife</b> — so the eight children cannot all be hers, and the
+        chart can no longer assume which of them are.
+        <a href={u("/documents/#hendrik-1908")}>The 1908 notice &rarr;</a></p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Not a wall — <span class="m">the boxes that simply stop</span></h3>
+      <p>Johan Gottlieb Kolbe, John Paul Downing, Ruben Schoeman, Magdalena Johanna Botha,
+        Petrus Jacobus Pretorius. Each is the last named box on their branch, and none has been
+        worked properly yet. They are ends of the search, not ends of the family.
+        <a href={u("/errands/")}>What is still to ask &rarr;</a></p>
     </div>
   </div>
 </section>
 
+<Rule name="thorn" label="What the chart cannot draw" />
+
 <section class="blk">
-  <h2>What the shape says</h2>
+  <h2>The second marriages</h2>
+  <p class="dek">An ancestor chart has one slot for a mother, and this family kept filling it twice.
+    Each of these women is documented; none of them is an ancestor of the woman at the root; and in every
+    case it is the second marriage that explains a child the archive could not otherwise place.</p>
+  <div class="grid g2" style="margin-top:18px">
+    {alts.map(a => (
+      <div class="panel">
+        <h3 style="margin-top:0">{a.n}</h3>
+        <p class="cap" style="margin-top:-6px">also married <b>{a.of.n}</b> <span class="m">({a.of.b} – {a.of.d})</span></p>
+        <p>{a.why}</p>
+        {slugOf[a.n] && <p><a href={u("/who/" + slugOf[a.n] + "/")}>Her page &rarr;</a></p>}
+      </div>
+    ))}
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Where the line folds back</h2>
+  {folds.map(f => (
+    <blockquote>
+      <strong>{f.n}</strong> — {f.same}
+      {f.sameHref && <> <a href={u(f.sameHref)}>The cousin marriage &rarr;</a></>}
+    </blockquote>
+  ))}
+  <div class="prose" style="margin-top:18px">
+    <p>The chart draws his box and stops. Drawing his parents would mean drawing
+      <b>John Augustus Barry I and Margaretha Kolbe a second time</b>, which is true but would make the
+      chart lie about its own arithmetic: the woman at the root does not have thirty-two ancestors five
+      generations back, she has thirty.</p>
+  </div>
+</section>
+
+<Rule name="thorn" label="What the shape says" />
+
+<section class="blk">
   <div class="prose">
-    <p>The chart is <b>lopsided on purpose</b>. The Booyzen male line runs seven generations and stops at a
+    <p>The chart is <b>lopsided on purpose</b>. The Booyzen male line runs six generations and stops at a
       man with no dates. The <b>Kolbe and Downing lines reach London</b> — a Soho font, a Shoreditch
       wedding, a Bond Street tailor's will. The <b>Mountjoy line stops hardest of all</b>, at a saddler
-      born in “Europe” whose own family could not name his parents.</p>
-    <p>And the whole of the right-hand side is thin for the same reason: <b>this family did not keep
+      born in “Europe” whose own family could not name his parents. And the
+      <b>whole mother's side is two boxes deep and then finished</b>, because the Pretorius branch has
+      never been searched at all.</p>
+    <p>The right-hand side is thin for the same reason throughout: <b>this family did not keep
       records, it appeared in other people's</b>. Almost everything here was recovered from civil
       registration, church registers and the Master's Office — not from anything handed down.</p>
     <p><a href={u("/direct-line/")}>The line in full &rarr;</a> ·
        <a href={u("/people/")}>All {Object.keys(d.people).length} people &rarr;</a> ·
+       <a href={u("/cousins/")}>The cousin marriage &rarr;</a> ·
        <a href={u("/timeline/")}>The timeline &rarr;</a></p>
   </div>
 </section>
