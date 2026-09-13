@@ -2,6 +2,32 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "n": "the 1788 baptism is not in the index; a nine-child household is",
+   "d": "14 Sep 2026",
+   "h": "/barry/",
+   "rows": [
+    [
+     "q.givenName=Petrus Jacobus · q.surname=Booi* · 1786–1790 · South Africa",
+     "Date filter ignored",
+     "The decisive record — the baptism of 21 September 1788, which names the father and would settle de Villiers against the 1876 Sterfkennis — does NOT surface. The endpoint returns 19th and 20th century entries regardless of the birthLikeDate range, and the same happened with anyDate on Graaff-Reinet. This is consistent with what Question 0 already says: the 18th-century Cape registers are not name-indexed and have to be read page by page. NOT a negative about the register, a negative about the index.",
+     "blocked"
+    ],
+    [
+     "q.surname=Booij* · q.fatherGivenName=Jan · q.motherSurname=de Beer",
+     "de Villiers corroborated twice",
+     "The mother filter did not bite and the wildcard dragged in Dutch Booijink and Booijman families. But two entries land squarely on de Villiers' page 78: Petrus Jacobus Booijzen, born 1814, of GERRIT BOOIJZEN and ANNA ELISABETH THERON; and Anna Susanna Booijze, baptised 12 May 1805 at Graaff-Reinet, of JAN JONATHAN BOOIJZE and JUDITH CORNELIA ETRESIA VILJOEN. The book gives Jan's sons Gerrit married to Anna Elisabeth Theron in 1791 and Jan Jonathan married to Judith Cornelia Theresia Viljoen in 1797. TWO OF JAN'S SONS CONFIRMED FROM RECORDS, independently of the book — which raises what the book says about the third son, Petrus Jacobus.",
+     "part"
+    ],
+    [
+     "q.surname=Barry · q.fatherGivenName=John Augustus · South Africa",
+     "Nine children, a whole household",
+     "The query Question 13 named as untried. It does not answer which two of the eleven are missing — these are grandchildren, not children — but it hands this archive a family it did not have at all. John Augustus Barry II, who was a name on two death notices with no wife and no issue, married ALIDA JACOBA VAN ELLINCKHUIZEN and had NINE children baptised at Burgersdorp and then Dordrecht, 1871 to 1889. The eldest is a THIRD Catherine Mary Sophia. The seventh is ANTON RECTOR KOLBE BARRY — the Kolbe name in a fourth generation, sixty-two years after the Settler landed. A fourth John Augustus appears at ELLIOT by 1908, the same village where Henry James Booyzen married in 1912.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "Queensland's historical index — did any branch reach Australia before the living generation?",
    "n": "eleven surnames, and not one of this family",
    "d": "13 Sep 2026",

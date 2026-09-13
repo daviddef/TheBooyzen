@@ -412,6 +412,21 @@ export const families = [
       { n: "Catherine Maria Sophia “Kathleen” Barry", via: "line" },
       { n: "Kathleen Mary Barry", via: "doc" }] },
 
+  { h: "John Augustus Barry II", w: "Alida Jacoba van Ellinckhuizen", via: "inf",
+    why: "A household this archive did not have. John Augustus Barry II was a name on his parents' two death notices and nothing else — no wife, no children. Asking the index for every Barry child of a father called JOHN AUGUSTUS, rather than for him, returned NINE, baptised at Burgersdorp and then Dordrecht between 1871 and 1889. The eldest is a third Catherine Mary Sophia; the seventh carries KOLBE into a fourth generation.",
+    warn: "FROM THE INDEX — no image has been read, and the mother's surname is spelled five different ways across the entries.",
+    src: ["The Barrys", "/barry/"],
+    kids: [
+      { n: "Catherine Mary Sophia Barry of 1871", via: "inf" },
+      { n: "John Augustus Barry III", via: "inf" },
+      { n: "Margaret Elizabeth Annie Barry", via: "inf" },
+      { n: "Jacobus Ellinckhuizen Barry", via: "inf" },
+      { n: "Clarence Barry", via: "inf" },
+      { n: "George Alphonso Barry", via: "inf" },
+      { n: "Anton Rector Kolbe Barry", via: "inf" },
+      { n: "Alida Eduarda Barry", via: "inf" },
+      { n: "Miny Barry", via: "inf" }] },
+
   { h: "Hendrik Nicholaas Barry", w: "Anna Johanna Maria Schoeman", via: "doc",
     why: "The second Barry–Schoeman link, and part of why the 1924 marriage was between cousins. Four of their children are in the baptism registers at Dordrecht, Slang River and Barkly West between 1888 and 1900, and he signed his eldest daughter's death registration in 1912 as “Father present when died”.",
     src: ["Harriet's registration, 1912", "/documents/#harriet-1912"],
