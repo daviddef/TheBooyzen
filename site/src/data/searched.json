@@ -2,6 +2,50 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "WikiTree, never once opened in this project until somebody asked",
+   "n": "thirteen profiles read — one page number, four facts, one head-on contradiction",
+   "d": "13 Sep 2026",
+   "h": "/sources/#wikitree",
+   "rows": [
+    [
+     "wikitree.com/genealogy/Booyzen — the whole surname index",
+     "13 profiles",
+     "The archive had eleven MyHeritage trees, Geni and the FamilySearch tree listed under “Other trees holding this family”, and the word WikiTree appeared nowhere in the project. Of the thirteen Booyzen profiles, FIVE are this family: Petrus Jacobus (1788), David Schalk, Hendrik Stefanus, Henry James and Jacobus Nicolaas.",
+     "yes"
+    ],
+    [
+     "Booysen-267 — Petrus Jacobus, b. bef 21 Sep 1788, d. 1 Sep 1876",
+     "A different father",
+     "Identical birth and death dates to this archive's man, and the parents given as JAN (Boijens) BOOYSEN and MAGDALENA DE BEER against this archive's GERTHARDUS LODEWIKUS BOOIJSEN and Magdalena de Beer, which come off line 3 of the 1876 Sterfkennis No. 678. Same mother, same son, two husbands. The profile cites HEESE, SUID-AFRIKAANSE GESLAGSREGISTERS, DEEL 1, P. 331 — the book Question 0 has named from the start and never had a page number for. Nothing changed: a read document outranks a tree.",
+     "part"
+    ],
+    [
+     "Booysen-293 — Hendrik Stefanus, d. 11 May 1908 Rustenburg",
+     "Our man, and behind us",
+     "Age at death “79 & 11 months”, the 1850 Potchefstroom marriage to Anna Johanna Olivier, then Charlotta Dormehl at Zeerust — all matching. Its parentage line reads “Elizabetha ? (Anna Maria ?) van der Merwe”: another researcher reached this archive's oldest contradiction and left it as a question mark. The 1908 death notice, TAB 14380, settles it as Elizabetha.",
+     "yes"
+    ],
+    [
+     "Booyzen-12 and Booyzen-11 — Henry James and Jacobus Nicolaas",
+     "Four dates this archive lacked",
+     "Henry James born 12 August 1887 (this archive had “c. 1887” off a burial age) and married Dorothea Regina Barry on 17 June 1912 AT ELLIOT. Jacobus Nicolaas married Jacomina Jacoba Jansen van Rensburg on 12 February 1866 at Middelburg — a wife this archive did not have at all, though the profile's own source line dates that marriage 1899. All FROM A TREE, none adopted into the family data.",
+     "part"
+    ],
+    [
+     "Booyzen-2 — Hendrik Stiphanis, 1830–1905, Graaff-Reinet",
+     "Not this family",
+     "Son of Jan Hendrik Booysen and Cornelia Margaretha Voetzé, and married three times — the first of them, on the profile's own figures, at TWELVE YEARS OLD. Ruled out, and worth recording as the reason a name match is not an identification.",
+     "no"
+    ],
+    [
+     "Henry James Booyzen's profile sources — “Form of information of death”",
+     "Somebody has the sterfkennis",
+     "Estate MHG 10/57 is one of the six files on the FamilySearch films that refuse images, and it is in the letter to the National Archives in Pretoria. The WikiTree profile manager cites a death notice for the same man. That is a person who has seen a document this archive cannot reach.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Three questions put to the index directly — and one that answered back",
    "n": "three negatives and one name the notices never gave",
    "d": "13 Sep 2026",
