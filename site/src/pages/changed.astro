@@ -1,0 +1,96 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import log from "../data/log.json";
+import corr from "../data/corrections.json";
+import tl from "../data/timeline.json";
+import d from "../data/dossiers.json";
+
+/* Everything on this page is derived. Nothing is written by hand, so it cannot
+   go stale the way a hand-kept "latest news" box always does. */
+const MONTHS = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+function parse(s) {
+  const m = /^(\d{1,2})\s+([A-Za-z]{3})\s+(\d{4})$/.exec((s || "").trim());
+  return m ? new Date(Date.UTC(+m[3], MONTHS[m[2]], +m[1])) : null;
+}
+const stamp = e => { const t = parse(e.d); return t ? t.getTime() : 0; };
+
+const entries = [...log.entries].map(e => ({ ...e, t_: stamp(e) }));
+const rows    = corr.rows.map(r => ({ d: r[0], was: r[1], now: r[2], cause: r[3], h: r[4], t_: stamp({ d: r[0] }) }));
+
+/* Group by day, newest first, and keep only days that actually carry something. */
+const days = {};
+for (const e of entries) (days[e.d] ||= { d: e.d, t_: e.t_, log: [], corr: [] }).log.push(e);
+for (const r of rows)    (days[r.d] ||= { d: r.d, t_: r.t_, log: [], corr: [] }).corr.push(r);
+const ordered = Object.values(days).sort((a, b) => b.t_ - a.t_);
+
+const KIND = { find: "Found", back: "Taken back", work: "Method" };
+const CAUSE = corr.causes;
+const latest = ordered[0];
+const people = Object.keys(d.people).length;
+const events = (tl.events || []).length;
+---
+<Base title="What changed"
+      eyebrow={`${entries.length} log entries · ${rows.length} corrections · newest first`}
+      dek="This archive is rewritten most days, and a reader who saw it last week has no way of knowing what moved. This page is that record — every finding and every withdrawal, by the day it happened, built from the same data the rest of the site is built from. Nothing here is written by hand.">
+
+<section class="blk">
+  <div class="grid g3">
+    <div class="panel"><h3 style="margin-top:0">Last worked</h3>
+      <p style="font-size:1.4rem;margin:0"><b>{latest && latest.d}</b></p>
+      <p class="cap">{latest && latest.log.length} findings · {latest && latest.corr.length} withdrawals</p></div>
+    <div class="panel"><h3 style="margin-top:0">Standing</h3>
+      <p style="font-size:1.4rem;margin:0"><b>{people}</b> people</p>
+      <p class="cap">{events} events on the timeline</p></div>
+    <div class="panel"><h3 style="margin-top:0">Taken back</h3>
+      <p style="font-size:1.4rem;margin:0"><b>{rows.length}</b> published claims</p>
+      <p class="cap">withdrawn since this archive began &mdash; <a href={u("/corrections/")}>with the cause of each</a></p></div>
+  </div>
+</section>
+
+{ordered.map(day => (
+  <section class="blk">
+    <h2 style="border-bottom:1px solid var(--rule);padding-bottom:8px">{day.d}</h2>
+
+    {day.corr.length > 0 && (
+      <div style="margin-top:16px">
+        <p class="dek" style="margin-bottom:10px"><b>Taken back</b> &mdash; {day.corr.length} published
+          {day.corr.length === 1 ? " claim" : " claims"} withdrawn on this day.</p>
+        <div class="scroll">
+          <table>
+            <thead><tr><th style="width:22rem">What this archive said</th><th>What replaced it</th><th class="m" style="width:7rem">Cause</th></tr></thead>
+            <tbody>{day.corr.map(r => (
+              <tr>
+                <td><s>{r.was}</s></td>
+                <td>{r.now} {r.h && <a href={u(r.h)}>&rarr;</a>}</td>
+                <td class="m"><span title={CAUSE[r.cause]}>{r.cause}</span></td>
+              </tr>))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    )}
+
+    {day.log.length > 0 && (
+      <div style="margin-top:22px">
+        {day.log.map(e => (
+          <div class="panel" style="margin-bottom:14px">
+            <h3 style="margin-top:0">{e.t} <span class="m" style="font-weight:400;font-size:.8em">&middot; {KIND[e.k] || e.k}</span></h3>
+            <p style="margin-bottom:0">{e.w}</p>
+          </div>
+        ))}
+      </div>
+    )}
+  </section>
+))}
+
+<section class="blk">
+  <div class="prose">
+    <p class="cap">Built from <span class="m">log.json</span> and <span class="m">corrections.json</span>
+      at build time. If a finding is not here it is not in the log, and the build will say so before it
+      says anything else &mdash; <span class="m">tools/drift.py</span> fails the build when a narrative
+      page and the data disagree. <a href={u("/log/")}>The research log &rarr;</a> &middot;
+      <a href={u("/corrections/")}>What was taken back &rarr;</a></p>
+  </div>
+</section>
+</Base>

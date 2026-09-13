@@ -180,3 +180,45 @@ Department of Defence collection is browse-by-image and not name-indexed.
 2. **The next-of-kin entry on his attestation**, which would independently confirm Kathleen Barry as his
    mother from a source outside the family tree.
 3. Possibly **a birth date and physical description** for a son the archive currently has only as a name.
+
+---
+
+## RE-CHECKED, 13 September 2026 — the address is not the problem, and the Centre has moved
+
+The mweb address was re-checked today against the current published sources.
+
+**The Stellenbosch University library guide to SANDF Documentation Services, last updated
+1 SEPTEMBER 2026 — twelve days ago — no longer lists `sandfdoc@mweb.co.za` at all.**
+It gives `archive@dod.mil.za` and nothing else. That is the address this enquiry *did*
+deliver to on 9 September.
+
+So there is **no better address to switch to**. The one that bounced is a dead address that
+third-party sites keep republishing; the one that worked is the current one.
+
+The same guide shows the Centre is **no longer at the Schweikert Building, 20 Visagie Street**,
+which is the address still given by the National Archives directory and by most genealogy sites:
+
+| | |
+|---|---|
+| **Physical** | Documentation Centre, Command and Management Information Systems Division, **42 Saturnus Road, Irene, Pretoria, 0157** |
+| **Postal** | DoD Archives, Private Bag X289, Pretoria, 0001 |
+| **Telephone** | +27 12 670 8127 — ask for reading room and enquiries |
+| **Fax** | +27 12 670 8001 |
+| **Open** | **Closed on Mondays and Fridays.** Visits must be arranged in advance. |
+
+**And there is now an escalation path with names on it.** The same guide lists the Office of the
+GITO for **PAIA** requests — the Promotion of Access to Information Act, which carries a statutory
+duty to respond:
+
+- Mr S. D. Machethe — `seliti.machethe@dod.mil.za`
+- Mr Ronnie Mdawe — `ronnie.mdawe@dod.mil.za`
+- +27 12 672 1450
+
+**Status of the enquiry sent 9 September 2026 to `archive@dod.mil.za`: delivered, four days,
+no reply.** Four days is not silence and it is too early to chase. If it is still silent at
+**four weeks — 7 October 2026** — the next step is a formal PAIA request to one of the two
+officers above, and not another general enquiry.
+
+Sources re-checked 13 September 2026: Stellenbosch University library guide (updated
+1 September 2026); the Witwatersrand Rifles archive page and the National Archives directory,
+both of which still publish the dead mweb address and the old Visagie Street building.

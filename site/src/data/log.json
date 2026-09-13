@@ -514,6 +514,18 @@
    "t": "Marico: the initials still fail, and the reason for dismissing them is gone",
    "k": "back",
    "w": "In September this archive set aside seven TAB CJC compensation claims from MARICO with the sentence “that is NOT this family, who were Cape”, and could not test the initials because it could not name a single grandson. It can name them now, and the test STILL FAILS — of JPJ, PJ, GL, JPJ, L, JC and HE only PJ fits, and Petrus Jacobus is the commonest name this family has. But the sentence is false twice over. HENDRIK STEFANUS BOOIJZEN MARRIED AT ZEERUST, the principal town of Marico, on 14 April 1892; and his wife died at DRIEFONTEIN, GROOT MARICO on 6 February 1902, during the war, in the district the claims come from. The claims are still not tied to a named man. What has gone is the excuse for not looking."
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "A page that says what moved",
+   "k": "work",
+   "w": "This archive is rewritten most days and a reader who saw it last week had no way of knowing what changed. /changed/ is that record: every finding and every withdrawal, grouped by the day it happened, newest first. It is BUILT FROM log.json AND corrections.json at build time and contains no hand-written text, so it cannot go stale the way a “latest news” box always does. If a finding is not on it, it is not in the log."
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "The post, chased — and the SANDF address is not the problem",
+   "k": "work",
+   "w": "Three letters out, no replies and no new bounces. PRETORIA (sent today, six Transvaal estate files): delivered, no bounce, too early for anything else. WESTERN CAPE ARCHIVES (two letters, 9 September — the Mountjoy wills and the Lerena death notice): delivered, four days, silent. SANDF (9 September): the mweb address bounced with “Relay access denied” and archive@dod.mil.za delivered. RE-CHECKED TODAY: the Stellenbosch library guide, updated 1 SEPTEMBER 2026, no longer lists the mweb address at all — it gives archive@dod.mil.za and nothing else. So there is no better address to switch to; the one that bounced is a dead address that third-party sites keep republishing. The same guide shows the Centre HAS MOVED, from the Schweikert Building at 20 Visagie Street to 42 SATURNUS ROAD, IRENE — the National Archives directory still has the old one. And it names two officers for PAIA requests, which carries a statutory duty to answer. If archive@dod.mil.za is still silent on 7 October, that is the next step, and not another general enquiry."
   }
  ]
 }

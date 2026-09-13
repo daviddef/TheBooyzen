@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Grahamstown depot, swept for Barry, Mountjoy and Booyzen",
+   "n": "two estates, both already read",
+   "d": "13 Sep 2026",
+   "h": "/documents/#kolbe-1291",
+   "rows": [
+    [
+     "BARRY, exact surname, probate at Grahamstown / Albany",
+     "18 personas, 1 estate",
+     "All of them are ONE document — John Barry's own 1915 notice, estate 925, which this archive has read entire. The index even carries NEAGLE BARRY as a person, which is the surname the informant gave for his grandmother and could not follow with a Christian name. The rest of the Grahamstown Barrys — Van Reenen, Dirk Gysbert, Durban, Phyllis, Thomas — are a different Barry family on the same film.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY, exact surname, probate at Grahamstown / Albany",
+     "8 personas, 2 estates",
+     "John James Mountjoy 1923 and a George Mountjoy family group of 1919–20 (Susan Elizabeth, d. 13 Sep 1920 at Mt Prospect, Flagstaff, b. 1887 Maclear; with Ivy Elizabeth, Gwendoline Hazel, Edna Iris and Daphne Joyce). Flagstaff and Maclear are Transkei, a different Mountjoy household, and NOT ADOPTED.",
+     "no"
+    ],
+    [
+     "BOOYZEN, exact surname, probate at Grahamstown / Albany",
+     "8 personas",
+     "January, Jonas, Sarah, Martha, Meetje, Aletta, Johanna, G — Middelburg and Basutoland, 1850 to 1920. A different Booyzen family entirely and this archive does not claim them.",
+     "no"
+    ],
+    [
+     "And the lesson from estate 1291",
+     "a finding aid, not an absence",
+     "Margaretha Kolbe's probate was GRANTED AT GRAHAMSTOWN and is INDEXED UNDER KIMBERLEY. Three earlier searches for it failed because they trusted the collection label. A depot sweep that searches by place will not find a record filed under the wrong one.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Marico question, re-run on the grandsons — and the reason for dismissing it withdrawn",
    "n": "initials still fail, district objection dead",
    "d": "13 Sep 2026",
