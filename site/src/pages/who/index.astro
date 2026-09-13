@@ -1,0 +1,42 @@
+---
+/* Every name in the archive, and how many people bore it. */
+import Base from "../../layouts/Base.astro";
+import { u } from "../../lib/url.js";
+import d from "../../data/dossiers.json";
+
+function slugify(s) {
+  return String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").toLowerCase();
+}
+const by = new Map();
+for (const p of Object.values(d.people)) {
+  const k = slugify(p.n);
+  if (!by.has(k)) by.set(k, { name: p.n, n: 0 });
+  by.get(k).n += 1;
+}
+const names = [...by.entries()].map(([slug, v]) => ({ slug, ...v }))
+  .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
+const shared = names.filter(n => n.n > 1);
+---
+<Base title="Every name"
+      eyebrow={`${names.length} names${shared.length ? ` · ${shared.length} held by more than one person` : " · none shared"}`}
+      dek="A name is not a person. This is every name in the archive, and how many different people bore it.">
+  <section class="blk">
+    <p class="prose">Of {names.length} names here, <strong>{shared.length || "none"}</strong>
+    {shared.length === 1 ? " belongs" : " belong"} to more than one person — which is unusual, and
+    worth saying: on the Blažević archive twenty different men are called Ivan Blažević.</p>
+    <div class="scroll" style="margin-top:18px">
+      <table>
+        <thead><tr><th>Name</th><th>People</th></tr></thead>
+        <tbody>
+          {names.map(n => (
+            <tr>
+              <td><a href={u(`/who/${n.slug}/`)}>{n.name}</a></td>
+              <td class="mono">{n.n > 1 ? n.n : ""}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>
