@@ -1,5 +1,5 @@
 {
- "note": "Thirty-one things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
+ "note": "Thirty-two things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
  "causes": {
   "population": "A negative built from a list mistaken for a population — the archive searched what it happened to have and reported the answer as though it had searched everything.",
   "scope": "A search run over part of the ground and written up as though it covered all of it.",
@@ -9,6 +9,13 @@
   "process": "A mistake in the archive's own working — a bug, a bad build, or a word used loosely."
  },
  "rows": [
+  [
+   "13 Sep 2026",
+   "Anna Catharina Johanna Olivier was on this site twice",
+   "One woman, two records: a stub written from the 1908 death notice — “His first wife, named as pre-deceased” — and a full record written from her own 1891 Sterfkennis hours later. The shared-name page gathered them as though they were two people. Merged. The build now warns on every shared name so a human checks each one reads as two lives and not one.",
+   "process",
+   "/documents/#olivier-line"
+  ],
   [
    "13 Sep 2026",
    "Charlotta Elizabetha Dormehl died before 1908",

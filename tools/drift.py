@@ -59,6 +59,17 @@ if missing:
     warns.append(f"timeline is behind the log on {len(missing)} years: "
                  + ", ".join(f"{y} ({logyears[y][:34]}…)" for y in missing[:6]))
 
+# 1b. shared names are ALLOWED — dossiers.py gathers them on one page and says so.
+#     But people.js once held "Anna Catharina Johanna Olivier" twice for ONE woman:
+#     a stub written from the 1908 notice and a full record written from the 1891
+#     one. A machine cannot tell that from two real people of one name, so this
+#     warns and a human checks the shared page reads as two lives and not one.
+from collections import Counter
+dupes = sorted(n for n, c in Counter(p["n"] for p in people).items() if c > 1)
+if dupes:
+    warns.append("%d name(s) shared by more than one record — check each is really two "
+                 "people and not one entered twice: %s" % (len(dupes), ", ".join(dupes)))
+
 # 2. the direct line's spouse column must not contradict kin.js
 dl = page("direct-line.astro")
 kin = open(os.path.join(DATA, "kin.js"), encoding="utf-8").read()
