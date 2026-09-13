@@ -538,6 +538,18 @@
    "t": "William, found — and the two Kolbe sisters on one page",
    "k": "find",
    "w": "This morning WILLIAM BARRY existed on one line of his mother's 1915 death notice and nowhere else. The Burgersdorp doopregister has his baptism: WILLIAM FREDRIK, entry 2187, born 23 AUGUST 1853, christened 23 October, father JOHN BARRY, mother MARGARETH KOLBE — with godparents JOHN KOLBE, ANNA VAN DER MERWE and GEORGE KOLBE, two of whom are his mother's brothers and none of whom this archive had. AND THE ENTRY TWO LINES ABOVE IT IS THE OTHER THING. 2186, the same afternoon: AUGUSTUS KOLBE, father GEORGE FREDK ENSLIN, mother MARY ELIZABETH KOLBE. This site carried a contradiction marked Serious — Margaretha Kolbe appearing to marry Enslin while married to John Barry — and resolved it from Margaret Downing's 1867 death notice, which named a daughter Mary Elizabeth married to George F. Enslin. Here are the two sisters, baptising a son each, two entries apart, on one page. Six more baptisms from the same registers give exact birth dates to five Barry children, including the direct ancestor: CATHERINA MARY SOPHIA BARRY, BORN 4 AUGUST 1859, who has been “1859” on this site since it was built."
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "Three graves read off the register, and one of them is the direct line",
+   "k": "find",
+   "w": "GRAVE 2171, Dutch Reformed section, WEST PARK — George Downing Mountjoy Booyzen, 46, buried 14 December 1947. This archive has had “buried West Park 14 Dec” since it was built and never the number. And a DOUBLE PLOT: Joseph Heinrich Daschner, 58, buried 21 April 1942 in GRAVE 50 of a pair 50/51 he bought himself, with a memorial by L. Canata & Son — and the consecutive grave-number register braces 50 and 51 together, DASCHNER JOSEPH H. and DASCHNER CATHERINE M.S. She is Catharina Maria Sophia Booysen, born 22 April 1891 at Barkly Oost, George's own sister, whose estate MHG 3734/46 is one of the six files in the letter to Pretoria. Four years after he was buried in the first grave she went into the second. The family lies in three graves across two cemeteries: Kathleen Barry at Brixton in 9760, her son Willem Hermanus and his wife at Brixton in 6889, her son George at West Park in 2171, and her daughter and son-in-law at West Park in 50 and 51."
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "A drift check for the atlas, and three shared names verified by eye",
+   "k": "work",
+   "w": "Six farms and towns were written into /documents/ today before places.json had heard of any of them — Potchefstroom, Zeerust, Driefontein, Zwartruggens, Voorbedacht No. 401, Klerksdorp and Market Street. All six are now in the atlas, and tools/drift.py FAILS THE BUILD if a place named in a timeline event is not in places.json. Tested against a deliberate miss before it was trusted. Separately, the shared-name warning was worked through by eye and all three are genuinely two or three people: GEORGE MOUNTJOY the saddler of 1823 and the child baptised at Barkly Oost in 1889; THREE Petrus Jacobus Booysens of 1788, 1812 and 1839, father to son to grandson; and two WILLEM HERMANUS PIETERZENS, the one dead before 1817 who was Anna Catharina Sleer's first husband, and his son who stood godfather at the 1851 font. None is one person entered twice."
   }
  ]
 }

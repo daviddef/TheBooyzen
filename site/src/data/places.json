@@ -516,11 +516,25 @@
     [
      "14 Dec 1947",
      "George Downing Mountjoy Booyzen buried"
+    ],
+    [
+     "21 Apr 1942",
+     "Joseph Heinrich Daschner buried — D.R. section, grave 50 of a double plot"
+    ],
+    [
+     "1946",
+     "Catharina Maria Sophia Booysen buried in grave 51, beside him"
+    ],
+    [
+     "14 Dec 1947",
+     "George Downing Mountjoy Booyzen buried — D.R. section, grave 2171"
     ]
    ],
    "p": [
     "Anna Johanna Maria Pretorius",
-    "George Downing Mountjoy Booyzen"
+    "Catharina Maria Sophia Booysen",
+    "George Downing Mountjoy Booyzen",
+    "Joseph Heinrich Daschner"
    ],
    "slug": "west-park-cemetery",
    "lat": -26.155,
@@ -1069,6 +1083,153 @@
     "Anna Catharina Grobelaar"
    ],
    "slug": "koedoesfontein"
+  },
+  {
+   "n": "Zeerust",
+   "k": "Town, district Marico",
+   "r": "Transvaal",
+   "s": "doc",
+   "lat": -25.539,
+   "lon": 26.076,
+   "approx": false,
+   "w": "The principal town of Marico, and the district this archive spent weeks holding at arm's length with the sentence “they are not this family, who were Cape”. Hendrik Stefanus Booijzen married here on 14 April 1892 — 63, a widower of Brakfontein — and signed his second wife's death notice here in August 1902. The sentence is withdrawn.",
+   "e": [
+    [
+     "14 Apr 1892",
+     "Hendrik Stefanus Booijzen marries Charlotta Elizabeth Roos, born Dormehl — entry 13"
+    ],
+    [
+     "21 Aug 1902",
+     "he signs her death notice here, six months after she died"
+    ]
+   ],
+   "p": [
+    "Hendrik Stefanus Booijsen",
+    "Charlotta Elizabetha Dormehl"
+   ],
+   "slug": "zeerust"
+  },
+  {
+   "n": "Driefontein",
+   "k": "Farm, Groot Marico",
+   "r": "District Marico, Transvaal",
+   "s": "doc",
+   "lat": -25.6,
+   "lon": 26.35,
+   "approx": true,
+   "w": "Charlotta Elizabeth Dormehl's own place. She gave it as her home when she married at Zeerust in April 1892, and she died there on 6 February 1902 — three months before the peace, and ten years into a marriage to a man who farmed a hundred miles away at Brakfontein. She never moved to him. The coordinates are approximate: the district is certain, the farm is not placed.",
+   "e": [
+    [
+     "14 Apr 1892",
+     "she gives Driefontein, Marico as her home on her marriage"
+    ],
+    [
+     "6 Feb 1902",
+     "she dies here, leaving one wagon and her furniture"
+    ]
+   ],
+   "p": [
+    "Charlotta Elizabetha Dormehl"
+   ],
+   "slug": "driefontein"
+  },
+  {
+   "n": "Zwartruggens",
+   "k": "Town",
+   "r": "Transvaal",
+   "s": "doc",
+   "lat": -25.65,
+   "lon": 26.68,
+   "approx": false,
+   "w": "Where Diederik Arnoldus Booysen was born about August 1887 and lived as a KARWEIER — a transport rider. His 1935 Sterfkennis is the first document in this archive printed in Afrikaans rather than Dutch or English, and it names his parents: Ockert Johannes Stephanus Booysen and Elizabeth Johanna Sophia Myburgh, both by then dead.",
+   "e": [
+    [
+     "c. Aug 1887",
+     "Diederik Arnoldus Booysen born"
+    ],
+    [
+     "4 Mar 1935",
+     "his widow signs his Sterfkennis here"
+    ]
+   ],
+   "p": [
+    "Diederik Arnoldus Booysen",
+    "Elizabeth Anna Bronkhorst"
+   ],
+   "slug": "zwartruggens"
+  },
+  {
+   "n": "Voorbedacht No. 401",
+   "k": "Farm",
+   "r": "District Rustenburg, Transvaal",
+   "s": "doc",
+   "lat": -25.72,
+   "lon": 27.15,
+   "approx": true,
+   "w": "Where Diederik Arnoldus Booysen died on 1 March 1935, aged 47 years 7 months, with an estate over £300 and a will — the largest Booysen estate this archive has read. A numbered farm, which is how the Transvaal registered land. Coordinates approximate.",
+   "e": [
+    [
+     "1 Mar 1935",
+     "Diederik Arnoldus Booysen dies here"
+    ]
+   ],
+   "p": [
+    "Diederik Arnoldus Booysen"
+   ],
+   "slug": "voorbedacht"
+  },
+  {
+   "n": "Klerksdorp",
+   "k": "Town",
+   "r": "Transvaal",
+   "s": "doc",
+   "lat": -26.852,
+   "lon": 26.666,
+   "approx": false,
+   "w": "Where Ockert Johannes Stephanus Booysen died on 16 January 1921, aged 69 — the man who signed his father's death notice in 1908 and who carried his mother's father's name out of the district of Cradock and into the western Transvaal. It is a CIVIL registration and it names no parents, which is why this archive keeps going back to Sterfkennisse. He has no estate file of his own.",
+   "e": [
+    [
+     "16 Jan 1921",
+     "Ockert Johannes Stephanus Booysen dies, aged 69"
+    ]
+   ],
+   "p": [
+    "Ockert Johannes Stephanus Booysen"
+   ],
+   "slug": "klerksdorp"
+  },
+  {
+   "n": "Market Street, Pretoria",
+   "k": "Street",
+   "r": "Pretoria, Transvaal",
+   "s": "doc",
+   "lat": -25.747,
+   "lon": 28.188,
+   "approx": true,
+   "w": "Elizabetha Margaretha Booijzen, born Marais, died in A ZINC BUILDING IN MARKET STREET on 1 JUNE 1900 — the capital's main street, four days before Lord Roberts entered the town. Her husband David Schalk Booijzen, the direct ancestor's brother, did not file her death notice for three years and nine months, and against the question about movable property he wrote “none. Compensation claim filed.”",
+   "e": [
+    [
+     "1 Jun 1900",
+     "Elizabetha Margaretha Marais dies in a zinc building here"
+    ],
+    [
+     "5 Jun 1900",
+     "Lord Roberts enters Pretoria"
+    ],
+    [
+     "18 Mar 1904",
+     "her husband files the death notice, estate 4795"
+    ],
+    [
+     "27 Nov 1905",
+     "he remarries at Pretoria, the register citing estate 4795"
+    ]
+   ],
+   "p": [
+    "Elizabetha Margaretha Marais",
+    "David Schalk Booysen"
+   ],
+   "slug": "market-street-pretoria"
   }
  ]
 }

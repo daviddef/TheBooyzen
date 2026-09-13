@@ -87,6 +87,20 @@ if absent:
     warns.append(f"tree page does not mention {len(absent)} people on the direct line: "
                  + ", ".join(absent[:6]))
 
+# 3b. every place a timeline event names must exist in the atlas. Six farms and
+#     towns were written into /documents/ and the timeline before places.json heard
+#     of any of them, and the atlas is the one page a reader uses to see where this
+#     family WAS. The timeline's "pl" field is an explicit list of places, so this
+#     compares like with like instead of guessing at prose.
+places = load("places.json")
+prows = places["places"] if isinstance(places, dict) and "places" in places else places
+pnames = {norm(r["n"]) for r in prows if isinstance(r, dict) and r.get("n")}
+used = {q for e in tlrows for q in (e.get("pl") or [])}
+absent = sorted(q for q in used if norm(q) not in pnames)
+if absent:
+    fails.append("%d place(s) named on the timeline are not in places.json, so the atlas "
+                 "cannot show them: %s" % (len(absent), ", ".join(absent)))
+
 # 4. the pedigree chart must not contradict kin.js on a parent
 ped = json.dumps(load("pedigree.json"), ensure_ascii=False)
 for m in re.finditer(r'\{ h: "([^"]+)", w: "([^"]+)", via: "doc"', kin):
