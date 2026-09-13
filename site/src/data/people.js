@@ -114,9 +114,9 @@ export const people = [
 {n:"Willem Hermanus “William Henry” Booyzen", v:"Booysen (1905 clerk)", b:"4 May 1851, achter Sneeuberg", d:"13 Sep 1905, Indwe", l:"Booyzen", g:4, s:"doc",
  r:"Farmer in 1879, mason in 1905. Died of an ulcer of the stomach after fourteen months — he was not shot by the British.",
  p:[["The Line","/direct-line/"],["The Documents","/documents/"],["The Name","/name/"],["The Rebels","/rebels/"]]},
-{n:"Catherine Maria Sophia “Kathleen” Barry", b:"1859", d:"1940", l:"Barry", s:"doc",
- r:"His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner.",
- p:[["The Barrys","/barry/"],["The Women","/women/"],["The Documents","/documents/"]]},
+{n:"Catherine Maria Sophia “Kathleen” Barry", v:"Booyzen, Catherine M.S. (1940 burial register)", b:"1859", d:"1940, Johannesburg — buried 6 Sep, New Cemetery, grave 9760", l:"Barry", s:"doc",
+ r:"His wife, married 22 Dec 1879. Recorded at her death as a Military Pensioner. Buried on 6 SEPTEMBER 1940 at the City of Johannesburg NEW CEMETERY — Brixton — aged 82, in the DUTCH REFORMED section, GRAVE 9760. An Irishman’s daughter out of Barkly East, in the Dutch Reformed ground on the Rand.",
+ p:[["Grave 9760","/documents/#grave-9760"],["The Barrys","/barry/"],["The Women","/women/"]]},
 
 {n:"George Downing Mountjoy Booyzen", b:"1 Jun 1901, Cape Province", d:"11 Dec 1947, Forest Hill", l:"Booyzen", g:3, s:"doc",
  r:"Buried West Park three days later. Boomkweker, then Clerk, South African Railways. Married his first cousin once removed.",
