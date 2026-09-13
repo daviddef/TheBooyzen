@@ -249,6 +249,25 @@ const fs = [
   <p class="cap" style="margin-top:10px">Reading them is rate-limited rather than blocked: FamilySearch
     began refusing requests partway through this work and recovers after a rest. The references are
     recorded here so the job resumes rather than restarts.</p>
+  <div class="note" style="margin-top:14px">
+    <b>And on the afternoon of 13 September that stopped being true.</b> The sentence above describes a
+    limiter that opens a window, closes it after twenty or thirty calls, and reopens after about ten
+    minutes. That is how it behaved all week. It is worth writing down that it can do something worse.
+    <br /><br />
+    After two searches that afternoon the refusals did not lift. Waits of four, twenty-five, thirty and
+    forty seconds all returned <span class="m">403</span>, and the block then spread <b>off the search
+    service and onto the site</b>: loading an ordinary results page in a browser produced a document with
+    <b>a body of zero characters</b> &mdash; not a refusal page, not an error, nothing at all. Nearly an
+    hour of rests did not clear it.
+    <br /><br />
+    <b>Two practical things follow.</b> The first is that polling probably makes it worse, and checking
+    every few minutes to see whether it has lifted is the opposite of the right move. The second is the
+    one that matters to anybody reading a result on this site: <b>a search that has to be abandoned
+    halfway is a different kind of negative from one that ran.</b> Where that happened, the row on
+    <a href={u("/searched/")}>What has been searched</a> is marked
+    <span class="chip open">Blocked</span> and not <span class="chip lore">Nothing</span>, because the
+    index was never actually asked.
+  </div>
   <div class="note" style="margin-top:18px">
     <b>13 September 2026: the remaining six are blocked, and it is not an indexing problem.</b>
     The collection is held on <b>762 films</b>, <span class="m">007805260</span> to

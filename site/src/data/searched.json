@@ -33,8 +33,8 @@
     ],
     [
      "The same query, re-run for the record identifiers",
-     "HTTP 403",
-     "FamilySearch closed the window after two calls. The identifiers needed to reach the two baptism images were not retrieved, so this lead is parked exactly where the paragraph above leaves it — a search result written down, not a finding.",
+     "HTTP 403, and it stayed",
+     "FamilySearch closed the window after two calls, and unlike every other refusal this week it did not reopen. Waits of four, twenty-five, thirty and forty seconds all returned 403, and the block then spread off the search service and onto the site itself — an ordinary results page loaded in a browser with a body of ZERO characters. Nearly an hour of rests did not clear it. So the record identifiers needed to reach the two baptism images were never retrieved, and the relationship search run on the FATHER instead of the mother — the obvious next query, and the one with a real chance at the second missing child — was never run at all. Marked BLOCKED and not NOTHING: the index was not asked.",
      "blocked"
     ]
    ]
