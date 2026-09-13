@@ -1,96 +1,63 @@
 {
- "note": "The Booyzen line and the families it married — several of them British, which is the shape of the whole archive. State is derived, not assigned by hand: a line is DRAWN where this archive publishes a chart of it, DRAWABLE where there are enough people to chart and no chart yet, and a ROUTE where there are too few.",
+ "note": "A tree with invented joins in it is worse than no tree, so none of these has any. Each line is drawn in the form its own evidence supports.",
  "rows": [
   {
    "name": "Booyzen",
    "ours": true,
    "state": "drawn",
-   "depth": "129 people of the name",
-   "what": "The Cape Dutch line this archive carries — and the one that changed a letter of its name in a war.",
+   "depth": "The Cape Dutch line the archive carries",
+   "what": "Graaff-Reinet, Cradock, Barkly East, then off the train at Johannesburg with nothing. The family changed one letter of its name in a war and kept the new spelling.",
    "gap": null,
-   "href": "/who/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Mountjoy",
-   "ours": false,
-   "state": "drawable",
-   "depth": "68 people of the name",
-   "what": "Married into the line; 68 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn yet.",
-   "href": "/who/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Barry",
-   "ours": false,
-   "state": "drawable",
-   "depth": "25 people of the name",
-   "what": "Married into the line; 25 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn — only a page about them.",
-   "href": "/barry/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Daschner",
-   "ours": false,
-   "state": "drawable",
-   "depth": "15 people of the name",
-   "what": "Married into the line; 15 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn yet.",
-   "href": "/who/",
-   "cta": "Open the family →"
+   "href": "/direct-line/",
+   "cta": "The line →"
   },
   {
    "name": "Kolbe",
    "ours": false,
    "state": "drawable",
-   "depth": "15 people of the name",
-   "what": "Married into the line; 15 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn — only a page about them.",
+   "depth": "London, 1802 — and a gravestone in the Karoo that agrees with it",
+   "what": "George Augustus Kolbe was born in Soho and sailed from Gravesend at sixteen, turning seventeen at sea. His stone at Burgersdorp gives 7 December 1802, and two hundred years later somebody found the London church book, which gives the same day.",
+   "gap": "No chart of this family has been drawn — only the pages that argue it.",
    "href": "/kolbe/",
-   "cta": "Open the family →"
+   "cta": "Kolbe →"
   },
   {
-   "name": "Olivier",
+   "name": "Barry",
    "ours": false,
-   "state": "route",
-   "depth": "5 people of the name",
-   "what": "Married into the line; 5 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn yet.",
-   "href": "/who/",
-   "cta": "Open the family →"
+   "state": "drawable",
+   "depth": "An Overberg merchant house, or a common surname — not settled",
+   "what": "The name recurs in the archive and the connection to the Overberg Barrys is suggestive and unproved. The archive says so rather than claiming it.",
+   "gap": "No chart, and no join established.",
+   "href": "/barry/",
+   "cta": "Barry →"
   },
   {
-   "name": "Pretorius",
+   "name": "The British women",
    "ours": false,
    "state": "route",
-   "depth": "4 people of the name",
-   "what": "Married into the line; 4 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn yet.",
-   "href": "/who/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Schoeman",
-   "ours": false,
-   "state": "route",
-   "depth": "4 people of the name",
-   "what": "Married into the line; 4 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn yet.",
-   "href": "/who/",
-   "cta": "Open the family →"
-  },
-  {
-   "name": "Downing",
-   "ours": false,
-   "state": "route",
-   "depth": "2 people of the name",
-   "what": "Married into the line; 2 people of the name are recorded here.",
-   "gap": "No chart of this family has been drawn yet.",
-   "href": "/who/",
-   "cta": "Open the family →"
+   "depth": "Downing · van Jaarsveld · Mountjoy · Schoeman and the rest",
+   "what": "A Cape Dutch family that kept marrying British women. The lines that join it are the shape of the whole archive, not a footnote to it.",
+   "gap": null,
+   "href": "/women/",
+   "cta": "The women →"
   }
  ],
- "close": "A Cape Dutch family that kept marrying British women. The lines that join it are the point, not a footnote to it."
+ "close": "The form is checked, not asserted: a line counts as drawn only where this archive actually publishes a chart of it.",
+ "doors": [
+  [
+   "/who/",
+   "Every name",
+   "265 names — and none of them shared, which is unusual."
+  ],
+  [
+   "/people/",
+   "The people",
+   "One page each."
+  ],
+  [
+   "/documents/",
+   "The documents",
+   "Including the sterfkennis forms the archive rests on."
+  ]
+ ]
 }
