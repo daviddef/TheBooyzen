@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "n": "eleven surnames, and not one of this family",
+   "d": "13 Sep 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "familyhistory.bdm.qld.gov.au · subjectfamilyname=BOOYZEN · births, marriages and deaths",
+     "Nothing at all",
+     "The spelling this archive uses does not occur once in Queensland's register between 1829 and 1996. Neither does BOOYSENS, nor SLIER, nor SCHOEMAN.",
+     "no"
+    ],
+    [
+     "· subjectfamilyname=BOOYSEN",
+     "Two, and neither is ours",
+     "Betty Beatrice Booysen, who died in 1977, was born an Appleby of English parents. Jasper van Graan Booysen, who died in 1994, is the son of Hendrik Hermanes Booysen and Dorothea Catharina van Graan — an Afrikaans household, and a real one, but no Hendrik Hermanes and no van Graan appears anywhere in this archive. A shared surname and a shared country of origin are not a join.",
+     "no"
+    ],
+    [
+     "· MOUNTJOY, KOLBE, DASCHNER, PRETORIUS, OLIVIER, ENGELBRECHT, ENSLIN",
+     "Fifty-nine rows, all other families",
+     "The Queensland Kolbes are a German Catholic family who married Wiemers and Thurners at Toowoomba. The Queensland Daschners descend from Josef Daschner and Fany Wagner, Bavarians — not from Joseph Heinrich Daschner of Stutterheim. Most OLIVIER hits are the word used as a given name, in the Barkus family. The Pretorius rows are Afrikaans and unconnected: Ben Johannes Pretorius married Edith Watts Treasure at Brisbane in 1918, and neither name is in this archive.",
+     "no"
+    ],
+    [
+     "What the null actually closes",
+     "One standing question, answered",
+     "Queensland's index covers births to 1926, marriages to 1951 and deaths to 1996. Across that whole span no member of this family registered a birth, a marriage or a death in Queensland. The family's arrival in Brisbane is as recent as this archive says it is, and there was no earlier Australian branch to find.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "WikiTree, never once opened in this project until somebody asked",
    "n": "thirteen profiles read — one page number, four facts, one head-on contradiction",
    "d": "13 Sep 2026",
