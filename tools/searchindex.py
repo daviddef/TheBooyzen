@@ -3,6 +3,28 @@
 section heading with the paragraph under it. Run after `npm run build`."""
 import json, os, re, glob, html, unicodedata
 
+# --- the shared row contract -------------------------------------------------
+# All seven archives now emit {k,t,s,h,q}: kind, title, subtitle, href, and a
+# lowercased accent-folded haystack. The box that reads it is one component in
+# @daviddef/archive-kit, so the schema has to be the same everywhere.
+def _fold(s):
+    import unicodedata
+    s = unicodedata.normalize("NFD", str(s or ""))
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    return s.replace("\u0111", "d").replace("\u0110", "D").lower()
+
+def to_contract(rows):
+    out = []
+    for r in rows:
+        k = r.get("k", "Page")
+        t = r.get("t", "")
+        s = r.get("s", r.get("d", ""))
+        h = r.get("h", r.get("u", ""))
+        q = r.get("q", r.get("x", ""))
+        out.append({"k": k, "t": t, "s": s, "h": h,
+                    "q": _fold(" ".join([str(t), str(s), str(q)]))})
+    return out
+
 DIST, DATA = "site/dist", "site/src/data"
 def clean(t):
     t = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", t, flags=re.S | re.I)
@@ -47,6 +69,6 @@ for r in rows:
     key = (r["k"], r["t"], r["h"])
     if key in seen: continue
     seen.add(key); out.append(r)
-json.dump(out, open("site/public/searchindex.json", "w"), ensure_ascii=False)
+json.dump(to_contract(out), open("site/public/searchindex.json", "w"), ensure_ascii=False)
 from collections import Counter
 print(f"{len(out)} rows ·", dict(Counter(r["k"] for r in out)))
