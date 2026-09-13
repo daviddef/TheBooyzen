@@ -1,0 +1,96 @@
+{
+ "note": "The Booyzen line and the families it married — several of them British, which is the shape of the whole archive. State is derived, not assigned by hand: a line is DRAWN where this archive publishes a chart of it, DRAWABLE where there are enough people to chart and no chart yet, and a ROUTE where there are too few.",
+ "rows": [
+  {
+   "name": "Booyzen",
+   "ours": true,
+   "state": "drawn",
+   "depth": "129 people of the name",
+   "what": "The Cape Dutch line this archive carries — and the one that changed a letter of its name in a war.",
+   "gap": null,
+   "href": "/who/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Mountjoy",
+   "ours": false,
+   "state": "drawable",
+   "depth": "68 people of the name",
+   "what": "Married into the line; 68 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn yet.",
+   "href": "/who/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Barry",
+   "ours": false,
+   "state": "drawable",
+   "depth": "25 people of the name",
+   "what": "Married into the line; 25 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn — only a page about them.",
+   "href": "/barry/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Daschner",
+   "ours": false,
+   "state": "drawable",
+   "depth": "15 people of the name",
+   "what": "Married into the line; 15 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn yet.",
+   "href": "/who/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Kolbe",
+   "ours": false,
+   "state": "drawable",
+   "depth": "15 people of the name",
+   "what": "Married into the line; 15 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn — only a page about them.",
+   "href": "/kolbe/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Olivier",
+   "ours": false,
+   "state": "route",
+   "depth": "5 people of the name",
+   "what": "Married into the line; 5 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn yet.",
+   "href": "/who/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Pretorius",
+   "ours": false,
+   "state": "route",
+   "depth": "4 people of the name",
+   "what": "Married into the line; 4 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn yet.",
+   "href": "/who/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Schoeman",
+   "ours": false,
+   "state": "route",
+   "depth": "4 people of the name",
+   "what": "Married into the line; 4 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn yet.",
+   "href": "/who/",
+   "cta": "Open the family →"
+  },
+  {
+   "name": "Downing",
+   "ours": false,
+   "state": "route",
+   "depth": "2 people of the name",
+   "what": "Married into the line; 2 people of the name are recorded here.",
+   "gap": "No chart of this family has been drawn yet.",
+   "href": "/who/",
+   "cta": "Open the family →"
+  }
+ ],
+ "close": "A Cape Dutch family that kept marrying British women. The lines that join it are the point, not a footnote to it."
+}
