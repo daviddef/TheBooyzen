@@ -346,6 +346,11 @@ export const families = [
     src: ["Disputed", "/disputed/"],
     kids: [{ n: "John Augustus Barry I", via: "tree" }] },
 
+  { h: "George Frederick Enslin", w: "Mary Elizabeth Kolbe", via: "doc",
+    why: "The marriage this archive spent weeks proving was NOT Margaretha's. Their son Augustus Kolbe was baptised at Burgersdorp on 23 October 1853, two entries above Margaretha's son William Fredrik Barry — the two sisters on one page, on one afternoon.",
+    src: ["The Barry fonts", "/documents/#barry-fonts"],
+    kids: [{ n: "Augustus Kolbe Enslin", via: "doc" }] },
+
   { h: "John Augustus Barry I", w: "Margaretha Wilhelmina Elizabeth Mary Kolbe", via: "doc",
     why: "Married about 1850 at BURGHERSDORP — “probably”, says their own son on the 1915 notice, and “Unknown” says the same son on his mother's notice three months earlier. His 1903 registration says they had ELEVEN children; his own death notice names EIGHT; HER death notice, estate 1291, names NINE. The ninth is WILLIAM, who appears on nothing else. Two are still missing.",
     src: ["The Barrys", "/barry/"],
@@ -381,6 +386,10 @@ export const families = [
     src: ["The Kolbes", "/kolbe/"],
     kids: [
       { n: "Margaretha Wilhelmina Elizabeth Mary Kolbe", via: "line" },
+      { n: "Mary Elizabeth Kolbe", via: "doc" },
+      { n: "John Kolbe", via: "inf" },
+      { n: "George Kolbe", via: "inf" },
+      { n: "Catharine Kolbe", via: "inf" },
       { n: "Marian Kolbe", via: "doc" },
       { n: "Julia Kolbe", via: "doc" },
       { n: "Frederik Fortunatus Kolbe", via: "doc" },
