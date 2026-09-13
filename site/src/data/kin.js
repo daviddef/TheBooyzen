@@ -123,11 +123,13 @@ export const families = [
     kids: [{ n: "Elizabetha Margaretha Marais", via: "doc" }] },
 
   { h: "Ockert Johannes Stephanus Olivier", w: "Anna Catharina Botha", via: "doc",
-    why: "Named together on two Cradock baptisms, in 1823 and 1824, and again on their daughter's 1891 Sterfkennis where a bad hand turns the surname into something this archive read as Alberts. HIS THREE NAMES are why a Booysen grandson in the Transvaal was called Ockert Johannes Stephanus, and HER daughter Aletta Catharina is why there is an Aletta Catharina Johanna a generation on.",
+    why: "MARRIED AT GRAAFF-REINET ON 8 DECEMBER 1816 — the same small Karoo town where Petrus Jacobus Booysen was baptised in 1788 and his son born in 1812. Four children documented, all baptised at Cradock between 1820 and 1826. Named together on two of those baptisms, in 1823 and 1824, and again on their daughter's 1891 Sterfkennis where a bad hand turns the surname into something this archive read as Alberts. HIS THREE NAMES are why a Booysen grandson in the Transvaal was called Ockert Johannes Stephanus, and HER daughter Aletta Catharina is why there is an Aletta Catharina Johanna a generation on.",
     src: ["The Olivier line", "/documents/#olivier-line"],
     kids: [
+      { n: "Gert Cornelis Olivier", via: "doc" },
       { n: "Aletta Catharina Olivier", via: "doc" },
-      { n: "Anna Catharina Johanna Olivier", via: "doc" }] },
+      { n: "Anna Catharina Johanna Olivier", via: "doc" },
+      { n: "Ockert Johannes Stephanus Olivier the younger", via: "doc" }] },
 
   { h: "Petrus Jacobus Booysen|1812", w: "Johanna Catharina Mountjoy", via: "doc",
     why: "Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children.",

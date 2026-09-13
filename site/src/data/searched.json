@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Johannesburg Booyzens who are NOT claimed",
+   "n": "4 tested, 0 adopted",
+   "d": "13 Sep 2026",
+   "h": "/documents/#turffontein-1918",
+   "rows": [
+    [
+     "Petrus Jacobus Booyzen, b. May 1882, d. May 1961, buried Johannesburg",
+     "not claimed",
+     "The best of the four. A birth in May 1882 would make him Kathleen Barry's eldest, ahead of John Barry in 1884, and Petrus Jacobus is the most-repeated forename this family has. That is a name and a gap, and there is no document.",
+     "no"
+    ],
+    [
+     "Petrus Jacobus VAN BLERK Booyzen, b. 1872, d. 17 Mar 1949, West Park",
+     "not claimed",
+     "VAN BLERK is a mother's surname carried as a forename and there is no Van Blerk anywhere in this family. A different Booyzen household on the Rand.",
+     "no"
+    ],
+    [
+     "Jan Gerhardus Lodewikus Booysen, buried Johannesburg 17 Dec 1943",
+     "not claimed",
+     "The name is exactly right — it runs from Gerthardus Lodewikus at the top of this line to the man who died at Vaalbank in 1885. But the 1855 child of that name would be 88 in 1943, the register gives NO AGE, and the name is common in the wider family.",
+     "no"
+    ],
+    [
+     "John Zacharia Booysen, d. 25 Nov 1918, buried Brixton 26 Nov, aged 29",
+     "REJECTED",
+     "ZACHARIA reaches nothing in this family, and his death is a civil registration which names no parents, so nothing could tie him either way. Recorded only because three Booysens went into Brixton in eight weeks in the influenza and the shape of that is worth keeping.",
+     "no"
+    ],
+    [
+     "Richard Peter Booyzen, d. 25 Oct 1918, Turffontein",
+     "CLAIMED, inferred",
+     "The one that IS adopted, and on three grounds and no document: his mother's brother's forename; a birth about 1894 in the exact gap in her children; and a birthplace of C. OF G. HOPE on the registration, which is the migration all her children made.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Grahamstown depot, swept for Barry, Mountjoy and Booyzen",
    "n": "two estates, both already read",
    "d": "13 Sep 2026",
