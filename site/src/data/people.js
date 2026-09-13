@@ -16,9 +16,17 @@ export const people = [
  p:[["The Line","/direct-line/"],["The Documents","/documents/"],["Sources","/sources/"]]},
 
 // ───────── the other seven children on the 1876 notice — siblings of generation five ─────────
-{n:"David Schalk Booijsen", b:"—", d:"—", l:"Booyzen", s:"doc",
- r:"First on his father’s 1876 death notice, and a major. His nephew, born 1848, carries the same name — the two are told apart only by a generation.",
- p:[["The Documents","/documents/"]]},
+{n:"David Schalk Booijsen", b:"12 Dec 1806, baptised 4 Jan 1807", d:"—", l:"Booyzen", s:"doc",
+ r:"First on his father's 1876 death notice, and a major — and now with a date. His baptism of 4 JANUARY 1807 names his parents as PIETER JACOBUS BOOIJZEN and ANNA MARIA VAN DER MERWE, which is the only document in this archive that puts Anna Maria in the family at all. His father was eighteen when he was born. He married ADRIANA CHRISTINA VILJOEN and named a daughter ANNA MARIA in 1835, after his own mother. His nephew, born 1848, carries the same name — the two are told apart only by a generation.",
+ p:[["The 1806 baptism","/documents/#anna-maria-1806"],["The Documents","/documents/"],["Namesakes","/namesakes/"]]},
+
+{n:"Adriana Christina Viljoen", v:"Booijsen", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"His wife, named with him on their daughter Anna Maria's baptism of 13 September 1835 — a daughter called after his mother, which is how this archive knows the naming ran that way in this generation too.",
+ p:[["The 1806 baptism","/documents/#anna-maria-1806"],["The Women","/women/"]]},
+
+{n:"Anna Maria Booijsen of 1835", b:"7 Aug 1835, baptised 13 Sep 1835", d:"—", l:"Booyzen", s:"doc",
+ r:"Daughter of David Schalk Booijsen and Adriana Christina Viljoen, and named for her grandmother ANNA MARIA VAN DER MERWE — the second document in this archive to carry that name forward.",
+ p:[["The 1806 baptism","/documents/#anna-maria-1806"],["Namesakes","/namesakes/"]]},
 {n:"Magdalena Johanna Booijsen", b:"—", d:"—", l:"Booyzen", s:"doc",
  r:"Second on the 1876 notice, named for her mother Magdalena de Beer. A niece born 1853 carries the name again.",
  p:[["The Documents","/documents/"],["The Women","/women/"]]},
@@ -155,7 +163,8 @@ export const people = [
  r:"Sixth of the seven children on the 1891 Sterfkennis, carrying the name that comes down from Magdalena Elisabeth de Beer. Absent from the 1908 notice.",
  p:[["The 1891 notices","/documents/#brakfontein-1891"],["Namesakes","/namesakes/"]]},
 {n:"Anna Maria van der Merwe", b:"1785", d:"bef. Mar 1825", l:"Booyzen", s:"doc",
- r:"His wife, married 1805 at Graaff-Reinet.", p:[["The Line","/direct-line/"],["The Women","/women/"]]},
+ r:"His wife, married 1805 at Graaff-Reinet — and DOCUMENTED, which she was not until today. A Dutch Reformed baptism of 4 JANUARY 1807 names her as the mother of DAVID SCHALK BOOIJZEN, born 12 December 1806, who is FIRST of the eight children on the 1876 Sterfkennis. That resolves a contradiction this archive marked Serious (they were married by 1806, so the 1825 Cape Town marriage record is a different couple) and it rewrites the wall on the ancestor chart, which said only a family tree put her there. WHAT IS STILL NOT PROVED is that she is the mother of the 1812 man in the direct line.",
+ p:[["The 1806 baptism","/documents/#anna-maria-1806"],["The Line","/direct-line/"],["The Women","/women/"],["Disputed","/disputed/"]]},
 
 {n:"Petrus Jacobus Booysen", v:"Booyzen (1851 register), Booÿse, Bovysen", b:"10 May 1812, Graaff-Reinet", d:"1884 (probate)", l:"Booyzen", g:5, s:"doc",
  r:"Farmer at Zevenfontein, Brak River. Signed his wife's 1863 death notice. Died fifteen years before the war.",
@@ -220,8 +229,8 @@ export const people = [
  r:"Named as her daughter's mother on the 1900 death notice, under exactly the same two forenames her daughter carried — and her granddaughter after that, the child who died a minor. Three Elizabetha Margarethas in three generations.",
  p:[["A zinc building in Market Street","/documents/#marais-1900"],["Namesakes","/namesakes/"],["The Women","/women/"]]},
 
-{n:"Petrus Jacobus Booijzen of Pretoria", b:"—", d:"—", l:"Booyzen", s:"doc",
- r:"Eldest on his mother's 1900 notice, an unmarried major in 1904. The fifth Petrus Jacobus this archive has found in the male line.",
+{n:"Petrus Jacobus Booijzen of Pretoria", b:"29 May 1873, baptised 24 Aug 1873 at Lady Grey", d:"—", l:"Booyzen", s:"doc",
+ r:"Eldest on his mother's 1900 notice, an unmarried major in 1904. The fifth Petrus Jacobus this archive has found in the male line — and now with a date: born 29 May 1873 and christened at LADY GREY, the same small Cape church where his uncle Willem Hermanus married Kathleen Barry six years later.",
  p:[["A zinc building in Market Street","/documents/#marais-1900"],["Namesakes","/namesakes/"]]},
 
 {n:"Johanna Margaretha Delport", v:"born Booijzen", b:"—", d:"—", l:"Booyzen", s:"doc",

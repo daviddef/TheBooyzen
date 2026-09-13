@@ -19,8 +19,13 @@ export const families = [
     src: ["The 1876 Sterfkennis", "/documents/#sterfkennis-1876"],
     kids: [{ n: "Petrus Jacobus Booysen|1788", via: "line" }] },
 
-  { h: "Petrus Jacobus Booysen|1788", w: "Anna Maria van der Merwe", via: "tree",
-    why: "Married 1805 at Graaff-Reinet, on the family tree. She died before March 1825 and he died a widower in 1876, so at least one later marriage is missing from this row.",
+  { h: "David Schalk Booijsen", w: "Adriana Christina Viljoen", via: "doc",
+    why: "Named together on their daughter's baptism of 13 September 1835. The daughter is ANNA MARIA, called after his own mother — the naming ran up the female line in this generation as it did in the Oliviers'.",
+    src: ["The 1806 baptism", "/documents/#anna-maria-1806"],
+    kids: [{ n: "Anna Maria Booijsen of 1835", via: "doc" }] },
+
+  { h: "Petrus Jacobus Booysen|1788", w: "Anna Maria van der Merwe", via: "doc",
+    why: "Married 1805 at Graaff-Reinet. NO LONGER TREE-SOURCED: a Dutch Reformed baptism of 4 January 1807 names her as the mother of DAVID SCHALK BOOIJZEN, born 12 December 1806, who is first of the eight on the 1876 Sterfkennis. She died before March 1825 and he died a widower in 1876, so at least one later marriage is missing from this row — and the 1908 notice supplies it.",
     warn: "The 1876 notice lists eight children and names no mother for any of them. They are drawn under this marriage because it is the only one recorded — not because the document says so.",
     src: ["The 1876 Sterfkennis", "/documents/#sterfkennis-1876"],
     kids: [
