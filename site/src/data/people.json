@@ -3896,8 +3896,12 @@
    "d": "23 Jun 1939, Barkly East",
    "l": "Barry",
    "s": "doc",
-   "r": "Named on the 1915 death notice, which he swore himself. The index now dates him: born about 1847, dead at Barkly East on 23 June 1939, having outlived his father by thirty-six years.",
+   "r": "Named on the 1915 death notice, which he swore himself. The index now dates him: born about 1847, dead at Barkly East on 23 June 1939, having outlived his father by thirty-six years. BUT THAT YEAR CANNOT STAND. His brother John Augustus Barry II was born 13 MARCH 1847 off a register, and “about 1847” here is not a date at all — it is an age worked back from the 1939 death. Two brothers cannot share it. A relationship search on his mother's surname turned up a HENRY JAONAS BARRY born 13 July 1848 and baptised at twenty, which is where a next child belongs; whether that is this man under a clerk's ear is UNPROVED and the register is unread.",
    "p": [
+    [
+     "The missing two",
+     "/barry/#the-missing-two"
+    ],
     [
      "The Barrys",
      "/barry/"
@@ -4528,11 +4532,15 @@
    "d": "—",
    "l": "Barry",
    "s": "doc",
-   "r": "Found twice in one day. He came in on the 1915 death notice of his mother Margaretha Kolbe, estate 1291, which names NINE children where his father's names eight — and then the Burgersdorp doopregister produced his baptism: WILLIAM FREDRIK, born 23 August 1853, christened 23 October, godparents JOHN KOLBE, ANNA VAN DER MERWE and GEORGE KOLBE. Two of the three are his mother's brothers. A SECOND William Frederick Thomas was baptised in 1861 and this archive cannot say whether the first died or a clerk erred. He is not on his father's notice, not on the Cape Rebel roll, and nowhere else in this archive. His father's 1903 registration said ELEVEN children; with William there are nine named and two still missing.",
+   "r": "Found twice in one day. He came in on the 1915 death notice of his mother Margaretha Kolbe, estate 1291, which names NINE children where his father's names eight — and then the Burgersdorp doopregister produced his baptism: WILLIAM FREDRIK, born 23 August 1853, christened 23 October, godparents JOHN KOLBE, ANNA VAN DER MERWE and GEORGE KOLBE. Two of the three are his mother's brothers. A SECOND William Frederick Thomas was baptised in 1861 and this archive cannot say whether the first died or a clerk erred — a doubt re-surfaced, and briefly mistaken for a new find, when the index was asked for every Barry child of a Kolbe mother. He is not on his father's notice, not on the Cape Rebel roll, and nowhere else in this archive. His father's 1903 registration said ELEVEN children; with William there are nine named and two still missing.",
    "p": [
     [
      "Estate 1291",
      "/documents/#kolbe-1291"
+    ],
+    [
+     "The missing two",
+     "/barry/#the-missing-two"
     ],
     [
      "The Barrys",
@@ -4564,11 +4572,15 @@
    "d": "—",
    "l": "Barry",
    "s": "doc",
-   "r": "The eldest son on the 1915 notice, carrying his father's name exactly — which is why this archive calls the father John Augustus Barry I. His own documents call him simply John Barry, and that is the third man in this family the name has to be shared out between.",
+   "r": "The eldest son on the 1915 notice, carrying his father's name exactly — which is why this archive calls the father John Augustus Barry I. His own documents call him simply John Barry, and that is the third man in this family the name has to be shared out between. His birth date does one more job than it looks: being HARD, off a register, it is what forces his brother James Henry's “about 1847” to move.",
    "p": [
     [
      "The Documents",
      "/documents/#barry-1915"
+    ],
+    [
+     "The missing two",
+     "/barry/#the-missing-two"
     ],
     [
      "The Barrys",

@@ -1,5 +1,6 @@
 ---
 import { u } from "../lib/url.js";
+import SiblingArchives from "../components/SiblingArchives.astro";
 const { title, dek, eyebrow, bare } = Astro.props;
 const SITE = "The Booyzen Archive";
 const nav = [
@@ -79,6 +80,7 @@ const here = Astro.url.pathname;
 
 <footer class="site">
   <div class="wrap">
+    <SiblingArchives />
     <p class="foot">An evidence-first family archive for the Booyzen family — of Graaff-Reinet and Cradock,
     of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. Living people are
     excluded from this build.</p>

@@ -10,6 +10,17 @@
       ],
       "port": 4324,
       "cwd": "site"
+    },
+    {
+      "name": "mazza",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/daviddefranceski/Claude/Projects/Mazza Family/site",
+        "run",
+        "dev"
+      ],
+      "port": 4327
     }
   ]
 }
