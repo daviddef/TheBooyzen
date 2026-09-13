@@ -1,6 +1,10 @@
 # Message — Ewald Schmidt (WikiTree), estate MHG 10/57
 
-**Status: DRAFTED, NOT SENT** — 13 September 2026.
+**Status: DRAFTED, NOT SENT — SUPERSEDED AS THE FIRST MOVE** — 13 September 2026.
+The route was changed to the public G2G forum: see `wikitree-g2g-booyzen-10-57.md`.
+This private message is kept because it is still the right second move — it carries the
+four things this archive can give Ewald Schmidt in return, which a forum post cannot
+reasonably do, and it is the only way to reach the one person known to have held the file.
 **Blocked on one thing: this archive has no WikiTree account.** WikiTree has no public
 email for members; the only routes to a profile manager are the **Message** form and the
 profile comment box, and both require a free login. Checked on 13 September: no session,
