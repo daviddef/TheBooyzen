@@ -519,7 +519,7 @@
    "d": "13 Sep 2026",
    "t": "A page that says what moved",
    "k": "work",
-   "w": "This archive is rewritten most days and a reader who saw it last week had no way of knowing what changed. /changed/ is that record: every finding and every withdrawal, grouped by the day it happened, newest first. It is BUILT FROM log.json AND corrections.json at build time and contains no hand-written text, so it cannot go stale the way a “latest news” box always does. If a finding is not on it, it is not in the log."
+   "w": "This archive is rewritten most days and a reader who saw it last week had no way of knowing what changed. /changes/ is that record: every finding and every withdrawal, grouped by the day it happened, newest first. It is BUILT FROM log.json AND corrections.json at build time and contains no hand-written text, so it cannot go stale the way a “latest news” box always does. If a finding is not on it, it is not in the log."
   },
   {
    "d": "13 Sep 2026",
@@ -610,6 +610,12 @@
    "t": "The last route to David Schalk's death, closed",
    "k": "work",
    "w": "A widow's death notice names her pre-deceased husband, so JOHANNA ELENA STOLS — who married David Schalk Booysen at Pretoria in November 1905 — was the last way to date his death. Searched under BOOYZEN, BOOYSEN and LOWIES for any death between 1906 and 1945. NOTHING that can be her. The route is CLOSED rather than untried: neither David Schalk Booysen nor his second wife has a findable death, and the direct ancestor's brother disappears at GOEDEHOOP, PRETORIA, aged fifty-six, in November 1905. It has been added to the Pretoria errand — not as another file request, because the letter is already sent, but as an INDEX SEARCH: the Master's own estate index at Pretoria would settle it in a minute, and that office certainly knew the pair, having handled estates 4795 and 7081 for them within four days of each other."
+  },
+  {
+   "d": "13 Sep 2026",
+   "t": "A way into the documents page",
+   "k": "work",
+   "w": "/documents/ is now THIRTY-FOUR documents and 354 kilobytes of HTML, eighteen of them added today, and a reader arriving at it had no way in and no idea what was there. Worse, the sections sat in the order they were written — 1906, then 1942, then 1876, then 1937 — which is the order this archive happened to read them and of no use to anybody else. There is now a contents table at the top, IN THE ORDER THE EVENTS HAPPENED, and it is READ OUT OF THE PAGE'S OWN SOURCE AT BUILD TIME: the h2 headings are matched, the year is pulled off the front of each, and they are sorted. A section cannot be added without appearing in the contents, for the same reason the gallery is built from the pages rather than written by hand — anything maintained separately goes stale, and this archive has spent the day proving it. Three headings that had no year were given one, and the only two entries left undated are the two that genuinely have no date: what was searched and not found, and the two questions worked hard and not closed."
   }
  ]
 }

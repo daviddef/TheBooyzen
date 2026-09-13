@@ -2,10 +2,51 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import { readFileSync } from "node:fs";
+
+/* This page is thirty-odd documents long and a reader arriving at it has no way
+   in. The contents below are read out of THIS FILE at build time, so a section
+   cannot be added without appearing here — the same reason the gallery is built
+   from the pages rather than written by hand. */
+/* read by path, not import.meta.url: after bundling that points at the chunk,
+   not at this file. The build runs from site/, so this path is stable. */
+const src = readFileSync("src/pages/documents.astro", "utf-8");
+const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
+  .filter(m => m[1] !== "contents")
+  .map(m => {
+  const text = m[2]
+    .replace(/<[^>]+>/g, "")
+    .replace(/&middot;/g, "·").replace(/&ndash;/g, "–").replace(/&mdash;/g, "—")
+    .replace(/&rsquo;/g, "’").replace(/&ldquo;|&rdquo;/g, "“").replace(/&quot;/g, "“")
+    .replace(/&amp;/g, "&").replace(/&pound;/g, "£")
+    .replace(/\s+/g, " ").trim();
+  const yr = (text.match(/\b(1[6-9]\d\d|20[0-2]\d)\b/) || [])[1];
+  const sep = text.indexOf("·");
+  return { id: m[1], year: yr ? +yr : 9999,
+           label: sep > -1 ? text.slice(sep + 1).trim() : text };
+}).sort((a, b) => a.year - b.year);
 ---
 <Base title="The documents"
       eyebrow="Four civil records, read for the first time"
       dek="The family tree carried these scans for years with nobody transcribing them. They are not snapshots — they are death registrations, a death notice and a marriage register. Reading them corrected three dates, killed one family legend, and caught the surname changing on a single sheet of paper.">
+
+<section class="blk">
+  <h2 id="contents">What is on this page</h2>
+  <p class="dek">{toc.length} documents, in the order the events happened rather than the order they were
+    read. Every one of them has been read from the image unless the entry says otherwise.</p>
+  <div class="scroll" style="margin-top:16px">
+    <table>
+      <tbody>{toc.map(t => (
+        <tr>
+          <td class="m" style="width:5.5rem;vertical-align:top">{t.year === 9999 ? "—" : t.year}</td>
+          <td><a href={"#" + t.id}>{t.label}</a></td>
+        </tr>))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<Rule name="thorn" label="The documents, oldest first" />
 
 <section class="blk">
   <h2>1905 · The death registration that settles the biggest question</h2>
@@ -2075,7 +2116,7 @@ import { u } from "../lib/url.js";
     <p class="note" style="margin-top:16px"><b>This section first said "the one time the form worked."</b>
       The next document opened after it &mdash; the 1942 Daschner notice, <a href="#daschner-1942">below</a>
       &mdash; names both parents too. So the line is not unique; it is the earlier of two, and the pattern
-      is a different one. <a href={u("/log/")}>The log &rarr;</a></p>
+      is a different one. <a href={u("/research-log/")}>The log &rarr;</a></p>
     <p><b>Two documents were filed for this one death, and they are not the same document.</b> The civil
       registration &mdash; entry 2045, Johannesburg, read
       <a href="#anna-1944-civil">further up this page</a>
@@ -4415,7 +4456,7 @@ import { u } from "../lib/url.js";
 </section>
 
 <section class="blk">
-  <h2 id="estate-7081">Estate 7081 &mdash; the other number, and the same address</h2>
+  <h2 id="estate-7081">1905 &middot; Estate 7081 &mdash; the other number, and the same address</h2>
   <p class="dek">The Pretoria marriage register of 27 November 1905 cites <b>two</b> remarriage
     certificates from the Master, one for each party. <b>4795</b> was David Schalk&rsquo;s and led back to
     his first wife&rsquo;s death notice. This is <b>7081</b>, read entire &mdash; and it is not the
@@ -4619,7 +4660,7 @@ import { u } from "../lib/url.js";
 </section>
 
 <section class="blk">
-  <h2 id="west-park">West Park &mdash; graves 2171, 50 and 51</h2>
+  <h2 id="west-park">1942&ndash;47 &middot; West Park &mdash; graves 2171, 50 and 51</h2>
   <p class="dek">Three more register images read page by page, and three more graves this family could
     stand at. One of them is the <b>direct line</b>.</p>
 
@@ -4709,7 +4750,7 @@ import { u } from "../lib/url.js";
 </section>
 
 <section class="blk">
-  <h2 id="all-ten-graves">The last six graves &mdash; and three things this archive had wrong</h2>
+  <h2 id="all-ten-graves">1914&ndash;59 &middot; The last six graves &mdash; and three things this archive had wrong</h2>
   <p class="dek">Six register images were left unread when FamilySearch stopped answering. They are read
     now. <b>All ten of this family&rsquo;s Johannesburg burials have a grave number or a section</b>
     &mdash; and three of the six corrected something published the same afternoon.</p>
