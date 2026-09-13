@@ -101,6 +101,24 @@ if absent:
     fails.append("%d place(s) named on the timeline are not in places.json, so the atlas "
                  "cannot show them: %s" % (len(absent), ", ".join(absent)))
 
+# 3c. every /documents/#anchor referenced anywhere in the built site must exist.
+#     tools/links.py checks that a PAGE resolves and stops there — a link to a
+#     section that was renamed or never written lands the reader at the top of a
+#     four-hundred-section page with no idea what went wrong, and nothing warns.
+import glob
+docs_html = built("documents")
+anchors = set(re.findall(r'<h2 id="([a-z0-9-]+)"', docs_html))
+if anchors:                      # only meaningful after a build has run
+    dangling = {}
+    for f in glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True):
+        t = open(f, encoding="utf-8").read()
+        for a in re.findall(r"/TheBooyzen/documents/#([a-z0-9-]+)", t):
+            if a not in anchors:
+                dangling.setdefault(a, set()).add(f[len(DIST):-len("index.html")])
+    if dangling:
+        fails.append("%d dangling /documents/ anchor(s): %s" % (len(dangling), ", ".join(
+            "#%s (from %s)" % (a, sorted(v)[0]) for a, v in sorted(dangling.items())[:4])))
+
 # 4. the pedigree chart must not contradict kin.js on a parent
 ped = json.dumps(load("pedigree.json"), ensure_ascii=False)
 for m in re.finditer(r'\{ h: "([^"]+)", w: "([^"]+)", via: "doc"', kin):
