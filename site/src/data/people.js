@@ -17,11 +17,11 @@ export const people = [
 
 // ───────── the other seven children on the 1876 notice — siblings of generation five ─────────
 {n:"David Schalk Booijsen", b:"12 Dec 1806, baptised 4 Jan 1807", d:"—", l:"Booyzen", s:"doc",
- r:"First on his father's 1876 death notice, and a major — and now with a date. His baptism of 4 JANUARY 1807 names his parents as PIETER JACOBUS BOOIJZEN and ANNA MARIA VAN DER MERWE, which is the only document in this archive that puts Anna Maria in the family at all. His father was eighteen when he was born. He married ADRIANA CHRISTINA VILJOEN and named a daughter ANNA MARIA in 1835, after his own mother. His nephew, born 1848, carries the same name — the two are told apart only by a generation.",
+ r:"First on his father's 1876 death notice, and a major — and now with a date. His baptism of 4 JANUARY 1807 names his parents as PIETER JACOBUS BOOIJZEN and ANNA MARIA VAN DER MERWE, which is the only document in this archive that puts Anna Maria in the family at all. His father was eighteen when he was born. He married ADRIANA CHRISTINA VILJOEN — on 3 NOVEMBER 1828 AT CRADOCK, a date and a place this archive did not have until WikiTree was read on 13 September 2026, and FROM WIKITREE, NOT FROM A DOCUMENT THIS ARCHIVE HAS READ — and named a daughter ANNA MARIA in 1835, after his own mother. His nephew, born 1848, carries the same name — the two are told apart only by a generation.",
  p:[["The 1806 baptism","/documents/#anna-maria-1806"],["The Documents","/documents/"],["Namesakes","/namesakes/"]]},
 
 {n:"Adriana Christina Viljoen", v:"Booijsen", b:"—", d:"—", l:"Booyzen", s:"doc",
- r:"His wife, named with him on their daughter Anna Maria's baptism of 13 September 1835 — a daughter called after his mother, which is how this archive knows the naming ran that way in this generation too.",
+ r:"His wife, married at CRADOCK on 3 November 1828—FROM WIKITREE, NOT FROM A DOCUMENT THIS ARCHIVE HAS READ—and named with him on their daughter Anna Maria's baptism of 13 September 1835 — a daughter called after his mother, which is how this archive knows the naming ran that way in this generation too.",
  p:[["The 1806 baptism","/documents/#anna-maria-1806"],["The Women","/women/"]]},
 
 {n:"Anna Maria Booijsen of 1835", b:"7 Aug 1835, baptised 13 Sep 1835", d:"—", l:"Booyzen", s:"doc",
@@ -163,7 +163,7 @@ export const people = [
  r:"Sixth of the seven children on the 1891 Sterfkennis, carrying the name that comes down from Magdalena Elisabeth de Beer. Absent from the 1908 notice.",
  p:[["The 1891 notices","/documents/#brakfontein-1891"],["Namesakes","/namesakes/"]]},
 {n:"Anna Maria van der Merwe", b:"1785", d:"bef. Mar 1825", l:"Booyzen", s:"doc",
- r:"His wife, married 1805 at Graaff-Reinet — and DOCUMENTED, which she was not until today. A Dutch Reformed baptism of 4 JANUARY 1807 names her as the mother of DAVID SCHALK BOOIJZEN, born 12 December 1806, who is FIRST of the eight children on the 1876 Sterfkennis. That resolves a contradiction this archive marked Serious (they were married by 1806, so the 1825 Cape Town marriage record is a different couple) and it rewrites the wall on the ancestor chart, which said only a family tree put her there. WHAT IS STILL NOT PROVED is that she is the mother of the 1812 man in the direct line.",
+ r:"WikiTree makes her a daughter of DAVID SCHALK VAN DER MERWE and ANNA ELIZABETH LOUW—which, if right, is where the forename DAVID SCHALK entered this family: her eldest son carries her father’s names entire.FROM WIKITREE, NOT FROM A DOCUMENT THIS ARCHIVE HAS READ, and it is checkable against the van der Merwe baptism registers rather than the tree. His wife, married 1805 at Graaff-Reinet — and DOCUMENTED, which she was not until today. A Dutch Reformed baptism of 4 JANUARY 1807 names her as the mother of DAVID SCHALK BOOIJZEN, born 12 December 1806, who is FIRST of the eight children on the 1876 Sterfkennis. That resolves a contradiction this archive marked Serious (they were married by 1806, so the 1825 Cape Town marriage record is a different couple) and it rewrites the wall on the ancestor chart, which said only a family tree put her there. WHAT IS STILL NOT PROVED is that she is the mother of the 1812 man in the direct line.",
  p:[["The 1806 baptism","/documents/#anna-maria-1806"],["The Line","/direct-line/"],["The Women","/women/"],["Disputed","/disputed/"]]},
 
 {n:"Petrus Jacobus Booysen", v:"Booyzen (1851 register), Booÿse, Bovysen", b:"10 May 1812, Graaff-Reinet", d:"1884 (probate)", l:"Booyzen", g:5, s:"doc",
@@ -354,7 +354,7 @@ export const people = [
  p:[["The Name","/name/"],["The Documents","/documents/"],["Johannesburg","/johannesburg/"]]},
 {n:"David Kolbe Booyzen", b:"—", d:"—", l:"Booyzen", s:"doc", r:"Carries the Kolbe name three generations after the 1820 Settler.", p:[["The Name","/name/"],["Johannesburg","/johannesburg/"]]},
 {n:"Henry James Booyzen", b:"c. 1887", d:"8 Dec 1956, Florence Nightingale Nursing Home — buried 12 Dec, grave 7110/1", l:"Booyzen", s:"doc",
- r:"A son of Willem Hermanus and Kathleen Barry. This archive had him as a name on Transvaal estate MHG 10/57 and nothing else — not a birth, not a death. The Johannesburg cemetery register gives all of it: DIED 8 DECEMBER 1956 at the FLORENCE NIGHTINGALE NURSING HOME of CORONARY PULMONARY SCLEROSIS, aged 69, usual residence 3 15TH AVENUE, MAYFAIR — the same suburb where his mother died in 1940 and where his great-niece was married at St Joseph’s in 1949. Buried 12 December in the D.R. section, GRAVE 7110/1, a double plot. In 1912 he married Dorothea Regina Barry, a daughter of his mother's brother Hendrik Nicholaas — the third Barry–Booyzen union in three generations.",
+ r:"A son of Willem Hermanus and Kathleen Barry. WikiTree gives his birth as 12 AUGUST 1887 and his marriage as 17 JUNE 1912 AT ELLIOT, neither of which this archive had—bothFROM WIKITREE, NOT FROM A DOCUMENT THIS ARCHIVE HAS READ, and the “c. 1887” below is this archive’s own figure, worked back from an age on a burial register. This archive had him as a name on Transvaal estate MHG 10/57 and nothing else — not a birth, not a death. The Johannesburg cemetery register gives all of it: DIED 8 DECEMBER 1956 at the FLORENCE NIGHTINGALE NURSING HOME of CORONARY PULMONARY SCLEROSIS, aged 69, usual residence 3 15TH AVENUE, MAYFAIR — the same suburb where his mother died in 1940 and where his great-niece was married at St Joseph’s in 1949. Buried 12 December in the D.R. section, GRAVE 7110/1, a double plot. In 1912 he married Dorothea Regina Barry, a daughter of his mother's brother Hendrik Nicholaas — the third Barry–Booyzen union in three generations.",
  p:[["The cemeteries, swept","/documents/#the-cemeteries"],["The cousin marriage","/cousins/"]]},
 
 {n:"Richard Peter Booyzen", b:"c. 1894, Cape of Good Hope", d:"25 Oct 1918, Turffontein — buried 27 Oct, Brixton, D.R., grave 1119", l:"Booyzen", s:"inf",
@@ -450,7 +450,7 @@ export const people = [
  r:"Her mother, named on the 1890 Mossel Bay baptism. Her granddaughter Susanna Fredrika Aletta Booyzen carries all three of her names.",
  p:[["The 1940 estate","/documents/"],["Namesakes","/namesakes/"],["The Women","/women/"]]},
 {n:"Jacobus Nicholas Booysen", v:"Jacobus Nichols Booyzen", b:"bef. 1842", d:"1923", l:"Booyzen", s:"doc",
- r:"The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal.",
+ r:"The eldest of the eight children on the 1863 death notice, and the only one entered as a Major. Estate TAB MHG 52653 — he ended in the Transvaal. WikiTree gives him a wife this archive did not have at all: JACOMINA JACOBA JANSEN VAN RENSBURG, married 12 FEBRUARY 1866 AT MIDDELBURG. FROM WIKITREE, NOT FROM A DOCUMENT THIS ARCHIVE HAS READ, and the profile contradicts itself — its own source line dates that marriage 1899, not 1866. Recorded as a lead and not adopted.",
  p:[["The Documents","/documents/"],["What Was Searched","/searched/"]]},
 {n:"Johanna Catharina Booyzen", b:"20 Jun 1889", d:"—", l:"Booyzen", s:"doc",
  r:"Baptised at Barkly Oost 15 Sep 1889 with both maternal grandparents standing as godparents — and on the facing page of the same register, the Mountjoy baptism three weeks later.",
@@ -765,7 +765,7 @@ export const people = [
 
 // ───────────────────────── voices and context ─────────────────────────
 {n:"Tersia Booyzen", b:"living", d:"—", l:"Testimony", s:"lore",
- r:"Recorded the name-change and Anglo-Boer War account on the MyHeritage tree, as told to her by her father.",
+ r:"Recorded the name-change and Anglo-Boer War account on the MyHeritage tree, as told to her by her father. It is FAMILY TESTIMONY AND NOT FROM A DOCUMENT — which is exactly why this archive quotes it in full and then tests it against the Cape Rebel rolls and the surname distribution, rather than repeating it.",
  p:[["The Rebels","/rebels/"],["The Name","/name/"],["Sources","/sources/"]]},
 ];
 

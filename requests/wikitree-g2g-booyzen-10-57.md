@@ -83,39 +83,48 @@ Happy to share images of anything I hold on this family in return.
 
 ---
 
-## POST 2 — recommended, as a separate thread
+## POST 2 — REWRITTEN 13 Sep after the Boijens-9 / De_Beer-638 finding
+
+The original draft asked "is the father Jan or Gerthardus Lodewikus?". That question
+answered itself an hour later: Jan remarried on 15 December 1793, his de Beer wife was dead
+by then, ours died in 1843, and the two Magdalenas are merged on one WikiTree profile which
+flags its own doubt. So the post below asks the question that is actually still open — WHICH
+de Beer daughter is ours — and asks for two printed pages rather than one.
 
 **Category:** Genealogy Help
-**Tags:** `south_africa` `south_african_roots` `booysen`
+**Tags:** `south_africa` `south_african_roots` `booysen` `de_beer`
 
-**Title:** Heese SAG Deel 1 p. 331 — is Petrus Jacobus Booysen (1788–1876) a son of Jan, or of Gerthardus Lodewikus?
+**Title:** Two Magdalena de Beers (b6c2 and b6c6) — which one married the Booysen, and what do Heese p. 331 and de Villiers p. 78 say?
 
-Could somebody with **Heese, *Suid-Afrikaanse Geslagsregisters*, Deel 1** tell me what
-**page 331** actually says about the Booysen family? I have no access to the book from
-here, and it sits directly on top of a contradiction I cannot resolve on my own.
+I am trying to separate two women, and I think a WikiTree profile has them merged. I would
+be grateful to anyone with either of the printed genealogies to hand.
 
-**The man.** Petrus Jacobus Booysen, baptised at Graaff-Reinet, born before 21 September
-1788, died 1 September 1876 in the district of Rustenburg. The profile [[Booysen-267]]
-carries the same two dates, so we are certainly talking about one man.
+**The profile.** De_Beer-638 carries the code **"b6c2 (and b6c6 — see Research Note)"**, two
+baptisms nine years apart — **16 October 1745** at Tulbagh and **16 October 1754** at
+Stellenbosch — and a parents' children list that holds **both a Magdalena de Beer and a
+Magdalena Elizabeth de Beer**, daughters of Zaccharias de Beer and Anna Pretorius.
 
-**The disagreement is about his father, and the two sources do not agree.**
+**Why it matters to me.** The merge appears to have put the wrong husband over my line.
 
-- [[Booysen-267]] gives his parents as **Jan (Boijens) Booysen and Magdalena de Beer**, and
-  cites Heese Deel 1 p. 331 among its sources.
-- I have read **his 1876 Rustenburg sterfkennis, No. 678**, and line 3 names his parents as
-  **"Gerthardus Lödewikus Booijsen" and "Magdalena de Beer"**.
+- **Boijens-9**, Jan Booysen, baptised Drakenstein 29 January 1741, married Magdalena de
+  Beer on 21 January 1770 — and **married again on 15 December 1793**. So his de Beer wife
+  was dead by the end of 1793. That also identifies the Cape notarial will **KAB NCD 2/1: 49**,
+  *"Jan Booysen, married to the late Magdalena de Beer"*, as his.
+- **My** Magdelena Elisabeth de Beer **died in 1843**, fifty years later, and was the wife of
+  **Gerthardus Lodewikus Booysen**. I have that from a primary document: line 3 of the 1876
+  Rustenburg sterfkennis, No. 678, of their son Petrus Jacobus Booysen (1788–1876), which
+  names both parents.
+- **Booysen-267** nonetheless gives that same Petrus Jacobus the father **Jan**, which I
+  think is the merge showing through.
 
-Same mother, same son, two different husbands.
+**What I am asking for:**
 
-**Why I am not simply assuming the tree is wrong.** There is a Cape notarial will of 1793,
-**KAB NCD 2/1: 49**, for *"Jan Booysen, married to the late Magdalena de Beer"*. I had set
-that aside years ago as the wrong man — and the profile independently puts that same Jan in
-exactly the position I declined to put him. That is either a coincidence of a very common
-pairing, or I set aside the right document.
+1. **Heese, *Suid-Afrikaanse Geslagsregisters*, Deel 1, p. 331** — cited on Booysen-267.
+   What does it give as Petrus Jacobus Booysen's father?
+2. **de Villiers and Pama, *Genealogies of Old Cape Families*, Vol 1, Booijsen, p. 78** —
+   cited on Boijens-9. Does it distinguish b6c2 from b6c6, and does a Gerthardus Lodewikus
+   Booysen appear at all?
 
-So: **what does p. 331 say?** If Heese names Gerthardus Lodewikus, the tree has drifted from
-its own citation. If Heese names Jan, then I have a printed genealogy and a death notice in
-flat contradiction, which is worth knowing about on its own.
-
-I am happy to send an image of the 1876 sterfkennis to anyone who wants to look at line 3
-themselves.
+I have neither book where I am. If the two printed sources disagree with the sterfkennis,
+that is worth knowing on its own, and I am happy to send an image of line 3 to anyone who
+wants to read it themselves.

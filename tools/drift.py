@@ -95,6 +95,25 @@ if stale:
     warns.append("%d name(s) in CHECKED_SHARED no longer collide — drop them so the list "
                  "stays a record of real checks: %s" % (len(stale), ", ".join(stale)))
 
+# 1c. a claim taken off a user tree is not a document, and must not read like one.
+#     MyHeritage, Geni, WikiTree and the FamilySearch Family Tree are LEADS here —
+#     /sources/ says so in as many words. The risk is not that a tree gets cited; it is
+#     that a tree-sourced date sits in a sentence beside documented ones and quietly
+#     inherits their authority. So: if a person's text names one of those trees, the same
+#     text must also carry an explicit marker saying the claim is not from a document.
+TREES = ("WikiTree", "MyHeritage", "Geni", "FamilySearch Family Tree")
+NOT_A_DOC = ("NOT FROM A DOCUMENT", "FROM A TREE", "FROM A USER TREE",
+             "not adopted", "UNPROVED", "a lead and not")
+unmarked = []
+for pr in people:
+    txt = pr.get("r") or ""
+    if any(t in txt for t in TREES) and not any(m in txt for m in NOT_A_DOC):
+        unmarked.append(pr["n"])
+if unmarked:
+    fails.append("%d person(s) cite a user tree without saying the claim is not from a "
+                 "document — add an explicit marker: %s"
+                 % (len(unmarked), ", ".join(sorted(unmarked))))
+
 # 2. the direct line's spouse column must not contradict kin.js
 dl = page("direct-line.astro")
 kin = open(os.path.join(DATA, "kin.js"), encoding="utf-8").read()
