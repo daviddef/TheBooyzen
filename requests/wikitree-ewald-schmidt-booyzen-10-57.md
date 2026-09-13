@@ -1,6 +1,19 @@
 # Message — Ewald Schmidt (WikiTree), estate MHG 10/57
 
-**Status: DRAFTED, NOT SENT — SUPERSEDED AS THE FIRST MOVE** — 13 September 2026.
+**Status: COMPOSED IN THE FORM, NOT SENT — BLOCKED ON AN ANTI-SPAM QUESTION** — 13 Sep 2026.
+
+With the account logged in, the private-message form opens and prefills the name and email.
+The message below was typed into it in full. **It cannot be sent from here**: the form ends
+with a human-verification question — *"How do you spell the word for the number 10 in
+English?"* — labelled "Another anti-spam protection". That is bot-detection, and answering
+it is exactly the check it exists to make, so it is left blank and the send is the user's.
+The composed message is still sitting in the form; typing the answer and pressing Send
+Message finishes it.
+
+**The same wall stands in front of Helene du Toit and the Cape of Good Hope Project**, who
+are the other two names on Booysen-267's sources. Same form, same question. Not attempted.
+
+**G2G had no such check**, which is why both forum posts went up without trouble.
 The route was changed to the public G2G forum: see `wikitree-g2g-booyzen-10-57.md`.
 This private message is kept because it is still the right second move — it carries the
 four things this archive can give Ewald Schmidt in return, which a forum post cannot
