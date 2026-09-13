@@ -985,6 +985,14 @@
    "detail": false
   },
   {
+   "src": "/TheBooyzen/docs/detail-1843-age-89.jpg",
+   "alt": "Question four of the 1843 death notice: age of the deceased, 89 years 2 months and 26 days.",
+   "cap": "“89 years, 2 months & 26 days.” An age given to the day, which is what puts her birth at about 20 March 1754 — and which is exactly why this notice is dangerous. 1754 and 1843 are the only two dates this archive has for Magdelena Elisabeth de Beer , and they came off a family tree with no source.",
+   "page": "/documents/",
+   "pagetitle": "The documents",
+   "detail": true
+  },
+  {
    "src": "/TheBooyzen/docs/detail-1843-both-dead.jpg",
    "alt": "Line three of the 1843 death notice: Names of the Parents of the Deceased — both dead.",
    "cap": "\"both dead.\" 1843 — and the printed question is the same one that is still failing a century later.",
@@ -1590,14 +1598,6 @@
    "cap": "Question ten, entire.",
    "page": "/documents/",
    "pagetitle": "The documents",
-   "detail": true
-  },
-  {
-   "src": "/TheBooyzen/docs/detail-1843-age-89.jpg",
-   "alt": "",
-   "cap": "",
-   "page": "",
-   "pagetitle": "",
    "detail": true
   }
  ]

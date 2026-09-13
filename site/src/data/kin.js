@@ -119,8 +119,21 @@ export const families = [
       { n: "David Schalk Booijzen the younger", via: "doc" }] },
 
   { h: "Charles Petrus Barend Lowies", w: "Johanna Elena Stols", via: "doc",
-    why: "Her first marriage. He was born in the district of Cradock about 1849 — within a year of David Schalk Booysen, and in the same district — and died at Pretoria on 5 June 1905, five months and twenty-two days before she married again. Estate 7081, which the 1905 marriage register cites beside David Schalk's 4795. TWELVE children, none of them in this archive beyond their names.",
-    src: ["Estate 7081", "/documents/#estate-7081"], kids: [] },
+    why: "Her first marriage, at Pretoria. He was a HAWKER of GOEDEHOOP — the same address David Schalk Booysen gave when he married her — born in the district of Cradock about October 1848, within four months of David Schalk and in the same district, and dead in the Pretoria Lunatic Asylum on 5 June 1905. TWELVE children, SIX OF THEM STILL MINORS. Estate 7081, which the marriage register cites beside David Schalk's 4795.",
+    src: ["Estate 7081", "/documents/#estate-7081"],
+    kids: [
+      { n: "Jan Jacobus Lowies", via: "doc" },
+      { n: "Johanna Elena Lowies the younger", via: "doc" },
+      { n: "Gabriel Jacobus Lowies", via: "doc" },
+      { n: "Carl Petrus Barend Lowies", via: "doc" },
+      { n: "Willem Jacobus Lowies", via: "doc" },
+      { n: "Gideon Daniel Rudolph Lowies", via: "doc" },
+      { n: "Elizabetha Maria Lowies", via: "doc" },
+      { n: "Matthys Andries Lowies", via: "doc" },
+      { n: "Radolph Lodewyk Lowies", via: "doc" },
+      { n: "Abel Hermanus Gerhardus Lowies", via: "doc" },
+      { n: "Lourens Daniel Albertus Lowies", via: "doc" },
+      { n: "Johannes Jacobus Lowies", via: "doc" }] },
 
   { h: "Jan Lowies", w: "Elisabetha Maria Lubbe", via: "doc",
     why: "Named as his parents on estate 7081, and that is the whole of what this archive holds on them.",
