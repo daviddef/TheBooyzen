@@ -1230,6 +1230,30 @@
     "David Schalk Booysen"
    ],
    "slug": "market-street-pretoria"
+  },
+  {
+   "n": "Turffontein",
+   "k": "Suburb",
+   "r": "Johannesburg, Transvaal",
+   "s": "doc",
+   "lat": -26.246,
+   "lon": 28.047,
+   "approx": false,
+   "w": "18 Anderson Street. Richard Peter Booyzen, twenty-four, married, a sawyer, died here of influenza and pneumonia on 25 October 1918 after eleven days — the centre of Black October, which killed some fourteen thousand people on the Rand in six weeks. He was buried at Brixton two days later. His birthplace on the form is the Cape of Good Hope: born in the north-eastern Cape, dead in a Johannesburg mining suburb at twenty-four.",
+   "e": [
+    [
+     "25 Oct 1918",
+     "Richard Peter Booyzen dies at 18 Anderson Street"
+    ],
+    [
+     "27 Oct 1918",
+     "buried at Brixton"
+    ]
+   ],
+   "p": [
+    "Richard Peter Booyzen"
+   ],
+   "slug": "turffontein"
   }
  ]
 }
