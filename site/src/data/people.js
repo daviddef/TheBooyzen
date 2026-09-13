@@ -162,7 +162,48 @@ export const people = [
 {n:"Anna Catharina Booysen", b:"21 Sep 1842", d:"bef. 1863", l:"Booyzen", s:"doc",
  r:"Baptised Graaff-Reinet, and absent from her mother's 1863 death notice — she died first.",
  p:[["The Documents","/documents/"]]},
-{n:"David Schalk Booysen", b:"9 Jun 1848", d:"—", l:"Booyzen", s:"doc", r:"Fourth on the 1863 list.", p:[["The Documents","/documents/"]]},
+{n:"David Schalk Booysen", v:"David Schalk Booijzen (1900)", b:"9 Jun 1848", d:"after Mar 1904", l:"Booyzen", s:"doc",
+ r:"Fourth on the 1863 list, and THE DIRECT ANCESTOR'S BROTHER — Willem Hermanus is sixth on the same list. For the whole of this project he was a line on that list and nothing else. His wife's 1900 death notice gives him a household: married ELIZABETHA MARGARETHA MARAIS at LADY GREY, the same small Cape church where his brother married Kathleen Barry in 1879; eight children; and by 1900 he was at Pretoria, living in a zinc building in Market Street. He signed her notice there in March 1904.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Line","/direct-line/"],["The Documents","/documents/"]]},
+
+{n:"Elizabetha Margaretha Marais", v:"Elizabetha Margaretha Booijzen, born Marais", b:"c. Apr 1850, district Cradock", d:"1 Jun 1900, Market Street, Pretoria", l:"Booyzen", s:"doc",
+ r:"His wife, married at Lady Grey near Aliwal North. Daughter of STEPHANUS FRANCOIS MARAIS and ELIZABETHA MARGARETHA MARAIS, born in the district of Cradock about April 1850. She died in a ZINC BUILDING IN MARKET STREET, PRETORIA on 1 June 1900 — four days before Lord Roberts entered the town — and her husband did not file the notice for three years and nine months. Nothing movable left, and a compensation claim filed.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Women","/women/"]]},
+
+{n:"Stephanus Francois Marais", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named as her father on the 1900 death notice, with her mother entered under the same names as her own — Elizabetha Margaretha Marais. He is where the forename STEPHANUS FRANCOIS comes into this family, and that matters: the archive has a Stephanus Francois Booyzen whose parentage it inferred and cannot prove.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["Disputed","/disputed/"]]},
+{n:"Elizabetha Margaretha Marais the elder", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named as her daughter's mother on the 1900 death notice, under exactly the same two forenames her daughter carried — and her granddaughter after that, the child who died a minor. Three Elizabetha Margarethas in three generations.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["Namesakes","/namesakes/"],["The Women","/women/"]]},
+
+{n:"Petrus Jacobus Booijzen of Pretoria", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Eldest on his mother's 1900 notice, an unmarried major in 1904. The fifth Petrus Jacobus this archive has found in the male line.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["Namesakes","/namesakes/"]]},
+
+{n:"Johanna Margaretha Delport", v:"born Booijzen", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named on her mother's 1900 death notice, already married.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Women","/women/"]]},
+
+{n:"Magdalena Johanna Vogel", v:"born Booijzen", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named on her mother's 1900 death notice, already married. She carries the name that comes down from Magdalena Elisabeth de Beer.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["Namesakes","/namesakes/"]]},
+
+{n:"Rachel Margaretha Williamse", v:"born Booijzen", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named on her mother's 1900 death notice, already married. Rachel is a name that appears nowhere else in six generations of this family.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Women","/women/"]]},
+
+{n:"Anna Susanna Booijzen", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"Named on her mother's 1900 death notice. The married surname is written and this archive cannot read it.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Women","/women/"]]},
+
+{n:"Elizabeth Margarietha Booijzen", b:"—", d:"a minor, bef. 1904", l:"Booyzen", s:"doc",
+ r:"Squeezed in between the lines of her mother's death notice after it had been written, with the words DIED MINOR against her. She carries her mother's names exactly.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["The Women","/women/"]]},
+
+{n:"David Schalk Booijzen the younger", b:"c. 1889", d:"—", l:"Booyzen", s:"doc",
+ r:"Youngest on his mother's 1900 notice, fifteen years old when his father filed it in March 1904. The third David Schalk this archive holds.",
+ p:[["A zinc building in Market Street","/documents/#marais-1900"],["Namesakes","/namesakes/"]]},
 {n:"Magdalena Johanna Francina Booysen", b:"16 Jul 1853", d:"—", l:"Booyzen", s:"doc", r:"Sixth on the 1863 list.", p:[["The Documents","/documents/"]]},
 {n:"Jan Gerhardus Lodewicus Booysen", b:"4 Dec 1855", d:"—", l:"Booyzen", s:"doc",
  r:"Seventh on the 1863 list, and carries the name of the man at the top of the line. THIS ARCHIVE HAD HIM DYING IN 1885 AND HAS TAKEN IT BACK: estate TAB MHG O/2899 belongs to his uncle of the same name, born 1818, and the death date was never anything but the estate’s year read backwards onto the wrong man. Nothing is known about what became of him.",

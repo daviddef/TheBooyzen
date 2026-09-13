@@ -89,6 +89,23 @@ export const families = [
       { n: "Petrus Jacobus Booijsen of 1889", via: "doc" },
       { n: "Ockert Johannes Stefanus Booysen of 1894", via: "doc" }] },
 
+  { h: "David Schalk Booysen", w: "Elizabetha Margaretha Marais", via: "doc",
+    why: "Married at LADY GREY near Aliwal North — the same small Cape church where his brother Willem Hermanus married Kathleen Barry in 1879. Her 1900 death notice, filed at Pretoria nearly four years late, names eight children and gives their whole household, which this archive did not have at all.",
+    src: ["A zinc building in Market Street", "/documents/#marais-1900"],
+    kids: [
+      { n: "Petrus Jacobus Booijzen of Pretoria", via: "doc" },
+      { n: "Johanna Margaretha Delport", via: "doc" },
+      { n: "Magdalena Johanna Vogel", via: "doc" },
+      { n: "Rachel Margaretha Williamse", via: "doc" },
+      { n: "Anna Susanna Booijzen", via: "doc" },
+      { n: "Elizabeth Margarietha Booijzen", via: "doc" },
+      { n: "David Schalk Booijzen the younger", via: "doc" }] },
+
+  { h: "Stephanus Francois Marais", w: "Elizabetha Margaretha Marais the elder", via: "doc",
+    why: "Named together as her parents on the 1900 death notice — mother and daughter carrying the same two forenames, which is how the name Stephanus Francois gets into a Booijzen household.",
+    src: ["A zinc building in Market Street", "/documents/#marais-1900"],
+    kids: [{ n: "Elizabetha Margaretha Marais", via: "doc" }] },
+
   { h: "Ockert Johannes Stephanus Olivier", w: "Anna Catharina Botha", via: "doc",
     why: "Named together on two Cradock baptisms, in 1823 and 1824, and again on their daughter's 1891 Sterfkennis where a bad hand turns the surname into something this archive read as Alberts. HIS THREE NAMES are why a Booysen grandson in the Transvaal was called Ockert Johannes Stephanus, and HER daughter Aletta Catharina is why there is an Aletta Catharina Johanna a generation on.",
     src: ["The Olivier line", "/documents/#olivier-line"],
