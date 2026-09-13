@@ -2,6 +2,32 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Ockert Johannes Stephanus Booysen (1852–1921) — an estate of his own",
+   "n": "no file",
+   "d": "13 Sep 2026",
+   "h": "/documents/#diederik-1935",
+   "rows": [
+    [
+     "Transvaal probate index — Ockert / Okkert / Ocker / Ocken against Booysen / Booyzen / Booijsen",
+     "6 hits, 0 of them his",
+     "Every hit is him as somebody else's relative: four duplicate copies of his son Diederik Arnoldus's 1935 Sterfkennis 87882, where he is the father; and two copies of his own father's 1908 notice 14380, where he is entered Child.",
+     "yes"
+    ],
+    [
+     "Transvaal Civil Death, 1869–1954",
+     "1 hit",
+     "OKKER JOHANNIS STEPHANUS BOOYSEN, 69, died 16 January 1921 at Klerksdorp. A civil registration NAMES NO PARENTS — which is the whole difficulty with this series and why the archive keeps going back to Sterfkennisse.",
+     "yes"
+    ],
+    [
+     "Browsing the films for 1921 by estate number",
+     "not possible",
+     "The Transvaal probate films are not ordered by estate number, so there is nothing to browse along. If an estate was raised for him it is not name-indexed.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
    "n": "the gap",
    "d": "10 Sep 2026",

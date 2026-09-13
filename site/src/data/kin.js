@@ -71,9 +71,16 @@ export const families = [
       { n: "Hendrik Stefanus Nicolaas Booijsen", via: "doc" }] },
 
   { h: "Ockert Johannes Stephanus Booysen", w: "Elisabetta Johanna Sophia Myburgh", via: "doc",
-    why: "Named together as the parents on their son's baptism at Rustenburg, 30 January 1882. The entry is indexed and the image is not available, so this household rests on an index and says so.",
-    src: ["The Rustenburg register", "/documents/#rustenburg-register"],
-    kids: [{ n: "Hendrik Stephanus Nicolaas Booyen", via: "doc" }] },
+    why: "Named together as the parents on their son's baptism at Rustenburg, 30 January 1882 — an index entry with no image — and again, readably, on the 1935 Sterfkennis of their son Diederik Arnoldus, where both are entered oorlede.",
+    src: ["The 1935 Sterfkennis", "/documents/#diederik-1935"],
+    kids: [
+      { n: "Hendrik Stephanus Nicolaas Booyen", via: "doc" },
+      { n: "Diederik Arnoldus Booysen", via: "doc" }] },
+
+  { h: "Diederik Arnoldus Booysen", w: "Elizabeth Anna Bronkhorst", via: "doc",
+    why: "Married in community of property. She was a widow Joubert; her two Joubert children are on his 1935 Sterfkennis with a pencil note in the margin marking them as not his.",
+    src: ["The 1935 Sterfkennis", "/documents/#diederik-1935"],
+    kids: [{ n: "Ockert Johannes Stephanus Booysen of 1927", via: "doc" }] },
 
   { h: "Petrus Jacobus Booysen of Rustenburg", w: "Anna Catharina Sophia Benadie", via: "doc",
     why: "Named together on two baptisms at Rustenburg, in 1889 and 1894. Both entries are indexed and neither image is available.",

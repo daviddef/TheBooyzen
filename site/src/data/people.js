@@ -56,9 +56,21 @@ export const people = [
  r:"Signed his father’s 1908 death notice as “son of the deceased” — thirty-two years after his father had signed his own father’s at Brakfontein. Second of the seven children on his mother’s 1891 notice, and he carries HER father’s name: Ocken Johannes Oliefier. Confirmed at Rustenburg on 3 April 1869, the same day as his brother Petrus Jacobus. He died at Klerksdorp on 16 January 1921, aged 69 — a civil registration, which names no parents.",
  p:[["The 1891 notices","/documents/#brakfontein-1891"],["The Rustenburg register","/documents/#rustenburg-register"],["The Documents","/documents/#hendrik-1908"]]},
 
-{n:"Elisabetta Johanna Sophia Myburgh", v:"Booysen", b:"c. 1862", d:"—", l:"Booyzen", s:"doc",
- r:"His wife, named with him on their son’s 1882 baptism at Rustenburg. The register entry is indexed and the image is not available, so this archive has her name and nothing else.",
- p:[["The Rustenburg register","/documents/#rustenburg-register"],["The Women","/women/"]]},
+{n:"Elisabetta Johanna Sophia Myburgh", v:"Elizabeth Johanna Sophia Booysen, gebore Myburgh (1935)", b:"c. 1862", d:"bef. Mar 1935", l:"Booyzen", s:"doc",
+ r:"His wife, named with him on their son’s 1882 baptism at Rustenburg — an index entry with no image. She is named again, and readably, on the 1935 Sterfkennis of their son Diederik Arnoldus, where both she and Ockert are entered OORLEDE. Two sons documented: Hendrik Stephanus Nicolaas, baptised 1882, and Diederik Arnoldus, born about August 1887.",
+ p:[["The 1935 Sterfkennis","/documents/#diederik-1935"],["The Rustenburg register","/documents/#rustenburg-register"],["The Women","/women/"]]},
+
+{n:"Diederik Arnoldus Booysen", b:"c. Aug 1887, Zwartruggens", d:"1 Mar 1935, Voorbedacht No. 401, district Rustenburg", l:"Booyzen", s:"doc",
+ r:"A KARWEIER — a transport rider — of Zwartruggens, and a son of Ockert Johannes Stephanus Booysen and Elizabeth Johanna Sophia Myburgh. His Sterfkennis 87882 is the first document in this archive printed in Afrikaans rather than Dutch or English, and the first Booysen estate here worth more than £300. He married Elizabeth Anna Bronkhorst, widow Joubert, in community of property; their youngest son carries his grandfather’s name.",
+ p:[["The 1935 Sterfkennis","/documents/#diederik-1935"],["Namesakes","/namesakes/"],["The Atlas","/atlas/"]]},
+
+{n:"Elizabeth Anna Bronkhorst", v:"Booysen · widow Joubert", b:"—", d:"—", l:"Booyzen", s:"doc",
+ r:"His wife, married in community of property, and a widow before him — her first husband Joubert died 31 January 1916, leaving her two children whom somebody at the Master’s Office marked in pencil as NOT the deceased’s. She signed the 1935 Sterfkennis herself, as nagelate weduwee.",
+ p:[["The 1935 Sterfkennis","/documents/#diederik-1935"],["The Women","/women/"]]},
+
+{n:"Ockert Johannes Stephanus Booysen of 1927", b:"23 Oct 1927", d:"—", l:"Booyzen", s:"doc",
+ r:"The fourth generation to carry the name that came into this family with Anna Catharina Johanna Olivier, whose father was Ocken Johannes Oliefier of the district of Cradock. Named on his father’s 1935 Sterfkennis as a minor of seven.",
+ p:[["The 1935 Sterfkennis","/documents/#diederik-1935"],["Namesakes","/namesakes/"]]},
 
 {n:"Hendrik Stephanus Nicolaas Booyen", v:"the nephew", b:"4 Jan 1882, Rustenburg", d:"8 Oct 1959, Kempton Park", l:"Booyzen", s:"doc",
  r:"Baptised at Rustenburg on 30 January 1882, son of Ockert Johannes Stephanus Booysen and Elisabetta Johanna Sophia Myburgh — and named for his uncle, who was then twenty and would be dead at Brakfontein before the boy turned ten. He outlived that uncle by sixty-eight years.",
