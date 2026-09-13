@@ -95,6 +95,49 @@ import { u } from "../lib/url.js";
 </section>
 
 <section class="blk">
+  <h2 id="relationship-not-person">Ask the index for a relationship, not for a person</h2>
+  <div class="prose">
+    <p>Nearly every genealogical search is a search for somebody you can already name. You type
+      <em>Hendrik Stefanus Booijzen, born about 1827</em>, and the index tells you whether it holds
+      him. That works, and it is how most of this archive was built. But it has a hard ceiling:
+      <b>it can only ever confirm what you already suspected.</b> If the person you need was never
+      written down by your family, you cannot type their name, and so you cannot find them.</p>
+    <p>The search forms will also take a <b>relationship</b>. Leave the forename blank, leave the
+      district blank, and ask instead for <em>any child whose mother's surname was Kolbe</em>.
+      The index then answers a question nobody in the family was in a position to ask.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th style="width:13rem">What you ask for</th><th style="width:12rem">What it can return</th><th>Ceiling</th></tr></thead>
+        <tbody>
+          <tr><td><b>A person</b><br /><span class="m">givenName + surname + date</span></td>
+              <td>The record of someone you named</td>
+              <td>You must already know the name. Everyone your family forgot stays forgotten.</td></tr>
+          <tr><td><b>A relationship</b><br /><span class="m">motherSurname, fatherGivenName, spouseSurname</span></td>
+              <td>Anyone standing in that relation, <b>including people you could not have named</b></td>
+              <td>Noisy, and every hit needs separating from the namesakes by hand.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>Both results on this page's hardest day came out of that difference.</b> Three
+      person-searches for <a href={u("/who/elizabetha-van-der-merwe/")}>Elizabetha van der Merwe</a>
+      returned nothing, and the third of them — her son's own baptism — was the best test this archive
+      could devise. One relationship-search on the Barrys returned
+      <a href={u("/barry/#the-missing-two")}>two children on neither parent's death notice</a>. The
+      difference was not effort or luck. It was which question the form was asked.</p>
+    <blockquote><b>The same logic runs underneath three other things this archive did.</b> Reading a
+      <a href={u("/documents/#estate-7081")}>marriage register's Remarks column</a> for the Master's
+      estate number is a relationship search done on paper — it indexes from a living remarrying
+      widower to a file about a dead first wife. Reading <a href={u("/documents/#kolbe-1291")}>both
+      parents' death notices</a> rather than one gave a ninth child. Reading a whole surname out of a
+      probate collection, instead of searching it for a person, gave twenty-nine.</p>
+    <p><b>The cost is honesty about noise.</b> A relationship search returns the right family mixed
+      with strangers, and it returns the same event indexed twice to two different villages. The two
+      Barry names above are recorded as a <span class="chip open">lead</span> and not as children,
+      because an index line that fits a gap is not the same as a register that fills it.</p>
+  </div>
+</section>
+
+<section class="blk">
   <h2>What "verified" on the tree does and does not mean</h2>
   <p>Many people in the source tree carry a tick and a star. Those are <b>MyHeritage interface marks</b> —
     confirmed Smart Matches and direct-ancestor flags. <b>They are not source citations</b>, and this
