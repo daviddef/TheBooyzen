@@ -7,18 +7,12 @@ import ring from "@daviddef/archive-kit/data/archives.json";
 const { title, dek, eyebrow, bare } = Astro.props;
 const SITE = "The Booyzen Archive";
 const nav = [
-  ["Start", [["/", "Home"], ["/trees/", "The Trees"], ["/direct-line/", "The Line"], ["/tree/", "The Tree"], ["/timeline/", "The Timeline"], ["/method/", "Method"], ["/search/", "Search"]]],
-  ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"],
-                    ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
-  ["The work", [["/documents/", "The Documents"], ["/gallery/", "The Plates"], ["/name/", "The Name"],
-                ["/namesakes/", "The Namesakes"], ["/rebels/", "The Rebels"],
-                ["/johannesburg/", "Johannesburg"]]],
-  ["Who and where", [["/people/", "Everyone"], ["/households/", "Households"],
-             ["/marriages/", "The Marriages"],
-             ["/register/", "The Register"], ["/places/", "The Places"], ["/atlas/", "The Atlas"]]],
-  ["Open", [["/changes/", "What Changed"], ["/disputed/", "Disputed"], ["/corrections/", "What Was Taken Back"],
-             ["/open-questions/", "Open Questions"], ["/searched/", "What Was Searched"],
-             ["/research-log/", "Research Log"], ["/errands/", "Errands"], ["/sources/", "Sources"]]],
+  ["Start", [["/", "Home"], ["/trees/", "The Trees"], ["/timeline/", "The Timeline"], ["/search/", "Search"]]],
+  ["Our line", [["/direct-line/", "The Line"], ["/tree/", "The Tree"]]],
+  ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"], ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
+  ["The work", [["/documents/", "The Documents"], ["/gallery/", "The Plates"], ["/name/", "The Name"], ["/namesakes/", "The Namesakes"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"]]],
+  ["People & places", [["/people/", "Everyone"], ["/households/", "Households"], ["/marriages/", "The Marriages"], ["/register/", "The Register"], ["/places/", "The Places"], ["/atlas/", "The Atlas"]]],
+  ["Evidence", [["/method/", "Method"], ["/changes/", "What Changed"], ["/disputed/", "Disputed"], ["/corrections/", "What Was Taken Back"], ["/open-questions/", "Open Questions"], ["/searched/", "What Was Searched"], ["/research-log/", "Research Log"], ["/errands/", "Errands"], ["/sources/", "Sources"]]],
 ];
 const here = Astro.url.pathname;
 /* which of the seven this is, worked out the same way the ring does */
