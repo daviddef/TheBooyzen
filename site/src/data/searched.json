@@ -2,6 +2,32 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Johannesburg cemetery registers — the whole family, swept",
+   "n": "298 read",
+   "d": "13 Sep 2026",
+   "h": "/documents/#the-cemeteries",
+   "rows": [
+    [
+     "Booyzen · Booysen · Booijzen · Daschner · Mountjoy · Lerena, exact surname, collection 4453927",
+     "298 entries",
+     "Ten of them are this family and each turns a year into a day: Kathleen Barry (grave 9760), Willem Hermanus of Indwe and Susanna Adriana (grave 6889, together), Henry James, Joseph Heinrich Daschner, Hendrik Stephanus Nicolaas, George Downing Mountjoy Booyzen, George Downing Daschner, and two infants at Brixton the archive did not have.",
+     "yes"
+    ],
+    [
+     "Grave numbers",
+     "2 of 10",
+     "The index rows carry name, age, date and cemetery; the grave number is on the register image, and only two have been read page by page so far. The rest are a morning's work.",
+     "part"
+    ],
+    [
+     "The 1918 influenza",
+     "3 burials, 1 claimed",
+     "Richard Peter Booyzen, 24, buried 27 October 1918 at Brixton — claimed as kin on the naming and the gap in the children, marked INFERRED. John Zacharia Booysen, 29, buried 26 November, and Johanna A. Booysen, nought days, on 19 December: NOT claimed. No forename in this family reaches them and Booysen is common on the Rand.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Ockert Johannes Stephanus Booysen (1852–1921) — an estate of his own",
    "n": "no file",
    "d": "13 Sep 2026",

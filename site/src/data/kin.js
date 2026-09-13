@@ -162,6 +162,7 @@ export const families = [
       { n: "Gertruida Alexandra Booyzen", via: "tree" },
       { n: "Johanna Catharina Booyzen|1889", via: "doc" },
       { n: "Catharina Maria Sophia Booysen", via: "doc" },
+      { n: "Richard Peter Booyzen", via: "inf" },
       { n: "George Downing Mountjoy Booyzen", via: "line" }] },
 
   { h: "Willem Hermanus Booyzen of Indwe", w: "Susanna Adriana Roodt", via: "doc",
