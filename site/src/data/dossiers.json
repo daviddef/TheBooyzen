@@ -1188,7 +1188,7 @@
     ]
    ],
    "slug": "elizabetha-van-der-merwe",
-   "mentions": 12,
+   "mentions": 13,
    "pages": [
     {
      "h": "/changes/",
@@ -1213,6 +1213,10 @@
     {
      "h": "/method/",
      "t": "Method"
+    },
+    {
+     "h": "/open-questions/",
+     "t": "Open questions"
     },
     {
      "h": "/people/",
@@ -1269,6 +1273,11 @@
      "page": "/method/",
      "title": "Method",
      "text": "A relationship motherSurname, fatherGivenName, spouseSurname Anyone standing in that relation, including people you could not have named Noisy, and every hit needs separating from the namesakes by hand. Both results on this page's hardest day came out of that difference. Three person-searches for Elizabetha van der Merwe returned nothing, and the third of them — her son's own baptism — was the best test this archive could devise. One relationship-search on the Barrys returned two children on neither parent's death notice . The difference was not effort or luck. It was which question the form was asked. The same logic runs underneath three other things this archive did."
+    },
+    {
+     "page": "/open-questions/",
+     "title": "Open questions",
+     "text": "Read it and it either names John Augustus Barry and Margaretha Kolbe or it does not, and either way the question moves. The second missing child has no candidate at all; the same relationship search, run on the father instead of the mother, has not been tried. § 14 · Medium priority Does Elizabetha van der Merwe exist anywhere but her son's death notice? — THREE ROUTES CLOSED. She is in this archive on the strength of ONE document: the 1908 death notice of her son, which names her as his mother. Nothing else — no marriage, no baptism of any child, no death, no estate. On 13 September the index was asked three separate ways and answered nothing three times."
     },
     {
      "page": "/people/",
@@ -11780,12 +11789,12 @@
     {
      "page": "/documents/",
      "title": "The documents",
-     "text": "It was there. Filed 9 July 1840 , reference 4393 . The form, as completed 1. Name of the Deceased James Montjoy 2. Birth-place Europe 3. Names of the Parents Not Known 4. Age About 45 years 5. Condition in life Saddler 6. Married or unmarried Married to Catharina Sl[i/e]er, widow of William Pietersen 7. Day of decease September 1827 8. At what House In the village of Cradock 9. Children James, George, Johanna, Jacoba — all minors 10. Property A house and erf at Cradock, of the value of £90 Signed Colesberg, 25 June 1840 , by a Montjoy Line 3 Names of the Parents of the Deceased. Not Known."
+     "text": "A third indexing, under the spelling Montyoy , did. Graaff-Reinet marriage register, folios 60–61. \"Den 9 Maart 1817 getrouwd\" — married on 9 March 1817. The entry, with a pencil cross beside it: \"James Montjoy — Met · Anna Catharina Slier, weduwe van Harmanus Pieterze[n]\" What it does not say, and that is the point This archive went to this register expecting an origin . Cape marriage entries of this date routinely record where a party came from, and this very page does it repeatedly — three couples in the right-hand column are entered \"beide van Uitenhage\" . Against James Montjoy's name there is a long ruled dash and nothing else ."
     },
     {
      "page": "/documents/",
      "title": "The documents",
-     "text": "A third indexing, under the spelling Montyoy , did. Graaff-Reinet marriage register, folios 60–61. \"Den 9 Maart 1817 getrouwd\" — married on 9 March 1817. The entry, with a pencil cross beside it: \"James Montjoy — Met · Anna Catharina Slier, weduwe van Harmanus Pieterze[n]\" What it does not say, and that is the point This archive went to this register expecting an origin . Cape marriage entries of this date routinely record where a party came from, and this very page does it repeatedly — three couples in the right-hand column are entered \"beide van Uitenhage\" . Against James Montjoy's name there is a long ruled dash and nothing else ."
+     "text": "It was there. Filed 9 July 1840 , reference 4393 . The form, as completed 1. Name of the Deceased James Montjoy 2. Birth-place Europe 3. Names of the Parents Not Known 4. Age About 45 years 5. Condition in life Saddler 6. Married or unmarried Married to Catharina Sl[i/e]er, widow of William Pietersen 7. Day of decease September 1827 8. At what House In the village of Cradock 9. Children James, George, Johanna, Jacoba — all minors 10. Property A house and erf at Cradock, of the value of £90 Signed Colesberg, 25 June 1840 , by a Montjoy Line 3 Names of the Parents of the Deceased. Not Known."
     },
     {
      "page": "/gallery/",
@@ -11800,7 +11809,7 @@
     {
      "page": "/households/",
      "title": "The households",
-     "text": "Two hard ones 1 child Beatrix Magdalena Catharina Boshoff · b. 16 Jun 1889 Willem Hermanus Pieterzen & Anna Catharina Sleer Willem d. bef. 1817 · Anna 1787 – 1885 On whose word a record read here Her first husband. The 1817 marriage register calls her “widow of Harmanus Pieterze”; the 1840 death notice calls him “William Pietersen”. Where the blank begins 1 child Willem Hermanus Pieterzen · d. bef. 1817 Philip Rudolph Botha On whose word a record read here Named in line 3 of his daughter's 1902 death notice at Dordrecht, with her mother, who carried the same four names as she did. The 1902 van Niekerk notice 1 child Carolina Deybella Margrietta Alletta Botha · c. Jul 1844 – 18 Dec 1902 Ferdinand Kumm Ferdinand d."
+     "text": "Two hard ones 1 child Beatrix Magdalena Catharina Boshoff · b. 16 Jun 1889 Willem Hermanus Pieterzen & Anna Catharina Sleer Willem d. bef. 1817 · Anna 1787 – 1885 On whose word a record read here Her first husband. The 1817 marriage register calls her “widow of Harmanus Pieterze”; the 1840 death notice calls him “William Pietersen”. Where the blank begins 1 child Willem Hermanus Pieterzen · d. bef. 1817 Philip Rudolph Botha On whose word a record read here Named in line 3 of his daughter's 1902 death notice at Dordrecht, with her mother, who carried the same four names as she did. The 1902 van Niekerk notice 1 child Carolina Deybella Margrietta Alletta Botha · c."
     },
     {
      "page": "/namesakes/",
@@ -11810,7 +11819,7 @@
     {
      "page": "/namesakes/",
      "title": "The namesakes",
-     "text": "Willem Hermanus “Willy” Booyzen 1925–1996 Eldest of the Johannesburg family. William Herman Daschner b. c. 1915 And out through a daughter into a third surname. This archive published “Willem Hermanus is a Booyzen name” and withdrew it. Three documents name the first husband three ways — Harmanus Pieterze in 1817, William Pietersen in 1840, Willem Hermanus Pieterzen in 1851 — and the man they name married into the line and died before it started. Four generations of women, across three surnames Catherine Maria Sophia A Barry name that outlives the Barry surname by eighty years. Who When What they are to the name Catherine Maria Sophia “Kathleen” Barry 1859–1940 The last Barry of the surname in this line."
+     "text": "Willem Hermanus “Willy” Booyzen 1925–1996 Eldest of the Johannesburg family. William Herman Daschner b. c. 1915 And out through a daughter into a third surname. This archive published “Willem Hermanus is a Booyzen name” and withdrew it. Three documents name the first husband three ways — Harmanus Pieterze in 1817, William Pietersen in 1840, Willem Hermanus Pieterzen in 1851 — and the man they name married into the line and died before it started. Four generations of women, across three surnames Catherine Maria Sophia A Barry name that outlives the Barry surname by eighty years."
     },
     {
      "page": "/people/",
@@ -15628,7 +15637,7 @@
     ]
    ],
    "slug": "james-henry-barry",
-   "mentions": 7,
+   "mentions": 8,
    "pages": [
     {
      "h": "/barry/",
@@ -15641,6 +15650,10 @@
     {
      "h": "/households/",
      "t": "The households"
+    },
+    {
+     "h": "/open-questions/",
+     "t": "Open questions"
     },
     {
      "h": "/people/",
@@ -15674,6 +15687,11 @@
      "page": "/households/",
      "title": "The households",
      "text": "His 1903 registration says they had ELEVEN children; his own death notice names EIGHT; HER death notice, estate 1291, names NINE. The ninth is WILLIAM, who appears on nothing else. Two are still missing. The Barrys 10 children John Augustus Barry II · b. 13 Mar 1847 William Barry · b. 23 Aug 1853 James Henry Barry · c. 1847 – 23 Jun 1939 George Augustus Barry · b. 26 Apr 1850 Hendrik Nicholaas Barry Frederick Fortunatus Barry · b."
+    },
+    {
+     "page": "/open-questions/",
+     "title": "Open questions",
+     "text": "Two things pull against each other on it. FOR a new child: John Augustus II was born 13 March 1847 off a register, so James Henry Barry's “about 1847” — an age worked back from his 1939 death — cannot stand, and 13 July 1848 is exactly where a next child belongs. AGAINST: this family reuses forenames relentlessly, and JONAS appears nowhere among the Barrys or Kolbes in this archive's 3,653 distinct names. It is INDEX ONLY. Nothing has been added to the family."
     },
     {
      "page": "/people/",
