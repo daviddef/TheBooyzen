@@ -1,6 +1,8 @@
 ---
 import { u } from "../lib/url.js";
 import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.astro";
+import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
+import ring from "@daviddef/archive-kit/data/archives.json";
 const { title, dek, eyebrow, bare } = Astro.props;
 const SITE = "The Booyzen Archive";
 const nav = [
@@ -18,6 +20,10 @@ const nav = [
              ["/research-log/", "Research Log"], ["/errands/", "Errands"], ["/sources/", "Sources"]]],
 ];
 const here = Astro.url.pathname;
+/* which of the seven this is, worked out the same way the ring does */
+const thisArchive = ring.archives.find(
+  (a) => a.base === (import.meta.env.BASE_URL || "/").replace(/\/$/, "")
+);
 ---
 <html lang="en" data-base={u("")}>
 <head>
@@ -85,6 +91,7 @@ const here = Astro.url.pathname;
     of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. Living people are
     excluded from this build.</p>
     <p class="foot dim">Built {new Date().getFullYear()} · Sources listed on <a href={u("/sources/")}>Sources</a> · Corrections welcome</p>
+    <VisitCount code={thisArchive?.counter} />
   </div>
 </footer>
 
