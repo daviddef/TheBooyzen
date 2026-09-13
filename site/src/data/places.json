@@ -1320,6 +1320,32 @@
     "Hendrik Stephanus Nicolaas Booyen"
    ],
    "slug": "roodepoort"
+  },
+  {
+   "n": "Goedehoop",
+   "k": "Place",
+   "r": "Pretoria, Transvaal",
+   "s": "doc",
+   "lat": -25.78,
+   "lon": 28.25,
+   "approx": true,
+   "w": "Two men of this story lived here. CHARLES PETRUS BAREND LOWIES, a hawker born in the district of Cradock about October 1848, is “of Goedehoop, Pretoria” on his 1905 death notice — he died in the Pretoria Lunatic Asylum on 5 June that year, leaving twelve children, six still minors. And DAVID SCHALK BOOIJZEN, born in the district of Cradock in June 1848, gives GOEDE HOOP, PRETORIA as his home on the register when he marries Lowies's widow on 27 November, five months and twenty-two days later. This archive read that register first and wrote the address down without knowing what it meant. Coordinates approximate.",
+   "e": [
+    [
+     "5 Jun 1905",
+     "Charles Petrus Barend Lowies of Goedehoop dies in the Pretoria asylum"
+    ],
+    [
+     "27 Nov 1905",
+     "David Schalk Booijzen of Goede Hoop marries his widow"
+    ]
+   ],
+   "p": [
+    "Charles Petrus Barend Lowies",
+    "David Schalk Booysen",
+    "Johanna Elena Stols"
+   ],
+   "slug": "goedehoop"
   }
  ]
 }
