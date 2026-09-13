@@ -1,5 +1,5 @@
 {
- "note": "Thirty-four things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
+ "note": "Thirty-six things this archive published and had to take back, with what caused each. They are gathered here because the pattern in the right-hand column is the most useful thing on the site: a family history that only shows its conclusions is asking to be believed on trust.",
  "causes": {
   "population": "A negative built from a list mistaken for a population — the archive searched what it happened to have and reported the answer as though it had searched everything.",
   "scope": "A search run over part of the ground and written up as though it covered all of it.",
@@ -9,6 +9,20 @@
   "process": "A mistake in the archive's own working — a bug, a bad build, or a word used loosely."
  },
  "rows": [
+  [
+   "13 Sep 2026",
+   "Hendrik Stephanus Nicolaas Booyen was buried at Johannesburg",
+   "He was buried at ROODEPOORT–MARAISBURG, twenty kilometres west, in the Central Cemetery there — section I D.R., entry 96. The FamilySearch collection is titled “Johannesburg Cemetery Records” and the index repeats that label for every register inside it, including those of other municipalities. The collection title is not the place.",
+   "reading",
+   "/documents/#all-ten-graves"
+  ],
+  [
+   "13 Sep 2026",
+   "Anna J. Mary Booyzen and George Downing Daschner were stillborn or died the same day",
+   "Both lived. She was SIX MONTHS old and he was THREE MONTHS AND FIVE DAYS. The Brixton register keeps Years, Months and Days in three separate columns and FamilySearch's index collapses them into one field, so a child with the Years column blank comes out as “0 days”. This archive printed the index reading for an afternoon without opening the page.",
+   "reading",
+   "/documents/#all-ten-graves"
+  ],
   [
    "13 Sep 2026",
    "Only a family tree puts Anna Maria van der Merwe in this family",

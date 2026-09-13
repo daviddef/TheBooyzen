@@ -559,6 +559,22 @@
     [
      "31 Jul 1932",
      "William Herman Booyzen, ex-miner, buried — probably Willem Hermanus of Indwe"
+    ],
+    [
+     "23 Jan 1914",
+     "Anna J. Mary Booyzen, six months — D.R., grave 2472, a bought plot"
+    ],
+    [
+     "28 Dec 1916",
+     "John Barry Booyzen, two years — D.R., grave 2951"
+    ],
+    [
+     "27 Oct 1918",
+     "Richard Peter Booyzen, twenty-four — D.R., grave 1119"
+    ],
+    [
+     "20 Jun 1925",
+     "George Downing Daschner, three months — D.R., grave 4410"
     ]
    ],
    "p": [
@@ -1254,6 +1270,56 @@
     "Richard Peter Booyzen"
    ],
    "slug": "turffontein"
+  },
+  {
+   "n": "Mayfair",
+   "k": "Suburb",
+   "r": "Johannesburg, Transvaal",
+   "s": "doc",
+   "lat": -26.204,
+   "lon": 28.006,
+   "approx": false,
+   "w": "This archive has had Mayfair as a word on two pages and never as an address. Kathleen Barry died here in 1940. Her great-granddaughter Catherine Mary Sophia Booyzen was married at ST JOSEPH'S, MAYFAIR on 15 January 1949 — the hinge into the Lerena archive. And her son HENRY JAMES BOOYZEN was living at 3 15TH AVENUE when he died in 1956. Three generations in one suburb, and the cemetery register is what finally gave it a street number.",
+   "e": [
+    [
+     "1940",
+     "Kathleen Barry dies at Mayfair"
+    ],
+    [
+     "15 Jan 1949",
+     "Catherine Mary Sophia Booyzen marries Nuno Fernando Lerena at St Joseph's"
+    ],
+    [
+     "8 Dec 1956",
+     "Henry James Booyzen of 3 15th Avenue dies at the Florence Nightingale Nursing Home"
+    ]
+   ],
+   "p": [
+    "Catherine Maria Sophia “Kathleen” Barry",
+    "Henry James Booyzen",
+    "Catherine Mary Sophia Booyzen"
+   ],
+   "slug": "mayfair"
+  },
+  {
+   "n": "Roodepoort",
+   "k": "Town",
+   "r": "West Rand, Transvaal",
+   "s": "doc",
+   "lat": -26.163,
+   "lon": 27.872,
+   "approx": false,
+   "w": "HENDRIK STEPHANUS NICOLAAS BOOYSEN — baptised at Rustenburg in 1882, dead at Kempton Park in 1959 — was buried in the Central Cemetery of the Municipality of Roodepoort–Maraisburg on 12 October 1959, section I D.R., entry 96. This archive published him as buried at Johannesburg for an afternoon because the FamilySearch collection carries that title for every register inside it.",
+   "e": [
+    [
+     "12 Oct 1959",
+     "Hendrik Stephanus Nicolaas Booysen buried, Central Cemetery, Sek I D.R."
+    ]
+   ],
+   "p": [
+    "Hendrik Stephanus Nicolaas Booyen"
+   ],
+   "slug": "roodepoort"
   }
  ]
 }
