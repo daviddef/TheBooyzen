@@ -48,7 +48,20 @@ for r, _, fs in os.walk(DIST):
             else:
                 (bad_assets if "." in os.path.basename(t) else bad_links).append((here, h, "missing"))
 
-orphans = sorted(p for p in pages if p != "/" and not (linked_from[p] - {p}))
+# A redirect page is SUPPOSED to have nothing linking to it — it exists so that a
+# URL somebody already has keeps working after a rename. Astro writes those as a
+# bare <meta http-equiv="refresh">, so they are cheap to recognise and must not be
+# reported as orphans for the rest of the site's life.
+def is_redirect(route):
+    f = os.path.join(DIST, route.strip("/"), "index.html") if route != "/" else os.path.join(DIST, "index.html")
+    try:
+        head = open(f, encoding="utf-8").read(2000)
+    except OSError:
+        return False
+    return 'http-equiv="refresh"' in head or "Redirecting to:" in head
+
+orphans = sorted(p for p in pages
+                 if p != "/" and not (linked_from[p] - {p}) and not is_redirect(p))
 
 print(f"{len(pages)} pages · {len(assets)} assets")
 for label, rows in (("BROKEN LINKS", bad_links), ("MISSING FILES", bad_assets)):
