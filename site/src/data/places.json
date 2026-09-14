@@ -1480,6 +1480,222 @@
    "slug": "volksrust",
    "lat": -27.366,
    "lon": 29.883
+  },
+  {
+   "n": "Philippolis",
+   "k": "Mission station, later town",
+   "r": "Southern Orange Free State",
+   "s": "doc",
+   "w": "WHERE THE SETTLER'S CHILDREN GREW UP, on the word of a man writing in 1868 who knew them. The obituary of Commandant John Gerson Eliezar Kolbe says his father “became a MISSIONARY TO THE GRIQUAS AT PHILIPPOLIS, and most of his family, we believe, GREW UP THERE”. This archive had reached the same conclusion from the children's baptism places — Harriet Hachilah Machilah born here in 1831 — and this is a fourth, independent source for it. Philippolis was the London Missionary Society's Griqua station; George Augustus Kolbe was an L.M.S. missionary.",
+   "e": [
+    [
+     "1831",
+     "Harriet Hachilah Machilah Kolbe born here"
+    ],
+    [
+     "1830s",
+     "“Most of his family grew up there” — the 1868 obituary"
+    ]
+   ],
+   "p": [
+    "George Augustus Kolbe",
+    "John Gerson Eliezar Kolbe"
+   ],
+   "slug": "philippolis",
+   "lat": -30.267,
+   "lon": 25.271
+  },
+  {
+   "n": "Bethulie",
+   "k": "Mission station, later town",
+   "r": "Southern Orange Free State",
+   "s": "doc",
+   "w": "THE OTHER MISSION ON THE CIRCUIT, and a font this family came back to. FREDERIK FORTUNATUS KOLBE was born here in 1839 — the source of a forename that has since crossed into four surnames — and JOHAN CASIMIR in 1844, the year his father died. FORTY-TWO YEARS LATER Frederik Fortunatus brought his own youngest daughter, ADRIANA HENRIETTA JOHANNA, back to be baptised here on 23 October 1881.",
+   "e": [
+    [
+     "1839",
+     "Frederik Fortunatus Kolbe born here"
+    ],
+    [
+     "1844",
+     "Johan Casimir Kolbe born here, the year his father died"
+    ],
+    [
+     "23 Oct 1881",
+     "Adriana Henrietta Johanna Kolbe baptised here — her father's own birthplace"
+    ]
+   ],
+   "p": [
+    "Frederik Fortunatus Kolbe",
+    "Adriana Henrietta Johanna Kolbe"
+   ],
+   "slug": "bethulie",
+   "lat": -30.494,
+   "lon": 25.976
+  },
+  {
+   "n": "Uitenhage",
+   "k": "Town",
+   "r": "Eastern Cape",
+   "s": "doc",
+   "w": "THE FIRST STOP AFTER THE LANDING. George Augustus Kolbe came ashore at Algoa Bay on 14 April 1820, and his eldest child — JOHN GERSON ELIEZAR, born 7 JULY 1822 — was born here, forty miles inland. The family is at Graaff-Reinet by 1825.",
+   "e": [
+    [
+     "7 Jul 1822",
+     "John Gerson Eliezar Kolbe born here — the Settler's eldest"
+    ]
+   ],
+   "p": [
+    "John Gerson Eliezar Kolbe",
+    "George Augustus Kolbe"
+   ],
+   "slug": "uitenhage",
+   "lat": -33.766,
+   "lon": 25.398
+  },
+  {
+   "n": "Leeuwberg",
+   "k": "Farm",
+   "r": "Orange Free State — district not proved",
+   "s": "open",
+   "w": "WHERE COMMANDANT KOLBE DIED, on the night of Friday 3 April 1868, of typhus caught on commando. THE OBITUARY NAMES TWO FARMS AND THIS ARCHIVE CANNOT RECONCILE THEM: he died “at the farm LEEUWBERG” and “settled on the farm where he died and now lies buried on KAALSPRUIT”. A LEEUWBERG NO. 465 EXISTS — “DIST. FAURISMITH, EXTENT ABOUT 1 200 MORGEN”, in a Free State land file of 1903 — and the pin is placed at FAURESMITH on the strength of it. THAT IS A FARM OF THE RIGHT NAME IN THE RIGHT PROVINCE THIRTY-FIVE YEARS LATER AND NOTHING MORE. Farm names repeat, and Fauresmith is a hundred and thirty kilometres from where this archive puts Kaalspruit, which is the part that does not fit.",
+   "e": [
+    [
+     "3 Apr 1868",
+     "John Gerson Eliezar Kolbe dies here — his wedding anniversary"
+    ]
+   ],
+   "p": [
+    "John Gerson Eliezar Kolbe"
+   ],
+   "slug": "leeuwberg",
+   "lat": -29.753,
+   "lon": 25.32,
+   "approx": true,
+   "why": "placed at Fauresmith on one land file; the identification is not proved"
+  },
+  {
+   "n": "Kaalspruit",
+   "k": "Farm",
+   "r": "Orange Free State — district not proved",
+   "s": "open",
+   "w": "HIS OWN ADDRESS, IN HIS OWN ADVERTISEMENT. The Friend of the Free State, 9 March 1864: a lost promissory note, £154 sterling, signed “J.G.E. KOLBE, Kafferberg, Kaalspruit”. The obituary of 1868 says he settled here about 1850 and lies buried here. THE PIN IS AT BLOEMFONTEIN and it is an inference: a Free State soil-conservation district is registered as “KAALSPRUIT – KAFFERRIVIER (BLOEMFONTEIN)”, which pairs the same two names the advertisement pairs, in the district whose bank he was a director of and whose paper he advertised in. A NAME PAIR IS NOT A SURVEY BEACON. The Friend's own transcriber read this farm as “[Randspruit]”, bracketed and doubtful; the advertisement is why this archive reads Kaalspruit.",
+   "e": [
+    [
+     "c. 1850",
+     "J.G.E. Kolbe settles here"
+    ],
+    [
+     "9 Mar 1864",
+     "He advertises a lost promissory note from this address"
+    ],
+    [
+     "Apr 1868",
+     "Buried here"
+    ]
+   ],
+   "p": [
+    "John Gerson Eliezar Kolbe",
+    "Anna Jacoba van der Merwe"
+   ],
+   "slug": "kaalspruit",
+   "lat": -29.117,
+   "lon": 26.214,
+   "approx": true,
+   "why": "placed at Bloemfontein on a name pair, not a survey"
+  },
+  {
+   "n": "Piet Retief",
+   "k": "Town",
+   "r": "Eastern Transvaal",
+   "s": "doc",
+   "w": "TWO KOLBE STONES, thirty years apart, in a town forty miles from Wakkerstroom. “G.A. KOLBE, GEB. 23 FEB. 1836, OVERL. 7 JAN. 1913” with “A.M. KOLBE, GEB. 4 MEI 1843, OVERL. 21 SEP. 1907”, raised VAN HUN KINDERS; and “P.J. KOLBE, GEB. 1_ AUG. 1865, OORL. 28 NOV. 1919”. 1836 IS THE YEAR THE SETTLER'S TWINS WERE BORN AT BURGERSDORP, and if that is him the stone dates a birth this archive has only ever had as a year.",
+   "e": [
+    [
+     "21 Sep 1907",
+     "A.M. Kolbe dies"
+    ],
+    [
+     "7 Jan 1913",
+     "G.A. Kolbe dies, aged 76"
+    ],
+    [
+     "28 Nov 1919",
+     "P.J. Kolbe dies"
+    ]
+   ],
+   "p": [
+    "G.A. Kolbe of Piet Retief",
+    "A.M. Kolbe of Piet Retief",
+    "P.J. Kolbe of Piet Retief"
+   ],
+   "slug": "piet-retief",
+   "lat": -27.005,
+   "lon": 30.81
+  },
+  {
+   "n": "Hoopstad",
+   "k": "Town",
+   "r": "Orange River Colony",
+   "s": "doc",
+   "w": "WHERE THE WERDMULLER LINE ENDS UP. CHARLES ANDREW WERDMULLER — second son of the man who married the Settler's fourth daughter — is “CHARLES WERDMULLER, J.P. OF HOOPSTAD” by 1909. His wife CHARLOTTE ANNE, born Callaghan, died here on 17 FEBRUARY 1891 aged thirty-two, “after a long illness”, having arrived “only a few months ago, in rather indifferent health”, of a disorder of the heart that proved organic. She left “a husband and TWO LITTLE GIRLS”, and one of those girls married a holder of the Victoria Cross.",
+   "e": [
+    [
+     "17 Feb 1891",
+     "Charlotte Anne Werdmuller dies here, aged 32"
+    ],
+    [
+     "1909",
+     "Charles Werdmuller, J.P. of Hoopstad, gives his daughter away at East London"
+    ]
+   ],
+   "p": [
+    "Charles Andrew Werdmuller",
+    "Charlotte Anne Callaghan",
+    "Amy Werdmuller"
+   ],
+   "slug": "hoopstad",
+   "lat": -27.833,
+   "lon": 25.91
+  },
+  {
+   "n": "Steynsburg",
+   "k": "Town",
+   "r": "North-eastern Cape",
+   "s": "doc",
+   "w": "WHERE CHARLES ANDREW WERDMULLER WAS LIVING WHEN HE MARRIED, on 13 February 1884 — “CHARLES ANDREW WERDMULLER, OF STEYNSBURG. SECOND SON OF THE LATE C.J.O. WERDMULLER, OF BURGHERSDORP”. Thirty miles from Burgersdorp, where his father had been, and a long way from Hoopstad, where he ended.",
+   "e": [
+    [
+     "13 Feb 1884",
+     "Charles Andrew Werdmuller of Steynsburg marries at Queenstown"
+    ]
+   ],
+   "p": [
+    "Charles Andrew Werdmuller"
+   ],
+   "slug": "steynsburg",
+   "lat": -31.297,
+   "lon": 25.816
+  },
+  {
+   "n": "Queenstown",
+   "k": "Town",
+   "r": "Eastern Cape",
+   "s": "doc",
+   "w": "THE WESLEY CHURCH, 13 FEBRUARY 1884, where Charles Andrew Werdmuller married CHARLOTTE ANNE CALLAGHAN, “eldest daughter of HUGH CALLAGHAN, ESQ., OF ASHBY MANOR, QUEENSTOWN”. The Queenstown Free Press carried the marriage, and seven years later carried her death at Hoopstad and an obituary written by a correspondent there.",
+   "e": [
+    [
+     "13 Feb 1884",
+     "Werdmuller–Callaghan marriage at Wesley Church"
+    ]
+   ],
+   "p": [
+    "Charles Andrew Werdmuller",
+    "Charlotte Anne Callaghan"
+   ],
+   "slug": "queenstown",
+   "lat": -31.897,
+   "lon": 26.875
   }
  ]
 }

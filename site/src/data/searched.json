@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Nine places put on the atlas — items 4 and 6",
+   "n": "54 places become 63, and two farms are pinned on inferences that are labelled",
+   "d": "15 Sep 2026",
+   "h": "/atlas/",
+   "rows": [
+    [
+     "The seven towns, which needed no argument",
+     "PHILIPPOLIS · BETHULIE · UITENHAGE · PIET RETIEF · HOOPSTAD · STEYNSBURG · QUEENSTOWN",
+     "All seven came out of two days' work and none was on the map. PHILIPPOLIS is where the 1868 obituary says the Settler's children grew up — a fourth independent source for what this archive had inferred from baptism places. BETHULIE is where FREDERIK FORTUNATUS was born in 1839 and where he brought his own youngest daughter to be baptised FORTY-TWO YEARS LATER. UITENHAGE is where the eldest son was born in 1822, two years after the landing.",
+     "yes"
+    ],
+    [
+     "LEEUWBERG, where the Commandant died",
+     "PINNED AT FAURESMITH, ON ONE LAND FILE",
+     "A Free State land file of 1903 reads “LEEUWBERG NO 465 DIST. FAURISMITH EXTENT ABOUT 1 200 MORGEN”. That is a farm of the right name in the right province THIRTY-FIVE YEARS AFTER HE DIED THERE, and nothing more. Farm names repeat. THE PIN CARRIES THE CAVEAT ON THE MAP.",
+     "part"
+    ],
+    [
+     "KAALSPRUIT, where he lived and lies",
+     "PINNED AT BLOEMFONTEIN, ON A PAIR OF NAMES",
+     "His own advertisement of 9 March 1864 is signed from “Kafferberg, Kaalspruit”. A Free State soil-conservation district is registered as “KAALSPRUIT – KAFFERRIVIER (BLOEMFONTEIN)” — THE SAME TWO NAMES PAIRED, in the district whose bank he directed and whose paper he advertised in. A NAME PAIR IS NOT A SURVEY BEACON and the pin says so.",
+     "part"
+    ],
+    [
+     "The part that does not fit, said out loud",
+     "FAURESMITH AND BLOEMFONTEIN ARE 130 KILOMETRES APART",
+     "The obituary says he died at LEEUWBERG and that he “settled on the farm where he died and now lies buried on KAALSPRUIT”. Those cannot both be true of two farms that far apart. EITHER ONE OF THIS ARCHIVE'S TWO IDENTIFICATIONS IS WRONG, OR THE OBITUARY IS LOOSE. Both pins are marked approximate and the contradiction is printed with them rather than smoothed over by choosing one.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Friend of the Free State — the paper that printed the obituary first",
    "n": "Eight sons and four daughters, a farm settled, and a sister's death dated",
    "d": "15 Sep 2026",
