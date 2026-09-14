@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Gauteng gravestones — the Johannesburg and Pretoria family, photographed",
+   "n": "640 stones, 38 spelt with a z, and five of this archive's people among them",
+   "d": "14 Sep 2026",
+   "h": "/johannesburg/",
+   "rows": [
+    [
+     "Gauteng · surname BOOY",
+     "640 stones, 38 with the z",
+     "The archive has read ten Johannesburg burial REGISTERS and had a photograph of none of those graves. The Gauteng collection holds thirty-eight Booyzen-spelt stones across West Park, Braamfontein, Bezuidenhout Park, Brenthurst in Brakpan, Rynsoord in Benoni, Edenvale, Sterkfontein, Panorama, and four Pretoria cemeteries — Silverton, Zandfontein, Rebecca Street and Bronkhorstspruit.",
+     "yes"
+    ],
+    [
+     "Four stones that are certainly this family",
+     "Every date matches",
+     "“BOOYZEN STEFANUS FRANCOIS 1874-1940” and “BEATRIX MAGDALENA CATHARINA NEE BOSHOFF 1889-1977”, a joint stone at SILVERTON, PRETORIA — he died at East Lynne in 1940 and she is given a death year for the first time. “BOOYZEN HENRY JAMES 1887-1956” at WEST PARK. “BOOYZEN JOHN BARRY 1884-1952” at BRENTHURST, BRAKPAN — this archive had him as “c. 1884” with NO DEATH AT ALL and an estate number, MHG 769/52, on a film that will not open; the stone supplies both the year and the town. And “DASCHNER JOSEPH HEINRICH 1883-1942 & CATHERINE MARY SOPHIA” at WEST PARK — the Indwe marriage, on one stone, in Johannesburg.",
+     "yes"
+    ],
+    [
+     "A fifth stone that closes a loop",
+     "Petrus Jacobus Booyzen 1873–1947",
+     "“BOOYZEN PETRUS JACOBUS 1873-1947 & MAGDALENA JOHANNA BEZUIDENHOUT”, REBECCA STREET CEMETERY, PRETORIA. Two threads from earlier today meet on it. The Wonderboom South transfer register names “Boedel wyle P. J. Booyzen” passing to “MAGDALENA JOHANNA BOOYZEN”, and “M. J. BOOYZEN, BORN BEZUIDENHOUT, widow” — a couple this archive could not identify. And the prisoner register gives PETRUS JACOBUS BOOYZEN, aged 27, of Pretoria, taken at Tolosberg on 25 April 1901, which puts his birth about 1874. A Petrus Jacobus Booyzen born 1873 and buried at Pretoria with a wife born Bezuidenhout fits both. STRONG AND NOT PROVED — the stone names no parents.",
+     "part"
+    ],
+    [
+     "And two confirmations of other people's work",
+     "WikiTree and NAAIRS both hold up",
+     "“BOOYZEN WILLEM HERMANUS 1925-1996 & CYNTHIA ROSALIND 1927-” at RYNSOORD, BENONI is WikiTree's Booysen-831, which gives him born 25 October 1925 and married to Cynthia Rosalind Hoeftman at Johannesburg in 1955. And “VILJOEN J.C.E. NEE BOOYZEN 1807-1861” at BEZUIDENHOUT PARK is the stone NAAIRS's GEN database produced this morning from the other direction. Neither is claimed for this family; both show the sources agreeing.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "eGGSA's gravestone photographs — and two of this family are in them",
    "n": "a couple known only from estate files, now with stones",
    "d": "14 Sep 2026",
