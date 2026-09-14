@@ -2,6 +2,74 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Free State papers, worked properly — McCabe named, the farm placed, and a son of the twelve",
+   "n": "Forty-three Kolbe hits in the newspaper transcriptions, read one by one instead of skimmed",
+   "d": "15 Sep 2026",
+   "h": "/documents/#mccabe-1872",
+   "rows": [
+    [
+     "Who was McCabe — the surname the Free State estate index files the Commandant's widow under",
+     "FRANCIS McCABE, LANDDROST OF BLOEMFONTEIN",
+     "The Friend, 29 February 1872, with an obituary under it: son of DR McCABE, a Staff-Assistant Surgeon attached to the British Army on the Cape Frontier, born at one of the military posts in what is now British Kaffraria on 29 SEPTEMBER 1817; “married his second wife about ten months since — THE WIDOW OF THE LATE COMMANDANT J.G.E. KOLBE, OF KAFIRBERG, NEAR THIS TOWN”; died suddenly of heart disease on 23 February 1872, aged 54. THIS ARCHIVE HAS BEEN SAYING FOR DAYS THAT IT DID NOT KNOW WHO McCABE WAS. He was the town's own magistrate.",
+     "yes"
+    ],
+    [
+     "How long the second marriage lasted",
+     "ABOUT FIFTEEN MONTHS",
+     "Married about April 1871, widowed 23 February 1872. She had been widowed on 3 April 1868 with twelve children, and she outlived the second husband by twenty-four years. HIS OBITUARY COUNTS BOTH FAMILIES: “four sons and two daughters, BESIDES A LARGE FAMILY OF STEP-CHILDREN”. For about eleven months there were eighteen children attached to one household.",
+     "yes"
+    ],
+    [
+     "How he died",
+     "A CART INTO A SLUIT, ON THE ANNIVERSARY OF THE STATE'S INDEPENDENCE",
+     "He had spent 23 February superintending the burghers' annual target shooting for the government prize. At 5:15 he set off by spring-cart with four horses, Adjutant van Rensburg of the Free State Artillery and a servant, for the Diamond Fields, meaning to sleep at his own farm UITVLUGT on the Modder River. At half past seven, in deceptive moonlight, ONE HOUR'S RIDE SHORT OF THE FARM OF MR G.F. ENSLIN, the cart went into a sluit washed out by the rains. G.F. ENSLIN IS ALREADY IN THIS ARCHIVE — he placed the 1863 notice saying Maria Elizabeth Kolbe had died intestate. Here he is a landmark on a road at night.",
+     "yes"
+    ],
+    [
+     "Any of the twelve children, by name",
+     "ONE — “JOHN KOLBE, JUN.”",
+     "Free State criminal court, reported in The Friend in the second half of 1869: a horse thief pleaded guilty to driving off, in October 1868, from the farm SPRINGFIELD, WARD UPPER MODDER-RIVER, DISTRICT BLOEMFONTEIN, a black mare and foal belonging to “ANNA JACOBA VAN DER MERWE, WIDOW OF LATE J.G.E. KOLBE”, a blue schimmel mare and foal belonging to “JOHN KOLBE, JUN.”, and a chestnut riding horse belonging to “JEPHTS, A MAN OF COLOR, NOW RESIDING AT LEEUWBERG”. Six months after the death, a son is holding stock in his own right beside his mother. AND A MAN WHO WOULD OTHERWISE BE IN NO DOCUMENT AT ALL IS NAMED IN THE SAME SENTENCE, WITH PROPERTY OF HIS OWN.",
+     "yes"
+    ],
+    [
+     "Where the farm actually was",
+     "ABOUT TWO HOURS' RIDE FROM BLOEMFONTEIN",
+     "The Friend, 13 January 1870, an auction advertisement dated Bloemfontein 30 November 1869: “The farm, WILDEBEESTKOOI, ADJOINING THE FARM LEEUBERG, THE PROPERTY OF THE LATE J.G.E. KOLBE, ABOUT TWO HOURS RIDE FROM THE TOWN OF BLOEMFONTEIN.” THIS ARCHIVE PINNED LEEUWBERG AT FAURESMITH TWO DAYS AGO, 130 KM AWAY, AND PUBLISHED THE PIN WITH ITS OWN OBJECTION ATTACHED. The objection was right. Withdrawn to /corrections/ and the pin moved. Kafferberg, Kaalspruit, Leeuberg, Wildebeestkooi and Springfield are one neighbourhood.",
+     "yes"
+    ],
+    [
+     "What the Settler did before Colesberg existed",
+     "HE KEPT A MISSION SCHOOL FOR BUSHMEN ON THE GROUND THE TOWN WAS LAID OUT ON",
+     "The Friend, first half of 1869, “FORTY-FIVE YEARS AGO, by John MONTGOMERY, Founder of Burghersdorp”, describing a journey from Cradock about 1824: “I continued my journey towards the Orange River, BY KOOLSKOP, WHERE THE FATHER OF THE LATE LAMENTED COMMANDANT KOLBE CONDUCTED A BUSHMEN MISSION SCHOOL, AND WHICH IS NOW COLESBERG.” Colesberg was laid out in 1830. RECORDED AS AN INFERENCE: Montgomery is recalling forty-five years back and names the man only as somebody's father. It is also specific, and from a man who founded a town in the same district.",
+     "part"
+    ],
+    [
+     "A fourth public office for the Commandant",
+     "FOREMAN OF THE JURY, BLOEMFONTEIN, 1866",
+     "A forgery trial before Mr van Soelen — the same official who spoke at Kolbe's graveside two years later. “The jury, through their foreman, MR. J.G.B. KOLBE, OF KAFFERBERG, brought in a verdict of Not Guilty.” The initials are printed J.G.B. for J.G.E., in his own town's paper, in his own lifetime.",
+     "yes"
+    ],
+    [
+     "A grandson",
+     "“LITTLE JANNIE”, TEN YEARS OLD, KILLED BY LIGHTNING IN 1884 — FATHER UNCERTAIN",
+     "“The eldest son of Mr. John KOLBE, ‘little Jannie’, a promising youth ten years old, was struck dead by the electric fluid on his father's farm FIVE HOURS TO THE NORTHWARD OF BLOEMFONTEIN.” The Natal Witness index carries the same death and names the father GEORGE. TWO PAPERS, TWO FATHERS. If the John of 1884 is the John Kolbe junior of 1868, this is the Commandant's grandson, and this archive is not going to decide that on a preference.",
+     "part"
+    ],
+    [
+     "KOLBE-BOOYSEN — the compound the Name page called a tree oddity",
+     "IT IS A HOUSEHOLD IN PORT ELIZABETH, AND IT IS IN PRINT TWICE",
+     "Eastern Province Herald, 16 October 1944: “SAWTELLE – KOLBY-BOOYSEN. The engagement has been announced between LEVINA (FINNIE), only daughter of Mr and Mrs D. KOLBE-BOOYSEN, of Port Elizabeth, to Raymond Patrick, only son of Mrs D. Sawtelle, of Cambridge, England.” And 19 April 1945: “KOLBE-BOOYSEN – KRUGER… Hilda, only daughter of Lieut. and Mrs F. Kruger of Heidelburg, Transvaal, to WILLIAM (S.A.A.F.), son of Mr and Mrs D. KOLBE-BOOYSEN, of Port Elizabeth.” D IS DAVID — David Kolbe Booyzen, married Maria Jacoba Smit 1921. A TOWN AND TWO CHILDREN. And the headline spells it KOLBY and the body KOLBE, four words apart.",
+     "yes"
+    ],
+    [
+     "The rest of the forty-three",
+     "MOSTLY SOMEBODY ELSE, AND SET DOWN AS SUCH",
+     "A Kolbe girl of eleven drowned in a dam in the HANTAM district in 1874, saving a Hottentot girl who also drowned; Rev. F.W. KOLBE of the Paarl on a subscription list; Dr Kolbe the editor of the S.A. Catholic Magazine, ill in the Transkei in 1899; a watch-repair suit at Grahamstown in 1872; a Kolbe who swam three miles up a river after failing to save a drowning Australian in 1900; and two Cape Town society marriages of 1890. NONE OF THEM CONNECTS TO ANYTHING HERE and none is being adopted because the surname is rare enough to tempt.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The seven Marico claims read to the bottom — and a farm school nobody had asked for",
    "n": "The index line was the whole record; the same query returned forty-eight files about a school",
    "d": "15 Sep 2026",
