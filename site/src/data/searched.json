@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The London end, opened — Kolbe and Downing, not Montjoy",
+   "n": "four places with prose and no records behind them",
+   "d": "14 Sep 2026",
+   "h": "/atlas/",
+   "rows": [
+    [
+     "What the London places actually are",
+     "Kolbe and Downing",
+     "Worth stating before anyone searches: the four London places on the atlas — ST ANNE'S SOHO, ST LEONARD'S SHOREDITCH, 34 CONDUIT STREET and the GERMAN SAVOY CHURCH — belong to the KOLBE and DOWNING lines, not to the Montjoys. The Montjoy line has no London place at all: James Montjoy is “born Europe about 1782” and his 1840 death notice answers his parents NOT KNOWN. Anyone hoping the London records will reach the Montjoys is looking at the wrong family's city.",
+     "part"
+    ],
+    [
+     "LastName=Kolbe · EventYear=1819 ±1 · KeywordsPlace=Shoreditch",
+     "The marriage is indexed, three times",
+     "Three entries for GEORGE KOLBE, Shoreditch 1819, in ENGLAND MARRIAGES 1538–1973 — two filed under Middlesex and one under London, which is the same event indexed three ways. This archive has read the marriage itself and knows what it says: he was sixteen and she fifteen, both swore they were twenty-one, and she signed with a mark. THE INDEX ADDS NOTHING TO THAT, and is recorded because a place on the atlas with no attached record looks unsearched when it is not.",
+     "part"
+    ],
+    [
+     "LastName=Kolbe · KeywordsPlace=London",
+     "433, and none of them ours",
+     "94 parish records, 255 census, 45 directories, 36 travel — and the ones that surface are Woolwich and Plumstead Kolbes of the 1900s, a Streatham Kolbe of 1881, and passenger lists to the Cape in 1902 and 1957. The Georgian German-tailor Kolbes of Soho and Conduit Street are not what a bare surname search in London returns. They need to be approached by event and parish, not by name.",
+     "no"
+    ],
+    [
+     "FindMyPast, as a tool — recorded for whoever comes next",
+     "Three frictions worth knowing",
+     "ONE: the results URL takes KeywordsPlace, and a place passed as “placename” is silently ignored — 20,309 results against 12 for the same search. TWO: the NEWSPAPER results URL cannot be reached by parameters at all; /search-newspapers/results?keywords= only works once the form has been clicked, and a direct navigation bounces to the landing page. THREE: result rows resist programmatic clicking, so opening a transcript is a manual step. None of this is a reason not to use it; all of it is a reason to budget more time than the searching itself takes.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "FindMyPast, opened properly for the first time",
    "n": "one search in the whole project until today",
    "d": "14 Sep 2026",
