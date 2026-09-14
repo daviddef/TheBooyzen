@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Cape genealogical codes, resolved — and G2G answers back twice more",
+   "n": "a cousin identified, a father-candidate offered, and a reply this archive cannot post",
+   "d": "14 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "b3c4d5e6, resolved from the volume already downloaded",
+     "A FIRST COUSIN OF DAVID SCHALK",
+     "The gravestone at Bezuidenhout Park, Johannesburg, reads “JCE VILJOEN, NEE BOOYZEN, born 02-07-1807, died 11-12-1861”, citing Heese as b3c4d5e6. Walked in de Villiers 1893, which this archive downloaded this morning: b3 = GERRIT, married Johanna Durand 1733; c4 = JAN, baptised 29 January 1741; d5 = JAN JONATHAN, baptised 11 July 1779, married 28 May 1797 to JUDITH CORNELIA THERESIA VILJOEN; and e6 = “JUDITH CORNELIA THERESIA, GEDOOPT 16 AUGUSTUS 1807”. Born 2 July, baptised 16 August — six weeks, exactly right. SHE IS THE ARCHIVE'S DAVID SCHALK BOOIJSEN'S FIRST COUSIN: he is b3c4d7e1, she is b3c4d5e6, both grandchildren of Jan. She married a Viljoen, as her mother was one, and lies in Johannesburg.",
+     "yes"
+    ],
+    [
+     "G2G answer 2 · Pieter van Zyl",
+     "The code confirmed independently",
+     "“On the Booijsen side (page 78 of Kaapsche Familien part 1): B3 Gerrit B x Johanna du Rand. B3C4 Jan B x Magdalena de Beer. B3C4D7 PETRUS JACOBUS B BAPTISED 21 SEPT 1788 x ANNA MARIA V D MERWE.” That is this archive's own reading of the page, arrived at separately and stated in the same notation. Riël Smit added the archive.org links for all three parts.",
+     "yes"
+    ],
+    [
+     "G2G answer 3 · Riël Smit — and it goes straight at Question 0",
+     "Gerhardus LORET, not Lodewikus?",
+     "“The only Gerhardus Booysen in DE VILLIERS & PAMA (1981) is B3C1D1 GERHARDUS LORET (BOOIJSEN) BOOYSEN, baptised Sep 1770 in Drakenstein. Maybe the LORET changed to LODEVICUS over time.” This archive found that man in the 1893 text without knowing what to do with him — “Gerhardus Loret, gedoopt 16 September 1770”, a son of BOOIJ Booijsen and Magdalena du Plessis. TWO THINGS FOLLOW AND THEY PULL OPPOSITE WAYS. It is a genuine candidate for the name on the 1876 Sterfkennis, offered by a senior member from the revised 1981 edition this archive has never seen. BUT HE IS b3c1d1 — a son of BOOIJ, not of JAN — so he is Petrus Jacobus's FIRST COUSIN, not his father, and at eighteen in 1788 he is a poor fit for it besides. The likeliest reading is that the 1876 informant reached for a remembered family name and attached it to the wrong man.",
+     "part"
+    ],
+    [
+     "The reply this archive owes them",
+     "Blocked — the session lapsed",
+     "A reply is drafted in substance and cannot be posted: the WikiTree session has expired and the page offers only Log In. What it should say — that the book was downloaded and read, that b3c4d7 matches independently, that b3c4d5e6 resolves to Judith Cornelia Theresia and settles a Johannesburg gravestone, and ONE QUESTION WORTH ASKING THEM: does de Villiers & Pama (1981) still put Petrus Jacobus under JAN, or did the revision move him? That is the whole of Question 0 in a sentence, and a member with the 1981 edition open could answer it in a minute.",
+     "blocked"
+    ]
+   ]
+  },
+  {
    "g": "The Wakkerstroom convergence, tested",
    "n": "Frederik Fortunatus is the thread, and it holds",
    "d": "14 Sep 2026",
