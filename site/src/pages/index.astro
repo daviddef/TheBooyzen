@@ -162,7 +162,6 @@ const stats = [
   </div>
 </section>
 
-<Numbers rows={stats.map(([n, l, h]) => [n, l, u(h)])} />
 
 <section class="blk">
   <h2>The shape of it</h2>
@@ -224,6 +223,8 @@ const stats = [
       </div>
     </div>
   </section>
+
+<Numbers rows={stats.map(([n, l, h]) => [n, l, u(h)])} />
 
   <section class="blk" style="border-bottom:0">
     <h2>What is still missing</h2>
