@@ -2,6 +2,80 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Parts 2 and 3 of the Cape genealogies, downloaded at last — and the name David Schalk has a source",
+   "n": "Riël Smit posted the links on 14 September. This archive read Part 1 and forgot the other two.",
+   "d": "15 Sep 2026",
+   "h": "/documents/#kaapsche-2-3",
+   "rows": [
+    [
+     "archive.org — geslachtregister02devi and geslachtregister03devi",
+     "BOTH VOLUMES, FULL TEXT, IN UNDER A MINUTE",
+     "They had been sitting behind a link in a forum answer for a day. The whole of this run took one download and some counting. THE COST OF NOT GOING BACK FOR THE SECOND HALF OF SOMETHING SOMEBODY HANDED YOU.",
+     "yes"
+    ],
+    [
+     "KOLBE in de Villiers",
+     "A483 — AND IT IS SOMEBODY ELSE ENTIRELY",
+     "“Carel Frederik Kolbe, VAN ANHALT DESSAU, burger te Kaapstad, gehuwd 6 Juni 1762 met Maria Magdalena de Wens”, with seven children baptised 1763–1773; volume 3 confirms the son Jacobus's 1799 marriage from the Paulsen side. A GERMAN KOLBE FAMILY WAS AT THE CAPE FIFTY-EIGHT YEARS BEFORE THE 1820 SETTLER LANDED, and it is not his — his father was a London tailor and he came out on the settler ships. Set down deliberately, as the trap it is.",
+     "no"
+    ],
+    [
+     "ANNA MARIA VAN DER MERWE — who she was",
+     "BAPTISED 5 OCTOBER 1788, AND SIX SIBLINGS",
+     "Volume 2, van der Merwe: “(e) 3 WILLEM, gedoopt 30 September 1764, burger te Stellenbosch, gehuwd 7 November 1784 met HESTER MARIA VAN DER MERWE — (f) 1 Johanna Catharina 1787; 2 ANNA MARIA, GEDOOPT 5 OCTOBER 1788, GEHUWD MET PETRUS JACOBUS BOOIJSEN; 3 DAVID SCHALK, gedoopt 10 October 1790; 4 Hendrina Magdalena 1792; 5 Hester Maria 1793; 6 Hendrik Petrus Jacobus 1796.” SHE HAS BEEN A NAME ON ONE BAPTISM FOR THE WHOLE OF THIS PROJECT.",
+     "yes"
+    ],
+    [
+     "Two babies, fourteen days apart",
+     "HE 21 SEPTEMBER 1788, SHE 5 OCTOBER 1788",
+     "Volume 1 page 78 for him, volume 2 for her. The same author writing consistently with himself, which is worth exactly that and no more — but it is the first date of any kind this archive has had for her.",
+     "yes"
+    ],
+    [
+     "Her parents — against WikiTree",
+     "THEY DISAGREE, AND THE CONCLUSION SURVIVES BOTH",
+     "WikiTree makes her a daughter of DAVID SCHALK VAN DER MERWE and ANNA ELIZABETH LOUW, born 1785. De Villiers makes her a daughter of WILLEM VAN DER MERWE and HESTER MARIA VAN DER MERWE, baptised 1788. BOTH CANNOT BE RIGHT AND NEITHER IS BEING ADOPTED. On the tree's version David Schalk is her FATHER; on the book's he is her BROTHER. A CONCLUSION THAT HOLDS UNDER EITHER READING IS THE ONLY KIND THIS ARCHIVE GETS TO KEEP.",
+     "part"
+    ],
+    [
+     "Count the name across all three volumes",
+     "ONCE IN PART 1, FIFTEEN TIMES IN PART 2",
+     "Part 1 holds the entire BOOIJSEN genealogy, and the string “David Schalk” occurs in it EXACTLY ONCE — “David Schalk, gedoopt 4 Januari 1807”, which is our man, the child born the year after a van der Merwe married into the line. Of the fifteen in Part 2, THIRTEEN ARE INSIDE THE VAN DER MERWE SECTION, generation after generation: 1738, 1739, 1761, 1787, 1790, 1791, 1797, 1800, 1804. DAVID SCHALK IS A VAN DER MERWE NAME and this archive can now say so with a count behind it.",
+     "yes"
+    ],
+    [
+     "Adriana Christina Viljoen — who she was",
+     "PROBABLY HIS FIRST COUSIN",
+     "Volume 3, VILLION thans VILJOEN: “(e) 12 HERCULES ALBERTUS, gedoopt 30 Maart 1777, burger te Graaff-Reinet, GEHUWD 26 FEBRUARI 1797 MET MAGDALENA BOOIJSEN”, whose seventh child is “ADRIANA CHRISTINA, GEDOOPT 19 AUGUSTUS 1810”. Magdalena Booijsen is b3c4d6 — the SISTER of Petrus Jacobus. Eighteen in 1828, right district, right name. NOT PROVED: de Villiers gives her NO HUSBAND, and the 3 November 1828 Cradock date is itself only on WikiTree. The Cradock marriage register would close it.",
+     "part"
+    ],
+    [
+     "The Booijsen–Viljoen marriages of 1797",
+     "A BROTHER AND A SISTER MARRIED A SISTER AND A BROTHER, THREE MONTHS APART",
+     "Magdalena Booijsen (b3c4d6) married Hercules Albertus Viljoen on 26 FEBRUARY 1797. Her brother Jan Jonathan Booijsen (b3c4d5) married his sister Judith Cornelia Theresia Viljoen on 28 MAY 1797. Two households became one twice over in a single year, and thirty-one years later a son of the third sibling married a daughter of the first.",
+     "yes"
+    ],
+    [
+     "b3c4d5e6, resolved last week from a gravestone, explained this week",
+     "SHE HAS HER MOTHER'S THREE NAMES ENTIRE",
+     "Jan Jonathan Booijsen and Judith Cornelia Theresia Viljoen's sixth child is “JUDITH CORNELIA THERESIA, gedoopt 16 Augustus 1807”. The same mechanism as David Schalk, in the same generation, in the house next door: A DISTINCTIVE NAME ENTERS THIS SURNAME BY MARRIAGE AND IS HANDED STRAIGHT DOWN.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY, DOWNING, WERDMULLER, SLEER in de Villiers",
+     "NOT THERE AT ALL",
+     "Zero occurrences of Mountjoy, Montjoy, Downing, Werdmuller or Sleer across all three volumes. De Villiers recorded the OLD CAPE families — the Dutch, German and French of the seventeenth and eighteenth centuries. THE BRITISH AND THE 1820 SETTLERS ARE SIMPLY OUT OF SCOPE, which is a fact about the book and not about the families, and is the reason half this archive will never be found in it.",
+     "no"
+    ],
+    [
+     "Google Books, to chase the London tailor into a directory",
+     "BLOCKED — QUOTA ZERO WITHOUT A KEY",
+     "books.googleapis.com returns HTTP 429, “quota_limit_value: 0”, for anonymous callers. Item 9 — whether John Godloff Kolbe of the 1844 obituary was at Brunswick Square or at Conduit Street — is not closed and needs a different route. ONE THING DID COME OUT OF IT: a list of 234 London master tailors who met at the Freemasons' Tavern on 22 December 1799 over the Combination Act, printed in The Times of 27 January 1800, includes “KOLBE, JOHN, 18, BROAD-STREET, SOHO”. Right trade, right city, right age, and Soho was the German quarter. NOT CLAIMED, because a John Kolbe in London is not yet this John Kolbe.",
+     "blocked"
+    ]
+   ]
+  },
+  {
    "g": "The Free State papers, worked properly — McCabe named, the farm placed, and a son of the twelve",
    "n": "Forty-three Kolbe hits in the newspaper transcriptions, read one by one instead of skimmed",
    "d": "15 Sep 2026",
