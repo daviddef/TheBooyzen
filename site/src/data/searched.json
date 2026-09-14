@@ -2,6 +2,50 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "G2G answers again — and takes away the only document that names the top of the line",
+   "n": "Pieter van Zyl and Riël Smit on the 1876 Sterfkennis",
+   "d": "14 Sep 2026",
+   "h": "/documents/#the-name-twice",
+   "rows": [
+    [
+     "The comment, thirteen minutes old when it was read here",
+     "HE PREDICTED WHAT IS ON THE PAGE WITHOUT HAVING SEEN THE PAGE",
+     "“His real dad, Jan, was already dead for more than 40 years when Petrus Jacobus died… Quite possibly, the informant ‘thought’ the dad's name was G L. I searched for a marriage between a Gerhardus Lodewicus and Magdalena de Beer BUT COULD NOT FIND ONE. If I remember correctly, THERE WAS A CHILD OF PETRUS CALLED GERHARDUS LODEWICUS ON HIS STERFKENNIS.”",
+     "yes"
+    ],
+    [
+     "Check it against the document this archive has read and photographed",
+     "THERE IS. HE IS THE FIFTH CHILD IN LINE 12.",
+     "JAN GERTHARDUS LODEWIKUS BOOIJSEN. The name this archive takes from LINE 3 for the dead man's FATHER is the back half of his SON'S name, EIGHT LINES BELOW, ON THE SAME SHEET, IN ONE CLERK'S HAND. And the half that gets dropped — JAN — is the name de Villiers gives as the real father, b3c4d7. THE ARCHIVE HAS BEEN LOOKING AT BOTH HALVES FOR WEEKS AND DID NOT PUT THEM TOGETHER.",
+     "yes"
+    ],
+    [
+     "What it does to the dispute",
+     "IT TAKES EVIDENCE AWAY AND ADDS NONE",
+     "This is not a proof that the father was Jan, and this archive is NOT swapping one unproved father for another on the strength of a good reading. What it does is REMOVE THE 1876 STERFKENNIS AS DECISIVE EVIDENCE FOR GERTHARDUS LODEWIKUS — and line 3 is the only place that name has ever been found. THE OLDEST QUESTION ON THIS SITE JUST GOT HARDER, which is the correct direction for it to move.",
+     "part"
+    ],
+    [
+     "Pieter van Zyl's own negative, recorded because it is one",
+     "NO MARRIAGE OF A GERHARDUS LODEWICUS TO A MAGDALENA DE BEER",
+     "He looked and could not find one. This archive has not repeated the search and records his, attributed. A man who cannot be found marrying the woman his son's death notice gives him is not thereby disproved — but the absence is now on the page.",
+     "no"
+    ],
+    [
+     "Riël Smit, two hours earlier",
+     "THE ONLY GERHARDUS IN DE VILLIERS & PAMA (1981) IS b3c1d1 GERHARDUS LORET",
+     "“Maybe the Loret changed to Lodevicus over time.” Baptised September 1770, son of Booij — which makes him Petrus Jacobus's FIRST COUSIN and EIGHTEEN YEARS OLD in 1788. He cannot be the father. The suggestion is still worth keeping: it is the only Gerhardus in the printed genealogy at all, and a remembered cousin is exactly the kind of name an informant reaches for.",
+     "part"
+    ],
+    [
+     "And the books this archive did not have",
+     "PARTS 2 AND 3 ARE ON ARCHIVE.ORG TOO",
+     "Riël Smit posted links to all three parts of Oude Kaapsche Familien. This archive downloaded Part 1 on 13 September and never looked for the others. NOT YET READ.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Burgersdorp register, swept image by image — the standing errand of this project",
    "n": "267 images, one of the two missing Barry children, and the reason they were invisible",
    "d": "14 Sep 2026",
