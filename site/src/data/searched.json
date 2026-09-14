@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Silverton pillar, matched name by name against the 1940 estate",
+   "n": "Twelve household names, eleven legal ones — and a twelfth child",
+   "d": "14 Sep 2026",
+   "h": "/documents/#silverton-pillar",
+   "rows": [
+    [
+     "Re-read the photograph at four times scale, to be sure of the twelve",
+     "OUBOET · OUSIE · BESSIE · BETIE · HENNA · EVERT · ✝BABA · FANIE · WILLIE · PIETIE · JOHAN · HENNIE",
+     "Confirmed at magnification. The seventh line carries a BIRTH STAR AND A CROSS and the word BABA, where every other line carries a name.",
+     "yes"
+    ],
+    [
+     "Set the twelve against the eleven children named on his 1940 estate",
+     "EVERY ONE OF THE ELEVEN IS CLAIMED EXACTLY ONCE, AND BABA IS LEFT OVER",
+     "Nine go by ordinary Afrikaans diminutive — Bessie←Elizabeth, Betie←Beatrix, Henna←Johanna, Evert←Ewert, Fanie←Stefanus, Willie←Willem, Pietie←Petrus, Johan, Hennie←Hendrik. Two are not names at all: OUBOET is eldest brother and OUSIE eldest sister, and they fall to David Schalk, who heads the estate list, and to Susanna Fredrika Aletta, the one daughter the diminutives leave. NOTHING IS UNASSIGNED EXCEPT BABA. THAT IS WHAT MAKES THE TWELFTH CHILD REAL: not the count, but the fact that the count has nowhere else to go.",
+     "yes"
+    ],
+    [
+     "The weak link, named rather than hidden",
+     "HENNA",
+     "Henna can stand for Hendrina as readily as for Johanna. There is no Hendrina on the estate, which is why the match is made — but it is the one of the nine that rests on an absence.",
+     "part"
+    ],
+    [
+     "Does the archive have this shape already?",
+     "YES, ONCE — AND IT IS THE SAME LESSON",
+     "Joseph Heinrich Daschner's 1942 death notice named ELEVEN children; the Brixton burial register produced a TWELFTH, George Downing Daschner, three months and five days old, buried 1925. A DEATH NOTICE LISTS THE LIVING. A GRAVESTONE, CUT BY THE FAMILY, LISTS THE CHILDREN. Two documents of different kinds, and the difference between them is worth more than either alone.",
+     "yes"
+    ],
+    [
+     "Baba's birth date, sex, name or order",
+     "NOTHING",
+     "The stone gives a star, a cross and a word that means baby. This archive enters the child under that word and claims nothing else. A Pretoria burial register or the Silverton cemetery register would be the next place to look, and neither has been searched.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "Wakkerstroom proved a second time — not by a name but by a household",
    "n": "Frederik Fortunatus Kolbe's eight children",
    "d": "14 Sep 2026",

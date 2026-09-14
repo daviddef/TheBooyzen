@@ -243,8 +243,8 @@ export const families = [
     kids: [{ n: "Anna Johanna Maria Pretorius", via: "doc" }] },
 
   { h: "Stephanus Francois Booyzen", w: "Beatrix Magdalena Catharina Boshoff", via: "doc",
-    why: "Married at MOSSELBAAI on 5 September 1905, certificate 1318 — he 30 and a jonkman of PRETORIA, she SIXTEEN with her parents consenting. ELEVEN children, all of them named on his 1940 estate, which she signed and on which she could not name his parents. Two of the eleven carry her own parents' names entire.",
-    src: ["Two hard ones", "/documents/#two-hard-ones"],
+    why: "Married at MOSSELBAAI on 5 September 1905, certificate 1318 — he 30 and a jonkman of PRETORIA, she SIXTEEN with her parents consenting. ELEVEN children are named on his 1940 estate, which she signed and on which she could not name his parents; two of them carry her own parents' names entire. TWELVE are cut on their gravestone at Silverton, by their household names — and matching the two lists leaves one over, a child called only BABA who was dead before the estate was written.",
+    src: ["The pillar at Silverton", "/documents/#silverton-pillar"],
     kids: [
       { n: "David Schalk Booyzen of 1940", via: "doc" },
       { n: "Susanna Fredrika Aletta Booyzen", via: "doc" },
@@ -256,7 +256,8 @@ export const families = [
       { n: "Willem Hendrik Booyzen", via: "doc" },
       { n: "Petrus Jacobus Booyzen of 1940", via: "doc" },
       { n: "Johan Abraham Frederik Booyzen", via: "doc" },
-      { n: "Hendrik Rudolph Philippus Booyzen", via: "doc" }] },
+      { n: "Hendrik Rudolph Philippus Booyzen", via: "doc" },
+      { n: "Baba Booyzen", via: "doc" }] },
 
   { h: "Evert Philip Boshoff", w: "Susanna Frederika Aletta Meyer", via: "doc",
     why: "Named together on their daughter's baptism at Mossel Bay, 16 February 1890. Two of her eleven children are called after them — Ewert Philippus and Susanna Fredrika Aletta.",
