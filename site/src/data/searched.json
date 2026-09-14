@@ -2,6 +2,56 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The 184 RSA Booyzen documents, enumerated for the first time",
+   "n": "Seventy-two of them are estates or death notices",
+   "d": "14 Sep 2026",
+   "h": "/documents/#naairs-three",
+   "rows": [
+    [
+     "NAAIRS · RSA · BOOYZEN, all 184, walked page by page",
+     "148 ROWS READ OF 184 — AND THE SHORTFALL IS SAID OUT LOUD",
+     "The summary screen pages twenty at a time and this sweep took ten pages. THIRTY-SIX DOCUMENTS WERE NOT REACHED, and this archive is not going to call 148 a complete enumeration. What follows is what 148 rows contain. THE COUNT HAS BEEN QUOTED HERE FOR WEEKS — “184 RSA Booyzen documents” — WITHOUT ANYONE EVER OPENING IT.",
+     "part"
+    ],
+    [
+     "Eight gravestones found this morning, looked up in the estate index this afternoon",
+     "EIGHT JOINS, FROM TWO COLLECTIONS THAT DO NOT SPEAK TO EACH OTHER",
+     "DAVID SCHALK — stone “David S. 1907–1966”, Zandfontein · estate MHG 7653/66. CHARLIE JOHN — stone 1909–1962, Brenthurst · MHG 9371/62. CASPER JOHANNES — stone 1920–1972, Braamfontein · MHG 6160/72. FREDRICK — stone 1899–1970, West Park · MHG 11193/70. ANDRIES ARNOLDUS — stone 1918–1975, West Park · MHG 3100/1975. MARIA CHRISTINA NEE OOSTHUIZEN — stone 1920–1955 · MHG 86/56. WILLEM HERMAN — stone 1946–1965, a boy of nineteen · MHG 1403/1965. JACOBUS FREDRIK JANSE — stone 1939–1957 · MHG 1909/57. EVERY ONE OF THE EIGHT AGREES ON THE YEAR. The stone gives the household name, the index gives the registered name.",
+     "yes"
+    ],
+    [
+     "The fourth Middelburg stone, the one this archive could not place",
+     "SHE HAS A CAPE ESTATE: MOOC 6/9/4898, 54123",
+     "“BOOYZEN, CATHARINA JOHANNA HELENA, NEE BEYLEVELD. ESTATE PAPERS. 1937.” Read this morning as an unplaceable stone in the same cemetery as three of this family; by the afternoon she has a file that would name her parents, her husband and her children and settle the question in one page. NOT READ, and it is now near the top of the list.",
+     "part"
+    ],
+    [
+     "Magdalena Johanna Booyzen, born Bezuidenhout",
+     "MHG 2510/55 — HER OWN ESTATE",
+     "The woman whose birth date, 8 May 1870, is written beside her name in the Wonderboom deeds register, and whose Rebecca Street stone corrected this archive's reading of that register. Her estate file is MHG 2510/55. NOT READ.",
+     "part"
+    ],
+    [
+     "The two oldest Booyzen death notices in the Cape series",
+     "1843 AND 1856",
+     "MOOC 6/9/30 · 6167 DU PLESSIS, JOHANNA (NEE BOOYZEN), 1843 — already read here, and already established as NOT this family. MOOC 6/9/76 · 4223 BOOYZEN, CORNELIA MARGARIETHA (NEE FOUCHE), 1856 — NOT READ, and older than all but one document in this archive.",
+     "part"
+    ],
+    [
+     "A Booyzen born at Wakkerstroom",
+     "MSCE 4064/1974 — BOOYZEN, NICOLAAS THEODORUS. BORN IN WAKKERSTROOM.",
+     "The town this archive spent the morning proving its KOLBES moved to. A Booyzen born there is almost certainly a coincidence — Booyzens are everywhere in the Transvaal — and it is recorded as one, because the alternative is to notice it in six months and mistake it for a pattern.",
+     "part"
+    ],
+    [
+     "Names this archive has spent the project chasing, on other people's estates",
+     "ADRIANA CHRISTINA, CATHARINA MARIA SOPHIA",
+     "MOOC 6/9/321 · 2120 PRETORIUS, ADRIANA CHRISTINA, NEE BOOYZEN, DEATH NOTICE, 1893 — and Adriana Christina Viljoen is one of the most-linked names in this archive. MHG 5581/64 GROBLER, CATHARINA MARIA SOPHIA, BORN BOOYZEN — the Kolbe name, carried into a fourth surname. NEITHER IS SHOWN TO BE CONNECTED, and both are set down.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
    "n": "The national archives index, all repositories",
    "d": "14 Sep 2026",
@@ -77,9 +127,9 @@
     ],
     [
      "A Booyzen born in 1807, in a family graveyard in Johannesburg",
-     "“VILJOEN J.C.E. nee BOOYZEN 1807-1861”",
-     "In the BEZUIDENHOUT FAMILY CEMETERY at Bezuidenhout Park — a private burial ground, and a birth year older than anything this archive holds in the Transvaal. VILJOEN and BEZUIDENHOUT are both surnames already in this family: Adriana Christina Viljoen and Magdalena Johanna Bezuidenhout. THIS ARCHIVE CLAIMS NO CONNECTION and records the stone because the three surnames meeting in one private graveyard is the kind of coincidence that later gets read as a descent.",
-     "part"
+     "ALREADY IDENTIFIED — AND THIS ARCHIVE FORGOT IT FOR AN HOUR",
+     "“VILJOEN J.C.E. nee BOOYZEN 1807-1861”, Bezuidenhout family cemetery. Seeing it in the eGGSA list this archive wrote that it claimed no connection and set it down as a coincidence of three surnames. THAT WAS A REGRESSION. The same stone was worked out days ago from the GEN database: she is JUDITH CORNELIA THERESIA, baptised 16 August 1807, Heese code b3c4d5e6, and she is DAVID SCHALK BOOIJSEN'S FIRST COUSIN — he is b3c4d7e1. Her husband B.C. Viljoen and her daughter Judith Cornelia Etresia Bezuidenhout, born at Graaff-Reinet in 1831, are on the same page of this archive. THE COINCIDENCE OF VILJOEN, BEZUIDENHOUT AND BOOYZEN IN ONE PRIVATE GRAVEYARD IS NOT A COINCIDENCE and this archive had already said so. Left here as written rather than deleted, because an archive that finds the same thing twice and calls it new the second time has a problem worth showing.",
+     "yes"
     ],
     [
      "Gauteng · LUUS and VERMEULEN — the errand named in the row above, run the same hour",
