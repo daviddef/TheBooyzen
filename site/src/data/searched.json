@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Friend of the Free State — the paper that printed the obituary first",
+   "n": "Eight sons and four daughters, a farm settled, and a sister's death dated",
+   "d": "15 Sep 2026",
+   "h": "/documents/#commandant-kolbe-1868",
+   "rows": [
+    [
+     "The Friend, 10 April 1868 — five days before the Grahamstown Journal",
+     "THE GRAHAMSTOWN VERSION IS A REPRINT, AND IT DROPS A LINE",
+     "The Friend is the Free State paper and printed it first. Its wording: “OF THE EIGHT SONS AND FOUR DAUGHTERS HE HAS LEFT BEHIND HIM, one daughter alone is married, the youngest being but an infant.” THE GRAHAMSTOWN REPRINT SAYS ONLY “OF FOUR DAUGHTERS”. So the twelve children are EIGHT SONS AND FOUR DAUGHTERS, which this archive did not know an hour ago. The transcriber also notes that the obituary “continues for a further half column, but is very difficult to read” — SO THERE IS MORE, AND IT IS NOT TRANSCRIBED.",
+     "yes"
+    ],
+    [
+     "Two transcriptions of one sentence, disagreeing on the farm",
+     "KAALSPRUIT AGAINST “[RANDSPRUIT]”",
+     "Grahamstown: “settled on the farm where he died and now lies on KAALSPRUIT”. The Friend: “now lies buried on [RANDSPRUIT]”, the brackets the transcriber's own admission of doubt. ONE OF THE TWO IS WRONG AND THIS ARCHIVE COULD NOT SAY WHICH.",
+     "part"
+    ],
+    [
+     "And the man settles it himself, four years earlier",
+     "“J.G.E. KOLBE, Kafferberg, KAALSPRUIT, 9 March 1864”",
+     "A lost-property advertisement in the Friend, signed with his own address as the paper printed it. KAALSPRUIT IS RIGHT AND THE BRACKETED READING IS WRONG. The advertisement does a second job: it concerns “a promissory note, date 9th March 1864, DRAWN BY GEORGE AUGUSTUS KOLBE IN FAVOR OF J.G.E. KOLBE, payable 4 months after date for £154 Stg”, lost on the Market Square at Bloemfontein. THE SETTLER'S ELDEST SON AND HIS TWIN-BORN BROTHER, IN ONE DOCUMENT, OVER A DEBT.",
+     "yes"
+    ],
+    [
+     "The Friend, 23 October 1863 — an estate notice, printed twice",
+     "A SISTER'S DEATH, DATED AT LAST",
+     "“Derwyl MARIA ELIZABETH KOLBE zonder testament na te laten is overleden en de nagebleven echtgenoot G.F. ENSLIN … als executeur is aangesteld.” MARY ELIZABETH KOLBE DIED INTESTATE and her husband George Frederick Enslin was appointed executor of her estate. This archive had “bef. 1867”, inferred from a baptism. IT IS NOW BEFORE 23 OCTOBER 1863, from a notice her own husband placed in the paper.",
+     "yes"
+    ],
+    [
+     "A note on how the address is printed here",
+     "AS THE PAPER PRINTED IT, AND NOT USED AS A LABEL",
+     "The 1864 advertisement gives his address with a place-name that is a racial slur in South African English. This archive quotes the advertisement as it stands, because that is what quoting a document means, and does not carry the word anywhere else — the farm is indexed as KAALSPRUIT.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Margaret Downing — item 11, answered by a photograph already in this archive",
    "n": "The Burgersdorp monument, read to the end",
    "d": "15 Sep 2026",
