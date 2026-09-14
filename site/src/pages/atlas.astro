@@ -82,7 +82,7 @@ groups.forEach((g, i) => {
                     text-anchor={g.left ? "end" : "start"} font-size="9.5"
                     style="fill:var(--ink-3);font-family:var(--sans)">+ {g.members.slice(1).map(m => m.n).join(", ")}</text>
             )}
-            <title>{g.members.map(m => m.n + " — " + m.k + (m.approx ? " (placed at its district town)" : "")).join(" · ")}</title>
+            <title>{g.members.map(m => m.n + " — " + m.k + (m.approx ? " (" + (m.why || "placed at its district town") + ")" : "")).join(" · ")}</title>
           </g>
         </a>
       ))}
