@@ -10,6 +10,13 @@
  },
  "rows": [
   [
+   "15 Sep 2026",
+   "Margaret Downing “c. 1804, London” — and, for a day, a death date thrown into doubt by a newspaper",
+   "THE STONE HAD BOTH ANSWERS AND THIS ARCHIVE HAD THE STONE. The Burgersdorp monument has been on the Kolbe page for weeks, photographed and captioned; the caption quoted it as far as “ALSO HIS RELICT MARGARET DOWNING…” AND STOPPED. The next two lines read “BORN IN LONDON 23 FEBRUARY 1803 AND DIED AT BURGHERSDORP 2_ NOVEMBER 1867.” Her birth moves from a guessed year to a date. AND THE DEATH WAS NEVER IN DOUBT: yesterday's Grahamstown Journal obituary said she died “about three months since” — January 1868 — and this archive published the discrepancy rather than resolving it. It was nearly five months, and a journalist rounding is a journalist rounding. THE FAULT IS THE CAPTION: a transcription that stops before the end of an inscription is not a transcription, and this one hid two facts in plain sight for weeks.",
+   "reading",
+   "/kolbe/"
+  ],
+  [
    "14 Sep 2026",
    "“148 rows read of 184 — THIRTY-SIX DOCUMENTS WERE NOT REACHED, and this archive is not going to call 148 a complete enumeration”",
    "The caution was right in spirit and wrong in fact, and the fact is worse. ALL TEN PAGES HAD BEEN WALKED. The thirty-six were not unreached — THEY WERE THROWN AWAY BY THIS ARCHIVE'S OWN ROW FILTER, which required a description field longer than three characters and so silently dropped every row whose description column the index leaves short or blank. Re-run without that condition the same query returns 194 rows, 184 of them unique: THE EXACT COUNT. This archive published a scope caveat that blamed the source for a hole it had dug itself — which is the same failure as the blank Name column, one layer up: A FILTER THAT DROPS WHAT IT DOES NOT RECOGNISE LOOKS EXACTLY LIKE AN ARCHIVE THAT DOES NOT HOLD IT. The thirty-six turn out to include SEVEN ANGLO-BOER WAR COMPENSATION CLAIMS BY BOOYZENS IN THE MARICO DISTRICT.",
