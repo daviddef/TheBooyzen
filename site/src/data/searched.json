@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The four Middelburg stones, located a day ago and read today",
+   "n": "Middelburg main cemetery, eastern Cape",
+   "d": "14 Sep 2026",
+   "h": "/documents/#middelburg-stones",
+   "rows": [
+    [
+     "graveseastcape.eggsa.org · surname BOOYZEN · exact match",
+     "EIGHT STONES, AND NOT ALL OF THEM AT MIDDELBURG",
+     "Four at MIDDELBURG main cemetery, which is what this archive came for. But also TWO AT CRADOCK, Deary Avenue — Jan Hendrik 1922–1987 and Yvonne 1926– — and TWO AT HUMANSDORP. Cradock is one of this archive's own places. Those four are not entered as people: one of them has no death date, and this archive does not put a possibly living person on a page.",
+     "part"
+    ],
+    [
+     "BOOYZEN Gert Jacobus 1870–1951 — the photograph, read",
+     "THE BIRTH CONFIRMED FROM A SECOND SOURCE, THE DEATH NARROWED, AND THE DAY REFUSED",
+     "“IN DANKBARE HULDE AAN ONS GELIEFDE VADER EN OUPA — GERT JACOBUS BOOYZEN — GEB. 19 JAN. 1870 — OORL. 2_ AUG. 1951 — SY GENADE WAS VIR MY GENOEG.” 19 JANUARY 1870 is exactly what this archive had, and this is the first source for it that is not the death notice it came from. The death goes from a bare year to AUGUST 1951. THE DAY IS A 2 AND THEN A DIGIT THAT WILL NOT RESOLVE at any magnification, so it is left as a gap rather than guessed at. “VADER EN OUPA” makes him a grandfather, which no document here had said.",
+     "yes"
+    ],
+    [
+     "BOOYZEN Isabella Fredericka nee COETSEE 1874–1930 — the photograph, read",
+     "HER BIRTH IS NOW A DATE: 15 APRIL 1874",
+     "“TER GEDAGTENIS AAN — ISABELLA FREDERICKA BOOYZEN (GEB. COETSEE) — GEB. 15 APRIL 1874 — OORL. 31 MAART 1930 — HEMELSE RUS.” This archive had “c. May 1874”, worked back from an age on a notice. An exact date cut on a stone beats a month inferred from an age, so the entry moves to 15 April. THE DEATH MATCHES TO THE DAY and is now the THIRD independent source saying 1930 against the 1943 once published here.",
+     "yes"
+    ],
+    [
+     "BOOYZEN Pieter J. 1904–1937 — the photograph, read",
+     "ONE WORD CARRIES THE WHOLE STONE",
+     "“HIER RUS — MY GELIEFDE SEUN — PIETER J. BOOYZEN — GEB. 29 DES. 1904 — OORL. 7 JUNIE 1937 — NA DIE KRUIS DIE KROON.” Both dates confirm this archive exactly. THE READING IS IN THE SECOND LINE: “MY geliefde seun”, not “ONS” — ONE surviving parent, not two. His mother had been dead SEVEN YEARS. So his father cut the stone, and then lay down beside them both fourteen years later. THE GRAMMAR OF THE INSCRIPTIONS GIVES THE ORDER THE HOUSEHOLD WENT IN.",
+     "yes"
+    ],
+    [
+     "BOOYZEN Catharina Johanna Helena nee BEYLEVELDT 1855–1937 — the photograph, read",
+     "A FOURTH BOOYZEN IN THE SAME GROUND, AND NO CONNECTION THIS ARCHIVE CAN FIND",
+     "“HIER RUS — CATHARINA JOHANNA HELENA BOOYZEN (GEB. BEYLEVELDT) — GEB. 7 JANUARIE 1855 — OORL. 16 MAART 1937.” The Cape Province civil register carries her as BOOYZEN BYLEVELD LANGENBOG BOOYZEN — a chain of surnames that is its own biography — and dates her birth 1857 where the stone says 1855. Her Cape probate names her husband JOHANNES HENDRIK. SHE DIED TWELVE WEEKS BEFORE PIETER J. WENT INTO THE SAME CEMETERY. Same surname, same town, same year: exactly the shape that gets two families welded into one. Written down as a negative rather than left out.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The Silverton pillar, matched name by name against the 1940 estate",
    "n": "Twelve household names, eleven legal ones — and a twelfth child",
    "d": "14 Sep 2026",
