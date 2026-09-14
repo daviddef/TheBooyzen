@@ -11,6 +11,13 @@
  "rows": [
   [
    "14 Sep 2026",
+   "“148 rows read of 184 — THIRTY-SIX DOCUMENTS WERE NOT REACHED, and this archive is not going to call 148 a complete enumeration”",
+   "The caution was right in spirit and wrong in fact, and the fact is worse. ALL TEN PAGES HAD BEEN WALKED. The thirty-six were not unreached — THEY WERE THROWN AWAY BY THIS ARCHIVE'S OWN ROW FILTER, which required a description field longer than three characters and so silently dropped every row whose description column the index leaves short or blank. Re-run without that condition the same query returns 194 rows, 184 of them unique: THE EXACT COUNT. This archive published a scope caveat that blamed the source for a hole it had dug itself — which is the same failure as the blank Name column, one layer up: A FILTER THAT DROPS WHAT IT DOES NOT RECOGNISE LOOKS EXACTLY LIKE AN ARCHIVE THAT DOES NOT HOLD IT. The thirty-six turn out to include SEVEN ANGLO-BOER WAR COMPENSATION CLAIMS BY BOOYZENS IN THE MARICO DISTRICT.",
+   "process",
+   "/documents/#naairs-three"
+  ],
+  [
+   "14 Sep 2026",
    "Martha Angeline Kolbe, sixty days old, was “BURIED AT VOLKSRUST”, and Volksrust held a concentration camp",
    "Both halves withdrawn, six hours after publishing. HER STONE IS IN WAKKERSTROOM MAIN CEMETERY. The index this archive read gives the burial as “Volksrust, Eastvaal District Council, Mpumalanga” — and that is a DISTRICT MUNICIPALITY, not a town; Wakkerstroom lies inside it. This archive read a modern administrative area as a place of burial, which is a failure of reading and not of the source. WITH THE TOWN GOES THE CAMP. The stone reads “TER GEDACHTENIS VAN ONS GELIEFDE KLEINE”, in Dutch, and the mason's town is cut across its base: NEWCASTLE, twenty-five miles away in Natal. A family stone in a town churchyard, cut by a monumental mason in another colony, is not a camp burial. The care taken in the original entry — “records the burial place without claiming the camp” — was not enough, because naming the camp at all in an entry about a child who died in December 1901 makes the claim whatever the sentence says.",
    "reading",

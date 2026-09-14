@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The 184 enumerated properly — and seven Booyzens claiming war compensation in Marico",
+   "n": "The thirty-six that were missing were missing because of this archive's own filter",
+   "d": "14 Sep 2026",
+   "h": "/documents/#naairs-three",
+   "rows": [
+    [
+     "Re-run the BOOYZEN sweep without the row filter",
+     "194 ROWS, 184 UNIQUE — THE EXACT COUNT",
+     "This morning this archive published “148 of 184 — thirty-six documents were not reached”. ALL TEN PAGES HAD BEEN WALKED. The thirty-six were dropped by a condition in this archive's own harvesting code that required a description longer than three characters, which silently discards every row the index leaves short or blank. A CAVEAT THAT BLAMED THE SOURCE FOR A HOLE THIS ARCHIVE DUG. Withdrawn to /corrections/. It is the same failure as the blank Name column in the Burgersdorp register, one layer up: A FILTER THAT DROPS WHAT IT DOES NOT RECOGNISE LOOKS EXACTLY LIKE AN ARCHIVE THAT DOES NOT HOLD IT.",
+     "yes"
+    ],
+    [
+     "What was hiding in the thirty-six",
+     "SEVEN COMPENSATION CLAIMS BY BURGHERS, MARICO, 1903–1904",
+     "CJC 906/76 JPJ BOOYZEN · CJC 906/77 PJ BOOYZEN · CJC 907/104 GL BOOYZEN · CJC 907/109 JPJ BOOYZEN · CJC 907/123 L BOOYZEN · CJC 907/125 JC BOOYZEN · CJC 907/126 HE BOOYZEN. MARICO IS ONE OF THIS ARCHIVE'S OWN DISTRICTS — Brakfontein, Vaalbank, Koedoesfontein, Zeerust, Driefontein and Zwartruggens are all in or beside it. Seven men of this surname claiming from the state for what the war cost them, in one district, in two years. AND ONE OF THEM IS INITIALLED G.L. NONE IS READ.",
+     "yes"
+    ],
+    [
+     "And the oldest Booyzen paper in the country",
+     "CJ 2633 · 29 — BOOYZEN, CHRISTINA. TESTAMENT. 1779",
+     "Also CO 3879 · 521, “MEMORIALS RECEIVED. CHRISTINA BOOYZEN, WIDOW OF WW TEUTER”, 1810 — and the Cape of Good Hope Government Gazette of 1 January 1830 carries “CHRISTINA BOOYZEN, Widow of WILLEM WOUTER VENTER, aged 79 years”. TEUTER AND VENTER MAY WELL BE ONE CLERK'S HAND READ TWO WAYS. Not this family so far as anything shows, and set down because a 1779 will is older than anything this archive has.",
+     "part"
+    ],
+    [
+     "Item 13 — the six missing Silverton children, asked of the estate index",
+     "ONE OF THE SIX, AND HER HUSBAND'S NAME",
+     "TAB MHG 4300/51: “VERMEULEN, MICHAEL JOHANNES, 1951. PREDECEASED SPOUSE ELSIE KATRINA VERMEULEN. SURVIVING SPOUSE BEATRIX MAGDALENA CATHARINA VERMEULEN (BORN BOOYZEN).” THAT IS BETIE. She was his second wife and she outlived him. Found by putting VERMEULEN and BOOYZEN to the index TOGETHER — the relationship trick again, not a name search.",
+     "yes"
+    ],
+    [
+     "The other five — Ousie, Evert, Pietie, Johan, Hennie",
+     "NOT IDENTIFIABLE, AND NOT GUESSED",
+     "LUUS with BOOYZEN returns NOTHING. The 184 hold four Petrus Jacobus Booyzen estates and a Johann Frederik of 1974, and this archive already has SIX men called Petrus Jacobus in this family — so a match on a forename is worth nothing here. FIVE OF THE TWELVE SILVERTON CHILDREN REMAIN UNPLACED and this archive would rather say so than fill them in.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The Piet Retief and Wakkerstroom stones, read",
    "n": "A possible date for the Settler's twin, and six more great-grandchildren",
    "d": "14 Sep 2026",
