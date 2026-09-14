@@ -11,12 +11,13 @@ const { title, description = "", dek, eyebrow, bare, noindex } = Astro.props;
 const SITE = "The Booyzen Archive";
 const nav = [
   ["Start", [["/", "Home"], ["/trees/", "The trees"], ["/tree/", "Our line, drawn"], ["/atlas/", "The Atlas"], ["/timeline/", "The Timeline"]]],
-  ["Our line", [["/direct-line/", "The Spine"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"]]],
+  ["Our line", [["/direct-line/", "The Spine"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"], ["/name/", "The Name"]]],
   ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"], ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
-  ["The work", [["/documents/", "The Documents"], ["/gallery/", "The Plates"], ["/name/", "The Name"], ["/namesakes/", "The Namesakes"]]],
-  ["People & places", [["/people/", "The People"], ["/households/", "Households"], ["/marriages/", "Marriages"], ["/register/", "The Register"], ["/places/", "Places"]]],
-  ["Evidence", [["/method/", "Method"], ["/changes/", "What Changed"], ["/disputed/", "Disputed"], ["/corrections/", "Corrections"], ["/open-questions/", "Open Questions"], ["/searched/", "What Has Been Read"], ["/research-log/", "Research Log"], ["/errands/", "Errands"], ["/sources/", "Sources"]]],
+  ["The work", [["/documents/", "The Documents"], ["/gallery/", "The Plates"], ["/namesakes/", "The Namesakes"]]],
+  ["People & places", [["/people/", "The People"], ["/register/", "The Register"], ["/households/", "Households"], ["/marriages/", "Marriages"], ["/places/", "Places"]]],
+  ["Evidence", [["/disputed/", "Disputed"], ["/errands/", "Errands"], ["/sources/", "Sources"], ["/searched/", "What Has Been Read"], ["/open-questions/", "Open Questions"], ["/corrections/", "Corrections"], ["/changes/", "What Changed"], ["/research-log/", "Research Log"], ["/method/", "Method"]]],
 ];
+
 const here = Astro.url.pathname;
 /* which of the seven this is, worked out the same way the ring does */
 const thisArchive = ring.archives.find(
