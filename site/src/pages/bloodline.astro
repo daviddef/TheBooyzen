@@ -1,0 +1,26 @@
+---
+/* The pedigree this archive keeps, drawn. Each node carries a father and a
+   mother, so the relationships are the structure of the tree rather than
+   anything matched. Nodes are keyed by their path through it: a pedigree
+   asserts positions, and the same man standing at two places in one is a claim
+   about the tree, not a person to merge. */
+import Base from "../layouts/Base.astro";
+import Bloodline from "@daviddef/archive-kit/components/Bloodline.astro";
+import { graph, components, fromPedigree } from "@daviddef/archive-kit/lib/bloodline.js";
+import "@daviddef/archive-kit/styles/bloodline.css";
+import ped from "../data/pedigree.json";
+
+const people = graph(fromPedigree(ped.root));
+const comps = components(people);
+const shape = (s) => {
+  const p = people[s];
+  return (p.parents.length ? 1000 : 0) + (p.children.length ? 1000 : 0) + p.parents.length + p.children.length;
+};
+const start = comps[0] ? [...comps[0]].sort((a, b) => shape(b) - shape(a))[0] : null;
+---
+<Base
+  title="Blood relatives"
+  eyebrow={`${Object.keys(people).length} people on the pedigree`}
+  dek="Choose a person and the chart is built around them. This archive records its line as a pedigree, so what is drawn here is exactly what that tree asserts — both parents at every step, as far back as it goes.">
+  <Bloodline people={people} start={start} total={Object.keys(people).length} />
+</Base>
