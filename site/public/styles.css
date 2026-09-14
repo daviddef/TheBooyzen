@@ -75,6 +75,20 @@ td{padding:10px 16px 10px 0;border-bottom:1px solid var(--rule);vertical-align:t
    values chosen for a desktop column — 14rem for a label, 8rem for a count —
    and on a 390px screen that fixed 22rem leaves the column carrying the actual
    sentence about nine characters wide, one or two words a line. Below 600px
+   the content decides instead, and the gutters come in. This archive has 145
+   inline cell widths, more than any other. */
+@media (max-width:600px){
+  table th[style*="width"],
+  table td[style*="width"]{width:auto!important;min-width:0!important}
+  th{padding-right:10px}
+  td{padding:9px 10px 9px 0}
+  table{font-size:13px}
+}
+
+/* Tables on a phone. Column widths on this site are written as inline rem
+   values chosen for a desktop column — 14rem for a label, 8rem for a count —
+   and on a 390px screen that fixed 22rem leaves the column carrying the actual
+   sentence about nine characters wide, one or two words a line. Below 600px
    the content decides instead, and the gutters come in. Inline styles can only
    be beaten with !important, which is what it is for. */
 @media (max-width:600px){
