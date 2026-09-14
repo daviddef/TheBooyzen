@@ -2,6 +2,46 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Savoy registers, located — and RootsChat, which could not be used",
+   "n": "an account wall, and a better answer from the National Archives",
+   "d": "14 Sep 2026",
+   "h": "/places/german-savoy-church/",
+   "rows": [
+    [
+     "RootsChat, for the German Lutheran congregations and the Savoy registers",
+     "Account wall",
+     "“You are not allowed to search for posts in this forum. Please login below or register an account.” RootsChat's search is closed to visitors, and registering an account is not something this archive does on the user's behalf. NOT SEARCHED. The question it was going to be asked — where the Savoy chapel registers are — turned out to have a better answer somewhere free and citable, so nothing was lost.",
+     "blocked"
+    ],
+    [
+     "The National Archives Discovery catalogue, instead",
+     "RG 4/4625–4631",
+     "The registers of the GERMAN LUTHERAN CHURCH, SAVOY, STRAND are at The National Archives in series RG 4, the non-parochial registers surrendered to the Registrar General. DEATHS AND BURIALS: RG 4/4625, RG 4/4626, RG 4/4628, RG 4/4631. BIRTHS AND BAPTISMS: RG 4/4627, RG 4/4629. Two of the eight pieces the catalogue returns are marked available for download. THIS MATTERS DIRECTLY: this archive already cites Johan Gottlieb Kolbe's burial there on 26 November 1845, ENTRY 55, GRAVE 7 — and that entry sits in one of the four Deaths and Burials pieces above. The register it came from now has a reference, and can be checked rather than trusted.",
+     "yes"
+    ]
+   ]
+  },
+  {
+   "g": "The London Gazette — free, and it had a document nobody here had looked for",
+   "n": "one notice, and it names his trade, his street and his partner",
+   "d": "14 Sep 2026",
+   "h": "/places/conduit-street/",
+   "rows": [
+    [
+     "text=Kolbe · 1834–1838 · thegazette.co.uk",
+     "ONE notice, 29 September 1836",
+     "The London Gazette, ISSUE 19424, PAGE 1702, published 29 SEPTEMBER 1836. The OCR is rough and the reading is given cleaned, with the original's damage noted: “TAKE notice, that the Copartnership heretofore subsisting between the undersigned, JOHN GOTTLOB KOLBE and DAVID FLETCHER, of CONDUIT-STREET, BOND-STREET, in the County of MIDDLESEX, TAILORS, has b[een dissolved]…” (the scan gives “Coaftnership”, “Gbttlob” and “t'onduit-Sireet”). FOUR THINGS AT ONCE, from a free and citable printed source: the name in the form JOHN GOTTLOB, matching both the 1803 baptism and the 1845 death registration; the trade TAILOR, which this archive had from the death record alone; CONDUIT STREET in 1836 — five years before the census and nine before he died there; and a BUSINESS PARTNER, DAVID FLETCHER, whom this archive had never heard of.",
+     "yes"
+    ],
+    [
+     "What the notice does not say",
+     "Why the partnership ended",
+     "The visible OCR stops at “has b…”. A dissolution notice normally goes on to say from what date, which partner continues the business, and who settles the debts, and both partners sign. None of that has been read: the Gazette's page view is a scanned image rather than text, and the full wording needs the PDF. Recorded as located and part-read, not as read.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "FreeBMD — never used before, and it had exactly one thing to give",
    "n": "the GRO reference for a death this archive already knew the date of",
    "d": "14 Sep 2026",
