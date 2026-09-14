@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "FindMyPast, opened properly for the first time",
+   "n": "one search in the whole project until today",
+   "d": "14 Sep 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "The state of it before today",
+     "ONE query, 9 Sep",
+     "FindMyPast has been used exactly once in this project: a search for MOUNTJOY born about 1782, which returned 12,984 results and was abandoned as untractable. That is the whole of it. Every British and Irish wall in this archive — John Barry of Bilsdale, John Augustus Barry born at sea to a mother “born Neagle”, James Montjoy the saddler, the Kolbes in London, the Downings in Shoreditch — had never been put to it.",
+     "part"
+    ],
+    [
+     "Search syntax, established",
+     "KeywordsPlace, not placename",
+     "Recorded because it cost time. The results URL takes FirstName, LastName, YearOfBirth, YearOfDeath, EventYear, Keywords and KEYWORDSPLACE. A place passed as “placename” is SILENTLY IGNORED — the same search returned 20,309 results with it and 12 with KeywordsPlace. Anyone repeating this work should check the result count changes when they add a place.",
+     "yes"
+    ],
+    [
+     "LastName=Barry · FirstName=John · KeywordsPlace=Bilsdale, Yorkshire",
+     "THE YORKSHIRE MAN, DOCUMENTED",
+     "Yorkshire, Archbishop of York Marriage Licences Index 1613–1839, record GBPRS/OR/YORK/M/00137233/1, page 21, sequence 3: “JOHN BARRY, age 42, birth year 1796, residence parish BILSDALE MIDCABLE, Yorkshire”, licence dated 2 OCTOBER 1838, intended marriage at HELMSLEY, to MARGARET JACKSON, 35, of the parish of BEADLAM, Yorkshire. Question 6 says one profile holds two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape — and until now the Yorkshire half was an assertion off a tree. IT IS NOW A RECORD, with a parish, an age, a date and a wife. It does not by itself prove the two are different men, since a man of 42 marrying in 1838 could have had an earlier family; what it does is give the archive a second John Barry it can actually hold.",
+     "yes"
+    ],
+    [
+     "FirstName=John Augustus · LastName=Barry · Keywords=Neagle",
+     "Two hits, both American",
+     "Westfield, Hampden, Massachusetts, 1861. Not this family. Broadening to LastName=Barry with Keywords=Neagle gave 193, overwhelmingly directories and North America. The mother's surname from the 1915 death notice is not, on this evidence, a way into the Irish records by keyword alone.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "FamilySearch Full-Text — four South African collections this archive had never opened",
    "n": "a name-indexed land register, and Booyzen in it",
    "d": "14 Sep 2026",
