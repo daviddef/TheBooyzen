@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Atlas from "@daviddef/archive-kit/components/Atlas.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import pl from "../data/places.json";
@@ -43,6 +44,26 @@ groups.forEach((g, i) => {
       dek="Where this family actually was, plotted from latitude and longitude. A band of Karoo and north-eastern Cape districts, a jump of four hundred miles to the Rand — and, at the top left, a district that shares the surname and is not the family at all."
 
 >
+  <Atlas
+    dataUrl={u("/atlas-data.json")}
+    cats={[
+      ["cape",   "The Karoo and the north-eastern Cape", "#9A6B18"],
+      ["rand",   "The Rand and the Transvaal",           "#A8442B"],
+      ["london", "London — the Montjoy end",             "#1F5C6B"],
+      ["away",   "Further out",                          "#2E7C8C"],
+      ["other",  "Elsewhere",                            "#6E6A86"],
+    ]}
+    bounds={[[-34.6, 16.0], [-22.0, 33.0]]}
+    homeLabel="Back to southern Africa"
+    placeholder="Graaff-Reinet · Indwe · Johannesburg · Soho"
+    hint="Click a marker for what happened there, in order, and who the archive puts in it."
+  >
+    <p class="cap" style="margin-top:6px">Five of the fifty-one places are not drawn here: four
+    London parishes and a street, which sit off the southern African view, and one Brisbane. The
+    plot below is this archive's own and shows the band and the jump without borrowing anyone's
+    coastline.</p>
+  </Atlas>
+
 <section class="blk">
   <div class="scroll">
     <svg viewBox={`0 0 ${W} ${H}`} width={W} style="min-width:680px;display:block" role="img"
@@ -66,6 +87,8 @@ groups.forEach((g, i) => {
 
       <polyline points={path.map(p => `${x(p.lon)},${y(p.lat)}`).join(" ")}
                 style="fill:none;stroke:var(--terra);stroke-width:1.4;opacity:.55" stroke-dasharray="5 4" />
+
+
 
       {groups.map(g => (
         <a href={u("/places/" + g.head.slug + "/")}>
