@@ -2,6 +2,62 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Two answers in one morning — Pretoria on binding, and the forum on Question 0",
+   "n": "Neither came from a search. Both came from having asked somebody.",
+   "d": "15 Sep 2026",
+   "h": "/documents/#question-zero",
+   "rows": [
+    [
+     "The letter to the National Archives in Pretoria, 12 September — six Transvaal estate files",
+     "ANSWERED. “ALL THE ESTATE FILES YOU ARE REQUESTING ARE BOUND FILES.”",
+     "Ms Mavis Xaba, Archivist Assistant, Reading Room, NARSSA: “Unfortunately, we are therefore unable to scan these files and provide complete digital copies by email.” THAT IS NOT A REFUSAL, IT IS A PHYSICAL FACT ABOUT THE RECORD — the paper is sewn into volumes and will not lie on a scanner. It explains a great deal about what has and has not been filmed, and it retires an assumption this archive has been making for weeks: that the obstacle was willingness or staff time. She put a private researcher who specialises in estate files on copy. ENGAGING HER IS THE USER'S DECISION AND THE USER'S MONEY, and this archive does not spend either.",
+     "part"
+    ],
+    [
+     "And whether any of the six references was wrong",
+     "SHE CORRECTED NONE OF THEM — INCLUDING MHG 52653",
+     "The letter singled out TAB MHG 52653 (BOOYZEN, JACOBUS NICHOLS, 1923) as the one file of the six that could not be found on microfilm at all, and asked to be told if the reference needed correcting. THE REPLY SAYS “ALL THE ESTATE FILES YOU ARE REQUESTING ARE BOUND FILES” AND NAMES NO EXCEPTION. Weak evidence — a general sentence is not a file-by-file check — but it is the first thing this archive has had suggesting that reference is real.",
+     "part"
+    ],
+    [
+     "G2G — does de Villiers & Pama (1981) still place Petrus Jacobus under JAN?",
+     "“YES. b3c4d7 b. 21 SEPT 1788 UNDER JAN b3c4.”",
+     "Riël Smit, who owns the 1981 edition this archive has never seen. THAT WAS THE LAST ESCAPE ROUTE. The standing objection was that a revision can move a man, and if Pama had relocated Petrus Jacobus the 1876 death notice would stand unopposed. IT DID NOT.",
+     "yes"
+    ],
+    [
+     "Is there any marriage of a Gerhardus Lodewicus to a Magdalena de Beer?",
+     "A CAPE GENEALOGIST WENT LOOKING AND FOUND NONE",
+     "Pieter van Zyl: “I searched for a marriage between a Gerhardus Lodewicus and Magdalena de Beer but could not find one.” The pairing on line 3 of the 1876 Sterfkennis exists in no marriage record anybody has been able to produce. THE MOTHER ON THAT LINE AGREES WITH THE BOOK EXACTLY; the father does not.",
+     "no"
+    ],
+    [
+     "Van Zyl's guess from memory — that a CHILD of Petrus Jacobus carried the name",
+     "HE IS RIGHT, AND THE CHILD IS NINE LINES LOWER ON THE SAME SHEET",
+     "Line 3 of Notice 678: parents, “GERTHARDUS LÖDEWIKUS BOOIJSEN” and “Magdalena de Beer”. Line 12 of Notice 678: eight children, all of age, the fifth being “JAN GERTHARDUS LODEWIKUS BOOIJSEN”. THE NAME IN THE PARENTS' BOX IS THE BACK HALF OF A SON'S NAME, IN ONE CLERK'S HAND, ON ONE PAGE — and the half that was dropped is JAN, which is the name the book gives the father. A grandson named for his grandfather is the ordinary thing in this family, and this archive has a page proving it.",
+     "yes"
+    ],
+    [
+     "Who was doing the remembering",
+     "HENDRIK STEFANUS, THE SEVENTH CHILD, WHO SIGNED IT",
+     "H. S. Booijsen countersigned the form beside the veldkornet, four lines below his own name in the children's list. Born about 1828. His grandfather Jan married in 1770 and remarried in 1793, and van Zyl puts his death more than forty years before 1876. HE WAS WRITING THE NAME OF A MAN HE HAD ALMOST CERTAINLY NEVER MET, about a father who was eighty-eight.",
+     "yes"
+    ],
+    [
+     "Is the pedigree spine being moved to Jan",
+     "NO, AND THIS IS DELIBERATE",
+     "Everything against Gerthardus Lodewikus is SECONDARY. De Villiers is a printed genealogy of 1893; Pama's revision agreeing with it is one book agreeing with its own earlier edition, not two sources agreeing. Against it stands a PRIMARY document signed by a son. THIS ARCHIVE DOES NOT LET A BOOK OVERRULE A PAGE BECAUSE THE BOOK IS TIDIER. Jan Booijsen is entered as INFERRED, not documented, and the chart still shows Gerthardus Lodewikus at the top, marked open.",
+     "part"
+    ],
+    [
+     "What would actually end it",
+     "THE BAPTISM REGISTER ENTRY OF 21 SEPTEMBER 1788",
+     "DE VILLIERS IS NOT A SOURCE, HE IS AN INDEX TO ONE. His entry for Petrus Jacobus was compiled from the Dutch Reformed doopregister, and that entry names the father in a contemporary hand, written within days of the birth, by somebody with no reason to be confused. Graaff-Reinet, Drakenstein and Stellenbosch for September 1788, in that order — b3c4 Jan was a burgher at Drakenstein and the family is at Graaff-Reinet by 1812. FIRST ITEM ON THE ERRANDS PAGE.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Parts 2 and 3 of the Cape genealogies, downloaded at last — and the name David Schalk has a source",
    "n": "Riël Smit posted the links on 14 September. This archive read Part 1 and forgot the other two.",
    "d": "15 Sep 2026",
