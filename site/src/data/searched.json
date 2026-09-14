@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Free State archives, opened for the first time",
+   "n": "Commandant Kolbe's estate — and his widow, filed under another man's name",
+   "d": "15 Sep 2026",
+   "h": "/errands/",
+   "rows": [
+    [
+     "NAAIRS · VAB · KOLBE — a depot this archive had never searched",
+     "146 DOCUMENTS",
+     "The Free State repository has been sitting there through the whole project. It was opened the morning after the newspapers revealed that the Settler's eldest son lived and died in the Orange Free State.",
+     "yes"
+    ],
+    [
+     "His estate",
+     "VAB MHG K71 — KOLBE, JOHN GERSON ELEAZAR",
+     "“EGGENOTE ANNA JACOBA (GEBORE VAN DER MERWE)”, 1868. The obituary gave him twelve children and named none of them. A DEATH NOTICE LISTS THE CHILDREN. This is the document that would answer the largest gap in this archive, and it is not filmed.",
+     "part"
+    ],
+    [
+     "And the one that is better",
+     "VAB MHG M777 — “MCCABE, ANNA JACOBA. NOOIENSVAN VAN DER MERWE. EGGENOTE JOHN GHERSON”, 1896",
+     "SHE REMARRIED. Widowed in 1868 with twelve children, she died twenty-eight years later as MRS MCCABE, which is why no search for a Kolbe widow would ever have found her. HER NOTICE WOULD NAME THE SAME TWELVE AS ADULTS — with their married surnames, which the 1868 one cannot. Found by searching the surname KOLBE and reading a row that is filed under M.",
+     "yes"
+    ],
+    [
+     "A coincidence recorded rather than followed",
+     "THERE IS A SECOND KOLBE–McCABE MARRIAGE",
+     "ROSA MAGDALENA KOLBE, baptised at Bloemfontein on 6 July 1890, daughter of FREDERIK FORTUNA KOLBE and MARIA PETRONELLA ELIZABETH ANTOINETTA MCCABE. Two Kolbe–McCabe marriages in one small Free State world, twenty years apart. THIS ARCHIVE DOES NOT KNOW WHETHER THAT IS ANYTHING and writes it down so that it is not discovered twice.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The London end — item 5, and a tool that will not be driven",
    "n": "FreeBMD, for the seven Kolbe brothers",
    "d": "14 Sep 2026",
