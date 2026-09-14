@@ -5,7 +5,7 @@ import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
 import pl from "../../data/places.json";
 import pj from "../../data/people.json";
-import Ptree from "../../components/Ptree.astro";
+import PersonTree from "../../components/PersonTree.astro";
 import { treeFor } from "../../lib/kin.js";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
@@ -39,7 +39,7 @@ const groups = Object.entries(byPage);
       {selves.length > 1 && (
         <h2 style={i ? "margin-top:34px" : "margin-top:0"}>{self.n}<span class="m" style="font-weight:400">{` · ${self.b} – ${self.d}`}</span></h2>
       )}
-      <Ptree person={self} showKey={i === 0} />
+      <PersonTree person={self} showKey={i === 0} />
       <p class="cap" style="margin:-10px 0 22px">
         <a href={u("/register/?q=" + encodeURIComponent(self.n.replace(/[“”]/g, "")))}>
           Every record naming {self.n.replace(/[“”]/g, "")} &rarr;</a>

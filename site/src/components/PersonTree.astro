@@ -1,0 +1,93 @@
+---
+/* The lineage chart. Plain boxes and rules — no SVG, because this archive once
+   injected links into an SVG tree and quietly erased half the names in it.
+
+   The chart is the kit's, shared with five sibling archives. Two things stay
+   here because they are this archive's own:
+
+   Children hang under the marriage they came from, not in one heap. This
+   archive tracks unions, so it can say "three children with Wilhelmina" and
+   the others cannot.
+
+   And it counts. The caption says how many of the relationships on the chart
+   are written in a record somebody has read, how many are inferred from one,
+   and how many are only the family tree — because a chart that draws all three
+   with the same confidence is the thing this archive exists to avoid.
+
+   "inferred" is the one word here no sibling archive has: stated in no record,
+   but following from one. */
+import { u } from "../lib/url.js";
+import { treeFor, dates, provenance } from "../lib/kin.js";
+import PersonTree from "@daviddef/archive-kit/components/PersonTree.astro";
+import "@daviddef/archive-kit/styles/persontree.css";
+
+const { person, showKey = true } = Astro.props;
+const t = treeFor(person);
+const prov = provenance(t);
+
+/* This archive called a read record "doc" and the other five call it
+   "register". One idea, two words, and the CSS forked along the seam. The word
+   the reader sees is unchanged. */
+const CLS = { line: "via-line", doc: "via-register", inf: "via-inferred", tree: "via-tree" };
+const viaLabel = { line: "direct line", doc: "record", inf: "inferred", tree: "family tree" };
+
+const row = (o, via, slug, showVia = true) => ({
+  name: o.n,
+  href: u("/who/" + slug + "/"),
+  dates: dates(o),
+  cls: CLS[via],
+  mark: showVia ? viaLabel[via] : undefined,
+  title: "Recorded by: " + viaLabel[via],
+});
+
+const warns = [
+  ...(t.origin && t.origin.f.warn ? [t.origin.f.warn] : []),
+  ...t.unions.filter((x) => x.f.warn).map((x) => x.f.warn),
+];
+---
+<PersonTree
+  self={{ name: person.n, dates: dates(person),
+          gen: person.g ? `generation ${person.g} \u2014 see the spine \u2192` : "",
+          genHref: person.g ? u("/direct-line/") : "",
+          note: person.g ? "" : person.l }}
+  parents={t.parents.map((p) => row(p, t.parentVia, p.slug))}
+  spouses={t.unions.filter((un) => un.spouse)
+                   .map((un) => row(un.spouse, un.f.via, un.spouse.slug))}
+  childGroups={t.unions.filter((un) => un.kids.length > 0).map((un) => ({
+    label: `${un.kids.length} ${un.kids.length === 1 ? "child" : "children"}`
+         + (un.spouse ? " with " + un.spouse.n.split(" ")[0] : ""),
+    rows: un.kids.map((k) => ({ ...row(k, k.via, k.slug), small: true })),
+  }))}
+  siblings={t.siblings.map((s) => row(s, s.via, s.slug, false))}
+  palette={{ tree: "var(--ink-3)", "name-font": "var(--serif)", "name-size": "15px",
+             "name-colour": "var(--ink)", via: "var(--ink-3)" }}
+>
+  {showKey && (
+    <span slot="keys">
+      <span class="key"><i class="sw line"></i> the direct line, argued on <a href={u("/direct-line/")}>the line</a></span>
+      <span class="key"><i class="sw doc"></i> from a record this archive has read</span>
+      <span class="key"><i class="sw inferred"></i> inferred, not stated</span>
+      <span class="key"><i class="sw tree"></i> from the family tree, unverified</span>
+    </span>
+  )}
+  <Fragment slot="before-caption">
+    {warns.map((w) => <p class="warn cap">{w}</p>)}
+  </Fragment>
+  <Fragment slot="notes">
+    <span style="display:block;margin-top:8px">
+      <b>{prov.doc === prov.n
+            ? `All ${prov.n} relationships shown`
+            : `${prov.doc} of the ${prov.n} relationships shown`}</b>{" "}are written in a record this archive has read.
+      {prov.inf > 0 && <span>{` ${prov.inf} ${prov.inf === 1 ? "is" : "are"} inferred from one.`}</span>}
+      {prov.tree > 0 && <span>{` ${prov.tree} ${prov.tree === 1 ? "comes" : "come"} from the family tree and ${prov.tree === 1 ? "is" : "are"} unverified.`}</span>}
+      {t.origin && t.origin.f.src && (
+        <span>{" "}<a href={u(t.origin.f.src[1])}>{t.origin.f.src[0]} &rarr;</a></span>
+      )}
+    </span>
+    {t.origin && t.origin.f.why && <span style="display:block;margin-top:6px">{t.origin.f.why}</span>}
+    {t.unions.filter((x) => x.f.why).map((x) => (
+      <span style="display:block;margin-top:6px">{x.f.why}
+        {x.f.src && <span>{" "}<a href={u(x.f.src[1])}>{x.f.src[0]} &rarr;</a></span>}</span>
+    ))}
+  </Fragment>
+</PersonTree>
