@@ -2,6 +2,32 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The London end — item 5, and a tool that will not be driven",
+   "n": "FreeBMD, for the seven Kolbe brothers",
+   "d": "14 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "Why FreeBMD was the right place to start",
+     "SEVEN BROTHERS DIED BEFORE DECEMBER 1844",
+     "The 1844 obituary makes George Augustus “the last remaining of EIGHT SONS of John Godloff Kolbe Esq. of Brunswick-square”. Civil registration in England begins in SEPTEMBER 1837, so any brother who died between 1837 and 1844 should be in the GRO death index — and FreeBMD has transcribed that period. THE OTHERS DIED TOO EARLY AND WILL NEED PARISH REGISTERS.",
+     "part"
+    ],
+    [
+     "The search itself",
+     "THE FORM WILL NOT BE DRIVEN FROM A SCRIPT, AND THIS IS RECORDED AS A TOOL FAILURE",
+     "The visible submit buttons are “Find Additional” and “View Saved”, both of which want a saved-search FILE — clicking one returns “You must supply the name of a file containing a saved search”. The real Find button is written into the page by JavaScript and is not in the form's element list. Posting the fields directly with find=Find returns a 105 KB page containing the query echoed back and NO RESULT ROWS. NO SEARCH WAS ACTUALLY RUN. NOTHING IS RECORDED AS A NEGATIVE, because nothing was asked.",
+     "void"
+    ],
+    [
+     "Items 6 and 7, which were queued behind it",
+     "NOT STARTED",
+     "BRUNSWICK SQUARE AGAINST CONDUIT STREET needs London directories; the CAPE MEDICAL PRACTICE needs colonial medical registers. Both were to follow the FreeBMD run and neither was begun.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The Pietermaritzburg address, checked before anything is posted",
    "n": "Item 20 — and the email is in doubt",
    "d": "14 Sep 2026",
