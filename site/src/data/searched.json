@@ -2,6 +2,74 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Wakkerstroom proved a second time — not by a name but by a household",
+   "n": "Frederik Fortunatus Kolbe's eight children",
+   "d": "14 Sep 2026",
+   "h": "/kolbe/#north",
+   "rows": [
+    [
+     "q.surname=Kolbe · q.givenName=Angeline · South Africa — the errand as set",
+     "ANGELINE KOLBE, AGED 28, DIED WAKKERSTROOM 15 NOVEMBER 1900",
+     "The record is thin and honest about it: female, surname Kolbe, aged 28 years, died 15 Nov 1900 at Wakkerstroom, registered in the Transvaal civil deaths. NO PARENTS, NO HUSBAND, NO CAUSE. SHE IS NOT THE VOLKSRUST CAMP GRAVE the errand asked her to be reconciled with — that is a G.E. Kolbe aged 35, and Angeline is 28, a year earlier, in a different town, when the Volksrust camp was barely open. THE RECONCILIATION FAILS, and the right answer is that they are two women.",
+     "part"
+    ],
+    [
+     "The same search, read across",
+     "AND A SIXTY-DAY-OLD CHILD AT VOLKSRUST",
+     "MARTHA ANGELINE KOLBE, born 9 October 1901, died 8 December 1901, buried at VOLKSRUST. Age on the civil death register: 0. She lived sixty days and every one of them was inside the war. Volksrust held a concentration camp. This archive has read no camp register naming her and so records the burial place and not the cause — but it will not pretend the date is a coincidence either.",
+     "yes"
+    ],
+    [
+     "q.surname=Kolbe · q.fatherGivenName=Frederik Fortunatus — ask the index for a FATHER, not a person",
+     "EIGHT CHILDREN, AND A WIFE THIS ARCHIVE DID NOT KNOW EXISTED",
+     "FREDERIK FORTUNATUS KOLBE, the Settler's tenth child, born at Bethulie in 1839, married ELIZABETH JOHANNA DU TOIT. Their children are baptised at COLESBERG in 1863, 1865, 1868, 1873, 1876 and 1877; at HOPETOWN in 1870; and at BETHULIE in 1881, which is his own birthplace forty-two years on. The eldest is a GEORGE AUGUSTUS, named for a grandfather nineteen years dead. This archive had held Frederik Fortunatus as a name and a date of birth and nothing else. The relationship search is what opened him.",
+     "yes"
+    ],
+    [
+     "The eldest son, followed to the far end",
+     "GEORGE AUGUSTUS KOLBE — COLESBERG 1863 TO WAKKERSTROOM 1954, AGED 91",
+     "Baptised Colesberg 11 Oct 1863, born 29 July. Died Wakkerstroom 28 September 1954, aged 91 — AND 29 JULY 1863 TO 28 SEPTEMBER 1954 IS EXACTLY 91. Married MARTHA SOPHIA KLOPPER, aged seventeen, about 1885; she died 14 Oct 1950 aged 83. A PRISONER OF WAR IN 1902, aged 40, residence Wakkerstroom — the fourth man in this archive taken in that war and the only one who is not a Booyzen. His daughter Maria Johanna's 1953 estate file names the household outright: father George Augustus Kolbe, mother Martha Sophia Klopper.",
+     "yes"
+    ],
+    [
+     "q.surname=Kolbe · q.anyPlace=Wakkerstroom, read against the Colesberg fonts",
+     "THREE OF THE EIGHT ARE IN THE EASTERN TRANSVAAL",
+     "MARGARET HARRIET, baptised Hopetown 1870, marries Dirk Jacobus Aspheling van der Spuy at Wakkerstroom aged 24. ELIZABETH JOHANNA, baptised Colesberg 1876, marries John Charles Pattison at Wakkerstroom aged 21. Both ages agree with the font to the year. WITH THEIR BROTHER THAT IS THREE OF EIGHT, FOUR HUNDRED MILES FROM WHERE THEY WERE CHRISTENED. Yesterday the convergence was proved by a name — Frederik Fortunatus DOWNING Kolbe, a London surname in the Transvaal. THIS IS THE BETTER PROOF: a name can be coincidence, a family moving cannot.",
+     "yes"
+    ],
+    [
+     "Daniel Jakobus Kolbe, civil death 1918",
+     "THE INDEX MANGLED THE LINE THAT PROVES THE DESCENT",
+     "His death registration carries a relationship where a name should be: “G A Kolbe's son”, which the index has read as a surname and printed as “G A KOLBELSSON”. That misprint is what ties the two 1918 graves — Daan, 19 June, aged 25, and Freddie, 2 November, aged 27 — to the old man who outlived them by thirty-six years. FOUR MONTHS APART IN 1918 IS THE INFLUENZA.",
+     "yes"
+    ],
+    [
+     "q.surname=Kolbe · q.givenName=George Augustus, all of them",
+     "AT LEAST TWO MEN OF THAT NAME IN THE TRANSVAAL AT ONCE — AND THIS IS A WARNING, NOT A FIND",
+     "One born COLESBERG 1863, dead Wakkerstroom 1954 aged 91. One born BURGERSDORP 1861, dead Standerton 8 November 1934 aged 73 — Burgersdorp being where the Settler is buried and where his twin son George Augustus was born in 1836. A third George Augustus, aged 27, marries SUSANNA MARGARETHA SWART in the Free State register with residence given as Wakkerstroom, and THIS ARCHIVE CANNOT SAY WHICH MAN THAT IS. A “Susanna Margaretha DOWNING Kolbe” also stands in the Transvaal probate index — a second carrier of the London surname, unattached. Set down so that nobody later merges two men into one.",
+     "part"
+    ],
+    [
+     "q.surname=Klopper · q.givenName=Martha Sophia",
+     "THE MARRIAGE, AND HER OWN DEATH",
+     "“George Augustus Kolbe and Martha Sophia Klopper”, Transvaal civil marriages 1870–1931, the bride aged 17 and born 1868. And “Martha Sophia Klopper Kolbe”, born 1867, died 14 October 1950 aged 83. SHE IS THE FOURTH BRIDE IN THIS ARCHIVE MARRIED BEFORE EIGHTEEN, and the third in the Kolbe line — after Margaret Downing at fifteen and the Settler himself at sixteen.",
+     "yes"
+    ],
+    [
+     "Volksrust camp register, for Martha Angeline Kolbe",
+     "NOT READ",
+     "The burial is indexed from BillionGraves, not from a camp register. Until a camp register is read this archive records that a two-month-old was buried at Volksrust in December 1901 and does not write the word camp into her entry. The register is the next errand.",
+     "no"
+    ],
+    [
+     "Angeline Kolbe, against the eight Colesberg fonts",
+     "SHE FITS NONE OF THEM",
+     "Aged 28 in November 1900 puts her birth near 1872. Martha Angelina was born January 1868 and Catharina Maria Louisa July 1873; neither is 28 in 1900. She is most likely a daughter-in-law, married into the surname. THIS ARCHIVE WILL NOT GUESS WHICH SON.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The entity audit — sweeping for other things that travel through data",
    "n": "An arrow entity printed at the reader on the home page",
    "d": "14 Sep 2026",

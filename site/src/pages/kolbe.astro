@@ -15,6 +15,16 @@ const kids = [
   ["Keetor Peter Benjamin", "1840", "Colesberg", ""],
   ["Johan Casimir “Casiner”", "1844", "Bethulie", "born the year his father died"],
 ];
+const north = [
+  ["George Augustus", "29 Jul 1863", "Colesberg", "11 Oct 1863", "dies at Wakkerstroom 1954, aged 91"],
+  ["Gabriel Stephanus", "11 Mar 1865", "Colesberg", "23 Apr 1865", ""],
+  ["Martha Angelina", "21 Jan 1868", "Colesberg", "22 Mar 1868", ""],
+  ["Margaret Harriet", "31 Aug 1870", "Hopetown", "16 Oct 1870", "marries at Wakkerstroom"],
+  ["Catharina Maria Louisa", "1 Jul 1873", "Colesberg", "31 Aug 1873", ""],
+  ["Elizabeth Johanna", "1 Mar 1876", "Colesberg", "11 Jun 1876", "marries at Wakkerstroom"],
+  ["Petronella Jacoba Adriana", "2 Oct 1877", "Colesberg", "18 Nov 1877", ""],
+  ["Adriana Henrietta Johanna", "12 Aug 1881", "Bethulie", "23 Oct 1881", "his own birthplace, forty-two years on"],
+];
 ---
 <Base title="The Kolbes"
       eyebrow="Württemberg · Soho · the Nautilus · the Karoo"
@@ -145,6 +155,78 @@ const kids = [
       <b>Frederick Fortunatus Barry (1863)</b> becomes <b>Frederik Fortsenatus Booÿsen (1899)</b> — one
       name carried across three surnames and sixty years, degrading slightly at each handover.
       <a href={u("/women/")}>The women &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk" id="north">
+  <h2>Then the family goes north</h2>
+  <p class="dek">The Settler's tenth child had eight children of his own, and the register that names
+    them was found by asking the index for a father rather than for a person. Three of the eight end up
+    four hundred miles away, in the eastern Transvaal.</p>
+
+  <p style="margin-top:16px"><b>Frederik Fortunatus Kolbe</b>, born at the Bethulie mission station in
+    1839, married <b>Elizabeth Johanna du Toit</b>. This archive did not know she existed until
+    14 September 2026. She is named at eight fonts across eighteen years, and her name holds steady at
+    every one of them but Hopetown, where the clerk wrote <i>Geertruida</i>.</p>
+
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:17rem">Child</th><th>Born</th><th>Baptised at</th><th>On</th><th></th></tr></thead>
+      <tbody>{north.map(([n, b, pl, d, x]) => (
+        <tr><td>{n}</td><td class="m">{b}</td><td>{pl}</td><td class="m">{d}</td><td class="cap">{x}</td></tr>))}</tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:20px">
+    <p>The eldest is another <b>George Augustus</b>, named for a grandfather who had been dead nineteen
+      years. He is baptised at Colesberg on 11 October 1863 &mdash; and he dies at
+      <b>Wakkerstroom</b>, in the eastern Transvaal, on 28 September 1954, <b>aged ninety-one</b>. The
+      age counts exactly from the font. In between he married <b>Martha Sophia Klopper</b>, who was
+      seventeen; their eldest was born at Wakkerstroom in 1886; and in <b>1902 he was a prisoner of
+      war</b>, aged forty, residence Wakkerstroom. He is the fourth man in this archive taken in that
+      war, and the only one of the four who was not a Booyzen.</p>
+
+    <p>Two of his sisters are at Wakkerstroom too. <b>Margaret Harriet</b>, baptised at Hopetown in
+      1870, marries Dirk Jacobus Aspheling van der Spuy there at twenty-four. <b>Elizabeth Johanna</b>,
+      baptised at Colesberg in 1876, marries John Charles Pattison there at twenty-one. In both cases
+      the age on the marriage agrees with the font to the year.</p>
+
+    <p class="note"><b>This is the second proof of the Wakkerstroom connection, and it is the better
+      one.</b> The first was a name: <b>Frederik Fortunatus <i>Downing</i> Kolbe</b>, born at
+      Wakkerstroom in 1891, carrying a London surname that has no business in the eastern Transvaal
+      except through a Shoreditch wedding of 1819. That was decisive but it was a single word on a
+      single record. This is a <em>household</em> &mdash; a father, a mother, eight fonts in three
+      towns, and three of the children turning up together at the far end. Names can be coincidence.
+      A family moving is not.</p>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="panel">
+      <h3 style="margin-top:0">1918, four months apart</h3>
+      <p style="font-family:var(--sans);font-size:14.5px;line-height:1.8">
+        <b>Daniel Jakobus Kolbe</b>, born 3 May 1893, died <b>19 June 1918</b> at Wakkerstroom, aged 25.<br />
+        <b>Frederik Fortunatus Downing Kolbe</b>, born 1891, died <b>2 November 1918</b> at Wakkerstroom, aged 27.
+      </p>
+      <p class="cap" style="margin-top:10px">Two brothers, four months apart, in the year of the
+        influenza. Their father outlived them both by thirty-six years. Daniel's death registration
+        carries the words <b class="m">G A Kolbe's son</b>, which the index mangled into
+        <b class="m">G A Kolbelsson</b> &mdash; and that misprint is the line that ties the graves to
+        the old man.</p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Two women the war took, and one this archive cannot name</h3>
+      <p style="font-family:var(--sans);font-size:14.5px;line-height:1.8">
+        <b>Angeline Kolbe</b>, aged 28, died at <b>Wakkerstroom on 15 November 1900</b>.<br />
+        <b>Martha Angeline Kolbe</b>, born 9 October 1901, died 8 December 1901, <b>buried at
+        Volksrust</b> &mdash; sixty days old.
+      </p>
+      <p class="cap" style="margin-top:10px">Volksrust held a concentration camp, and this archive
+        records the burial place without claiming the cause, because it has read no camp register that
+        names the child. <b>Angeline is not the camp grave NAAIRS holds</b> &mdash; that is a
+        <b class="m">G.E. Kolbe, aged 35</b>, a different age in a different year in a different town.
+        Who Angeline was, this archive does not know.
+        <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+    </div>
   </div>
 </section>
 

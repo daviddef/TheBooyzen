@@ -1396,6 +1396,80 @@
    "lon": 25.1,
    "approx": true,
    "why": "farm unlocated, placed at Colesberg"
+  },
+  {
+   "n": "Wakkerstroom",
+   "k": "Town and district",
+   "r": "Eastern Transvaal",
+   "s": "doc",
+   "w": "WHERE THE SETTLER'S FAMILY ENDED UP, four hundred miles from the font. George Augustus Kolbe the 1820 Settler died at Colesberg in 1844 and is buried at Burgersdorp; his son Frederik Fortunatus baptised eight children at Colesberg, Hopetown and Bethulie between 1863 and 1881; and THREE OF THOSE EIGHT marry or are found at Wakkerstroom in the eastern Transvaal. The eldest, another George Augustus, was born at Colesberg on 29 July 1863 and died here on 28 September 1954, aged ninety-one — a man whose life spans the whole of this archive's South African century. He was a PRISONER OF WAR in 1902. Two of his sons died here in 1918 four months apart, which is the influenza, and one of them carried the London surname DOWNING into the eastern Transvaal, which is what proved the connection. A woman named ANGELINE KOLBE died here on 15 November 1900, aged 28, and this archive cannot say who she was.",
+   "e": [
+    [
+     "1886",
+     "Maria Johanna Kolbe born here, to George Augustus Kolbe and Martha Sophia Klopper"
+    ],
+    [
+     "15 Nov 1900",
+     "Angeline Kolbe dies here, aged 28 — unidentified"
+    ],
+    [
+     "1902",
+     "George Augustus Kolbe a prisoner of war, aged 40, residence Wakkerstroom"
+    ],
+    [
+     "19 Jun 1918",
+     "Daniel Jakobus Kolbe dies here, aged 25"
+    ],
+    [
+     "2 Nov 1918",
+     "Frederik Fortunatus Downing Kolbe dies here, aged 27"
+    ],
+    [
+     "1 Oct 1953",
+     "Maria Johanna Kolbe van der Merwe dies here, aged 67"
+    ],
+    [
+     "28 Sep 1954",
+     "George Augustus Kolbe dies here, aged 91"
+    ]
+   ],
+   "p": [
+    "George Augustus Kolbe of Wakkerstroom",
+    "Frederik Fortunatus Downing Kolbe",
+    "Daniel Jakobus Kolbe",
+    "Maria Johanna Kolbe",
+    "Angeline Kolbe",
+    "Martha Sophia Klopper",
+    "Margaret Harriet Kolbe",
+    "Elizabeth Johanna Kolbe"
+   ],
+   "slug": "wakkerstroom",
+   "lat": -27.353,
+   "lon": 30.144
+  },
+  {
+   "n": "Volksrust",
+   "k": "Town, and a camp",
+   "r": "Eastern Transvaal",
+   "s": "doc",
+   "w": "TWENTY MILES FROM WAKKERSTROOM, ON THE NATAL BORDER, and the place the Kolbe graves are indexed to. Frederik Fortunatus Downing Kolbe married here. And MARTHA ANGELINE KOLBE, born 9 October 1901 and dead on 8 December, is buried here, having lived sixty days inside the war. Volksrust held one of the concentration camps; this archive has not read a camp register that names her and so records the burial and not the cause. The NAAIRS index also holds a camp grave for a G.E. KOLBE, aged 35, which is NOT the Angeline Kolbe who died at Wakkerstroom in 1900 — a different age, a different year and a different town.",
+   "e": [
+    [
+     "1901",
+     "Martha Angeline Kolbe, aged two months, buried here"
+    ],
+    [
+     "c. 1913",
+     "Frederik Fortunatus Downing Kolbe marries Hester Gerbina Susanna Joubert here"
+    ]
+   ],
+   "p": [
+    "Martha Angeline Kolbe",
+    "Frederik Fortunatus Downing Kolbe"
+   ],
+   "slug": "volksrust",
+   "lat": -27.366,
+   "lon": 29.883
   }
  ]
 }
