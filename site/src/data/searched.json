@@ -2,6 +2,56 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The newspapers, worked properly — and the Settler's fourth daughter comes back",
+   "n": "WERDMULLER, ten hits, five of them this family",
+   "d": "14 Sep 2026",
+   "h": "/documents/#werdmuller-1874",
+   "rows": [
+    [
+     "newspapers.eggsa.org · WERDMULLER",
+     "TEN HITS, AND FIVE OF THEM BUILD A FAMILY",
+     "AUGUSTA LOUISA KOLBE, the Settler's fourth daughter, born Graaff-Reinet 1829, has been in this archive as a name with a surname in brackets and nothing else. Her husband is now a man with three dates and a town; her son is named; her son's wife has a death and an obituary; and her granddaughter has a wedding.",
+     "yes"
+    ],
+    [
+     "Eastern Province Herald, 21 July 1874",
+     "THE VON ELGG, PRINTED BY SOMEBODY WHO WAS NOT A GENEALOGIST",
+     "“MARRIED at Burghersdorp BY SPECIAL LICENCE, on Tuesday the 7th July 1874, by the Rev. William Cromar, COENRAAD JOHANNES OTTO WERDMULLER D'ELGG to Miss ELIZABETH JOHANNA CATHARINE VORSTER, both of Burghersdorp.” And it raises a question this archive cannot answer: WAS AUGUSTA LOUISA DEAD BY 1874, or is this a son of the same name?",
+     "yes"
+    ],
+    [
+     "Queenstown Free Press, 19 February 1884",
+     "C.J.O. WERDMULLER IS DEAD, AND HE HAD AT LEAST TWO SONS",
+     "“CHARLES ANDREW WERDMULLER, OF STEYNSBURG. SECOND SON OF THE LATE C.J.O. WERDMULLER, OF BURGHERSDORP”, married at Wesley Church, Queenstown, to CHARLOTTE ANNE CALLAGHAN, eldest daughter of Hugh Callaghan Esq. of Ashby Manor. A MAN BORN 14 FEBRUARY 1857 — the nameless Burgersdorp baptism found this same morning — WAS TWENTY-SEVEN THAT WEEK. The two finds met in the middle and neither was looking for the other.",
+     "yes"
+    ],
+    [
+     "Queenstown Free Press, 1891",
+     "DEAD AT THIRTY-TWO, LEAVING TWO LITTLE GIRLS",
+     "“DIED — At HOOPSTAD, Orange Free State, on Tuesday, the 17th February, 1891, at the age of 32 years, after a long illness, CHARLOTTE ANNE WERDMULLER … leaving a husband and TWO LITTLE GIRLS to mourn their loss.” A correspondent's obituary adds that she had reached Hoopstad only months before, in indifferent health, with a disorder of the heart that proved organic.",
+     "yes"
+    ],
+    [
+     "South Africa, a weekly journal, 1909",
+     "A VICTORIA CROSS MARRIES INTO THE LINE",
+     "“MARTINEAU — WERDMULLER — On July 31, at East London, HORACE ROBERT MARTINEAU, V.C., of Durban, to AMY WERDMULLER, SECOND DAUGHTER OF CHARLES WERDMULLER, J.P. OF HOOPSTAD, O.R.C.” She is one of the two little girls of 1891. THIS ARCHIVE PRINTS THE TWO LETTERS AS THE JOURNAL PRINTED THEM and has NOT gone looking for which action he won it for — that is somebody else's page, and borrowing it is exactly the temptation this archive exists to resist.",
+     "yes"
+    ],
+    [
+     "The link that is not proved, stated rather than smoothed over",
+     "NOTHING NAMES CHARLES ANDREW'S MOTHER",
+     "If he is the child of 14 February 1857 then Augusta Louisa Kolbe is his mother and Amy is a great-granddaughter of the 1820 Settler. If he belongs to his father's 1874 marriage he is no relation — and a man marrying in 1884 as a SECOND son cannot be. THE DATES FAVOUR KOLBE STRONGLY AND THE DOCUMENTS DO NOT SAY IT. Recorded as a chain with a gap in it.",
+     "part"
+    ],
+    [
+     "newspapers.eggsa.org · ELGG",
+     "NOTHING",
+     "The search engine will not match a fragment inside D'ELGG. The full surname has to be asked for.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "G2G answers again — and takes away the only document that names the top of the line",
    "n": "Pieter van Zyl and Riël Smit on the 1876 Sterfkennis",
    "d": "14 Sep 2026",

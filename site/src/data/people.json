@@ -4485,11 +4485,12 @@
   },
   {
    "n": "A Werdmuller child of 1857",
+   "v": "possibly CHARLES ANDREW WERDMULLER — see /documents/#werdmuller-1874",
    "b": "14 Feb 1857, baptised 10 Apr 1857 at Burgersdorp",
    "d": "—",
    "l": "Kolbe",
    "s": "doc",
-   "r": "NAMELESS IN THE INDEX, AND THAT IS THE POINT. The same sweep that found the tenth Barry child turned up a second entry with an EMPTY NAME COLUMN: born 14 February 1857, baptised 10 April 1857 at Burgersdorp, mother AUGUSTA LOUISA KOLBE, father COENRAAD JOHANNES OTTO WERDMULLER. She is the Settler's fourth daughter, born at Graaff-Reinet in 1829 — and this is the first of her children this archive has ever seen. THE CHILD'S OWN NAME IS ON THE PAGE AND NOT IN THE INDEX, so no search will ever return it. The register image has not been read; only the index line.",
+   "r": "AND BY THE AFTERNOON THERE WAS A CANDIDATE FOR THE MISSING NAME. The Queenstown Free Press of 13 February 1884 marries “CHARLES ANDREW WERDMULLER, OF STEYNSBURG, SECOND SON OF THE LATE C.J.O. WERDMULLER, OF BURGHERSDORP” to Charlotte Anne Callaghan. A man born 14 February 1857 was twenty-seven that week. NOT PROVED: no document read here names Charles Andrew’s mother, and his father — or a man of exactly that name — married again at Burgersdorp in 1874. NAMELESS IN THE INDEX, AND THAT IS THE POINT. The same sweep that found the tenth Barry child turned up a second entry with an EMPTY NAME COLUMN: born 14 February 1857, baptised 10 April 1857 at Burgersdorp, mother AUGUSTA LOUISA KOLBE, father COENRAAD JOHANNES OTTO WERDMULLER. She is the Settler's fourth daughter, born at Graaff-Reinet in 1829 — and this is the first of her children this archive has ever seen. THE CHILD'S OWN NAME IS ON THE PAGE AND NOT IN THE INDEX, so no search will ever return it. The register image has not been read; only the index line.",
    "p": [
     [
      "The register, read image by image",
@@ -4498,6 +4499,80 @@
     [
      "The Kolbes",
      "/kolbe/"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "Coenraad Johannes Otto Werdmuller",
+   "v": "Werdmuller D’Elgg · von Elgg · C.J.O. Werdmuller of Burghersdorp",
+   "b": "—",
+   "d": "bef. Feb 1884",
+   "l": "Kolbe",
+   "s": "doc",
+   "r": "THE MAN THE SETTLER’S FOURTH DAUGHTER MARRIED, and until today a bracket after her name. He is at BURGERSDORP in April 1857, standing at a font with AUGUSTA LOUISA KOLBE. He is at Burgersdorp again on 7 JULY 1874, married BY SPECIAL LICENCE by the Rev. William Cromar to ELIZABETH JOHANNA CATHARINE VORSTER — and the Eastern Province Herald prints his name in full as COENRAAD JOHANNES OTTO WERDMULLER D’ELGG, which is the first time this archive has seen the von Elgg written by anyone but a genealogist. He is DEAD by February 1884, when his second son marries as the son of “the late C.J.O. Werdmuller of Burghersdorp”. WHETHER AUGUSTA LOUISA WAS DEAD BEFORE 1874 THIS ARCHIVE DOES NOT KNOW.",
+   "p": [
+    [
+     "The Werdmullers",
+     "/documents/#werdmuller-1874"
+    ],
+    [
+     "The Kolbes",
+     "/kolbe/"
+    ]
+   ]
+  },
+  {
+   "n": "Charles Andrew Werdmuller",
+   "v": "Charles Werdmuller, J.P. of Hoopstad",
+   "b": "—",
+   "d": "—",
+   "l": "Kolbe",
+   "s": "inf",
+   "r": "SECOND SON OF THE LATE C.J.O. WERDMULLER OF BURGHERSDORP, married at Wesley Church, Queenstown, on 13 FEBRUARY 1884 to CHARLOTTE ANNE CALLAGHAN, eldest daughter of Hugh Callaghan of Ashby Manor. Of STEYNSBURG then, and by 1909 CHARLES WERDMULLER, J.P., OF HOOPSTAD in the Orange River Colony — the town his wife died in. HIS MOTHER IS NOT NAMED ON ANYTHING READ HERE. If he is the child born 14 February 1857 at Burgersdorp he is AUGUSTA LOUISA KOLBE’S SON and a grandson of the 1820 Settler; if he belongs to his father’s 1874 marriage he is no relation at all, and a man marrying in 1884 as a second son cannot be. THE DATES FAVOUR KOLBE AND THE DOCUMENTS DO NOT SAY IT.",
+   "p": [
+    [
+     "The Werdmullers",
+     "/documents/#werdmuller-1874"
+    ],
+    [
+     "The Kolbes",
+     "/kolbe/"
+    ]
+   ]
+  },
+  {
+   "n": "Charlotte Anne Callaghan",
+   "b": "c. 1859",
+   "d": "17 Feb 1891, Hoopstad, Orange Free State — aged 32",
+   "l": "Kolbe",
+   "s": "doc",
+   "r": "ELDEST DAUGHTER OF HUGH CALLAGHAN, ESQ., OF ASHBY MANOR, district of Queenstown; married Charles Andrew Werdmuller on 13 February 1884. SEVEN YEARS LATER SHE WAS DEAD AT THIRTY-TWO, at Hoopstad, “after a long illness”, and a correspondent’s obituary in the Queenstown Free Press adds that she had arrived there only a few months before, in indifferent health, with a disorder of the heart that proved organic. SHE LEFT “A HUSBAND AND TWO LITTLE GIRLS”, and it is that line which lets the 1909 marriage notice call Amy a second daughter.",
+   "p": [
+    [
+     "The Werdmullers",
+     "/documents/#werdmuller-1874"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "Amy Werdmuller",
+   "b": "—",
+   "d": "—",
+   "l": "Kolbe",
+   "s": "doc",
+   "r": "“MARTINEAU — WERDMULLER — On July 31 [1909], at EAST LONDON, HORACE ROBERT MARTINEAU, V.C., of Durban, to AMY WERDMULLER, SECOND DAUGHTER OF CHARLES WERDMULLER, J.P. OF HOOPSTAD, O.R.C.” One of the two little girls her mother left in 1891. IF THE CHAIN HOLDS — and it has one unproved link, her grandmother’s name — she is a GREAT-GRANDDAUGHTER OF THE 1820 SETTLER, and she married a holder of the VICTORIA CROSS. This archive prints the two letters as the journal printed them and has NOT gone looking for which action he won it for.",
+   "p": [
+    [
+     "The Werdmullers",
+     "/documents/#werdmuller-1874"
     ],
     [
      "The Women",
