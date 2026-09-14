@@ -2,6 +2,50 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The other forty Kolbe newspaper hits — and the Settler's eldest son gets a life",
+   "n": "“DEATH OF COMMANDANT KOLBE”, Grahamstown Journal, 15 April 1868",
+   "d": "14 Sep 2026",
+   "h": "/documents/#commandant-kolbe-1868",
+   "rows": [
+    [
+     "Grahamstown Journal 1868, second quarter — a hit this archive had already seen and not opened",
+     "A FULL OBITUARY FOR JOHN GERSON ELIEZAR KOLBE",
+     "He was two lines in a table: “John Gerson Eliezar ‘Jan’, 1822, Uitenhage”. The obituary gives BORN 7 JULY 1822, MARRIED 3 APRIL 1843 to ANNA JACOBA VAN DER MERWE, DIED 3 APRIL 1868 ON HIS WEDDING ANNIVERSARY at the farm LEEUWBERG, of TYPHUS OR TYPHOID CAUGHT ON COMMANDO. Settled on KAALSPRUIT about 1850. COMMANDANT OF THE DISTRICT, JUSTICE OF THE PEACE, DIRECTOR OF THE BLOEMFONTEIN BANK, DEACON, and a speaker in the VOLKSRAAD in May 1867. THE ROW ABOVE IT IN THE SEARCH RESULTS WAS READ THIS MORNING AND THIS ONE WAS NOT.",
+     "yes"
+    ],
+    [
+     "The household in that obituary",
+     "A WIDOW AND TWELVE CHILDREN, NOT ONE OF THEM NAMED",
+     "Four daughters, only one married, the youngest an infant. TWO SONS HAD SERVED WITH HIM IN THE FIELD and “proved themselves amongst the bravest of our burghers”. Twelve grandchildren of the 1820 Settler in one household and this archive has none of them. IT IS THE LARGEST SINGLE GAP THE NEWSPAPERS HAVE OPENED.",
+     "part"
+    ],
+    [
+     "The deathbed passage",
+     "“THIS STATE HAD TAKEN TOO MUCH LAND FROM THE BASUTOS”",
+     "He said it to the doctor and the others at his bedside; said he had always thought so and had said so in the Raad at the “corn peace” of May 1867; and asked them to RESCIND THEIR RESOLUTION, ANNUL THEIR PROTEST AND TREAT WITH THE GOVERNOR for an equitable boundary. A man dying of a fever he caught fighting that war, asking his own government to give the land back.",
+     "yes"
+    ],
+    [
+     "And the obituary describes his parents",
+     "A CONTEMPORARY CORROBORATION OF THE WHOLE LONDON STORY",
+     "“His parents came out with the settlers of 1820; HIS FATHER WAS OF GERMAN EXTRACTION, IF NOT BIRTH, BUT RESIDED AND MARRIED IN LONDON.” This archive built that from a Soho baptism, a London Gazette partnership notice and the 1841 census — none of which the writer of 1868 had in front of him. It also confirms from a fourth direction that the father “became a Missionary to the Griquas at PHILIPPOLIS, and most of his family grew up there”.",
+     "yes"
+    ],
+    [
+     "The date that does not fit, left not fitting",
+     "MARGARET DOWNING “DIED IN BURGHERSDORP ABOUT THREE MONTHS SINCE”",
+     "Printed 15 April 1868, which puts her death in JANUARY 1868. This archive has 1867, off her own death notice. A form with a date beats a journalist rounding — but this archive has been caught once already by an estate filed thirteen years after the death it recorded, so the discrepancy is published rather than resolved. HER PLACE OF DEATH IS NEW EITHER WAY: BURGERSDORP, where her husband lies.",
+     "part"
+    ],
+    [
+     "Grahamstown Journal, 9 February 1872, quoting the Colesberg Advertiser",
+     "“TERRIBLE WARNING” — A KOLBE SUES A WATCHMAKER",
+     "An action before the Resident Magistrate between MR. GEO. KOLBE, plaintiff, and MR. T. NELSON, WATCHMAKER, defendant, over a watch entrusted for repair “which, despite repeated promises, the latter neglected to repair or to deliver”. Not a genealogical fact, and kept anyway: it is the only glimpse this archive has of a Kolbe of Colesberg on an ordinary Monday.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The newspapers, worked properly — and the Settler's fourth daughter comes back",
    "n": "WERDMULLER, ten hits, five of them this family",
    "d": "14 Sep 2026",
