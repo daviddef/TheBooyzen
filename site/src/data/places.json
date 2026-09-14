@@ -1375,6 +1375,27 @@
    "lon": 30.336,
    "approx": true,
    "why": "position inferred, not the source's"
+  },
+  {
+   "n": "Knap Daar",
+   "k": "Farm",
+   "r": "District Colesberg",
+   "s": "inf",
+   "w": "THE KOLBE FARM BEFORE WURTEMBURG. A land memorial of 1839 — Cape Town Archives Repository, LG 552, reference 664 — records “REVEREND G KOLBE” asking that government ground adjoining his farm KNAP DAAR, in the district of Colesberg, be surveyed and auctioned. This archive has George Augustus Kolbe dying at the farm Wurtemburg in the same district on 1 December 1844, and knows he preached across the Orange River; the memorial styles him Reverend five years earlier and gives him land. The identification rests on an initial and a district, not on a full name, and the pin is placed at Colesberg because the farm itself is not on any map read here.",
+   "e": [
+    [
+     "1839",
+     "Reverend G Kolbe petitions about the ground adjoining Knap Daar"
+    ]
+   ],
+   "p": [
+    "George Augustus Kolbe"
+   ],
+   "slug": "knap-daar",
+   "lat": -30.72,
+   "lon": 25.1,
+   "approx": true,
+   "why": "farm unlocated, placed at Colesberg"
   }
  ]
 }

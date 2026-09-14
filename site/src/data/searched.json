@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "NAAIRS, working again — and KOLBE had never been searched in it",
+   "n": "a farm, a title, and four records nobody here had",
+   "d": "14 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "The NAAIRS address, resolved",
+     "national.archsrch.gov.za",
+     "This archive recorded on 13 September that “the bare hostname no longer resolves”. It does — the catalogue is a FRAMESET at national.archives.gov.za/naairs.htm and the SEARCH lives on a DIFFERENT HOST: http://www.national.archsrch.gov.za/sm300cv/smws/sm300dl. Sixteen databases including RSA (all repositories), KAB, TAB, VAB, NAB and GEN, the Genealogical Society's gravestone data. Session-bound URLs, five search boxes with And/Or/Not/Adjacent/Near, and an optional date range. Written down because the wrong address cost this archive a day.",
+     "yes"
+    ],
+    [
+     "RSA · KOLBE",
+     "708 documents",
+     "The Kolbes have never been put to NAAIRS. Fourteen rows of searching in September covered Booyzen, Booijzen, Mountjoy, Montjoy, de Beer and Barry — and not once the surname that carries the 1820 Settler, the Conduit Street tailor and the name that runs through this family for four generations. 708 is too many to read; it is recorded as the size of the gap.",
+     "part"
+    ],
+    [
+     "RSA · KOLBE AND COLESBERG",
+     "Six, and the first is a farm",
+     "KAB, source LG, volume 552, system 02, REFERENCE 664, part 1, 1839: “MEMORIALS RECEIVED. LAND. REVEREND G KOLBE. REQUESTING THAT CERTAIN GOVERNMENT GROUND ADJOINING HIS FARM KNAP DAAR IN DISTRICT OF COLESBERG BE SURVEYED AND PUT UP FOR PUBLIC AUCTION.” This archive has George Augustus Kolbe dying at the farm “WURTEMBURG”, Colesberg, on 1 December 1844, and describes him as having preached across the Orange River. Here he is FIVE YEARS EARLIER, formally styled REVEREND, holding a farm called KNAP DAAR and petitioning the government about the ground next door. STRONG BUT NOT PROVED: the memorial gives an initial, not a full name.",
+     "yes"
+    ],
+    [
+     "The other five of the six",
+     "Two estates, two war permits",
+     "NAB MSCE 414/1960 — Oosthuizen, Pierre Francois, born Colesberg, spouse ADRIANA HENRIETTA JOHANNA, BORN KOLBE, deceased estate. NAB MSCE 131/1959 — BEUKES, PETRONELLA JACOBA ADRIANA, BORN KOLBE, BORN IN COLESBERG, deceased estate. Two Kolbe-born women of Colesberg with estate files, neither in this archive. And two Anglo-Boer War movement permits: VAB SRC volume 7, RC2170, 28 MAY 1901 — “PERMISSION GRANTED FOR MRS. G KOLBE AND CHILD TO PROCEED TO COLESBERG”; and TAB SOPOW volume 39, 1902 — “APPLICATIONS BY JC KOLBE TO PROCEED TO COLESBERG”. SOPOW is the Staff Officer for Prisoners of War, the same series that holds this family's three Booyzen prisoners. The sixth match is a London Missionary Society guide entry and is not a Kolbe document.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Savoy registers, located — and RootsChat, which could not be used",
    "n": "an account wall, and a better answer from the National Archives",
    "d": "14 Sep 2026",
