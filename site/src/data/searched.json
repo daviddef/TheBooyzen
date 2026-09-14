@@ -2,6 +2,56 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Burgersdorp register, swept image by image — the standing errand of this project",
+   "n": "267 images, one of the two missing Barry children, and the reason they were invisible",
+   "d": "14 Sep 2026",
+   "h": "/documents/#burgersdorp-swept",
+   "rows": [
+    [
+     "First, exhaust the index, so the grind is not done for nothing",
+     "NINE SEARCHES, ALL RETURNING THE SAME SEVEN CHILDREN",
+     "Child surname as BARRY, BERRY, BARRIE, BARY, BARREY, BARRI and BARI — the engine fuzzy-matches, so all seven return one set. Mother as KOLBE, KOLBER and COLBE. And a search on the PARENTS alone — father John, mother Margaretha/Margret/Margaretwina, place Burgersdorp — which returned NOTHING for 1854–1858. THE INDEX ROUTE WAS GENUINELY EXHAUSTED BEFORE A SINGLE IMAGE WAS OPENED.",
+     "no"
+    ],
+    [
+     "The film viewer carries an index panel under every image",
+     "THIS IS THE TOOL, AND IT WAS THERE ALL ALONG",
+     "Film 008039088 — 818 images, not the 534 this archive had written down. Under each image is a table: NAME, BIRTH DATE, PARENT NAME, SECOND PARENT'S NAME, EVENT TYPE, EVENT DATE, EVENT PLACE, for every entry on that page. THE HANDWRITING NEVER HAD TO BE READ. Stepping the viewer and harvesting that table gives about ten entries an image at two and a half seconds each.",
+     "yes"
+    ],
+    [
+     "Images 338 to 604 — 1853 to 1859, about 2,400 indexed entries",
+     "ONE BARRY BAPTISM: CATHERINE MARY SOPHIA, BORN 10 JULY 1855",
+     "Image 427. Baptised 22 July 1855 at Burgersdorp, father JOHN BARRY, mother MARGARET LOUISA KOLBE. THE TENTH CHILD. And her sister has the same name: on 25 December 1859 at Dordrecht the same parents baptised another CATHARINA MARY SOPHIA, born 4 August 1859 — the woman who married into the Booyzens. A BAPTISM IS NOT DONE TWICE, so the first child died and the name was given again, which is the ordinary Cape practice. This archive has no burial for her and dates the death only as before August 1859.",
+     "yes"
+    ],
+    [
+     "WHY NO SEARCH COULD EVER HAVE FOUND HER",
+     "THE NAME COLUMN IS EMPTY",
+     "The index row for image 427 reads: “ | 10 Jul 1855 | John Barry | Margaret Louisa Kolbe | Baptism | 22 Jul 1855 | Burgersdorp”. THE CHILD IS INDEXED WITH NO NAME AT ALL. Her forenames are written plainly on the page and simply were not keyed. NO SEARCH BY SURNAME, FORENAME OR SPELLING VARIANT CAN RETURN A RECORD THAT HAS NEITHER. The parents are indexed; the child is not. That is a class of invisible record this archive did not know existed, and it is worth more than the one child it produced.",
+     "yes"
+    ],
+    [
+     "A second nameless row, in the same sweep",
+     "THE SETTLER'S FOURTH DAUGHTER HAS A CHILD",
+     "Image 513: born 14 FEBRUARY 1857, baptised 10 April 1857 at Burgersdorp, mother AUGUSTA LOUISA KOLBE, father COENRAAD JOHANNES OTTO WERDMULLER. She is the Settler's daughter born at Graaff-Reinet in 1829, and THIS IS THE FIRST OF HER CHILDREN THIS ARCHIVE HAS EVER SEEN. Name column empty again. TWO NAMELESS ENTRIES IN 267 IMAGES AND BOTH BELONG TO THIS FAMILY.",
+     "yes"
+    ],
+    [
+     "The eleventh child",
+     "STILL MISSING",
+     "Not at Burgersdorp between 1853 and 1859, and the sweep was complete across that ground. What is left: 1851–1852 before this register opens, the Dordrecht register after 1863, and the real possibility that a child was born and died between two known baptisms and was never entered anywhere.",
+     "no"
+    ],
+    [
+     "What the sweep cannot vouch for",
+     "ABOUT THIRTY IMAGES RETURNED NO INDEX ROWS",
+     "Some of those are genuinely blank pages. This archive cannot say all of them are — the panel may simply not have loaded inside the wait. THE NUMBER IS WRITTEN DOWN RATHER THAN ROUNDED AWAY, and anyone repeating this should re-visit the zeros.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The G2G question was answered — twice, in eighteen hours, by a stranger",
    "n": "Pieter van Zyl on estate MHG 10/57",
    "d": "14 Sep 2026",
