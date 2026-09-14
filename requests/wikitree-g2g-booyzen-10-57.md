@@ -1,5 +1,20 @@
 # G2G post — WikiTree, estate MHG 10/57 and the Booyzen line
 
+**Status: POST 1 IS ANSWERED** — checked 14 September 2026. **Two answers in eighteen hours,
+from Pieter van Zyl (G2G-4), five upvotes each.**
+
+1. The **"Form of information of death"** cited on Booyzen-12 is the *Aangifte van 'n
+   Sterfgeval* — the state registration form — and **does not carry parents, spouse or
+   children**. The *sterfkennis* is the other document, the one attached to the probate.
+   **So nobody has already read the page this archive wants**, and the Pretoria letter is
+   still the only route to MHG 10/57. That closes the question the post was asked to close.
+2. He **uploaded the baptism** to the profile: FamilySearch ark `1:1:6KPT-T3Z4`, born
+   12 Aug 1887, baptised 27 Nov 1887, parents Willem Hermanus Booijsen and Catharina Maria
+   Sophia Barry. Verified here against the index.
+3. Unverified, and recorded as unverified: *"a carpenter when married and a retired miner of
+   Langlaagte Estates when he died of Phthisis."* This archive has **coronary pulmonary
+   sclerosis** off the burial register.
+
 **Status: POST 1 IS LIVE** — posted 13 September 2026 from the account Defranceski-1.
 `https://www.wikitree.com/g2g/2082757/has-anyone-seen-sterfkennis-transvaal-estate-booyzen-1956`
 Category Genealogy Help; tags `south_africa` `south_african_roots` `booysen` `death_notice`;

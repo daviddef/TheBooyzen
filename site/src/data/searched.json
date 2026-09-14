@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The G2G question was answered — twice, in eighteen hours, by a stranger",
+   "n": "Pieter van Zyl on estate MHG 10/57",
+   "d": "14 Sep 2026",
+   "h": "/who/henry-james-booyzen/",
+   "rows": [
+    [
+     "Did anyone answer the post of 13 September?",
+     "TWO ANSWERS, BOTH WITHIN EIGHTEEN HOURS, BOTH USEFUL",
+     "This archive asked whether the “Form of information of death” cited on WikiTree profile Booyzen-12 was the sterfkennis it has been trying to read since the FamilySearch films started refusing images. THE FORUM WORKED. Two answers, five upvotes each, from PIETER VAN ZYL.",
+     "yes"
+    ],
+    [
+     "Is the “Form of information of death” the document this archive wants?",
+     "NO — AND THAT IS THE ANSWER, NOT A DISAPPOINTMENT",
+     "“The Form of Information of a Death or AANGIFTE VAN 'N STERFGEVAL is usually the form that concentrates on the registration of the death by Government. IT DOES NOT USUALLY CONTAIN the information about the spouse's name, parents' names and children. On the other hand the STERFKENNIS or Death Notice gives more information to enable the probate to be processed. It is connected to the will and sent to the Master's office.” SO NOBODY HAS ALREADY READ THE PAGE THIS ARCHIVE WANTS. The letter to Pretoria remains the only route to MHG 10/57, and a week of hoping otherwise is closed in one paragraph by somebody who knows the record series.",
+     "yes"
+    ],
+    [
+     "What came back that was not asked for",
+     "A BAPTISM REGISTER, UPLOADED TO THE PROFILE",
+     "Ark 1:1:6KPT-T3Z4, Dutch Reformed Church Registers: HENRY JAMES BOOŸSEN, BORN 12 AUGUST 1887, BAPTISED 27 NOVEMBER 1887, parents WILLEM HERMANUS BOOŸSEN and CATHARINA MARIA SOPHIA BARRY. VERIFIED HERE against the index rather than taken on trust. THE 12 AUGUST 1887 HAS NOW COME FROM A TREE, THEN A GRAVESTONE, THEN A CHURCH REGISTER, IN THAT ORDER — which is exactly backwards, and is how it usually goes.",
+     "yes"
+    ],
+    [
+     "And a claim this archive has NOT verified",
+     "CARPENTER, RETIRED MINER OF LANGLAAGTE ESTATES, DIED OF PHTHISIS",
+     "“He was a carpenter when married and a retired miner of Langlaagte Estates when he died of Phthisis.” THIS ARCHIVE HAS CORONARY PULMONARY SCLEROSIS, off the Johannesburg burial register it read itself. Phthisis is the Rand miner's disease, and a retired Langlaagte man dying of it in 1956 fits everything else known about him — but the two causes are not the same word, and this archive has read one of the two documents and not the other. RECORDED AS REPORTED AND NOT AS ESTABLISHED. A knowledgeable stranger on a forum is not a document either.",
+     "part"
+    ],
+    [
+     "A method note fell out of verifying the ark",
+     "THE INDEX MANGLES BARKLY EAST THREE DIFFERENT WAYS IN ONE RESULT SET",
+     "One search for the children of Willem Hermanus Booysen returns the same town as “BEAUFORT, Cape Province” (Henry James, 1887), “BARKLY WEST, Cape Province” (a membership entry for the same man, same date), and “BARKLY, QUEENSLAND, AUSTRALIA” (Richard Peter, 1894). THE REGISTER SAYS BARKLY OOST EVERY TIME. Anyone filtering FamilySearch by normalised place for this family will lose most of it, and that is worth knowing before the next sweep.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Tolosberg on Jeppe's map of 1899 — the hill three Booyzens were taken on",
    "n": "Sheet 6, read at full resolution over twenty-five kilometres",
    "d": "14 Sep 2026",
