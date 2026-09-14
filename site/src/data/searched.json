@@ -2,6 +2,32 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "eGGSA's gravestone photographs — and two of this family are in them",
+   "n": "a couple known only from estate files, now with stones",
+   "d": "14 Sep 2026",
+   "h": "/who/gerrit-jacobus-booysen/",
+   "rows": [
+    [
+     "How the graves site is organised",
+     "Nine provincial subdomains",
+     "graves.eggsa.org is only a front door. The collection is split by province, each with its OWN SUBDOMAIN AND ITS OWN SEARCH, and there is no way to search all of them at once — the site says so itself. For this family: graveseastcape (Graaff-Reinet, Cradock, Middelburg, Barkly East, Dordrecht, Indwe), gravesnortherncape (Colesberg), gravesgauteng (Johannesburg, Pretoria), gravesmpumalanga (Volksrust). The Eastern Cape search is a CGI form at /Search/ecsearchGraves.htm posting to /cgi-bin/ecdosearchGraves.pl, and it works.",
+     "yes"
+    ],
+    [
+     "Eastern Cape · surname BOOY",
+     "203 stones, eight spelt with a z",
+     "Most are Booyens and Booysen families with no connection here. Filtering to the Z SPELLINGS leaves eight, and FOUR OF THEM ARE IN ONE CEMETERY — MIDDELBURG MAIN CEMETERY: Catharina Johanna Helena née Beyleveldt 1855–1937, GERT JACOBUS 1870–1951, ISABELLA FREDERICKA NÉE COETSEE 1874–1930, and Pieter J. 1904–1937.",
+     "yes"
+    ],
+    [
+     "BOOYZEN Gert Jacobus 1870–1951 · BOOYZEN Isabella Fredericka nee Coetsee 1874–1930",
+     "BOTH ARE THIS ARCHIVE'S PEOPLE",
+     "Gerrit Jacobus Booÿsen was born 19 JANUARY 1870, the only child on his father's 1884 death notice, and he married ISABELLA FREDERIKA COETSEE AT MIDDELBURG on 23 March 1896. His estate is TAB MHG 5155/51 — a 1951 file this archive has never been able to read because the film returns 403. THE STONE GIVES HIM 1870–1951. Hers gives 1874–1930, which matches her own death notice and independently confirms this archive's correction that she died in 1930 and was simply not reported until 1943. They married at Middelburg and they are buried at Middelburg, a few stones apart. PHOTOGRAPHS LOCATED AND NOT YET READ: the inscriptions may carry more than the index line does.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "eGGSA's newspaper extracts — the right country's papers, opened",
    "n": "a usable method, four quarters swept, and a site that has just moved",
    "d": "14 Sep 2026",
