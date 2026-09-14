@@ -2,6 +2,64 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Pietermaritzburg address, checked before anything is posted",
+   "n": "Item 20 — and the email is in doubt",
+   "d": "14 Sep 2026",
+   "h": "/errands/",
+   "rows": [
+    [
+     "The National Archives' own entry for the repository",
+     "POSTAL ADDRESS AND TELEPHONE CONFIRMED",
+     "Pietermaritzburg Archives Repository, identifier NAB. Street 231 PIETERMARITZ STREET; postal PRIVATE BAG X9012, PIETERMARITZBURG 3200; telephone 033 342 4712; fax 033 394 4353; contact person THE PROVINCIAL ARCHIVIST. These agree across every source found and are safe.",
+     "yes"
+    ],
+    [
+     "The email address",
+     "TWO OF THEM, AND ONE IS ALMOST CERTAINLY DEAD",
+     "The official page gives pmbarchives@dact.kzntl.gov.za on a record last edited on 2 JULY 2015, and kzntl.gov.za is a RETIRED KwaZulu-Natal government domain. Current listings give pmbarchives@kzndac.gov.za, which matches the department's live domain. THE ARCHIVE THAT PUBLISHES THE ADDRESS HAS NOT UPDATED IT IN ELEVEN YEARS.",
+     "part"
+    ],
+    [
+     "What to do about it",
+     "POST IT, OR TELEPHONE FIRST",
+     "This archive sent the Pretoria enquiry on 13 September into a mailbox it could not confirm and has had no answer. The recommendation here is the postal address, which is certain, or a call to 033 342 4712 to ask for the current email. THE LETTER IS DRAFTED AND DELIBERATELY NOT SENT; sending it is the user's.",
+     "part"
+    ]
+   ]
+  },
+  {
+   "g": "FamilySearch has signed out, and it fails in the worst possible way",
+   "n": "The South African collections vanish and the search still answers 200",
+   "d": "14 Sep 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "The image viewer, for the Burgersdorp register sweep",
+     "REDIRECTS TO THE SIGN-IN PAGE",
+     "Items 1 to 4 of the standing queue — finishing the register sweep, re-checking the thirty blank-index images, sweeping the whole film for nameless rows, and reading images 427 and 513 as images — ALL STOP HERE. The sweep stopped at image 604 of 818 and can be resumed from there.",
+     "blocked"
+    ],
+    [
+     "The search API, which looked fine",
+     "IT ANSWERS 200 AND RETURNS THE WRONG WORLD",
+     "A query this archive ran successfully six hours ago — q.surname=Kolbe with f.recordCountry=South Africa — NOW RETURNS ZERO ENTRIES WITH HTTP 200. Drop the country filter and it returns 26,126 candidates, EVERY ONE OF THEM FROM THE UNITED STATES CENSUS OF 1950. The South African Dutch Reformed registers, the Transvaal and Cape estate indexes and the civil death series are simply not in the corpus any more.",
+     "void"
+    ],
+    [
+     "Why this is the dangerous kind of failure",
+     "A LOGGED-OUT SEARCH LOOKS EXACTLY LIKE AN EMPTY ARCHIVE",
+     "No error, no warning, no redirect — a valid JSON body with results:0. Every negative this archive might have written in the last hour — “Gabriel Stephanus not followed out of the font”, “Angeline unidentified”, “Susanna Margaretha Downing Kolbe unattached” — WOULD HAVE BEEN A LIE, and would have read exactly like the true negatives beside it. IT IS THE THIRD TIME TODAY THE SAME SHAPE HAS APPEARED: NAAIRS ORing two keywords, this archive's own row filter dropping thirty-six documents, and now a signed-out API returning an empty world. A FILTER THAT DROPS WHAT IT CANNOT SEE IS INDISTINGUISHABLE FROM A SOURCE THAT HOLDS NOTHING.",
+     "void"
+    ],
+    [
+     "Items 8, 9, 12 and 19, which needed it",
+     "NOT RUN, AND NOT WRITTEN UP AS NEGATIVES",
+     "The three unfollowed children of Frederik Fortunatus Kolbe; Angeline Kolbe of Wakkerstroom; Susanna Margaretha Downing Kolbe; and the phthisis-against-sclerosis question for Henry James Booyzen. ALL FOUR ARE WAITING ON A SIGN-IN AND NONE OF THEM IS RECORDED AS A MISS.",
+     "blocked"
+    ]
+   ]
+  },
+  {
    "g": "The 184 enumerated properly — and seven Booyzens claiming war compensation in Marico",
    "n": "The thirty-six that were missing were missing because of this archive's own filter",
    "d": "14 Sep 2026",

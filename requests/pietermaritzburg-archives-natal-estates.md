@@ -1,13 +1,30 @@
 # Request — Pietermaritzburg Archives Repository (NAB estates)
 
-**Status: DRAFTED, NOT SENT** — 14 September 2026. The contact address still needs
-confirming against the repository's own page before this goes anywhere; the Pretoria
-request was sent to `enquiries2@dsac.gov.za` with a copy to the Head of Client Services,
-and the Natal repository may take a different address. **Do not send until that is checked.**
+**Status: DRAFTED, ADDRESS CHECKED, STILL NOT SENT** — 14 September 2026.
+**Sending is the user's to do.**
 
-**Repository:** Pietermaritzburg Archives Repository (NAB), Private Bag X9012,
-Pietermaritzburg, 3200. The deceased-estate series here is **MSCE**, Master of the
-Supreme Court, and NAAIRS indexes it by name.
+**Checked against the National Archives' own entry for the repository**
+(`nationalarchives.gov.za/node/2760`, record submitted 2 July 2015):
+
+> Pietermaritzburg Archives Repository — **NAB**
+> Street: **231 Pietermaritz Street, Pietermaritzburg, 3200**
+> Postal: **Private Bag X9012, Pietermaritzburg, KwaZulu-Natal, 3200**
+> Telephone **033 342 4712** · Fax **033 394 4353**
+> Contact person: **The Provincial Archivist**
+> E-mail: **pmbarchives@dact.kzntl.gov.za**
+
+**AND THE EMAIL IS IN DOUBT.** The official page gives `pmbarchives@dact.kzntl.gov.za`
+on a record last touched in 2015; `kzntl.gov.za` is a retired KwaZulu-Natal government
+domain. Other current listings give **`pmbarchives@kzndac.gov.za`**, which matches the
+department's live domain. **Two addresses, one of them almost certainly dead.**
+
+The postal address and the telephone agree across every source and are safe.
+**Recommendation: post it, or telephone 033 342 4712 first and ask for the current
+email.** This archive has already sent one enquiry into a mailbox it could not confirm —
+the Pretoria letter of 13 September — and has no answer from it yet.
+
+The deceased-estate series here is **MSCE**, Master of the Supreme Court, and NAAIRS
+indexes it by name.
 
 **Why a letter and not a screen:** FamilySearch's filmed Natal probate series
 (*South Africa, Pietermaritzburg, Estate Files 1846–1950*) **stops at 1950**. Every file
