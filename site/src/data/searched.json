@@ -2,6 +2,56 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "n": "Thirty-eight Cape and Natal papers, searched at last",
+   "d": "14 Sep 2026",
+   "h": "/documents/#kolbe-obituary-1844",
+   "rows": [
+    [
+     "newspapers.eggsa.org · KOLBE",
+     "43 HITS — AND ONE OF THEM IS THE 1820 SETTLER'S DEATH NOTICE IN PRINT",
+     "GRAHAMSTOWN JOURNAL, THURSDAY 19 DECEMBER 1844. Eighteen days after he died, four hundred miles from the farm. It gives EIGHT SONS where this archive knew of one, BRUNSWICK SQUARE where the census gives Conduit Street, a man who RENDERED MEDICAL ADVICE TO THE DISTRICT OF COLESBERG FOR MANY YEARS where his own death notice says “Agriculturist”, and a cause of death — an affection on the lungs, after nearly a year ill. IT IS THE RICHEST SINGLE DOCUMENT FOUND IN THIS ARCHIVE IN WEEKS AND IT COST FOUR MINUTES. The collection had been named here as unused for days.",
+     "yes"
+    ],
+    [
+     "The same notice, tested rather than swallowed",
+     "TWO OF ITS FACTS ARE WRONG",
+     "It says AGED 44; he was born 7 December 1802 and died 1 December 1844, five days short of forty-two. It says TEN CHILDREN; this archive counts twelve born and one dead in infancy, which leaves eleven. Both are printed on the page beside the find. A newspaper death notice is written by the grieving and set by a compositor four hundred miles away.",
+     "part"
+    ],
+    [
+     "newspapers.eggsa.org · BOOYZEN",
+     "FIVE, AND TWO ARE WORTH KEEPING",
+     "Eastern Province Herald 1862: “BOOYZEN is a trek-farmer, and was with his brother and brother-in-law digging for water at a place called DEEP FOUNTAIN, within two hours of the ORANGE RIVER” — a Booyzen at work, in a sentence, in 1862. Cape of Good Hope Government Gazette, 1 January 1830: “CHRISTINA BOOYZEN, Widow of WILLEM WOUTER VENTER, aged 79 years, 2 months and 16 days” — born about October 1750, which is older than anything else in this archive. NEITHER IS SHOWN TO BE THIS FAMILY.",
+     "part"
+    ],
+    [
+     "newspapers.eggsa.org · MOUNTJOY",
+     "SIX, AND ONE IS A MOUNTJOY AT CRADOCK IN 1869",
+     "The Friend of the Free State, 1869: “On reaching CRADOCK I found that the Captain was there before me, and had told MOUNTJOY to try and induce me to stay.” Cradock is one of this archive's own places. NOT READ IN FULL, and not connected.",
+     "part"
+    ],
+    [
+     "newspapers.eggsa.org · DASCHNER",
+     "NOTHING",
+     "Zero across thirty-eight papers. The surname reached Indwe from Germany and went to the Rand, and it never got into a Cape newspaper column that anyone has transcribed.",
+     "no"
+    ],
+    [
+     "newspapers.eggsa.org · BOOIJSEN",
+     "ONE, AND IT IS NOT THIS FAMILY",
+     "A single hit in The Friend of the Free State, 1859. The ij spelling that dominates this archive's own registers is almost absent from the newspapers.",
+     "no"
+    ],
+    [
+     "A METHOD NOTE",
+     "THE SEARCH BOX IS NOT A FORM",
+     "newspapers.eggsa.org runs Geek ElasticSearch: posting the form returns the page and nothing else. The results are drawn by script as you type. It has to be driven as a page — set the value, fire an input event, wait — and not fetched. AN HOUR WAS SPENT POSTING TO AN ENDPOINT THAT WAS NEVER GOING TO ANSWER.",
+     "void"
+    ]
+   ]
+  },
+  {
    "g": "The 184 RSA Booyzen documents, enumerated for the first time",
    "n": "Seventy-two of them are estates or death notices",
    "d": "14 Sep 2026",
