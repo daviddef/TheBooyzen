@@ -8,12 +8,12 @@ import ring from "@daviddef/archive-kit/data/archives.json";
 const { title, dek, eyebrow, bare } = Astro.props;
 const SITE = "The Booyzen Archive";
 const nav = [
-  ["Start", [["/", "Home"], ["/trees/", "The trees"], ["/timeline/", "The Timeline"], ["/search/", "Search"]]],
-  ["Our line", [["/direct-line/", "The Line"], ["/tree/", "Our line, drawn"]]],
+  ["Start", [["/", "Home"], ["/trees/", "The trees"], ["/tree/", "Our line, drawn"], ["/atlas/", "The Atlas"], ["/timeline/", "The Timeline"]]],
+  ["Our line", [["/direct-line/", "The Line"]]],
   ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"], ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
   ["The work", [["/documents/", "The Documents"], ["/gallery/", "The Plates"], ["/name/", "The Name"], ["/namesakes/", "The Namesakes"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"]]],
-  ["People & places", [["/people/", "Everyone"], ["/households/", "Households"], ["/marriages/", "The Marriages"], ["/register/", "The Register"], ["/places/", "The Places"], ["/atlas/", "The Atlas"]]],
-  ["Evidence", [["/method/", "Method"], ["/changes/", "What Changed"], ["/disputed/", "Disputed"], ["/corrections/", "What Was Taken Back"], ["/open-questions/", "Open Questions"], ["/searched/", "What Was Searched"], ["/research-log/", "Research Log"], ["/errands/", "Errands"], ["/sources/", "Sources"]]]
+  ["People & places", [["/people/", "Everyone"], ["/households/", "Households"], ["/marriages/", "The Marriages"], ["/register/", "The Register"], ["/places/", "The Places"]]],
+  ["Evidence", [["/method/", "Method"], ["/changes/", "What Changed"], ["/disputed/", "Disputed"], ["/corrections/", "What Was Taken Back"], ["/open-questions/", "Open Questions"], ["/searched/", "What Was Searched"], ["/research-log/", "Research Log"], ["/errands/", "Errands"], ["/sources/", "Sources"]]],
 ];
 const here = Astro.url.pathname;
 /* which of the seven this is, worked out the same way the ring does */
