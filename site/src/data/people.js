@@ -593,7 +593,7 @@ export const people = [
 
 // ───────────────────────── the Barrys ─────────────────────────
 {n:"John Barry", b:"1796", d:"1853", l:"Barry", s:"open",
- r:"One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. Unresolved.",
+ r:"One profile holding two men — and on 14 September 2026 they came apart. THE YORKSHIRE MAN IS NOW A LIFE: born at WHITBY in 1796; resident at BILSDALE MIDCABLE when he took a licence on 2 October 1838 to marry MARGARET JACKSON of Beadlam at Helmsley; and in the 1851 census a SHIP OWNER at SHIP YARDS, RUSWARP, WHITBY, aged 55, married, head of his household — the ONLY John Barry of that age in the whole Yorkshire census. John Barry deaths are then registered in the WHITBY district in 1858 and in 1860. He outlived the Cape man, who died at de Bruins Poort in 1853, by at least five years. THEY ARE TWO MEN. What this archive still does not have is the Cape one: no birth, no arrival, no burial. And a caution worth keeping — a Whitby SHIP OWNER is exactly the kind of man whose son could be born AT SEA, which is what John Augustus Barry's death notice says of 1819. That coincidence is not evidence, and the censuses say it is not the same man.",
  p:[["Disputed","/disputed/"],["The Barrys","/barry/"],["Open Questions","/open-questions/"]]},
 {n:"John Augustus Barry I", b:"1819, “at sea (exact whereabouts unknown), British”", d:"1903", l:"Barry", s:"doc",
  r:"His 1915 death notice types the birthplace as at sea and his mother as “born Neagle”. Cape Mounted Rifles.",
