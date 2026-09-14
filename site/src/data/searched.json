@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The entity audit — sweeping for other things that travel through data",
+   "n": "An arrow entity printed at the reader on the home page",
+   "d": "14 Sep 2026",
+   "h": "/corrections/",
+   "rows": [
+    [
+     "Sweep the 642 built pages for a double-escaped entity",
+     "NOTHING LEFT",
+     "The bug the reader caught: three way-in cards on the home page passed their arrow as a DATA STRING — the arrow written as an HTML entity, ampersand r-a-r-r semicolon — and a string prop is escaped on output, so the page printed those five characters where an arrow belonged. Arrows written straight into markup were never affected. Having fixed the three, this sweep asks the built site whether the same fault is anywhere else. IT IS NOT.",
+     "yes"
+    ],
+    [
+     "Ask the same of the source rather than the output — every entity sitting inside a quoted prop or data value in site/src",
+     "NO ENTITY ANYWHERE ELSE IN PROP OR DATA POSITION",
+     "The source is asked as well as the output, because a page can exist without having been rebuilt. 429 em dashes, 306 arrows, 244 middots, 85 right single quotes, 74 en dashes and 69 right double quotes are in use across the site as entities, and every one of them is in markup, where escaping never touches it.",
+     "yes"
+    ],
+    [
+     "Every file in site/src/data, for an entity written into data",
+     "NONE",
+     "people.js, places.json, searched.json, corrections.json and the rest are clean, which is the root of it — the home page's three cards were the only place an entity had been written into something that would later be escaped.",
+     "yes"
+    ],
+    [
+     "Then: a check in tools/drift.py, so it cannot come back",
+     "THE BUILD NOW FAILS ON A DOUBLE-ESCAPED ENTITY",
+     "The check reads the built pages, not the source, so it catches the SYMPTOM whatever the cause — an escaped entity reaching a reader is a bug no matter which prop or which component put it there. It is absolute, with no exception for a page that means to quote one; this page wanted to and spells the arrow out in words instead, because a check with an exception is a check that will be excepted. Tested by planting one in the built home page: the build failed and named both the entity and the page. THE READER FOUND THIS ONE BEFORE THE BUILD DID, WHICH IS THE WRONG WAY ROUND, and that is what the check is for.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "Wakkerstroom PROVED — a man who carries both family names",
    "n": "Frederik Fortunatus DOWNING Kolbe",
    "d": "14 Sep 2026",

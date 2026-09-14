@@ -7,7 +7,7 @@ apart. This fails the build instead.
 
 Each check compares something the data knows against something a page claims.
 """
-import json, os, re, sys, unicodedata
+import json, os, re, sys, glob, unicodedata
 
 def norm(t):
     """Compare on letters alone: case, accents and curly quotes are not drift."""
@@ -144,6 +144,30 @@ absent = sorted(q for q in used if norm(q) not in pnames)
 if absent:
     fails.append("%d place(s) named on the timeline are not in places.json, so the atlas "
                  "cannot show them: %s" % (len(absent), ", ".join(absent)))
+
+# 3b2. an HTML entity that reaches the reader as literal text.
+#      On 14 Sep 2026 the home page printed "&rarr;" at three readers, because the
+#      three way-in cards passed their call to action as a DATA STRING — cta: "The
+#      name &rarr;" — and a string prop is escaped on output. Arrows written
+#      directly in markup were always fine; only the ones travelling through data
+#      broke, which is why it survived review and was spotted on the live site.
+#      This checks the SYMPTOM in the built pages, so it catches the fault whatever
+#      the cause: a double-escaped entity is always a bug.
+#      It is absolute. It has no exception for a page that means to quote an
+#      entity in prose — the first page that wanted to, /searched/, spells the
+#      arrow out in words instead, because a check with an exception is a check
+#      that will be excepted.
+ents = {}
+for f in glob.glob(os.path.join(DIST, "**", "*.html"), recursive=True):
+    t = open(f, encoding="utf-8").read()
+    for m in re.findall(r"&amp;[a-zA-Z]{2,8};", t):
+        ents.setdefault(m, set()).add(os.path.relpath(f, DIST))
+if ents:
+    bits = ", ".join("%s on %d page(s) (e.g. %s)" % (e, len(fs), sorted(fs)[0])
+                     for e, fs in sorted(ents.items()))
+    fails.append("%d HTML entity/entities reach the reader as literal text — write "
+                 "them in markup, not through a data string or prop: %s"
+                 % (len(ents), bits))
 
 # 3c. every /documents/#anchor referenced anywhere in the built site must exist.
 #     tools/links.py checks that a PAGE resolves and stops there — a link to a
