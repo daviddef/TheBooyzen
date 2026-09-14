@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Wakkerstroom PROVED — a man who carries both family names",
+   "n": "Frederik Fortunatus DOWNING Kolbe",
+   "d": "14 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "q.surname=Kolbe · q.anyPlace=Wakkerstroom · South Africa",
+     "FREDERIK FORTUNATUS **DOWNING** KOLBE",
+     "Born 1891 at WAKKERSTROOM, died there 2 NOVEMBER 1918, Transvaal probate 1918. HE CARRIES BOTH OF THIS FAMILY'S KOLBE NAMES AT ONCE. FREDERIK FORTUNATUS is the Settler's son, whom this archive already calls “the source of the Fortunatus name across three families”. DOWNING is MARGARET DOWNING, whom George Augustus Kolbe married at St Leonard's Shoreditch in 1819 — a London surname with no business in the eastern Transvaal except through that marriage. One man, born seventy-two years after the wedding, carrying both. THE CONVERGENCE IS NO LONGER A CONVERGENCE; the Wakkerstroom Kolbes are this family's Kolbes.",
+     "yes"
+    ],
+    [
+     "The same search, read across",
+     "The gravestones all resolve",
+     "Every stone found this morning now has a record behind it. DANIEL JAKOBUS KOLBE, born 1893, died 19 JUNE 1918 at Wakkerstroom — the stone's “Daan 1893-1918”. FREDERIK FORTUNATUS DOWNING KOLBE, died 2 NOVEMBER 1918 — the stone's “Freddie -1918”. TWO YOUNG MEN OF ONE FAMILY DEAD FOUR MONTHS APART IN 1918, which is the influenza. GEORGE AUGUSTUS KOLBE, born 1863, died 28 SEPTEMBER 1954 — the stone's 1863-1954, and his wife MARTHA SOPHIA KLOPPER is named as the mother of MARIA JOHANNA KOLBE, born 1886 at Wakkerstroom, died 1 October 1953, who is the “van der Merwe née Kolbe” stone. GEORGE AUGUSTUS KOLBE born 1861 married SUSANNA MARGARETHA SWART — the 1861-1934 stone. And MARGARET HARRIET KOLBE, born 1871, married DIRK JACOBUS ASPELING VAN DER SPUY — the Utrecht stone found through NAAIRS yesterday.",
+     "yes"
+    ],
+    [
+     "Two more worth following",
+     "A war death and a war record",
+     "ANGELINE KOLBE, born 1872, DIED AT WAKKERSTROOM ON 15 NOVEMBER 1900 — in the middle of the war, in a district that had a concentration camp at Volksrust twenty miles away, and NAAIRS's gravestone data holds a “GE KOLBE, died between 1899 and 1901, aged 35” in that camp cemetery. Not the same person on the figures, and the first time a woman of this surname has been found dying in that district in those years. And GEORGE AUGUSTUS KOLBE, born 1862, resident WAKKERSTROOM, with a MILITARY record of 1902 — neither read.",
+     "part"
+    ],
+    [
+     "What this does to the Colesberg question",
+     "It says where the children went",
+     "George Augustus Kolbe, the 1820 Settler, died at Wurtemburg, Colesberg, in 1844 leaving nine children, and this archive loses sight of most of them. THIS IS WHERE A BRANCH WENT: north-east to the Transvaal–Natal border, to Wakkerstroom and Piet Retief, taking FORTUNATUS, GEORGE AUGUSTUS and DOWNING with them, and still using all three seventy years later. NO INDIVIDUAL IS YET ADOPTED into the family: no document read names the Settler as their ancestor, and the estates that would — NAB MSCE 2032/1969 and 965/1956 — are Pietermaritzburg files past the 1950 close of the filmed Natal probate series.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Cape genealogical codes, resolved — and G2G answers back twice more",
    "n": "a cousin identified, a father-candidate offered, and a reply this archive cannot post",
    "d": "14 Sep 2026",
