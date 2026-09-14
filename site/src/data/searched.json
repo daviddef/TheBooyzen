@@ -2,6 +2,26 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "FreeBMD — never used before, and it had exactly one thing to give",
+   "n": "the GRO reference for a death this archive already knew the date of",
+   "d": "14 Sep 2026",
+   "h": "/places/conduit-street/",
+   "rows": [
+    [
+     "Deaths · surname Kolbe · 1845–1846 · England and Wales",
+     "ONE entry, and it is him",
+     "“Deaths Dec 1845 — KOLBE, JOHN GOTTLOB — ST GEO HAN SQ — VOL 1, PAGE 35.” The only Kolbe death registered in England and Wales across two years. Three things come off it. The DISTRICT is St George Hanover Square, which is the same registration district the 1841 census gives for Conduit Street, so the census and the death index agree without either knowing about the other. The NAME is entered “JOHN GOTTLOB” — not Johan Gottlieb — which is precisely the form used at his son George Augustus's baptism at St Anne's Soho in 1803, “son of John Gottlob and Mary”. And VOL 1 PAGE 35 is a certificate reference: the certificate itself would give cause of death, occupation, and the NAME AND ADDRESS OF THE INFORMANT, who in a household of three unmarried women is likely to be one of them. NOT ORDERED.",
+     "yes"
+    ],
+    [
+     "What FreeBMD cannot do for this family, stated so nobody tries",
+     "Civil registration starts in 1837",
+     "The other London events are all EARLIER and will never be in this index: John Gottlob and Mary at Soho in 1802, George Augustus's baptism at St Anne's in February 1803, and the Shoreditch marriage of 1819. Those are parish records and stay parish records. FreeBMD's entire purchase on this family is the one 1845 death — which is why it took one search, and why it was worth doing.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The London end, opened — Kolbe and Downing, not Montjoy",
    "n": "four places with prose and no records behind them",
    "d": "14 Sep 2026",
