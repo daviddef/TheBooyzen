@@ -697,3 +697,9 @@ a.wholink:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .ksearch input:focus{outline:none;border-color:var(--accent)}
 .ksearch input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* A card's title is a page-level section semantically — a reader navigating by
+   heading needs it at h2 — but it must not be sized like one. This reproduces
+   exactly what the h3 rendered at, so promoting the level changed nothing on
+   the page. Measured from the built page, not guessed. */
+.ct{font-size:27px;line-height:1.15;margin:0 0 .3rem;font-weight:500}
