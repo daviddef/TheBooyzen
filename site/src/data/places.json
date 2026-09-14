@@ -850,11 +850,11 @@
    "lat": -25.55,
    "lon": 26.2,
    "approx": false,
-   "w": "A substantial Booyzen farming district — and this archive can no longer say whose. Seven Booyzen claims for compensation as burghers were filed here in 1903–04, and the Booyzen children who died in the Johannesburg and Vereeniging camps came from farms in this district. This entry used to call them \"emphatically someone else's\". That judgement rested on the belief that this family was in the Cape until about 1907 — and the 1876 Sterfkennis at Rustenburg, one district east, shows it was not. No document links this family to any of the seven claims. No document rules it out either. Unresolved is the honest word. 13 SEPTEMBER 2026: and now a documented Booysen marriage IN the district. Hendrik Stephanus Booysen — seventh child on the 1876 Sterfkennis, son of the direct ancestor — married Charlotta Elizabetha Dormehl at ZEERUST, the principal town of Marico. It still links this family to none of the seven compensation claims. It does mean the last of the three districts has had one of these people standing in it, and the sentence this archive withdrew was wronger than it knew.",
+   "w": "A substantial Booyzen farming district — and this archive can no longer say whose. Seven Booyzen claims for compensation as burghers were filed here in 1903–04, and the Booyzen children who died in the Johannesburg and Vereeniging camps came from farms in this district. This entry used to call them \"emphatically someone else's\". That judgement rested on the belief that this family was in the Cape until about 1907 — and the 1876 Sterfkennis at Rustenburg, one district east, shows it was not. No document links this family to any of the seven claims. No document rules it out either. Unresolved is the honest word. 13 SEPTEMBER 2026: and now a documented Booysen marriage IN the district. Hendrik Stephanus Booysen — seventh child on the 1876 Sterfkennis, son of the direct ancestor — married Charlotta Elizabetha Dormehl at ZEERUST, the principal town of Marico. It still links this family to none of the seven compensation claims. It does mean the last of the three districts has had one of these people standing in it, and the sentence this archive withdrew was wronger than it knew. 15 SEPTEMBER 2026: the seven claims were pulled in full and the index line is the whole record — no farm, no forename, no amount. The same search turned up something nobody asked for: a JGL BOOYZEN countersigning the subsidy application, the book orders and all four quarterly returns of a FARM SCHOOL AT KWAGGAFONTEIN in this district, 1898–1899. He is not identified. He is a candidate for the Jan Gerhardus Lodewicus born 4 December 1855, of whom this archive has said for months that nothing is known.",
    "e": [
     [
      "1898",
-     "JGL Booyzen of Kwaggafontein, district Marico, in the field-cornet's papers"
+     "JGL Booyzen countersigns the Kwaggafontein school's subsidy application — education department, not the field-cornet"
     ],
     [
      "1903–1904",
@@ -871,13 +871,59 @@
     [
      "bef. 1908",
      "Hendrik Stephanus Booysen marries at Zeerust, district Marico"
+    ],
+    [
+     "1897–1900",
+     "the Kwaggafontein farm school, forty-eight files, from the request for a teacher to the last cheque"
     ]
    ],
    "p": [
     "Hendrik Stefanus Booijsen",
-    "Charlotta Elizabetha Dormehl"
+    "Charlotta Elizabetha Dormehl",
+    "Jan Gerhardus Lodewicus Booysen"
    ],
    "slug": "marico"
+  },
+  {
+   "n": "Kwaggafontein",
+   "k": "Farm",
+   "r": "District Marico, Transvaal",
+   "s": "open",
+   "lat": -25.35,
+   "lon": 26.05,
+   "approx": true,
+   "why": "The district and the post office are certain — Marico, PK Kafferskraal — and the farm itself is not placed. The pin is put in the north of the district near Kafferskraal and says so.",
+   "w": "A farm with a school on it, and the whole of its correspondence with the government survives. Forty-eight files in TAB source OD, from 4 October 1897, when G.E. ter Haar of Kafferskraal asked for a teacher, to April 1900, when the teacher asked for his money to be sent to the landdrost and the war closed the file. The teacher was H. de Vries, fetched by wagon in December 1897. A JGL BOOYZEN is on eight of the forty-eight — the subsidy application, the book orders, all four quarterly returns, the explanation of a £61-6-0 deficit, and a letter of May 1899 arguing that £8 too little subsidy had been paid. He is the school's money man, and he is not identified.",
+   "e": [
+    [
+     "4 Oct 1897",
+     "a teacher is asked for"
+    ],
+    [
+     "6 Dec 1897",
+     "“wagon leaves Thursday to fetch teacher De Vries — is everything in order?”"
+    ],
+    [
+     "Jan 1898",
+     "JGL Booyzen and the teacher apply for the subsidy"
+    ],
+    [
+     "1 Jul 1898",
+     "second-quarter returns, and a pupil has left the school"
+    ],
+    [
+     "May 1899",
+     "JGL Booysen tells the government it has paid £8 too little"
+    ],
+    [
+     "Apr 1900",
+     "the last file"
+    ]
+   ],
+   "p": [
+    "Jan Gerhardus Lodewicus Booysen"
+   ],
+   "slug": "kwaggafontein"
   },
   {
    "n": "Mossel Bay",
@@ -992,6 +1038,10 @@
     [
      "1 May 1920",
      "his daughter Magdalena Susanna Maria van den Berg, born Booyzen, dies on the same farm"
+    ],
+    [
+     "1898–1899",
+     "a farm school at Vaalbank, teacher J.P. Louw, its money papers signed DS. Booysen"
     ]
    ],
    "p": [
@@ -1029,7 +1079,7 @@
    "lat": -26.2,
    "lon": 26.3,
    "approx": true,
-   "w": "One farm, two deaths, thirty-five years apart, and the same family on it both times. Jan Gerthardus Lodewikus Booijsen — born district Graaff-Reinet about 1818, fifth child on the 1876 Sterfkennis — died here on 25 May 1885. His daughter Magdalena Susanna Maria, born about 1860, died here on 1 May 1920. It is the clearest evidence this archive has that the family did not merely pass through the western Transvaal but settled in it, two generations before anyone reached Johannesburg. The coordinates are approximate: the district is certain, the farm is not yet placed.",
+   "w": "One farm, two deaths, thirty-five years apart, and the same family on it both times. Jan Gerthardus Lodewikus Booijsen — born district Graaff-Reinet about 1818, fifth child on the 1876 Sterfkennis — died here on 25 May 1885. His daughter Magdalena Susanna Maria, born about 1860, died here on 1 May 1920. It is the clearest evidence this archive has that the family did not merely pass through the western Transvaal but settled in it, two generations before anyone reached Johannesburg. The coordinates are approximate: the district is certain, the farm is not yet placed. AND A SCHOOL ON IT. The education files of the South African Republic hold a school at Vaalbank, district Lichtenburg, post office Rietkuil, teacher J.P. Louw, running through 1898 and 1899 — and the man beside the teacher on its money papers is written DS. BOOYSEN and DS BOOIJSEN. In February 1899 he wrote to the government to ask how school materials could be provided TO ORPHANS, arising from a case among them. Whether DS. is a David Schalk or the Dutch abbreviation for a minister cannot be read off an index line, and six weeks earlier the same school wrote “DS VAN ROOJEN” in the same slot.",
    "e": [
     [
      "25 May 1885",
@@ -1038,6 +1088,14 @@
     [
      "1 May 1920",
      "Magdalena Susanna Maria van den Berg, born Booyzen, dies here, aged 59 years 9 months"
+    ],
+    [
+     "Dec 1898",
+     "DS. Booysen sends the school's power of attorney and eighteen pence in stamps to the government bookkeeper — TAB OD OR19199/98"
+    ],
+    [
+     "6 Feb 1899",
+     "he asks the department how school materials may be got for orphans — TAB OD OR2037/99"
     ]
    ],
    "p": [
