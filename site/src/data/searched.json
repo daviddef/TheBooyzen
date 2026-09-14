@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Werdmuller question, closed on dates — items 12 and 13",
+   "n": "Augusta Louisa Kolbe died in 1873, and her husband remarried in 1874",
+   "d": "15 Sep 2026",
+   "h": "/documents/#werdmuller-1874",
+   "rows": [
+    [
+     "NAAIRS · WERDMULLER · 266 documents, never searched before",
+     "THE SETTLER'S FOURTH DAUGHTER HAS THREE FILES",
+     "KAB MOOC 7/1/332 no. 205 — “KOLBE, AUGUSTA LOUISA. WIFE OF COENRAAD JOHANNES OTTO WERDMULLER VAN ELGG. WILL”, made 1868, FILED 1873. KAB MOOC 6/9/145 no. 9981 — her DEATH NOTICE, 1873. KAB MOOC 13/1/299 no. 93 — her LIQUIDATION AND DISTRIBUTION ACCOUNT, 1874, which means there was something to distribute. THE WILL IS THE FIRST DOCUMENT READ HERE THAT TIES HER TO THAT MAN BY ANYTHING BUT A NEWSPAPER.",
+     "yes"
+    ],
+    [
+     "The date that settles yesterday's open question",
+     "SHE DIED 1873. HE REMARRIED 7 JULY 1874.",
+     "A year and a month — which is what a widower does. Yesterday this archive published the Werdmuller descent as “a chain with a gap in it”, the gap being whether CHARLES ANDREW belonged to the first marriage or the second.",
+     "yes"
+    ],
+    [
+     "And a document that puts father and son in one line",
+     "GSC 2/1/1/41 no. 60, 1882 — “C.A. WERDMULLER AND COMPANY”",
+     "“ILLIQUID CASE. CHARLES ANDREW WERDMULLER AND COENRAAD JOHANNES OTTO WERDMULLER TRADING AS CA WERDMULLER AND COMPANY VERSUS … ACKNOWLEDGEMENT OF DEBT.” FATHER AND SON IN BUSINESS TOGETHER IN THE YEAR THE FATHER DIED. A son of the 1874 marriage would have been SEVEN in 1882 and NINE when Charles Andrew married in 1884. HE CAN ONLY BE A CHILD OF THE FIRST MARRIAGE, and the first wife is the Settler's daughter.",
+     "yes"
+    ],
+    [
+     "The loophole that is left, named rather than ignored",
+     "AN EARLIER WIFE, BEFORE AUGUSTA LOUISA",
+     "C.J.O. Werdmuller is in the Cape Supreme Court from 1854, so he was an adult two decades before she died. If there was a wife before her, Charles Andrew could be hers. HIS 1882 DEATH NOTICE — KAB MOOC 6/9/187 no. 4160 — LISTS HIS CHILDREN AND WOULD CLOSE IT. It is now the most wanted page on the Cape errand, because it decides whether a Victoria Cross married a great-granddaughter of the 1820 Settler.",
+     "part"
+    ],
+    [
+     "A namesake, found without looking",
+     "FREDERICK FORTUNATUS WERDMULLER OF MALMESBURY",
+     "Cape Supreme Court, 1907, twice in one year; an estate of his own in 1953, MOOC 6/9/20496. This archive has followed FREDERIK FORTUNATUS from Kolbe in 1839 to Barry in 1863 to Booÿsen in 1899. HERE IT IS ON A WERDMULLER — and Augusta Louisa Kolbe married a Werdmuller. Not shown to be her descendant. It is not a name that travels by accident.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Free State archives, opened for the first time",
    "n": "Commandant Kolbe's estate — and his widow, filed under another man's name",
    "d": "15 Sep 2026",
