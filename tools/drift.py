@@ -151,7 +151,9 @@ if absent:
 #     four-hundred-section page with no idea what went wrong, and nothing warns.
 import glob
 docs_html = built("documents")
-anchors = set(re.findall(r'<h2 id="([a-z0-9-]+)"', docs_html))
+# any heading level can carry an id and be linked to; collecting only h2 made
+# a correct link to an h3 read as dangling, which it did on 14 Sep 2026.
+anchors = set(re.findall(r'<h[2-4] id="([a-z0-9-]+)"', docs_html))
 if anchors:                      # only meaningful after a build has run
     dangling = {}
     for f in glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True):
