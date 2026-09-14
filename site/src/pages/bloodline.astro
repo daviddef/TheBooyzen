@@ -3,24 +3,82 @@
    mother, so the relationships are the structure of the tree rather than
    anything matched. Nodes are keyed by their path through it: a pedigree
    asserts positions, and the same man standing at two places in one is a claim
-   about the tree, not a person to merge. */
+   about the tree, not a person to merge.
+
+   THE CHART USED TO BE ANCESTORS ONLY — twenty-six people climbing in a
+   straight line, and not one aunt, uncle or cousin, because an ancestor chart
+   has no sideways in it. The siblings were never missing from the archive; they
+   were in kin.js, which records each household and the document that puts every
+   child in it. tools/pedigree-siblings.mjs walks the pedigree, finds the
+   household each ancestor was a child of, and writes the other children onto
+   the node as `sib`. Only the dead are carried, and a sibling whose forename is
+   shared with somebody else in this archive is drawn WITHOUT DATES rather than
+   with the wrong person's.
+
+   The kit's fromPedigree() climbs father and mother and knows nothing about
+   `sib`, so the sibling records are built here, against the same slug rule it
+   uses, and handed to graph() alongside its own. */
 import Base from "../layouts/Base.astro";
 import Bloodline from "@daviddef/archive-kit/components/Bloodline.astro";
 import { graph, components, fromPedigree } from "@daviddef/archive-kit/lib/bloodline.js";
 import "@daviddef/archive-kit/styles/bloodline.css";
 import ped from "../data/pedigree.json";
 
-const people = graph(fromPedigree(ped.root));
+const recs = fromPedigree(ped.root);
+
+/* the same slug rule fromPedigree uses: "ped" + the path of f/m steps */
+const extra = [];
+const walk = (node, path) => {
+  if (!node || !node.n) return;
+  const mine = "ped" + path;
+  const kin = (node.sib || []).map((s, i) => ({ slug: mine + "-s" + i, ...s }));
+  for (const s of kin) {
+    const rec = {
+      slug: s.slug,
+      name: s.n,
+      dt: s.amb ? "" : [s.b, s.d].filter(Boolean).join(" – "),
+      parents: [], children: [], siblings: [],
+    };
+    /* the same parents as the ancestor they stand beside */
+    for (const [side, k] of [["f", "-f"], ["m", "-m"]]) {
+      const up = node[side];
+      if (up && up.n) rec.parents.push({ slug: "ped" + path + k, name: up.n, via: s.via === "doc" ? "read" : "tree" });
+    }
+    /* and each other, and the ancestor */
+    rec.siblings.push({ slug: mine, name: node.n, via: s.via === "doc" ? "read" : "tree" });
+    for (const o of kin) if (o.slug !== s.slug) rec.siblings.push({ slug: o.slug, name: o.n, via: "read" });
+    extra.push(rec);
+
+    /* their children — the cousins */
+    (s.kids || []).forEach((c, j) => {
+      const cs = s.slug + "-c" + j;
+      rec.children.push({ slug: cs, name: c.n, via: c.via === "doc" ? "read" : "tree" });
+      extra.push({
+        slug: cs, name: c.n,
+        dt: c.amb ? "" : [c.b, c.d].filter(Boolean).join(" – "),
+        parents: [{ slug: s.slug, name: s.n, via: c.via === "doc" ? "read" : "tree" }],
+        children: [], siblings: [],
+      });
+    });
+  }
+  walk(node.f, path + "-f");
+  walk(node.m, path + "-m");
+};
+walk(ped.root, "");
+
+const people = graph(recs.concat(extra));
 const comps = components(people);
 const shape = (s) => {
   const p = people[s];
   return (p.parents.length ? 1000 : 0) + (p.children.length ? 1000 : 0) + p.parents.length + p.children.length;
 };
 const start = comps[0] ? [...comps[0]].sort((a, b) => shape(b) - shape(a))[0] : null;
+const sibCount = extra.filter((r) => /-s\d+$/.test(r.slug)).length;
+const cousinCount = extra.filter((r) => /-c\d+$/.test(r.slug)).length;
 ---
 <Base
   title="Blood relatives"
-  eyebrow={`${Object.keys(people).length} people on the pedigree`}
-  dek="Choose a person and the chart is built around them. This archive records its line as a pedigree, so what is drawn here is exactly what that tree asserts — both parents at every step, as far back as it goes.">
+  eyebrow={`${Object.keys(people).length} people · ${sibCount} brothers and sisters, ${cousinCount} of their children`}
+  dek="Choose a person and the chart is built around them. This archive records its line as a pedigree, so what is drawn here is exactly what that tree asserts — both parents at every step, and now the brothers and sisters at each step, and their children after them, taken from the households kin.js records and limited to the dead.">
   <Bloodline people={people} start={start} total={Object.keys(people).length} />
 </Base>

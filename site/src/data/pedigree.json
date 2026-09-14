@@ -1,5 +1,5 @@
 {
- "note": "An ancestor chart for Catherine Mary Sophia Booyzen, who is where this archive starts and works backwards from. Every box is a person a document names. A WALL is a place where the archive knows a person existed and cannot name their parents — and the reasons differ. Where a man married twice, only the mother of the next box can stand in the chart; the other marriage is noted against him, because in this family it is usually the second marriage that explains the children.",
+ "note": "An ancestor chart for Catherine Mary Sophia Booyzen, who is where this archive starts and works backwards from. Every box is a person a document names. A WALL is a place where the archive knows a person existed and cannot name their parents — and the reasons differ. Where a man married twice, only the mother of the next box can stand in the chart; the other marriage is noted against him, because in this family it is usually the second marriage that explains the children. Siblings are drawn from kin.js, which records each household and the document that places every child in it — only the dead, and where a forename is carried by more than one person in this archive the sibling is drawn without dates rather than with somebody else's.",
  "root": {
   "n": "Catherine Mary Sophia Booyzen",
   "b": "1929",
@@ -69,7 +69,58 @@
        "wall": "Documented as his WIFE and as a mother — her son David Schalk was baptised on 4 January 1807 — but NOT documented as the mother of the box below her. The 1876 Sterfkennis names eight children and no mother for any of them, and a second van der Merwe wife bore a ninth about 1828.",
        "k": "disputed"
       }
-     }
+     },
+     "sibwhy": "The 1876 Sterfkennis",
+     "sib": [
+      {
+       "n": "David Schalk Booijsen",
+       "via": "doc",
+       "b": "12 Dec 1806",
+       "kids": [
+        {
+         "n": "Anna Maria Booijsen of 1835",
+         "via": "doc",
+         "b": "7 Aug 1835"
+        }
+       ]
+      },
+      {
+       "n": "Magdalena Johanna Booijsen",
+       "via": "doc"
+      },
+      {
+       "n": "Anna Eliezabet Booijsen",
+       "via": "doc"
+      },
+      {
+       "n": "Jan Gerthardus Lodewikus Booijsen",
+       "via": "doc",
+       "b": "1818",
+       "d": "25 May 1885",
+       "kids": [
+        {
+         "n": "Magdalena Susanna Maria van den Berg",
+         "via": "doc",
+         "b": "c. Aug 1860",
+         "d": "1 May 1920"
+        }
+       ]
+      },
+      {
+       "n": "Eliezabet Cornelia Booijsen",
+       "via": "doc"
+      },
+      {
+       "n": "Hendrik Stefanus Booijsen",
+       "via": "doc",
+       "b": "c. 1828",
+       "d": "11 May 1908"
+      },
+      {
+       "n": "Anna Maria Booijsen",
+       "via": "doc"
+      }
+     ]
     },
     "m": {
      "n": "Johanna Catharina Mountjoy",
@@ -98,8 +149,190 @@
         "why": "Her first husband, dead before 1817. The relative who completed James Montjoy's death notice could name him — and still could not name Montjoy's own parents."
        }
       ]
+     },
+     "sibwhy": "The 1817 marriage register",
+     "sib": [
+      {
+       "n": "Thomas Jacobus Mountjoy",
+       "via": "doc",
+       "b": "1818",
+       "d": "1827"
+      },
+      {
+       "n": "Jacoba Catharina Mountjoy",
+       "via": "doc",
+       "b": "1820",
+       "d": "1842"
+      },
+      {
+       "n": "George Mountjoy",
+       "via": "doc",
+       "amb": true,
+       "kids": [
+        {
+         "n": "Anna Catharina Mountjoy",
+         "via": "doc",
+         "b": "5 Aug 1852"
+        },
+        {
+         "n": "Maria Elizabeth Mountjoy",
+         "via": "doc",
+         "b": "12 Jun 1858"
+        },
+        {
+         "n": "Johanna Catharina Mountjoy of Burgersdorp",
+         "via": "doc",
+         "b": "28 Jan 1860"
+        },
+        {
+         "n": "George Herkules Johannes Mountjoy",
+         "via": "doc",
+         "b": "16 Jan 1862"
+        },
+        {
+         "n": "Elsje Petronella Frederika Mountjoy",
+         "via": "doc",
+         "b": "10 Jun 1864"
+        },
+        {
+         "n": "Hercules Johannes Mountjoy",
+         "via": "doc",
+         "b": "16 Jul 1866",
+         "d": "12 May 1941"
+        },
+        {
+         "n": "Jacoba Regina Mountjoy",
+         "via": "doc",
+         "b": "14 Jun 1868"
+        }
+       ]
+      },
+      {
+       "n": "James Mountjoy",
+       "via": "doc",
+       "b": "1826"
+      }
+     ]
+    },
+    "sibwhy": "The 1863 death notice",
+    "sib": [
+     {
+      "n": "Jacobus Nicholas Booysen",
+      "via": "doc",
+      "b": "bef. 1842",
+      "d": "1923"
+     },
+     {
+      "n": "Johanna Catharina Booysen",
+      "via": "doc",
+      "b": "15 May 1844"
+     },
+     {
+      "n": "Petrus Jacobus Booysen",
+      "via": "doc",
+      "amb": true,
+      "kids": [
+       {
+        "n": "David Schalk Booijsen",
+        "via": "doc",
+        "b": "12 Dec 1806"
+       },
+       {
+        "n": "Magdalena Johanna Booijsen",
+        "via": "doc"
+       },
+       {
+        "n": "Petrus Jacobus Booysen",
+        "via": "line",
+        "amb": true
+       },
+       {
+        "n": "Anna Eliezabet Booijsen",
+        "via": "doc"
+       },
+       {
+        "n": "Jan Gerthardus Lodewikus Booijsen",
+        "via": "doc",
+        "b": "1818",
+        "d": "25 May 1885"
+       },
+       {
+        "n": "Eliezabet Cornelia Booijsen",
+        "via": "doc"
+       },
+       {
+        "n": "Hendrik Stefanus Booijsen",
+        "via": "doc",
+        "b": "c. 1828",
+        "d": "11 May 1908"
+       },
+       {
+        "n": "Anna Maria Booijsen",
+        "via": "doc"
+       }
+      ]
+     },
+     {
+      "n": "Anna Catharina Booysen",
+      "via": "doc",
+      "b": "21 Sep 1842",
+      "d": "bef. 1863"
+     },
+     {
+      "n": "David Schalk Booysen",
+      "via": "doc",
+      "b": "9 Jun 1848",
+      "d": "after Nov 1905",
+      "kids": [
+       {
+        "n": "Petrus Jacobus Booijzen of Pretoria",
+        "via": "doc",
+        "b": "29 May 1873"
+       },
+       {
+        "n": "Johanna Margaretha Delport",
+        "via": "doc"
+       },
+       {
+        "n": "Magdalena Johanna Vogel",
+        "via": "doc"
+       },
+       {
+        "n": "Rachel Margaretha Williamse",
+        "via": "doc"
+       },
+       {
+        "n": "Anna Susanna Booijzen",
+        "via": "doc"
+       },
+       {
+        "n": "Elizabeth Margarietha Booijzen",
+        "via": "doc",
+        "d": "a minor"
+       },
+       {
+        "n": "David Schalk Booijzen the younger",
+        "via": "doc",
+        "b": "c. 1889"
+       }
+      ]
+     },
+     {
+      "n": "Magdalena Johanna Francina Booysen",
+      "via": "doc",
+      "b": "16 Jul 1853"
+     },
+     {
+      "n": "Jan Gerhardus Lodewicus Booysen",
+      "via": "doc",
+      "b": "4 Dec 1855"
+     },
+     {
+      "n": "Jacoba Catharina Booysen",
+      "via": "doc",
+      "b": "21 Sep 1857"
      }
-    }
+    ]
    },
    "m": {
     "n": "Catherine Maria Sophia “Kathleen” Barry",
@@ -139,7 +372,14 @@
        "b": "1765",
        "d": "1845",
        "s": "doc"
-      }
+      },
+      "sibwhy": "The Kolbes",
+      "sib": [
+       {
+        "n": "John Gottlob Kolbe",
+        "via": "doc"
+       }
+      ]
      },
      "m": {
       "n": "Margaret Downing",
@@ -152,9 +392,290 @@
        "d": "—",
        "s": "doc"
       }
+     },
+     "sibwhy": "The Kolbes",
+     "sib": [
+      {
+       "n": "Mary Elizabeth Kolbe",
+       "via": "doc",
+       "d": "bef. 1867",
+       "kids": [
+        {
+         "n": "Augustus Kolbe Enslin",
+         "via": "doc",
+         "b": "7 Sep 1853"
+        }
+       ]
+      },
+      {
+       "n": "John Kolbe",
+       "via": "inf"
+      },
+      {
+       "n": "George Kolbe",
+       "via": "inf"
+      },
+      {
+       "n": "Catharine Sophia Maria Kolbe",
+       "via": "inf"
+      },
+      {
+       "n": "Marian Kolbe",
+       "via": "doc"
+      },
+      {
+       "n": "Julia Kolbe",
+       "via": "doc"
+      },
+      {
+       "n": "Frederik Fortunatus Kolbe",
+       "via": "doc",
+       "b": "1839"
+      },
+      {
+       "n": "Peter Benjamin Kolbe",
+       "via": "doc"
+      }
+     ]
+    },
+    "sibwhy": "The Barrys",
+    "sib": [
+     {
+      "n": "John Augustus Barry II",
+      "via": "doc",
+      "b": "13 Mar 1847",
+      "kids": [
+       {
+        "n": "Catherine Mary Sophia Barry of 1871",
+        "via": "inf",
+        "b": "27 Mar 1871"
+       },
+       {
+        "n": "John Augustus Barry III",
+        "via": "inf",
+        "b": "9 May 1873"
+       },
+       {
+        "n": "Margaret Elizabeth Annie Barry",
+        "via": "inf",
+        "b": "30 Mar 1875"
+       },
+       {
+        "n": "Jacobus Ellinckhuizen Barry",
+        "via": "inf",
+        "b": "25 Mar 1877"
+       },
+       {
+        "n": "Clarence Barry",
+        "via": "inf",
+        "b": "14 Mar 1879"
+       },
+       {
+        "n": "George Alphonso Barry",
+        "via": "inf",
+        "b": "3 Mar 1881"
+       },
+       {
+        "n": "Anton Rector Kolbe Barry",
+        "via": "inf",
+        "b": "3 Nov 1882"
+       },
+       {
+        "n": "Alida Eduarda Barry",
+        "via": "inf",
+        "b": "10 Dec 1886"
+       },
+       {
+        "n": "Miny Barry",
+        "via": "inf",
+        "b": "13 Aug 1889"
+       }
+      ]
+     },
+     {
+      "n": "William Barry",
+      "via": "doc",
+      "b": "23 Aug 1853"
+     },
+     {
+      "n": "James Henry Barry",
+      "via": "doc",
+      "b": "13 Jul 1848",
+      "d": "23 Jun 1939"
+     },
+     {
+      "n": "George Augustus Barry",
+      "via": "doc",
+      "b": "26 Apr 1850"
+     },
+     {
+      "n": "Hendrik Nicholaas Barry",
+      "via": "doc",
+      "kids": [
+       {
+        "n": "Margarietha Wilhelmina Elizabeth Barry",
+        "via": "doc",
+        "b": "1880",
+        "d": "1961"
+       },
+       {
+        "n": "Ruben Jacobus Hosea Barry",
+        "via": "inf",
+        "b": "7 Oct 1888"
+       },
+       {
+        "n": "Dorothea Regina Barry of Slang River",
+        "via": "inf",
+        "b": "11 Jan 1892"
+       },
+       {
+        "n": "Harriet Louisa Barry",
+        "via": "doc",
+        "b": "1894",
+        "d": "7 Sep 1912"
+       },
+       {
+        "n": "Ellen Hendrika Barry",
+        "via": "inf",
+        "b": "8 Dec 1899"
+       }
+      ]
+     },
+     {
+      "n": "Frederick Fortunatus Barry",
+      "via": "doc",
+      "b": "10 Nov 1863"
+     },
+     {
+      "n": "Richard Peter Barry",
+      "via": "doc",
+      "kids": [
+       {
+        "n": "Richard Pieter Kolbe Barry",
+        "via": "doc",
+        "b": "1899"
+       }
+      ]
+     },
+     {
+      "n": "Margaret Mary Bedford",
+      "via": "doc"
+     },
+     {
+      "n": "Kathleen Mary Barry",
+      "via": "doc"
      }
+    ]
+   },
+   "sibwhy": "The name",
+   "sib": [
+    {
+     "n": "John Barry Booyzen",
+     "via": "doc",
+     "b": "c. 1884"
+    },
+    {
+     "n": "Willem Hermanus Booyzen of Indwe",
+     "via": "inf",
+     "b": "c. 1886",
+     "d": "29 Jul 1932",
+     "kids": [
+      {
+       "n": "Willem Hermanus Booyzen of Dugmore",
+       "via": "doc",
+       "b": "31 May 1908"
+      }
+     ]
+    },
+    {
+     "n": "David Kolbe Booyzen",
+     "via": "tree"
+    },
+    {
+     "n": "Henry James Booyzen",
+     "via": "tree",
+     "b": "12 Aug 1887",
+     "d": "8 Dec 1956"
+    },
+    {
+     "n": "Gertruida Alexandra Booyzen",
+     "via": "tree"
+    },
+    {
+     "n": "Johanna Catharina Booyzen",
+     "via": "doc",
+     "b": "20 Jun 1889"
+    },
+    {
+     "n": "Catharina Maria Sophia Booysen",
+     "via": "doc",
+     "b": "22 Apr 1891",
+     "d": "1946",
+     "kids": [
+      {
+       "n": "Catherine Mary Sophia Daschner",
+       "via": "doc"
+      },
+      {
+       "n": "Joseph Charles Daschner",
+       "via": "doc",
+       "b": "1911",
+       "d": "1992"
+      },
+      {
+       "n": "Margaret Wilhelmina Elizabeth Jeanette van Jaarsveld",
+       "via": "doc",
+       "b": "1913",
+       "d": "2009"
+      },
+      {
+       "n": "William Herman Daschner",
+       "via": "doc",
+       "b": "1915",
+       "d": "1963"
+      },
+      {
+       "n": "Martha Magdeline van Deventer",
+       "via": "doc"
+      },
+      {
+       "n": "John Frederick Daschner",
+       "via": "doc"
+      },
+      {
+       "n": "Richard Peter Daschner",
+       "via": "doc",
+       "b": "8 May 1922"
+      },
+      {
+       "n": "Albert Alfred Daschner",
+       "via": "doc",
+       "b": "3 Mar 1927"
+      },
+      {
+       "n": "Edith Dorothy Daschner",
+       "via": "doc",
+       "b": "20 Jan 1930"
+      },
+      {
+       "n": "Henry James Daschner",
+       "via": "doc",
+       "b": "25 Feb 1932"
+      },
+      {
+       "n": "Yvonne Muriel Daschner",
+       "via": "doc",
+       "b": "15 Jul 1935"
+      }
+     ]
+    },
+    {
+     "n": "Richard Peter Booyzen",
+     "via": "inf",
+     "b": "c. 1894",
+     "d": "25 Oct 1918"
     }
-   }
+   ]
   },
   "m": {
    "n": "Anna Johanna Maria Pretorius",
@@ -180,7 +701,158 @@
      "d": "1931",
      "s": "doc",
      "same": "His parents are John Augustus Barry I and Margaretha Kolbe — two boxes already standing on the father's side of this chart. The line folds back on itself here, and that fold is the cousin marriage.",
-     "sameHref": "/cousins/"
+     "sameHref": "/cousins/",
+     "sibwhy": "The Barrys",
+     "sib": [
+      {
+       "n": "John Augustus Barry II",
+       "via": "doc",
+       "b": "13 Mar 1847",
+       "kids": [
+        {
+         "n": "Catherine Mary Sophia Barry of 1871",
+         "via": "inf",
+         "b": "27 Mar 1871"
+        },
+        {
+         "n": "John Augustus Barry III",
+         "via": "inf",
+         "b": "9 May 1873"
+        },
+        {
+         "n": "Margaret Elizabeth Annie Barry",
+         "via": "inf",
+         "b": "30 Mar 1875"
+        },
+        {
+         "n": "Jacobus Ellinckhuizen Barry",
+         "via": "inf",
+         "b": "25 Mar 1877"
+        },
+        {
+         "n": "Clarence Barry",
+         "via": "inf",
+         "b": "14 Mar 1879"
+        },
+        {
+         "n": "George Alphonso Barry",
+         "via": "inf",
+         "b": "3 Mar 1881"
+        },
+        {
+         "n": "Anton Rector Kolbe Barry",
+         "via": "inf",
+         "b": "3 Nov 1882"
+        },
+        {
+         "n": "Alida Eduarda Barry",
+         "via": "inf",
+         "b": "10 Dec 1886"
+        },
+        {
+         "n": "Miny Barry",
+         "via": "inf",
+         "b": "13 Aug 1889"
+        }
+       ]
+      },
+      {
+       "n": "William Barry",
+       "via": "doc",
+       "b": "23 Aug 1853"
+      },
+      {
+       "n": "James Henry Barry",
+       "via": "doc",
+       "b": "13 Jul 1848",
+       "d": "23 Jun 1939"
+      },
+      {
+       "n": "George Augustus Barry",
+       "via": "doc",
+       "b": "26 Apr 1850"
+      },
+      {
+       "n": "Frederick Fortunatus Barry",
+       "via": "doc",
+       "b": "10 Nov 1863"
+      },
+      {
+       "n": "Richard Peter Barry",
+       "via": "doc",
+       "kids": [
+        {
+         "n": "Richard Pieter Kolbe Barry",
+         "via": "doc",
+         "b": "1899"
+        }
+       ]
+      },
+      {
+       "n": "Margaret Mary Bedford",
+       "via": "doc"
+      },
+      {
+       "n": "Catherine Maria Sophia “Kathleen” Barry",
+       "via": "line",
+       "b": "4 Aug 1859",
+       "d": "1940",
+       "kids": [
+        {
+         "n": "John Barry Booyzen",
+         "via": "doc",
+         "b": "c. 1884"
+        },
+        {
+         "n": "Willem Hermanus Booyzen of Indwe",
+         "via": "inf",
+         "b": "c. 1886",
+         "d": "29 Jul 1932"
+        },
+        {
+         "n": "David Kolbe Booyzen",
+         "via": "tree"
+        },
+        {
+         "n": "Henry James Booyzen",
+         "via": "tree",
+         "b": "12 Aug 1887",
+         "d": "8 Dec 1956"
+        },
+        {
+         "n": "Gertruida Alexandra Booyzen",
+         "via": "tree"
+        },
+        {
+         "n": "Johanna Catharina Booyzen",
+         "via": "doc",
+         "b": "20 Jun 1889"
+        },
+        {
+         "n": "Catharina Maria Sophia Booysen",
+         "via": "doc",
+         "b": "22 Apr 1891",
+         "d": "1946"
+        },
+        {
+         "n": "Richard Peter Booyzen",
+         "via": "inf",
+         "b": "c. 1894",
+         "d": "25 Oct 1918"
+        },
+        {
+         "n": "George Downing Mountjoy Booyzen",
+         "via": "line",
+         "b": "1 Jun 1901",
+         "d": "11 Dec 1947"
+        }
+       ]
+      },
+      {
+       "n": "Kathleen Mary Barry",
+       "via": "doc"
+      }
+     ]
     },
     "m": {
      "n": "Anna Johanna Maria Schoeman",
@@ -200,8 +872,77 @@
       "d": "—",
       "s": "doc"
      }
-    }
+    },
+    "sibwhy": "Harriet's registration, 1912",
+    "sib": [
+     {
+      "n": "Ruben Jacobus Hosea Barry",
+      "via": "inf",
+      "b": "7 Oct 1888"
+     },
+     {
+      "n": "Dorothea Regina Barry of Slang River",
+      "via": "inf",
+      "b": "11 Jan 1892"
+     },
+     {
+      "n": "Harriet Louisa Barry",
+      "via": "doc",
+      "b": "1894",
+      "d": "7 Sep 1912"
+     },
+     {
+      "n": "Ellen Hendrika Barry",
+      "via": "inf",
+      "b": "8 Dec 1899"
+     }
+    ]
    }
-  }
+  },
+  "sibwhy": "The cousin marriage",
+  "sib": [
+   {
+    "n": "Willem Hermanus “Willy” Booyzen",
+    "via": "doc",
+    "b": "15 Oct 1925",
+    "d": "1996"
+   },
+   {
+    "n": "Margaretha Wilhelmina Elizabeth “Maggie” Booyzen",
+    "via": "doc",
+    "b": "14 Oct 1926",
+    "d": "1966"
+   },
+   {
+    "n": "Anna Johanna Maria Booyzen (Vermaak)",
+    "via": "doc",
+    "b": "12 Oct 1930",
+    "d": "deceased"
+   },
+   {
+    "n": "Georgina Jeanette Booyzen (Boshoff)",
+    "via": "doc",
+    "b": "22 Sep 1932",
+    "d": "deceased"
+   },
+   {
+    "n": "Petrus Jacobus “Piet” Booyzen",
+    "via": "doc",
+    "b": "10 Jan 1934",
+    "d": "2003"
+   },
+   {
+    "n": "Gertrude Elizabeth Booyzen",
+    "via": "doc",
+    "b": "11 May 1946",
+    "d": "15 May 1946"
+   },
+   {
+    "n": "Gertrude Booyzen",
+    "via": "doc",
+    "b": "11 May 1947",
+    "d": "11 May 1947"
+   }
+  ]
  }
 }

@@ -189,8 +189,26 @@ if anchors:                      # only meaningful after a build has run
         fails.append("%d dangling /documents/ anchor(s): %s" % (len(dangling), ", ".join(
             "#%s (from %s)" % (a, sorted(v)[0]) for a, v in sorted(dangling.items())[:4])))
 
-# 4. the pedigree chart must not contradict kin.js on a parent
-ped = json.dumps(load("pedigree.json"), ensure_ascii=False)
+# 4. the pedigree chart must not contradict kin.js on a parent.
+#    ONLY THE SPINE COUNTS. Since 15 Sep 2026 the pedigree also carries `sib`
+#    arrays — the brothers and sisters at each step, so /bloodline/ can draw
+#    aunts, uncles and cousins instead of a straight line of ancestors. A
+#    SIBLING IS ALLOWED TO STAND THERE WITHOUT A SPOUSE; an ancestor is not,
+#    because the chart asserts both parents at every step. Serialising the
+#    whole file conflated the two and produced nine warnings about marriages
+#    the chart was never claiming to draw.
+def spine(node, out):
+    if not isinstance(node, dict) or not node.get("n"):
+        return out
+    out.append(node["n"])
+    for alt in node.get("alt", []):
+        if alt.get("n"):
+            out.append(alt["n"])
+    spine(node.get("f"), out)
+    spine(node.get("m"), out)
+    return out
+
+ped = " · ".join(spine(load("pedigree.json").get("root"), []))
 for m in re.finditer(r'\{ h: "([^"]+)", w: "([^"]+)", via: "doc"', kin):
     h, w = m.group(1).split("|")[0], m.group(2)
     if norm(h) in norm(ped) and norm(w) not in norm(ped):
