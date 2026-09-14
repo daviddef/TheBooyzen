@@ -2,6 +2,50 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
+   "n": "The national archives index, all repositories",
+   "d": "14 Sep 2026",
+   "h": "/documents/#naairs-three",
+   "rows": [
+    [
+     "DASCHNER · all repositories",
+     "TWELVE DOCUMENTS — THE WHOLE SURNAME IN SOUTH AFRICA",
+     "Two are this archive's own: MHG 1928/42 Joseph Heinrich, and MHG 3734/46 Catherine Mary Sophia born Booyzen. NEW: MHG 2703/63 DASCHNER, WILLIAM HERMAN, and MHG 10287/69 DASCHNER, HEINRICH. The remaining eight are divorce and hire-purchase cases in the Witwatersrand and Transvaal courts, 1949–1980, and belong to a later generation. A SURNAME SMALL ENOUGH TO READ ENTIRE IS A GIFT, and this one was never asked before today.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY · all repositories",
+     "136 DOCUMENTS, THIRTY-FOUR OF THEM ESTATES",
+     "Including MOOC 6/9/5047 numbers 58379 and 58380 — MOUNTJOY, JAMES JOHN and MOUNTJOY, MARIA LOUISA BERTHA NEE KUMM, CONSECUTIVE NUMBERS, both 1938 — which are the two people on the Barkly East gravestone found this same morning, “MOUNTJOY John James -1937 & Marie Louis -1934”. THE STONE AND THE ESTATE INDEX FOUND EACH OTHER WITHIN THE HOUR, from two collections that do not talk to one another. Also MSCE 600/1974 MOUNTJOY, CHRISTIAN, BORN IN BARKLY EAST, and MSCE 581/1973 SHOOTER, MATHILDA ELIZABETH (BORN MOUNTJOY), BORN IN BARKLY EAST — two Natal estates for people born in this archive's town.",
+     "yes"
+    ],
+    [
+     "BARRY · all repositories",
+     "5,022 DOCUMENTS — NOT A WORKABLE SEARCH",
+     "Barry is a forename, a company name, a place and a surname belonging to a large and unrelated Cape family. The index has no date filter and no place filter on the summary screen. IT HAS TO BE PAIRED, and this is recorded as a limit of the method rather than as a negative.",
+     "part"
+    ],
+    [
+     "BARRY AND BURGERSDORP · BARRY AND INDWE",
+     "ONE AND NONE",
+     "The one is a municipality file. Burgersdorp and Indwe hold nothing for this surname in the national index — which is the opposite of what this archive expected, Burgersdorp being where the Barry children were christened.",
+     "no"
+    ],
+    [
+     "BARRY AND BARKLY",
+     "TWO DOCUMENTS AND BOTH OF THEM MATTER",
+     "SAB, VWR 2, B645/8/38, 1937: “AANSOEK DEUR PLAASEIENAAR BARKLY-OOS. RPK BARRY. BYWONER RPK BARRY (SEUN).” A FARM OWNER AND A BYWONER, BOTH R.P.K. BARRY, FATHER AND SON, on one place, with the Department of Social Welfare between them. And NAB, MSCE 2183/1958: “BARRY, HENRY JAMES KOLBE. BORN IN BARKLY EAST, CAPE PROVINCE. UNMARRIED. DECEASED ESTATE.” THE BARRY FORENAME AND THE KOLBE SURNAME IN ONE MAN, born in this archive's town, dying unmarried in Natal. NEITHER FILE IS READ.",
+     "yes"
+    ],
+    [
+     "A METHOD NOTE — NAAIRS ORs two keywords unless you say otherwise",
+     "BARRY WITH BURGERSDORP RETURNED 6,245, WHICH IS MORE THAN BARRY ALONE",
+     "The form has a select between each keyword box, defaulting to AND on screen; posted without it, the index ORs them. For an hour this looked like a rich seam. With the operator sent, the same query returns ONE document. A SEARCH THAT RETURNS MORE THAN ITS OWN FIRST TERM IS NOT A SEARCH, and the number should have been the tell.",
+     "void"
+    ]
+   ]
+  },
+  {
    "g": "The rest of the Gauteng Booyzen stones, enumerated at last",
    "n": "39 index lines, and five of the twelve Silverton children found",
    "d": "14 Sep 2026",
