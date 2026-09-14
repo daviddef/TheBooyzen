@@ -1,9 +1,10 @@
-node_modules/
-dist/
-.astro/
-.DS_Store
 
 # The private MyHeritage material. It quotes the raw tree rows, including
-# birth years for people who are alive, and this repository is public. The
 # archive's own data under site/src/data is the redacted, publishable form.
+# birth years for people who are alive, and this repository is public. The
+.DS_Store
+.astro/
+dist/
+node_modules/
 notes/raw-myheritage.md
+site/public/atlas-data.json
