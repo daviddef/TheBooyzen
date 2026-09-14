@@ -1359,11 +1359,15 @@
    "k": "Hill, place of capture",
    "r": "Eastern Transvaal",
    "s": "open",
-   "w": "WHERE THREE BOOYZENS WERE TAKEN, AND THE ONLY PLACE ON THIS MAP WHOSE POSITION THIS ARCHIVE CANNOT VOUCH FOR. Stefanus Francois, Petrus Jacobus and David Schalk Booysen — prisoners 18463, 18464 and 18465, all of Pretoria and all of the Pretoria commando — were captured here on 25 April 1901, among FORTY-TWO Boers taken with two guns and much stock. Six weeks later they sailed from Cape Town on the City of Cambridge. THE HILL ITSELF IS NOT ON ANY MAP THIS ARCHIVE HAS FOUND. It is in no gazetteer reachable by search, in no battle list, and in no day-by-day war diary of 1901; the single source for the name gives only “Tolosberg in the Waterval Valley, Eastern Transvaal”. The pin is therefore placed at WATERVAL BOVEN, in the Elands River valley — the Waterval valley of the Eastern Transvaal, and twenty kilometres from Dalmanutha, where the same man had fought the previous August. THAT PLACEMENT IS THIS ARCHIVE'S INFERENCE AND NOT THE SOURCE'S. There is more than one Waterval in the Transvaal, including one in the Lydenburg district north of here, and the hill could as easily be there.",
+   "w": "WHERE THREE BOOYZENS WERE TAKEN, AND THE ONLY PLACE ON THIS MAP WHOSE POSITION THIS ARCHIVE CANNOT VOUCH FOR. Stefanus Francois, Petrus Jacobus and David Schalk Booysen — prisoners 18463, 18464 and 18465, all of Pretoria and all of the Pretoria commando — were captured here on 25 April 1901, among FORTY-TWO Boers taken with two guns and much stock. Six weeks later they sailed from Cape Town on the City of Cambridge. THE HILL ITSELF IS NOT ON ANY MAP THIS ARCHIVE HAS FOUND. It is in no gazetteer reachable by search, in no battle list, and in no day-by-day war diary of 1901; the single source for the name gives only “Tolosberg in the Waterval Valley, Eastern Transvaal”. The pin is therefore placed at WATERVAL BOVEN, in the Elands River valley — the Waterval valley of the Eastern Transvaal, and twenty kilometres from Dalmanutha, where the same man had fought the previous August. THAT PLACEMENT IS THIS ARCHIVE'S INFERENCE AND NOT THE SOURCE'S. There is more than one Waterval in the Transvaal, including one in the Lydenburg district north of here, and the hill could as easily be there. JEPPE'S MAP OF 1899 HAS NOW BEEN READ AND IT DOES NOT CARRY THE NAME. Sheet 6 of the six-sheet map — the definitive survey of the South African Republic, finished the year the war began — was examined over about twenty-five kilometres of the Elands River valley either side of this pin, at full resolution. It names EVERY FARM with its number: Waterval 161, Kindergoed, Elandshoek, Eerste Geluk, Groot Geluk, Nooitgedacht, Vlakplaats, Kaalbosch, Schoonspruit, Kietspruit, Weltevreden, Treurfontein, Uitkomst — and Waterval Boven and Waterval Onder stations on the Delagoa Bay line, with Godwaan station east of them. IT ALSO NAMES HILLS, in the form Jeppe used: Mauch Bg., Spitskop, Tafel Kop, Peerds Kop, Zwart Kop, Zuikerboschkop, Silverkop, Vaalkop. THERE IS NO TOLOSBERG AMONG THEM. That does not move the pin and it does not prove the source wrong; it means the name was local, or was spelt otherwise, or was never a surveyed feature. THE PIN IS STILL AN INFERENCE — but it is now a tested one.",
    "e": [
     [
      "25 Apr 1901",
      "Stefanus Francois, Petrus Jacobus and David Schalk Booysen captured, with 40 other Boers and two guns"
+    ],
+    [
+     "1899",
+     "Jeppe maps the valley farm by farm — and does not name this hill"
     ]
    ],
    "p": [
@@ -1374,7 +1378,7 @@
    "lat": -25.648,
    "lon": 30.336,
    "approx": true,
-   "why": "position inferred, not the source's"
+   "why": "position inferred; Jeppe's 1899 map does not carry the name"
   },
   {
    "n": "Knap Daar",

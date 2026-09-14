@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Tolosberg on Jeppe's map of 1899 — the hill three Booyzens were taken on",
+   "n": "Sheet 6, read at full resolution over twenty-five kilometres",
+   "d": "14 Sep 2026",
+   "h": "/places/tolosberg/",
+   "rows": [
+    [
+     "Find a digitised Jeppe 1899 at a resolution that can be read",
+     "STANFORD HAS SHEET 6 AS A 75 MB JP2, SERVED OVER IIIF",
+     "purl.stanford.edu/jd589rh6196 — “Jeppe's map of the Transvaal or S.A. Republic and surrounding territories”, 16,423 × 24,548 pixels, with a IIIF endpoint that will cut any rectangle at native resolution. Sheet 6 is the SOUTH-EAST sheet, roughly 30.3°–33°E and 25°–28°S, which is exactly the ground. THE MAP IS FREE AND HAS BEEN FREE THE WHOLE TIME.",
+     "yes"
+    ],
+    [
+     "The Elands River valley, four tiles at native resolution",
+     "EVERY FARM IS NAMED AND NUMBERED — AND THERE IS NO TOLOSBERG",
+     "Waterval 161, Kindergoed, Elandshoek, Eerste Geluk, Groot Geluk, Nooitgedacht 345, Vlakplaats, Kaalbosch, Schoonspruit, Kietspruit, Weltevreden, Treurfontein, Uitkomst, Doornhoek — and WATERVAL BOVEN and WATERVAL ONDER stations on the Delagoa Bay railway, with GODWAAN STATION to the east. About twenty-five kilometres by twenty, at the scale the surveyor drew it.",
+     "yes"
+    ],
+    [
+     "Does Jeppe name hills at all? — because a negative is worthless if he does not",
+     "HE DOES, AND IN A FORM THAT WOULD HAVE CAUGHT IT",
+     "MAUCH BG. is printed in italic across a range north of the valley; SPITSKOP, TAFEL KOP, PEERDS KOP, ZWART KOP, ZUIKERBOSCHKOP, SILVERKOP, VAALKOP and BOSCHKOP all appear as named summits. A hill called TOLOSBERG would have been written TOLOS BG. and would have been found. THE TEST IS SOUND AND THE ANSWER IS NO.",
+     "no"
+    ],
+    [
+     "What the negative is worth",
+     "IT DOES NOT MOVE THE PIN AND IT DOES NOT BREAK THE SOURCE",
+     "The single source for the capture says “Tolosberg in the Waterval Valley, Eastern Transvaal”, and this archive placed the pin at Waterval Boven by inference. Jeppe's silence means the name was LOCAL, or SPELT OTHERWISE, or NEVER A SURVEYED FEATURE — commandos named ground by what they called it, not by what the Surveyor-General called it. The pin stays where it is, still marked as an inference, AND IT IS NOW A TESTED ONE.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
    "n": "Thirty-eight Cape and Natal papers, searched at last",
    "d": "14 Sep 2026",
