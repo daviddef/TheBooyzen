@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "eGGSA's newspaper extracts — the right country's papers, opened",
+   "n": "a usable method, four quarters swept, and a site that has just moved",
+   "d": "14 Sep 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "The addresses, which have all just changed",
+     "Every indexed link is dead",
+     "eggsa.org/newspapers/ now returns 404 and so does every deep link Google still holds for it. The collections have moved to SUBDOMAINS: NEWSPAPERS.EGGSA.ORG for the newspaper extracts and GRAVES.EGGSA.ORG for the gravestone photographs. Recorded first because anyone following an older citation will conclude the resource is gone, and it is not.",
+     "yes"
+    ],
+    [
+     "The search, which does not work",
+     "Browse instead",
+     "The site runs a Geek ElasticSearch widget that does not respond to a form POST or to scripted input, and Joomla's own com_search is not installed — /index.php?option=com_search returns “Component not found”. THE CONTENT IS STILL REACHABLE: each newspaper has a page, each page lists its quarters, and each quarter is a single full-text transcription of ten to eighteen thousand characters that can be fetched and read straight through. That is the method, and it works.",
+     "part"
+    ],
+    [
+     "What is actually there",
+     "The family's own town paper",
+     "Titles include the CAPE FRONTIER TIMES, CAPE OF GOOD HOPE GOVERNMENT GAZETTE, CAPE TIMES, DAILY REPRESENTATIVE, EASTERN PROVINCE HERALD, FORT BEAUFORT ADVOCATE, GRAHAMSTOWN JOURNAL, QUEENSTOWN FREE PRESS — and the GRAAFF-REINET HERALD, transcribed by Sue Mackay from CO53/43 at the National Archives, Kew, covering 1852 to 1856 in ten quarters. Graaff-Reinet is where this family is oldest and where its baptisms run from 1788 to 1857.",
+     "yes"
+    ],
+    [
+     "Graaff-Reinet Herald · 1852 Oct–Dec, 1853 Jan–Mar, Apr–Jun, Jul–Sep",
+     "Four quarters, no family",
+     "Fetched and read in full for BOOY, BOOIJ, KOLBE, MOUNTJOY, MONTJOY and VILJOEN. NOT ONE OCCURRENCE across roughly 55,000 characters of advertisements, notices and reports. A scoped negative and a small one: four quarters of ten, in one paper of twenty, in a five-year window. What it establishes is that the method works and the reading can be trusted — the transcriptions are genuine running text, not indexes.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "Gravestones — NAAIRS's GEN database, and eGGSA",
    "n": "a camp death, a name carried eighty years, and the right newspapers at last",
    "d": "14 Sep 2026",
