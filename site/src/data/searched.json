@@ -30,6 +30,24 @@
      "Three frictions worth knowing",
      "ONE: the results URL takes KeywordsPlace, and a place passed as “placename” is silently ignored — 20,309 results against 12 for the same search. TWO: the NEWSPAPER results URL cannot be reached by parameters at all; /search-newspapers/results?keywords= only works once the form has been clicked, and a direct navigation bounces to the landing page. THREE: result rows resist programmatic clicking, so opening a transcript is a manual step. None of this is a reason not to use it; all of it is a reason to budget more time than the searching itself takes.",
      "yes"
+    ],
+    [
+     "Newspapers: keywords=Tolosberg, all 108 million pages",
+     "0 results",
+     "“We can't find any matching articles for tolosberg.” The name appears NOWHERE in the British and Irish press. That is a scoped negative with real weight: it explains why the place is in no battle list and no gazetteer, and it means the capture of forty-two Boers with two guns on 25 April 1901 was never reported in Britain under that name. The place is real — a prisoner register and a medal roll both carry it — and the British papers never heard of it.",
+     "no"
+    ],
+    [
+     "Newspapers: keywords=Booysen · keywords=Daschner",
+     "3,262 and 42, none usable",
+     "The Booysen spelling returns 3,262 against Booyzen's 7, and Daschner 42 — all of them modern, British or unrelated. Recorded as a limit of the medium rather than of the search: BRITISH PAPERS DID NOT PRINT THE NAMES OF INDIVIDUAL BOER PRISONERS. The Scheepers charge sheet is the exception because it was a trial. Anyone expecting this family to appear in the British press should expect war reporting and nothing else.",
+     "no"
+    ],
+    [
+     "LastName=Kolbe · EventYear=1841 · KeywordsPlace=Conduit Street, London",
+     "THE HOUSEHOLD, FOUR YEARS BEFORE HE DIED",
+     "1841 England census, HO107, piece 734, book 1, folio 11, page 15, SCHEDULE 38 — St George Hanover Square, sub-district MAY FAIR, street CONDUIT STREET. “JOHN G KOLBE, male, age 76, birth year 1765, birth county as transcribed: FOREIGN.” Two things follow. The archive corrected the family tree's “Lamb's Conduit Street” to 34 Conduit Street from his death record; the census puts him in Conduit Street four years earlier, INDEPENDENTLY. And “FOREIGN” is the first document here to say in its own words that he was not English — the German origin had been an inference off a German church burial. THREE WOMEN share the schedule: MARIANNE, 35, CHARLOTTE, 30, and AMELIA A., 25, none of whom this archive had. No Mary: George Augustus's mother, named at his 1803 baptism, is not in the house.",
+     "yes"
     ]
    ]
   },

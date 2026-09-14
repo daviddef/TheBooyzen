@@ -767,8 +767,17 @@ export const people = [
 
 // ───────────────────────── the Kolbes and Downings ─────────────────────────
 {n:"Johan Gottlieb Kolbe", b:"1765", d:"1845", l:"Kolbe", s:"doc",
- r:"Tailor. Died at 34 Conduit Street, Mayfair — not Lamb's Conduit Street; the tree's photograph is of the wrong building. Buried at the German Savoy Church, Strand.",
+ r:"FOUND IN THE 1841 CENSUS, which settles two things this archive had argued from other documents. He is at CONDUIT STREET, St George Hanover Square, sub-district MAY FAIR, aged 76 — four years before he died at number 34, and independent of the death record that corrected the family tree's Lamb's Conduit Street. And his birth county is entered as “FOREIGN”, which is the first document in this archive to say in its own words that he was not English. HO107, piece 734, book 1, folio 11, page 15, SCHEDULE 38. Three women share that schedule: Marianne, 35, Charlotte, 30, and Amelia A., 25. Tailor. Died at 34 Conduit Street, Mayfair — not Lamb's Conduit Street; the tree's photograph is of the wrong building. Buried at the German Savoy Church, Strand.",
  p:[["The Kolbes","/kolbe/"],["The Documents","/documents/"]]},
+{n:"Marianne Kolbe", b:"1806", d:"—", l:"Kolbe", s:"inf",
+ r:"Aged 35 and living with her father Johan Gottlieb in Conduit Street at the 1841 census, schedule 38. Almost certainly a sister of George Augustus, who had sailed for the Cape twenty-one years earlier and never came back. FROM THE CENSUS — no baptism has been read for her.",
+ p:[["Conduit Street","/places/conduit-street/"],["The Kolbes","/kolbe/"],["The Women","/women/"]]},
+{n:"Charlotte Kolbe", b:"1811", d:"—", l:"Kolbe", s:"inf",
+ r:"Aged 30 in the Conduit Street household at the 1841 census. FROM THE CENSUS.",
+ p:[["Conduit Street","/places/conduit-street/"],["The Kolbes","/kolbe/"],["The Women","/women/"]]},
+{n:"Amelia A. Kolbe", b:"1816", d:"—", l:"Kolbe", s:"inf",
+ r:"Aged 25 in the Conduit Street household at the 1841 census, and the youngest of the three women there. FROM THE CENSUS.",
+ p:[["Conduit Street","/places/conduit-street/"],["The Kolbes","/kolbe/"],["The Women","/women/"]]},
 {n:"George Augustus Kolbe", b:"1802", d:"1 Dec 1844, “Wurtemburg”, Colesberg", l:"Kolbe", s:"doc",
  r:"1820 Settler — the Nautilus, Owen's party, Algoa Bay 14 Apr 1820. Married at sixteen on a sworn falsehood. Preached across the Orange River. His grandson could not name him in 1915.",
  p:[["The Kolbes","/kolbe/"],["Home","/"],["The Documents","/documents/"]]},
