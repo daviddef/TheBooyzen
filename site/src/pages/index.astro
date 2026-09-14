@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import PlaceSpark from "@daviddef/archive-kit/components/PlaceSpark.astro";
 import { u } from "../lib/url.js";
+import atlas from "../../public/atlas-data.json";
 const stats = [
   ["646", "people in the whole world carry the spelling Booyzen — against 53,764 Booysens", "/name/"],
   ["1820", "the Nautilus lands at Algoa Bay with a seventeen-year-old London tailor's son aboard", "/kolbe/"],
@@ -84,7 +86,10 @@ const stats = [
 </section>
 
 <section class="blk">
-  <h2>What the family remembers, and how it has held up</h2>
+  
+  <PlaceSpark places={atlas.places} href={u("/atlas/")}
+              label={`${atlas.places.length} places, from the Karoo to the Rand — the size of a dot is how many people stand in it`} />
+<h2>What the family remembers, and how it has held up</h2>
   <p class="dek">One long piece of testimony sits at the centre of this archive — recorded on the family
     tree from <b>Tersia Booyzen</b>, told to her by her father. It carries seven separate claims. None of
     them has yet been proved. Two are already in trouble, and three now have strong circumstantial
