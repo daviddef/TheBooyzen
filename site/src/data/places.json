@@ -1402,7 +1402,7 @@
    "k": "Town and district",
    "r": "Eastern Transvaal",
    "s": "doc",
-   "w": "WHERE THE SETTLER'S FAMILY ENDED UP, four hundred miles from the font. George Augustus Kolbe the 1820 Settler died at Colesberg in 1844 and is buried at Burgersdorp; his son Frederik Fortunatus baptised eight children at Colesberg, Hopetown and Bethulie between 1863 and 1881; and THREE OF THOSE EIGHT marry or are found at Wakkerstroom in the eastern Transvaal. The eldest, another George Augustus, was born at Colesberg on 29 July 1863 and died here on 28 September 1954, aged ninety-one — a man whose life spans the whole of this archive's South African century. A POW record of 1902 gives a George Augustus Kolbe of Wakkerstroom, aged 40 — but TWO men of that name were living here, and this archive has withdrawn its first answer as to which. Two of his sons died here in 1918 four months apart, which is the influenza, and one of them carried the London surname DOWNING into the eastern Transvaal, which is what proved the connection. A woman named ANGELINE KOLBE died here on 15 November 1900, aged 28, and this archive cannot say who she was.",
+   "w": "WHERE THE SETTLER'S FAMILY ENDED UP, four hundred miles from the font. George Augustus Kolbe the 1820 Settler died at Colesberg in 1844 and is buried at Burgersdorp; his son Frederik Fortunatus baptised eight children at Colesberg, Hopetown and Bethulie between 1863 and 1881; and THREE OF THOSE EIGHT marry or are found at Wakkerstroom in the eastern Transvaal. The eldest, another George Augustus, was born at Colesberg on 29 July 1863 and died here on 28 September 1954, aged ninety-one — a man whose life spans the whole of this archive's South African century. TWO MEN NAMED GEORGE AUGUSTUS KOLBE LIVED AND ARE BURIED HERE, born two years apart — 2 October 1861 and 29 July 1863 — and the older of them was the prisoner of war of 1902. Two of his sons died here in 1918 four months apart, which is the influenza, and one of them carried the London surname DOWNING into the eastern Transvaal, which is what proved the connection. A woman named ANGELINE KOLBE died here on 15 November 1900, aged 28, and this archive cannot say who she was.",
    "e": [
     [
      "1886",
@@ -1413,8 +1413,12 @@
      "Angeline Kolbe dies here, aged 28 — unidentified"
     ],
     [
+     "1901",
+     "Martha Angeline Kolbe, sixty days old, buried here — not at Volksrust, as this archive first said"
+    ],
+    [
      "1902",
-     "A George Augustus Kolbe, aged 40, a prisoner of war with residence given here — which of the two men of that name is not settled"
+     "George Augustus Kolbe of Burgersdorp, aged 40 and resident here, a prisoner of war"
     ],
     [
      "19 Jun 1918",
@@ -1423,6 +1427,10 @@
     [
      "2 Nov 1918",
      "Frederik Fortunatus Downing Kolbe dies here, aged 27"
+    ],
+    [
+     "8 Nov 1934",
+     "George Augustus Kolbe of Burgersdorp dies at Standerton and is buried here"
     ],
     [
      "1 Oct 1953",
@@ -1434,14 +1442,17 @@
     ]
    ],
    "p": [
-    "George Augustus Kolbe of Wakkerstroom",
-    "Frederik Fortunatus Downing Kolbe",
-    "Daniel Jakobus Kolbe",
-    "Maria Johanna Kolbe",
     "Angeline Kolbe",
-    "Martha Sophia Klopper",
+    "Daniel Jakobus Kolbe",
+    "Elizabeth Johanna Kolbe",
+    "Frederik Fortunatus Downing Kolbe",
+    "George Augustus Kolbe of Burgersdorp",
+    "George Augustus Kolbe of Wakkerstroom",
     "Margaret Harriet Kolbe",
-    "Elizabeth Johanna Kolbe"
+    "Maria Johanna Kolbe",
+    "Martha Angeline Kolbe",
+    "Martha Sophia Klopper",
+    "Susanna Margaretha Swart"
    ],
    "slug": "wakkerstroom",
    "lat": -27.353,
@@ -1452,19 +1463,14 @@
    "k": "Town, and a camp",
    "r": "Eastern Transvaal",
    "s": "doc",
-   "w": "TWENTY MILES FROM WAKKERSTROOM, ON THE NATAL BORDER, and the place the Kolbe graves are indexed to. Frederik Fortunatus Downing Kolbe married here. And MARTHA ANGELINE KOLBE, born 9 October 1901 and dead on 8 December, is buried here, having lived sixty days inside the war. Volksrust held one of the concentration camps; this archive has not read a camp register that names her and so records the burial and not the cause. The NAAIRS index also holds a camp grave for a G.E. KOLBE, aged 35, which is NOT the Angeline Kolbe who died at Wakkerstroom in 1900 — a different age, a different year and a different town.",
+   "w": "TWENTY MILES FROM WAKKERSTROOM, ON THE NATAL BORDER. Frederik Fortunatus Downing Kolbe married here. THIS ARCHIVE ALSO PUT A CHILD'S GRAVE HERE FOR HALF A DAY AND HAS TAKEN IT BACK: Martha Angeline Kolbe, sixty days old, is buried at WAKKERSTROOM, and the index that said Volksrust was naming the DISTRICT, which Wakkerstroom lies inside. Volksrust held one of the concentration camps, and the NAAIRS index holds a camp grave for a G.E. KOLBE, aged 35 — which is NOT the Angeline Kolbe who died at Wakkerstroom in 1900, a different age in a different year in a different town. NO PERSON IN THIS ARCHIVE IS YET SHOWN TO HAVE BEEN IN THAT CAMP.",
    "e": [
-    [
-     "1901",
-     "Martha Angeline Kolbe, aged two months, buried here"
-    ],
     [
      "c. 1913",
      "Frederik Fortunatus Downing Kolbe marries Hester Gerbina Susanna Joubert here"
     ]
    ],
    "p": [
-    "Martha Angeline Kolbe",
     "Frederik Fortunatus Downing Kolbe"
    ],
    "slug": "volksrust",

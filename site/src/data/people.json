@@ -5109,7 +5109,7 @@
    "d": "28 Sep 1954, Wakkerstroom — aged 91",
    "l": "Kolbe",
    "s": "doc",
-   "r": "THE SETTLER'S GRANDSON, CARRYING HIS NAME ENTIRE, and the man the Wakkerstroom Kolbes descend from. Baptised at Colesberg in the year of his uncle Frederick Fortunatus Barry's birth. Married MARTHA SOPHIA KLOPPER, who was seventeen, about 1885; their eldest, Maria Johanna, was born at Wakkerstroom in 1886. A POW RECORD OF 1902 GIVES RESIDENCE WAKKERSTROOM — but it gives the man's age as 40, and this one was 39. See /corrections/: there were two George Augustus Kolbes at Wakkerstroom and the prisoner is more probably the other. Died at Wakkerstroom on 28 September 1954, aged 91, which counts EXACTLY from the Colesberg font: born 29 July 1863, dead 28 September 1954. He outlived two of his sons by thirty-six years.",
+   "r": "THE SETTLER'S GRANDSON, CARRYING HIS NAME ENTIRE, and the man the Wakkerstroom Kolbes descend from. Baptised at Colesberg in the year of his uncle Frederick Fortunatus Barry's birth. Married MARTHA SOPHIA KLOPPER, who was seventeen, about 1885; their eldest, Maria Johanna, was born at Wakkerstroom in 1886. AND HIS STONE SETTLES THE IDENTIFICATION BEYOND ARGUMENT: “VADER — GEORGE AUGUSTUS — GEB. 29 JULIE 1863 — OORL. 28 SEPT. 1954”, which is the COLESBERG FONT DATE TO THE DAY. The 1902 POW record with residence Wakkerstroom is NOT HIS: the other George Augustus Kolbe of that town was born 2 October 1861 and was exactly forty through ten months of 1902, where this one was thirty-nine. Died at Wakkerstroom on 28 September 1954, aged 91, which counts EXACTLY from the Colesberg font: born 29 July 1863, dead 28 September 1954. He outlived two of his sons by thirty-six years.",
    "p": [
     [
      "The Kolbes",
@@ -5127,11 +5127,11 @@
   },
   {
    "n": "Martha Sophia Klopper",
-   "b": "1867",
-   "d": "14 Oct 1950, Transvaal — aged 83",
+   "b": "27 May 1867",
+   "d": "14 Oct 1950 — aged 83",
    "l": "Kolbe",
    "s": "doc",
-   "r": "Married George Augustus Kolbe of Wakkerstroom AT SEVENTEEN, about 1885 — the fourth bride in this archive married before eighteen, and the third in the Kolbe line. Named as the mother on her daughter Maria Johanna's 1953 estate file, which is how this archive learnt she existed. She died four years before her husband.",
+   "r": "HER HALF OF THE STONE: “MOEDER — MARTHA SOPHIA (GEB. KLOPPER) — GEB. 27 MEI 1867 — OORL. 14 OKT. 1950 — Ons dank God elke maal as ons aan haar dink.” The birth is new; the death matches the civil register to the day. Married George Augustus Kolbe of Wakkerstroom AT SEVENTEEN, about 1885 — the fourth bride in this archive married before eighteen, and the third in the Kolbe line. Named as the mother on her daughter Maria Johanna's 1953 estate file, which is how this archive learnt she existed. She died four years before her husband.",
    "p": [
     [
      "The Kolbes",
@@ -5144,6 +5144,51 @@
     [
      "Wakkerstroom",
      "/places/wakkerstroom/"
+    ]
+   ]
+  },
+  {
+   "n": "George Augustus Kolbe of Burgersdorp",
+   "b": "2 Oct 1861, Burgersdorp",
+   "d": "8 Nov 1934, Standerton — buried WAKKERSTROOM",
+   "l": "Kolbe",
+   "s": "doc",
+   "r": "THE SECOND GEORGE AUGUSTUS KOLBE OF WAKKERSTROOM, and the reason this archive had to withdraw a claim within the hour. His stone: “IN LIEFVOLLE HERINNERING AAN ONS OUERS — GEORGE AUGUSTUS KOLBE — GEB. 2 OKTOBER 1861 — OORL. 8 NOVEMBER 1934 — EN SUSANNA MARGARETHA KOLBE — GEB. 26 OKTOBER 1861 — OORL. 28 JULIE 1940 — HULLE RUS.” BORN AT BURGERSDORP, which is where the 1820 Settler is buried and where the Settler's twin son George Augustus was born in 1836; the descent is not documented here and is not claimed. He is buried at WAKKERSTROOM although he died at Standerton, in the same cemetery as the other man of his name, TWO YEARS APART IN BIRTH AND TWENTY IN DEATH. AND THE BIRTH DATE DECIDES THE PRISONER: the 1902 POW record of WO 108/368 gives a George Augustus Kolbe of Wakkerstroom AGED 40, and a man born 2 October 1861 was forty from October 1901 to October 1902, where the other was thirty-nine all year. THE PRISONER IS THIS MAN.",
+   "p": [
+    [
+     "The Wakkerstroom stones",
+     "/documents/#wakkerstroom-stones"
+    ],
+    [
+     "The Kolbes",
+     "/kolbe/#north"
+    ],
+    [
+     "Corrections",
+     "/corrections/"
+    ]
+   ]
+  },
+  {
+   "n": "Susanna Margaretha Swart",
+   "v": "Susanna Margaretha Kolbe, on the stone",
+   "b": "26 Oct 1861",
+   "d": "28 Jul 1940",
+   "l": "Kolbe",
+   "s": "doc",
+   "r": "His wife, named on the Free State Dutch Reformed marriage register — he 27, residence WAKKERSTROOM — and on the Wakkerstroom stone beside him, born the same year as her husband to within three weeks. The Transvaal probate index also holds a SUSANNA MARGARETHA DOWNING KOLBE, unattached, which would make a second carrier of the London surname; this archive cannot yet say whether that is her daughter or another woman.",
+   "p": [
+    [
+     "The Wakkerstroom stones",
+     "/documents/#wakkerstroom-stones"
+    ],
+    [
+     "The Women",
+     "/women/"
+    ],
+    [
+     "The Kolbes",
+     "/kolbe/#north"
     ]
    ]
   },
@@ -5380,11 +5425,15 @@
   {
    "n": "Martha Angeline Kolbe",
    "b": "9 Oct 1901",
-   "d": "8 Dec 1901, Transvaal — aged two months",
+   "d": "8 Dec 1901 — aged sixty days",
    "l": "Kolbe",
    "s": "doc",
-   "r": "BORN 9 OCTOBER 1901, DEAD 8 DECEMBER 1901, BURIED AT VOLKSRUST. She lived sixty days, and every one of them was inside the war. Volksrust held a concentration camp; this archive has not yet read a camp register that names her, and records the burial place without claiming the camp. Her age on the civil death register is entered as 0. She carries the name of her great-aunt Martha Angelina, baptised at Colesberg in 1868, and of Martha Sophia Klopper, who was alive and forty miles away.",
+   "r": "HER STONE IS READ, AND IT TAKES BACK WHAT THIS ARCHIVE SAID THIS MORNING. “TER GEDACHTENIS VAN ONS GELIEFDE KLEINE — MARTHA ANGELINE KOLBE — GEBOREN 9 OCT. 1901 — OVERLEDEN 8 DEC. 1901 — HEBR. 6”, and cut across the base, the mason’s town: NEWCASTLE. IT STANDS IN WAKKERSTROOM MAIN CEMETERY, NOT AT VOLKSRUST. The index this archive read gives her burial as “Volksrust, Eastvaal District Council” — which is the DISTRICT, not the town, and Wakkerstroom lies inside it. WITH THE TOWN GOES THE CAMP: a family stone in a town churchyard, in Dutch, cut by a monumental mason twenty-five miles away in Natal, is not a camp burial, and this archive should not have gone near the word. She was sixty days old, she died in the middle of the war, and that is all that can be said. She carries the name of her great-aunt Martha Angelina, baptised at Colesberg in 1868.",
    "p": [
+    [
+     "The Wakkerstroom stones",
+     "/documents/#wakkerstroom-stones"
+    ],
     [
      "The Kolbes",
      "/kolbe/#north"
@@ -5394,12 +5443,8 @@
      "/women/"
     ],
     [
-     "Volksrust",
-     "/places/volksrust/"
-    ],
-    [
-     "The War",
-     "/rebels/"
+     "Corrections",
+     "/corrections/"
     ]
    ]
   },

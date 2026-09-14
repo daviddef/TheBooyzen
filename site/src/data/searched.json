@@ -2,6 +2,62 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "n": "Three surnames across four provincial collections",
+   "d": "14 Sep 2026",
+   "h": "/documents/#wakkerstroom-stones",
+   "rows": [
+    [
+     "A METHOD NOTE FIRST, because it produced four false negatives",
+     "THE PROVINCIAL SEARCH SCRIPTS ARE NAMED BY A TWO-LETTER CODE, NOT BY THE PROVINCE",
+     "The Eastern Cape posts to /cgi-bin/ecdosearchGraves.pl, and this archive guessed the others by expanding the subdomain — gautengdosearchGraves.pl and so on. EVERY ONE OF THOSE RETURNED NOTHING, and nothing looks exactly like a negative. The real names are ggdosearchGraves.pl, ncdosearchGraves.pl, mpdosearchGraves.pl, read off each province's own form. THE FOUR ZEROES WERE THROWN AWAY RATHER THAN RECORDED. A search you got wrong is not a source that holds nothing.",
+     "void"
+    ],
+    [
+     "Eastern Cape · BARRY",
+     "HUNDREDS, AND ALMOST ALL OF THEM SOMEBODY ELSE'S",
+     "The Cape Barrys are a large and well-known family with no shown connection here. The list is not workable by eye and this archive is not going to pretend it worked it. NOT DONE — it needs a date filter or a place filter, and the form has neither.",
+     "part"
+    ],
+    [
+     "Eastern Cape · MOUNTJOY",
+     "TWELVE STONES, AND TWO OF THEM AT BARKLY EAST",
+     "MOUNTJOY John James -1937 & Marie Louis -1934, and MOUNTJOY Fritz J. 1893–1973 & Aletta J. BRITS 1895–1976, both in BARKLY EAST MAIN CEMETERY — which is this archive's own town. Two more at MIDDELBURG MAIN, the same cemetery as the four Booyzen stones. Also Maclear, East London, King William's Town, Aliwal North. PHOTOGRAPHS LOCATED, NOT YET READ.",
+     "part"
+    ],
+    [
+     "Gauteng · MOUNTJOY",
+     "TWELVE MORE, AND A KEYS AMONG THEM",
+     "“KEYS William H. -1915 & Johanna C. MOUNTJOY -1942” at Krugersdorp Burgershoop. KEYS is a surname this archive has already had to answer a question about. Also KLEYNHANS Petronella C.A. nee MOUNTJOY 1870–1964, MOUNTJOY George 1889–1963 at Brenthurst, and three at WEST PARK, where this family's Johannesburg dead lie. NOT YET READ.",
+     "part"
+    ],
+    [
+     "Eastern Cape and Mpumalanga · DASCHNER",
+     "NONE IN EITHER",
+     "A German surname that arrived at Indwe and went to the Rand; it is not in the Cape collection at all.",
+     "no"
+    ],
+    [
+     "Gauteng · DASCHNER",
+     "SIX, INCLUDING THIS ARCHIVE'S OWN COUPLE",
+     "“DASCHNER Joseph Heinrich 1883–1942 & Catherine Mary Sophia BOOYZEN 1891–1946” at West Park, already read. FIVE MORE NOT IN THIS ARCHIVE: Albert Alfred 1962–1964; David and Catherine 1909–1989 at Rynsoord, Benoni; Joseph C. 1911–1992 and Elizabeth H.; Willie 1915–1963 and Millie HARDING; and MARGARET WILHEMINA ELIZABETH JEANETTE DASCHNER 1913–2009, who married a van Jaarsveld — a woman carrying the Barry forenames entire, two generations on.",
+     "part"
+    ],
+    [
+     "Mpumalanga · KOLBE — the one this archive did not expect",
+     "THIRTEEN, TEN OF THEM AT WAKKERSTROOM",
+     "Including BOTH George Augustus Kolbes, their wives, Daan, Freddie, Martha Angeline, Maria Johanna van der Merwe, and three more — Augie, Esther and Cora — on one stone. Plus two at PIET RETIEF: “KOLBE G.A. 1836–1913 & A.M. 1843–1907”, and 1836 is the birth year of the Settler's twin son, born at Burgersdorp. NOT READ; it is the next errand.",
+     "yes"
+    ],
+    [
+     "Gauteng · KOLBE",
+     "ELEVEN, AND TWO MORE DOWNINGS",
+     "“ROUSSEAU ... & MARIA MARGARETHA DOWNING KOLBE 1901–1996” at Zandfontein, Pretoria, and “KOLBE Elizabeth Cathrina 1902–1952 :: KOLBE PETER DOWNING 1972–1976” at Sterkfontein, Krugersdorp — a child of four. THE LONDON SURNAME IS STILL TRAVELLING IN 1972. Also a FREDERIK FORTUNATUS KOLBE 1903–1969 at Brenthurst and a GEORGE AUGUSTUS KOLBE 1928–1989 at Primrose: both of this family's Kolbe names still in use on the Rand in the twentieth century.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "The four Middelburg stones, located a day ago and read today",
    "n": "Middelburg main cemetery, eastern Cape",
    "d": "14 Sep 2026",
