@@ -2,6 +2,50 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The MOOC8 inventories — opened to look for Mountjoys, and the Booijsens were in them",
+   "n": "The first documents this archive has read that name the people this family owned",
+   "d": "15 Sep 2026",
+   "h": "/documents/#mooc8-inventories",
+   "rows": [
+    [
+     "MOOC8 Inventories, the finder on gendatabase.com — MOUNTJOY",
+     "ZERO, AND THE ZERO IS NOT A NEGATIVE",
+     "MOUNTJOY 0 · MONTJOY 0 · SLIER 0 · KOLBE 0. All four families reached the Cape in the NINETEENTH century and MOOC8 as indexed here runs from the 1780s to the 1830s. A ZERO FROM AN INDEX THAT STOPS BEFORE YOUR PEOPLE ARRIVE IS NOT A FINDING. This archive published exactly that mistake this morning about LUUS and is not repeating it four hours later. Recorded as untested, not as searched.",
+     "void"
+    ],
+    [
+     "BOOIJSEN in the same index",
+     "THIRTEEN INVENTORIES, 1781 TO 1832",
+     "MOOC 8/18.11 (1781, Gerrit Booijsen, Drakenstein) · 8/56.16b (1805) and 8/56.16a (1806), both ZACHARIAS BOOIJSEN of Graaff Reinet · 8/42.46 (1820, ALETTA BOOYZEN, Graaff Reinet) · 8/46.59 (1831, JAN LOWIES BOOIJSEN, Vondelings Fontein, Onder Roggeveld, Clanwilliam) · 8/48.32 (1832, PIET BOOIJSENS), plus seven connected estates. FOUND WHILE LOOKING FOR SOMETHING ELSE.",
+     "yes"
+    ],
+    [
+     "MOOC 8/18.11 — the 1781 inventory of Gerrit Booijsen",
+     "IT NAMES ELEVEN ENSLAVED PEOPLE",
+     "SILVIA, LENA, SARA, JANNA, DORINDA, FORTUIJN, MEIJ and FEBRUARIJ VAN DE CAAB; DIJK and FARLA VAN MADAGASCAR; ACHILLES VAN MALLABAAR. Eight born at the Cape, two taken from Madagascar, one from the Malabar coast. The names are the ones given to them — Fortuijn is Fortune, Februarij and Meij are the months they were landed or bought in, Achilles is the classical joke a slave-owner made. THIS PROJECT HAS RUN FOR WEEKS, REACHES BACK TO A MARRIAGE OF 1733, AND UNTIL TODAY THE WORD SLAVERY APPEARED NOWHERE ON IT — because estate inventories had never been opened.",
+     "yes"
+    ],
+    [
+     "Is it the right Gerrit",
+     "ALMOST CERTAINLY, AND PUBLISHED AS ALMOST CERTAINLY",
+     "De Villiers has b3 GERRIT BOOIJSEN married JOHANNA DU RAND in 1733, father of c4 JAN, a burgher AT DRAKENSTEIN — and the inventory is at Drakenstein. A man who married in 1733 and died in 1781 is seventy-odd. The only other Gerrit in the printed genealogy, b3c4d1, was not baptised until 1771. WHAT SETTLES IT IS THE INVENTORY, WHICH NAMES THE HEIRS. THE IDENTIFICATION IS THE UNCERTAIN PART; THE ELEVEN NAMES ARE NOT.",
+     "part"
+    ],
+    [
+     "The 1831 inventory of Jan Lowies Booijsen",
+     "TEN MORE NAMES, AND A WARNING ABOUT THE INDEX",
+     "CASTOOR, JAN, PIET, EVA, MALATIE, EVA, MARIE, CATRYN, CLARA, ROSET. The index line runs PERSONAL NAMES AND FARM NAMES TOGETHER IN ONE STRING, so “Knue” and “Onder Roggeveld” sit in the same list as Eva and Castoor. THE TEN ABOVE ARE THE ONES THAT ARE UNAMBIGUOUSLY PEOPLE, and the document has to be read before anybody is counted. 1831 is three years before emancipation at the Cape.",
+     "part"
+    ],
+    [
+     "The full transcriptions",
+     "TANAP IS OFF THE AIR",
+     "The MOOC8 inventories were transcribed entire by the TANAP project. databases.tanap.net NO LONGER RESOLVES — NXDOMAIN — and the Internet Archive was itself down when this was written, so there is no Wayback copy to fall back on either. EVERYTHING ABOVE IS READ OFF INDEX LINES AND THE LINE IS NOT THE RECORD. MOOC 8/18.11 entire is now the first item on the Cape Town errands list.",
+     "blocked"
+    ]
+   ]
+  },
+  {
    "g": "gendatabase.com, which this project had never once opened",
    "n": "The user asked whether it had been tried. The word appears nowhere in this repository.",
    "d": "15 Sep 2026",
