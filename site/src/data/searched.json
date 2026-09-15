@@ -2,6 +2,62 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Baptism Finder, the Land & Deeds finder and the marriage transcriptions",
+   "n": "One hard negative that closes a route, four exact dates for nothing, and a finder that is not an index",
+   "d": "15 Sep 2026",
+   "h": "/documents/#gendatabase-two",
+   "rows": [
+    [
+     "The Baptism Finder — which registers exist for Paarl (Drakenstein), Graaff-Reinet and Stellenbosch",
+     "EVERY REGISTER IN THE COLLECTION BEGINS IN 1843",
+     "54 registers for Paarl (Drakenstein), 48 for Graaff-Reinet, 55 for Stellenbosch — and sorted earliest first, the first row in every town is 1843–1844. This is the POST-1842 NG KERK ARCHIVE SERIES and it does not reach the eighteenth century at all. THE 21 SEPTEMBER 1788 BAPTISM CANNOT BE GOT FROM THIS COLLECTION, and neither can anything else this archive wants from before 1843. It explains, retrospectively, why weeks of FamilySearch work on this family has produced nothing older than the 1840s. A fact about the filming project, not about the registers — the originals exist, at Cape Town.",
+     "no"
+    ],
+    [
+     "The Baptism Database — MOUNTJOY",
+     "SIX, AND FOUR OF THEM ARE A SIBLING GROUP WITH EXACT BIRTH DATES",
+     "MARIA ELIZABETH, born 12 JUNE 1858 · JOHANNA CATHARINA, born 28 JANUARY 1860 · GEORG HERKULES JOHANNES, born 16 JANUARY 1862, baptised 27 April 1862 · ELSJE PETRONELLA FREDERIKA, born 10 JUNE 1864, baptised 17 July 1864. Roughly two years apart. THE NAMES ARE THE INTERESTING PART — Georg Herkules Johannes and Elsje Petronella Frederika are thoroughly Cape Dutch name-strings on an English surname, baptised in the Dutch Reformed Church. This archive already holds a HERCULES JOHANNES MOUNTJOY born 16 JULY 1866 — same forenames, same day of the month, four years later.",
+     "yes"
+    ],
+    [
+     "Is the 1860 Johanna Catharina the woman who died at Indwe",
+     "A CANDIDATE, AND THE FIELD THAT WOULD DECIDE IT IS THE PAID ONE",
+     "This archive holds “Johanna Catharina Mountjoy of Indwe” with NO BIRTH DATE AT ALL — she joined the Indwe congregation on 23 July 1907 from Barkly Oost and the register records her dead there in June 1911. A woman born 28 January 1860 would be FIFTY-ONE. NOT ENTERED: this family already contains one Johanna Catharina Mountjoy, born 1819 and dead 1863, so the name repeats within it. WHAT WOULD DECIDE IT IS THE CONGREGATION THE 1860 BAPTISM WAS REGISTERED IN, and the congregation is behind the paywall.",
+     "part"
+    ],
+    [
+     "Where exactly the paywall falls",
+     "FREE GIVES DATES; PAID GIVES PARENTAGE",
+     "FREE on a baptism record: names, surname, DATE OF BIRTH, baptism date. “SIGN IN TO VIEW”: baptism place, source, image, entry number, FATHER'S NAMES AND SURNAME, MOTHER'S NAMES AND SURNAME, parents. FOR A PROJECT THAT ALREADY HAS MOST OF ITS DATES AND IS SHORT OF PARENTS, THAT IS THE WRONG HALF — which is exactly why it is worth knowing before paying rather than after. Nothing bought, no account made.",
+     "part"
+    ],
+    [
+     "Land & Deeds, opened to look for Vaalbank and Kwaggafontein",
+     "IT IS A FILM FINDER, NOT A NAME INDEX",
+     "It takes A YEAR AND AN AREA, not a farm or a surname, and the areas are NATAL AND THE TRANSVAAL ONLY — no Cape and no Free State, so Leeuwberg and Kaalspruit are out of reach by this road regardless. For 1898, Transvaal it returns FIFTY-SEVEN REGISTERS of Farm Records — volumes RAK 89, 243, 274, 275, 279, 281, 387 and more — each with a link to the film. To find Vaalbank in them somebody has to open a volume and read. A REAL ERRAND, AND NOW A SPECIFIED ONE.",
+     "part"
+    ],
+    [
+     "MOUNTJOY marriages",
+     "TWENTY-TWO, 1895 TO 1969 — AND TWO WORTH NAMING",
+     "“1937 · WILLEM HERMANUS MOUNTJOY × ELSIE SUSANNA DU PLESSIS” — Willem Hermanus is this archive's own name-string, carried by two Booyzens in the direct line, here on a Mountjoy. And “1919 · FRANK MOUNTJOY-BENTLEY × KATHLEEN RITA MILEY FITZPATRICK” — A SECOND HYPHENATED COMPOUND IN THIS ARCHIVE'S OWN SURNAMES, after Kolbe-Booysen.",
+     "yes"
+    ],
+    [
+     "DASCHNER — the whole surname",
+     "FORTY-FIVE RECORDS, THREE OF THEM MARRIAGES",
+     "“1900 · CARL AXEL MARTENSON × MINNIE DASCHNER” · “1935 · JOSEPH CHARLES DASCHNER × ELIZABETH HENDRINA MURRAY” · “1935 · GERT ANDRIES VAN JAARSVELD × MARGARET WILHELMINA ELIZABETH JEANETTE DASCHNER”. The smallest of this archive's five families by a long way, and small enough to work entire.",
+     "yes"
+    ],
+    [
+     "The standing rule, restated because a better search box does not change it",
+     "A TRANSCRIPTION IS A LEAD AND THE REGISTER IS THE RECORD",
+     "Nothing above is entered as fact. Every line is an index entry from a commercial aggregator.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The MOOC8 inventories — opened to look for Mountjoys, and the Booijsens were in them",
    "n": "The first documents this archive has read that name the people this family owned",
    "d": "15 Sep 2026",
