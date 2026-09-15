@@ -3003,11 +3003,11 @@
   {
    "n": "Anna Catharina Sleer",
    "v": "Slier · Schleher · Sher · Hier — five renderings, five sources",
-   "b": "1787",
+   "b": "bapt. 14 Oct 1787",
    "d": "1885",
    "l": "Mountjoy",
    "s": "doc",
-   "r": "Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of William Pietersen.",
+   "r": "Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of a Pietersen. 15 SEPTEMBER 2026 — SHE HAS PARENTS, A BAPTISM AND THREE SIBLINGS. De Villiers's volume 3, entry 876: “WILLEM SLIER, VAN HAMBURG, gehuwd 19 November 1780 met ANNA CATHARINA FORTMAN — (b) 1 ANNA CATHARINA, GEDOOPT 14 OCTOBER 1787, GEHUWD MET HERMANUS PIETERSE; 2 Wilhelmina Christina, gedoopt 27 December 1789, gehuwd 5 Januari 1811 met Jan Abraham van Wijk, van Amsterdam; 3 Geertruida Johanna, gedoopt 2 Juli 1791; 4 Wilhelmus Josephus, gedoopt 5 Maart 1797.” AND THE FIVE SPELLINGS STOP BEING A MYSTERY: a Hamburg name — Schlier, Schleer — written down by Cape clerks who had never seen it. She married Hermanus Pietersen on 5 APRIL 1807 at nineteen, was a widow by March 1817, a widow again by September 1827, and lived until 1885. FIFTY-EIGHT YEARS A WIDOW.",
    "p": [
     [
      "The Women",
@@ -3015,26 +3015,100 @@
     ],
     [
      "The Documents",
-     "/documents/"
+     "/documents/#slier-pietersen"
     ]
    ]
   },
   {
-   "n": "Willem Hermanus Pieterzen",
-   "v": "Harmanus Pieterze (1817) · William Pietersen (1840)",
+   "n": "Willem Slier",
+   "v": "van Hamburg",
    "b": "—",
-   "d": "bef. 1817",
+   "d": "—",
    "l": "Mountjoy",
-   "s": "inf",
-   "r": "Anna Catharina Slier's FIRST husband, and the origin of the name Willem Hermanus in this family — which therefore comes from a step-relation with no blood tie to the Booyzens. Three documents name him differently; the 1851 godfather, his son, carries both forms in full.",
+   "s": "doc",
+   "r": "HER FATHER, AND HALF OF A NAME THIS ARCHIVE HAS BEEN TRACKING FOR WEEKS. Of Hamburg; married ANNA CATHARINA FORTMAN on 19 NOVEMBER 1780 at the Cape; four children baptised between 1787 and 1797. His grandson, baptised in 1809, is WILLEM Hermanus Pietersen — Willem for this man and Hermanus for the boy's own father — and that is the whole derivation of a name two Booyzens in the direct line would later carry. HALF OF IT IS GERMAN AND NONE OF IT IS BOOYZEN BLOOD.",
    "p": [
     [
      "The Documents",
-     "/documents/"
+     "/documents/#slier-pietersen"
+    ],
+    [
+     "Namesakes",
+     "/namesakes/"
+    ]
+   ]
+  },
+  {
+   "n": "Anna Catharina Fortman",
+   "b": "—",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "doc",
+   "r": "Her mother. Married Willem Slier of Hamburg on 19 November 1780 and gave her own name to a daughter baptised on 14 October 1787 — who carried it through two husbands and ninety-eight years.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/#slier-pietersen"
     ],
     [
      "The Women",
      "/women/"
+    ]
+   ]
+  },
+  {
+   "n": "Hermanus Pietersen",
+   "v": "Harmanus Pieterze (1817)",
+   "b": "—",
+   "d": "bef. Mar 1817",
+   "l": "Mountjoy",
+   "s": "doc",
+   "r": "ANNA CATHARINA SLIER'S FIRST HUSBAND, AND UNTIL TODAY THIS ARCHIVE HAD HIM AND HIS SON AS ONE MAN. De Villiers, volume 3: “HERMANUS PIETERSEN, NAMEN VAN OUDERS ONBEKEND, gehuwd 5 APRIL 1807 met ANNA CATHARINA SLIER — (b) 1 Willem Hermanus, gedoopt 12 Maart 1809; 2 Johan Christiaan, gedoopt 28 April 1810.” The entry here used to read “Willem Hermanus Pieterzen, her first husband”, built from two documents that spell him differently — the 1817 marriage register's HARMANUS PIETERZE and the 1840 death notice's WILLIAM PIETERSEN — and two spellings looked like one long name. THEY ARE A FATHER AND A SON. His own parents were unknown to the book, as James Montjoy's would be to the clerk ten years later: TWO MEN IN ONE WOMAN'S LIFE AND NEITHER OF THEM HAD A RECORDED FATHER.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/#slier-pietersen"
+    ],
+    [
+     "Corrections",
+     "/corrections/"
+    ]
+   ]
+  },
+  {
+   "n": "Willem Hermanus Pietersen",
+   "v": "Pieterzen · Pieterse — the 1851 godfather",
+   "b": "bapt. 12 Mar 1809",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "doc",
+   "r": "THE SON, not the husband — and the man the name in this family actually comes from. Baptised 12 March 1809, the elder of Anna Catharina Slier's two Pietersen boys, and so HALF-BROTHER to the Montjoy children. He stood godfather at the 1851 Graaff-Reinet font, where his surname is written PIETERZEN twice in the same hand that wrote BOOYZEN three lines above — the entry that taught this archive that a z is Dutch orthography and not intent. HIS NAME IS HIS TWO GRANDFATHERS AND HIS FATHER: WILLEM for Willem Slier of Hamburg, HERMANUS for Hermanus Pietersen.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/#slier-pietersen"
+    ],
+    [
+     "Namesakes",
+     "/namesakes/"
+    ],
+    [
+     "The Name",
+     "/name/"
+    ]
+   ]
+  },
+  {
+   "n": "Johan Christiaan Pietersen",
+   "b": "bapt. 28 Apr 1810",
+   "d": "—",
+   "l": "Mountjoy",
+   "s": "doc",
+   "r": "A PERSON NOBODY HAD. The second of Anna Catharina Slier's two sons by Hermanus Pietersen, baptised 28 April 1810 — thirteen months after his brother — and therefore a second half-brother to the Montjoy children. He appears on nothing else in this archive, and he is here because de Villiers's volume 3 lists him on the line below one this archive had already read wrong.",
+   "p": [
+    [
+     "The Documents",
+     "/documents/#slier-pietersen"
     ]
    ]
   },

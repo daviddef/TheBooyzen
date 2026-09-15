@@ -264,10 +264,11 @@ export const families = [
     src: ["Two hard ones", "/documents/#two-hard-ones"],
     kids: [{ n: "Beatrix Magdalena Catharina Boshoff", via: "doc" }] },
 
-  { h: "Willem Hermanus Pieterzen|bef. 1817", w: "Anna Catharina Sleer", via: "doc",
-    why: "Her first husband. The 1817 marriage register calls her “widow of Harmanus Pieterze”; the 1840 death notice calls him “William Pietersen”.",
-    src: ["Where the blank begins", "/documents/"],
-    kids: [{ n: "Willem Hermanus Pieterzen|—", via: "doc" }] },
+  { h: "Hermanus Pietersen", w: "Anna Catharina Sleer", via: "doc",
+    why: "Her first husband, married 5 April 1807. De Villiers gives his own parents as unknown. This household used to carry the father and the son under one name; the book separates them.",
+    src: ["Slier and Pietersen", "/documents/#slier-pietersen"],
+    kids: [{ n: "Willem Hermanus Pietersen", via: "doc" },
+           { n: "Johan Christiaan Pietersen", via: "doc" }] },
 
   { h: "James Montjoy", w: "Anna Catharina Sleer", via: "doc",
     why: "Married at Graaff-Reinet, 9 March 1817 — on a page where the clerk recorded everyone else's origin and left his blank.",

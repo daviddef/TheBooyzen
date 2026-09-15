@@ -2,6 +2,50 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Volume 3 answers Anna Catharina Slier, and shows this archive had two men under one name",
+   "n": "The six Slier entries the index reported, looked up at last",
+   "d": "15 Sep 2026",
+   "h": "/documents/#slier-pietersen",
+   "rows": [
+    [
+     "SLIER in de Villiers, volume 3",
+     "ENTRY 876 — A WHOLE FAMILY, AND IT IS HERS",
+     "“WILLEM SLIER, VAN HAMBURG, gehuwd 19 November 1780 met ANNA CATHARINA FORTMAN — (b) 1 ANNA CATHARINA, GEDOOPT 14 OCTOBER 1787, GEHUWD MET HERMANUS PIETERSE; 2 Wilhelmina Christina, 1789, married an Amsterdammer; 3 Geertruida Johanna, 1791; 4 Wilhelmus Josephus, 1797.” She has been on this site as a birth year and five spellings. SHE NOW HAS A BAPTISM DATE, TWO PARENTS AND THREE SIBLINGS.",
+     "yes"
+    ],
+    [
+     "Why her surname has five spellings",
+     "BECAUSE IT IS A HAMBURG NAME",
+     "Slier · Schleher · Sher · Hier, across five sources — and the book says the father came FROM HAMBURG. Schlier or Schleer, written down by Cape clerks who had never seen it. THE SAME ARGUMENT THIS ARCHIVE MAKES ABOUT ITS OWN SURNAME, on a different name, from a different country.",
+     "yes"
+    ],
+    [
+     "The Pietersens, two pages on",
+     "THE HUSBAND AND THE SON WERE ONE PERSON HERE, AND THEY ARE TWO",
+     "“HERMANUS PIETERSEN, NAMEN VAN OUDERS ONBEKEND, gehuwd 5 APRIL 1807 met ANNA CATHARINA SLIER — (b) 1 WILLEM HERMANUS, gedoopt 12 Maart 1809; 2 JOHAN CHRISTIAAN, gedoopt 28 April 1810.” This archive built ONE man out of two documents that spell him differently — the 1817 register's HARMANUS PIETERZE and the 1840 notice's WILLIAM PIETERSEN — and a long name looked like the way to reconcile them. IT HALF KNEW: its own page already called the 1851 godfather “his son”. Withdrawn to /corrections/.",
+     "yes"
+    ],
+    [
+     "What the split gives back",
+     "A PERSON NOBODY HAD, AND A NAME FULLY EXPLAINED",
+     "JOHAN CHRISTIAAN PIETERSEN, baptised 28 April 1810 — a SECOND half-brother to the Montjoy children, invisible for exactly as long as the two men were one. And the derivation of WILLEM HERMANUS is now complete: the boy of 1809 is WILLEM for his mother's father, WILLEM SLIER OF HAMBURG, and HERMANUS for his own father. The claim that the name enters through a step-relation with no Booyzen blood survives and goes one generation deeper. HALF OF IT IS GERMAN.",
+     "yes"
+    ],
+    [
+     "Her dates, filled in",
+     "MARRIED AT NINETEEN, WIDOWED TWICE, FIFTY-EIGHT YEARS A WIDOW",
+     "Married Hermanus Pietersen 5 APRIL 1807; a widow by 9 March 1817 when she married James Montjoy; a widow again by September 1827; died 1885, aged ninety-eight.",
+     "yes"
+    ],
+    [
+     "DORMEHL in volume 2",
+     "ENTRY 393, AND IT IS NINETY YEARS TOO EARLY",
+     "“SIEBERT DORMEHL, VAN MARBURG, gehuwd 29 Januari 1792 met Johanna Israel, weduwe van Johan Godlieb Carstedt”, twice remarried; sixth child CHARLOTTA ELISABETH, GEDOOPT 18 JUNI 1802. This archive holds a CHARLOTTA ELIZABETHA DORMEHL who married Hendrik Stefanus Booijzen at Zeerust in 1892. A WOMAN BAPTISED IN 1802 CANNOT BE MARRYING IN 1892. Two women ninety years apart; all the book gives is that the name was already in the founding household. Recorded so that it does not become a link later.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "A memoirist in Burgersdorp answers Question 12, and the atlas gets the gate it never had",
    "n": "Working the list: newspapers swept for the other four surnames, and the archive's own machinery",
    "d": "15 Sep 2026",

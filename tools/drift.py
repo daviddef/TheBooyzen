@@ -71,8 +71,11 @@ CHECKED_SHARED = {
     # name: how many records, and what separates them
     "George Mountjoy": (2, "the 1823 Cradock saddle maker and his 1889–1963 descendant"),
     "Petrus Jacobus Booysen": (3, "generations 6 (b. 1788), 5 (b. 1812) and the boy of 1839"),
-    "Willem Hermanus Pieterzen": (2, "Anna Catharina Slier's first husband, d. bef. 1817, "
-                                    "and the godfather at the 1851 font"),
+    # Dropped 15 Sep 2026. The collision was this archive's own error, not two
+    # people sharing a name: it was running Hermanus Pietersen (the husband,
+    # m. 5 Apr 1807) and his son Willem Hermanus (bapt. 12 Mar 1809) under one
+    # long name built out of two documents that spell him differently. De
+    # Villiers separates them, so there is nothing left to collide.
 }
 from collections import Counter
 counts = Counter(p["n"] for p in people)
