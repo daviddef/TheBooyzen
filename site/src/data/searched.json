@@ -2,6 +2,62 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "Natal opened, the Transvaal swept for the other surnames, and a link this archive nearly invented",
+   "n": "NAB had never been searched — it had only ever been asked for six references somebody else found",
+   "d": "15 Sep 2026",
+   "h": "/documents/#natal-opened",
+   "rows": [
+    [
+     "CK BARRY, WAKKERSTROOM — “MR. GS KOLBE ASKS TO BE SUPPLIED WITH A COPY OF THE ROAD BOARD LAW”, 1908",
+     "HE IS CYRIL KERSHAW BARRY, AND HE IS AN ATTORNEY",
+     "A Barry and a Kolbe in one sentence, in the district whose Kolbes this archive has spent weeks trying to attach to the Settler — and this archive holds three Barrys carrying KOLBE AS A FORENAME. It read for about ten minutes like a fourth. FOUR FURTHER DOCUMENTS SETTLE IT: he asks about a Commissioner of Oaths at Wakkerstroom, enquires about a certificate of domicile for MAHOMED MAMOOJEE MOTALA OF LADYSMITH, forwards quitrent on behalf of MR MOLL, and writes on the division of ground in Natal. THAT IS A COUNTRY SOLICITOR'S WEEK AND G.S. KOLBE IS A CLIENT. Set down at length because it was a good mistake to almost make.",
+     "no"
+    ],
+    [
+     "KOLBE in NAB",
+     "THIRTY-NINE — AND TWO OF THEM CONFIRM A MARRIAGE THIS ARCHIVE HAD ONLY FROM BAPTISMS",
+     "MSCE 8509/1923, “KOLBE, ELIZABETH JOHANNA (BORN DU TOIT), S/S FREDERICK FORTUNATUS”, and MSCE 15161/1929, his own, cross-referenced to hers. The Settler's tenth child and his wife, BOTH THEIR ESTATES IN NATAL. And MSCE 21335/1934 gives HENDRIK JOHANNES HOFMEYR KOLBE — one of the two men on the unsent Pietermaritzburg letter — A WIFE: Johanna Maria, born Potgieter.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY in NAB",
+     "NINE, AND A SECOND BARKLY EAST WOMAN NOBODY HAD",
+     "MSCE 581/1973, “SHOOTER, MATHILDA ELIZABETH, BORN MOUNTJOY, BORN IN BARKLY EAST” — alongside Christian Mountjoy already on the Pietermaritzburg list. TWO PEOPLE LEAVING BARKLY EAST FOR NATAL IS A PATTERN. Also BOTHMA, WRAY, born MOUNTJOY, born in KOKSTAD — the bride of a 1957 marriage found last week in the newspaper transcriptions, now with a birthplace.",
+     "yes"
+    ],
+    [
+     "BOOYZEN in NAB",
+     "FOUR, AND THE OLDEST IS 1846",
+     "NAB RSC 1/5/3 46/1846: “ILLIQUID CASE. PETRUS GERHARDUS BOOYZEN VERSUS DAVID SCHALK VAN DER MERWE.” THE OLDEST BOOYZEN DOCUMENT THIS ARCHIVE HAS FOUND OUTSIDE THE CAPE — and the defendant's name is the one this site spent yesterday proving is a van der Merwe name that entered the Booyzen line by marriage. NO CONNECTION IS CLAIMED: Petrus Gerhardus is not a name in this archive, and a Booyzen in Natal in 1846 is likelier a trekker family. Also MSCE 4064/1974, BOOYZEN, NICOLAAS THEODORUS, BORN IN WAKKERSTROOM — a Booyzen born in the Kolbe district.",
+     "part"
+    ],
+    [
+     "DASCHNER, the whole surname",
+     "TWELVE IN THE TRANSVAAL, NONE IN NATAL",
+     "WILLIAM HERMAN DASCHNER, d. 1963, NOW HAS A WIFE — MILDRED. A HEINRICH DASCHNER died in 1969 and the index marks him CHILD. And a HENRY JAMES DASCHNER appears twice, which is the Barry and Booyzen forename string arriving on a fourth surname by way of Catherine Mary Sophia. SMALL ENOUGH TO WORK ENTIRE, AND NOW WORKED ENTIRE.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY in TAB",
+     "THIRTY-NINE, INCLUDING A FARM OF THAT NAME",
+     "TAB SS 2932 R8960/91: the Registrar of Deeds sending title for the farms “MOUNTJOY”, Smaldeel, Bloemhof, Krausberg and Gossard, 1891. TAB PM 29 66/6/1907: “LANDS — MOUNTJOY AND PHILLAMORE'S OCCUPATION — RUSTENBURG DISTRICT”, which is this archive's own district. And W MOUNTJOY'S APPLICATION TO CAPTURE OSTRICH CHICKS, 1906.",
+     "yes"
+    ],
+    [
+     "KOLBE in the education series",
+     "ONE, AND IT IS AT WAKKERSTROOM",
+     "TAB OD OR3052/99: declarations from the school at MARTINUS WESSELSTROOM — the old name for Wakkerstroom — “ONDERTEEKEND DOOR DE HEEREN GA KOLBE EN FRANCOIS L…”. A George Augustus Kolbe signing for a school commission in 1899. BARRY in the same series returns nothing.",
+     "yes"
+    ],
+    [
+     "The farms put through the education series",
+     "ABANDONED AS VOID, WITH ONE KEPT",
+     "BRAKFONTEIN RETURNS 77, KOEDOESFONTEIN 188, GOEDEHOOP 41 — among the commonest farm names in the country, and the results are other people's schools in other districts. A FARM-NAME SWEEP WITHOUT A SURNAME IS NOT A SEARCH. One is worth keeping: OD OR150/95, “CAB MEYER, KOEDOESFONTEIN, WYK ZWARTRUGGENS, RUSTENBURG”, is unmistakably this archive's Koedoesfontein, where Hendrik Stefanus Booijsen died in 1908. IT HAD A SCHOOL IN 1895 AND NO BOOYZEN IS ANYWHERE ON ITS PAPERS.",
+     "void"
+    ]
+   ]
+  },
+  {
    "g": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
    "n": "The first British catalogue this archive has ever put any of its people to",
    "d": "15 Sep 2026",

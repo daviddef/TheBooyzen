@@ -7,10 +7,10 @@
   {
    "n": 1,
    "what": "Sweep the Transvaal education series (TAB, source OD) for every surname and farm this archive holds",
-   "state": "blocked",
-   "owner": "NAAIRS",
+   "state": "done",
+   "owner": "this archive",
    "since": "2026-09-15",
-   "note": "One accidental query — **BOOYZEN AND MARICO** — returned a farm school at Kwaggafontein with a JGL Booyzen on eight of its forty-eight files, and a second school on this family's own farm at Vaalbank. Neither was looked for. The series has never been searched for **BARRY**, **MOUNTJOY**, **DASCHNER** or **KOLBE**, nor for Brakfontein, Koedoesfontein, Driefontein, Zwartruggens or Goedehoop. [What was found](/documents/#kwaggafontein-school) **15 September, paused:** NAAIRS answers «the connection to the Search Manager Server is inactive». Not a negative about anything — an outage."
+   "note": "One accidental query — **BOOYZEN AND MARICO** — returned a farm school at Kwaggafontein with a JGL Booyzen on eight of its forty-eight files, and a second school on this family's own farm at Vaalbank. Neither was looked for. The series has never been searched for **BARRY**, **MOUNTJOY**, **DASCHNER** or **KOLBE**, nor for Brakfontein, Koedoesfontein, Driefontein, Zwartruggens or Goedehoop. [What was found](/documents/#kwaggafontein-school) **15 September, paused:** NAAIRS answers «the connection to the Search Manager Server is inactive». Not a negative about anything — an outage. **Done, 15 September.** KOLBE returns one — G.A. Kolbe signing school declarations at **Martinus Wesselstroom**, the old name for Wakkerstroom, in 1899. BARRY returns nothing. **And the farm half was abandoned as void**: Brakfontein 77, Koedoesfontein 188, Goedehoop 41, all other people's schools. A farm-name sweep without a surname is not a search."
   },
   {
    "n": 2,
@@ -199,10 +199,10 @@
   {
    "n": 25,
    "what": "Sweep the Transvaal estate index (TAB MHG) for BARRY, MOUNTJOY and DASCHNER",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Done thoroughly for **Booyzen** — 184 documents, enumerated properly after a filter bug — and for **Kolbe**. The other three surnames have had only the targeted lookups that produced the six files now with a researcher. Depends on NAAIRS answering."
+   "note": "Done thoroughly for **Booyzen** — 184 documents, enumerated properly after a filter bug — and for **Kolbe**. The other three surnames have had only the targeted lookups that produced the six files now with a researcher. Depends on NAAIRS answering. **Done, 15 September.** MOUNTJOY 39, including a farm actually called **Mountjoy** and a Mountjoy occupying land in **Rustenburg** in 1907. DASCHNER 12 — the whole surname — giving William Herman a wife, a child who died in 1969, and a **Henry James Daschner**."
   },
   {
    "n": 26,
@@ -215,10 +215,10 @@
   {
    "n": 27,
    "what": "Open the Natal depot (NAB) beyond the six MSCE references",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "The six Natal files in the unsent Pietermaritzburg letter were found by targeted lookup. The depot itself has never been swept, and two of this archive's Kolbes were born in the Transvaal and died in Natal — which is a migration pattern, not a coincidence, and it will have left more than six files."
+   "note": "The six Natal files in the unsent Pietermaritzburg letter were found by targeted lookup. The depot itself has never been swept, and two of this archive's Kolbes were born in the Transvaal and died in Natal — which is a migration pattern, not a coincidence, and it will have left more than six files. **Done, 15 September, and it was worth it.** Thirty-nine Kolbes, nine Mountjoys, four Booyzens, no Daschners. Three files have gone onto the Pietermaritzburg letter that were not on it when it was drafted, including **the wife of a man already on the list** and **both estates of the Settler's tenth child and his du Toit wife**. [What it gave](/documents/#natal-opened)"
   },
   {
    "n": 28,
