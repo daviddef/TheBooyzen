@@ -1,0 +1,47 @@
+---
+import Base from "../layouts/Base.astro";
+import WorkList from "@daviddef/archive-kit/components/WorkList.astro";
+import { u } from "../lib/url.js";
+import work from "../data/worklist.json";
+const rows = work.rows;
+const open = rows.filter(r => !["done", "struck"].includes(r.state)).length;
+---
+<Base title={work.title}
+      eyebrow={`${rows.length} items, ${open} of them open`}
+      dek={work.dek}>
+
+<section class="blk">
+  <h2>Why this page exists</h2>
+  <div class="prose">
+    <p set:html={work.lead
+      .replace(/\[([^\]]+)\]\((\/[^)]*)\)/g, (_m, t, h) => `<a href="${u(h)}">${t}</a>`)
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")} />
+    <p>The other registers on this site are about the family. <b>This one is about the work</b>, which
+      means it is the only page here that is mostly about this archive's own limits &mdash; what it is
+      waiting on, what it cannot reach, and what it set out to do and had to strike because the plan
+      rested on something untrue.</p>
+    <p class="cap">{work.close}</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The list</h2>
+  <WorkList work={work} u={u} />
+</section>
+
+<section class="blk">
+  <h2>What does not go here</h2>
+  <div class="prose">
+    <p>Findings do not. This archive already has five registers for those and they are better at it:
+      <a href={u("/searched/")}>what has been read</a> holds every query ever run, negatives at the same
+      length as finds; <a href={u("/open-questions/")}>open questions</a> holds what is not known, with
+      the record set that would answer each; <a href={u("/errands/")}>errands</a> holds what can only be
+      got by standing in a reading room; <a href={u("/corrections/")}>corrections</a> holds every claim
+      withdrawn and the cause; and <a href={u("/changes/")}>what changed</a> holds the diary.</p>
+    <p><b>None of them answered what is being done</b>, and so for weeks that answer lived in a chat
+      window &mdash; which is the one place that does not survive the session. That is the whole reason
+      for this page, and it is the same failure this archive keeps finding in its sources: the material
+      survives and the index to it does not.</p>
+  </div>
+</section>
+</Base>

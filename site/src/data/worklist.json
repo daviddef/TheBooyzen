@@ -1,0 +1,168 @@
+{
+ "title": "The work list",
+ "dek": "What is being done here, as opposed to what is known.",
+ "lead": "Every other register on this site answers what this archive knows. /searched/ holds every query ever run, /open-questions/ holds what is not known, /errands/ holds what can only be got through a door, and /corrections/ holds what was got wrong. None of them answers what is being DONE — and so for weeks that lived in a chat window, which is the one place that does not survive the session. This page is that list. It is deliberately not a list of findings. It is who is doing what, who is waiting on whom, and what was decided against and why.",
+ "close": "An item here with no owner would be wallpaper, so the build refuses one. An item that has been open for six weeks is marked as such rather than left to look like something raised this morning.",
+ "rows": [
+  {
+   "n": 1,
+   "what": "Sweep the Transvaal education series (TAB, source OD) for every surname and farm this archive holds",
+   "state": "running",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "One accidental query — **BOOYZEN AND MARICO** — returned a farm school at Kwaggafontein with a JGL Booyzen on eight of its forty-eight files, and a second school on this family's own farm at Vaalbank. Neither was looked for. The series has never been searched for **BARRY**, **MOUNTJOY**, **DASCHNER** or **KOLBE**, nor for Brakfontein, Koedoesfontein, Driefontein, Zwartruggens or Goedehoop. [What was found](/documents/#kwaggafontein-school)"
+  },
+  {
+   "n": 2,
+   "what": "Finish reading the two school files — 28 of 72 Kwaggafontein documents, 30 of 54 at Vaalbank",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "The unread half of Vaalbank is where the **Ds. Booysen** question lives: whether that abbreviation is a pair of initials, David Schalk, or the Dutch for a minister. The index will not settle it; the file might."
+  },
+  {
+   "n": 3,
+   "what": "Sweep the eGGSA newspaper transcriptions for the four surnames that have never been put through them",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "**KOLBE** was swept properly for the first time today: 43 hits, read one at a time, and it produced Francis McCabe, the location of the farm, a son of the twelve, and the Settler's mission school. **BOOYZEN, BARRY, MOUNTJOY and DASCHNER have never had the same treatment.** The search endpoint is now scriptable, so this is an hour's work rather than a day's. [Today's run](/documents/#mccabe-1872)"
+  },
+  {
+   "n": 4,
+   "what": "Find Francis McCabe's own estate at the Free State depot",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "He was **Landdrost of Bloemfontein** and died on 23 February 1872 leaving «a widow, four sons and two daughters, besides a large family of step-children». Those step-children are the Commandant's twelve. His file would name them — reaching the same list from the opposite side to VAB MHG M777, which is not readable online."
+  },
+  {
+   "n": 5,
+   "what": "Bring /open-questions/ up to date — §0 is a day behind and the letters section is three days behind",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "§0 still ends «the next step is the Graaff-Reinet baptism register for 21 September 1788». It does not know that the 1981 revision was confirmed this morning, that no Gerhardus Lodewicus married a Magdalena de Beer, or that the disputed name sits nine lines lower on the same sheet as a son. The page also still calls NAAIRS «the single most important unopened door», which stopped being true three weeks ago. [Question 0, as it now stands](/documents/#question-zero)"
+  },
+  {
+   "n": 6,
+   "what": "Read the rest of de Villiers's volumes 2 and 3 for the surnames not yet looked up",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Volume 2 gave Anna Maria van der Merwe her baptism and six siblings; volume 3 gave Adriana Christina Viljoen her parents and made her David Schalk's first cousin. Not yet looked up: the van der Merwe siblings' own descendants, the de Beer entry, the five **Dormehl** mentions, the Oliviers, and the six **Slier** entries in volume 3 which may be Anna Catharina Slier. [What volumes 2 and 3 gave](/documents/#kaapsche-2-3)"
+  },
+  {
+   "n": 7,
+   "what": "Engage the private researcher at Pretoria, or decline — six bound estate files, fees not yet known",
+   "state": "blocked",
+   "owner": "David",
+   "since": "2026-09-15",
+   "note": "The National Archives answered that **all six MHG files are bound** and cannot be scanned and emailed, and put a private researcher who specialises in estate files on copy. She was written to today and asked what she charges, how, and whether the work is worth doing at all, with an offer to start with one file. **This is money, so it is David's to decide and not this archive's.** If she charges per page, MHG 3734/46 is the one to buy first: Catherine Mary Sophia Daschner's notice should name the parents this archive still cannot prove. [The files](/errands/)"
+  },
+  {
+   "n": 8,
+   "what": "Sign in to FamilySearch",
+   "state": "blocked",
+   "owner": "David",
+   "since": "2026-09-14",
+   "note": "Four pieces of work are parked behind one sign-in. The **Burgersdorp baptism register sweep is stopped at image 604 of 818**; the whole-film nameless sweep has not begun; three Kolbe children and Angeline of Wakkerstroom are unfollowed; and the phthisis reading on Henry James Booyzen's death record is unchecked. Nothing else on this list is waiting on so little."
+  },
+  {
+   "n": 9,
+   "what": "Send the Pietermaritzburg letter, or telephone first — the email address is in doubt",
+   "state": "blocked",
+   "owner": "David",
+   "since": "2026-09-14",
+   "note": "Six Natal estate files, drafted and deliberately unsent. The National Archives' own record gives **pmbarchives@dact.kzntl.gov.za** on an entry last touched in 2015, and kzntl.gov.za is a retired domain; other listings give **pmbarchives@kzndac.gov.za**. The postal address and the telephone, 033 342 4712, agree across every source. This archive has already posted one enquiry into a mailbox it could not confirm and will not do it twice."
+  },
+  {
+   "n": 10,
+   "what": "MOOC 8/18.11 entire — the 1781 inventory that names eleven enslaved people",
+   "state": "blocked",
+   "owner": "Western Cape Archives",
+   "since": "2026-09-15",
+   "note": "**The heaviest thing on this list.** The index line names Silvia, Lena, Sara, Janna, Dorinda, Fortuijn, Meij and Februarij van de Caab, Dijk and Farla van Madagascar, and Achilles van Mallabaar, in the estate of Gerrit Booijsen at Drakenstein. TANAP transcribed these inventories in full and **its database no longer resolves**, with the Internet Archive down as well, so there is no screen route left at all. What is wanted is the document: every name and valuation, and the heirs — because if the heirs include a Jan, this archive's direct line runs through it. [What the index line says](/documents/#mooc8-inventories)"
+  },
+  {
+   "n": 11,
+   "what": "Two letters to the Western Cape Archives, sent and unanswered",
+   "state": "blocked",
+   "owner": "Western Cape Archives",
+   "since": "2026-09-09",
+   "note": "The Mountjoy wills and the Colonial Office memorial went on 9 September; the Lerena death notice on the same evening. Six days, no reply. Not yet chased, because a reading room that has had one working week is not late."
+  },
+  {
+   "n": 12,
+   "what": "Decide whether a gendatabase.com subscription is worth buying",
+   "state": "blocked",
+   "owner": "David",
+   "since": "2026-09-15",
+   "note": "The boundary is now known exactly. **Free**: names, surname, date of birth, baptism date. **Paid**: baptism place, source, image, entry number, father, mother, parents. The free layer gives dates and the paid layer gives parentage — and this archive has most of its dates and is starved of parents. One specific question would be settled by one record: whether the Johanna Catharina Mountjoy born 28 January 1860 was baptised in the Barkly East district, which would make her the woman who died at Indwe in 1911. [What it gave for nothing](/documents/#gendatabase-two)"
+  },
+  {
+   "n": 13,
+   "what": "One address at the SANDF Documentation Centre bounced and has not been replaced",
+   "state": "blocked",
+   "owner": "this archive",
+   "since": "2026-09-09",
+   "note": "The enquiry about UDF service and pension records went to two addresses. **sandfdoc@mweb.co.za returned 550 relay access denied**; archive@dod.mil.za did not bounce and has not answered. Half-delivered is recorded as half-delivered rather than as sent."
+  },
+  {
+   "n": 14,
+   "what": "The letters are tracked in three places and no single one shows what is outstanding",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Outgoing correspondence is split between prose on [/open-questions/](/open-questions/), entries in the research log, and files in the requests folder. Six enquiries are live right now, and reconstructing that took a search of an inbox rather than a look at this site. **This list is the first half of the fix**; the letters themselves still need one register."
+  },
+  {
+   "n": 15,
+   "what": "Find the 21 September 1788 baptism through the FamilySearch Dutch Reformed collection",
+   "state": "struck",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "**Founded on a mistake about the collection and kept here rather than deleted.** The plan was to locate the register holding Petrus Jacobus Booijsen's baptism and read it, which would name his father in a contemporary hand and end the oldest question on this site. The Baptism Finder was asked which registers exist for Paarl (Drakenstein), Graaff-Reinet and Stellenbosch: 54, 48 and 55 — and **sorted earliest first, the first row in every town is 1843**. It is the post-1842 church archive series and it does not reach the eighteenth century at all. The question is unchanged and the route never existed. It is a Cape Town errand now. [Why the route closed](/documents/#gendatabase-two)"
+  },
+  {
+   "n": 16,
+   "what": "Read the seven Marico war-compensation files at a screen",
+   "state": "struck",
+   "owner": "this archive",
+   "since": "2026-09-14",
+   "note": "**Two days were spent treating these as a lead that could be worked online.** All seven detail records were finally pulled today and every one reads, in full, «CLAIMS FOR COMPENSATION BURGHERS. MARICO. XX BOOYZEN.» No remarks, no farm, no forename, no amount. **The index line is the whole record** and no screen anywhere will improve it. Struck as a screen task and moved to [/errands/](/errands/), which is where a thing belongs when the only remaining step is a door."
+  },
+  {
+   "n": 17,
+   "what": "Chase the London tailor into a directory through Google Books",
+   "state": "blocked",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Whether John Godloff Kolbe of the 1844 obituary was at **Brunswick Square** or at **34 Conduit Street** is still open. The books API returns HTTP 429 with a daily quota of zero for anonymous callers, so that route is shut and a different one is needed — archive.org full text, HathiTrust, or londonancestor.com. One thing did come out of it and is not being claimed: a list of 234 London master tailors who met over the Combination Act on 22 December 1799 includes «KOLBE, JOHN, 18, BROAD-STREET, SOHO». Right trade, right city, right age, and Soho was the German quarter — but a John Kolbe in London is not yet this John Kolbe."
+  },
+  {
+   "n": 18,
+   "what": "Tell the estate that the FamilySearch Dutch Reformed baptism films begin in 1843",
+   "state": "next",
+   "owner": "the kit and estate",
+   "since": "2026-09-15",
+   "note": "**This belongs to every archive here, not to this one.** Any archive working Cape Dutch Reformed registers through FamilySearch has the same ceiling and may, like this one, be reading its silence as absence rather than as the edge of a filming project. It explains retrospectively why weeks of work on this family produced nothing older than the 1840s. The originals exist; they are at Cape Town."
+  },
+  {
+   "n": 19,
+   "what": "Offer the estate two search techniques worked out here",
+   "state": "next",
+   "owner": "the kit and estate",
+   "since": "2026-09-15",
+   "note": "Both are general and neither is written down anywhere shared. **NAAIRS** can be driven end to end from a page — the rotating token, the database selector, the POST that must carry its AND operators explicitly, and the detail endpoint — which turns a frameset nobody can script into a few seconds per query. And the **eGGSA newspaper index** is an Elasticsearch behind a widget: its query shape takes a fragment count, so one request returns every mention in every transcript rather than the one the widget draws."
+  },
+  {
+   "n": 20,
+   "what": "The archive-kit pin was four commits behind and this page is why we noticed",
+   "state": "done",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "This archive was pinned to **b16bea79** and the work list component, its checker and the estate roll-up were added after it. Diffed before bumping — seven files, 658 insertions, nothing removed and nothing this build depends on touched — then moved to **60aad580**. Recorded because an archive silently behind on the shared kit is the same failure this page exists to prevent, one layer down."
+  }
+ ]
+}
