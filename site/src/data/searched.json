@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The camps database at source, the voters' rolls, and where the paywall falls on an address",
+   "n": "Four roadmap items, and one of them corrects an open question on this site",
+   "d": "15 Sep 2026",
+   "h": "/documents/#natal-opened",
+   "rows": [
+    [
+     "The three Booyzens in the camps, read on the University of Cape Town's own pages",
+     "AND ONE OF THE THREE DID NOT DIE IN A CAMP",
+     "GERT JACOBUS BOOYZEN — “Master”, place of death JOHANNESBURG RC, aged 2, DIED IN CAMP: YES, cause “ziekte”, white, single, nationality TRANSVAAL, registration as child: yes. Farm RIETVALLEI, district MARICO. GERTRUIDA MAGDALENA BOOYZEN — “Ms”, place of death VEREENIGING RC, aged 19, DIED IN CAMP: YES, cause “ziekte”, with the note “OR IRENE RC”, so the camp itself is uncertain. Farm RIETVLEI, district HEIDELBERG. JAN GERHARDUS LODEWICUS BOOYZEN — aged 2, cause “ziekte”, and DIED IN CAMP: NO, with NO CAMP AND NO FARM RECORDED AT ALL. OPEN QUESTION 3 ON THIS SITE LISTS ALL THREE AS THOUGH THEY WERE THE SAME KIND OF RECORD. They are not.",
+     "yes"
+    ],
+    [
+     "Where those records come from",
+     "RS 25 TRANSVAAL DEATH LISTS, NATIONAL ARCHIVES, PRETORIA",
+     "The database names its own source on every page. IT CONFIRMS THE CAVEAT THIS ARCHIVE ALREADY PUBLISHED ABOUT IT — these are DEATH LISTS, so the database records who died far better than who was interned and walked out, and an absence from it is much weaker than a presence. And the cause of death on all three is the same word: ZIEKTE. Illness. The lists recorded no diagnosis.",
+     "part"
+    ],
+    [
+     "The 1925 voters' roll entries for Jacobus Nicolas and John Barry Booyzen",
+     "THE YEAR IS FREE AND THE ADDRESS IS NOT",
+     "Both are on the roll for VOTING YEAR 1925. Employment, address, race, town, division, voting district, province and voting number are all behind “Sign up to view”. THE ADDRESS WAS THE ENTIRE POINT OF THE ITEM: both men are on the list of six bound estate files now with a private researcher in Pretoria, and a street and a district would tell her where to look. A SUBSCRIPTION WOULD BUY EXACTLY THE FIELD THAT MATTERS, which is worth knowing precisely rather than in general.",
+     "part"
+    ],
+    [
+     "The Civil Death and Unconfirmed Death databases",
+     "TWO MEN THIS ARCHIVE DID NOT HOLD",
+     "HENRY JOHN BOOYZEN, born 14 FEBRUARY 1929, died 29 MARCH 1966 — and this archive holds a HENRY JAMES Booyzen born 12 August 1887. A different man and a later one, and the difference is one forename. MARUIS BOOYZEN, born 28 January 1963, died 2 May 2011. Neither is placed. Recorded as names with dates and nothing else, which is what they are.",
+     "part"
+    ],
+    [
+     "The Old Voter Rolls and estate finders as tools",
+     "THEY ARE BROWSE TOOLS, NOT INDEXES",
+     "Old Voter Rolls takes a TOWN and lists which rolls exist; the Cape and Transvaal estate finders take a REFERENCE and resolve it to a film. NONE OF THEM SEARCHES A NAME — the name search is the single AIO box, which this archive has already run. Useful for turning a reference into an image, useless for finding a person, and worth writing down so the distinction is not rediscovered.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Cape estate index for Mountjoy, a surname sweep abandoned, and the 1931 six given parents",
    "n": "Three roadmap items worked in one pass at NAAIRS",
    "d": "15 Sep 2026",

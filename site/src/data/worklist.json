@@ -439,34 +439,34 @@
   {
    "n": 55,
    "what": "Use the Transvaal and Cape estate finders on gendatabase, which have never been opened",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Ten specialist finders were catalogued on 15 September and **four were used**. The two estate finders take a reference and a year and resolve it to the film — which is exactly the step that cost this archive a day when it was interpolating MOOC reference numbers across 2,223 images by hand."
+   "note": "Ten specialist finders were catalogued on 15 September and **four were used**. The two estate finders take a reference and a year and resolve it to the film — which is exactly the step that cost this archive a day when it was interpolating MOOC reference numbers across 2,223 images by hand. **Done, 15 September — and they are not what the item assumed.** The Cape and Transvaal estate finders take a **reference** and resolve it to a film; they do not search a name. Useful for turning a reference into an image, useless for finding a person."
   },
   {
    "n": 56,
    "what": "Pull the 1925–1931 voters' roll entries for Jacobus Nicolas and John Barry Booyzen",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Both are on the list of six bound estate files now with a researcher in Pretoria. **A voters' roll gives an address and a district** — and one of the two is the man whose estate reference this archive has never been able to find on film at all. Cheap, and it might tell the researcher where to look."
+   "note": "Both are on the list of six bound estate files now with a researcher in Pretoria. **A voters' roll gives an address and a district** — and one of the two is the man whose estate reference this archive has never been able to find on film at all. Cheap, and it might tell the researcher where to look. **Done, 15 September, and the answer is that the address is paid for.** Both men are on the roll for **voting year 1925** and that year is the only free field. Employment, address, race, town, division, voting district, province and voting number are all behind the paywall. **The address was the entire point of the item** — it would tell the Pretoria researcher where to look. That is now a precise fact for [the subscription decision](/worklist/) rather than a general one."
   },
   {
    "n": 57,
    "what": "Open the Civil Deaths and Opposed Applications finders",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Neither has been touched. **Opposed Applications is the divorce index**, which this archive has never searched for any of its five surnames — and a contested divorce file names a marriage, a date, children and often an address, for families that left no estate."
+   "note": "Neither has been touched. **Opposed Applications is the divorce index**, which this archive has never searched for any of its five surnames — and a contested divorce file names a marriage, a date, children and often an address, for families that left no estate. **Done, 15 September.** Both are browse tools rather than indexes; their contents already reach this archive through the single search box. They did give two men nobody had: **Henry John Booyzen, 1929–1966** — a different man from the Henry James born 1887, and the difference is one forename — and **Maruis Booyzen, 1963–2011**. Neither is placed."
   },
   {
    "n": 58,
    "what": "Open the University of Cape Town camps database at source",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Three Booyzens are in it — **Gert Jacobus, Gertruida Magdalena and Jan Gerhardus Lodewicus** — and this archive has only ever seen them as index lines through two intermediaries. The database itself carries camp, farm, district, age and date of death, and the record pages are public. The caveat it publishes about itself matters too: it is built largely from **death lists**, so it records who died far better than who was interned and walked out."
+   "note": "Three Booyzens are in it — **Gert Jacobus, Gertruida Magdalena and Jan Gerhardus Lodewicus** — and this archive has only ever seen them as index lines through two intermediaries. The database itself carries camp, farm, district, age and date of death, and the record pages are public. The caveat it publishes about itself matters too: it is built largely from **death lists**, so it records who died far better than who was interned and walked out. **Done, 15 September, and it corrects an open question here.** Of the three, **only two died in camps**. Jan Gerhardus Lodewicus, aged two, is recorded «died in camp: **No**» with no camp and no farm attached, and [open question 3](/open-questions/) lists all three as though they were the same kind of record. The other two gain farms, districts, a note that Gertruida's camp may have been Irene rather than Vereeniging, and a source — **RS 25 Transvaal Death Lists, National Archives, Pretoria**. Cause of death on all three is one word: *ziekte*."
   },
   {
    "n": 59,

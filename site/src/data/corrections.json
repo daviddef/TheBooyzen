@@ -11,6 +11,13 @@
  "rows": [
   [
    "15 Sep 2026",
+   "Three Booyzens listed together as deaths in concentration camps",
+   "ONLY TWO OF THE THREE DIED IN A CAMP. Read on the University of Cape Town database's own pages rather than through two intermediaries: Gert Jacobus (Johannesburg RC, aged 2, farm Rietvallei, district Marico) and Gertruida Magdalena (Vereeniging RC, aged 19, farm Rietvlei, district Heidelberg) are each recorded “died in camp: YES”. JAN GERHARDUS LODEWICUS, AGED 2, IS RECORDED “DIED IN CAMP: NO”, with no camp and no farm attached at all. Listing the three together was this archive's compression, not the database's — and it is the same failure as reading an index line as though it were the record. Gertruida's entry also carries the note “or Irene RC”, so even her camp is uncertain.",
+   "reading",
+   "/documents/#natal-opened"
+  ],
+  [
+   "15 Sep 2026",
    "The National Archives' catalogue given as “national.archives.gov.za/naairs.htm”",
    "THE LIVE DOMAIN HAS NO DOT IN IT — nationalarchives.gov.za. The host as published has no address record and no mail record at all. It appeared in the note of 13 September that ends “written down because the wrong address cost this archive a day”, which is the row that exists to stop exactly this. Found by a tool written to check whether the sources this site cites are still there; it looks for hosts named in PROSE as well as in links, because this archive writes its sources in sentences.",
    "process",
