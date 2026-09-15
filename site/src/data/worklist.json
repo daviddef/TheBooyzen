@@ -479,50 +479,50 @@
   {
    "n": 60,
    "what": "A check that every letter in the requests folder appears in the letters register, and the reverse",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "The register was built on 15 September from an inbox search because **no single place on this site showed what was outstanding**. It will drift back the first time a letter is drafted and not recorded, and nothing would catch that."
+   "note": "The register was built on 15 September from an inbox search because **no single place on this site showed what was outstanding**. It will drift back the first time a letter is drafted and not recorded, and nothing would catch that. **Done, 15 September.** In `checkregisters.py`: every `.md` in the requests folder must be findable in the letters register. Advisory rather than a failure, because a draft can legitimately exist for an hour before it is registered."
   },
   {
    "n": 61,
    "what": "A check that every searched.json set's link resolves, as corrections already does",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "Eighty-five sets, each pointing at the page that shows the working. The corrections check found this class of rot worth refusing a build over; **the larger register has no equivalent** and there is no reason for that except that nobody wrote it."
+   "note": "Eighty-five sets, each pointing at the page that shows the working. The corrections check found this class of rot worth refusing a build over; **the larger register has no equivalent** and there is no reason for that except that nobody wrote it. **Done, 15 September.** Eighty-five sets, every `h` checked against the built pages and their anchors. A failure, not an advisory — the same standing as the corrections check it was modelled on."
   },
   {
    "n": 62,
    "what": "A check that people.js and people.json have not drifted",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "The header of the generator says they drifted once and **four people vanished off the index**. It is regenerated on every build, so the only way they diverge is a build that did not finish — which happened this afternoon, when an interrupted write corrupted a generated file and the next build failed on it."
+   "note": "The header of the generator says they drifted once and **four people vanished off the index**. It is regenerated on every build, so the only way they diverge is a build that did not finish — which happened this afternoon, when an interrupted write corrupted a generated file and the next build failed on it. **Done, 15 September.** Counts and compares the names in `people.js` against `people.json` and names the first five in either direction. **It would have caught the drift that lost four people off the index**, and it would have caught this afternoon's corrupted generated file one step earlier."
   },
   {
    "n": 63,
    "what": "A check that a person whose own prose cites a tree is not marked `doc`",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "Several records say in terms **«FROM WIKITREE, NOT FROM A DOCUMENT THIS ARCHIVE HAS READ»** and this archive is careful about it by hand. By hand is how the atlas was careful, and the atlas check failed eighteen times on its first run."
+   "note": "Several records say in terms **«FROM WIKITREE, NOT FROM A DOCUMENT THIS ARCHIVE HAS READ»** and this archive is careful about it by hand. By hand is how the atlas was careful, and the atlas check failed eighteen times on its first run. **Done, 15 September, and it immediately raised five.** A person marked `doc` whose own prose contains «not from a document this archive has read». **All five are correctly marked** — the record is documented and one *detail* inside it comes from a tree. So the advisory stands and the schema does not: there is no way here to mark a **detail** as tree-sourced rather than a whole record. Tuning the check to stop reporting them would be «a check with an exception is a check that will be excepted». [Raised as item 77]"
   },
   {
    "n": 64,
    "what": "Make the external check name which pages cite each dark host",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "It reports that **databases.tanap.net** is gone and how many times it is cited. It does not say **where**, so acting on it means grepping. A check that reports a problem without locating it is half a check."
+   "note": "It reports that **databases.tanap.net** is gone and how many times it is cited. It does not say **where**, so acting on it means grepping. A check that reports a problem without locating it is half a check. **Done, 15 September.** Each host now carries the files that cite it. It paid at once: it showed that all four dark hosts are cited **only from the registers that exist to record failure**, and from the passages that say those hosts are gone."
   },
   {
    "n": 65,
    "what": "Run the external check again in a fortnight and keep both answers",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "One run is a snapshot. **Two runs are a trend**, and the question this archive actually wants answered is not «is TANAP down today» but «how fast is the ground moving under a family history that cites thirty-four hosts»."
+   "note": "One run is a snapshot. **Two runs are a trend**, and the question this archive actually wants answered is not «is TANAP down today» but «how fast is the ground moving under a family history that cites thirty-four hosts». **Done, 15 September — the mechanism, not the second run.** Each run keeps the previous answer, prints any host whose state has changed since last time, and keeps up to twelve dated snapshots. The second run is a fortnight away and the question it answers is not «is TANAP down today» but **how fast the ground moves under a family history that cites thirty-six hosts**."
   },
   {
    "n": 66,
@@ -611,6 +611,14 @@
    "owner": "this archive",
    "since": "2026-09-15",
    "note": "Sent 15 September. Special Collections warn that some items are stored off site and ask for appointments, so a slow answer is expected rather than a bad sign — but **an enquiry nobody chases is an enquiry nobody sent**, and this archive has three letters out that it has never followed up. [The letters](/letters/)"
+  },
+  {
+   "n": 77,
+   "what": "The schema cannot mark a single detail as tree-sourced, only a whole person",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Raised by a check on the day it was written. Five people are marked **`doc`** and say in their own prose that some specific claim is «not from a document this archive has read» — Anna Maria van der Merwe is documented by a baptism of 1807 and her **parents** come from a tree; Adriana Christina Viljoen is named on a baptism of 1835 and her **marriage date** comes from a tree. **Both halves are true and the status field can only hold one of them.** The options are a per-claim marker, or accepting that a record's status describes its weakest load-bearing part. Until then the check reports all five every build, which is the right behaviour: **tuning it quiet would be a check with an exception, and a check with an exception is a check that will be excepted.**"
   }
  ],
  "accounts": [

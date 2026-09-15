@@ -112,6 +112,50 @@ def main():
         elif tok and not any(tok in s for s in known[bare]):
             bad.append(f"kin-vs-people      kin.js says {raw!r} but no {bare} has {tok!r} in a date")
 
+    # 7 - a letter drafted and never registered, or registered and never written
+    req = os.path.join(ROOT, "requests")
+    if os.path.isdir(req):
+        letters = load("letters.json")["rows"]
+        blob = " ".join((r.get("to", "") + " " + r.get("what", "")).lower() for r in letters)
+        for f in sorted(os.listdir(req)):
+            if not f.endswith(".md"):
+                continue
+            # the file name carries the institution; one distinctive word of it must appear
+            words = [w for w in re.split(r"[-_.]", f[:-3]) if len(w) > 4]
+            if words and not any(w.lower() in blob for w in words):
+                warn.append(f"letter-unregistered {f}: drafted in requests/ and not in the letters register")
+
+    # 8 - a searched set pointing at a page or anchor that does not exist
+    for st in load("searched.json")["sets"]:
+        href = (st.get("h") or "").strip()
+        if not href.startswith("/"):
+            continue
+        page = href.split("#")[0]
+        if page not in pages:
+            bad.append(f"searched-anchor    {st.get('d')} {st.get('g','')[:38]}: {href} - no such page")
+        elif "#" in href and href not in ids:
+            bad.append(f"searched-anchor    {st.get('d')} {st.get('g','')[:38]}: {href} - anchor does not exist")
+
+    # 9 - people.js and people.json, which drifted once and lost four people off the index
+    src_js = open(os.path.join(D, "people.js"), encoding="utf-8").read()
+    names_js = re.findall(r'\{\s*n:\s*"((?:[^"\\]|\\.)*)"', src_js)
+    if len(names_js) != len(people):
+        bad.append(f"people-drift       people.js has {len(names_js)} records, people.json has "
+                   f"{len(people)} - the generated file is stale, rebuild")
+    else:
+        a, b = set(x.replace('\\"', '"') for x in names_js), set(p["n"] for p in people)
+        for miss in sorted(a - b)[:5]:
+            bad.append(f"people-drift       {miss!r} is in people.js and not in people.json")
+        for miss in sorted(b - a)[:5]:
+            bad.append(f"people-drift       {miss!r} is in people.json and not in people.js")
+
+    # 10 - a person who says in terms that the tree is the only source, marked documented
+    SAYS_TREE = re.compile(r"not from a document this archive has read", re.I)
+    for p in people:
+        if p.get("s") == "doc" and SAYS_TREE.search(p.get("r", "")):
+            warn.append(f"doc-cites-tree     {p['n']}: marked `doc`, and its own prose says the claim "
+                        f"is not from a document this archive has read")
+
     # 5 - open too long
     today = datetime.date.today()
     for r in load("worklist.json")["rows"]:

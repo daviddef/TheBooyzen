@@ -42,7 +42,7 @@ def hosts_cited():
         host = host.lower().rstrip(".")
         if SKIP.match("http://" + host) or NOT_A_HOST.match(host):
             return
-        seen.setdefault(host, {"n": 0, "one": url})
+        seen.setdefault(host, {"n": 0, "one": url, "where": set()})
         seen[host]["n"] += n
         if seen[host]["one"].count("/") < 3 and url.count("/") >= 3:
             seen[host]["one"] = url  # prefer a real path over a bare root
@@ -50,14 +50,23 @@ def hosts_cited():
     for f in glob.glob(os.path.join(ROOT, "site", "dist", "**", "*.html"), recursive=True):
         html = open(f, encoding="utf-8", errors="ignore").read()
         for url in re.findall(r'href="(https?://[^"#\s]+)"', html):
-            note(re.sub(r"^https?://", "", url).split("/")[0], url)
+            h = re.sub(r"^https?://", "", url).split("/")[0]
+            note(h, url)
+            if h.lower() in seen:
+                rel = os.path.relpath(os.path.dirname(f), os.path.join(ROOT, "site", "dist"))
+                seen[h.lower()]["where"].add("/" if rel == "." else "/" + rel.replace(os.sep, "/") + "/")
 
+    # A host named in a sentence is still a citation, and the file it is named in
+    # is where somebody has to go to fix it. Reporting a dark source without
+    # saying where it is cited is half a check.
     for f in glob.glob(os.path.join(ROOT, "site", "src", "data", "*.json")) + \
              glob.glob(os.path.join(ROOT, "site", "src", "pages", "*.astro")):
         if f.endswith("sources-state.json"):
             continue
-        for host in BARE.findall(open(f, encoding="utf-8", errors="ignore").read()):
+        for host in set(BARE.findall(open(f, encoding="utf-8", errors="ignore").read())):
             note(host, "https://" + host + "/")
+            if host.lower() in seen:
+                seen[host.lower()]["where"].add(os.path.relpath(f, ROOT))
     return seen
 
 
@@ -114,25 +123,63 @@ def probe(host, one):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry", action="store_true")
+    ap.add_argument("--strict", action="store_true",
+                    help="exit non-zero if any host is dark - off by default, see above")
     a = ap.parse_args()
 
     rows, cited = [], hosts_cited()
     for host, info in sorted(cited.items(), key=lambda kv: -kv[1]["n"]):
         state, why = probe(host, info["one"])
-        rows.append({"host": host, "cited": info["n"], "state": state, "why": why})
-        mark = {"up": "  ok  ", "guarded": "  warn", "dark": "  FAIL",
+        rows.append({"host": host, "cited": info["n"], "state": state, "why": why,
+                     "where": sorted(info.get("where", []))[:8]})
+        mark = {"up": "  ok  ", "guarded": "  warn", "dark": "  dark",
                 "down": "  warn", "mail only": "  ok  "}[state]
         print(f"{mark}  external   {host:<34} {state:<8} {why:<18} cited {info['n']}x")
 
-    dark = [r for r in rows if r["state"] == "dark"]
+    # A dark host is NOT a failure, and working the tool taught that.
+    #
+    # All four dark hosts on the first full run are cited only from the registers
+    # that exist to record failure - corrections, searched, the work list - and
+    # from the passages on /sources/ that say those hosts are gone. A page whose
+    # subject is "this source died" will always cite the source that died, and a
+    # check that fails the build for it would be punishing the archive for saying
+    # so out loud.
+    #
+    # So this reports and does not refuse. What it is actually for is the WHERE
+    # and the HISTORY: which files depend on a host, and whether the ground is
+    # moving. Exit non-zero only when asked.
+    dark = [r for r in rows if r["state"] == "dark"] if a.strict else []
+    darknames = [r["host"] for r in rows if r["state"] == "dark"]
+    prev = {}
+    if os.path.exists(OUT):
+        try:
+            old = json.load(open(OUT, encoding="utf-8"))
+            prev = {r["host"]: r["state"] for r in old.get("rows", [])}
+            history = old.get("history", [])
+            if old.get("checked") and old.get("checked") != datetime.date.today().isoformat():
+                history = ([{"checked": old["checked"],
+                             "dark": sorted(r["host"] for r in old["rows"] if r["state"] == "dark"),
+                             "hosts": len(old["rows"])}] + history)[:12]
+        except Exception:
+            history = []
+    else:
+        history = []
+
+    for r in rows:
+        was = prev.get(r["host"])
+        if was and was != r["state"]:
+            r["changed_from"] = was
+            print(f"  note  external   {r['host']} was {was}, is now {r['state']}")
+
     if not a.dry:
-        json.dump({"note": "Written by tools/checkexternal.py. Not part of the build: a network "
+        json.dump({"history": history, "note": "Written by tools/checkexternal.py. Not part of the build: a network "
                            "check inside a build fails for reasons that have nothing to do with "
                            "the change, and a check that fails for the wrong reason is a check "
                            "people learn to ignore.",
                    "checked": datetime.date.today().isoformat(), "rows": rows},
                   open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"  {'FAIL' if dark else 'ok  '}  external   {len(rows)} hosts, {len(dark)} dark")
+    print(f"  {'FAIL' if dark else 'ok  '}  external   {len(rows)} hosts, "
+          f"{len(darknames)} dark ({', '.join(darknames) if darknames else 'none'})")
     return 1 if dark else 0
 
 
