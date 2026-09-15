@@ -95,9 +95,13 @@ const thisArchive = ring.archives.find(
   <div class="wrap">
     <SiblingArchives />
     <p class="foot">An evidence-first family archive for the Booyzen family — of Graaff-Reinet and Cradock,
-    of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. Living people are
-    excluded from this build.</p>
-    <p class="foot dim">Built {new Date().getFullYear()} · Sources listed on <a href={u("/sources/")}>Sources</a> · Corrections welcome</p>
+    of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. <strong>Living people are named</strong> — name and relationship only, never a date, a place, a photograph or a record. <strong>This archive currently holds none.</strong></p>
+    <p class="foot dim">Built {new Date().getFullYear()} ·
+      <a href={u("/sources/")}>Sources</a> ·
+      <a href={u("/method/")}>Method</a> ·
+      <a href={u("/open-questions/")}>Open questions</a> ·
+      <a href={u("/corrections/")}>Corrections</a> ·
+      Corrections are the most valuable thing you can send</p>
     <VisitCount code={thisArchive?.counter} />
   </div>
 </footer>
