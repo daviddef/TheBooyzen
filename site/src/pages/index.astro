@@ -5,14 +5,27 @@ import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import PlaceSpark from "@daviddef/archive-kit/components/PlaceSpark.astro";
 import { u } from "../lib/url.js";
 import atlas from "../../public/atlas-data.json";
+import ppl from "../data/people.json";
+import reg from "../data/register.json";
+import searched from "../data/searched.json";
+import corrections from "../data/corrections.json";
+import places from "../data/places.json";
+/* Six tiles, all of them measures of the work. Five of the seven that used to
+   sit here were years out of the story — 1820, 1779, 1915, 1905, 1840 — and
+   every one is a better line of prose than it was a number: they are quotations
+   and turning points, and they are all still on the page, in the cards and the
+   documents section where a reader can see what they say. A tile that reads
+   1840 says nothing about how far this archive has got.
+
+   Counted at build time so they stay true as the work grows. */
+const searches = searched.sets.reduce((n, g) => n + (g.rows || []).length, 0);
 const stats = [
+  [ppl.people.length, "people published, each on a page of their own", "/people/"],
+  [reg.rows.length.toLocaleString(), "register entries read and set out one by one", "/register/"],
+  [searches, "searches written down, most of which found nothing — a search is only worth anything written down", "/searched/"],
+  [corrections.rows.length, "claims this archive has corrected, with what caused each", "/corrections/"],
+  [places.places.length, "places named, with the people this archive can put in each", "/places/"],
   ["646", "people in the whole world carry the spelling Booyzen — against 53,764 Booysens", "/name/"],
-  ["1820", "the Nautilus lands at Algoa Bay with a seventeen-year-old London tailor's son aboard", "/kolbe/"],
-  ["1779", "the year the spelling Booyzen is already on a Cape document — 120 years before the war", "/name/"],
-  ["1915", "the year a grandson wrote “Father: Kolbe, thinks James was christian name. Mother: Unknown” — three years after the death", "/documents/"],
-  ["7", "generations up, the male line stops at a man with no dates and no parents", "/direct-line/"],
-  ["1905", "the year both spellings appear on one sheet of paper — father Booysen, son Booyzen", "/documents/"],
-  ["1840", "“Names of the Parents of the Deceased. Not Known.” — written thirteen years after the death", "/documents/"],
 ];
 ---
 <Base title="The Booyzen Archive"
