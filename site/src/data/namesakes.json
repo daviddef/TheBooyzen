@@ -1,22 +1,28 @@
 {
- "note": "In this family a forename is inherited property. It travels through daughters as reliably as a surname travels through sons, it survives a change of surname, and it survives the death of the person it came from. Three times it has also produced an error in this archive, because two people of one name in two generations look exactly alike in an index. AND IT IS EVIDENCE. Read carefully it says which family a child belongs to: OCKERT JOHANNES STEPHANUS runs four generations out of a single marriage and is not a Booysen name at all, and the eldest son of a disputed man is called DAVID SCHALK, which is the third argument on the disputed page for a father this site did not give him.",
+ "note": "In this family a forename is inherited property. It travels through daughters as reliably as a surname travels through sons, it survives a change of surname, and it survives the death of the person it came from. Three times it has also produced an error in this archive, because two people of one name in two generations look exactly alike in an index. AND IT IS EVIDENCE. Read carefully it says which family a child belongs to: OCKERT JOHANNES STEPHANUS runs four generations out of a single marriage and is not a Booysen name at all, and the eldest son of a disputed man is called DAVID SCHALK, which is the third argument on the disputed page for a father this site did not give him. 15 SEPTEMBER 2026: and for the first time two of these derivations are PROVED rather than asserted — DAVID SCHALK by counting it through three printed volumes, and WILLEM HERMANUS by finding both halves of it in one household in 1809. A third, JUDITH CORNELIA THERESIA, identified a gravestone.",
  "sets": [
   {
    "n": "Willem Hermanus",
-   "sub": "Five generations, and it does not come from this family at all",
-   "kick": "The name enters through a step-relation with no blood tie to any Booyzen, and is still being given to children a century and a half later.",
+   "sub": "Five generations, it does not come from this family at all, and it is now traced to its source",
+   "kick": "The name enters through a step-relation with no blood tie to any Booyzen, and is still being given to children a century and a half later. Since 15 September both halves of it have a man behind them.",
    "who": [
     [
-     "Willem Hermanus Pieterzen",
-     "d. bef. 1817",
-     "Anna Catharina Slier's FIRST husband. Not a Booyzen, not a Mountjoy, and no blood relation to either.",
-     "/who/willem-hermanus-pieterzen/"
+     "Willem Slier",
+     "of Hamburg, m. 1780",
+     "THE SOURCE OF THE FIRST HALF. Anna Catharina Slier's father, married Anna Catharina Fortman at the Cape on 19 November 1780. His grandson carries his forename.",
+     "/who/willem-slier/"
     ],
     [
-     "Willem Hermanus Pieterzen",
-     "the son",
-     "His son by her, and godfather at the 1851 Graaff-Reinet font — half-brother to Johanna Catharina Mountjoy.",
-     "/who/willem-hermanus-pieterzen/"
+     "Hermanus Pietersen",
+     "d. bef. Mar 1817",
+     "THE SOURCE OF THE SECOND HALF, and until 15 September this archive had him and his son as one man. Anna Catharina Slier's first husband, married 5 April 1807. His own parents were unknown to the book.",
+     "/who/hermanus-pietersen/"
+    ],
+    [
+     "Willem Hermanus Pietersen",
+     "bapt. 12 Mar 1809",
+     "THEIR GRANDSON AND SON, and the first person to carry the whole name — Willem for his mother's father, Hermanus for his own. Godfather at the 1851 Graaff-Reinet font, and half-brother to Johanna Catharina Mountjoy.",
+     "/who/willem-hermanus-pietersen/"
     ],
     [
      "Willem Hermanus “William Henry” Booyzen",
@@ -49,7 +55,51 @@
      "/who/william-herman-daschner/"
     ]
    ],
-   "note": "This archive published “Willem Hermanus is a Booyzen name” and withdrew it. Three documents name the first husband three ways — Harmanus Pieterze in 1817, William Pietersen in 1840, Willem Hermanus Pieterzen in 1851 — and the man they name married into the line and died before it started."
+   "note": "THIS SET USED TO BEGIN WITH THE WRONG MAN. It opened on “Willem Hermanus Pieterzen, d. bef. 1817, Anna Catharina Slier's FIRST husband”, a person assembled out of two documents that spell him differently — the 1817 marriage register's HARMANUS PIETERZE and the 1840 death notice's WILLIAM PIETERSEN. De Villiers's volume 3 separates them: the husband is HERMANUS, and WILLEM HERMANUS is the boy baptised in 1809. The page's own argument survives and improves. The name still enters through a step-relation with no Booyzen blood in it — AND HALF OF IT IS GERMAN, from a man of Hamburg who never saw the Karoo."
+  },
+  {
+   "n": "David Schalk",
+   "sub": "Counted in print, and it is a van der Merwe name",
+   "kick": "Three men in this archive carry it and the first of them is the child born the year after a van der Merwe married into the line. The claim is testable, so it was tested.",
+   "who": [
+    [
+     "David Schalk van der Merwe",
+     "bapt. 10 Oct 1790",
+     "HER BROTHER. One of the two candidates for where the name comes from — and on the other candidate, the family tree's version, he is her FATHER instead. Either way he stands one step from her.",
+     "/who/david-schalk-van-der-merwe/"
+    ],
+    [
+     "Anna Maria van der Merwe",
+     "bapt. 5 Oct 1788",
+     "THE DOOR IT COMES THROUGH. Baptised fourteen days after the man she married. Her son is the first David Schalk in this surname.",
+     "/who/anna-maria-van-der-merwe/"
+    ],
+    [
+     "David Schalk Booijsen",
+     "bapt. 4 Jan 1807",
+     "THE FIRST, and the only David Schalk in the whole first volume of the Cape genealogies — the volume that holds every Booijsen de Villiers recorded.",
+     "/who/david-schalk-booijsen/"
+    ],
+    [
+     "David Schalk Booysen",
+     "b. 9 Jun 1848",
+     "The second. Named for his grandfather, four decades on.",
+     "/who/david-schalk-booysen/"
+    ],
+    [
+     "David Schalk Booijzen the younger",
+     "c. 1889",
+     "The third, youngest on his mother's 1900 notice.",
+     "/who/david-schalk-booijzen-the-younger/"
+    ],
+    [
+     "David Kolbe Booyzen",
+     "m. 1921",
+     "And it survives beside a second borrowed name: he hyphenated Kolbe onto Booysen and used it as his surname at Port Elizabeth.",
+     "/who/david-kolbe-booyzen/"
+    ]
+   ],
+   "note": "THE COUNT IS THE ARGUMENT. The three volumes of de Villiers were downloaded as text and the string DAVID SCHALK counted in each. PART 1 — which contains the entire BOOIJSEN genealogy — holds it EXACTLY ONCE, and that once is the child of 1807. PART 2 holds it FIFTEEN TIMES, THIRTEEN OF THEM INSIDE THE VAN DER MERWE SECTION: 1738, 1739, 1761, 1787, 1790, 1791, 1797, 1800, 1804. A name that appears once in a family and thirteen times in the family that married into it is not a coincidence, and this is the only derivation on this page that can be put as a number."
   },
   {
    "n": "Catherine Maria Sophia",
@@ -158,6 +208,38 @@
     ]
    ],
    "note": "The error is on the corrections page. A year was read off a file number, written into a man's life as a death date, and then cited back as though it were evidence."
+  },
+  {
+   "n": "Judith Cornelia Theresia",
+   "sub": "Three names handed over entire, in the house next door",
+   "kick": "The same mechanism as David Schalk, in the same generation, one household along — and it is what let a Johannesburg gravestone be identified from a genealogical code.",
+   "who": [
+    [
+     "Judith Cornelia Theresia Viljoen",
+     "bapt. 22 Oct 1782",
+     "She marries in. Sister of the Hercules Albertus Viljoen who married a Booijsen three months earlier the same year.",
+     ""
+    ],
+    [
+     "Jan Jonathan Booijsen",
+     "bapt. 11 Jul 1779",
+     "Her husband, married 28 May 1797, and brother of the Petrus Jacobus at the head of this archive's line.",
+     "/who/jan-jonathan-booijsen/"
+    ],
+    [
+     "Judith Cornelia Theresia Booijsen",
+     "bapt. 16 Aug 1807",
+     "Their sixth child, carrying her mother's three names entire. She is b3c4d5e6 — the code cited on a gravestone at Bezuidenhout Park, Johannesburg, photographed in 1989, which is how she was identified at all.",
+     ""
+    ],
+    [
+     "Judith Cornelia Etresia Bezuidenhout",
+     "b. 30 Oct 1831",
+     "Her daughter, on the same stone, with the middle name worn down to Etresia in one generation.",
+     ""
+    ]
+   ],
+   "note": "A BROTHER AND A SISTER MARRIED A SISTER AND A BROTHER, THREE MONTHS APART IN 1797. Magdalena Booijsen married Hercules Albertus Viljoen on 26 February; her brother Jan Jonathan married his sister Judith Cornelia Theresia on 28 May. Thirty-one years later a son of the third sibling married a daughter of the first. This page argues that a forename is inherited property; here are two households exchanging it in both directions inside a single year."
   },
   {
    "n": "The Barry names, after the Barrys",
