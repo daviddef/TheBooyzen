@@ -2,6 +2,56 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Free State depot swept properly — and a library catalogue makes the Settler a missionary",
+   "n": "VAB had been opened twice in this project's life, both times for one reference",
+   "d": "15 Sep 2026",
+   "h": "/documents/#vab-swept",
+   "rows": [
+    [
+     "MSB751, SA Library, Cape Town — found while searching KOLBE AND DOWNING",
+     "“GEORGE AUGUSTUS KOLBE … 1820 SETTLER, MISSIONARY … LMS MISSIONARY”",
+     "A library manuscript collection, not an archive file: “GA KOLBE COLLECTION. Donated by Dr Jean Griffiths, Somerset West, 1985. Photocopy, 4 pages.” IT CORROBORATES A MEMORY THIS ARCHIVE PUBLISHED THE SAME MORNING AS AN INFERENCE — John Montgomery's recollection of a Bushman mission school at Koolskop about 1824. An old man's memoir in a Bloemfontein newspaper and a manuscript donated to a Cape Town library in 1985 have nothing to do with each other AND THEY AGREE. It also settles the trade: the settler roll said CHEMIST, the catalogue says PHARMACIST, the obituary describes a medical practice. One man, one trade, and the missionary work is the part nobody had.",
+     "yes"
+    ],
+    [
+     "And the other half of the same catalogue line",
+     "A LETTER FROM HIS FATHER IN LONDON, 23 AUGUST 1830",
+     "“LETTER, 1830 AUG. 23, FROM JOHAN KOLBE, LONDON, TO HIS SON, GEORGE AUGUSTUS KOLBE ON HIS ORDINATION.” THE TWO MEN WROTE TO EACH OTHER AND THE LETTER SURVIVES. This archive has spent a fortnight trying to connect the tailor of Conduit Street to the settler of Colesberg through directories, censuses and an obituary, and has been beaten by a quota, a bot check and an empty shelf. A letter from London in 1830 is very likely to carry an address at its head — which is the exact question the Brunswick Square muddle turns on. IT IS A PHOTOCOPY, and the catalogue does not say where the original is.",
+     "yes"
+    ],
+    [
+     "MCCABE in VAB",
+     "THIRTEEN, AND THREE OF THEM MATTER",
+     "VAB MHG C129: “MCCABE, FRANCIS. EGGENOTES 1) MARIA PETRONELLA ELISABETHA ANTOINETTA RAATH EN 2) ANNA (GEBORE VAN DER MERWE)”, 1872 — HE HAD A FIRST WIFE AND SHE HAS A NAME. VAB 1/3/1/12 BC11: “MCCABE, FRANCIS. INSOLVENTE BOEDEL”, remark “BEVAT GEEN STERFKENNIS NIE” — THE LANDDROST OF BLOEMFONTEIN DIED INSOLVENT, and the index says outright the file holds no death notice, which saves somebody a wasted morning. And M777 now reads in full: “EGGENOTE JOHN GHERSON ELEASAR KOLBE EN FRANCIS MCCABE” — the remarriage is in the archives, not only in a newspaper.",
+     "yes"
+    ],
+    [
+     "The Kolbe–McCabe marriage this archive had flagged as possibly coincidence",
+     "IT IS NOT A COINCIDENCE",
+     "A Rosa Magdalena Kolbe was baptised at Bloemfontein in 1890 to Frederik Fortuna Kolbe and MARIA PETRONELLA ELIZABETH ANTOINETTA MCCABE, and this archive wrote that it “does not yet know whether that is a coincidence”. FRANCIS McCABE'S FIRST WIFE WAS MARIA PETRONELLA ELISABETHA ANTOINETTA RAATH. A woman carrying that whole four-name string with McCABE as her surname, marrying a Kolbe in the same town, is his daughter, named for her mother. THE TWO FAMILIES JOINED TWICE: he married the Commandant's widow, and his daughter married a Kolbe.",
+     "part"
+    ],
+    [
+     "KOLBE in VAB",
+     "146 DOCUMENTS — A WHOLE FREE STATE KOLBE POPULATION",
+     "Including KOLBE MOTORS (PTY) LTD suing and being sued through the 1950s and 60s; a JOHN GERSON ELIEZER KOLBE in a civil case of 1939, seventy-one years after the Commandant died; and repeated GEORGE AUGUSTUS KOLBEs in 1935, 1942 and 1960. THE DEPOT THIS ARCHIVE HAD OPENED TWICE FOR ONE REFERENCE EACH TIME.",
+     "yes"
+    ],
+    [
+     "DOWNING as a Kolbe forename",
+     "FOUR GENERATIONS, THREE PROVINCES, SIX DOCUMENTS",
+     "TAB MHG 40293 FREDERICK FORTUNATUS DOWNING KOLBE, d. 1918 · NAB MSCE 1229/1960, his widow, born at VOLKSRUST · VAB MHG 23877 and 801/49, MARGARET DOWNING born KOLBE, twice widowed · VAB MHG 33459, a SECOND Margaret Downing born Kolbe · TAB MHG 5450/68, MARIA MARGARETHA DOWNING ROUSSEAU · and PIETER DOWING KOLBE LUBBE in 1959, by which point the surname is Lubbe and both Kolbe and Downing are forenames, with a letter worn off on the way. SHE SIGNED HER MARRIAGE ALLEGATION WITH A MARK IN 1819. HER NAME IS BETTER RECORDED THAN SHE IS.",
+     "yes"
+    ],
+    [
+     "Six Kolbes applying to a court together",
+     "VAB HG 702/1931 — THE FIRST FREE STATE SIBLING GROUP THIS ARCHIVE CAN NAME",
+     "“LEONORA STEENKAMP, BORN KOLBE · MARGARET DOWNING FICK, BORN KOLBE · GEORGINA AUGUSTA DE WET, BORN KOLBE · JACOBUS WYNAND LOUW KOLBE · GEORGE AUGUSTUS KOLBE · CATHARINA ELIZABETH MALAN, BORN KOLBE.” Four married daughters and two sons. A GENERATION TOO LATE TO BE THE COMMANDANT'S TWELVE — these are more likely his grandchildren — but applications like this are usually about a parent's estate, so the file should name the parent.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "A check for sources that have gone dark — and it called three live ones dead",
    "n": "Written because TANAP went off the air mid-session and this site went on citing it",
    "d": "15 Sep 2026",
