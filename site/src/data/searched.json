@@ -2,6 +2,74 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "gendatabase.com, which this project had never once opened",
+   "n": "The user asked whether it had been tried. The word appears nowhere in this repository.",
+   "d": "15 Sep 2026",
+   "h": "/documents/#gendatabase",
+   "rows": [
+    [
+     "LUUS with BOOYZEN, in a marriage index rather than an estate index",
+     "“1928 · CORNELIUS ABRAHAM LUUS × SUSANNA FREDERIK ALETTHA BOOYZEN”",
+     "THIS ARCHIVE PUBLISHED “LUUS WITH BOOYZEN RETURNS NOTHING” ON 14 SEPTEMBER. It returns nothing FROM NAAIRS, which was the only index asked, and the sentence did not say so. Withdrawn to /corrections/ with cause “scope”. It is the same failure as the row filter and the blank Name column, in a new coat: THE ANSWER WAS ABOUT THE TOOL AND WAS WRITTEN DOWN AS THOUGH IT WERE ABOUT THE WORLD.",
+     "yes"
+    ],
+    [
+     "What the site holds for BOOYZEN",
+     "569 RECORDS ACROSS TEN DATASETS, FACET COUNTS FREE",
+     "Verified Death 190 · National Archives 152 · Estate File 122 · MARRIAGE TRANSCRIPTION 54 · BAPTISM 22 · FamilySearch 22 · CONCENTRATION CAMPS 3 · 1925–1931 VOTER ROLL 2 · Civil Death 1 · Unconfirmed Death 1. FOUR OF THOSE ARE DATASETS THIS ARCHIVE HAD NEVER SEARCHED AT ALL — the marriages, the baptisms, the voters' roll and the camps. The marriages are the gap that mattered: this project has never had a marriage index.",
+     "yes"
+    ],
+    [
+     "1921 · DAVID KOLBE BOOYZEN × MARIA JACOBA SMIT",
+     "THE MARRIAGE BEHIND THIS MORNING'S FIND, NOW IN A TRANSCRIPTION",
+     "The Kolbe-Booysen household of Port Elizabeth was published today off two Eastern Province Herald notices, with the 1921 marriage flagged as coming from a family tree and no document. Same names, same year, in an independent index.",
+     "yes"
+    ],
+    [
+     "1933 · MICHAEL JOHANNES VERMEULEN × BEATRIX MAGDALENA CATHARINA BOOYZEN",
+     "BETIE OF THE SILVERTON PILLAR GETS A MARRIAGE YEAR",
+     "She was found last week only through TAB MHG 4300/51, which named her as Michael Johannes Vermeulen's SURVIVING spouse in 1951 and as his second wife. HERE IS THE YEAR SHE MARRIED HIM, from the other end.",
+     "yes"
+    ],
+    [
+     "1850 · HENDRIK STEPHANUS BOOIJZEN × ANNA JOHANNA OLIVIER",
+     "CORROBORATED — AND WITH ONE NAME SHORTER",
+     "The marriage that puts this family north of the Vaal in 1850, already on this site. The transcription gives her ANNA JOHANNA where this archive has ANNA CATHARINA JOHANNA. A variant, recorded, not resolved.",
+     "part"
+    ],
+    [
+     "The camps and the voters' roll",
+     "THREE AND TWO",
+     "GERT JACOBUS, GERTRUIDA MAGDALENA and JAN GERHARDUS LODEWICUS BOOYZEN in the University of Cape Town's Born in the Camps database, where this archive had reached one of them once and by accident. And on the 1925–1931 voters' roll, JACOBUS NICOLAS BOOYZEN and JOHN BARRY BOOYZEN — both of them on the list of six estate files now with a researcher in Pretoria. A VOTERS' ROLL GIVES AN ADDRESS AND A DISTRICT.",
+     "yes"
+    ],
+    [
+     "KOLBE — 2,308 records, of which thirty-one born 1843–1869",
+     "AND ALL THIRTY-ONE ARE TREE DATA",
+     "1843 to 1869 is exactly the window of the Commandant's twelve children — married 3 April 1843, dead 3 April 1868. For a moment it looks like the answer. EVERY ONE OF THE THIRTY-ONE COMES FROM THE FAMILYSEARCH SLICE, which is other people's trees indexed. NOT A REGISTER, NOT AN ESTATE, NOT A DEATH NOTICE. THIRTY-ONE PLAUSIBLE CHILDREN DO NOT BECOME EVIDENCE BY BEING PLAUSIBLE TOGETHER. Kept as a list to test against documents; none entered.",
+     "no"
+    ],
+    [
+     "The one tree name worth writing down anyway",
+     "GERSOM ELIEZÄR KOLBE, BORN 1868, DIED 1902",
+     "He carries the Commandant's own forenames and was born in the year the Commandant died, and the obituary says the youngest child was an infant. STILL TREE DATA AND STILL NOT ENTERED. What is not tree data is the National Archives run beside it: a JOHN GERSON ELIEZER KOLBE sued by E. Wille and Sons, by John William Pearce and by the Nelspruit Roller Mills, divorced by Hester Johanna Catherina born Hammon, and tried with one Adam Barnard. FOUR GENERATIONS OF THE SAME THREE NAMES, with documents for the first and the last and none in between.",
+     "part"
+    ],
+    [
+     "The finders not yet used",
+     "SEVEN OF THEM, AND TWO GO STRAIGHT AT OPEN QUESTIONS",
+     "Cape Estates · Transvaal Estates · MOOC8 INVENTORIES · LAND & DEEDS · Old Voter Rolls · Boer War Soldiers · Legal Gazettes, plus a BAPTISM FINDER listing which Dutch Reformed registers survive for each of 181 towns. MOOC8 is where the Mountjoy inventories are. LAND & DEEDS is where Leeuwberg and Kaalspruit are. The Baptism Finder is how to locate the register holding 21 September 1788.",
+     "part"
+    ],
+    [
+     "Terms",
+     "COMMERCIAL. LISTS FREE, DOCUMENTS NOT.",
+     "Nothing was bought, no account was made, and everything above came off the public result pages. WHAT IT IS WORTH TO THIS PROJECT IS NOT THE DOCUMENTS — it is that four of its ten datasets are sources this archive did not know it had not searched.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Two answers in one morning — Pretoria on binding, and the forum on Question 0",
    "n": "Neither came from a search. Both came from having asked somebody.",
    "d": "15 Sep 2026",
