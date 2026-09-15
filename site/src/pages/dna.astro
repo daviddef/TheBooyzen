@@ -1,0 +1,144 @@
+---
+/* The DNA half that belongs to this family.
+   The work was done in the Lerena archive, because the tester's father was a
+   Lerena and the question there was his. This page is the other half of the
+   same afternoon: what those two kits say about the Cape. */
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import dna from "../data/dna.json";
+const aunt = dna.the_two_kits[1];
+const sur = Object.entries(dna.top_surnames_among_those_relatives).filter(([k]) => k !== "note");
+const cape = dna.the_cape_signature.what_23andme_finds_in_the_niece;
+---
+<Base title="The DNA"
+      eyebrow="Two kits, read 16 September 2026"
+      dek="Two descendants of this line have tested. What they say about the Cape — the cousinhood counted, the families that keep arriving out of strangers' trees, and a trace of ancestry this archive has not written down before.">
+
+<section class="blk">
+  <div class="panel" style="margin:1.4rem 0">
+    <p style="margin:0"><strong>On privacy, first.</strong> Both testers are <strong>living</strong>.
+      Neither is named here and neither is described beyond her position in the descent. The figures kept
+      below are the ones that bear on people <strong>long dead</strong>. Everything else is held
+      privately. <a href={u("/method/")}>Method &rarr;</a></p>
+  </div>
+  <div class="prose">
+    <p><strong>Where this came from.</strong> {dna.where_it_came_from} The Lerena archive was asking
+      whether a chromosome could reach an Argentine great-grandfather. It mostly could not — but the same
+      two kits are <em>loud</em> about the Cape, and that half of the answer belongs here.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The two kits, and why the aunt is the valuable one</h2>
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel">
+      <div class="lab">Kit one</div>
+      <p style="margin-top:8px">{dna.the_two_kits[0].role}.</p>
+      <p class="cap">{dna.the_two_kits[0].note}</p>
+    </div>
+    <div class="panel" style="border-left:3px solid var(--accent)">
+      <div class="lab">Kit two &mdash; the instrument</div>
+      <p style="margin-top:8px">{aunt.role}.</p>
+      <p class="cap"><strong>{aunt.shared_with_the_niece_cM.toLocaleString()} cM</strong> shared with her
+        niece &mdash; {aunt.shared_with_the_niece_percent}%, across {aunt.segments}.</p>
+    </div>
+  </div>
+  <div class="note" style="margin-top:20px">{aunt.why_she_matters}</div>
+</section>
+
+<section class="blk">
+  <h2>The cousinhood, counted</h2>
+  <p class="dek">23andMe asks every tester which countries their grandparents were born in. It is a field
+    they fill in themselves, not an inference from where they live. Across the
+    <strong>1,500</strong> closest genetic relatives of the younger kit, twenty countries are named.</p>
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel"><div class="nm">{dna.the_cousinhood_counted.relatives_naming_a_south_african_grandparent}</div>
+      <div class="txt">name <strong>at least one</strong> grandparent born in South Africa</div></div>
+    <div class="panel"><div class="nm">{dna.the_cousinhood_counted.relatives_naming_all_four_grandparents_south_african}</div>
+      <div class="txt">name <strong>all four</strong></div></div>
+  </div>
+  <div class="prose" style="margin-top:20px">
+    <p>{dna.the_cousinhood_counted.reading} The next countries down are the shape of the diaspora rather
+      than of the family &mdash; the United States {dna.the_cousinhood_counted.next_countries.USA},
+      Great Britain {dna.the_cousinhood_counted.next_countries["Great Britain"]}, and then Zimbabwe,
+      Namibia and the Netherlands in the tens.</p>
+  </div>
+
+  <h3 style="margin-top:28px">And the surnames those relatives carry</h3>
+  <div class="scroll" style="margin-top:14px">
+    <table>
+      <thead><tr><th>Surname</th><th class="m">Relatives</th></tr></thead>
+      <tbody>{sur.map(([n, c]) => (<tr><td>{n}</td><td class="m">{c}</td></tr>))}</tbody>
+    </table>
+  </div>
+  <p class="cap" style="margin-top:10px">{dna.top_surnames_among_those_relatives.note}</p>
+</section>
+
+<section class="blk">
+  <h2>This archive&rsquo;s own spine, arriving out of strangers&rsquo; trees</h2>
+  <p class="dek">MyHeritage computes a <strong>documented path</strong> between two trees where it can
+    find one &mdash; a Theory of Family Relativity. It is not a guess from centimorgans; it is two
+    pedigrees meeting at a named couple.</p>
+  <div class="panel" style="border-left:3px solid var(--accent);margin:20px 0">
+    <div class="lab">For the younger kit</div>
+    <p class="lede" style="margin:10px 0 0"><strong>{dna.relationship_theories.count_for_the_niece}</strong> matches
+      carry a computed relationship path</p>
+    <p style="margin-top:10px">{dna.relationship_theories.reading}</p>
+  </div>
+  <div class="prose">
+    <p>The surnames those theories name, in order of the size of the match:
+      {dna.relationship_theories.surnames_the_largest_ten_name.join(", ")}.</p>
+    <p><strong>Booyzen, Barry and Kolbe appear together, repeatedly, in trees kept by people this family
+      has never heard of.</strong> That is not new information about the descent &mdash; those three
+      names are the spine this archive was built on, and they were established from registers. It is
+      something better: <strong>independent confirmation, from the other direction</strong>, that the
+      three lines really do sit together where this archive puts them.
+      <a href={u("/barry/")}>The Barrys &rarr;</a> &middot; <a href={u("/kolbe/")}>The Kolbes &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>A trace this archive has not written down before</h2>
+  <p class="dek">This is the one finding here that is genuinely new, and it should be read carefully
+    rather than quickly.</p>
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel"><div class="nm">{cape["Angolan & Congolese"]}%</div>
+      <div class="txt">Angolan &amp; Congolese</div></div>
+    <div class="panel"><div class="nm">{cape["Northern Indian & Pakistani"]}%</div>
+      <div class="txt">Northern Indian &amp; Pakistani</div></div>
+  </div>
+  <div class="prose" style="margin-top:22px">
+    <p>{dna.the_cape_signature.reading}</p>
+    <p><strong>And the care it needs.</strong> {dna.the_cape_signature.care}</p>
+    <p>It is also worth saying plainly <em>why</em> it can be attributed to this side at all. The younger
+      tester&rsquo;s other two grandparents are <strong>Argentine and English</strong>. Neither an English
+      Devon family nor a Río de la Plata one produces a South Asian trace. <strong>The Cape does</strong>,
+      constantly, and it is where this family has been since the eighteenth century.</p>
+  </div>
+  <div class="note" style="margin-top:20px"><strong>What would turn this from a trace into a person.</strong>
+    23andMe will assign each slice of ancestry to one parent or the other. It is behind a paid tier and
+    this archive does not buy sources &mdash; but one screen would put these two figures definitively on
+    this side of the family rather than on inference. It is on <a href={u("/worklist/")}>the work list</a>.</div>
+</section>
+
+<section class="blk">
+  <h2>What has not been done</h2>
+  <div class="prose">
+    <ol>{dna.what_has_not_been_done.map((x) => (<li>{x}</li>))}</ol>
+    <p><strong>The first of those is the one that matters.</strong> The aunt is on this line and no other.
+      Subtract her match list from her niece&rsquo;s and what remains is Argentine and English; keep only
+      what they share and what remains is <em>this family</em>, several thousand people deep, sorted for
+      free. Nobody has run it yet.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Where the other half of this went</h2>
+  <div class="prose">
+    <p>The same two kits are written up from the other side in the
+      <a href="https://daviddef.github.io/TheLerena/dna/">Lerena archive</a>, where the question is an
+      Argentine great-grandfather rather than a Cape one, and where the answer is a good deal less
+      comfortable than it is here.</p>
+  </div>
+</section>
+</Base>

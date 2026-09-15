@@ -1,0 +1,61 @@
+{
+ "read": "2026-09-16",
+ "where_it_came_from": "Two kits belonging to descendants of this line, read at MyHeritage and at 23andMe. The work was done in the Lerena archive, because the tester's father was a Lerena; everything on this page is the half of it that belongs here.",
+ "privacy": "Both testers are living. Neither is named, and neither is described beyond her position in the descent. The figures kept are the ones that bear on people long dead.",
+ "the_two_kits": [
+  {
+   "role": "a great-great-granddaughter of the Booyzen line, through her mother",
+   "note": "She is roughly half of this family. Her father's side is Argentine and English, which is what makes her useful here: anything Cape in her can only have come through her mother."
+  },
+  {
+   "role": "her mother's sister - an aunt, on this line and no other",
+   "shared_with_the_niece_cM": 2035.27,
+   "shared_with_the_niece_percent": 29.94,
+   "segments": "39 at 23andMe, 41 at MyHeritage",
+   "why_she_matters": "She is the instrument. She carries this family's DNA and none of the Argentine or English. Any match shared with her is Cape; any match absent from her list is not. That subtraction has not yet been run, and it is the most valuable unspent thing in this file."
+  }
+ ],
+ "the_cape_signature": {
+  "what_23andme_finds_in_the_niece": {
+   "Angolan & Congolese": 0.5,
+   "Northern Indian & Pakistani": 0.5
+  },
+  "reading": "Small, and real. West Central African and South Asian together, at trace level, is the ordinary genetic signature of the eighteenth-century Cape - the household slavery the Colony ran on, written into the families that came out of it. In the niece these are halved by her Argentine and English father, so in her mother they are roughly double, and further back they are larger again.",
+  "care": "A trace figure at half a percent is at the edge of what any panel can call, and this archive is not going to convert it into a named ancestor. It is recorded because it is consistent, because it is where this family lived, and because leaving it out would be a choice as much as putting it in."
+ },
+ "the_cousinhood_counted": {
+  "source": "23andMe DNA Relatives, 1,500 closest genetic relatives of the niece.",
+  "relatives_naming_a_south_african_grandparent": 581,
+  "relatives_naming_all_four_grandparents_south_african": 319,
+  "next_countries": { "USA": 144, "Great Britain": 135, "Ireland": 28, "Zimbabwe": 25, "Canada": 21, "Netherlands": 19, "Namibia": 13 },
+  "reading": "Of the twenty countries named across 1,500 relatives, South Africa is first by a factor of four, and more than half of those name all four grandparents there. This is what a Cape family looks like from the inside."
+ },
+ "top_surnames_among_those_relatives": {
+  "Botha": 30, "Pretorius": 20, "Kruger": 19, "Venter": 19, "Nel": 18, "Smith": 18,
+  "Smit": 18, "Erasmus": 17, "Du Plessis": 16, "Coetzee": 15, "Potgieter": 14,
+  "Fourie": 12, "Swanepoel": 12, "Vorster": 11, "Williams": 11, "Snyman": 10,
+  "Swart": 10, "Jacobs": 10, "Strydom": 9,
+  "note": "The facet shows the top twenty only. It cannot be used to say any surname is ABSENT."
+ },
+ "relationship_theories": {
+  "source": "MyHeritage Theory of Family Relativity - a documented path through trees, not a guess from centimorgans.",
+  "count_for_the_niece": 500,
+  "surnames_the_largest_ten_name": ["Booyzen", "Booysen", "Barry", "Kolbe", "Kruger", "Venter",
+    "Nel", "Basson", "Louw", "Pretorius", "Botha", "Jordaan", "du Toit", "De Villiers",
+    "Olivier", "Visser", "Malan"],
+  "reading": "Every one of the ten largest theories lands in this family. Booyzen, Barry and Kolbe appear together, which is this archive's own spine arriving unprompted out of somebody else's tree."
+ },
+ "the_surname_probe": {
+  "Booyzen": 6,
+  "Booysen": "more than 25 - the page filled",
+  "Kolbe": 18,
+  "Barry": "more than 25 - the page filled",
+  "how_it_was_checked": "Two of the six Booyzen hits carry the name only INSIDE their family tree - their own surnames are Bird and Daschner. That is the proof that the search reaches into trees rather than matching the tester's own name, and it is the reason the nulls recorded in the Lerena archive can be trusted.",
+  "note": "These four were run as CONTROLS for a different question, in the Lerena archive. They are recorded here because a control for one question is a finding for another: this family is richly represented in both databases."
+ },
+ "what_has_not_been_done": [
+  "The aunt's own match list has not been harvested. Subtracting it from her niece's is what separates this family's matches from the Argentine and English ones, and it is a day's work, not a discovery.",
+  "23andMe's Parental Inheritance, which would split the niece's ancestry by parent and put the Cape trace definitively on this side, is behind a paid tier.",
+  "MyHeritage AutoClusters has not been generated for either kit. It would group the 500 theories into ancestral couples."
+ ]
+}
