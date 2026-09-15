@@ -263,10 +263,10 @@
   {
    "n": 33,
    "what": "The Discovery catalogue at Kew for all five surnames, now that one errand is already there",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "WO 97 for the 21st Light Dragoons is going there anyway. The same catalogue covers Colonial Office correspondence, Admiralty, and the 1820 settler papers, and **this archive has never searched a British catalogue for any of its people** — it has only ever searched South African ones and then wondered why the English end was blank."
+   "note": "WO 97 for the 21st Light Dragoons is going there anyway. The same catalogue covers Colonial Office correspondence, Admiralty, and the 1820 settler papers, and **this archive has never searched a British catalogue for any of its people** — it has only ever searched South African ones and then wondered why the English end was blank. **Done, 15 September, and it paid for itself immediately.** The catalogue indexes the regiment as **«21st Dragoons (Light)»** and not as this archive had been writing it, which is the sort of thing that turns a real record into a nil return. Four spellings of the surname searched across the WO series: two Montjoys in the name-catalogued discharge series, neither ours. **A controlled negative**, and it redirected the Kew letter before it was written."
   },
   {
    "n": 34,
@@ -375,10 +375,10 @@
   {
    "n": 47,
    "what": "Write the Kew letter",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "David",
    "since": "2026-09-15",
-   "note": "The errand is specified — WO 97 and WO 12 for the 21st Light Dragoons — and nothing has been drafted. Kew has a copying service and a list of independent researchers, and the question it would answer has been marked **Blocking** on this site since it was written. [The errand](/errands/)"
+   "note": "The errand is specified — WO 97 and WO 12 for the 21st Light Dragoons — and nothing has been drafted. Kew has a copying service and a list of independent researchers, and the question it would answer has been marked **Blocking** on this site since it was written. [The errand](/errands/) **Drafted 15 September and unsent.** And drafted *after* searching rather than instead of it: Discovery was worked first, which changed what the letter asks for. It no longer asks anybody to look in WO 97 — that has been searched by name for four spellings and he is not there, with a control showing the absence is real — it asks whether the reading is right and points at **WO 12/1430**, the musters for the 20th and 21st Dragoons."
   },
   {
    "n": 48,

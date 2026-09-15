@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
+   "n": "The first British catalogue this archive has ever put any of its people to",
+   "d": "15 Sep 2026",
+   "h": "/documents/#mountjoy-dragoons",
+   "rows": [
+    [
+     "MOUNTJOY, MONTJOY, MOUNTJOYE and MUNTJOY across the WO series at The National Archives",
+     "TWO MONTJOYS IN THE DISCHARGE SERIES, AND NEITHER IS HIM",
+     "WO 97/1147/67, JOHN MONTJOY, born BARNSTAPLE, Devonshire, 56th Foot. WO 121/44/280, WILLIAM MONTJOY alias WILLIAM MOUNTJOY, born DUBLIN, 16th and 60th Foot. Nothing else in WO 97, WO 119, WO 120, WO 121 or WO 25 under any of the four spellings.",
+     "no"
+    ],
+    [
+     "Is that a negative or an indexing gap",
+     "A NEGATIVE, AND THE CONTROL SAYS SO",
+     "THE CATALOGUE INDEXES THE REGIMENT AS “21ST DRAGOONS (LIGHT)” AND NOT AS “21ST LIGHT DRAGOONS” — which is the form the newspaper used and the form this archive had been writing. Searched the right way it returns 790 documents, NINETY-FIVE OF THEM WO 97 IN A SINGLE PAGE, plus entries in WO 119, WO 121 and WO 25. So the series is name-catalogued, the regiment is in it, and he is not. ONE WORD ORDER WAS THE DIFFERENCE BETWEEN A REAL RECORD AND A NIL RETURN, which is the fourth time in a week this archive has met that shape.",
+     "yes"
+    ],
+    [
+     "Why he is absent, most likely",
+     "WO 97 AND WO 121 ARE PENSIONERS' PAPERS",
+     "A man discharged locally at the Cape who never claimed a Chelsea or Kilmainham pension leaves no discharge document in either. THE REGIMENT WAS IN THE CAPE COLONY FROM 1806 AND LEFT IN 1816; HE MARRIED AT GRAAFF-REINET IN MARCH 1817. So he was discharged at the Cape and stayed behind when it sailed — which is exactly the kind of man these series do not hold.",
+     "part"
+    ],
+    [
+     "What to read instead",
+     "WO 12/1430 — THE MUSTERS AND PAY LISTS FOR THE 20TH AND 21ST DRAGOONS",
+     "Not name-indexed; they have to be read. A man's disappearance from a muster DATES HIS DISCHARGE, so the years to read are about 1815 to 1817. Also WO 25, the description books, which give age, height, birthplace and previous trade — and SADDLER would be both a confirmation and possibly a birthplace.",
+     "part"
+    ],
+    [
+     "And what that did to the letter",
+     "REWROTE IT BEFORE IT WAS SENT",
+     "The errand as this archive raised it this morning was “WO 97 for the 21st Light Dragoons”. THE LETTER NOW ASKS NOBODY TO LOOK IN WO 97. It sets out what was searched and what the control showed, asks whether the pensioner reading is right, and names the piece it believes it needs. A LETTER THAT ASKS AN ARCHIVIST TO REPEAT A SEARCH ANYONE CAN RUN FROM AUSTRALIA IS A WASTE OF SOMEBODY'S MORNING.",
+     "yes"
+    ]
+   ]
+  },
+  {
    "g": "The Free State depot swept properly — and a library catalogue makes the Settler a missionary",
    "n": "VAB had been opened twice in this project's life, both times for one reference",
    "d": "15 Sep 2026",
