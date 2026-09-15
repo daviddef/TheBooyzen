@@ -3,7 +3,9 @@ import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import mg from "../data/marriages.json";
-import { resolve, dates } from "../lib/kin.js";
+import { resolve, dates, slugify } from "../lib/kin.js";
+import Marriages from "@daviddef/archive-kit/components/Marriages.astro";
+import P from "../data/people.json";
 const rows = mg.rows.map(r => ({ ...r, H: resolve(r.h), W: resolve(r.w) }))
   .sort((a, b) => (a.ds < b.ds ? -1 : 1));
 const placed = rows.filter(r => r.p !== "—");
@@ -11,6 +13,92 @@ const byPlace = {};
 for (const r of placed) (byPlace[r.p] ||= []).push(r);
 const places = Object.entries(byPlace).sort((a, b) => b[1].length - a[1].length);
 const docCount = rows.filter(r => r.via === "doc").length;
+
+/* The other half of a marriage page: a marriage is where two LINES join, and
+   this page could name the marriages without ever naming the lines.
+   
+   Nothing here is grouped by surname. Every person in people.json already
+   carries an `l` — the line this archive has assigned them to — so the grouping
+   is the archive's own editorial judgement recorded in the data, not a string
+   comparison run at build time. The Booyzen and the Booysen of the same
+   household are one line because somebody decided so and wrote it down.
+   
+   Lines are ordered by the generation at which they first appear, which is the
+   same question the rest of the estate asks: how does this family reach this
+   one, and when. */
+const GEN_LABEL = {
+  2: "The second generation", 3: "The third", 4: "The fourth",
+  5: "The fifth", 6: "The sixth", 7: "The seventh",
+};
+const LINE_NOTE = {
+  "Booyzen": "The name this archive carries.",
+  "Mountjoy": "The hinge. Cradock, 4 November 1838 joins Booysen to Mountjoy.",
+  "Lerena": "Where this archive stops and the Lerena one begins — Mayfair, 15 January 1949.",
+  "Testimony": "Not a family at all: a single person held here because of what they said, not who they were.",
+};
+const SRC = { doc: "a record read here", inf: "inferred", open: "an open question", lore: "family tree" };
+
+const byLine = {};
+for (const x of P.people) (byLine[x.l] ||= []).push(x);
+
+const lineFam = (name) => {
+  const list = (byLine[name] || []).slice()
+    .sort((a, b) => (a.g || 99) - (b.g || 99) || a.n.localeCompare(b.n));
+  const srcs = list.reduce((m, x) => ((m[x.s] = (m[x.s] || 0) + 1), m), {});
+  const marr = rows.filter(r => (r.H && r.H.l === name) || (r.W && r.W.l === name));
+  return {
+    surname: name,
+    n: list.length,
+    countLabel: "people",
+    span: (() => {
+      const g = list.map(x => x.g).filter(Boolean);
+      return g.length ? `generation ${Math.min(...g)}\u2013${Math.max(...g)}` : "";
+    })(),
+    places: [],
+    story: LINE_NOTE[name] || "",
+    note: `Held on ${Object.entries(srcs).sort((a, b) => b[1] - a[1])
+      .map(([k, v]) => `<strong>${v}</strong> ${SRC[k] || k}`).join(" · ")}.`,
+    marriages: marr.map(r => ({
+      who: r.H ? r.H.n : "—", whoSlug: "", to: r.W ? r.W.n : "—", toSlug: "",
+    })),
+    people: list.map(x => ({
+      name: x.n, slug: "", b: x.b === "\u2014" ? "" : x.b, bp: x.g ? "gen " + x.g : "",
+      d: x.d === "\u2014" ? "" : x.d, dp: "",
+    })),
+  };
+};
+
+/* The lines are NOT grouped by generation, and the reason is a finding rather
+   than a limitation of the page: only the Booyzen line carries generation
+   numbers at all. All 136 of its people are numbered 2 to 7; the other ten
+   lines — 190 people between them — carry none. A first attempt grouped by
+   generation anyway and quietly dropped every line that had no number, showing
+   one family out of eleven on a page that otherwise looked correct.
+   
+   So the split is the one the data can actually support: the name this archive
+   carries, and the lines that married into it. */
+const OWN = "Booyzen";
+const married = P.lines.filter(n => n !== OWN)
+  .sort((a, b) => (byLine[b] || []).length - (byLine[a] || []).length);
+const nMarriedPeople = married.reduce((a, n) => a + (byLine[n] || []).length, 0);
+
+const GROUPED = [
+  {
+    key: "own", label: "The name this archive carries", count: 1,
+    blurb: `<strong>${(byLine[OWN] || []).length} people across six generations.</strong> This is the
+      only line in the archive that is numbered: every person on it carries a generation, 2 to 7.`,
+    families: [lineFam(OWN)],
+  },
+  {
+    key: "in", label: "The lines that married in", count: married.length,
+    blurb: `<strong>${married.length} lines, ${nMarriedPeople} people</strong> — more people than the
+      name itself holds. <strong>Not one of them carries a generation number.</strong> That is worth
+      saying plainly: this archive numbers its own descent and does not number the families that
+      joined it, so they cannot be ordered by when they arrived, only by how much of each is held.
+      They are ordered by that.`,
+    families: married.map(lineFam),
+  },
+];
 ---
 <Base title="The marriages"
       eyebrow={`${rows.length} marriages · ${placed.length} with a place`}
@@ -69,6 +157,22 @@ const docCount = rows.filter(r => r.via === "doc").length;
     </table>
   </div>
 </section>
+
+<Rule name="gable" label="And the lines they joined" />
+
+<section class="blk">
+  <h2>The lines a marriage joins</h2>
+  <div class="prose">
+    <p>A marriage is an event. <b>A line is what the event joined</b> — and until now this page could
+      name every marriage without once naming the eleven lines they brought together. They are
+      ordered by the generation each first appears in.</p>
+    <p><b>Nobody is in a line because of their surname.</b> Every person in this archive carries a
+      line already, assigned and written down, so what follows is this archive's own judgement read
+      back — not a string comparison run while the page was being built.</p>
+  </div>
+</section>
+
+<Marriages u={u} groups={GROUPED} openAt={8} />
 
 <section class="blk">
   <h2>Three of them are not ordinary</h2>
