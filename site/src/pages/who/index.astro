@@ -18,7 +18,7 @@ const names = [...by.entries()].map(([slug, v]) => ({ slug, ...v }))
   .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
 const shared = names.filter(n => n.n > 1);
 ---
-<Base title="Every name"
+<Base title="Every Name"
       eyebrow={`${names.length} names${shared.length ? ` · ${shared.length} held by more than one person` : " · none shared"}`}
       dek="A name is not a person. This is every name in the archive, and how many different people bore it.">
   <section class="blk">

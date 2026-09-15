@@ -7,7 +7,7 @@ const places = pl.places;
 const regions = [...new Set(places.map(p => p.r))];
 const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
 ---
-<Base title="The places"
+<Base title="Places"
       eyebrow={`${places.length} places, ${regions.length} regions`}
       dek="Every place this archive can put a named person in, with the document that puts them there. Farms, villages, churches, hospitals and cemeteries — not a gazetteer, a list of where the evidence actually lands.">
 

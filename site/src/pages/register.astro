@@ -10,7 +10,7 @@ const byGroup = {};
 for (const r of rows) (byGroup[r.g] ||= []).push(r);
 const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total);
 ---
-<Base title="The register"
+<Base title="The Register"
       eyebrow="Every named individual this archive has found"
       dek={`${rows.length.toLocaleString()} entries for ${new Set(rows.map(r => r.n)).size.toLocaleString()} distinct names, ${linked.toLocaleString()} of them with a link to the source that names them. This is the raw catch — not a family tree, and most of it is not this family.`}>
 

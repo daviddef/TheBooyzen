@@ -14,7 +14,7 @@ const childCount = rows.reduce((n, r) => n + r.kids.length, 0);
 const docHouses = rows.filter(r => r.f.via === "doc").length;
 const sorted = [...rows].sort((a, b) => b.kids.length - a.kids.length);
 ---
-<Base title="The households"
+<Base title="Households"
       eyebrow={`${rows.length} households · ${childCount} children placed in one`}
       dek="Every family group this archive has assembled, with the document that records the marriage and the document that puts each child in it. A household here is a claim with a source, not a box on a chart.">
 

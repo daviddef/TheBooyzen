@@ -10,7 +10,7 @@ const found = sets.reduce((n, s) => n + s.rows.filter(r => r[3] === "yes").lengt
 const badge = { yes: ["Found", "doc"], part: ["Partly", "inf"], no: ["Nothing", "lore"],
                 void: ["Void", "open"], blocked: ["Blocked", "open"] };
 ---
-<Base title="What has been searched"
+<Base title="What Has Been Read"
       eyebrow={`${rows} queries · ${nothing} returned nothing · ${found} found something`}
       dek={sr.note}>
 
