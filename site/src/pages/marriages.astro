@@ -127,36 +127,7 @@ const GROUPED = [
   </div>
 </section>
 
-<Rule name="gable" label="In order" />
 
-<section class="blk">
-  <div class="scroll">
-    <table>
-      <thead><tr>
-        <th class="m" style="width:9rem">When</th><th style="width:11rem">Where</th>
-        <th style="width:22rem">Who</th><th>What the record says</th>
-      </tr></thead>
-      <tbody>
-        {rows.map(r => (
-          <tr>
-            <td class="m">{r.d}</td>
-            <td>{r.p === "—" ? <span class="m">not recorded</span> : <b>{r.p}</b>}</td>
-            <td>
-              {r.H && <a href={u("/who/" + r.H.slug + "/")}>{r.H.n}</a>}
-              {r.H && r.W ? <span class="m"> &amp; </span> : null}
-              {r.W && <a href={u("/who/" + r.W.slug + "/")}>{r.W.n}</a>}
-              <div style="margin-top:5px">
-                <span class={"chip " + (r.via === "tree" ? "lore" : "doc")}>
-                  {r.via === "tree" ? "family tree" : "a record read here"}</span>
-              </div>
-            </td>
-            <td>{r.n} {r.src && <a href={u(r.src[1])}>{r.src[0]} &rarr;</a>}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-</section>
 
 <Rule name="gable" label="And the lines they joined" />
 
@@ -172,7 +143,20 @@ const GROUPED = [
   </div>
 </section>
 
-<Marriages u={u} groups={GROUPED} openAt={8} />
+<Marriages u={u} groups={GROUPED} openAt={8} subject="Booyzen"
+  metrics={[{ n: rows.length, label: "marriages" }, { n: placed.length, label: "with a place" },
+            { n: docCount, label: "a record read here" }, { n: P.lines.length, label: "lines joined" },
+            { n: P.people.length, label: "people" }]}
+  couples={rows.map(r => ({
+    a: r.H ? { name: r.H.n, slug: r.H.slug } : { name: "—" },
+    b: r.W ? { name: r.W.n, slug: r.W.slug } : { name: "—" },
+    when: r.d, where: r.p === "\u2014" ? "" : r.p, note: r.n || "",
+    vias: [r.via === "tree" ? "family tree" : "a record read here"],
+  }))}
+  couplesTitle="Every marriage, in order"
+  couplesNote="A marriage is where two lines join, and it is also the moment a family chooses a town, a church and a witness — which is why the column that matters most here is not the date."
+  chips={[{ k: "a record read here", cls: "doc", note: "a clerk's own words" },
+          { k: "family tree", cls: "lore", note: "the family tree, unverified" }]} />
 
 <section class="blk">
   <h2>Three of them are not ordinary</h2>
