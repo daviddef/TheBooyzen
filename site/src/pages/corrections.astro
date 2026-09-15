@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Corrections from "@daviddef/archive-kit/components/Corrections.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import c from "../data/corrections.json";
@@ -54,26 +55,15 @@ const label = { population: "A list mistaken for a population", scope: "A part s
 </section>
 
 <section class="blk">
-  <div class="scroll">
-    <table id="ctable">
-      <thead><tr>
-        <th class="m" style="width:7rem">Published</th>
-        <th style="width:20rem">What it said</th>
-        <th>What replaced it</th>
-        <th style="width:13rem">Cause</th>
-      </tr></thead>
-      <tbody>
-        {rows.map(([d, was, now, cause, href]) => (
-          <tr data-cause={cause} data-hay={[d, was, now, label[cause]].join(" ").toLowerCase()}>
-            <td class="m">{d}</td>
-            <td><b>&ldquo;{was}&rdquo;</b></td>
-            <td>{now} {href && <a href={u(href)}>&rarr;</a>}</td>
-            <td class="cap">{label[cause]}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
+  <Corrections u={u} rows={rows.map(([d, was, now, cause, href]) => ({
+    when: d,
+    sev: label[cause],
+    was: `&ldquo;${was}&rdquo;`,
+    now: now,
+    how: causes[cause] || "",
+    where: href || "",
+    whereLabel: "Where it lives now →",
+  }))} />
 </section>
 
 <section class="blk">
