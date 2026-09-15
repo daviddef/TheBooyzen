@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The memoir did not need reading, and the ship did",
+   "n": "An item closed by argument rather than by work, and a voyage found by searching for the vessel",
+   "d": "15 Sep 2026",
+   "h": "/documents/#nautilus-storm",
+   "rows": [
+    [
+     "John Montgomery's serialised memoir, read entire",
+     "UNNECESSARY, AND THE REASONING IS THE POINT",
+     "It runs through The Friend across 1868, 1869 and 1870 under two titles — “Forty-five years ago” and “Fifty years ago: A Few Episodes in the Lives of the British Settlers of 1820” — and it has already produced the Koolskop mission school and the 21st Dragoons. BOTH CAME OUT OF SWEEPING A SURNAME ACROSS THE WHOLE COLLECTION, AND THOSE SWEEPS ARE DONE: Kolbe returns 43 documents and Mountjoy six, across every paper in the archive, and KOOLSKOP APPEARS EXACTLY ONCE IN THE WHOLE COLLECTION — in the passage already read. Reading a long memoir to find what a name search has already found is work that looks like diligence.",
+     "void"
+    ],
+    [
+     "What the 1870 instalments actually are",
+     "THE SALEM PARTY, NOT OWEN'S",
+     "The 1870 series carries a complete list of the SALEM party of 1820 settlers, sent to Montgomery by W.E. Prynn on 31 December 1869 with asterisks against those still living. VALUABLE AND NOT THIS FAMILY'S: George Augustus Kolbe came out in OWEN'S party. Recorded so nobody reads the list hopefully.",
+     "no"
+    ],
+    [
+     "The Nautilus, searched as a ship rather than as a person",
+     "A FIRST-HAND ACCOUNT OF THIS FAMILY'S OWN CROSSING",
+     "JOHN PENNY MANDY led another party on the same vessel and wrote home to his mother in Kent. In a letter of January 1820 he describes THE NAUTILUS DISASTER IN THE DOWNS — a day out of Gravesend, at anchor in the Queen's Channel: “it came on to blow tremendously hard, the sea running mountains high… men, women and children all mixed together, tumbling over one another”; the sea broke into the cabin windows; THE SHIP STRUCK ON THE SANDS and “even the sailors seemed panic struck”. Then a second storm of three days with three tons of water in the forepart. NOT ABOUT THIS FAMILY AND ON THE SAME DECK: a boy four days short of seventeen and a girl of sixteen, both of whom had sworn they were older, were somewhere in that cabin.",
+     "yes"
+    ],
+    [
+     "And it confirms the dates from a second direction",
+     "ALGOA BAY, APRIL 1820, AND A BIRTH AT SEA",
+     "Mandy writes from Algoa Bay on 20 APRIL 1820; this archive has the Nautilus there on 14 April. WILLIAM NAUTILUS MANDY was born aboard on 1 MARCH 1820, “in latitude 18 degrees, longitude six degrees”, a fortnight short of Table Bay and named for the ship; he died at Lushington Valley in 1887. THE ORIGINAL LETTERS WENT TO THE ALBANY MUSEUM AT GRAHAMSTOWN AND WERE DESTROYED IN A FIRE IN THE 1920s — what survives is a descendant's copy, printed in a newspaper in 1970.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Natal opened, the Transvaal swept for the other surnames, and a link this archive nearly invented",
    "n": "NAB had never been searched — it had only ever been asked for six references somebody else found",
    "d": "15 Sep 2026",
