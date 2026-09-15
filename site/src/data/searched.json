@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Cape estate index for Mountjoy, a surname sweep abandoned, and the 1931 six given parents",
+   "n": "Three roadmap items worked in one pass at NAAIRS",
+   "d": "15 Sep 2026",
+   "h": "/documents/#vab-swept",
+   "rows": [
+    [
+     "MOUNTJOY in the Cape depot (KAB)",
+     "FORTY-TWO, AND THE 1834 MEMORIAL IS REAL",
+     "KAB CO 3972 ref 17, “MEMORIALS RECEIVED. THE WIDOW OF J MOUNTJOY. REQUESTING REMISSION OF A FINE”, 1834 — already on the errands list and now confirmed present in the index rather than taken from a note. Also MOOC 6/9/15220 (JAMES JOHN MOUNTJOY, 1948), MOOC 6/9/16573 (BURGER, WILHELMINA LOUISA, née MOUNTJOY — the bride of a 1901 marriage found last week in the newspaper transcriptions) and MOOC 6/9/16323 (NEPGEN, ANNIE LOUISA, née MOUNTJOY). AND A WHOLE OTHER MOUNTJOY FAMILY: labour agents and traders in the Transkei — Lusikisiki, Bizana, Mnyameni, Lupatana — from the 1920s to the 1960s, with a Mountjoy Estates (Pty) Ltd registered in 1934. NOT THIS FAMILY SO FAR AS ANYTHING SHOWS.",
+     "yes"
+    ],
+    [
+     "DOWNING as a bare surname across all depots",
+     "552 DOCUMENTS — NOT A SEARCH",
+     "Downing is an ordinary English surname and the first thirty returns contain no Kolbe, Booyzen, Barry or Mountjoy at all. THE PAIRING IS WHAT WORKS AND THE PAIRING WAS ALREADY RUN: KOLBE AND DOWNING returns sixteen, and those sixteen are where the four generations came from. Recorded so that nobody runs the bare sweep again expecting something.",
+     "void"
+    ],
+    [
+     "The parents of the six Kolbes who applied to a Free State court together in 1931",
+     "GEORGE AUGUSTUS KOLBE, d. 1905, AND HESTER JACOBA JACOMINA LOUW",
+     "VAB MHG K1431: “KOLBE, GEORGE AUGUSTUS. EGGENOTE HESTER JACOBA JACOMINA (GEBORE LOUW)”, 1905. VAB MHG 27114: her own estate, 1935. AND VAB MHG 1/2/1/1 KS3: “BOEDEL ONDER KURATORSKAP” — HER ESTATE PUT UNDER CURATORSHIP IN 1905, which is what happens when there are minor children. THE MECHANISM THAT NAMES THEM IS A FORENAME: one of the six is JACOBUS WYNAND LOUW KOLBE, and LOUW is his mother's maiden name; another is GEORGE AUGUSTUS KOLBE, which is his father's. The 1931 application is twenty-six years after the father's death and four before the mother's. INFERRED, NOT PROVED — the index does not list heirs, and the file will.",
+     "part"
+    ],
+    [
+     "Whether that George Augustus Kolbe connects to the 1820 Settler",
+     "NOT SHOWN, AND NOT ASSUMED",
+     "The Settler's name was carried by at least one son and repeats through the Free State Kolbes for a century. A George Augustus Kolbe dying at Bloemfontein in 1905 is the right family of names in the right province, AND THAT IS ALL IT IS. This archive has spent a week refusing to adopt thirty-one plausible children from a tree and is not going to adopt a grandfather from a forename.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The memoir did not need reading, and the ship did",
    "n": "An item closed by argument rather than by work, and a voyage found by searching for the vessel",
    "d": "15 Sep 2026",
