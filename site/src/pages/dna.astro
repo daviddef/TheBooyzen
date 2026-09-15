@@ -7,6 +7,7 @@ import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import dna from "../data/dna.json";
 const aunt = dna.the_two_kits[1];
+const ac = dna.the_autoclusters;
 const sur = Object.entries(dna.top_surnames_among_those_relatives).filter(([k]) => k !== "note");
 const cape = dna.the_cape_signature.what_23andme_finds_in_the_niece;
 ---
@@ -94,6 +95,33 @@ const cape = dna.the_cape_signature.what_23andme_finds_in_the_niece;
       something better: <strong>independent confirmation, from the other direction</strong>, that the
       three lines really do sit together where this archive puts them.
       <a href={u("/barry/")}>The Barrys &rarr;</a> &middot; <a href={u("/kolbe/")}>The Kolbes &rarr;</a></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Fourteen ancestral couples, sorted for you</h2>
+  <p class="dek">{ac.what_it_is}</p>
+  <div class="panel" style="border-left:3px solid var(--accent);margin:22px 0">
+    <p class="lede" style="margin:0">{ac.result}</p>
+  </div>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th class="m">Cluster</th><th class="m">Matches</th><th class="m">cM</th>
+        <th>The families in it</th></tr></thead>
+      <tbody>
+        {ac.clusters.map((c) => (
+          <tr><td class="m">{c.cluster}</td><td class="m">{c.size}</td>
+            <td class="m">{c.cM_low}&ndash;{c.cM_high}</td>
+            <td>{c.tree_surnames.join(", ")}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:20px">
+    <p><strong>Start with cluster 7.</strong> {ac.the_one_that_is_this_spine}
+      <a href={u("/barry/")}>The Barrys &rarr;</a></p>
+    <p><strong>And why the fourteen can be trusted.</strong> {ac.why_it_can_be_trusted}</p>
+    <p>{ac.what_to_do_with_it}</p>
   </div>
 </section>
 

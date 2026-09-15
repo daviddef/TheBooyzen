@@ -27,22 +27,61 @@
   "source": "23andMe DNA Relatives, 1,500 closest genetic relatives of the niece.",
   "relatives_naming_a_south_african_grandparent": 581,
   "relatives_naming_all_four_grandparents_south_african": 319,
-  "next_countries": { "USA": 144, "Great Britain": 135, "Ireland": 28, "Zimbabwe": 25, "Canada": 21, "Netherlands": 19, "Namibia": 13 },
+  "next_countries": {
+   "USA": 144,
+   "Great Britain": 135,
+   "Ireland": 28,
+   "Zimbabwe": 25,
+   "Canada": 21,
+   "Netherlands": 19,
+   "Namibia": 13
+  },
   "reading": "Of the twenty countries named across 1,500 relatives, South Africa is first by a factor of four, and more than half of those name all four grandparents there. This is what a Cape family looks like from the inside."
  },
  "top_surnames_among_those_relatives": {
-  "Botha": 30, "Pretorius": 20, "Kruger": 19, "Venter": 19, "Nel": 18, "Smith": 18,
-  "Smit": 18, "Erasmus": 17, "Du Plessis": 16, "Coetzee": 15, "Potgieter": 14,
-  "Fourie": 12, "Swanepoel": 12, "Vorster": 11, "Williams": 11, "Snyman": 10,
-  "Swart": 10, "Jacobs": 10, "Strydom": 9,
+  "Botha": 30,
+  "Pretorius": 20,
+  "Kruger": 19,
+  "Venter": 19,
+  "Nel": 18,
+  "Smith": 18,
+  "Smit": 18,
+  "Erasmus": 17,
+  "Du Plessis": 16,
+  "Coetzee": 15,
+  "Potgieter": 14,
+  "Fourie": 12,
+  "Swanepoel": 12,
+  "Vorster": 11,
+  "Williams": 11,
+  "Snyman": 10,
+  "Swart": 10,
+  "Jacobs": 10,
+  "Strydom": 9,
   "note": "The facet shows the top twenty only. It cannot be used to say any surname is ABSENT."
  },
  "relationship_theories": {
   "source": "MyHeritage Theory of Family Relativity - a documented path through trees, not a guess from centimorgans.",
   "count_for_the_niece": 500,
-  "surnames_the_largest_ten_name": ["Booyzen", "Booysen", "Barry", "Kolbe", "Kruger", "Venter",
-    "Nel", "Basson", "Louw", "Pretorius", "Botha", "Jordaan", "du Toit", "De Villiers",
-    "Olivier", "Visser", "Malan"],
+  "surnames_the_largest_ten_name": [
+   "Booyzen",
+   "Booysen",
+   "Barry",
+   "Kolbe",
+   "Kruger",
+   "Venter",
+   "Nel",
+   "Basson",
+   "Louw",
+   "Pretorius",
+   "Botha",
+   "Jordaan",
+   "du Toit",
+   "De Villiers",
+   "Olivier",
+   "Visser",
+   "Malan"
+  ],
   "reading": "Every one of the ten largest theories lands in this family. Booyzen, Barry and Kolbe appear together, which is this archive's own spine arriving unprompted out of somebody else's tree."
  },
  "the_surname_probe": {
@@ -56,6 +95,205 @@
  "what_has_not_been_done": [
   "The aunt's own match list has not been harvested. Subtracting it from her niece's is what separates this family's matches from the Argentine and English ones, and it is a day's work, not a discovery.",
   "23andMe's Parental Inheritance, which would split the niece's ancestry by parent and put the Cape trace definitively on this side, is behind a paid tier.",
-  "MyHeritage AutoClusters has not been generated for either kit. It would group the 500 theories into ancestral couples."
- ]
+  "AutoClusters has been generated for the niece but NOT for the aunt. The aunt's chart would be Cape by definition, and any cluster on the niece's chart with no counterpart on the aunt's belongs to her father."
+ ],
+ "the_autoclusters": {
+  "what_it_is": "MyHeritage AutoClusters, generated 15 September 2026. The tool groups a tester's DNA matches into blocks that all match each other as well as the tester, so each block is in practice the descendants of ONE ancestral couple. It was run on the niece's kit.",
+  "result": "FOURTEEN CLUSTERS, 107 matches, from 50.6 cM upward. Every single one of them is Cape Afrikaner or British Isles. This is the most concrete thing in the whole DNA file for this archive: fourteen ancestral couples, sorted for you, out of a database rather than out of a register.",
+  "clusters": [
+   {
+    "cluster": 1,
+    "size": 28,
+    "cM_low": 51.1,
+    "cM_high": 84.0,
+    "tree_surnames": [
+     "attwell",
+     "beets",
+     "bothastone",
+     "buitendag",
+     "calitz",
+     "du-pisanie",
+     "du-plessis",
+     "engelbrecht",
+     "erasmus",
+     "gower"
+    ]
+   },
+   {
+    "cluster": 2,
+    "size": 11,
+    "cM_low": 51.3,
+    "cM_high": 66.6,
+    "tree_surnames": [
+     "andre",
+     "beets",
+     "dippenaar",
+     "du-plessis",
+     "dv-jamess",
+     "katz",
+     "lotter",
+     "may",
+     "smith",
+     "van-der-vyver"
+    ]
+   },
+   {
+    "cluster": 3,
+    "size": 10,
+    "cM_low": 50.8,
+    "cM_high": 64.7,
+    "tree_surnames": [
+     "damsteeg-cornelius",
+     "de-kock",
+     "dowd",
+     "kgj-bezuidenhout-iii",
+     "lee",
+     "masseratte",
+     "potgieter-henderson",
+     "raven-hill",
+     "van-vuuren"
+    ]
+   },
+   {
+    "cluster": 4,
+    "size": 8,
+    "cM_low": 50.7,
+    "cM_high": 81.0,
+    "tree_surnames": [
+     "de-lange",
+     "de-villiers",
+     "de-villiers-marais-kemp-rowe",
+     "livingston",
+     "my",
+     "schulte",
+     "volschenk",
+     "von-ruben"
+    ]
+   },
+   {
+    "cluster": 5,
+    "size": 7,
+    "cM_low": 51.3,
+    "cM_high": 68.2,
+    "tree_surnames": [
+     "connor",
+     "mehmel",
+     "niemann",
+     "shaul-zerbst",
+     "strauss",
+     "vanderwaltduplessisturkingtonshanahan",
+     "viviers"
+    ]
+   },
+   {
+    "cluster": 6,
+    "size": 6,
+    "cM_low": 52.8,
+    "cM_high": 89.7,
+    "tree_surnames": [
+     "hamman",
+     "nel",
+     "pinto",
+     "theron",
+     "van-der-westhuizen",
+     "van-zylbotha"
+    ]
+   },
+   {
+    "cluster": 7,
+    "size": 6,
+    "cM_low": 56.2,
+    "cM_high": 332.8,
+    "tree_surnames": [
+     "butler",
+     "daniel",
+     "daschner",
+     "smith"
+    ]
+   },
+   {
+    "cluster": 8,
+    "size": 6,
+    "cM_low": 52.2,
+    "cM_high": 80.4,
+    "tree_surnames": [
+     "booyens",
+     "bruttonbrutten",
+     "jooste",
+     "kroon",
+     "lirebotes",
+     "rohde"
+    ]
+   },
+   {
+    "cluster": 9,
+    "size": 5,
+    "cM_low": 51.3,
+    "cM_high": 76.5,
+    "tree_surnames": [
+     "deninajoubertbernard",
+     "dreyers-in-south-africa",
+     "holford",
+     "krugel",
+     "sander"
+    ]
+   },
+   {
+    "cluster": 10,
+    "size": 4,
+    "cM_low": 50.7,
+    "cM_high": 89.0,
+    "tree_surnames": [
+     "carons",
+     "drennen",
+     "jansen-van-vuuren",
+     "meadon"
+    ]
+   },
+   {
+    "cluster": 11,
+    "size": 3,
+    "cM_low": 51.8,
+    "cM_high": 56.7,
+    "tree_surnames": [
+     "beukescadledu-toitgouws",
+     "marais",
+     "mcgrath"
+    ]
+   },
+   {
+    "cluster": 12,
+    "size": 3,
+    "cM_low": 50.6,
+    "cM_high": 55.8,
+    "tree_surnames": [
+     "jullien",
+     "walker"
+    ]
+   },
+   {
+    "cluster": 13,
+    "size": 3,
+    "cM_low": 50.8,
+    "cM_high": 60.1,
+    "tree_surnames": [
+     "bosse",
+     "johnson",
+     "white"
+    ]
+   },
+   {
+    "cluster": 14,
+    "size": 3,
+    "cM_low": 60.9,
+    "cM_high": 115.5,
+    "tree_surnames": [
+     "bailey"
+    ]
+   }
+  ],
+  "the_one_that_is_this_spine": "Cluster 7 is the one to start on - six matches from 56 to 333 cM, the largest match on the whole chart among them, carrying Butler, Daniel and Daschner. Those are the trees in which Booyzen, Booysen and Barry appear together as ancestral surnames.",
+  "why_it_can_be_trusted": "The niece's SON was clustered on the same night as a control. His father is a Defranceski of Istria, and his chart throws up two plainly Croatian clusters - Butorac, Pavelich, Jagustin, Krkljes, Racic, Glas - beside the Cape ones. So the tool demonstrably separates a foreign paternal line from this family's when both are present. The fourteen Cape clusters on his mother's chart are not an artefact of the method.",
+  "what_to_do_with_it": "Each cluster is a couple this archive either already has or does not. Take them one at a time, open the trees, and find where they join the spine. Fourteen leads, each one already proved to be blood."
+ }
 }
