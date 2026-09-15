@@ -223,10 +223,10 @@
   {
    "n": 28,
    "what": "Sweep the eGGSA gravestone library province by province for all five surnames",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Four provinces have produced stones — Middelburg, Wakkerstroom, Silverton, Piet Retief — and each was reached by following a single lead rather than by sweeping. The provincial subdomains each carry their own two-letter CGI, which this archive learned the hard way after publishing four false negatives from guessed script names. **The technique is known now and the sweep has still not been run.**"
+   "note": "Four provinces have produced stones — Middelburg, Wakkerstroom, Silverton, Piet Retief — and each was reached by following a single lead rather than by sweeping. The provincial subdomains each carry their own two-letter CGI, which this archive learned the hard way after publishing four false negatives from guessed script names. **The technique is known now and the sweep has still not been run.** **Done, 15 September — through NAAIRS's GEN database rather than province by province**, which is one search instead of nine and reaches the same collection. **MOUNTJOY nought, DASCHNER nought, and the controls make those real**: Barry 54, Kolbe 4, Booyzen 3. Three new Kolbe stones, and the three Booyzen ones turn out to be **one household in one private cemetery**."
   },
   {
    "n": 29,
@@ -415,10 +415,10 @@
   {
    "n": 52,
    "what": "Write down the whole of Cradock in January 1822, because he named it",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "«At that time there were only about half a dozen inhabitants in the place» — and then he lists them: **Solomon** the constable, **S.M. de Beer**, the **Rev. Mr Evans** of the Dutch Reformed Church, **Mr P. Gie**, **James Mountjoy**, the two **Messrs Ziervogel** (one Secretary to Government), **Mr Heilberg**, **Fieldcornet B.J. Vorster** and **Gert van Deventer**. A complete census of a town, in a sentence, five years after this family married in it. **This archive keeps saying it names the people documents leave out; here are nine of them and it has used one.**"
+   "note": "«At that time there were only about half a dozen inhabitants in the place» — and then he lists them: **Solomon** the constable, **S.M. de Beer**, the **Rev. Mr Evans** of the Dutch Reformed Church, **Mr P. Gie**, **James Mountjoy**, the two **Messrs Ziervogel** (one Secretary to Government), **Mr Heilberg**, **Fieldcornet B.J. Vorster** and **Gert van Deventer**. A complete census of a town, in a sentence, five years after this family married in it. **This archive keeps saying it names the people documents leave out; here are nine of them and it has used one.** **Done, 15 September.** Nine named inhabitants, the constable who demanded Montgomery's pass in the street, the Landdrost four miles out at Driefontein across the Fish River, and the warrant already issued. **The only picture this archive has of the place its people were living in.**"
   },
   {
    "n": 53,
@@ -471,10 +471,10 @@
   {
    "n": 59,
    "what": "Ask who else of the 21st Dragoons stayed at the Cape",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "The National Archives, Kew",
    "since": "2026-09-15",
-   "note": "The regiment was in the Cape Colony from 1806 and left in 1816. **Men discharged locally and left behind are a cohort**, and they are the men who married into the colony and whose origins nobody recorded — which is precisely the shape of this archive's oldest wall. If a list of them exists, James Mountjoy is on it and so are several other names this archive has met without explanation."
+   "note": "The regiment was in the Cape Colony from 1806 and left in 1816. **Men discharged locally and left behind are a cohort**, and they are the men who married into the colony and whose origins nobody recorded — which is precisely the shape of this archive's oldest wall. If a list of them exists, James Mountjoy is on it and so are several other names this archive has met without explanation. **15 September: it is a Kew question and it travels with the Kew letter.** Nothing reachable from here lists the men discharged at the Cape; the musters that would show it, **WO 12/1430**, are not name-indexed and have to be read. Left blocked rather than pretended at."
   },
   {
    "n": 60,
@@ -575,10 +575,10 @@
   {
    "n": 72,
    "what": "Write down what the 1869 memoir is worth, as a source type",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Two walls in one week came out of **one man's reminiscences in a newspaper**, and this archive has no settled position on what that kind of source is worth. Montgomery is recalling forty-five years back; one of his claims has since been corroborated by a library catalogue and the other has not been tested at all. **The gap between «a memoir» and «a record» is the interesting part** and nothing here says where it sits."
+   "note": "Two walls in one week came out of **one man's reminiscences in a newspaper**, and this archive has no settled position on what that kind of source is worth. Montgomery is recalling forty-five years back; one of his claims has since been corroborated by a library catalogue and the other has not been tested at all. **The gap between «a memoir» and «a record» is the interesting part** and nothing here says where it sits. **Done, 15 September.** A memoir is a **witness, not a record** — no clerk, no form, no oath, no date of composition near the event — and what it has instead is circumstantial specificity. The test: does it claim something it had no reason to invent, and does anything independent touch it? **Koolskop passes and the Dragoons does not, yet**, and the two are written up differently on this site for that reason and not because one is a better story."
   },
   {
    "n": 73,

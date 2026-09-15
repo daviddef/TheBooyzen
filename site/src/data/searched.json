@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The gravestone collection swept, with the controls run first",
+   "n": "Two of the five surnames are simply not in it, and this time the zero can be trusted",
+   "d": "15 Sep 2026",
+   "h": "/documents/#graves-and-memoir",
+   "rows": [
+    [
+     "MOUNTJOY and DASCHNER in the Genealogical Society's gravestone data",
+     "NOUGHT AND NOUGHT — AND THE CONTROLS SAY IT IS REAL",
+     "BARRY returns 54, KOLBE 4, BOOYZEN 3. The database answers and answers a lot. A MONTH AGO THIS ARCHIVE WOULD HAVE WRITTEN “NO MOUNTJOY GRAVESTONES” AND MOVED ON; the number that makes that sentence mean anything is not nought, it is fifty-four.",
+     "no"
+    ],
+    [
+     "KOLBE — four stones, three of them new",
+     "VOLKSRUST, UTRECHT AND NEW GELDERLAND",
+     "“Kolbe, GE — Concentration Camp cemetery, VOLKSRUST” — this archive knew a Kolbe died in that camp and NOW HAS THE INITIALS, which are two of the Commandant's three. “Van der Spuy, MH — Old Utrecht Cemetery, d. 13 August 1946” is MARGARET HARRIET born Kolbe, whose Natal estate NAB MSCE 1639/1946 was found the same afternoon — SHE NOW HAS A GRAVE AS WELL AS A FILE. And “Fourie, MD — New Gelderland, 29 September 1899 to 8 December 1979”, M.D. on a Kolbe-connected stone eighty years after Margaret Downing died.",
+     "yes"
+    ],
+    [
+     "BOOYZEN — three stones, and they are one household",
+     "A WHOLE FAMILY IN ONE PRIVATE CEMETERY",
+     "Viljoen JCE (2 Jul 1807 – 11 Dec 1861), Viljoen BC (8 Jan 1807 – 25 Nov 1859) and Bezuidenhout JCE (30 Oct 1831 – 11 Jan 1904), all in the BEZUIDENHOUT FAMILY CEMETERY at Bezuidenhout Park, Johannesburg. That is JUDITH CORNELIA THERESIA BOOIJSEN — b3c4d5e6, baptised 16 August 1807 — WITH HER HUSBAND AND HER DAUGHTER. This archive had her stone and did not have the other two or know they were in the same ground.",
+     "yes"
+    ],
+    [
+     "A position on what a memoir is worth, since two of them cost walls",
+     "A WITNESS, NOT A RECORD — AND THE TWO CLAIMS ARE NOT EQUAL",
+     "John Montgomery was recalling forty-five and forty-seven years back. The test being used: DOES THE MEMOIR CLAIM SOMETHING IT HAD NO REASON TO INVENT, AND DOES ANYTHING INDEPENDENT TOUCH IT? On KOOLSKOP something does — a library catalogue written from the papers calls Kolbe an LMS missionary, and the Kolbe page had already deduced a mission circuit from the children's birthplaces. Three lines, none aware of the others. ON THE 21ST DRAGOONS NOTHING DOES YET: he is in no name-catalogued discharge series at Kew, and that may be structural or may be a misremembered regiment. THE TWO ARE WRITTEN UP DIFFERENTLY ON THIS SITE FOR THAT REASON AND NOT BECAUSE ONE IS A BETTER STORY.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The camps database at source, the voters' rolls, and where the paywall falls on an address",
    "n": "Four roadmap items, and one of them corrects an open question on this site",
    "d": "15 Sep 2026",
