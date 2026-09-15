@@ -1,0 +1,61 @@
+{
+ "note": "Every enquiry this archive has sent, what came back, and what is still owed. It existed in three places — prose on the open-questions page, entries in the research log, and drafts in a folder — and no one of them showed what was outstanding. Reconstructing it took a search of an inbox rather than a look at this site, which is the failure this page is here to stop.",
+ "rows": [
+  {
+   "d": "9 Sep 2026",
+   "to": "Western Cape Archives, Cape Town",
+   "what": "MOOC 7/1/104 refs 42 and 43, and CO 3972 ref 17 — the Mountjoy and Slier wills of 1818 and 1827, and the 1834 Colonial Office memorial from “the widow of J Mountjoy”",
+   "state": "no answer",
+   "back": "Six days out. Not chased: a reading room that has had one working week is not late."
+  },
+  {
+   "d": "9 Sep 2026",
+   "to": "Western Cape Archives, Cape Town",
+   "what": "MOOC 6/9/17017 ref 1847/50 — the death notice of Robert Paul Lerena, d. 19 March 1950",
+   "state": "no answer",
+   "back": "Sent the same evening as the Mountjoy request."
+  },
+  {
+   "d": "9 Sep 2026",
+   "to": "SANDF Documentation Centre, Pretoria",
+   "what": "UDF service and pension records, Booyzen and Booysen, Barkly East and Johannesburg, 1914–1945",
+   "state": "half delivered",
+   "back": "sandfdoc@mweb.co.za returned 550 relay access denied. archive@dod.mil.za did not bounce and has not answered. HALF-DELIVERED IS RECORDED AS HALF-DELIVERED, NOT AS SENT. 15 SEPTEMBER: LOOKED FOR A REPLACEMENT AND THERE ISN'T ONE. sandfdoc@mweb.co.za is the ONLY address the Documentation Centre publishes — it is the address on its own directory entries and on every guide that lists it — and it is dead. What is left is the telephone, (012) 339-4600, the Schweikert Building at 20 Visagie Street, and archive@dod.mil.za, which did not bounce. A PUBLISHED ADDRESS THAT BOUNCES IS WORSE THAN NO ADDRESS: every enquirer is sending into it and none of them knows."
+  },
+  {
+   "d": "12 Sep 2026",
+   "to": "National Archives of South Africa, Pretoria",
+   "what": "Six Transvaal estate files — TAB MHG 1095/48, 3734/46, 769/52, 5155/51, 10/57 and 52653",
+   "state": "answered",
+   "back": "15 September, Ms Mavis Xaba, Reading Room: “ALL THE ESTATE FILES YOU ARE REQUESTING ARE BOUND FILES. Unfortunately, we are therefore unable to scan these files and provide complete digital copies by email.” Not a refusal — a physical fact about the record. She corrected none of the six references and put a private researcher on copy."
+  },
+  {
+   "d": "15 Sep 2026",
+   "to": "Ms Mavis Xaba, National Archives, Pretoria",
+   "what": "Thanks, and one question only — whether TAB MHG 52653 looks like a valid reference, since it carries no year suffix and is the one file never found on microfilm",
+   "state": "sent",
+   "back": "Framed so she can ignore it."
+  },
+  {
+   "d": "15 Sep 2026",
+   "to": "A private researcher, Pretoria",
+   "what": "The same six bound estate files — what she charges and how, her own view of whether the work is worth doing, and an offer to begin with one",
+   "state": "sent",
+   "back": "THE FIRST PAID-RESEARCH APPROACH THIS PROJECT HAS MADE. Everything before it went to an institution and waited. No payment details were sent and none will be: the letter asks her to name her own arrangement."
+  },
+  {
+   "d": "14 Sep 2026",
+   "to": "Pietermaritzburg Archives Repository",
+   "what": "Six Natal estate files — NAB MSCE 2032/1969, 965/1956, 131/1959, 414/1960, 2183/1958 and 600/1974",
+   "state": "drafted, unsent",
+   "back": "DELIBERATELY NOT SENT. The National Archives' own record gives pmbarchives@dact.kzntl.gov.za on an entry last touched in 2015 and kzntl.gov.za is a retired domain; other listings give pmbarchives@kzndac.gov.za. The postal address and the telephone agree everywhere. This archive has already posted one enquiry into a mailbox it could not confirm."
+  },
+  {
+   "d": "—",
+   "to": "The National Archives, Kew",
+   "what": "WO 97 and WO 12 for the 21st Light Dragoons — the discharge paper that would give James Mountjoy his parish of birth",
+   "state": "not yet written",
+   "back": "Raised 15 September, on one sentence in a newspaper. The first errand this archive has had outside South Africa."
+  }
+ ]
+}

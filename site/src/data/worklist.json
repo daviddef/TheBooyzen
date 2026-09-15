@@ -7,42 +7,42 @@
   {
    "n": 1,
    "what": "Sweep the Transvaal education series (TAB, source OD) for every surname and farm this archive holds",
-   "state": "running",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "NAAIRS",
    "since": "2026-09-15",
-   "note": "One accidental query — **BOOYZEN AND MARICO** — returned a farm school at Kwaggafontein with a JGL Booyzen on eight of its forty-eight files, and a second school on this family's own farm at Vaalbank. Neither was looked for. The series has never been searched for **BARRY**, **MOUNTJOY**, **DASCHNER** or **KOLBE**, nor for Brakfontein, Koedoesfontein, Driefontein, Zwartruggens or Goedehoop. [What was found](/documents/#kwaggafontein-school)"
+   "note": "One accidental query — **BOOYZEN AND MARICO** — returned a farm school at Kwaggafontein with a JGL Booyzen on eight of its forty-eight files, and a second school on this family's own farm at Vaalbank. Neither was looked for. The series has never been searched for **BARRY**, **MOUNTJOY**, **DASCHNER** or **KOLBE**, nor for Brakfontein, Koedoesfontein, Driefontein, Zwartruggens or Goedehoop. [What was found](/documents/#kwaggafontein-school) **15 September, paused:** NAAIRS answers «the connection to the Search Manager Server is inactive». Not a negative about anything — an outage."
   },
   {
    "n": 2,
    "what": "Finish reading the two school files — 28 of 72 Kwaggafontein documents, 30 of 54 at Vaalbank",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "NAAIRS",
    "since": "2026-09-15",
-   "note": "The unread half of Vaalbank is where the **Ds. Booysen** question lives: whether that abbreviation is a pair of initials, David Schalk, or the Dutch for a minister. The index will not settle it; the file might."
+   "note": "The unread half of Vaalbank is where the **Ds. Booysen** question lives: whether that abbreviation is a pair of initials, David Schalk, or the Dutch for a minister. The index will not settle it; the file might. **Parked by the same outage.**"
   },
   {
    "n": 3,
    "what": "Sweep the eGGSA newspaper transcriptions for the four surnames that have never been put through them",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "**KOLBE** was swept properly for the first time today: 43 hits, read one at a time, and it produced Francis McCabe, the location of the farm, a son of the twelve, and the Settler's mission school. **BOOYZEN, BARRY, MOUNTJOY and DASCHNER have never had the same treatment.** The search endpoint is now scriptable, so this is an hour's work rather than a day's. [Today's run](/documents/#mccabe-1872)"
+   "note": "**KOLBE** was swept properly for the first time today: 43 hits, read one at a time, and it produced Francis McCabe, the location of the farm, a son of the twelve, and the Settler's mission school. **BOOYZEN, BARRY, MOUNTJOY and DASCHNER have never had the same treatment.** The search endpoint is now scriptable, so this is an hour's work rather than a day's. [Today's run](/documents/#mccabe-1872) **Done, 15 September.** Daschner returns nothing in the whole collection; Booyzen five and Booijsen one, almost all of it other families; and MOUNTJOY gave the thing this archive did not expect — a man who lodged in James Mountjoy's house in January 1822 and recorded that he was **discharged from the 21st Light Dragoons**. [What it broke](/documents/#mountjoy-dragoons)"
   },
   {
    "n": 4,
    "what": "Find Francis McCabe's own estate at the Free State depot",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "NAAIRS",
    "since": "2026-09-15",
-   "note": "He was **Landdrost of Bloemfontein** and died on 23 February 1872 leaving «a widow, four sons and two daughters, besides a large family of step-children». Those step-children are the Commandant's twelve. His file would name them — reaching the same list from the opposite side to VAB MHG M777, which is not readable online."
+   "note": "He was **Landdrost of Bloemfontein** and died on 23 February 1872 leaving «a widow, four sons and two daughters, besides a large family of step-children». Those step-children are the Commandant's twelve. His file would name them — reaching the same list from the opposite side to VAB MHG M777, which is not readable online. **Parked by the same outage.**"
   },
   {
    "n": 5,
    "what": "Bring /open-questions/ up to date — §0 is a day behind and the letters section is three days behind",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "§0 still ends «the next step is the Graaff-Reinet baptism register for 21 September 1788». It does not know that the 1981 revision was confirmed this morning, that no Gerhardus Lodewicus married a Magdalena de Beer, or that the disputed name sits nine lines lower on the same sheet as a son. The page also still calls NAAIRS «the single most important unopened door», which stopped being true three weeks ago. [Question 0, as it now stands](/documents/#question-zero)"
+   "note": "§0 still ends «the next step is the Graaff-Reinet baptism register for 21 September 1788». It does not know that the 1981 revision was confirmed this morning, that no Gerhardus Lodewicus married a Magdalena de Beer, or that the disputed name sits nine lines lower on the same sheet as a son. The page also still calls NAAIRS «the single most important unopened door», which stopped being true three weeks ago. [Question 0, as it now stands](/documents/#question-zero) **Done, 15 September.** §0 now carries the 1981 confirmation, van Zyl's failed marriage search, the son on line 12 and the closed FamilySearch route. §12 is rewritten around the Light Dragoons and moved from Blocking to High. The letters section says Pretoria answered."
   },
   {
    "n": 6,
@@ -111,10 +111,10 @@
   {
    "n": 14,
    "what": "The letters are tracked in three places and no single one shows what is outstanding",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Outgoing correspondence is split between prose on [/open-questions/](/open-questions/), entries in the research log, and files in the requests folder. Six enquiries are live right now, and reconstructing that took a search of an inbox rather than a look at this site. **This list is the first half of the fix**; the letters themselves still need one register."
+   "note": "Outgoing correspondence is split between prose on [/open-questions/](/open-questions/), entries in the research log, and files in the requests folder. Six enquiries are live right now, and reconstructing that took a search of an inbox rather than a look at this site. **This list is the first half of the fix**; the letters themselves still need one register. **Done, 15 September:** [/letters/](/letters/), eight enquiries with what came back, linked from the menu."
   },
   {
    "n": 15,
@@ -175,10 +175,10 @@
   {
    "n": 22,
    "what": "A build check that every event on the atlas carries a citation",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "The Marico entry carried «1898 — JGL Booyzen of Kwaggafontein, in the field-cornet's papers» for weeks. The papers were the education department's, and the line survived because **nothing on the site pointed at it** — no page cited it, so no page could contradict it. An event nobody can check is an event nobody can correct. The other registers here are already gated: the kit check, the living-person rule, and now the work list. **The atlas is the one register with no gate**, and it is the one that was wrong. [The correction](/corrections/)"
+   "note": "The Marico entry carried «1898 — JGL Booyzen of Kwaggafontein, in the field-cornet's papers» for weeks. The papers were the education department's, and the line survived because **nothing on the site pointed at it** — no page cited it, so no page could contradict it. An event nobody can check is an event nobody can correct. The other registers here are already gated: the kit check, the living-person rule, and now the work list. **The atlas is the one register with no gate**, and it is the one that was wrong. [The correction](/corrections/) **Done, 15 September.** `tools/checkatlas.py`, in build.sh after links.py. It refuses a build where a place pinned approximate carries no «why», and warns where a place with events is discussed nowhere on the site. **First run: eighteen failures**, every one a farm pinned near its district with nothing saying so. All eighteen now state what the pin rests on and several say outright that it is weak."
   },
   {
    "n": 23,

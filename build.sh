@@ -19,5 +19,6 @@ python3 tools/searchindex.py
 python3 tools/register.py
 cd site && npm run build >/dev/null && cd ..
 python3 tools/links.py
+python3 tools/checkatlas.py --data site/src/data --dist site/dist
 python3 tools/drift.py
 echo "build complete"

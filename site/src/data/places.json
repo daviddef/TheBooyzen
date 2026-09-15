@@ -96,7 +96,8 @@
    "slug": "achter-sneeuwberg",
    "lat": -31.95,
    "lon": 24.75,
-   "approx": true
+   "approx": true,
+   "why": "A region rather than a point. The name means the country behind the Sneeuberg and covers a wide stretch of the Karoo north of Graaff-Reinet; the pin is put in the middle of it and stands for the area, not a farmstead."
   },
   {
    "n": "Zevenfontein",
@@ -121,7 +122,8 @@
    "slug": "zevenfontein",
    "lat": -31.49,
    "lon": 25.01,
-   "approx": true
+   "approx": true,
+   "why": "The district is documented — Brak River, later Middelburg — and the farm is not surveyed here. The pin is placed in that stretch of the Brak River valley and is approximate to several kilometres."
   },
   {
    "n": "Barkly East",
@@ -208,7 +210,8 @@
    "slug": "manorowen",
    "lat": -30.515,
    "lon": 27.596,
-   "approx": true
+   "approx": true,
+   "why": "Barkly East district is certain: John Barry died here on 25 August 1903 and the 1903 registration enters the place as “Manor Owen Ward IV”. The ward is not enough to survey from, so the pin sits in the ward's general area."
   },
   {
    "n": "Jerpoint",
@@ -228,7 +231,8 @@
    "slug": "jerpoint",
    "lat": -30.6,
    "lon": 27.4,
-   "approx": true
+   "approx": true,
+   "why": "Named in the Cape Rebel register as Richard Peter Barry's farm, with no district finer than the Barkly East and Wodehouse division. The pin is a placement inside that division and nothing narrower is known."
   },
   {
    "n": "Ivanhoe",
@@ -248,7 +252,8 @@
    "slug": "ivanhoe",
    "lat": -31.1,
    "lon": 27.2,
-   "approx": true
+   "approx": true,
+   "why": "Named in the Cape Rebel register as Fred J. Barry's farm, district Barkly East / Wodehouse. As with Jerpoint, the register gives the division and not the position, so the pin stands for the division."
   },
   {
    "n": "Caerlaverock",
@@ -272,7 +277,8 @@
    "slug": "caerlaverock",
    "lat": -31.1,
    "lon": 27.1,
-   "approx": true
+   "approx": true,
+   "why": "The farm where the 1901 marriage took place, in the Wodehouse–Barkly East division per the Cape Rebel register. The division is documented; the farm has not been located on a survey diagram, so the pin is approximate."
   },
   {
    "n": "Dordrecht",
@@ -405,7 +411,8 @@
    "slug": "wodehouse",
    "lat": -31.372,
    "lon": 27.041,
-   "approx": true
+   "approx": true,
+   "why": "A district, pinned at Dordrecht, its magistracy. The marker stands for the whole division and not for a point in it."
   },
   {
    "n": "Colesberg",
@@ -988,7 +995,8 @@
     ]
    ],
    "p": [],
-   "slug": "booysens"
+   "slug": "booysens",
+   "why": "A Johannesburg suburb, pinned at its centre. The archive has people in the suburb and no street address for any of them, so the pin is the suburb and not a house. The name is a coincidence of spelling and is not this family's."
   },
   {
    "n": "Brakfontein",
@@ -1023,7 +1031,8 @@
     "Hendrik Stefanus Nicolaas Booijsen",
     "Petrus Jacobus Booysen"
    ],
-   "slug": "brakfontein"
+   "slug": "brakfontein",
+   "why": "District Rustenburg is documented — Hendrik Stefanus Booijzen is entered as a widower “of Brakfontein” at his 1892 marriage. The farm itself is not surveyed here and Brakfontein is one of the commonest farm names in the Transvaal, so the pin is placed in the district and is approximate."
   },
   {
    "n": "Lichtenburg",
@@ -1073,7 +1082,8 @@
     "Willem Hermanus Booyzen of Indwe",
     "Susanna Adriana Roodt"
    ],
-   "slug": "dugmore-mine"
+   "slug": "dugmore-mine",
+   "why": "The colliery at Indwe, where a Booyzen is entered as a MIJNWERKER living at “Dugmore Mijn” in 1908. The town is certain; the shaft's position is not established here, so the pin sits at Indwe."
   },
   {
    "n": "Vaalbank",
@@ -1106,7 +1116,8 @@
     "Jan Gerthardus Lodewikus Booijsen",
     "Magdalena Susanna Maria van den Berg"
    ],
-   "slug": "vaalbank"
+   "slug": "vaalbank",
+   "why": "Two deaths on this farm thirty-five years apart put the family on it beyond doubt, and the district — Lichtenburg — is documented. The farm has not been placed on a survey diagram, so the coordinates are a placement within the district."
   },
   {
    "n": "Cherryville",
@@ -1126,7 +1137,8 @@
    "p": [
     "Harriet Louisa Barry"
    ],
-   "slug": "cherryville"
+   "slug": "cherryville",
+   "why": "The third named Barry farm at Barkly East, where Harriet died of typhoid. District documented, farm not surveyed here; the pin stands for the district."
   },
   {
    "n": "Slang River",
@@ -1146,7 +1158,8 @@
    "p": [
     "Dorothea Regina Barry of Slang River"
    ],
-   "slug": "slang-river"
+   "slug": "slang-river",
+   "why": "A locality rather than a farm, named in the records without a survey reference. The pin follows the river's course in the north-eastern Cape and is approximate along its length."
   },
   {
    "n": "Koedoesfontein",
@@ -1167,7 +1180,8 @@
     "Hendrik Stefanus Booijsen",
     "Anna Catharina Grobelaar"
    ],
-   "slug": "koedoesfontein"
+   "slug": "koedoesfontein",
+   "why": "District Rustenburg is documented — Hendrik Stefanus Booijsen died here on 11 May 1908. The farm is not surveyed here, and Koedoesfontein is a common Transvaal farm name, so the pin is a placement in the district."
   },
   {
    "n": "Zeerust",
@@ -1216,7 +1230,8 @@
    "p": [
     "Charlotta Elizabetha Dormehl"
    ],
-   "slug": "driefontein"
+   "slug": "driefontein",
+   "why": "Given in the records as a farm in the Groot Marico, district Marico. Driefontein is among the most repeated farm names in the country; the district is what is documented and the pin stands for it."
   },
   {
    "n": "Zwartruggens",
@@ -1261,7 +1276,8 @@
    "p": [
     "Diederik Arnoldus Booysen"
    ],
-   "slug": "voorbedacht"
+   "slug": "voorbedacht",
+   "why": "The farm number is known and the district is Rustenburg, but this archive has not read the survey diagram that would place number 401 on the ground. The pin is a placement in the district and the number is the part that is solid."
   },
   {
    "n": "Klerksdorp",
@@ -1314,7 +1330,8 @@
     "Elizabetha Margaretha Marais",
     "David Schalk Booysen"
    ],
-   "slug": "market-street-pretoria"
+   "slug": "market-street-pretoria",
+   "why": "The street is named in the 1900 document — a zinc building in Market Street — and no number is given. The pin is placed on the street and is not a building."
   },
   {
    "n": "Turffontein",
@@ -1414,7 +1431,8 @@
     "David Schalk Booysen",
     "Johanna Elena Stols"
    ],
-   "slug": "goedehoop"
+   "slug": "goedehoop",
+   "why": "Named as a place near Pretoria where David Schalk Booijzen was living in 1904. Neither the farm nor the erf has been located, and Goedehoop is another repeated name; the pin is a placement outside Pretoria and is weak."
   },
   {
    "n": "Tolosberg",

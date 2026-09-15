@@ -1,0 +1,45 @@
+---
+import Base from "../layouts/Base.astro";
+import { u } from "../lib/url.js";
+import L from "../data/letters.json";
+const rows = L.rows;
+const S = { "answered":["Answered","#12703F"], "sent":["Sent","#1E5F8C"], "no answer":["No answer","#E9A020"],
+  "half delivered":["Half delivered","#B04A16"], "drafted, unsent":["Drafted","#7A7A7A"], "not yet written":["Not written","#7A7A7A"] };
+const open = rows.filter(r => r.state !== "answered").length;
+---
+<Base title="The letters"
+      eyebrow={`${rows.length} enquiries, ${open} of them still owed an answer`}
+      dek="Every enquiry this archive has sent to an institution or a person, what came back, and what is still outstanding.">
+
+<section class="blk">
+  <h2>Why this page exists</h2>
+  <div class="prose">
+    <p set:html={L.note} />
+    <p>It sits beside <a href={u("/errands/")}>the errands</a>, which is the list of things that can only
+      be got by standing in a reading room, and <a href={u("/worklist/")}>the work list</a>, which is who
+      has to move what. <b>This one is narrower: it is only the post.</b></p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>Sent, and what came back</h2>
+  <div class="scroll" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:7rem">Date</th><th style="width:16rem">To</th><th>Asking for</th><th style="width:8rem">State</th></tr></thead>
+      <tbody>
+        {rows.map(r => (
+          <tr>
+            <td class="m">{r.d}</td>
+            <td><b>{r.to}</b></td>
+            <td>{r.what}<br /><span class="cap">{r.back}</span></td>
+            <td class="m" style={`color:${(S[r.state]||["","#666"])[1]}`}>{(S[r.state]||[r.state])[0]}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:18px"><b>Nothing here was sent on this archive's own authority.</b>
+    Every letter above was drafted, shown, and sent only when the user said so &mdash; and the two that
+    involve money or a public posting under his name are marked as his to send, not this archive's.</p>
+</section>
+</Base>
