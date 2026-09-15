@@ -231,10 +231,10 @@
   {
    "n": 29,
    "what": "Read the Indwe and Barkly East church registers forward past 1910",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "David",
    "since": "2026-09-15",
-   "note": "The archive stops where its leads stopped. Willem Hermanus Booijzen was confirmed at Indwe in 1907, married there in 1908 as a MIJNWERKER at Dugmore Mijn, and a Mountjoy died in the same congregation in 1911. **Nobody has read what the register says after that**, and it is the one place a colliery family's whole decade is written down in order."
+   "note": "The archive stops where its leads stopped. Willem Hermanus Booijzen was confirmed at Indwe in 1907, married there in 1908 as a MIJNWERKER at Dugmore Mijn, and a Mountjoy died in the same congregation in 1911. **Nobody has read what the register says after that**, and it is the one place a colliery family's whole decade is written down in order. **15 September: this is behind the FamilySearch sign-in**, like the Burgersdorp sweep, and listing it as ready to start was wrong."
   },
   {
    "n": 30,
@@ -247,18 +247,18 @@
   {
    "n": 31,
    "what": "The Cape Rebel trial files for Barkly East and Wodehouse, June 1901",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "Western Cape Archives",
    "since": "2026-09-15",
-   "note": "Open questions 1 and 2 both end here. The register gives **R.P. Barry of Jerpoint**, **Fred J. Barry of Ivanhoe** and **D.W. Schoeman of Caerlaverock** tried in one month in one division, with no birth dates and no parents — so identity is unproven and stays unproven until the files are read. They are at Cape Town."
+   "note": "Open questions 1 and 2 both end here. The register gives **R.P. Barry of Jerpoint**, **Fred J. Barry of Ivanhoe** and **D.W. Schoeman of Caerlaverock** tried in one month in one division, with no birth dates and no parents — so identity is unproven and stays unproven until the files are read. They are at Cape Town. **15 September: it is a reading-room job and always was.** The trial files are at Cape Town and are not indexed by name anywhere reachable. Listed as ready to start when nothing here can start it."
   },
   {
    "n": 32,
    "what": "The 1820 Settler papers themselves, CO 48, rather than a compiled transcript",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "The National Archives, Kew",
    "since": "2026-09-15",
-   "note": "Open question 9 names this and calls it Low priority, which was right when the only gain was a cross-check. It is worth more now: the settler roll entered George Augustus Kolbe as a **CHEMIST** aged 20 when he was sixteen, and this archive cannot tell from a transcript whether that age was **sworn or simply written down** — and a second age overstatement in the same year is either a pattern or a clerk."
+   "note": "Open question 9 names this and calls it Low priority, which was right when the only gain was a cross-check. It is worth more now: the settler roll entered George Augustus Kolbe as a **CHEMIST** aged 20 when he was sixteen, and this archive cannot tell from a transcript whether that age was **sworn or simply written down** — and a second age overstatement in the same year is either a pattern or a clerk. **15 September: CO 48 is at Kew**, so it travels with the Dragoons errand and the London directories. Three London errands now, which is an argument for one trip rather than three letters."
   },
   {
    "n": 33,
@@ -327,10 +327,10 @@
   {
    "n": 41,
    "what": "Give the people named in the 1781 inventory a page of their own",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "Western Cape Archives",
    "since": "2026-09-15",
-   "note": "Silvia, Lena, Sara, Janna, Dorinda, Fortuijn, Meij and Februarij van de Caab; Dijk and Farla van Madagascar; Achilles van Mallabaar — and ten more in the 1831 inventory at Onder Roggeveld. **They are currently a table inside a section about a search engine**, which is the wrong frame and the wrong weight. Eleven names is the whole surviving record of eleven people, and this site gives a page to far less. Wait for [MOOC 8/18.11 entire](/errands/) first, so the page is built on the document and not on a catalogue line. **Still waiting, deliberately.** It stays open until [MOOC 8/18.11](/errands/) is read, so the page rests on the inventory and not on a catalogue line."
+   "note": "Silvia, Lena, Sara, Janna, Dorinda, Fortuijn, Meij and Februarij van de Caab; Dijk and Farla van Madagascar; Achilles van Mallabaar — and ten more in the 1831 inventory at Onder Roggeveld. **They are currently a table inside a section about a search engine**, which is the wrong frame and the wrong weight. Eleven names is the whole surviving record of eleven people, and this site gives a page to far less. Wait for [MOOC 8/18.11 entire](/errands/) first, so the page is built on the document and not on a catalogue line. **Still waiting, deliberately.** It stays open until [MOOC 8/18.11](/errands/) is read, so the page rests on the inventory and not on a catalogue line. **15 September: marked blocked rather than next**, which is what it always was — it waits on MOOC 8/18.11 being read, and that is a reading-room job."
   },
   {
    "n": 42,
@@ -615,10 +615,10 @@
   {
    "n": 77,
    "what": "The schema cannot mark a single detail as tree-sourced, only a whole person",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Raised by a check on the day it was written. Five people are marked **`doc`** and say in their own prose that some specific claim is «not from a document this archive has read» — Anna Maria van der Merwe is documented by a baptism of 1807 and her **parents** come from a tree; Adriana Christina Viljoen is named on a baptism of 1835 and her **marriage date** comes from a tree. **Both halves are true and the status field can only hold one of them.** The options are a per-claim marker, or accepting that a record's status describes its weakest load-bearing part. Until then the check reports all five every build, which is the right behaviour: **tuning it quiet would be a check with an exception, and a check with an exception is a check that will be excepted.**"
+   "note": "Raised by a check on the day it was written. Five people are marked **`doc`** and say in their own prose that some specific claim is «not from a document this archive has read» — Anna Maria van der Merwe is documented by a baptism of 1807 and her **parents** come from a tree; Adriana Christina Viljoen is named on a baptism of 1835 and her **marriage date** comes from a tree. **Both halves are true and the status field can only hold one of them.** The options are a per-claim marker, or accepting that a record's status describes its weakest load-bearing part. Until then the check reports all five every build, which is the right behaviour: **tuning it quiet would be a check with an exception, and a check with an exception is a check that will be excepted.** **Done, 15 September, by adding the field rather than by tuning the check.** A person now carries **`tree:`** naming which single claim is untested — «her parents», «the 1828 marriage date and place» — and **the person page prints it** beside the confidence chip, so a reader sees it and not only a checker. The check now **fails** a `doc` record that says a claim is undocumented and does not name it. **Reporting the phrase and stopping there was half a check**: it said something was wrong without saying what, five times, every build."
   }
  ],
  "accounts": [

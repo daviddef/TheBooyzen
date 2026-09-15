@@ -150,11 +150,16 @@ def main():
             bad.append(f"people-drift       {miss!r} is in people.json and not in people.js")
 
     # 10 - a person who says in terms that the tree is the only source, marked documented
+    # A record can be documented AND carry one detail that is not. The status field
+    # holds one value and cannot say so, so the person carries a `tree` field
+    # naming WHICH claim is untested - and the person page prints it. Reporting
+    # the phrase and stopping there was half a check: it said something was wrong
+    # without saying what, five times, every build.
     SAYS_TREE = re.compile(r"not from a document this archive has read", re.I)
     for p in people:
-        if p.get("s") == "doc" and SAYS_TREE.search(p.get("r", "")):
-            warn.append(f"doc-cites-tree     {p['n']}: marked `doc`, and its own prose says the claim "
-                        f"is not from a document this archive has read")
+        if p.get("s") == "doc" and SAYS_TREE.search(p.get("r", "")) and not p.get("tree"):
+            bad.append(f"doc-cites-tree     {p['n']}: marked `doc` and says a claim is not from a "
+                       f"document - name which claim, in a `tree` field")
 
     # 5 - open too long
     today = datetime.date.today()

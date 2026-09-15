@@ -70,6 +70,9 @@ const groups = Object.entries(byPage);
           <tr><td>Line</td><td><a href={u("/people/")}>{p.l}</a></td></tr>
           {p.g && <tr><td>Generation</td><td class="m">{p.g} — on the direct line</td></tr>}
           <tr><td>Confidence</td><td><span class={"chip " + p.s}>{label[p.s]}</span></td></tr>
+          {p.tree && <tr><td>From a tree</td><td><span class="chip lore">not documented</span>{" "}
+            <b>{p.tree}</b> &mdash; the rest of this record rests on documents this archive has read,
+            and that part does not.</td></tr>}
         </tbody>
       </table>
     </div>
