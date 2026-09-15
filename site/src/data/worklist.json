@@ -163,6 +163,30 @@
    "owner": "this archive",
    "since": "2026-09-15",
    "note": "This archive was pinned to **b16bea79** and the work list component, its checker and the estate roll-up were added after it. Diffed before bumping — seven files, 658 insertions, nothing removed and nothing this build depends on touched — then moved to **60aad580**. Recorded because an archive silently behind on the shared kit is the same failure this page exists to prevent, one layer down."
+  },
+  {
+   "n": 21,
+   "what": "Reply to Pieter van Zyl and Riël Smit on WikiTree — they answered the oldest question on this site and have not been told what it produced",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-15",
+   "note": "Riël Smit confirmed from the **1981 edition this archive does not own** that Petrus Jacobus is still placed under Jan, and Pieter van Zyl searched for a marriage between a Gerhardus Lodewicus and a Magdalena de Beer, found none, and remembered from the notice itself that a **child** of Petrus Jacobus carried the name — which turned out to be nine lines lower on the same sheet. **Two people did unpaid work for this archive today and neither has been thanked or shown the result.** The reply is this archive's to draft and David's to post; posting is public writing under his name, not something this archive does for him. [What they settled](/documents/#question-zero)"
+  },
+  {
+   "n": 22,
+   "what": "A build check that every event on the atlas carries a citation",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "The Marico entry carried «1898 — JGL Booyzen of Kwaggafontein, in the field-cornet's papers» for weeks. The papers were the education department's, and the line survived because **nothing on the site pointed at it** — no page cited it, so no page could contradict it. An event nobody can check is an event nobody can correct. The other registers here are already gated: the kit check, the living-person rule, and now the work list. **The atlas is the one register with no gate**, and it is the one that was wrong. [The correction](/corrections/)"
+  },
+  {
+   "n": 23,
+   "what": "File today's leads into /open-questions/ and /errands/ so they stop living on this page and in a chat window",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "This list is for what is being **done** and it is already carrying things that are really research leads — which is how it would turn into a second, worse copy of the registers it sits beside. Nine of them came out of today and have no home yet: the Volksraad of May 1867; the twelve remaining Booijsen inventories at MOOC8; the eight Kolbe sons through the National Archives Discovery catalogue and the German Savoy RG4 registers; the Kolbe-Booysen household at Port Elizabeth; «little Jannie» of 1884, whom two papers give two fathers; **Jephts of Leeuwberg**, the man of colour the 1869 court named with property of his own; and the Settler's Bushman mission school at Koolskop. **Each belongs in a register that already exists.** Moving them is the work; keeping them here is the drift."
   }
  ]
 }
