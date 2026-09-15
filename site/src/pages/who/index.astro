@@ -1,6 +1,7 @@
 ---
 /* Every name in the archive, and how many people bore it. */
 import Base from "../../layouts/Base.astro";
+import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
 
@@ -19,24 +20,9 @@ const names = [...by.entries()].map(([slug, v]) => ({ slug, ...v }))
 const shared = names.filter(n => n.n > 1);
 ---
 <Base title="Every Name"
-      eyebrow={`${names.length} names${shared.length ? ` · ${shared.length} held by more than one person` : " · none shared"}`}
+      eyebrow={`${names.length} names · ${shared.length} held by more than one person`}
       dek="A name is not a person. This is every name in the archive, and how many different people bore it.">
   <section class="blk">
-    <p class="prose">Of {names.length} names here, <strong>{shared.length || "none"}</strong>
-    {shared.length === 1 ? " belongs" : " belong"} to more than one person — which is unusual, and
-    worth saying: on the Blažević archive twenty different men are called Ivan Blažević.</p>
-    <div class="scroll" style="margin-top:18px">
-      <table>
-        <thead><tr><th>Name</th><th>People</th></tr></thead>
-        <tbody>
-          {names.map(n => (
-            <tr>
-              <td><a href={u(`/who/${n.slug}/`)}>{n.name}</a></td>
-              <td class="mono">{n.n > 1 ? n.n : ""}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <EveryName names={names} u={u} />
   </section>
 </Base>
