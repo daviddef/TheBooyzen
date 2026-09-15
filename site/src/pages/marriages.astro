@@ -4,6 +4,7 @@ import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import mg from "../data/marriages.json";
 import { resolve, dates, slugify } from "../lib/kin.js";
+import EraTimeline from "@daviddef/archive-kit/components/EraTimeline.astro";
 import Marriages from "@daviddef/archive-kit/components/Marriages.astro";
 import P from "../data/people.json";
 const rows = mg.rows.map(r => ({ ...r, H: resolve(r.h), W: resolve(r.w) }))
@@ -99,6 +100,14 @@ const GROUPED = [
     families: married.map(lineFam),
   },
 ];
+
+/* Eighteen marriages, every one placed by a document, and the Cape's rulers
+   changed four times under them. */
+const timelinePoints = rows.map(r => ({
+  label: [r.H && r.H.n, r.W && r.W.n].filter(Boolean).join(" & ") || r.d,
+  year: r.ds, sub: r.p === "\u2014" ? r.d : r.p,
+}));
+
 ---
 <Base title="The Marriages"
       eyebrow={`${rows.length} marriages · ${placed.length} with a place`}
@@ -128,6 +137,13 @@ const GROUPED = [
 </section>
 
 
+
+<EraTimeline points={timelinePoints}
+  eras={[[1795,1803,"First British occupation","--r-habsburg"],[1803,1806,"Batavian Republic","--r-venice"],
+         [1806,1910,"Cape Colony","--r-italy"],[1910,1961,"Union of South Africa","--r-habsburg"]]}
+  marks={[[1820,"The 1820 Settlers"],[1834,"Emancipation at the Cape"],[1899,"The South African War begins"],
+          [1902,"Peace of Vereeniging"]]}
+  what="Each dot is a marriage this archive can place, at the year of the record, with the town under it." />
 
 <Rule name="gable" label="And the lines they joined" />
 
