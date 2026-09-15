@@ -143,18 +143,18 @@
   {
    "n": 18,
    "what": "Tell the estate that the FamilySearch Dutch Reformed baptism films begin in 1843",
-   "state": "next",
+   "state": "done",
    "owner": "the kit and estate",
    "since": "2026-09-15",
-   "note": "**This belongs to every archive here, not to this one.** Any archive working Cape Dutch Reformed registers through FamilySearch has the same ceiling and may, like this one, be reading its silence as absence rather than as the edge of a filming project. It explains retrospectively why weeks of work on this family produced nothing older than the 1840s. The originals exist; they are at Cape Town."
+   "note": "**This belongs to every archive here, not to this one.** Any archive working Cape Dutch Reformed registers through FamilySearch has the same ceiling and may, like this one, be reading its silence as absence rather than as the edge of a filming project. It explains retrospectively why weeks of work on this family produced nothing older than the 1840s. The originals exist; they are at Cape Town. **Done, 15 September** — written out in `notes/for-the-estate.md`, with the register counts town by town and the reason it is the expensive one: it does not announce itself. A search returns nothing and looks like an absence; it is an edge."
   },
   {
    "n": 19,
    "what": "Offer the estate two search techniques worked out here",
-   "state": "next",
+   "state": "done",
    "owner": "the kit and estate",
    "since": "2026-09-15",
-   "note": "Both are general and neither is written down anywhere shared. **NAAIRS** can be driven end to end from a page — the rotating token, the database selector, the POST that must carry its AND operators explicitly, and the detail endpoint — which turns a frameset nobody can script into a few seconds per query. And the **eGGSA newspaper index** is an Elasticsearch behind a widget: its query shape takes a fragment count, so one request returns every mention in every transcript rather than the one the widget draws."
+   "note": "Both are general and neither is written down anywhere shared. **NAAIRS** can be driven end to end from a page — the rotating token, the database selector, the POST that must carry its AND operators explicitly, and the detail endpoint — which turns a frameset nobody can script into a few seconds per query. And the **eGGSA newspaper index** is an Elasticsearch behind a widget: its query shape takes a fragment count, so one request returns every mention in every transcript rather than the one the widget draws. **Done, 15 September** — both written out in `notes/for-the-estate.md`, with the actual request shapes. The NAAIRS note carries the trap that cost this archive a day (two keywords are ORed unless the operator is sent) and the eGGSA note carries the opposite caveat (that engine has no AND at all, so paired negatives there are void)."
   },
   {
    "n": 20,
@@ -391,10 +391,10 @@
   {
    "n": 49,
    "what": "Offer the estate a shared record of what is shut and why",
-   "state": "next",
+   "state": "done",
    "owner": "the kit and estate",
    "since": "2026-09-15",
-   "note": "Item 46 is this archive's own version. **The estate needs one list, not eight** — every archive here is hitting the same closed doors, and each is discovering them separately and at the same cost. The 1843 ceiling on the church films alone will have wasted weeks somewhere else."
+   "note": "Item 46 is this archive's own version. **The estate needs one list, not eight** — every archive here is hitting the same closed doors, and each is discovering them separately and at the same cost. The 1843 ceiling on the church films alone will have wasted weeks somewhere else. **Done, 15 September** — folded into `notes/for-the-estate.md` as a fourth section, because it is a request rather than a finding: which institutions cannot be emailed at all, and the caution that a government domain with no website is often perfectly alive."
   },
   {
    "n": 50,
@@ -559,10 +559,10 @@
   {
    "n": 70,
    "what": "Check that /direct-line/ says what the evidence now says at the top",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Jan Booijsen was entered as **inferred** on 15 September and the chart still shows Gerthardus Lodewikus, deliberately. **That decision is defensible and it has to be visible on the page that makes the claim**, not only in a work list and a document section."
+   "note": "Jan Booijsen was entered as **inferred** on 15 September and the chart still shows Gerthardus Lodewikus, deliberately. **That decision is defensible and it has to be visible on the page that makes the claim**, not only in a work list and a document section. **Done, 15 September.** [/direct-line/](/direct-line/) now says at generation seven what the evidence says: that the 1876 clerk is the only thing holding the row up, that two editions of the printed genealogy put a different man there, that no marriage of a Gerhardus Lodewicus to a Magdalena de Beer can be produced, and that **the row has deliberately not been changed** because one source agreeing with its own earlier edition does not outrank a primary document signed by a son."
   },
   {
    "n": 71,
@@ -591,18 +591,18 @@
   {
    "n": 74,
    "what": "Ask the estate whether any archive has a reader at Kew",
-   "state": "next",
-   "owner": "the kit and estate",
+   "state": "blocked",
+   "owner": "David",
    "since": "2026-09-15",
-   "note": "This archive has one errand in London and is about to have two — WO 12/1430, and the trade directories that no free route reaches. **Seven archives share this kit and at least one of them is working a British line.** Asking costs nothing and the alternative is paying a researcher for a morning's work somebody may already be doing."
+   "note": "This archive has one errand in London and is about to have two — WO 12/1430, and the trade directories that no free route reaches. **Seven archives share this kit and at least one of them is working a British line.** Asking costs nothing and the alternative is paying a researcher for a morning's work somebody may already be doing. **15 September:** the asking is written into `notes/for-the-estate.md`, but **this archive has no way to reach the other sessions** — the shared work list is read by a roll-up, not a conversation. Passing it on is David's."
   },
   {
    "n": 75,
    "what": "Tell the estate which institutions cannot be emailed at all",
-   "state": "next",
+   "state": "done",
    "owner": "the kit and estate",
    "since": "2026-09-15",
-   "note": "Kew takes a form and publishes no address. The South African Department of Sport, Arts and Culture **has no website and only takes mail**. The SANDF publishes an address that bounces. **Every archive in this estate will hit these in turn and each will spend the same afternoon finding out**, which is the argument for the shared record of shut doors already on this list."
+   "note": "Kew takes a form and publishes no address. The South African Department of Sport, Arts and Culture **has no website and only takes mail**. The SANDF publishes an address that bounces. **Every archive in this estate will hit these in turn and each will spend the same afternoon finding out**, which is the argument for the shared record of shut doors already on this list. **Done, 15 September** — same file, same section."
   },
   {
    "n": 76,
