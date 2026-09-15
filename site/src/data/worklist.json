@@ -15,10 +15,10 @@
   {
    "n": 2,
    "what": "Finish reading the two school files — 28 of 72 Kwaggafontein documents, 30 of 54 at Vaalbank",
-   "state": "blocked",
-   "owner": "NAAIRS",
+   "state": "done",
+   "owner": "this archive",
    "since": "2026-09-15",
-   "note": "The unread half of Vaalbank is where the **Ds. Booysen** question lives: whether that abbreviation is a pair of initials, David Schalk, or the Dutch for a minister. The index will not settle it; the file might. **Parked by the same outage.**"
+   "note": "The unread half of Vaalbank is where the **Ds. Booysen** question lives: whether that abbreviation is a pair of initials, David Schalk, or the Dutch for a minister. The index will not settle it; the file might. **Parked by the same outage.** **Done, 15 September.** All fifty-four Vaalbank documents read. The 1899–1900 files are J.P. Louw alone and **no further Booysen appears** — so DS Booysen is on exactly three of the fifty-four. And the school simply continues: **Vaalbank No. 116**, Lichtenburg School Board, established 1905, establishments to 1937, a cleaning allowance in 1929 and 1937, transport schemes to 1954. **The farm school on this family's own ground ran for at least forty-four years.** Kwaggafontein was already complete at 48 of 48 once the district filter is applied — the 72 included other people's Kwaggafonteins."
   },
   {
    "n": 3,
@@ -103,10 +103,10 @@
   {
    "n": 13,
    "what": "One address at the SANDF Documentation Centre bounced and has not been replaced",
-   "state": "blocked",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-09",
-   "note": "The enquiry about UDF service and pension records went to two addresses. **sandfdoc@mweb.co.za returned 550 relay access denied**; archive@dod.mil.za did not bounce and has not answered. Half-delivered is recorded as half-delivered rather than as sent."
+   "note": "The enquiry about UDF service and pension records went to two addresses. **sandfdoc@mweb.co.za returned 550 relay access denied**; archive@dod.mil.za did not bounce and has not answered. Half-delivered is recorded as half-delivered rather than as sent. **Closed, 15 September, with a negative.** Looked for again and **there is still only the one address and it still bounces** — it is what the Centre publishes on its own directory entries and on every guide that lists it. What is left is the telephone, the Schweikert Building, and archive@dod.mil.za, which has not answered in six days. As far as this can be taken from here."
   },
   {
    "n": 14,
@@ -136,9 +136,9 @@
    "n": 17,
    "what": "Chase the London tailor into a directory through Google Books",
    "state": "blocked",
-   "owner": "this archive",
+   "owner": "David",
    "since": "2026-09-15",
-   "note": "Whether John Godloff Kolbe of the 1844 obituary was at **Brunswick Square** or at **34 Conduit Street** is still open. The books API returns HTTP 429 with a daily quota of zero for anonymous callers, so that route is shut and a different one is needed — archive.org full text, HathiTrust, or londonancestor.com. One thing did come out of it and is not being claimed: a list of 234 London master tailors who met over the Combination Act on 22 December 1799 includes «KOLBE, JOHN, 18, BROAD-STREET, SOHO». Right trade, right city, right age, and Soho was the German quarter — but a John Kolbe in London is not yet this John Kolbe. **15 September, the other routes tried and closed.** HathiTrust is behind Cloudflare bot protection and **this archive will not go around that**. archive.org holds no London trade directory earlier than 1920. The 1810s-to-1840s directories are on the paid genealogy services and at the Guildhall Library and London Metropolitan Archives, and nowhere free. **Now genuinely a door question, and the door is in London** — which is where WO 97 is too, so the two travel together."
+   "note": "Whether John Godloff Kolbe of the 1844 obituary was at **Brunswick Square** or at **34 Conduit Street** is still open. The books API returns HTTP 429 with a daily quota of zero for anonymous callers, so that route is shut and a different one is needed — archive.org full text, HathiTrust, or londonancestor.com. One thing did come out of it and is not being claimed: a list of 234 London master tailors who met over the Combination Act on 22 December 1799 includes «KOLBE, JOHN, 18, BROAD-STREET, SOHO». Right trade, right city, right age, and Soho was the German quarter — but a John Kolbe in London is not yet this John Kolbe. **15 September, the other routes tried and closed.** HathiTrust is behind Cloudflare bot protection and **this archive will not go around that**. archive.org holds no London trade directory earlier than 1920. The 1810s-to-1840s directories are on the paid genealogy services and at the Guildhall Library and London Metropolitan Archives, and nowhere free. **Now genuinely a door question, and the door is in London** — which is where WO 97 is too, so the two travel together. **15 September: it travels with the Kew errand now.** Every free route is shut and the volumes are at the Guildhall Library and the London Metropolitan Archives. **Anyone going to Kew for WO 12/1430 is a mile from both.**"
   },
   {
    "n": 18,
@@ -239,10 +239,10 @@
   {
    "n": 30,
    "what": "Johannesburg street directories, 1905–1935",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "David",
    "since": "2026-09-15",
-   "note": "Named in open question 10 as the private-record route and never followed. Forest Hill, Mayfair, Turffontein and Booysens are all addresses this archive holds without house numbers, and a directory gives occupation and street together — which is how to test the testimony that the boys went to the mines."
+   "note": "Named in open question 10 as the private-record route and never followed. Forest Hill, Mayfair, Turffontein and Booysens are all addresses this archive holds without house numbers, and a directory gives occupation and street together — which is how to test the testimony that the boys went to the mines. **15 September: not a screen question.** Longland's directories exist for the 1890s and are sold commercially as reproductions; **the 1905–1935 run is not freely online anywhere this archive can reach.** It is the Johannesburg City Library or a bookseller, which makes it a purchase or a visit rather than an afternoon."
   },
   {
    "n": 31,

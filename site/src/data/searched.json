@@ -2,6 +2,38 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "The Vaalbank school file finished, and the Johannesburg directories priced out",
+   "n": "Closing the last two items that could be worked from here",
+   "d": "15 Sep 2026",
+   "h": "/documents/#kwaggafontein-school",
+   "rows": [
+    [
+     "The remaining twenty-four Vaalbank documents",
+     "THE SCHOOL OUTLIVES THE REPUBLIC, AND DS BOOYSEN IS ON EXACTLY THREE OF THE FIFTY-FOUR",
+     "The 1899 and 1900 files are J.P. Louw alone — inspection reports, railway certificates for abroad, a declaration about the illness of the pupil JM ESTERHUIZEN, three free-boarding pupils leaving on 30 June, and then his own monthly salary certificates running to May 1900. NO FURTHER BOOYSEN APPEARS. And then the school simply continues: TED E600, “VAALBANK 116 SKOOL, LICHTENBURG SKOOLRAAD, STIGTING, 1905–1942”; TED E1954, establishments 1908–1937; a CLEANING ALLOWANCE for Vaalbank No. 116 in 1929 and 1937. THE FARM SCHOOL ON THIS FAMILY'S OWN GROUND RAN FOR AT LEAST FORTY-FOUR YEARS AND HAD A NUMBER.",
+     "yes"
+    ],
+    [
+     "A detail worth a second look",
+     "A SCHOOL TRANSPORT ROUTE, VAALBANK TO KAFFERSKRAAL",
+     "TOD E13/26/71, “TRANSPORT SCHEMES. LICHTENBURG BOARD. VAALBANK – KAFFERSKRAAL”, 1939–1954. KAFFERSKRAAL IS THE POST OFFICE OF THE KWAGGAFONTEIN SCHOOL IN MARICO — the other farm school this archive found, forty years earlier. It may well be a different Kafferskraal; the name is common and Lichtenburg is not Marico. RECORDED AS A COINCIDENCE OF NAMES UNTIL SOMETHING SAYS OTHERWISE.",
+     "part"
+    ],
+    [
+     "Johannesburg street directories, 1905–1935",
+     "NOT FREELY DIGITISED — IT IS A PURCHASE OR A LIBRARY",
+     "Longland's Johannesburg and Districts Directory exists for the 1890s and is sold commercially as a reproduction; the 1905–1935 run is not online free anywhere this archive can reach. The route is the Johannesburg City Library or a bookseller. NOT A SCREEN QUESTION, and open question 10 — whether the boys went to the mines — stays where it is.",
+     "blocked"
+    ],
+    [
+     "A replacement address for the SANDF Documentation Centre, looked for again",
+     "THERE IS STILL ONLY THE ONE, AND IT STILL BOUNCES",
+     "sandfdoc@mweb.co.za is the address on the Centre's own directory entries and on every guide that lists it, and it returns 550 relay access denied. WHAT IS LEFT IS THE TELEPHONE, (012) 339-4600, the Schweikert Building at 20 Visagie Street, and archive@dod.mil.za, which did not bounce and has not answered in six days. This is as far as this archive can take it from here.",
+     "no"
+    ]
+   ]
+  },
+  {
    "g": "The gravestone collection swept, with the controls run first",
    "n": "Two of the five surnames are simply not in it, and this time the zero can be trusted",
    "d": "15 Sep 2026",
