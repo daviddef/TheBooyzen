@@ -271,58 +271,58 @@
   {
    "n": 34,
    "what": "A check that every person marked `doc` carries at least one link to where the document is discussed",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "The atlas check found eighteen pins with no stated basis on its first run. **The people file has never been checked the same way.** A person marked *documented* whose record links nowhere is a claim with no visible evidence — the same failure as the Marico atlas line, in the register this site is mostly made of."
+   "note": "The atlas check found eighteen pins with no stated basis on its first run. **The people file has never been checked the same way.** A person marked *documented* whose record links nowhere is a claim with no visible evidence — the same failure as the Marico atlas line, in the register this site is mostly made of. **Done, 15 September.** `tools/checkregisters.py`, in build.sh. Every person marked `doc` must link somewhere. Proved by breaking it: removing the links from Gerthardus Lodewikus Booysen fails the build."
   },
   {
    "n": 35,
    "what": "A check that every corrections row's link resolves to a real anchor",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "Fifty-three corrections, each pointing at the page that explains it. **Nothing verifies those anchors.** A correction whose link has rotted is a withdrawal nobody can read, which is worse than not having published the correction at all."
+   "note": "Fifty-three corrections, each pointing at the page that explains it. **Nothing verifies those anchors.** A correction whose link has rotted is a withdrawal nobody can read, which is worse than not having published the correction at all. **Done, 15 September.** Same tool. Every corrections href must resolve to a real page and, where it carries one, a real anchor. Proved by pointing a row at `#no-such-anchor-at-all`."
   },
   {
    "n": 36,
    "what": "A check that every `blocked` row in what-has-been-read says what would unblock it",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "Eleven rows are marked blocked. A block with no named remedy is indistinguishable from an excuse, and this archive has spent the whole week learning that the difference between *searched* and *could not search* is the most important distinction it keeps."
+   "note": "Eleven rows are marked blocked. A block with no named remedy is indistinguishable from an excuse, and this archive has spent the whole week learning that the difference between *searched* and *could not search* is the most important distinction it keeps. **Done, 15 September.** Same tool, as an advisory rather than a failure. It found two rows marked blocked with no way out named; both now say what would lift them, and one of them says plainly that **it should not have been marked blocked at all** and is left as it is until somebody re-reads the original search."
   },
   {
    "n": 37,
    "what": "A check that kin.js and people.js agree on who exists",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "On 15 September **kin.js was right and people.js was wrong** — kin had Hermanus Pietersen and his son as two households while people had them merged into one man with a long name. Nothing compared them. A check that every name in kin resolves in people, and flags a person in kin whose household implies a different shape, would have caught it the day it was written."
+   "note": "On 15 September **kin.js was right and people.js was wrong** — kin had Hermanus Pietersen and his son as two households while people had them merged into one man with a long name. Nothing compared them. A check that every name in kin resolves in people, and flags a person in kin whose household implies a different shape, would have caught it the day it was written. **Done, 15 September.** Same tool. Every name in kin.js must resolve in people.js, disambiguating token included. Proved by misspelling Hermanus Pietersen. **It would have caught this morning's real error on the day it was written.** Writing it also caught a bug in itself: the first regex matched kin.js's `warn:` field and reported six sentences as missing people."
   },
   {
    "n": 38,
    "what": "An external-link check, because one source went off the air mid-session",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "`databases.tanap.net` stopped resolving between one search and the next, and it holds the full transcriptions of the inventory that names eleven enslaved people. **This site cites external sources it does not monitor.** links.py checks internal links only. A source that has gone dark should say so on the page that depends on it, rather than looking live."
+   "note": "`databases.tanap.net` stopped resolving between one search and the next, and it holds the full transcriptions of the inventory that names eleven enslaved people. **This site cites external sources it does not monitor.** links.py checks internal links only. A source that has gone dark should say so on the page that depends on it, rather than looking live. **Done, 15 September**, and deliberately **not** in the build: `tools/checkexternal.py`, run on demand, writing to `sources-state.json` so the site can [say a source is dark](/sources/#state) instead of quietly linking into nothing. **34 hosts, four genuinely dark** — including TANAP, and including `nationalarchives.gov.za` written with a dot in the middle, in the very row that ends «written down because the wrong address cost this archive a day». It only found them because it looks for hosts named in **prose**; the first version checked hyperlinks and found five hosts out of thirty-four. **And its first answer was wrong in a way worth keeping**: it called three live government domains dead, because a department can be alive with nothing but MX."
   },
   {
    "n": 39,
    "what": "A report of anything open for more than thirty days",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "The work list component already marks a stale row in the page. Nothing **reports** it — so a thing blocked in October will still be sitting there in December looking like a thing raised this morning, which is exactly the failure this list was built to prevent one layer up."
+   "note": "The work list component already marks a stale row in the page. Nothing **reports** it — so a thing blocked in October will still be sitting there in December looking like a thing raised this morning, which is exactly the failure this list was built to prevent one layer up. **Done, 15 September.** Same tool. Anything open more than thirty days is reported with its age and the question «still true, or should it be struck?»"
   },
   {
    "n": 40,
    "what": "A check that the archive-kit pin is not behind the kit's own head",
-   "state": "next",
+   "state": "done",
    "owner": "a machine",
    "since": "2026-09-15",
-   "note": "This archive sat four commits behind and only noticed because a component it needed was missing. **An archive silently behind on the shared kit is a convention drifting without anybody seeing it.** A warning at build time costs nothing."
+   "note": "This archive sat four commits behind and only noticed because a component it needed was missing. **An archive silently behind on the shared kit is a convention drifting without anybody seeing it.** A warning at build time costs nothing. **Done, 15 September.** Same tool, advisory, and it fired immediately: the pin had moved to **d1e902ea** while the kit's head was **fd92b51c**. Diffed before bumping — the only change outside `.DS_Store` was the kit's own work list, nothing under `kit/` — then bumped, which also picked up a component that filters on the state pills."
   },
   {
    "n": 41,

@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import srcState from "../data/sources-state.json";
 import { u } from "../lib/url.js";
 const fs = [
   ["Willem Hermanus Booyzen — birth 1851, Cradock", "South Africa, Dutch Reformed Church Registers (Cape Town Archives), 1660–1970", "3:1:3Q9M-CSV8-8SD4-8"],
@@ -512,6 +513,51 @@ const fs = [
       <a href={u("/open-questions/")}>Question 0 &rarr;</a> ·
       <a href={u("/searched/")}>What was searched &rarr;</a></p>
   </div>
+</section>
+
+<section class="blk">
+  <h2 id="state">Are these sources still there?</h2>
+  <p class="dek">Checked {srcState.checked}. Every external host this archive points at &mdash;
+    linked, or merely named in a sentence &mdash; asked whether it still answers.</p>
+  <div class="prose" style="margin-top:16px">
+    <p><b>This page exists because one of them went out mid-session.</b>
+      <span class="m">databases.tanap.net</span> holds the full transcriptions of the Cape estate
+      inventories, including the 1781 inventory that names eleven enslaved people of this family's
+      household. It stopped resolving between one search and the next, and this site went on citing it
+      as though it were live. <b>An archive that cites what it cannot reach, without saying so, is
+      making a promise it cannot keep.</b></p>
+  </div>
+  <div class="scroll" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:18rem">Host</th><th style="width:8rem">State</th><th style="width:5rem">Cited</th><th>What that means</th></tr></thead>
+      <tbody>
+        {srcState.rows.filter(r => r.state !== "up").map(r => (
+          <tr>
+            <td class="m">{r.host}</td>
+            <td class="m" style={`color:${r.state === "dark" ? "#B04A16" : r.state === "mail only" ? "#12703F" : "#E9A020"}`}>{r.state}</td>
+            <td class="m">{r.cited}&times;</td>
+            <td class="cap">{r.why}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="cap" style="margin-top:14px">{srcState.rows.filter(r => r.state === "up").length} further
+    hosts answer normally and are not listed.</p>
+
+  <p class="note" style="margin-top:18px"><b>The check was wrong before it was right, and the way it was
+    wrong is worth keeping.</b> Its first run called three live government domains dead, because it asked
+    for an address record and <b>a department can be perfectly alive with nothing but mail</b>.
+    <span class="m">dsac.gov.za</span> &mdash; where every letter to Pretoria has gone, cited
+    twenty-five times on this site &mdash; has no website at all. On the strength of that first answer
+    this archive was one edit from publishing that the Pietermaritzburg addresses were dead.
+    <b>They accept mail.</b> The check now asks for the MX before it says dark.</p>
+
+  <p class="cap" style="margin-top:12px"><b>It is deliberately not part of the build.</b> A network probe
+    inside a build fails when a government website is having an afternoon, which has nothing to do with
+    the change being built &mdash; and a check that fails for the wrong reason is a check people learn to
+    ignore. It runs on demand and writes what it finds here.
+    <a href={u("/corrections/")}>One published address was wrong &rarr;</a></p>
 </section>
 
 <section class="blk">

@@ -2,6 +2,44 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "A check for sources that have gone dark — and it called three live ones dead",
+   "n": "Written because TANAP went off the air mid-session and this site went on citing it",
+   "d": "15 Sep 2026",
+   "h": "/sources/#state",
+   "rows": [
+    [
+     "Every external host this archive points at, linked or named in prose",
+     "34 HOSTS. FOUR GENUINELY DARK.",
+     "databases.tanap.net, which holds the full transcriptions of the inventory naming eleven enslaved people · the bare national.archsrch.gov.za, though the www form resolves · kzntl.gov.za, the retired KwaZulu-Natal domain · and nationalarchives.gov.za AS THIS ARCHIVE HAD WRITTEN IT, with a dot in the middle. CHECKING ONLY HYPERLINKS WOULD HAVE MISSED ALL OF THEM: this archive cites sources in sentences, not in anchors, and the first version of the tool found five hosts instead of thirty-four.",
+     "yes"
+    ],
+    [
+     "The tool's own first answer",
+     "IT CALLED THREE LIVE DOMAINS DEAD, AND THIS ARCHIVE NEARLY PUBLISHED IT",
+     "getaddrinfo asks for an address record, and A GOVERNMENT DOMAIN CAN BE PERFECTLY ALIVE WITH NOTHING BUT MX. dsac.gov.za — the department every Pretoria letter has gone to, cited twenty-five times here — has no website and takes mail. So do dact.kzntl.gov.za and kzndac.gov.za. The tool reported all three as “does not resolve”, and the next edit would have said in public that the Pietermaritzburg addresses were dead. THEY ACCEPT MAIL. The check now asks for the MX before it says dark, and reports “mail only”, which is the true answer and a more useful one.",
+     "yes"
+    ],
+    [
+     "What that does to the Pietermaritzburg advice",
+     "WEAKENS IT, AND THE NOTE HAS BEEN CHANGED",
+     "The draft letter has been sitting unsent since 14 September on the argument that kzntl.gov.za is a retired domain and the address on the National Archives' 2015 record is “almost certainly dead”. THE DOMAIN TAKES MAIL, AND SO DOES THE NEWER ONE. That does not prove a mailbox is read behind either — a domain accepting mail and a person reading it are different facts — but the reason given for not sending was stronger than the evidence for it. Telephoning first is still the better plan; it is no longer the only defensible one.",
+     "part"
+    ],
+    [
+     "nationalarchives.gov.za, written with a dot",
+     "CORRECTED — AND IT WAS IN THE ROW COMPLAINING ABOUT A WRONG ADDRESS",
+     "The NAAIRS note of 13 September records that the catalogue is a frameset, and ends “written down because the wrong address cost this archive a day”. The host in it was national.archives.gov.za. THE LIVE DOMAIN HAS NO DOT. Corrected wherever it appeared.",
+     "yes"
+    ],
+    [
+     "Why this check is not in the build",
+     "BECAUSE A CHECK THAT FAILS FOR THE WRONG REASON IS ONE PEOPLE LEARN TO IGNORE",
+     "A network probe inside a build fails when a government website is having an afternoon, which has nothing to do with the change being built. It is run on demand and writes what it finds to a data file the site reads, SO THAT A DARK SOURCE SAYS SO ON THE PAGE THAT DEPENDS ON IT rather than quietly linking into nothing.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "Volume 3 answers Anna Catharina Slier, and shows this archive had two men under one name",
    "n": "The six Slier entries the index reported, looked up at last",
    "d": "15 Sep 2026",
@@ -1816,7 +1854,7 @@
     [
      "The NAAIRS address, resolved",
      "national.archsrch.gov.za",
-     "This archive recorded on 13 September that “the bare hostname no longer resolves”. It does — the catalogue is a FRAMESET at national.archives.gov.za/naairs.htm and the SEARCH lives on a DIFFERENT HOST: http://www.national.archsrch.gov.za/sm300cv/smws/sm300dl. Sixteen databases including RSA (all repositories), KAB, TAB, VAB, NAB and GEN, the Genealogical Society's gravestone data. Session-bound URLs, five search boxes with And/Or/Not/Adjacent/Near, and an optional date range. Written down because the wrong address cost this archive a day.",
+     "This archive recorded on 13 September that “the bare hostname no longer resolves”. It does — the catalogue is a FRAMESET at nationalarchives.gov.za/naairs.htm and the SEARCH lives on a DIFFERENT HOST: http://www.national.archsrch.gov.za/sm300cv/smws/sm300dl. Sixteen databases including RSA (all repositories), KAB, TAB, VAB, NAB and GEN, the Genealogical Society's gravestone data. Session-bound URLs, five search boxes with And/Or/Not/Adjacent/Near, and an optional date range. Written down because the wrong address cost this archive a day.",
      "yes"
     ],
     [
@@ -2304,7 +2342,7 @@
     [
      "The same query, re-run for the record identifiers",
      "HTTP 403, and it stayed",
-     "FamilySearch closed the window after two calls, and unlike every other refusal this week it did not reopen. Waits of four, twenty-five, thirty and forty seconds all returned 403, and the block then spread off the search service and onto the site itself — an ordinary results page loaded in a browser with a body of ZERO characters. Nearly an hour of rests did not clear it. So the record identifiers needed to reach the two baptism images were never retrieved, and the relationship search run on the FATHER instead of the mother — the obvious next query, and the one with a real chance at the second missing child — was never run at all. Marked BLOCKED and not NOTHING: the index was not asked.",
+     "FamilySearch closed the window after two calls, and unlike every other refusal this week it did not reopen. Waits of four, twenty-five, thirty and forty seconds all returned 403, and the block then spread off the search service and onto the site itself — an ordinary results page loaded in a browser with a body of ZERO characters. Nearly an hour of rests did not clear it. So the record identifiers needed to reach the two baptism images were never retrieved, and the relationship search run on the FATHER instead of the mother — the obvious next query, and the one with a real chance at the second missing child — was never run at all. Marked BLOCKED and not NOTHING: the index was not asked. WHAT WOULD UNBLOCK IT: a signed-in FamilySearch session, which returns the record identifier the API refuses to an anonymous caller. It is the same sign-in the Burgersdorp sweep is parked behind, so one login clears both.",
      "blocked"
     ]
    ]
@@ -2890,7 +2928,7 @@
     [
      "Commonwealth War Graves Commission",
      "not searched",
-     "Behind a bot check. This archive did not attempt to circumvent it, and records that as the reason.",
+     "Behind a bot check. This archive did not attempt to circumvent it, and records that as the reason. WHAT WOULD UNBLOCK IT: nothing here — the Commission's register is complete and public, and a nil return from it is a real negative rather than a wall. This row is marked blocked wrongly; it should be a negative, and it is left as it is until somebody re-reads the original search rather than rewriting the label from memory.",
      "blocked"
     ],
     [

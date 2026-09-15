@@ -1,0 +1,210 @@
+{
+ "note": "Written by tools/checkexternal.py. Not part of the build: a network check inside a build fails for reasons that have nothing to do with the change, and a check that fails for the wrong reason is a check people learn to ignore.",
+ "checked": "2026-09-15",
+ "rows": [
+  {
+   "host": "www.familysearch.org",
+   "cited": 14548,
+   "state": "down",
+   "why": "no response"
+  },
+  {
+   "host": "fonts.googleapis.com",
+   "cited": 1494,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "fonts.gstatic.com",
+   "cited": 747,
+   "state": "down",
+   "why": "no response"
+  },
+  {
+   "host": "www.goatcounter.com",
+   "cited": 747,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "dsac.gov.za",
+   "cited": 25,
+   "state": "mail only",
+   "why": "no website, but takes mail"
+  },
+  {
+   "host": "dod.mil.za",
+   "cited": 11,
+   "state": "down",
+   "why": "URLError"
+  },
+  {
+   "host": "gendatabase.com",
+   "cited": 10,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "newspapers.eggsa.org",
+   "cited": 9,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "archive.org",
+   "cited": 8,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "mweb.co.za",
+   "cited": 7,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "angloboerwar.com",
+   "cited": 5,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "dact.kzntl.gov.za",
+   "cited": 4,
+   "state": "mail only",
+   "why": "no website, but takes mail"
+  },
+  {
+   "host": "kzntl.gov.za",
+   "cited": 4,
+   "state": "dark",
+   "why": "does not resolve"
+  },
+  {
+   "host": "kzndac.gov.za",
+   "cited": 4,
+   "state": "mail only",
+   "why": "no website, but takes mail"
+  },
+  {
+   "host": "databases.tanap.net",
+   "cited": 3,
+   "state": "dark",
+   "why": "does not resolve"
+  },
+  {
+   "host": "national.archsrch.gov.za",
+   "cited": 3,
+   "state": "dark",
+   "why": "does not resolve"
+  },
+  {
+   "host": "www.national.archsrch.gov.za",
+   "cited": 3,
+   "state": "down",
+   "why": "URLError"
+  },
+  {
+   "host": "1820settlers.com",
+   "cited": 3,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "graves.eggsa.org",
+   "cited": 2,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "thegazette.co.uk",
+   "cited": 2,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "westerncape.gov.za",
+   "cited": 2,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "cdnjs.cloudflare.com",
+   "cited": 1,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "londonancestor.com",
+   "cited": 1,
+   "state": "down",
+   "why": "URLError"
+  },
+  {
+   "host": "books.googleapis.com",
+   "cited": 1,
+   "state": "down",
+   "why": "no response"
+  },
+  {
+   "host": "purl.stanford.edu",
+   "cited": 1,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "gravesgauteng.eggsa.org",
+   "cited": 1,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "graveseastcape.eggsa.org",
+   "cited": 1,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "eggsa.org",
+   "cited": 1,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "national.archives.gov.za",
+   "cited": 1,
+   "state": "dark",
+   "why": "does not resolve"
+  },
+  {
+   "host": "familyhistory.bdm.qld.gov.au",
+   "cited": 1,
+   "state": "down",
+   "why": "no response"
+  },
+  {
+   "host": "wikitree.com",
+   "cited": 1,
+   "state": "up",
+   "why": "202"
+  },
+  {
+   "host": "nationalarchives.gov.uk",
+   "cited": 1,
+   "state": "down",
+   "why": "URLError"
+  },
+  {
+   "host": "familysearch.org",
+   "cited": 1,
+   "state": "up",
+   "why": "200"
+  },
+  {
+   "host": "wmbr.org.za",
+   "cited": 1,
+   "state": "up",
+   "why": "200"
+  }
+ ]
+}

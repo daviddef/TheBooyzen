@@ -19,6 +19,15 @@ domain. Other current listings give **`pmbarchives@kzndac.gov.za`**, which match
 department's live domain. **Two addresses, one of them almost certainly dead.**
 
 The postal address and the telephone agree across every source and are safe.
+
+**15 SEPTEMBER 2026 — BOTH DOMAINS TAKE MAIL.** Checked directly: `kzndac.gov.za`
+and `dact.kzntl.gov.za` each have MX records and no website, which is an ordinary
+shape for a South African government department rather than a sign of a dead domain.
+So "almost certainly dead" above was more than the evidence supported, and it is
+left standing with this note under it rather than quietly edited. A domain that
+accepts mail and a mailbox somebody reads are still two different facts, so
+telephoning 033 342 4712 first remains the better plan — it is no longer the only
+defensible one.
 **Recommendation: post it, or telephone 033 342 4712 first and ask for the current
 email.** This archive has already sent one enquiry into a mailbox it could not confirm —
 the Pretoria letter of 13 September — and has no answer from it yet.

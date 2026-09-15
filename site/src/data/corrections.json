@@ -11,6 +11,13 @@
  "rows": [
   [
    "15 Sep 2026",
+   "The National Archives' catalogue given as “national.archives.gov.za/naairs.htm”",
+   "THE LIVE DOMAIN HAS NO DOT IN IT — nationalarchives.gov.za. The host as published has no address record and no mail record at all. It appeared in the note of 13 September that ends “written down because the wrong address cost this archive a day”, which is the row that exists to stop exactly this. Found by a tool written to check whether the sources this site cites are still there; it looks for hosts named in PROSE as well as in links, because this archive writes its sources in sentences.",
+   "process",
+   "/sources/#state"
+  ],
+  [
+   "15 Sep 2026",
    "“WILLEM HERMANUS PIETERZEN — Anna Catharina Slier's FIRST husband”",
    "HE IS THE SON. De Villiers's volume 3 gives “HERMANUS PIETERSEN, namen van ouders onbekend, gehuwd 5 April 1807 met ANNA CATHARINA SLIER”, and their children as “1 Willem Hermanus, gedoopt 12 Maart 1809; 2 Johan Christiaan, gedoopt 28 April 1810”. THIS ARCHIVE BUILT ONE MAN OUT OF TWO DOCUMENTS THAT SPELL HIM DIFFERENTLY — the 1817 marriage register's HARMANUS PIETERZE and the 1840 death notice's WILLIAM PIETERSEN — and a long name looked like a way to reconcile them. The husband is Hermanus; Willem Hermanus is the boy baptised in 1809. This archive half knew, because its own note already called the 1851 godfather “his son”. THE NAMING CLAIM SURVIVES AND IMPROVES: Willem Hermanus is Willem for his mother's father, Willem Slier of Hamburg, and Hermanus for his own father. A SECOND HALF-BROTHER, JOHAN CHRISTIAAN, WAS INVISIBLE FOR AS LONG AS THE TWO MEN WERE ONE.",
    "reading",
