@@ -527,34 +527,34 @@
   {
    "n": 66,
    "what": "Rewrite /kolbe/ — the Settler was a missionary and his son ran a province",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "That page has him as an 1820 Settler with a medical practice who died at Colesberg. It does not know he was an **LMS missionary**, that his father **wrote to him from London in 1830**, or that his eldest son was **Commandant of the Bloemfontein district, a Justice of the Peace, a bank director, a jury foreman and a member of the Volksraad** who died saying the State had taken too much land from the Basutos."
+   "note": "That page has him as an 1820 Settler with a medical practice who died at Colesberg. It does not know he was an **LMS missionary**, that his father **wrote to him from London in 1830**, or that his eldest son was **Commandant of the Bloemfontein district, a Justice of the Peace, a bank director, a jury foreman and a member of the Volksraad** who died saying the State had taken too much land from the Basutos. **Done, 15 September.** A new section on [/kolbe/](/kolbe/#lms). The page had already *deduced* the missionary circuit from where the children were born; MSB751 says it in four words, and Montgomery's memoir says it from a third direction. **Three things line up and none of them knew about the others.** It also reconciles the occupations — chemist, pharmacist, medical practice — and adds that he was **ordained** in or about August 1830, which nothing here had said."
   },
   {
    "n": 67,
    "what": "Put today's two conflicts on /disputed/",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "**Anna Maria van der Merwe's parents** — the tree says David Schalk van der Merwe and Anna Elizabeth Louw, the printed genealogy says Willem van der Merwe and Hester Maria van der Merwe, and both cannot be right. And **the Pietersen split**, where this archive's own reading is the thing that was withdrawn. Neither is on the page for things this archive cannot settle."
+   "note": "**Anna Maria van der Merwe's parents** — the tree says David Schalk van der Merwe and Anna Elizabeth Louw, the printed genealogy says Willem van der Merwe and Hester Maria van der Merwe, and both cannot be right. And **the Pietersen split**, where this archive's own reading is the thing that was withdrawn. Neither is on the page for things this archive cannot settle. **Done, 15 September.** Two rows on [/disputed/](/disputed/): **Anna Maria van der Merwe's parents**, where the tree and the printed genealogy disagree and the conclusion survives either reading, and **«did Gerthardus Lodewikus exist?»**, which is the oldest question on the site and now has four things pointing one way and a chart that has deliberately not moved."
   },
   {
    "n": 68,
    "what": "Write «the controlled negative» into /method/",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "It has become the thing this archive actually does, and it is not stated anywhere as a method. **A nil return is worthless until you show the search works** — 95 WO 97 records for «21st Dragoons (Light)» before reporting that the man is not in it; the row filter that dropped thirty-six documents; the blank Name column; NAAIRS defaulting to OR; MOOC8 stopping before the Kolbes arrived; the church films beginning in 1843. Six instances in a week, one method, unwritten."
+   "note": "It has become the thing this archive actually does, and it is not stated anywhere as a method. **A nil return is worthless until you show the search works** — 95 WO 97 records for «21st Dragoons (Light)» before reporting that the man is not in it; the row filter that dropped thirty-six documents; the blank Name column; NAAIRS defaulting to OR; MOOC8 stopping before the Kolbes arrived; the church films beginning in 1843. Six instances in a week, one method, unwritten. **Done, 15 September**, at [/method/#controlled-negative](/method/#controlled-negative). Six nil returns from one week, each with what it actually meant, and the rule they produced: **run a control and publish it beside the negative**. When this archive reported that James Mountjoy is not in the discharge papers at Kew, it published ninety-five records for his regiment in the same series — because the number that makes an absence meaningful is not his, it is theirs."
   },
   {
    "n": 69,
    "what": "Put the Free State on the timeline",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "Ninety timeline events and the whole Bloemfontein decade is missing: a marriage of 1843, a lost promissory note on the Market Square in 1864, a jury verdict in 1866, a death on a wedding anniversary in 1868, a horse theft at Springfield, a farm advertised in 1870, a Landdrost dead on the Modder River road in 1872, a widow dying under his name in 1896."
+   "note": "Ninety timeline events and the whole Bloemfontein decade is missing: a marriage of 1843, a lost promissory note on the Market Square in 1864, a jury verdict in 1866, a death on a wedding anniversary in 1868, a horse theft at Springfield, a farm advertised in 1870, a Landdrost dead on the Modder River road in 1872, a widow dying under his name in 1896. **Done, 15 September.** Twelve events, ninety to a hundred and two. The Bloemfontein decade entire — a marriage in 1843, a lost promissory note on the Market Square, a jury in 1866, a death on a wedding anniversary, a horse theft at Springfield, a farm advertised in 1870, a Landdrost dead on the Modder River road, a widow dying in 1896 under his name. **And the build caught one of them**: a place called «London» that this archive does not hold under that name."
   },
   {
    "n": 70,
@@ -567,10 +567,10 @@
   {
    "n": 71,
    "what": "Add MSB751 to /sources/, and the distinction it exposes",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-15",
-   "note": "The Kolbe collection is in a **library**, not an archive — 5 Queen Victoria Street, not 72 Roeland Street, separate ticket, separate request. This archive has spent weeks treating «the Cape Town holdings» as one place. **A manuscript in a library is invisible to every index it has been using**, and it found this one by accident while searching for something else."
+   "note": "The Kolbe collection is in a **library**, not an archive — 5 Queen Victoria Street, not 72 Roeland Street, separate ticket, separate request. This archive has spent weeks treating «the Cape Town holdings» as one place. **A manuscript in a library is invisible to every index it has been using**, and it found this one by accident while searching for something else. **Done, 15 September**, at [/sources/#library](/sources/#library) — and it turned out to be a bigger point than the item said. **A library is not an archive**, and for three weeks this project treated «the Cape Town holdings» as one place. The records are where the state kept them; the papers are wherever a descendant happened to give them. MSB751 was found **by accident**, and the section ends on the question that follows: how many other manuscript collections mention these families in libraries nobody here has thought to search."
   },
   {
    "n": 72,

@@ -95,6 +95,56 @@ import { u } from "../lib/url.js";
 </section>
 
 <section class="blk">
+  <h2 id="controlled-negative">A nil return is worth nothing until you show the search works</h2>
+  <div class="prose">
+    <p>This is the thing this archive actually does, and until today it was not written down anywhere.
+      It arrived by being wrong six times in a week.</p>
+    <p><b>An index that returns nothing is making one of two statements and it does not tell you which.</b>
+      Either the record does not exist, or your search could not have found it. Those are opposite
+      conclusions and they look identical on the screen. So a negative is not publishable until something
+      has been run through the same search that is <em>known to be there</em> &mdash; a control &mdash;
+      and come back.</p>
+  </div>
+
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:17rem">The nil return</th><th>What it actually meant</th></tr></thead>
+      <tbody>
+        <tr><td><b>&ldquo;148 of 184 &mdash; thirty-six not reached&rdquo;</b></td>
+            <td class="cap">All ten pages <em>had</em> been walked. <b>This archive's own harvesting code</b> required a description longer than three characters and silently dropped every row the index leaves short. A caveat that blamed the source for a hole this archive dug.</td></tr>
+        <tr><td><b>A register with no Barrys in it</b></td>
+            <td class="cap">The <b>Name column was blank</b> for a whole class of entry. A filter that drops what it cannot see is indistinguishable from an archive that holds nothing.</td></tr>
+        <tr><td><b>BARRY and BURGERSDORP: 6,245 documents</b></td>
+            <td class="cap">More than BARRY alone. <b>NAAIRS treats two keywords as OR</b> unless the operator is sent. A search that returns more than its own first term is not a search.</td></tr>
+        <tr><td><b>&ldquo;LUUS with BOOYZEN returns nothing&rdquo;</b></td>
+            <td class="cap">It returns nothing <b>from the estate index</b>, which was the only index asked. A marriage transcription holds the marriage. The sentence did not say what had been asked.</td></tr>
+        <tr><td><b>No Kolbes, Mountjoys or Sliers in the Cape inventories</b></td>
+            <td class="cap">That index <b>runs from the 1780s to the 1830s</b> and all three families reached the Cape in the nineteenth century. A zero from an index that ends before your people arrive is not a finding.</td></tr>
+        <tr><td><b>Nothing older than the 1840s, for weeks</b></td>
+            <td class="cap">Every register in the filmed church collection <b>begins in 1843</b>. The registers themselves go back two centuries. It was the edge of a filming project, and it announced itself nowhere.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose" style="margin-top:20px">
+    <p><b>So the rule is: run a control, and publish it with the negative.</b> When this archive reported
+      that James Mountjoy is not among the discharge papers at Kew, it published alongside that
+      <b>ninety-five records for his regiment in the same series in a single page of results</b> &mdash;
+      because the number that makes the absence meaningful is not his, it is theirs.</p>
+    <p>The same search also turned up the reason the control mattered. The catalogue indexes the regiment
+      as <b>&ldquo;21st Dragoons (Light)&rdquo;</b>, not as the newspaper wrote it and not as this archive
+      had been writing it. <b>One word order between a real record and a nil return.</b></p>
+    <blockquote>A search that has not been controlled has not been done. It has only been attempted, and
+      the difference between <b>&ldquo;searched and not found&rdquo;</b> and <b>&ldquo;could not
+      search&rdquo;</b> is the most important distinction on this site.</blockquote>
+    <p class="cap">Which is why <a href={u("/searched/")}>What has been read</a> marks a row
+      <b>void</b> when the search itself was faulty, and <b>blocked</b> when it could not run &mdash; and
+      why a build here now refuses if a blocked row does not say what would unblock it. A negative with no
+      control behind it is an opinion with a citation.</p>
+  </div>
+</section>
+
+<section class="blk">
   <h2 id="relationship-not-person">Ask the index for a relationship, not for a person</h2>
   <div class="prose">
     <p>Nearly every genealogical search is a search for somebody you can already name. You type
