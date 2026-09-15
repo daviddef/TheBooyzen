@@ -2,7 +2,7 @@
  "title": "The work list",
  "dek": "What is being done here, as opposed to what is known.",
  "lead": "Every other register on this site answers what this archive knows. /searched/ holds every query ever run, /open-questions/ holds what is not known, /errands/ holds what can only be got through a door, and /corrections/ holds what was got wrong. None of them answers what is being DONE — and so for weeks that lived in a chat window, which is the one place that does not survive the session. This page is that list. It is deliberately not a list of findings. It is who is doing what, who is waiting on whom, and what was decided against and why.",
- "close": "An item here with no owner would be wallpaper, so the build refuses one. An item that has been open for six weeks is marked as such rather than left to look like something raised this morning.",
+ "close": "An item here with no owner would be wallpaper, so the build refuses one, and an item open for six weeks is marked as such rather than left to look like something raised this morning. FROM ITEM 24 THIS BECOMES A ROADMAP RATHER THAN A DIARY. Those items were not raised by anything going wrong; they are the work this archive can see from where it now stands, in four groups and in the order it intends to take them. TEN DEPOT CAMPAIGNS THAT HAVE NEVER BEEN RUN — whole indexes this archive has taken single files out of without ever sweeping. SEVEN CHECKS, all of them owned by a machine, because every convention that has held here held when a build refused and every one that drifted was written down and watched by nobody. SIX PIECES OF PUBLISHING DEBT, which is what it is called when a page argues something the evidence has since outgrown. AND THREE THAT LEAVE THE BUILDING. A list this long is a risk in itself: the failure mode is not forgetting an item but stopping reading at item 12. Anything here that is still untouched in six weeks should be struck rather than carried.",
  "rows": [
   {
    "n": 1,
@@ -187,6 +187,214 @@
    "owner": "this archive",
    "since": "2026-09-15",
    "note": "This list is for what is being **done** and it is already carrying things that are really research leads — which is how it would turn into a second, worse copy of the registers it sits beside. Nine of them came out of today and have no home yet: the Volksraad of May 1867; the twelve remaining Booijsen inventories at MOOC8; the eight Kolbe sons through the National Archives Discovery catalogue and the German Savoy RG4 registers; the Kolbe-Booysen household at Port Elizabeth; «little Jannie» of 1884, whom two papers give two fathers; **Jephts of Leeuwberg**, the man of colour the 1869 court named with property of his own; and the Settler's Bushman mission school at Koolskop. **Each belongs in a register that already exists.** Moving them is the work; keeping them here is the drift. **Done, 15 September, and here is where each went.** §15 of [open questions](/open-questions/) is new and holds **the Commandant's twelve children**, with John Kolbe junior as the one document has reached and the thirty-one tree names explicitly refused. [Errands](/errands/) gains the **Volksraad minutes for May 1867** and **Francis McCabe's own estate** under the Free State depot, and the **twelve remaining Booijsen inventories** under Cape Town. **Kew is a new depot** on the same page. The Kolbe-Booysen household, «little Jannie» of 1884 and Jephts of Leeuwberg are written up in the documents and carried in [what has been read](/searched/), which is the register for a lead nobody is working yet."
+  },
+  {
+   "n": 24,
+   "what": "Sweep the Cape estate index (KAB MOOC 6/9) for all five surnames, not just the files already known",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "This archive has **read** individual MOOC files — Kolbe 1845, Montjoy 1840, Downing 1854 — by interpolating reference numbers across film. It has never **swept the series**. A death-notice index is the single richest thing at the Cape for this family's nineteenth century, and BARRY, MOUNTJOY, DASCHNER and SLIER have never been put to it at all. [Errands](/errands/)"
+  },
+  {
+   "n": 25,
+   "what": "Sweep the Transvaal estate index (TAB MHG) for BARRY, MOUNTJOY and DASCHNER",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Done thoroughly for **Booyzen** — 184 documents, enumerated properly after a filter bug — and for **Kolbe**. The other three surnames have had only the targeted lookups that produced the six files now with a researcher. Depends on NAAIRS answering."
+  },
+  {
+   "n": 26,
+   "what": "Open the Free State depot (VAB) properly — all five surnames",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "VAB was opened for the first time on 15 September and only for **two references**, K71 and M777. The Commandant's whole public life was in that province: bank director, Justice of the Peace, jury foreman, Commandant of the district. His widow died there in 1896 and her second husband was the town's Landdrost. **A depot touched twice is not a depot searched.**"
+  },
+  {
+   "n": 27,
+   "what": "Open the Natal depot (NAB) beyond the six MSCE references",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "The six Natal files in the unsent Pietermaritzburg letter were found by targeted lookup. The depot itself has never been swept, and two of this archive's Kolbes were born in the Transvaal and died in Natal — which is a migration pattern, not a coincidence, and it will have left more than six files."
+  },
+  {
+   "n": 28,
+   "what": "Sweep the eGGSA gravestone library province by province for all five surnames",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Four provinces have produced stones — Middelburg, Wakkerstroom, Silverton, Piet Retief — and each was reached by following a single lead rather than by sweeping. The provincial subdomains each carry their own two-letter CGI, which this archive learned the hard way after publishing four false negatives from guessed script names. **The technique is known now and the sweep has still not been run.**"
+  },
+  {
+   "n": 29,
+   "what": "Read the Indwe and Barkly East church registers forward past 1910",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "The archive stops where its leads stopped. Willem Hermanus Booijzen was confirmed at Indwe in 1907, married there in 1908 as a MIJNWERKER at Dugmore Mijn, and a Mountjoy died in the same congregation in 1911. **Nobody has read what the register says after that**, and it is the one place a colliery family's whole decade is written down in order."
+  },
+  {
+   "n": 30,
+   "what": "Johannesburg street directories, 1905–1935",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Named in open question 10 as the private-record route and never followed. Forest Hill, Mayfair, Turffontein and Booysens are all addresses this archive holds without house numbers, and a directory gives occupation and street together — which is how to test the testimony that the boys went to the mines."
+  },
+  {
+   "n": 31,
+   "what": "The Cape Rebel trial files for Barkly East and Wodehouse, June 1901",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Open questions 1 and 2 both end here. The register gives **R.P. Barry of Jerpoint**, **Fred J. Barry of Ivanhoe** and **D.W. Schoeman of Caerlaverock** tried in one month in one division, with no birth dates and no parents — so identity is unproven and stays unproven until the files are read. They are at Cape Town."
+  },
+  {
+   "n": 32,
+   "what": "The 1820 Settler papers themselves, CO 48, rather than a compiled transcript",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Open question 9 names this and calls it Low priority, which was right when the only gain was a cross-check. It is worth more now: the settler roll entered George Augustus Kolbe as a **CHEMIST** aged 20 when he was sixteen, and this archive cannot tell from a transcript whether that age was **sworn or simply written down** — and a second age overstatement in the same year is either a pattern or a clerk."
+  },
+  {
+   "n": 33,
+   "what": "The Discovery catalogue at Kew for all five surnames, now that one errand is already there",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "WO 97 for the 21st Light Dragoons is going there anyway. The same catalogue covers Colonial Office correspondence, Admiralty, and the 1820 settler papers, and **this archive has never searched a British catalogue for any of its people** — it has only ever searched South African ones and then wondered why the English end was blank."
+  },
+  {
+   "n": 34,
+   "what": "A check that every person marked `doc` carries at least one link to where the document is discussed",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "The atlas check found eighteen pins with no stated basis on its first run. **The people file has never been checked the same way.** A person marked *documented* whose record links nowhere is a claim with no visible evidence — the same failure as the Marico atlas line, in the register this site is mostly made of."
+  },
+  {
+   "n": 35,
+   "what": "A check that every corrections row's link resolves to a real anchor",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "Fifty-three corrections, each pointing at the page that explains it. **Nothing verifies those anchors.** A correction whose link has rotted is a withdrawal nobody can read, which is worse than not having published the correction at all."
+  },
+  {
+   "n": 36,
+   "what": "A check that every `blocked` row in what-has-been-read says what would unblock it",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "Eleven rows are marked blocked. A block with no named remedy is indistinguishable from an excuse, and this archive has spent the whole week learning that the difference between *searched* and *could not search* is the most important distinction it keeps."
+  },
+  {
+   "n": 37,
+   "what": "A check that kin.js and people.js agree on who exists",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "On 15 September **kin.js was right and people.js was wrong** — kin had Hermanus Pietersen and his son as two households while people had them merged into one man with a long name. Nothing compared them. A check that every name in kin resolves in people, and flags a person in kin whose household implies a different shape, would have caught it the day it was written."
+  },
+  {
+   "n": 38,
+   "what": "An external-link check, because one source went off the air mid-session",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "`databases.tanap.net` stopped resolving between one search and the next, and it holds the full transcriptions of the inventory that names eleven enslaved people. **This site cites external sources it does not monitor.** links.py checks internal links only. A source that has gone dark should say so on the page that depends on it, rather than looking live."
+  },
+  {
+   "n": 39,
+   "what": "A report of anything open for more than thirty days",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "The work list component already marks a stale row in the page. Nothing **reports** it — so a thing blocked in October will still be sitting there in December looking like a thing raised this morning, which is exactly the failure this list was built to prevent one layer up."
+  },
+  {
+   "n": 40,
+   "what": "A check that the archive-kit pin is not behind the kit's own head",
+   "state": "next",
+   "owner": "a machine",
+   "since": "2026-09-15",
+   "note": "This archive sat four commits behind and only noticed because a component it needed was missing. **An archive silently behind on the shared kit is a convention drifting without anybody seeing it.** A warning at build time costs nothing."
+  },
+  {
+   "n": 41,
+   "what": "Give the people named in the 1781 inventory a page of their own",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Silvia, Lena, Sara, Janna, Dorinda, Fortuijn, Meij and Februarij van de Caab; Dijk and Farla van Madagascar; Achilles van Mallabaar — and ten more in the 1831 inventory at Onder Roggeveld. **They are currently a table inside a section about a search engine**, which is the wrong frame and the wrong weight. Eleven names is the whole surviving record of eleven people, and this site gives a page to far less. Wait for [MOOC 8/18.11 entire](/errands/) first, so the page is built on the document and not on a catalogue line."
+  },
+  {
+   "n": 42,
+   "what": "Rewrite /namesakes/ — three name-derivations are now documented and the page predates all of them",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "**David Schalk** comes in with Anna Maria van der Merwe: once in the whole first volume of the Cape genealogies, thirteen times in the van der Merwe section of the second. **Willem Hermanus** is Willem Slier of Hamburg plus Hermanus Pietersen, neither of them Booyzen blood. **Judith Cornelia Theresia** comes in from the Viljoens and is handed straight down. The page argues that names descend; it can now show three of them arriving."
+  },
+  {
+   "n": 43,
+   "what": "Rewrite the Slier paragraphs on /name/",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "That page argues that a spelling is whatever the clerk had. **Slier, Schleher, Sher and Hier — five renderings of one woman across five sources — is the cleanest example on the site**, and it only became explicable when the book gave her father as *van Hamburg*. The page does not know that yet."
+  },
+  {
+   "n": 44,
+   "what": "Rework /women/ around what the week actually produced",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "**Anna Catharina Slier** married at nineteen, was widowed twice, and lived fifty-eight years a widow to ninety-eight. **Anna Jacoba van der Merwe** was widowed on her wedding anniversary with twelve children, remarried the town's Landdrost, and was widowed again fifteen months later. Both were bare names a week ago. The page was written when they were."
+  },
+  {
+   "n": 45,
+   "what": "Put the Free State on the front page",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "The index still reads as a Cape and Transvaal archive. Since 13 September this family has acquired a Commandant, a farm two hours from Bloemfontein, a Landdrost, a jury, a bank directorship and a deathbed opinion about the Basotho boundary. **The front page is the one register that has not moved.**"
+  },
+  {
+   "n": 46,
+   "what": "A page for the sources that cannot be reached, and why",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Scattered across the registers there are now half a dozen routes that are shut for **different reasons**, and the reasons matter more than the shutness: TANAP off the air, HathiTrust behind a bot check this archive will not go around, Google Books at quota zero, the FamilySearch church films beginning in 1843, MHG files bound and unscannable, NAAIRS intermittently down. **Together they are an argument about what a distant researcher can and cannot do**, and at the moment that argument is only visible to somebody who reads every page."
+  },
+  {
+   "n": 47,
+   "what": "Write the Kew letter",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "The errand is specified — WO 97 and WO 12 for the 21st Light Dragoons — and nothing has been drafted. Kew has a copying service and a list of independent researchers, and the question it would answer has been marked **Blocking** on this site since it was written. [The errand](/errands/)"
+  },
+  {
+   "n": 48,
+   "what": "Chase the Western Cape Archives if nothing has come by the end of September",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-15",
+   "note": "Two letters went on 9 September. A fortnight is the point at which a polite second note stops being impatient, and this archive should send one rather than let the enquiry quietly lapse. [The letters](/letters/)"
+  },
+  {
+   "n": 49,
+   "what": "Offer the estate a shared record of what is shut and why",
+   "state": "next",
+   "owner": "the kit and estate",
+   "since": "2026-09-15",
+   "note": "Item 46 is this archive's own version. **The estate needs one list, not eight** — every archive here is hitting the same closed doors, and each is discovering them separately and at the same cost. The 1843 ceiling on the church films alone will have wasted weeks somewhere else."
   }
  ]
 }
