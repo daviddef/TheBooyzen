@@ -2,6 +2,56 @@
  "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
  "sets": [
   {
+   "g": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "n": "Not to a name search, which was correctly closed, but to the relationship search",
+   "d": "16 Sep 2026",
+   "h": "/documents/#barry-eleven",
+   "rows": [
+    [
+     "Father John Barry, mother a Kolbe, child's own name left blank",
+     "NINE BAPTISMS, AND TWO OF THEM WERE NOT IN THIS ARCHIVE",
+     "1847 John August · 1848 Henry Jaonas/Hennery James · 1850 George Augustus · 1852 MARGRITH LOUISA MARIA · 1853 William Fredrik · 1855 Catherine Mary Sophia · 1859 Catharina Mary Sophia · 1861 WILLIAM FREDERICK THOMAS · 1863 Frederik Fortunatus. OPEN QUESTION 13 HAS BEEN ASKING WHICH TWO SINCE THIS SITE WAS WRITTEN, and its own note said the index route was closed. IT WAS CLOSED TO A NAME SEARCH AND WAS NEVER CLOSED TO A RELATIONSHIP SEARCH.",
+     "yes"
+    ],
+    [
+     "MARGRITH LOUISA MARIA, baptised Burgersdorp 5 April 1852",
+     "THE INDEX GIVES HER NO SURNAME — EITHER TIME",
+     "Two separate index passes of the same page read “Margrith Louisa Maria” and “Margreth Louisa Mary”, and the Name column stops there. IT IS THE BLANK NAME COLUMN AGAIN, the failure that hid her sister Catherine Mary Sophia of 1855 for weeks. Parents entered as “Margrith Willemina Kolbe + John Barry”. ark:/61903/1:1:6VYG-SS94 and 1:1:6F4L-76PK; the image 3:1:3Q9M-CSFQ-QLQN is ON FILM 008039088, the register this archive has been sweeping by hand.",
+     "yes"
+    ],
+    [
+     "WILLIAM FREDERICK THOMAS BARRY, born 29 September 1861, baptised Graaff-Reinet",
+     "INVISIBLE FOR THE OPPOSITE REASON — HE HAS HIS BROTHER'S NAME",
+     "William Fredrik Barry was born 23 August 1853 and baptised at Burgersdorp. THIS IS A SECOND WILLIAM FREDERICK, EIGHT YEARS LATER, TO THE SAME PARENTS. A search for William Barry returns the 1853 child and stops, and nothing in the result says there is another. BY THIS FAMILY'S OWN PRACTICE THE FIRST MUST HAVE DIED — a baptism is not done twice, which is what this archive concluded about the two Catherine Mary Sophias.",
+     "yes"
+    ],
+    [
+     "Does the count come right",
+     "ELEVEN, WHICH IS WHAT THE 1903 REGISTRATION SAYS",
+     "Nine baptisms plus HENDRIK NICHOLAAS and RICHARD PETER — both named on their parents' death notices and in no register this archive can find — makes eleven. MARGARET MARY of the death notices is almost certainly MARGRITH LOUISA MARIA: it is her mother's name and there is no other candidate in the sibling group. Inferred from the count and the name, and marked as inferred.",
+     "part"
+    ],
+    [
+     "q.filmNumber on the search API",
+     "22,059 RECORDS FOR FILM 008039088 — THE WHOLE INDEXED FILM",
+     "Which would have made weeks of hand-sweeping unnecessary, if it could be paged. IT CANNOT.",
+     "part"
+    ],
+    [
+     "Can the film be paged out",
+     "NO — IT PAGES TO OFFSET 1000 AND THEN SILENTLY RETURNS PAGE ONE",
+     "At offset 1001 the API gives back the first page again. NO ERROR, NO WARNING, NO CHANGE IN THE REPORTED TOTAL: the response still says “results: 22059” and still says “index: 0”. AN UNCHECKED SWEEP WOULD HAVE RE-READ THE FIRST THOUSAND RECORDS TWENTY-TWO TIMES AND REPORTED THE FILM AS HOLDING 1,400 ENTRIES. Caught by comparing the first name at offset 0 against offset 1400 — identical — and bisecting to the edge. THE FOURTH UNDOCUMENTED BOUNDARY IN A WEEK, and the first that answers WRONGLY rather than emptily.",
+     "yes"
+    ],
+    [
+     "So is the hand sweep abandoned",
+     "NO. 214 IMAGES STILL HAVE TO BE STEPPED.",
+     "The API will show 1,001 of 22,059 records and no more. What it is good for is exactly what it did here: A TARGETED RELATIONSHIP QUERY, WHERE THE ANSWER IS SMALL ENOUGH TO FIT INSIDE THE FIRST THOUSAND. The film sweep resumes at image 605 of 818.",
+     "part"
+    ]
+   ]
+  },
+  {
    "g": "The Vaalbank school file finished, and the Johannesburg directories priced out",
    "n": "Closing the last two items that could be worked from here",
    "d": "15 Sep 2026",
