@@ -1,0 +1,24 @@
+---
+/* Counted from this archive's own data at build time. Nothing on this page is
+   typed in except the archive's own opening, which is not written yet and has
+   deliberately not been invented. */
+import Base from "../layouts/Base.astro";
+import About from "@daviddef/archive-kit/components/About.astro";
+import { u } from "../lib/url.js";
+import people from "../data/people.json";
+import places from "../data/places.json";
+import register from "../data/register.json";
+import corrections from "../data/corrections.json";
+
+const holds = [
+  { n: people.people.length, what: "people named", href: "/people/" },
+  { n: register.rows.length, what: "records in the register", href: "/register/" },
+  { n: places.places.length, what: "places", href: "/places/" },
+  { n: corrections.rows.length, what: "corrections it has made to itself", href: "/corrections/" },
+];
+---
+<Base title="About"
+      eyebrow="What this archive is, and what it will not say"
+      dek="Every claim here carries one of five words, every correction it has had to make is published, and living people are named and nothing more. What it holds is counted from its own data, not asserted.">
+  <About holds={holds} u={u} name="The Booyzen Archive" />
+</Base>
