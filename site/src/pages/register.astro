@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import Register from "@daviddef/archive-kit/components/Register.astro";
 import reg from "../data/register.json";
 const rows = reg.rows;
 const linked = rows.filter(r => r.u).length;
@@ -9,6 +10,23 @@ const kindLabel = { index: "surname index", read: "reconstructed", tree: "family
 const byGroup = {};
 for (const r of rows) (byGroup[r.g] ||= []).push(r);
 const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total);
+
+/* The content-visibility this page put on its fourteen sections, and the
+   debounce on its search, are in the shared table now - per block of 200 rows
+   rather than per surname, so they survive the sections becoming a facet. What
+   this archive knew and the others did not is that k is worth filtering on: a
+   surname index pulled whole is not a household somebody reconstructed, and
+   most of this page is not this family. */
+const regRows = rows.map((r) => ({
+  name: r.n, surname: r.g,
+  href: r.p ? "/who/" + r.p + "/" : "",
+  kind: kindLabel[r.k] || r.k,
+  chip: r.k === "read" ? "reconstructed" : "",
+  detail: r.w,
+  source: r.s,
+  sourceHref: r.u || "",
+  sourceLabel: r.u ? "record" : "no public link",
+}));
 ---
 <Base title="The Register"
       eyebrow="Every named individual this archive has found"
@@ -74,99 +92,12 @@ const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total)
 
 <section class="blk">
   <h2>Filter</h2>
-  <div class="panel" style="margin-top:16px">
-    <label for="q" style="display:block;font-size:14px;margin-bottom:8px">
-      <strong>Filter by name, place, year or source</strong>
-    </label>
-    <input id="q" type="search" autocomplete="off" placeholder="Start typing…"
-           style="width:100%;padding:11px 13px;font-size:16px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
-    <p id="count" class="cap" style="margin:12px 0 0" aria-live="polite">{rows.length.toLocaleString()} entries shown</p>
-  </div>
 </section>
 
-{groups.map(([g, n]) => (
-  <section class="blk" data-grp={g}>
-    <h2>{g} <span class="m" style="font-weight:400">{n.toLocaleString()}</span></h2>
-    <div class="scroll">
-      <table>
-        <thead><tr><th style="width:20rem">Name</th><th>What the source says</th><th style="width:16rem">Source</th></tr></thead>
-        <tbody>
-          {byGroup[g].map(r => (
-            <tr data-hay={[r.n, r.w, r.s].join(" ").toLowerCase()}>
-              <td>{r.p
-                    ? <a href={u("/who/" + r.p + "/")}><strong>{r.n}</strong></a>
-                    : <strong>{r.n}</strong>}
-                {r.k === "read" && <div style="margin-top:5px"><span class="chip doc">reconstructed</span></div>}
-              </td>
-              <td>{r.w}</td>
-              <td class="cap">
-                {r.u ? <a href={r.u} rel="noopener">record &#8599;</a> : <span class="m">no public link</span>}
-                <div style="margin-top:3px">{r.s}</div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  </section>
-))}
+<section class="blk">
+  <Register rows={regRows} u={u} unit="entries" />
+</section>
 
-<script is:inline>
-(function () {
-  var q = document.getElementById("q"), out = document.getElementById("count");
-  if (!q) return;
-  var rows = Array.prototype.slice.call(document.querySelectorAll("tr[data-hay]"));
-  var secs = Array.prototype.slice.call(document.querySelectorAll("section[data-grp]"));
-  // 7,596 rows under 14 groups. Read each haystack and resolve each row's
-  // group once, here — not on every keystroke — and count hits per group as
-  // we go. The old loop asked each section for a matching row afterwards,
-  // and that ":not([hidden])" query forced a style recalculation per group
-  // per letter typed.
-  var hay = rows.map(function (r) { return r.getAttribute("data-hay"); });
-  var at = new Map();
-  for (var k = 0; k < secs.length; k++) at.set(secs[k], k);
-  var owner = rows.map(function (r) { return at.get(r.closest("section[data-grp]")); });
-  var t;
-  function run() {
-    var v = q.value.trim().toLowerCase();
-    var n = 0;
-    var live = secs.map(function () { return 0; });
-    for (var i = 0; i < rows.length; i++) {
-      var hit = !v || hay[i].indexOf(v) > -1;
-      rows[i].hidden = !hit;
-      if (hit) { n++; live[owner[i]]++; }
-    }
-    for (var j = 0; j < secs.length; j++) {
-      secs[j].hidden = !live[j];
-    }
-    out.textContent = n.toLocaleString() + (n === 1 ? " entry shown" : " entries shown");
-  }
-  q.addEventListener("input", function () { clearTimeout(t); t = setTimeout(run, 120); });
-  try {
-    var pre = new URLSearchParams(location.search).get("q");
-    if (pre) { q.value = pre; }
-  } catch (e) {}
-  run();
-})();
-</script>
-<style is:global>
-  /* is:global, deliberately. A scoped <style> makes Astro stamp
-     data-astro-cid-… onto every element the page renders, and on a register
-     of 11,765 rows that added 218 bytes a row — 2.5MB onto the very page
-     whose size was the problem. The selector below is specific to this page
-     anyway. */
-  /* Fourteen groups holding 7,596 rows between them. Skipping layout and
-     paint for the groups nobody is scrolled to keeps every row in the HTML —
-     still one document to a search engine, still reachable by find-in-page —
-     while the browser only lays out what is on screen. */
-  section[data-grp] {
-    content-visibility: auto;
-    /* Plain length first: browsers from Chrome 85 to 110 support
-       content-visibility but cannot parse the "auto" keyword here, and
-       without a usable estimate they collapse every off-screen section
-       to nothing and the scrollbar jumps as you scroll. */
-    contain-intrinsic-size: 600px;
-    contain-intrinsic-size: auto 600px;
-  }
-</style>
+
+
 </Base>
