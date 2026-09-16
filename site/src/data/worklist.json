@@ -474,7 +474,7 @@
    "state": "blocked",
    "owner": "The National Archives, Kew",
    "since": "2026-09-15",
-   "note": "The regiment was in the Cape Colony from 1806 and left in 1816. **Men discharged locally and left behind are a cohort**, and they are the men who married into the colony and whose origins nobody recorded — which is precisely the shape of this archive's oldest wall. If a list of them exists, James Mountjoy is on it and so are several other names this archive has met without explanation. **15 September: it is a Kew question and it travels with the Kew letter.** Nothing reachable from here lists the men discharged at the Cape; the musters that would show it, **WO 12/1430**, are not name-indexed and have to be read. Left blocked rather than pretended at."
+   "note": "The regiment was in the Cape Colony from 1806 and left in 1816. **Men discharged locally and left behind are a cohort**, and they are the men who married into the colony and whose origins nobody recorded — which is precisely the shape of this archive's oldest wall. If a list of them exists, James Mountjoy is on it and so are several other names this archive has met without explanation. **15 September: it is a Kew question and it travels with the Kew letter.** Nothing reachable from here lists the men discharged at the Cape; the musters that would show it, **WO 12/1430**, are not name-indexed and have to be read. Left blocked rather than pretended at.  ··· **16 SEPTEMBER — PART OF THIS IS NOW ANSWERABLE AND PART IS NOT.** FindMyPast’s WO 97 index for the regiment gives **birth parish and county for 128 men who attested between 1793 and 1813** — England 95, Ireland 26, Scotland 2, Wales 2, one Swiss, one German. **It does not carry a discharge place**, so it cannot say which of them were discharged at the Cape. That still needs the muster books, **WO 12**, or the discharge documents themselves."
   },
   {
    "n": 60,
@@ -694,11 +694,11 @@
   },
   {
    "n": 87,
-   "what": "FMP · find the last three Kolbe sons — the German Lutheran BAPTISM registers",
-   "state": "next",
+   "what": "The Savoy baptism register — filmed, digitised, and locked to a library terminal",
+   "state": "blocked",
    "owner": "this archive",
    "since": "2026-09-16",
-   "note": "Five of the eight sons are named. **Three are not**, and the gaps in the Westminster run are **1808–1812** and **1814–1818**. The German Lutheran burials are on FindMyPast; the **baptisms, TNA RG 4/4627 and RG 4/4629, are not** — a search for any surname at all with the keyword *German Lutheran* in that dataset returns nothing, so the set is absent rather than the name. Routes left: **Ancestry**, which images RG 4 in full; the **Anglo-German Family History Society** transcripts; or ordering the images from Kew. Also unresolved: the three women of the 1841 Conduit Street household — **Marianne, Charlotte and Amelia A** — whose census ages fall squarely in those same two gaps."
+   "note": "Five of the eight sons are named. **Three are not**, and the gaps in the Westminster run are **1808–1812** and **1814–1818**. The German Lutheran burials are on FindMyPast; the **baptisms, TNA RG 4/4627 and RG 4/4629, are not** — a search for any surname at all with the keyword *German Lutheran* in that dataset returns nothing, so the set is absent rather than the name. Routes left: **Ancestry**, which images RG 4 in full; the **Anglo-German Family History Society** transcripts; or ordering the images from Kew. Also unresolved: the three women of the 1841 Conduit Street household — **Marianne, Charlotte and Amelia A** — whose census ages fall squarely in those same two gaps.  ··· **16 SEPTEMBER — FOUND, AND SHUT.** FamilySearch catalogue **koha:176759**, *Church records of German Lutheran Church, 1694–1840*, filmed from the originals at the Public Record Office. **Film 008004264 — births and baptisms 1694–1840, marriages to 1754, burials to 1771, 537 images, and every volume has its own name index.** **And every one of the 537 images is padlocked**, from image 1, on a signed-in account. Digitised and withheld: viewable only inside a **FamilySearch Center or affiliate library**. **THE FIX IS A BUS FARE RATHER THAN A LETTER** — and the index makes it a half-hour at the machine, not a page-by-page sweep. [What it is](/documents/#savoy-locked)"
   },
   {
    "n": 88,
@@ -727,10 +727,10 @@
   {
    "n": 91,
    "what": "Write the FindMyPast driver into the estate note before the subscription lapses",
-   "state": "next",
+   "state": "done",
    "owner": "the kit and estate",
    "since": "2026-09-16",
-   "note": "The harvest was not done by clicking. FindMyPast’s own GraphQL endpoint is `https://www.findmypast.co.uk/titan/marshal/graphql`, operation **`searchResultsRecordsAndMetadata`**, variables `{filters, order, pageNumber}`, twenty rows a page. Filter fields that work: `LastName` (with `variants`), `FirstName`, `EventYear` (with `offset`), `YearOfBirth`, `YearOfDeath`, `KeywordsPlace`, `Keywords`, `DatasetName`, `Regiment`, `SourceCategory`, `MotherLastName`. **Two traps, both of which nearly produced a wrong answer today:** place and year-of-birth filters are **scored, not filtered**, so they rank rather than restrict; and the same regiment is indexed under **four different strings** holding different record series. This belongs in [notes/for-the-estate.md] with the NAAIRS driver and the eGGSA query, because the next session will not have a subscription to rediscover it with."
+   "note": "The harvest was not done by clicking. FindMyPast’s own GraphQL endpoint is `https://www.findmypast.co.uk/titan/marshal/graphql`, operation **`searchResultsRecordsAndMetadata`**, variables `{filters, order, pageNumber}`, twenty rows a page. Filter fields that work: `LastName` (with `variants`), `FirstName`, `EventYear` (with `offset`), `YearOfBirth`, `YearOfDeath`, `KeywordsPlace`, `Keywords`, `DatasetName`, `Regiment`, `SourceCategory`, `MotherLastName`. **Two traps, both of which nearly produced a wrong answer today:** place and year-of-birth filters are **scored, not filtered**, so they rank rather than restrict; and the same regiment is indexed under **four different strings** holding different record series. This belongs in [notes/for-the-estate.md] with the NAAIRS driver and the eGGSA query, because the next session will not have a subscription to rediscover it with.  ··· **WRITTEN, 16 September**, into `notes/for-the-estate.md`, with the query document, the filter-field list, both traps and the transcript route."
   },
   {
    "n": 92,
@@ -739,6 +739,14 @@
    "owner": "this archive",
    "since": "2026-09-16",
    "note": "The Gazette was searched once for **Kolbe** and turned up five notices where this archive had one — a dissolved partnership, two insolvencies and a business partner nobody knew about. It has **never** been searched for **Mountjoy**, **Booysen**, **Booyzen**, **Barry** or **Daschner**. It is free, it covers 1665 to now, and its Atom feed at `/all-notices/notice/data.feed?text=…&start-publish-date=…` returns the OCR text with the term highlighted. **It carries insolvencies, bankruptcies, dissolved partnerships, unclaimed estates and colonial appointments** — all of which this family generated.  ··· **RUN THE SAME HOUR, AND EMPTY.** Montjoy 14 — all of them the chancery cause list *Lord Montjoy v. Duchess of Buckinghamshire*, reprinted annually for thirty years. Mountjoy 378, all English. **Booyzen 0. Daschner 0.** Booysen 6, all the Booysen Land and Mining Company. Control: the same feed and the same date range returns the five Kolbe notices."
+  },
+  {
+   "n": 93,
+   "what": "Find a FamilySearch affiliate library and read film 008004264",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-16",
+   "note": "**This is the shortest path left to the three missing sons**, and it cannot be done from a desk. Film **008004264** holds the Savoy German Lutheran **births and baptisms 1694–1840** in 537 images, padlocked at home and open at any **FamilySearch Center or affiliate library** — many public and university libraries are affiliates. **Every volume has its own name index**, so the job is: find Kolbe in the index, note the entries between **1808 and 1812** and **1814 and 1818**, and photograph them. The same film also holds **marriages to 1754 and burials to 1771**, which reach back past this family into whoever the Kolbes were before Broad Street. Bring: the eleven known children with dates, and both spellings of the father — *Gottlob* and *Gottlieb*."
   }
  ],
  "accounts": [

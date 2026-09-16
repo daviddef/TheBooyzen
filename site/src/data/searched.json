@@ -3898,6 +3898,12 @@
      "The series are pension series",
      "WO 22, WO 23 and WO 121 are all Royal Hospital Chelsea pension records, and FindMyPast's WO 97 for this regiment stops at 1813. A man discharged at the Cape after that who stayed and set up as a saddler would never enter any of them.",
      "no"
+    ],
+    [
+     "What the WO 97 string actually resolves to",
+     "“Chelsea Pensioners British Army Service Records 1760–1913”",
+     "THE EXACT SERIES THIS ARCHIVE NAMED AS THE ANSWER TO QUESTION 12, fully indexed with BIRTH PARISH, BIRTH TOWN, BIRTH COUNTY, BIRTH COUNTRY, AGE AT ATTESTATION and DATE OF ATTESTATION. Its 128 men of the regiment attested between 1793 and 1813, and the distribution peaks where his enlistment would fall — 35 in 1800, 25 in 1799, 10 in 1801, 9 in 1805. Born England 95, Ireland 26, Scotland 2, Wales 2, and one each Switzerland, Germany, unspecified. THE SENTENCE THIS ARCHIVE WANTS IS AVAILABLE FOR 128 OTHER MEN AND NOT FOR HIM.",
+     "no"
     ]
    ]
   },
@@ -4055,6 +4061,38 @@
      "A transcription rule that will cost somebody a day",
      "Recorded",
      "This index renders JAN AS “IAN”, systematically — Ian Henry Kolbe, Ian Gert Booysen, Ian Lodewyk Booysen, Ian Jonathan Booysen, Ian Adriaan Booyens. A SEARCH FOR JAN RETURNS NOTHING. It also writes Willem as Williem and Petrus as Pietrus. Search the surname and read down.",
+     "yes"
+    ]
+   ]
+  },
+  {
+   "g": "FamilySearch — the Savoy German Lutheran baptism register",
+   "n": "item 87, the last three Kolbe sons",
+   "d": "16 Sep 2026",
+   "h": "/documents/#savoy-locked",
+   "rows": [
+    [
+     "FamilySearch personas API, Kolbe, London 1806–1820",
+     "Useless for this",
+     "The API is SCORED, NOT FILTERED — an exact-surname request returned 71,076 results led by Colby, Colbert and Kolbes in Maryland. It ranks; it does not restrict. Recorded so the next session does not spend an hour on it.",
+     "no"
+    ],
+    [
+     "FamilySearch catalogue, keyword “Savoy German Lutheran”",
+     "THE REGISTER EXISTS AND IS FILMED",
+     "koha:176759 — “Church records of German Lutheran Church, 1694–1840”, German Lutheran Church (Savoy, Westminster), filmed 1967 from the originals at the Public Record Office. Text in German, ALL VOLUMES HAVE A NAME INDEX. Three films: DGS 8004264 (births and baptisms 1694–1840, marriages to 1754, burials to 1771 — 537 images), DGS 8087181 (deaths and burials 1722–1840, baptisms by family 1719–1782), DGS 8220012 (a 1986 refilming).",
+     "yes"
+    ],
+    [
+     "Opening film 008004264 on a signed-in account",
+     "EVERY ONE OF THE 537 IMAGES IS PADLOCKED",
+     "Not some of them — image 1 to image 537. Digitised and withheld: viewable only inside a FamilySearch Center or an affiliate library, because the custodian is The National Archives. A SEVENTH KIND OF SHUT DOOR: photographed, catalogued, counted and locked by contract.",
+     "no"
+    ],
+    [
+     "The catalogue search URL that works",
+     "Recorded",
+     "/search/catalog/results?q.keywords=… . The ?q.text= form returns “Something Went Wrong”, and the JSON endpoint rejects q.text with “Unable to map supplied value=text to query term”.",
      "yes"
     ]
    ]
