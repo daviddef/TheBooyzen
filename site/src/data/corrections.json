@@ -428,6 +428,20 @@
    "Among them GEORGE AUGUSTUS KOLBE, the 1820 Settler, named 155 times in the built site; JOHN BARRY, 158; GEORGE MOUNTJOY, 140; PETRUS JACOBUS BOOYSEN, 110; JOHANNA CATHARINA MOUNTJOY, 89. THE DATA WAS FINE AND THE BUILD THREW IT AWAY. dossiers.py dropped any name that was a strict prefix of a longer person’s name — a rule written to stop “John Barry” swallowing “John Barry Booyzen”, which instead silenced the shorter man entirely. The fix keeps the shorter name and fences it with a negative lookahead, so it matches everywhere except where the longer name begins. 2,428 mentions came back. NOTHING REFUSED THE BUILD WHILE THIS WAS TRUE, so a gate now does: checkregisters.py fails when a person the dossier calls undiscussed is named in the built pages. Found because the estate asked this archive to look for a fault the Mazza archive had just had.",
    "process",
    "/method/#evidence-dropped"
+  ],
+  [
+   "17 Sep 2026",
+   "WO 12/1430 is the muster book to read for James Mountjoy",
+   "It is the 20TH AND 21ST DRAGOONS FOR 1867–1868 — fifty years after he was discharged, and the re-raised regiment rather than the one that garrisoned the Cape. The 21st Light Dragoons has a continuous WO 12 run of its own and the piece that covers his discharge is WO 12/1450, 1816–1817. THE WRONG REFERENCE HAD BEEN WRITTEN INTO A LETTER TO KEW; the letter was still unsent and now names the right piece and says an earlier version had it wrong.",
+   "reading",
+   "/documents/#dragoons-cape"
+  ],
+  [
+   "17 Sep 2026",
+   "The 21st Light Dragoons left the Cape in 1816",
+   "September 1817. An extract of a letter from the Cape dated 1 and 10 September 1817, printed in the Sun, the Star, the Public Ledger, the Morning Herald and the Hampshire Chronicle that November: “the 21st Light Dragoons have embarked for India”. The 1816 figure was written on 15 September with no source attached and stood in three files. IT MATTERS BECAUSE HE MARRIED IN MARCH 1817 — under 1816 he was already a civilian when he married, and under 1817 he had six months to choose between a wife at Graaff-Reinet and a transport to Madras.",
+   "scope",
+   "/documents/#dragoons-cape"
   ]
  ]
 }

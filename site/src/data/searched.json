@@ -294,13 +294,13 @@
     [
      "Why he is absent, most likely",
      "WO 97 AND WO 121 ARE PENSIONERS' PAPERS",
-     "A man discharged locally at the Cape who never claimed a Chelsea or Kilmainham pension leaves no discharge document in either. THE REGIMENT WAS IN THE CAPE COLONY FROM 1806 AND LEFT IN 1816; HE MARRIED AT GRAAFF-REINET IN MARCH 1817. So he was discharged at the Cape and stayed behind when it sailed — which is exactly the kind of man these series do not hold.",
+     "A man discharged locally at the Cape who never claimed a Chelsea or Kilmainham pension leaves no discharge document in either. THE REGIMENT WAS IN THE CAPE COLONY FROM 1806 AND LEFT IN SEPTEMBER 1817 (this row said 1816 until 17 September, when five London papers dated the embarkation for India); HE MARRIED AT GRAAFF-REINET IN MARCH 1817. So he was discharged at the Cape and stayed behind when it sailed — which is exactly the kind of man these series do not hold.",
      "part"
     ],
     [
      "What to read instead",
-     "WO 12/1430 — THE MUSTERS AND PAY LISTS FOR THE 20TH AND 21ST DRAGOONS",
-     "Not name-indexed; they have to be read. A man's disappearance from a muster DATES HIS DISCHARGE, so the years to read are about 1815 to 1817. Also WO 25, the description books, which give age, height, birthplace and previous trade — and SADDLER would be both a confirmation and possibly a birthplace.",
+     "WO 12/1450 — THE MUSTERS AND PAY LISTS FOR THE 21ST, 1816–17 (this row said WO 12/1430 until 17 Sep)",
+     "CORRECTED 17 SEPTEMBER. WO 12/1430 is the 20TH AND 21ST DRAGOONS FOR 1867–1868 — fifty years late and the re-raised regiment, not this one. The 21st Light Dragoons has its own continuous run: WO 12/1446 (1805–06), 1447 (1807–09), 1448 (1810–12), 1449 (1813–15), WO 12/1450 (1816–17), 1451 (1818), 1452 (1819–20). Not name-indexed; they have to be read. A man's disappearance from a muster DATES HIS DISCHARGE, and WO 12/1450 alone covers the window.",
      "part"
     ],
     [
@@ -4218,6 +4218,44 @@
      "It does not name him",
      "No Mountjoy appears in any of the 67 articles. WO 97 still holds none of that regiment, and the reason still stands — the pre-1855 discharge papers hold only men discharged TO A PENSION. WHAT HAS CHANGED IS THAT THE MUSTER BOOKS NOW HAVE A TARGET: WO 12 at Kew lists every man by name, quarter by quarter, and the quarters that matter are 1806, 1810, 1813 and everything up to September 1817.",
      "no"
+    ]
+   ]
+  },
+  {
+   "g": "The Kew catalogue, gone back to — and it found an error in this archive's own letter",
+   "n": "the errand named on 15 September, checked before it was posted",
+   "d": "17 Sep 2026",
+   "h": "/documents/#dragoons-cape",
+   "rows": [
+    [
+     "The full WO 12 run for the 21st Light Dragoons",
+     "TWELVE PIECES, AND ONE OF THEM IS THE ERRAND",
+     "Discovery `sps.recordSeries=WO 12`: WO 12/1441 (1779), 1442 (1798–1800), 1443 (1801–02), 1444 (1803), 1445 (1804), 1446 (1805–06), 1447 (1807–09), 1448 (1810–12), 1449 (1813–15), **WO 12/1450 (1816–17)**, 1451 (1818), 1452 (1819–20), then nothing until 1863 because the regiment was disbanded in 1820 and re-raised. WO 12/1450 IS THE SINGLE PIECE THAT COVERS HIS DISCHARGE — held at Kew, no access conditions recorded.",
+     "yes"
+    ],
+    [
+     "WO 12/1430, the piece this archive put in a letter to Kew",
+     "WRONG BY FIFTY YEARS",
+     "Discovery gives it as “20TH AND 21ST DRAGOONS, 1867–1868”. It is the re-raised regiment, not the one that garrisoned the Cape. The letter was drafted on 15 September and never sent; the piece has been corrected in the draft and the draft now says in terms that an earlier version had it wrong.",
+     "no"
+    ],
+    [
+     "Soldiers' description books for the regiment",
+     "NOT FOUND, AND THE NEGATIVE IS QUALIFIED",
+     "WO 25 searched for the regiment returns 28 documents and every one is an OFFICER — services of officers, not description books of men. That may mean no description book for the 21st survives, or that the books are catalogued by piece without the regiment in the title. THIS ARCHIVE CANNOT TELL WHICH FROM HERE, and the Kew letter now asks rather than asserts.",
+     "no"
+    ],
+    [
+     "The departure date, checked against the catalogue",
+     "1817, not 1816 — and the error was in three files",
+     "The 15 September rows said the regiment left the Cape in 1816. On 16 September five London papers dated the embarkation for India to a letter of 1 and 10 SEPTEMBER 1817. The catalogue does not settle it either way — WO 12/1450 covers 1816–1817 as one piece — but the newspapers are five independent printings of one dispatch and the 1816 figure had no source at all. Corrected in searched.json, worklist.json and letters.json.",
+     "yes"
+    ],
+    [
+     "A control on the search itself",
+     "733 documents under the catalogue's own spelling",
+     "The regiment is indexed “21st Dragoons (Light)” and not “21st Light Dragoons” — first found on 15 September and still true. Searched that way the API returns 733 records; WO 97 entries come back as full lives, e.g. “THOMAS ANDERSON Born BISHOPWEARMOUTH, Northumberland, Served in 21st Dragoons (Light), Discharged aged 44, 1799–1818”. THE FIELD THIS ARCHIVE WANTS IS IN THE TITLE OF EVERY ONE OF THEM, for ninety-five other men.",
+     "yes"
     ]
    ]
   }

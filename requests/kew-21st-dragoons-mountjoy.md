@@ -61,20 +61,33 @@ would not appear in them.
 **My questions, and they are short.**
 
 1. **Is that reading correct?** If a man was discharged locally at the Cape
-   around 1816 without a pension, is it right that WO 97 and WO 121 would simply
-   not hold him?
+   in 1816 or 1817 without a pension, is it right that WO 97 and WO 121 would
+   simply not hold him?
 
-2. **Is `WO 12/1430` the right place to look next?** Discovery gives it as
-   the musters and pay lists for the *20th and 21st Dragoons*. The regiment was
-   stationed in the Cape Colony from 1806 and left in 1816; he married at
-   Graaff-Reinet in March 1817, so I believe he was discharged at the Cape and
-   stayed behind when the regiment sailed. If that is right, the musters for
-   roughly **1815 to 1817** are what I need, and a man's disappearance from them
-   would date his discharge.
+2. **I believe the piece I want is `WO 12/1450`.** Discovery gives it as
+   *21st Light Dragoons, 1816–1817*, and it sits in a continuous run for this
+   regiment — WO 12/1446 (1805–06), 1447 (1807–09), 1448 (1810–12),
+   1449 (1813–15), **1450 (1816–17)**, 1451 (1818), 1452 (1819–20).
 
-3. **Do the WO 25 description books survive for this regiment?** Those give age,
+   The dating I am working to: the regiment sailed from Portsmouth for the Cape
+   in **May 1806**, and an extract of a letter from the Cape dated 1 and 10
+   September 1817 — printed in the *Sun*, the *Star*, the *Public Ledger*, the
+   *Morning Herald* and the *Hampshire Chronicle* that November — says "the 21st
+   Light Dragoons have embarked for India". **He married at Graaff-Reinet on
+   9 March 1817**, six months before that, so I believe he was discharged at the
+   Cape and stayed behind when the regiment sailed. If that is right,
+   **WO 12/1450 alone should contain the quarter he disappears from**, and his
+   disappearance would date the discharge.
+
+   *(An earlier draft of this letter named `WO 12/1430`. That is the 20th and
+   21st Dragoons for 1867–1868 and I had it wrong; please disregard it.)*
+
+3. **Do soldiers' description books survive for this regiment?** Those give age,
    height, birthplace and previous trade, and "saddler" would be a strong
-   confirmation as well as a possible birthplace.
+   confirmation as well as a possible birthplace. Searching WO 25 in Discovery
+   for this regiment returns officers' services records only, which I take to
+   mean either that no description book for the 21st survives or that it is not
+   catalogued by regiment — and I cannot tell which from here.
 
 4. **How do I have it done?** I am in Australia and cannot attend. I would be
    glad of your record copying service if the item can be identified closely
