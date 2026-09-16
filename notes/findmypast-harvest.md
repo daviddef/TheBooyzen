@@ -172,3 +172,150 @@ St Mary Magdalen.
 Also unread: **Old Bailey 1819, John Henry Kolbe** (GBOR/OLDBAILEY/0399292-3)
 and five London Gazette notices — Henry Kolbe 1824 (x2), John Gotlob 1824, John
 Henry 1824 (x2), J.G. 1836, John Gbttlob 1836, John Gotlieb 1845.
+
+---
+
+## 6. The German Lutheran Church register — seven Kolbe burials, and two wives
+
+`England & Wales Non-Conformist Burials`, place **German Lutheran Church**,
+**TNA RG 4/4631** (one entry duplicated from RG 4/4630). Seven Kolbes, and that
+is all of them:
+
+| Died | Buried | Name | Age | Image |
+|---|---|---|---|---|
+| 6 Dec 1807 | 11 Dec 1807 | Chas / Chs Saml Kolbe | **1y 10d** | RG 4/4631 f.0047, also RG 4/4630 f.0044 |
+| 8 Mar 1809 | 14 Mar 1809 | Frederick Kolbe | **4y 6w** | RG 4/4631 f.0049 |
+| 1 Jul 1814 | 3 Jul 1814 | Fredericka Caroline Kolbe | **11 months** | RG 4/4631 f.0061 |
+| 2 Aug 1814 | 5 Aug 1814 | **Mary Kolbe** | **46** | RG 4/4631 f.0062 |
+| 15 Aug 1824 | — | **Mrs Mary Kolbe** | **36** | RG 4/4631 f.0081 |
+| 13 Apr 1832 | 22 Apr 1832 | **John Henry Kolbe** | **32** | RG 4/4631 f.0100 |
+
+Matched against the baptisms:
+
+- **Charles Samuel**, baptised 3 Feb 1807, dead at one year and ten days.
+- **Frederick Charles**, baptised 12 Mar 1805, dead at four years and six weeks.
+- **Frederica Carolina**, baptised 18 Aug 1813, dead at eleven months.
+- **John Henry**, baptised 29 Jul 1800, dead at thirty-two — and **before the
+  1844 obituary**, which is what that obituary is counting.
+
+**Two wives, both called Mary.** The first died 2 August 1814 aged 46, born
+about 1768 — a month after burying her eleven-month-old daughter. The second
+died 15 August 1824 aged 36, born about 1788, and was the mother named in the
+1819 baptism of Jane Day Kolbe. John Gottlob himself was born about 1764 and
+died 18 November 1845.
+
+Three of the eight sons are now dead and dated. The German Lutheran **baptism**
+registers (RG 4/4627, 4629) are not in FindMyPast under any dataset name tried;
+the remaining three sons are most likely in them.
+
+---
+
+## 7. Margaret Downing — a negative, controlled twice
+
+She is on a Burgersdorp gravestone as born London, 23 February 1803.
+
+- **England, all baptisms, London, 1801–1807, surname Downing: 28 records.**
+  Louisa (x3), Susanna Delafield, Eliza (x3), Frances, Robert, Eliza Eleanor,
+  Heny. Edwd., Jacobus, Joannes, George Philip Thomas, Dennis, George William
+  (x2), Hugh Robt., Joseph, Louisa Towgood (x2), Thomas, William, John Jas.
+  Edwd., **Margaret Mary Elisabeth (Chelsea, 1807)**, Robt. Benjn. Saul, Samuel,
+  William. **No Margaret in 1803.**
+- **Westminster's own registers, 1798–1810, surname Downing: 14 records.**
+  Louisa, Thomas Charles, Maria, Rachel Elizabeth, John Henry, Thomas, Joel
+  Francis, William Michael. **No Margaret.**
+
+The index is dense in both — 239 Downings in Westminster Baptisms overall — so
+the nil return means what it says. She was not baptised in London under that
+name in that year, or the register has not been indexed.
+
+A Margaret Downing does appear in the Roman Catholic banns of **St Patrick's,
+Soho Square** — two streets from the Kolbes' own door — but the date is
+**22 September 1861** and the groom is Henry Shea. Not her.
+
+---
+
+## 8. Open question 6 — the Yorkshire half does not exist
+
+One profile welds a Yorkshire farmer of Bilsdale, christened 1796 and buried at
+**St Hilda's on 3 January 1853**, to a John Barry who died at de Bruins Poort in
+the Cape on **8 January 1853**, five days later.
+
+FindMyPast's `Yorkshire Burials` includes **Bilsdale, St Hilda** — Ryedale
+Family History Society transcripts, references `GBPRS/RYEDALEFHS/BUR/` — with
+burials at 1849, 1851, 1857, 1859, 1861, 1862, 1864 to 1868. January 1853 sits
+inside an indexed run.
+
+- Burials recorded at **Bilsdale: 5,934**
+- Barrys among them: **0**
+- Barry baptisms at Bilsdale: **0**
+- Barry burials elsewhere in Yorkshire: **771** — the surname is not invisible
+  to the index
+- John Barry burials in Yorkshire, all years: 66. The list runs 1837, then 1856,
+  1858, 1858, 1860. **Nothing in 1853.**
+- Barry burials anywhere in Yorkshire in 1853: **one**, at Sheffield, St George,
+  Brook Hill, in the West Riding, with no forename given.
+
+**A man buried at St Hilda's Bilsdale on 3 January 1853 is not in an index of
+5,934 Bilsdale burials.** The Yorkshire half of that profile has nothing under
+it.
+
+---
+
+## 9. John Augustus Barry, "born Neagle" — a negative with a big control
+
+His 1903 death registration, made by a son who was in the room, gives his age as
+84 years 2 months and his mother only as **"born Neagle"**.
+
+- `Ireland Roman Catholic Parish Baptisms`, **Cork, 1818 alone: 12,273 records.**
+- John Barry baptisms in Cork, 1816–1820: **71.**
+- John Barry baptisms in all Ireland with a mother surnamed **Nagle: 4** —
+  1811 Passage West, 1845 Glanworth, 1860 St Patrick's Cork City, 1876
+  Rathcormack. **None between 1816 and 1820.**
+- Mother surnamed **Neagle** or **Nagel**: **0.**
+
+The index is dense, so the nil return means what it says — for Roman Catholic
+registers. He may not have been Catholic; the Church of Ireland registers for
+Cork are a separate question and mostly burnt in 1922.
+
+Noted in passing and not followed: several **"John A Barry"** entries at
+**Spike Island, Cork** in Ireland Directories & Almanacs 1844-1928 — Spike
+Island being the convict depot in Cork Harbour.
+
+---
+
+## 10. The South African surnames, and a citation that does not resolve
+
+FindMyPast's South African holdings are thin and are mostly British records
+about South Africa: passenger lists leaving the UK, Boer War prisoner lists,
+British newspaper notices.
+
+| Surname | records with South Africa |
+|---|---|
+| Barry | 814 |
+| Booysen | 126 |
+| Kolbe | 37 |
+| Booyens | 27 |
+| Mountjoy | 9 |
+| **Booyzen** | **0** |
+| **Daschner** | **0** |
+
+**The unseen transcript.** `R_177176049779`, cited on this site for Petrus
+Jacobus Booysen's 1812 birth and never seen, **returns a 500 error from
+FindMyPast's own transcript page**, twice, on a live full subscription. It does
+not resolve. A citation this archive has been carrying is to a record that
+cannot be opened.
+
+**Three David Schalk Booysens, prisoners of war, 1901.** TNA **WO 108/368**,
+"List of Boer prisoners of war, numbers 1-32561, 1899-1902":
+
+| Age | Born | Residence | Image |
+|---|---|---|---|
+| 53 | c.1848 | Pretoria, Boksburg | f.00442 |
+| 41 | c.1860 | **Vaalbank, Lichtenburg** | f.00491 |
+| 33 | c.1868 | **Kapsteinkop, Cradock** | f.00575, "British Subject" |
+
+All three sent to **Cape Town and Natal**. Two of the three residences —
+Vaalbank and Cradock — are this family's own ground, and one of them is the
+Vaalbank whose farm school this archive documented a week ago. That is a lead
+and not yet a finding: David Schalk is a common Cape name, and this archive has
+already shown it is a van der Merwe name before it is a Booysen one.

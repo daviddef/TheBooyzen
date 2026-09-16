@@ -99,3 +99,78 @@ afternoon finding out:
   one edit from publishing exactly that.
 
 Contact: the Booyzen archive, via David.
+
+---
+
+## The FindMyPast driver (written 16 September 2026; subscription lapses 16 October)
+
+FindMyPast's search UI is a React app that pages twenty rows at a time. Do not
+click it. It talks to its own GraphQL endpoint, and so can you, from any of its
+own pages:
+
+```
+POST https://www.findmypast.co.uk/titan/marshal/graphql
+operation: searchResultsRecordsAndMetadata
+variables: { filters, order, pageNumber }
+```
+
+The easiest way in is to take the query document off the live Apollo client
+rather than reconstruct it. From a `/search/results` page:
+
+```js
+const oq = [...__APOLLO_CLIENT__.getObservableQueries('all').values()]
+  .find(q => (q.queryName || q.options?.query?.definitions?.[0]?.name?.value)
+             === 'searchResultsRecordsAndMetadata');
+const DOC = oq.options.query;
+const Q = async (filters, page = 1, order = null) => {
+  const r = await __APOLLO_CLIENT__.query({
+    query: DOC, variables: { filters, pageNumber: page, order },
+    fetchPolicy: 'network-only' });
+  const R = r.data.root.search.recordSearch;              // note the path
+  return { n: +R.numberOfRecords,
+           recs: R.records.map(x => Object.fromEntries(
+             x.fields.map(f => [f.fieldId, f.value]))) };
+};
+```
+
+`DOC` dies on navigation — re-acquire it after every page load. A whole record
+set of a few hundred rows can then be swept in a single call.
+
+**Filter fields that work.** `LastName` (takes `variants: true|false`),
+`FirstName`, `EventYear` (takes `offset`, a +/- year window), `YearOfBirth`,
+`YearOfDeath`, `KeywordsPlace`, `Keywords`, `DatasetName`, `Regiment`,
+`SourceCategory`, `MotherLastName`.
+
+**Two traps, and both of them nearly produced a wrong answer on the first day.**
+
+1. **`KeywordsPlace` and `YearOfBirth` are scored, not filtered.** They rank the
+   results; they do not restrict them. A search for Barry at Bilsdale returns
+   112 rows of Barrys anywhere. `EventYear` with an `offset` *does* filter, and
+   so does `DatasetName`, `Regiment` and `SourceCategory`. Always check the
+   count against an obviously-wrong value before trusting a narrow one.
+2. **The same regiment is indexed under several different strings, and they hold
+   different record series.** `21st Dragoons` returned 342 records with no WO 97
+   in them at all; `21st Regt Of Light Dragoons` returned 128 records that were
+   nothing but WO 97. A negative against the first string alone would have been
+   worthless. The same is almost certainly true of parishes, ships and
+   regiments elsewhere in the index.
+
+**Transcripts.** A result row carries only the fields the list renders. The full
+transcript is fetched by a *mutation* (it marshals an entitlement), so it cannot
+be batched through `Q`. Navigate to `https://www.findmypast.co.uk/transcript?id=<Id>`
+and read it out of the cache:
+
+```js
+const c = __APOLLO_CLIENT__.cache.extract();
+const k = Object.keys(c).find(x => x.startsWith('FulfilledTranscript:'));
+Object.fromEntries(c[k].fields.map(f => [f.fieldId, f.value]));
+```
+
+Ids are URL-encoded when they contain slashes. A dead id returns a 500 page and
+no `FulfilledTranscript` key — which is how `R_177176049779` was shown not to
+exist.
+
+**Useful URL parameters** on `/search/results`, if scripting is not wanted:
+`sid=999` makes `sourcecategory=` apply; `o=` and `d=asc|desc` sort by
+`lastname`, `firstname`, `eventyear`, `yearofbirth`, `yearofdeath` or
+`datasetname`; `_page=` pages.

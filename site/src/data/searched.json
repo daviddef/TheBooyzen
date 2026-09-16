@@ -3758,6 +3758,218 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "FindMyPast, day one — the Kolbes of Soho",
+   "n": "items 80, 81 and 85 of the FindMyPast campaign",
+   "d": "16 Sep 2026",
+   "h": "/documents/#eight-sons",
+   "rows": [
+    [
+     "Westminster Rate Books 1634–1900, surname Kolbe",
+     "121 entries, 1800–1831",
+     "Under twenty-four spellings of one forename. Broad Street North in 1800; CHURCH STREET SOUTH, ST ANNE'S SOHO from 1811 to 1831. Brunswick Square in none of them. A search for “Gottlieb” alone would have found one entry in twenty-four.",
+     "yes"
+    ],
+    [
+     "Westminster land tax, 1829",
+     "One entry",
+     "John Gottlieb Kolbe, Church Street, Westminster St Anne Soho — the same address the rate books give, from a different series.",
+     "yes"
+    ],
+    [
+     "England Births & Baptisms, surname Kolbe, London 1790–1850",
+     "Ten children of one couple",
+     "Juliet Rosinia 1792, Mary Ann 1794, Elizabeth 1795, CHARLES 1798, JOHN HENRY 1800, GEORGE AUGUSTUS 1803, FREDERICK CHARLES 1805, CHARLES SAMUEL 1807, Frederica Carolina 1813, Jane Day 1819. Mother Mary in every one. FIVE OF THE EIGHT SONS NAMED.",
+     "yes"
+    ],
+    [
+     "George Augustus Kolbe's own baptism, as a control",
+     "2 Feb 1803, matches",
+     "Father John Gottlow Kolbe, mother Mary, Westminster. This archive already held that date from another route, so the register can be trusted for the other nine.",
+     "yes"
+    ],
+    [
+     "Frederick Kolbe, baptised Westminster 16 Dec 1816",
+     "Rejected",
+     "Right surname, right parish, and a gap in the family's run exactly there. Father GEORGE, mother ELIZABETH, batch C72301-7. Not a brother. Rejected by reading the transcript rather than the result row.",
+     "no"
+    ],
+    [
+     "Henry Kolbe, baptised Southwark 2 Feb 1800",
+     "Rejected",
+     "Father Henry, mother Susannah. Not a brother.",
+     "no"
+    ],
+    [
+     "England & Wales Non-Conformist Burials, surname Kolbe",
+     "Seven burials, all German Lutheran",
+     "TNA RG 4/4631, one duplicated in RG 4/4630. Charles Samuel d. 1807 aged 1y 10d; Frederick Charles d. 1809 aged 4y 6w; Frederica Carolina d. 1814 aged 11 months; MARY d. 2 Aug 1814 aged 46; MRS MARY d. 15 Aug 1824 aged 36; JOHN HENRY d. 13 Apr 1832 aged 32. TWO WIVES, BOTH CALLED MARY.",
+     "yes"
+    ],
+    [
+     "England & Wales Non-Conformist BAPTISMS, surname Kolbe",
+     "Nothing, and the set may not exist here",
+     "RG 4/4627 and RG 4/4629, the German Lutheran baptism registers, were not found on FindMyPast under any dataset name tried — a search for ANY surname with the keyword “German Lutheran” in that set returns nothing, so the set is absent rather than the name. THE THREE MISSING SONS ARE PROBABLY IN THEM.",
+     "no"
+    ],
+    [
+     "Westminster Burials, surname Kolbe",
+     "The 1845 burial, with a church name",
+     "JOHN GOTTLOB KOLBE — died 18 Nov 1845, buried 26 Nov 1845 at ST JOHN THE BAPTIST, GREAT MARLBOROUGH STREET, page 7, year of birth 1764. The tree said the German church of the Savoy, entry 55, grave 7. The date and the seven match; the church does not.",
+     "yes"
+    ],
+    [
+     "Old Bailey Court Records, surname Kolbe",
+     "One trial, and a brother speaking",
+     "Two rows in a 154-row surname sweep, nearly scrolled past. Trial t18190113-149, 13 January 1819: Richard Kerr indicted for stealing a coat worth six pounds from JOHN HENRY KOLBE, who deposes “MY FATHER IS A TAILOR, AND LIVES IN CHURCH-STREET, SOHO”. The full text is free at oldbaileyonline.org and always was.",
+     "yes"
+    ]
+   ]
+  },
+  {
+   "g": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "n": "item 79 of the FindMyPast campaign",
+   "d": "16 Sep 2026",
+   "h": "/documents/#fmp-negatives",
+   "rows": [
+    [
+     "British Army Service Records, surname Mountjoy, no year",
+     "Read wrongly at first",
+     "Every visible result is 1914–20, which reads as “this is the First World War set”. It is a composite. A year filter proves it, and without one the answer would have been a false negative dressed as a wrong period.",
+     "no"
+    ],
+    [
+     "Regiment = “21st Dragoons”",
+     "342 records, WO 22, WO 23, WO 121",
+     "All pension series. NO WO 97 AT ALL. A negative against this string alone would have been worthless.",
+     "no"
+    ],
+    [
+     "Regiment = “21st Regt Of Light Dragoons”",
+     "128 records, WO 97 only, 1793–1813",
+     "THE STRING THAT MATTERS, and it was found by testing seven guesses at the regiment name rather than accepting the first that returned rows.",
+     "yes"
+    ],
+    [
+     "Regiment = “21st Light Dragoons” and “21st Hussars”",
+     "66 and 574",
+     "WO 22, 23, 76, 97, 121, 131. Swept for completeness.",
+     "no"
+    ],
+    [
+     "All four strings swept in full — 1,110 records",
+     "No Mountjoy in any spelling",
+     "Not Mountjoy, Montjoy, Monjoy, Mountjoye or Montjoie. The alphabetical run through the Ms goes Martin to Morrison in one sweep and Moses straight to Napier in the other.",
+     "no"
+    ],
+    [
+     "Controls: WO 23/136 (1806–07) and WO 23/147 (1817–26)",
+     "18 and 12 men of the regiment",
+     "Mark Allen to Jno Warnsnop; Jno Allen to Adam Ross. James Mountjoy's own window at the Cape is indexed and populated.",
+     "yes"
+    ],
+    [
+     "Pre-1860 Mountjoys in the whole set",
+     "Eighteen, none of them his regiment",
+     "36th Foot (WO 97/533, WO 23/39, WO 22/61, WO 22/106), 44th Foot (WO 23/140, WO 121/72, WO 23/40, WO 22/10), 60th Foot and KRRC (WO 23/138, WO 121/171), and one WILLIAM MONTJOY, 1801, 60th Rifles, WO 121/44.",
+     "no"
+    ],
+    [
+     "Why the negative is not a surprise",
+     "The series are pension series",
+     "WO 22, WO 23 and WO 121 are all Royal Hospital Chelsea pension records, and FindMyPast's WO 97 for this regiment stops at 1813. A man discharged at the Cape after that who stayed and set up as a saddler would never enter any of them.",
+     "no"
+    ]
+   ]
+  },
+  {
+   "g": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "n": "items 82, 83, 84 and 86 of the FindMyPast campaign",
+   "d": "16 Sep 2026",
+   "h": "/documents/#fmp-negatives",
+   "rows": [
+    [
+     "Margaret Downing, born London 23 Feb 1803",
+     "Not in any London register",
+     "Control: 28 Downing baptisms in London 1801–1807, 14 in Westminster's own registers 1798–1810, 239 Downings in Westminster Baptisms overall. NO MARGARET IN 1803. The nearest name is Margaret Mary Elisabeth, Chelsea, 1807.",
+     "no"
+    ],
+    [
+     "Margaret Downing in the Roman Catholic banns of St Patrick's, Soho Square",
+     "Rejected",
+     "Two streets from the Kolbes' own door, which is why it was checked. Banns dated 22 September 1861, groom Henry Shea. Not her.",
+     "no"
+    ],
+    [
+     "John Barry buried at St Hilda's, Bilsdale, 3 January 1853",
+     "Does not exist",
+     "Control: FindMyPast's Yorkshire Burials holds 5,934 BILSDALE burials from the Ryedale FHS transcripts, with entries at 1849, 1851, 1857, 1859 and through the 1860s. BARRYS AMONG THEM: ZERO. Barry baptisms at Bilsdale: zero. Barry burials elsewhere in Yorkshire: 771. Barry burials anywhere in Yorkshire in 1853: one, at Sheffield, no forename. John Barry burials in Yorkshire, all years: 66, running 1837 then 1856.",
+     "no"
+    ],
+    [
+     "John Augustus Barry, a Cork baptism to a mother “born Neagle”",
+     "Nothing in the Catholic registers",
+     "Control: 12,273 Cork Roman Catholic baptisms for 1818 alone; 71 John Barry baptisms in Cork 1816–1820. John Barry baptisms in ALL Ireland with a mother surnamed Nagle: four — 1811, 1845, 1860, 1876. None between 1816 and 1820. Under Neagle or Nagel: none. LIMIT: this tests the Catholic registers only, and Cork's Church of Ireland registers largely burnt in 1922.",
+     "no"
+    ],
+    [
+     "The four South African surnames",
+     "FindMyPast is thin here, as expected",
+     "Barry 814, Booysen 126, Kolbe 37, Booyens 27, Mountjoy 9, BOOYZEN 0, DASCHNER 0. Almost all of it is British records about South Africa: passenger lists leaving the UK, Boer War prisoner lists, British newspaper notices.",
+     "no"
+    ],
+    [
+     "R_177176049779, cited here for Petrus Jacobus Booysen's 1812 birth",
+     "THE REFERENCE DOES NOT OPEN",
+     "Recorded once from a search run without a subscription and never seen. Opened twice on a live full subscription: FindMyPast's own transcript page returns a 500 error both times. A reference cited and unread is exactly what this archive corrects other people for.",
+     "no"
+    ],
+    [
+     "Three David Schalk Booysens, prisoners of war, 1901",
+     "A lead and not yet a finding",
+     "TNA WO 108/368, list of Boer prisoners 1–32561. Aged 53 of Pretoria and Boksburg; aged 41 of VAALBANK, LICHTENBURG; aged 33 of KAPSTEINKOP, CRADOCK. All sent to Cape Town and Natal. Two of the three sit on this family's own ground — but this archive has already shown David Schalk is a van der Merwe name before it is a Booysen one.",
+     "no"
+    ]
+   ]
+  },
+  {
+   "g": "The London Gazette, searched again with the dates widened",
+   "n": "the loose end from the FindMyPast sweep",
+   "d": "16 Sep 2026",
+   "h": "/documents/#kolbe-gazette",
+   "rows": [
+    [
+     "thegazette.co.uk, text=Kolbe, 1815–1850",
+     "Five notices, four of them new",
+     "The free Atom feed at /all-notices/notice/data.feed returns the OCR text with the search term highlighted. THIS ARCHIVE FOUND THE 1836 NOTICE MONTHS AGO AND NEVER RAN THE SAME SEARCH AGAIN WITH THE DATES WIDENED. The other four had been sitting there the whole time.",
+     "yes"
+    ],
+    [
+     "12 May 1824, issue 18027 p.796",
+     "Father and son, Church Street Soho",
+     "“the Partnership heretofore subsisting between the undersigned, JOHN GOTLOB KOLBE AND JOHN HENRY KOLBE, OF CHURCH-STREET, SOHO, in the County of Middlesex, TAILORS, was this day dissolved.” A third independent source for the Soho address, after the rate books and the son's own deposition.",
+     "yes"
+    ],
+    [
+     "9 October and 16 November 1824, issues 18069 p.1668 and 18080 p.1900",
+     "The son in the insolvent debtors' lists",
+     "Petitions to be heard at Portugal-Street, Lincoln's-Inn Fields, Friday 5 November 1824. “KOLBE, JOHN HENRY (SUED AS HENRY KOLBE), FORMERLY OF NO. 22, NORFOLK-STREET, MIDDLESEX-HOSPITAL, AND LATE OF NO. 4, MANSFIELD-PLACE.” He was twenty-four, and his stepmother had died that August.",
+     "yes"
+    ],
+    [
+     "21 March 1845, issue 20455 p.930",
+     "A partner nobody knew about, eight months before the death",
+     "“the Copartnership heretofore subsisting between the undersigned, JOHN GOTLIEB KOLBE AND RICHARD DAVIES, OF CONDUIT-STREET, BOND-STREET, TAILORS, has been dissolved by mutual consent.” Still calling himself a tailor in March 1845; dead in November; “Esq. of Brunswick-square” in December 1844.",
+     "yes"
+    ],
+    [
+     "The same search for the other four surnames, 1800–1920",
+     "Run, and empty",
+     "MONTJOY: 14 hits, every one of them the chancery cause list “Lord Montjoy v. Duchess of Buckinghamshire”, reprinted annually from 1877 to 1911. MOUNTJOY: 378 hits, all English — a service reservoir at Durham, solicitors at Cardiff, a bankrupt at Cinderford, Colonel Mountjoy Martyn. BOOYZEN: 0. DASCHNER: 0. BOOYSEN: 6, all of them the Booysen Land and Mining Company, wound up in 1895. NOTHING OF THIS FAMILY. Control: the same feed, same date range, returned the five Kolbe notices, so the search works.",
+     "no"
+    ]
+   ]
   }
  ]
 }
