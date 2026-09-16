@@ -38,12 +38,12 @@ const plates = items.map((i) => ({
 </section>
 
 
-<style>
-    background:var(--panel); border:1px solid var(--rule); border-radius:3px; color:inherit; }
-    border-radius:2px; background:var(--panel-2); }
-    align-items:center; justify-content:center; padding:56px 20px 20px; }
-    display:flex; gap:14px; flex-wrap:wrap; align-items:baseline; }
-    border-radius:999px; font-family:var(--sans); font-size:13px; padding:7px 14px; cursor:pointer; }
-</style>
+{/* The style block that stood here held five declaration TAILS and not one
+   selector - "background:var(--panel); ... }" with nothing to apply it to. It
+   is what was left when this page's own lightbox moved to the kit's Gallery
+   component and the selectors went with it. esbuild had been reporting it as a
+   css-syntax-error on every build since; the browser had been discarding it in
+   silence, which is why nothing looked wrong. The kit component ships its own
+   styles, so there is nothing here to keep. */}
 
 </Base>

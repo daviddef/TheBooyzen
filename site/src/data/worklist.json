@@ -759,10 +759,10 @@
   {
    "n": 95,
    "what": "Turn /open-questions/ into rows",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-16",
-   "note": "**270 lines of prose**, the second longest in the estate. Shape: the question, what is known, what has been tried, and the record that would answer it. `kit/components/Questions.astro`.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside."
+   "note": "**270 lines of prose**, the second longest in the estate. Shape: the question, what is known, what has been tried, and the record that would answer it. `kit/components/Questions.astro`.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside. \n\n**Done 17 September.** Extracted to `site/src/data/questions.json` and drawn by the kit's `Questions.astro`, which brings the filter bar and the four named fields. The extraction found a live fault rather than just moving text: the rows were tuples destructured as `[n, title, why, where, pri]`, **and two of the sixteen are written with six fields** — §0, this archive's oldest wall, and §12, James Montjoy's parents, both carry *what has been tried* between what is known and what would settle it. The destructure ran past it, so those two pages printed their whole what-would-settle-it paragraph in the slot where the priority chip goes, and captioned what had been tried “Where to look”. Both now render all four fields with the right labels. The eyebrow said **Thirteen** and there are sixteen; it is counted off the rows now."
   },
   {
    "n": 96,
@@ -827,6 +827,14 @@
    "owner": "the D'arcy session",
    "since": "2026-09-17",
    "note": "Raised here because it belongs to another archive and would otherwise go unsaid — which is exactly what that row itself says about the archives it names. The D'Arcy row reports the roll-up as **8 archives, 153 rows, 113 open, and two with no list at all: Luwinski and Our Family**. Luwinski has kept one since then. Run today the roll-up gives **9 archives, 1,003 rows, 440 open**, and the two without a list are **Our Family and the Geneology Map**. The row is still true in its point and wrong in its figures, which is the failure a roll-up built from the archives was written to end: the numbers were typed in rather than read out. [The work list](/worklist/)"
+  },
+  {
+   "n": 104,
+   "what": "The priority on an open question is doing two jobs, and it is stale on seven of the sixteen",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-17",
+   "note": "Raised by the extraction in [row 95](/worklist/). The `state` field on a question holds **Blocking, High, Medium, Low, Answered, Closed** — a priority and a state of play mixed in one column. Only two rows have ever been moved to Answered or Closed, while **seven more announce an answer in their own heading**: §3 “SEARCHED, AND NOT FOUND”, §5 “ANSWERED. IRELAND.”, §6 “BROKEN”, §8 “DONE.”, §9 “CONFIRMED”, §10 “YES. ONE DID”, §13 “ANSWERED, 16 SEPTEMBER 2026” — and all seven still read High, Medium or Low. **The page will not derive it from the heading**, because reading a state out of a sentence instead of a field is how the D'Arcy register came to show twenty-one medieval manuscripts as “family tree”. So the eyebrow now reports the tally of the field and claims nothing about how many are open. Which of the seven are shut, and whether a question that has been answered keeps a priority at all, is a judgement this archive has to make. [The questions](/open-questions/)"
   }
  ],
  "accounts": [
