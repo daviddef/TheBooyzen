@@ -1,6 +1,7 @@
 ---
 /* Every name in the archive, and how many people bore it. */
 import Base from "../../layouts/Base.astro";
+import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
@@ -22,6 +23,10 @@ const shared = names.filter(n => n.n > 1);
 <Base title="Every Name"
       eyebrow={`${names.length} names · ${shared.length} held by more than one person`}
       dek="A name is not a person. This is every name in the archive, and how many different people bore it.">
+
+<NameLists here="who" u={u} />
+
+
   <section class="blk">
     <EveryName names={names} u={u} />
   </section>

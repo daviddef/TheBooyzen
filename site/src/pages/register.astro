@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import { u } from "../lib/url.js";
 import Register from "@daviddef/archive-kit/components/Register.astro";
 import reg from "../data/register.json";
@@ -30,7 +31,11 @@ const regRows = rows.map((r) => ({
 ---
 <Base title="The Register"
       eyebrow="Every named individual this archive has found"
-      dek={`${rows.length.toLocaleString()} entries for ${new Set(rows.map(r => r.n)).size.toLocaleString()} distinct names, ${linked.toLocaleString()} of them with a link to the source that names them. This is the raw catch — not a family tree, and most of it is not this family.`}>
+      dek={`${rows.length.toLocaleString()} entries for ${new Set(rows.map(r =>
+ r.n)).size.toLocaleString()} distinct names, ${linked.toLocaleString()} of them with a link to the source that names them. This is the raw catch — not a family tree, and most of it is not this family.`}>
+
+<NameLists here="register" u={u} />
+
 
 <section class="blk">
   <h2>Read this before you read the list</h2>
