@@ -619,6 +619,78 @@
    "owner": "this archive",
    "since": "2026-09-15",
    "note": "Raised by a check on the day it was written. Five people are marked **`doc`** and say in their own prose that some specific claim is «not from a document this archive has read» — Anna Maria van der Merwe is documented by a baptism of 1807 and her **parents** come from a tree; Adriana Christina Viljoen is named on a baptism of 1835 and her **marriage date** comes from a tree. **Both halves are true and the status field can only hold one of them.** The options are a per-claim marker, or accepting that a record's status describes its weakest load-bearing part. Until then the check reports all five every build, which is the right behaviour: **tuning it quiet would be a check with an exception, and a check with an exception is a check that will be excepted.** **Done, 15 September, by adding the field rather than by tuning the check.** A person now carries **`tree:`** naming which single claim is untested — «her parents», «the 1828 marriage date and place» — and **the person page prints it** beside the confidence chip, so a reader sees it and not only a checker. The check now **fails** a `doc` record that says a claim is undocumented and does not name it. **Reporting the phrase and stopping there was half a check**: it said something was wrong without saying what, five times, every build."
+  },
+  {
+   "n": 78,
+   "what": "FindMyPast — a full subscription, and it runs out on 16 October",
+   "state": "running",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "**THE CLOCK IS THE POINT.** A one-month full subscription opened 16 September. Every British wall on this site has been beaten by a paywall or a bot check — Google Books at quota zero, HathiTrust behind Cloudflare, archive.org holding no London directory earlier than 1920 — and **FindMyPast holds the record sets that answer nearly all of them.** The campaign below is ordered so that if only half of it gets done, it is the right half. **Anything still unharvested on 16 October is lost until somebody pays again.**"
+  },
+  {
+   "n": 79,
+   "what": "FMP · British Army service records — James Mountjoy, 21st Dragoons (Light)",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "**The oldest blocking question on this site.** His Cape death notice answers «names of the parents of the deceased» with NOT KNOWN and his 1817 marriage register rules a line through the column that should say where he came from. A memoirist who lodged in his house says he was **discharged from the 21st Light Dragoons**. Kew's own catalogue has no Montjoy of that regiment in WO 97, WO 119, WO 120, WO 121 or WO 25 — a controlled negative, since the same catalogue holds 95 WO 97 men of that regiment. FMP carries these series **imaged**, and its indexing is not Kew's. [The question](/documents/#mountjoy-dragoons)"
+  },
+  {
+   "n": 80,
+   "what": "FMP · Britain, Directories & Almanacs — Johan Gottlieb Kolbe in London",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "**Brunswick Square or 34 Conduit Street.** An 1844 obituary puts the family at Brunswick-square; his own 1842 will and 1845 death record put him in Conduit Street, off Bond Street. Different parts of London and this archive cannot choose. Every free route failed. **A trade directory of the 1820s–1840s decides it in one line**, and it is the kind of thing FMP holds and nobody else digitises free. Also worth the same search: «Kolbe, John, 18 Broad-street, Soho» from a list of 234 master tailors who met over the Combination Act in December 1799."
+  },
+  {
+   "n": 81,
+   "what": "FMP · London parish registers — the eight sons of John Godloff Kolbe",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "The 1844 obituary calls George Augustus **«the last remaining of eight sons of John Godloff Kolbe Esq. of Brunswick-square»**. Seven brothers died before December 1844 and this archive has never found one of them. FreeBMD would not be scripted; the route was never tried anywhere else. George Augustus was baptised at **St Anne's Soho, 2 February 1803**, so the family was in that parish — **seven baptisms and up to seven burials should be in the same registers.**"
+  },
+  {
+   "n": 82,
+   "what": "FMP · Margaret Downing — born London, 23 February 1803",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "Read off a gravestone at Burgersdorp whose caption had stopped one line short for weeks. **She has a birth date and a city and no parents at all.** She signed her 1819 marriage allegation with a mark, swearing she was twenty-one at fifteen. A London baptism of that date would give her a father, and her surname is the one that runs four generations through the Kolbes as a forename."
+  },
+  {
+   "n": 83,
+   "what": "FMP · John Barry of Bilsdale, Yorkshire — break the conflation",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "[Open question 6](/open-questions/). One profile welds a Yorkshire farmer of Bilsdale, christened 1796 and buried at St Hilda's on **3 January 1853**, to a John Barry who died at de Bruins Poort in the Cape on **8 January 1853, five days later**. FMP has the 1841 and 1851 censuses for Holly Bower and the St Hilda's registers. **Separate them, and see which — if either — is the father.**"
+  },
+  {
+   "n": 84,
+   "what": "FMP · Irish records — John Augustus Barry, «Irishman born in Ireland»",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "His 1903 death registration, made by a son who was in the room, answers question 5 «IRISHMAN BORN IN IRELAND» and gives his age as 84 years 2 months. His mother is recorded only as **«born Neagle»**, with no Christian names and no address. The family speaks of **County Cork**. FMP's Irish holdings are the strongest of any service, and this is the one line of the family whose origin is claimed but never documented."
+  },
+  {
+   "n": 85,
+   "what": "FMP · the German Savoy Church and the RG4 non-conformist registers",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "Johan Gottlieb Kolbe was buried at the **German Lutheran church of the Savoy on 26 November 1845, entry 55, grave 7**, by the Revd Dr Steinkopff. The registers are TNA series **RG 4/4625, 4626, 4628, 4631** for deaths and burials and **RG 4/4627, 4629** for births and baptisms. This archive cited that burial from a tree and has never seen the register. **If the family were Savoy Lutherans, the seven brothers may be there rather than at St Anne's.**"
+  },
+  {
+   "n": 86,
+   "what": "FMP · re-run the four South African surnames, now that the whole site is open",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "FindMyPast was used once, unsubscribed, and returned **«12,984 for the surname and birth year alone»** for Mountjoy — a number that means the search was never narrowed. It also produced one transcript reference this archive still cites without having seen the image, **R_177176049779** for Petrus Jacobus Booysen's 1812 birth. **Lowest priority of this campaign and it must still be run**, because a transcript cited and unseen is exactly what this archive corrects other people for."
   }
  ],
  "accounts": [
