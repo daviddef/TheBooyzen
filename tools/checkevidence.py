@@ -24,7 +24,7 @@ A pointer that resolves to nothing looks exactly like a pointer that works.
 
 Exits 1 when a documented person's page cannot reach their own evidence.
 """
-import argparse, io, json, os, re, sys
+import argparse, io, json, os, re, sys, html, unicodedata
 
 # Every file here attaches evidence to a person, and HOW it names them. The
 # distinction matters and getting it wrong is how a gate cries wolf: a first
@@ -39,7 +39,84 @@ import argparse, io, json, os, re, sys
 KEYED = [("register.json", "rows", "p", "slug"),
          ("timeline.json", "events", "p", "name"),
          ("places.json", "places", "p", "name")]
-# marriages.json is deliberately absent: its `p` is where the wedding was.
+# marriages.json is deliberately absent FROM THIS LIST: its `p` is where the
+# wedding was, not who was married. It is checked separately, below, because it
+# keys to people by `h` and `w` and needs its own rule.
+
+
+def dslug(s):
+    """The same slug the person pages are built under."""
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = s.replace("\u00ff", "y").replace("\u0178", "Y")
+    s = re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-").lower()
+    return s[:60]
+
+
+def flat(body):
+    """The rendered page as reading text: no tags, no entities, one space."""
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", body)))
+
+
+def marriages_reach_their_people(data, dist, people):
+    """marriages.json is keyed to a husband and a wife BY NAME AND BIRTH.
+
+    Until 17 September the person page never opened this file. The chart drew
+    the spouse - because kin.js holds the household - so the page looked
+    complete, and the record of the marriage itself, the date, the town, whether
+    a document or a family tree puts them there, reached nobody. Thirty-four
+    people, every one of them with a spouse drawn and not one with the evidence
+    shown. A missing file is easy to find; a page that shows half of what it
+    holds is not, so this is the half that gets a gate.
+
+    A reference is "Name" or "Name|token", and the token has to appear in that
+    person's birth or death. That is not decoration: this archive holds a
+    Petrus Jacobus Booysen born 1788 and his son born 1812, both on one page,
+    and they have four marriages between them. Matching on the name alone would
+    hand the son's two to the father - the merge-on-a-name error this estate
+    exists to refuse.
+    """
+    rows = load(data, "marriages.json", "rows")
+    bad, checked = [], 0
+    for r in rows:
+        for side in ("h", "w"):
+            ref = (r.get(side) or "").strip()
+            if not ref:
+                continue
+            name, _, tok = ref.partition("|")
+            name, tok = name.strip(), tok.strip()
+            hits = [p for p in people if p.get("n") == name]
+            if tok:
+                hits = [p for p in hits
+                        if tok in (p.get("b") or "") or tok in (p.get("d") or "")]
+            if len(hits) != 1:
+                bad.append("%s in marriages.json resolves to %d people - the page "
+                           "cannot be told which" % (ref, len(hits)))
+                continue
+            other = (r.get("w" if side == "h" else "h") or "").split("|")[0].strip()
+            page = os.path.join(dist, "people", dslug(name), "index.html")
+            if not os.path.exists(page):
+                bad.append("%s is married in marriages.json and has no person page" % name)
+                continue
+            m = re.search(r"<main.*?</main>", io.open(page, encoding="utf-8",
+                                                     errors="ignore").read(), re.S)
+            txt = flat(m.group(0) if m else "")
+            checked += 1
+            # EVERY occurrence, not the first. A first draft took the first and
+            # reported four failures that were not failures: the dossier prose
+            # on Anna Catharina Sleer's page opens "Married James Montjoy 9 Mar
+            # 1817", which is the same marriage written the long way round, and
+            # the record block sits further down. A gate that reads the first
+            # sentence and stops is reading the summary, not the evidence.
+            found = [mm.start() for mm in
+                     re.finditer(re.escape("Married " + other), txt)]
+            if not found:
+                bad.append("%s married %s (%s, %s) and their page does not say so"
+                           % (name, other, r.get("d", "?"), r.get("p", "?")))
+            elif r.get("d") and not any(r["d"] in txt[i:i + 240] for i in found):
+                bad.append("%s's page names the marriage to %s but not its date %s"
+                           % (name, other, r["d"]))
+    return bad, checked
 
 
 def load(data, name, listkey):
@@ -138,8 +215,14 @@ def main():
                 bad.append("%s has %d record(s) in the register and its page's link "
                            "finds none of them" % (slug, len(mine)))
 
+    people = load(a.data, "people.json", "people")
+    mbad, mchecked = marriages_reach_their_people(a.data, a.dist, people)
+    bad += mbad
+
     print("  %d people are named in an evidence file; %d carry records in the register"
           % (len(documented), len(rows_for)))
+    print("  %d marriage side(s) resolve to a person, and their page carries the record"
+          % mchecked)
     if unheld:
         print("  %d name(s) in those files match no person this archive holds \u2014 mentioned, "
               "not documented, which is not a fault" % len(unheld))

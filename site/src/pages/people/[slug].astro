@@ -6,7 +6,8 @@ import d from "../../data/dossiers.json";
 import pl from "../../data/places.json";
 import pj from "../../data/people.json";
 import PersonTree from "../../components/PersonTree.astro";
-import { treeFor } from "../../lib/kin.js";
+import mg from "../../data/marriages.json";
+import { treeFor, resolve } from "../../lib/kin.js";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
@@ -25,6 +26,28 @@ const hasKin = (self) => {
   const t = treeFor(self);
   return t.parents.length > 0 || t.siblings.length > 0 || t.unions.length > 0;
 };
+/* THE MARRIAGE RECORD, READ HERE RATHER THAN INFERRED FROM THE CHART.
+ *
+ * The chart draws a spouse because kin.js says the two were a household. The
+ * marriage itself — the date, the town, whether a document or a family tree
+ * puts them there, and the source that says so — lives in marriages.json, and
+ * until now this page never opened that file. All 34 people it names had their
+ * spouse drawn and not one of them had the record of the marriage shown, so a
+ * reader could see who somebody married and nothing at all about the evidence.
+ *
+ * Every reference is resolved through kin.js, which is the archive's own
+ * disambiguator: "Petrus Jacobus Booysen|1788" and "Petrus Jacobus Booysen|1812"
+ * are a father and a son sharing one page, and attaching the son's two
+ * marriages to the father would be the merge-on-a-name error this estate exists
+ * to avoid. Matching is on name AND birth, never on name. */
+const keyOf = (x) => x.n + "|" + (x.b || "");
+const VIA = { doc: "a record read here", tree: "a family tree, not a document",
+              inf: "inferred", open: "an open question" };
+const marrOf = (self) => mg.rows
+  .map((r) => ({ r, H: resolve(r.h), W: resolve(r.w) }))
+  .filter((x) => keyOf(x.H) === keyOf(self) || keyOf(x.W) === keyOf(self))
+  .map((x) => ({ ...x.r, spouse: keyOf(x.H) === keyOf(self) ? x.W : x.H }))
+  .sort((a, b) => (a.ds < b.ds ? -1 : 1));
 const byPage = {};
 for (const h of p.hits) (byPage[h.page] ||= { title: h.title, hits: [] }).hits.push(h);
 const groups = Object.entries(byPage);
@@ -44,7 +67,21 @@ const groups = Object.entries(byPage);
         <a href={u("/register/?q=" + encodeURIComponent(self.n.replace(/[“”]/g, "")))}>
           Every record naming {self.n.replace(/[“”]/g, "")} &rarr;</a>
       </p>
-      {!hasKin(self) && (
+      {marrOf(self).length > 0 && (
+        <div class="panel" style="padding:15px 17px;margin:0 0 22px">
+          <h3 class="ct" style="margin:0 0 12px">{marrOf(self).length === 1 ? "The marriage record" : "The marriage records"}</h3>
+          {marrOf(self).map(m => (
+            <p style="margin:0 0 13px;font-size:15px;line-height:1.62">
+              <b>Married {m.spouse.n}</b><span class="m">{" \u00b7 " + m.d + " \u00b7 " + m.p}</span>{" "}
+              <span class={"chip " + (m.via === "doc" ? "doc" : m.via === "tree" ? "lore" : m.via)}>{VIA[m.via] || m.via}</span>
+              {m.n && <span class="cap" style="display:block;margin-top:5px">{m.n}</span>}
+              {m.src && <a class="plink" href={u(m.src[1])} style="display:inline-block;margin-top:7px">{m.src[0]} &rarr;</a>}
+            </p>
+          ))}
+          <p class="cap" style="margin:0"><a href={u("/marriages/")}>Every marriage this archive places &rarr;</a></p>
+        </div>
+      )}
+      {!hasKin(self) && marrOf(self).length === 0 && (
         <p class="note">
           <b>No family is drawn here, because none is recorded.</b> This archive holds
           {" "}{self.n}{" "} as a name on a document &mdash; a witness at a font, a signature on a form, a

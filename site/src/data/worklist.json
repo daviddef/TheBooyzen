@@ -799,10 +799,34 @@
   {
    "n": 100,
    "what": "Give the person page the evidence files it still cannot see",
+   "state": "done",
+   "owner": "this archive",
+   "since": "2026-09-17",
+   "note": "The 17 September audit found one live fault and one standing gap. The fault is fixed. **The gap is that `/people/[slug]` reads only `dossiers.json`, `people.json`, `places.json` and `kin.js`** — so everything else reaches a person only if it happens to be rendered as prose on some page and then picked up by the dossier gatherer. **`marriages.json` is keyed to a husband and a wife by name and the person page never reads it**; a marriage this archive holds shows on a person’s page only by that indirect route. `corrections.json` and `searched.json` are keyed to a page anchor rather than to a person, so a correction about a named person cannot be shown on their page at all. **Done 17 September: the person page now reads `marriages.json` directly.** Thirty-three pages gained a marriage record — the date, the town, whether a document or a family tree puts them there, the note and the source — where before the chart drew a spouse and the evidence for the marriage reached nobody. Matching is through `resolve()` in kin.js, on name **and** birth: Petrus Jacobus Booysen born 1788 and his son born 1812 share one page and have four marriages between them, and name-only matching would have handed the son's two to the father. `checkevidence.py` now refuses the build when a marriage it holds is missing from either partner's page, when the date is missing from the block, or when a reference resolves to more than one person; all three were proved by reintroducing them. **What is still open is the larger half**: `corrections.json` and `searched.json` key to a page anchor rather than to a person, so a correction about a named person still cannot be shown on their page. That is a schema change and it is [row 102](/worklist/)."
+  },
+  {
+   "n": 101,
+   "what": "The worldwide source map keeps no work list, and everything it needs is already installed",
+   "state": "next",
+   "owner": "the Geneology Map session",
+   "since": "2026-09-17",
+   "note": "Checked today at that project's own kit pin (`8174676`) and in its `node_modules`: **`WorkList.astro`, `checkworklist.py` and `worklist_rollup.py` are all present and installed**, so nothing has to be built or repinned to give it a list. What is missing is the wiring — no `site/src/data/worklist.json`, no `/worklist/` page, and a build script that runs `build-surnames.py && build.py && check-data.py` and none of the estate gates. Its work currently sits in two loose files, `notes/45-kit-promotion.md` and `requests/meertens-familienamenbank.md`, which nothing reads. The estate roll-up already counts it: **9 archives, 1,003 rows, 440 open, and two with no list at all — Our Family and the Geneology Map.** Worth doing at the same time as a repin, because that project is **52 commits behind** the kit. The rows are that session's to write; this archive is not going to invent work on its behalf. [The work list](/worklist/)"
+  },
+  {
+   "n": 102,
+   "what": "Corrections and searches key to a page, not to a person, so neither can be shown on a person's page",
    "state": "next",
    "owner": "this archive",
    "since": "2026-09-17",
-   "note": "The 17 September audit found one live fault and one standing gap. The fault is fixed. **The gap is that `/people/[slug]` reads only `dossiers.json`, `people.json`, `places.json` and `kin.js`** — so everything else reaches a person only if it happens to be rendered as prose on some page and then picked up by the dossier gatherer. **`marriages.json` is keyed to a husband and a wife by name and the person page never reads it**; a marriage this archive holds shows on a person’s page only by that indirect route. `corrections.json` and `searched.json` are keyed to a page anchor rather than to a person, so a correction about a named person cannot be shown on their page at all. **Two options and they are different sizes:** give the person page a direct read of `marriages.json` (small, and it removes the indirection); or key corrections and searches to people as well as pages (large, and it changes two schemas). A gate now catches the marriage case — `marriage-orphan` in checkregisters.py — but a gate is not the same as the page showing it."
+   "note": "The other half of [row 100](/worklist/). `corrections.json` rows are positional — date, was, now, cause, href — and the `href` is a **page anchor**: documents 35, open questions 4, name 4. `searched.json` is the same shape, a dated session write-up attached to a page. So a correction that is entirely about one named person can be read on /corrections/ and **cannot be read on that person's page**, which is where somebody looking them up will be. This is a schema change and it touches two files and every page that renders them, which is why it is separate from row 100 rather than folded into it. It is also the thing the 17 September audit called the standing gap, as against the fault, which is fixed. [The corrections](/corrections/)"
+  },
+  {
+   "n": 103,
+   "what": "D'Arcy's work list says two archives keep none, and names the wrong two",
+   "state": "next",
+   "owner": "the D'arcy session",
+   "since": "2026-09-17",
+   "note": "Raised here because it belongs to another archive and would otherwise go unsaid — which is exactly what that row itself says about the archives it names. The D'Arcy row reports the roll-up as **8 archives, 153 rows, 113 open, and two with no list at all: Luwinski and Our Family**. Luwinski has kept one since then. Run today the roll-up gives **9 archives, 1,003 rows, 440 open**, and the two without a list are **Our Family and the Geneology Map**. The row is still true in its point and wrong in its figures, which is the failure a roll-up built from the archives was written to end: the numbers were typed in rather than read out. [The work list](/worklist/)"
   }
  ],
  "accounts": [
