@@ -4096,6 +4096,80 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "n": "the biggest untouched seam in the subscription",
+   "d": "16 Sep 2026",
+   "h": "/documents/#kolbe-1834",
+   "rows": [
+    [
+     "“Kolbe” + “Conduit-street”, 1832–1836",
+     "KOLBE AND FLETCHER IN THE 1834 MASTER TAILORS' LIST",
+     "The roll of “considerably more than three hundred of the Master Tailors of the metropolis” who met at Willis's Rooms on 29 April 1834 to resist the Grand National Consolidated Trades' Union. Printed in the Morning Post 30 Apr, Globe 30 Apr and 10 May, Old England 4 May, Morning Herald 10 May, London Courier 10 May, True Sun 10 May, Public Ledger 12 May. SEVEN NEWSPAPERS, ONE LINE — and it puts him at Conduit Street by April 1834, closing the gap between the 1831 rate book and the 1836 Gazette notice.",
+     "yes"
+    ],
+    [
+     "“Kolbe” + “tailor”, 1820–1850",
+     "150 articles, and the son's trade",
+     "Law Chronicle, 13 January 1825: “KOLBE John Henry, of Norfolk-street, Middlesex-hospital, LAST OF MANSFIELD-ST., KENTISH TOWN, TAILOR, DRAPER.” The Gazette gave the addresses and not the trade, and “Mansfield-Place” turns out to be Mansfield Street, Kentish Town.",
+     "yes"
+    ],
+    [
+     "“Kolbe” + “Soho”, 1795–1832",
+     "45 articles, a house number and a runaway",
+     "Morning Herald, 6 June 1832: “Letters addressed A. Z., MR. KOLBE, 5, CHURCH-STREET, SOHO, will be punctually attended to” — the rate books give the street, this gives the number. AND Morning Advertiser, 31 December 1832: “LEFT HIS HOME, MONDAY, DECEMBER 10, FREDERICK KOLBE, ABOUT 16, dark hair and eyes, with an impediment in his sight. Any information addressed MRS. KOLBE, NO. 18, GERRARD-STREET, SOHO.” That is the Frederick this archive rejected in the morning — so THERE WERE TWO KOLBE HOUSEHOLDS IN SOHO AT ONCE.",
+     "yes"
+    ],
+    [
+     "The May 1824 dissolution",
+     "Reported in at least six London papers",
+     "The News 23 and 24 May, New Times 17 May, Nation 17 May, Globe 17 May, Sunday Morning Herald 16 May, Fleming's Weekly Express 16 May: “J. H. Kolbe and J. G. Kolbe, Church-street, Soho, tailors.” ALL OF THEM PUT THE SON'S NAME FIRST, where the Gazette put the father's.",
+     "yes"
+    ],
+    [
+     "“Nautilus” + “settlers”, 1819–1821",
+     "The Settler's ship, named before it sailed",
+     "London Courier and Evening Gazette, 12 November 1819, and the British Press the next day: “the Ministers are preparing to receive Settlers proceeding to the Cape of Good Hope. In the Port of London — Chapman, 558 tons; NAUTILUS, 403; Agamemnon, Diadem, and Ocean.”",
+     "yes"
+    ],
+    [
+     "“Mountjoy” + “Cradock”",
+     "488 articles, every one a coincidence",
+     "The engine is proximity-ranked rather than strictly AND, and Mountjoy Square and Mountjoy Place in Dublin swamp it. Nothing of this family. Recorded because the count looks like a find and is not one.",
+     "no"
+    ],
+    [
+     "What the newspaper engine is, for the next session",
+     "Recorded",
+     "Operation searchNewspaperArticles on the same GraphQL endpoint. Variables: filters.keywordsFilter (a string, quoted phrases honoured), filters.namesFilter, filters.exactKeywords, filterQuery.publicationDate {from,to}, filterQuery.coverageCountry — WHICH INDEXES BRITISH PAPERS BY THE COUNTRY THEY REPORT ON, not where they were printed. pagination {startFrom, rows}, ordering {by: RELEVANCE|DATE, direction}. 108,257,031 pages, 2,952 titles. THE COVERAGE_COUNTRY FACET HAS NOT YET BEEN USED AND IS THE OBVIOUS NEXT MOVE FOR THE CAPE.",
+     "yes"
+    ],
+    [
+     "“Kolbe” + “Colesberg” and “Kolbe” + commando, 1900–1902",
+     "A Kolbe commando, and a general captured",
+     "May 1901: “Kritzinger, with 200 men, has passed through this district. The HERTZOG, BRAND AND KOLBE commandos…” — London Evening Standard, Globe and Westminster Gazette 21 May, Leominster News 24 May. September: “KOLBE'S ATTITUDE IS DOUBTFUL. He is reported to have expressed a wish to surrender” — Derby Daily Telegraph and Derby and Chesterfield Reporter. November: “GENERAL KOLBE CAPTURED” near Reddersburg — Birmingham Mail 21 Nov, Warwick and Warwickshire Advertiser 23 Nov. COLESBERG, BETHULIE, REDDERSBURG, BLOEMFONTEIN IS LEEUWBERG COUNTRY, and 1901 is when Commandant Kolbe's sons would have been commanding. NOT CLAIMED AS ANY NAMED MAN.",
+     "yes"
+    ],
+    [
+     "“G. A. Kolbe”, 1910–1920",
+     "PRESIDENT OF THE ORANGE FREE STATE AGRICULTURAL ASSOCIATION",
+     "Daily Telegraph 26 June 1914, the delegate list: “Mr. G. A. KOLBE (BETHULIE)”. Western Daily Press, Dundee Courier, Cork Free Press and Exeter and Plymouth Gazette, 2 July 1914: “Mr G. A. KOLBE, President of the Orange Free State Agricultural Association and Chairman of the Orange Free State delegation.” Daily Malta Chronicle, 22 July: he sends a telegram of respectful greeting to QUEEN WILHELMINA. Same initials and same district as the POW of 1901, thirteen years apart.",
+     "yes"
+    ],
+    [
+     "The coverage facet, and the limit it shows",
+     "NO SOUTH AFRICA AT ALL",
+     "FindMyPast's own COVERAGE_COUNTRY facet lists England, Scotland, Wales, both Irelands, India, Barbados, China, Jamaica, Australia and New Zealand. THERE IS NO SOUTH AFRICAN TITLE IN THE CORPUS. Everything found above is the Cape and the Free State seen from Fleet Street through Reuter's wire. It is not a substitute for the South African papers and eGGSA remains the only route into those.",
+     "no"
+    ],
+    [
+     "“21st Light Dragoons” + “Cape”, 1806–1825",
+     "258 articles, and the regiment at the Cape",
+     "London Courier and Evening Gazette, 2 January 1812: “CAPE OF GOOD HOPE. The 21st Light Dragoons are in the highest state of discipline. The following is a Copy of General Orders given [by] SIR JOHN CRADOCK, after reviewing that regiment…” — James Mountjoy's regiment, at the Cape, reviewed by the Governor whose name the town he settled in carries. NOT YET READ IN FULL.",
+     "yes"
+    ]
+   ]
   }
  ]
 }

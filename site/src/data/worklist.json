@@ -63,10 +63,10 @@
   {
    "n": 8,
    "what": "Sign in to FamilySearch",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-14",
-   "note": "Four pieces of work are parked behind one sign-in. The **Burgersdorp baptism register sweep is stopped at image 604 of 818**; the whole-film nameless sweep has not begun; three Kolbe children and Angeline of Wakkerstroom are unfollowed; and the phthisis reading on Henry James Booyzen's death record is unchecked. Nothing else on this list is waiting on so little. **16 SEPTEMBER: SIGNED BACK IN, AND THE FIRST OF THE FOUR IS ALREADY DONE.** The two missing Barry children of open question 13 fell in under an hour — **Margrith Louisa Maria, baptised Burgersdorp 5 April 1852**, and **William Frederick Thomas, born 29 September 1861** — not to a name search but to the relationship search. Remaining behind this sign-in: the Burgersdorp hand sweep from **image 605 of 818**, the three unfollowed Kolbe children and Angeline of Wakkerstroom, and the phthisis reading. [What it gave](/documents/#barry-eleven)"
+   "note": "Four pieces of work are parked behind one sign-in. The **Burgersdorp baptism register sweep is stopped at image 604 of 818**; the whole-film nameless sweep has not begun; three Kolbe children and Angeline of Wakkerstroom are unfollowed; and the phthisis reading on Henry James Booyzen's death record is unchecked. Nothing else on this list is waiting on so little. **16 SEPTEMBER: SIGNED BACK IN, AND THE FIRST OF THE FOUR IS ALREADY DONE.** The two missing Barry children of open question 13 fell in under an hour — **Margrith Louisa Maria, baptised Burgersdorp 5 April 1852**, and **William Frederick Thomas, born 29 September 1861** — not to a name search but to the relationship search. Remaining behind this sign-in: the Burgersdorp hand sweep from **image 605 of 818**, the three unfollowed Kolbe children and Angeline of Wakkerstroom, and the phthisis reading. [What it gave](/documents/#barry-eleven)  ··· **DONE — David signed in on 16 September**, and the account was used the same day for the Savoy catalogue search and the film check."
   },
   {
    "n": 9,
@@ -771,6 +771,22 @@
    "owner": "this archive",
    "since": "2026-09-16",
    "note": "**674 lines written inline — the largest sources page in the estate.** Only Falco and Defranceschi hold theirs as data, so the row cannot move past two of seven until the others do. Nothing about the content need change; it is the shape that blocks it.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside."
+  },
+  {
+   "n": 97,
+   "what": "VAB MHG M777 — the estate that would name the Commandant’s twelve children",
+   "state": "blocked",
+   "owner": "Free State Archives, Bloemfontein",
+   "since": "2026-09-16",
+   "note": "**This is now the most valuable unread document on the site.** Commandant **John Gerson Eliezar Kolbe**, the Settler’s eldest child, died at **Leeuwberg** on 3 April 1868 leaving **eight sons and four daughters**, and this archive can put a hand on two. Today three more Kolbes appeared in that exact country — **a man farming Leeuwberg in 1901**, **a Kolbe commando and a “General Kolbe” taken at Reddersburg in November 1901**, and **a G. A. Kolbe of Bethulie who was President of the Orange Free State Agricultural Association in 1914**. **None of them can be attached to anybody until the twelve children are named**, and the document that names them is her 1896 estate, filed under her second husband’s surname: **VAB MHG M777 — “MCCABE, ANNA JACOBA. NOOIENSVAN VAN DER MERWE. EGGENOTE JOHN GHERSON [KOLBE]”**. Beside it sits **VAB MHG K71**, the Commandant’s own. **VAB is Bloemfontein — a different building again from TAB, KAB and NAB**, so it is a fourth trip and cannot go on the Pretoria researcher’s list."
+  },
+  {
+   "n": 98,
+   "what": "Read the 1812 general order on the 21st Light Dragoons at the Cape",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-16",
+   "note": "London Courier and Evening Gazette, **2 January 1812**: *“CAPE OF GOOD HOPE. The 21st Light Dragoons are in the highest state of discipline. The following is a Copy of General Orders given [by] **Sir John Cradock**, after reviewing that regiment…”* — **James Mountjoy’s regiment, at the Cape, reviewed by the Governor whose name the town he settled in carries.** Only the first line has been read. The full order may name officers, give the regiment’s strength and station, and say what it was doing in 1812 — five years before Mountjoy married at Graaff-Reinet. There are **258 articles** in the same search and none of the rest has been read either."
   }
  ],
  "accounts": [
