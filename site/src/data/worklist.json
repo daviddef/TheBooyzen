@@ -782,11 +782,19 @@
   },
   {
    "n": 98,
-   "what": "Read the 1812 general order on the 21st Light Dragoons at the Cape",
-   "state": "next",
+   "what": "The 21st Light Dragoons at the Cape, read in the London papers 1806–1817",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-16",
-   "note": "London Courier and Evening Gazette, **2 January 1812**: *“CAPE OF GOOD HOPE. The 21st Light Dragoons are in the highest state of discipline. The following is a Copy of General Orders given [by] **Sir John Cradock**, after reviewing that regiment…”* — **James Mountjoy’s regiment, at the Cape, reviewed by the Governor whose name the town he settled in carries.** Only the first line has been read. The full order may name officers, give the regiment’s strength and station, and say what it was doing in 1812 — five years before Mountjoy married at Graaff-Reinet. There are **258 articles** in the same search and none of the rest has been read either."
+   "note": "London Courier and Evening Gazette, **2 January 1812**: *“CAPE OF GOOD HOPE. The 21st Light Dragoons are in the highest state of discipline. The following is a Copy of General Orders given [by] **Sir John Cradock**, after reviewing that regiment…”* — **James Mountjoy’s regiment, at the Cape, reviewed by the Governor whose name the town he settled in carries.** Only the first line has been read. The full order may name officers, give the regiment’s strength and station, and say what it was doing in 1812 — five years before Mountjoy married at Graaff-Reinet. There are **258 articles** in the same search and none of the rest has been read either.  ··· **DONE, AND IT GAVE A DEADLINE.** Sixty-seven articles read in date order. The regiment sailed from York for the Cape in **May 1806**, went on to South America and back, was reinforced in **1810** and by a draft of **140 men in October 1813**, was reviewed by **Sir John Cradock**, and — in a letter from the Cape dated 1 and 10 September 1817, printed in five London papers — **“THE 21ST LIGHT DRAGOONS HAVE EMBARKED FOR INDIA”**. **James Montjoy married at Graaff-Reinet on 9 March 1817, six months before.** [The table](/documents/#dragoons-cape)"
+  },
+  {
+   "n": 99,
+   "what": "WO 12 — the muster books now have a target, and it is four quarters wide",
+   "state": "blocked",
+   "owner": "The National Archives, Kew",
+   "since": "2026-09-16",
+   "note": "**WO 97 will not hold him and this archive has stopped expecting it to** — the pre-1855 discharge papers cover only men discharged to a pension, and he took his papers at the Cape to marry and make saddles. **WO 12, the muster books and pay lists, lists every man by name, quarter by quarter, including the quarter he leaves.** The windows are now dated: he arrived with the regiment in **1806**, with the reinforcement of **October 1810**, or with the draft of **140 men in October 1813** — and he was gone before the regiment **embarked for India in September 1817**. So the quarters to read are **Michaelmas 1816 to Midsummer 1817** for the discharge, and the arrival quarters for the enlistment. **WO 12 is not digitised for this regiment** and this needs a reader at Kew. It belongs with the two Kew letters already drafted."
   }
  ],
  "accounts": [

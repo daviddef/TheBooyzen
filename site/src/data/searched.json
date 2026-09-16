@@ -4170,6 +4170,56 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The 21st Light Dragoons at the Cape, read in the London papers",
+   "n": "the oldest blocking question, approached from the other end",
+   "d": "16 Sep 2026",
+   "h": "/documents/#dragoons-cape",
+   "rows": [
+    [
+     "“21st Light Dragoons” + “Cape of Good Hope”, 1806–1825",
+     "67 articles, read in date order",
+     "Not a search for a Mountjoy. A search for the REGIMENT, which can be followed where the man cannot. Sorting is `ordering:{by:'PUBLICATION_DATE'}` — 'DATE' returns a 400.",
+     "yes"
+    ],
+    [
+     "When they arrived",
+     "May 1806, from York by way of Portsmouth",
+     "Bath Journal 5 May, Limerick Gazette 6 May, Hampshire Chronicle 19 May 1806. Part of them went on to SOUTH AMERICA in August 1806 (Caledonian Mercury) and came back to the Cape in 1807 (Government Gazette (India), 10 December).",
+     "yes"
+    ],
+    [
+     "Reinforcements",
+     "October 1810 and a draft of 140 men in October 1813",
+     "Oxford Journal 27 Oct 1810: “a large reinforcement of officers and men are to be sent out by the first ship.” Star 26 Oct 1813: “a detachment of 140 men for the 21st Light Dragoons… embarked for the Cape of Good Hope.” THREE POSSIBLE ARRIVAL WINDOWS FOR HIM, all now dated.",
+     "yes"
+    ],
+    [
+     "WHEN THEY LEFT",
+     "SEPTEMBER 1817 — AND HE MARRIED IN MARCH",
+     "Extract of a letter from the Cape dated 1 and 10 September 1817, printed in the Sun and Star 14 November, Public Ledger and Morning Herald 15 November, Hampshire Chronicle 17 November: “THE 21ST LIGHT DRAGOONS HAVE EMBARKED FOR INDIA.” JAMES MONTJOY MARRIED AT GRAAFF-REINET ON 9 MARCH 1817. His discharge now has a deadline.",
+     "yes"
+    ],
+    [
+     "Why a man would take his discharge",
+     "Parliament said it out loud",
+     "Globe, 4 March 1809: “it was thought an unaccountable circumstance, that the 21st light dragoons should [be] sent to the Cape of Good Hope, WHERE THEY COULD HAVE NOTHING TO DO.” Eleven years of garrison duty and one review — by SIR JOHN CRADOCK, who gave his name to the town Mountjoy settled in.",
+     "yes"
+    ],
+    [
+     "Two things that are not evidence and are worth knowing",
+     "Recorded",
+     "The regiment's colonel was GENERAL BANASTRE TARLETON (Sun, 9 November 1812). And a detachment of about 100 of them was at ST HELENA guarding Napoleon in October 1817 (Star, Oxford Journal, Belfast News-Letter).",
+     "no"
+    ],
+    [
+     "What it does not do",
+     "It does not name him",
+     "No Mountjoy appears in any of the 67 articles. WO 97 still holds none of that regiment, and the reason still stands — the pre-1855 discharge papers hold only men discharged TO A PENSION. WHAT HAS CHANGED IS THAT THE MUSTER BOOKS NOW HAVE A TARGET: WO 12 at Kew lists every man by name, quarter by quarter, and the quarters that matter are 1806, 1810, 1813 and everything up to September 1817.",
+     "no"
+    ]
+   ]
   }
  ]
 }
