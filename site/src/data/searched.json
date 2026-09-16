@@ -3824,6 +3824,24 @@
      "One trial, and a brother speaking",
      "Two rows in a 154-row surname sweep, nearly scrolled past. Trial t18190113-149, 13 January 1819: Richard Kerr indicted for stealing a coat worth six pounds from JOHN HENRY KOLBE, who deposes “MY FATHER IS A TAILOR, AND LIVES IN CHURCH-STREET, SOHO”. The full text is free at oldbaileyonline.org and always was.",
      "yes"
+    ],
+    [
+     "Westminster Baptisms — the county set, not the FamilySearch index",
+     "13 entries, and an ELEVENTH CHILD",
+     "The national index gives the place as “Westminster” and nothing finer. Westminster Archives' own registers NAME THE PARISH — St Anne Soho for Elizabeth, Charles, George Augustus, Frederick Charles, Charles Samuel and Jane Day; St James Piccadilly for Juliet Rosinia, Mary Ann and John Henry. AND THEY HOLD LOUISA MARIA KOLBE, BORN 13 MAY 1810, BAPTISED 4 JULY 1810 AT ST ANNE'S SOHO, father John Gottlob, mother Mary — who is not in the FamilySearch index at all.",
+     "yes"
+    ],
+    [
+     "Westminster Marriages, surname Kolbe",
+     "Two marriages nobody had",
+     "ELIZABETH KOLBE AND JOHN MILNE, 1817, ST CLEMENT DANES, both of that parish. JOHN HENRY KOLBE AND MATILDA FORD, 26 APRIL 1819, ST MARGARET WESTMINSTER, both of that parish — THREE MONTHS AFTER HE STOOD IN THE OLD BAILEY, and he was eighteen.",
+     "yes"
+    ],
+    [
+     "The GRO marriage index, surname Kolbe, London 1825–1875",
+     "Four, two of them new",
+     "JANE DAY KOLBE, 1853 Q3, City of London, vol AM 1170 p.33 — the youngest of the eleven, married at thirty-four. MARY ANN MARIA FORD KOLBE, 1847 Q1, Whitechapel, vol AZ 840 p.16 — and FORD IS MATILDA'S MAIDEN NAME, carried as a forename. Very probably John Henry's daughter, and written down as the inference it is. Also Maria Kolbe 1838 Stepney and Amelia Ann Kolbe 1854 St Pancras, the latter already held.",
+     "yes"
     ]
    ]
   },
@@ -4005,6 +4023,38 @@
      "A note on how the place filter behaves",
      "Recorded for the next session",
      "FindMyPast's KeywordsPlace filter is SCORED, NOT FILTERED — a search for Barry at Bilsdale returns 112 rows of Barrys anywhere, ranked. Parish, SubDistrict and RegistrationDistrict are not filterable on the census sets at all. COUNTY IS, and “Yorkshire (North Riding)” cuts 3,255 Barrys to 52. That is the field to use.",
+     "yes"
+    ]
+   ]
+  },
+  {
+   "g": "FindMyPast — the Boer prisoner-of-war list, WO 108/368",
+   "n": "the last FindMyPast item of the day",
+   "d": "16 Sep 2026",
+   "h": "/documents/#pow-1901",
+   "rows": [
+    [
+     "Kolbe in Prisoners of War 1715–1945, South Africa",
+     "Six men, each with a farm",
+     "GEORGE AUGUSTUS KOLBE of WAKKERSTROOM, 40, a Transvaaler, folio 709 — ALREADY IDENTIFIED ON THIS SITE FROM THE GRAVESTONES as George Augustus Kolbe of Burgersdorp, born 2 October 1861; the folio number is all this sweep added. GEORGE AUGUSTUS KOLBE of Sterkfontein, Bethulie, 32, a Free Stater, folio 581. ANDRIES FREDERICK KOLBE of LEEUWBERG, Bloemfontein, 45, folio 431. Williem Johannes of Panfontein, 54, folio 603. Ian Henry of Linberg, 51, folio 294. Pietrus Emelius Strucker of Bossiespan, Fauresmith, 24, folio 381. FIVE OF THE SIX ARE IN THE SOUTHERN FREE STATE, which is the country the Settler preached in.",
+     "yes"
+    ],
+    [
+     "Booysen and Booyens in the same set",
+     "54 and 20",
+     "Including three DAVID SCHALK BOOYSENS — aged 53 of Pretoria and Boksburg, aged 41 of VAALBANK, LICHTENBURG, and aged 33 of KAPSTEINKOP, CRADOCK, the last recorded as a British Subject. Also a PETRUS JACOBUS BOOYSEN, 27, of Pretoria and Pietersberg — right name, wrong generation, recorded so that he is not later mistaken for the one this archive holds.",
+     "yes"
+    ],
+    [
+     "Mountjoy in the same set",
+     "Nothing in South Africa",
+     "Zero. The only Mountjoy anywhere in the set is B L Mountjoy, Great Britain, 1944.",
+     "no"
+    ],
+    [
+     "A transcription rule that will cost somebody a day",
+     "Recorded",
+     "This index renders JAN AS “IAN”, systematically — Ian Henry Kolbe, Ian Gert Booysen, Ian Lodewyk Booysen, Ian Jonathan Booysen, Ian Adriaan Booyens. A SEARCH FOR JAN RETURNS NOTHING. It also writes Willem as Williem and Petrus as Pietrus. Search the surname and read down.",
      "yes"
     ]
    ]
