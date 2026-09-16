@@ -711,10 +711,10 @@
   {
    "n": 89,
    "what": "FMP · the 1841 and 1851 censuses for Holly Bower, Bilsdale — finish question 6",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-16",
-   "note": "The burial half of [open question 6](/open-questions/) is now dead: **5,934 Bilsdale burials indexed, not one Barry**. The census half has **not** been run properly — FindMyPast’s place filter is **scored, not filtered**, so a search for Barry in Bilsdale returns 112 rows sorted by relevance rather than the men who lived there. The right route is to page the census by **registration district and enumeration district** instead, or to search the household head and read the schedule."
+   "note": "The burial half of [open question 6](/open-questions/) is now dead: **5,934 Bilsdale burials indexed, not one Barry**. The census half has **not** been run properly — FindMyPast’s place filter is **scored, not filtered**, so a search for Barry in Bilsdale returns 112 rows sorted by relevance rather than the men who lived there. The right route is to page the census by **registration district and enumeration district** instead, or to search the household head and read the schedule.  ··· **DONE THE SAME DAY, AND IT PRODUCED THE MAN.** The filter to use is **`County`** — “Yorkshire (North Riding)” cuts 3,255 Barrys to 52. **Not one of the 102 Barrys in the two censuses is in the Helmsley district**, and the only John Barry born 1796 in the whole Riding is a **ship owner at Ship Yards, Ruswarp, Whitby**, in the same house in 1841 and 1851. [The two schedules](/documents/#barry-ruswarp)"
   },
   {
    "n": 90,

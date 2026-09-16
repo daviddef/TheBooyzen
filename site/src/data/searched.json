@@ -3970,6 +3970,44 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "FindMyPast — the censuses finish open question 6",
+   "n": "the last item of the FindMyPast campaign's first day",
+   "d": "16 Sep 2026",
+   "h": "/documents/#barry-ruswarp",
+   "rows": [
+    [
+     "Barry in the 1841 census, Yorkshire (North Riding)",
+     "50, and none at Bilsdale",
+     "Whitby 22, Scarborough 13, Brompton 10, Allerston 2, Lythe 2, Fylingdales 1. Registration districts Whitby 25, Scarborough 23, Pickering 2. NOTHING IN THE HELMSLEY DISTRICT, which is the district Bilsdale is in.",
+     "no"
+    ],
+    [
+     "Barry in the 1851 census, Yorkshire (North Riding)",
+     "52, and none at Bilsdale",
+     "Ruswarp 8, Whitby 7, Sneaton 7, Brompton 10, Easingwold 4, Fylingdales 3, Hinderwell 2, Great Smeaton 2, Lythe 1, Eston 1, Filey 1. Districts Whitby 26, Scarborough 17, Easingwold 4, Guisborough 3, Northallerton 2. AGAIN NOTHING AT HELMSLEY.",
+     "no"
+    ],
+    [
+     "The only John Barry born 1796 in the North Riding",
+     "FOUND, and he is nothing like the tree",
+     "JOHN BARRY, SHIP OWNER, SHIP YARDS, RUSWARP, WHITBY. 1841: HO107/1265 book 11 folio 38 page 4 schedule 1116, head, aged 45, with Jno, Mary, Ann and Catharine. 1851: HO107/2374 folio 563 page 12 line 6 schedule 46, head, married, aged 55, born Whitby, with Mary b.1809, Catherine b.1832, Elizabeth b.1836. THE SAME HOUSE TEN YEARS APART, and alive in the spring of 1851.",
+     "yes"
+    ],
+    [
+     "Holly Bower, Bilsdale",
+     "No Barry there in either census",
+     "The farm the profile names. Nothing.",
+     "no"
+    ],
+    [
+     "A note on how the place filter behaves",
+     "Recorded for the next session",
+     "FindMyPast's KeywordsPlace filter is SCORED, NOT FILTERED — a search for Barry at Bilsdale returns 112 rows of Barrys anywhere, ranked. Parish, SubDistrict and RegistrationDistrict are not filterable on the census sets at all. COUNTY IS, and “Yorkshire (North Riding)” cuts 3,255 Barrys to 52. That is the field to use.",
+     "yes"
+    ]
+   ]
   }
  ]
 }
