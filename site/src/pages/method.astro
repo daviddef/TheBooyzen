@@ -208,6 +208,54 @@ import { u } from "../lib/url.js";
 </section>
 
 <section class="blk">
+  <h2 id="evidence-dropped">The page must not be able to say less than the archive knows</h2>
+  <p class="dek">On <b>17 September 2026</b> this archive was asked to look for a fault a sibling
+    archive had just had: evidence kept in files keyed to a person, and a build script that never read
+    them, so a person documented several times over got a page saying nothing had been read about them.
+    <b>The same fault was live here, by a different route, and had been for at least three days.</b></p>
+
+  <div class="panel" style="margin-top:18px">
+    <p><b>Seventeen people had a page that said &ldquo;This person is recorded in the archive&rsquo;s
+      index but is not yet discussed on any page.&rdquo;</b> Among them the <b>1820 Settler</b>, whose
+      name the built site carries <b>155 times</b>; <b>John Barry</b>, 158; <b>George Mountjoy</b>, 140;
+      <b>Petrus Jacobus Booysen</b>, 110; <b>Johanna Catharina Mountjoy</b>, 89.</p>
+  </div>
+
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel">
+      <h3 style="margin-top:0">What went wrong</h3>
+      <p>The gatherer that collects every mention of a person dropped any name that was a
+        <b>strict prefix of a longer person&rsquo;s name</b>. The rule was written for a good reason
+        &mdash; to stop <em>John Barry</em> collecting every mention of <em>John Barry Booyzen</em>
+        &mdash; and it was implemented as <b>&ldquo;delete the shorter man&rdquo;</b> rather than
+        &ldquo;let the longer name go first&rdquo;.</p>
+      <p class="cap">So the moment anybody added <em>George Augustus Kolbe of Wakkerstroom</em>,
+        <b>George Augustus Kolbe stopped existing</b> as far as the build was concerned.</p>
+    </div>
+    <div class="panel">
+      <h3 style="margin-top:0">Why it is worth a section</h3>
+      <p><b>The data was never wrong.</b> Every record, every document, every citation was intact and
+        on disk the whole time. What failed was the machinery between the evidence and the page, and it
+        failed <b>silently and in the safe-sounding direction</b> &mdash; the page did not print a
+        falsehood about a document, it printed a falsehood about the archive.</p>
+      <p class="note" style="margin-top:10px"><b>That is the worst kind for a site like this one</b>,
+        whose whole claim is that it says what it has read and what it has not.</p>
+    </div>
+  </div>
+
+  <p class="note" style="margin-top:20px"><b>The rule that comes out of it.</b> A page may say
+    &ldquo;nothing is known&rdquo; only when nothing is known &mdash; never because a build step lost
+    it. So the check that now runs on every build does not look for the bug that was found; it looks
+    for <b>the shape of it</b>: <span class="m">a person the index calls undiscussed whose name the
+    built pages plainly carry</span>. Any future gatherer that eats a person trips it, however it eats
+    them. It was verified the only way a gate can be &mdash; <b>by putting the bug back and confirming
+    the build refused</b>.</p>
+
+  <p class="cap" style="margin-top:14px">Two thousand four hundred and twenty-eight mentions came back.
+    <a href={u("/corrections/")}>The correction &rarr;</a></p>
+</section>
+
+<section class="blk">
   <h2>Sibling archives</h2>
   <p class="dek">Same method, same author: <b>The Defranceski</b> (Istria), <b>The Falco</b> (Arienzo,
     Campania), <b>The Lerena</b> (Rosario, the Cape, Brisbane). The marriage of

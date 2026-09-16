@@ -57,10 +57,23 @@ def variants(p):
     """Forms of this person's name safe to search for.
 
     Two rules keep people apart. A variant is dropped if it is exactly another
-    person's name, and a variant is dropped if it is a strict prefix of another
-    person's name — otherwise 'Willem Hermanus Booyzen' the grandson collects
-    every mention of 'Willem Hermanus Booyzen' the grandfather, and 'John Barry'
-    swallows 'John Barry Booyzen'."""
+    person's name; and a variant that is a strict PREFIX of another person's
+    name is KEPT, but fenced, so it cannot claim the longer person's mentions.
+
+    17 SEPTEMBER 2026 — THIS USED TO DROP THE SHORTER NAME OUTRIGHT, and that
+    was the bug. 'George Augustus Kolbe' is a prefix of 'George Augustus Kolbe
+    of Wakkerstroom', so the Settler — the most documented person on the site,
+    named 155 times in the built pages — was given a variant list of nothing,
+    scored zero mentions, and his own page said "not yet discussed on any page".
+    Seventeen people were affected, including John Barry, George Mountjoy,
+    Petrus Jacobus Booysen and Johanna Catharina Mountjoy. The data was fine;
+    this function threw it away; nothing refused the build.
+
+    The fence is a negative lookahead per longer name: 'George Augustus Kolbe'
+    now matches everywhere EXCEPT where it is followed by ' of Wakkerstroom',
+    ' of Bethulie' or ' of Burgersdorp'. The longer name still collects its own.
+    See tools/checkregisters.py, which now refuses the build if this ever
+    silently drops a person again."""
     n = p["n"]
     v = {n}
     v.add(re.sub(r"[“”\"']", "", re.sub(r"\s*\(.*?\)\s*", " ", n)).strip())
@@ -80,9 +93,14 @@ def variants(p):
         # a bare surname would link every Booysen on the site to one man
         if len(x.split()) < 2: continue
         if x in others: continue
-        if any(o != x and o.startswith(x + " ") for o in others): continue
         keep.append(x)
     return sorted(set(keep), key=len, reverse=True)
+
+def fence(v):
+    """The suffixes that must NOT follow variant `v`, because they would make it
+    a different, longer-named person."""
+    return sorted({o[len(v):] for o in ALLNAMES
+                   if o != v and o.startswith(v + " ")}, key=len, reverse=True)
 
 SENT = re.compile(r"(?<=[.!?])\s+")
 def excerpt(text, i, j):
@@ -104,7 +122,9 @@ for p in people:
     for route, pg in sorted(pages.items()):
         found = []
         for v in variants(p):
-            pat = r"(?<![A-Za-z\u00C0-\u024F])" + re.escape(v) + r"(?![A-Za-z\u00C0-\u024F])"
+            ahead = "".join("(?!" + re.escape(sfx) + ")" for sfx in fence(v))
+            pat = (r"(?<![A-Za-z\u00C0-\u024F])" + re.escape(v)
+                   + ahead + r"(?![A-Za-z\u00C0-\u024F])")
             for m in re.finditer(pat, pg["text"]):
                 key = (m.start() // 220)
                 if key in seen: continue

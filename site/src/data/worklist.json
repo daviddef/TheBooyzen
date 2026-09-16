@@ -795,6 +795,14 @@
    "owner": "The National Archives, Kew",
    "since": "2026-09-16",
    "note": "**WO 97 will not hold him and this archive has stopped expecting it to** — the pre-1855 discharge papers cover only men discharged to a pension, and he took his papers at the Cape to marry and make saddles. **WO 12, the muster books and pay lists, lists every man by name, quarter by quarter, including the quarter he leaves.** The windows are now dated: he arrived with the regiment in **1806**, with the reinforcement of **October 1810**, or with the draft of **140 men in October 1813** — and he was gone before the regiment **embarked for India in September 1817**. So the quarters to read are **Michaelmas 1816 to Midsummer 1817** for the discharge, and the arrival quarters for the enlistment. **WO 12 is not digitised for this regiment** and this needs a reader at Kew. It belongs with the two Kew letters already drafted."
+  },
+  {
+   "n": 100,
+   "what": "Give the person page the evidence files it still cannot see",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-17",
+   "note": "The 17 September audit found one live fault and one standing gap. The fault is fixed. **The gap is that `/people/[slug]` reads only `dossiers.json`, `people.json`, `places.json` and `kin.js`** — so everything else reaches a person only if it happens to be rendered as prose on some page and then picked up by the dossier gatherer. **`marriages.json` is keyed to a husband and a wife by name and the person page never reads it**; a marriage this archive holds shows on a person’s page only by that indirect route. `corrections.json` and `searched.json` are keyed to a page anchor rather than to a person, so a correction about a named person cannot be shown on their page at all. **Two options and they are different sizes:** give the person page a direct read of `marriages.json` (small, and it removes the indirection); or key corrections and searches to people as well as pages (large, and it changes two schemas). A gate now catches the marriage case — `marriage-orphan` in checkregisters.py — but a gate is not the same as the page showing it."
   }
  ],
  "accounts": [

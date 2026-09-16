@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Six checks on the registers this site is mostly made of.
+"""Twelve checks on the registers this site is mostly made of.
 
 The atlas check was written on 15 September to catch one old mistake and caught
 eighteen live ones on its first run. These are the same idea pointed at the
@@ -32,13 +32,25 @@ held in this project held: a build refused when it slipped.
                          in October would still be sitting there in December
                          looking like a thing raised this morning.
 
+  11 evidence-dropped    a person the dossier says is discussed nowhere, whose
+                         name the BUILT PAGES plainly carry. This is the Mazza
+                         fault: the data is fine, the build eats it, and the
+                         person's page ends up asserting that nothing is known
+                         about somebody documented a hundred times over.
+
+  12 marriage-orphan     a person whose marriage marriages.json holds and whose
+                         page carries no record of it. marriages.json is keyed
+                         to a husband and a wife by name and the person page
+                         does not read it, so the dossier is the only thing
+                         that can carry it across.
+
   6  kit-behind          the archive-kit pin, against the kit's own head. This
                          archive sat four commits behind and noticed only
                          because a component it needed was missing. An archive
                          silently behind on the shared kit is a convention
                          drifting with nobody watching.
 """
-import os, re, sys, json, glob, argparse, datetime, subprocess
+import os, re, sys, json, glob, argparse, datetime, subprocess, html, unicodedata
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "site", "src", "data")
@@ -58,6 +70,16 @@ def anchors(dist):
         for m in re.finditer(r'id="([A-Za-z0-9_-]+)"', open(f, encoding="utf-8", errors="ignore").read()):
             ids.add(p + "#" + m.group(1))
     return pages, ids
+
+
+
+def dslug(s):
+    """The same slug dossiers.py builds, so a name can be looked up in it."""
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = s.replace("\u00ff", "y").replace("\u0178", "Y")
+    s = re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-").lower()
+    return s[:60]
 
 
 def main():
@@ -143,10 +165,13 @@ def main():
         bad.append(f"people-drift       people.js has {len(names_js)} records, people.json has "
                    f"{len(people)} - the generated file is stale, rebuild")
     else:
-        a, b = set(x.replace('\\"', '"') for x in names_js), set(p["n"] for p in people)
-        for miss in sorted(a - b)[:5]:
+        # NB: not `a` - that is the argparse namespace, and shadowing it here
+        # hid a live AttributeError from every later check until 17 Sep 2026.
+        in_js = set(x.replace('\\"', '"') for x in names_js)
+        in_json = set(p["n"] for p in people)
+        for miss in sorted(in_js - in_json)[:5]:
             bad.append(f"people-drift       {miss!r} is in people.js and not in people.json")
-        for miss in sorted(b - a)[:5]:
+        for miss in sorted(in_json - in_js)[:5]:
             bad.append(f"people-drift       {miss!r} is in people.json and not in people.js")
 
     # 10 - a person who says in terms that the tree is the only source, marked documented
@@ -160,6 +185,74 @@ def main():
         if p.get("s") == "doc" and SAYS_TREE.search(p.get("r", "")) and not p.get("tree"):
             bad.append(f"doc-cites-tree     {p['n']}: marked `doc` and says a claim is not from a "
                        f"document - name which claim, in a `tree` field")
+
+    # 11 - EVIDENCE THAT EXISTS AND NEVER REACHES THE PERSON
+    #
+    # 17 September 2026. The Mazza archive kept its evidence in two TSVs keyed to
+    # a person and the per-person build script read neither, so twelve people
+    # whose evidence had been read several times over got a page saying "No
+    # record has been read for this person". The data was fine. The build
+    # dropped it. Nothing refused.
+    #
+    # The same fault was live here, by a different route. dossiers.py dropped
+    # any name that was a strict prefix of a longer person's name, so the
+    # SETTLER - George Augustus Kolbe, named 155 times in the built pages -
+    # scored zero mentions and his page said "not yet discussed on any page".
+    # Seventeen people, including John Barry, George Mountjoy and Petrus
+    # Jacobus Booysen.
+    #
+    # This gate is written against the SHAPE of the fault, not that one cause:
+    # a person whose dossier says the site never mentions them, whose name the
+    # built HTML plainly does mention. Any future gatherer that silently eats a
+    # person trips it, however it eats them.
+    try:
+        doss = load("dossiers.json")["people"]
+    except Exception:
+        doss = None
+    if doss:
+        body = {}
+        for f in glob.glob(os.path.join(a.dist, "**", "index.html"), recursive=True):
+            rel = os.path.relpath(os.path.dirname(f), a.dist).replace(os.sep, "/")
+            route = "/" if rel == "." else "/" + rel + "/"
+            if route.startswith(("/who/", "/places/", "/people/")):
+                continue          # these pages are generated FROM the dossier
+            t = open(f, encoding="utf-8", errors="ignore").read()
+            t = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", t, flags=re.S | re.I)
+            t = re.sub(r"<nav[^>]*>.*?</nav>", " ", t, flags=re.S | re.I)
+            t = re.sub(r"<footer[^>]*>.*?</footer>", " ", t, flags=re.S | re.I)
+            body[route] = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t)))
+        for d in doss.values():
+            # `shared` is not an excuse: two people of one name still have to be
+            # mentioned somewhere, and skipping them hid George Mountjoy and
+            # Petrus Jacobus Booysen from the first run of this gate.
+            if d.get("mentions", 0):
+                continue
+            pat = re.compile(r"(?<![A-Za-z\u00C0-\u024F])" + re.escape(d["n"])
+                             + r"(?![A-Za-z\u00C0-\u024F])")
+            where = [r for r, t in body.items() if pat.search(t)]
+            if where:
+                bad.append(f"evidence-dropped   {d['n']}: the dossier says this person is not "
+                           f"discussed anywhere, and the built pages name them on "
+                           f"{len(where)} page(s) ({', '.join(sorted(where)[:3])}). The build is "
+                           f"throwing evidence away - fix the gatherer, do not silence this")
+
+    # 12 - PERSON-KEYED EVIDENCE THE PERSON PAGE CANNOT SHOW
+    #
+    # marriages.json keys a marriage to a husband and a wife by name. The person
+    # page does not read it, so the only thing that can carry it to the person is
+    # the dossier - which means a married person with no mentions is a person
+    # whose marriage this archive holds and whose page says nothing is known.
+    for r in load("marriages.json")["rows"]:
+        for side in ("h", "w"):
+            nm = (r.get(side) or "").split("|")[0].strip()
+            if not nm or doss is None:
+                continue
+            sl = dslug(nm)
+            d = doss.get(sl)
+            if d is not None and not d.get("mentions", 0):
+                bad.append(f"marriage-orphan    {nm}: marriages.json holds their marriage "
+                           f"({r.get('d','?')}, {r.get('p','?')}) and their page carries no "
+                           f"record of it")
 
     # 5 - open too long
     today = datetime.date.today()
