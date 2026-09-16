@@ -12,7 +12,7 @@
    "shared_with_the_niece_cM": 2035.27,
    "shared_with_the_niece_percent": 29.94,
    "segments": "39 at 23andMe, 41 at MyHeritage",
-   "why_she_matters": "She is the instrument. She carries this family's DNA and none of the Argentine or English. Any match shared with her is Cape; any match absent from her list is not. That subtraction has not yet been run, and it is the most valuable unspent thing in this file."
+   "why_she_matters": "She is the instrument. She carries this family's DNA and none of the Argentine or English. Any match shared with her is Cape; any match absent from her list is not. That subtraction HAS now been run - see the aunt's own chart below - and it worked."
   }
  ],
  "the_cape_signature": {
@@ -93,9 +93,9 @@
   "note": "These four were run as CONTROLS for a different question, in the Lerena archive. They are recorded here because a control for one question is a finding for another: this family is richly represented in both databases."
  },
  "what_has_not_been_done": [
-  "The aunt's own match list has not been harvested. Subtracting it from her niece's is what separates this family's matches from the Argentine and English ones, and it is a day's work, not a discovery.",
-  "23andMe's Parental Inheritance, which would split the niece's ancestry by parent and put the Cape trace definitively on this side, is behind a paid tier.",
-  "AutoClusters has been generated for the niece but NOT for the aunt. The aunt's chart would be Cape by definition, and any cluster on the niece's chart with no counterpart on the aunt's belongs to her father."
+  "Cluster 1 on the aunt's chart holds 71 of her 98 matches in one block. That is the Cape marrying itself, not one couple. Re-running at a tighter threshold should break it into something usable.",
+  "23andMe's Parental Inheritance, which would put the Cape trace definitively on this side, is behind a paid tier.",
+  "Nobody has yet taken the fourteen clusters one at a time and found where each joins the spine."
  ],
  "the_autoclusters": {
   "what_it_is": "MyHeritage AutoClusters, generated 15 September 2026. The tool groups a tester's DNA matches into blocks that all match each other as well as the tester, so each block is in practice the descendants of ONE ancestral couple. It was run on the niece's kit.",
@@ -295,5 +295,96 @@
   "the_one_that_is_this_spine": "Cluster 7 is the one to start on - six matches from 56 to 333 cM, the largest match on the whole chart among them, carrying Butler, Daniel and Daschner. Those are the trees in which Booyzen, Booysen and Barry appear together as ancestral surnames.",
   "why_it_can_be_trusted": "The niece's SON was clustered on the same night as a control. His father is a Defranceski of Istria, and his chart throws up two plainly Croatian clusters - Butorac, Pavelich, Jagustin, Krkljes, Racic, Glas - beside the Cape ones. So the tool demonstrably separates a foreign paternal line from this family's when both are present. The fourteen Cape clusters on his mother's chart are not an artefact of the method.",
   "what_to_do_with_it": "Each cluster is a couple this archive either already has or does not. Take them one at a time, open the trees, and find where they join the spine. Fourteen leads, each one already proved to be blood."
+ },
+ "the_aunts_own_chart": {
+  "what_happened": "The aunt was clustered too, on 15 September 2026. Hers is the purest chart in the family for this archive's purposes: she is on this line and no other, so every cluster on it is Cape by construction.",
+  "clusters": 6,
+  "matches": 98,
+  "cM_floor": 75.3,
+  "cM_ceiling": 319.4,
+  "detail": [
+   {
+    "cluster": 1,
+    "size": 71,
+    "cM_low": 75.3,
+    "cM_high": 158.3,
+    "tree_surnames": [
+     "ackermann",
+     "andre",
+     "attwell",
+     "brits",
+     "calitz",
+     "carons",
+     "carrick",
+     "coetsee",
+     "coetzee",
+     "crossey"
+    ]
+   },
+   {
+    "cluster": 2,
+    "size": 6,
+    "cM_low": 77.5,
+    "cM_high": 194.1,
+    "tree_surnames": [
+     "daschner",
+     "du-plessis",
+     "kotze",
+     "labuschagne",
+     "pistorius"
+    ]
+   },
+   {
+    "cluster": 3,
+    "size": 6,
+    "cM_low": 76.3,
+    "cM_high": 319.4,
+    "tree_surnames": [
+     "daniel",
+     "dreyers-in-south-africa",
+     "gambale",
+     "smith"
+    ]
+   },
+   {
+    "cluster": 4,
+    "size": 5,
+    "cM_low": 80.0,
+    "cM_high": 203.7,
+    "tree_surnames": [
+     "andrews",
+     "bailie",
+     "de-jager",
+     "lotter",
+     "randall"
+    ]
+   },
+   {
+    "cluster": 5,
+    "size": 4,
+    "cM_low": 89.7,
+    "cM_high": 143.1,
+    "tree_surnames": [
+     "butler",
+     "duncan",
+     "martin-hardy-ellis",
+     "mulder"
+    ]
+   },
+   {
+    "cluster": 6,
+    "size": 4,
+    "cM_low": 94.2,
+    "cM_high": 110.4,
+    "tree_surnames": [
+     "faraday",
+     "johnson",
+     "lightcap",
+     "priceglendinning"
+    ]
+   }
+  ],
+  "the_big_one": "Cluster 1 is enormous - 71 of her 98 clustered matches, from 75 to 158 cM, carrying Ackermann, Andre, Attwell, Brits, Calitz, Carons, Carrick, Coetsee and more. A single block of seventy-one is not one couple; it is a densely intermarried community, which is exactly what the eighteenth and nineteenth century Cape was. Splitting it is a job for a tighter threshold.",
+  "and_what_it_did_for_the_other_archive": "Her chart was used as the instrument in the Lerena archive: subtract it from her niece's and what is left is the niece's FATHER's side. It worked, and the one paternal cluster it found turned out to be English rather than Argentine. The method and its trap - a floor mismatch that nearly produced four false positives - are written up there."
  }
 }

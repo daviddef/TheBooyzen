@@ -8,6 +8,7 @@ import { u } from "../lib/url.js";
 import dna from "../data/dna.json";
 const aunt = dna.the_two_kits[1];
 const ac = dna.the_autoclusters;
+const az = dna.the_aunts_own_chart;
 const sur = Object.entries(dna.top_surnames_among_those_relatives).filter(([k]) => k !== "note");
 const cape = dna.the_cape_signature.what_23andme_finds_in_the_niece;
 ---
@@ -122,6 +123,29 @@ const cape = dna.the_cape_signature.what_23andme_finds_in_the_niece;
       <a href={u("/barry/")}>The Barrys &rarr;</a></p>
     <p><strong>And why the fourteen can be trusted.</strong> {ac.why_it_can_be_trusted}</p>
     <p>{ac.what_to_do_with_it}</p>
+  </div>
+</section>
+
+<section class="blk">
+  <h2>The aunt&rsquo;s own chart &mdash; the purest one in the family</h2>
+  <p class="dek">{az.what_happened}</p>
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th class="m">Cluster</th><th class="m">Matches</th><th class="m">cM</th>
+        <th>The families in it</th></tr></thead>
+      <tbody>
+        {az.detail.map((c) => (
+          <tr><td class="m">{c.cluster}</td><td class="m">{c.size}</td>
+            <td class="m">{c.cM_low}&ndash;{c.cM_high}</td>
+            <td>{c.tree_surnames.join(", ")}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <div class="prose" style="margin-top:20px">
+    <p><strong>And the shape of it is a finding in itself.</strong> {az.the_big_one}</p>
+    <p>{az.and_what_it_did_for_the_other_archive}
+      <a href="https://daviddef.github.io/TheLerena/dna/">How that went &rarr;</a></p>
   </div>
 </section>
 
