@@ -767,10 +767,10 @@
   {
    "n": 96,
    "what": "Extract /sources/ into data",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-16",
-   "note": "**674 lines written inline — the largest sources page in the estate.** Only Falco and Defranceschi hold theirs as data, so the row cannot move past two of seven until the others do. Nothing about the content need change; it is the shape that blocks it.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside."
+   "note": "**674 lines written inline — the largest sources page in the estate.** Only Falco and Defranceschi hold theirs as data, so the row cannot move past two of seven until the others do. Nothing about the content need change; it is the shape that blocks it.\n\n**Raised by the UI alignment pass, 2026-09-16.** It is recorded here because it is research this archive owns, not something to guess at from outside. \n\n**Done 17 September. 674 lines → 548**, with the four register sections — *documents read*, *references in hand*, *the Transvaal notices*, *the Transvaal estates* — lifted into `site/src/data/sources.json` by `tools/extractsources.py`: 42 rows and the 23 FamilySearch arks. **The cells were carried across as the HTML they already were**, so nothing is reworded and nothing summarised; the only change is that an internal link written as an Astro `u()` call became a plain site path, and the page puts the base back on at render. That is what makes it checkable, and it was checked: strip the tags off the rebuilt page and the reading text is **byte-identical, 35,508 characters before and after, with the same thirty links in the same order**. The rest of the page stays prose, because the rest of it argues rather than lists — the book that went the other way when it was read, the seven kinds of shut door, the library that is not an archive. One thing fell out of having rows: the Transvaal estates now carry a derived tally, and it says **10 references — 5 blocked, 3 read, 1 not found, 1 with no status recorded**. That last one is TAB MHG O/2899, which states its position in prose and wears no chip. **Three of seven archives hold their sources as data now**, which is still short of a shared component."
   },
   {
    "n": 97,

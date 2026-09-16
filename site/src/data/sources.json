@@ -1,0 +1,730 @@
+{
+ "fs": [
+  {
+   "fact": "Willem Hermanus Booyzen — birth 1851, Cradock",
+   "collection": "South Africa, Dutch Reformed Church Registers (Cape Town Archives), 1660–1970",
+   "ref": "3:1:3Q9M-CSV8-8SD4-8"
+  },
+  {
+   "fact": "Willem Hermanus Booyzen (jr) — birth 1885, Barkly East",
+   "collection": "DRC Registers (Cape Town Archives)",
+   "ref": "3:1:3Q9M-CSK6-W963-Q"
+  },
+  {
+   "fact": "Frederik Fortsenatus Booÿsen — birth 1899",
+   "collection": "DRC Registers (Cape Town Archives)",
+   "ref": "3:1:3Q9M-CSKD-1S76-F"
+  },
+  {
+   "fact": "Johanna Catharina Booysen — birth 1844, Cape Town",
+   "collection": "DRC Registers (Cape Town Archives)",
+   "ref": "3:1:3Q9M-CSVZ-WSL6-8"
+  },
+  {
+   "fact": "David Schalk Booysen — birth 1848, Brakrivier, Calvinia",
+   "collection": "DRC Registers — entry names Johanna Catharina Mountjoy",
+   "ref": "1:1:6DTY-MSPJ"
+  },
+  {
+   "fact": "Kathleen Barry — birth 1859, Barkly East",
+   "collection": "FamilySearch image",
+   "ref": "3:1:3Q9M-CSV8-85FP"
+  },
+  {
+   "fact": "Petrus Jacobus Booysen (1812) — birth",
+   "collection": "FindMyPast transcript",
+   "ref": "R_177176049779"
+  },
+  {
+   "fact": "Petrus Jacobus Booysen (1788) — marriage 1805",
+   "collection": "via FindMyPast / FamilySearch",
+   "ref": "3:1:3Q9M-CSFQ-S11J"
+  },
+  {
+   "fact": "Johanna Catharina Mountjoy — death 1863, Zevenfontein",
+   "collection": "Cape Province, Probate Records of the Master of the High Court, 1834–1989",
+   "ref": "3:1:3Q9M-CSQF-XSMD-B"
+  },
+  {
+   "fact": "Petrus Jacobus Booysen (1812) — death 1884",
+   "collection": "Cape Province, Probate Records of the Master of the High Court",
+   "ref": "3:1:3Q9M-CSQX-HSHP-Z"
+  },
+  {
+   "fact": "Petrus Jacobus Booysen (1788) — death 1876, Rustenburg",
+   "collection": "Transvaal, Probate Records from the Master of the Supreme Court, 1869–1958",
+   "ref": "3:1:3Q9M-CS4F-VSDP-F"
+  },
+  {
+   "fact": "Magdalena Johanna Booysen — death 1811",
+   "collection": "Transvaal, Probate Records from the Master of the Supreme Court",
+   "ref": "3:1:3Q9M-CS92-DWY4"
+  },
+  {
+   "fact": "Hendrik Stefanus Booysen — marriage 1850, Potchefstroom",
+   "collection": "Transvaal, Probate Records from the Master of the Supreme Court",
+   "ref": "3:1:3Q9M-CSQH-LS9Z-9"
+  },
+  {
+   "fact": "George Booyzen & Anna Pretorius — marriage 1924, Vereeniging",
+   "collection": "Heidelberg, Transvaal, South Africa records",
+   "ref": "3:1:3Q9M-C91V-TQKX-F"
+  },
+  {
+   "fact": "Anna Johanna Maria Pretorius — death 1944, Forest Hill",
+   "collection": "Transvaal, South Africa records",
+   "ref": "3:1:3Q9M-CS9R-Y9LN-M"
+  },
+  {
+   "fact": "George Downing Mountjoy Booyzen — death 1947",
+   "collection": "Transvaal, South Africa records",
+   "ref": "3:1:3Q9M-CS34-696T-M"
+  },
+  {
+   "fact": "George Downing Mountjoy Booyzen — burial 1947, West Park",
+   "collection": "Randburg, Transvaal, South Africa records",
+   "ref": "3:1:3QHK-93PY-2FS2"
+  },
+  {
+   "fact": "Gertrude Elizabeth Booyzen — death 1946, 85 Rheeden St",
+   "collection": "Johannesburg, Transvaal, South Africa records",
+   "ref": "3:1:3Q9M-C9BY-59Q2-1"
+  },
+  {
+   "fact": "Catherine Booyzen & Nuno Lerena — marriage 1949, St Joseph's Mayfair",
+   "collection": "Johannesburg, Transvaal, South Africa records",
+   "ref": "3:1:3Q9M-CS27-23NL"
+  },
+  {
+   "fact": "Johanna Catharina Booyzen & Johannes Pool — marriage 1910",
+   "collection": "South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS)",
+   "ref": "3:1:3Q9M-C91V-LBN"
+  },
+  {
+   "fact": "Henry James Booyzen & Dorothea Regina Barry — marriage 1912, Elliot",
+   "collection": "South Africa, Civil Marriage Records, 1840–1973",
+   "ref": "3:1:3Q9M-C9BP-3SZW-J"
+  },
+  {
+   "fact": "Dirk Jacobus Pretorius — marriage 1926, Vereeniging",
+   "collection": "South Africa, Transvaal, Civil Marriages, 1870–1930 (NARS)",
+   "ref": "3:1:3Q9M-C912-4Q9K-3"
+  },
+  {
+   "fact": "Dirk Jacobus Pretorius — death 1957, Germiston",
+   "collection": "South Africa, Civil Death Registration, 1955–1966",
+   "ref": "3:1:3Q9M-C91P-D9S7-5"
+  }
+ ],
+ "sections": [
+  {
+   "id": "read",
+   "title": "Original documents read by this archive",
+   "dek": "Extracted at full resolution from the MyHeritage photo store on 9 September 2026 and transcribed directly. Images and transcriptions are on <a href=\"/documents/\">The documents</a>; originals are kept in <span class=\"m\">sources/booyzen-photos/</span>.",
+   "cols": [
+    {
+     "label": "Document",
+     "cls": "",
+     "w": "20rem"
+    },
+    {
+     "label": "Detail",
+     "cls": "",
+     "w": ""
+    }
+   ],
+   "rows": [
+    [
+     {
+      "h": "<strong>Death registration, Willem Hermanus Booysen, 1905</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Cape Colony, <em>Form of Information of a Death, Act No. 7 of 1894</em>; entry <strong>299</strong>, sub-district <strong>Indwe</strong>, district <strong>Wodehouse</strong>; registered 14 Sep 1905",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Marriage register, Booysen–Barry, 1879</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<em>Duplicaat Origineel Register</em>, entry <strong>15</strong>, Barkly, district Wodehouse; Ned. Ger. Kerk; officiant <strong>David Ross</strong>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Death notice, John Barry, 1915</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Administration of Estates Act 24 of 1913; Barkly East; stamped 18 Apr 1915, <strong>No. 925</strong>; signed James H. Barry",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Death notice, George Downing Mountjoy Booyzen, 1948</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Administration of Estates Act 1913; Johannesburg; signed 21 Feb 1948; Master's Office stamp 1948",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "Photograph — \"George Booyzen and Isaak Pretorius In Transkei\"",
+      "cls": ""
+     },
+     {
+      "h": "captioned in the tree; undated, c. 1930s",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "Three uncaptioned photographs",
+      "cls": ""
+     },
+     {
+      "h": "attached to George's profile; identifications inferred and flagged as unverified",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Death notice, George Augustus Kolbe, 1845</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Section 9, Ordinance 104; <strong>estate 7698</strong> = KAB MOOC 6/9/35 (1845); signed by his widow at Colesberg",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Death notice, Margaret Downing, 1868</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Ordinance 104; <strong>estate 4094</strong>; filed 30 Jan 1868, signed G. D. O. Werdmuller",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Marriage allegation, London Diocese, 1819</strong>",
+      "cls": ""
+     },
+     {
+      "h": "20 Jan 1819, St Leonard Shoreditch; both parties sworn as \"of the age of Twenty-one Years and upwards\"",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Gravestone, Burgersdorp Old Cemetery</strong>",
+      "cls": ""
+     },
+     {
+      "h": "George Augustus Kolbe and Margaret Downing; photographed, inscription transcribed in full",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Will of John Gottlob Kolbe, 1842</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Prerogative Court of Canterbury register copy, Public Record Office (TNA PROB 11), image ref 137; proved at London 23 Feb 1846",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Death certificate, John Gottlob Kolbe, 1845</strong>",
+      "cls": ""
+     },
+     {
+      "h": "General Register Office, entry <strong>206</strong>, district of <strong>May Fair</strong>, St George Hanover Square",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong>Burial register, 1845</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>St John Baptist, the German Savoy Church</strong>, Middlesex; entry <strong>55</strong>, Grave 7, Revd Dr Steinkopff",
+      "cls": ""
+     }
+    ]
+   ]
+  },
+  {
+   "id": "inhand",
+   "title": "Estate and archival references in hand",
+   "dek": "",
+   "cols": [],
+   "rows": [
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 6/9/35: 7698 (1845)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Estate of <strong>George Augustus Kolbe</strong>, d. 1 December 1844 at the farm \"Wurtemburg\", Colesberg district. Cape Archives, Master's Office. <b>Not yet ordered.</b>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">SAG \"b3\"</strong>",
+      "cls": ""
+     },
+     {
+      "h": "The generation code recorded against <strong>Margaretha Wilhelmina Elizabeth Mary Kolbe</strong> at her 1846 marriage — a pointer into the published <em>Suid-Afrikaanse Geslagsregisters</em>. <b>Not yet followed.</b>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 6/9/21: 4393 (1840)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>Death notice of JAMES MONTJOY</strong>, saddler, d. Cradock September 1827. <b>Read in full</b> — located at image 338 of 2,223 on film <span class=\"m\">007844936</span> by interpolating reference numbers, since it is not name-indexed. Line 3, the parents: <b>\"Not Known.\"</b> <a href=\"/documents/\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 7/1/268: 87 (1845)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>Will of JOHANNA CATHARINA MONTJOY, wife of Petrus Jacobus Booysen.</strong> Made eighteen years before her death. <b>Cannot be located on film.</b> Not name-indexed, and every nineteenth-century Cape film whose target board this archive has read says <em>DEATH NOTICES</em> — the separate wills volumes are not evidently in the collection. The catalogue would settle it and is blocked. <a href=\"/searched/\">The attempt &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 6/9/—: 6167 (1843)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>Death notice of JOHANNA BOOYZEN</strong>, born about 1754, widow of Charles du Plessis, of 28 Roze Street, Cape Town. <b>Read in full.</b> <b>NOT this family</b>, and read precisely because her dates match the only two this archive has for Magdelena Elisabeth de Beer. <a href=\"/documents/#johanna-1843\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 6/9/104: 499 (1863)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>Death notice of JOHANNA CATHARINA BOOYSEN née MONTJOY</strong>, d. 19 May 1863 at Zevenfontein, Brak River. <b>Read in full</b> — names her parents, her eight children and her age to the day. <a href=\"/documents/\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 13/1/221: 6 (1866)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Liquidation and distribution account for the same estate — it would divide an 1863 estate among eight children and give them their married surnames. <b>Cannot be located on film</b>, for the same reason as the will above.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: 84992 (1943)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>Death notice of ISABELLA FREDRIKA BOOYZEN, born COETZEE</strong> — wife of Gert Jacobus. <b>Read in full.</b> She died <b>31 March 1930</b> and the notice was filed thirteen years later; this archive had been using the filing year as her death date. Spelled <b>BOOYZEN</b> by the Master's office throughout. <a href=\"/documents/#coetzee-1943\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 6/9/5047: 58379 (1938)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Estate papers, <strong>JAMES JOHN MOUNTJOY</strong> — James Jonathan, retired builder, d. 22 December 1937, Barkly East. <b>Read in full, and not only the death notice</b> — the first and final liquidation account and the distribution account as well, on film <span class=\"m\">007735716</span> images 767–770. His wife <strong>Maria Louisa Bertha née Kumm</strong> is the next file, <span class=\"m\">58380</span>, as this page predicted; <b>read too</b>. <a href=\"/documents/#mountjoy-58379\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 6/9/15220: 3786/48 (1948)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Estate papers, a second <strong>JAMES JOHN MOUNTJOY</strong> — the son baptised 30 May 1895.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 7/1/104: 42 (1818)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>WILL of JAMES MOUNTJOY</strong>, joint with <strong>SLIER, ANNA CATHARINA, his wife</strong> — made a year after their marriage. <b>Requested from the Cape Town Archives, 10 September 2026.</b> The likeliest surviving document to state where he came from.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: MOOC 7/1/104: 43 (1827)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "The same pair again, in the year he died. <b>Requested.</b>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: CO 3972: 17 (1834)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>Colonial Office memorial</strong> — \"the widow of J Mountjoy, requesting remission of a fine\". A petition in <strong>Anna Catharina's own voice</strong>, seven years widowed. <b>Requested.</b>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: DOC 4/1/1164: 6415 · 4/1/1328: 2950 · 4/1/1313: 1594</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Mortgage bonds, <strong>George Mountjoy</strong> (1905, 1908) and <strong>James John Mountjoy</strong> (1908) — the Mountjoy cousins raising money on land in the years the Booyzens had none.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">KAB: DOC 4/1/446, 510, 520, 939 (1895–1903)</strong>",
+      "cls": ""
+     },
+     {
+      "h": "Five mortgage bonds in the name <strong>RICHARD PETER BARRY</strong>, spanning the war — corroboration for the Cape Rebel of Jerpoint, not proof.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "<strong class=\"m\">FamilySearch film 007844477</strong>",
+      "cls": ""
+     },
+     {
+      "h": "<strong>The Master of the Supreme Court's own index of death notices, 1834–1912</strong> — surname, christian name, notice number and year, 612 images. <b>Read</b> at the \"Beer, de\" pages (278–280) and the Booysen pages (436 onward). Particles index separately, so <em>de Beer</em> files under B.",
+      "cls": ""
+     }
+    ]
+   ]
+  },
+  {
+   "id": "transvaal",
+   "title": "The Transvaal, before anyone thought this family was there",
+   "dek": "Three notices found by reading a surname rather than chasing a reference. The first of them is the oldest document in this archive.",
+   "cols": [
+    {
+     "label": "Reference",
+     "cls": "m",
+     "w": "10rem"
+    },
+    {
+     "label": "Person",
+     "cls": "",
+     "w": "17rem"
+    },
+    {
+     "label": "Died",
+     "cls": "m",
+     "w": ""
+    },
+    {
+     "label": "Status",
+     "cls": "",
+     "w": ""
+    }
+   ],
+   "rows": [
+    [
+     {
+      "h": "Sterfkennis 678<br /><span class=\"cap\">Transvaal, Weeskamer</span>",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Petrus Jacobus Booijsen</strong> &mdash; generation six, b. Graaff-Reinet c. 1788",
+      "cls": ""
+     },
+     {
+      "h": "1876",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip doc\">Read</span> <b>Parents named</b>: Gerthardus L&ouml;dewikus Booijsen and Magdalena de Beer. Eight children. Nothing to leave. <a href=\"/documents/#sterfkennis-1876\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "Sterfkennis 6332",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Anna Catharina Johanna Olivier</strong> &mdash; b. district Cradock c. 1823",
+      "cls": ""
+     },
+     {
+      "h": "1891",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip doc\">Read, and she is kin</span> Died <b>Brakfontein</b>, district Rustenburg &mdash; the family farm. Parents <b>Ocken Johannes Oliefier</b> and Anna Johanna Botha. The first wife of Hendrik Stefanus Booijsen, with seven children. Filed here for a week as <em>born Alberts, at Boekfontein, kinship unproven</em>; both readings were wrong.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "Sterfkennis 44420",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Magdalena Susanna Maria van den Berg, born Booyzen</strong> &mdash; b. c. 1860",
+      "cls": ""
+     },
+     {
+      "h": "1920",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip inf\">Read, kinship unproven</span> Died Vaalbank, district Lichtenburg. Father entered as <b>Jan Gerhardus Lodewicus Booyzen</b>.",
+      "cls": ""
+     }
+    ]
+   ]
+  },
+  {
+   "id": "estates",
+   "title": "The Transvaal estates — located, and mostly still unread",
+   "dek": "Found only after this archive noticed it had spent its life searching the Cape depot alone. Every reference below is in hand; <b>three have been read</b>, and one of the three arrived unlooked-for.",
+   "cols": [
+    {
+     "label": "Reference",
+     "cls": "m",
+     "w": "10rem"
+    },
+    {
+     "label": "Person",
+     "cls": "",
+     "w": "17rem"
+    },
+    {
+     "label": "Died",
+     "cls": "m",
+     "w": ""
+    },
+    {
+     "label": "Status",
+     "cls": "",
+     "w": ""
+    }
+   ],
+   "rows": [
+    [
+     {
+      "h": "TAB MHG 2428/40",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Stephanus Francois Booyzen</strong> — son of the second marriage",
+      "cls": ""
+     },
+     {
+      "h": "1940",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip doc\">Read</span> A mason. Parents given as <em>\"oorlede\"</em>. <a href=\"/documents/\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 2945/44",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Anna Johanna Maria Booyzen, born Pretorius</strong> — indexed under her husband as \"Spouse\"",
+      "cls": ""
+     },
+     {
+      "h": "1944",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip doc\">Read</span> Both parents named, with a Germiston address. Six children, all minors. <a href=\"/documents/\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 1928/42",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Joseph Heinrich Daschner</strong> — her husband, who married her at Indwe",
+      "cls": ""
+     },
+     {
+      "h": "1942",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip doc\">Read</span> Both parents named. Eleven children, five carrying Booyzen and Barry names. <a href=\"/documents/\">Transcribed &rarr;</a>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 3734/46",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Catherine Mary Sophia Daschner, born Booyzen</strong> — b. 22 Apr 1891",
+      "cls": ""
+     },
+     {
+      "h": "1946",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip open\">Blocked</span> Film access restricted online.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 1095/48",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>George Downing Mountjoy Booyzen</strong>",
+      "cls": ""
+     },
+     {
+      "h": "1947",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip open\">Blocked</span> Film access restricted online. <span class=\"m\">The ark 1:1:QGXP-3MKR is his wife's file, already read.</span>",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 5155/51",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Gert Jacobus Booyzen</strong> — b. 19 Jan 1870",
+      "cls": ""
+     },
+     {
+      "h": "1951",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip open\">Blocked</span> Film access restricted online.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 769/52",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>John Barry Booyzen</strong> — who signed the 1905 form",
+      "cls": ""
+     },
+     {
+      "h": "1952",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip open\">Blocked</span> Film access restricted online.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 10/57",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Henry James Booyzen</strong>",
+      "cls": ""
+     },
+     {
+      "h": "1956",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip open\">Blocked</span> Film access restricted online.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG 52653",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Jacobus Nichols Booyzen</strong> — eldest on the 1863 list",
+      "cls": ""
+     },
+     {
+      "h": "1923",
+      "cls": "m"
+     },
+     {
+      "h": "<span class=\"chip open\">Not found</span> In the open half of the collection, but not name-indexed, and the films are not ordered by estate number.",
+      "cls": ""
+     }
+    ],
+    [
+     {
+      "h": "TAB MHG O/2899",
+      "cls": "m"
+     },
+     {
+      "h": "<strong>Jan Gerardus Lodewicus Booijzen</strong> — <b>NOT the seventh child on the 1863 list</b>, as this page said for months. Aged 67, born district Graaff-Reinet, died 25 May 1885 at Vaalbank, district Lichtenburg: the son of that name on the 1876 Sterfkennis. <a href=\"/documents/#o2899\">The correction &rarr;</a>",
+      "cls": ""
+     },
+     {
+      "h": "1885",
+      "cls": "m"
+     },
+     {
+      "h": "<b>Index read; no image offered.</b> The file is at Pretoria and has not been seen.",
+      "cls": ""
+     }
+    ]
+   ]
+  }
+ ]
+}
