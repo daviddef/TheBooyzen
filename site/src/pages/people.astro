@@ -36,7 +36,14 @@ const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Op
       facets={[{ key: "line", label: "Line", all: `All (${people.length})`,
                  options: counted.map(([l, n]) => ({ v: l, label: `${l} (${n})` })) }]}
       rows={sorted.map((p) => ({
-        hay: [p.n, p.v ?? "", p.b, p.d, p.l, p.r, label[p.s], (p.pages || []).map((x) => x.t).join(" ")].join(" ").toLowerCase(),
+        /* Only what the row does not already print. The name, the variants,
+           the dates, the note, the confidence word and the line are all in the
+           cells below and the shared script reads them there. What is NOT on
+           screen is the titles of the pages that mention this person - the
+           dossier's `pages`, which is a different field from the `p` links the
+           last cell renders - and that is worth keeping searchable. */
+        extraHay: [...new Set((p.pages || []).map((x) => x.t).join(" ").toLowerCase()
+          .split(/\s+/).filter(Boolean))].join(" "),
         facets: { line: p.l },
         cells: [
           `<a href="${u("/who/" + p.slug + "/")}"><strong>${p.n}</strong></a>` +
