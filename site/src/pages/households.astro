@@ -4,6 +4,7 @@ import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import { families } from "../data/kin.js";
 import { resolve, dates } from "../lib/kin.js";
+import Households from "@daviddef/archive-kit/components/Households.astro";
 const viaLabel = { line: "the direct line", doc: "a record read here", inf: "inferred", tree: "the family tree" };
 const rows = families.map(f => {
   const h = resolve(f.h), w = resolve(f.w);
@@ -13,6 +14,19 @@ const withKids = rows.filter(r => r.kids.length > 0);
 const childCount = rows.reduce((n, r) => n + r.kids.length, 0);
 const docHouses = rows.filter(r => r.f.via === "doc").length;
 const sorted = [...rows].sort((a, b) => b.kids.length - a.kids.length);
+const shared = rows.map(({ f, h, w, kids }) => ({
+  head: h ? h.n : "unnamed", headHref: h ? "/who/" + h.slug + "/" : null,
+  spouse: w ? w.n : "", spouseHref: w ? "/who/" + w.slug + "/" : null,
+  born: h && dates(h) ? dates(h) : "",
+  via: viaLabel[f.via],
+  note: [f.why || "",
+         f.src ? `<a class="plink" href="${u(f.src[1])}">${f.src[0]}</a>` : "",
+         f.warn ? `<span class="note" style="display:block;margin-top:8px">${f.warn}</span>` : ""]
+        .filter(Boolean).join(" "),
+  children: kids.map((k) => ({
+    name: k.n, href: "/who/" + k.slug + "/", dates: dates(k) || "", via: viaLabel[k.via],
+  })),
+}));
 ---
 <Base title="Households"
       eyebrow={`${rows.length} households · ${childCount} children placed in one`}
@@ -28,58 +42,14 @@ const sorted = [...rows].sort((a, b) => b.kids.length - a.kids.length);
       and this archive does not tidy that away. Where a household carries a caveat &mdash; a mother the
       document does not name, a profile holding two men &mdash; the caveat is printed with it.</p>
   </div>
-  <div class="panel" style="margin-top:18px">
-    <label for="q" style="display:block;font-size:14px;margin-bottom:8px">
-      <strong>Filter</strong> — a name, a place, a year, a document</label>
-    <input id="q" type="search" autocomplete="off" placeholder="Start typing…"
-           style="width:100%;padding:11px 13px;font-size:16px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
-    <p id="count" class="cap" style="margin:12px 0 0" aria-live="polite"></p>
-  </div>
 </section>
 
 <Rule name="gable" label="Largest first" />
 
-{sorted.map(({ f, h, w, kids }) => (
-  <section class="blk house" data-hay={[
-      h ? h.n : "", w ? w.n : "", f.why || "", f.warn || "",
-      kids.map(k => k.n).join(" ")].join(" ").toLowerCase()}>
-    <h2>
-      {h ? <a href={u("/who/" + h.slug + "/")}>{h.n}</a> : <span class="m">unnamed</span>}
-      {h && w ? <span style="font-weight:400"> &amp; </span> : null}
-      {w ? <a href={u("/who/" + w.slug + "/")}>{w.n}</a> : null}
-    </h2>
-    <p class="cap" style="margin-top:4px">
-      {h && dates(h) ? h.n.split(" ")[0] + " " + dates(h) : ""}
-      {h && dates(h) && w && dates(w) ? " · " : ""}
-      {w && dates(w) ? w.n.split(" ")[0] + " " + dates(w) : ""}
-    </p>
-    <div class="grid g2" style="margin-top:16px">
-      <div class="panel">
-        <div class="lab">On whose word</div>
-        <p style="margin:8px 0 0"><span class={"chip " + (f.via === "tree" ? "lore" : f.via === "inf" ? "inf" : "doc")}>
-          {viaLabel[f.via]}</span></p>
-        {f.why && <p style="margin-top:12px;font-size:15px">{f.why}</p>}
-        {f.src && <p style="margin-top:10px"><a class="plink" href={u(f.src[1])}>{f.src[0]}</a></p>}
-      </div>
-      <div class="panel">
-        <div class="lab">{kids.length === 0 ? "No children recorded" : kids.length + (kids.length === 1 ? " child" : " children")}</div>
-        {kids.length === 0
-          ? <p style="margin:8px 0 0;font-size:15px">No document read here places a child under this
-              marriage. That is a statement about the records, not about the marriage.</p>
-          : <ul style="margin:10px 0 0;columns:2;column-gap:26px">
-              {kids.map(k => (
-                <li style="break-inside:avoid;margin-bottom:5px">
-                  <a href={u("/who/" + k.slug + "/")}>{k.n}</a>
-                  {dates(k) ? <span class="m cap"> · {dates(k)}</span> : null}
-                  {k.via !== "doc" && <span class="cap"> ({viaLabel[k.via]})</span>}
-                </li>
-              ))}
-            </ul>}
-      </div>
-    </div>
-    {f.warn && <p class="note" style="margin-top:14px">{f.warn}</p>}
-  </section>
-))}
+<section class="blk">
+  <Households rows={shared} u={u}
+    caveat="A household here is a claim with a source. Where one rests on the family tree rather than a record read here, the chip says so; where a child was placed by something other than the household's own document, that child says so too." />
+</section>
 
 <section class="blk">
   <p class="cap">{withKids.length} of the {rows.length} households have a child placed in them.
@@ -88,22 +58,5 @@ const sorted = [...rows].sort((a, b) => b.kids.length - a.kids.length);
     <a href={u("/register/")}>The register &rarr;</a></p>
 </section>
 
-<script is:inline>
-(function () {
-  var q = document.getElementById("q"), out = document.getElementById("count");
-  if (!q) return;
-  var secs = Array.prototype.slice.call(document.querySelectorAll("section.house"));
-  function run() {
-    var v = q.value.trim().toLowerCase(), n = 0;
-    for (var i = 0; i < secs.length; i++) {
-      var hit = !v || secs[i].getAttribute("data-hay").indexOf(v) > -1;
-      secs[i].hidden = !hit;
-      if (hit) n++;
-    }
-    out.textContent = n + (n === 1 ? " household shown" : " households shown");
-  }
-  q.addEventListener("input", run);
-  run();
-})();
-</script>
+
 </Base>
