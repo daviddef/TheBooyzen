@@ -16,7 +16,7 @@
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#12fb320e5f6b29bba7eb5976e4126b267cddd337",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#40eca156132f616c7e2a0b46399e78a03741e3e5",
     "astro": "^5.18.2"
   }
 }

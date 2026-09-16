@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import Documents from "@daviddef/archive-kit/components/Documents.astro";
 import { readFileSync } from "node:fs";
 
 /* This page is thirty-odd documents long and a reader arriving at it has no way
@@ -34,16 +35,9 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="contents">What is on this page</h2>
   <p class="dek">{toc.length} documents, in the order the events happened rather than the order they were
     read. Every one of them has been read from the image unless the entry says otherwise.</p>
-  <div class="scroll" style="margin-top:16px">
-    <table>
-      <tbody>{toc.map(t => (
-        <tr>
-          <td class="m" style="width:5.5rem;vertical-align:top">{t.year === 9999 ? "—" : t.year}</td>
-          <td><a href={"#" + t.id}>{t.label}</a></td>
-        </tr>))}
-      </tbody>
-    </table>
-  </div>
+  <Documents u={u}
+    rows={toc.map((t) => ({ year: t.year === 9999 ? null : t.year,
+                            title: t.label, href: "#" + t.id }))} />
 </section>
 
 <Rule name="thorn" label="The documents, oldest first" />
