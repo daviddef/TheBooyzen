@@ -21,6 +21,39 @@
         "dev"
       ],
       "port": 4325
+    },
+    {
+      "name": "ourfamily",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/daviddefranceski/Claude/Projects/Our Family/site",
+        "run",
+        "dev"
+      ],
+      "port": 4325
+    },
+    {
+      "name": "defranceschi",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/daviddefranceski/Claude/Projects/Defranceski Family/site",
+        "run",
+        "dev"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "blazevic",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/daviddefranceski/Claude/Projects/Blazevic Family/site",
+        "run",
+        "dev"
+      ],
+      "port": 4322
     }
   ]
 }

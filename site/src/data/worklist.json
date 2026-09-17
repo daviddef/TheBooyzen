@@ -883,6 +883,22 @@
    "owner": "the Luwinski session",
    "since": "2026-09-17",
    "note": "Found while settling the name group on 17 September. Seven archives run **Start · Our line · The families · People & places · Evidence**. Luwinski runs **Start · Our line · Places · People & names · Evidence** — no families group, places split out on its own, and *People & places* renamed *People & names* to house a single page, **Her names**. It may be right: this archive is one woman and her documents rather than a family, so a families group would be empty and the names question is the whole subject. **But it has never been said out loud**, and a deviation nobody has written down is indistinguishable from drift."
+  },
+  {
+   "n": 111,
+   "what": "Defranceschi's name forms now exist in two files, and only one of them has a gate",
+   "state": "next",
+   "owner": "the Defranceschi session",
+   "since": "2026-09-17",
+   "note": "Left behind by the shared **Say Your Name** component on 17 September. `givennames.json` is still the source of truth and still what `name-forms-audit.py` checks; `givennames-forms.json` is the shared shape the page now renders, converted mechanically from it. **The conversion was checked exactly once** — 645 forms, 419 attested, 226 aids, all three matching the gate — and nothing will check it again. Either the audit should read the shared shape and the old file go, or the build should refuse when the two disagree. **Two files holding one fact is how a number goes stale**, and this estate has been caught by that more than once this week."
+  },
+  {
+   "n": 112,
+   "what": "Six archives could adopt Say Your Name and none of them holds the data yet",
+   "state": "next",
+   "owner": "the six other sessions",
+   "since": "2026-09-17",
+   "note": "The component is in the kit and two archives are on it. What the other six need is the data: `{canon, langs: {<key>: [{form, seen, note, case}]}}` plus their own list of languages. **The material exists in every one of them** — this archive has eleven Afrikaans/English doublets running to 8,931 occurrences, D'Arcy has fifteen spellings across 340 entries, Luwinski already holds `forms:[{form, kind, where, note}]` per person which is the shape in all but name, Falco and Mazza have Latin and Italian against each other in every register they read. **Writing the table is each archive's own work** and not something to guess at from outside; the page that draws it is no longer an obstacle."
   }
  ],
  "accounts": [
