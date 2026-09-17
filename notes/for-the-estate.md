@@ -174,3 +174,51 @@ exist.
 `sid=999` makes `sourcecategory=` apply; `o=` and `d=asc|desc` sort by
 `lastname`, `firstname`, `eventyear`, `yearofbirth`, `yearofdeath` or
 `datasetname`; `_page=` pages.
+
+---
+
+## The FamilySearch film index, pulled by API instead of by eye (17 Sep 2026)
+
+A film's **Image Index** panel — the table under each image giving Name, Birth
+Date, Parent Name, Second Parent's Name, Event Type, Event Date, Event Place —
+is served by a single endpoint, and it can be driven. This turned a 214-image
+hand sweep into about ten minutes.
+
+```
+POST /search/filmdatainfo/image-data
+{"type":"image-data",
+ "args":{"imageURL":"https://www.familysearch.org/ark:/61903/<ARK>?i=<i>&cc=<coll>&groupId=<coll>&lang=en",
+         "locale":"en",
+         "state":{"imageOrFilmUrl":"","selectedImageIndex":-1,"viewMode":"i"}}}
+```
+
+It returns `records[]`, each a GEDCOM-X record with `persons[]` (child first,
+then the two parents), `facts` carrying Birth and Baptism with dates and place,
+and a `sourceDescriptions[0].citations[0].value` holding a **full citation with
+the record ARK** — which is how a find from this route gets a reference.
+
+**It needs the per-image ARK and will not take an image number.** `imageURL`
+must carry a real ARK; a film URL with `?i=N` returns 404. The ARKs come from
+the thumbnail strip: expand it, scroll it, and harvest
+`img[src*=deepzoomcloud]`, whose src contains `3:1:XXXX-XXXX-XXXX`.
+
+**Two traps, and the second one would corrupt a whole sweep silently.**
+
+1. `q.filmNumber` on the personas API is **not combinable**. It filters alone —
+   film 008039088 returns 22,059 — and is **discarded entirely** the moment any
+   other term joins it: `filmNumber + surname=Barry` returns 6,852,654, which is
+   exactly what `surname=Barry` returns on its own. A nonsense surname with the
+   film still returns 77,556. So the film cannot be partitioned by name or date
+   to get round the 1000-offset wrap. **There is no API route to a whole film.**
+   The image-data endpoint above is the way.
+
+2. **The viewer's image number is one more than the URL's `?i=`.** `?i=604`
+   displays as "Image 605 of 818". The thumbnail label is the display number, so
+   a map built from the strip is keyed 1-based while the API wants the 0-based
+   `i`. Four known ARKs were checked against four navigations before any data
+   was read. Getting this wrong shifts every row in the sweep by one page and
+   nothing anywhere would say so.
+
+Politeness: ~60–120ms between calls, and about thirty images per browser call
+before the tool's own timeout — the work continues in the page after the call
+returns, so the next call can simply carry on.

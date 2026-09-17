@@ -4302,6 +4302,74 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "The Burgersdorp register finished — images 605 to 818, and the API that replaced the eye",
+   "n": "the standing errand of this project, stopped twice since 14 September",
+   "d": "17 Sep 2026",
+   "h": "/documents/#burgersdorp-605",
+   "rows": [
+    [
+     "Film 008039088, images 605–818",
+     "2,046 BAPTISMS, 1858–1866, NO IMAGE SKIPPED",
+     "191 in 1859, 309 in 1860, 279 in 1861, 212 in 1862, 325 in 1863, 273 in 1864, 328 in 1865, 123 in 1866. 391 DISTINCT PARENT SURNAMES — Kruger 160, du Plessis 131, Venter 117, Fourie 105, de Klerk 104 at the head of it. A complete slice of one Karoo town across eight years.",
+     "yes"
+    ],
+    [
+     "Can the personas API sweep a film — tested properly this time",
+     "NO, AND HERE IS THE PROOF",
+     "q.filmNumber ALONE returns 22,059. q.filmNumber + q.surname=Barry returns 6,852,654 — WHICH IS EXACTLY WHAT q.surname=Barry RETURNS ON ITS OWN. The film filter is not weakened when another term joins it; IT IS DISCARDED. A nonsense surname with the film still returns 77,556. So the film cannot be partitioned by name or date to get round the 1000-offset wrap, and there is NO API ROUTE TO A WHOLE FILM.",
+     "no"
+    ],
+    [
+     "What replaced the hand sweep",
+     "POST /search/filmdatainfo/image-data",
+     "The endpoint behind the viewer's own Image Index panel. Takes an image ARK, returns every indexed record on that image as GEDCOM-X with child, both parents, birth and baptism dates, place, AND A FULL CITATION WITH THE RECORD ARK. The per-image ARKs come out of the thumbnail strip. 214 images in about ten minutes instead of 214 screenshots.",
+     "yes"
+    ],
+    [
+     "THE OFF-BY-ONE THAT WOULD HAVE SHIFTED EVERY ROW",
+     "Caught before any data was read",
+     "THE VIEWER'S IMAGE NUMBER IS ONE MORE THAN THE URL'S ?i= — ?i=604 displays as “Image 605 of 818”. The thumbnail labels are display numbers, so a map built from the strip is 1-based while the API wants the 0-based i. FOUR KNOWN ARKS WERE CHECKED AGAINST FOUR ACTUAL NAVIGATIONS before the sweep began. Getting it wrong shifts every row by one page and nothing anywhere says so.",
+     "yes"
+    ],
+    [
+     "Johanna Catharina Mountjoy, image 637",
+     "ALREADY HELD — CONFIRMED, NOT DISCOVERED",
+     "She has been in this archive for days as a daughter of George Mountjoy and Maria Sophia Botha, baptised on a leap day, who married William Henry Keys — one of the thirteen Mountjoy children. THE SWEEP REACHED HER FROM THE OTHER DIRECTION and returns the same two dates, 1:1:6FHW-89ND, image 637. That is a confirmation and a citable reference. THE FIRST WRITE-UP OF THIS SWEEP CALLED HER A NEW CHILD; the duplicate person record it created was caught by the build's own name-collision check before it reached a page.",
+     "yes"
+    ],
+    [
+     "George Augustus Kolbe, image 685",
+     "THE MAN ON THE WAKKERSTROOM STONE GETS PARENTS",
+     "Born 2 OCTOBER 1861, baptised 12 January 1862 at Burgersdorp, father G. A. KOLBE, mother ANNA MARIA VILJOEN — 1:1:6FWF-YVJT. Yesterday this archive identified him from a gravestone and from the age on WO 108/368 folio 709, and wrote that the descent was not documented. IT IS NOW DOCUMENTED ONE GENERATION BACK. Two younger siblings in the same book: ANNA JOHANNA 1863 and PETRUS JACOBUS 1865. WHETHER THE FATHER IS THE SETTLER'S TWIN SON IS NOT CLAIMED.",
+     "yes"
+    ],
+    [
+     "Fredrik Fortunatus Steenkamp Werdmuller, image 673",
+     "A SENTENCE WITHDRAWN — HE IS AUGUSTA LOUISA’S SON",
+     "This archive held a FREDERICK FORTUNATUS WERDMULLER from a 1907 Cape Supreme Court petition and a 1953 estate, with no birth, no parents, and a line reading “NOT SHOWN TO BE HER DESCENDANT”. Image 673 shows it: born 25 April 1861, baptised 19 May, father C.J.O. WERDMULLER, mother AUGUSTA LOUISA KOLBE — 1:1:6FW6-WXGS. The Settler's fourth daughter gave her child her brother's name. AND IT DATES HER: she was bearing his children in 1861, thirteen years before his second marriage. ONE STEP NOT TAKEN — the 1907 man is of MALMESBURY and the child was baptised at BURGERSDORP, and nothing read here joins them.",
+     "yes"
+    ],
+    [
+     "Blank Name columns in the 2,046",
+     "TWO, AND NEITHER IS OURS",
+     "Image 666, baptised 17 February 1861, only parent named Fredrica Geertruida Elizabeth Kezar. Image 792, baptised 27 August 1865, only parent named Francina Helena Magda Steenkamp. THAT FAILURE IS THE WHOLE REASON THIS REGISTER HAD TO BE SWEPT RATHER THAN SEARCHED — it is what hid Catherine Mary Sophia Barry in 1855.",
+     "no"
+    ],
+    [
+     "Two Booysen couples at image 691",
+     "NOT THIS FAMILY, AND RECORDED SO",
+     "Jacobus Alewyn, born 5 January 1862 to Andries Johannes Daniel Kruger and CORNELIA ETRESIA BOOYSEN. Maria Helena Charlina, born 8 December 1861 to JAN JONATHAN BOOYSEN and Cornelia Margaretha de Villiers. NEITHER COUPLE IS IN THIS ARCHIVE AND NEITHER IS CLAIMED.",
+     "no"
+    ],
+    [
+     "What the first write-up got wrong",
+     "TWO OF THE FIVE WERE ALREADY IN THE ARCHIVE",
+     "The section as first drafted called all five rows new. Johanna Catharina Mountjoy was already held in full, and Frederick Fortunatus Werdmuller was already held as a man without a birth or parents. THE BUILD CAUGHT THE FIRST — drift.py refused on a duplicate name — AND NOTHING WOULD HAVE CAUGHT THE SECOND, because it was entered under a different spelling. Both records were folded into the ones that existed and the page now says which is which. THE RULE THIS COSTS: a sweep that returns a name must be checked against the register before it is called a find, not after.",
+     "yes"
+    ]
+   ]
   }
  ]
 }
