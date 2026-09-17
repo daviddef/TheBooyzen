@@ -4432,6 +4432,56 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The death form of Henry James Booyzen, opened at last",
+   "n": "the last of the four jobs parked behind the FamilySearch sign-in",
+   "d": "17 Sep 2026",
+   "h": "/documents/#phthisis",
+   "rows": [
+    [
+     "The civil death registration, index only",
+     "NAME, AGE, DATE — AND NO CAUSE",
+     "“South Africa, Civil Death Registration, 1953–1967”, 1:1:6Z9Q-2TFG: Henry James Booyzen, male, 69 years, born 1887 Cape Province, died 8 December 1956 Johannesburg. THE INDEX CARRIES NO CAUSE OF DEATH, which is why the question could not be settled from a search.",
+     "no"
+    ],
+    [
+     "The image behind it",
+     "FILM 007751812, IMAGE 356 — AND IT IS OPEN",
+     "Image ARK 3:1:3Q9M-C91L-VSFR-R. A FORM OF INFORMATION OF A DEATH, provided by the National Archives of South Africa, fully legible.",
+     "yes"
+    ],
+    [
+     "Cause of death",
+     "COR PULMONALE WITH SILICOSIS",
+     "Line 12, in the doctor's hand: “Cor pulmonale with Silicosis”, and beneath it “contributing cause:- Broncho pneumonia”. Duration of last illness, line 13: two years, seven days. Medical practitioner Dr A. L. Agranat.",
+     "yes"
+    ],
+    [
+     "PHTHISIS",
+     "NOT THE CAUSE — IT IS ON LINE 11, THE ALLOWANCE",
+     "Line 11 is “Pensioner or Recipient of Maintenance Allowance” and the typed word against it is PHTHISIS. HE WAS A CERTIFIED MINERS' PHTHISIS PENSIONER. The G2G report that he “died of phthisis” read the right document and the wrong line.",
+     "yes"
+    ],
+    [
+     "“Coronary pulmonary sclerosis”, off the Johannesburg burial register",
+     "A MANGLING OF LINE 12",
+     "Cor pulmonale became “coronary pulmonary”; silicosis became “sclerosis”. BOTH OF THIS ARCHIVE'S TWO CAUSES TRACE TO ONE SHEET OF PAPER AND NEITHER WAS RIGHT.",
+     "yes"
+    ],
+    [
+     "Four things the form gives that nobody had",
+     "Identity number, birth date, address, doctor",
+     "IDENTITY NUMBER 331-452322. DATE OF BIRTH WRITTEN AS 12-8-1887 — the fourth independent statement of it, after a family tree, a gravestone and a church register. RESIDENTIAL ADDRESS 3 FIFTEENTH AVENUE, MAYFAIR, JOHANNESBURG, which is the parish where his niece married Nuno Lerena in 1949. And the informant, at 6 Jorissen Street Braamfontein, is described as “PERSON CAUSING BURIAL” — which the form distinguishes from a relative.",
+     "yes"
+    ],
+    [
+     "An attribution worth a second look",
+     "FamilySearch prints the dotted domain",
+     "The image attribution reads “Provided by NATIONAL ARCHIVES OF SOUTH AFRICA · www.national.archives.gov.za”. THIS ARCHIVE CORRECTED THAT EXACT DOTTED FORM ON 15 SEPTEMBER — the live domain is nationalarchives.gov.za with no dot. The correction stands; FamilySearch's own attribution carries the dead form.",
+     "no"
+    ]
+   ]
   }
  ]
 }
