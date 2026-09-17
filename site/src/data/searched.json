@@ -4370,6 +4370,68 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The Natal estate index — and the family turns out to have moved to Utrecht",
+   "n": "the two jobs parked behind the FamilySearch sign-in since 15 September",
+   "d": "17 Sep 2026",
+   "h": "/documents/#kolbe-utrecht",
+   "rows": [
+    [
+     "Surname KOLBE in “South Africa, Pietermaritzburg, Estate Files 1846–1950”",
+     "SIXTY-FOUR ENTRIES",
+     "Reached by taking the collection id out of a persona's sourceDescriptions and passing it as f.collectionId — WHICH DOES FILTER, unlike almost everything else on that endpoint. The archive has read NONE of the sixty-four files.",
+     "yes"
+    ],
+    [
+     "Frederik Fortunatus Kolbe, the Settler's tenth child",
+     "A DEATH, AFTER THE RECORD CARRIED A DASH",
+     "“FREDERICK FORTUNABIS KOLBE, BORN 1839 KAAP PROVINSIE, DIED 23 NOVEMBER 1929 AT UTRECHT”, probate 1929 — 1:1:QLR2-XFJC. Ninety years old, on the Natal border, from a mission station on the Orange River.",
+     "yes"
+    ],
+    [
+     "Elizabeth Johanna du Toit, his wife",
+     "DEATH AND BIRTHPLACE, WHERE THE RECORD SAID “NOT YET FOUND”",
+     "“ELIZABETHA JOHANNA DU TOIT KOLBE, BORN 1845 BREDARSDORP K PROVINSIE, DIED 12 JULY 1923, SAXONY UTRECHT NATAL”, probate 1923 — 1:1:QLRL-HRQV. Seven hundred miles from the Bredasdorp she was born in, and six years before her husband.",
+     "yes"
+    ],
+    [
+     "The heirs on both estates",
+     "NINE CHILDREN, AND THE DAUGHTERS UNDER BOTH SURNAMES",
+     "George Augustus · GABRIEL STEPHANUS · MARTHA ANGELINA · Margaret Harriet Kolbe VAN DER SPUY · FREDERICK FORTUNATUS · Catharina Maria Louisa Kolbe LOUW · Elizabeth Johanna Kolbe PATTISON · Petronella Jacoba Adriana Kolbe BEUKES · Adriana Henrietta Johanna Kolbe OOSTHUIZEN. AN ESTATE FILE IS WHERE A MARRIED DAUGHTER IS WRITTEN UNDER BOTH NAMES, which is the only thing that lets her be followed.",
+     "yes"
+    ],
+    [
+     "The three “not followed out of the font”",
+     "ALL THREE FOLLOWED",
+     "GABRIEL STEPHANUS alive 1923 and 1929. MARTHA ANGELINA alive 1923 and 1929 AND STILL WRITTEN KOLBE, where five sisters are written under married names. CATHARINA MARIA LOUISA MARRIED A LOUW — 1:1:QLRL-WTBN and 1:1:QLR2-ZDB5.",
+     "yes"
+    ],
+    [
+     "The Angeline question",
+     "ANSWERED BY EXCLUSION",
+     "Martha Angelina's record warned that an ANGELINE KOLBE died at Wakkerstroom in 1900 and a MARTHA ANGELINE KOLBE was buried at Volksrust in 1901 aged two months, and that this archive would not guess. SHE IS NEITHER: she was alive in 1923 and 1929. The Volksrust infant now has her own dates — BORN 9 OCTOBER 1901, DIED 8 DECEMBER 1901, Transvaal civil death and BillionGraves.",
+     "yes"
+    ],
+    [
+     "A ninth child",
+     "FREDERICK FORTUNATUS KOLBE, BORN 1872 COLESBERG",
+     "Died 10 September 1944 at Vryheid, probate 1944 — 1:1:QPHZ-2361 — and named among his mother's heirs in 1923. HIS BIRTH YEAR FALLS IN THE ONE GAP IN HIS PARENTS' BAPTISM RUN, between Hopetown 1870 and Colesberg 1873. This archive's own note was careful and said EIGHT ARE IN THE REGISTERS; the ninth is not.",
+     "yes"
+    ],
+    [
+     "Where they all went",
+     "UTRECHT, VRYHEID AND A FARM CALLED SAXONY",
+     "Both parents die at Utrecht, one son at Vryheid, and the estates are at Pietermaritzburg. Utrecht and Vryheid sit either side of Wakkerstroom on the Natal–Transvaal border. THIS IS NOT THREE CHILDREN WHO HAPPENED TO MARRY IN ONE TOWN. It is a household that moved from the Orange River to the Natal border and stayed.",
+     "yes"
+    ],
+    [
+     "ANNA MARIA VILJOEN KOLBE, in the same index",
+     "THE OTHER BRANCH WENT THERE TOO",
+     "1:1:QPHZ-23XS. She was found this morning in the Burgersdorp baptism register as the mother of the OTHER George Augustus Kolbe — the one born 2 October 1861 and buried at Wakkerstroom. BOTH KOLBE HOUSEHOLDS END UP IN THE SAME CORNER OF NATAL, and nothing yet joins them to each other.",
+     "yes"
+    ]
+   ]
   }
  ]
 }

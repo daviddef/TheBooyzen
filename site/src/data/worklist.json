@@ -846,11 +846,11 @@
   },
   {
    "n": 106,
-   "what": "The three unfollowed Kolbe children, and Angeline of Wakkerstroom",
-   "state": "next",
+   "what": "The three unfollowed Kolbe children, and Angeline of Wakkerstroom — all four answered",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-17",
-   "note": "Also parked behind the FamilySearch sign-in since 15 September. Three of the Settler’s Colesberg grandchildren are **not followed out of the font**, and an **ANGELINE KOLBE dies at Wakkerstroom in 1900** while a **MARTHA ANGELINE KOLBE is buried at Volksrust in 1901 aged two months** — neither attached to the Martha Angelina baptised at Colesberg in 1868, and this archive will not guess. Wakkerstroom has since become the town where **three separate threads meet**: C.K. Barry the attorney, the George Augustus Kolbe of the gravestones, and the 1901 prisoner. **The Angeline question is now worth more than it was when it was parked.**"
+   "note": "Also parked behind the FamilySearch sign-in since 15 September. Three of the Settler’s Colesberg grandchildren are **not followed out of the font**, and an **ANGELINE KOLBE dies at Wakkerstroom in 1900** while a **MARTHA ANGELINE KOLBE is buried at Volksrust in 1901 aged two months** — neither attached to the Martha Angelina baptised at Colesberg in 1868, and this archive will not guess. Wakkerstroom has since become the town where **three separate threads meet**: C.K. Barry the attorney, the George Augustus Kolbe of the gravestones, and the 1901 prisoner. **The Angeline question is now worth more than it was when it was parked.**  ··· **DONE, AND BY ONE SEARCH.** The **Pietermaritzburg estate files** hold 64 Kolbe entries. Both parents’ estates — hers 1923, his 1929 — name **nine children, the daughters under both surnames**. **Gabriel Stephanus** and **Martha Angelina** are alive at both; **Catharina Maria Louisa married a LOUW**; and because Martha Angelina was alive in 1929 she is **neither the Angeline who died at Wakkerstroom in 1900 nor the Volksrust infant of 1901**. The question is answered by exclusion. Also: **the parents’ deaths** — Utrecht 1929 and 1923 — and **a ninth child**. [The two estates](/documents/#kolbe-utrecht)"
   },
   {
    "n": 107,
@@ -899,6 +899,14 @@
    "owner": "the six other sessions",
    "since": "2026-09-17",
    "note": "The component is in the kit and two archives are on it. What the other six need is the data: `{canon, langs: {<key>: [{form, seen, note, case}]}}` plus their own list of languages. **The material exists in every one of them** — this archive has eleven Afrikaans/English doublets running to 8,931 occurrences, D'Arcy has fifteen spellings across 340 entries, Luwinski already holds `forms:[{form, kind, where, note}]` per person which is the shape in all but name, Falco and Mazza have Latin and Italian against each other in every register they read. **Writing the table is each archive's own work** and not something to guess at from outside; the page that draws it is no longer an obstacle."
+  },
+  {
+   "n": 113,
+   "what": "Order the two Pietermaritzburg estate files — MSCE 1923 and 1929, Kolbe of Utrecht",
+   "state": "blocked",
+   "owner": "Pietermaritzburg Archives Repository",
+   "since": "2026-09-17",
+   "note": "**The index gave nine children, two deaths and two birthplaces. The files themselves would give more and none has been read.** Elizabeth Johanna du Toit Kolbe, died 12 July 1923 at Saxony, Utrecht; Frederick Fortunatus Kolbe, died 23 November 1929 at Utrecht. A Natal estate file carries a **death notice** — which names the deceased’s own parents, and would say whether Frederik Fortunatus’s father is written as the 1820 Settler. **That single line is what the whole Kolbe descent still rests on inference for.** The files also give husbands’ forenames for the five married daughters, of whom **Louw** is currently a surname and nothing else. **This is a fourth archive building** — NAB, not TAB, KAB or VAB — and it is the same repository the Pietermaritzburg letter has been drafted and unsent for since 12 September. **The letter should now carry these two references.** There are 64 Kolbe entries in that collection and this list names two."
   }
  ],
  "accounts": [
