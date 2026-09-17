@@ -14,9 +14,17 @@ const { title, description = "", dek, eyebrow, bare, noindex } = Astro.props;
 const SITE = "The Booyzen Archive";
 const nav = [
   ["Start", [["/", "Home"], ["/about/", "About"], ["/trees/", "The trees"], ["/tree/", "Our line, drawn"], ["/atlas/", "The Atlas"], ["/timeline/", "The Timeline"]]],
-  ["Our line", [["/direct-line/", "The Spine"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"], ["/name/", "The Name"]]],
+  ["Our line", [["/direct-line/", "The Spine"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"]]],
   ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"], ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
-  ["People & places", [["/people/", "The People"], ["/who/", "Every Name"], ["/bloodline/", "Blood relatives, drawn"], ["/register/", "The Register"], ["/households/", "Households"], ["/marriages/", "The Marriages"], ["/places/", "Places"], ["/namesakes/", "The forenames"]]],
+  ["People & places", [["/people/", "The People"], ["/who/", "Every Name"], ["/bloodline/", "Blood relatives, drawn"], ["/register/", "The Register"], ["/households/", "Households"], ["/marriages/", "The Marriages"], ["/places/", "Places"]]],
+  /* THE NAME IS ITS OWN GROUP, AND IT IS THE ESTATE'S NAME FOR IT.
+     Three archives already had one here, between People & places and Evidence.
+     The other five had name pages in five different parents: this archive kept
+     The Name under Our line and the forenames under People & places, Blazevic
+     filed Say Your Name under Origins, Luwinski under People & names. A reader
+     moving between two of these sites had to learn where each one hides the
+     same page. */
+  ["The name", [["/name/", "The Name"], ["/namesakes/", "The forenames"]]],
   ["Evidence", [["/dna/", "The DNA"], ["/disputed/", "Disputed"], ["/errands/", "Errands"], ["/sources/", "Sources"], ["/searched/", "What Has Been Read"], ["/worklist/", "The work list"], ["/letters/", "The Letters"], ["/open-questions/", "Open Questions"], ["/corrections/", "Corrections"], ["/changes/", "What changed"], ["/research-log/", "Research Log"], ["/method/", "Method"], ["/documents/", "Documents"], ["/gallery/", "Gallery"]]],
 ];
 
