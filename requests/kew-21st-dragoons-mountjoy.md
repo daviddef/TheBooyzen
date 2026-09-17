@@ -23,7 +23,7 @@ Kilmainham pension would leave no paper in either.
 
 ---
 
-**Subject:** Tracing a soldier discharged at the Cape, 21st Dragoons (Light), c.1816 — which series after WO 97?
+**Subject:** Tracing a soldier discharged at the Cape, 21st Dragoons (Light), 1816–1817 — is WO 12/1450 the right piece?
 
 Dear Sir or Madam,
 
