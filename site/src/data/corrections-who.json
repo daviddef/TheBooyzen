@@ -1,0 +1,125 @@
+{
+ "note": "Derived by tools/correctionswho.py. A correction is attached to a person only when their WHOLE held name appears - forename and surname together. Run the tool again rather than editing this, and refuse one in corrections-who-deny.json.",
+ "who": {
+  "15 Sep 2026 | “WILLEM HERMANUS PIETERZEN — Anna Catharina Slier's FIRST husband”": [
+   "hermanus-pietersen",
+   "willem-hermanus-pieterzen",
+   "willem-slier"
+  ],
+  "15 Sep 2026 | Margaret Downing “c. 1804, London” — and, for a day, a death date thrown into do": [
+   "margaret-downing"
+  ],
+  "14 Sep 2026 | Martha Angeline Kolbe, sixty days old, was “BURIED AT VOLKSRUST”, and Volksrust ": [
+   "martha-angeline-kolbe"
+  ],
+  "14 Sep 2026 | The 1902 prisoner of war could not be assigned to either George Augustus Kolbe o": [
+   "george-augustus-kolbe",
+   "george-augustus-kolbe-of-wakkerstroom"
+  ],
+  "14 Sep 2026 | George Augustus Kolbe of Wakkerstroom, born Colesberg 1863, was a prisoner of wa": [
+   "george-augustus-kolbe",
+   "george-augustus-kolbe-of-wakkerstroom",
+   "susanna-margaretha-swart"
+  ],
+  "14 Sep 2026 | The Wonderboom deeds register showed a transfer from M. J. Booyzen, widow, to Da": [
+   "david-schalk-booysen",
+   "johanna-booyzen",
+   "petrus-jacobus-booyzen"
+  ],
+  "14 Sep 2026 | The De List's prisoner numbers are a separate series and do not locate these men": [
+   "david-schalk-booysen"
+  ],
+  "14 Sep 2026 | A relationship search had found one name the Barry notices never gave": [
+   "james-henry-barry"
+  ],
+  "14 Sep 2026 | Magdelena Elisabeth de Beer was carried here under WikiTree's codes, b6c2 and b6": [
+   "magdelena-elisabeth-de-beer"
+  ],
+  "13 Sep 2026 | A relationship search had turned up two Barry children on neither parent's death": [
+   "william-barry",
+   "william-frederick-thomas-barry"
+  ],
+  "13 Sep 2026 | Hendrik Stephanus Nicolaas Booyen was buried at Johannesburg": [
+   "hendrik-stephanus-nicolaas-booyen"
+  ],
+  "13 Sep 2026 | Anna J. Mary Booyzen and George Downing Daschner were stillborn or died the same": [
+   "anna-j-mary-booyzen",
+   "george-downing-daschner"
+  ],
+  "13 Sep 2026 | Only a family tree puts Anna Maria van der Merwe in this family": [
+   "anna-maria-van-der-merwe"
+  ],
+  "13 Sep 2026 | Anna Catharina Johanna Olivier was on this site twice": [
+   "anna-catharina-johanna-olivier"
+  ],
+  "13 Sep 2026 | Charlotta Elizabetha Dormehl died before 1908": [
+   "charlotta-elizabetha-dormehl",
+   "jacob-dormehl",
+   "jacob-van-staden",
+   "matthys-roos"
+  ],
+  "13 Sep 2026 | Anna Johanna Booijzen, born Alberts, died at Boekfontein and is not this family": [
+   "anna-catharina-johanna-olivier",
+   "hendrik-stefanus-booijsen"
+  ],
+  "13 Sep 2026 | Margarietha Wilhelmina Elizabeth Barry was John Augustus Barry I’s daughter": [
+   "hendrik-nicholaas-barry",
+   "john-augustus-barry-i",
+   "margarietha-wilhelmina-elizabeth-barry"
+  ],
+  "13 Sep 2026 | The 1915 notice named eight children and the archive listed nine": [
+   "george-augustus-barry",
+   "john-augustus-barry-ii"
+  ],
+  "13 Sep 2026 | The ancestor chart, every wife one generation too high": [
+   "johanna-catharina-mountjoy",
+   "petrus-jacobus-booysen"
+  ],
+  "9 Sep 2026 | The tree contradicts itself on 1827 and 1840": [
+   "james-montjoy"
+  ],
+  "9 Sep 2026 | MOUNTJOY returned 42 documents, all read": [
+   "james-mountjoy"
+  ],
+  "13 Sep 2026 | Isabella Frederika Coetsee died in 1943": [
+   "isabella-frederika-coetsee"
+  ],
+  "13 Sep 2026 | Dorothea Regina Barry was a daughter of John Barry": [
+   "dorothea-regina-barry",
+   "john-barry"
+  ],
+  "13 Sep 2026 | Ruben Jacobus Josuah Barry was a son of John Barry": [
+   "john-barry",
+   "ruben-jacobus-josuah-barry"
+  ],
+  "16 Sep 2026 | Johan Gottlieb Kolbe was buried at the German church of the Savoy, entry 55, gra": [
+   "johan-gottlieb-kolbe"
+  ],
+  "16 Sep 2026 | Johan Gottlieb Kolbe had one wife, called Mary": [
+   "johan-gottlieb-kolbe"
+  ],
+  "16 Sep 2026 | R_177176049779 is this archive's reference for Petrus Jacobus Booysen's 1812 bir": [
+   "petrus-jacobus-booysen"
+  ],
+  "16 Sep 2026 | The German Savoy registers are RG 4/4625, 4626, 4628 and 4631 for burials": [
+   "charles-samuel-kolbe"
+  ],
+  "17 Sep 2026 | Seventeen people had a page saying they are “not yet discussed on any page”": [
+   "george-augustus-kolbe",
+   "george-mountjoy",
+   "johanna-catharina-mountjoy",
+   "john-barry",
+   "john-barry-booyzen",
+   "petrus-jacobus-booysen"
+  ],
+  "17 Sep 2026 | WO 12/1430 is the muster book to read for James Mountjoy": [
+   "james-mountjoy"
+  ],
+  "17 Sep 2026 | The Burgersdorp sweep of images 605–818 found five new people": [
+   "frederick-fortunatus-werdmuller",
+   "george-mountjoy",
+   "johanna-catharina-mountjoy",
+   "william-henry-keys"
+  ]
+ }
+}

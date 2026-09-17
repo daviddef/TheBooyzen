@@ -7,11 +7,26 @@ import pl from "../../data/places.json";
 import pj from "../../data/people.json";
 import PersonTree from "../../components/PersonTree.astro";
 import mg from "../../data/marriages.json";
+import cx from "../../data/corrections.json";
+import cw from "../../data/corrections-who.json";
+/* CORRECTIONS REACH THE PERSON THEY ARE ABOUT.
+ *
+ * corrections.json keys a correction to a PAGE - documents, open questions,
+ * the name - and never to a person, so a correction entirely about one named
+ * man could be read on /corrections/ and nowhere else, least of all here. The
+ * 17 September audit called that the standing gap, as against the fault.
+ *
+ * tools/correctionswho.py attaches a person only where their WHOLE held name
+ * appears, forename and surname together, never a surname alone: matching on
+ * part of a name is how this estate once turned Domenica Prostamo into
+ * Domenica Anile. 31 of the 63 corrections name somebody held here. */
+const ckey = (r) => r[0] + " | " + String(r[1]).slice(0, 80);
 import { treeFor, resolve } from "../../lib/kin.js";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
 const { p } = Astro.props;
+const mine = cx.rows.filter(r => (cw.who[ckey(r)] || []).includes(p.slug));
 const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
 const all = Object.values(d.people);
 const kin = all.filter(x => x.slug !== p.slug && x.l === p.l).slice(0, 14);
@@ -151,6 +166,28 @@ const groups = Object.entries(byPage);
     <ul style="margin:10px 0 0">
       <li><b>{p.n}</b> — {p.b} to {p.d}. {p.r}</li>
       {(p.also || []).map(a => (<li><b>{a.n}</b> — {a.b} to {a.d}. {a.r}</li>))}
+    </ul>
+  </div>
+</section>
+)}
+
+{mine.length > 0 && (
+<section class="blk">
+  <div class="note">
+    <strong>{mine.length === 1
+      ? "One correction on this site names " + p.n + "."
+      : mine.length + " corrections on this site name " + p.n + "."}</strong>
+    {" "}A correction here is filed against the page it changed, not against a person,
+    so until now it could be read on the corrections register and nowhere else — least
+    of all on the page of the person it was about.
+    <ul style="margin:12px 0 0">
+      {mine.map(r => (
+        <li style="margin-bottom:10px">
+          <span class="m small">{r[0]}</span> — <b>{r[1]}</b><br />
+          <span class="cap">{r[2]}</span>{" "}
+          <a href={u(r[4])}>Where it stands &rarr;</a>
+        </li>
+      ))}
     </ul>
   </div>
 </section>
