@@ -4,6 +4,14 @@ import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import { u } from "../lib/url.js";
 import Register from "@daviddef/archive-kit/components/Register.astro";
 import reg from "../data/register.json";
+import nf from "../data/namefold.json";
+/* THE SEARCH BOX FOLDS SPELLINGS. Without this, a reader typing the surname
+   this archive answers to reached 3,504 of the 4,244 times it appears in these
+   rows and never learned the other 740 existed - Booijsen, Booysen, Booyzens,
+   Booizen. It is worse on given names: eleven Afrikaans/English doublets run to
+   8,931 occurrences here, of which the English form is 1,783, so JOHN BOOYZEN
+   found a fifth of what is on this page. Folding is a search rule only. It
+   widens what the query matches; it merges nothing. */
 const rows = reg.rows;
 const linked = rows.filter(r => r.u).length;
 const groups = reg.groups;
@@ -100,7 +108,7 @@ const regRows = rows.map((r) => ({
 </section>
 
 <section class="blk">
-  <Register rows={regRows} u={u} unit="entries" />
+  <Register rows={regRows} u={u} unit="entries" fold={nf.fold} />
 </section>
 
 

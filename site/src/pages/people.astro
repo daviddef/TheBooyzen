@@ -5,6 +5,13 @@ import FilterTable from "@daviddef/archive-kit/components/FilterTable.astro";
 import { u } from "../lib/url.js";
 import d from "../data/dossiers.json";
 import pj from "../data/people.json";
+import nf from "../data/namefold.json";
+/* THIS PAGE'S OWN NOTE PROMISED IT. "Filter by name, family, year, place, or
+   a spelling variant such as Montjoy, Kumm or Booyse" has been printed under
+   the box since the page was written, and the box did nothing of the kind -
+   it matched the letters typed, so Montjoy found the one man spelled that way
+   and not the twenty-seven Mountjoys he fathered. The claim is older than the
+   mechanism; it is true now. */
 /* Iterate the FULL people list, not the deduped dossiers: three names are
    carried by more than one person here and the index must not hide them. */
 const bySlug = d.people;
@@ -35,6 +42,7 @@ const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Op
   <div class="panel" style="margin-top:16px">
     <FilterTable
       unit="people"
+      fold={nf.fold}
       note="Filter by name, family, year, place, or a spelling variant such as <em>Montjoy</em>, <em>Kumm</em> or <em>Booÿse</em>."
       columns={[{ label: "Name" }, { label: "Born", cls: "m" }, { label: "Died", cls: "m" },
                 { label: "In this archive" }]}
