@@ -4258,6 +4258,50 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The whole English Kolbe family, counted rather than sampled",
+   "n": "FindMyPast, with 29 days left on the subscription",
+   "d": "17 Sep 2026",
+   "h": "/documents/#kolbe-counted",
+   "rows": [
+    [
+     "Surname KOLBE in the 1841 census, England Wales and Scotland",
+     "FOUR, AND THEY ARE ONE HOUSEHOLD",
+     "John G b.1765, Marianne b.1806, Charlotte b.1811, Amelia A b.1816 — all at St George Hanover Square. THE CONDUIT STREET HOUSEHOLD WAS THE ENTIRE SURNAME IN BRITAIN, not merely the part this archive holds.",
+     "yes"
+    ],
+    [
+     "The same search, 1851 / 1861 / 1871",
+     "1 / 1 / 7",
+     "1851: J Kolbe b.1826, LAMBETH — none of the four. 1861: John Kolbe b.1836, St Marylebone. 1871: seven, a later arrival. A variants search is useless here — it fuzzes to Colbey and Kilby and returns 14,245.",
+     "no"
+    ],
+    [
+     "Every KOLBE death registered in England and Wales, 1837–1867",
+     "FOUR",
+     "John Gottlob 1845 St George Hanover Square · George 1848 Westminster St Margaret · Elizabeth 1852 Strand · CHARLOTTE 1867 LAMBETH. And the one Kolbe in the whole 1851 census is at Lambeth too.",
+     "yes"
+    ],
+    [
+     "Every KOLBE marriage registered in England and Wales, 1837–1867",
+     "FOUR",
+     "Maria 1838 Stepney · Mary Ann Maria Ford 1847 Whitechapel · JANE DAY 1853 City of London · AMELIA ANN 1854 St Pancras. EIGHT CIVIL RECORDS FOR A WHOLE SURNAME IN THIRTY YEARS.",
+     "yes"
+    ],
+    [
+     "What the two tables say together",
+     "THE 1851 BLANK IS THE RECORD FAILING, NOT THE FAMILY ENDING",
+     "Three women vanish from the census between 1841 and 1851 and at least two were alive after it — Amelia Ann married in 1854 and a Charlotte died at Lambeth in 1867. A CENSUS ABSENCE READS LIKE AN EXTINCTION AND IS VERY OFTEN AN INDEXING ACCIDENT. This archive learned the same thing about itself the same morning, from the other side.",
+     "yes"
+    ],
+    [
+     "And the thing that got harder",
+     "The three women match no baptism in the family's run",
+     "Their 1841 ages, rounded down to the nearest five, put them born about 1802–06, 1807–11 and 1812–16 — in and around the gaps at 1808–1812 and 1814–1818, WHICH ARE THE SAME GAPS THE THREE MISSING SONS MUST SIT IN. The 1841 census records no relationships; that column begins in 1851. THEIR PLACE IN THIS FAMILY IS AN INFERENCE FROM LIVING IN THE HOUSE and is now marked as one on all three records.",
+     "no"
+    ]
+   ]
   }
  ]
 }

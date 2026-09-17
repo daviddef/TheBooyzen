@@ -839,10 +839,10 @@
   {
    "n": 105,
    "what": "Finish the Burgersdorp baptism sweep — stopped at image 604 of 818",
-   "state": "next",
-   "owner": "this archive",
+   "state": "blocked",
+   "owner": "David",
    "since": "2026-09-17",
-   "note": "**Film 008039088**, the Burgersdorp Dutch Reformed baptism register, **22,059 records**. The hand sweep stopped at **image 604 of 818** when the FamilySearch session expired, and it has been stopped ever since. **214 images unread**, and this is the register that has already produced the 1851 baptism, the 1889 font with both maternal grandparents standing, and the Mountjoy entry three weeks later on the facing page. Two traps already recorded and both still apply: the personas API **wraps silently at offset 1000** and will re-serve page one while reporting 22,059 results, so the sweep must be by image and not by offset; and `q.filmNumber` is **scored, not filtered**, when combined with any other term."
+   "note": "**Film 008039088**, the Burgersdorp Dutch Reformed baptism register, **22,059 records**. The hand sweep stopped at **image 604 of 818** when the FamilySearch session expired, and it has been stopped ever since. **214 images unread**, and this is the register that has already produced the 1851 baptism, the 1889 font with both maternal grandparents standing, and the Mountjoy entry three weeks later on the facing page. Two traps already recorded and both still apply: the personas API **wraps silently at offset 1000** and will re-serve page one while reporting 22,059 results, so the sweep must be by image and not by offset; and `q.filmNumber` is **scored, not filtered**, when combined with any other term.  ··· **17 SEPTEMBER — BLOCKED AGAIN, ON THE SAME THING.** The film viewer redirected to `ident.familysearch.org` asking for a username and password. **This is the second time the session has expired mid-sweep**, and it is why the sweep stopped at 604 in the first place. The pattern is now worth naming: **a 214-image hand sweep is longer than a FamilySearch session lasts**, so it has to be done in sittings with the image number written down at the end of each, which is what the `604` in this row is for. Nothing else about the job has changed and no credentials were entered."
   },
   {
    "n": 106,
