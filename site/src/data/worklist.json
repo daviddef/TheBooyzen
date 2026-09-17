@@ -838,11 +838,11 @@
   },
   {
    "n": 105,
-   "what": "Finish the Burgersdorp baptism sweep — stopped at image 604 of 818",
-   "state": "blocked",
-   "owner": "David",
+   "what": "The Burgersdorp baptism sweep — finished, 605 to 818",
+   "state": "done",
+   "owner": "this archive",
    "since": "2026-09-17",
-   "note": "**Film 008039088**, the Burgersdorp Dutch Reformed baptism register, **22,059 records**. The hand sweep stopped at **image 604 of 818** when the FamilySearch session expired, and it has been stopped ever since. **214 images unread**, and this is the register that has already produced the 1851 baptism, the 1889 font with both maternal grandparents standing, and the Mountjoy entry three weeks later on the facing page. Two traps already recorded and both still apply: the personas API **wraps silently at offset 1000** and will re-serve page one while reporting 22,059 results, so the sweep must be by image and not by offset; and `q.filmNumber` is **scored, not filtered**, when combined with any other term.  ··· **17 SEPTEMBER — BLOCKED AGAIN, ON THE SAME THING.** The film viewer redirected to `ident.familysearch.org` asking for a username and password. **This is the second time the session has expired mid-sweep**, and it is why the sweep stopped at 604 in the first place. The pattern is now worth naming: **a 214-image hand sweep is longer than a FamilySearch session lasts**, so it has to be done in sittings with the image number written down at the end of each, which is what the `604` in this row is for. Nothing else about the job has changed and no credentials were entered."
+   "note": "**Film 008039088**, the Burgersdorp Dutch Reformed baptism register, **22,059 records**. The hand sweep stopped at **image 604 of 818** when the FamilySearch session expired, and it has been stopped ever since. **214 images unread**, and this is the register that has already produced the 1851 baptism, the 1889 font with both maternal grandparents standing, and the Mountjoy entry three weeks later on the facing page. Two traps already recorded and both still apply: the personas API **wraps silently at offset 1000** and will re-serve page one while reporting 22,059 results, so the sweep must be by image and not by offset; and `q.filmNumber` is **scored, not filtered**, when combined with any other term.  ··· **17 SEPTEMBER — BLOCKED AGAIN, ON THE SAME THING.** The film viewer redirected to `ident.familysearch.org` asking for a username and password. **This is the second time the session has expired mid-sweep**, and it is why the sweep stopped at 604 in the first place. The pattern is now worth naming: **a 214-image hand sweep is longer than a FamilySearch session lasts**, so it has to be done in sittings with the image number written down at the end of each, which is what the `604` in this row is for. Nothing else about the job has changed and no credentials were entered.  ··· **DONE THE SAME DAY, AND NOT BY EYE.** The viewer’s Image Index panel is fed by `POST /search/filmdatainfo/image-data`, which takes an image ARK and returns every indexed record on that image with both parents, both dates, the place and a citable reference. **214 images, 2,046 baptisms, 1858–1866, no image skipped.** Five rows were ours. [The sweep](/documents/#burgersdorp-605)"
   },
   {
    "n": 106,
@@ -859,6 +859,30 @@
    "owner": "this archive",
    "since": "2026-09-17",
    "note": "The fourth job parked behind the sign-in. A cause of death read once and never checked against the register image. **A disease named from a transcript and not from the document is exactly the class of citation this archive struck on 16 September** when R_177176049779 turned out not to resolve."
+  },
+  {
+   "n": 108,
+   "what": "Three archives have spelling clusters waiting on their own session's reading",
+   "state": "done",
+   "owner": "the Falco, D'arcy and Luwinski sessions",
+   "since": "2026-09-17",
+   "note": "Part of the estate-wide search folding done on 17 September. `namefold.py` folds a spelling on sight when it is **one word two keyboards wrote differently** — an accent, a capital — and refuses to fold anything that **changes a letter**, because whether two spellings are one family is an archive's judgement and not a rule's. Five archives had safe clusters and now fold. **These three have none at all**, and between them sixteen forms are waiting: **Falco** Sansone → Sanzone (312 tokens, and typing Sanzone currently reaches 15% of that name); **D'Arcy** Sanyger → Saniger (22), ZANIGAR → Sanigar, Lion → Lyon; **Luwinski** LUWINSKY → Luwinski (18), Hostowski → HOSTOWSKY. Run `namefold.py --root site --all` once the session has read them. Also waiting: **Blazevic** Blasevic → Blažević (52) and **Mazza** Ericksen → Eriksen (8). \n\n**Done 17 September.** The canon is taken from the three archives that already had it rather than invented: **where an archive has two or more name pages they sit in a group called “The name”, between People & places and Evidence.** This archive now has one (The Name, The forenames) and Blažević has one (The Name, The Second Name, Say Your Name) — which also gives **Origins** back to origins: the Bunjevci, the Frontier, what they did, the other emigration, the map, Port Pirie. **Two documented exceptions.** *Lerena* keeps one name page and keeps it under Our line, because a rule that forces a group of one is a rule making work. *D'Arcy* keeps **Fifteen Spellings** in **The Sanigers**, where it is the seventh of ten pages in a narrative about that name; lifting it into a group of two would strand it from the nine pages that give it its point. That one belongs to the D'Arcy session to confirm or overturn."
+  },
+  {
+   "n": 109,
+   "what": "Four archives keep their name pages in four different menu groups",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-17",
+   "note": "Raised by David on 17 September, looking at two sites side by side: Blažević files **Say Your Name** under **Origins** and Defranceschi files it under **The name**. Measured across the estate, every archive shares a spine — Start, Our line, The families, People & places, Evidence — and beyond it the name pages sit in **five different parents**: *The name* (Defranceschi, Falco, Mazza), *Our line* (Blažević, Booyzen, D'Arcy, Lerena), *Origins* (Blažević), *People & places* (Booyzen's forenames), *People & names* (Luwinski). Blažević's **Origins** group is really about where the family came from — the Bunjevci, the Frontier, the Map, Port Pirie — and the two name pages are lodged there because there was nowhere else to put them."
+  },
+  {
+   "n": 110,
+   "what": "Luwinski's menu spine differs from the other seven and nobody has said whether that is deliberate",
+   "state": "next",
+   "owner": "the Luwinski session",
+   "since": "2026-09-17",
+   "note": "Found while settling the name group on 17 September. Seven archives run **Start · Our line · The families · People & places · Evidence**. Luwinski runs **Start · Our line · Places · People & names · Evidence** — no families group, places split out on its own, and *People & places* renamed *People & names* to house a single page, **Her names**. It may be right: this archive is one woman and her documents rather than a family, so a families group would be empty and the names question is the whole subject. **But it has never been said out loud**, and a deviation nobody has written down is indistinguishable from drift."
   }
  ],
  "accounts": [
