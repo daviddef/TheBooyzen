@@ -911,10 +911,10 @@
   {
    "n": 114,
    "what": "Read the DSAB entry on George Augustus Kolbe, and work its source list",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "Melanie Geustyn sent a **second document nobody asked for**: two pages written for the **Dictionary of South African Biography** by **Dr Karel Schoeman**, who worked at the National Library, found in the MSB 751 Background File, **with a list of Bronne (sources)**. It is a secondary work and this archive does not take secondary works as evidence — **but a source list by a historian of Schoeman’s standing is a reading list**, and it is the only one this archive has ever been handed for this man. **Read it, and then work every source in it that is not already here.**"
+   "note": "Melanie Geustyn sent a **second document nobody asked for**: two pages written for the **Dictionary of South African Biography** by **Dr Karel Schoeman**, who worked at the National Library, found in the MSB 751 Background File, **with a list of Bronne (sources)**. It is a secondary work and this archive does not take secondary works as evidence — **but a source list by a historian of Schoeman’s standing is a reading list**, and it is the only one this archive has ever been handed for this man. **Read it, and then work every source in it that is not already here.** **DONE 20 September 2026.** Read in full and set against the archive line by line. It agrees on nine points reached from nine different documents and is wrong about exactly one thing — it makes the Settler’s father a German apothecary, where 121 rate books, two printed masters’ lists, three Gazette notices, the census, the burial register and a sworn Old Bailey deposition all say tailor. **The trade is the son’s, moved one generation up.** It also corrected this archive (MSB 751 is not a letter “on his ordination”), settled the farm name (Wurthemberg = Knapdaar), and handed over nine years of his life this archive did not have — including an accusation, an inquiry and an acquittal in 1836. Its eleven sources are now rows of their own."
   },
   {
    "n": 115,
@@ -923,6 +923,70 @@
    "owner": "David",
    "since": "2026-09-20",
    "note": "She answered in **twenty-three hours**, sent the manuscript on the **third day**, chased the Background File unasked, and added a **DSAB entry nobody had asked for**. **That is the best service any institution has given this archive.** The reply should say what the letter actually did: it did not carry the address, and it settled the LMS question, dated the obituary, gave Henry his illness, gave Elizabeth a nickname and a city, and turned Charlotte from an inference into a daughter. **It is also worth telling her that the Background File negative was useful** — archivists rarely hear that. The draft is this archive’s; the sending is David’s."
+  },
+  {
+   "n": 116,
+   "what": "Museum Africa, Johannesburg — the Charles Bell watercolour of Philippolis, 1834, with Kolbe in the pulpit",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-20",
+   "note": "**This would be a picture of the Settler at work, drawn from life.** The DSAB entry: “Die Africana-museum in Johannesburg besit ’n waterverfskildery deur C. Bell van ’n kerkdiens te Philippolis in 1834 met K. op die kansel; ’n afdruk verskyn in *The journal of Andrew Smith*, red. William F. Lye (Kaapstad: Balkema, 1975).” The Africana Museum is now **MuseumAfrica, Newtown, Johannesburg** — which is in this family’s own city. **Charles Bell** was Surveyor-General of the Cape and travelled with Andrew Smith’s expedition; his sketches are catalogued. TWO WAYS IN: the museum’s own collection, and the 1975 Balkema edition of Smith’s journal, which is a findable book. **This archive holds no likeness of anybody born before 1850.**"
+  },
+  {
+   "n": 117,
+   "what": "Burger Olivier, *So onthou ons die oewerbewoners van ou “Grootrivier”* (Bloemfontein, 1973) — it carries a portrait of him as a young man",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "The DSAB entry says a portrait of Kolbe as a young man was in 1992 held by a descendant, **C.J. du Plessis of Ruigtevlei, district Bethulie**, and that it is reproduced in this book. A privately published Free State local history of 1973 — the kind of book that sits in one or two libraries and nowhere else. **NLSA, the Free State provincial library and Worldcat are the places to look.** If the plate exists, the second question is whether the du Plessis family still has the original."
+  },
+  {
+   "n": 118,
+   "what": "Order the Settler’s death notice — MOOC 6/9/35 no. 7698, Western Cape Archives",
+   "state": "next",
+   "owner": "Western Cape Archives",
+   "since": "2026-09-20",
+   "note": "**A reference this archive did not have, handed over by a historian’s source list.** A Cape death notice names the deceased’s parents, birthplace, surviving spouse and children. The DSAB entry says his notice **lists only eight children where he left ten**, and that **two were of age** — so the author read it. This archive has never seen it. It sits with the two letters to the Western Cape Archives that are already unanswered, so it goes in the same chase."
+  },
+  {
+   "n": 119,
+   "what": "Albany Museum, Grahamstown — the photocopy of the 1819 Kolbe–Downing marriage certificate",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "This archive holds the **allegation** — the sworn statement made to obtain the licence, and the place where George Augustus’s age was sworn falsely. **It does not hold the marriage.** The DSAB source list says the Albany Museum in Grahamstown has held a photocopy of the certificate since before February 1992. A certificate gives the parish, the witnesses and the signatures, and **Margaret signed the allegation with a mark**. Write to the Albany Museum."
+  },
+  {
+   "n": 120,
+   "what": "Schoeman (ed.), *Griqua Records: the Philippolis Captaincy, 1825–1861* — to test the 1836 accusation",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-20",
+   "note": "**Van Riebeeck Society, Second Series no. 25** — 162 official and semi-official documents of the Philippolis Captaincy, including the **Philippolis Law Book** and the correspondence between the Captaincy’s officials and the missionaries. **H. Hendricks, who led the agitation against Kolbe in 1836, was secretary of the Griqua Council** — his papers are exactly what this volume prints. It was published **two years after the DSAB draft was typed**, which is why its own editor could not cite it there. Sold as an eBook by **HIPSA** (hipsa.org.za); no free digitisation found. **This is the one purchase on the whole work list that would test a specific published allegation against a member of this family.**"
+  },
+  {
+   "n": 121,
+   "what": "“Extract from the journal of Messrs Melvill and Kolbe”, *Transactions of the Missionary Society* (1829)",
+   "state": "blocked",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**The second document George Augustus Kolbe wrote himself**, and the record of the November 1828 journey to the Caledon valley that the DSAB calls the earliest in the present Free State to survive in writing. **Searched the Internet Archive by title and Google Books; not found.** The Internet Archive holds no run of the LMS *Quarterly Chronicle of Transactions* and the Books API rate-limited the query. Next attempts: the Google Books interface directly, HathiTrust (whose bot check blocked this archive once already), and **the CWM archive at SOAS**, which holds the manuscript journals behind the printed extract and is source 4 on the same list."
+  },
+  {
+   "n": 122,
+   "what": "Sibree, *A register of missionaries, deputations, etc.*, 4th ed. (LMS, 1923)",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "One printed line would carry his LMS service dates, and this archive now has three to test: **mission assistant 8 February 1828, ordained 25 May 1833, dismissed 19 June 1837.** A register of this kind also records **why** a man left the Society. Not found on the Internet Archive under that title; try Google Books, HathiTrust and the SOAS library catalogue."
+  },
+  {
+   "n": 123,
+   "what": "The 1820 settler roll of the *Nautilus* — Nash, *The Settler handbook* (1987)",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "The DSAB says the roll gives Kolbe’s occupation as **apothecary** and his age as **20**. He was **seventeen**. **That is the second age this man is known to have overstated** — he had already sworn a false age to marry at sixteen the year before. The roll would also list who else was in **Owen’s party**, which is the company he landed with and a body of people this archive has never looked at."
   }
  ],
  "accounts": [
