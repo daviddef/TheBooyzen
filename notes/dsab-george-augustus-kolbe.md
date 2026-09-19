@@ -6,10 +6,16 @@ first being MSB 751 itself). A two-page Afrikaans typescript headed:
 > MSB 751 / [Konsep] vir DSAB / POSBUS 5316, 8000 KAAPSTAD / **VOORLOPIGE TEKS**
 
 — a *preliminary text*, a draft entry for the **Suid-Afrikaanse Biografiese Woordeboek**
-(Dictionary of South African Biography). Initialled and dated **18/2/92** in pen at the foot.
-The hand and the subject both point to **Karel Schoeman**, then at the South African Library
-and the historian of Philippolis and the northern Cape; the typescript does not name its
-author and this archive does not assert it.
+(Dictionary of South African Biography). Initialled **KS** and dated **18/2/92** in pen at the foot.
+
+**The author is Karel Schoeman**, on the word of the library that holds the file. Melanie
+Geustyn's covering email, written with the Background File open in front of her: *"The author,
+KS, would be Dr. Karel Schoeman who worked here at the National Library."* Her *"would be"* is a
+hedge and the right one — the initials are an identification, not a signature. This archive
+reasoned its way to the same name from the inside and published it as an inference it would not
+assert, **having read the two attachments and not the sentence they were attached to**. Logged as
+a correction. The Background File holds **nothing further about the donation or about any other
+deposit by Dr Griffiths**.
 
 **What it is not.** A secondary work. This archive does not take secondary works as evidence.
 Every statement below is *a claim to be tested*, not a fact adopted — with one exception noted

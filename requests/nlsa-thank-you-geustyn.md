@@ -11,9 +11,13 @@ nobody asked for. Special Collections librarians almost never learn what a reque
 *for*, or whether it came to anything. This one came to a great deal, and saying so
 costs one email.
 
-**It carries one question, and only one.** The DSAB typescript is unsigned. The Library
-typed it, and the Library is the only body that can say who wrote it. This archive is
-publishing it as unattributed and would rather publish it correctly.
+**A question this draft originally asked has been struck, because she had already
+answered it.** The first version asked who compiled the unsigned DSAB typescript. Her
+covering email says: *"The author, KS, would be Dr. Karel Schoeman who worked here at the
+National Library."* This archive had read the two attachments and not the sentence they
+were attached to. What remains is the one question she genuinely has not been asked:
+whether the entry was ever published, and whether the catalogue's "LMS missionary" came
+from the papers or from the donor.
 
 ---
 
@@ -57,13 +61,24 @@ a work list: MOOC 6/9/35 no. 7698, the marriage certificate photocopy at the Alb
 Museum, and the two portraits it names, neither of which we have seen.
 
 I have checked it against our own records point by point, and it agrees with us on nine
-things we had reached from quite different documents. Whoever wrote it was careful.
+things we had reached from quite different documents. **Dr Schoeman was careful** — and
+thank you for telling me it was him, and for looking in the Background File to answer the
+questions about the donation. A "no, there is nothing further" from someone who has
+actually opened the file is worth a great deal more than silence, and I have recorded it
+as an answer rather than a gap.
 
-**Which is my one question, and please treat it as entirely optional.** The typescript is
-unsigned, initialled and dated 18/2/92. Is the Library able to say who compiled it — and
-whether the entry was ever published in the Dictionary of South African Biography, or
-whether the copy you sent me is the only form it exists in? I would like to credit it
-properly rather than publish it as anonymous.
+**Two small questions remain, and please treat both as entirely optional.**
+
+First: **was the entry ever published in the Dictionary of South African Biography**, or is
+the copy you sent me the only form it exists in? It is headed *voorlopige teks*, and the
+DSAB's later volumes had a difficult history, so I would like to know whether I am reading
+a published article or a draft that never ran.
+
+Second, and this one I did ask before but I do not think the papers could answer it:
+**your catalogue calls him an LMS missionary — is that drawn from the papers themselves, or
+supplied by Dr Griffiths?** If it came from the donor, it is family memory and I will treat
+it as such. The letter itself now settles the fact either way, so this is tidiness rather
+than need.
 
 Either way, thank you. The material is going onto a family archive that publishes what it
 cannot find alongside what it can, and MSB 751 is now the oldest document on it written
