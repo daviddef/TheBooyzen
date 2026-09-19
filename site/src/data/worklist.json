@@ -398,11 +398,11 @@
   },
   {
    "n": 50,
-   "what": "The National Library has the Kolbe manuscript sent for — and a Background File nobody knew about",
-   "state": "running",
+   "what": "MSB 751 — the letter arrived on the third day, and it is the first thing he wrote himself",
+   "state": "done",
    "owner": "National Library of South Africa",
    "since": "2026-09-15",
-   "note": "Sent 15 September. Four photocopied pages holding **a letter of 23 August 1830 from Johan Kolbe in London to his son at the Cape on his ordination** — the only document this archive has ever found showing the two men in contact. Three things are wanted: the letter, **whether it carries a London address at its head** (which would settle Brunswick Square against Conduit Street after three free routes failed), and **whether «LMS missionary» comes from the papers or from the donor**. The last is the one that matters: the only other evidence for the mission work is a recollection written down forty-five years later, and whether the two are independent or one memory told twice is the difference between corroboration and an echo. [What the catalogue says](/documents/#vab-swept)  ··· **ANSWERED IN TWENTY-THREE HOURS.** Melanie Geustyn, 16 September: the manuscript collections are kept **in off-site vaults**, she has sent for MSB751, and it reaches her desk **after 11:00 on 17 September**. **She has also sent for the BACKGROUND FILE on the collection** — the library’s own paperwork on the 1985 donation, which this archive did not know existed and which is where “where is the original” and “who was Dr Jean Griffiths” would be answered if they are answered anywhere. **Nothing to reply to**: she has asked nothing and said she will come back. [The letter and the answer](/letters/)"
+   "note": "Sent 15 September. Four photocopied pages holding **a letter of 23 August 1830 from Johan Kolbe in London to his son at the Cape on his ordination** — the only document this archive has ever found showing the two men in contact. Three things are wanted: the letter, **whether it carries a London address at its head** (which would settle Brunswick Square against Conduit Street after three free routes failed), and **whether «LMS missionary» comes from the papers or from the donor**. The last is the one that matters: the only other evidence for the mission work is a recollection written down forty-five years later, and whether the two are independent or one memory told twice is the difference between corroboration and an echo. [What the catalogue says](/documents/#vab-swept)  ··· **ANSWERED IN TWENTY-THREE HOURS.** Melanie Geustyn, 16 September: the manuscript collections are kept **in off-site vaults**, she has sent for MSB751, and it reaches her desk **after 11:00 on 17 September**. **She has also sent for the BACKGROUND FILE on the collection** — the library’s own paperwork on the 1985 donation, which this archive did not know existed and which is where “where is the original” and “who was Dr Jean Griffiths” would be answered if they are answered anywhere. **Nothing to reply to**: she has asked nothing and said she will come back. [The letter and the answer](/letters/)  ··· **18 SEPTEMBER — THE DOCUMENT ITSELF.** Four pages, headed “London August 23. 1830”, signed **“Your affectionate father, J G Kolbe”**. **No street address** — so Brunswick Square is still open. But the **LMS acceptance is in his own hand**, independent of Montgomery’s memoir; **Henry is dying of dropsy**; **Elizabeth is “Betsey” and lives in Edinburgh**; **Charlotte** is named and stops being an inference; and **“kind love from your SISTERS & BROTHER”** dates the obituary’s “last remaining of eight sons” to **13 April 1832**. The Background File holds nothing on the donation. [The letter](/documents/#msb751)"
   },
   {
    "n": 51,
@@ -907,6 +907,22 @@
    "owner": "Pietermaritzburg Archives Repository",
    "since": "2026-09-17",
    "note": "**The index gave nine children, two deaths and two birthplaces. The files themselves would give more and none has been read.** Elizabeth Johanna du Toit Kolbe, died 12 July 1923 at Saxony, Utrecht; Frederick Fortunatus Kolbe, died 23 November 1929 at Utrecht. A Natal estate file carries a **death notice** — which names the deceased’s own parents, and would say whether Frederik Fortunatus’s father is written as the 1820 Settler. **That single line is what the whole Kolbe descent still rests on inference for.** The files also give husbands’ forenames for the five married daughters, of whom **Louw** is currently a surname and nothing else. **This is a fourth archive building** — NAB, not TAB, KAB or VAB — and it is the same repository the Pietermaritzburg letter has been drafted and unsent for since 12 September. **The letter should now carry these two references.** There are 64 Kolbe entries in that collection and this list names two."
+  },
+  {
+   "n": 114,
+   "what": "Read the DSAB entry on George Augustus Kolbe, and work its source list",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "Melanie Geustyn sent a **second document nobody asked for**: two pages written for the **Dictionary of South African Biography** by **Dr Karel Schoeman**, who worked at the National Library, found in the MSB 751 Background File, **with a list of Bronne (sources)**. It is a secondary work and this archive does not take secondary works as evidence — **but a source list by a historian of Schoeman’s standing is a reading list**, and it is the only one this archive has ever been handed for this man. **Read it, and then work every source in it that is not already here.**"
+  },
+  {
+   "n": 115,
+   "what": "Thank Melanie Geustyn, and tell her what the letter produced",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-20",
+   "note": "She answered in **twenty-three hours**, sent the manuscript on the **third day**, chased the Background File unasked, and added a **DSAB entry nobody had asked for**. **That is the best service any institution has given this archive.** The reply should say what the letter actually did: it did not carry the address, and it settled the LMS question, dated the obituary, gave Henry his illness, gave Elizabeth a nickname and a city, and turned Charlotte from an inference into a daughter. **It is also worth telling her that the Background File negative was useful** — archivists rarely hear that. The draft is this archive’s; the sending is David’s."
   }
  ],
  "accounts": [
