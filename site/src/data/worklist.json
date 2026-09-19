@@ -1019,7 +1019,7 @@
    "state": "blocked",
    "owner": "David",
    "since": "2026-09-20",
-   "note": "**Sent 13 September 2026** to `enquiries2@dsac.gov.za`, copied to `Nontembekom@dsac.gov.za`, asking for the Transvaal estate files. **No bounce and no reply in a week.** The file itself records the distinction this archive learned from the SANDF enquiry: *no bounce is not the same as delivered.* **Anne is at the National Archives in Pretoria on Tuesday 22 September** — which is a route the email is not, and the two should not be left to duplicate each other. Decide before Tuesday which files she looks for.",
+   "note": "**Sent 13 September 2026** to `enquiries2@dsac.gov.za`, copied to `Nontembekom@dsac.gov.za`, asking for the Transvaal estate files. **No bounce and no reply in a week.** The file itself records the distinction this archive learned from the SANDF enquiry: *no bounce is not the same as delivered.* **Anne is at the National Archives in Pretoria on Tuesday 22 September** — which is a route the email is not, and the two should not be left to duplicate each other. Decide before Tuesday which files she looks for. **20 September — A PULL-LIST IS WRITTEN: `notes/pretoria-pull-list-22-september.md`.** Eight references ranked, with what to photograph in each and why each matters, a fallback if a slip comes back “not found”, and a question to ask at the counter about the **paper MHG index for the 1920s**, which this archive has never seen. **It puts TAB MHG 40293 — KOLBE, FREDERICK FORTUNATUS DOWNING, 1918 — at equal first**, because it is a Kolbe estate this archive has never opened and its death notice may name the father, which is the link the whole Kolbe descent currently reaches only by inference. **Hand it to Anne before Tuesday.**",
    "covers": [
     "letter:national-archives-pretoria-transvaal-estates.md"
    ]
@@ -1056,6 +1056,14 @@
    "covers": [
     "letter:edinburgh-cswc60-bell-kolbe.md"
    ]
+  },
+  {
+   "n": 128,
+   "what": "Read whatever Anne brings back from Pretoria, and write up the misses as well as the finds",
+   "state": "blocked",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**Tuesday 22 September 2026.** Eight estate files requested in `notes/pretoria-pull-list-22-september.md`. The death notice is the page that matters in each — father, mother, birthplace, occupation, surviving spouse and the children. **The pull-list asks her to write down anything that comes back missing or empty, and what the staff said about it**, because a controlled negative from inside the building is worth more than the same silence from outside it. **TAB MHG 52653 is expected to fail**; the useful outcome there is the correct reference from the paper index, not the file."
   }
  ],
  "accounts": [
