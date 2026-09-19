@@ -4633,9 +4633,9 @@
     ],
     [
      "“Extract from the journal of Messrs Melvill and Kolbe”, Transactions of the Missionary Society (1829) — is it online?",
-     "NOT FOUND",
-     "Searched the Internet Archive (title and full text) and Google Books. The Internet Archive holds no run of the LMS Quarterly Chronicle of Transactions under that title; Google Books rate-limited the query. THIS IS THE SECOND DOCUMENT GEORGE AUGUSTUS KOLBE WROTE HIMSELF and this archive has not got a copy. The manuscript behind it is in the CWM archive at SOAS — which is source 4 on the same list. NOT ON THE SHELF IS NOT THE SAME AS NOT FOUND, and it is recorded here so that nobody searches it twice.",
-     "no"
+     "FOUND — AND THE REASON THE FIRST SEARCH FAILED IS THE INTERESTING PART",
+     "THE PRINTED VERSION IS FILED UNDER THE OTHER MAN’S NAME. Full citation: “Extracts of the Journal of Messrs Melvill and Kolbe, ADDRESSED TO THE REV. RICHARD MILES, Superintendent of the Society’s Missions in Africa, Philippolis, 25 NOV. 1828”, Council for World Missions (LMS) Archives — WHICH IS SOURCE 4 ON THE DSAB’S OWN LIST, two lines above source 6, and the entry never says they are the same document. “An edited version, dated 18 Nov. 1828, appears in MELVILL (1829).” Legassick quotes it: the travellers met refugee groups with “no other means of subsistence than the wild animals found in these parts” — THE FIRST WORDS OF GEORGE AUGUSTUS KOLBE’S THIS ARCHIVE HAS READ, and they are about famine. AND THE JOURNEY IS PRINTED IN FULL IN A BOOK STILL SOLD: Karel Schoeman (ed.), Early White Travellers in the Transgariep, 1819–1840 (Protea Book House, 2003), p. 30. The Google Books API refuses this archive entirely — HTTP 429 to every query — and the same searches through the ordinary Books interface returned all of this in four minutes.",
+     "yes"
     ],
     [
      "Sibree, A register of missionaries, 4th ed. (LMS, 1923) — is it online?",
@@ -4672,6 +4672,12 @@
      "NO — IT CALLS HIM “A MORAVIAN MISSIONARY?”",
      "With the question mark. He was LONDON MISSIONARY SOCIETY, on the NLSA’s catalogue of MSB 751 and on his own father’s letter of 23 August 1830 — “fully accepted by the [L.M.S.] as one of their Missionaries”. THIS IS THE FIRST TIME THIS ARCHIVE HAS BEEN IN A POSITION TO CORRECT AN INSTITUTION RATHER THAN BE CORRECTED BY ONE, and the letter that does it can ask for a copy of the photograph at the same time.",
      "no"
+    ],
+    [
+     "Is the “Mr Miles” of the 1830 letter the Richard Miles of the 1828 journal?",
+     "VERY PROBABLY — AND IT IS AN INFERENCE, NOT A DOCUMENT",
+     "Richard Miles, formerly pastor of Brigg in Lincolnshire and appointed to Demerara, was sent to Cape Town TO ACT AS DR PHILIP’S SUBSTITUTE WHILE PHILIP WAS IN ENGLAND. Philip was in England from 1826; Miles was acting Superintendent at the Cape in 1828, which is why Kolbe addressed his journal to him there; by 1830 Philip was back and Miles was in London, calling at a tailor’s house in Soho. THE LETTER SAYS ONLY “MR MILES” AND GIVES NO FORENAME, so the office, the continent and the dates carry it and nothing else does. Published as an inference and marked as one.",
+     "part"
     ]
    ]
   }

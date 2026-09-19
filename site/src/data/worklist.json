@@ -991,11 +991,11 @@
   },
   {
    "n": 121,
-   "what": "“Extract from the journal of Messrs Melvill and Kolbe”, *Transactions of the Missionary Society* (1829)",
-   "state": "blocked",
-   "owner": "this archive",
+   "what": "Buy Schoeman (ed.), *Early White Travellers in the Transgariep, 1819–1840* — it prints the 1828 journey",
+   "state": "next",
+   "owner": "David",
    "since": "2026-09-20",
-   "note": "**The second document George Augustus Kolbe wrote himself**, and the record of the November 1828 journey to the Caledon valley that the DSAB calls the earliest in the present Free State to survive in writing. **Searched the Internet Archive by title and Google Books; not found.** The Internet Archive holds no run of the LMS *Quarterly Chronicle of Transactions* and the Books API rate-limited the query. Next attempts: the Google Books interface directly, HathiTrust (whose bot check blocked this archive once already), and **the CWM archive at SOAS**, which holds the manuscript journals behind the printed extract and is source 4 on the same list."
+   "note": "**The second document George Augustus Kolbe wrote himself**, and the record of the November 1828 journey to the Caledon valley that the DSAB calls the earliest in the present Free State to survive in writing. **Searched the Internet Archive by title and Google Books; not found.** The Internet Archive holds no run of the LMS *Quarterly Chronicle of Transactions* and the Books API rate-limited the query. Next attempts: the Google Books interface directly, HathiTrust (whose bot check blocked this archive once already), and **the CWM archive at SOAS**, which holds the manuscript journals behind the printed extract and is source 4 on the same list. **20 SEPTEMBER, UNBLOCKED.** The search under KOLBE failed because **the printed version is filed under the other man’s name**. The full citation is “Extracts of the Journal of Messrs Melvill and Kolbe, **addressed to the Rev. Richard Miles, Superintendent of the Society’s Missions in Africa**, Philippolis, **25 Nov. 1828**”, Council for World Missions (LMS) Archives — **which is source 4 on the DSAB’s own list**, two lines above source 6, and the entry never says they are the same document. “An edited version, dated 18 Nov. 1828, appears in **Melvill (1829)**.” **AND THE JOURNEY IS PRINTED IN FULL, IN ENGLISH, IN A BOOK STILL IN THE SHOPS:** Karel Schoeman (ed.), *Early White Travellers in the Transgariep, 1819–1840* (Pretoria: **Protea Book House**, 2003), ISBN 978-1-86919-016-3, **page 30 — “The journey of John Melvill and G.A. Kolbe from Philippolis to the Caledon (1828)”**. About ZAR 285. **It is an edited collection of the travellers’ own texts, so it should carry his account entire.** That is the fourth Schoeman title standing behind one unsigned typescript."
   },
   {
    "n": 122,
@@ -1064,6 +1064,14 @@
    "owner": "this archive",
    "since": "2026-09-20",
    "note": "**Tuesday 22 September 2026.** Eight estate files requested in `notes/pretoria-pull-list-22-september.md`. The death notice is the page that matters in each — father, mother, birthplace, occupation, surviving spouse and the children. **The pull-list asks her to write down anything that comes back missing or empty, and what the staff said about it**, because a controlled negative from inside the building is worth more than the same silence from outside it. **TAB MHG 52653 is expected to fail**; the useful outcome there is the correct reference from the paper index, not the file."
+  },
+  {
+   "n": 129,
+   "what": "Test the identification of “Mr Miles” — the man who called at the tailor’s house in 1830",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**An inference this archive is publishing as an inference, and would rather have as a document.** The letter of 23 August 1830 says only *“Mr Miles had called at our house”*. The journal of 25 November 1828 is addressed to **the Rev. RICHARD MILES, Superintendent of the Society’s Missions in Africa**, and Richard Miles — formerly pastor of Brigg in Lincolnshire, originally appointed to Demerara — was sent to Cape Town **to act as Dr Philip’s substitute while Philip was in England**. The office, the continent and the dates all fit: Philip in England from 1826, Miles acting at the Cape in 1828, Philip back and Miles in London by 1830. **What would settle it is the LMS’s own records of its officers** — Sibree’s register, or the CWM home correspondence at SOAS, both already on this list. **If it holds, the man Kolbe reported to from Philippolis is the man who knocked on his father’s door.**"
   }
  ],
  "accounts": [
