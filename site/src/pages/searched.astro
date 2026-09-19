@@ -3,12 +3,37 @@ import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import sr from "../data/searched.json";
+import Searched from "@daviddef/archive-kit/components/Searched.astro";
+import nf from "../data/namefold.json";
 const sets = sr.sets;
 const rows = sets.reduce((n, s) => n + s.rows.length, 0);
 const nothing = sets.reduce((n, s) => n + s.rows.filter(r => r[3] === "no").length, 0);
 const found = sets.reduce((n, s) => n + s.rows.filter(r => r[3] === "yes").length, 0);
 const badge = { yes: ["Found", "doc"], part: ["Partly", "inf"], no: ["Nothing", "lore"],
                 void: ["Void", "open"], blocked: ["Blocked", "open"] };
+/* ONE INDEX OVER ALL 606 QUERIES, BESIDE THE SESSIONS THAT RAN THEM.
+ *
+ * The sections below are the narrative: seven queries put in one sitting under
+ * one headline, and why. That is worth keeping and no table replaces it. What
+ * it could not do is ANSWER A QUESTION ABOUT ITSELF - has anybody searched for
+ * this, and what came back - because finding out meant scrolling 112 sections.
+ *
+ * Both are drawn from the same rows, so they cannot disagree.
+ *
+ * WORK ITEM 94 SAID THIS DATA HAD NO OUTCOME FIELD ON ANY OF IT. It has one on
+ * every one of 606 rows, and had one the day before that was written: the
+ * fourth column, yes / no / part / blocked / void. The row had read the shape
+ * of a SET - g, n, d, h, rows - and never opened a row.
+ *
+ * `nil` is ["no"] alone. BLOCKED IS NOT NOTHING: a paywall and a dead server
+ * mean the search never ran, and counting them as empty would turn thirteen
+ * unasked questions into thirteen answers. VOID is not a search at all - a bare
+ * surname returning 552 documents, a memoir that turned out unnecessary. */
+const esc = (t) => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const flat = sets.flatMap(x => x.rows.map(([q, res, note, k]) => ({
+  when: x.d, src: x.g, what: "<strong class=\"m\">" + esc(q) + "</strong>",
+  got: esc(res), extra: esc(note), outcome: k, href: x.h,
+})));
 ---
 <Base title="What Has Been Read"
       eyebrow={`${rows} queries · ${nothing} returned nothing · ${found} found something`}
@@ -21,6 +46,14 @@ const badge = { yes: ["Found", "doc"], part: ["Partly", "inf"], no: ["Nothing", 
     looked”</em> — and those are completely different statements about an ancestor. Everything below was
     actually run, and the wording of each query is given so it can be run again and checked.
   </div>
+</section>
+
+<section class="blk">
+  <h2>Every query, in one list</h2>
+  <p class="dek">The sessions below are the story of the work — what was asked in one
+    sitting, and why. This is the index: <b>all {flat.length} queries at once</b>, so the page
+    can answer a question about itself. Both are drawn from the same rows.</p>
+  <Searched rows={flat} u={u} nil={["no"]} unit="queries" fold={nf.fold} />
 </section>
 
 {sets.map((s, i) => (
