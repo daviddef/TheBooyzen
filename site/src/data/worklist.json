@@ -54,11 +54,11 @@
   },
   {
    "n": 7,
-   "what": "Engage the private researcher at Pretoria, or decline — six bound estate files, fees not yet known",
-   "state": "blocked",
+   "what": "Engage the private researcher at Pretoria — done: Anne Brest, invoiced, going Tuesday 22 September",
+   "state": "done",
    "owner": "David",
    "since": "2026-09-15",
-   "note": "The National Archives answered that **all six MHG files are bound** and cannot be scanned and emailed, and put a private researcher who specialises in estate files on copy. She was written to today and asked what she charges, how, and whether the work is worth doing at all, with an offer to start with one file. **This is money, so it is David's to decide and not this archive's.** If she charges per page, MHG 3734/46 is the one to buy first: Catherine Mary Sophia Daschner's notice should name the parents this archive still cannot prove. [The files](/errands/)",
+   "note": "The National Archives answered that **all six MHG files are bound** and cannot be scanned and emailed, and put a private researcher who specialises in estate files on copy. She was written to today and asked what she charges, how, and whether the work is worth doing at all, with an offer to start with one file. **This is money, so it is David's to decide and not this archive's.** If she charges per page, MHG 3734/46 is the one to buy first: Catherine Mary Sophia Daschner's notice should name the parents this archive still cannot prove. [The files](/errands/) **DONE.** **Anne Brest** (`digitalphoto@icon.co.za`, annebrest.co.za), a photographer-genealogist in Johannesburg, **referred by Ms Mavis Xaba of the National Archives Reading Room** because the files are bound and cannot be scanned and emailed. She quoted **R2,850 for the first file including the drive to Pretoria, then by the work done and capped — and she volunteered the cap herself, unasked**. **Invoice No 463 of 16 September: seven files, R11,400 plus R200 for the South African transaction deduction, the seventh (WEAR, MHG 10245/69) at no charge because it is one page.** She goes on **Tuesday 22 September 2026**. Her email of 19 September asks for confirmation of payment or a POP; **that is David’s and nobody else’s.**",
    "covers": [
     "letter:pretoria-private-researcher.md"
    ]
@@ -1019,7 +1019,7 @@
    "state": "blocked",
    "owner": "David",
    "since": "2026-09-20",
-   "note": "**Sent 13 September 2026** to `enquiries2@dsac.gov.za`, copied to `Nontembekom@dsac.gov.za`, asking for the Transvaal estate files. **No bounce and no reply in a week.** The file itself records the distinction this archive learned from the SANDF enquiry: *no bounce is not the same as delivered.* **Anne is at the National Archives in Pretoria on Tuesday 22 September** — which is a route the email is not, and the two should not be left to duplicate each other. Decide before Tuesday which files she looks for. **20 September — A PULL-LIST IS WRITTEN: `notes/pretoria-pull-list-22-september.md`.** Eight references ranked, with what to photograph in each and why each matters, a fallback if a slip comes back “not found”, and a question to ask at the counter about the **paper MHG index for the 1920s**, which this archive has never seen. **It puts TAB MHG 40293 — KOLBE, FREDERICK FORTUNATUS DOWNING, 1918 — at equal first**, because it is a Kolbe estate this archive has never opened and its death notice may name the father, which is the link the whole Kolbe descent currently reaches only by inference. **Hand it to Anne before Tuesday.**",
+   "note": "**Sent 13 September 2026** to `enquiries2@dsac.gov.za`, copied to `Nontembekom@dsac.gov.za`, asking for the Transvaal estate files. **No bounce and no reply in a week.** The file itself records the distinction this archive learned from the SANDF enquiry: *no bounce is not the same as delivered.* **AND IT HAS BEEN OVERTAKEN.** A private researcher, **Anne Brest**, was engaged on 16 September and goes to Pretoria on **Tuesday 22 September** for the same seven files. So the question this row now asks is not “when will they reply” but **whether to withdraw the request** once the photographs are in hand, so that staff time is not spent on files this archive already has. **20 September — see `notes/anne-brest-tuesday-addendum.md`.**",
    "covers": [
     "letter:national-archives-pretoria-transvaal-estates.md"
    ]
@@ -1059,11 +1059,11 @@
   },
   {
    "n": 128,
-   "what": "Read whatever Anne brings back from Pretoria, and write up the misses as well as the finds",
+   "what": "Read whatever Anne Brest brings back from Pretoria, and write up the misses as well as the finds",
    "state": "blocked",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "**Tuesday 22 September 2026.** Eight estate files requested in `notes/pretoria-pull-list-22-september.md`. The death notice is the page that matters in each — father, mother, birthplace, occupation, surviving spouse and the children. **The pull-list asks her to write down anything that comes back missing or empty, and what the staff said about it**, because a controlled negative from inside the building is worth more than the same silence from outside it. **TAB MHG 52653 is expected to fail**; the useful outcome there is the correct reference from the paper index, not the file."
+   "note": "**Tuesday 22 September 2026.** Seven files on Invoice No 463 — six Booyzen/Daschner estates and the Wear file she is giving for nothing. The **death notice** is the page that matters in each: father, mother, birthplace, occupation, surviving spouse and the list of children. **TAB MHG 52653 is expected to fail** and David has twice told her not to hunt it; if it is not there the useful outcome is **the correct reference from the paper index**, which she is the one person able to consult. **Write up the misses at the same length as the finds** — a “not there” from inside the building, with a reason, is a controlled negative."
   },
   {
    "n": 129,
@@ -1072,6 +1072,14 @@
    "owner": "this archive",
    "since": "2026-09-20",
    "note": "**An inference this archive is publishing as an inference, and would rather have as a document.** The letter of 23 August 1830 says only *“Mr Miles had called at our house”*. The journal of 25 November 1828 is addressed to **the Rev. RICHARD MILES, Superintendent of the Society’s Missions in Africa**, and Richard Miles — formerly pastor of Brigg in Lincolnshire, originally appointed to Demerara — was sent to Cape Town **to act as Dr Philip’s substitute while Philip was in England**. The office, the continent and the dates all fit: Philip in England from 1826, Miles acting at the Cape in 1828, Philip back and Miles in London by 1830. **What would settle it is the LMS’s own records of its officers** — Sibree’s register, or the CWM home correspondence at SOAS, both already on this list. **If it holds, the man Kolbe reported to from Philippolis is the man who knocked on his father’s door.**"
+  },
+  {
+   "n": 130,
+   "what": "Ask Anne Brest before Tuesday whether TAB MHG 40293 — KOLBE, 1918 — is in scope",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-20",
+   "note": "**THE INVOICE WAS RAISED BEFORE THE EXTRA WORK WAS ASKED FOR, AND NO REVISED INVOICE HAS COME.** Invoice No 463 is dated 16 September and covers seven files. David’s reply of the same day, sent after it, added **Groups A, B and C — nineteen further items across three families** — and said “if it changes the invoice, send me a revised one”. Anne’s email of 19 September says only that she has made the arrangements “for your files” and the free file, **which reads like the seven**. **So A1 may not be in scope, and A1 is now the most valuable item on the whole list: TAB MHG 40293 — KOLBE, FREDERICK FORTUNATUS DOWNING, 1918, death notice only.** It carries Margaret Downing’s maiden name as a forename four generations on, and **if it names his father it may connect the Transvaal Kolbes to the 1820 Settler directly** — which everything here reaches only by inference. It is one page. **Ask, do not re-send the list**: she answered the original brief line by line and repeating it would insult a researcher who has been straight from the first message. See `notes/anne-brest-tuesday-addendum.md`."
   }
  ],
  "accounts": [
