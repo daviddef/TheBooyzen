@@ -256,6 +256,39 @@ import { u } from "../lib/url.js";
 </section>
 
 <section class="blk">
+  <h2 id="index-omits">An index is only honest if something checks it against what it indexes</h2>
+  <p class="dek">Three days after the last fault, the same shape again, one layer further out.
+    <b>/documents/ builds its own table of contents by matching <span class="m">&lt;h2 id&gt;</span></b>,
+    so a heading written without one is left out of the contents <em>and</em> has no anchor for anything
+    to link to. <b>Thirty-five had accumulated.</b></p>
+
+  <div class="panel" style="margin-top:18px">
+    <p>Among them: <b>the 1842 will of a Bond Street tailor</b>; <b>the sworn falsehood in Shoreditch
+      in 1819</b>; <b>the oldest document in this archive</b>; <b>the grave at Burgersdorp</b>; the two
+      1845 documents that corrected the family tree twice over. <b>Full write-ups of documents, every
+      one, and not one of them listed or linkable.</b></p>
+  </div>
+
+  <p style="margin-top:16px">Nothing was broken. <b>The page rendered perfectly</b>, every section was
+    there to a reader scrolling past, and the link checker was satisfied &mdash; no link pointed at a
+    missing anchor, because <b>there were no links to point at them at all</b>. That is the whole
+    difficulty. <b>The fault was an absence, and an absence is invisible from inside the thing that has
+    it.</b> It is the same lesson as the seventeen silent people above, and as the three letters that
+    were out in the world with no work-list row watching for a reply.</p>
+
+  <p style="margin-top:14px"><b>The rule this archive now works to:</b> wherever the build derives one
+    thing from another &mdash; a contents list from headings, a dossier from pages, a work list from the
+    letters on disk &mdash; <b>something must count the two against each other and refuse when they
+    disagree</b>. A derived index that nothing checks will drift, and it will look right the entire time
+    it is doing it.</p>
+
+  <p class="note" style="margin-top:16px"><b>The gate.</b> <span class="m">checkregisters.py</span>
+    check 13 refuses the build when a page that builds a contents list from its headings carries a
+    heading with no id. <b>Verified in both directions</b>: with all thirty-six ids in place it passes
+    with nothing failing; with two taken out again it names both headings and exits 1.</p>
+</section>
+
+<section class="blk">
   <h2>Sibling archives</h2>
   <p class="dek">Same method, same author: <b>The Defranceski</b> (Istria), <b>The Falco</b> (Arienzo,
     Campania), <b>The Lerena</b> (Rosario, the Cape, Brisbane). The marriage of

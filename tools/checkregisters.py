@@ -254,6 +254,31 @@ def main():
                            f"({r.get('d','?')}, {r.get('p','?')}) and their page carries no "
                            f"record of it")
 
+    # 13 - A SECTION THAT CANNOT BE LINKED TO, AND IS NOT IN ITS OWN CONTENTS
+    #
+    # 20 September 2026. /documents/ builds its table of contents by matching
+    # <h2 id="...">, so a heading written without an id is silently left out of
+    # it AND has no anchor for anything to link to. Thirty-five of them had
+    # accumulated - the 1842 will, the 1819 sworn falsehood, the oldest document
+    # in the archive - every one a full write-up of a document, none of them
+    # reachable and none of them listed. The page rendered perfectly. Nothing
+    # refused, because nothing was looking.
+    #
+    # This is the same shape as check 11: the material was there, the build
+    # dropped it on the way to the reader, and the absence was invisible from
+    # the inside. An index is only honest if something checks it against what
+    # it is supposed to index.
+    for fn in sorted(glob.glob(os.path.join(ROOT, "site", "src", "pages", "*.astro"))):
+        src = open(fn, encoding="utf-8").read()
+        if "matchAll(/<h2 id=" not in src:
+            continue  # this page does not build a contents list from its headings
+        loose = re.findall(r"<h2(?![^>]*\bid=)[^>]*>([\s\S]*?)</h2>", src)
+        for raw in loose:
+            txt = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", raw))).strip()
+            bad.append(f"heading-unlinkable {os.path.basename(fn)}: <h2> with no id, so it is "
+                       f"missing from the page's own contents and nothing can link to it "
+                       f"- \"{txt[:52]}\"")
+
     # 5 - open too long
     today = datetime.date.today()
     for r in load("worklist.json")["rows"]:

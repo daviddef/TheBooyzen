@@ -101,7 +101,7 @@ Lye (Cape Town: Balkema, 1975).
 
 | The entry says | This archive holds | From |
 | --- | --- | --- |
-| b. 1802, from death notice and gravestone | b. 1802, baptised 2 Feb 1803 | Savoy/German Lutheran baptism |
+| b. **7.12.1802**; death notice and gravestone confirm 1802 | b. **7 Dec 1802**, baptised 2 Feb 1803 — *the same day* | the Westminster register **and** the Karoo gravestone |
 | **J.G.E. Kolbe (1822–68)** | b. **7 Jul 1822** Uitenhage, d. **3 Apr 1868** Leeuwberg | Grahamstown Journal obituary |
 | J.G.E. at **Leeuberg**, a **commandant** | Obituary headed "DEATH OF COMMANDANT KOLBE"; farm fixed two hours from Bloemfontein by an 1870 auction advertisement | The Friend |
 | **Margaret Downing (1803–1867)** | b. **23 Feb 1803** London, d. **2_ Nov 1867** Burgersdorp | the Burgersdorp monument |
