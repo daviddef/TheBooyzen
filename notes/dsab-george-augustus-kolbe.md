@@ -85,7 +85,7 @@ Lye (Cape Town: Balkema, 1975).
 
 ## Bronne — the source list, verbatim
 
-1. Kaapse Argiefbewaarplek — **Sterftekennis G.A. Kolbe, MOOC 6/9/35 no. 7698**
+1. Kaapse Argiefbewaarplek — **Sterftekennis G.A. Kolbe, MOOC 6/9/35 no. 7698** — *already read and published here, and the place where his second error is*
 2. **Albany Museum, Grahamstad**: fotokopie van die **huwelikssertifikaat van G.A. Kolbe (1819)**
 3. **Grafsteen van G.A. en M. Kolbe, Burgersdorp**
 4. *CWMA Archives: Incoming letters (South Africa)* (mikrofiche-uitgawe; Zug: IDC)
@@ -174,7 +174,7 @@ correction.
   **the acquittal**, T. Atkinson's opposition, withdrawal March 1837 and **dismissal by the LMS on
   19 June 1837**. This archive held none of it. It is published here as *what the entry says*.
 - **Driefontein, near Philippolis** — a farm this archive did not know he held.
-- **Thirteen children, not eleven**: ten left, eight on the death notice, three dead as infants.
+- **Three more children dead as infants** — part of a sentence that also miscounts the death notice (see below), so recorded and not believed.
 - **F.W. Kolbe (1821–99) of the Rhenish Missionary Society is not related** — a namesake
   explicitly excluded, which is worth as much as an inclusion.
 - **A portrait of him as a young man exists**, with C.J. du Plessis of Ruigtevlei, dist. Bethulie,
