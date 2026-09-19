@@ -974,9 +974,12 @@
    "n": 119,
    "what": "Albany Museum, Grahamstown — the photocopy of the 1819 Kolbe–Downing marriage certificate",
    "state": "next",
-   "owner": "this archive",
+   "owner": "David",
    "since": "2026-09-20",
-   "note": "This archive holds the **allegation** — the sworn statement made to obtain the licence, and the place where George Augustus’s age was sworn falsely. **It does not hold the marriage.** The DSAB source list says the Albany Museum in Grahamstown has held a photocopy of the certificate since before February 1992. A certificate gives the parish, the witnesses and the signatures, and **Margaret signed the allegation with a mark**. Write to the Albany Museum."
+   "note": "This archive holds the **allegation** — the sworn statement made to obtain the licence, and the place where George Augustus’s age was sworn falsely. **It does not hold the marriage.** The DSAB source list says the Albany Museum in Grahamstown has held a photocopy of the certificate since before February 1992. A certificate gives the parish, the witnesses and the signatures, and **Margaret signed the allegation with a mark**. Write to the Albany Museum. **DRAFTED 20 September 2026 — requests/albany-museum-kolbe-marriage-1819.md. The sending is David’s.** To `info@am.org.za`. The Albany Museum keeps **a genealogical archive of the 1820 British Settlers**, which is precisely what he was, so the letter asks a second question as well: whether anything else is filed under **Kolbe** or under **Owen’s party**. **What this archive has of his first four years in the Cape is one sentence in a secondary work.**",
+   "covers": [
+    "letter:albany-museum-kolbe-marriage-1819.md"
+   ]
   },
   {
    "n": 120,
@@ -1047,9 +1050,12 @@
    "n": 127,
    "what": "Write to Edinburgh — CSWC 60 item 3 calls Kolbe “a moravian missionary?” and he was LMS",
    "state": "next",
-   "owner": "this archive",
+   "owner": "David",
    "since": "2026-09-20",
-   "note": "**A correction this archive can make to somebody else’s catalogue, and should.** The University of Edinburgh’s description of CSWC 60 item 3 reads “Mr. Kolbe, a moravian missionary?, at Philippolis in 1834” — **with the question mark, so the cataloguer already doubted it**. He was **London Missionary Society**. Two independent documents say so: the catalogue of **MSB 751** at the National Library of South Africa (“George Augustus Kolbe, 1802–44. LMS missionary”) and **his father’s letter of 23 August 1830**, which reports him “fully accepted by the [L.M.S.] as one of their Missionaries”. The DSAB draft adds the dates: mission assistant 8 February 1828, ordained 25 May 1833 by Arbousset and Casalis, dismissed 19 June 1837. **The same letter should ask for a copy of item 3.** One email does both."
+   "note": "**A correction this archive can make to somebody else’s catalogue, and should.** The University of Edinburgh’s description of CSWC 60 item 3 reads “Mr. Kolbe, a moravian missionary?, at Philippolis in 1834” — **with the question mark, so the cataloguer already doubted it**. He was **London Missionary Society**. Two independent documents say so: the catalogue of **MSB 751** at the National Library of South Africa (“George Augustus Kolbe, 1802–44. LMS missionary”) and **his father’s letter of 23 August 1830**, which reports him “fully accepted by the [L.M.S.] as one of their Missionaries”. The DSAB draft adds the dates: mission assistant 8 February 1828, ordained 25 May 1833 by Arbousset and Casalis, dismissed 19 June 1837. **The same letter should ask for a copy of item 3.** One email does both. **DRAFTED 20 September 2026 — requests/edinburgh-cswc60-bell-kolbe.md. The sending is David’s.** To `heritagecollections@ed.ac.uk`, Centre for Research Collections, George Square. It offers the correction with both sources, tells Edinburgh that the original watercolour appears to be in Johannesburg — neither catalogue mentions the other — and asks for a reproduction of item 3 for private family-history use. **It is the first letter this archive has written that gives an institution something before it asks for anything.**",
+   "covers": [
+    "letter:edinburgh-cswc60-bell-kolbe.md"
+   ]
   }
  ],
  "accounts": [
