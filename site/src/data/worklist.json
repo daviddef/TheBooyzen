@@ -1241,14 +1241,14 @@
   },
   {
    "n": 150,
-   "what": "Pay Anne Brest’s part invoice when it comes — she has already paid an assistant out of pocket",
+   "what": "Pay Invoice 464 — R5,700 plus R200, halved and credited against the next list",
    "state": "next",
    "owner": "David",
    "since": "2026-09-20",
    "covers": [
     "letter:anne-brest-reply-accept-part-invoice.md"
    ],
-   "note": "**SHE REPLIED IN FIVE HOURS AND SHE WAS RIGHT TWICE.** The “several working days” transfer argument was this archive’s and it does not survive contact with somebody who takes foreign payments every week: *“BANK payments from Australia usually takes two days and I sent you the Invoice a day or two ago.”* **Invoice 463 is dated 16 September. Paid when promised, it would have arrived.** And on notice: her message came at 21:21 Saturday and the stand-down at 02:03 Sunday. **She has spent real money** — an assistant paid upfront for Tuesday — **and real standing**, having arranged as a favour for the files to be pulled in advance at preservation. **She proposes a part invoice credited against the new list, which is fair and is less than she could ask.** **The reply is drafted and accepts it without argument.** When the figure arrives it should be paid promptly and without a second promise of speed that is not kept, because that is the thing that actually went wrong here."
+   "note": "**SHE REPLIED IN FIVE HOURS AND SHE WAS RIGHT TWICE.** The “several working days” transfer argument was this archive’s and it does not survive contact with somebody who takes foreign payments every week: *“BANK payments from Australia usually takes two days and I sent you the Invoice a day or two ago.”* **Invoice 463 is dated 16 September. Paid when promised, it would have arrived.** And on notice: her message came at 21:21 Saturday and the stand-down at 02:03 Sunday. **She has spent real money** — an assistant paid upfront for Tuesday — **and real standing**, having arranged as a favour for the files to be pulled in advance at preservation. **She proposes a part invoice credited against the new list, which is fair and is less than she could ask.** **The reply is drafted and accepts it without argument.** When the figure arrives it should be paid promptly and without a second promise of speed that is not kept, because that is the thing that actually went wrong here. **20 SEPTEMBER, ANSWERED AND SETTLED. INVOICE 464: R11,400 ‘Reduced to half’ = R5,700, plus R200 for the South African deduction — R5,900, about A$510** — **and she will deduct it from the new list**, so it is a credit and not a loss. **The free file still stands.** She named her assistant: **Tebogo, English name Colman.** She closed with *“thanks for being such a gentleman about this”* and *“I am looking forward to continuing on with you”*. **Pay it promptly and without being asked twice — that is the whole repair.** She is back in the office on Tuesday."
   },
   {
    "n": 151,
@@ -1281,6 +1281,14 @@
    "owner": "David, and the Geneology Map session",
    "since": "2026-09-20",
    "note": "Measured 20 September. **The Record Atlas** (`TheMap`, the standalone product) holds **9,472 places and 3,504 collections**, with every name a place has ever had, who holds the paper, what it costs to look, and whose empire filed it. Defranceschi's map carries a *shelf* layer of **1,245 parishes** — how far this family has got with the registers. **1,239 of those 1,245, or 100%, are already in the Record Atlas.** Its other layers are not: people 72 of 165, graves 18 of 64, records 16 of 31, because those are about a family and the shelf is about records. **That is the division of labour, and it is already true in the data.** The global question — where are the records, who holds them, can I see anything tonight — belongs to the Record Atlas; a family archive should ask where it can put a named person, where the graves are, and what it has read, and **link out for the shelf rather than keep a second copy of it**. The Record Atlas's own component says it descends from the family Atlas and names three things it does better: colour by what a stranger can open rather than by how far one researcher has got, a year that filters rather than decorates, and a panel that fetches so the index stays 145 KB instead of 2.5 MB. **It is the most evolved of the three maps in this estate and it is the one nothing else shares code with.**"
+  },
+  {
+   "n": 155,
+   "what": "Ask the bank about Wise — Anne has softened on it and it would be cheaper than SWIFT",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-20",
+   "note": "**Her invoices say REMITLY, WISE & PAYPAL ARE NOT ACCEPTED, and she has now explained why and partly withdrawn it.** The problem is a five-page **“mandate”**: clients pay *anne brest photography*, and Wise wants the account in the name *AP Lapedus Brest*, so it fails and has to be cancelled and resent. **But:** *“someone paid me Wise the other day and I didn’t have to sign the Mandate, it came straight through to my account… maybe you need to ask your Bank. I was amazed.”* **Worth testing before the next payment.** A SWIFT transfer from Australia carries a bank fee plus an FX margin of three to five per cent; **Wise would be materially cheaper and faster**, and the transfer time was the thing that started this whole mess. **If it works, say so — it solves a recurring problem for her other overseas clients too.**"
   }
  ],
  "accounts": [
