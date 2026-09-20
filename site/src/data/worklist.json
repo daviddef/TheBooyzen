@@ -1007,11 +1007,11 @@
   },
   {
    "n": 123,
-   "what": "The 1820 settler roll of the *Nautilus* — Nash, *The Settler handbook* (1987)",
-   "state": "next",
+   "what": "The 1820 settler roll of the *Nautilus* — read, and both ages are false again",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "The DSAB says the roll gives Kolbe’s occupation as **apothecary** and his age as **20**. He was **seventeen**. **That is the second age this man is known to have overstated** — he had already sworn a false age to marry at sixteen the year before. The roll would also list who else was in **Owen’s party**, which is the company he landed with and a body of people this archive has never looked at."
+   "note": "The DSAB says the roll gives Kolbe’s occupation as **apothecary** and his age as **20**. He was **seventeen**. **That is the second age this man is known to have overstated** — he had already sworn a false age to marry at sixteen the year before. The roll would also list who else was in **Owen’s party**, which is the company he landed with and a body of people this archive has never looked at. **DONE 20 September.** Nash’s Settler Handbook entry for Owen’s party is published in full at 1820settlers.com. **“KOLBE, George Augustus 20. Chemist. w Margaret 19.”** He was **sixteen**, sailing four days before his seventeenth birthday; she was **sixteen**. **And it does not agree with the marriage allegation eleven months earlier**, where both swore to “twenty-one years and upwards” — nobody twenty-one in January is twenty in December. They were not keeping a story straight; they were telling each paper what it needed. **The party was 52 people, No. 3 on the Colonial Department list**, joint-stock, recruited in London by **Thomas Owen of 9 Carey Street, Horseferry Road, Westminster**, whose father the **Rev J Owen of Fulham** handled the correspondence — and it **collapsed in 1821** when Owen refused to draw rations and left."
   },
   {
    "n": 124,
@@ -1095,7 +1095,7 @@
    "state": "next",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "**The father devotes two of his four pages to it and asks his son to say whether it is true.** *The Mirror of Literature, Amusement, and Instruction* ran weekly from 1822 and is digitised in several places. The story: a Scottish colonist near the Xhosa, orang-outangs, a shot young animal that proves to be a chief’s son, a wife carried off, **Capt Johnson** and a company of soldiers, and a recovery after nearly two years. It would date to **1829 or the first half of 1830**. **Worth finding for its own sake**: it is the only thing this archive has that shows what the London household was reading about Africa while its son was living there."
+   "note": "**The father devotes two of his four pages to it and asks his son to say whether it is true.** *The Mirror of Literature, Amusement, and Instruction* ran weekly from 1822 and is digitised in several places. The story: a Scottish colonist near the Xhosa, orang-outangs, a shot young animal that proves to be a chief’s son, a wife carried off, **Capt Johnson** and a company of soldiers, and a recovery after nearly two years. It would date to **1829 or the first half of 1830**. **Worth finding for its own sake**: it is the only thing this archive has that shows what the London household was reading about Africa while its son was living there. **20 September — SEARCHED AND NOT FOUND.** Google Books tried on “Melvill and Kolbe”-style phrasing and on the story’s own terms (“ourang outang” / “orang outang” with *carried off*, *wife*, *colonist*, *Caffre*, *Mirror*, 1829–1830) — **no Books matches at all** — and the same on the open web. **Recorded so nobody repeats it.** Next attempts: the runs of *The Mirror* on Project Gutenberg and the Internet Archive, searched by volume rather than by phrase, and the distinctive surname **Williams or Williamson** with **Capt Johnson**."
   },
   {
    "n": 133,
@@ -1120,6 +1120,14 @@
    "owner": "David",
    "since": "2026-09-20",
    "note": "**Everything keeps arriving at the same door.** The Council for World Missions / London Missionary Society archive at **SOAS, University of London** holds: (1) **Incoming letters, South Africa** — source 4 on Schoeman’s list, where George Augustus Kolbe’s own reports are; (2) the manuscript of the **1828 journal** with Melvill, source 6, which is the same document under another name; (3) **the letter Dr Philip promised in 1830** to write to him, if it was written; and (4) **the candidate papers of Frederick William Kolbe**, which would say whose son he was and end the contradiction between Sibree and Schoeman. **Four asks, one archive, one letter** — and it is in London, which is the one city on this list somebody could reach."
+  },
+  {
+   "n": 136,
+   "what": "Three Cape Archives CO references for the Nautilus — and one of them is a signed petition",
+   "state": "next",
+   "owner": "Western Cape Archives",
+   "since": "2026-09-20",
+   "note": "Nash cites three sources for Owen’s party, all at the **Western Cape Archives**, which this archive is already writing to: **CO 6137/1,4** — the list of settlers under Thomas Owen’s direction; **CO 8543** — Special Commissioner **Hayward’s notes**, which is where “this querulous man” comes from; and **CO 3917** — the **Memorial of independent settlers aboard the *Nautilus***. **A memorial is a petition and a petition is signed.** If George Augustus Kolbe signed it he was seventeen, and it would be **the earliest example of his own hand in existence**. Nash also records that **no Agent of Transports’ Return has ever been traced for the *Nautilus***, so these three are the whole documentary basis for the roll. **Add to the standing Western Cape Archives chase.**"
   }
  ],
  "accounts": [
