@@ -5060,6 +5060,50 @@
      "NOT EVERYWHERE, AND THE ARITHMETIC SHOWS IT",
      "CATHERINE MARIA SOPHIA KOLBE is given born 14 November 1824, died 7 July 1901, “At 75 years and 8 months”. Those two dates are seventy-six years and seven months apart. If the age is right the birth is November 1825; if the birth is right the age is wrong by eleven months. A report that carries its own arithmetic can be checked against itself, and this one fails the check in at least one place.",
      "no"
+    ],
+    [
+     "Is there anything in the genealogy.com forum thread on GEORGE AUGUSTUS KOLBE?",
+     "UNKNOWN — IT IS BEHIND BOT PROTECTION AND WAS NOT READ",
+     "genealogy.com/forum/regional/countries/topics/southafrica/5263/ is a thread titled for the Settler by name, and it may hold descendant correspondence. **It cannot be read from here.** A direct fetch returns two bytes, an ordinary fetch returns HTTP 403, and a browser lands on a Cloudflare interstitial. **Working around bot protection is not something this archive will do**, so the thread is recorded as unread rather than as empty. A null from a challenge page is not a null. **It opens normally in an ordinary browser** — this is a two-minute job for a person and an impossible one from here.",
+     "NOT READ"
+    ]
+   ]
+  },
+  {
+   "g": "The two gravestone databases this archive had never opened — one is dead and the other cannot see South Africa",
+   "n": "a controlled negative, and two filters that displayed one thing and applied another",
+   "d": "21 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "Is graves.co.za a source this archive should be using?",
+     "NO — THE DOMAIN IS PARKED",
+     "It answers HTTP 200 with 114 bytes: `<script>window.onload=function(){window.location.href=\"/lander\"}</script>`, and `/lander` returns an empty reply. **A 200 and a redirect script is not a website.** It is recorded so that nobody adds it to a list of places to look.",
+     "no"
+    ],
+    [
+     "Does FindAGrave hold graves of this family in South Africa?",
+     "NO, AND THE CONTROL IS ONE OF OUR OWN STONES",
+     "**GEORGE AUGUSTUS KOLBE OF WAKKERSTROOM died 28 September 1954 and this archive holds a photograph of his stone.** A FindAGrave search for KOLBE died 1954 ±1 returns **119 records and not one of them is South African** — Ohio, Iowa, Texas, Dresden, Vienna, Prenzlau. **The man whose grave we can see is not in it.** So FindAGrave's South African coverage does not reach this family, and any negative it returns is about FindAGrave.",
+     "no"
+    ],
+    [
+     "Is there a Willem Kolbe on FindAGrave dying about 1941?",
+     "NO — BUT READ THE ROW ABOVE BEFORE USING THAT",
+     "`firstname=Willem&lastname=Kolbe&deathyear=1941±5` returns no matches, and the filter is genuinely restricting: **the same search without the forename returns 678**. So the nil is real as a statement about the index. **It is not evidence that the General has no grave**, because the index does not reach the country he is buried in.",
+     "no"
+    ],
+    [
+     "Did the location filter do what the page said it was doing?",
+     "NO, AND IT LIED TWICE IN TWO DIFFERENT WAYS",
+     "**First:** `locationId=country_204` is **MALAWI**. Searching BOTHA with it returned exactly one record — Zomba Town Cemetery, Malawi — while the page displayed a chip reading **“South Africa ×”**. **Second:** dropping the id and passing only `location=South+Africa` makes the filter **silently do nothing at all** — 7,116 Kolbe results from Germany, the United States, Australia and Egypt, still under a chip reading “South Africa”. **THE DISPLAYED FILTER IS NOT THE APPLIED FILTER.** Had I taken the first result at face value I would have written “no Kolbe graves in South Africa” off a query about Malawi.",
+     "no"
+    ],
+    [
+     "What is the rule to carry away from this?",
+     "A FILTER THAT CANNOT BE SEEN WORKING HAS NOT BEEN SEEN WORKING",
+     "Both faults produced confident, plausible, well-formatted answers. The Mazza archive hit the same shape at Antenati, where `fq=` and `facets=` are accepted and ignored and the unfiltered count comes back looking like a filtered one. **Test the filter with a query whose answer you already know, in the same request shape, before you trust anything it returns** — and prefer a control drawn from your own holdings, because it tests coverage and filtering at once.",
+     "yes"
     ]
    ]
   }
