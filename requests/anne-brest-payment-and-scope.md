@@ -62,18 +62,29 @@ work, the three I would keep are:
 
 - **TAB MHG 40293 — KOLBE, Frederick Fortunatus Downing, 1918** — death notice only, and I
   believe a single page
-- **TAB MHG 769/52 — BOOYZEN, John Barry**
 - **TAB MHG 5155/51 — BOOYZEN, Gert Jacobus**
+- **TAB MHG 1095/48 — BOOYZEN, George Downing Mountjoy**
 
 **That is a different three from the order I gave you on the 15th, and I should explain why**,
-because it is not a whim. When I first wrote, I told you the death notices mattered most to me
-"for the parents". Since then the Dutch Reformed baptism registers have given me the parents
-of that whole generation outright, so for several of the files that reason has gone. What I
-still do not have is **who these people's own children were**, and a death notice is the one
-document that lists them under their married names. John Barry Booyzen's gravestone says "aan
-ons vader" and I cannot name one of his children. Gert Jacobus is from a branch I hold very
-thinly. And the Kolbe file may answer a question about a much earlier generation that nothing
-else can reach.
+because it is not a whim and it is not me messing you about.
+
+When I first wrote, I said the death notices mattered most to me "for the parents". Since
+then the Dutch Reformed baptism registers have given me the parents of that whole generation
+outright, so that reason has gone. And I have now checked the rest of the list against what is
+freely available online, which I should have done before asking you for any of it. Two of the
+six turn out to be largely answered already, and I would rather tell you that than have you
+photograph them:
+
+- **MHG 769/52, John Barry Booyzen** — I wanted his children. A public tree gives his wife and
+  ten children, with his birth and death matching a gravestone I already have. **Please drop
+  it.**
+- **MHG 3734/46, Daschner** — I wanted her parents, and I already have them from her baptism.
+  **Please drop that one too.**
+
+The three above are the ones where I have looked and found nothing: Gert Jacobus has no death,
+no wife and no children recorded anywhere I can reach; George Downing Mountjoy has two
+conflicting death dates and only his own death notice will settle which is right; and the
+Kolbe file may answer a question about a much earlier generation that nothing else can reach.
 
 The Kolbe file is not on Invoice 463. **I am asking for it in place of one of the others, not
 in addition to them** — research since I last wrote has made it the most valuable single page
