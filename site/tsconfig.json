@@ -1,0 +1,20 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    ".astro/types.d.ts",
+    "src/**/*",
+    "public/**/*.json"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}
