@@ -23,7 +23,7 @@
     "check:retired": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkretired.py --root ."
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#6bace556337987e40ef7f4460ab3ac14296bccb3",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#f68cd05e3d8dd2ab4699572e4cb165dcbc75d37b",
     "astro": "^5.18.2"
   },
   "devDependencies": {
