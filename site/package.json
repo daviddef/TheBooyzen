@@ -22,7 +22,7 @@
     "namefold": "python3 node_modules/@daviddef/archive-kit/kit/tools/namefold.py --root . --all"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#86f3b60926f1d4c2aef72e433d539cba479efdd7",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#66328a111f05b108fb7839e20dd9195a02d8951a",
     "astro": "^5.18.2"
   },
   "devDependencies": {
