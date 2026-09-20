@@ -4954,6 +4954,18 @@
      "YES — SpouseLastName, AND IT IS NOT IN THE DRIVER NOTES",
      "The marriage transcripts carry SpouseFirstName and SpouseLastName as fieldIds, and SpouseLastName WORKS AS A FILTER: a nonsense value returns 0, “pooley” returns exactly the three indexed Downing–Pooley marriages. IT IS THE RIGHT TOOL FOR A MARRIAGE SEARCH and it is immune to the King’s Lynn problem. Added to the driver note in notes/for-the-estate.md, along with the finding that KEYWORDS FILTERS where KeywordsPlace only scores.",
      "yes"
+    ],
+    [
+     "Is there a London baptism for Margaret Georgina Elizabeth Downing in 1803?",
+     "NOT FOUND — AND THE NIL IS WORTHLESS, WHICH IS THE USEFUL PART",
+     "Five Margaret Downing baptisms exist for 1801–1805: two at Edinburgh and three at MADELEY, SHROPSHIRE, which is one event indexed three times. NONE IN LONDON. Under “Georgina”: zero. Nonsense forename control: zero, so the filter restricts. BUT WIDEN IT TO EVERY DOWNING BAPTISM IN 1800–1806 AND THERE ARE 1,131, OF WHICH EXACTLY ONE IS IN LONDON — an Abraham Downing at Finsbury. ONE LONDON BAPTISM IN SEVEN YEARS OUT OF ELEVEN HUNDRED IS A PICTURE OF THE INDEX, NOT OF LONDON. The search works and the coverage does not. HER BAPTISM HAS NOT BEEN FOUND AND THAT IS EVIDENCE OF NOTHING; the place to look is the London Metropolitan Archives registers, which are not in this collection.",
+     "no"
+    ],
+    [
+     "Is DOWNING a West Country surname, as the Welcombe case would like it to be?",
+     "NO — AND THIS ARCHIVE TOOK HALF ITS OWN ARGUMENT BACK",
+     "The Welcombe candidate rested partly on county: the family tree puts the Downings in Devon through TRICK, HEARD and HOOPER, and Welcombe is a North Devon parish. IF THE SURNAME ITSELF WERE WEST COUNTRY THAT WOULD STRENGTHEN IT. A sample of 160 of the 1,131 baptisms, tallied by county: YORKSHIRE (WEST RIDING) 20, SUFFOLK 16, NORFOLK 16, CORNWALL 14, Staffordshire 9, Yorkshire 9, Shropshire 7, DEVON 5. DOWNING IS A NATIONAL NAME and the West Country is about an eighth of it, behind Yorkshire. The Devon argument stands only on the tree’s own specific ancestry and gains nothing from the geography of the name.",
+     "no"
     ]
    ]
   },
