@@ -1102,11 +1102,11 @@
   },
   {
    "n": 133,
-   "what": "Mrs Field’s eldest daughter Mary married a Mr Bellew, a surgeon — and four other names",
-   "state": "next",
+   "what": "Mrs Field’s daughter Mary married a Mr Bellew, a surgeon — searched, and not in the index",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "**The first friends of the Soho household to be named anywhere.** Mr & Mrs **Stanhope**; Mr and Mrs **Warner**; **Mrs Field and her daughters**, the eldest of whom, **Miss Mary**, “has married a **Mr Bellew**, a Surgeon, whom I do not know whether you may recollect”. **A surgeon named Bellew marrying a Mary Field about 1829–30 is a findable marriage** — London parish registers and the medical directories both index surgeons. **This archive has had this family entirely through official paper.** These are the people who came to the house."
+   "note": "**The first friends of the Soho household to be named anywhere.** Mr & Mrs **Stanhope**; Mr and Mrs **Warner**; **Mrs Field and her daughters**, the eldest of whom, **Miss Mary**, “has married a **Mr Bellew**, a Surgeon, whom I do not know whether you may recollect”. **A surgeon named Bellew marrying a Mary Field about 1829–30 is a findable marriage** — London parish registers and the medical directories both index surgeons. **This archive has had this family entirely through official paper.** These are the people who came to the house. **SEARCHED 20 September, AND NOT FOUND — with a proper control.** Using FindMyPast’s **SpouseLastName** filter (a nonsense spouse returns 0, so the field genuinely restricts): **FIELD × BELLEW returns ONE record in the entire Life Events collection, and it is 1854 at Stepney** — twenty-four years too late, and the letter says she *had already* married by August 1830. Tried as exact spellings **bellew, bellow, ballew, belew, bellewe, bellows**, each against 1823–1835: **all zero**. Widened to **1814–1844: still zero.** **The name variants engine is useless here** — it collapses Bellew into Bell, Boyle and Balow and returns 1,724 rows of noise. **So either the marriage is not in FindMyPast’s London coverage, or the father misheard a surname he was writing from conversation.** Recorded with the spellings tried so nobody repeats them."
   },
   {
    "n": 134,

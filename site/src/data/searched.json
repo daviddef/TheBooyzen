@@ -4598,6 +4598,12 @@
      "A DSAB ENTRY BY DR KAREL SCHOEMAN — NOT YET READ",
      "Two pages written for the DICTIONARY OF SOUTH AFRICAN BIOGRAPHY, found in the Background File, by Dr Karel Schoeman of the National Library, WITH A LIST OF BRONNE (SOURCES). It is a secondary work, but Schoeman was a serious historian and the source list is the useful part. THIS ARCHIVE HAS NOT READ IT.",
      "no"
+    ],
+    [
+     "Can the marriage of Miss Mary Field to Mr Bellew, a surgeon, be found?",
+     "NO — AND THE NEGATIVE IS CONTROLLED SIX WAYS",
+     "The letter of 23 August 1830 says “the eldest, Miss Mary, THAT WAS, has married a MR BELLEW, A SURGEON”, so the marriage is before that date. FindMyPast, using the SpouseLastName filter with a nonsense-value control returning 0: FIELD × BELLEW RETURNS ONE RECORD IN THE WHOLE LIFE EVENTS COLLECTION AND IT IS 1854 AT STEPNEY — twenty-four years too late. Exact spellings BELLEW, BELLOW, BALLEW, BELEW, BELLEWE and BELLOWS, each against 1823–1835: ALL ZERO. Widened to 1814–1844: STILL ZERO. The variants engine is worse than useless — it collapses Bellew into Bell, Boyle and Balow and returns 1,724 rows. EITHER THE MARRIAGE IS OUTSIDE FINDMYPAST’S LONDON COVERAGE, OR A SEVENTY-YEAR-OLD MAN MISSPELLED A SURNAME HE HAD HEARD SPOKEN. The five friends named in that letter remain the only people in it this archive cannot reach.",
+     "no"
     ]
    ]
   },
