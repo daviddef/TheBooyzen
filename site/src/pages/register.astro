@@ -5,6 +5,17 @@ import { u } from "../lib/url.js";
 import Register from "@daviddef/archive-kit/components/Register.astro";
 import reg from "../data/register.json";
 import nf from "../data/namefold.json";
+import pjReg from "../data/people.json";
+/* COUNTED, BECAUSE I TYPED IT AN HOUR AGO. The sentence below said «of 350
+   people it holds, not one is living». That was correct when written and it
+   was a typed cardinal in prose — the same fault as the footer it was written
+   to fix, committed while writing about that fault. The D'Arcy session did the
+   identical thing in the identical hour, typing «six are named on purpose»
+   into its own corrected footer. A number that is right today and asserted is
+   a number that goes wrong silently. */
+const nPeopleReg = pjReg.people.length;
+const nLivingReg = pjReg.people.filter(
+  (p) => p.living === true || String(p.conf || "").toLowerCase() === "living").length;
 /* THE SEARCH BOX FOLDS SPELLINGS. Without this, a reader typing the surname
    this archive answers to reached 3,504 of the 4,244 times it appears in these
    rows and never learned the other 740 existed - Booijsen, Booysen, Booyzens,
@@ -73,7 +84,8 @@ const regRows = rows.map((r) => ({
         recorded. So the register holds no living person — which is a fact
         about this family, not a policy, and the sentence now says which. */}
     <p style="margin-top:12px"><b>No living person is in this register</b>, and none is
-      anywhere in this archive: of 350 people it holds, not one is living. The estate's
+      anywhere in this archive: of the {nPeopleReg} people it holds, {nLivingReg === 0
+      ? "not one is living" : nLivingReg + " are living"}. The estate's
       rule, where it has to be applied, is that <b>a living person is named and nothing
       more</b> — no dates, no places, no photographs. Here it has not yet had to be
       applied at all.</p>
