@@ -1075,11 +1075,14 @@
   },
   {
    "n": 130,
-   "what": "Ask Anne Brest before Tuesday whether TAB MHG 40293 — KOLBE, 1918 — is in scope",
+   "what": "Write to Anne Brest today — the invoice cannot be paid before Tuesday, and she has arranged the files",
    "state": "next",
    "owner": "David",
    "since": "2026-09-20",
-   "note": "**THE INVOICE WAS RAISED BEFORE THE EXTRA WORK WAS ASKED FOR, AND NO REVISED INVOICE HAS COME.** Invoice No 463 is dated 16 September and covers seven files. David’s reply of the same day, sent after it, added **Groups A, B and C — nineteen further items across three families** — and said “if it changes the invoice, send me a revised one”. Anne’s email of 19 September says only that she has made the arrangements “for your files” and the free file, **which reads like the seven**. **So A1 may not be in scope, and A1 is now the most valuable item on the whole list: TAB MHG 40293 — KOLBE, FREDERICK FORTUNATUS DOWNING, 1918, death notice only.** It carries Margaret Downing’s maiden name as a forename four generations on, and **if it names his father it may connect the Transvaal Kolbes to the 1820 Settler directly** — which everything here reaches only by inference. It is one page. **Ask, do not re-send the list**: she answered the original brief line by line and repeating it would insult a researcher who has been straight from the first message. See `notes/anne-brest-tuesday-addendum.md`."
+   "note": "**URGENT, AND IT IS A PROMISE NOT KEPT RATHER THAN A DISPUTE.** David wrote on 16 September: *“please send the invoice and I will pay it straight away”*. **Invoice No 463 is R11,400 plus R200** and cannot be funded before **Tuesday 22 September**, which is when she drives to Pretoria and for which she has already arranged the files. **The one wrong move is silence.** She volunteered a cap on her own fees before anyone asked, and gave a seventh file free. **Drafted as `requests/anne-brest-payment-and-scope.md`; the sending and the choice are David’s.** It says plainly that the payment will not arrive in time, apologises for having said otherwise, and puts the decision in her hands: **move the visit to a date after payment**, or **keep Tuesday with a reduced set** — Daschner MHG 3734/46, Booyzen MHG 1095/48, and **Kolbe MHG 40293 substituted in, not added**. It also **withdraws the whole of Groups A, B and C** from the 16 September email, so that nothing is being worked that is not on a paid invoice. **Her fees are not the problem and the letter says so.** R2,850 for the first file including the round trip to Pretoria, then by the work done and capped, is a professional day’s rate. **The cost grew because the scope grew** — seven files became twenty-six items in a single reply — and that is this archive’s doing, not hers.",
+   "covers": [
+    "letter:anne-brest-payment-and-scope.md"
+   ]
   },
   {
    "n": 131,
