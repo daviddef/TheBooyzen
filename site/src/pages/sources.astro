@@ -546,6 +546,23 @@ const tally = (id) => {
     this archive was one edit from publishing that the Pietermaritzburg addresses were dead.
     <b>They accept mail.</b> The check now asks for the MX before it says dark.</p>
 
+  <p class="note" style="margin-top:16px"><b>And on 20 September it was wrong the same way a second
+    time, which is worse, because the lesson had already been written above.</b> An end-to-end audit
+    found this table asserting that <b><span class="m">www.familysearch.org</span> was down</b> &mdash;
+    <b>cited 7,275 times on this site</b> &mdash; along with The National Archives at Kew, the University
+    of Edinburgh and Google&rsquo;s font CDN. <b>All four answer an ordinary request perfectly well.</b>
+    FamilySearch returns <b>403</b>, which is a bot check and which this check already knows how to
+    record as <em>guarded</em>; it never saw the code, because the connection was refused before HTTP
+    to a user-agent that says <em>TheBooyzenArchive</em>.</p>
+
+  <p class="note" style="margin-top:14px"><b>The fix is not to dress up as a browser.</b> This archive
+    identifies itself and will go on doing so. The fix is to stop calling a silence a death. <b>There is
+    now a state called <span class="m">unverified</span></b> &mdash; no answer at all &mdash; and it is
+    kept apart from <span class="m">dark</span>, which means <b>does not resolve in DNS</b> and is the
+    only state here that means gone. <b>A nil return is worthless without a control, and a refused
+    connection is a nil return with no control.</b> The rule was on <a href={u("/method/")}>/method/</a>
+    the whole time.</p>
+
   <p class="cap" style="margin-top:12px"><b>It is deliberately not part of the build.</b> A network probe
     inside a build fails when a government website is having an afternoon, which has nothing to do with
     the change being built &mdash; and a check that fails for the wrong reason is a check people learn to

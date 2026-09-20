@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 """Are the sources this archive cites still there?
 
+STATES. `up` answered. `guarded` answered 401/403/429 - a bot check, which this
+archive records rather than goes around. `mail only` no website but a live MX.
+`dark` DOES NOT RESOLVE IN DNS, which is the only state that means gone.
+`unverified` no answer at all - and that is NOT the same as dark. Added
+20 September 2026, after this file had been publishing for five days that
+FamilySearch (7,275 citations) and The National Archives at Kew were down,
+when both answer an ordinary request perfectly well and were simply refusing
+an unfamiliar user-agent.
+
 databases.tanap.net stopped resolving between one search and the next on 15
 September. It holds the full transcriptions of the inventory that names eleven
 enslaved people, and this site had gone on citing it as though it were live.
@@ -103,12 +112,21 @@ def probe(host, one):
         except Exception as e:
             if method == "HEAD":
                 continue
-            return "down", type(e).__name__
+            # NOT "down". A connection refused or reset before any HTTP status is
+            # not evidence that a site is dead - it is very often a firewall
+            # refusing an unfamiliar user-agent, and this archive identifies
+            # itself rather than pretending to be a browser. Saying "down" here
+            # published that FamilySearch, with 7,275 citations, and The National
+            # Archives at Kew were both dead, while both answer 200 and 403 to an
+            # ordinary request. A nil return is worthless without a control, and
+            # there is no control here - so it is recorded as UNVERIFIED, which
+            # is what it is.
+            return "unverified", type(e).__name__
     err = locals().get("e")
     if isinstance(err, urllib.error.HTTPError):
         e = err
     else:
-        return "down", type(err).__name__ if err else "no response"
+        return "unverified", type(err).__name__ if err else "no response"
     try:
         raise e
     except urllib.error.HTTPError as e:
@@ -133,8 +151,9 @@ def main():
         rows.append({"host": host, "cited": info["n"], "state": state, "why": why,
                      "where": sorted(info.get("where", []))[:8]})
         mark = {"up": "  ok  ", "guarded": "  warn", "dark": "  dark",
-                "down": "  warn", "mail only": "  ok  "}[state]
-        print(f"{mark}  external   {host:<34} {state:<8} {why:<18} cited {info['n']}x")
+                "down": "  warn", "mail only": "  ok  ",
+                "unverified": "  ?   "}.get(state, "  ?   ")
+        print(f"{mark}  external   {host:<34} {state:<11} {why:<18} cited {info['n']}x")
 
     # A dark host is NOT a failure, and working the tool taught that.
     #

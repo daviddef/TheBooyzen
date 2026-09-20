@@ -279,6 +279,73 @@ def main():
                        f"missing from the page's own contents and nothing can link to it "
                        f"- \"{txt[:52]}\"")
 
+    # 14 - A CAUSE THAT EXISTS IN THE ROWS AND NOWHERE ELSE
+    #
+    # 20 September 2026, found by an end-to-end audit rather than by a gate.
+    # corrections.json carries a `causes` dictionary and /corrections/ carries its
+    # own short `label` map, and a row's cause has to be in BOTH. One row had been
+    # sitting since 14 September with cause "reasoning", which was in neither - so
+    # the page rendered it with an undefined severity heading and an empty
+    # explanation, and said nothing about it.
+    #
+    # It is the same shape as check 11 and check 13: the data was right, the build
+    # dropped it on the way to the reader, and nothing refused. A vocabulary that
+    # lives in two files will drift unless something counts them against each other.
+    corr = load("corrections.json")
+    declared = set(corr.get("causes") or {})
+    used = set(r[3] for r in corr["rows"] if len(r) > 3)
+    for c in sorted(used - declared):
+        bad.append(f"cause-undeclared   corrections.json uses cause {c!r}, which is not in "
+                   f"its own `causes` - the page shows no explanation for those rows")
+    page = os.path.join(ROOT, "site", "src", "pages", "corrections.astro")
+    if os.path.exists(page):
+        src = open(page, encoding="utf-8").read()
+        m = re.search(r"const label = \{(.*?)\};", src, re.S)
+        if m:
+            labelled = set(re.findall(r"(\w+)\s*:", m.group(1)))
+            for c in sorted(used - labelled):
+                bad.append(f"cause-unlabelled   cause {c!r} is used but has no entry in the "
+                           f"`label` map on /corrections/ - its heading renders undefined")
+
+    # 15 - A DATA FILE THAT NOTHING READS
+    #
+    # 20 September 2026, found by an end-to-end audit. A hand-written name-fold file
+    # had sat in src/data for weeks and NOTHING imported it - not a page, not a
+    # tool, not a script. Its 38 pairs had been merged into the live fold map, so
+    # the search was correct and no reader lost anything. But a live-looking data
+    # file that nothing reads is the Mazza trap with the safety catch off: the next
+    # person to add a fold pair would add it there, the site would not change, and
+    # nothing would say so.
+    #
+    # NB: this check scans tool source, so DO NOT NAME A DATA FILE IN A COMMENT
+    # HERE - the first version of this check named its own example and therefore
+    # always found it referenced, and passed while the fault was in front of it.
+    #
+    # A file may declare itself out of service with a top-level "superseded" key
+    # saying what replaced it. Anything else unread is a failure.
+    data_dir = os.path.join(ROOT, "site", "src", "data")
+    srctext = ""
+    for pat in ("site/src/**/*.astro", "site/src/**/*.js", "site/src/**/*.mjs",
+                "tools/*.py", "tools/*.mjs", "build.sh"):
+        for fn in glob.glob(os.path.join(ROOT, pat), recursive=True):
+            try:
+                srctext += open(fn, encoding="utf-8", errors="ignore").read()
+            except OSError:
+                pass
+    for fn in sorted(glob.glob(os.path.join(data_dir, "*.json"))):
+        base = os.path.basename(fn)
+        if base in srctext:
+            continue
+        try:
+            blob = json.load(open(fn, encoding="utf-8"))
+        except Exception:
+            blob = {}
+        if isinstance(blob, dict) and blob.get("superseded"):
+            continue
+        bad.append(f"data-unread        site/src/data/{base} is imported by no page, tool or "
+                   f"script - either wire it in, delete it, or give it a \"superseded\" key "
+                   f"saying what replaced it")
+
     # 5 - open too long
     today = datetime.date.today()
     for r in load("worklist.json")["rows"]:

@@ -11,7 +11,8 @@ const counted = Object.keys(causes)
   .sort((a, b) => b[1] - a[1]);
 const label = { population: "A list mistaken for a population", scope: "A part searched, reported as the whole",
   circular: "A fact cited back to itself", tree: "The tree repeated before it was tested",
-  reading: "A document read past what it says", process: "The archive's own working" };
+  reading: "A document read past what it says", process: "The archive's own working",
+  reasoning: "A conclusion that does not follow" };
 ---
 <Base title="What was taken back"
       eyebrow={`${rows.length} corrections, and why each happened`}

@@ -6,7 +6,8 @@
   "circular": "A fact derived from a reference, written into the record, and then cited back as evidence.",
   "tree": "A claim taken from the family tree and repeated before it was tested.",
   "reading": "A document read wrongly, or a conclusion drawn past what the document says.",
-  "process": "A mistake in the archive's own working — a bug, a bad build, or a word used loosely."
+  "process": "A mistake in the archive's own working — a bug, a bad build, or a word used loosely.",
+  "reasoning": "A conclusion that does not follow — the documents read correctly and the inference drawn wrongly, or a control that tested the wrong thing."
  },
  "rows": [
   [
@@ -496,7 +497,7 @@
    "20 Sep 2026",
    "FindMyPast barely covers London baptisms for 1800–1806, so the missing Downing baptism proves nothing",
    "THE COVERAGE IS EXCELLENT AND THE NIL IS REAL. Published within the hour on the strength of a count: 1,131 Downing baptisms in England for 1800–1806 and almost none in London. THAT WAS THE WRONG CONTROL — counting one surname by county tests where the Downings were, not whether the index reaches London. THE RIGHT CONTROL IS A COMMON NAME: of 100 SMITH baptisms sampled in the same window, THIRTY-SEVEN ARE LONDON, MIDDLESEX OR WESTMINSTER; of 76 KOLBE baptisms, six. The index covers London well. So the near-absence of London Downings is not the index failing — THERE WERE VERY FEW DOWNINGS IN LONDON. AND THE CORRECTION REVERSES THE ARGUMENT TWICE: the nil is a real negative, and a family with a London birth in 1803, no London baptism and no London kin in the registers IS WHAT A FAMILY NEWLY ARRIVED FROM THE COUNTRY LOOKS LIKE — which strengthens the Welcombe marriage of 1802 instead of weakening it. THE RULE THIS ARCHIVE ALREADY HAD AND MISAPPLIED: a nil return is worthless until a control shows the search works, AND THE CONTROL HAS TO TEST THE THING YOU ARE DOUBTING.",
-   "reading",
+   "reasoning",
    "/documents/#downing-pooley"
   ],
   [
@@ -505,6 +506,13 @@
    "IT IS NOT. WITHDRAWN THE SAME DAY IT WAS RAISED. Published this morning as a candidate on a name match and a nine-month interval; called STRENGTHENED at lunchtime when a London baptism could not be found for her. THE QUESTION NOBODY ASKED UNTIL EVENING WAS WHETHER THE WELCOMBE COUPLE STAYED. They did. Every Downing record in that parish reads: 1802 JOHN MARRIAGE, 1803 JOHN BAPTISM, 1806 William baptism, 1809 Emmey baptism, 1810 Elizabeth baptism. THEY BAPTISED A CHILD AT WELCOMBE THE YEAR AFTER THE WEDDING AND WENT ON DOING IT. Margaret was born in LONDON in February 1803. AND THE LAST LINE OF THE PARISH LIST EXPLAINS THE WHOLE THREAD: a MARY DOWNING BURIED AT WELCOMBE IN 1834, which is the year both trees give Margaret’s mother. A previous researcher almost certainly found the one Downing–Pooley marriage in England and a Mary Downing burial in the year they wanted, in the same tiny parish, and joined them — the same search this archive ran today, stopping one question earlier. SO “MARY KING POOLEY, 1768–1834” IS PROBABLY NOT A RECORD BUT A RECONSTRUCTION, which also explains why this archive’s own copy of the tree calls her MARY P KING: two compilers, the same fragments, two guesses.",
    "reading",
    "/documents/#downing-pooley"
+  ],
+  [
+   "20 Sep 2026",
+   "www.familysearch.org is down, and so are The National Archives at Kew and the University of Edinburgh",
+   "NONE OF THEM. /sources/ published that table for five days, and FAMILYSEARCH IS CITED 7,276 TIMES ON THIS SITE. FamilySearch answers 403 — a bot check — and Kew and Edinburgh answer 200; all three were used from this desk on the day the table was found to be wrong. THE CAUSE: checkexternal.py identifies itself honestly as “TheBooyzenArchive”, and firewalls refuse unfamiliar user-agents at the connection, before any HTTP status exists — so the tool’s own sensible rule that 403 means GUARDED never ran, and a refused connection was written down as DOWN. THE FIX IS NOT TO DRESS UP AS A BROWSER. This archive identifies itself and will go on doing so. The fix is to stop calling a silence a death: there is now a state UNVERIFIED, kept apart from DARK, which means does not resolve in DNS and is the only state here that means gone. AFTER THE FIX: 27 up, 11 unverified, 5 mail-only, 4 dark, and NO HOST CLAIMED DOWN. The rule was on /method/ the whole time — a nil return is worthless without a control, and a refused connection is a nil return with no control.",
+   "reasoning",
+   "/sources/#shut"
   ]
  ]
 }

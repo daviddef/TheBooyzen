@@ -1289,6 +1289,22 @@
    "owner": "David",
    "since": "2026-09-20",
    "note": "**Her invoices say REMITLY, WISE & PAYPAL ARE NOT ACCEPTED, and she has now explained why and partly withdrawn it.** The problem is a five-page **“mandate”**: clients pay *anne brest photography*, and Wise wants the account in the name *AP Lapedus Brest*, so it fails and has to be cancelled and resent. **But:** *“someone paid me Wise the other day and I didn’t have to sign the Mandate, it came straight through to my account… maybe you need to ask your Bank. I was amazed.”* **Worth testing before the next payment.** A SWIFT transfer from Australia carries a bank fee plus an FX margin of three to five per cent; **Wise would be materially cheaper and faster**, and the transfer time was the thing that started this whole mess. **If it works, say so — it solves a recurring problem for her other overseas clients too.**"
+  },
+  {
+   "n": 156,
+   "what": "End-to-end audit of the whole site — done, and it found three faults",
+   "state": "done",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**Ran the pipeline clean from an empty dist, every gate, every JSON parsed, every tool compiled, and the checks nothing wires in.** RESULT: 799 pages, 2,559 ids, all six site checks and all four repo gates green; 26 data files valid JSON; 14 Python tools and 2 Node tools compile; people.js and people.json agree at 350. **THREE REAL FAULTS, none of which any existing gate caught.** (1) **A correction carrying cause `reasoning`, which existed in neither `causes` nor the page’s `label` map** — live since 14 September, rendering with an undefined heading and an empty explanation. Cause added to both; **check 14** added. (2) **`namefold-extra.json` read by nothing at all** — its 38 folds had been merged into namefold.json (verified: all 38 present, none differing), so no reader lost anything, but an unread live-looking data file is the Mazza trap with the catch off. Marked superseded; **check 15** added. (3) **/sources/ published that FamilySearch was down**, against 7,276 citations. Fixed in the tool and the data. **Both new gates verified in both directions.** Check 15’s first version **passed while the fault was in front of it**, because its own comment named the file it was looking for and therefore always matched — caught by testing it rather than trusting it."
+  },
+  {
+   "n": 157,
+   "what": "No type checking on 41 .astro files — `astro check` is not installed",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-20",
+   "note": "**The only real gap the audit could not close itself.** 36 pages, 4 components and 1 layout, and **nothing type-checks any of them**. `npx astro check` offers to install **`@astrojs/check` and `typescript`**, and `devDependencies` is currently empty — **so this is a decision about adding two dev dependencies to the project, which is David’s and not mine to take.** **Why it is worth taking:** every gate on this site checks DATA. Nothing checks the templates that render it. A mistyped prop or a renamed field would still build, and would fail silently in exactly the way this archive has now been caught by three times in four days. One `npm i -D @astrojs/check typescript` and one line in the build script."
   }
  ],
  "accounts": [
