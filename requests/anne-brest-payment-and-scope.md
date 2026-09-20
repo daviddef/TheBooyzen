@@ -11,7 +11,15 @@ Pretoria.
 
 **What changed:** David wrote on 16 September "please send the invoice and I will pay it
 straight away". Invoice No 463 is **R11,400 plus R200** for the South African transaction
-deduction. That is now not payable in time.
+deduction.
+
+**And there is a fact here that takes most of the awkwardness out of it.** Today is **Sunday
+20 September**. Tuesday is the **22nd**. Anne's invoice states that **Remitly, Wise and PayPal
+are not accepted** — it is a **SWIFT transfer to First National Bank**, and an international
+transfer from Australia initiated on Monday does not land in a South African account on
+Tuesday. Two to five business days is normal. **The visit was never going to be prepaid on
+this timeline, whatever the balance said.** That is worth saying to her, because it is true and
+it is nobody's fault.
 
 ---
 
@@ -22,21 +30,33 @@ Dear Anne,
 Thank you for the invoice and for making the arrangements — and I am sorry, because I have to
 go back on something I said.
 
-When I wrote on the 16th I said I would pay straight away. **I am not going to be able to get
-the payment to you before Tuesday**, and I would much rather tell you that now than have you
-drive to Pretoria on the strength of a promise I have not kept. The total is more than I had
-budgeted for in one go; that is my misjudgement and not your pricing, which you explained
-clearly and which I accepted.
+When I wrote on the 16th I said I would pay straight away, and I have let that sit too long
+without coming back to you.
+
+**Two things, and the first one is simply arithmetic.** Your invoice says Remitly, Wise and
+PayPal are not accepted, so this has to come as a bank transfer from Australia — and an
+international transfer sent on Monday will not be in your account on Tuesday. It takes a few
+working days at best. **So the money was never going to reach you before this visit**, however
+promptly I sent it, and I should have worked that out on the 16th instead of saying "straight
+away".
+
+**The second thing is mine to own.** The total is also more than I can comfortably send in one
+go this week. That is my misjudgement about scope and not your pricing — you explained how you
+charge before I asked, you put a cap on your own fees that I had not requested, and you gave
+me a seventh file for nothing. **The number went up because I kept adding to the list, not
+because you did.**
 
 **So I would like to put the decision in your hands, because it is your day that is booked.**
 Either of these is completely fine with me:
 
-**1. Move the visit.** Pick a date that suits you once the money is with you. I will pay
-Invoice 463 in full by **[DATE]**, and we go ahead as planned after that. Nothing about the
-list changes.
+**1. Move the visit.** Pick a date that suits you once the money has cleared. I will send the
+transfer on **[DATE]**, which should reach you within a few working days, and we go ahead
+exactly as planned. Nothing about the list changes.
 
-**2. Keep Tuesday, but smaller.** If you would rather not lose the day, would you be willing
-to do a **reduced set** on Tuesday and invoice me for that alone? I know the first file
+**2. Keep Tuesday, and I pay on delivery.** If you would rather not lose the day, I am happy
+for you to go on Tuesday and for me to transfer on **[DATE]** as soon as the files are done —
+or, if you would prefer not to work unpaid, to do a **reduced set** on Tuesday and invoice me
+for that alone. I know the first file
 carries the travel, so this may not save as much as it looks, and if it does not work for you
 please just say so. If it does, the ones I would keep are:
 
