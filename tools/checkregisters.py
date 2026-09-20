@@ -350,6 +350,63 @@ def main():
                    f"script - either wire it in, delete it, or give it a \"superseded\" key "
                    f"saying what replaced it")
 
+    # 16 - THE GENERATOR READING ITS OWN OUTPUT
+    # tools/dossiers.py scrapes the BUILT site, and [slug].astro prints every
+    # excerpt the generator stored. For as long as the tool had run, person
+    # pages were input: 7,307 of 9,008 excerpts - 81% - were harvested from
+    # them, so four fifths of the corpus was the previous cycle re-rendered,
+    # and the mention count each page PUBLISHED was near double the real one.
+    # Two consecutive runs could not catch it, because both read the same dist.
+    #
+    # THE TEST IS CHEAP AND EXACT, and it is the landing-site session's: what
+    # the file STORES for a person must equal what the page PRINTS for them.
+    # A rendering filter can only ever print fewer; a person printing MORE than
+    # the file holds means dist and dossiers.json are different generations.
+    # Either way the number under somebody's name is not the number behind it.
+    P_EXCERPT = re.compile(r'<p style="font-size:14\.5px;line-height:1\.66;margin:0">\u2026.*?\u2026</p>', re.S)
+    try:
+        doss = load("dossiers.json")["people"]
+    except Exception:
+        doss = {}
+    gap = []
+    for sl, v in doss.items():
+        f = os.path.join(a.dist, "people", sl, "index.html")
+        if not os.path.exists(f):
+            continue
+        printed = len(P_EXCERPT.findall(open(f, encoding="utf-8").read()))
+        stored = len(v.get("hits") or [])
+        if printed != stored:
+            gap.append(f"{sl} stores {stored} prints {printed}")
+    if gap:
+        bad.append(f"dossier-drift      {len(gap)} person page(s) print a different number of "
+                   f"excerpts than dossiers.json holds - dist and the data are different "
+                   f"generations, so the mention count under the name is not the number "
+                   f"behind it. Rebuild, or regenerate: " + "; ".join(sorted(gap)[:4]))
+
+    # 17 - A VERDICT THE SEARCH REGISTER CANNOT RENDER
+    # searched.astro keys a `badge` map on the verdict and reads badge[k][1].
+    # A verdict outside that map is not a bad chip, it is `undefined` indexed
+    # at [1], so the page throws and the WHOLE BUILD dies with "Cannot read
+    # properties of undefined (reading '1')" against /searched/ and no clue
+    # which row did it. That happened on 21 September: one row carried the
+    # verdict "NOT READ" where the schema's word for it is `blocked`, and
+    # three builds were spent before the row was found by hand. A one-word
+    # typo should refuse the build by name, not crash the renderer.
+    VERDICTS = ("yes", "no", "part", "blocked", "void")
+    try:
+        sets = load("searched.json")["sets"]
+    except Exception:
+        sets = []
+    for st in sets:
+        for i, r in enumerate(st.get("rows") or []):
+            if not isinstance(r, list) or not r:
+                bad.append(f"searched-shape     set {st.get('n','?')!r} row {i} is not a row")
+                continue
+            if r[-1] not in VERDICTS:
+                bad.append(f"searched-verdict   set {st.get('n','?')!r} row {i} ends {r[-1]!r}, "
+                           f"which searched.astro cannot render - it must be one of "
+                           f"{', '.join(VERDICTS)}")
+
     # 5 - open too long
     today = datetime.date.today()
     for r in load("worklist.json")["rows"]:

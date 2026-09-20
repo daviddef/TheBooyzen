@@ -5064,8 +5064,8 @@
     [
      "Is there anything in the genealogy.com forum thread on GEORGE AUGUSTUS KOLBE?",
      "UNKNOWN — IT IS BEHIND BOT PROTECTION AND WAS NOT READ",
-     "genealogy.com/forum/regional/countries/topics/southafrica/5263/ is a thread titled for the Settler by name, and it may hold descendant correspondence. **It cannot be read from here.** A direct fetch returns two bytes, an ordinary fetch returns HTTP 403, and a browser lands on a Cloudflare interstitial. **Working around bot protection is not something this archive will do**, so the thread is recorded as unread rather than as empty. A null from a challenge page is not a null. **It opens normally in an ordinary browser** — this is a two-minute job for a person and an impossible one from here.",
-     "NOT READ"
+     "genealogy.com/forum/regional/countries/topics/southafrica/5263/ is a thread titled for the Settler by name, and it may hold descendant correspondence. **It cannot be read from here.** A direct fetch returns two bytes, an ordinary fetch returns HTTP 403, and a browser lands on a Cloudflare interstitial. **Working around bot protection is not something this archive will do**, so the thread is recorded as unread rather than as empty. A null from a challenge page is not a null. **It opens normally in an ordinary browser** — this is a two-minute job for a person and an impossible one from here. **WHAT WOULD UNBLOCK IT:** the thread is public and the block is a bot check, not a paywall — so it needs a pair of human eyes on the page rather than a fetch. **David opening the URL in his own browser and pasting the thread would settle it in a minute**, and that is the whole remedy. Failing that, the Internet Archive's Wayback Machine may hold a capture taken before the bot check was added.",
+     "blocked"
     ]
    ]
   },
@@ -5078,7 +5078,7 @@
     [
      "Is graves.co.za a source this archive should be using?",
      "NO — THE DOMAIN IS PARKED",
-     "It answers HTTP 200 with 114 bytes: `<script>window.onload=function(){window.location.href=\"/lander\"}</script>`, and `/lander` returns an empty reply. **A 200 and a redirect script is not a website.** It is recorded so that nobody adds it to a list of places to look.",
+     "It answers HTTP 200 with 114 bytes — a single `<script>` whose `window.onload` sets `window.location.href` to `/lander` — and `/lander` returns an empty reply. **A 200 and a redirect script is not a website.** It is recorded so that nobody adds it to a list of places to look.",
      "no"
     ],
     [

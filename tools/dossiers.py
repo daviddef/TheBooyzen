@@ -25,13 +25,68 @@ people = json.load(open(os.path.join(DATA, "people.json"), encoding="utf-8"))["p
 
 # ---- 1. page text, cleaned
 TAG = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
+
+# The generated "Every mention, page by page" section on a person page - see
+# page_text. EXCERPT_P identifies it; MENTION_BLK is the whole <section> that
+# carries it, headings and all.
+EXCERPT_P = re.compile(r'<p style="font-size:14\.5px;line-height:1\.66;margin:0">….*?…</p>', re.S)
+MENTION_BLK = re.compile(r'<section class="blk">.*?</section>', re.S)
 def page_text(p):
     t = open(p, encoding="utf-8").read()
     title = (re.search(r"<title>(.*?)</title>", t, re.S) or [None, ""])[1]
     title = html.unescape(re.sub(r"\s+", " ", title)).replace(" — The Booyzen Archive", "").strip()
     t = TAG.sub(" ", t)
+    # CHROME IS NOT PROSE. <nav> and <footer> were stripped; the skip link, the
+    # site header and the <head> were not, and all three sit outside those two
+    # elements - so 344 of 5,864 excerpts, 5.9%, opened with "A.M. Kolbe of Piet
+    # Retief - The Booyzen Archive Skip to the content ... Menu Start Home
+    # About The trees". That is the site's own furniture, printed to a reader
+    # on a person's page as though it were a quotation about their ancestor.
+    # The <head> goes too, because the <title> is read out of the ORIGINAL text
+    # above and its words were otherwise surviving into the body.
+    t = re.sub(r"<head[^>]*>.*?</head>", " ", t, flags=re.S | re.I)
+    t = re.sub(r'<a class="skiplink"[^>]*>.*?</a>', " ", t, flags=re.S | re.I)
+    t = re.sub(r"<header[^>]*>.*?</header>", " ", t, flags=re.S | re.I)
     t = re.sub(r"<nav[^>]*>.*?</nav>", " ", t, flags=re.S | re.I)
     t = re.sub(r"<footer[^>]*>.*?</footer>", " ", t, flags=re.S | re.I)
+    # THE GENERATOR MUST NOT READ ITS OWN OUTPUT — 21 SEPTEMBER 2026.
+    # This tool scrapes the BUILT site, and the built site prints what this tool
+    # wrote last cycle. [slug].astro renders "Every mention, page by page": one
+    # <p> per stored excerpt, on every person page. Measured on the committed
+    # output, 7,307 of 9,008 excerpts — 81.1% — were harvested from person
+    # pages, so four fifths of the corpus was the previous cycle re-rendered.
+    # The visible symptom was the counts: people.astro prints "<N> mentions"
+    # and each person page heads itself "<family> · <N> mentions across <N>
+    # pages", and 1,732 excerpts — 19% — quoted one of those numbers back.
+    #
+    # THE PROOF IT NEVER SETTLED: generate, rebuild, generate again and ALL 347
+    # dossiers changed, 24,981 mentions down to 24,636. Two consecutive runs
+    # were byte-identical and proved NOTHING, because both read the same dist.
+    # The test that catches this is generate → rebuild → generate → diff.
+    #
+    # The excerpt paragraph is stripped and NOT the whole person page, because a
+    # person page carries real prose — the dek, the eyebrow, the `r` field out
+    # of people.js — in which other people are legitimately named. That prose
+    # SHOULD be harvestable; only the regenerated section should not. The
+    # signature below is exact: 8,972 matches across dist, every one of them on
+    # a person page, no other template using it.
+    #
+    # The two count strips stay. They are largely redundant once the excerpts
+    # go, but the /people/ listing is not a person page and still prints counts.
+    # STRIPPED BY CLASS, NOT BY PHRASE: corrections.json says "2,428 mentions"
+    # in ordinary prose and a text-level strip would eat the "2,".
+    # THE WHOLE SECTION GOES, NOT ONLY ITS PARAGRAPHS. Stripping the excerpt
+    # <p>s alone was not enough: each group is headed <h2> with the TITLE of a
+    # page that mentions this person, and most of those pages are person pages,
+    # so the headings are a list of OTHER PEOPLE'S NAMES that this tool wrote
+    # last cycle. One page carried 26 of them. Removing the paragraphs and
+    # leaving the headings dropped the churn but never cleared it - the run
+    # oscillated, 24,636 mentions to 14,115 to 13,444 to 13,455.
+    t = MENTION_BLK.sub(lambda m: " " if EXCERPT_P.search(m.group(0)) else m.group(0), t)
+    t = EXCERPT_P.sub(" ", t)   # belt and braces, if one is printed outside a blk
+    t = re.sub(r'<span class="cap"[^>]*>\s*[\d,]+\s+mentions?\s*</span>', " ", t, flags=re.I)
+    t = re.sub(r"(?:·|&middot;|&#183;)?\s*[\d,]+\s+mentions?\s+across\s+[\d,]+\s+pages",
+               " ", t, flags=re.I)
     t = re.sub(r"<[^>]+>", " ", t)
     t = html.unescape(t)
     return title, re.sub(r"\s+", " ", t).strip()
