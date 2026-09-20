@@ -797,7 +797,7 @@
    "state": "blocked",
    "owner": "Free State Archives, Bloemfontein",
    "since": "2026-09-16",
-   "note": "**This is now the most valuable unread document on the site.** Commandant **John Gerson Eliezar Kolbe**, the Settler’s eldest child, died at **Leeuwberg** on 3 April 1868 leaving **eight sons and four daughters**, and this archive can put a hand on two. Today three more Kolbes appeared in that exact country — **a man farming Leeuwberg in 1901**, **a Kolbe commando and a “General Kolbe” taken at Reddersburg in November 1901**, and **a G. A. Kolbe of Bethulie who was President of the Orange Free State Agricultural Association in 1914**. **None of them can be attached to anybody until the twelve children are named**, and the document that names them is her 1896 estate, filed under her second husband’s surname: **VAB MHG M777 — “MCCABE, ANNA JACOBA. NOOIENSVAN VAN DER MERWE. EGGENOTE JOHN GHERSON [KOLBE]”**. Beside it sits **VAB MHG K71**, the Commandant’s own. **VAB is Bloemfontein — a different building again from TAB, KAB and NAB**, so it is a fourth trip and cannot go on the Pretoria researcher’s list."
+   "note": "**This is now the most valuable unread document on the site.** Commandant **John Gerson Eliezar Kolbe**, the Settler’s eldest child, died at **Leeuwberg** on 3 April 1868 leaving **eight sons and four daughters**, and this archive can put a hand on two. Today three more Kolbes appeared in that exact country — **a man farming Leeuwberg in 1901**, **a Kolbe commando and a “General Kolbe” taken at Reddersburg in November 1901**, and **a G. A. Kolbe of Bethulie who was President of the Orange Free State Agricultural Association in 1914**. **None of them can be attached to anybody until the twelve children are named**, and the document that names them is her 1896 estate, filed under her second husband’s surname: **VAB MHG M777 — “MCCABE, ANNA JACOBA. NOOIENSVAN VAN DER MERWE. EGGENOTE JOHN GHERSON [KOLBE]”**. Beside it sits **VAB MHG K71**, the Commandant’s own. **VAB is Bloemfontein — a different building again from TAB, KAB and NAB**, so it is a fourth trip and cannot go on the Pretoria researcher’s list. **20 SEPTEMBER — AND NOW IT HAS SOMETHING TO BE CHECKED AGAINST.** A Geni profile for **Frederik Fortunatus Kolbe (b. 22 Oct 1857 Bloemfontein, d. 18 Dec 1930)** gives him as **son of Commandant.Gen. John Gherson Eliezer Kolbe and Anna Jacoba**, and names six of his siblings — Catharina Wilhelmina Magdalena Pienaar Anderson, **George Augustus**, **General Willem Johannes**, Jan Hendrik, Petrus Jacobus — *“and 6 others”*, which is twelve. **It is a collaborative tree with one source attached and it is not evidence.** But **two of its claims match documents this archive reached independently**: his wife **Maria Petronella Elizabeth Antoinette** and daughter **Rosa Magdalene** against the 1890 Bloemfontein baptism of Rosa Magdalena Kolbe to *Frederik Fortuna Kolbe and Maria Petronella Elizabeth Antoinetta McCabe*; and his daughter **Maria Margaretha Downing Rousseau** against **TAB MHG 5450/68**, an orphan index entry here. **A tree says twelve names; this estate file proves them.**"
   },
   {
    "n": 98,
@@ -1158,6 +1158,38 @@
    "owner": "this archive",
    "since": "2026-09-20",
    "note": "**The 15 September brief asked for six death notices “for the parents, the birthplace, the occupation and the list of children”. Since then the Dutch Reformed registers have delivered the parents of that whole generation**, so for several files the stated reason no longer stands. A quick audit: **Henry James Booyzen (MHG 10/57)** has his baptism, marriage, death, burial and a corrected cause — *low*. **Catharina Maria Sophia Daschner (MHG 3734/46)** has her baptism, her husband’s read estate and her grave; what is missing is her **exact death date** and her children in 1946 — *moderate*. **George Downing Mountjoy (MHG 1095/48)** has dates, burial, occupation and marriage; missing is his children — *moderate, and he is in the direct line*. **John Barry (MHG 769/52)** has a gravestone giving 26.4.1884–23.1.1952 and “aan ons vader”, and **not one child named** — *good*. **Gert Jacobus (MHG 5155/51)**, from the second marriage, is the thinnest — *good*. **MHG 52653** is a doubtful reference and expected to fail. **Nothing should be paid for on a reason that has already been answered elsewhere.**"
+  },
+  {
+   "n": 140,
+   "what": "Work the Geni tree of the Commandant’s family as a lead list — test, do not adopt",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**Twelve names for a household this archive has been unable to name since the Commandant’s obituary was read.** The rule is the one already written for Schoeman’s bibliography: **a list worth working is not a witness.** Nobody is entered here on a tree’s word. **Start with the two that are already half-proved** — Rosa Magdalene Kolbe (1890 Bloemfontein baptism, held) and Maria Margaretha Downing Rousseau (TAB MHG 5450/68, held) — and then **General Willem Johannes Kolbe**, because a general leaves a paper trail a farmer does not. **Beware the name collisions**: this Frederik Fortunatus (b. 1857 Bloemfontein, d. 1930) is a **fourth** man of the name, distinct from the Settler’s tenth child (1839 Bethulie – 1929 Utrecht) and from Frederick Fortunatus Downing Kolbe (d. 1918, TAB MHG 40293). **This archive withdrew a claim within the hour once before over two men sharing a name in one town.**"
+  },
+  {
+   "n": 141,
+   "what": "The Kolbe–McCabe “coincidence” may not be one — test it",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "This archive wrote of the 1890 Bloemfontein baptism: *“a second Kolbe–McCabe marriage in the same small Free State world, and this archive does not yet know whether that is a coincidence.”* **The Geni profile suggests it is not.** The Commandant’s widow **Anna Jacoba van der Merwe married Francis McCabe**, Landdrost of Bloemfontein, about April 1871; and her son **Frederik Fortunatus married Maria Petronella Elizabeth Antoinette McCabe**. **Stepmother and daughter-in-law out of the same family.** McCabe died in February 1872 leaving “four sons and two daughters, besides a large family of step-children” — **so the two households were one for eleven months, and a marriage between them afterwards is exactly what one would expect.** WHAT WOULD PROVE IT: the marriage record of Frederik Fortunatus Kolbe and Maria Petronella Elizabeth Antoinetta McCabe, and Francis McCabe’s own estate naming his children."
+  },
+  {
+   "n": 142,
+   "what": "Margaret Downing’s mother — a user tree says Mary King Pooley, and her death notice says nothing",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**The FamilySearch Family Tree gives Margaret Georgina Elizabeth Downing’s parents as JOHN PAUL DOWNING (1765–1839) and MARY KING POOLEY (1768–1834).** This archive has had a father’s name from the tree for a long time and **never a mother at all** — her 1867 Burgersdorp death notice answers the parents question with **“Both dead” and no names**. **FROM A USER TREE AND NOT ADOPTED.** But **“King” carried as a middle name is how a family carries a mother’s maiden name**, exactly as with Mary Ann Maria *Ford* Kolbe, so the name is structured like a real one. **A Downing–Pooley marriage in London in the 1790s would be a document**, and so would a baptism for Margaret in 1803 naming both parents. Look for both."
+  },
+  {
+   "n": 143,
+   "what": "Two trees give the Commandant’s son two birth years — 1857 and 1859",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "Geni gives **Frederik Fortunatus Kolbe born 22 October 1857 at Bloemfontein**; the FamilySearch Family Tree gives **1859**. Both agree he died in **1930**. **FROM USER TREES, NOT ADOPTED, and the disagreement is the useful part** — it shows the two are **not independent witnesses**. Where collaborative trees agree it may be because one copied the other; where they differ, neither settles anything. **The Bloemfontein baptism register would.** His own children are better documented than he is: **Rosa Magdalena, baptised Bloemfontein 1890**, is already held here."
   }
  ],
  "accounts": [
