@@ -1,6 +1,7 @@
 # Drafted — reply to Anne Brest, accepting her proposal
 
-**Status: DRAFTED, NOT SENT — 20 September 2026.** Sending is David's.
+**Status: SENT — 20 September 2026**, on David's instruction, as a reply on her thread.
+Gmail message id `1a0bdccfbbce6040`.
 **To:** `digitalphoto@icon.co.za` — reply on the same thread.
 
 **She is right twice, and one of them is my error, not David's.**
