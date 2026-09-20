@@ -513,6 +513,13 @@
    "NONE OF THEM. /sources/ published that table for five days, and FAMILYSEARCH IS CITED 7,276 TIMES ON THIS SITE. FamilySearch answers 403 — a bot check — and Kew and Edinburgh answer 200; all three were used from this desk on the day the table was found to be wrong. THE CAUSE: checkexternal.py identifies itself honestly as “TheBooyzenArchive”, and firewalls refuse unfamiliar user-agents at the connection, before any HTTP status exists — so the tool’s own sensible rule that 403 means GUARDED never ran, and a refused connection was written down as DOWN. THE FIX IS NOT TO DRESS UP AS A BROWSER. This archive identifies itself and will go on doing so. The fix is to stop calling a silence a death: there is now a state UNVERIFIED, kept apart from DARK, which means does not resolve in DNS and is the only state here that means gone. AFTER THE FIX: 27 up, 11 unverified, 5 mail-only, 4 dark, and NO HOST CLAIMED DOWN. The rule was on /method/ the whole time — a nil return is worthless without a control, and a refused connection is a nil return with no control.",
    "reasoning",
    "/sources/#shut"
+  ],
+  [
+   "21 Sep 2026",
+   "Commit d3828d3, “The tailor was right: it is James Hogg”, is a record of that afternoon’s work",
+   "IT IS A RECORD OF TWO SESSIONS’ WORK UNDER ONE SESSION’S MESSAGE. It was staged with `git add -A` scoped to three directories — which is still `-A` — while the landing-site session had staged surgically and was waiting on a build. **ALSO IN THAT COMMIT, AND NOT ITS AUTHOR’S:** GENERAL WILLEM JOHANNES KOLBE (1847–1941), who led the Bloemfontein commando, was made general at the siege of Kimberley and rode in De Wet’s Cape invasion — and whom this archive already held as one line in a prisoner list; the *Herinneringe van genl. W J Kolbe* memoir at the Free State Archives; the finding that the DSAB was terminated after Volume V in 1987, so Schoeman’s February 1992 draft was written for a series that had already stopped; the discovery that two sections of /documents/ shared the id `pow-1901` with fourteen links reaching the wrong one; and the `#pow-wo108` rename that fixed it. THE COMMIT IS NOT AMENDED. It is pushed, two sessions share this tree, and FORCE-PUSHING TO REWRITE SHARED HISTORY WOULD BE A WORSE FAULT THAN THE ONE IT CORRECTED. This archive records its mistakes rather than erasing them, and row 160 had already logged this hazard four times — every one of them pointing the other way.",
+   "process",
+   "/worklist/"
   ]
  ]
 }
