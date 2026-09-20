@@ -2437,7 +2437,7 @@
    "g": "FamilySearch Full-Text — four South African collections this archive had never opened",
    "n": "a name-indexed land register, and Booyzen in it",
    "d": "14 Sep 2026",
-   "h": "/documents/#pow-1901",
+   "h": "/documents/#pow-wo108",
    "rows": [
     [
      "Full-text search, q.text=Barry Kolbe, South Africa",
@@ -4037,7 +4037,7 @@
    "g": "FindMyPast — the Boer prisoner-of-war list, WO 108/368",
    "n": "the last FindMyPast item of the day",
    "d": "16 Sep 2026",
-   "h": "/documents/#pow-1901",
+   "h": "/documents/#pow-wo108",
    "rows": [
     [
      "Kolbe in Prisoners of War 1715–1945, South Africa",
@@ -4604,6 +4604,12 @@
      "NO — AND THE NEGATIVE IS CONTROLLED SIX WAYS",
      "The letter of 23 August 1830 says “the eldest, Miss Mary, THAT WAS, has married a MR BELLEW, A SURGEON”, so the marriage is before that date. FindMyPast, using the SpouseLastName filter with a nonsense-value control returning 0: FIELD × BELLEW RETURNS ONE RECORD IN THE WHOLE LIFE EVENTS COLLECTION AND IT IS 1854 AT STEPNEY — twenty-four years too late. Exact spellings BELLEW, BELLOW, BALLEW, BELEW, BELLEWE and BELLOWS, each against 1823–1835: ALL ZERO. Widened to 1814–1844: STILL ZERO. The variants engine is worse than useless — it collapses Bellew into Bell, Boyle and Balow and returns 1,724 rows. EITHER THE MARRIAGE IS OUTSIDE FINDMYPAST’S LONDON COVERAGE, OR A SEVENTY-YEAR-OLD MAN MISSPELLED A SURNAME HE HAD HEARD SPOKEN. The five friends named in that letter remain the only people in it this archive cannot reach.",
      "no"
+    ],
+    [
+     "The story from The Mirror — can it be found after all?",
+     "YES — AND IT IS BY JAMES HOGG",
+     "*The Mirror of Literature, Amusement, and Instruction*, VOLUME XIV (1829), pp. 313–318: “SPIRIT OF THE PUBLIC JOURNALS — A SINGULAR LETTER FROM SOUTHERN AFRICA. COMMUNICATED BY MR. HOGG, THE ETTRICK SHEPHERD.” Fiction, printed as a settler’s letter home, by the author of The Private Memoirs and Confessions of a Justified Sinner. Chief KAROO offers oxen and “a choice virgin to boot” for the wife; “he foretold I should repent it”; CAPTAIN JOHNSTONE and nine British soldiers; the wife carried across the river by “a band of pongos, (ourang-outangs)”; found as their QUEEN. FIVE EARLIER SEARCHES FAILED BECAUSE THEY HUNTED A SURNAME THAT DOES NOT EXIST — the narrator is anonymous and it is his SON who is called William. THE TAILOR WAS RIGHT: “here we look upon the Story as a fictious & romance”.",
+     "yes"
     ]
    ]
   },

@@ -326,7 +326,11 @@ def main():
     data_dir = os.path.join(ROOT, "site", "src", "data")
     srctext = ""
     for pat in ("site/src/**/*.astro", "site/src/**/*.js", "site/src/**/*.mjs",
-                "tools/*.py", "tools/*.mjs", "build.sh"):
+                "tools/*.py", "tools/*.mjs", "build.sh", "site/package.json",
+                # the shared kit's own checkers read data files too, and leaving
+                # them out of this scan reported a live file as unread within an
+                # hour of another session adding one.
+                "site/node_modules/@daviddef/archive-kit/kit/tools/*.py"):
         for fn in glob.glob(os.path.join(ROOT, pat), recursive=True):
             try:
                 srctext += open(fn, encoding="utf-8", errors="ignore").read()
