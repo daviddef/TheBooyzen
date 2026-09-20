@@ -21,6 +21,27 @@ Tuesday. Two to five business days is normal. **The visit was never going to be 
 this timeline, whatever the balance said.** That is worth saying to her, because it is true and
 it is nobody's fault.
 
+**The costing, for David's own reference — not part of the message.** Anne reprices by the
+work done, and the Kolbe file is not on Invoice 463 at all, so only she can give a real figure.
+From her own line items:
+
+| | Invoice 463 | Reduced set |
+|---|---|---|
+| MHG 1095/48 — George Downing Mountjoy | R2,850 *(first file, includes the drive)* | R2,850 |
+| MHG 5155/51 — Gert Jacobus | R1,500 | R1,500 |
+| MHG 40293 — Kolbe, 1918 | *not on the invoice* | R0 – R1,500 *(one page; she gave the Wear file free for being one page)* |
+| MHG 3734/46 — Daschner | R1,850 | **dropped** |
+| MHG 769/52 — John Barry | R1,850 | **dropped** |
+| MHG 10/57 — Henry James | R1,500 | **dropped** |
+| MHG 52653 — Jacobus Nichols | R1,850 | **dropped** |
+| MHG 10245/69 — Wear | free | free |
+| SA transaction deduction | R200 | R200 |
+| **TOTAL** | **R11,600** | **about R4,550 – R6,050** |
+
+At roughly **R11.6 to the Australian dollar**, that is about **A$1,000** against about
+**A$390 – A$520**. On top of either, David's own bank will add a transfer fee and an FX margin
+of typically three to five per cent — **her R200 covers the South African deduction only**.
+
 ---
 
 **Subject:** Re: Invoice 463 — I need to be straight with you before Tuesday
