@@ -28,9 +28,5 @@
    "why": "A different farm of the same name. The Friend of the Free State, 13 January 1870, puts the Kolbe Leeuberg elsewhere."
   }
  ],
- "skip": [
-  "searched.json",
-  "worklist.json"
- ],
- "skipNote": "THE DATED LOGS, AND THE REASON THEY ARE EXEMPT. /searched/ records what was asked on a date and what came back; the work list records what was believed when a row was written. Both still say MARTHA ANGELINE KOLBE WAS BURIED AT VOLKSRUST, which this archive withdrew on 14 September when her stone was found in Wakkerstroom Main Cemetery. **That is not a stale claim, it is an accurate record of a reading this archive held that week** — and a log edited whenever the belief changes is not a log, for the same reason a struck work-list row is struck and not deleted. The correction is published and linked; the log keeps what it said. Every other file must not state a withdrawn reading as fact."
+ "skipNote": "NO FILE IS EXEMPT, AND ONE WAS FOR AN HOUR. This archive first exempted /searched/ and the work list on the ground that a dated log records what was believed then and must not be edited now. **The Falco session, whose design this is, pushed back and was right.** The test is not *is this a log*, it is *would a reader act on this row today* — and a searched register is acted on precisely so nobody repeats a search, so exempting it removes the check from the page that most needs it. **The third option is the one both archives already use elsewhere: keep the withdrawn text and put the correction in the same row.** The history stays, the reader cannot act on the dead half, and the phrase is no longer stated as fact, which is the only thing this gate tests."
 }
