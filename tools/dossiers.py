@@ -94,13 +94,21 @@ def variants(p):
         if len(x.split()) < 2: continue
         if x in others: continue
         keep.append(x)
-    return sorted(set(keep), key=len, reverse=True)
+    # TOTAL ORDER, NOT JUST BY LENGTH. `keep` becomes a set, and CPython randomises
+    # string hashing per process, so set iteration order differs between runs. Sorting
+    # on length alone is stable but leaves ties in that arbitrary order - and because
+    # this list drives the ORDER OF MATCHING below, the excerpts in every dossier came
+    # out shuffled. Two runs over identical source produced ~30,000-line diffs for a
+    # few hundred real changes, which made `git diff --stat` useless for telling a real
+    # regeneration from a no-op. Breaking ties on the string itself fixes it.
+    return sorted(set(keep), key=lambda x: (-len(x), x))
 
 def fence(v):
     """The suffixes that must NOT follow variant `v`, because they would make it
     a different, longer-named person."""
     return sorted({o[len(v):] for o in ALLNAMES
-                   if o != v and o.startswith(v + " ")}, key=len, reverse=True)
+                   if o != v and o.startswith(v + " ")},
+                  key=lambda x: (-len(x), x))   # total order - see variants()
 
 SENT = re.compile(r"(?<=[.!?])\s+")
 def excerpt(text, i, j):
@@ -149,7 +157,7 @@ out = {
           "resolved individual — where two people share a name they share this page, and the archive says "
           "so rather than guessing. Nothing on a dossier page is new evidence; it is the same evidence, "
           "brought together."),
- "people": dossiers}
+ "people": dict(sorted(dossiers.items()))}   # by slug, so the file is diffable
 json.dump(out, open(os.path.join(DATA, "dossiers.json"), "w"), ensure_ascii=False, indent=1)
 # a variant claimed by two people is ambiguous — drop it rather than link it wrong
 owner = {}
@@ -161,7 +169,7 @@ for r in index:
     if r[0].lower() in seenv: continue
     seenv.add(r[0].lower()); uniq.append(r)
 index = uniq
-index.sort(key=lambda r: -len(r[0]))
+index.sort(key=lambda r: (-len(r[0]), r[0], r[1]))   # total order - see variants()
 json.dump(index, open("site/public/whoindex.json", "w"), ensure_ascii=False)
 print(f"{len(dossiers)} dossiers · {sum(v['mentions'] for v in dossiers.values())} mentions · {len(index)} auto-link names")
 for b in sorted(dossiers.values(), key=lambda v: -v["mentions"])[:8]:
