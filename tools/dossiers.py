@@ -31,6 +31,32 @@ TAG = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
 # carries it, headings and all.
 EXCERPT_P = re.compile(r'<p style="font-size:14\.5px;line-height:1\.66;margin:0">….*?…</p>', re.S)
 MENTION_BLK = re.compile(r'<section class="blk">.*?</section>', re.S)
+
+# THE ARCHIVE'S RECORDS ABOUT ITS OWN WORK, WHICH ARE NOT EVIDENCE ABOUT A PERSON.
+# A dossier and a name-fold want opposite things out of this one file. For a reader,
+# somebody discussed on /changes/ genuinely is discussed there and the excerpt is
+# honest. For namefold's corpus - which reads dossiers.json, and is the ONLY path
+# from page prose to the fold - that is the archive writing ABOUT a name, which is
+# precisely the standing its NARRATIVE deny-list exists to refuse. The deny-list
+# excludes worklist.json, searched.json and corrections.json by filename, and then
+# the pages built from them were scraped and the same prose walked back in.
+#
+# MEASURED BEFORE CUTTING: 330 of 5,864 excerpts, 5.6%, across 128 of 347 people.
+# NOBODY IS ORPHANED - not one page becomes "not yet discussed on any page", which
+# is the failure this tool has already caused once. Largest single loss is
+# james-mountjoy, 9 of 23.
+#
+# /corrections/ goes with the rest, and it is the one worth arguing over. That a
+# person's record was withdrawn IS something a reader should meet - but as a link
+# the page carries deliberately, not as a quotation lifted out of the register by a
+# scraper that cannot tell a correction from a mention. Harvesting a withdrawn
+# reading as though it were a finding is what check:retired exists to catch.
+#
+# /disputed/ and /name/ are deliberately NOT here. They read as registers but they
+# are substantive: "The Name" is the surname's own history, and "Disputed" is about
+# contested facts concerning people rather than about this archive's working.
+NARRATIVE = ("/changes/", "/corrections/", "/open-questions/", "/method/",
+             "/letters/", "/searched/", "/worklist/", "/research-log/", "/errands/")
 def page_text(p):
     t = open(p, encoding="utf-8").read()
     title = (re.search(r"<title>(.*?)</title>", t, re.S) or [None, ""])[1]
@@ -94,7 +120,7 @@ def page_text(p):
 pages = {}
 for f in glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True):
     route = f[len(DIST):-len("index.html")] or "/"
-    if route.startswith("/who/") or route.startswith("/places/"):
+    if route.startswith("/who/") or route.startswith("/places/") or route in NARRATIVE:
         continue
     title, text = page_text(f)
     pages[route] = {"title": title or route, "text": text}
