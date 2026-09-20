@@ -141,6 +141,21 @@ set of a few hundred rows can then be swept in a single call.
 `YearOfDeath`, `KeywordsPlace`, `Keywords`, `DatasetName`, `Regiment`,
 `SourceCategory`, `MotherLastName`.
 
+**Added 20 September 2026, after a marriage sweep.** Two more, both tested with a
+nonsense value first:
+
+* **`Keywords` FILTERS** — it is not like `KeywordsPlace`. `LastName=downing` with
+  `Keywords=zqxwvkj` returns 0 where the same search without it returns 231,425.
+  **But it matches place names as well as names**: `Keywords=king` for 1790–1806
+  returns 144 records and nearly all of them are *King's Lynn*. A surname that is
+  also half a place-name is useless in this field.
+* **`SpouseLastName` FILTERS, and it is the right tool for a marriage.** It is not
+  in the list above because nothing had needed it; the field exists on every
+  marriage transcript beside `SpouseFirstName`. `LastName=downing` +
+  `SpouseLastName=pooley` returns exactly the three indexed Downing–Pooley
+  marriages in the whole collection; a nonsense spouse returns 0. It is immune to
+  the King's Lynn problem.
+
 **Two traps, and both of them nearly produced a wrong answer on the first day.**
 
 1. **`KeywordsPlace` and `YearOfBirth` are scored, not filtered.** They rank the

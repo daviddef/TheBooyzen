@@ -5668,6 +5668,90 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     Armes</i> (1985)</b>, which is the only authority behind the Bethanie claim &mdash; so that the
     entry and the encyclopaedia article that repeats it are <b>one witness, not two</b>.</p>
 
+  <h2 id="downing-pooley">Looking for a Downing&ndash;Pooley marriage &mdash; and finding that two trees cannot agree what she was called</h2>
+  <p class="dek">The FamilySearch tree gave Margaret Downing&rsquo;s mother as <b>Mary King Pooley</b>, a
+    name this archive had never held. <b>The obvious thing to do with a new name is look for a marriage
+    under it</b>, so FindMyPast&rsquo;s whole Life Events collection was swept for one.</p>
+
+  <div class="panel" style="margin-top:18px">
+    <p class="m" style="font-size:14px;line-height:1.95"><b>Devon Marriages And Banns</b> &middot;
+      <span class="m">GBPRS/M/514168016/1</span><br />
+      <b>John DOWNING</b> married <b>Mary POOLEY</b><br />
+      <b>10 May 1802</b> &middot; <b>Welcombe (Bishop&rsquo;s Transcripts), Devon</b> &middot; Anglican<br />
+      Transcriptions &copy; Devon Family History Society</p>
+    <p class="cap" style="margin-top:10px"><b>It is the only Downing&ndash;Pooley marriage before civil
+      registration in the entire collection</b> &mdash; against 231,425 Downing records and 65,460
+      Pooley records. Twelve records match the pair at all; three are indexed marriages, and the other
+      two are 1882 and 1955.</p>
+  </div>
+
+  <h3 style="margin-top:26px">What is for it</h3>
+  <ul style="margin-top:10px">
+    <li><b>The date works, and only just.</b> Margaret Georgina Elizabeth Downing was born
+      <b>23 February 1803</b>. A marriage on <b>10 May 1802</b> is <b>nine months and thirteen days</b>
+      earlier &mdash; exactly right for a first child.</li>
+    <li><b>The county is the right one.</b> This archive&rsquo;s own family tree puts the Downings in
+      <b>Devon</b>: Edward Downing (1700&ndash;1792) m. Mary <b>Heard</b>; Thomas Downing
+      (1736&ndash;1801) m. Mary <b>Trick</b>; John Trick m. Margaret <b>Hooper</b>. <b>Trick, Heard and
+      Hooper are Devon names, and Welcombe is a North Devon parish on the Cornish border.</b> The tree
+      and the register agree about the county without either knowing about the other.</li>
+  </ul>
+
+  <h3 style="margin-top:22px">What is against it</h3>
+  <ul style="margin-top:10px">
+    <li><b>Margaret was born in London.</b> A couple married in a remote North Devon parish in May 1802
+      with a child in London nine months later is possible &mdash; people move &mdash; but it is not
+      what the record says, and nothing here shows them moving.</li>
+    <li><b>John Downing and Mary Pooley are not rare names</b>, and this is a name match and a date.
+      <b>It is what this archive calls a candidate, not a finding.</b></li>
+    <li><b>No baptism has been found</b> for Margaret Downing in London in 1803. The collection was
+      searched and returns nothing of the kind &mdash; which matters, because <b>a baptism naming both
+      parents is the document that would settle this outright</b>, and its absence is why the marriage
+      cannot be tied to her.</li>
+  </ul>
+
+  <div class="note" style="margin-top:18px">
+    <p><b>And then the archive&rsquo;s own tree contradicted the one that started this.</b> The
+      FamilySearch Family Tree calls her <b>Mary King Pooley</b>. The family tree this archive was built
+      from calls her <b>Mary P King</b> &mdash; <b>surname King, with an initial</b>.</p>
+    <p style="margin-top:12px"><b>So the &ldquo;P&rdquo; may be Pooley, or &ldquo;Pooley&rdquo; may be a
+      later reading of the &ldquo;P&rdquo;.</b> Two collaborative trees, one woman, and they cannot agree
+      whether she was a King or a Pooley. <b>Neither can settle it, and the search that was launched on
+      one of them was looking for a surname that may not be hers.</b></p>
+    <p style="margin-top:12px">They disagree about her husband too: <b>John Paul Downing</b> is
+      <b>1769&ndash;1839</b> in one and <b>1765&ndash;1839</b> in the other.</p>
+  </div>
+
+  <h3 style="margin-top:26px">So the other surname was swept too &mdash; and a better tool was found</h3>
+  <p>If she may have been a <b>King</b> rather than a Pooley, the same sweep had to be run under King.
+    <b>Searching for &ldquo;king&rdquo; as a keyword returns 144 records for 1790&ndash;1806 and almost
+    every one of them is <em>King&rsquo;s Lynn</em></b> &mdash; a surname that is also half a place-name
+    poisons the field completely.</p>
+  <p style="margin-top:14px">The marriage transcripts carry <span class="m">SpouseFirstName</span> and
+    <span class="m">SpouseLastName</span>, and <b>SpouseLastName turns out to work as a real filter</b>
+    &mdash; a nonsense value returns nothing, which is the test this archive insists on before trusting
+    a narrow count. Run properly:</p>
+  <div class="scroll" style="margin-top:14px">
+    <table>
+      <tbody>
+        <tr><td style="width:17rem"><b>Downing &times; Pooley</b>, all years</td><td><b>3</b> &mdash; Welcombe 1802, Penzance 1882, Birmingham 1955</td></tr>
+        <tr><td><b>Downing &times; King</b>, 1790&ndash;1806</td><td><b>3</b> &mdash; and all three are one Norfolk event indexed three times: a <b>Mary Downing</b>, at King&rsquo;s Lynn and Norwich in <b>1790</b></td></tr>
+        <tr><td>either surname, nonsense control</td><td><b>0</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="cap" style="margin-top:10px"><b>A Mary Downing marrying a King in Norfolk in 1790 is the
+    wrong person in the wrong county in the wrong direction.</b> Under either surname, <b>there is no
+    London marriage for a John Downing in the years this family needs</b>. The Welcombe entry of 1802
+    remains the only candidate in England.</p>
+
+  <p class="note" style="margin-top:16px"><b>Her own death notice is still the only document in this
+    archive that was ever asked about her parents, and it answered &ldquo;Both dead&rdquo; and gave no
+    names.</b> That remains the position. <b>A Welcombe marriage of 1802 is now on the work list as a
+    candidate to be tested</b> &mdash; by the Welcombe register itself, by a London baptism for Margaret
+    in 1803, or by a burial for a Mary Downing at the right date. <b>Nothing has been adopted, and the
+    person record still has no mother.</b> <span class="chip open">candidate</span></p>
+
   <h2 id="geni-commandant">A collaborative tree names the Commandant&rsquo;s twelve &mdash; and two of its claims are already on this site</h2>
   <p class="dek">This archive does not take family trees as evidence, and it is not about to start.
     <b>But there is a difference between a tree that is your own work read back to you and a tree

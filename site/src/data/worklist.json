@@ -1181,7 +1181,7 @@
    "state": "next",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "**The FamilySearch Family Tree gives Margaret Georgina Elizabeth Downing’s parents as JOHN PAUL DOWNING (1765–1839) and MARY KING POOLEY (1768–1834).** This archive has had a father’s name from the tree for a long time and **never a mother at all** — her 1867 Burgersdorp death notice answers the parents question with **“Both dead” and no names**. **FROM A USER TREE AND NOT ADOPTED.** But **“King” carried as a middle name is how a family carries a mother’s maiden name**, exactly as with Mary Ann Maria *Ford* Kolbe, so the name is structured like a real one. **A Downing–Pooley marriage in London in the 1790s would be a document**, and so would a baptism for Margaret in 1803 naming both parents. Look for both."
+   "note": "**The FamilySearch Family Tree gives Margaret Georgina Elizabeth Downing’s parents as JOHN PAUL DOWNING (1765–1839) and MARY KING POOLEY (1768–1834).** This archive has had a father’s name from the tree for a long time and **never a mother at all** — her 1867 Burgersdorp death notice answers the parents question with **“Both dead” and no names**. **FROM A USER TREE AND NOT ADOPTED.** But **“King” carried as a middle name is how a family carries a mother’s maiden name**, exactly as with Mary Ann Maria *Ford* Kolbe, so the name is structured like a real one. **A Downing–Pooley marriage in London in the 1790s would be a document**, and so would a baptism for Margaret in 1803 naming both parents. Look for both. **20 SEPTEMBER, SEARCHED — AND THE PREMISE WOBBLED.** FindMyPast’s Life Events collection holds **exactly one Downing–Pooley marriage before civil registration**: **JOHN DOWNING m. MARY POOLEY, 10 MAY 1802, WELCOMBE (Bishop’s Transcripts), DEVON** — nine months and thirteen days before Margaret’s birth, and in the county this archive’s own tree puts the Downings in (Trick, Heard, Hooper). **But Margaret was born in LONDON, no 1803 London baptism for her can be found, and the two trees disagree about the woman’s surname** — FamilySearch says **Mary King Pooley**, this archive’s own tree says **Mary P King**. **The “P” may be Pooley, or Pooley may be a reading of the “P”.** A candidate, not a finding; nothing adopted."
   },
   {
    "n": 143,
@@ -1190,6 +1190,22 @@
    "owner": "this archive",
    "since": "2026-09-20",
    "note": "Geni gives **Frederik Fortunatus Kolbe born 22 October 1857 at Bloemfontein**; the FamilySearch Family Tree gives **1859**. Both agree he died in **1930**. **FROM USER TREES, NOT ADOPTED, and the disagreement is the useful part** — it shows the two are **not independent witnesses**. Where collaborative trees agree it may be because one copied the other; where they differ, neither settles anything. **The Bloemfontein baptism register would.** His own children are better documented than he is: **Rosa Magdalena, baptised Bloemfontein 1890**, is already held here."
+  },
+  {
+   "n": 144,
+   "what": "Test the Welcombe marriage of 10 May 1802 — or rule it out",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**Three ways to settle it, in order of decisiveness.** (1) **A London baptism for Margaret Georgina Elizabeth Downing in 1803** naming both parents — not found on FindMyPast, so try the London Metropolitan Archives registers and the Westminster sets this archive already used for the Kolbe baptisms. (2) **The Welcombe register itself** rather than the bishop’s transcript — it may give ages, conditions, fathers or witnesses, and the Devon Heritage Centre holds it. (3) **A burial for Mary Downing about 1834**, the year both trees give her. **If the Welcombe couple stayed in Devon, they are not this couple**, and ruling it out is as useful as confirming it."
+  },
+  {
+   "n": 145,
+   "what": "Decide what this woman’s surname actually was — King or Pooley",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**Two user trees, one woman, two surnames.** The FamilySearch Family Tree: **Mary King Pooley (1768–1834)**. The tree this archive was built from: **Mary P King (1768–1834)**. Same years, different surname — which means **at least one of them has parsed a name wrongly**, and it is probably an initial being expanded or a surname being demoted. **FROM USER TREES AND NOT ADOPTED.** The whole Pooley search rests on this being right, so it should be settled before more time goes into it. **The document is Margaret’s 1803 baptism, or her parents’ marriage under either name.** Note that a Downing–KING marriage has not yet been searched at all, and that is the obvious next sweep."
   }
  ],
  "accounts": [

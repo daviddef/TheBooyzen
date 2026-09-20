@@ -4900,6 +4900,56 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "FindMyPast swept for a Downing–Pooley marriage",
+   "n": "a name off a user tree, taken to the index the same afternoon",
+   "d": "20 Sep 2026",
+   "h": "/documents/#downing-pooley",
+   "rows": [
+    [
+     "Is there a Downing–Pooley marriage before civil registration?",
+     "YES — EXACTLY ONE, AND IT IS IN DEVON",
+     "JOHN DOWNING married MARY POOLEY, 10 MAY 1802, WELCOMBE (BISHOP’S TRANSCRIPTS), DEVON, Anglican — Devon Marriages and Banns, GBPRS/M/514168016/1, transcribed by the Devon Family History Society. Against 231,425 Downing records and 65,460 Pooley records in the Life Events collection, TWELVE match the pair at all, of which three are indexed marriages and the other two are 1882 and 1955. THE DATE IS NINE MONTHS AND THIRTEEN DAYS BEFORE MARGARET DOWNING’S BIRTH ON 23 FEBRUARY 1803.",
+     "yes"
+    ],
+    [
+     "Does the county fit?",
+     "YES, AND FROM A DIRECTION THAT KNEW NOTHING ABOUT IT",
+     "This archive’s own family tree puts the Downings in DEVON — Edward Downing m. Mary HEARD, Thomas Downing m. Mary TRICK, John Trick m. Margaret HOOPER. Trick, Heard and Hooper are Devon names and WELCOMBE IS A NORTH DEVON PARISH ON THE CORNISH BORDER. The tree and the register agree about the county independently.",
+     "yes"
+    ],
+    [
+     "Can it be tied to Margaret Downing?",
+     "NO — AND THE DOCUMENT THAT WOULD DO IT IS NOT THERE",
+     "SHE WAS BORN IN LONDON. A couple married in a remote North Devon parish with a child in London nine months later is possible and is not shown. NO BAPTISM FOR MARGARET DOWNING IN LONDON IN 1803 WAS FOUND — the collection was searched by name and year and returns nothing of the kind. A baptism naming both parents is what would settle it. THIS IS A CANDIDATE AND NOT A FINDING.",
+     "part"
+    ],
+    [
+     "Was the name that launched the search even right?",
+     "THE TWO TREES DO NOT AGREE",
+     "The FamilySearch Family Tree calls her MARY KING POOLEY. The family tree this archive was built from calls her MARY P KING — SURNAME KING, WITH AN INITIAL. So the “P” may be Pooley, or “Pooley” may be somebody’s later reading of the “P”. THE SEARCH MAY HAVE BEEN LOOKING FOR A SURNAME THAT IS NOT HERS. They differ on her husband too: John Paul Downing is 1769–1839 in one and 1765–1839 in the other. HER OWN DEATH NOTICE, THE ONLY DOCUMENT EVER ASKED, SAYS “BOTH DEAD” AND NAMES NEITHER PARENT.",
+     "no"
+    ],
+    [
+     "Does the FindMyPast `Keywords` filter actually filter?",
+     "YES — TESTED WITH A NONSENSE VALUE",
+     "The driver notes record that KeywordsPlace and YearOfBirth are SCORED and do not restrict. Keywords had never been tested. LastName=downing with Keywords=zqxwvkj returns 0 where the same search without it returns 231,425, and with Keywords=pooley returns 12. KEYWORDS FILTERS. Added to the driver note, because a filter that only ranks is how a nil return becomes a lie.",
+     "yes"
+    ],
+    [
+     "And under KING, the other surname the trees give her?",
+     "NOTHING THAT FITS — AND THE KEYWORD FIELD IS POISONED",
+     "“King” as a keyword returns 144 records for 1790–1806 and ALMOST EVERY ONE IS KING’S LYNN. A surname that is also half a place-name destroys the field. Run properly on SpouseLastName, DOWNING × KING for 1790–1806 RETURNS THREE RECORDS AND THEY ARE ONE NORFOLK EVENT INDEXED THREE TIMES — a MARY DOWNING at King’s Lynn and Norwich in 1790. Wrong person, wrong county, wrong direction. UNDER EITHER SURNAME THERE IS NO LONDON MARRIAGE FOR A JOHN DOWNING in the years this family needs.",
+     "no"
+    ],
+    [
+     "Is there a better filter field than Keywords for a marriage?",
+     "YES — SpouseLastName, AND IT IS NOT IN THE DRIVER NOTES",
+     "The marriage transcripts carry SpouseFirstName and SpouseLastName as fieldIds, and SpouseLastName WORKS AS A FILTER: a nonsense value returns 0, “pooley” returns exactly the three indexed Downing–Pooley marriages. IT IS THE RIGHT TOOL FOR A MARRIAGE SEARCH and it is immune to the King’s Lynn problem. Added to the driver note in notes/for-the-estate.md, along with the finding that KEYWORDS FILTERS where KeywordsPlace only scores.",
+     "yes"
+    ]
+   ]
   }
  ]
 }
