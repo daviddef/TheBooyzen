@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --port 4324",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run atlas && astro build && npm run sitemap && npm run check:living && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:worklist && npm run check:covers",
+    "build": "npm run atlas && npm run ra && astro build && npm run sitemap && npm run check:living && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:worklist && npm run check:covers",
     "build:pages": "npm run atlas && astro build && npm run sitemap",
     "preview": "astro preview --port 4324",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
@@ -16,10 +16,11 @@
     "check:covers": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkcovers.py --root .",
     "check:evidence": "python3 ../tools/checkevidence.py --dist dist --data src/data",
     "check:corrections": "python3 ../tools/correctionswho.py --check",
-    "check:places": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkplaces.py --data public/atlas-data.json"
+    "check:places": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkplaces.py --data public/atlas-data.json",
+    "ra": "python3 node_modules/@daviddef/archive-kit/kit/tools/recordatlas.py --data public/atlas-data.json --gazetteer '../../The Geneology Map/site/src/data/places-full.json'"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#6d025ff2daa60e64728db5845101de042671fd4b",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#4a673f09ecc9ea916e4e1e9e163bf29f11cc0cc9",
     "astro": "^5.18.2"
   }
 }
