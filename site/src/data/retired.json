@@ -1,0 +1,36 @@
+{
+ "note": "READINGS THIS ARCHIVE HAS WITHDRAWN, and which must not be stated as fact anywhere in its data. Checked by the kit's checkretired.py, designed in the Falco archive. The rule that makes it work: a retired phrase is THIS ARCHIVE'S OWN WORDING, never a document's, so an unquoted hit is a claim and a quoted one is a quotation. A retired SURNAME could not be checked this way — the documents contain it.",
+ "mark": [
+  [
+   "“",
+   "”"
+  ],
+  [
+   "«",
+   "»"
+  ]
+ ],
+ "markNote": "This archive quotes a dead reading in curly double quotes, as its corrections register already does; guillemets are accepted too because the kit's tool was written against an archive that uses them.",
+ "phrases": [
+  {
+   "phrase": "national.archives.gov.za/naairs.htm",
+   "since": "2026-09-15",
+   "why": "The live domain has no dot in it — nationalarchives.gov.za. The host as published has no address record and no mail record at all, so a reader following it reached nothing."
+  },
+  {
+   "phrase": "BURIED AT VOLKSRUST",
+   "since": "2026-09-14",
+   "why": "Withdrawn six hours after publishing. Martha Angeline Kolbe's stone is in WAKKERSTROOM MAIN CEMETERY. The index gave the district, not the grave, and the archive read a concentration camp into it."
+  },
+  {
+   "phrase": "Leeuwberg pinned at FAURESMITH",
+   "since": "2026-09-15",
+   "why": "A different farm of the same name. The Friend of the Free State, 13 January 1870, puts the Kolbe Leeuberg elsewhere."
+  }
+ ],
+ "skip": [
+  "searched.json",
+  "worklist.json"
+ ],
+ "skipNote": "THE DATED LOGS, AND THE REASON THEY ARE EXEMPT. /searched/ records what was asked on a date and what came back; the work list records what was believed when a row was written. Both still say MARTHA ANGELINE KOLBE WAS BURIED AT VOLKSRUST, which this archive withdrew on 14 September when her stone was found in Wakkerstroom Main Cemetery. **That is not a stale claim, it is an accurate record of a reading this archive held that week** — and a log edited whenever the belief changes is not a log, for the same reason a struck work-list row is struck and not deleted. The correction is published and linked; the log keeps what it said. Every other file must not state a withdrawn reading as fact."
+}

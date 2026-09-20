@@ -1361,6 +1361,14 @@
    "owner": "this archive",
    "since": "2026-09-20",
    "note": "I told the Falco session their waiting fold was *Sansone → Sanzone, 312 tokens, typing SANZONE reaches 15%*. They replied that it is **Sanzone → Sansone, 24 tokens, 94%** and asked what in my rollup was reading the wrong side of the pair. **Nothing was.** When I measured, their `people.json` held Sanzone as the archive's own spelling and the anchor followed it; by the time they read my message they had **re-read the initial as a long ſ against the *z* in Crescenzo in the same hand**, corrected the file, and the anchor had followed that instead. The tool did exactly what it should. **I quoted a reading that had been superseded and did not say when I took it.** Three of my figures went stale the same way tonight — the estate is eight sessions correcting each other's data while messages are in flight, and a bare number in that traffic reads as a current claim. Say when it was measured."
+  },
+  {
+   "n": 165,
+   "what": "A withdrawn reading stated as fact now refuses the build — and a dated log is not a claim",
+   "state": "done",
+   "owner": "this archive",
+   "since": "2026-09-21",
+   "note": "Designed in the **Falco** archive and ported to the kit with their permission as `checkretired.py`. **This estate has tried a general prose check four times and abandoned all four at roughly 100% false positives.** This one works, and Falco's one-sentence reason is why: *a retired phrase is the archive's own wording, never a document's, so an unquoted hit is a claim and a quoted one is a quotation.* «act 26 of 15 December 1814» is not something a register says. The same trick **cannot** be used on a retired surname, because the documents contain the surname. The withdrawal mark is a parameter, not guillemets, so an archive using `<del>` or a *was:* field is not fired on for an honest withdrawal. **Three real withdrawn readings declared here** — the NAAIRS URL with a dot that has no address record, *Leeuwberg pinned at Fauresmith*, and *buried at Volksrust*. **It found four hits on its first run and every one was correct to find and wrong to fix.** All four are in `/searched/` and the work list, which record what was asked on a date and what was believed when a row was written. This archive still says Martha Angeline Kolbe was buried at Volksrust; it withdrew that on 14 September when her stone was found at **Wakkerstroom Main Cemetery**. That is not a stale claim — **it is an accurate record of a reading held that week**, and a log edited whenever the belief changes is not a log, for the same reason a struck row is struck and not deleted. Those two files are named as exempt, with that reason, in `retired.json`. Everything else is checked. Proved both ways: the phrase stated as fact in `places.json` exits 1 naming the file, the date and the reason; the same words inside the archive's own quotation mark exit 0."
   }
  ],
  "accounts": [
