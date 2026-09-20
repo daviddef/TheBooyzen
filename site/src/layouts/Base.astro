@@ -6,6 +6,24 @@ const v = versioner();
 import { u } from "../lib/url.js";
 import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
+import pjLiving from "../data/people.json";
+/* THE MOST-PUBLISHED SENTENCE IN THIS ARCHIVE, AND IT WAS ASSERTED.
+ *
+ * The footer says on 797 pages that this archive holds no living person. It
+ * was true when written and true today, and nothing whatever was checking it:
+ * the day somebody adds a living person the claim becomes false everywhere at
+ * once, in the one place nobody re-reads. /about promises that «what it holds
+ * is counted from its own data, not asserted», and the footer was the
+ * exception to that promise.
+ *
+ * The D'Arcy session found the same sentence wrong on all 874 of its pages
+ * while its own living.json recorded the exception honestly, and its lesson is
+ * the one that sent me here: correcting the instance you were shown is not the
+ * same as correcting the claim, and a layout is where the claim hides.
+ *
+ * Counted now. If this archive ever holds one, the footer says so by itself. */
+const nLiving = pjLiving.people.filter(
+  (p) => p.living === true || String(p.conf || "").toLowerCase() === "living").length;
 import SocialHead from "@daviddef/archive-kit/components/SocialHead.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
@@ -103,7 +121,7 @@ const thisArchive = ring.archives.find(
   <div class="wrap">
     <SiblingArchives />
     <p class="foot">An evidence-first family archive for the Booyzen family — of Graaff-Reinet and Cradock,
-    of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. <strong>Living people are named</strong> — name and relationship only, never a date, a place, a photograph or a record. <strong>This archive currently holds none.</strong></p>
+    of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. <strong>Living people are named</strong> — name and relationship only, never a date, a place, a photograph or a record. <strong>{nLiving === 0 ? "This archive holds none." : nLiving === 1 ? "One person here is living." : nLiving + " people here are living."}</strong></p>
     <p class="foot dim">Built {new Date().getFullYear()} ·
       <a href={u("/sources/")}>Sources</a> ·
       <a href={u("/method/")}>Method</a> ·
