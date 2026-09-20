@@ -19,7 +19,7 @@
     "check:places": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkplaces.py --data public/atlas-data.json"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#8cd250f08dc46e7ff2d25387b8214dfdb99ed13d",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#6d025ff2daa60e64728db5845101de042671fd4b",
     "astro": "^5.18.2"
   }
 }
