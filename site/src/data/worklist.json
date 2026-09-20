@@ -1305,6 +1305,14 @@
    "owner": "David",
    "since": "2026-09-20",
    "note": "**The only real gap the audit could not close itself.** 36 pages, 4 components and 1 layout, and **nothing type-checks any of them**. `npx astro check` offers to install **`@astrojs/check` and `typescript`**, and `devDependencies` is currently empty — **so this is a decision about adding two dev dependencies to the project, which is David’s and not mine to take.** **Why it is worth taking:** every gate on this site checks DATA. Nothing checks the templates that render it. A mistyped prop or a renamed field would still build, and would fail silently in exactly the way this archive has now been caught by three times in four days. One `npm i -D @astrojs/check typescript` and one line in the build script."
+  },
+  {
+   "n": 158,
+   "what": "A correctly-placed pin with nobody on it is worse than a pin in the wrong country",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "Raised by the Defranceschi session on 20 September, out of fixing the eight misplaced pins the kit's new `checkplaces.py` found. **Pinning a place by hand only keeps its people if the pinned name keeps the same `head()` — the part before the first comma — as the string the roster attaches on.** So *Dolo, Venezia* works and *Dolo Veneto* would not have: the pin lands in the right field in Italy and **every person silently falls off it**. That failure is worse than the one just fixed, because a wrong pin looks wrong to anybody who knows the geography and an empty right pin looks perfect. They caught it by checking counts after every rebuild — 3, 2, 1, 1, 1, all retained — which is a discipline and not a gate. **The gate-shaped version is a baseline diff: refuse when a rebuild drops a place's attached people.** Not built, because it needs a stored baseline and a decision about what a legitimate drop looks like, and that is design work with the asking archive absent. Recorded so it is not lost."
   }
  ],
  "accounts": [
