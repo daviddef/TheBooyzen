@@ -5106,6 +5106,32 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "Casmier and Rector — testing the two names the 2012 compiled report has and this archive does not",
+   "n": "every route to a register was shut, and the one result that looked like a negative was an endpoint that does not exist",
+   "d": "21 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "Is there a baptism for JOHAN CASMIER KOLBE, listed ninth of the Settler's thirteen children?",
+     "NOT ANSWERED — NO REGISTER WAS REACHED",
+     "**Nothing was searched, because nothing could be.** The registers that would settle it are on FamilySearch, and FamilySearch answered the search URL with **its sign-in page**. This archive does not enter credentials. **No negative is recorded against the name**, because no search of any register happened — see the row below for what this nearly became. **WHAT WOULD UNBLOCK IT:** David signed in, or **row 93's FamilySearch affiliate library**, which is already open for a different film.",
+     "blocked"
+    ],
+    [
+     "Are PETER RECTOR KOLBE and BENJAMIN KOLBE two children, or one Peter Benjamin split in two?",
+     "NOT ANSWERED — AND THE TREES THAT REPEAT IT ARE SHUT TOO",
+     "**The paper that settles it is a baptism, and no register was reached.** The compiled report is not an independent witness to itself, so the question was put to **Geni**, which holds a George Augustus Kolbe page — **Geni serves nothing to a fetch and nothing to a browser here**, returning an empty body both ways. **eGGSA's gravestone library** — this archive's usual free route, and a gravestone naming a Rector in that generation would answer it as well as a baptism — **refused navigation outright**. So all three routes were shut, and none of them shut in a way that says anything about the names.",
+     "blocked"
+    ],
+    [
+     "Does “Rector Kolbe”, “Casmier Kolbe” or “Peter Benjamin Kolbe” appear in any digitised text on archive.org?",
+     "NO RESULT, AND IT IS NOT A NEGATIVE — THE ENDPOINT DOES NOT EXIST",
+     "**This is the trap this archive logged in row 132 and it caught the archive again within the day.** Three full-text queries returned **empty bodies**, which reads exactly like three nil returns. **A control was run before any of it was believed, and the control is the only reason this row is not a published negative.** `ia-pub-fts-api.archive.org` and `ia-fts.archive.org` both answer **HTTP 000 — no connection at all**, and the newer `services/search/beta/page_production/scrape.json` answers **HTTP 404**. Meanwhile `archive.org/advancedsearch.php` answers **HTTP 200 with 3,383 bytes** and `archive.org/download` answers **302**, so **the host is reachable and it is the full-text API that is gone**. **Archive.org's full text is no longer searchable by API from here**; it can still be searched by downloading a known item and grepping it, which is what worked for *The Mirror*. **A search you could not run is not a search that found nothing**, and the difference is one control.",
+     "void"
+    ]
+   ]
   }
  ]
 }
