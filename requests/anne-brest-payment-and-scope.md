@@ -30,8 +30,8 @@ Dear Anne,
 Thank you for the invoice and for making the arrangements — and I am sorry, because I have to
 go back on something I said.
 
-When I wrote on the 16th I said I would pay straight away, and I have let that sit too long
-without coming back to you.
+When I wrote on the 16th I said I would pay straight away. Four days have gone by and I have
+not, and you should not have had to ask.
 
 **Two things, and the first one is simply arithmetic.** Your invoice says Remitly, Wise and
 PayPal are not accepted, so this has to come as a bank transfer from Australia — and an
@@ -56,9 +56,9 @@ exactly as planned. Nothing about the list changes.
 **2. Keep Tuesday, and I pay on delivery.** If you would rather not lose the day, I am happy
 for you to go on Tuesday and for me to transfer on **[DATE]** as soon as the files are done —
 or, if you would prefer not to work unpaid, to do a **reduced set** on Tuesday and invoice me
-for that alone. I know the first file
-carries the travel, so this may not save as much as it looks, and if it does not work for you
-please just say so. If it does, the ones I would keep are:
+for that alone. I know the first file carries the travel, so a smaller set may not save as much
+as it looks — and if neither of those suits you, please just say so. If a reduced set does
+work, the three I would keep are:
 
 - **TAB MHG 40293 — KOLBE, Frederick Fortunatus Downing, 1918** — death notice only, and I
   believe a single page
