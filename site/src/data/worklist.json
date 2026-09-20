@@ -1257,6 +1257,30 @@
    "owner": "this archive",
    "since": "2026-09-20",
    "note": "**STRUCK WITHIN THE HOUR OF BEING RAISED, AND THE REASON IS THE POINT.** This row was created on the finding that only one of 1,131 Downing baptisms for 1800–1806 is in London, read as a coverage failure. **The control was wrong.** Counting one surname by county tests where the Downings were, not whether the index reaches London. **Of 100 SMITH baptisms in the same window, thirty-seven are London, Middlesex or Westminster.** The coverage is excellent, no class of negative is invalidated, and nothing needs re-checking. **The missing baptism is a real negative and it now argues that the family was not a London family** — see the corrected row on the Welcombe marriage."
+  },
+  {
+   "n": 152,
+   "what": "I said four archives were ready for a second map layer. I had counted files, not read them.",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "The kit's Atlas gained a `schemes` prop on 20 September so an archive can ask more than one question of the same ground, and the case made for it was that **D'Arcy, Blažević, Falco and Mazza already hold the data**. **They do not.** Read properly: D'Arcy's 89 graves are keyed to *cemeteries with plot references* — “Lutwyche Cemetery, Brisbane (Port. GP5, Sect. 42A, Grave 78)” — and **18 of them match an atlas place**; Blažević 33 of 72; Mazza **0 of 10**. The coverage files are not geographic at all: Blažević's is per-person (ahnentafel, read/unread), D'Arcy's is per-database (FreeREG, Bristol, verdict *unusable*), Falco's is per-document (87 register acts), and Lerena's *film map* is a map of a **film reel**, thumbnail luminance against a threshold of 60, with no place in it. **Nothing here is a place layer without a cemetery-to-town mapping or a geocode, and that is each archive's editorial work, not something to derive from outside.** The mechanism is ready and unused; what each archive needs to supply is `cats: {scheme: cat}` on its own atlas rows. The claim was made from a file listing and should have been made from the files."
+  },
+  {
+   "n": 153,
+   "what": "Taking Defranceschi's map off its MutationObserver is a rewrite, not a removal",
+   "state": "next",
+   "owner": "the Defranceschi session",
+   "since": "2026-09-20",
+   "note": "Offered as a next step and withdrawn on reading the component. `AtlasTimelineTint.astro` is 1,220 lines and **the scheme switch is the smallest thing in it**. It also carries: the panel's coverage-timeline tinting (gap rows, soft gaps, films, records, folds); `startOff`, which clicks the kit's own buttons after its first `apply()` because the kit keeps its filter state in a closure; **the whole view in the address bar** — `?layers=people,graves&base=terrain&q=Senj`, so a view is a link somebody can send; a **basemap switcher**; full screen; and a responsive rebuild of the controls. Ripping out the scheme half would remove a fifth of it and put the other four fifths at risk for no gain, **because the kit cannot yet do URL state, basemaps or full screen**. The sequence is the other way round: the kit absorbs those three — all of which the Record Atlas has independently invented too — and the local component then shrinks to the panel tinting that is genuinely this archive's."
+  },
+  {
+   "n": 154,
+   "what": "The Record Atlas already holds every place the family shelf layer holds — all 1,239 of them",
+   "state": "next",
+   "owner": "David, and the Geneology Map session",
+   "since": "2026-09-20",
+   "note": "Measured 20 September. **The Record Atlas** (`TheMap`, the standalone product) holds **9,472 places and 3,504 collections**, with every name a place has ever had, who holds the paper, what it costs to look, and whose empire filed it. Defranceschi's map carries a *shelf* layer of **1,245 parishes** — how far this family has got with the registers. **1,239 of those 1,245, or 100%, are already in the Record Atlas.** Its other layers are not: people 72 of 165, graves 18 of 64, records 16 of 31, because those are about a family and the shelf is about records. **That is the division of labour, and it is already true in the data.** The global question — where are the records, who holds them, can I see anything tonight — belongs to the Record Atlas; a family archive should ask where it can put a named person, where the graves are, and what it has read, and **link out for the shelf rather than keep a second copy of it**. The Record Atlas's own component says it descends from the family Atlas and names three things it does better: colour by what a stranger can open rather than by how far one researcher has got, a year that filters rather than decorates, and a panel that fetches so the index stays 145 KB instead of 2.5 MB. **It is the most evolved of the three maps in this estate and it is the one nothing else shares code with.**"
   }
  ],
  "accounts": [

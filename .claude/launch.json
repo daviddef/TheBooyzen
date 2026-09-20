@@ -54,6 +54,17 @@
         "dev"
       ],
       "port": 4322
+    },
+    {
+      "name": "luwinski",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/daviddefranceski/Claude/Projects/Luwinski Family/site",
+        "run",
+        "dev"
+      ],
+      "port": 4331
     }
   ]
 }
