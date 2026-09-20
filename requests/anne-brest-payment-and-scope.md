@@ -1,6 +1,7 @@
 # Drafted — Anne Brest: please don't go on Tuesday
 
-**Status: DRAFTED, NOT SENT — 20 September 2026.** Sending is David's.
+**Status: SENT — 20 September 2026**, on David's instruction, as a reply on her own thread.
+Gmail message id `1a0bc8e25e24070d`. **Cut from 506 words to 267 before it went.**
 **To:** `digitalphoto@icon.co.za` — as a **reply on the existing thread**, so it keeps Invoice 463
 and the file list in view.
 
