@@ -999,11 +999,11 @@
   },
   {
    "n": 122,
-   "what": "Sibree, *A register of missionaries, deputations, etc.*, 4th ed. (LMS, 1923)",
-   "state": "next",
+   "what": "Sibree, *A register of missionaries* (LMS, 1923) — found, free, and it holds his whole mission life",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "One printed line would carry his LMS service dates, and this archive now has three to test: **mission assistant 8 February 1828, ordained 25 May 1833, dismissed 19 June 1837.** A register of this kind also records **why** a man left the Society. Not found on the Internet Archive under that title; try Google Books, HathiTrust and the SOAS library catalogue."
+   "note": "One printed line would carry his LMS service dates, and this archive now has three to test: **mission assistant 8 February 1828, ordained 25 May 1833, dismissed 19 June 1837.** A register of this kind also records **why** a man left the Society. Not found on the Internet Archive under that title; try Google Books, HathiTrust and the SOAS library catalogue. **DONE 20 September.** **Free PDF, 225 pages, at missiology.org.uk** — this archive had searched the Internet Archive, failed, and written it up as *not found*, which was a negative about one shelf reported as a negative about the world. Entry **278, KOLBE, George Augustus**, gives the whole of his LMS service in eight lines and **settles Mr Miles**: *“accepted provisionally by MR. MILES, Feb. 8, 1829, which action was confirmed by the Directors, July 29, 1829”*. It also disagrees with the DSAB draft on the year of acceptance, the day of the ordination and the men who performed it. **And entry 522 makes F.W. Kolbe the Settler’s son, where Schoeman says he was not related.**"
   },
   {
    "n": 123,
@@ -1067,11 +1067,11 @@
   },
   {
    "n": 129,
-   "what": "Test the identification of “Mr Miles” — the man who called at the tailor’s house in 1830",
-   "state": "next",
+   "what": "“Mr Miles” identified — he is the officer who accepted Kolbe, not merely the man who carried the news",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-20",
-   "note": "**An inference this archive is publishing as an inference, and would rather have as a document.** The letter of 23 August 1830 says only *“Mr Miles had called at our house”*. The journal of 25 November 1828 is addressed to **the Rev. RICHARD MILES, Superintendent of the Society’s Missions in Africa**, and Richard Miles — formerly pastor of Brigg in Lincolnshire, originally appointed to Demerara — was sent to Cape Town **to act as Dr Philip’s substitute while Philip was in England**. The office, the continent and the dates all fit: Philip in England from 1826, Miles acting at the Cape in 1828, Philip back and Miles in London by 1830. **What would settle it is the LMS’s own records of its officers** — Sibree’s register, or the CWM home correspondence at SOAS, both already on this list. **If it holds, the man Kolbe reported to from Philippolis is the man who knocked on his father’s door.**"
+   "note": "**An inference this archive is publishing as an inference, and would rather have as a document.** The letter of 23 August 1830 says only *“Mr Miles had called at our house”*. The journal of 25 November 1828 is addressed to **the Rev. RICHARD MILES, Superintendent of the Society’s Missions in Africa**, and Richard Miles — formerly pastor of Brigg in Lincolnshire, originally appointed to Demerara — was sent to Cape Town **to act as Dr Philip’s substitute while Philip was in England**. The office, the continent and the dates all fit: Philip in England from 1826, Miles acting at the Cape in 1828, Philip back and Miles in London by 1830. **What would settle it is the LMS’s own records of its officers** — Sibree’s register, or the CWM home correspondence at SOAS, both already on this list. **If it holds, the man Kolbe reported to from Philippolis is the man who knocked on his father’s door.** **SETTLED 20 September, by Sibree’s register.** *“Accepted provisionally by MR. MILES, Feb. 8, 1829, which action was confirmed by the Directors, July 29, 1829.”* **Miles did not carry the news — Miles made the decision.** And the father’s adverb turns out to be the Society’s own vocabulary: provisionally by Miles at the Cape, confirmed by the Directors in London, and a father told his son had been **“fully accepted”**. Richard Miles was Acting Superintendent of the LMS at Cape Town from 1825, standing in for Dr Philip while Philip was in Britain. **The letter still gives no forename, so the surname is carried by the office and the dates — but the office is now his own.**"
   },
   {
    "n": 130,
@@ -1104,6 +1104,22 @@
    "owner": "this archive",
    "since": "2026-09-20",
    "note": "**The first friends of the Soho household to be named anywhere.** Mr & Mrs **Stanhope**; Mr and Mrs **Warner**; **Mrs Field and her daughters**, the eldest of whom, **Miss Mary**, “has married a **Mr Bellew**, a Surgeon, whom I do not know whether you may recollect”. **A surgeon named Bellew marrying a Mary Field about 1829–30 is a findable marriage** — London parish registers and the medical directories both index surgeons. **This archive has had this family entirely through official paper.** These are the people who came to the house."
+  },
+  {
+   "n": 134,
+   "what": "Frederick William Kolbe (1821–1899) — the LMS register makes him the Settler’s son and Schoeman says he is no relation",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-20",
+   "note": "**A flat contradiction between two printed authorities, with a chronological impossibility inside it.** Sibree, entry 522: *“KOLBE, Frederick William. Born, Nov. 3, 1821, in South Africa. **SON OF REV. G. A. KOLBE (No. 278)**. Had been connected with the Rhenish Mission… died at Cape Town, Dec. 25, 1899, aged 78.”* Author of an **English–Herero Dictionary** (Juta, 1883), minister at **George** and then **Paarl**. Schoeman: *“F.W. Kolbe (1821–99) van die Rynse Sendinggenootskap **was nie aan hierdie familie verwant nie**.”* Same man, same society, same years. **AND HE CANNOT SIMPLY BE ADOPTED.** Sibree’s 3 November 1821 agrees with his own age at death; the Settler’s known eldest, **John Gerson Eliezar, was born 7 July 1822**, and *his* age at death agrees too. **Eight months apart.** One of the two births is wrong, or one of the men is not who his source says. **Sibree also gives him a sister — CHARLOTTE KOLBE, born 25 December 1829**, who married Rev. William Sykes at Paarl in 1860; the Settler’s 1829 daughter is recorded here under another name. **The paper that would settle it is at SOAS**: a missionary’s own candidate papers state his parentage."
+  },
+  {
+   "n": 135,
+   "what": "One request to SOAS for the CWM archive — four things this archive now wants from one building",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-09-20",
+   "note": "**Everything keeps arriving at the same door.** The Council for World Missions / London Missionary Society archive at **SOAS, University of London** holds: (1) **Incoming letters, South Africa** — source 4 on Schoeman’s list, where George Augustus Kolbe’s own reports are; (2) the manuscript of the **1828 journal** with Melvill, source 6, which is the same document under another name; (3) **the letter Dr Philip promised in 1830** to write to him, if it was written; and (4) **the candidate papers of Frederick William Kolbe**, which would say whose son he was and end the contradiction between Sibree and Schoeman. **Four asks, one archive, one letter** — and it is in London, which is the one city on this list somebody could reach."
   }
  ],
  "accounts": [

@@ -4736,6 +4736,44 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "Sibree’s Register of LMS Missionaries — found free, and it is the best source on him yet",
+   "n": "source 5 on Schoeman’s list, written up here this morning as “not found”",
+   "d": "20 Sep 2026",
+   "h": "/documents/#sibree-register",
+   "rows": [
+    [
+     "Is Sibree’s Register (LMS, 1923) online?",
+     "YES — FREE, 225 PAGES, AND THIS ARCHIVE SAID IT WAS NOT",
+     "A complete PDF at missiology.org.uk. This archive searched the INTERNET ARCHIVE, found nothing under that title, and published “not found”. THAT WAS A NEGATIVE ABOUT ONE SHELF REPORTED AS A NEGATIVE ABOUT THE WORLD — the same fault this archive names on /method/ as the reason a nil return is worthless without a control. The Google Books API refuses this machine outright (HTTP 429 to every query); the ordinary web search found it in one attempt.",
+     "yes"
+    ],
+    [
+     "Does it hold George Augustus Kolbe?",
+     "YES — ENTRY 278, AND IT IS HIS WHOLE MISSION LIFE",
+     "“Was previously connected with the GRAAFF REINET MISSIONARY SOCIETY, and laboured AMONG THE SLAVES around Graaff Reinet. Was accepted provisionally by MR. MILES, FEB. 8, 1829, which action was confirmed by the Directors, JULY 29, 1829. First laboured with MR. CLARK, at the BUSHMAN STATION, CALEDON RIVER. Thence proceeded to PHILIPPOLIS, arriving there, MARCH 13, 1831. On MAY 26, 1833, he was ordained by the French missionaries, Messrs. LEMUE, PELLISIER, AND ARBOUSSET. His connection was dissolved by the Directors, JUNE 19, 1837.” Index: service 1829–1837.",
+     "yes"
+    ],
+    [
+     "Who was the “Mr Miles” who called at the tailor’s house in 1830?",
+     "THE MAN WHO ACCEPTED HIM — NOT A MESSENGER",
+     "“Accepted PROVISIONALLY BY MR. MILES, Feb. 8, 1829, which action was CONFIRMED BY THE DIRECTORS, July 29, 1829.” Richard Miles was Acting Superintendent of the LMS at Cape Town from 1825, sent to stand in for Dr Philip while Philip was in Britain. AND IT EXPLAINS THE FATHER’S ADVERB: provisionally by Miles, confirmed by the Directors, and a father told his son had been “FULLY accepted”. The letter is using the Society’s own vocabulary correctly, because the officer concerned was in the room.",
+     "yes"
+    ],
+    [
+     "Does Sibree agree with the DSAB draft?",
+     "ON THREE POINTS EXACTLY, AND NOT ON THREE OTHERS",
+     "AGREE: the Graaff-Reinet society and the slaves, almost word for word; Clark and the Bushman station; the dissolution on 19 June 1837 to the day. DIFFER: acceptance 8 February 1829, not 1828; Philippolis 13 March 1831, which is finer than Schoeman’s “March 1831” and agrees with it; ordination 26 MAY 1833 not the 25th, and by LEMUE, PELLISSIER AND ARBOUSSET — three men, WITH NO CASALIS. Pellissier is source 9 on Schoeman’s own list. BOTH ARE PRINTED WORKS AND NEITHER IS THE MANUSCRIPT; this archive gives both and prefers neither in print.",
+     "part"
+    ],
+    [
+     "Was F.W. Kolbe of the Rhenish Mission related to this family?",
+     "THE LMS REGISTER SAYS HE WAS THE SETTLER’S SON. SCHOEMAN SAYS HE WAS NOT.",
+     "Sibree, entry 522: “KOLBE, Frederick William. Born, Nov. 3, 1821, in South Africa. SON OF REV. G. A. KOLBE (No. 278).” Died at Cape Town 25 December 1899 aged 78; author of an English–Herero Dictionary. Schoeman: “F.W. Kolbe (1821–99) van die Rynse Sendinggenootskap was NIE aan hierdie familie verwant nie.” SAME MAN, SAME SOCIETY, SAME YEARS. AND HE CANNOT BE ADOPTED ON SIBREE’S WORD: 3 November 1821 agrees with his age at death, and the Settler’s known eldest was born 7 JULY 1822, which agrees with HIS age at death. EIGHT MONTHS APART. Sibree also gives a sister, CHARLOTTE KOLBE born 25 December 1829, who married Rev. William Sykes at Paarl in 1860. NOT ADOPTED, NOT DISMISSED, AND ON THE WORK LIST.",
+     "part"
+    ]
+   ]
   }
  ]
 }
