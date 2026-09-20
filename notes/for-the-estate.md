@@ -192,6 +192,49 @@ exist.
 
 ---
 
+## FindMyPast's German collections, and two filters that annihilate each other (21 Sep 2026)
+
+**FindMyPast holds real German parish material and this archive had written it off.**
+Not emigration birthplaces: actual indexes, giving both parties or the parents, the year
+and the parish.
+
+- **Germany Marriage Index 1558–1929** — 338 Kolbe marriages. Reaches Württemberg:
+  *Agnes Kolbe × Jerg Raisch, 1685, Evangelisch, Groetzingen, Schwarzwaldkreis,
+  Wuerttemberg*; *Albrecht Jonathon Kolbe, 1741, Knittlingen, Evangelisch, Neckar, Wrtt.*
+- **Germany Birth and Baptism Index 1558–1898** — 952 Kolbe entries. Not yet read.
+- **Germany Deaths & Burials 1582–1958** — seen in passing on wider searches.
+
+**THE PLACE FILTER ON THESE SETS IS DEAD. It returns 0 to everything.**
+
+    place=wuerttemberg   → 0   (two Württemberg records read minutes earlier)
+    place=knittlingen    → 0   (a Knittlingen record on the same page)
+    place=westfalen      → 0   (7 of 11 records in the window are Westphalian)
+
+A filter answering 0 for a place printed in its own results is not filtering, so **every
+place-filtered search on these sets is worthless whatever it returns.** Sort by eye.
+
+**AND `datasetname` DOES NOT COMBINE WITH A YEAR. Together they return 0.**
+
+    datasetname=germany birth and baptism index 1558-1898 + lastname=kolbe   → 952
+    ... the same, + yearofbirth=1765 (any offset)                            → 0
+    ... the same, + year=1765                                                → 0
+    sourcecategory=parish baptisms + lastname=kolbe + yearofbirth=1765       → 619 ✅
+
+The year filter works and the dataset filter works; each destroys the other. **This is the
+same shape as the `q.filmNumber` trap below** — a term that filters alone and is discarded
+or poisons the query the moment another joins it.
+
+**THE WAY ROUND: filter by `sourcecategory` and the year, then read the record set off each
+row.** The result table's columns are Last name · First name(s) · Year of birth · Year of
+death · Year · Record set · Location, and the Location cell belongs to the row above it if
+you are splitting the rendered text by line.
+
+**THE RULE THIS COST US.** Row 149 published "FindMyPast is the wrong tool ... `Kolbe` +
+Württemberg returns 0 there against a working control". The control showed FindMyPast
+*answered*; it never showed the place filter *applied*. **A filter is not tested by a
+search that does not use it — before believing a filter's nil, search it for something you
+have already seen with your own eyes.**
+
 ## The FamilySearch film index, pulled by API instead of by eye (17 Sep 2026)
 
 A film's **Image Index** panel — the table under each image giving Name, Birth

@@ -5156,6 +5156,18 @@
      "NO — THE FILTER RETURNS 0 TO EVERYTHING, INCLUDING PLACES VISIBLE IN ITS OWN RESULTS",
      "**This is the fault that produced a published negative, and it takes three lines to prove.** `place=wuerttemberg` returns **0** — against two Württemberg records read from the unfiltered set minutes earlier. `place=knittlingen` returns **0**, against a Knittlingen record read from the same page. And `place=westfalen` returns **0**, **when seven of the eleven records in the window above are Westphalian**. **A filter that answers 0 for a place printed in its own results is not filtering, and every place-filtered search on this dataset is worthless whatever it returns.** The year filter and the dataset filter both work; only place is dead. **The general rule, which this archive has now met twice in one day: before believing a filter's nil, search for something you have already seen with your own eyes.**",
      "void"
+    ],
+    [
+     "Does FindMyPast hold a German BAPTISM index as well as a marriage one?",
+     "YES — *GERMANY BIRTH AND BAPTISM INDEX 1558–1898*, WITH 952 KOLBE ENTRIES",
+     "**This is the collection that could name the tailor's parents.** He was born in Württemberg in **1765** and this archive has nothing whatever between that birth and the first London baptism of 1792 — twenty-seven years. **A baptism entry in this index gives the parish and the parents.** **952 Kolbe entries exist in it.** Seen in passing on a wider search, with the record set named beside each: a **Kolbe born 1763 at Deutsch Reformirte Kirche, Prenzlau, Brandenburg**; **Friderich Wilhelm Kolbe, 1764, Evangelisch, Bielefeld-Altstadt, Westfalen**; **Joh. Wilh. Kolbe, 1764, Evangelisch, Duesseldorf Stadt, Rheinland**; and **two Maria Dorothea Kolbes, 1764, Brandenburg (Havel)**. **NOT YET READ FOR WÜRTTEMBERG.** The 952 were not gone through, and nothing is claimed about whether a Gottlieb or Gottlob is among them.",
+     "part"
+    ],
+    [
+     "Can a FindMyPast record set be searched by dataset AND year together?",
+     "NO — COMBINING THEM RETURNS 0, AND THAT IS WHAT PRODUCED THE ZERO ABOVE",
+     "**Three measurements make it certain.** `datasetname=germany birth and baptism index 1558-1898` + `lastname=kolbe` alone returns **952**. Add `yearofbirth=1765` with any offset and it returns **0**; use the generic `year=1765` instead and it also returns **0**. But `sourcecategory=parish baptisms` + `lastname=kolbe` + `yearofbirth=1765` — **the same year filter, without the dataset name** — returns **619**, and German index entries dated 1763 and 1764 are plainly among them. **So the year filter works and the dataset filter works, and they annihilate each other.** **This is the same shape as the `q.filmNumber` trap already recorded for FamilySearch** — a term that filters alone and is discarded, or poisons the query, the moment another joins it. **The way round is to filter by `sourcecategory` and the year, then read the record set off each row.** **Recorded because a 0 from this combination looks exactly like a nil return and is not one.**",
+     "void"
     ]
    ]
   }
