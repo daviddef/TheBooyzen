@@ -5132,6 +5132,32 @@
      "void"
     ]
    ]
+  },
+  {
+   "g": "The tailor's marriage, in a German index this archive had written off — and a place filter that answers 0 to everything",
+   "n": "the negative that sent this search abroad was measuring a broken filter, and the real negative is much narrower",
+   "d": "21 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "Does FindMyPast hold German parish marriages at all, or only Württemberg as a birthplace in emigration records?",
+     "IT HOLDS THEM — *GERMANY MARRIAGE INDEX 1558–1929*",
+     "**This archive had written FindMyPast off for German registers and that was wrong.** Searching *parish marriages* for the forename **Gottlieb** alone, 1785–1795, returned **5,918 results dominated by a set called “Germany Marriage Index 1558–1929”** — a German marriage index, not an emigration field. **It holds 338 Kolbe marriages.** Its records carry both parties, the year and the parish: *Agnes Kolbe × Jerg Raisch, 1685, **Evangelisch, Groetzingen, Schwarzwaldkreis, Wuerttemberg***, and *Albrecht Jonathon Kolbe, 1741, **Knittlingen, Evangelisch, Neckar, Wrtt.*** **So the index reaches Württemberg, and it holds Kolbes there.**",
+     "yes"
+    ],
+    [
+     "Is there a Gottlieb Kolbe marriage in Germany between 1778 and 1798?",
+     "NO — AND THIS ONE IS CONTROLLED",
+     "**Eleven Kolbe marriages exist in that twenty-year window and all eleven were read.** Anton (1780, Massow, Pommern); Christian Johann Anton (1797, Hausberge, Westfalen); David Friederich (1780, Halle Stadt, Westfalen); David Friedrich (1792, Bielefeld-Altstadt); Franz Wilhelm (1786, an infantry regiment at Bielefeld-Wedel); Gotfried August Christian (1785, Herford); Henrich Eberhard (1778, Bielefeld-Altstadt); Johann Friedrich (1793, Berlin); Johann Sebastian (1791, Berlin); Sibilla Wilhelmina (1785, Duesseldorf); Sussanna Elisabeth (1793, Duesseldorf). **No Gottlieb, and not one of them in Württemberg** — the window's coverage is entirely Prussian. **The year filter demonstrably works**, cutting 338 to 11. **So the nil is real and it is narrow:** it says this index has no Gottlieb Kolbe marrying in those years, and that its coverage in those years does not reach the region the tailor came from. **It does not say he did not marry in Württemberg.**",
+     "no"
+    ],
+    [
+     "Can the Germany Marriage Index be filtered by place?",
+     "NO — THE FILTER RETURNS 0 TO EVERYTHING, INCLUDING PLACES VISIBLE IN ITS OWN RESULTS",
+     "**This is the fault that produced a published negative, and it takes three lines to prove.** `place=wuerttemberg` returns **0** — against two Württemberg records read from the unfiltered set minutes earlier. `place=knittlingen` returns **0**, against a Knittlingen record read from the same page. And `place=westfalen` returns **0**, **when seven of the eleven records in the window above are Westphalian**. **A filter that answers 0 for a place printed in its own results is not filtering, and every place-filtered search on this dataset is worthless whatever it returns.** The year filter and the dataset filter both work; only place is dead. **The general rule, which this archive has now met twice in one day: before believing a filter's nil, search for something you have already seen with your own eyes.**",
+     "void"
+    ]
+   ]
   }
  ]
 }
