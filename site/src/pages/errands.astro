@@ -1,11 +1,23 @@
 ---
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
+import Errands from "@daviddef/archive-kit/components/Errands.astro";
 import { u } from "../lib/url.js";
 import er from "../data/errands.json";
 const places = er.places;
 const total = places.reduce((n, p) => n + p.asks.length, 0);
 const motifs = ["windpump", "gable", "wagon", "koppie"];
+
+/* 21 September 2026. The ask moved to the kit. The GROUPING did not, and it
+   is the thing that makes this page different from the other three: they
+   group by how a request is going, and this one groups by DOOR, because the
+   questions left here each end at a building somebody could walk into. So a
+   place is a group and each of its asks is a row. */
+const groups = places.map((pl) => ({
+  label: pl.where,
+  note: pl.why,
+  rows: pl.asks.map(([ref, what]) => ({ what, ref })),
+}));
 ---
 <Base title="Errands"
       eyebrow={`${places.length} doors · ${total} things that could be settled behind them`}
@@ -25,24 +37,14 @@ const motifs = ["windpump", "gable", "wagon", "koppie"];
   </div>
 </section>
 
-{places.map((pl, i) => (
+{groups.map((g, i) => (
   <div>
     <Rule name={motifs[i % motifs.length]} />
     <section class="blk">
-      <h2>{pl.where}</h2>
-      <p class="cap" style="margin-top:4px">{pl.addr}</p>
-      <p class="dek" style="margin-top:14px">{pl.why}</p>
-      <div class="scroll" style="margin-top:18px">
-        <table>
-          <thead><tr><th class="m" style="width:16rem">Reference</th><th>What it should give</th></tr></thead>
-          <tbody>
-            {pl.asks.map(([ref, what]) => (
-              <tr><td class="m"><strong>{ref}</strong></td><td>{what}</td></tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      {pl.note && <p class="note" style="margin-top:16px">{pl.note}</p>}
+      <h2>{g.label}</h2>
+      <p class="cap" style="margin-top:4px">{places[i].addr}</p>
+      <div style="margin-top:18px"><Errands groups={[g]} u={u} html={false} /></div>
+      {places[i].note && <p class="note" style="margin-top:16px">{places[i].note}</p>}
     </section>
   </div>
 ))}

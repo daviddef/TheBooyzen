@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --port 4324",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run atlas && npm run namefold && npm run ra && astro build && npm run sitemap && npm run check:living && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers",
+    "build": "npm run atlas && npm run namefold && npm run ra && astro build && npm run sitemap && npm run check:living && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers && npm run check:pages",
     "build:pages": "npm run atlas && astro build && npm run sitemap",
     "preview": "astro preview --port 4324",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py",
@@ -20,10 +20,11 @@
     "ra": "python3 node_modules/@daviddef/archive-kit/kit/tools/recordatlas.py --data public/atlas-data.json --gazetteer '../../The Geneology Map/site/src/data/places-full.json'",
     "check:templates": "python3 node_modules/@daviddef/archive-kit/kit/tools/checktemplates.py --root .",
     "namefold": "python3 node_modules/@daviddef/archive-kit/kit/tools/namefold.py --root . --all",
-    "check:retired": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkretired.py --root ."
+    "check:retired": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkretired.py --root .",
+    "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 4"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#1e266ef",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#d60cc98",
     "astro": "^5.18.2"
   },
   "devDependencies": {

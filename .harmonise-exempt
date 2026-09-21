@@ -1,0 +1,6 @@
+# Pages this archive draws by hand on purpose. checkpages prints every line of
+# this file on every run, so an exemption nobody can justify is an exemption
+# somebody will notice.
+
+namesakes: this page is about FORENAMES, not surnames. It is titled "The forenames" and its subject is a given name travelling through daughters as reliably as a surname travels through sons. Defranceski's namesakes page collects notable strangers of the same surname; Falco's argues for not having one at all.
+sources: not a bibliography. This archive's sources.json holds four tables of HOLDINGS — individual estate files and death registrations — extracted from the page by tools/extractsources.py. The bibliography that the shared component would draw is still prose in six other sections of the same page. Turning that into rows is a restructuring, not a harmonisation, and it wants a decision rather than a refactor.
