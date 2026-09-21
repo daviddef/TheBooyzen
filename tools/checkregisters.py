@@ -407,6 +407,57 @@ def main():
                            f"which searched.astro cannot render - it must be one of "
                            f"{', '.join(VERDICTS)}")
 
+    # 18 - A PIN THAT INHERITED SOMEBODY ELSE'S COORDINATE AND DOES NOT SAY SO
+    # Found by the D'Arcy session, 21 September, on their own atlas: TWENTY-ONE
+    # places shared the single point 52.53102,-1.26491 - the geocode for the
+    # word "England" - carrying 34 people, and every one was stamped exact.
+    # Berkeley, the place that archive is about, sat on it beside London,
+    # Portsmouth and eighteen more. It repeats down the levels: five on the
+    # Queensland centroid, four on Gloucestershire, three on Staffordshire.
+    #
+    # THE KIT'S checkplaces.py CANNOT SEE THIS AND IS NOT MEANT TO. It refuses a
+    # pin outside the country its own text names - a wrong-COUNTRY test. An
+    # inherited pin is in the RIGHT country at the wrong precision, so it passes
+    # that gate cleanly. Two orthogonal faults, two checks.
+    #
+    # WHAT IS ACTUALLY WRONG IS NOT SHARING A COORDINATE - it is sharing one
+    # while claiming to be exact. This archive has two shared points and both are
+    # honest: Manorowen, a farm, sits on Barkly East and Wodehouse, a district,
+    # sits on Dordrecht, and in each case the borrower is flagged `approx`. That
+    # is a pin saying "about here", which is true. So the test is: share a point
+    # with somebody and be silent about it, and the build stops.
+    #
+    # The second half is the D'Arcy session's own detector, and it is the better
+    # one because it names the cause: a place whose coordinate equals that of
+    # another place whose whole name is a COMMA-TAIL of its own has inherited
+    # that pin. Decided on the recorded string, never on the coordinate alone,
+    # so it cannot accuse two towns that genuinely sit close together.
+    try:
+        _pl = load("places.json")
+        _pl = _pl if isinstance(_pl, list) else (_pl.get("rows") or _pl.get("places") or [])
+    except Exception:
+        _pl = []
+    _at = {}
+    for _p in _pl:
+        if _p.get("lat") is None or _p.get("lon") is None:
+            continue
+        _at.setdefault((round(_p["lat"], 5), round(_p["lon"], 5)), []).append(_p)
+    for _pt, _group in sorted(_at.items()):
+        if len(_group) < 2:
+            continue
+        _mute = [g for g in _group if not g.get("approx")]
+        if len(_mute) > 1:
+            bad.append("pin-shared-exact   " + ", ".join(repr(g.get("n")) for g in _mute) +
+                       f" all sit on {_pt} and none is flagged approx - one of them owns that "
+                       f"point and the others are guessing. Flag the borrowers `approx`, or pin them")
+        _names = {g["n"].strip().lower(): g for g in _group}
+        for g in _group:
+            for _t in [t.strip().lower() for t in g["n"].split(",")[1:]]:
+                if _t in _names and _names[_t] is not g:
+                    bad.append(f"pin-inherited      {g['n']!r} sits on exactly the point of "
+                               f"{_names[_t]['n']!r}, which is its own comma-tail - it has inherited "
+                               f"the wider place's pin rather than been found")
+
     # 5 - open too long
     today = datetime.date.today()
     for r in load("worklist.json")["rows"]:
