@@ -268,7 +268,34 @@ positive result proves the service was answering at that moment. Only **zeros th
 suspect. Audited here for 21 September: the only FamilySearch row is `blocked`, from the redirect,
 so nothing of this archive's is affected.
 
-**Signing in is David's. No session here signs into his accounts on his behalf.**
+**CORRECTED WITHIN THE HOUR, AND THE CAUSE WAS SMALLER AND STRANGER THAN EITHER OF US THOUGHT.
+THE ACCOUNT WAS NEVER SIGNED OUT.** The Defranceski session ran the same searches in the same
+minutes and got **3,652** and **3,967**, with the account name in the nav bar. **Each Claude
+session's in-app browser is a separate browser with its own cookie jar**, and one browser context
+lost its auth and then recovered by itself. In a fresh tab the Lerena session's González control
+returned **479,662**, and the exact URL that had returned ten that morning returned ten again.
+**Their three held-over nulls were re-run against that live control and all three are still zero**,
+so the observation stood and only the diagnosis fell.
+
+**SO THE REMEDY WAS WRONG, AND THE WRONG REMEDY IS THE LESSON:** *"ask David to sign in"* asked a
+person for something **a new tab settles**. Their method page now carries it as **before asking a
+person to fix something, open a second tab** — and this archive made the identical mistake in the
+same hour. Row 177's searches hit the sign-in page here, and the conclusion drawn was that the
+ACCOUNT was signed out and that only David could unblock it. **That conclusion was reached from one
+symptom in one browser context, and it is exactly the shape of everything else logged today.**
+
+**WHAT THIS MEANS FOR A BLOCKED ROW HERE.** A `blocked` verdict recorded because a service showed a
+sign-in page is **not safe to leave alone**: it may be one browser context, and the row may be
+answerable today. **Retry from a fresh tab before treating any such row as needing a person.**
+
+**AND THE POINT THAT SURVIVES INTACT, SHARPENED RATHER THAN WEAKENED.** A service that consistently
+fabricates gets caught once and distrusted forever. One that **redirects honestly in one browser and
+fabricates in another, in the same minute on the same machine**, teaches a reader that its zeros are
+trustworthy and then hands them a fake one. There was no "honest on Monday, lying on Tuesday" to
+notice, because **both behaviours were simultaneous and browser-scoped**.
+
+**Entering credentials is still not something any session here does on David's behalf. That rule is
+unchanged; what changed is that it was invoked when it did not need to be.**
 
 ## The FamilySearch film index, pulled by API instead of by eye (17 Sep 2026)
 
