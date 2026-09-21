@@ -65,6 +65,17 @@
         "dev"
       ],
       "port": 4331
+    },
+    {
+      "name": "falco",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/daviddefranceski/Claude/Projects/Falco Family/site",
+        "run",
+        "dev"
+      ],
+      "port": 4322
     }
   ]
 }
