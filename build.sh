@@ -117,6 +117,8 @@ on_exit() {
 trap on_exit EXIT
 
 STEP="people.json from people.js"; node tools/people-json.mjs
+# The brackets are LOAD-BEARING, not style - see "THE TWO BUILD STEPS RUN IN
+# SUBSHELLS" above. `cd site && ... && cd ..` does not abort under set -e.
 STEP="first pass - build:pages, checks deliberately skipped"; ( cd site && npm run build:pages >/dev/null )
 STEP="dossiers.py"; python3 tools/dossiers.py
 STEP="gallery.py"; python3 tools/gallery.py
@@ -134,6 +136,8 @@ STEP="gallery.py"; python3 tools/gallery.py
 # watching the kit's check name it.
 STEP="searchindex.py"; python3 tools/searchindex.py
 STEP="register.py"; python3 tools/register.py
+# The brackets are LOAD-BEARING, not style - see "THE TWO BUILD STEPS RUN IN
+# SUBSHELLS" above. `cd site && ... && cd ..` does not abort under set -e.
 STEP="second pass - the full build WITH every gate"; ( cd site && npm run build >/dev/null )
 STEP="links.py"; python3 tools/links.py
 STEP="checkatlas.py"; python3 tools/checkatlas.py --data site/src/data --dist site/dist

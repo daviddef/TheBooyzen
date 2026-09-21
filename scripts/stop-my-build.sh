@@ -15,6 +15,19 @@
 # own location, so a copy of this file in another archive scopes itself to that
 # one.
 #
+# WHY NARROW IS RIGHT HERE, AND IT ONLY BECAME RIGHT ON 21 SEPTEMBER. Killing
+# only the node process is sufficient IF nothing in the build can outlive a
+# reaped astro. Until that afternoon this archive's build could: `cd site && ...
+# && cd ..` does not abort under `set -e`, so a reaped build left the working
+# directory wrong and the script walked on. Once the passes became subshells,
+# nothing downstream can survive the child dying, and killing the child alone is
+# both sufficient and the smaller blast radius.
+#
+# The D'Arcy session's stopper selects by WORKING DIRECTORY instead, which also
+# catches the npm and sh wrappers - better coverage, at the cost of needing a
+# ppid skip-list so it does not kill its own caller, whose cwd is the repository
+# too. These are two points on a trade and not two attempts at one thing.
+#
 # THE LIMIT, STATED PLAINLY. The `sh -c npm run ...` wrapper around a build does
 # NOT carry the absolute path and is not matched. Killing the node process is
 # enough - the wrapper loses its child and exits - but if you are looking for

@@ -187,6 +187,18 @@ import { u } from "../lib/url.js";
       already seen with your own eyes on the page in front of you. Ask a comparison to fail on a
       difference you planted. Ask a generator to survive a rebuild, not a re-read.</p>
     <blockquote>None of them is a wrong answer. Each is a correct answer to a question nobody asked.</blockquote>
+
+    <p><b>And one heuristic of this archive&rsquo;s own did not survive the day.</b> &ldquo;Three
+      identical failures is a fault; one is the weather&rdquo; is sound for a machine under load and
+      useless for a bug whose <em>trigger</em> is intermittent and whose <em>mechanism</em> is not. A
+      build failure here was written off that way in the afternoon; it was a missing subshell that could
+      have reported a killed build as <b>build complete</b>, and it had been there all along.</p>
+    <blockquote>A failure that does not reproduce has not been explained. It has only been survived
+      &mdash; and passing next time is evidence about the trigger and none at all about the
+      mechanism.</blockquote>
+    <p class="cap">The second half of that sentence is the D&rsquo;Arcy session&rsquo;s, and it is the
+      part that makes the rule usable: it says exactly what the re-run <em>did</em> prove, which is the
+      thing a tired reader will otherwise take for a clean bill of health.</p>
     <p class="cap"><b>Six of these were found by measurement. The last two were found by checking an
       instrument against itself</b> &mdash; asking the stale-index check about the file it actually reads,
       and asking the trap about the branch nobody had run. That is the half that generalises, because
