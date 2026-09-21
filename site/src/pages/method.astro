@@ -171,6 +171,8 @@ import { u } from "../lib/url.js";
             <td class="cap"><b>HTTP 000 &mdash; no connection.</b> The endpoint no longer exists. Three nil returns that described a hostname.</td></tr>
         <tr><td><b>36 map pins stamped <code>exact</code></b></td>
             <td class="cap">The confidence field recorded that <b>the lookup succeeded</b>, not that it answered the question. Twenty-one places sat on the geocode for the word <b>&ldquo;England&rdquo;</b> &mdash; right country, wrong precision, and <b>a wrong-country gate passes it cleanly</b>.</td></tr>
+        <tr><td><b>&ldquo;The stale index passes &mdash; we do not have that fault&rdquo;</b></td>
+            <td class="cap">Written <b>the same day as this section</b>, and caught by it. The row was planted in <code>public/searchindex.json</code> and the check reads <code>dist/searchindex.json</code>, which had not been rebuilt. <b>It was asked about the built copy and told about a change to the source.</b> Planted in the file the check actually reads, it fails at once and names the row.</td></tr>
         <tr><td><b>A gate reporting a clean build</b></td>
             <td class="cap">It had been run <b>before the row that broke it existed</b>, and on checks that do not touch that schema. <b>A build that did not cover the change is not a build.</b></td></tr>
       </tbody>

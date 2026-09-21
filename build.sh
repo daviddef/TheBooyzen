@@ -27,6 +27,14 @@ cd "$(dirname "$0")"
 # distinction, and naming the STEP it died in is what turns it into an action.
 # Adopted from the D'Arcy session, which added it for the SIGTERM case and then
 # had it catch something it was not written for within the hour.
+#
+# AND IT MISLABELLED SOMETHING WITHIN THE HOUR TOO, WHICH IS WHY THE SECOND
+# BRANCH SAYS "NOT KILLED" RATHER THAN "REFUSED". A run died EXIT=2 because a
+# step ran from the wrong directory and python could not find the file; the trap
+# announced "a gate said no, this is a real finding" and it was neither. The
+# test it performs is >128, which separates KILLED from NOT KILLED and nothing
+# else. Anything finer has to be read off the output. That run did not reproduce
+# - one failure is the weather, three identical ones are a fault.
 STEP="starting up"
 on_exit() {
   st=$?
@@ -39,8 +47,10 @@ on_exit() {
     echo "          Re-run it. Three identical failures is a fault; one is the weather."
   else
     echo ""
-    echo "EXIT=$st  REFUSED during: $STEP"
-    echo "          A gate or a tool said no, and said why above. This is a real finding."
+    echo "EXIT=$st  NOT KILLED - a step exited $st during: $STEP"
+    echo "          Usually a gate refusing, and it said why above. But NOT KILLED is"
+    echo "          not the same as REFUSED: this branch also catches a missing file,"
+    echo "          a wrong directory or a typo. Read the output before believing it."
   fi
   exit "$st"
 }
@@ -50,6 +60,18 @@ STEP="people.json from people.js"; node tools/people-json.mjs
 STEP="first pass - build:pages, checks deliberately skipped"; cd site && npm run build:pages >/dev/null && cd ..
 STEP="dossiers.py"; python3 tools/dossiers.py
 STEP="gallery.py"; python3 tools/gallery.py
+# SEARCHINDEX IS A COMMITTED ARTEFACT THAT ONLY THIS SCRIPT REGENERATES, AND
+# THAT ASYMMETRY BITES EXACTLY ONCE, CONFUSINGLY. `npm run build` - which is all
+# GitHub Actions runs - VALIDATES site/public/searchindex.json against the built
+# pages and never rebuilds it. So the moment a page is removed or a route
+# renamed, the committed index still points at it, and the next build refuses
+# with "N of M rows point at pages that were not built". It reads like a
+# dangling link in the pages and it is not: it is a stale artefact.
+# THE RECOVERY IS ONE COMMAND - `python3 tools/searchindex.py` - or just run
+# this script, which does it below, between the two passes and in the right
+# order. Warned about by the D'Arcy session, which hit it folding pages away;
+# confirmed here by planting a row pointing at a page that was never built and
+# watching the kit's check name it.
 STEP="searchindex.py"; python3 tools/searchindex.py
 STEP="register.py"; python3 tools/register.py
 STEP="second pass - the full build WITH every gate"; cd site && npm run build >/dev/null && cd ..
