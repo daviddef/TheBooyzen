@@ -73,7 +73,9 @@ on_exit() {
     echo "EXIT=$((128 + SIGNALLED))  KILLED by signal $SIGNALLED sent to THIS SCRIPT during: $STEP"
     echo "          Somebody or something killed the whole build, not a step inside it."
     echo "          A bare \`pkill -f \"astro build\"\` or \`pkill -f build.sh\` on this machine"
-    echo "          reaps every archive's build, not only its own. Scope it to a path."
+    echo "          reaps every archive's build, not only its own. Use the scoped one:"
+    echo "              sh scripts/stop-my-build.sh --dry   # list"
+    echo "              sh scripts/stop-my-build.sh         # stop only this archive"
     echo "          Nothing is wrong with the data. Re-run it."
     exit $((128 + SIGNALLED))
   fi
