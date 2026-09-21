@@ -35,6 +35,34 @@ cd "$(dirname "$0")"
 # test it performs is >128, which separates KILLED from NOT KILLED and nothing
 # else. Anything finer has to be read off the output. That run did not reproduce
 # - one failure is the weather, three identical ones are a fault.
+# WHERE THIS BUILD PUTS ITS PAGES, AND WHY IT IS A VARIABLE.
+# Eight archives share this machine and more than one session can build THIS repo
+# at once. astro EMPTIES its outDir at the start of a build, so a second session
+# building into site/dist while this one's gates read it turns every anchor check
+# into a failure. On 21 September that was 205 failures over a site reporting
+# "0 pages", and not one of them was real.
+#   ARCHIVE_OUT=dist-verify sh build.sh     # build somewhere nobody else is using
+# THE DEFAULT MUST STAY dist. .github/workflows uploads `path: site/dist`, so a
+# different default here would deploy an empty site.
+ARCHIVE_OUT="${ARCHIVE_OUT:-dist}"
+export ARCHIVE_OUT
+OUT="site/$ARCHIVE_OUT"
+#
+# ONE THING ARCHIVE_OUT CANNOT ISOLATE, AND IT IS NOT OURS TO FIX. The shared
+# kit's sitemap.py pins `dist` - `dist = os.path.join(site, "dist")`, no flag,
+# derived from the working directory - so it writes sitemap.xml into site/dist
+# whatever ARCHIVE_OUT says, and then check:kit correctly reports that robots.txt
+# points at a sitemap that is not in the built site. AN ISOLATED RUN THEREFORE
+# TRIPS check:kit. Everything else isolates cleanly, which includes the gate that
+# produced the 205 false failures. Making the kit tool take a path is a kit
+# change and is raised as one rather than patched here, because eight archives
+# share that file.
+[ "$ARCHIVE_OUT" = "dist" ] || {
+  echo "building into $OUT (ARCHIVE_OUT=$ARCHIVE_OUT)"
+  echo "  NOTE: check:kit will fail on the sitemap - the kit's sitemap.py pins site/dist."
+  echo "        Every other gate isolates. Use this to read gates, not to deploy."
+}
+
 STEP="starting up"
 
 # THE SIGNAL MUST BE TRAPPED, NOT INFERRED FROM $?. Found by the D'Arcy session
@@ -148,7 +176,7 @@ STEP="register.py"; python3 tools/register.py
 # SUBSHELLS" above. `cd site && ... && cd ..` does not abort under set -e.
 STEP="second pass - the full build WITH every gate"; ( cd site && npm run build >/dev/null )
 STEP="links.py"; python3 tools/links.py
-STEP="checkatlas.py"; python3 tools/checkatlas.py --data site/src/data --dist site/dist
-STEP="checkregisters.py"; python3 tools/checkregisters.py --dist site/dist
+STEP="checkatlas.py"; python3 tools/checkatlas.py --data site/src/data --dist "$OUT"
+STEP="checkregisters.py"; python3 tools/checkregisters.py --dist "$OUT"
 STEP="drift.py"; python3 tools/drift.py
 echo "build complete"

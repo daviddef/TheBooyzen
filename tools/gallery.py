@@ -4,7 +4,10 @@ page it sits on. Read out of the built HTML so the gallery can never drift from
 the pages — if a caption is corrected, the gallery corrects with it."""
 import json, os, re, glob, html
 
-DIST = "site/dist"
+# ARCHIVE_OUT lets a session build somewhere of its own, because more than one
+# session can build this repo at once and astro empties its outDir on the way in.
+# Default stays site/dist - the deploy workflow uploads that exact path.
+DIST = os.path.join("site", os.environ.get("ARCHIVE_OUT") or "dist")
 def clean(t):
     t = re.sub(r"<[^>]+>", " ", t)
     return re.sub(r"\s+", " ", html.unescape(t)).strip()

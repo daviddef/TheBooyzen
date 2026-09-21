@@ -92,6 +92,26 @@ def main():
     people = load("people.json")["people"]
     pages, ids = anchors(a.dist)
 
+    # 0 - IS THERE A SITE HERE AT ALL? This runs before every other check because
+    # an empty or half-written dist makes ALL of them fail at once, and 205
+    # failures is the least readable way possible to say "there are no pages".
+    #
+    # 21 SEPTEMBER 2026: this printed "351 people, 0 pages, 205 failing" while
+    # another session's astro build emptied site/dist underneath it. astro clears
+    # its outDir on the way in, and eight archives share this machine. Nothing was
+    # wrong with the data and the whole run was noise.
+    #
+    # The remedy is ARCHIVE_OUT, which gives a session a dist of its own; the
+    # remedy for a reader is being told which of the two they are looking at.
+    if len(pages) < 200:
+        print(f"  FAIL  registers  no-site            {len(pages)} page(s) under {a.dist} - this "
+              f"archive builds ~800, so the site is missing or half-written and EVERY check "
+              f"below would fail for that one reason. Nothing is wrong with the data.")
+        print(f"        Another session may be building into the same directory; astro empties "
+              f"its outDir on the way in. Rebuild, or give this session its own: "
+              f"ARCHIVE_OUT=dist-verify sh build.sh")
+        return 0 if a.warn_only else 1
+
     # 1 - a documented person with nowhere to look
     for p in people:
         if p.get("s") == "doc" and not (p.get("p") or []):

@@ -3,7 +3,10 @@
 and every built page is reachable from another page."""
 import os, re, sys, collections
 
-DIST = "site/dist"
+# ARCHIVE_OUT lets a session build somewhere of its own, because more than one
+# session can build this repo at once and astro empties its outDir on the way in.
+# Default stays site/dist - the deploy workflow uploads that exact path.
+DIST = os.path.join("site", os.environ.get("ARCHIVE_OUT") or "dist")
 BASE = "/TheBooyzen"
 
 pages, assets = set(), set()

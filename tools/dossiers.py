@@ -11,7 +11,10 @@ George Mountjoys and two Gertrudes, and silently merging them would be worse
 than not generating anything."""
 import json, os, re, glob, unicodedata, html, collections
 
-DIST = "site/dist"
+# ARCHIVE_OUT lets a session build somewhere of its own, because more than one
+# session can build this repo at once and astro empties its outDir on the way in.
+# Default stays site/dist - the deploy workflow uploads that exact path.
+DIST = os.path.join("site", os.environ.get("ARCHIVE_OUT") or "dist")
 DATA = "site/src/data"
 
 def slug(s):
