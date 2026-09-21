@@ -1,119 +1,90 @@
 # Drafted — Anne Brest, the summary she asked for
 
 **Status: DRAFTED, NOT SENT — 21 September 2026.** Sending is David's.
-**To:** `digitalphoto@icon.co.za` — reply on the existing thread,
-*"Estate file research, National Archives Pretoria — six MHG files, 1923–1957"*.
-**She is offline until Monday night or Tuesday**, so it will be waiting for her.
+**To:** `digitalphoto@icon.co.za` — reply on the existing thread.
+**She is offline until Monday night or Tuesday.**
 
-**What she asked, verbatim:** *"Maybe you can tell me what is is you are trying to do and why the
-files were the wrong files. I can help with info if you need it."*
+**FOURTH DRAFT — SHORTER, AND IT ASKS FOR NOTHING.** The first two explained the project at length
+and buried the answer; the third answered well but ended by commissioning work and offering a fee.
+This one answers her two questions, gives her invoice back as a **still need / don't need** list,
+sets out the two gaps, and stops.
 
-**SECOND DRAFT. The first one gave her work a single paragraph and then spent its length on why
-the files were wrong, and it never walked what Invoice 464 actually covers.** This one itemises the
-invoice first, because that is the money she is being paid and she is entitled to see it understood
-line by line. The wider work is context and is kept short.
+**No payment preamble** — David has already told her it is paid, and repeating it wastes her first
+paragraph.
 
-**What Invoice 464 is, precisely:** R11,400 *"Reduced to half"* = **R5,700, plus the R200 she asks
-to be added for the South African transaction deduction — R5,900, about A$510**. It is a **credit
-against the next list**, by her own proposal, not a write-off. The free Wear file still stands.
+**The seven lines, and the evidence behind each:**
 
-**Three judgement calls kept from the first draft.**
+| | verdict | why |
+|---|---|---|
+| MHG 1095/48 Booyzen, G.D.M. | **still need** | tree says d. 21 Feb 1947; Johannesburg burial register says 11 Dec 1947 |
+| MHG 3734/46 Daschner | **don't need** | wanted for her parents — already held, bapt. Barkly Oost 24 May 1891 |
+| MHG 769/52 Booyzen, John Barry | **don't need** | wanted for his children — a public tree names all ten, matching his Brakpan stone to the day |
+| MHG 5155/51 Booyzen, Gert Jacobus | **still need** | trees give parents only; nothing on death, wife or children |
+| MHG 10/57 Booyzen, Henry James | **don't need** | baptism, marriage, death and burial all already held |
+| MHG 52653 Booyzen, Jacobus Nichols | **not a file** | reference cannot be found on film; wanted is the correct number from the paper 1920s index |
+| MHG 10245/69 Wear (free) | **still need** | belongs to the Johannesburg branch, not the Booyzens |
 
-1. **It corrects the number.** She was told on 20 September that *two* of six were answerable from
-   records already held. The full check afterwards **dropped three and turned a fourth into a
-   counter question**. Leaving "two" would be a second wrong number in one conversation.
-2. **It gives her the Johannesburg end of the other archive**, because that is the part of the
-   wider work that is genuinely hers if there is more work later.
-3. **It does NOT mention the Luwinski DNA finding.** That is an inference about the parentage of a
-   **living man** and is not a contractor's business. The archive names him and nothing else.
+**NO NEW WORK IS COMMISSIONED AND NO FEE IS OFFERED.** David is not committing to paying for more.
+The letter states the goal and the gaps and stops there. She offered information, so the gaps are
+laid out where she can see them — but nothing asks her to go and do anything, there is no promise
+of a corrected list, and the fee sentence that was in the second and third drafts is gone.
 
-**Deliberately not in it:** no new file list, no prices, no dates.
+**MHG 40293 — Kolbe, 1918 — is named as the biggest gap**, not as an item to add to an order.
+
+**Still withheld:** the Luwinski DNA finding. An inference about a living man's parentage is not a
+contractor's business.
 
 ---
 
-**Subject:** Re: Estate file research, National Archives Pretoria — what I am actually trying to do
+**Subject:** Re: Estate file research, National Archives Pretoria — what I am after
 
 Dear Anne,
 
-Payment has gone — OFX deal 9577565A, yesterday morning — and thank you again for halving it and
-for making it a credit rather than a write-off. You did not have to do either.
+Straight to your two questions.
 
-You asked what I am trying to do and why the files were the wrong files. Before I answer that, I
-want to set down what I have actually paid for, because it is not nothing and I do not want it
-described as a cancelled trip.
+**Why the files were the wrong files.** I asked for those death notices "for the parents" — that
+wording on your invoice is mine. But I already held the parents, in church registers I had read a
+fortnight before and not checked against my own list. Catherine Mary Sophia was baptised at Barkly
+Oost on 24 May 1891, and her brother Henry James at Barkly East in 1887, and that register names
+both parents outright. So the references were right and your work was not the problem — **my brief
+was wrong**, and I only found it after you had done the arranging. I said two of the six were
+affected. Checked properly it was three, and a fourth is not a file at all.
 
-**What Invoice 464 covers.** You had all seven files pulled out of the strongroom at Preservation
-in advance — which I understand was a professional favour called in, not a service on request. You
-then **checked that the pages I had asked for were actually in them before travelling**, in your
-words because you did not want to go and find a file not in its folder. You went to Ms Xaba for
-information about the contents. You did your own work on Ancestry beforehand. And you engaged and
-paid Tebogo upfront, because he asked for security for his day.
+**Your list, as it now stands:**
 
-**Every one of those still has value to me, and three of them survive the cancellation entirely.**
-The references are now confirmed as real files that exist and contain what I want — which is not
-something I could establish from Australia, and which I would otherwise have been guessing at.
-Preservation has pulled them once, so they are known. And Ms Xaba's information stands whatever
-date I eventually pick. What was lost was the driving and the photography. What was bought was the
-verification, and the verification is the part I would have had to pay for sooner or later anyway.
+- **MHG 1095/48 — Booyzen, George Downing Mountjoy — STILL NEED.** A tree gives his death as 21
+  February 1947; the Johannesburg burial register says 11 December 1947. Only the file settles it.
+- **MHG 3734/46 — Daschner, Catherine Mary Sophia — DON'T NEED.** Her parents are already on her
+  1891 baptism.
+- **MHG 769/52 — Booyzen, John Barry — DON'T NEED.** I wanted his children; a public tree names all
+  ten and matches his Brakpan gravestone to the day.
+- **MHG 5155/51 — Booyzen, Gert Jacobus — STILL NEED.** The trees give his parents and nothing
+  else: no death, no wife, no children.
+- **MHG 10/57 — Booyzen, Henry James — DON'T NEED.** I already have his baptism, marriage, death
+  and burial.
+- **MHG 52653 — Booyzen, Jacobus Nichols, 1923 — NOT A FILE.** See below.
+- **MHG 10245/69 — Wear (the free one) — STILL NEED.** That one is for a different branch, in
+  Johannesburg.
 
-That is also why the corrected list should go to you rather than to somebody starting cold. You
-have been through those shelves; nobody else has.
+**What I am still after.** The Kolbes. George Augustus Kolbe was an 1820 Settler, born in Soho in
+1802, who married Margaret Downing in London in 1819 and became a missionary at Philippolis. I can
+follow him in the Cape registers. I cannot yet prove how the **Transvaal** Kolbes attach to him —
+everything I have there is inference. A death notice gives parents, birthplace, occupation, spouse
+and children, signed by someone who knew them, which is why no website substitutes.
 
-**Why the files were the wrong files — and it was worse than I told you.** I said two of the six
-were answerable from what I already had. When I checked the whole list properly it was three, and a
-fourth turned out not to be a file at all.
+**So the gaps, plainly.** The biggest single one is **TAB MHG 40293 — Kolbe, Frederick Fortunatus
+Downing, 1918**. One page. "Downing" was Margaret Downing's maiden name and is carried in this
+family as a forename, so if that notice names his father it may close the whole question.
 
-One mistake caused it and I repeated it for a fortnight. I asked you for those death notices **"for
-the parents"** — that is the wording on your own invoice, because it is the wording I gave you. But
-I already held the parents, in church registers I had read two weeks earlier. Catherine Mary Sophia
-was baptised at Barkly Oost on 24 May 1891, and her brother Henry James at Barkly East in 1887, and
-that register names Willem Hermanus Booÿsen and Catharina Maria Sophia Barry outright. I was paying
-you to fetch something already on my own shelf. Henry James went the same way — he is the
-best-documented man of his generation here, with a baptism, a marriage, a death and a burial
-already. John Barry Booyzen I wanted for his children, and a public tree names all ten, with a wife
-and a death at Delmas that match his gravestone to the day.
+The second is **MHG 52653**, which cannot be found on film at all — the 1923 numbers look nothing
+like the later ones, so I think the reference itself is wrong rather than the file missing. The
+correct number would be in the paper MHG index for the 1920s, and that is simply not consultable
+from outside the building.
 
-**The references were right and your work was not the problem. My brief was wrong**, and I did not
-find out until after you had done all the arranging. That is the part I am sorry for.
-
-What has changed is that every item is now tested against FamilySearch, Geni and MyHeritage
-*before* it goes on a list, and only stays if they come back empty or come back contradicting a
-document I hold. That cut the list by more than half.
-
-**What I am trying to do, briefly.** I keep documented family archives — several, for different
-branches — and the rule is that nothing goes in unless a document says it. Trees are somewhere to
-look, never the evidence.
-
-The South African work is the Booyzen, Barry, Mountjoy and Kolbe families, from Barkly East and
-Burgersdorp in the Cape up into the Transvaal. **The line I most want to close is the Kolbes.**
-George Augustus Kolbe was an 1820 Settler, born in Soho in 1802, who married Margaret Downing at
-Shoreditch in 1819 and became a missionary at Philippolis. I can follow him in the Cape registers.
-What I cannot prove on paper is how the Transvaal Kolbes attach to him — all I have there is
-inference. A death notice names the parents, the birthplace, the occupation, the spouse and the
-children, and is signed by somebody who knew the person. That is why I want them, and why no
-website substitutes.
-
-After Pretoria the weight of that question moves to **Bloemfontein** — two estate files and, found
-last week, a memoir written by a general of this family that appears never to have been read by
-anyone connected to it. Different depot, and not a trip I would ask of you.
-
-**There is also a second archive with a Johannesburg end**, which may be more use to you. It is a
-different branch entirely — a Jewish family from Berlin and the Posen borderland. Four of its men
-were deported from Berlin between 1941 and 1944 and did not return. One young man got out in 1933,
-became a dress designer in Johannesburg, died there on 15 December 1969 and is buried at Chevra
-Kadisha. A woman born in Lourenço Marques married four times in Johannesburg and was buried in
-Porto. If there is work for you beyond the Booyzens it is most likely there, and it is Johannesburg
-rather than Pretoria.
-
-**One thing you could genuinely help with now, since you offered.** MHG 52653 — Jacobus Nichols
-Booyzen, 1923. That reference cannot be found on film at all, and the 1923 numbers do not look like
-the later ones, so I suspect the reference itself is wrong rather than the file missing. **What I
-need is not the file but the correct number, from the paper MHG index for the 1920s.** I have never
-seen that index and it cannot be consulted from outside the building. If that is ten minutes at a
-counter next time you are in, I would be grateful and will pay for the time. If it is more, say so
-and leave it — I have asked enough of you this fortnight.
-
-I will send the corrected list when it is finished, and not before.
+You offered information rather than work, and I am taking you at your word — I am not asking you to
+go and do anything, and I am not putting anything else on an invoice. I have set the gaps out
+because you asked what I was trying to do, and those two are it. If anything there is familiar to
+you, I would be glad to hear it; if not, that is entirely fine.
 
 With thanks,
 David de Franceski
