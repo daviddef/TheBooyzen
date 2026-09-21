@@ -80,6 +80,14 @@ on_signal() {
   SIGNALLED=$1
   exit $((128 + $1))
 }
+# WHAT THIS TRAP CANNOT CATCH, AND IT HAPPENED ON 21 SEPTEMBER. SIGKILL (9) is
+# not deliverable to a handler - the kernel stops the process and no trap runs.
+# A build here died at load 664 with the log ending mid-pipeline and NOTHING
+# printed: no EXIT line, no step name, nothing. That is the signature of a -9,
+# and it is the one ending this script cannot narrate.
+# SO: A LOG THAT STOPS MID-PIPELINE WITH NO EXIT LINE IS ITSELF THE DIAGNOSIS.
+# The trap prints on every ending it can reach, so silence means the process was
+# killed outright - check `uptime` before looking for a fault in the data.
 trap 'on_signal 15' TERM
 trap 'on_signal 2'  INT
 trap 'on_signal 1'  HUP
