@@ -5196,6 +5196,20 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "Nienaber 1947 — the one page that would carry the General's pedigree, and it is not digitised",
+   "n": "a controlled negative with three controls, which is what it took to be allowed to say it",
+   "d": "21 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "Is P. J. Nienaber, *Afrikaanse Biografiese Woordeboek* (Voortrekkerpers, 1947), on the Internet Archive?",
+     "NO — AND THIS ONE IS CONTROLLED THREE WAYS",
+     "**It matters because it is the source by elimination for the General's descent.** The Afrikaans Wikipedia article on **Generaal Willem Johannes Kolbe** cites Nienaber **p. 139** and a Fourie piece without saying which carries what; the Fourie piece was read here in full and **has no genealogy in it at all**, so the pedigree — father **J. G. E. Kolbe**, mother **Anna Jacoba van der Merwe**, grandparents **George Augustus Kolbe** and **Margaret Downing** — rests on a page nobody here has seen. **Searched: `title:(\"Afrikaanse Biografiese Woordeboek\")` returns 0, and a loose `Nienaber AND biografiese` returns 0.** **THREE CONTROLS, because a zero is worth nothing without them.** `title:(\"Dictionary of South African Biography\")` returns **5**, including **`dictionaryofsout0005unse`** — the exact identifier row 137 found by another route, so the query shape is right. `title:(\"Afrikaanse\")` returns **570**, so Afrikaans titles are not invisible to this index. And **Voortrekkerpers** itself returns 2 items, so the publisher is not absent either. **The endpoint is the one that works** — archive.org's full-text API is gone, but `advancedsearch.php` answers, which is the distinction learned earlier the same day. **CONCLUSION: unlike DSAB Volume V, which is borrowable, this one is not digitised and needs a library.** The realistic holders are the **National Library of South Africa by legal deposit** and South African university libraries. **Nothing about the pedigree is changed by this** — it is neither confirmed nor withdrawn, and it stays exactly where row 140 put it.",
+     "no"
+    ]
+   ]
   }
  ]
 }
