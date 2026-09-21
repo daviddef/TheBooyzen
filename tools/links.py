@@ -16,7 +16,23 @@ for r, _, fs in os.walk(DIST):
         else:
             assets.add("/" + rel.replace(os.sep, "/"))
 
-HREF = re.compile(r'(?:href|src)="([^"]+)"')
+# THE ATTRIBUTE MUST SIT INSIDE A REAL TAG. This used to be
+#     (?:href|src)="([^"]+)"
+# which matches ANYWHERE IN THE BODY, including inside prose that quotes markup.
+# Two pages here discuss markup: a searched row quoting a parked domain's
+# redirect script, and a work-list row quoting an escaped <a class="ark"
+# href="..."> out of another archive's register. Both were read as links, and
+# one of them "linked" to /lander, a page nobody ever claimed existed.
+#
+# The shared kit's checkarchive.py had the identical fault and was fixed on
+# 21 September, measured across five archives and 1.45 million internal hrefs:
+# the tagged form misses NONE of them and drops only the quoted ones. Lerena
+# alone carries 207 of the quoted shape on /register/. This is the same fix in
+# this archive's own copy, which the kit change did not reach.
+#
+# [^<>]* cannot cross a tag boundary, so prose sitting between > and < can
+# never match, and an escaped &lt;a href=...&gt; is text and not a tag.
+HREF = re.compile(r'<[a-zA-Z][^<>]*?(?:href|src)="([^"]+)"[^<>]*>')
 bad_links, bad_assets = [], []
 linked_from = collections.defaultdict(set)
 
