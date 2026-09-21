@@ -36,12 +36,52 @@ cd "$(dirname "$0")"
 # else. Anything finer has to be read off the output. That run did not reproduce
 # - one failure is the weather, three identical ones are a fault.
 STEP="starting up"
+
+# THE SIGNAL MUST BE TRAPPED, NOT INFERRED FROM $?. Found by the D'Arcy session
+# on 21 September, in the branch of this trap neither of us had tested.
+#
+# $? inside an EXIT handler is the status of the last CHILD. That is 143 when a
+# pkill reaps the `astro` process and `set -e` propagates it up - which is the
+# case both archives watched work and took as proof. It is NOT 143 when the
+# signal is sent to THE SCRIPT ITSELF, where $? is whatever finished last and is
+# usually zero. And a signal to the script itself is exactly what
+# `pkill -f build.sh` does, which is the pattern that was actually run here.
+#
+# Their trap announced EXIT=0 and a clean pass over a killed build. This one was
+# worse in its own way: it read $? as 0, took the `exit 0` branch, and printed
+# NOTHING AT ALL while the shell still died 143 - a partial log, no explanation
+# and a non-zero code, which is precisely the ambiguity the trap was added to
+# remove. The instrument went silent in the one case it was built for.
+#
+# So the signals are caught and a flag is set, and the EXIT handler reads the
+# flag BEFORE it reads $?. The two kill paths print different sentences on
+# purpose: a reader chasing a reaped child should not be shown the case where
+# somebody killed the whole run, and the remedies differ.
+SIGNALLED=0
+on_signal() {
+  SIGNALLED=$1
+  exit $((128 + $1))
+}
+trap 'on_signal 15' TERM
+trap 'on_signal 2'  INT
+trap 'on_signal 1'  HUP
+
 on_exit() {
   st=$?
+  if [ "$SIGNALLED" -ne 0 ]; then
+    echo ""
+    echo "EXIT=$((128 + SIGNALLED))  KILLED by signal $SIGNALLED sent to THIS SCRIPT during: $STEP"
+    echo "          Somebody or something killed the whole build, not a step inside it."
+    echo "          A bare \`pkill -f \"astro build\"\` or \`pkill -f build.sh\` on this machine"
+    echo "          reaps every archive's build, not only its own. Scope it to a path."
+    echo "          Nothing is wrong with the data. Re-run it."
+    exit $((128 + SIGNALLED))
+  fi
   [ "$st" -eq 0 ] && exit 0
   if [ "$st" -gt 128 ]; then
     echo ""
     echo "EXIT=$st  KILLED by signal $((st - 128)) during: $STEP"
+    echo "          A STEP was reaped - the build process itself, not this script."
     echo "          THIS IS NOT A GATE REFUSING. Nothing is wrong with the data."
     echo "          $(uptime | sed 's/.*\(load[^,]*.*\)/\1/')"
     echo "          Re-run it. Three identical failures is a fault; one is the weather."

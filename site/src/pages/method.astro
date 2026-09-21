@@ -175,16 +175,22 @@ import { u } from "../lib/url.js";
             <td class="cap">Written <b>the same day as this section</b>, and caught by it. The row was planted in <code>public/searchindex.json</code> and the check reads <code>dist/searchindex.json</code>, which had not been rebuilt. <b>It was asked about the built copy and told about a change to the source.</b> Planted in the file the check actually reads, it fails at once and names the row.</td></tr>
         <tr><td><b>A gate reporting a clean build</b></td>
             <td class="cap">It had been run <b>before the row that broke it existed</b>, and on checks that do not touch that schema. <b>A build that did not cover the change is not a build.</b></td></tr>
+        <tr><td><b>A trap built to say how the build died</b></td>
+            <td class="cap">It read <code>$?</code>, which in an exit handler is the status of the last <b>child</b>. Right when the machine reaps the build process; wrong when the signal hits <b>the script itself</b>, where it is whatever finished last. So the instrument built to tell a killed build from a refusing one <b>went silent on the one case it existed for</b> &mdash; and it had been watched working, on the other path. <b>The signals are trapped now, not inferred.</b></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="prose" style="margin-top:20px">
-    <p><b>The test that catches all six is the same one, and it is one question:</b> if the thing I am
+    <p><b>The test that catches every one of them is the same, and it is one question:</b> if the thing I am
       looking for were definitely there, could this instrument have told me? Ask a filter for something
       already seen with your own eyes on the page in front of you. Ask a comparison to fail on a
       difference you planted. Ask a generator to survive a rebuild, not a re-read.</p>
     <blockquote>None of them is a wrong answer. Each is a correct answer to a question nobody asked.</blockquote>
+    <p class="cap"><b>Six of these were found by measurement. The last two were found by checking an
+      instrument against itself</b> &mdash; asking the stale-index check about the file it actually reads,
+      and asking the trap about the branch nobody had run. That is the half that generalises, because
+      measurement only ever checks the thing you already doubted.</p>
     <p class="cap">Which is why every gate added here is <b>verified in both directions</b> &mdash; silent
       on the real data, and made to fail on a fault planted on purpose. A check that has only ever passed
       has not been shown to be a check.</p>
