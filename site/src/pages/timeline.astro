@@ -9,7 +9,14 @@ import pl from "../data/places.json";
 const ev = [...tl.events].sort((a, b) => a.y - b.y || (a.d < b.d ? -1 : 1));
 const byName = {}; for (const x of Object.values(d.people)) byName[x.n] = x.slug;
 const byPlace = {}; for (const x of pl.places) byPlace[x.n] = x.slug;
-const kinds = { doc: "Document", life: "Life", name: "The name", war: "The war" };
+/* `back` was missing from this map and the fallback below is `kinds[e.k] || e.k`,
+   so the raw key reached the reader as a filter option reading "back" beside
+   Document, Life, The name and The war. Both events it tags are withdrawn
+   readings — a death date invented from a file number, and a filing year used
+   as a death — so they are what this archive elsewhere calls what was TAKEN
+   BACK, and that is what the filter should say. */
+const kinds = { doc: "Document", life: "Life", name: "The name", war: "The war",
+                back: "Taken back" };
 const lo = ev[0].y, hi = ev[ev.length - 1].y;
 const events = ev.map((e) => ({
   year: e.y, when: e.d, title: e.t, what: e.w, kind: kinds[e.k] || e.k, href: e.h, big: e.big,
@@ -18,12 +25,21 @@ const events = ev.map((e) => ({
     ...e.pl.filter((n) => byPlace[n]).map((n) => ({ label: n, href: "/places/" + byPlace[n] + "/" })),
   ],
 }));
+/* A key with no label still falls through to the reader. Name them instead of
+   letting the next one arrive as quietly as `back` did. */
+const unlabelled = [...new Set(ev.map((e) => e.k).filter((k) => k && !kinds[k]))];
 const decades = [];
 for (let y = 1770; y <= 2020; y += 10) decades.push(y);
 ---
 <Base title="The Timeline"
       eyebrow={`${ev.length} dated events · ${lo}–${hi}`}
       dek="Everything this archive can put a document behind, in order. Where a document was written long after the event it records, both dates are given — that gap is one of the things this archive is about.">
+
+{unlabelled.length > 0 && (
+  <div class="note"><p><strong>Event kinds with no label.</strong> The timeline data has grown
+    a kind this page was not taught, so it is named here rather than reaching the filter as a
+    raw key: {unlabelled.join(", ")}.</p></div>
+)}
 
 <Timeline events={events} u={u}>
 <Fragment slot="chart">
