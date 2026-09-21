@@ -57,6 +57,24 @@ STEP="starting up"
 # flag BEFORE it reads $?. The two kill paths print different sentences on
 # purpose: a reader chasing a reaped child should not be shown the case where
 # somebody killed the whole run, and the remedies differ.
+# THE TWO BUILD STEPS RUN IN SUBSHELLS, AND THAT IS NOT STYLE. They used to read
+#     cd site && npm run build >/dev/null && cd ..
+# and `set -e` DOES NOT ABORT ON A FAILING COMMAND INSIDE AN && LIST. Proven here
+# on 21 September with a three-line script: `cd site && sh -c "exit 143" && cd ..`
+# falls through to the next line, leaves the working directory in site/, and the
+# script EXITS 0.
+#
+# WHICH IS HOW A KILLED BUILD COULD HAVE BEEN REPORTED GREEN. When astro was
+# reaped, the first pass failed, `cd ..` never ran, the script carried on, and
+# python then failed to find site/tools/dossiers.py - two steps downstream of the
+# real event, with the trap faithfully reporting "NOT KILLED, exited 2 during:
+# dossiers.py". A run earlier the same afternoon failed in exactly that way and
+# was written off as load, because it did not reproduce. It was not load. It was
+# this, and it had been reproducing all along in whatever step happened to be
+# next.
+#
+# ( cd site && ... ) restores the directory by construction and propagates the
+# failure, so `set -e` fires on the step that actually failed.
 SIGNALLED=0
 on_signal() {
   SIGNALLED=$1
@@ -99,7 +117,7 @@ on_exit() {
 trap on_exit EXIT
 
 STEP="people.json from people.js"; node tools/people-json.mjs
-STEP="first pass - build:pages, checks deliberately skipped"; cd site && npm run build:pages >/dev/null && cd ..
+STEP="first pass - build:pages, checks deliberately skipped"; ( cd site && npm run build:pages >/dev/null )
 STEP="dossiers.py"; python3 tools/dossiers.py
 STEP="gallery.py"; python3 tools/gallery.py
 # SEARCHINDEX IS A COMMITTED ARTEFACT THAT ONLY THIS SCRIPT REGENERATES, AND
@@ -116,7 +134,7 @@ STEP="gallery.py"; python3 tools/gallery.py
 # watching the kit's check name it.
 STEP="searchindex.py"; python3 tools/searchindex.py
 STEP="register.py"; python3 tools/register.py
-STEP="second pass - the full build WITH every gate"; cd site && npm run build >/dev/null && cd ..
+STEP="second pass - the full build WITH every gate"; ( cd site && npm run build >/dev/null )
 STEP="links.py"; python3 tools/links.py
 STEP="checkatlas.py"; python3 tools/checkatlas.py --data site/src/data --dist site/dist
 STEP="checkregisters.py"; python3 tools/checkregisters.py --dist site/dist
