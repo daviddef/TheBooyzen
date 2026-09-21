@@ -235,6 +235,41 @@ Württemberg returns 0 there against a working control". The control showed Find
 search that does not use it — before believing a filter's nil, search it for something you
 have already seen with your own eyes.**
 
+## A signed-out FamilySearch may ANSWER ZERO instead of asking you to sign in (21 Sep 2026)
+
+**REPORTED BY THE LERENA SESSION, NOT INDEPENDENTLY VERIFIED HERE** — Chrome became unreachable
+before the control could be run. Recorded at their standing rather than this archive's, and it
+should be tested before it is relied on.
+
+Their account: with the shared session signed out, **every record search returned "Historical
+Record Search Results (0)" with "No Results Found"** — stable across two reads twelve seconds
+apart and still zero after ninety seconds. No error, no redirect, no banner. They caught it because
+**the surname González in Uruguay returned 0**, and a collection of millions cannot answer zero to
+one of the commonest surnames in the language.
+
+**THE CHEAP CONTROL, AND IT IS THE SAME SHAPE AS EVERY OTHER CONTROL HERE:** ask it a question you
+already know the answer to. For this archive that is a top-twenty Afrikaans or English surname in a
+large South African collection — `Van der Merwe`, `Botha`, `Smith`. One query.
+
+**THE ONE-NAVIGATION DIAGNOSIS THEY GIVE:** ask the FULL-TEXT search anything. Signed out, full
+text **redirects to the sign-in page**; the record search, on the same session in the same minute,
+**manufactures a null instead**. And the DeepZoom image host keeps serving plates throughout, so a
+whole day of reading images gives no warning at all.
+
+**THIS ARCHIVE SAW THE OTHER SYMPTOM ON THE SAME DAY, WHICH IS WHY THE WARNING IS WORTH KEEPING
+RATHER THAN SIMPLY ADOPTING.** Row 177's searches hit `ident.familysearch.org` — **the sign-in page,
+honestly returned** — and were recorded `blocked`, which is correct and is not in doubt. So the
+service does not always fabricate: it redirected here and, they report, fabricated there. **The
+symptom varies, and that is the dangerous part** — a reader who has once seen the honest redirect
+will take the next zero at face value.
+
+**WHAT IS AND IS NOT IN DOUBT.** A null that a DELETED parameter turned into results is safe: a
+positive result proves the service was answering at that moment. Only **zeros that stayed zero** are
+suspect. Audited here for 21 September: the only FamilySearch row is `blocked`, from the redirect,
+so nothing of this archive's is affected.
+
+**Signing in is David's. No session here signs into his accounts on his behalf.**
+
 ## The FamilySearch film index, pulled by API instead of by eye (17 Sep 2026)
 
 A film's **Image Index** panel — the table under each image giving Name, Birth
