@@ -1,88 +1,56 @@
 ---
+/* The drawing is the kit's; the writing underneath is this archive's.
+   Until 21 September this page carried its own 120-line layout engine — a
+   column-per-generation placer, an SVG, wall rings, dots for a second
+   marriage and for a fold. The kit's AncChart already did all of it for six
+   other archives, and the three things it could not do were Booyzen's, so
+   they went into the kit instead of staying here: a short name for a box,
+   a second marriage the chart has one slot too few for, and a line that
+   folds back on itself.
+   The lists stay off. AncChart will write all three sections itself for an
+   archive that has not, and this one had, better and with its own links. */
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import ped from "../data/pedigree.json";
 import d from "../data/dossiers.json";
+import AncChart from "@daviddef/archive-kit/components/AncChart.astro";
+
 const slugOf = {};
 for (const p of Object.values(d.people)) slugOf[p.n] = p.slug;
-/* Lay the chart out: generations are columns, and a node sits at the midpoint
-   of whatever it has above it. Leaves are stacked in the order they are met. */
-const COLW = 176, ROWH = 34, BOXW = 158, BOXH = 26;
-let cursor = 0;
-function layout(n, g) {
-  if (!n) return null;
-  const node = { ...n, g };
-  const kids = [n.f, n.m].filter(Boolean).map(k => layout(k, g + 1)).filter(Boolean);
-  node.kids = kids;
-  node.y = kids.length ? (kids[0].y + kids[kids.length - 1].y) / 2 : (cursor++) * ROWH;
-  node.x = g * COLW;
-  return node;
-}
-const root = layout(ped.root, 0);
+
+/* THE ADAPTER, AND IT IS THE WHOLE POINT. pedigree.json is read by fifteen
+   other things in this archive including two tools, so its field names are
+   not the chart's to rename. The contract that is shared is the component's,
+   and an archive meets it with a mapper rather than a migration. */
+const toChart = (n) => n && ({
+  ...n,
+  d: n.wall ? undefined : [n.b, n.d].filter(Boolean).join(" – "),
+  conf: n.s,
+  f: toChart(n.f),
+  m: toChart(n.m),
+});
+const root = toChart(ped.root);
+const chartHref = (b) => (slugOf[b.n] ? u("/who/" + slugOf[b.n] + "/") : null);
+
 const flat = [];
-(function walk(n) { flat.push(n); (n.kids || []).forEach(walk); })(root);
-const maxY = Math.max(...flat.map(n => n.y));
-const maxG = Math.max(...flat.map(n => n.g));
-const W = (maxG + 1) * COLW + 40, H = maxY + BOXH + 74;
-const wallLabel = { hard: "The wall", searched: "Searched, nothing", notknown: "“Not Known”", disputed: "Disputed" };
-const wallFill = { hard: "--terra", searched: "--ink-3", notknown: "--terra", disputed: "--ochre" };
-const gens = [...Array(maxG + 1).keys()];
-const label = n => n.sn || n.n;
-/* The two things a strict ancestor chart cannot draw: a second wife, and a line
-   that reaches the same couple twice. Both are listed under the chart instead. */
-const alts = flat.filter(n => n.alt).flatMap(n => n.alt.map(a => ({ ...a, of: n })));
-const folds = flat.filter(n => n.same);
-const named = flat.filter(n => !n.wall);
-const walls = flat.filter(n => n.wall);
+(function walk(n) { if (!n) return; flat.push(n); walk(n.f); walk(n.m); })(ped.root);
+const alts = flat.filter((n) => n.alt).flatMap((n) => n.alt.map((a) => ({ ...a, of: n })));
+const folds = flat.filter((n) => n.same);
+const named = flat.filter((n) => !n.wall);
+const walls = flat.filter((n) => n.wall);
 ---
+
 <Base title="Our line, drawn"
       eyebrow={`${named.length} named ancestors · ${walls.length} walls`}
       dek={ped.note}>
 
 <section class="blk">
-  <div class="scroll">
-    <svg viewBox={`0 0 ${W} ${H}`} width={W} style="min-width:900px;display:block" role="img"
-         aria-label="Ancestor chart for Catherine Mary Sophia Booyzen, six generations, with five points where the line stops.">
-      {gens.map(g => (
-        <text x={g * COLW + BOXW / 2} y="16" text-anchor="middle" font-size="10"
-              style="fill:var(--ink-3);font-family:var(--mono);letter-spacing:.08em">
-          {g === 0 ? "SELF" : "GEN " + g}</text>
-      ))}
-      {flat.map(n => (n.kids || []).map(k => (
-        <path d={`M ${n.x + BOXW} ${n.y + 30 + BOXH / 2} H ${n.x + BOXW + 12} V ${k.y + 30 + BOXH / 2} H ${k.x}`}
-              style={`fill:none;stroke:var(${k.wall ? wallFill[k.k] : "--rule-strong"});stroke-width:1;${k.wall ? "stroke-dasharray:3 3" : ""}`} />
-      )))}
-      {flat.map(n => (n.wall ? (
-        <g>
-          <rect x={n.x} y={n.y + 30} width={BOXW} height={BOXH} rx="13"
-                style={`fill:none;stroke:var(${wallFill[n.k]});stroke-width:1.2;stroke-dasharray:3 3`} />
-          <text x={n.x + BOXW / 2} y={n.y + 30 + 17} text-anchor="middle" font-size="10.5"
-                style={`fill:var(${wallFill[n.k]});font-family:var(--sans);letter-spacing:.04em`}>{wallLabel[n.k]}</text>
-          <title>{n.wall}</title>
-        </g>
-      ) : (
-        <a href={slugOf[n.n] ? u("/who/" + slugOf[n.n] + "/") : u("/direct-line/")}>
-          <g>
-            <rect x={n.x} y={n.y + 30} width={BOXW} height={BOXH} rx="2"
-                  style={`fill:var(--panel);stroke:var(${n.s === "open" ? "--ochre" : "--rule"});stroke-width:1`} />
-            <text x={n.x + 8} y={n.y + 30 + 12} font-size="10.5"
-                  style="fill:var(--ink);font-family:var(--sans)">{label(n).length > 27 ? label(n).slice(0, 26) + "…" : label(n)}</text>
-            <text x={n.x + 8} y={n.y + 30 + 22} font-size="9.5"
-                  style="fill:var(--ink-3);font-family:var(--mono)">{n.b} – {n.d}</text>
-            {n.alt && <circle cx={n.x + BOXW - 8} cy={n.y + 30 + 8} r="3" style="fill:var(--ochre)" />}
-            {n.same && <circle cx={n.x + BOXW - 8} cy={n.y + 30 + 8} r="3" style="fill:var(--accent)" />}
-            <title>{n.n} · {n.b} – {n.d}{n.alt ? " · also married " + n.alt.map(a => a.n).join(", ") : ""}{n.same ? " · the line folds back here" : ""}</title>
-          </g>
-        </a>
-      )))}
-    </svg>
-  </div>
-  <p class="cap">Each box is a person a document names; click one for everything the archive holds on
-    them. Dashed rings are where the line stops. An <b style="color:var(--ochre)">ochre dot</b> means
-    that man married more than once and the chart can only draw one wife; a
-    <b style="color:var(--accent)">green dot</b> means the line arrives at a couple it has already
-    passed. Both are set out below.</p>
+  <AncChart root={root} personHref={chartHref} lists={false} />
+  <p class="cap" style="margin-top:12px">Each box is a person a document names; click one for
+    everything the archive holds on them. Dashed boxes are where the line stops, and each one
+    says which kind of stop it is. A man who married more than once has one slot here and the
+    rest are set out below, with the couples the line reaches twice.</p>
 </section>
 
 <Rule name="thorn" label="Five walls, five different reasons" />

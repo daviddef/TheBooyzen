@@ -46,7 +46,10 @@
        "s": "open",
        "f": {
         "wall": "No father. No dates. Nothing behind the button.",
-        "k": "hard"
+        "k": "hard",
+        "label": "Gerthardus Lodewikus Booysen's father",
+        "note": "**The male line simply stops.** No birth date, no death date, no father, no mother. Six generations up the surname ends, and the tree offers buttons with nothing behind them. [Open question 0](/open-questions/)",
+        "kind": "hard"
        }
       },
       "m": {
@@ -56,7 +59,10 @@
        "s": "doc",
        "f": {
         "wall": "No estate file for her in the Cape archives. Searched eight ways.",
-        "k": "searched"
+        "k": "searched",
+        "label": "Magdelena Elisabeth de Beer's parents",
+        "note": "**Searched and empty.** The one named lead at the top of that line was her 1843 estate. The Cape archives were searched under **eight forms of both surnames**. There is no file for her, and none for him. [The searches](/searched/)",
+        "kind": "searched"
        }
       }
      },
@@ -67,7 +73,10 @@
       "s": "doc",
       "f": {
        "wall": "Documented as his WIFE and as a mother — her son David Schalk was baptised on 4 January 1807 — but NOT documented as the mother of the box below her. The 1876 Sterfkennis names eight children and no mother for any of them, and a second van der Merwe wife bore a ninth about 1828.",
-       "k": "disputed"
+       "k": "disputed",
+       "label": "Anna Maria van der Merwe, 1785–bef. 1825",
+       "note": "Documented as his **wife** and as a mother — her son David Schalk was baptised on 4 January 1807 — but **not documented as the mother of the box below her**. The chart draws the marriage it can prove and stops at the parentage it cannot. [Disputed](/disputed/)",
+       "kind": "disputed"
       }
      },
      "sibwhy": "The 1876 Sterfkennis",
@@ -135,7 +144,10 @@
       "s": "doc",
       "f": {
        "wall": "“Names of the Parents of the Deceased. Not Known.” Written 1840, thirteen years after he died.",
-       "k": "notknown"
+       "k": "notknown",
+       "label": "James Montjoy's parents",
+       "note": "**The strongest wall, because it is not a gap in the archive but a gap in the family.** His death notice was completed **thirteen years after he died** by a relative who knew his trade, his house, its value and his wife's first husband — and wrote **Not Known** where it asked for his parents. His 1817 marriage records no origin either. [The notice](/documents/)",
+       "kind": "notknown"
       }
      },
      "m": {
@@ -352,7 +364,10 @@
       "s": "open",
       "f": {
        "wall": "One profile holding two men — a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort. His son's 1903 registration says only: an Irishman, born in Ireland.",
-       "k": "disputed"
+       "k": "disputed",
+       "label": "John Barry, 1796–1853",
+       "note": "**Not a wall so much as a knot:** one profile holding two men, a Yorkshire farmer of Bilsdale and a man who died at de Bruins Poort in the Cape. His son's 1903 registration will say only **an Irishman, born in Ireland**. Until they are separated nothing above it can be trusted. [Disputed](/disputed/)",
+       "kind": "disputed"
       }
      }
     },
