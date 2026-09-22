@@ -1607,7 +1607,7 @@
    "k": "Mission station, later town",
    "r": "Southern Orange Free State",
    "s": "doc",
-   "w": "WHERE THE SETTLER'S CHILDREN GREW UP, on the word of a man writing in 1868 who knew them. The obituary of Commandant John Gerson Eliezar Kolbe says his father “became a MISSIONARY TO THE GRIQUAS AT PHILIPPOLIS, and most of his family, we believe, GREW UP THERE”. This archive had reached the same conclusion from the children's baptism places — Harriet Hachilah Machilah born here in 1831 — and this is a fourth, independent source for it. Philippolis was the London Missionary Society's Griqua station; George Augustus Kolbe was an L.M.S. missionary.",
+   "w": "WHERE THE SETTLER'S CHILDREN GREW UP, on the word of a man writing in 1868 who knew them. The obituary of Commandant John Gerson Eliezar Kolbe says his father “became a MISSIONARY TO THE GRIQUAS AT PHILIPPOLIS, and most of his family, we believe, GREW UP THERE”. This archive had reached the same conclusion from the children's baptism places — Harriet Hachilah Machilah born here in 1831 — and this is a fourth, independent source for it. Philippolis was the London Missionary Society's Griqua station; George Augustus Kolbe was an L.M.S. missionary. AND THERE IS A PICTURE OF IT. On Dr Andrew Smith’s expedition CHARLES BELL painted a church service here with Kolbe preaching — catalogued as the original at MuseumAfrica and as a photographic copy at the University of Edinburgh, CSWC 60 item 3. NEITHER HAS BEEN SEEN, and it would be the only likeness of anybody in this archive born before 1850.",
    "e": [
     [
      "1831",
@@ -1616,6 +1616,10 @@
     [
      "1830s",
      "“Most of his family grew up there” — the 1868 obituary"
+    ],
+    [
+     "1834",
+     "Charles Bell draws him in the pulpit here"
     ]
    ],
    "p": [
@@ -1648,7 +1652,8 @@
    ],
    "p": [
     "Frederik Fortunatus Kolbe",
-    "Adriana Henrietta Johanna Kolbe"
+    "Adriana Henrietta Johanna Kolbe",
+    "Johan Casimir Kolbe"
    ],
    "slug": "bethulie",
    "lat": -30.494,
@@ -1833,6 +1838,27 @@
    "slug": "queenstown",
    "lat": -31.897,
    "lon": 26.875
+  },
+  {
+   "n": "Panfontein",
+   "k": "Farm",
+   "r": "District Bloemfontein, Orange Free State",
+   "s": "doc",
+   "w": "WHERE THE LINE IN THE PRISONER LIST WAS STANDING. Williem Johannes Kolbe was taken here in 1901, aged 54, and recorded as a Free Stater — TNA WO 108/368 folio 603 — then sent to Natal. The Afrikaans sources make him GENERAL WILLEM JOHANNES KOLBE of the Bloemfontein commando, born 9 July 1847 in the district of Philippolis, where his grandfather preached. THE TWO MEN ARE NOT PROVED TO BE ONE: a name, a year and a district agreeing is strong and is not a register.",
+   "e": [
+    [
+     "1901",
+     "Williem Johannes Kolbe taken prisoner here, aged 54"
+    ]
+   ],
+   "p": [
+    "Williem Johannes Kolbe of Panfontein"
+   ],
+   "slug": "panfontein",
+   "lat": -29.085,
+   "lon": 26.159,
+   "approx": true,
+   "why": "The farm itself is not pinned. The prisoner list gives the DISTRICT of Bloemfontein and no farm coordinate, and several Panfonteins exist in the Free State — so this sits on Bloemfontein and says so. A grave shown in the middle of a district is worse than one not shown: the first is wrong and looks right."
   }
  ]
 }
