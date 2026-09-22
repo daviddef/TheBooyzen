@@ -631,6 +631,50 @@
     ]
    ],
    "note": "THIS IS THE CLEANEST CASE ON THE PAGE OF A NAME OUTLIVING ITS OWNER'S OWN RECORD. Margaret Downing could not write her name in 1819 — she made a mark — and this archive did not have her birth date until a gravestone caption was read one line further on 15 September. HER NAME IS BETTER RECORDED THAN SHE IS: it appears in four estate files and two court records across three provinces, and it is still being given fifty years after the last person who could have met her was dead."
+  },
+  {
+   "n": "Rector",
+   "sub": "A forename this archive carried for a fortnight without noticing, under a spelling that is not a word",
+   "kick": "ANTON RECTOR KOLBE BARRY was baptised at Burgersdorp in 1883 and this archive could never say where his Rector came from. On 21 September a compiled register report supplied the answer by spelling correctly a name the family list had been spelling wrongly.",
+   "who": [
+    [
+     "Keetor — read Rector — Peter Benjamin Kolbe",
+     "b. 1840, Colesberg",
+     "THE PROBABLE SOURCE, AND HE IS IN NO DOCUMENT. The family list has carried him as KEETOR, which is not a name; a 2012 compiled report gives the same man as PETER RECTOR KOLBE, which is. On the ordinary reading the tree has been carrying a misreading of a hand. But he is absent from BOTH his supposed parents' death notices, and a boy born in 1840 would have been four when his father died — so he died before 1845 or he does not belong to this family.",
+     "/who/peter-benjamin-kolbe/"
+    ],
+    [
+     "Anton Rector Kolbe Barry",
+     "b. 3 Nov 1882, bapt. Burgersdorp 1883",
+     "THE GREAT-NEPHEW, and the reason any of this matters. The Kolbe name in a fourth generation and the furthest down this archive has traced it. A great-uncle called Rector would explain him — which is the same namesake reasoning that traced Fortunatus across three families — but two compiled sources agreeing about a forename are still two compiled sources.",
+     ""
+    ]
+   ]
+  },
+  {
+   "n": "Casimir",
+   "sub": "Named in two death notices, missing from this archive's own people list, and still in use ninety years later",
+   "kick": "A compiled report listed a JOHAN CASMIER KOLBE and this archive recorded that no such name had ever been held here. It was wrong: he is in both his parents' death notices, and the family list already carried the variant Casiner.",
+   "who": [
+    [
+     "Johan Casimir Kolbe",
+     "b. 1844, Bethulie",
+     "THE SETTLER'S CHILD, named in his father's death notice signed at Colesberg in January 1845 and again in his mother's of 25 November 1867 — where the document marks Mary Elizabeth dead and does not mark him, so he was alive at about twenty-three. Nothing is known of his own life: no baptism, no marriage, no death.",
+     "/who/johan-casimir-kolbe/"
+    ],
+    [
+     "Johan Hendrik Casimir Kolbe",
+     "b. 1863, m. Gertruida Jacomina Louw",
+     "SOUTH AFRICA, CIVIL MARRIAGE RECORDS, 1801–1974, and one of three men of the name in that register. A SHARED SURNAME IS NOT A RELATIONSHIP and he is not joined to this house — he is here because a rare forename recurring in the same country for ninety years is a thing to follow, not a thing to assume.",
+     "/register/"
+    ],
+    [
+     "Johan Casimir Kolbe",
+     "b. 1934, m. Maria Monica Van Der Walt",
+     "THE THIRD, and the latest. Ninety years after the Settler's child, the same two forenames in the same country's marriage register.",
+     "/register/"
+    ]
+   ]
   }
  ]
 }

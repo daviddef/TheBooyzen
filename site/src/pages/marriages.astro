@@ -164,8 +164,17 @@ const timelinePoints = rows.map(r => ({
             { n: docCount, label: "a record read here" }, { n: P.lines.length, label: "lines joined" },
             { n: P.people.length, label: "people" }]}
   couples={rows.map(r => ({
-    a: r.H ? { name: r.H.n, slug: r.H.slug } : { name: "—" },
-    b: r.W ? { name: r.W.n, slug: r.W.slug } : { name: "—" },
+    /* resolve() ALREADY SAYS WHEN IT COULD NOT FIND SOMEBODY and this page was
+       not listening. For a name this archive does not hold it returns
+       { missing: true } AND STILL SUPPLIES A SLUG, so the page linked every
+       spouse whether or not there was a page at the other end. It went unnoticed
+       while every name in the register happened to be held; the two Kolbe-McCabe
+       marriages of 1871 and 1872 name three people who are not, and the build
+       refused with three dead links. A name without a record now renders as
+       plain text, which is the truthful thing: the register names them and this
+       archive holds nothing else about them. */
+    a: r.H ? { name: r.H.n, slug: r.H.missing ? "" : r.H.slug } : { name: "—" },
+    b: r.W ? { name: r.W.n, slug: r.W.missing ? "" : r.W.slug } : { name: "—" },
     when: r.d, where: r.p === "\u2014" ? "" : r.p, note: r.n || "",
     vias: [r.via === "tree" ? "family tree" : "a record read here"],
   }))}
