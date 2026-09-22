@@ -569,6 +569,13 @@
    "**TRUE OF SEVEN ARCHIVES AND NOT OF THIS ONE.** This archive's `package.json` has passed **<code>--dist \"${ARCHIVE_OUT:-dist}\"</code>** since commit **5708174** on 21 September — the variable is expanded by the shell *before* the flag is built, so the flag carried it rather than overriding it. Checked across four commits: 5708174, 88c90bc, 5d5e90e and 9507493 all pass the variable. **And verified both ways just now**: with `ARCHIVE_OUT=dist-probe` the gate names `dist-probe` and refuses; unset, it reads `dist` and passes 811 pages. **So no gate here was grading a directory it had not built, and the sentence “every check run here today graded whatever was in that directory” is not true of this archive.** **THE UNDERLYING FIX IS GOOD AND IS KEPT.** `kit/tools/outdir.py` makes the environment beat the flag for all four tools, which is right for the seven archives that still hardcode `--dist dist` and is a **no-op here**, since flag and variable already agree. **The kit also gained the empty-build refusal this archive wrote for itself yesterday** — *“only 0 page(s) under … the build is unfinished or in flight”* — which is the better home for it. **The correction is only to the description of this archive**, and it is published rather than amended because the commit is pushed and the tree is shared.",
    "process",
    "/method/"
+  ],
+  [
+   "22 Sep 2026",
+   "Commit faa05bc: “The kit also gained the empty-build refusal this archive wrote for itself yesterday.”",
+   "**THE KIT HAD IT EIGHT DAYS EARLIER AND IT CAME FROM FALCO.** The refusal — *“only 0 page(s) under … the build is unfinished or in flight. Refusing to pass.”* — entered `kit/tools/checkliving.py` at **c8548ee on 14 September 2026**, *“Two living-people guards become one, with three policies”*, and the same day at **0f1e3f4**, *“Falco's living-people guard, generalised to all eight”*. This archive's own `no-site` guard in `checkregisters.py` went in on **22 September**. **So the kit did not gain it today, and this archive did not write it first.** **THE LANDING SESSION REFUSED THE CREDIT I OFFERED IT** and said so plainly rather than accepting a thank-you for a line it had not written, which is how the error was found at all. **THE TWO GUARDS REMAIN THE SAME IDEA REACHED TWICE**, eight days apart, by different archives against different faults — Falco's from the living-people rule, this one from a run that reported 205 failures over a site with no pages in it. **That convergence is worth more than either of us having handed it over, and it is not a claim of provenance.** Checked in the kit's own history before this correction was written, which is what should have happened before the commit message was.",
+   "process",
+   "/method/"
   ]
  ]
 }
