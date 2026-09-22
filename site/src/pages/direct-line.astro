@@ -15,6 +15,19 @@ const line = LINE.line;
    sections down the page say so at length; the row itself said nothing. The
    shared spine marks the joint where the weight is, which is the whole reason
    this estate draws a spine rather than a pedigree. */
+/* TRADE IS A SLOT THE SHARED SPINE ALREADY DRAWS and this page was not using
+   it. Two of the six have one recorded and both sat mid-note, where a reader
+   scanning the line down the page never met them. The other four are left
+   empty on purpose: an empty trade means this archive does not know, and
+   inventing one to fill a slot is the failure work-list row 192 is about.
+   THE REST OF THAT COMPONENT'S SLOTS WERE MEASURED AND LEFT ALONE, and one of
+   them must stay that way: DO NOT FILL `href`. Generations five and six are
+   both Petrus Jacobus Booysen and they slug to a single page, so linking the
+   names would assert that a father and his son are one man, on the page whose
+   whole purpose is to show a descent. Five of the estate's seven spines carry
+   a repeated name; it is in the kit's trap notes. */
+const trades = { "4": "farmer in 1879, mason in 1905",
+                 "3": "South African Railways & Harbours" };
 const amp = (t) => String(t ?? "").replace(/&(?!#?\w+;)/g, "&amp;");
 /* line.json KEEPS FOUR THINGS IN ONE STRING and this page was handing all
    four to one slot. A row's `born` is "c. 21 Sep 1788, Graaff-Reinet —
@@ -38,7 +51,7 @@ const placePart = (v) => {
   return i < 0 ? "" : head.slice(i + 2).trim();
 };
 const rows = line.map(([g, n, b, d, m, note, m2]) => ({
-  gen: g, name: n,
+  gen: g, name: n, trade: trades[g] || "",
   /* Her cell carries the same three things his does, in a different
      order: "Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) —
      DOCUMENTED, m. 4 Nov 1838 Cradock". Splitting only on ", m. " left
