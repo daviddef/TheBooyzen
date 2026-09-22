@@ -456,7 +456,15 @@ export const families = [
       { n: "Marian Kolbe", via: "doc" },
       { n: "Julia Kolbe", via: "doc" },
       { n: "Frederik Fortunatus Kolbe", via: "doc" },
-      { n: "Peter Benjamin Kolbe", via: "doc" }] },
+      { n: "Johan Casimir Kolbe", via: "doc" },
+      /* WAS `doc` AND IS NOT. He is in NO document this archive holds: absent
+         from his father's 1845 death notice, which names ten children, and from
+         his mother's of 1867, which names the survivors. Everything about him
+         is compiled, including the forename — the family list spells it
+         "Keetor", which is not a name, where a 2012 report gives "Rector",
+         which is. Corrected 23 September; people.js had him as `lore` while
+         this file claimed a record for him. */
+      { n: "Peter Benjamin Kolbe", via: "tree" }] },
 
   { h: "Johan Gottlieb Kolbe", w: null, via: "doc",
     why: "A tailor of Conduit Street, Mayfair. Four independent documents call him John Gottlob; the family tree calls him Johan Gottlieb, and this archive follows the documents.",
