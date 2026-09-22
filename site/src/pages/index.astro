@@ -4,7 +4,8 @@ import WaysIn from "@daviddef/archive-kit/components/WaysIn.astro";
 import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import PlaceSpark from "@daviddef/archive-kit/components/PlaceSpark.astro";
 import MarriageChart from "@daviddef/archive-kit/components/MarriageChart.astro";
-import Spine from "@daviddef/archive-kit/components/Spine.astro";
+import Descent from "@daviddef/archive-kit/components/Descent.astro";
+import { resolve as kinResolve, treeFor as kinTreeFor, dates as kinDates } from "../lib/kin.js";
 import LINE from "../data/line.json";
 import { chartGroups } from "../lib/marriedin.js";
 import { u } from "../lib/url.js";
@@ -57,21 +58,63 @@ const placeOf = (v) => {
   const i = head.indexOf(", ");
   return i < 0 ? "" : head.slice(i + 2).trim();
 };
-const spineRows = LINE.line.map(([g, n, b, d, m]) => {
+/* THE DESCENT. The compact ladder goes; the kit's `Descent` row takes its
+   place — the couple in two equal columns, the children beneath them, the
+   brothers and sisters under whichever of the two they belong to.
+
+   THE KIN COME FROM kin.js THROUGH ITS OWN RESOLVER, not from a name match
+   written here. That file is explicit about the danger: «Where a name is
+   carried by more than one person, add "|token" and the token must appear
+   in that person's birth or death string». This line has exactly that
+   problem — two Petrus Jacobus Booysens, father and son, at generations
+   six and five — so the reference is built as Name|year from the row's own
+   birth string, which is the convention kin.js asks for.
+
+   `treeFor` then returns the siblings and the unions, and a child carrying
+   `via: "line"` is the one the archive came down through. HER siblings come
+   from HER own record, by the same resolver. */
+const yearOf = (v) => (String(v).match(/\b(1[6-9]\d\d|20\d\d)\b/) || [])[1] || "";
+const refFor = (name, born) => {
+  const y = yearOf(born);
+  return y ? `${name}|${y}` : name;
+};
+const cardsOf = (xs) => (xs || []).map((x) => ({
+  name: x.n || x.name,
+  href: x.slug && !x.missing ? `/people/${x.slug}/` : null,
+  dates: x.missing ? "" : kinDates(x),
+  line: x.via === "line",
+}));
+const kinOf = (name, born) => {
+  const who = kinResolve(refFor(name, born));
+  if (!who || who.missing) return { children: [], siblings: [] };
+  const t = kinTreeFor(who);
+  const union = (t.unions || [])[0] || {};
+  return { children: cardsOf(union.kids), siblings: cardsOf(t.siblings) };
+};
+
+const spineRows = LINE.line.map(([g, n, b, d, m, note, note2]) => {
   const sp = String(m || "");
+  const her = sp.split(" (")[0].split(", m. ")[0].split(" \u2014 ")[0].trim();
+  const mine = kinOf(n, b);
+  const hers = her ? kinOf(her, (sp.match(/\((\d{4})/) || [])[1] || "") : { siblings: [] };
   return {
-    gen: g, name: n,
-    // Her name only. Her dates are in parentheses and the marriage follows
-    // a comma; both belong on the full spine, neither on one line.
-    spouse: sp.split(" (")[0].split(", m. ")[0].split(" \u2014 ")[0].trim(),
-    married: (sp.match(/,\s*m\.\s*([^\u2014(]+)/) || [])[1]?.trim() || "",
+    gen: g,
+    era: [yearOf(b), yearOf(d)].filter(Boolean).join(" \u2192 ") || undefined,
+    name: n,
+    href: (() => { const w = kinResolve(refFor(n, b)); return w && !w.missing ? `/people/${w.slug}/` : ""; })(),
     born: b === "\u2014" ? "" : String(b).split(" \u2014 ")[0],
     died: d === "\u2014" ? "" : String(d).split(" \u2014 ")[0],
-    bornPlace: b === "\u2014" ? "" : placeOf(b),
-    diedPlace: d === "\u2014" ? "" : placeOf(d),
-    // Said only where the archive said it. A generation whose records this
-    // archive has not seen gets no pill, not a pill reading "unproven".
+    place: b === "\u2014" ? "" : placeOf(b),
+    married: (sp.match(/,\s*m\.\s*([^\u2014(]+)/) || [])[1]?.trim() || "",
     confidence: graded(b) || graded(d) ? "documented" : "",
+    spouse: her,
+    spouseHref: (() => { const w = her ? kinResolve(her) : null; return w && !w.missing ? `/people/${w.slug}/` : null; })(),
+    children: mine.children,
+    hisSiblings: mine.siblings,
+    herSiblings: hers.siblings,
+    hisLabel: String(n).split(" ")[0] + "\u2019s",
+    herLabel: her ? String(her).split(" ")[0] + "\u2019s" : "Theirs",
+    note: [note, note2].filter(Boolean).join(" \u00b7 "),
     weak: g === "7",
   };
 });
@@ -269,7 +312,7 @@ const spineRows = LINE.line.map(([g, n, b, d, m]) => {
     <h2>The line, seven generations</h2>
     <p class="dek">Back to a Gerthardus Lodewikus Booysen the tree asserts and no record yet names.
     The two Petrus Jacobus Booysens in the middle are father and son, and they are two men.</p>
-    <Spine rows={spineRows} u={u} compact={true} full="/direct-line/" archiveKey="booyzen" />
+    <Descent rows={spineRows} u={u} archiveKey="booyzen" />
     <p class="cap" style="margin-top:14px"><a href={u("/direct-line/")}>The full spine →</a></p>
   </section>
 
