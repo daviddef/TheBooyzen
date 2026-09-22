@@ -8,3 +8,7 @@ dist/
 node_modules/
 notes/raw-myheritage.md
 site/public/atlas-data.json
+
+# A private build directory, so a check never reads a dist another session is
+# halfway through writing. ARCHIVE_OUT=dist-verify points the gates at it.
+site/dist-verify/
