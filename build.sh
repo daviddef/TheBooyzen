@@ -48,20 +48,13 @@ ARCHIVE_OUT="${ARCHIVE_OUT:-dist}"
 export ARCHIVE_OUT
 OUT="site/$ARCHIVE_OUT"
 #
-# ONE THING ARCHIVE_OUT CANNOT ISOLATE, AND IT IS NOT OURS TO FIX. The shared
-# kit's sitemap.py pins `dist` - `dist = os.path.join(site, "dist")`, no flag,
-# derived from the working directory - so it writes sitemap.xml into site/dist
-# whatever ARCHIVE_OUT says, and then check:kit correctly reports that robots.txt
-# points at a sitemap that is not in the built site. AN ISOLATED RUN THEREFORE
-# TRIPS check:kit. Everything else isolates cleanly, which includes the gate that
-# produced the 205 false failures. Making the kit tool take a path is a kit
-# change and is raised as one rather than patched here, because eight archives
-# share that file.
-[ "$ARCHIVE_OUT" = "dist" ] || {
-  echo "building into $OUT (ARCHIVE_OUT=$ARCHIVE_OUT)"
-  echo "  NOTE: check:kit will fail on the sitemap - the kit's sitemap.py pins site/dist."
-  echo "        Every other gate isolates. Use this to read gates, not to deploy."
-}
+# ISOLATION IS COMPLETE AS OF KIT 40bf5a3. sitemap.py used to pin `dist` with no
+# flag, so an isolated run wrote its sitemap into site/dist and check:kit then
+# correctly reported robots.txt pointing at a sitemap that was not in the built
+# site. That was raised with the kit rather than patched here - seven of the ten
+# projects on this machine share the file - and the landing-site session shipped
+# `--dist`, defaulting to `dist`, which every caller now passes.
+[ "$ARCHIVE_OUT" = "dist" ] || echo "building into $OUT (ARCHIVE_OUT=$ARCHIVE_OUT)"
 
 STEP="starting up"
 
