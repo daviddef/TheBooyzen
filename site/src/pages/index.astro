@@ -42,12 +42,39 @@ const stats = [
    person page, and those two men are exactly why: they slug identically, so
    a name link would point father and son at one page and assert they are
    the same — on the page whose job is to show a descent. */
-const spineRows = LINE.line.map(([g, n, b, d, m]) => ({
-  gen: g, name: n,
-  born: b === "\u2014" ? "" : String(b).split(" \u2014 ")[0],
-  died: d === "\u2014" ? "" : String(d).split(" \u2014 ")[0],
-  weak: g === "7",
-}));
+/* line.json KEEPS FOUR THINGS IN ONE STRING, and the ladder was reading
+   one of them. A row's `born` is "c. 21 Sep 1788, Graaff-Reinet —
+   DOCUMENTED": a date, a place, and this archive's verdict on whether the
+   record was seen. Its `spouse` is "Anna Maria van der Merwe (1785 – bef.
+   Mar 1825), m. 1805 Graaff-Reinet": a name, her dates, and the marriage.
+
+   Unpicked here rather than in the file, because direct-line.astro prints
+   these strings whole and is right to — the prose wants them. It is the
+   ladder that needs them in columns. */
+const graded = (v) => / \u2014 DOCUMENTED\b/.test(String(v));
+const placeOf = (v) => {
+  const head = String(v).split(" \u2014 ")[0];
+  const i = head.indexOf(", ");
+  return i < 0 ? "" : head.slice(i + 2).trim();
+};
+const spineRows = LINE.line.map(([g, n, b, d, m]) => {
+  const sp = String(m || "");
+  return {
+    gen: g, name: n,
+    // Her name only. Her dates are in parentheses and the marriage follows
+    // a comma; both belong on the full spine, neither on one line.
+    spouse: sp.split(" (")[0].split(", m. ")[0].split(" \u2014 ")[0].trim(),
+    married: (sp.match(/,\s*m\.\s*([^\u2014(]+)/) || [])[1]?.trim() || "",
+    born: b === "\u2014" ? "" : String(b).split(" \u2014 ")[0],
+    died: d === "\u2014" ? "" : String(d).split(" \u2014 ")[0],
+    bornPlace: b === "\u2014" ? "" : placeOf(b),
+    diedPlace: d === "\u2014" ? "" : placeOf(d),
+    // Said only where the archive said it. A generation whose records this
+    // archive has not seen gets no pill, not a pill reading "unproven".
+    confidence: graded(b) || graded(d) ? "documented" : "",
+    weak: g === "7",
+  };
+});
 ---
 <Base title="The Booyzen Archive"
       eyebrow="Graaff-Reinet · Cradock · Barkly East · Bloemfontein · Johannesburg · Brisbane"
