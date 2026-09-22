@@ -16,10 +16,44 @@ const line = LINE.line;
    shared spine marks the joint where the weight is, which is the whole reason
    this estate draws a spine rather than a pedigree. */
 const amp = (t) => String(t ?? "").replace(/&(?!#?\w+;)/g, "&amp;");
+/* line.json KEEPS FOUR THINGS IN ONE STRING and this page was handing all
+   four to one slot. A row's `born` is "c. 21 Sep 1788, Graaff-Reinet —
+   DOCUMENTED": a date, a place, and this archive's verdict on whether the
+   record was actually seen. The spine has a slot for each of those and
+   was rendering the lot as the date, so the evidence grade read as part
+   of a birthday.
+
+   Unpicked here and not in the file, deliberately: the prose elsewhere on
+   this page quotes these strings whole and is right to. It is the row
+   that needs them in columns.
+
+   The wife keeps her own dates, unlike the front-page ladder where she
+   is a name alone — a one-line ladder has no room for them and this row
+   does. Only the ", m. …" tail is lifted out, into the marriage slot. */
+const GRADED = / \u2014 DOCUMENTED\b/;
+const datePart = (v) => String(v).split(" \u2014 ")[0].split(", ")[0].trim();
+const placePart = (v) => {
+  const head = String(v).split(" \u2014 ")[0];
+  const i = head.indexOf(", ");
+  return i < 0 ? "" : head.slice(i + 2).trim();
+};
 const rows = line.map(([g, n, b, d, m, note, m2]) => ({
-  gen: g, name: n, spouse: m,
-  born: b === "\u2014" ? "" : b,
-  died: d === "\u2014" ? "" : d,
+  gen: g, name: n,
+  /* Her cell carries the same three things his does, in a different
+     order: "Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) —
+     DOCUMENTED, m. 4 Nov 1838 Cradock". Splitting only on ", m. " left
+     the evidence marker hanging off the end of her name. */
+  spouse: String(m || "").split(", m. ")[0].split(" \u2014 ")[0].trim(),
+  married: (String(m || "").match(/,\s*m\.\s*([^\u2014(]+)/) || [])[1]?.trim() || "",
+  born: b === "\u2014" ? "" : datePart(b),
+  bornPlace: b === "\u2014" ? "" : placePart(b),
+  died: d === "\u2014" ? "" : datePart(d),
+  diedPlace: d === "\u2014" ? "" : placePart(d),
+  /* Said only where this archive said it. A generation whose records have
+     not been seen gets no grade, not a grade reading "unproven" — the
+     absence of "— DOCUMENTED" means nobody wrote the verdict down, not
+     that the verdict is negative. */
+  confidence: GRADED.test(String(b)) || GRADED.test(String(d)) ? "documented" : "",
   note: amp([note, m2].filter(Boolean).join(" \u00b7 ")),
   weak: g === "7",
   weakNote: g === "7"
