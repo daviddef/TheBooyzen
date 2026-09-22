@@ -1,66 +1,47 @@
-# Drafted — Anne Brest, conceding 52653 and asking for the 40293 reference
+# Drafted — Anne Brest, holding off on cost
 
-**Status: DRAFTED, NOT SENT — 22 September 2026.** Sending is David's.
+**Status: SENT — 22 September 2026**, Gmail message id `1a0c925de610b3a3`.
 **To:** `digitalphoto@icon.co.za` — reply on the same thread.
 
-**She is right and she told us a week ago.** On **15 September at 20:02** she pasted a NAAIRS
-link to the record and wrote: *"MHG 0 52653 BOOYZEN, JACOBUS NICHOLS. **THE DATE IS 1923. DON'T
-WORRY that it is not appearing after the 52653 number. . some references are like this.**"* The
-absent year suffix is normal — and that absent suffix is the exact feature this archive had read
-as a broken reference. She was then told twice not to hunt it, and said noted each time, having
-already found it.
+**NOT AN ORDER. A HOLD, ON COST, SAID PLAINLY.** An earlier draft of this placed the five files
+and asked her to invoice. David cannot take on another payment of that size now, so the letter
+declines for the moment and gives the real reason.
 
-**The archive's record is corrected before this letter goes**, not after: `errands.json`,
-`searched.json`, `sources.json` and two work-list rows, with a `reading` correction pointing at
-the same rule broken a fortnight ago over Melanie Geustyn's covering letter. **The letter says so
-rather than quietly moving on**, because she is entitled to know the correction was made and not
-just acknowledged.
+**What it does:**
 
-**Three things it does NOT do.**
+- **Gives the true reason and only the true reason.** Cost. No invented delay, no vagueness that
+  would leave her expecting an order next week.
+- **Releases her.** She is not to hold a date, a file or a favour at Preservation.
+- **Concedes 52653 in half a sentence**, because she was right and it costs nothing to say.
+- **Asks for nothing.** In particular it does NOT ask for the missing part of the MHG 40293
+  reference. She volunteered it, and it would be hers to give — but asking a person for free
+  expertise in the same letter that says you cannot pay them is not a thing this archive will do.
+  It keeps until there is an order.
 
-1. **It does not commit David to anything.** She has asked whether to proceed and offered to
-   revise the invoice. That is his decision and the letter leaves it with him explicitly rather
-   than implying a yes.
-2. **It does not guess the missing part of the MHG 40293 reference.** She says she knows what it
-   is; the honest move is to ask, not to invent.
-3. **It does not repeat the "information rather than work" line.** She objected to it and she was
-   right — the sentence was written to avoid obliging her and instead implied her knowledge costs
-   nothing. Withdrawn in one sentence, not defended.
+**What it does not mention, deliberately:** the R5,900 credit she offered against a future list.
+It is David's money and his call, and raising it here would either look like asking for it back or
+like waiving it. Neither belongs in a letter about not proceeding. If she raises it, he can answer
+then.
 
 ---
 
-**Subject:** Re: Estate file research, National Archives Pretoria — 52653, and the reference I am missing
+**Subject:** Re: Estate file research, National Archives Pretoria — holding off for now
 
 Dear Anne,
 
-You are right about 52653, and you were right a week ago.
+Thank you for marking the list up, and you are right about 52653 — it is a file and I have it down
+as one.
 
-I went back through the thread. On 15 September you sent me the NAAIRS link and wrote: *"THE DATE
-IS 1923. DON'T WORRY that it is not appearing after the 52653 number. . some references are like
-this."* **That is the answer, and I read past it.** Worse, the thing you were explaining — the
-missing year suffix — is the exact reason I had decided the reference must be wrong. I then told
-you twice not to hunt it, after you had already found it.
+I am going to have to hold off for now, and the reason is simply cost. Taking on another order of
+that size is more than I can manage at the moment, and I would rather tell you that straight than
+go quiet or keep you waiting on a decision that is not coming this month.
 
-I have corrected it properly on my side rather than just noting it: the file now stands as a file
-in my records, with your finding credited and the mistake written up as mine. It is the second
-time in a fortnight I have been told something in a covering note and read only the attachment.
+So please do not hold anything for me — no date, no files, and no favours at Preservation on my
+account. The list we have arrived at is a good one and it is not going anywhere. When I am in a
+position to do it properly I will come back to you with it, and not before.
 
-**On "you offered information rather than work" — that was badly put and I withdraw it.** You
-find things outside the archives because you know where to look and you go and look, and that is
-work. I meant only that I did not want to hand you a bill you had not agreed to. It came out as
-though your knowledge were free, which it plainly is not.
-
-**And on MHG 40293 — yes please, what is the rest of the reference?** You wrote that the file is
-available and that I have left out part of it, and that you know what it is. I do not, and I would
-rather ask than guess. That is the one page I most want in the whole project: if the death notice
-of Frederick Fortunatus Downing Kolbe names his father, it may join the Transvaal Kolbes to the
-1820 Settler, which is the join everything else in that line currently rests on inference for.
-
-I have not decided about proceeding yet and I do not want you to hold anything for me — I have
-changed this list too often already and you have been more than patient about it. When I come back
-to you it will be with a decision and not another revision.
-
-Thank you for reading the sites, and for saying so. Nobody else has.
+I am sorry to take up as much of your time as I have for a job that has not happened. You have
+been straight with me throughout and I would rather stop here honestly than keep it drifting.
 
 With thanks,
 David de Franceski
