@@ -118,7 +118,21 @@ if unmarked:
                  % (len(unmarked), ", ".join(sorted(unmarked))))
 
 # 2. the direct line's spouse column must not contradict kin.js
-dl = page("direct-line.astro")
+#
+# READS THE BUILT PAGE, NOT THE TEMPLATE. This used to read
+# direct-line.astro as text, which worked only while the line was a
+# JavaScript array inside that file. The moment it moved to
+# src/data/line.json — 22 September, so the homepage ladder could read the
+# same rows — every spouse name vanished from the template and this check
+# reported six generations missing a spouse that the rendered page shows
+# perfectly well.
+#
+# Same shape as the search gate that went quiet the same week: a check that
+# recognises content BY ITS SHAPE IN THE PAGE goes wrong the moment the
+# content moves. The built page is what a reader sees and cannot lie about
+# what is on it. The template is falling back to, so a pre-build run still
+# says something rather than passing blindly.
+dl = built("direct-line") or page("direct-line.astro")
 kin = open(os.path.join(DATA, "kin.js"), encoding="utf-8").read()
 for m in re.finditer(r'\{ h: "([^"]+)", w: "([^"]+)"', kin):
     h, w = m.group(1).split("|")[0], m.group(2)

@@ -23,10 +23,10 @@
     "check:retired": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkretired.py --root .",
     "check:pages": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpages.py --root . --estate ../.. --max-bespoke 0",
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root .",
-    "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 7"
+    "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 6"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#40bf5a3",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#95f5411",
     "astro": "^5.18.2"
   },
   "devDependencies": {

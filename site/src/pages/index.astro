@@ -4,6 +4,8 @@ import WaysIn from "@daviddef/archive-kit/components/WaysIn.astro";
 import Numbers from "@daviddef/archive-kit/components/Numbers.astro";
 import PlaceSpark from "@daviddef/archive-kit/components/PlaceSpark.astro";
 import MarriageChart from "@daviddef/archive-kit/components/MarriageChart.astro";
+import Spine from "@daviddef/archive-kit/components/Spine.astro";
+import LINE from "../data/line.json";
 import { chartGroups } from "../lib/marriedin.js";
 import { u } from "../lib/url.js";
 import atlas from "../../public/atlas-data.json";
@@ -29,6 +31,23 @@ const stats = [
   [places.places.length, "places named, with the people this archive can put in each", "/places/"],
   ["646", "people in the whole world carry the spelling Booyzen — against 53,764 Booysens", "/name/"],
 ];
+
+/* 22 September 2026. Five of the estate's eight archives showed no line on
+   the front page and this was one. The rows come from src/data/line.json,
+   the same file /direct-line/ now reads, because this line has TWO PETRUS
+   JACOBUS BOOYSENS in consecutive generations and a second copy of it is
+   the last thing this archive needs.
+
+   The ladder links each row to its generation anchor rather than to a
+   person page, and those two men are exactly why: they slug identically, so
+   a name link would point father and son at one page and assert they are
+   the same — on the page whose job is to show a descent. */
+const spineRows = LINE.line.map(([g, n, b, d, m]) => ({
+  gen: g, name: n,
+  born: b === "\u2014" ? "" : String(b).split(" \u2014 ")[0],
+  died: d === "\u2014" ? "" : String(d).split(" \u2014 ")[0],
+  weak: g === "7",
+}));
 ---
 <Base title="The Booyzen Archive"
       eyebrow="Graaff-Reinet · Cradock · Barkly East · Bloemfontein · Johannesburg · Brisbane"
@@ -219,6 +238,14 @@ const stats = [
   <h2>The families who married in</h2>
   <p class="dek">Eleven lines meet in this archive. A marriage is where two of them join.
   <a href={u("/marriages/")}>The marriages, in full →</a></p>
+  <section class="blk">
+    <h2>The line, seven generations</h2>
+    <p class="dek">Back to a Gerthardus Lodewikus Booysen the tree asserts and no record yet names.
+    The two Petrus Jacobus Booysens in the middle are father and son, and they are two men.</p>
+    <Spine rows={spineRows} u={u} compact={true} full="/direct-line/" />
+    <p class="cap" style="margin-top:14px"><a href={u("/direct-line/")}>The full spine →</a></p>
+  </section>
+
   <MarriageChart groups={chartGroups} subject="Booyzen" unit="people on the line" />
 </section>
 
