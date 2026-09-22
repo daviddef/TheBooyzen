@@ -197,6 +197,31 @@ const tally = (id) => {
     <table>
       <thead><tr><th>Index</th><th>Query</th><th class="m">Result</th></tr></thead>
       <tbody>
+        <tr><td rowspan="3"><strong>FindMyPast</strong> &mdash; German parish indexes, found 21 September
+          2026 after this archive had wrongly written the service off for German registers</td>
+          <td><em>Germany Marriage Index 1558&ndash;1929</em>, surname <strong>Kolbe</strong></td>
+          <td class="m"><strong>338</strong> &mdash; and it reaches W&uuml;rttemberg: Gr&ouml;tzingen,
+            Schwarzwaldkreis 1685 and <strong>Knittlingen, Neckar 1741</strong></td></tr>
+        <tr><td><em>Germany Marriage Index</em>, Kolbe, marriages <strong>1778&ndash;1798</strong> &mdash;
+            the window for the tailor's own marriage</td>
+          <td class="m"><strong>11, all read.</strong> Pomerania, five in Westphalia, an infantry regiment,
+            two in Berlin, two in D&uuml;sseldorf. <strong>No Gottlieb and not one in W&uuml;rttemberg</strong>
+            &mdash; so the index cannot answer this question in this period rather than answering it no</td></tr>
+        <tr><td><em>Germany Birth and Baptism Index 1558&ndash;1898</em>, Kolbe</td>
+          <td class="m"><strong>952, not yet read.</strong> A baptism entry gives the parish
+            <em>and the parents</em>, which is the gap between his birth in 1765 and the first London
+            baptism of 1792</td></tr>
+        <tr><td><strong>FindMyPast</strong> &mdash; two filters that answer 0 to everything</td>
+          <td>Any place filter on those German sets; and <code>datasetname</code> combined with a year</td>
+          <td class="m"><strong>0, and none of it a nil return.</strong> <code>place=westfalen</code> returns
+            0 while seven of eleven records on the page are Westphalian; dataset plus year returns 0 where
+            the dataset alone returns 952. <strong>A filter that answers 0 for a place printed in its own
+            results is not filtering.</strong> <a href={u("/method/#question-nobody-asked")}>Why this matters &rarr;</a></td></tr>
+        <tr><td><strong>Internet Archive</strong> &mdash; full text</td>
+          <td><em>Rector Kolbe</em>, <em>Casmier Kolbe</em>, <em>Peter Benjamin Kolbe</em></td>
+          <td class="m"><strong>Void, not nil.</strong> The full-text endpoints answer HTTP 000 and 404
+            while <code>advancedsearch.php</code> answers 200 &mdash; the host is fine and its full-text API
+            is gone. Nothing is recorded against those names</td></tr>
         <tr><td rowspan="7"><strong>NAAIRS</strong> — National Automated Archival Information Retrieval
           System, <em>Cape Town Archives Repository (KAB)</em></td><td class="m">MOUNTJOY</td><td class="m">42</td></tr>
         <tr><td class="m">MOUNTJOY, beginning date ≥ 1930</td><td class="m">22 — all read</td></tr>
@@ -224,6 +249,33 @@ const tally = (id) => {
 <section class="blk">
   <h2>Published and reference sources</h2>
   <div class="prose">
+    <p><b>P. J. Nienaber, <em>Afrikaanse Biografiese Woordeboek</em></b> (Voortrekkerpers, 1947),
+      <b>p. 139</b> &mdash; cited by the Afrikaans Wikipedia article on <b>Generaal Willem Johannes
+      Kolbe</b> (1847&ndash;1941) and, by elimination, the only source for the pedigree that would tie
+      him to this family. <b>Not digitised.</b> Searched on the Internet Archive and absent, against
+      three controls: the DSAB returns five results including the very volume this archive located by
+      another route, <em>Afrikaanse</em> as a title word returns 570, and Voortrekkerpers itself
+      returns two. <b>So it needs a library, and the pedigree stays unproven until somebody reads that
+      page.</b> <a href={u("/kolbe/")}>The Kolbes &rarr;</a></p>
+    <p><b>Pieter van Aardt, &ldquo;The Descendants of Frederik Fortunatus Kolbe (b2c8); a branch of the
+      Kolbe family&rdquo;</b>, <em>Familia</em> <b>45(4), 2008, pp. 247&ndash;250</b> &mdash; the journal
+      of the Genealogical Society of South Africa, found through the eGGSA index. <b>Four peer-published
+      pages on the one name this archive traces across three families, and it has never been cited
+      here.</b> The code in the title is itself a test: <em>b2c8</em> is de Villiers/Pama for a
+      <b>grandson</b> of the progenitor, where this archive holds Frederik Fortunatus as the Settler's
+      <b>tenth child</b>. One of those readings is wrong. <b>eGGSA indexes every article and publishes
+      none of the text</b>, so it is a purchase or a membership rather than a search.</p>
+    <p><b>Located, catalogued, and not yet read</b> &mdash; three references this archive can name but
+      has not seen. <b>University of Edinburgh, CSWC 60</b>, item 3: five photograph copies of sketches
+      by <b>C. Bell</b> of African congregations, 1834&ndash;1840, of which item 3 is
+      <em>&ldquo;Mr. Kolbe&rdquo;</em> at <b>Philippolis in 1834</b> &mdash; a picture of the Settler
+      drawn from life, where this archive holds no likeness of anybody born before 1850.
+      <b>SOAS, CWM/LMS/05/05/100, /102, /106 and /108</b> &mdash; four of his own journals, the first
+      being the tour north-east of Philippolis with Melvill, 13&ndash;22 November 1828, with the
+      1836&ndash;37 incoming correspondence in Box 15. And <b>VAB, A1 19, Renier-versameling, No. 244</b>,
+      the <em>Herinneringe van genl. W J Kolbe</em>, cited at <b>page 78</b> by Fransjohan Pretorius
+      &mdash; a memoir by a man of this family, if the initials hold.
+      <a href={u("/errands/")}>What is on order &rarr;</a></p>
     <p><b><a href="https://forebears.io/" rel="noopener">Forebears</a></b> — surname incidence and distribution for <em>Booyzen</em> and <em>Booysen</em>,
       accessed 9 September 2026. Forebears figures are modelled estimates from name-frequency data, not a
       census. <a href={u("/name/")}>The name &rarr;</a></p>
