@@ -466,6 +466,16 @@ export const families = [
          this file claimed a record for him. */
       { n: "Peter Benjamin Kolbe", via: "tree" }] },
 
+  { h: "John Gerson Eliezar Kolbe", w: "Anna Jacoba van der Merwe", via: "doc",
+    why: "Married 3 April 1843; he died on the same date twenty-five years later, leaving her with twelve children — eight sons and four daughters, which is his obituary's own count. NONE OF THE TWELVE WAS NAMED IN A DOCUMENT HERE UNTIL 27 SEPTEMBER 2026, when the Free State and Cape Dutch Reformed baptism registers were searched on HER name rather than on his. The four below are the ones a register or a civil registration names as theirs. The others are found and not yet entered: this archive made a person out of a widow four days earlier and is in no hurry to do it twice.",
+    warn: "Frederik Fortunatus is here on a user tree's word and nothing else. His death registration names no parents — that line of the form is completed only for a deceased under ten — and the register of his baptism has not been found. He is drawn in because two of his children were baptised to a McCabe mother in the same congregation, which is corroboration and not proof.",
+    src: ["What Was Searched", "/searched/"],
+    kids: [
+      { n: "Williem Johannes Kolbe of Panfontein", via: "doc" },
+      { n: "Jan Hendrik Kolbe", via: "doc" },
+      { n: "Andries Frederick Kolbe of Leeuwberg", via: "doc" },
+      { n: "Frederik Fortunatus Kolbe of Bloemspruit", via: "tree" }] },
+
   { h: "Johan Gottlieb Kolbe", w: null, via: "doc",
     why: "A tailor of Conduit Street, Mayfair. Four independent documents call him John Gottlob; the family tree calls him Johan Gottlieb, and this archive follows the documents.",
     src: ["The Kolbes", "/kolbe/"],

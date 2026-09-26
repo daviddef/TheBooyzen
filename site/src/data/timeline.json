@@ -445,6 +445,19 @@
   },
   {
    "y": 1848,
+   "d": "12 Mar 1848",
+   "t": "Willem Johannes Kolbe baptised at Fauresmith, entry 18",
+   "w": "Born **2 August 1847**, son of **John Kolbe and Anna Jacoba van der Merwe** — the first document this archive holds that names a child of the Commandant's household. It also **corrects his birthday**: the Afrikaans dictionary account, read at one remove through a Wikipedia article, gives 9 July 1847 and the district of Philippolis. **A register entered seven months after the birth beats a dictionary compiled a century later.** Whether this child is General W. J. Kolbe (1847–1941) is still an inference from a year and a district.",
+   "k": "doc",
+   "p": [
+    "Williem Johannes Kolbe of Panfontein",
+    "Anna Jacoba van der Merwe"
+   ],
+   "pl": [],
+   "h": "/searched/"
+  },
+  {
+   "y": 1848,
    "d": "20 Aug 1848",
    "t": "George Mountjoy, saddle maker, marries Maria Sophia Botha",
    "w": "Cradock, certificate 735.",
@@ -457,6 +470,19 @@
     "Cradock"
    ],
    "h": "/documents/"
+  },
+  {
+   "y": 1849,
+   "d": "9 Oct 1849",
+   "t": "Jan Hendrik Kolbe baptised at Fauresmith",
+   "w": "Born **5 July 1849**, son of **Jan Gerson Eliese Kolbe and Anna Jacoba van der Merwe**. **THIS IS THE ENTRY THAT CLOSES A QUESTION THIS ARCHIVE HAD CARRIED SINCE 20 SEPTEMBER** — that he is the Commandant's son was a user tree's claim, refused here as a claim, and it is now a register's. The same event is indexed a second time in the Cape collection as “Hendrik Kolbe”, with the same dates and parents.",
+   "k": "doc",
+   "p": [
+    "Jan Hendrik Kolbe",
+    "John Gerson Eliezar Kolbe"
+   ],
+   "pl": [],
+   "h": "/searched/"
   },
   {
    "y": 1850,
@@ -605,6 +631,21 @@
     "Leeuwberg"
    ],
    "h": "/documents/#mccabe-1872"
+  },
+  {
+   "y": 1869,
+   "d": "2 Aug 1869",
+   "t": "Two of the Commandant's sons take church membership at Bloemfontein on the same day",
+   "w": "**John Henry Kolbe and Willem Johannes Kolbe**, both entered on 2 August 1869 in the Free State registers — which was **Willem Johannes's twenty-second birthday**, and sixteen months after their father died. Two brothers presenting themselves together is a household act, and it is the only day this archive can see the two of them in one place.",
+   "k": "doc",
+   "p": [
+    "Jan Hendrik Kolbe",
+    "Williem Johannes Kolbe of Panfontein"
+   ],
+   "pl": [
+    "Bloemfontein"
+   ],
+   "h": "/searched/"
   },
   {
    "y": 1869,
@@ -1311,6 +1352,20 @@
     "Johannesburg"
    ],
    "h": "/direct-line/"
+  },
+  {
+   "y": 1930,
+   "d": "18 Dec 1930",
+   "t": "Frederik Fortunatus Kolbe dies at Bloemspruit, and his stone disagrees with his death form",
+   "w": "A widower and a **boer**, aged **73** by the form his family gave the district registrar the next day, dead of valvular disease of the heart at Bloemspruit outside Bloemfontein. **His gravestone in the Memoriam Road cemetery says he was born 22 October 1859 and died on the 8th** — which would make him 71. **The two trees that disagree about his birth year are not two opinions; they are these two documents**, and Geni's “22 October 1857” is the stone's day and month spliced onto the form's year, matching neither.",
+   "k": "doc",
+   "p": [
+    "Frederik Fortunatus Kolbe of Bloemspruit"
+   ],
+   "pl": [
+    "Bloemfontein"
+   ],
+   "h": "/searched/"
   },
   {
    "y": 1930,

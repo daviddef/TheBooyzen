@@ -5242,6 +5242,50 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "The Commandant's children, searched on their mother's name",
+   "n": "every earlier search used his name, and his name is spelled six ways",
+   "d": "27 Sep 2026",
+   "h": "/kolbe/",
+   "rows": [
+    [
+     "Frederik Fortunatus Kolbe — was he born in 1857 or 1859?",
+     "BOTH, AND THE TWO TREES ARE NOT THE WITNESSES — TWO DOCUMENTS ARE",
+     "**The disagreement is real and it is not a tree's carelessness.** The **gravestone** at Bloemfontein Memoriam Road Cemetery, photographed 30 September 2018, gives **22 October 1859 – 8 December 1930**. The **civil death registration** (FamilySearch 1:1:81ZN-KW6Z; National Archives of South Africa, Dewetsdorp death records 1930, image 852 of 2,140) gives **age 73** at death on **18 December 1930**, which puts his birth about **1857**. **GENI'S “22 OCTOBER 1857” IS A SPLICE** — the stone's day and month on the form's year — and matches neither document. **NEITHER IS A BAPTISM**: an age is what an informant said, a stone is cut afterwards. His baptism is not in the index, and the stone's photograph is behind a paywall, so even its transcription is unchecked.",
+     "part"
+    ],
+    [
+     "Does the death form name his parents?",
+     "NO — AND FOR THE SAME REASON THE MARRIAGE REGISTER DID NOT",
+     "**The second form this week whose column does not exist.** Line 2(a) of the *Form of Information of a Death* asks for the name of a parent or guardian **“if the deceased was under the age of ten”**, and he was seventy-something. What it does give: **weduwnaar**, **boer**, born in the **Orange Free State**, died at **Bloemspruit**, to be buried at Bloemfontein; **Dr J. M. de Kock** attending; registered 19 December 1930 by **J. S. Kruger**. **The informant signs W. J. PIENAAR of 77 St John's Road, Bloemfontein** — and the Commandant's eldest daughter married a **Johannes Petrus Pienaar** at Bloemfontein in 1860. Suggestive; Pienaar is also one of the commonest names in that district; not adopted.",
+     "no"
+    ],
+    [
+     "Searching the baptism registers on ANNA JACOBA VAN DER MERWE instead of on her husband",
+     "SEVEN OF THE TWELVE CHILDREN, FROM FONTS, IN ONE QUERY",
+     "**The method is the finding.** Every previous search used the father, whose name is spelled *John Gerson Eliezar*, *Jan Gerson Eliese*, *Johan Gerson Eliezer*, *John G E*, *J G E* and *John Gerson Elinger* across six documents — a name that cannot be searched. **HER NAME IS STABLE.** Searched on the mother: **GEORG AUGUSTUS** b. 30 Sep 1845, bapt. Colesberg 8 Mar 1846; **WILLEM JOHANNES** b. 2 Aug 1847, bapt. Fauresmith 12 Mar 1848; **JAN HENDRIK** b. 5 Jul 1849, bapt. Fauresmith 9 Oct 1849; **PETRUS JACOBUS** b. 4 May 1852, bapt. 7 Jun 1852; **MARGARETHA ELIZABETH** b. 16 Feb 1854, bapt. 2 Apr 1854; **ANNA SUSANNA** b. 15 Aug 1860, bapt. Bloemfontein 7 Oct 1860; **ANNA JACOBA** b. 3 Nov 1864, bapt. Bloemfontein 1 Jan 1865. Two more from civil death registrations naming both parents: **ANDRIES FREDERICK**, b. 1856, d. Bloemfontein 11 Apr 1918, and a **PIETER**, b. 1852, d. Bloemfontein 7 Nov 1919, who may be Petrus Jacobus under another form. **ONLY FOUR ARE ENTERED IN PEOPLE.JS TODAY.** The rest are recorded here and deliberately not made into people yet — this archive turned a widow into a daughter four days ago and the discipline is worth more than the speed.",
+     "yes"
+    ],
+    [
+     "Is there a daughter named ANNA JACOBA, as well as the widow?",
+     "YES — AND SHE IS WHY THE DUPLICATE WAS PLAUSIBLE",
+     "**ANNA JACOBA KOLBE, born 3 November 1864, baptised at Bloemfontein on 1 January 1865**, daughter of John G E Kolbe and Anna Jacoba van der Merwe — named for her mother, as this family names everybody. She married **ANDRIES PETRUS SMIT**. **SO THE ARCHIVE'S 23 SEPTEMBER ERROR WAS NOT A SILLY ONE**: there really is a daughter of that name. She was simply six years old at the 1871 marriage, and the image says **weduwe** and **46**.",
+     "yes"
+    ],
+    [
+     "Two FamilySearch search behaviours worth writing down",
+     "A PARENT FILTER THAT RANKS RATHER THAN FILTERS, AND ONE THAT SILENTLY VANISHES",
+     "**First:** `q.motherGivenName` + `q.motherSurname` does **not** restrict the result set — it returns 3,499 rows and puts the eleven real ones on top. Past the first page the matches stop and unrelated Transvaal probates begin. **Reading a count as a result set would be wrong in both directions.** **Second:** adding `q.givenName` to that same query **drops the mother parameters altogether** — 263 rows of every Frederik Fortunatus Kolbe in South Africa, mother ignored. And `q.fatherSurname=Kolbe` with the same mother terms returns **0**. **Same shape as the FindMyPast finding in September**: filters here annihilate each other silently, and a zero is a statement about the query before it is a statement about the family.",
+     "part"
+    ],
+    [
+     "The gravestone photograph at BillionGraves",
+     "BLOCKED — THE FULL IMAGE IS BEHIND A PAID ACCOUNT",
+     "The record page offers a 180×135 thumbnail; the high-resolution image requires an account and a subscription. **No account was created and none will be** — this archive does not sign up to services on David's behalf. **So the stone's dates are held here at one remove, from a volunteer's transcription**, which matters because the ten-day difference between the stone's death date and the register's is exactly the kind of slip a transcriber makes with “18”.",
+     "blocked"
+    ]
+   ]
   }
  ]
 }

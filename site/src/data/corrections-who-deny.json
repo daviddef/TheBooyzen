@@ -1,0 +1,11 @@
+{
+ "note": "Attributions refused by hand. The tool attaches a person when their whole held name appears in a correction's text; that is the right rule and it cannot tell a MENTION from a QUOTATION. Where a document quoted inside a correction happens to spell one man's name exactly as another man is held here, the match is correct by the rule and wrong in fact, and it is refused here rather than by bending the prose around the tool. The second entry here is the other shape of the same problem: a correction that names a man only to say the entry was WRONGLY FILED AGAINST HIM. He is mentioned, so the rule attaches him; the correction is not about him, so his page should not carry it. A mention in the negative is still not a subject.",
+ "never": {
+  "27 Sep 2026 | Williem Johannes Kolbe of Panfontein was born on 9 July 1847 in the district of ": [
+   "john-kolbe"
+  ],
+  "27 Sep 2026 | Two collaborative trees disagree about Frederik Fortunatus Kolbe of Bloemspruit'": [
+   "frederik-fortunatus-kolbe"
+  ]
+ }
+}
