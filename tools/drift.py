@@ -18,7 +18,15 @@ def norm(t):
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(HERE, "site", "src", "data")
 PAGES = os.path.join(HERE, "site", "src", "pages")
-DIST = os.path.join(HERE, "site", "dist")
+# A GATE MUST READ THE BUILD THAT WAS JUST MADE. This said `site/dist` outright,
+# which is wrong twice over: the sessions in this tree build into a private
+# directory named by ARCHIVE_OUT so they do not overwrite each other's output,
+# and when that is set, `site/dist` holds another session's build or — as on
+# 27 September — does not exist at all. built() then returned "" and check 2 fell
+# through to the TEMPLATE, which has not carried the spouse names since the line
+# moved to line.json on 22 September, and failed the build over a page that
+# renders perfectly well.
+DIST = os.path.join(HERE, "site", os.environ.get("ARCHIVE_OUT") or "dist")
 
 def load(n):
     return json.load(open(os.path.join(DATA, n), encoding="utf-8"))
@@ -29,6 +37,23 @@ def page(n):
 def built(route):
     p = os.path.join(DIST, route, "index.html")
     return open(p, encoding="utf-8").read() if os.path.exists(p) else ""
+
+def built_or_say(route, fails):
+    """The built page, or a named failure — never a silent fall back to the template.
+
+    A check that recognises content BY ITS SHAPE IN THE PAGE cannot be pointed at
+    the template instead and still mean anything: the template is where the content
+    used to live, so the fallback answers a question about September's layout. Say
+    which directory was looked in, because the usual cause is ARCHIVE_OUT pointing
+    somewhere the build did not write.
+    """
+    t = built(route)
+    if not t:
+        fails.append("no built /%s/ under %s — this check reads the rendered page and "
+                     "will not grade the template instead; build first, and if "
+                     "ARCHIVE_OUT is set make sure it names the directory the build "
+                     "wrote" % (route, os.path.relpath(DIST, HERE)))
+    return t
 
 fails, warns = [], []
 
@@ -132,9 +157,9 @@ if unmarked:
 # content moves. The built page is what a reader sees and cannot lie about
 # what is on it. The template is falling back to, so a pre-build run still
 # says something rather than passing blindly.
-dl = built("direct-line") or page("direct-line.astro")
+dl = built_or_say("direct-line", fails)
 kin = open(os.path.join(DATA, "kin.js"), encoding="utf-8").read()
-for m in re.finditer(r'\{ h: "([^"]+)", w: "([^"]+)"', kin):
+for m in re.finditer(r'\{ h: "([^"]+)", w: "([^"]+)"', kin) if dl else []:
     h, w = m.group(1).split("|")[0], m.group(2)
     if norm(h) in norm(dl) and norm(w) not in norm(dl) and byname.get(h, {}).get("g"):
         fails.append(f"direct-line: {h} is generation {byname[h]['g']} and kin.js gives a "

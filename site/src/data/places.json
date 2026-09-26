@@ -1684,7 +1684,7 @@
    "k": "Farm",
    "r": "District Bloemfontein, Orange Free State",
    "s": "open",
-   "w": "WHERE COMMANDANT KOLBE DIED, on the night of Friday 3 April 1868, of typhus caught on commando. THE PIN WAS AT FAURESMITH AND IT WAS WRONG. It rested on a 1903 Free State land file recording a “LEEUWBERG NO 465, DIST. FAURISMITH” — a farm of the right name in the right province thirty-five years later, and nothing more — and it was published with its own objection attached, that Fauresmith is a hundred and thirty kilometres from Kaalspruit while the obituary says he died at the one and lies at the other. THE OBJECTION HAS BEEN ANSWERED AGAINST THE PIN. The Friend of the Free State of 13 January 1870 advertises for sale “the farm, WILDEBEESTKOOI, ADJOINING THE FARM LEEUBERG, THE PROPERTY OF THE LATE J.G.E. KOLBE, ABOUT TWO HOURS RIDE FROM THE TOWN OF BLOEMFONTEIN”. Fifteen or twenty kilometres, not a hundred and thirty. The Fauresmith farm is a different farm of the same name, and the two-farm contradiction this archive could not reconcile was never a contradiction — Leeuberg and Kaalspruit are neighbours. A MAN NAMED JEPHTS, described by the court as a man of colour, was living here in 1868 and owned a chestnut riding horse; it was stolen with two of the family's, and his name is in the record beside theirs.",
+   "w": "WHERE COMMANDANT KOLBE DIED, on the night of Friday 3 April 1868, of typhus caught on commando. THE PIN WAS AT FAURESMITH AND IT WAS WRONG. It rested on a 1903 Free State land file recording a “LEEUWBERG NO 465, DIST. FAURISMITH” — a farm of the right name in the right province thirty-five years later, and nothing more — and it was published with its own objection attached, that Fauresmith is a hundred and thirty kilometres from Kaalspruit while the obituary says he died at the one and lies at the other. THE OBJECTION HAS BEEN ANSWERED AGAINST THE PIN. The Friend of the Free State of 13 January 1870 advertises for sale “the farm, WILDEBEESTKOOI, ADJOINING THE FARM LEEUBERG, THE PROPERTY OF THE LATE J.G.E. KOLBE, ABOUT TWO HOURS RIDE FROM THE TOWN OF BLOEMFONTEIN”. Fifteen or twenty kilometres, not a hundred and thirty. The Fauresmith farm is a different farm of the same name, and the two-farm contradiction this archive could not reconcile was never a contradiction — Leeuberg and Kaalspruit are neighbours. A MAN NAMED JEPHTS, described by the court as a man of colour, was living here in 1868 and owned a chestnut riding horse; it was stolen with two of the family's, and his name is in the record beside theirs. **27 SEPTEMBER 2026 — THE FARM IS NOW A RESIDENCE AND NOT ONLY A DEATHBED.** Two Free State civil marriage entries name it as where people lived: the Commandant's widow in **July 1871**, and **Jan Hendrik Kolbe, veeboer, with his bride** in **June 1872**, hers written “Dito” under his. **THAT IS THREE DOCUMENTS ON ONE FARM IN FOUR YEARS** and the strongest reason yet to think the Bloemfontein-district Leeuwberg, not the Fauresmith one, is the place. **THE PIN IS STILL NOT MOVED ON IT**, because a residence in a register names a farm and not a coordinate.",
    "e": [
     [
      "3 Apr 1868",
@@ -1701,10 +1701,21 @@
     [
      "15 Sep 2026",
      "the Fauresmith pin is withdrawn"
+    ],
+    [
+     "13 Jul 1871",
+     "Anna Jacoba Kolbe, born van der Merwe, widow, entered as living here at her second marriage"
+    ],
+    [
+     "4 Jun 1872",
+     "Jan Hendrik Kolbe, veeboer, and Rose Maria McCabe both entered as living here at their marriage"
     ]
    ],
    "p": [
-    "John Gerson Eliezar Kolbe"
+    "John Gerson Eliezar Kolbe",
+    "Anna Jacoba van der Merwe",
+    "Jan Hendrik Kolbe",
+    "Rose Maria McCabe"
    ],
    "slug": "leeuwberg",
    "lat": -28.98,
