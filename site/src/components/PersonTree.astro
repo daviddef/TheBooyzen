@@ -40,12 +40,31 @@ const row = (o, via, slug, showVia = true) => ({
   title: "Recorded by: " + viaLabel[via],
 });
 
+/* 89 of this archive's 352 person pages drew no chart at all, and a page that
+   draws nothing says this archive knows nobody. It is not the same claim as
+   «no household here names them», which is what is actually true, and which
+   this archive can say precisely because it knows which of the two applies.
+   Drawn for everybody from here on; the caption carries the reason. */
+const nKids = t.unions.reduce((n, un) => n + un.kids.length, 0);
+const nothing = !t.parents.length && !t.siblings.length && !nKids
+  && !t.unions.some((un) => un.spouse);
+const emptyWhy = !nothing ? "" :
+  (!t.origin && !t.unions.length)
+    ? "No household in this archive names this person, as a child or as a parent. "
+      + "They are here because a record names them, and that record stands alone."
+  : (t.origin && !t.unions.length)
+    ? "A household here names this person as a child, and records neither parent "
+      + "nor any other child in it. There is nothing more to draw."
+    : "A household here names this person as a parent, and records neither a "
+      + "spouse nor a child in it. There is nothing more to draw.";
+
 const warns = [
   ...(t.origin && t.origin.f.warn ? [t.origin.f.warn] : []),
   ...t.unions.filter((x) => x.f.warn).map((x) => x.f.warn),
 ];
 ---
 <PersonTree
+  always
   self={{ name: person.n, dates: dates(person),
           gen: person.g ? `generation ${person.g} \u2014 see the spine \u2192` : "",
           genHref: person.g ? u("/direct-line/") : "",
@@ -62,7 +81,9 @@ const warns = [
   palette={{ tree: "var(--ink-3)", "name-font": "var(--serif)", "name-size": "15px",
              "name-colour": "var(--ink)", via: "var(--ink-3)" }}
 >
-  {showKey && (
+  {/* No lines are drawn, so a key to four kinds of line explains nothing and
+       implies the chart is using them. */}
+  {showKey && !nothing && (
     <span slot="keys">
       <span class="key"><i class="sw line"></i> the direct line, argued on <a href={u("/direct-line/")}>the line</a></span>
       <span class="key"><i class="sw doc"></i> from a record this archive has read</span>
@@ -74,7 +95,8 @@ const warns = [
     {warns.map((w) => <p class="warn cap">{w}</p>)}
   </Fragment>
   <Fragment slot="notes">
-    <span style="display:block;margin-top:8px">
+    {nothing && <span style="display:block;margin-top:8px">{emptyWhy}</span>}
+    {!nothing && <span style="display:block;margin-top:8px">
       <b>{prov.doc === prov.n
             ? `All ${prov.n} relationships shown`
             : `${prov.doc} of the ${prov.n} relationships shown`}</b>{" "}are written in a record this archive has read.
@@ -83,7 +105,7 @@ const warns = [
       {t.origin && t.origin.f.src && (
         <span>{" "}<a href={u(t.origin.f.src[1])}>{t.origin.f.src[0]} &rarr;</a></span>
       )}
-    </span>
+    </span>}
     {t.origin && t.origin.f.why && <span style="display:block;margin-top:6px">{t.origin.f.why}</span>}
     {t.unions.filter((x) => x.f.why).map((x) => (
       <span style="display:block;margin-top:6px">{x.f.why}
