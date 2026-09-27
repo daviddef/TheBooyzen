@@ -25,9 +25,26 @@ export function resolve(ref) {
 const keyOf = (p) => p.n + "|" + (p.b || "");
 const same = (a, b) => a && b && keyOf(a) === keyOf(b);
 
+/* A DATE FIELD HERE DOES NOT ALWAYS HOLD A DATE, and the two that do not were
+   both being rendered as though they did. Tersia Booyzen is recorded b =
+   "living" — the archive saying she is alive in the field a birth would occupy —
+   and her chart read «b. living». Elizabeth Margarietha Booijzen is recorded
+   d = "a minor, bef. 1904", and taking the text before the comma produced
+   «d. a minor», throwing away the only dated part of the field.
+
+   So a rendered date must contain a digit. The short form is preferred, the
+   whole string is used when only it carries the digit, and a field with no digit
+   anywhere — "living", "deceased" — yields nothing, which for a living person is
+   also the estate rule rather than a coincidence. */
 export function dates(p) {
-  const short = (s) => (s && s !== "—" ? s.split(",")[0].trim() : "");
-  const b = short(p.b), d = short(p.d);
+  const has = (s) => /\d/.test(s || "");
+  const pick = (s) => {
+    const v = (s && s !== "—" ? String(s).trim() : "");
+    if (!v) return "";
+    const head = v.split(",")[0].trim();
+    return has(head) ? head : has(v) ? v : "";
+  };
+  const b = pick(p.b), d = pick(p.d);
   if (b && d) return b + " – " + d;
   if (b) return "b. " + b;
   if (d) return "d. " + d;
