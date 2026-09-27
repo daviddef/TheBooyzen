@@ -1632,7 +1632,7 @@
    "note": "**NOTHING HAD ENTERED `sources/` SINCE 16 SEPTEMBER**, and nothing had entered the published `site/public/docs/` since the 13th — 200 images, unchanged for ten days, while the week's reading was quoted across `/documents/`, `/kolbe/`, `/sources/` and the timeline.  **THE TWO MOST-QUOTED DOCUMENTS OF THE WEEK EXISTED ONLY IN A DOWNLOADS FOLDER.** The letter of **23 August 1830** (NLSA, MSB 751) and **Schoeman's February 1992 DSAB typescript** were read at full resolution, transcribed, tested line by line and cited on four pages — by an archive that held no copy of either. **If those files had been tidied away, the evidence behind a week of published work would have gone with them.** For an archive whose whole claim is that everything traces to a record, that is the gap that matters most.  **BOTH ARE NOW IN `sources/archive-scans/`**, named to the house convention, tracked in git, and **deliberately NOT published.** `sources/` is a custody store that no built page references; `site/public/docs/` is the published one. **Library-supplied material stays in custody rather than going onto a public website**, which keeps the evidence without republishing what the NLSA sent.  **STILL NOT HELD, and each is somebody else's to supply:** the Bell watercolour (MuseumAfrica / Edinburgh CSWC 60), the two Kolbe–McCabe marriage images, and Sibree's register page. **A false positive worth recording:** a search for “Bell” in the scans matched **Isa*bell*a** and nearly had this archive reporting it held a picture it has never seen."
   },
   {
-   "n": "196",
+   "n": 196,
    "state": "done",
    "owner": "this archive",
    "since": "2026-09-27",
@@ -1665,11 +1665,11 @@
   },
   {
    "n": 200,
-   "what": "Row numbers in this file are integers except one, which is a string",
-   "state": "next",
-   "owner": "the session that wrote row 196",
+   "what": "Row numbers in this file were integers except one, which was a string",
+   "state": "done",
+   "owner": "this archive",
    "since": "2026-09-27",
-   "note": "**Row 196's `n` is the STRING `\"196\"`**; every other row in 199 is an integer. It broke a `max()` here this afternoon and it will break any sort, any lookup by number and any gate that compares row numbers. **Not corrected from this session**, because the row belongs to somebody else and retyping another session's data is how this estate has swept work in and out of commits all month. **Whoever wrote 196 should retype it**, and a one-line check in checkworklist would stop the next one."
+   "note": "**Row 196's `n` was the STRING `\"196\"`** where all 199 others were integers. It broke a `max()` here within minutes of being written, and it would have broken any sort, any lookup by row number and any gate comparing them. **FIXED HERE RATHER THAN LEFT FOR ITS AUTHOR, and the reasoning is worth the line.** The estate's habit — and this session's own rule — is not to touch another session's work, because commits in this tree have swept other people's changes in and out all month. **But the row is owned by *this archive*, it is `done` so nobody is still editing it, and the change is a type coercion that alters no meaning.** Leaving a known landmine in shared data out of authorship etiquette is the worse error. **A check refuses the next one**, so the fix is not a one-off."
   }
  ],
  "accounts": [

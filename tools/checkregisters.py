@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Twenty-one checks on the registers this site is mostly made of.
+"""Twenty-two checks on the registers this site is mostly made of.
 
 (It said TWELVE until 27 September 2026, having grown to twenty-one without
 anybody touching the first line. A file that miscounts itself is a small thing
@@ -55,7 +55,7 @@ held in this project held: a build refused when it slipped.
                          silently behind on the shared kit is a convention
                          drifting with nobody watching.
 """
-import os, re, sys, json, glob, argparse, datetime, subprocess, html, unicodedata
+import os, re, sys, json, glob, argparse, datetime, subprocess, html, unicodedata, collections
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "site", "src", "data")
@@ -598,6 +598,29 @@ def main():
     except FileNotFoundError:
         bad.append("custody-no-register no custody.json - this archive cannot say what it holds, "
                    "which is the state it was in when it quoted two documents it did not have")
+
+    # 21 - A KEY COLUMN WITH TWO TYPES IN IT
+    # 27 September 2026. Row 196 of the work list was written by another session
+    # with its number as the STRING "196"; the other 199 were integers. It broke
+    # a max() in this session within minutes, and it would break any sort, any
+    # lookup by row number, and any check that compares them. Nothing said so:
+    # JSON is happy, the page renders, and the build was green.
+    #
+    # THE COST IS NOT THE ONE ROW, it is that every consumer must now defend
+    # itself. One mixed column turns `max(r["n"] for r in rows)` - the obvious,
+    # correct-looking line - into a crash on unrelated data written days later
+    # by somebody who never saw it.
+    _wl = load("worklist.json")["rows"]
+    _odd = [r.get("n") for r in _wl if not isinstance(r.get("n"), int)]
+    if _odd:
+        bad.append(f"worklist-key-type  {len(_odd)} work list row(s) number themselves with "
+                   f"something other than an integer: {_odd[:4]!r} - one mixed key column makes "
+                   f"every sort and lookup in every session defend itself, and none of them will")
+    _dupes = [n for n, c in collections.Counter(
+        r.get("n") for r in _wl).items() if c > 1]
+    if _dupes:
+        bad.append(f"worklist-key-dupe  work list row number(s) {_dupes!r} used more than once - "
+                   f"two rows answering to one number means a link to either reaches the wrong one")
 
     # 5 - open too long
     today = datetime.date.today()
