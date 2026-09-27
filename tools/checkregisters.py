@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Twelve checks on the registers this site is mostly made of.
+"""Twenty-one checks on the registers this site is mostly made of.
+
+(It said TWELVE until 27 September 2026, having grown to twenty-one without
+anybody touching the first line. A file that miscounts itself is a small thing
+and it is the same small thing as everything else here: a number written once
+and never checked again. If you add a check, change this line.)
 
 The atlas check was written on 15 September to catch one old mistake and caught
 eighteen live ones on its first run. These are the same idea pointed at the
@@ -477,6 +482,122 @@ def main():
                     bad.append(f"pin-inherited      {g['n']!r} sits on exactly the point of "
                                f"{_names[_t]['n']!r}, which is its own comma-tail - it has inherited "
                                f"the wider place's pin rather than been found")
+
+    # 19 - ONE PERSON, TWO WEDDINGS, AND NO FUNERAL BETWEEN
+    # 23 September 2026, and the error was this archive's own. A civil marriage
+    # index entered the Commandant's widow under her FIRST husband's surname -
+    # "Anna Jacoba Kolbe" - which is how a widow is recorded, and a person was
+    # created here for her as though she were a daughter. The archive then held
+    # Francis McCabe marrying an Anna Jacoba van der Merwe "about April 1871" on
+    # a tree, and an Anna Jacoba Kolbe on 13 July 1871 from a register. SAME
+    # GROOM, THREE MONTHS APART, and it sat on the published site for a day.
+    #
+    # THE TELL WAS ARITHMETIC, NOT PALAEOGRAPHY, which is exactly the kind of
+    # thing a machine does better than a reader at midnight: nobody had to look
+    # at handwriting, only to add two dates together. So it is a gate now.
+    #
+    # WHAT IT DOES NOT DO is refuse remarriage. Remarriage is ordinary and this
+    # family is full of it - the same woman married in 1843 and again in 1871,
+    # twenty-eight years and one funeral apart, and that must pass. The test is
+    # a second wedding inside a YEAR to a DIFFERENT person, with no death of the
+    # first partner recorded in between. Where the archive holds that death, the
+    # pair is honest and passes; where it does not, the build stops and asks.
+    #
+    # It reads people.json for the deaths rather than trusting the marriage rows,
+    # because the whole failure mode is a marriage row being about somebody the
+    # archive has misidentified.
+    _died = {}
+    for _p in people:
+        _m = re.search(r"\b(1[6-9]\d\d|20\d\d)\b", str(_p.get("d") or ""))
+        if _m:
+            _died[_p["n"].strip().lower()] = int(_m.group(1))
+    try:
+        _mar = load("marriages.json")
+        _mar = _mar["rows"] if isinstance(_mar, dict) else _mar
+    except Exception:
+        _mar = []
+    for _side, _other in (("h", "w"), ("w", "h")):
+        _by = {}
+        for _r in _mar:
+            _who, _ds = str(_r.get(_side) or "").strip(), str(_r.get("ds") or "")
+            if not _who or _who in ("—", "-") or not re.match(r"^\d{4}-\d\d-\d\d$", _ds):
+                continue
+            _by.setdefault(_who.lower(), []).append(
+                (datetime.date(*map(int, _ds.split("-"))), _who, str(_r.get(_other) or "").strip()))
+        for _key, _rows in _by.items():
+            _rows.sort()
+            for (_d1, _who, _p1), (_d2, _, _p2) in zip(_rows, _rows[1:]):
+                if _p1.lower() == _p2.lower() or (_d2 - _d1).days > 366:
+                    continue
+                _dy = _died.get(_p1.lower())
+                if _dy and _d1.year <= _dy <= _d2.year:
+                    continue          # widowed in between: ordinary, and documented
+                bad.append(f"married-twice      {_who!r} marries {_p1!r} on {_d1} and {_p2!r} "
+                           f"on {_d2}, {(_d2 - _d1).days} days apart, and this archive records "
+                           f"no death of {_p1!r} between them - one of these two is the same "
+                           f"person under another name, or a date is wrong")
+
+    # 20 - QUOTING A DOCUMENT THE ARCHIVE DOES NOT HOLD
+    # 23 September 2026. FOUR PAGES OF THIS SITE WERE QUOTING TWO DOCUMENTS AT
+    # LENGTH - the 1830 Kolbe letter, NLSA MSB 751, and Schoeman's 1992 DSAB
+    # typescript - which existed nowhere but a Downloads folder. Both had been
+    # read at full resolution, transcribed, tested line by line and cited, and
+    # the archive held neither. It was found by an end-to-end audit and could
+    # not have been found any other way, because CUSTODY WAS NOT WRITTEN DOWN
+    # ANYWHERE A TOOL COULD READ IT.
+    #
+    # WHAT WAS TRIED FIRST AND THROWN AWAY, because the failure is instructive.
+    # The obvious gate reads the BUILT PAGES for long quotations near an archival
+    # reference and demands a file for each. Measured before being written, it
+    # produced 54 references and would have failed 40 of them - and nearly every
+    # one of those 40 is this archive being honest: MHG 5155/51 and MOOC 7/1/104
+    # are quoted precisely BECAUSE they are wanted and not held. A gate that
+    # fires on the healthy case is learned as noise inside a week. Tightening it
+    # to prose that CLAIMS custody ("read here", "is held here") still left 21,
+    # most of them false, because no pattern distinguishes reading an index entry
+    # from reading a document.
+    #
+    # SO CUSTODY IS A FACT AND NOT AN INFERENCE, and it lives in custody.json.
+    # This check does the part a machine can actually do: the register and the
+    # directory must agree, in both directions. It says plainly what it does not
+    # do - it cannot tell whether a sentence claiming to have READ something is
+    # true, and no check here should pretend to.
+    try:
+        _cust = load("custody.json")
+        _store = os.path.join(ROOT, _cust.get("store") or "sources/archive-scans")
+        _listed = {e["file"] for e in _cust.get("held") or []}
+        _ondisk = {f for f in os.listdir(_store)} if os.path.isdir(_store) else set()
+        if not os.path.isdir(_store):
+            bad.append(f"custody-no-store   custody.json names {_cust.get('store')!r} and there "
+                       f"is no such directory - the register describes a store that is not here")
+        else:
+            for _f in sorted(_listed - _ondisk):
+                bad.append(f"custody-missing    custody.json says this archive holds {_f!r} and "
+                           f"the file is not in {_cust.get('store')} - it was moved, renamed or "
+                           f"never arrived, and a page may be quoting it")
+            for _f in sorted(_ondisk - _listed):
+                bad.append(f"custody-unlisted   {_f!r} sits in {_cust.get('store')} and is not in "
+                           f"custody.json - a document nobody has written down is one nobody can "
+                           f"cite, and the register is how this archive knows what it holds")
+        for _e in _cust.get("held") or []:
+            if not (_e.get("what") or "").strip():
+                bad.append(f"custody-nameless   {_e.get('file')!r} is held and the register does "
+                           f"not say what it is")
+        # the store must not leak: nothing published may point into it
+        # A LINK, not a mention. The first draft of this matched the bare string
+        # and failed the build over /worklist/, which merely TALKS about the store
+        # in a row note - the same error the attribution tool made an hour earlier
+        # on the same afternoon, and worth a second line rather than a quiet fix.
+        _leak = re.compile(r'(?:href|src|srcset)="[^"]*archive-scans')
+        for _f in glob.glob(os.path.join(a.dist, "**", "index.html"), recursive=True):
+            if _leak.search(open(_f, encoding="utf-8", errors="ignore").read()):
+                _rel = os.path.relpath(os.path.dirname(_f), a.dist).replace(os.sep, "/")
+                bad.append(f"custody-published  /{_rel}/ references the custody store, which is "
+                           f"library-supplied material kept so a quotation can be checked, not "
+                           f"so it can be redistributed")
+    except FileNotFoundError:
+        bad.append("custody-no-register no custody.json - this archive cannot say what it holds, "
+                   "which is the state it was in when it quoted two documents it did not have")
 
     # 5 - open too long
     today = datetime.date.today()

@@ -5324,6 +5324,46 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The same URL, 3,499 results and then 0, forty minutes apart",
+   "n": "not a finding about the family — a finding about the instrument",
+   "d": "27 Sep 2026",
+   "h": "/method/",
+   "rows": [
+    [
+     "Does a signed-out FamilySearch session return an honest zero?",
+     "NO. IT RETURNS “No Results Found” AND A COUNT OF 0",
+     "**This archive has warned about this since 21 September on a peer's report, and today it happened here, controlled, by accident.** The identical search URL — Kolbe, mother Anna Jacoba van der Merwe, South Africa — returned **3,499 results** in the morning and **0** forty minutes later, on the same machine, in the same minute of the same afternoon. **The only thing that changed was the browser context**: the pane restarted with an empty cookie jar. **The page does carry a banner** — *create a free account or sign in to see all available results* — so it is not a pure fabrication; but the result count says **0** and the body says **No Results Found**, and a reader skimming for a number gets a false negative. **THE DOCUMENTED REMEDY WAS TRIED FIRST AND DID NOT WORK.** The estate's rule is *before asking a person to fix something, open a second tab*; a fresh tab in the same pane is signed out too, because the loss is the pane's and not the tab's.",
+     "blocked"
+    ],
+    [
+     "What this costs, and what it does not",
+     "NOTHING ALREADY FOUND IS IN DOUBT",
+     "Every FamilySearch result recorded today was taken from the **signed-in** session and is unaffected. What is blocked is the **rest**: the arks for five of the Commandant's children were not captured before the session dropped, so those five are **still not entered as people**, and the three estate files found this afternoon cannot be opened. **NO ZERO RECORDED TODAY CAME FROM THE SIGNED-OUT SESSION** — the only zeros here are the Cape baptism searches for Johan Casimir and Peter Benjamin, both run while signed in and both controlled against fifteen and five positive results in the same collection.",
+     "part"
+    ]
+   ]
+  },
+  {
+   "g": "The same URL, 3,499 results and then 0, forty minutes apart",
+   "n": "not a finding about the family — a finding about the instrument",
+   "d": "27 Sep 2026",
+   "h": "/method/",
+   "rows": [
+    [
+     "Does a signed-out FamilySearch session return an honest zero?",
+     "NO. IT RETURNS “No Results Found” AND A COUNT OF 0",
+     "**This archive has carried the warning since 21 September on a peer's report, and today it happened here, under control, by accident.** The identical search URL — Kolbe, mother Anna Jacoba van der Merwe, South Africa — returned **3,499 results** in the morning and **0** forty minutes later, on the same machine in the same afternoon. **The only thing that changed was the browser context**: the pane restarted with an empty cookie jar. **It is not a pure fabrication** — the page carries a banner saying *create a free account or sign in to see all available results* — but the count reads **0** and the body reads **No Results Found**, and a reader taking the number gets a false negative. **THE DOCUMENTED REMEDY WAS TRIED FIRST AND FAILED.** The estate's rule is *before asking a person to fix something, open a second tab*; a fresh tab in the same pane is signed out too, because the session belongs to the pane and not to the tab. **So this one really does need a person**, which is the case the rule was written to make rare rather than impossible.",
+     "blocked"
+    ],
+    [
+     "What it costs, and what it does not",
+     "NOTHING ALREADY FOUND IS IN DOUBT",
+     "Every FamilySearch result recorded today came from the **signed-in** session. **No zero recorded today came from the signed-out one** — the only negatives written down are the Cape baptism searches for Johan Casimir and Peter Benjamin, both run while signed in and both controlled against fifteen and five positive results in the same collection. **What is blocked is the rest**: the record arks for five of the Commandant's children, who are not entered as people because they cannot yet be cited, and three estate files found this afternoon.",
+     "part"
+    ]
+   ]
   }
  ]
 }

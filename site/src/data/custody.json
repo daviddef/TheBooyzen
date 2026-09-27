@@ -1,0 +1,181 @@
+{
+ "note": "WHAT THIS ARCHIVE PHYSICALLY HOLDS, as opposed to what it has read. Every file in sources/archive-scans, which is a CUSTODY store and is deliberately not published: library- and archive-supplied material is kept so that a quotation can be checked, not so that it can be redistributed. No built page references this directory and a gate keeps it that way. WHY IT EXISTS: on 23 September 2026 four pages of this site were quoting two documents at length - the 1830 Kolbe letter and the 1992 DSAB typescript - which existed only in a Downloads folder. The archive had read them, transcribed them, tested them line by line and cited them, and held neither. Nothing could have told anybody, because custody was not written down anywhere a tool could read it. It is written down here now, and checkregisters refuses a build where this file and the directory disagree in either direction. WHAT IT CANNOT DO, said plainly: it cannot tell whether a sentence on a page claiming to have READ something is true. That is a discipline and not a gate, and pretending otherwise would be the more dangerous error.",
+ "store": "sources/archive-scans",
+ "published": false,
+ "held": [
+  {
+   "file": "1817-marriage-register-graaff-reinet_montjoy-slier.jpg",
+   "year": 1817,
+   "what": "marriage register graaff reinet",
+   "ref": "montjoy slier"
+  },
+  {
+   "file": "1830-letter-johan-gottlieb-kolbe-to-his-son_NLSA-MSB-751.pdf",
+   "year": 1830,
+   "what": "letter johan gottlieb kolbe to his son",
+   "ref": "NLSA MSB 751"
+  },
+  {
+   "file": "1840-death-notice-james-montjoy_KAB-MOOC-6-9-21-4393.jpg",
+   "year": 1840,
+   "what": "death notice james montjoy",
+   "ref": "KAB MOOC 6 9 21 4393"
+  },
+  {
+   "file": "1843-death-notice-johanna-booyzen_KAB-MOOC-6167.jpg",
+   "year": 1843,
+   "what": "death notice johanna booyzen",
+   "ref": "KAB MOOC 6167"
+  },
+  {
+   "file": "1851-baptism-willem-hermanus-booyzen_graaff-reinet-no2809.jpg",
+   "year": 1851,
+   "what": "baptism willem hermanus booyzen",
+   "ref": "graaff reinet no2809"
+  },
+  {
+   "file": "1863-death-notice-johanna-catharina-montjoy_KAB-MOOC-6-9-104-499.jpg",
+   "year": 1863,
+   "what": "death notice johanna catharina montjoy",
+   "ref": "KAB MOOC 6 9 104 499"
+  },
+  {
+   "file": "1870-baptism-gert-jacobus-booyzen_second-wife-named.jpg",
+   "year": 1870,
+   "what": "baptism gert jacobus booyzen",
+   "ref": "second wife named"
+  },
+  {
+   "file": "1876-sterfkennis-petrus-jacobus-booijsen_rustenburg-678.jpg",
+   "year": 1876,
+   "what": "sterfkennis petrus jacobus booijsen",
+   "ref": "rustenburg 678"
+  },
+  {
+   "file": "1884-death-notice-petrus-jacobus-booysen_KAB-MOOC-8907.jpg",
+   "year": 1884,
+   "what": "death notice petrus jacobus booysen",
+   "ref": "KAB MOOC 8907"
+  },
+  {
+   "file": "1902-death-notice-carolina-van-niekerk-born-botha.jpg",
+   "year": 1902,
+   "what": "death notice carolina van niekerk born botha",
+   "ref": ""
+  },
+  {
+   "file": "1903-death-registration-john-barry_barkly-east-74.jpg",
+   "year": 1903,
+   "what": "death registration john barry",
+   "ref": "barkly east 74"
+  },
+  {
+   "file": "1907-lidmaten-register-indwe.jpg",
+   "year": 1907,
+   "what": "lidmaten register indwe",
+   "ref": ""
+  },
+  {
+   "file": "1908-death-notice-hendrik-stephanus-booysen_TAB-14380.jpg",
+   "year": 1908,
+   "what": "death notice hendrik stephanus booysen",
+   "ref": "TAB 14380"
+  },
+  {
+   "file": "1908-doopregister-indwe.jpg",
+   "year": 1908,
+   "what": "doopregister indwe",
+   "ref": ""
+  },
+  {
+   "file": "1908-marriage-indwe-cert-13.jpg",
+   "year": 1908,
+   "what": "marriage indwe cert 13",
+   "ref": ""
+  },
+  {
+   "file": "1910-doopregister-indwe.jpg",
+   "year": 1910,
+   "what": "doopregister indwe",
+   "ref": ""
+  },
+  {
+   "file": "1912-death-registration-harriet-louisa-barry_barkly-east.jpg",
+   "year": 1912,
+   "what": "death registration harriet louisa barry",
+   "ref": "barkly east"
+  },
+  {
+   "file": "1915-death-notice-john-barry_estate-925-grahamstown.jpg",
+   "year": 1915,
+   "what": "death notice john barry",
+   "ref": "estate 925 grahamstown"
+  },
+  {
+   "file": "1937-death-notice-james-john-mountjoy_KAB-MOOC-58379.jpg",
+   "year": 1937,
+   "what": "death notice james john mountjoy",
+   "ref": "KAB MOOC 58379"
+  },
+  {
+   "file": "1938-death-notice-maria-louisa-bertha-kumm_KAB-MOOC-58380.jpg",
+   "year": 1938,
+   "what": "death notice maria louisa bertha kumm",
+   "ref": "KAB MOOC 58380"
+  },
+  {
+   "file": "1938-distribution-account_KAB-MOOC-58379.jpg",
+   "year": 1938,
+   "what": "distribution account",
+   "ref": "KAB MOOC 58379"
+  },
+  {
+   "file": "1938-liquidation-account_KAB-MOOC-58379.jpg",
+   "year": 1938,
+   "what": "liquidation account",
+   "ref": "KAB MOOC 58379"
+  },
+  {
+   "file": "1940-sterfkennis-stephanus-francois-booyzen_TAB-MHG-2428-40.jpg",
+   "year": 1940,
+   "what": "sterfkennis stephanus francois booyzen",
+   "ref": "TAB MHG 2428 40"
+  },
+  {
+   "file": "1942-death-notice-joseph-heinrich-daschner_TAB-MHG-1928-42.jpg",
+   "year": 1942,
+   "what": "death notice joseph heinrich daschner",
+   "ref": "TAB MHG 1928 42"
+  },
+  {
+   "file": "1943-death-notice-isabella-fredrika-booyzen-born-coetzee_KAB-84992.jpg",
+   "year": 1943,
+   "what": "death notice isabella fredrika booyzen born coetzee",
+   "ref": "KAB 84992"
+  },
+  {
+   "file": "1944-sterfkennis-anna-pretorius_TAB-MHG-2945-44.jpg",
+   "year": 1944,
+   "what": "sterfkennis anna pretorius",
+   "ref": "TAB MHG 2945 44"
+  },
+  {
+   "file": "1992-dsab-entry-george-augustus-kolbe_schoeman-voorlopige-teks.pdf",
+   "year": 1992,
+   "what": "dsab entry george augustus kolbe",
+   "ref": "schoeman voorlopige teks"
+  },
+  {
+   "file": "index-of-estates-1834-1912_barry_pp232-233.jpg",
+   "year": null,
+   "what": "index of estates 1834 1912",
+   "ref": "barry pp232 233"
+  },
+  {
+   "file": "index-of-estates-1834-1912_barry_pp234-235.jpg",
+   "year": null,
+   "what": "index of estates 1834 1912",
+   "ref": "barry pp234 235"
+  }
+ ]
+}
