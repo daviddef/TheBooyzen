@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --port 4324",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run check:pin && npm run atlas && npm run namefold && npm run ra && astro build && npm run sitemap && npm run check:living && npm run check:kin && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers && npm run check:pages && npm run check:inline && npm run check:rows",
+    "build": "npm run check:pin && npm run check:decisions && npm run atlas && npm run namefold && npm run ra && astro build && npm run sitemap && npm run check:living && npm run check:kin && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers && npm run check:pages && npm run check:inline && npm run check:rows",
     "build:pages": "npm run atlas && astro build && npm run sitemap",
     "preview": "astro preview --port 4324",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py --dist \"${ARCHIVE_OUT:-dist}\"",
@@ -25,10 +25,11 @@
     "check:pin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpin.py --root .",
     "check:inline": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkinline.py --root . --max-inline 6",
     "check:rows": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkrows.py --root .",
-    "check:kin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkkin.py --data src/data/people.json --born b --died d --max 0 --name n"
+    "check:kin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkkin.py --data src/data/people.json --born b --died d --max 0 --name n",
+    "check:decisions": "python3 ../tools/check-decisions.py"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#aae576f",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#62b6a38",
     "astro": "^5.18.2"
   },
   "devDependencies": {
