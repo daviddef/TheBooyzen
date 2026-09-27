@@ -1670,6 +1670,38 @@
    "owner": "this archive",
    "since": "2026-09-27",
    "note": "**Row 196's `n` was the STRING `\"196\"`** where all 199 others were integers. It broke a `max()` here within minutes of being written, and it would have broken any sort, any lookup by row number and any gate comparing them. **FIXED HERE RATHER THAN LEFT FOR ITS AUTHOR, and the reasoning is worth the line.** The estate's habit — and this session's own rule — is not to touch another session's work, because commits in this tree have swept other people's changes in and out all month. **But the row is owned by *this archive*, it is `done` so nobody is still editing it, and the change is a type coercion that alters no meaning.** Leaving a known landmine in shared data out of authorship etiquette is the worse error. **A check refuses the next one**, so the fix is not a one-off."
+  },
+  {
+   "n": 201,
+   "what": "Ten Mountjoy estates at the Cape, and every one of them would name a father",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-27",
+   "note": "**Found 27 September in the new NAAIRS database, on the first sweep of the surname ever run.** Seven Mountjoy daughters filed under married surnames — BRUMMER, DIESEL, DEMMER, BURGER, NEPGEN, FOURIE, KLOPPER — and three Mountjoy wives under Mountjoy. **A death notice names parents**, so each is a chance to attach a Mountjoy woman to a father, and the married-surname filing is the exact trap that hid the Commandant's widow. **None is ordered and none should be ordered singly**: they are almost all Cape Town Archives Repository, so they are one enquiry. References at [/searched/](/searched/)."
+  },
+  {
+   "n": 202,
+   "what": "A Daschner child's estate this archive did not know about — TAB MHG 10287/69",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-09-27",
+   "note": "**DASCHNER, HEINRICH**, with the archivist's note **“CHILD.”** This archive holds no Heinrich Daschner. Joseph Heinrich Daschner died in 1942 and his death notice is in custody here; a child's estate under 1969 is more likely a grandchild. **A child's estate exists when a child owned something**, usually an inheritance, so the file may name the parent it came from."
+  },
+  {
+   "n": 203,
+   "what": "The education-series sweep still cannot be run: old NAAIRS is 503",
+   "state": "blocked",
+   "owner": "National Archives of South Africa",
+   "since": "2026-09-27",
+   "note": "**Row 1 wanted the Transvaal education series (source OD) swept for BARRY, MOUNTJOY, DASCHNER and KOLBE.** The series sweep needs the **old** NAAIRS, which answers **503 Service Unavailable** — twelve days after it answered «the connection to the Search Manager Server is inactive». **The new database was swept instead** and produced 58 Mountjoys and 12 Daschners, **but NARSSA states in writing that it holds only part of 8.3 million migrating entries**, so it cannot answer a question about a whole series. **This row is about the old service coming back and nothing else.**"
+  },
+  {
+   "n": 204,
+   "what": "NARSSA's tariffs changed on 1 September and the reading room is closed",
+   "state": "blocked",
+   "owner": "David",
+   "since": "2026-09-27",
+   "note": "**The Pretoria order is held on cost against figures that are now a month old.** NARSSA posted new tariffs effective **1 September 2026** and asks researchers to read the schedule before submitting chargeable requests. **Separately the reading room is closed** — one notice for a temporary water-supply interruption, one headed *temporal closure of the reading room*. **Nothing to do until David wants to revisit the cost**, and worth knowing before anybody is asked to go in."
   }
  ],
  "accounts": [
