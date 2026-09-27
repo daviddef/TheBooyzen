@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import { families } from "../data/kin.js";
+import { people } from "../data/people.js";
 const kids = [
   ["John Gerson Eliezar “Jan”", "1822", "Uitenhage", ""],
   ["Catherine Maria Sophia (Joubert)", "1825", "Graaff-Reinet", ""],
@@ -15,6 +17,21 @@ const kids = [
   ["Keetor — read Rector — Peter Benjamin", "1840", "Colesberg", "in neither death notice"],
   ["Johan Casimir “Casiner”", "1844", "Bethulie", "in both death notices"],
 ];
+/* THE COMMANDANT'S HOUSEHOLD IS NOT A LIST IN THIS FILE, and the build refused
+   the version that was. It is read from kin.js, which holds the household, and
+   people.js, which holds each child's dates — so the table below cannot drift
+   from the registers the way a hand-typed copy of it would, and a tool can read
+   the evidence without parsing this page.
+
+   Found 27 September 2026 by searching the fonts on the MOTHER's name: his is
+   spelled six ways across six documents and cannot be searched, hers is spelled
+   one way. */
+const house = families.find((f) => f.h === "John Gerson Eliezar Kolbe");
+const byName = new Map(people.map((p) => [p.n, p]));
+const commandant = (house?.kids || []).map((k) => {
+  const p = byName.get(k.n) || {};
+  return [p.n || k.n, p.b || "—", k.via];
+});
 const north = [
   ["George Augustus", "29 Jul 1863", "Colesberg", "11 Oct 1863", "dies at Wakkerstroom 1954, aged 91"],
   ["Gabriel Stephanus", "11 Mar 1865", "Colesberg", "23 Apr 1865", ""],
@@ -306,6 +323,47 @@ const north = [
         1834&rdquo;</b>. Edinburgh calls him <em>&ldquo;a moravian missionary?&rdquo;</em>, question mark
         and all. <b>He was LMS, and this archive has his father&rsquo;s letter saying so.</b></p>
     </div>
+  </div>
+</section>
+
+<section class="blk" id="commandant">
+  <h2>The Commandant&rsquo;s twelve, and nine of them now have fonts</h2>
+  <p class="dek">His obituary said he left <b>eight sons and four daughters</b> and named not one of
+    them. For a fortnight this archive could not either. The way in was to stop searching for
+    him.</p>
+
+  <p style="margin-top:16px"><b>His name cannot be searched.</b> Across six documents he is
+    <i>John Gerson Eliezar</i>, <i>Jan Gerson Eliese</i>, <i>Johan Gerson Eliezer</i>,
+    <i>John&nbsp;G&nbsp;E</i>, <i>J&nbsp;G&nbsp;E</i> and — on his own son&rsquo;s death
+    registration — <i>John Gerson Elinger</i>. <b>His wife&rsquo;s is spelled one way.</b> One query
+    on <b>Anna Jacoba van der Merwe</b>, on 27 September 2026, returned seven baptisms of their
+    children; two more came from civil death registrations that name both parents.</p>
+
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      <thead><tr><th style="width:19rem">Child</th><th>Born, and christened</th><th style="width:7rem">On what</th></tr></thead>
+      <tbody>{commandant.map(([n, b, via]) => (
+        <tr><td><a href={u(`/people/${n.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}/`)}>{n}</a></td>
+          <td class="m">{b}</td><td class="cap">{via === "doc" ? "a register" : "a user tree"}</td></tr>))}</tbody>
+    </table>
+  </div>
+
+  <div class="note" style="margin-top:18px">
+    <p><b>The fonts record a move that no document states.</b> Colesberg in 1846, Fauresmith in 1848
+      and 1849, and Bloemfontein from 1860 onwards. Somewhere between 1854 and 1860 this household
+      moved to the town the Commandant would sit in the Volksraad for and be a bank director in, and
+      the only evidence of it is the order of the churches his children were christened in.</p>
+    <p style="margin-top:12px"><b>Three are still missing</b>, and the obituary is the only authority
+      for there being twelve. <b>One more is probable and undocumented:</b> a
+      <b>Catharina Wilhelmina Kolbe</b> married <b>Johannes Petrus Pienaar</b> at Bloemfontein on
+      8&nbsp;October&nbsp;1860, born 1843 — the year his parents married, which would make her the
+      eldest. <b>That record does not name her parents</b>, so she is an inference from a year, a
+      town and a surname, and she is not drawn.</p>
+    <p style="margin-top:12px"><b>And there is a real Anna Jacoba Kolbe.</b> She was born in 1864 and
+      was <b>six years old</b> when her widowed mother remarried in 1871 under the name
+      <i>Anna&nbsp;Jacoba&nbsp;Kolbe</i> — the entry that made this archive briefly invent a
+      daughter. The name really is in the family. It was still an error, and it is at
+      <a href={u("/corrections/")}>corrections</a>.</p>
   </div>
 </section>
 
