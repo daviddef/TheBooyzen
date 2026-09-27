@@ -611,6 +611,13 @@
    "**ONE OF THEM WAS THE SETTLER'S SON, AND THE EVIDENCE WAS ALREADY PUBLISHED HERE.** Written on 21 September while resolving the Casmier spelling, and correct in its reasoning: a shared surname is not a relationship, and the three men were index rows rather than witnesses. **BUT THE SECOND ROW — *JOHAN CASIMIR KOLBE, married ELIZABETH GEERTRUIDA PIENAAR* — IS HIM.** His banns were called at **Colesberg on 1 May 1867**, the town his father's death notice was signed in and his mother died in that year; their children include a **George Augustus** and a **Margaret Dewning**. **WHAT WENT WRONG IS NOT THE RULE BUT THE TENSE.** *Not joined* is a statement about what has been done; *not joinable* is a statement about the world. The sentence was written as the first and read ever afterwards as the second, and so the row was never worked. **THE FIX IS A HABIT, NOT A GATE:** when this archive refuses a lead for want of a link, it should say what would supply the link — here, the mother's name, which is exactly what found him six days later.",
    "process",
    "/searched/"
+  ],
+  [
+   "27 Sep 2026",
+   "A search set published twice, because a script saved one file and then crashed on the next",
+   "**THIS ARCHIVE PUBLISHED THE SAME SEARCH SET TWICE AND NOTHING SAID SO.** A script appended the FamilySearch signed-out set to `searched.json`, **saved it**, and then died several lines later on a `max()` over a work-list column another session had typed as a string. **The crash message was about the work list; the damage was in searched.json, already written.** The corrected re-run appended the set again, and the page carried it twice through two commits. **WHY IT IS A CORRECTION AND NOT A TYPO:** /searched/ is a record of what work was done, so a set printed twice says this archive searched the same ground twice on the same day. That is a claim about the work and it is false. **THE GENERAL FAULT, which will happen again:** a script that writes several files is not atomic, so a failure in the last one leaves the earlier ones committed — and re-running it is not idempotent unless somebody made it so. **Caught by an assertion in the very next script**, which expected two matches and found three; a gate now refuses two sets sharing a heading and a date.",
+   "process",
+   "/searched/"
   ]
  ]
 }

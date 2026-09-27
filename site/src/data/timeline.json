@@ -444,6 +444,20 @@
    "h": "/documents/"
   },
   {
+   "y": 1846,
+   "d": "8 Mar 1846",
+   "t": "George Augustus Kolbe baptised at Colesberg, the first of the twelve this archive can name",
+   "w": "Born 30 September 1845, son of **Johan Gerson Eliezer Kolbe and Anna Jacoba van der Merwe**, and **named for the grandfather buried at Colesberg the year before** — the 1820 Settler, whose own death notice was signed in that town in January 1845. **The same font is in the index twice**, a week apart with the identical birth date, which is one event and two transcribers rather than a second child.",
+   "k": "doc",
+   "p": [
+    "George Augustus Kolbe of 1845"
+   ],
+   "pl": [
+    "Colesberg"
+   ],
+   "h": "/searched/"
+  },
+  {
    "y": 1848,
    "d": "12 Mar 1848",
    "t": "Willem Johannes Kolbe baptised at Fauresmith, entry 18",
@@ -516,6 +530,18 @@
    "big": true
   },
   {
+   "y": 1852,
+   "d": "7 Jun 1852",
+   "t": "Petrus Jacobus Kolbe baptised, five weeks old",
+   "w": "Born 4 May 1852. Sixty-seven years later a **Pieter Kolbe, son of J. Kolbe and A. v. d. Merwe**, died at Bloemfontein aged sixty-seven — the same year of birth and the same parents reduced to initials. This archive joins the two and says the join rests on a year and two letters.",
+   "k": "doc",
+   "p": [
+    "Petrus Jacobus Kolbe of 1852"
+   ],
+   "pl": [],
+   "h": "/searched/"
+  },
+  {
    "y": 1853,
    "d": "23 Oct 1853",
    "t": "Two Kolbe sisters, one page, one afternoon",
@@ -532,6 +558,32 @@
     "Burgersdorp"
    ],
    "h": "/documents/#barry-fonts"
+  },
+  {
+   "y": 1854,
+   "d": "2 Apr 1854",
+   "t": "Margaretha Elizabeth Kolbe baptised",
+   "w": "Born 16 February 1854, and the index spells her father's forenames a fourth way — *John Gerron Eliezar*. She carries **Margaret Downing's** name, her father's mother, who was alive and would outlive the christening by thirteen years.",
+   "k": "doc",
+   "p": [
+    "Margaretha Elizabeth Kolbe of 1854"
+   ],
+   "pl": [],
+   "h": "/searched/"
+  },
+  {
+   "y": 1860,
+   "d": "7 Oct 1860",
+   "t": "Anna Susanna Kolbe baptised at Bloemfontein — and the font records a move",
+   "w": "Born 15 August 1860. **The children before her were christened at Colesberg and Fauresmith; the children after her at Bloemfontein.** Somewhere between 1854 and 1860 this household moved to the town the Commandant would sit in the Volksraad for, and no document says so except the order of the fonts.",
+   "k": "doc",
+   "p": [
+    "Anna Susanna Kolbe of 1860"
+   ],
+   "pl": [
+    "Bloemfontein"
+   ],
+   "h": "/searched/"
   },
   {
    "y": 1862,
@@ -577,6 +629,21 @@
     "Bloemfontein"
    ],
    "h": "/documents/#commandant-kolbe-1868"
+  },
+  {
+   "y": 1865,
+   "d": "1 Jan 1865",
+   "t": "Anna Jacoba Kolbe baptised at Bloemfontein on New Year's Day — the real one",
+   "w": "Born 3 November 1864, daughter of John G. E. Kolbe and **Anna Jacoba van der Merwe**, and named for her mother. **She is not the woman this archive invented on 23 September**: that was her mother, entered in an 1871 marriage index under her first husband's surname as a widow is. This girl was **six** at that wedding. The name really is in the family, and it was still an error.",
+   "k": "doc",
+   "p": [
+    "Anna Jacoba Kolbe of 1864",
+    "Anna Jacoba van der Merwe"
+   ],
+   "pl": [
+    "Bloemfontein"
+   ],
+   "h": "/searched/"
   },
   {
    "y": 1866,

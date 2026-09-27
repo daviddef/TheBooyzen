@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Twenty-two checks on the registers this site is mostly made of.
+"""Twenty-three checks on the registers this site is mostly made of.
 
 (It said TWELVE until 27 September 2026, having grown to twenty-one without
 anybody touching the first line. A file that miscounts itself is a small thing
@@ -621,6 +621,29 @@ def main():
     if _dupes:
         bad.append(f"worklist-key-dupe  work list row number(s) {_dupes!r} used more than once - "
                    f"two rows answering to one number means a link to either reaches the wrong one")
+
+    # 22 - THE SAME SEARCH SET PUBLISHED TWICE
+    # 27 September 2026, and this archive did it to itself within the hour. A
+    # script appended a set to searched.json, SAVED IT, and then crashed on a
+    # later unrelated line - a max() over a work-list column that another
+    # session had typed as a string. The crash message was about the work list;
+    # the damage was in searched.json, already written. The corrected re-run
+    # appended the same set a second time, and the page published it twice.
+    #
+    # NOTHING WOULD HAVE SAID SO. Two identical sets are valid JSON, render
+    # perfectly, and read as though the archive searched the same thing twice on
+    # the same day - which is a claim about the work, and a false one.
+    #
+    # THE GENERAL SHAPE, worth the lines because it will happen again: a script
+    # that writes several files is not atomic, so a failure in the LAST one
+    # leaves the earlier ones committed. Re-running it is not idempotent unless
+    # somebody made it so. The gate is cheaper than the discipline.
+    _sig = collections.Counter((s.get("g"), s.get("d")) for s in load("searched.json")["sets"])
+    for (_g, _d), _c in _sig.items():
+        if _c > 1:
+            bad.append(f"searched-dupe-set  {_c} sets share the heading {str(_g)[:44]!r} on {_d} "
+                       f"- a set published twice reads as the same ground searched twice, which "
+                       f"is a claim about the work and a false one")
 
     # 5 - open too long
     today = datetime.date.today()

@@ -5342,26 +5342,12 @@
      "NOTHING ALREADY FOUND IS IN DOUBT",
      "Every FamilySearch result recorded today was taken from the **signed-in** session and is unaffected. What is blocked is the **rest**: the arks for five of the Commandant's children were not captured before the session dropped, so those five are **still not entered as people**, and the three estate files found this afternoon cannot be opened. **NO ZERO RECORDED TODAY CAME FROM THE SIGNED-OUT SESSION** — the only zeros here are the Cape baptism searches for Johan Casimir and Peter Benjamin, both run while signed in and both controlled against fifteen and five positive results in the same collection.",
      "part"
-    ]
-   ]
-  },
-  {
-   "g": "The same URL, 3,499 results and then 0, forty minutes apart",
-   "n": "not a finding about the family — a finding about the instrument",
-   "d": "27 Sep 2026",
-   "h": "/method/",
-   "rows": [
-    [
-     "Does a signed-out FamilySearch session return an honest zero?",
-     "NO. IT RETURNS “No Results Found” AND A COUNT OF 0",
-     "**This archive has carried the warning since 21 September on a peer's report, and today it happened here, under control, by accident.** The identical search URL — Kolbe, mother Anna Jacoba van der Merwe, South Africa — returned **3,499 results** in the morning and **0** forty minutes later, on the same machine in the same afternoon. **The only thing that changed was the browser context**: the pane restarted with an empty cookie jar. **It is not a pure fabrication** — the page carries a banner saying *create a free account or sign in to see all available results* — but the count reads **0** and the body reads **No Results Found**, and a reader taking the number gets a false negative. **THE DOCUMENTED REMEDY WAS TRIED FIRST AND FAILED.** The estate's rule is *before asking a person to fix something, open a second tab*; a fresh tab in the same pane is signed out too, because the session belongs to the pane and not to the tab. **So this one really does need a person**, which is the case the rule was written to make rare rather than impossible.",
-     "blocked"
     ],
     [
-     "What it costs, and what it does not",
-     "NOTHING ALREADY FOUND IS IN DOUBT",
-     "Every FamilySearch result recorded today came from the **signed-in** session. **No zero recorded today came from the signed-out one** — the only negatives written down are the Cape baptism searches for Johan Casimir and Peter Benjamin, both run while signed in and both controlled against fifteen and five positive results in the same collection. **What is blocked is the rest**: the record arks for five of the Commandant's children, who are not entered as people because they cannot yet be cited, and three estate files found this afternoon.",
-     "part"
+     "The round trip, completed the same evening",
+     "3,499 → 0 → 3,499, ONE URL, ONE MACHINE, ONE AFTERNOON",
+     "**David signed in and the identical URL returned 3,499 again.** That closes the experiment rather than merely ending the outage: the count fell and came back with nothing changed but the session, which is as clean a demonstration as this archive will get that **the zero was a statement about the instrument and not about the family**.",
+     "yes"
     ]
    ]
   },
@@ -5412,6 +5398,12 @@
      "NARSSA'S FEES CHANGED ON 1 SEPTEMBER 2026",
      "Posted on the National Archives front page, 25 August: new tariffs effective **1 September 2026**, and researchers are asked to read the schedule before submitting chargeable requests. **The Pretoria order is on hold on cost**, so the figures it was held against are a month out of date and may be wrong in either direction. **The reading room is also closed** — two notices, one for a temporary water-supply interruption and one headed *temporal closure of the reading room*, neither dated on the index page.",
      "part"
+    ],
+    [
+     "Which endpoint answered, and when",
+     "RECORDED BECAUSE A DATE IS NOT ENOUGH WHEN ONE SERVICE HAS TWO DOORS",
+     "**All of the above ran on the NEW database**, `nationalarchives.gov.za/search-the-collections?search_api_views_fulltext_op=AND&search_api_views_fulltext=<TERM>&items_per_page=60`, on the **afternoon of 27 September 2026**. **The OLD database, `national.archsrch.gov.za/sm300cv/smws/sm300dl`, answered 503 in the same session**, and `naairs.htm` is now 404. **WHY THE ENDPOINT AND NOT ONLY THE DAY:** a dated nil is not atomic. On a day when a service moves, two searches an hour apart can hit two different corpora and a day-level record cannot tell them apart — the Luwinski session found exactly that inside its own 16 September, which contains an outage, the discovery of a new address, and searches on it. **Across six archives in this estate, 1,369 of 1,381 negatives name what was searched, 1,316 carry a date, and exactly one carries a time.** Naming the database is enough right up until one database has two endpoints serving different corpora.",
+     "yes"
     ]
    ]
   }

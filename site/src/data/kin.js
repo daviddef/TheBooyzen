@@ -467,13 +467,18 @@ export const families = [
       { n: "Peter Benjamin Kolbe", via: "tree" }] },
 
   { h: "John Gerson Eliezar Kolbe", w: "Anna Jacoba van der Merwe", via: "doc",
-    why: "Married 3 April 1843; he died on the same date twenty-five years later, leaving her with twelve children — eight sons and four daughters, which is his obituary's own count. NONE OF THE TWELVE WAS NAMED IN A DOCUMENT HERE UNTIL 27 SEPTEMBER 2026, when the Free State and Cape Dutch Reformed baptism registers were searched on HER name rather than on his. The four below are the ones a register or a civil registration names as theirs. The others are found and not yet entered: this archive made a person out of a widow four days earlier and is in no hurry to do it twice.",
+    why: "Married 3 April 1843; he died on the same date twenty-five years later, leaving her with twelve children — eight sons and four daughters, which is his obituary's own count. NONE OF THE TWELVE WAS NAMED IN A DOCUMENT HERE UNTIL 27 SEPTEMBER 2026, when the Free State and Cape Dutch Reformed baptism registers were searched on HER name rather than on his. NINE OF THE TWELVE ARE BELOW, and eight of them are named as this couple's by a baptism register or a civil death registration — not by a tree. They are drawn in birth order, which is also the order the fonts move: Colesberg in 1846, Fauresmith in 1848 and 1849, then Bloemfontein from 1860, so the register records this household's move to the town without anybody writing it down. THREE ARE STILL MISSING and the obituary is the authority for there being twelve.",
     warn: "Frederik Fortunatus is here on a user tree's word and nothing else. His death registration names no parents — that line of the form is completed only for a deceased under ten — and the register of his baptism has not been found. He is drawn in because two of his children were baptised to a McCabe mother in the same congregation, which is corroboration and not proof.",
     src: ["What Was Searched", "/searched/"],
     kids: [
+      { n: "George Augustus Kolbe of 1845", via: "doc" },
       { n: "Williem Johannes Kolbe of Panfontein", via: "doc" },
       { n: "Jan Hendrik Kolbe", via: "doc" },
+      { n: "Petrus Jacobus Kolbe of 1852", via: "doc" },
+      { n: "Margaretha Elizabeth Kolbe of 1854", via: "doc" },
       { n: "Andries Frederick Kolbe of Leeuwberg", via: "doc" },
+      { n: "Anna Susanna Kolbe of 1860", via: "doc" },
+      { n: "Anna Jacoba Kolbe of 1864", via: "doc" },
       { n: "Frederik Fortunatus Kolbe of Bloemspruit", via: "tree" }] },
 
   { h: "Johan Gottlieb Kolbe", w: null, via: "doc",
