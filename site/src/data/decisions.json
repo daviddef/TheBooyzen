@@ -2,7 +2,7 @@
  "_note": "Values that encode a DECISION rather than a measurement. tools/check-decisions.py recomputes each from its own real source and REFUSES if one has moved, because a decision changing is exactly the case where a deliberate act should be required — and editing this file in the same commit is that act. The other thirty-odd numbers this build prints move every run for good reasons; these do not. Shape taken from the D'Arcy session's decisions.json, machinery from the kit.",
  "decisions": {
   "kitPin": {
-   "value": "62b6a38",
+   "value": "31f7a5c",
    "why": "Which build of the shared kit this archive's gates are. In the D'Arcy archive this moved inside a commit about gating a chart and three builds printed the correct new value under «ok» before anybody read it."
   },
   "livingPolicy": {
@@ -17,7 +17,7 @@
    "value": [
     "Tersia Booyzen"
    ],
-   "why": "The one living person this archive names, and she is named because she is a SOURCE: the Anglo-Boer War account and the name-change come from her testimony as told by her father. Recorded b = \"living\", with no flag anywhere — which is why the living gate counted zero here until 27 September 2026. Anyone appearing or disappearing from this list is a change to who this archive publishes."
+   "why": "The one living person this archive names, and she is named because she is a SOURCE: the Anglo-Boer War account and the name-change come from her testimony as told by her father. Recorded b = \"living\", with no flag anywhere — which is why the living gate counted zero here until 27 September 2026. Anyone appearing or disappearing from this list is a change to who this archive publishes. As of 31f7a5c the vocabulary that finds her is declared in kit/data/living-words.json and read by both the gate and /register, because three separate readers of \"is this person alive\" had each missed her in a different way."
   }
  }
 }
