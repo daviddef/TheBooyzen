@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Twenty-three checks on the registers this site is mostly made of.
+"""Twenty-four checks on the registers this site is mostly made of.
 
 (It said TWELVE until 27 September 2026, having grown to twenty-one without
 anybody touching the first line. A file that miscounts itself is a small thing
@@ -644,6 +644,50 @@ def main():
             bad.append(f"searched-dupe-set  {_c} sets share the heading {str(_g)[:44]!r} on {_d} "
                        f"- a set published twice reads as the same ground searched twice, which "
                        f"is a claim about the work and a false one")
+
+    # 23 - A CHILD BORN BEFORE THE MARRIAGE IT IS DRAWN UNDER
+    # 28 September 2026, and it is the THIRD time this shape has bitten. The
+    # archive dated John Augustus Barry I's marriage "about 1850 at Burghersdorp"
+    # on the word "probably", written by their son on a death notice sixty-five
+    # years later - the same son who had written "Unknown" on his mother's notice
+    # three months before. Drawn under that marriage in kin.js, the whole time,
+    # was JOHN AUGUSTUS BARRY II, BORN 13 MARCH 1847. Nobody added them up.
+    #
+    # It is the Anna Jacoba fault again: two dates on one page, published,
+    # contradicting each other, and found by a stranger's letter rather than by
+    # this archive. Arithmetic is the cheapest evidence there is and it is the
+    # kind a machine should be doing.
+    #
+    # WHAT IT DOES NOT DO. It does not moralise about children born before a
+    # wedding, which is ordinary and well documented. It compares a marriage
+    # against the children the ARCHIVE ITSELF has drawn under it, and a year is
+    # enough slack for a December wedding and a January baby. What it catches is
+    # a household whose own numbers cannot both be true.
+    _by_year = {}
+    for _p in people:
+        _m = re.search(r"\b(1[6-9]\d\d)\b", str(_p.get("b") or ""))
+        if _m:
+            _by_year[_p["n"].strip().lower()] = int(_m.group(1))
+    _kin_src = open(os.path.join(D, "kin.js"), encoding="utf-8").read()
+    _house = {}
+    for _m in re.finditer(r'\{ h: "([^"]+)", w: "([^"]+)".*?kids: \[(.*?)\] \}', _kin_src, re.S):
+        _kids = re.findall(r'\{ n: "([^"]+)"', _m.group(3))
+        _house[(_m.group(1).split("|")[0].strip().lower(),
+                _m.group(2).split("|")[0].strip().lower())] = _kids
+    for _r in _mar:
+        _y = re.match(r"^(\d{4})", str(_r.get("ds") or ""))
+        if not _y:
+            continue
+        _my = int(_y.group(1))
+        _kids = _house.get((str(_r.get("h") or "").strip().lower(),
+                            str(_r.get("w") or "").strip().lower()))
+        for _k in (_kids or []):
+            _ky = _by_year.get(_k.split("|")[0].strip().lower())
+            if _ky and _ky < _my - 1:
+                bad.append(f"child-before-wedding {_k!r} is born {_ky} and this archive draws "
+                           f"them under the marriage of {_r.get('h')} and {_r.get('w')} dated "
+                           f"{_r.get('d')} - the household's own two numbers cannot both be true, "
+                           f"so the marriage date, the birth date or the parentage is wrong")
 
     # 5 - open too long
     today = datetime.date.today()

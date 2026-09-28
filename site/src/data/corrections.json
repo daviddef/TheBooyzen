@@ -618,6 +618,13 @@
    "**THIS ARCHIVE PUBLISHED THE SAME SEARCH SET TWICE AND NOTHING SAID SO.** A script appended the FamilySearch signed-out set to `searched.json`, **saved it**, and then died several lines later on a `max()` over a work-list column another session had typed as a string. **The crash message was about the work list; the damage was in searched.json, already written.** The corrected re-run appended the set again, and the page carried it twice through two commits. **WHY IT IS A CORRECTION AND NOT A TYPO:** /searched/ is a record of what work was done, so a set printed twice says this archive searched the same ground twice on the same day. That is a claim about the work and it is false. **THE GENERAL FAULT, which will happen again:** a script that writes several files is not atomic, so a failure in the last one leaves the earlier ones committed — and re-running it is not idempotent unless somebody made it so. **Caught by an assertion in the very next script**, which expected two matches and found three; a gate now refuses two sets sharing a heading and a date.",
    "process",
    "/searched/"
+  ],
+  [
+   "28 Sep 2026",
+   "John Augustus Barry I and Margaretha Kolbe married about 1850 at Burghersdorp",
+   "**THEIR ELDEST SON WAS BORN IN 1847, AND THIS ARCHIVE DREW HIM UNDER THAT MARRIAGE.** The 1850 rested on one word — **“probably”** — written by their son **R. P. Barry** on his father's death notice in **1915**, sixty-five years after the event. **The same son had written “Unknown” on his mother's notice three months earlier**, which this archive quoted elsewhere as a sign of how little he knew, and then used his guess as a date anyway. **Meanwhile people.js said “married 1846” the whole time.** Two of this archive's own files disagreed, and the marriage page published the wrong one. **WHAT IT IS NOW:** 23 FEBRUARY 1846 at COLESBERG, marked `inf` because the exact date and place come from **Pama**, reported in a letter of November 1999 that had been in David's files for twenty-seven years. **THE BOOK IS NOT WHAT MAKES IT SAFE** — this archive does not let a book overrule a page. 1850 is refuted by arithmetic on the archive's own data, and 1846 was already here. **HOW IT WAS CAUGHT MATTERS MORE THAN THE DATE.** Not by a gate, not by an audit, but by a stranger's letter arriving at a page nobody had re-read. **There is a gate now** — `child-before-wedding` refuses a household whose marriage postdates a child drawn under it, and it fired on this row and on James Henry Barry, born 1848, before the fix.",
+   "reasoning",
+   "/marriages/"
   ]
  ]
 }

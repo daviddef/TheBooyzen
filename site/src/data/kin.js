@@ -400,7 +400,7 @@ export const families = [
     kids: [{ n: "Augustus Kolbe Enslin", via: "doc" }] },
 
   { h: "John Augustus Barry I", w: "Margaretha Wilhelmina Elizabeth Mary Kolbe", via: "doc",
-    why: "Married about 1850 at BURGHERSDORP — “probably”, says their own son on the 1915 notice, and “Unknown” says the same son on his mother's notice three months earlier. His 1903 registration says they had ELEVEN children; his own death notice names EIGHT; HER death notice, estate 1291, names NINE. The ninth is WILLIAM, who appears on nothing else. Two are still missing.",
+    why: "Married 23 FEBRUARY 1846 at COLESBERG. THIS FILE SAID “about 1850 at BURGHERSDORP” until 28 September 2026 and drew a son born in 1847 underneath it. The 1850 was the word “probably” on the 1915 death notice, written by the son who had put “Unknown” on his mother's notice three months earlier; the 1846 is in this archive's own people file, and a correspondent supplied the exact date and place from Pama in 1999. His 1903 registration says they had ELEVEN children; his own death notice names EIGHT; HER death notice, estate 1291, names NINE. The ninth is WILLIAM, who appears on nothing else. Two are still missing.",
     src: ["The Barrys", "/barry/"],
     kids: [
       { n: "John Augustus Barry II", via: "doc" },
