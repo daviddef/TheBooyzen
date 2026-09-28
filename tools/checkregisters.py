@@ -87,9 +87,22 @@ def dslug(s):
     return s[:60]
 
 
+def _dist_default():
+    """ARCHIVE_OUT wins, matching the kit's own outdir.py convention. This
+    tool's --dist default used to be a bare "site/dist", so a session that ran
+    it any way other than through the one npm script wrapping the substitution
+    got a silent read of whatever build was last left there. Found by the
+    D'Arcy session hitting the same fault from the opposite direction three
+    times in four days."""
+    env = os.environ.get("ARCHIVE_OUT")
+    if not env:
+        return os.path.join(ROOT, "site", "dist")
+    return env if os.path.isabs(env) else os.path.join(ROOT, "site", env)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dist", default=os.path.join(ROOT, "site", "dist"))
+    ap.add_argument("--dist", default=_dist_default())
     ap.add_argument("--warn-only", action="store_true")
     a = ap.parse_args()
     bad, warn = [], []
