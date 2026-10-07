@@ -1,5 +1,5 @@
 {
- "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped.",
+ "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped. **AND A SECOND, FLAT REGISTER SITS BESIDE THE SETS SINCE 7 OCTOBER 2026, FOR A MACHINE RATHER THAN A READER.** Record Atlas imports each archive's searched.json, and it reads a list of OBJECTS under `searched`, `rows` or `entries`. This file keys its work under `sets`, and each row inside is a LIST — a question, an answer, a note and a verdict. **So the importer read 0 rows from this archive while reading 1,525 from the other seven**, and every search recorded here since the project began has been invisible to the shared map. The `sets` are what the page is built from and what a person reads; the `searched` array is the same work stated in the fields the atlas keys on — source, url, film, pages, outcome. **The duplication is a known cost and is recorded as one**: the two can drift, and the proper fix is to retrofit the sets, which is a deliberate job and not a thing to do in passing.",
  "sets": [
   {
    "g": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
@@ -5514,6 +5514,113 @@
      "part"
     ]
    ]
+  }
+ ],
+ "searched": [
+  {
+   "src": "FamilySearch — South Africa, Civil Marriage Records 1801-1974; Free State marriage records 1869-1872, Bloemfontein",
+   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSK8-G98V-M",
+   "film": "008145483",
+   "pages": "186, 221",
+   "walked": false,
+   "what": "KOLBE and McCABE marriages — two register images read at the page, not the index",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "familysearch",
+    "bloemfontein"
+   ],
+   "note": "The form of this register carries name, age, condition, occupation, residence, banns-or-licence, consent by RELATIONSHIP, signatures and witnesses. IT HAS NO PARENTS' COLUMNS AT ALL, in any year of this volume — worth knowing before anybody orders an image of it hoping for a father."
+  },
+  {
+   "src": "FamilySearch — South Africa, Free State Dutch Reformed Church Records 1848-1956 (collection 1910846)",
+   "url": "https://www.familysearch.org/en/search/collection/1910846",
+   "walked": false,
+   "what": "KOLBE baptisms and membership rolls, Fauresmith and Bloemfontein, 1848-1890",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "familysearch",
+    "fauresmith",
+    "bloemfontein"
+   ],
+   "note": "Searching this collection on the MOTHER's name returned seven baptisms of one household where every search on the father's had failed — his forenames are spelled six ways across six documents and hers one way. A method note rather than a finding about anybody."
+  },
+  {
+   "src": "FamilySearch — South Africa, Dutch Reformed Church Registers (Cape Town Archives) 1660-1994 (collection 1478678)",
+   "url": "https://www.familysearch.org/en/search/collection/1478678",
+   "film": "008119684",
+   "pages": "876",
+   "walked": false,
+   "what": "BARRY and KOLBE baptisms at Graaff-Reinet, Burgersdorp and Dordrecht 1846-1864; KOLBE membership and marriage banns at Colesberg 1866-1867",
+   "when": "2026-09-28",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "kolbe",
+    "familysearch",
+    "colesberg",
+    "graaff-reinet"
+   ],
+   "note": "Image 876 of film 008119684 was read at the page — a Graaff-Reinet baptism of 1847 with its witnesses. NO WAYPOINT IS RECORDED HERE: the film number is what this archive holds, and a waypoint scraped from a film page would name only that page's first segment. Not established rather than guessed."
+  },
+  {
+   "src": "FamilySearch — South Africa, Orange Free State, Civil Death Registration 1902-1954; Dewetsdorp death records 1930",
+   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-C912-TLBG",
+   "pages": "852",
+   "walked": false,
+   "what": "KOLBE death — a Form of Information of a Death read at the page, image 852 of 2,140",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "familysearch",
+    "bloemfontein"
+   ],
+   "note": "Line 2(a) of this form asks for a parent or guardian ONLY where the deceased was under ten, so it names no parents for an adult. It does give condition, occupation, birthplace, cause, the attending doctor and the informant with their address. Images supplied by the National Archives of South Africa."
+  },
+  {
+   "src": "BillionGraves — Bloemfontein, Memoriam Road Cemetery",
+   "url": "https://billiongraves.com/search/results?family_names=Kolbe",
+   "walked": false,
+   "what": "KOLBE headstone, transcription read; cemetery at -29.14339, 26.21007",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "bloemfontein"
+   ],
+   "note": "The transcription is free and gave a full birth and death date. THE FULL-RESOLUTION PHOTOGRAPH IS BEHIND A PAID ACCOUNT — the public record page offers a 180x135 thumbnail, too small to read an inscription, so a transcription here cannot be checked against the stone without paying."
+  },
+  {
+   "src": "NAAIRS — the NEW database at nationalarchives.gov.za/search-the-collections",
+   "url": "https://www.nationalarchives.gov.za/search-the-collections",
+   "walked": false,
+   "what": "DASCHNER swept, 12 results; MOUNTJOY swept, 58 results; BOOYZEN run first as a control and returned across five repositories",
+   "when": "2026-09-27",
+   "outcome": "yield",
+   "tags": [
+    "daschner",
+    "mountjoy",
+    "booyzen"
+   ],
+   "note": "CRITICAL FOR ANY ARCHIVE USING NAAIRS: there are now TWO databases and the working one is incomplete. NARSSA states on its own search page that it is 'in the process of migrating more than 8.3 million entries from the old NAAIRS database to the new database and therefore fulltext search (new database) will not display all the records in the system', and that the old database 'will provide a more complete search'. So a nil from the new database is not a nil. Facet counts by repository and by series are available and are the useful part. NARSSA's tariffs changed on 1 September 2026."
+  },
+  {
+   "src": "FamilySearch — South Africa, Dutch Reformed Church Registers (Cape Town Archives) 1660-1994 (collection 1478678)",
+   "url": "https://www.familysearch.org/en/search/collection/1478678",
+   "walked": false,
+   "what": "KOLBE, searched for the forename CASIMIR across the whole collection — 15 records, and not one of them a baptism",
+   "when": "2026-09-28",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "familysearch",
+    "colesberg"
+   ],
+   "note": "A controlled nil: the same 15 results include this family's own membership, banns and children, so the collection demonstrably reaches it. The same search for PETER, BENJAMIN and RECTOR returned 5 records, none of them the man wanted. BUT THE NIL IS WEAK AND THE REASON IS VISIBLE IN THE RESULTS: this collection indexes two of this family's baptisms with the father entered as the bare word 'Kolbe' and no forename, so it can lose a child as easily as a parent."
   }
  ]
 }
