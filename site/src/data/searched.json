@@ -5482,6 +5482,38 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "Pama's Barry migration, tested against this archive's own fonts",
+   "n": "no service, no order, no letter — a claim checked against registers already read here",
+   "d": "7 Oct 2026",
+   "h": "/barry/",
+   "rows": [
+    [
+     "Were the elder Barry children born at Burgersdorp, as Pama says?",
+     "NO — THE FIRST THREE WERE BAPTISED AT GRAAFF-REINET, AND ONE OF THOSE FONTS HAS BEEN READ AT THE IMAGE",
+     "**Pama's claim, reported to David in November 1999, was that the children were *“born in Burgersdorp up to Nicolaas who, with his later siblings, was born in Dordrecht”*.** Tested against the baptisms this archive already holds: **JOHN AUGUSTUS II, Graaff-Reinet, 12 April 1847, entry 80**; **JAMES HENRY, Graaff-Reinet, 13 November 1848**; **GEORGE AUGUSTUS, Graaff-Reinet, 9 June 1850**. **Burgersdorp does not appear until 1852.** And the 1847 entry is not an index row — it was read at the image, **film 008119684 image 876**, where every witness is a Kolbe: *“Gt: JOHN KOLBE, MARGARET KOLBE, AUGUSTA KOLBE”*. **A register read at the page beats a book compiled a century later**, which is the rule this archive already applied to Pama in the Booysen line.",
+     "yes"
+    ],
+    [
+     "Is Pama's pivot child right?",
+     "NO, AND THE PIVOT RESTS ON PAMA HIMSELF",
+     "Pama makes **Nicolaas (1857)** the first born at Dordrecht. **The fonts put WILLIAM FREDERICK THOMAS at GRAAFF-REINET on 29 September 1861** — four years after Nicolaas — and **Dordrecht does not appear until FREDERICK FORTUNATUS, baptised there 10 July 1864**. So the pivot is out by at least six years. **AND NICOLAAS HAS NO FONT AT ALL**: the only evidence for his 1857 birth is Pama, so the claim about him is tested with evidence supplied by the claim. **That is the circularity this archive watches for**, and it is the reason his year stays marked `inf`.",
+     "no"
+    ],
+    [
+     "So what do the fonts say, in order?",
+     "GRAAFF-REINET → BURGERSDORP → GRAAFF-REINET → DORDRECHT, AND IT IS NOT A MARCH",
+     "**1847, 1848, 1850 Graaff-Reinet. 1852, 1853, 1855 Burgersdorp. 1857 and 1859 unknown. 1861 Graaff-Reinet again. 1863 Dordrecht.** Three or four stages where Pama had two, and the 1861 return is the part this archive cannot yet explain — Graaff-Reinet and Burgersdorp are some two hundred and fifty kilometres apart, so it is not a short trip to a familiar font. **The 1861 baptism rests on two index arks and has NOT been read at the image**, which is the next thing to do and the honest place to stop. **IT ALSO SITS WITH SOMETHING THIS ARCHIVE ALREADY KNEW:** by this family's practice the 1861 William must mean the 1853 William had died, because a baptism is not done twice.",
+     "part"
+    ],
+    [
+     "A reading of Pama that would make him right about the wrong generation",
+     "HIS SENTENCE FITS THE SONS, NOT THE FATHER",
+     "**JOHN AUGUSTUS BARRY II's children are baptised at BURGERSDORP in 1873, 1875, 1877, 1879, 1881 and 1883, and then at DORDRECHT in 1887 and 1889.** *“Burgersdorp up to X, then Dordrecht”* describes that household almost exactly — one town, then the other, with a single move between 1883 and 1886. **A compiler working from a family's recollection could very easily attach a grandson's migration to a grandfather's household**, and the two generations share forenames so completely that this archive has three men called John Augustus Barry. **NOT ADOPTED**: it is an explanation for how Pama went wrong, not evidence about anybody, and it is written down so the next reader does not have to think of it again.",
+     "part"
+    ]
+   ]
   }
  ]
 }

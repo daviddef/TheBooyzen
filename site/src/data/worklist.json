@@ -1733,15 +1733,23 @@
    "state": "next",
    "owner": "this archive",
    "since": "2026-09-28",
-   "note": "**The date is adopted on arithmetic and a book, and it should rest on a page.** Pama gives **John Barry × Margaretha Wilhelmina Elizabeth Kolbe, Colesberg, 23 February 1846**. **Colesberg is a parish this archive already works** — the Settler's death notice was signed there, his son George Augustus was baptised there in 1846, and Johan Casimir took membership and called banns there. **The same register run, the same year.** It would also give the marriage's witnesses, and this family's witnesses have twice turned out to be relatives."
+   "note": "**The date is adopted on arithmetic and a book, and it should rest on a page.** Pama gives **John Barry × Margaretha Wilhelmina Elizabeth Kolbe, Colesberg, 23 February 1846**. **Colesberg is a parish this archive already works** — the Settler's death notice was signed there, his son George Augustus was baptised there in 1846, and Johan Casimir took membership and called banns there. **The same register run, the same year.** It would also give the marriage's witnesses, and this family's witnesses have twice turned out to be relatives.  **7 OCTOBER — ATTEMPTED AND BLOCKED, AND THE BLOCK IS THE SAME ONE AS 27 SEPTEMBER.** A new browser pane is signed out of FamilySearch; the collection URL redirected honestly to `ident.familysearch.org` this time rather than returning a fabricated zero — **so this archive has now seen BOTH behaviours directly**, nine days apart, which is what the method page has been claiming on a peer's report. **The session does not survive between working days**, so this will recur every time and the remedy is a person each time. **What makes it worth doing when it is unblocked:** the marriage would move from `inf` to `doc`, and a Colesberg 1846 marriage register would name the witnesses — and at this family's fonts the witnesses have twice turned out to be the bride's own family."
   },
   {
    "n": 209,
    "what": "Test Pama's Burgersdorp-to-Dordrecht move against the baptism registers",
-   "state": "next",
+   "state": "done",
    "owner": "this archive",
    "since": "2026-09-28",
-   "note": "Pama says the children were *born in Burgersdorp up to Nicolaas who, with his later siblings, was born in Dordrecht* — placing the household's move **between 1855 and 1857**. **This archive already holds baptisms for most of these children** and can test it without ordering anything. **If it holds, it dates a migration from a book and confirms it from fonts**; if it fails, it is one more reason to treat Pama as a lead list."
+   "note": "Pama says the children were *born in Burgersdorp up to Nicolaas who, with his later siblings, was born in Dordrecht* — placing the household's move **between 1855 and 1857**. **This archive already holds baptisms for most of these children** and can test it without ordering anything. **If it holds, it dates a migration from a book and confirms it from fonts**; if it fails, it is one more reason to treat Pama as a lead list.  **7 OCTOBER — TESTED, AND PAMA FAILS IN BOTH HALVES.** The first three children were baptised at **GRAAFF-REINET** (1847, 1848, 1850), not Burgersdorp; Burgersdorp runs 1852–1855; **Graaff-Reinet returns in 1861**; Dordrecht appears in 1864. **And the pivot child Pama names has no font**, so his claim about Nicolaas is tested only by itself. **The 1847 entry was read at the image** and its witnesses are three Kolbes. See [/searched/](/searched/)."
+  },
+  {
+   "n": 210,
+   "what": "Read the 1861 Graaff-Reinet baptism at the image — it is the one font that breaks the migration",
+   "state": "next",
+   "owner": "this archive",
+   "since": "2026-10-07",
+   "note": "**WILLIAM FREDERICK THOMAS BARRY, born 29 September 1861, baptised at GRAAFF-REINET** — between a Burgersdorp phase that ends in 1855 and a Dordrecht one that begins in 1864, and some two hundred and fifty kilometres from Burgersdorp. **It rests on two index arks, 1:1:623R-9MM9 and 1:1:62GJ-SD…, and has not been read at the page.** Three things the image would settle: whether the place is the PARISH or an artefact of an index whose place field is often just *Cape Province*; whether the parents are really this couple; and who stood as witnesses, since the 1847 font at the same church was attended by three Kolbes. **Blocked only by the FamilySearch sign-in**, like row 208."
   }
  ],
  "accounts": [
