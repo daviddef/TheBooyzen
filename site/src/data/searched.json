@@ -5514,6 +5514,38 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "The Irish end of John Augustus Barry, with seven days of subscription left",
+   "n": "the 1903 registration says IRISHMAN BORN IN IRELAND and the 1915 notice says his mother was born NEAGLE",
+   "d": "9 Oct 2026",
+   "h": "/barry/",
+   "rows": [
+    [
+     "Is there a John Barry baptised about 1819 in Ireland to a mother surnamed Nagle or Neagle?",
+     "NO — AND THE WINDOW IS COVERED, SO THE NIL MEANS SOMETHING",
+     "**The target is exact.** His 1903 death registration, made by a son who was in the room, gives his age as **84 years 2 months** on 25 August 1903 — so **born about June 1819** — and enters him as **“Irishman born in Ireland”**; the 1915 notice gives his mother as **“born Neagle”**. Searched *Ireland Roman Catholic Parish Baptisms* for surname **BARRY** with mother's surname **NAGLE and variants**: **47 records in the whole of Ireland**, and the only Johns are **1811, 1845, 1860 and 1876**. **THE WINDOW IS NOT EMPTY FOR WANT OF COVERAGE** — the same 47 hold a Patrick baptised 1815 at St Mary's Cork City and a Joseph baptised 1822 at Annakissy, so the index reaches either side of 1819 in the right county.",
+     "no"
+    ],
+    [
+     "What the instrument can and cannot see, said before the nil is trusted",
+     "FINDMYPAST INDEXES NO IRISH PROTESTANT PARISH SET BY MOTHER'S SURNAME",
+     "**This matters more than the nil.** Searched all FindMyPast Irish birth, marriage, death and parish sets on the same terms: **54 records, and every one is either *Ireland Roman Catholic Parish Baptisms* or *Ireland Births 1864-1958*** — civil registration, which begins **forty-five years after he was born**. **So the search could only ever have found a Catholic child.** This archive does not know what John Augustus Barry was christened; his wife was a Lutheran missionary's daughter and his children were baptised in Dutch Reformed churches. **IF THE FAMILY WAS CHURCH OF IRELAND, NOTHING ABOVE COULD HAVE FOUND THEM**, and the right next instrument is the Representative Church Body Library in Dublin, not this one.",
+     "part"
+    ],
+    [
+     "Where the pairing puts the family, if the pairing is right",
+     "CORK, OVERWHELMINGLY — AND ONE HOUSEHOLD WORTH A NAME",
+     "**Of 47 Barry children of Nagle mothers in all Ireland, all but two are County CORK** — Cloyne and Cork & Ross dioceses — the other two Limerick. **Nagle is a Cork surname and the index agrees.** One household is coherent enough to write down and not to adopt: at **PASSAGE WEST**, a John Barry and a Nagle baptise **Thomas 1800, Michael 1805, Ellen 1806, Joanna 1809 and John 1811**. **That John is eight years too early** for ours and the household is recorded as a lead only. Separately, the marriages index holds **one** Barry × Nagle marriage before 1819 anywhere in Ireland: **1804, St Mary's, Cork City**.",
+     "part"
+    ],
+    [
+     "A FindMyPast behaviour that cost two wrong answers before it was caught",
+     "THE PARENT FIELDS ARE fatherfirstname AND motherlastname — ANY OTHER SPELLING IS DISCARDED IN SILENCE",
+     "**Guessed `fathersfirstname` and `motherslastname` from the form's labels and got 26,481 results — the whole Barry surname.** The same query typed into the FORM returned **13**. The parameters were not rejected, not flagged and not echoed back; they were dropped, and the answer looked like a legitimate large result set. **The working names are `fatherfirstname`, `motherlastname`, with `_variants=true` beside each.** **AND TWO MORE FILTERS ANNIHILATE INSIDE A NAMED DATASET**, which this archive first recorded in September: a `baptismyear` is ignored — the same 47 rows came back spanning 1806 to 1880 — and `&page=2` returns **“0 results found”** rather than the second page, so results can only be paged by clicking. **A COUNT IS THE ONLY WAY TO TELL**: 26,481 against 13 is the difference between a filter applied and a filter thrown away, and nothing else on the page says which happened.",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -5621,6 +5653,21 @@
     "colesberg"
    ],
    "note": "A controlled nil: the same 15 results include this family's own membership, banns and children, so the collection demonstrably reaches it. The same search for PETER, BENJAMIN and RECTOR returned 5 records, none of them the man wanted. BUT THE NIL IS WEAK AND THE REASON IS VISIBLE IN THE RESULTS: this collection indexes two of this family's baptisms with the father entered as the bare word 'Kolbe' and no forename, so it can lose a child as easily as a parent."
+  },
+  {
+   "src": "FindMyPast — Ireland Roman Catholic Parish Baptisms; and all Irish BMD and parish sets",
+   "url": "https://www.findmypast.com.au/search/results?datasetname=ireland+roman+catholic+parish+baptisms&lastname=barry&motherlastname=nagle&motherlastname_variants=true",
+   "walked": false,
+   "what": "BARRY children of a NAGLE/NEAGLE mother, all Ireland — 47 records in the Catholic baptisms, 54 across every Irish set",
+   "when": "2026-10-09",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "ireland",
+    "cork",
+    "findmypast"
+   ],
+   "note": "Looking for a John baptised about 1819; the only Johns are 1811, 1845, 1860 and 1876. The window is covered — the same result set holds 1815 and 1822 baptisms in Cork. WORTH KNOWING FOR ANY IRISH SEARCH HERE: of FindMyPast's Irish sets, only the Roman Catholic parish baptisms and Ireland Births 1864-1958 index a MOTHER'S SURNAME, so a search on a mother can only find a Catholic child or a post-1864 civil birth. 45 of the 47 are County Cork."
   }
  ]
 }

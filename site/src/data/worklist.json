@@ -648,7 +648,7 @@
    "state": "running",
    "owner": "this archive",
    "since": "2026-09-16",
-   "note": "**THE CLOCK IS THE POINT.** A one-month full subscription opened 16 September. Every British wall on this site has been beaten by a paywall or a bot check — Google Books at quota zero, HathiTrust behind Cloudflare, archive.org holding no London directory earlier than 1920 — and **FindMyPast holds the record sets that answer nearly all of them.** The campaign below is ordered so that if only half of it gets done, it is the right half. **Anything still unharvested on 16 October is lost until somebody pays again.**"
+   "note": "**THE CLOCK IS THE POINT.** A one-month full subscription opened 16 September. Every British wall on this site has been beaten by a paywall or a bot check — Google Books at quota zero, HathiTrust behind Cloudflare, archive.org holding no London directory earlier than 1920 — and **FindMyPast holds the record sets that answer nearly all of them.** The campaign below is ordered so that if only half of it gets done, it is the right half. **Anything still unharvested on 16 October is lost until somebody pays again.**  **9 OCTOBER, SEVEN DAYS LEFT, AND THE CAMPAIGN BELOW IS DONE.** Rows 79–92 are all closed except the Savoy register, which is locked to a library terminal. **So the subscription was spent on a question raised after the campaign was written**: the Irish end of John Augustus Barry, which only became askable on 13 September when his 1903 registration turned up saying *Irishman born in Ireland*. Result at [/searched/](/searched/) — a controlled negative, a hard boundary on what FindMyPast's Irish sets can see, and Cork."
   },
   {
    "n": 79,
@@ -1750,6 +1750,14 @@
    "owner": "this archive",
    "since": "2026-10-07",
    "note": "**WILLIAM FREDERICK THOMAS BARRY, born 29 September 1861, baptised at GRAAFF-REINET** — between a Burgersdorp phase that ends in 1855 and a Dordrecht one that begins in 1864, and some two hundred and fifty kilometres from Burgersdorp. **It rests on two index arks, 1:1:623R-9MM9 and 1:1:62GJ-SD…, and has not been read at the page.** Three things the image would settle: whether the place is the PARISH or an artefact of an index whose place field is often just *Cape Province*; whether the parents are really this couple; and who stood as witnesses, since the 1847 font at the same church was attended by three Kolbes. **Blocked only by the FamilySearch sign-in**, like row 208."
+  },
+  {
+   "n": 211,
+   "what": "The Church of Ireland registers — the one place a Protestant John Barry of 1819 could still be",
+   "state": "next",
+   "owner": "David",
+   "since": "2026-10-07",
+   "note": "**Raised by a negative rather than a find.** FindMyPast's Irish sets index a mother's surname in exactly two places: the **Roman Catholic** parish baptisms, and **Ireland Births 1864–1958**, which starts forty-five years too late. **So this archive has searched the Catholic half of Ireland and cannot search the other half with this subscription.** If John Augustus Barry was Church of Ireland, the registers are at the **Representative Church Body Library, Braemor Park, Dublin**, with many parish registers destroyed in 1922 and the survivors listed in their own online guide. **It is a letter, not a subscription**, and it should wait until there is a parish to name — the Cork concentration in the Nagle pairing is the first thing this archive has ever had pointing at one."
   }
  ],
  "accounts": [
