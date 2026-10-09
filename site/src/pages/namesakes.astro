@@ -3,6 +3,9 @@ import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import Motif from "../components/Motif.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import ns from "../data/namesakes.json";
 const sets = ns.sets;
 const total = sets.reduce((n, s) => n + s.who.length, 0);
@@ -67,4 +70,7 @@ const motifs = ["koppie", "windpump", "gable", "wagon", "awl", "thorn", "koppie"
       <a href={u("/name/")}>The surname &rarr;</a></p>
   </div>
 </section>
+
+<SourceBlock ids={["death-notice-george-augustus-kolbe-1845", "death-notice-margaret-downing-1868", "marriage-register-booysen-barry-1879"]} sources={sdx.entries} u={u}
+             note="Namesake reasoning needs documents that NAME a household's children, and in this archive that is two death notices and a marriage register." />
 </Base>

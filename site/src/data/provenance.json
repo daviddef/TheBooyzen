@@ -1,0 +1,30 @@
+{
+ "note": "WHICH PAGES DECLARE WHAT THEY REST ON, AND WHICH DELIBERATELY DO NOT. Row 186 measured that 0 of this archive's pages declared their sources against Defranceski's 39, and the first instinct on fixing it was to put a block on all of them. THAT WOULD HAVE BEEN WORSE THAN NOTHING. A process page that lists documents is claiming to rest on evidence it does not use; an index page would carry the same list three hundred times whether it applied or not; and /sources/ would point every id at a row three inches below it. SO THE ABSENCE IS RECORDED AS A DECISION RATHER THAN LEFT AS A GAP, with a reason per page, and a gate refuses a page that is in neither list — because the state this row was really about is not 'undeclared', it is 'nobody has considered it'.",
+ "exempt": {
+  "404.astro": "A not-found page. It argues nothing and rests on nothing.",
+  "about.astro": "About the archive itself — who made it and why. Its subject is the project, not the family.",
+  "method.astro": "How this archive reasons. Its evidence is its own mistakes, which are at /corrections/, not in the source register.",
+  "changes.astro": "A log of what changed here and when. It rests on this site's own history.",
+  "corrections.astro": "Things published and taken back. Each row names the document that overturned it IN THE ROW, which is a better place than a block at the foot of the page.",
+  "errands.astro": "What can only be got through a door. By definition these are documents NOT yet held, so a block of sources would list the one thing the page is about not having.",
+  "letters.astro": "Letters written to archives and libraries. The sources are the replies, and most have not come.",
+  "open-questions.astro": "What is not known, with the record set that would answer each. Every row names its own target; a page-level block would name the documents this archive has, which are the ones that did NOT answer.",
+  "research-log.astro": "A diary of the work. Its rows cite their own sources where they have them.",
+  "searched.astro": "Every query ever run here. The row IS the citation — source, url, outcome — and a block above them would be a second, weaker statement of the same thing.",
+  "worklist.astro": "Who is doing what. It rests on nothing but itself.",
+  "search.astro": "A search box over this site's own index.",
+  "sources.astro": "THE REGISTER ITSELF. A page cannot rest on itself, and a block here would point every id at the row three inches below it.",
+  "people.astro": "An index of people, built from people.js. Each person's own page carries the documents; this one carries the list.",
+  "who.astro": "An index of names, built from the register. The same reasoning as /people/.",
+  "who/index.astro": "An index of names. The evidence is on the person pages it links to.",
+  "who/[slug].astro": "One name at a time, generated. Each carries the documents for that person; a shared block would be the same list on three hundred pages whether or not it applied.",
+  "people/[slug].astro": "One person at a time, generated. The documents are named in the person's own record, which is where a reader is looking.",
+  "places/index.astro": "An index of places, built from places.json.",
+  "places/[slug].astro": "One place at a time, generated. Each pin names the document that witnesses it, on the pin.",
+  "register.astro": "The harvested FamilySearch register — 7,600 index rows this archive pulled itself. Its source is the harvest, which is named at the head of the page and is not one of the 46 documents.",
+  "trees.astro": "A chooser for the drawn lines. The evidence is on /tree/, which declares.",
+  "bloodline.astro": "A chart built around whichever person a reader picks. It rests on the whole register rather than on any part of it, and /tree/ carries the declaration for the drawn line.",
+  "atlas.astro": "The map. Every pin on it already carries its own witness in places.json, and a gate refuses an unwitnessed pin — so the provenance is per-pin and finer than a page-level block.",
+  "dna.astro": "Two DNA kits. Its evidence is a pair of test results and a shared-match list, which are not documents and are not in the source register. The one thing on this page that IS documentary is argued at /cousins/, which declares."
+ }
+}

@@ -12,6 +12,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import ped from "../data/pedigree.json";
 import d from "../data/dossiers.json";
 import AncChart from "@daviddef/archive-kit/components/AncChart.astro";
@@ -160,4 +163,7 @@ const walls = flat.filter((n) => n.wall);
        <a href={u("/timeline/")}>The timeline &rarr;</a></p>
   </div>
 </section>
+
+<SourceBlock ids={["death-notice-george-augustus-kolbe-1845", "death-notice-margaret-downing-1868", "marriage-register-booysen-barry-1879", "death-registration-willem-hermanus-booysen-1905"]} sources={sdx.entries} u={u}
+             note="A chart is only as good as the documents that fix its joins. These four carry most of them." />
 </Base>

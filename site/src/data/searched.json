@@ -5630,6 +5630,32 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The other thirty-seven pages, and the twenty-five that should say nothing",
+   "n": "finishing row 186 — judgement, not a bulk edit",
+   "d": "9 Oct 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "Can a page's sources be worked out automatically?",
+     "NO — THE REGISTER AND THE PAGES BARELY SHARE A VOCABULARY",
+     "**Measured before assigning anything.** Of the 46 sources, **34 carry an unambiguous archival reference** — MOOC, TAB MHG, Sterfkennis, DOC, CO. **Those references appear on almost no narrative page.** The pages argue from document NAMES (‘his 1915 death notice’); the register lists reference NUMBERS. They meet only on /sources/ and /documents/. **A first attempt at matching was worse than useless**: the id `sag-b3` matched nineteen pages, because its signature was three letters. **So this was done by reading the pages.**",
+     "yes"
+    ],
+    [
+     "How many pages should declare?",
+     "SEVENTEEN DO. TWENTY-FIVE SHOULD NOT, AND THAT IS NOW WRITTEN DOWN",
+     "**88 source items across 17 pages, every id resolving.** The 25 others are exempt **with a reason each** in `provenance.json`. The reasons are not uniform and that is the point: **/errands/** is a list of what this archive has NOT got; **/searched/** rows are already citations and a block would restate them more weakly; **/open-questions/** names the record sets that WOULD answer, so a block would list the documents that did not; **/atlas/** witnesses every pin individually and a gate already refuses an unwitnessed one, which is finer than a page-level block; **/sources/** is the register and cannot rest on itself.",
+     "yes"
+    ],
+    [
+     "What the gate actually enforces",
+     "NOT ‘EVERY PAGE DECLARES’ — ‘EVERY PAGE HAS BEEN THOUGHT ABOUT’",
+     "**A page that honestly rests on nothing and a page nobody has considered look identical from outside**, and that is the state row 186 was really measuring. `provenance-undecided` refuses a page that neither declares nor appears in the exempt register. Proven by adding an empty page and watching the build stop. **The number to watch is no longer 17 of 42 but 0 unconsidered.**",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [

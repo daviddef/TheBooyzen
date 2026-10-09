@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Twenty-five checks on the registers this site is mostly made of.
+"""Twenty-six checks on the registers this site is mostly made of.
 
 (It said TWELVE until 27 September 2026, having grown to twenty-one without
 anybody touching the first line. A file that miscounts itself is a small thing
@@ -726,6 +726,30 @@ def main():
             bad.append(f"source-id-missing  /{_rel}/ declares {_m.group(1)} source id(s) that do "
                        f"not resolve in sources.json - SourceBlock dropped them and rendered the "
                        f"rest, so the page looks right and is claiming provenance it cannot show")
+
+    # 25 - A PAGE NOBODY HAS DECIDED ABOUT
+    # 9 October 2026, finishing row 186. The row counted pages that DECLARE what
+    # they rest on - 0 here against Defranceski's 39 - and the obvious fix was a
+    # SourceBlock on all 41. That would have been worse than the problem. A
+    # process page listing documents claims to rest on evidence it does not use;
+    # an index page would carry one list across three hundred generated pages
+    # whether it applied or not; and /sources/ would point every id at a row
+    # three inches below it.
+    #
+    # SO THE REAL FAULT WAS NEVER "UNDECLARED", IT WAS "UNCONSIDERED". Seventeen
+    # pages now declare, and twenty-five record WHY they do not, each with a
+    # reason. This check refuses a page that is in neither list, so a page added
+    # next month cannot quietly join the 0 again.
+    _pages_dir = os.path.join(ROOT, "site", "src", "pages")
+    _ex = load("provenance.json")["exempt"]
+    for _p in sorted(glob.glob(os.path.join(_pages_dir, "**", "*.astro"), recursive=True)):
+        _rel = os.path.relpath(_p, _pages_dir).replace(os.sep, "/")
+        _declares = "SourceBlock" in open(_p, encoding="utf-8", errors="ignore").read()
+        if _declares or _rel in _ex:
+            continue
+        bad.append(f"provenance-undecided {_rel} neither declares what it rests on nor is listed "
+                   f"in provenance.json with a reason not to - a page that nobody has thought "
+                   f"about looks exactly like a page that honestly rests on nothing")
 
     # 5 - open too long
     today = datetime.date.today()

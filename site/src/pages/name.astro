@@ -4,6 +4,9 @@ import Rule from "../components/Rule.astro";
 import Distribution from "@daviddef/archive-kit/components/Distribution.astro";
 import ProvinceSplit from "../components/ProvinceSplit.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 const zrows = [
   ["South Africa", "616", "1:87,951", "10,814"],
   ["Australia", "16", "1:1,687,231", "81,699"],
@@ -477,4 +480,7 @@ const srows = [
     <em>Booysen</em>; the MyHeritage tree <em>Defranceski Family Site (23andMe)</em>. Forebears figures are
     modelled estimates from name-frequency data, not a census, and should be read as orders of magnitude.</p>
 </section>
+
+<SourceBlock ids={["marriage-register-booysen-barry-1879", "death-registration-willem-hermanus-booysen-1905", "sterfkennis-678-transvaal-weeskamer"]} sources={sdx.entries} u={u}
+             note="The spelling argument rests on three hands: a bridegroom signing in 1879, a registrar in 1905, and a Transvaal clerk in 1876." />
 </Base>

@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 const claims = [
   ["They were living in the Cape Colony", "doc", "Confirmed", "Every birth, marriage and death in the line from 1788 to 1907 is in the Cape Colony — Graaff-Reinet, Cradock, Barkly East, Dordrecht, Indwe."],
   ["They were rebels fighting for the Boer republics", "inf", "The household is documented; the family is not", "The Cape Rebel register has now been searched. The man in whose house they married in July 1901 — D. W. Schoeman of Caerlaverock — was tried as a Cape Rebel the month before. But NO Booysen of this district appears on the roll; the 26 Booysens on it are all Northern Cape."],
@@ -404,4 +407,7 @@ const claims = [
       register by name, with ages. <b>Those registers are indexed.</b></p>
   </div>
 </section>
+
+<SourceBlock ids={["death-registration-willem-hermanus-booysen-1905", "death-notice-john-barry-1915", "kab-doc-4-1-446-510-520-939-1895-1903"]} sources={sdx.entries} u={u}
+             note="One paragraph of family testimony, tested against the documents that can reach it. The Dordrecht court series is the one that would settle the rebel claim and it is not read." />
 </Base>

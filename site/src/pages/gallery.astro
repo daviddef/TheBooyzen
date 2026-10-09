@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import Gallery from "@daviddef/archive-kit/components/Gallery.astro";
 import g from "../data/gallery.json";
 const items = g.items;
@@ -46,4 +49,7 @@ const plates = items.map((i) => ({
    silence, which is why nothing looked wrong. The kit component ships its own
    styles, so there is nothing here to keep. */}
 
+
+<SourceBlock ids={["gravestone-burgersdorp-old-cemetery", "photograph-george-booyzen-and-isaak-pretorius-in-tra", "three-uncaptioned-photographs", "marriage-allegation-london-diocese-1819"]} sources={sdx.entries} u={u}
+             note="The sources on this page are the images themselves. Where a caption makes a claim, the document behind it is here." />
 </Base>

@@ -9,6 +9,9 @@ import { resolve as kinResolve, treeFor as kinTreeFor, dates as kinDates } from 
 import LINE from "../data/line.json";
 import { chartGroups } from "../lib/marriedin.js";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import atlas from "../../public/atlas-data.json";
 import ppl from "../data/people.json";
 import reg from "../data/register.json";
@@ -375,4 +378,7 @@ const spineRows = LINE.line.map(([g, n, b, d, m, note, note2]) => {
     family tree. Where a record has been seen, it is cited; where it has not, the claim is marked.
     See <a href={u("/method/")}>Method</a>.</p>
   </section>
+
+<SourceBlock ids={["death-registration-willem-hermanus-booysen-1905", "gravestone-burgersdorp-old-cemetery", "letter-johan-gottlieb-kolbe-to-his-son-23-august-183"]} sources={sdx.entries} u={u}
+             note="Three documents the front page argues from directly. Everything else it says is argued somewhere further in, with its own sources named there." />
 </Base>

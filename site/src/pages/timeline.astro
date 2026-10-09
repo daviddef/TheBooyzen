@@ -3,6 +3,9 @@ import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import Timeline from "@daviddef/archive-kit/components/Timeline.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import tl from "../data/timeline.json";
 import d from "../data/dossiers.json";
 import pl from "../data/places.json";
@@ -76,4 +79,7 @@ for (let y = 1770; y <= 2020; y += 10) decades.push(y);
 
 </Timeline>
 
+
+<SourceBlock ids={["death-registration-willem-hermanus-booysen-1905", "marriage-register-booysen-barry-1879", "death-notice-george-augustus-kolbe-1845", "death-notice-margaret-downing-1868", "death-notice-john-barry-1915", "kab-mooc-6-9-21-4393-1840", "sterfkennis-678-transvaal-weeskamer"]} sources={sdx.entries} u={u}
+             note="The spine of the timeline rather than all of it: the documents that carry more than one entry each. Every row names its own source on the row." />
 </Base>

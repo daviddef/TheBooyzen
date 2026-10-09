@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import { families } from "../data/kin.js";
 import { resolve, dates } from "../lib/kin.js";
 import Households from "@daviddef/archive-kit/components/Households.astro";
@@ -59,4 +62,7 @@ const shared = rows.map(({ f, h, w, kids }) => ({
 </section>
 
 
+
+<SourceBlock ids={["marriage-register-booysen-barry-1879", "marriage-allegation-london-diocese-1819", "death-notice-margaret-downing-1868"]} sources={sdx.entries} u={u}
+             note="A household is drawn here only where a document records the marriage or names the children." />
 </Base>

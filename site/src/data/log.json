@@ -3,6 +3,13 @@
  "entries": [
   {
    "d": "9 Oct 2026",
+   "t": "Seventeen pages declare their sources, and twenty-five record why they do not",
+   "k": "work",
+   "w": "Row 186 finished. **The instinct was a SourceBlock on all 42 pages and that would have been worse than the gap** — /errands/ lists what this archive has NOT got, /searched/ rows are already citations, /sources/ cannot rest on itself. **17 declare, 88 items, every id resolving; 25 are exempt with a reason each.** Automated assignment was tried and measured first: **34 of the 46 sources carry an archival reference and those references appear on almost no narrative page**, because the pages argue from names and the register lists numbers. **The gate enforces that every page has been THOUGHT about**, not that every page declares.",
+   "h": "/sources/"
+  },
+  {
+   "d": "9 Oct 2026",
    "t": "Sources given ids, and four pages now say what they rest on",
    "k": "work",
    "w": "**0 of 41 pages declared their sources, and the cause was that the sources had no names.** `sources.json` was four tables of HTML cells; every row now carries an id **derived from its own first cell, not its position**, 46 of them with no collisions, and **the rendered page is byte-identical** to before. /kolbe/, /barry/, /women/ and /direct-line/ now carry 29 declared ids, all resolving. **And a gate now reads `data-missing`** — the attribute SourceBlock leaves when it silently drops an id it cannot resolve, which nothing had ever looked at.",

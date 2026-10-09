@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import mg from "../data/marriages.json";
 import { resolve, dates, slugify } from "../lib/kin.js";
 import EraTimeline from "@daviddef/archive-kit/components/EraTimeline.astro";
@@ -212,4 +215,7 @@ const timelinePoints = rows.map(r => ({
     <a href={u("/namesakes/")}>The namesakes &rarr;</a> ·
     <a href={u("/places/")}>The places &rarr;</a></p>
 </section>
+
+<SourceBlock ids={["marriage-register-booysen-barry-1879", "marriage-allegation-london-diocese-1819", "death-notice-john-barry-1915", "death-notice-margaret-downing-1868", "kab-mooc-6-9-104-499-1863"]} sources={sdx.entries} u={u}
+             note="A marriage is only on this page if a document places it. Two of these are the registers themselves; the rest are death notices and estate papers that date a marriage from the far end." />
 </Base>

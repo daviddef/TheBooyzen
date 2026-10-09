@@ -1,6 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 const rows = [
   ["Anna Maria van der Merwe — whose daughter?", "The family tree makes her a daughter of DAVID SCHALK VAN DER MERWE and ANNA ELIZABETH LOUW, born 1785. De Villiers's printed Cape genealogy of 1893, volume 2, makes her a daughter of WILLEM VAN DER MERWE and HESTER MARIA VAN DER MERWE, baptised 5 OCTOBER 1788 — fourteen days after the man she married. Both cannot be right.", "Serious", "NEITHER IS BEING ADOPTED, and the interesting part is that it does not matter to the conclusion the archive drew from her. On the tree's version DAVID SCHALK IS HER FATHER; on the book's he is HER BROTHER, baptised 10 October 1790. The name stands one step from her either way, and her son — baptised 4 January 1807 — is the only David Schalk in the whole first volume of the Cape genealogies, the volume holding every Booijsen de Villiers recorded. A CONCLUSION THAT SURVIVES BOTH READINGS OF THE EVIDENCE IS THE ONLY KIND WORTH KEEPING. What the disagreement does cost is her: she has two sets of parents and no way to choose, and the baptism register of 5 October 1788 at Cape Town would end it.", "/documents/#kaapsche-2-3"],
   ["Gerthardus Lodewikus Booysen — did he exist?", "The 1876 Rustenburg Sterfkennis of Petrus Jacobus Booijsen, Notice 678, names his parents on line 3 as GERTHARDUS LÖDEWIKUS BOOIJSEN and MAGDALENA DE BEER. De Villiers (1893) and de Villiers & Pama (1981) both place that Petrus Jacobus under JAN Booijsen, b3c4. The mother agrees; the father does not.", "Serious", "FOUR THINGS NOW POINT ONE WAY AND THE CHART HAS NOT BEEN MOVED. Riël Smit confirms from the 1981 revision — which this archive does not own — that Petrus Jacobus is still placed under Jan. Pieter van Zyl searched for a marriage between a Gerhardus Lodewicus and a Magdalena de Beer AND FOUND NONE. Jan was dead more than forty years before Petrus Jacobus died. And the disputed name sits NINE LINES LOWER ON THE SAME SHEET: line 12 lists eight children and the fifth is JAN GERTHARDUS LODEWIKUS BOOIJSEN — so the name in the parents' box is the back half of a son's name, and the half that was dropped is Jan. The man who signed was Hendrik Stefanus, the seventh child, born about 1828, writing the name of a grandfather dead before he was ten. THE SPINE STAYS WHERE IT IS ON PURPOSE: everything against him is a printed genealogy agreeing with its own earlier edition, which is one source agreeing with itself, and what he has is a primary document signed by a son. Jan Booijsen is entered as INFERRED. The baptism entry of 21 September 1788 ends it, and it is not on FamilySearch — that collection begins in 1843.", "/documents/#question-zero"],
@@ -111,4 +114,7 @@ const sev = { "Fatal": "terra", "Serious": "ochre", "Reject": "ink-3" };
   <p>The single exception is the <b>Barry line above 1819</b>, where the link to a father genuinely fails.
     <a href={u("/barry/")}>The Barrys &rarr;</a></p>
 </section>
+
+<SourceBlock ids={["gravestone-burgersdorp-old-cemetery", "death-notice-george-augustus-kolbe-1845", "death-notice-john-barry-1915"]} sources={sdx.entries} u={u}
+             note="The documents that do the refuting. A tree is not disproved by another tree, and each item on this page falls to a page somebody wrote at the time." />
 </Base>

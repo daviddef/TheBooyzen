@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import Documents from "@daviddef/archive-kit/components/Documents.astro";
 import { readFileSync } from "node:fs";
 
@@ -10522,4 +10525,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     Catherine Mary Sophia, a <strong>Johanna Catharina birth</strong> entry, the
     <strong>Anna–George marriage certificate</strong>, and two further pages of death information.</p>
 </section>
+
+<SourceBlock ids={["death-registration-willem-hermanus-booysen-1905", "marriage-register-booysen-barry-1879", "death-notice-john-barry-1915", "death-notice-george-downing-mountjoy-booyzen-1948", "photograph-george-booyzen-and-isaak-pretorius-in-tra", "three-uncaptioned-photographs", "death-notice-george-augustus-kolbe-1845", "death-notice-margaret-downing-1868", "marriage-allegation-london-diocese-1819", "gravestone-burgersdorp-old-cemetery", "will-of-john-gottlob-kolbe-1842", "death-certificate-john-gottlob-kolbe-1845", "burial-register-1845", "letter-johan-gottlieb-kolbe-to-his-son-23-august-183", "dictionary-of-south-african-biography-the-entry-on-g", "sibree-a-register-of-missionaries-lms-1923", "the-mirror-of-literature-amusement-and-instruction-v"]} sources={sdx.entries} u={u}
+             note="Every document this archive has read at the page, which is what this page is. The register entry for each gives where it is held and what it cost to get." />
 </Base>

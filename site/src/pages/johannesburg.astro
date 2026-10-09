@@ -1,6 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 const places = [
   ["Queen Victoria Hospital", "1946", "where Gertrude Elizabeth Booyzen died, four days old — 85 Rheeder Street was her mother’s address, not the place of death"],
   ["85 Rheeders Street, Forest Hill", "1944", "where Anna Johanna Maria Pretorius died of a ruptured extra-uterine pregnancy, aged 37"],
@@ -128,4 +131,7 @@ const drift = [
     looked for in a service record. <a href={u("/documents/")}>The certificate &rarr;</a>
   </div>
 </section>
+
+<SourceBlock ids={["death-notice-george-downing-mountjoy-booyzen-1948", "tab-mhg-1095-48"]} sources={sdx.entries} u={u}
+             note="The Johannesburg end rests on one estate: the death notice read here, and the file it belongs to, which is on the Pretoria list and not ordered." />
 </Base>
