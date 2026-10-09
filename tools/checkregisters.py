@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Twenty-six checks on the registers this site is mostly made of.
+"""Twenty-seven checks on the registers this site is mostly made of.
 
 (It said TWELVE until 27 September 2026, having grown to twenty-one without
 anybody touching the first line. A file that miscounts itself is a small thing
@@ -750,6 +750,41 @@ def main():
         bad.append(f"provenance-undecided {_rel} neither declares what it rests on nor is listed "
                    f"in provenance.json with a reason not to - a page that nobody has thought "
                    f"about looks exactly like a page that honestly rests on nothing")
+
+    # 26 - A LOG KIND THE RESEARCH LOG CANNOT RENDER
+    # 9 October 2026, and it is check 17 all over again, in a different file.
+    # research-log.astro keys `kind` on the entry's `k` and reads kind[x.k][1].
+    # A `k` outside that map is `undefined` indexed at [1], so the page throws
+    # and the build dies with "Cannot read properties of undefined (reading
+    # '1')" - the SAME message check 17 was written for, naming a different
+    # page and no field. This session wrote k:"method" because find/work/back
+    # is nowhere stated in the data file, and spent a build finding out.
+    #
+    # WHY THIS ONE READS THE PAGE AND CHECK 17 DOES NOT. Check 17 hardcodes its
+    # five verdicts, so it is a SECOND opinion about what searched.astro will
+    # accept and the two can drift apart silently - the gate would keep passing
+    # a verdict the page had stopped rendering. This parses the map out of
+    # research-log.astro itself, so the gate cannot be right about a page that
+    # has changed underneath it. If the parse finds nothing the check says so
+    # and fails, rather than quietly checking against an empty set, which is
+    # the shape that lets a gate pass by testing nobody.
+    _rl = os.path.join(ROOT, "site", "src", "pages", "research-log.astro")
+    try:
+        _src = open(_rl, encoding="utf-8").read()
+    except Exception:
+        _src = ""
+    _m = re.search(r"const\s+kind\s*=\s*\{([^}]*)\}", _src)
+    KINDS = tuple(re.findall(r"(\w+)\s*:\s*\[", _m.group(1))) if _m else ()
+    if not KINDS:
+        bad.append("log-kinds-unreadable could not parse the `kind` map out of "
+                   "site/src/pages/research-log.astro, so this check has nothing to test "
+                   "against and is refusing rather than passing everything")
+    else:
+        for i, e in enumerate(load("log.json")["entries"]):
+            if e.get("k") not in KINDS:
+                bad.append(f"log-kind           entry {i} ({e.get('d','?')}) has k={e.get('k')!r}, "
+                           f"which research-log.astro cannot render - it must be one of "
+                           f"{', '.join(KINDS)}")
 
     # 5 - open too long
     today = datetime.date.today()

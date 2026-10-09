@@ -5884,6 +5884,50 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "The Pretoria order, tested against the film — and a collection that stops before two of its references begin",
+   "n": "the five items David is holding on cost, and row 202's assumption",
+   "d": "9 Oct 2026",
+   "h": "/errands/",
+   "rows": [
+    [
+     "Can the two 1969 files be free, as row 202 hoped?",
+     "NO, AND IT TAKES NO SEARCHING TO KNOW IT",
+     "**Collection 2520237 is *South Africa, Transvaal, Probate Records from the Master of the Supreme Court, 1869–1961*.** It stops at **1961**. **TAB MHG 10287/69** (Daschner, Heinrich, marked “CHILD”) and **TAB MHG 10245/69** (Wear) are both **1969** references and are outside the collection by eight years. **Row 202 said “LIKELY FREE TOO” and that was a guess from a neighbouring success**, not a check. The date range is printed on every record page in the collection. **Neither needs a search; both need the repository.**",
+     "no"
+    ],
+    [
+     "MHG 1095/48 — George Downing Mountjoy Booyzen, 1948",
+     "NOT INDEXED. IT STAYS ON THE ORDER",
+     "**The whole Transvaal collection holds three Booyzen records with the forename George, and only one is him** — and that one is his WIFE’s 1944 file, where he is indexed *Relationship to Head of Household: Spouse*. **His own 1948 estate is not there.** **What the row wanted it for is already settled anyway**: the tree’s 21 February 1947 is contradicted by the civil death registration (11 December 1947) and the Johannesburg burial register (West Park, 14 December 1947), which agree with each other. **What the file would still add is his children as they stood in 1948**, where this archive has them as they stood in 1944.",
+     "no"
+    ],
+    [
+     "MHG 5155/51 (Gert Jacobus) and MHG 52653 (Jacobus Nichols, 1923)",
+     "NEITHER IS INDEXED EITHER",
+     "**Gert Jacobus**: all 48 Booyzen hits read in full, none his; the first 100 of 390 Booysen hits read, none his. **Jacobus Nichols**: two **JACOBUS NICOLAAS BOOYSEN** records exist and look like the man — NAAIRS’s “Nichols” being a clerk’s Nicolaas — but **both are indexed *Relationship to Head of Household: Child***, so both are him named on somebody else’s document and neither is his estate. **And they are probably not even him**: this archive’s Jacobus Nicholas Booysen was born before 1842 and died in 1923, and a man of that age appears as a CHILD only on a parent’s notice, which for him would be the Cape death notice of 1863 — a different colony and a different collection. **Both stay on the order.**",
+     "no"
+    ],
+    [
+     "Does this index fold BOOYZEN and BOOYSEN together?",
+     "NO, AND IT NEARLY MADE TWO OF THESE NEGATIVES WRONG",
+     "**249 records under *Booyzen*. 2,417 under *Booysen*.** They are different populations, not one fuzzy set — though each does fold its own diaeresis (Booÿ zen, Booÿsen). **The first pass of this sweep searched only Booyzen**, and two “not indexed” findings were written before that was checked. Re-running under Booysen is what turned up the Jacobus Nicolaas records. **This archive folds the two spellings in its own namefold and must not assume FamilySearch does.** Every future sweep of this surname is two searches, not one.",
+     "yes"
+    ],
+    [
+     "MHG 2945/44 — was it worth re-opening?",
+     "IT WAS ALREADY READ, AND IT CONFIRMS LINE FOR LINE",
+     "Checked against the archive before the image was opened, as row 212 now requires, and [/sources/](/sources/) already marked it **Read** with the image in custody. Re-read anyway, and every published detail holds: **both parents named with a Germiston address** — Petrus Jacobus Pretorius, deceased, and Margreth Wilhelmina Elizabeth Pretorius, of James Street, Germiston — and **six children, all minors**. The form adds the exactness: born **Barkly Oos, Kaap Provinsie**; died **26 February 1944** at **Reeder Straat 88, Forest Hill, Johannesburg**, aged **57**; last marriage at **VEREENIGING**, which is what this archive already had, and not Germiston, which is only where her parents lived. The six, with the dates the form gives: Willem Hermanus 15 Oct 1920 · Margreth Wilhelmina Elizabeth 14 Oct 1926 · Catherine Mary Sophia 25 Mar 1929 · Anna Johanna Maria 12 Oct 1930 · Georgina Jeanette 22 Sep 1932 · Petrus Jacobus 10 Jan 1934.",
+     "yes"
+    ],
+    [
+     "And was anything on /sources/ wrong?",
+     "YES — THREE READ DOCUMENTS WERE DESCRIBED AS UNREAD AND AWAITING PAYMENT",
+     "The source entries for **TAB MHG 2428/40**, **TAB MHG 2945/44** and **TAB MHG 1928/42** each carried the blanket line *“National Archives Repository, Pretoria — located; most are unread and on hold against cost”*, while their own rows carry a **Read** chip and link to a transcription. **Three of the four Read rows in that table carried it**, because the status lives in the row and the `held` line lives in the entry, and only the row was kept current. **THE HARM WAS LATENT AND THAT IS WORTH STATING EXACTLY.** The `held` line is rendered by SourceBlock on pages that cite an id, not by this page; it reaches a reader on ten pages for other entries and on **none** for these three, because nothing cites them yet. **No reader was misled. The next page to cite one would have been** — which is the whole argument for fixing a latent contradiction rather than waiting for it to surface. Corrected: all three now say the file is at Pretoria **and filmed**, that the image is published here, and that it costs nothing.",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6132,6 +6176,22 @@
     "death-notice"
    ],
    "note": "\"IMAGED\" MEANS THREE DIFFERENT THINGS IN THIS COLLECTION: a filmed estate file (death notice, letters, inventory); a filmed REGISTER OF ESTATES volume, which gives an estate number, two dates, a maiden name and a surviving spouse and nothing else; and Image Unavailable, which is an index entry only. A plan that assumes the first for every reference will be wrong about a third of the time. Two of the six are not in the FamilySearch index at all and still need ordering at Pretoria. Controls were run on every negative: q.anyName is not a supported parameter and returns a page-level error that looks exactly like a zero."
+  },
+  {
+   "src": "FamilySearch — South Africa, Transvaal, Probate Records from the Master of the Supreme Court 1869-1961 (2520237): the Pretoria order list tested item by item",
+   "url": "https://www.familysearch.org/en/search/record/results?q.surname=Booyzen&f.collectionId=2520237",
+   "walked": false,
+   "what": "BOOYZEN and DASCHNER estates on the held Pretoria order — 1095/48, 5155/51, 52653, 10287/69, 10245/69",
+   "when": "2026-10-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "daschner",
+    "pretoria",
+    "familysearch",
+    "estate"
+   ],
+   "note": "A CONTROLLED NEGATIVE, NOT A FAILURE TO LOOK. Four of the five are not in the collection's index; the two 1969 references cannot be, because the collection ends in 1961 and that is printed on every record page. The method finding worth keeping: this index does NOT fold BOOYZEN and BOOYSEN - 249 records against 2,417, different populations - so a sweep of this surname is two searches, and the first pass of this one was wrong until that was checked."
   }
  ]
 }
