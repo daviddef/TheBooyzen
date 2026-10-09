@@ -2,6 +2,13 @@
  "note": "What this archive did, in order, and what it had to take back. A family history that only shows its conclusions is asking to be believed on trust. This page exists so the reasoning can be checked — including the parts that were wrong.",
  "entries": [
   {
+   "d": "10 Oct 2026",
+   "k": "work",
+   "t": "A gate added yesterday was grading a build from a fortnight ago",
+   "w": "**Two faults, one of them in the new gate.** `check:pin` had been refusing the build since the kit was repinned on 9 October. **CI was green on that very commit** — which settles it: CI installs from the pin, so the pin was fine and the thirteen-day-old local `node_modules` was not. `npm ci` fixed it and left the lockfile byte-identical. **Then the install revealed the second fault.** The new `check:nav` was wired `--dist dist`, hardcoded, where every other `--dist` script honours `ARCHIVE_OUT`. This archive’s `build.sh` exists so that sessions can build into private directories without clobbering each other — so the gate was reading **site/dist: 807 pages from 27 September, 352 people, and neither of the two added yesterday** — and reporting “conforms” on a 843-page build it had never opened. **The kit tool names the variable in its own error message**: *“Build first, or point ARCHIVE_OUT at the build you made.”* The wiring ignored it. One line, fixed in this archive’s own package.json and proved in both directions.",
+   "h": "/worklist/"
+  },
+  {
    "d": "9 Oct 2026",
    "k": "find",
    "t": "The Commandant's eldest, found by asking for a father instead of a name",
