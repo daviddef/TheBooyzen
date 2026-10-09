@@ -488,6 +488,21 @@ export const families = [
       { n: "George Augustus Kolbe", via: "doc" },
       { n: "John Gottlob Kolbe", via: "doc" }] },
 
+  { h: "George Augustus Kolbe of Wakkerstroom", w: "Martha Sophia Klopper", via: "doc",
+    why: "The Wakkerstroom household, and it was written out in this archive's prose for weeks before any file would draw it. Married about 1885, she seventeen; their eldest was born at Wakkerstroom in 1886. THREE DOCUMENTS NAME THE COUPLE AND NONE OF THEM IS A TREE: Maria Johanna's 1953 estate file gives FATHER George Augustus Kolbe, MOTHER Martha Sophia Klopper; Daniel's death registration carries the words \u201cG A KOLBE'S SON\u201d; and from 9 October 2026 Frederik Fortunatus Downing's own death notice, TAB MHG 40293, names both parents outright. THE MOTHER'S NAME IS WHAT MAKES THIS SAFE. Two men called George Augustus Kolbe are buried in one cemetery at Wakkerstroom, born two years apart, and this archive has already had to withdraw a claim within the hour over exactly that. The other man's wife was Susanna Margaretha; only this one married a Klopper, and all three documents say Klopper.",
+    warn: "Three children, not the whole family. These are the three the archive holds documents for. The old man died in 1954 aged 91 having outlived at least two of his sons by thirty-six years, and nothing here claims the household was this size.",
+    src: ["What Was Searched", "/searched/"],
+    kids: [
+      { n: "Maria Johanna Kolbe", via: "doc" },
+      { n: "Frederik Fortunatus Downing Kolbe", via: "doc" },
+      { n: "Daniel Jakobus Kolbe", via: "doc" }] },
+
+  { h: "Frederik Fortunatus Downing Kolbe", w: "Hester Gertina Susanna Joubert", via: "doc",
+    why: "Married at Volksrust, he twenty-one, IN COMMUNITY OF PROPERTY \u2014 which his death notice states and which is why the estate was wound up at all. The one child is named on that notice: \u201cGeorge Augustus Kolbe. Minderjarig, geboren 2 Julie 1914\u201d. Their mutual will of 30 May 1914, in the same file, was signed five weeks before the boy was born and provides for them dying childless.",
+    src: ["What Was Searched", "/searched/"],
+    kids: [
+      { n: "George Augustus Kolbe of 1914", via: "doc" }] },
+
   { h: "David Schalk van der Merwe", w: "Jacoba Catharina Mountjoy", via: "doc",
     why: "Married at Cradock, 24 March 1838 — eight months before her sister married Petrus Jacobus Booysen in the same town.",
     src: ["The women", "/women/"], kids: [] },

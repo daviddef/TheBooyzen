@@ -5714,6 +5714,56 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "TAB MHG 40293 is read. It names his parents, and the index was wrong about where he died",
+   "n": "row 212 — the file this archive calls its biggest single gap, opened from a film for nothing",
+   "d": "9 Oct 2026",
+   "h": "/kolbe/#north",
+   "rows": [
+    [
+     "Does TAB MHG 40293 exist as an image, and does it open?",
+     "YES — STERFKENNIS, AND IT COST NOTHING",
+     "**Collection 2520237, *Transvaal, Probate Estate Case Files 1919*, DGS film 007808573, item 16, image 60 of 110.** Record ark **1:1:QPCX-661K**, image ark **3:1:3Q9M-CS9T-FSMR-F**. The registry stamp on the form reads **MHG 40293, received 29 APR 1919**, which is the reference this archive holds, entire. **This is the file David has been holding off ordering on cost, and that row 193 is blocked on asking a researcher to complete the reference for.** It did not need completing and it did not need paying for.",
+     "yes"
+    ],
+    [
+     "Who were his parents?",
+     "GEORGE AUGUSTUS KOLBE AND MARTHA SOFIA KLOPPER",
+     "Question 3 of the form, *Namen en adressen van de Ouders van de overledene*: **Vader GEORGE AUGUSTUS KOLBE. Moeder MARTHA SOFIA KOLBE, GEBOREN KLOPPER.** **This is why the file was wanted.** Until today the parentage rested on two sidelong documents — his brother Daniel’s death registration reading “G A KOLBE’S SON”, and his sister Maria Johanna’s 1953 estate file naming both parents. Now it is stated in his own. The index attached to this very record says **“Relationships — no additional people in this group”**: the parents are on the image and were never indexed, which is the whole argument for opening images.",
+     "yes"
+    ],
+    [
+     "Which of the two George Augustus Kolbes of Wakkerstroom is the father?",
+     "THE ONE WHO MARRIED A KLOPPER — AND THE MOTHER’S NAME IS WHAT DECIDES IT",
+     "Two men of that name are buried in Wakkerstroom, born **2 October 1861** and **29 July 1863**, and this archive **withdrew a claim within the hour** once before over exactly this. The death notice does not resolve it by the father’s name, which both men share — it resolves it by the mother’s. **The 1861 man’s wife was Susanna Margaretha**, on his own stone. **The 1863 man married Martha Sophia Klopper.** So the father is **George Augustus Kolbe of Wakkerstroom, born 29 July 1863, baptised at Colesberg, dead 28 September 1954 aged 91** — who outlived this son by thirty-six years. **A collision is only dangerous while you are matching on the colliding field.**",
+     "yes"
+    ],
+    [
+     "Did he leave children?",
+     "ONE, AND A MINOR",
+     "Question 10: **“George Augustus Kolbe. Minderjarig, geboren 2 Julie 1914.”** He was four when his father died. **He carries his grandfather’s name entire**, which is this family’s documented habit, and he is the fourth George Augustus Kolbe in this archive. Nothing is known of him after 1919 and nothing is claimed.",
+     "yes"
+    ],
+    [
+     "Is there a will, and does it name anybody else?",
+     "YES, A MUTUAL WILL OF 30 MAY 1914 — AND IT NAMES NOBODY NEW",
+     "Images 61–62 of the same item. A **gesamentlike testament**, typed, *“Aldus gedaan en getekend te HOOIPOORT, Dist. Wakkerstroom op heden de dertigste dag van Mei A.D. 1914”*, witnessed by **E.J. and L.J. Labuschagne**, signed **F.F.D. Kolbe** and **H.G.S. Kolbe geb. Joubert**. The survivor and the children take the immovable property in equal shares, the survivor holding usufruct for life. **It was signed five weeks before the only child was born**, which is why it provides for dying childless: in that event the sum insured on their lives with *The South African Mutual Life Assurance Society* goes to **“’t kind of kinderen waarvan de Testateuren PEET OOM en PEET TANTE waren”** — the child or children whose GODPARENTS they were. **No names.** It is a kinship signal with nobody attached to it, and it is recorded here rather than adopted.",
+     "part"
+    ],
+    [
+     "Did he die at Villieria, Pretoria, as the index renders it?",
+     "NO. THE ARCHIVE WAS RIGHT AND THE INDEX WAS WRONG",
+     "The form, question 9: **Dorp of plaats VILLIERIA (GEDEELTE KLEINFONTEIN), Distrikt WAKKERSTROOM** — a farm portion in the district, not the Pretoria suburb of that name. FamilySearch standardises the place to **“Wakkerstroom, Zoutpansberg, Transvaal”**, which is wrong on its own terms, Wakkerstroom lying in the south-eastern Transvaal and nowhere near Zoutpansberg. **This archive published the Pretoria reading on 9 October and attributed it to the index, saying the image was not yet read.** The hedge held, so no correction is owed — which is the only reason it is not on [/corrections/](/corrections/).",
+     "yes"
+    ],
+    [
+     "What else did the form carry that no index did?",
+     "AN OCCUPATION, A RESIDENCE, AN EXACT AGE AND AN ESTATE",
+     "**Veeboer** — stock farmer. Ordinary residence **Villieria, dist. Wakkerstroom**. Age **twenty-seven years and six months**, which puts the birth at about **May 1891** where this archive held only the year. Married **in community of property**, the marriage at **Volksrust**. Questions 11–14 are all **Ja**: movables, fixed property, an estate worth more than **£300**, and a will. Declared and signed by the widow at Hooipoort on **13 February 1919**, in her own hand, as *overlijvende echtgenote*.",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -5884,6 +5934,24 @@
     "familysearch"
    ],
    "note": "BOTH SERIES ARE NAME-INDEXED AND IMAGED, which is worth knowing before anybody writes to a repository or pays a researcher. The Transvaal volumes are titled Probate Estate Case Files and the image opened is a Sterfkennis form, so it is the file and not an index card. Ten Cape Mountjoy estates found via NAAIRS on 27 September were about to be ordered as one enquiry; they do not need ordering."
+  },
+  {
+   "src": "FamilySearch — South Africa, Transvaal, Probate Records from the Master of the Supreme Court 1869-1961 (2520237); Probate Estate Case Files 1919, DGS 007808573, item 16, image 60 of 110",
+   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CS9T-FSMR-F",
+   "film": "007808573",
+   "walked": true,
+   "what": "KOLBE estate MHG 40293, Transvaal 1919 — death notice and will read from the image",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "wakkerstroom",
+    "familysearch",
+    "estate",
+    "death-notice",
+    "will"
+   ],
+   "note": "THE PARENTS ARE ON THE IMAGE AND ARE NOT IN THE INDEX. The record's own index panel says \"no additional people in this group\"; the Sterfkennis names both parents in question 3. The same film's volumes are the CASE FILES, so the will sits two images on from the death notice. Also: the indexed place of death is standardised to a district the town is not in, and the image disagrees with it."
   }
  ]
 }
