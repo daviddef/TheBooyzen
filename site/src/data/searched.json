@@ -5840,6 +5840,50 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "The last six of the ten, and the ten turn out to be two different Mountjoy families",
+   "n": "row 201 finished — four of the six opened, two shown not to exist on film",
+   "d": "9 Oct 2026",
+   "h": "/women/",
+   "rows": [
+    [
+     "DEMMER, Elizabeth Martha — MOOC 6/9/9771 no. 83676",
+     "READ IN FULL, AND QUESTION THREE IS REFUSED",
+     "Death notice **83676** at image 636 of 1,581, with the Letters of Administration at 639 and the inventory at 641. **Parents: “Do not know, both deceased.”** Born **DORDRECHT**, dead at Kokstad on 15 December 1942 at **80 years 11 months**, so born about **January 1862**. Widow of **John Joseph Demmer, alias Joseph Ignatz Demmer** (d. 1/8/06), married at **Stutterheim**; eight children; about **£1,048** in Kokstad erven still registered in her dead husband’s name. **SHE CANNOT BE A DAUGHTER OF THE BARKLY EAST HOUSE**: Maria Louisa Bertha Kumm was born about October 1860, and a daughter of January 1862 would make the mother fifteen months old. A possible SISTER of James Jonathan Mountjoy, and not claimed. **AND NAAIRS HAS HER NAME WRONG** — it files ELIZABETH MARTHA; the notice and the Letters both read **ELIZABETH MARIA**, under the same file number.",
+     "yes"
+    ],
+    [
+     "BURGER, Wilhelmina Louisa — MOOC 6/9/16573 no. 5683/49",
+     "HER FILE IS NOT ON FILM. HER FATHER’S IS",
+     "Her own 1949 estate is neither imaged nor indexed. What is indexed is **MINNIE MOUNTJOY BURGER as a CHILD**, twice, on her father’s death notice — and **MINNIE IS WILHELMINA**, which is why searching “Wilhelmina Louisa” returned 724 strangers. **So the thing the order would have bought came free from his file instead.** Her father is **GEORGE MOUNTJOY OF KOKSTAD, senior**, born in the **ORANGE FREE STATE** about 1862, died 12 May 1943 at Nyaninga, Tongaat, Natal, aged 81; retired; married in community of property to **MARY FISCHER** in the King Williamstown district; **nine children named**. **His own question three: Father — “Names unknown”. Mother — “Names unknown: deceased”.** That the Minnie of 1943 and the Wilhelmina Louisa of 1949 are one woman is a strong reading, not a proved one.",
+     "yes"
+    ],
+    [
+     "MOUNTJOY, Aletta Johanna born Hattingh — MOOC 6/9/5599 no. 66509",
+     "IMAGED — BUT WHAT IS IMAGED IS THE LEDGER, NOT THE NOTICE",
+     "The image is a page of the **REGISTER OF ESTATES, BONDS AND WILLS**, and her row reads: **66509 · registered 8.11.39 · died 10.10.39 · Mountjoy · Aletta Johanna (b. Hattingh) · surviving spouse ALFRED**. It matches the NAAIRS reference exactly and it is all there is. **A REGISTER ROW HAS NO QUESTION THREE**, so her parents are not here. **ALFRED IS A MOUNTJOY OF KOKSTAD** — seventh of the nine children on George of Kokstad’s notice. She was born 1898 at **Cala** and died at **BIZANA**. **This is a third thing “imaged” can mean in this collection**, after a filmed estate file and an Image Unavailable: a filmed INDEX VOLUME standing in for a file that was never filmed.",
+     "part"
+    ],
+    [
+     "MOUNTJOY, Catherine Louisa Johanna born de Kock — MOOC 6/9/12630 no. 334/46",
+     "IMAGE UNAVAILABLE. STILL NEEDS ORDERING",
+     "Indexed and not imaged, so everything known is a volunteer’s transcription: aged **49**, born about **1896 at MIDDELBURG, TRANSVAAL**, died **12 December 1945**, place as originally written **FLAGSTAFF**. **Flagstaff is where Susan Elizabeth Mountjoy born Diesel died in 1920**, and it lies in the same Transkei country as Kokstad and Bizana. A third Mountjoy wife in one district. **Her husband is not named by the index and there is no image to name him.** **Of the ten, this is the one that still has to be ordered from the Cape archives.**",
+     "blocked"
+    ],
+    [
+     "FOURIE, Maria Sophia — TAB MHG 2332/42, and KLOPPER, Jacoba Gezina Elizabeth — TAB MHG 5570/52",
+     "NEITHER IS IN THE FAMILYSEARCH TRANSVAAL INDEX AT ALL",
+     "**The Transvaal collection 2520237 holds exactly 22 records under the surname MOUNTJOY, and all 22 were listed and read.** Neither a Fourie nor a Klopper is among them. **The test is sound because the convention is proved in the same 22**: this collection does put a maiden name in the given-name field — *Carolina Margareta Aletta Mountjoy Eloff*, *Maria Sophia Van Niekerk Mountjoy* — so a Mountjoy-born woman who was indexed would appear there. **Controls run, because a zero is worth nothing without them.** `q.anyName` returned zero and that was the QUERY FAILING, not an absence — the page said *Something Went Wrong*; the supported `q.surname` returned 22. A Fourie search returned 1,775 scored hits, narrowed by death year to 125, and **all 125 were read across two pages** with no Mountjoy. A Klopper search for 1951–53 returned 4, all read, none hers. Each search was confirmed to be finding its own surname before its silence about Mountjoy was believed. **SO THESE TWO REMAIN NAAIRS REFERENCES AND PRETORIA ORDERS.**",
+     "no"
+    ],
+    [
+     "What were the ten, in the end?",
+     "TWO DIFFERENT MOUNTJOY FAMILIES, AND ONLY ONE OF THEM IS THIS ONE",
+     "**The Barkly East house** — James Jonathan Mountjoy and Maria Louisa Bertha Kumm — accounts for **Annie Louisa Nepgen** and **Louisa Elizabeth Diesel**, both already drawn here from estate 58379 since 10 September. **A Transkei house accounts for at least three more**: Minnie Burger (daughter of George of Kokstad), Aletta Johanna Hattingh (wife of his son Alfred), and Susan Elizabeth Diesel (wife of a George Mountjoy Jnr, dead at Flagstaff) — with Catherine Louisa Johanna de Kock, dead at Flagstaff, very probably a fourth. **Elizabeth Maria Demmer belongs to neither on the evidence**, being too old for the Barkly East house and born at Dordrecht rather than in the Free State. **And the question that would join or separate them is refused on every form.** George of Kokstad: “Names unknown.” Elizabeth Maria Demmer: “Do not know, both deceased.” James Montjoy the saddler, a century earlier: “Not Known.” **The archive’s own tally of this failure stood at six; these two make eight.**",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6067,6 +6111,27 @@
     "death-notice"
    ],
    "note": "NOT EVERY RECORD IN THIS COLLECTION IS IMAGED: the 1898 and 1921 estates carry pictures, the 1949 one says Image Unavailable on all four of its index entries, so whether a Cape estate needs ordering is a question about the VOLUME and not about the collection. Also: this index raises a Principal record for every person named on a document, including living minor children, so a record count is not an estate count. And a death notice's own question marks are dropped by the index, which publishes a doubted birthplace as a flat fact."
+  },
+  {
+   "src": "FamilySearch — Cape probate (2517051) and Transvaal probate (2520237): the last six of the ten Mountjoy estates, plus a full listing of the 22 Mountjoy records in the Transvaal collection",
+   "url": "https://www.familysearch.org/en/search/record/results?q.surname=Mountjoy&f.collectionId=2520237",
+   "walked": false,
+   "pages": "Cape 1943 vol. images 636, 639, 641 and 1646; Transvaal 1931 vol. image 469",
+   "what": "MOUNTJOY women's estates — Demmer, Burger, Hattingh, de Kock, Fourie, Klopper",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "kokstad",
+    "bizana",
+    "flagstaff",
+    "dordrecht",
+    "barkly-east",
+    "familysearch",
+    "estate",
+    "death-notice"
+   ],
+   "note": "\"IMAGED\" MEANS THREE DIFFERENT THINGS IN THIS COLLECTION: a filmed estate file (death notice, letters, inventory); a filmed REGISTER OF ESTATES volume, which gives an estate number, two dates, a maiden name and a surviving spouse and nothing else; and Image Unavailable, which is an index entry only. A plan that assumes the first for every reference will be wrong about a third of the time. Two of the six are not in the FamilySearch index at all and still need ordering at Pretoria. Controls were run on every negative: q.anyName is not a supported parameter and returns a page-level error that looks exactly like a zero."
   }
  ]
 }
