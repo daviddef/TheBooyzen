@@ -6038,6 +6038,32 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "Two public routes into a borrowable scan, both closed, and the control that proves it",
+   "n": "row 137 — Dictionary of South African Biography, Volume 5",
+   "d": "10 Oct 2026",
+   "h": "/worklist/",
+   "rows": [
+    [
+     "Can the DSAB Vol. 5 scan be searched without borrowing it?",
+     "NO. BOTH PUBLIC ROUTES RETURN AN HTML WRAPPER",
+     "**`_djvu.txt`** was tried in September and returned HTML. **`fulltext/inside.php`** — the endpoint behind the item page’s own *Search inside* box, which does serve snippets for many lending items — was tried today and returns a page headed **“Item not available”**. **The item is `dictionaryofsout0005unse`**, collections `inlibrary` and `printdisabled`, 978 pages, with a 6 MB OCR text present but not served.",
+     "blocked"
+    ],
+    [
+     "Is that a refusal, or a badly-formed request?",
+     "A REFUSAL — CONTROLLED",
+     "The same endpoint, same shape of call, against an **open-collection** item returns **valid JSON**: `{…\"matches\":[],\"error\":\"No hOCR or Abbyy file present\"}`. **An informative JSON refusal, not an HTML page.** **So the endpoint works and the call is right; the item is gated.** Recorded because an HTML answer where JSON belongs is indistinguishable from a bad request until something proves otherwise, and this archive has already written down one wasted attempt on this exact book.",
+     "yes"
+    ],
+    [
+     "Then what is the route?",
+     "A FREE ACCOUNT, AND IT IS DAVID’S TO MAKE",
+     "The scan borrows an hour at a time with a free Internet Archive account and is searchable from inside the reader. **This archive does not create accounts or sign in**, so the row is reassigned rather than left open against nobody. **Carry one discrepancy to the title page:** the item metadata says **1968** and this row’s reasoning says Volume 5 is **1987** — and the argument that Schoeman’s 1992 draft was written for a later volume rests on the 1987.",
+     "blocked"
+    ]
+   ]
   }
  ],
  "searched": [
