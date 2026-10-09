@@ -76,6 +76,17 @@ for f in sorted(glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True
         if 6 <= len(head) <= 140:
             rows.append({"k": "Section", "t": head, "s": title, "x": "", "h": route})
 
+# THE LOG ENTRIES. Until 9 October 2026 each entry was an <h3> on /research-log/ and so
+# was indexed by the loop above. That page folded into /changes/, whose entries are drawn
+# by the kit's Changes component under one heading per DAY, so the entries stopped being
+# headings and 140 findable rows would have vanished. They come from the data instead,
+# which is also where /changes/ draws them: a reader searching for a finding still lands
+# on the page that shows it.
+for _e in json.load(open(os.path.join(DATA, "log.json"), encoding="utf-8"))["entries"]:
+    _t = re.sub(r"[*`]+", "", _e.get("t", "")).strip()
+    if 6 <= len(_t) <= 140:
+        rows.append({"k": "Section", "t": _t, "s": "What changed", "x": re.sub(r"[*`]+", "", _e.get("w", ""))[:340], "h": "/changes/"})
+
 seen, out = set(), []
 for r in rows:
     key = (r["k"], r["t"], r["h"])

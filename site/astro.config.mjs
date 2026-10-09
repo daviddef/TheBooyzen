@@ -8,7 +8,9 @@ import { defineConfig } from 'astro/config';
 const BASE = '/TheBooyzen';
 const redirects = {
   '/changed': `${BASE}/changes/`,
-  '/log': `${BASE}/research-log/`,
+  '/log': `${BASE}/changes/`,
+  /* 9 October 2026: the research log folded into /changes/, which draws the same log.json. */
+  '/research-log': `${BASE}/changes/`,
   /* 9 October 2026: the letters page folded into /errands/, which is the same
      subject. The address was published and linked from other archives. */
   '/letters': `${BASE}/errands/#sent`,

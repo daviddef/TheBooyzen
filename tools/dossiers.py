@@ -59,7 +59,7 @@ MENTION_BLK = re.compile(r'<section class="blk">.*?</section>', re.S)
 # are substantive: "The Name" is the surname's own history, and "Disputed" is about
 # contested facts concerning people rather than about this archive's working.
 NARRATIVE = ("/changes/", "/corrections/", "/open-questions/", "/method/",
-             "/letters/", "/searched/", "/worklist/", "/research-log/", "/errands/")
+             "/searched/", "/worklist/", "/errands/")
 def page_text(p):
     t = open(p, encoding="utf-8").read()
     title = (re.search(r"<title>(.*?)</title>", t, re.S) or [None, ""])[1]

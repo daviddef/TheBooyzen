@@ -751,7 +751,7 @@ def main():
                    f"in provenance.json with a reason not to - a page that nobody has thought "
                    f"about looks exactly like a page that honestly rests on nothing")
 
-    # 26 - A LOG KIND THE RESEARCH LOG CANNOT RENDER
+    # 26 - A LOG KIND THE CHANGES PAGE CANNOT RENDER
     # 9 October 2026, and it is check 17 all over again, in a different file.
     # research-log.astro keys `kind` on the entry's `k` and reads kind[x.k][1].
     # A `k` outside that map is `undefined` indexed at [1], so the page throws
@@ -768,22 +768,24 @@ def main():
     # has changed underneath it. If the parse finds nothing the check says so
     # and fails, rather than quietly checking against an empty set, which is
     # the shape that lets a gate pass by testing nobody.
-    _rl = os.path.join(ROOT, "site", "src", "pages", "research-log.astro")
+    # 9 October 2026: the research log folded into changes.astro, which draws the same log.json
+    # through its own KIND map, so the gate reads THAT page.
+    _rl = os.path.join(ROOT, "site", "src", "pages", "changes.astro")
     try:
         _src = open(_rl, encoding="utf-8").read()
     except Exception:
         _src = ""
-    _m = re.search(r"const\s+kind\s*=\s*\{([^}]*)\}", _src)
-    KINDS = tuple(re.findall(r"(\w+)\s*:\s*\[", _m.group(1))) if _m else ()
+    _m = re.search(r"const\s+KIND\s*=\s*\{([^}]*)\}", _src)
+    KINDS = tuple(re.findall(r'(\w+)\s*:\s*"', _m.group(1))) if _m else ()
     if not KINDS:
         bad.append("log-kinds-unreadable could not parse the `kind` map out of "
-                   "site/src/pages/research-log.astro, so this check has nothing to test "
+                   "site/src/pages/changes.astro, so this check has nothing to test "
                    "against and is refusing rather than passing everything")
     else:
         for i, e in enumerate(load("log.json")["entries"]):
             if e.get("k") not in KINDS:
                 bad.append(f"log-kind           entry {i} ({e.get('d','?')}) has k={e.get('k')!r}, "
-                           f"which research-log.astro cannot render - it must be one of "
+                           f"which changes.astro cannot render - it must be one of "
                            f"{', '.join(KINDS)}")
 
     # 5 - open too long
