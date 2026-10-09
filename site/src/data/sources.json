@@ -947,6 +947,27 @@
       }
      ],
      "held": "National Archives Repository, Pretoria — located; most are unread and on hold against cost"
+    },
+    {
+     "id": "ancestor-co-za",
+     "cells": [
+      {
+       "h": "<strong class=\"m\">ancestor.co.za</strong>",
+       "cls": "m"
+      },
+      {
+       "h": "<strong>Two Booyzen death notices, bought and delivered</strong> — PETRUS JACOBUS (1955) and CORNELIA GERTINA (1946)",
+       "cls": ""
+      },
+      {
+       "h": "2024",
+       "cls": ""
+      },
+      {
+       "h": "<span class=\"chip open\">Held elsewhere</span> Requested and paid at 70 ZAR each and uploaded to David’s account on <b>12 January 2024</b>. <b>Neither is in this archive</b>: no Petrus Jacobus Booyzen here died in 1955, and the only Cornelia Gertina here is a du Toit. <b>A supplier this archive had never listed at all</b> until 10 October 2026. <a href=\"/searched/\">How it was found &rarr;</a>",
+       "cls": ""
+      }
+     ]
     }
    ]
   }
@@ -1273,6 +1294,14 @@
    "kind": "Transvaal estate file, located",
    "section": "estates",
    "held": "National Archives Repository, Pretoria — located; most are unread and on hold against cost"
+  },
+  {
+   "id": "ancestor-co-za",
+   "title": "ancestor.co.za — two Booyzen death notices",
+   "kind": "Transvaal estate file, located",
+   "section": "estates",
+   "url": "https://www.ancestor.co.za",
+   "held": "ancestor.co.za — retrieved and uploaded to David’s own account in January 2024, and not yet read into this archive."
   }
  ],
  "entriesNote": "ONE ROW, ONE ID, DERIVED FROM THE ROW'S OWN WORDS. These are the same 46 rows the four tables above are built from — not a second register, which is the thing that would drift. A page that rests on a source names its id, the id has to resolve here or nothing renders, and a build gate counts the ones that do not. THE ID IS NOT A POSITION: it is a slug of the row's first cell, so it travels with the row if a table is reordered, where `read-3` would quietly come to mean a different document."
