@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Twenty-seven checks on the registers this site is mostly made of.
+"""Twenty-eight checks on the registers this site is mostly made of.
 
 (It said TWELVE until 27 September 2026, having grown to twenty-one without
 anybody touching the first line. A file that miscounts itself is a small thing
@@ -787,6 +787,37 @@ def main():
                 bad.append(f"log-kind           entry {i} ({e.get('d','?')}) has k={e.get('k')!r}, "
                            f"which changes.astro cannot render - it must be one of "
                            f"{', '.join(KINDS)}")
+
+    # 27 - A GATE WIRED TO READ SOMEBODY ELSE'S BUILD
+    # 10 October 2026, and it is a REGRESSION of something fixed on 22 September.
+    # Eight archives share one working tree, so build.sh offers ARCHIVE_OUT and
+    # every --dist script is supposed to pass "${ARCHIVE_OUT:-dist}". On
+    # 22 September that was fixed across the estate and Booyzen was one of the
+    # archives already clean. On 9 October a new check:nav was added wired
+    # `--dist dist`, hardcoded, and it spent a day grading site/dist: 807 pages
+    # from 27 September, 352 people, missing both people added the day before,
+    # while reporting "conforms" on an 843-page build it had never opened.
+    #
+    # MEASURED BEFORE BUILDING, as this archive requires. Across the estate the
+    # fault stands at 23 scripts in 8 archives; in THIS archive it is now 0, so
+    # this is a ratchet against the next one rather than a pile of work. The
+    # convention is not self-enforcing - a single new script reintroduces it,
+    # and nothing downstream notices because the gate still prints ok.
+    #
+    # It reads package.json rather than keeping a list of script names, so a
+    # script added tomorrow is covered without anybody remembering this check.
+    try:
+        _pkg = json.load(open(os.path.join(ROOT, "site", "package.json"), encoding="utf-8"))
+        _scripts = _pkg.get("scripts") or {}
+    except Exception as _e:
+        _scripts = {}
+        bad.append("outdir-unreadable  could not read site/package.json to check that the build's "
+                   "gates read the build you made (%s)" % _e)
+    for _name, _cmd in sorted(_scripts.items()):
+        if "--dist" in _cmd and "ARCHIVE_OUT" not in _cmd:
+            bad.append("outdir-hardcoded   script %s passes --dist without ARCHIVE_OUT, so it grades "
+                       "site/dist whatever directory this session actually built into - pass "
+                       '--dist "${ARCHIVE_OUT:-dist}" as every other script here does' % _name)
 
     # 5 - open too long
     today = datetime.date.today()
