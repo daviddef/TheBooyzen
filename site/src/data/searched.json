@@ -5954,6 +5954,26 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The Cape Mounted Rifles were never his regiment, and the subscription is signed out with seven days left",
+   "n": "row 207 opened, and it turned into a correction and a blocker",
+   "d": "9 Oct 2026",
+   "h": "/barry/",
+   "rows": [
+    [
+     "Did John Augustus Barry I serve in the Cape Mounted Rifles?",
+     "NOTHING HERE SAYS HE DID — THEY ARE THE REGISTRAR, NOT THE REGIMENT",
+     "His entry ended with the bare sentence **“Cape Mounted Rifles.”**, which reads as a regiment. [/barry/](/barry/) is clearer and is the source: the corps **recorded his 1903 death certificate**, being *“then the authority in the district, stationed at Johnson’s Leap”*. **This was about to become a day’s work on the wrong record.** A soldier’s discharge paper would give a birthplace and an age, which is exactly what question 5 wants — and this archive has the method ready, because it is the route already mapped for James Montjoy and the 21st Light Dragoons. **But there is no evidence he was ever a soldier**, and WO 97 holds discharge papers, not death registrations. The entry is corrected so the next person does not start where this one nearly did. **What the corps’ own registers at Johnson’s Leap might hold is a separate and still-open item**, already on question 5’s list of what would settle it.",
+     "yes"
+    ],
+    [
+     "Passenger lists 1819–1820, the untried item on question 5's own list",
+     "BLOCKED — THE FINDMYPAST SESSION IS SIGNED OUT",
+     "**Attempted today and not run.** A travel-and-migration search for **BARRY** at the **Cape of Good Hope**, 1818–1822, redirected to `auth.findmypast.com/login` before any result was returned. **This is a blocked search, not an empty one**, and it is recorded as blocked so nobody reads a nil into it later. **The subscription itself has not lapsed — it runs to 16 October — but the browser is logged out and only David can log it back in.** Nothing on this archive’s side can proceed on FindMyPast until he does. **Worth knowing before the week is spent:** the Barry origin’s London hypothesis is NOT a good use of it. A surname-and-city sweep of London Barrys in the late 1700s has no forename anchor and no date — the comparable Mountjoy search returned 12,984 and was abandoned. **The tractable items are the bounded ones on question 5’s settles list**: passenger lists 1819–1820, and the two 1903 death certificates named in the tree note.",
+     "blocked"
+    ]
+   ]
   }
  ],
  "searched": [
