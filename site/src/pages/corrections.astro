@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Corrections from "@daviddef/archive-kit/components/Corrections.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import c from "../data/corrections.json";
 const rows = c.rows;
 const causes = c.causes;
@@ -59,8 +60,12 @@ const label = { population: "A list mistaken for a population", scope: "A part s
   <Corrections u={u} rows={rows.map(([d, was, now, cause, href]) => ({
     when: d,
     sev: label[cause],
-    was: `&ldquo;${was}&rdquo;`,
-    now: now,
+    /* The curly quotes were named entities here while the data was raw HTML.
+       Both sides are escaped text now, so they are the characters themselves —
+       an entity written into a data string reaches the reader as literal text
+       and drift.py refuses the build for it. */
+    was: `“${md(was)}”`,
+    now: md(now),
     how: causes[cause] || "",
     where: href || "",
     whereLabel: "Where it lives now →",

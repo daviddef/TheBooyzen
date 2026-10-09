@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import Changes from "@daviddef/archive-kit/components/Changes.astro";
 import log from "../data/log.json";
 import corr from "../data/corrections.json";
@@ -34,11 +35,17 @@ const shared = ordered.map((day) => ({
   when: day.d,
   entries: [
     ...day.corr.map((r) => ({
-      title: `<s>${r.was}</s>`, kind: KIND.back,
-      found: r.now + (r.h ? ` <a href="${u(r.h)}">&rarr;</a>` : ""),
+      title: `<s>${md(r.was)}</s>`, kind: KIND.back,
+      found: md(r.now) + (r.h ? ` <a href="${u(r.h)}">&rarr;</a>` : ""),
       did: CAUSE[r.cause] || r.cause,
     })),
-    ...day.log.map((e) => ({ title: e.t, kind: KIND[e.k] || e.k, found: e.w })),
+    /* `w` IS THE SAME FIELD /research-log/ DRAWS, AND THE TWO PAGES READ IT
+       DIFFERENTLY UNTIL 9 OCTOBER. Here it was spliced into an HTML string and
+       there it was printed as text, so its four emphasis tags rendered on this
+       page and showed as literal markup on that one. Both run it through md()
+       now, and the tags it used to carry are written as the archive's own
+       markers in log.json. `t` carries none and stays text. */
+    ...day.log.map((e) => ({ title: e.t, kind: KIND[e.k] || e.k, found: md(e.w) })),
   ],
 }));
 

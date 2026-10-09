@@ -114,7 +114,34 @@ function emphasis(s) {
    /TheBooyzen/https://… — the kit's Searched component carries the count. */
 const LINK = /\[([^\]]+)\]\((\/[^)]*)\)/g;
 
-export const md = (x) =>
-  emphasis(esc(x))
+/* A CODE SPAN IS LIFTED OUT BEFORE ANYTHING ELSE RUNS, AND THAT ORDER IS THE
+   WHOLE POINT. The backtick is already this estate's code marker — 719 closed
+   spans across the five registers on 9 October 2026, and NOT ONE stray
+   backtick in any of them — and what those spans hold is file names and code,
+   which is to say the other markers:
+
+     `*.json`   `a[k]`   `[n, title, why, where, pri]`   a glob of every
+     archive's pages, which cannot be written in this comment because it
+     would close it
+
+   Rendered in place, the two `*.json` spans in one worklist note pair into an
+   italic running between them. So each span is replaced by a sentinel first,
+   the markers are rendered around it, and the span comes back last with its
+   contents escaped but otherwise untouched. U+E000 is private-use and appears
+   nowhere in the data; it is checked rather than assumed.
+
+   BEFORE THIS, THE DATA SAID `code` AND THE READER SAW A BACKTICK. Two files
+   had reached for real <code> tags instead, which is what put corrections.json
+   and log.json on the raw-HTML contract and kept an escaping renderer off
+   three registers. Those are written as backticks now, like the other 719. */
+const SENT = "\uE000";
+const CODE = /`([^`]+)`/g;
+
+export const md = (x) => {
+  const spans = [];
+  const held = esc(x).replace(CODE, (_m, c) => SENT + (spans.push(c) - 1) + SENT);
+  return emphasis(held)
     .replace(/«(.+?)»/gs, "<em>«$1»</em>")
-    .replace(LINK, (_m, t, h) => `<a href="${u(h)}">${t}</a>`);
+    .replace(LINK, (_m, t, h) => `<a href="${u(h)}">${t}</a>`)
+    .replace(new RegExp(SENT + "(\\d+)" + SENT, "g"), (_m, i) => `<code>${spans[+i]}</code>`);
+};

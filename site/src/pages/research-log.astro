@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import lg from "../data/log.json";
 const e = lg.entries;
 const back = e.filter(x => x.k === "back").length;
@@ -36,7 +37,7 @@ const kind = { find: ["Found", "doc"], work: ["Worked", "inf"], back: ["Taken ba
         </div>
         <div class="what">
           <h3>{x.h ? <a href={u(x.h)}>{x.t}</a> : x.t}</h3>
-          <p>{x.w}</p>
+          <p set:html={md(x.w)} />
         </div>
       </div>
     ))}
