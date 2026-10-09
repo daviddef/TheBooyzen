@@ -3,6 +3,13 @@
  "entries": [
   {
    "d": "9 Oct 2026",
+   "t": "The publishing debt closed, and a gate that had been telling the truth for three weeks",
+   "k": "work",
+   "w": "**Rows 183, 184, 185 and 189 are done.** Sources: **0 of 42 → 46 of 46 accounted for**, unlocked by this morning's refactor — the kit reads `held` only on a dict row, and these rows were lists, so the archive could not have declared a holding however it tried. Hosts: the row said three undeclared, it was **six**, and **three of them I added myself this fortnight** while leaving the sources page alone — the row's thesis demonstrated on its author. Pages: 0 bespoke, and **one of the two exemptions was justified by a blocker removed this morning**, so it is rewritten with a reason that is true. Lines: measured, and **two of the row's claims are out of date** — Luwinski uses BranchRivers now, and this archive has no families page at all.",
+   "h": "/sources/"
+  },
+  {
+   "d": "9 Oct 2026",
    "t": "Seventeen pages declare their sources, and twenty-five record why they do not",
    "k": "work",
    "w": "Row 186 finished. **The instinct was a SourceBlock on all 42 pages and that would have been worse than the gap** — /errands/ lists what this archive has NOT got, /searched/ rows are already citations, /sources/ cannot rest on itself. **17 declare, 88 items, every id resolving; 25 are exempt with a reason each.** Automated assignment was tried and measured first: **34 of the 46 sources carry an archival reference and those references appear on almost no narrative page**, because the pages argue from names and the register lists numbers. **The gate enforces that every page has been THOUGHT about**, not that every page declares.",

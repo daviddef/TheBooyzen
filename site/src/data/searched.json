@@ -5656,6 +5656,32 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The publishing debt closed, and two gates that were being told the truth and could not hear it",
+   "n": "rows 183, 184, 185 and 189 — no searching, only this archive's own plumbing",
+   "d": "9 Oct 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "Why could this archive never say where a source was held?",
+     "BECAUSE THE KIT READS `held` ONLY ON A DICT ROW, AND THESE ROWS WERE LISTS",
+     "**`checksources` counts three states — a url, a `held` saying where the paper is, or no way to reach it — and the `held` branch tests `isinstance(row, dict)`.** Booyzen's source rows were LISTS of cells, and the kit's own source says so in a comment: *“Booyzen: a row IS its cells”*. **So for as long as that was true this archive could not have declared a holding however hard it tried**, and it sat at 0 of 42 looking like neglect. **This morning's refactor turned the rows into objects for an unrelated reason** — to give them ids — and the affordance came with it. **0 of 42 → 46 of 46 accounted for.** **No urls were invented**: two sources were read free online with no deep link captured at the time, and the entry says that rather than guessing.",
+     "yes"
+    ],
+    [
+     "How many hosts did this archive link to and never name?",
+     "THE ROW SAID THREE. IT WAS SIX, AND I ADDED THE OTHER THREE MYSELF",
+     "**On 21 September the count was 3.** Today: **billiongraves.com, findmypast.com.au, findmypast.co.uk, nationalarchives.gov.za, national.archsrch.gov.za** and archive.org — **and all of the new ones arrived in this archive's data during the last fortnight's research, while the sources page sat untouched.** That is the row's own thesis demonstrated on the person who wrote it. **All six are named now**, with what each costs and the two warnings worth having: NAAIRS runs two databases and the complete one is dead, and BillionGraves is free for the transcription and paid for the photograph.",
+     "yes"
+    ],
+    [
+     "Is Booyzen one of the six archives drawing its lines as a list?",
+     "NO — IT HAS NO SUCH PAGE, AND THE ROW'S OTHER CLAIM IS ALSO OUT OF DATE",
+     "**Measured rather than assumed.** Blazevic, D'Arcy and Falco use the kit's `Families`; **Luwinski uses `BranchRivers`**, so *“BranchRivers is Defranceski's alone”* has stopped being true and half the harmonisation this row proposes has already happened. Mazza is bespoke. **Booyzen has neither a families page nor a lines page** — it has a chooser and a chart. **It already carries the confidence stamp** the pattern turns on, per line in trees.json; what it lacks is the journey through places, and places.json already holds the events that would draw one. **The fix is to adopt a shared component, not to draw a forty-third bespoke page**, which the ratchet in row 189 would refuse on the day it was added and should.",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
