@@ -12,6 +12,13 @@
  "rows": [
   [
    "9 Oct 2026",
+   "“25 records and genuinely filtered — every one has a Kolbe parent”",
+   "FIFTEEN OF THE TWENTY-FIVE. The other ten are KOLOBE, KOLKOBET, COLBERT and CULBERT — Sesotho and other surnames reached by FamilySearch's fuzzy name matching, which is the index working as designed. THE FILTER IS REAL AND THE NAME IS FUZZY, and those are different claims. `q.fatherSurname` does restrict to records having a parent of that surname; it does not restrict to the spelling you typed. HOW IT HAPPENED, WHICH IS THE PART WORTH KEEPING: the result rows were scraped with a `/kolbe/i` test that returned fifteen, and the page's own total of twenty-five was then reported as though all twenty-five had been looked at. Counting the hits and quoting the corpus are two different measurements and only one of them was made. Caught within the hour by going back to read all twenty-five rather than the matching ones — which is also what turned up an eleventh child for the Commandant.",
+   "reading",
+   "/searched/"
+  ],
+  [
+   "9 Oct 2026",
    "Three pages carried the John Barry conflation as unresolved for three weeks after it was resolved",
    "THE WORK WAS DONE ON 14 SEPTEMBER AND ONLY THE PERSON'S OWN ENTRY WAS TOLD. The Yorkshire John Barry was separated from the Cape one and followed past the date the Cape one died — the 1851 census has him a SHIP OWNER at Ruswarp, Whitby, the only man of that age and name in the county, with Whitby deaths registered in 1858 and 1860; and the Bilsdale burial he was supposed to have is absent from 5,934 indexed Bilsdale burials. Work list row 83 was closed the same week. MEANWHILE THREE PLACES WENT ON SAYING THE OPPOSITE. /tree/ carried a panel ending “until they are separated nothing above it can be trusted”; /disputed/ graded the dispute FATAL with the instruction “Separate them”, on a page that has a Resolved status and uses it elsewhere; and the ancestor chart labelled him “John Barry, 1796–1853”, which is the conflated pair — 1796 is the Whitby man's birth year and the Cape man has none. THE TEXT LIVED IN THREE PLACES AND THE TRUTH IN A FOURTH: a hardcoded panel in tree.astro, a wall node in pedigree.json, a row in disputed.astro, and the finding itself in people.js. Correcting one corrects nothing. All four now agree, and the person's birth field says plainly that 1796 belonged to the other man. THIS ONE REACHED READERS, unlike the latent contradiction corrected earlier today: /tree/ and /disputed/ are both linked from the main menu.",
    "process",
