@@ -5546,6 +5546,32 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The Colesberg marriage found at last, under a spelling nobody searched",
+   "n": "row 208 — the date was adopted on arithmetic and a book, and now it rests on a page",
+   "d": "9 Oct 2026",
+   "h": "/marriages/",
+   "rows": [
+    [
+     "Is the 23 February 1846 marriage at Colesberg in a register?",
+     "YES, AND IT IS INDEXED UNDER BERRY",
+     "**Searched the Cape Town Archives Dutch Reformed collection for BARRY with spouse KOLBE and a marriage window of 1843–1850.** The first result is **JOHN BERRY, groom, 23 February 1846, Colesberg**, spouse **Margaretha Wilhelmina Elizabeth Kolbe** — FamilySearch 1:1:6FB4-KHS4. **The date and place are exactly what Pama gave through a letter of November 1999**, and what this archive adopted on 28 September as `inf` because a book is not a page. **It is a page now.** **READ AT THE PAGE, 9 OCTOBER 2026 — ENTRY 735 OF THE COLESBERG MARRIAGE REGISTER.** FamilySearch 1:1:6FB4-KHS4, image 3:1:3Q9M-CSV8-8SZQ-L, image 189 of 202. **THE CLERK WROTE “JOHN BERRY” AND THE MAN SIGNED “JOHN BARRY”**, three lines apart on the same entry — which is the whole reason this record was invisible: every search this archive ever ran was for Barry, and the index follows the clerk. She is entered **Margaretha Wilhelmina Elizabeth Kolbe** and signs **Margaret Wilhelmina Elizabeth Kolbe**. Both **jongman** and **jongedochter**; married **na huwelijks geboden**, after banns; residence **STORMBERG SPRUIT**; by **THOMAS REID, Leeraar der Nederduitsche Hervormde Kerk**, in the presence of **G. W. VOLBERG** and a **VAN DER WALT** — the same two witness entries 734, 735 and 736, so they are the church's standing witnesses and not family. **AND THE CONSENT COLUMN IS THE FINDING.** It reads **“DE WEDUWE KOLBE, MOEDER”** — the widow Kolbe, mother: Margaret Downing, consenting for her daughter fourteen months after the Settler died. **NOBODY IS NAMED ON THE GROOM'S SIDE.** The entry above names two fathers and the entry below names two; this one names one parent and leaves the other half of the column empty. **A register with a column for his father, left blank, is the same answer his death notice gives — the colony had nobody to ask.**",
+     "yes"
+    ],
+    [
+     "Why twenty-seven years of searching never turned it up",
+     "THE CLERK'S SPELLING AND THE MAN'S OWN SIGNATURE DISAGREE ON ONE ENTRY",
+     "**“John Berry” in the clerk's hand; “John Barry” in the groom's.** The index transcribes the clerk, correctly, so the record answers to a surname this family does not use and never appeared in a Barry search. **THE SEARCH THAT FOUND IT DID NOT USE HIS NAME AT ALL** — it used hers, KOLBE, as the spouse. **That is the second time in a fortnight that searching on the WOMAN found what searching on the man could not**, after the Commandant's twelve children came out of the fonts on their mother's name.",
+     "yes"
+    ],
+    [
+     "What the register adds that the book did not",
+     "A RESIDENCE, A MINISTER, AND A COLUMN DELIBERATELY LEFT HALF EMPTY",
+     "**STORMBERG SPRUIT** as their residence in February 1846 — new, and the first place this archive can put the couple at their marriage. **THOMAS REID** as the minister, with **G. W. Volberg** and a **van der Walt** witnessing; the same two witness the entries on either side, so they are the church's and not the family's. **And the consent column reads “DE WEDUWE KOLBE, MOEDER” and stops.** Entry 734 names two fathers, entry 736 names two; entry 735 names the bride's widowed mother and nobody for the groom. **His death notice would say NOT KNOWN of his parents fifty-seven years later; the register was already saying it while he stood in the room.**",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -5668,6 +5694,22 @@
     "findmypast"
    ],
    "note": "Looking for a John baptised about 1819; the only Johns are 1811, 1845, 1860 and 1876. The window is covered — the same result set holds 1815 and 1822 baptisms in Cork. WORTH KNOWING FOR ANY IRISH SEARCH HERE: of FindMyPast's Irish sets, only the Roman Catholic parish baptisms and Ireland Births 1864-1958 index a MOTHER'S SURNAME, so a search on a mother can only find a Catholic child or a post-1864 civil birth. 45 of the 47 are County Cork."
+  },
+  {
+   "src": "FamilySearch — South Africa, Dutch Reformed Church Registers (Cape Town Archives) 1660-1994; Colesberg marriages",
+   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV8-8SZQ-L",
+   "pages": "189",
+   "walked": false,
+   "what": "BARRY × KOLBE marriage at Colesberg 1846 — found indexed under BERRY, read at the page, entry 735",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "kolbe",
+    "colesberg",
+    "familysearch"
+   ],
+   "note": "Found only by searching on the WIFE's surname: the clerk wrote Berry and the groom signed Barry, so the index answers to a spelling this family does not use. Entry 735 gives residence Stormberg Spruit, marriage after banns, minister Thomas Reid, and a consent column naming the bride's widowed mother and nobody on the groom's side."
   }
  ]
 }
