@@ -5764,6 +5764,44 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "James Montjoy's death notice, read a second time by somebody who did not know it had been read",
+   "n": "row 212, tested against the archive instead of against FamilySearch",
+   "d": "9 Oct 2026",
+   "h": "/open-questions/",
+   "rows": [
+    [
+     "Was James Mountjoy of Cradock an unread document, as row 212 said?",
+     "NO. IT HAD BEEN READ IN FULL AND PUBLISHED, AND THE ROW WAS WRITTEN OFF AN INDEX",
+     "Row 212 listed **1:1:QP4Z-WK68** among estate images to open, calling it *question 12’s oldest wall*. **Question 12 already begins with the word READ**, and [/sources/](/sources/) already carries **KAB MOOC 6/9/21: 4393 (1840)** as a document read in full. The row was built from a FamilySearch search result and never checked against the archive it belongs to. **This archive has written that mistake down before** — *“the list was worked without being checked against the archive”* — and it happened again here, on a list this session wrote yesterday.",
+     "void"
+    ],
+    [
+     "Does the image say what this archive published?",
+     "YES, ON EVERY POINT",
+     "Read independently today without looking at the archive first: **1 James Mountjoy; 2 birth-place EUROPE; 3 Names of the Parents of the Deceased — NOT KNOWN; 4 about 45 years; 5 SADDLER; 7 September 1827; 8 in the village of Cradock; 10 a house and erf at Cradock of the value of £90.** **And question 9 names the four children, in this order: 1 James a minor, 2 George do, 3 Johanna do, 4 Jacoba do.** All five of this household’s children are already drawn at [/households/](/households/), with Thomas Jacobus correctly marked as the one the notice omits. **Nothing needed changing.**",
+     "yes"
+    ],
+    [
+     "Then was anything wrong?",
+     "THE WAY BACK TO THE PAGE. IT IS IMAGE 339, NOT 338",
+     "Published in **three** places — /sources/, question 12, and /documents/ — as *image 338 of 2,223*. **/documents/ also sets out the arithmetic that produced it, and that is the part worth keeping:** the pencilled reference numbers do *not* ascend by exactly one per image, because an estate running to two or three frames breaks the step. From image 330 at reference 4386 the method predicts 4393 at image **337**, and the narrowing that followed stopped one frame short. **An interpolated citation is a prediction and has to be re-read off the frame it landed on.** **Image 338 is CHRISTOFFEL HENDRIK OLIVIER**, trader, aged 56 years 4 months 10 days, dead at his own house in the town of Graaff-Reinet on 15 June 1840. **Image 340 is WILLEM JACOBUS VAN DER MERWE** of Bouwbosch Fontein. Montjoy, stamped **4393**, is at **339**, which is where the record ark lands. **A citation off by one does not look wrong, it looks precise**, and it sends the next reader into a stranger’s family. On [/corrections/](/corrections/).",
+     "part"
+    ],
+    [
+     "Is the FamilySearch index of this record sound?",
+     "NO — ITS ESTIMATED BIRTH YEAR IS BUILT ON THE WRONG DATE",
+     "The index gives **Birth Year (Estimated) from 1795 to 1798**, which is the **probate** date of 1840–1843 less the age of 45. But the 45 belongs to the **death**, and the form gives that as **September 1827** — so the birth is about **1782**, which is what this archive has published all along. **The index subtracted an age from the year the file was opened rather than the year the man died**, and for an estate filed thirteen years late that is out by thirteen years. **Anyone adopting the indexed birth range gets a different man.**",
+     "no"
+    ],
+    [
+     "Could the wife's name have been read from this image alone?",
+     "NO. IT RUNS INTO THE SHADOW AT THE EDGE OF THE SHEET",
+     "Question 6 reads *Married to Catharina S…* and the surname disappears into the fore-edge; brightening and contrast did not recover it. From the image alone this session read it as “Eli…” and the first husband as “William Piete…” — **both wrong, and they would have been published as a discrepancy if the archive had not already held the marriage register.** She is **ANNA CATHARINA SLIER**, widow of **HERMANUS PIETERSEN**, married at Graaff-Reinet 9 March 1817. **A hand at the limit of legibility produces confident letters, not blank ones**, which is the argument for not reading a name off one image when a register exists.",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -5954,6 +5992,25 @@
    "note": "THE PARENTS ARE ON THE IMAGE AND ARE NOT IN THE INDEX. The record's own index panel says \"no additional people in this group\"; the Sterfkennis names both parents in question 3. The same film's volumes are the CASE FILES, so the will sits two images on from the death notice. Also: the indexed place of death is standardised to a district the town is not in, and the image disagrees with it. NOT WALKED: images 60-62 of 110 only, being item 16 of the volume. The rest of the film is other people's estates and was not read, so this row says nothing about whether the volume holds more of this family. Waypoint Q6VB-BV7 is the atlas's own entry for DGS 007808573 in collection 2520237 - an exact match on the film number this session read, unique across all collections, not a date-range guess at a neighbouring volume.",
    "pages": "60-62",
    "waypoint": "Q6VB-BV7"
+  },
+  {
+   "src": "FamilySearch — South Africa, Cape, Probate Records of the Master of the High Court 1822-1990 (2517051); Cape Province Probate Records 1840-1843, DGS 007844936, images 338-340 of 2,223",
+   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSQX-MQ5N-P?cc=2517051&wc=WV44-SZV",
+   "film": "007844936",
+   "waypoint": "WV44-SZV",
+   "walked": false,
+   "pages": "338-340",
+   "what": "MOUNTJOY death notice KAB MOOC 6/9/21: 4393, Cradock 1840 — re-read, and the two neighbouring frames opened to fix a citation",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "cradock",
+    "familysearch",
+    "estate",
+    "death-notice"
+   ],
+   "note": "ALREADY READ AND ALREADY PUBLISHED by this archive; re-read independently and it confirms on every point. The useful result is a CITATION FIX: the notice is at image 339, not 338, and 338 is another family's death notice entirely. Also: this record's indexed birth-year estimate is derived from the probate date rather than the death date and is out by thirteen years, because the estate was filed thirteen years after the death."
   }
  ]
 }

@@ -1,6 +1,9 @@
 {
  "note": "Derived by tools/correctionswho.py. A correction is attached to a person only when their WHOLE held name appears - forename and surname together. Run the tool again rather than editing this, and refuse one in corrections-who-deny.json.",
  "who": {
+  "9 Oct 2026 | James Montjoy's death notice cited as image 338 of film 007844936": [
+   "james-montjoy"
+  ],
   "15 Sep 2026 | “WILLEM HERMANUS PIETERZEN — Anna Catharina Slier's FIRST husband”": [
    "hermanus-pietersen",
    "willem-hermanus-pieterzen",
