@@ -5572,6 +5572,38 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "The 1861 font read, and it was never a return journey",
+   "n": "row 210 — the one baptism that broke the Barry migration",
+   "d": "9 Oct 2026",
+   "h": "/barry/",
+   "rows": [
+    [
+     "Is “Graaff-Reinet” the parish, or an artefact of an index whose place field is often just ‘Cape Province’?",
+     "THE PARISH. THE VOLUME IS LITERALLY THE GRAAFF-REINET BAPTISM BOOK",
+     "**Film 008147497, item 4, titled *Graaff-Reinet. Baptism Records 1861–1866*, image 190 of 370.** Not an index place-field at all — the register itself. **Entry 79, “Gedoopt 29 Sept. 1861”: WILLEM FREDERIK THOMAS, Ouders JOHN BARRY and MARGARET WELHELMINA KOLBE.** The parents are this couple, at the page, in the clerk's hand. FamilySearch 1:1:623R-9MM9, image 3:1:3Q9M-CSK6-9S81-J.",
+     "yes"
+    ],
+    [
+     "Who stood as witnesses?",
+     "HER SISTER AND HER SISTER'S HUSBAND — WHICH EXPLAINS THE JOURNEY WITHOUT ANYBODY MOVING",
+     "**Get: PETRUS JACOBUS JOUBERT, CATHARINE MARIA SOPHIA KOLBE, RALPH PETER THOMAS, MARIA MAGDALENA PRETORIUS.** **CATHARINE MARIA SOPHIA KOLBE IS THE BRIDE'S OWN SISTER** — the Settler's second daughter, born 1825, whom this archive has carried as *Catherine Maria Sophia (Joubert)* since the family list was read. **And the first witness is a JOUBERT.** The two are standing together, which is what a married couple does at a font. **SO THE 1861 GRAAFF-REINET BAPTISM IS NOT EVIDENCE THAT THIS HOUSEHOLD MOVED BACK.** A child is christened where the godparents are, and the godparents here are the mother's sister and brother-in-law. **A BAPTISM PLACE IS WHERE THE FONT WAS, NOT WHERE THE FAMILY SLEPT**, and this archive built a four-stage migration out of forgetting that.",
+     "yes"
+    ],
+    [
+     "And the third witness explains the child's third name",
+     "RALPH PETER THOMAS — THE BOY IS WILLIAM FREDERICK **THOMAS** BARRY",
+     "**The surname of a godparent, given to the child as a forename.** This archive has traced Fortunatus and Rector on exactly that reasoning and has an entire /namesakes/ page built on it. **It also answers something the archive noticed and could not explain**: this child carries THOMAS where his dead elder brother, William Fredrik of 1853, did not. The name arrives with the godparent.",
+     "yes"
+    ],
+    [
+     "One thing the page corrects",
+     "29 SEPTEMBER 1861 IS HIS BAPTISM, NOT HIS BIRTH — AND NO BIRTH DATE IS RECORDED",
+     "The register reads **“Gedoopt 29 Sept. 1861”** over entry 79, and unlike the entries on either side — 78 is *geb. 24 April 1861*, 80 is *geb. 16 Aug. 1861* — **entry 79 carries no birth date at all.** This archive has held *born 29 Sep 1861, baptised at Graaff-Reinet*, which takes the baptism date and calls it a birth. **Corrected.** His birth date is not known.",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -5710,6 +5742,23 @@
     "familysearch"
    ],
    "note": "Found only by searching on the WIFE's surname: the clerk wrote Berry and the groom signed Barry, so the index answers to a spelling this family does not use. Entry 735 gives residence Stormberg Spruit, marriage after banns, minister Thomas Reid, and a consent column naming the bride's widowed mother and nobody on the groom's side."
+  },
+  {
+   "src": "FamilySearch — Graaff-Reinet. Baptism Records 1861-1866 (Cape Town Archives DRC collection)",
+   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSK6-9S81-J",
+   "film": "008147497",
+   "pages": "190",
+   "walked": false,
+   "what": "BARRY baptism, entry 79, with its four godparents — read at the page",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "kolbe",
+    "graaff-reinet",
+    "familysearch"
+   ],
+   "note": "Settles that the index's place field is the real parish here: the volume is the Graaff-Reinet baptism register itself. The godparents are the mother's sister and brother-in-law, which explains a baptism 250km from where the family was living without requiring them to have moved. No waypoint recorded — film number only, not established."
   }
  ]
 }
