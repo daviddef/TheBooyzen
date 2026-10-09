@@ -5682,6 +5682,38 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "The estates are not behind a counter. They are filmed, indexed by name, and free",
+   "n": "row 201 asked for ten Cape estates to be ordered; the question turned out to be whether they needed ordering at all",
+   "d": "9 Oct 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "Are the Cape estate papers on FamilySearch?",
+     "YES — NAME-INDEXED AND IMAGED. 116 MOUNTJOY RECORDS",
+     "**Collection 2517051, *South Africa, Cape, Probate Records of the Master of the High Court, 1822–1990*.** Searched on the surname alone: **116 records**, and the ones this archive wanted are in them. **SUSAN ELIZABETH MOUNTJOY**, one of the ten — 1:1:QLKL-PMWK — is indexed with **age 33, born 1887 at MACLEAR, died 13 September 1920 at Mt Prospect, Flagstaff**, and carries an image. None of that was known and none of it cost anything. **And JAMES MOUNTJOY THE SADDLER IS THERE TOO** (1:1:QP4Z-WK68), probate Cradock, *age 45, birthplace EUROPE, died September 1827* — which is question 12's man and this archive's oldest wall.",
+     "yes"
+    ],
+    [
+     "And the Transvaal ones, which are the expensive ones?",
+     "ALSO IMAGED — AND THE VOLUME IS TITLED *PROBATE ESTATE CASE FILES*, NOT AN INDEX",
+     "**Collection 2520237.** This is the distinction that matters and it was checked rather than assumed: an index card gives a reference, a case file gives the death notice. **The image opened is a STERFKENNIS form** — image 345 of 2,754 in *Transvaal. Probate Estate Case Files* — and it is the death notice of **ANNA JOHANNA MARIA BOOYZEN, born PRETORIUS**, indexed under her husband George Downing Mountjoy Booyzen as *Spouse*. **THE FILE ITSELF, FREE, WITH A NAME SEARCH.**",
+     "yes"
+    ],
+    [
+     "TAB MHG 40293 — the file this archive calls its biggest single gap",
+     "INDEXED, IMAGED, AND IT CORRECTS THE PLACE OF DEATH",
+     "**FREDERICK FORTUNATUS DOWNING KOLBE** — 1:1:QPCX-661K — **aged 27, born Wakkerstroom 1891, DIED 2 NOVEMBER 1918 AT VILLIERIA, PRETORIA**, with *View Original Document*. This archive had him dying at Wakkerstroom; the index has the original place as *Villieria Wakkerstroom* and standardises it to Pretoria. **THE IMAGE IS NOT YET READ** and nothing is adopted from the index alone — but the document David has been holding off ordering on cost, and that row 193 is blocked on asking a researcher to complete the reference for, has an ark and a picture.",
+     "yes"
+    ],
+    [
+     "What this does to a list that has been on hold since September",
+     "IT MAY REMOVE THE REASON FOR MOST OF IT — AND ONE ITEM IS ALREADY ANSWERED ELSEWHERE",
+     "**Not all of it, and the limits are stated.** What is verified: the Cape and Transvaal probate series are name-indexed with images, and three specific files wanted here have one. **What is NOT verified**: that every one of the five Pretoria items is in the filmed range, or that a given file's death notice is the page the camera caught. **AND ONE ITEM IS SETTLED WITHOUT ANY FILE AT ALL.** MHG 1095/48 was *still need* because a tree said George Downing Mountjoy Booyzen died 21 February 1947 and a burial register said 11 December. **The civil death registration gives 11 DECEMBER 1947 and the Johannesburg cemetery record gives burial at WEST PARK on 14 DECEMBER 1947.** Two independent records agree and the tree is wrong; the estate file is no longer needed to settle it.",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -5837,6 +5869,21 @@
     "familysearch"
    ],
    "note": "Settles that the index's place field is the real parish here: the volume is the Graaff-Reinet baptism register itself. The godparents are the mother's sister and brother-in-law, which explains a baptism 250km from where the family was living without requiring them to have moved. No waypoint recorded — film number only, not established."
+  },
+  {
+   "src": "FamilySearch — South Africa, Cape, Probate Records of the Master of the High Court 1822-1990 (2517051); and South Africa, Transvaal, Probate Records from the Master of the Supreme Court 1869-1961 (2520237)",
+   "url": "https://www.familysearch.org/en/search/collection/2517051",
+   "walked": false,
+   "what": "MOUNTJOY estates at the Cape — 116 records; and KOLBE and BOOYZEN estates in the Transvaal",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "kolbe",
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "BOTH SERIES ARE NAME-INDEXED AND IMAGED, which is worth knowing before anybody writes to a repository or pays a researcher. The Transvaal volumes are titled Probate Estate Case Files and the image opened is a Sterfkennis form, so it is the file and not an index card. Ten Cape Mountjoy estates found via NAAIRS on 27 September were about to be ordered as one enquiry; they do not need ordering."
   }
  ]
 }
