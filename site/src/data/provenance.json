@@ -7,7 +7,6 @@
   "changes.astro": "A log of what changed here and when. It rests on this site's own history.",
   "corrections.astro": "Things published and taken back. Each row names the document that overturned it IN THE ROW, which is a better place than a block at the foot of the page.",
   "errands.astro": "What can only be got through a door. By definition these are documents NOT yet held, so a block of sources would list the one thing the page is about not having.",
-  "letters.astro": "Letters written to archives and libraries. The sources are the replies, and most have not come.",
   "open-questions.astro": "What is not known, with the record set that would answer each. Every row names its own target; a page-level block would name the documents this archive has, which are the ones that did NOT answer.",
   "research-log.astro": "A diary of the work. Its rows cite their own sources where they have them.",
   "searched.astro": "Every query ever run here. The row IS the citation — source, url, outcome — and a block above them would be a second, weaker statement of the same thing.",

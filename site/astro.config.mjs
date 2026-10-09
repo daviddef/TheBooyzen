@@ -9,6 +9,9 @@ const BASE = '/TheBooyzen';
 const redirects = {
   '/changed': `${BASE}/changes/`,
   '/log': `${BASE}/research-log/`,
+  /* 9 October 2026: the letters page folded into /errands/, which is the same
+     subject. The address was published and linked from other archives. */
+  '/letters': `${BASE}/errands/#sent`,
 };
 
 export default defineConfig({

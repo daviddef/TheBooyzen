@@ -27,7 +27,13 @@ def to_contract(rows):
         out.append(searchkit.row(k, t, s, h, q))
     return out
 
-DIST, DATA = "site/dist", "site/src/data"
+# THE BUILD TO READ. ARCHIVE_OUT beats the default, the way it does for every kit
+# tool (kit/tools/outdir.py): an isolated build lives in site/$ARCHIVE_OUT, and this
+# step used to read site/dist regardless, so a session building somewhere of its
+# own derived its search index from whoever last built the shared directory. Found
+# 9 October 2026 folding the letters page away: the index was unchanged by a build
+# that had removed a page. The default is still dist, which CI uploads.
+DIST, DATA = os.path.join("site", os.environ.get("ARCHIVE_OUT") or "dist"), "site/src/data"
 def clean(t):
     t = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", t, flags=re.S | re.I)
     t = re.sub(r"<[^>]+>", " ", t)
@@ -48,6 +54,10 @@ for f in sorted(glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True
     route = f[len(DIST):-len("index.html")] or "/"
     if any(route.startswith(s) for s in SKIP): continue
     raw = open(f, encoding="utf-8").read()
+    # A redirect page is an address that moved, not a page: it has no body to find,
+    # and "Redirecting to: ..." was being offered as a search result for /log/ and
+    # /changed/. It stays built so the old address keeps working.
+    if 'http-equiv="refresh"' in raw[:600]: continue
     title = clean((re.search(r"<title>(.*?)</title>", raw, re.S) or [None, ""])[1]).replace(" — The Booyzen Archive", "")
     body = re.sub(r"<(nav|footer)[^>]*>.*?</\1>", " ", raw, flags=re.S | re.I)
     dek = clean((re.search(r'<p class="dek"[^>]*>(.*?)</p>', body, re.S) or [None, ""])[1])

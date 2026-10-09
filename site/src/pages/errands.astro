@@ -4,7 +4,33 @@ import Rule from "../components/Rule.astro";
 import Errands from "@daviddef/archive-kit/components/Errands.astro";
 import { u } from "../lib/url.js";
 import er from "../data/errands.json";
+import L from "../data/letters.json";
 const places = er.places;
+
+/* 9 October 2026. The letters page folded in here. It was the sent half of this
+   page's own subject, and it sat beside it saying so ("this one is narrower: it
+   is only the post"). Two pages kept one list in two places, and the cost showed
+   up the day they were put side by side: this page said "three letters are out
+   and none has been answered" while the data held thirteen gone out and three
+   answered. So the counts below are DERIVED from letters.json, and cannot go
+   stale the way that sentence did. /letters/ redirects here. */
+const S = {
+  "answered": ["Answered", "#12703F"], "answered in full": ["Answered", "#12703F"],
+  "half delivered": ["Half delivered", "#B04A16"], "sent": ["Sent", "#1E5F8C"],
+  "no answer": ["No answer", "#E9A020"],
+  "drafted": ["Drafted", "#7A7A7A"], "drafted, unsent": ["Drafted", "#7A7A7A"],
+  "not yet written": ["Not written", "#7A7A7A"],
+};
+const letters = L.rows;
+const isDraft = (r) => r.state === "drafted" || r.state === "drafted, unsent" || r.state === "not yet written";
+const drafted = letters.filter(isDraft).length;
+const out = letters.length - drafted;
+const answered = letters.filter((r) => r.state === "answered" || r.state === "answered in full").length;
+const owed = letters.filter((r) => !isDraft(r) && r.state !== "answered" && r.state !== "answered in full").length;
+const NUM = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
+  "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
+const word = (n) => (n < NUM.length ? NUM[n] : String(n));
+const cap = (s) => s[0].toUpperCase() + s.slice(1);
 const total = places.reduce((n, p) => n + p.asks.length, 0);
 const motifs = ["windpump", "gable", "wagon", "koppie"];
 
@@ -20,7 +46,7 @@ const groups = places.map((pl) => ({
 }));
 ---
 <Base title="Errands"
-      eyebrow={`${places.length} doors · ${total} things that could be settled behind them`}
+      eyebrow={`${places.length} doors · ${total} things that could be settled behind them · ${letters.length} letters, ${owed} still owed an answer`}
       dek="Four questions in this archive now end at a building rather than a search box. This page is what somebody standing at each door could settle, with the references written out so nobody has to find them twice.">
 
 <section class="blk">
@@ -31,7 +57,9 @@ const groups = places.map((pl) => ({
       has taken the work a long way and it has now stopped in four specific places &mdash; not for want
       of searching, but because the records are <b>restricted, unfilmed, or catalogued in a way no name
       search can reach</b>.</blockquote>
-    <p>Three letters are out and none has been answered. If you are near any of these buildings, or know
+    <p>{cap(word(out))} letters have gone out and {word(answered)} {answered === 1 ? "has" : "have"} been
+      answered; {word(drafted)} more are drafted and unsent. <a href="#sent">The letters, and what came back &darr;</a>
+      If you are near any of these buildings, or know
       somebody who is, <b>the references below are complete</b> and every one has been checked against a
       catalogue or a film. <a href={u("/sources/")}>Sources &rarr;</a></p>
   </div>
@@ -48,6 +76,37 @@ const groups = places.map((pl) => ({
     </section>
   </div>
 ))}
+
+<Rule name="awl" />
+
+<section class="blk" id="sent">
+  <h2>Sent, and what came back</h2>
+  <div class="prose">
+    <p set:html={L.note} />
+    <p>{cap(word(out))} of the {word(letters.length)} have gone out and {word(answered)}
+      {answered === 1 ? "has" : "have"} been answered; {word(owed)} {owed === 1 ? "is" : "are"} still owed an
+      answer and {word(drafted)} are drafted and unsent. <a href={u("/worklist/")}>The work list</a> says who has
+      to move what.</p>
+  </div>
+  <div class="scroll" style="margin-top:16px">
+    <table>
+      <thead><tr><th style="width:7rem">Date</th><th style="width:16rem">To</th><th>Asking for</th><th style="width:8rem">State</th></tr></thead>
+      <tbody>
+        {letters.map(r => (
+          <tr>
+            <td class="m">{r.d}</td>
+            <td><b>{r.to}</b></td>
+            <td>{r.what}<br /><span class="cap">{r.back}</span></td>
+            <td class="m" style={`color:${(S[r.state] || ["", "#666"])[1]}`}>{(S[r.state] || [r.state])[0]}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="margin-top:18px"><b>Nothing here was sent on this archive's own authority.</b>
+    Every letter above was drafted, shown, and sent only when the user said so &mdash; and the two that
+    involve money or a public posting under his name are marked as his to send, not this archive's.</p>
+</section>
 
 <Rule name="thorn" />
 
