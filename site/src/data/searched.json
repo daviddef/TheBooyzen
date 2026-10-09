@@ -5937,9 +5937,9 @@
   },
   {
    "src": "FamilySearch — South Africa, Transvaal, Probate Records from the Master of the Supreme Court 1869-1961 (2520237); Probate Estate Case Files 1919, DGS 007808573, item 16, image 60 of 110",
-   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CS9T-FSMR-F",
+   "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CS9T-FSMR-F?cc=2520237&wc=Q6VB-BV7",
    "film": "007808573",
-   "walked": true,
+   "walked": false,
    "what": "KOLBE estate MHG 40293, Transvaal 1919 — death notice and will read from the image",
    "when": "2026-10-09",
    "outcome": "yield",
@@ -5951,7 +5951,9 @@
     "death-notice",
     "will"
    ],
-   "note": "THE PARENTS ARE ON THE IMAGE AND ARE NOT IN THE INDEX. The record's own index panel says \"no additional people in this group\"; the Sterfkennis names both parents in question 3. The same film's volumes are the CASE FILES, so the will sits two images on from the death notice. Also: the indexed place of death is standardised to a district the town is not in, and the image disagrees with it."
+   "note": "THE PARENTS ARE ON THE IMAGE AND ARE NOT IN THE INDEX. The record's own index panel says \"no additional people in this group\"; the Sterfkennis names both parents in question 3. The same film's volumes are the CASE FILES, so the will sits two images on from the death notice. Also: the indexed place of death is standardised to a district the town is not in, and the image disagrees with it. NOT WALKED: images 60-62 of 110 only, being item 16 of the volume. The rest of the film is other people's estates and was not read, so this row says nothing about whether the volume holds more of this family. Waypoint Q6VB-BV7 is the atlas's own entry for DGS 007808573 in collection 2520237 - an exact match on the film number this session read, unique across all collections, not a date-range guess at a neighbouring volume.",
+   "pages": "60-62",
+   "waypoint": "Q6VB-BV7"
   }
  ]
 }
