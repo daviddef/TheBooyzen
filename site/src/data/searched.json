@@ -6090,6 +6090,38 @@
      "blocked"
     ]
    ]
+  },
+  {
+   "g": "The inbox again: two death notices already bought, and a supplier this archive has never listed",
+   "n": "row 205 — the second sweep of a repository nobody indexes",
+   "d": "10 Oct 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "Is there anything in David's mail this archive does not hold?",
+     "TWO DEATH NOTICES, PAID FOR AND DELIVERED IN JANUARY 2024",
+     "**ancestor.co.za**, 12 January 2024: *“your request/s for **BOOYZEN, PETRUS JACOBUS (1955)** and **BOOYZEN, CORNELIA GERTINA (1946)** have been uploaded onto our Ancestor Website”* — at **70 ZAR each**, with a second notification the same day about further documents. **CHECKED AGAINST THE ARCHIVE BEFORE CLAIMING IT.** No Petrus Jacobus Booyzen here died in 1955: the nearest are **1937 at Middelburg, 1884, 1876 and 2003**. And the only **Cornelia Gertina** in this archive is a **du Toit**, a marriage partner of a David Schalk Booyzen — not a Booyzen who died in 1946. **Neither reference occurs in any file.** **Two documents this family already owns, unread here for nearly three years.**",
+     "yes"
+    ],
+    [
+     "Is the supplier recorded?",
+     "NO. ancestor.co.za APPEARS IN NO FILE OF THIS ARCHIVE",
+     "Not on [/sources/](/sources/), not on [/errands/](/errands/), not among the Record Atlas providers. **A repository David has used, paid and still has an account with** — and which this archive, which keeps a register of every place it has looked, has never listed. **It belongs on /sources/ and probably in the atlas**, and it is a reminder that the list of places a family has used is not the same as the list of places its archive knows about.",
+     "part"
+    ],
+    [
+     "Anything that is a person rather than a paper?",
+     "A LIVING DASCHNER WROTE IN 2024 AND NOBODY WROTE BACK",
+     "In **August 2024** a MyHeritage user of the **DASCHNER** surname, in South Africa, messaged David directly. **Nothing in this archive records the approach, a reply, or what he knew.** The Daschner line is among the thinnest held here. **Named by surname only, because he is living** — which is this estate’s rule and the reason the row says what it says and no more.",
+     "part"
+    ],
+    [
+     "What does this say about the method?",
+     "SECOND SWEEP, SECOND TIME THE INBOX BEAT EVERY INDEX",
+     "The first sweep found a **1,604-person descendant report** that had sat unopened for eighteen years and answered a lead marked *unknown and must not be assumed*. The second finds **two paid-for death notices and an unlisted supplier**. **Neither was reachable by any catalogue, register or index this archive can search.** The repositories it keeps a register of are the ones it thought to look in; **the one in the house was not on the list.**",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [
