@@ -5802,6 +5802,44 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "The ten Mountjoy estates, opened one by one — and two of them were this archive's own daughters",
+   "n": "row 201's ten, four of them opened — and the premise checked before the pages were",
+   "d": "9 Oct 2026",
+   "h": "/households/",
+   "rows": [
+    [
+     "Are all ten of the Mountjoy estates imaged on FamilySearch, as row 201 now says?",
+     "NO. AT LEAST ONE IS INDEXED AND NOT IMAGED",
+     "**ANNIE LOUISA MOUNTJOY NEPGEN**, died East London 4 June 1949 aged 66, born 1883 at **Barkly East** — **four separate index entries and every one of them says *Image Unavailable*.** Row 201 concluded on 9 October that the ten *“do not need ordering”*. **That is true of some of them and not of all**, and the difference is the volume: the ones read today with images are from **1840, 1898 and 1921**, and the one with no image is from **1949**. **So the question for each remaining estate is not “is it on FamilySearch” but “does that volume carry pictures”**, and a 1949 Cape estate should be assumed to need ordering until an image is seen.",
+     "part"
+    ],
+    [
+     "Was any of the ten already attached to this family?",
+     "TWO, AND THE ARCHIVE HAD SAID NONE WAS",
+     "**ANNIE LOUISA NEPGEN** and **LOUISA ELIZABETH DIESEL**, both born Mountjoy, are on this site’s /households/ page as daughters of **James Jonathan Mountjoy and Maria Louisa Bertha Kumm** — put there from estate **58379**, read and published on **10 September**. The NAAIRS sweep of **27 September** listed them among ten estates it described as unattached. **Seventeen days, and the list was never held up against the archive.** On [/corrections/](/corrections/).",
+     "yes"
+    ],
+    [
+     "Does Susan Elizabeth Mountjoy's death notice name a Mountjoy father?",
+     "NO — SHE IS A MOUNTJOY BY MARRIAGE, AND HER OWN PARENTS ARE TWO QUESTION MARKS",
+     "Death notice **989**, Cape Town, stamped 12 April 1921. Question three: **Father — “Diesel ?”. Mother — “Diesel ?”.** Her husband wrote her maiden surname on both lines and put a question mark against each, and did the same to her birthplace, **“Maclear (?) District”**. What the notice does give: she was a **housewife**, married **in community of property** to **GEORGE MOUNTJOY JNR**, died at **thirty-three** at **Mt Prospect, Flagstaff** on 13 September 1920, left a **trading station and stock in trade** and **no will**, and had four minor daughters — **Ivy Elizabeth, Gwendoline Hazel, Edna Iris and Daphne Joyce**. **THE INDEX KEEPS HER HUSBAND’S WORD AND THROWS AWAY HIS DOUBT**: FamilySearch publishes the birthplace as *Maclear*, flat, with no question mark anywhere.",
+     "part"
+    ],
+    [
+     "Then is the 116 a count of Mountjoy estates?",
+     "NO. THE INDEX RAISES A RECORD FOR EVERY PERSON NAMED ON A DOCUMENT",
+     "**IVY ELIZABETH MOUNTJOY** appears as a *Principal* record, *“Probate 1920, Grahamstown”*, with no death date — because she is a **living minor child named on her mother’s notice**. She did not die in 1920: she appears again as **Ivy Elizabeth Mountjoy Du Randt**, having married. **This archive wrote “116 Mountjoy records” and the number is right, but it is not 116 estates** — it is estates plus spouses plus children plus anyone else the form names. A search of this collection returns families, not decedents, which is useful and is not what the count implies.",
+     "yes"
+    ],
+    [
+     "Did any of the ten attach a Mountjoy daughter to a father?",
+     "ONE CAME CLOSE, AND IT IS NOT ADOPTED",
+     "**WILHELMINA ERNESTINA BRUMMER, BORN MOUNTJOY** — death notice **2345**, filed Barkly East 19 August 1898. Born **Dordrecht**, dead at **twenty** at her husband’s residence, a farmer’s wife. **Question three: FATHER JOHN JAMES MOUNTJOY, MOTHER MARIA LOUISA BERTHA**, the surname trailing into one illegible capital. **That is nearly the Barkly East house**: the three forenames match Maria Louisa Bertha **Kumm** exactly, she was born in the town the couple married in, and she died in theirs. **AND THE BETTER DOCUMENT SAYS NO.** The 1938 distribution of estate 58379 pays eleven heirs — nine living children, and Gwendoline and Aubrey Diesel taking half a tenth each as the children of a daughter dead in 1923. **An eleventh child’s son would have had the same claim, and there is no Brummer in that account.** Her one son, Hendrik Johannes Jacobus Brummer, would have been about forty. He may simply have died before 1938 without issue. Or this is a different John James Mountjoy. **A second arithmetic to watch: Maria Louisa Bertha Kumm’s birth is about October 1860, which would make her SEVENTEEN at this daughter’s birth.** **She is entered as a person and NOT as a daughter of that house.** The Dordrecht baptism register for 1878, or her own marriage record, would settle it.",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6011,6 +6049,24 @@
     "death-notice"
    ],
    "note": "ALREADY READ AND ALREADY PUBLISHED by this archive; re-read independently and it confirms on every point. The useful result is a CITATION FIX: the notice is at image 339, not 338, and 338 is another family's death notice entirely. Also: this record's indexed birth-year estimate is derived from the probate date rather than the death date and is out by thirteen years, because the estate was filed thirteen years after the death."
+  },
+  {
+   "src": "FamilySearch — South Africa, Cape, Probate Records of the Master of the High Court 1822-1990 (2517051): death notices of Wilhelmina Ernestina Brummer born Mountjoy (1898), Susan Elizabeth Mountjoy born Diesel (1921), and the index entries for Annie Louisa Mountjoy Nepgen (1949)",
+   "url": "https://www.familysearch.org/en/search/record/results?q.surname=Mountjoy&f.collectionId=2517051",
+   "walked": false,
+   "what": "MOUNTJOY women's Cape estates — four of row 201's ten tested, two read from the image",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "barkly-east",
+    "dordrecht",
+    "flagstaff",
+    "familysearch",
+    "estate",
+    "death-notice"
+   ],
+   "note": "NOT EVERY RECORD IN THIS COLLECTION IS IMAGED: the 1898 and 1921 estates carry pictures, the 1949 one says Image Unavailable on all four of its index entries, so whether a Cape estate needs ordering is a question about the VOLUME and not about the collection. Also: this index raises a Principal record for every person named on a document, including living minor children, so a record count is not an estate count. And a death notice's own question marks are dropped by the index, which publishes a doubted birthplace as a flat fact."
   }
  ]
 }
