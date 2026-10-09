@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import Spine from "@daviddef/archive-kit/components/Spine.astro";
 import LINE from "../data/line.json";
 /* The line moved to src/data/line.json on 22 September, so the homepage
@@ -253,4 +256,7 @@ const sibs = [
     <a href={u("/documents/")}>The certificates &rarr;</a>
   </div>
 </section>
+
+<SourceBlock ids={["death-registration-willem-hermanus-booysen-1905", "marriage-register-booysen-barry-1879", "death-notice-john-barry-1915", "death-notice-george-downing-mountjoy-booyzen-1948", "kab-mooc-6-9-21-4393-1840", "sterfkennis-678-transvaal-weeskamer"]} sources={sdx.entries} u={u}
+             note="The documents that carry the line itself, generation by generation." />
 </Base>

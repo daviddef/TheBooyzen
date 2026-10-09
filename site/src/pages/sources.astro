@@ -30,7 +30,7 @@ const tally = (id) => {
   const seen = {};
   let none = 0;
   for (const r of rows) {
-    const m = r.map(c => c.h).join(" ").match(/<span class="chip [a-z]+">([^<]*)<\/span>/);
+    const m = r.cells.map(c => c.h).join(" ").match(/<span class="chip [a-z]+">([^<]*)<\/span>/);
     if (m) seen[m[1]] = (seen[m[1]] || 0) + 1; else none++;
   }
   const parts = Object.entries(seen).sort((a, b) => b[1] - a[1])
@@ -82,7 +82,7 @@ const tally = (id) => {
       <thead><tr>{S("read").cols.map(c => (
         <th class={c.cls || null} style={c.w ? "width:" + c.w : null} set:html={c.label} />))}</tr></thead>)}
       <tbody>{S("read").rows.map(r => (
-        <tr>{r.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
+        <tr id={r.id}>{r.cells.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
     </table>
   </div>
 </section>
@@ -95,7 +95,7 @@ const tally = (id) => {
       <thead><tr>{S("inhand").cols.map(c => (
         <th class={c.cls || null} style={c.w ? "width:" + c.w : null} set:html={c.label} />))}</tr></thead>)}
       <tbody>{S("inhand").rows.map(r => (
-        <tr>{r.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
+        <tr id={r.id}>{r.cells.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
     </table>
   </div>
 </section>
@@ -110,7 +110,7 @@ const tally = (id) => {
       <thead><tr>{S("transvaal").cols.map(c => (
         <th class={c.cls || null} style={c.w ? "width:" + c.w : null} set:html={c.label} />))}</tr></thead>)}
       <tbody>{S("transvaal").rows.map(r => (
-        <tr>{r.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
+        <tr id={r.id}>{r.cells.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
     </table>
   </div>
   <p style="margin-top:16px"><b>How they were found matters more than what they say.</b> The nine
@@ -132,7 +132,7 @@ const tally = (id) => {
       <thead><tr>{S("estates").cols.map(c => (
         <th class={c.cls || null} style={c.w ? "width:" + c.w : null} set:html={c.label} />))}</tr></thead>)}
       <tbody>{S("estates").rows.map(r => (
-        <tr>{r.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
+        <tr id={r.id}>{r.cells.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
     </table>
   </div>
   <p class="cap" style="margin-top:14px">{tally("estates")}</p>

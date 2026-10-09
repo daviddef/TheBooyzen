@@ -1,6 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 import { families } from "../data/kin.js";
 import { people } from "../data/people.js";
 const kids = [
@@ -578,4 +581,7 @@ const north = [
     <b>Barkly East</b> (1859–1907) &rarr; <b>Johannesburg</b> (1900s) &rarr; <b>Brisbane</b>
   </p>
 </section>
+
+<SourceBlock ids={["death-notice-george-augustus-kolbe-1845", "death-notice-margaret-downing-1868", "gravestone-burgersdorp-old-cemetery", "marriage-allegation-london-diocese-1819", "letter-johan-gottlieb-kolbe-to-his-son-23-august-183", "will-of-john-gottlob-kolbe-1842", "death-certificate-john-gottlob-kolbe-1845", "burial-register-1845", "dictionary-of-south-african-biography-the-entry-on-g", "sibree-a-register-of-missionaries-lms-1923", "the-mirror-of-literature-amusement-and-instruction-v", "kab-mooc-6-9-35-7698-1845"]} sources={sdx.entries} u={u}
+             note="Two death notices, a gravestone that agrees with a London font to the day, a letter in the Settler's father's hand, and three printed sources that are read at one remove and said to be." />
 </Base>

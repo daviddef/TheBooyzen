@@ -2,6 +2,9 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 const wives = [
   ["Magdelena Elisabeth De Beer", "1754–1843", "Huguenot-descended Cape", "m. Gerthardus Lodewikus Booysen. Lived to 89. Her husband has no dates at all — she is better recorded than he is."],
   ["Anna Maria van der Merwe", "bapt. 5 Oct 1788 – bef. Mar 1825", "one of the largest Cape families", "m. 2 Nov 1805, Graaff-Reinet. Her husband was about seventeen — and baptised fourteen days before her. Parents Willem van der Merwe and Hester Maria van der Merwe, from the printed genealogy; the family tree says otherwise and both are on the site."],
@@ -372,4 +375,7 @@ JOHANNA CATHARINA MOUNTJOY            GEORGE MOUNTJOY (b. 1823, Cradock)
     the Kohlbeck/Larman circle of German Lutheran Soho — and, if the Booysen progenitor is right, a fourth
     on the male line. <a href={u("/name/")}>The name &rarr;</a></p>
 </section>
+
+<SourceBlock ids={["death-notice-margaret-downing-1868", "death-notice-john-barry-1915", "marriage-register-booysen-barry-1879", "kab-mooc-6-9-104-499-1863", "kab-mooc-6-9-6167-1843"]} sources={sdx.entries} u={u}
+             note="The women on this page are known almost entirely through documents filed by men — death notices signed by sons, and registers where a clerk wrote their names down." />
 </Base>

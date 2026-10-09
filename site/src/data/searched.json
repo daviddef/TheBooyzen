@@ -5604,6 +5604,32 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "Sources given ids, and the silent failure the component was built around",
+   "n": "row 186 — no searching, only the archive's own plumbing",
+   "d": "9 Oct 2026",
+   "h": "/sources/",
+   "rows": [
+    [
+     "Why had this archive never declared what a page rests on?",
+     "BECAUSE THERE WAS NOTHING TO DECLARE — THE SOURCES HAD NO IDS",
+     "**0 of 41 pages, against Defranceski's 39, and the cause was structural.** `sources.json` held four tables as **rows of HTML cells** — lifted verbatim from the page in September so that nothing was reworded — and a cell is not a source with a name. **Every row now has an id derived from its own first cell**: `tab-mhg-2428-40`, `death-notice-margaret-downing-1868`. **46 ids and no collisions.** **THE ID IS NOT A POSITION**, and that was deliberate: `read-3` is correct until somebody sorts the table, and then it still resolves and means a different document.",
+     "yes"
+    ],
+    [
+     "Did the refactor change anything a reader sees?",
+     "NO — THE RENDERED PAGE IS BYTE-IDENTICAL",
+     "**50,208 characters before, 50,208 after, and the texts compare equal.** That was the test worth running: the rows changed shape from a list of cells to an object with an id and cells, every row renderer and a tally function had to follow, **and one of them was missed on the first pass and crashed the build** — `r.map is not a function`, in a function counting status chips. A loud failure, which is the good kind.",
+     "yes"
+    ],
+    [
+     "What the component does when an id is wrong",
+     "DROPS IT, RENDERS THE REST, AND TELLS NOBODY — UNLESS SOMETHING READS data-missing",
+     "**This is the part worth keeping.** SourceBlock resolves each id against the register and **silently omits the ones that fail**, so a page can claim six sources, show five, and look entirely correct — a claim of provenance that cannot be followed, which is the exact fault the whole sources effort exists to fix. **It does leave a count on `data-missing`**, and nothing was reading it. **A gate reads it now** and refuses the build, proven by injecting a reference to a file that does not exist: `/barry/ declares 1 source id that does not resolve`. **A component that fails quietly is only safe if something else is listening.**",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [

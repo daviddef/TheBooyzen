@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Twenty-four checks on the registers this site is mostly made of.
+"""Twenty-five checks on the registers this site is mostly made of.
 
 (It said TWELVE until 27 September 2026, having grown to twenty-one without
 anybody touching the first line. A file that miscounts itself is a small thing
@@ -701,6 +701,31 @@ def main():
                            f"them under the marriage of {_r.get('h')} and {_r.get('w')} dated "
                            f"{_r.get('d')} - the household's own two numbers cannot both be true, "
                            f"so the marriage date, the birth date or the parentage is wrong")
+
+    # 24 - A PAGE CLAIMING A SOURCE THAT IS NOT IN THE REGISTER
+    # 9 October 2026. Until today this archive had 0 of 41 pages declaring what
+    # they rest on, against Defranceski's 39 - row 186 - and the reason was that
+    # sources.json had no per-source IDS to declare. It has them now, derived
+    # from each row's own words rather than its position, and four pages use
+    # them.
+    #
+    # THE COMPONENT FAILS SILENTLY BY DESIGN, which is why this check exists.
+    # SourceBlock DROPS an id that does not resolve and renders the rest, so a
+    # page can claim six sources, show five, and look perfectly correct. What it
+    # does instead of complaining is count the dropped ones onto `data-missing`,
+    # and that attribute is for a gate to read. Nothing was reading it.
+    #
+    # A page that says "this rests on X" where X is not in the register is worse
+    # than a page that says nothing: it is a claim of provenance that cannot be
+    # followed, which is the whole fault the sources work exists to fix.
+    for _f in glob.glob(os.path.join(a.dist, "**", "index.html"), recursive=True):
+        _t = open(_f, encoding="utf-8", errors="ignore").read()
+        _m = re.search(r'<section class="srcblock"[^>]*data-missing="(\d+)"', _t)
+        if _m:
+            _rel = os.path.relpath(os.path.dirname(_f), a.dist).replace(os.sep, "/")
+            bad.append(f"source-id-missing  /{_rel}/ declares {_m.group(1)} source id(s) that do "
+                       f"not resolve in sources.json - SourceBlock dropped them and rendered the "
+                       f"rest, so the page looks right and is claiming provenance it cannot show")
 
     # 5 - open too long
     today = datetime.date.today()

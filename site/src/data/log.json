@@ -3,6 +3,13 @@
  "entries": [
   {
    "d": "9 Oct 2026",
+   "t": "Sources given ids, and four pages now say what they rest on",
+   "k": "work",
+   "w": "**0 of 41 pages declared their sources, and the cause was that the sources had no names.** `sources.json` was four tables of HTML cells; every row now carries an id **derived from its own first cell, not its position**, 46 of them with no collisions, and **the rendered page is byte-identical** to before. /kolbe/, /barry/, /women/ and /direct-line/ now carry 29 declared ids, all resolving. **And a gate now reads `data-missing`** — the attribute SourceBlock leaves when it silently drops an id it cannot resolve, which nothing had ever looked at.",
+   "h": "/sources/"
+  },
+  {
+   "d": "9 Oct 2026",
    "t": "The 1861 font read: a sister at the font, not a family on the move",
    "k": "find",
    "w": "Entry 79 of the **Graaff-Reinet baptism register**, read at the page. The place was never an index artefact — the volume is the parish book. **The godparents are CATHARINE MARIA SOPHIA KOLBE, the mother's own sister, standing with a JOUBERT**, which is what a married couple does at a font. **So the baptism 250 kilometres from Burgersdorp needs no migration to explain it**, and this archive's four-stage Barry journey was over-read from a place field. **A third godparent is RALPH PETER THOMAS and the child is William Frederick THOMAS.** And the date on the entry is *Gedoopt* — a baptism, not the birth this archive filed it as.",

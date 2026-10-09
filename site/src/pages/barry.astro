@@ -1,6 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
+import sdx from "../data/sources.json";
+
 const kids = [
   ["John Augustus II", "1847–1935", "Burgersdorp", "m. Alida Jacoba van Ellinckhuyzen, 1870, DRC Colesberg"],
   ["James Henry", "1848–1939", "Burgersdorp", "m. Maria Margaretha Hester Catherina Louw, 1867, Dordrecht; died at Manor Owen aged 92"],
@@ -490,4 +493,7 @@ const kids = [
   <p><b>The Barry line is documented from 1819 forward and is a knot before it.</b> The archive draws it as
     a break, not a chain. <a href={u("/disputed/")}>See the full contradiction &rarr;</a></p>
 </section>
+
+<SourceBlock ids={["death-notice-john-barry-1915", "marriage-register-booysen-barry-1879", "kab-mooc-6-9-15220-3786-48-1948", "tab-mhg-1095-48", "tab-mhg-769-52", "tab-mhg-10-57"]} sources={sdx.entries} u={u}
+             note="His 1915 death notice and his son's marriage register. The estate files below it are located and unread, and the Irish end of this family rests on none of them." />
 </Base>
