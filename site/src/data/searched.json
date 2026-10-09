@@ -6006,6 +6006,38 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "Which indexes will answer a question about parents, and which cannot be asked it at all",
+   "n": "the father-surname technique, scoped — what it can and cannot be asked",
+   "d": "9 Oct 2026",
+   "h": "/kolbe/#commandant",
+   "rows": [
+    [
+     "Can the father-surname search reach the Commandant's twelfth child?",
+     "NO, AND THE SCOPE OF THAT NIL IS NOW EXACT",
+     "**Orange Free State civil death registration (3732502)**: `q.fatherSurname=Kolbe` returns 25, of which 15 are this family, and **four of those are the Commandant’s** — Katrina Wilhelmina, Andries Frederick, Johan Hendrik Cassimir and Petrus Jacobus. **All four are now held.** **Transvaal probate (2520237)**: **0**. **Cape probate (2517051)**: **0**, and that one means something different — see below. **So the twelfth is not reachable by this instrument**, and the reason is bounded rather than mysterious: he or she died outside the Free State, or outside 1902–1954, or in a record that names no parents.",
+     "no"
+    ],
+    [
+     "Is a nil from this search worth anything, collection by collection?",
+     "ONLY WHERE THE FIELD IS INDEXED — AND IN THE CAPE IT IS NOT",
+     "**Controls, run before any nil was believed.** Transvaal probate, `q.fatherSurname=Booysen`: **86 results** — so the field is indexed and searchable there, and a Kolbe nil in the same collection is a real absence. **Cape probate, `q.fatherSurname=Mountjoy`: 0. `=Kolbe`: 0.** Two different surnames, both heavily present in that collection under their own names, both nil as parents. **The Cape probate index does not carry parents at all** — which matches what its rows show: Spouses and Children, never Parents. **A nil from the Cape collection is therefore not evidence about anybody’s parents.** It is the question not being askable. **And the earlier `fetch`-based attempt at these controls returned “no count” for every test including the one that should have worked** — the pages are client-rendered — which is why the counts above were taken by navigating.",
+     "yes"
+    ],
+    [
+     "Then why does TAB MHG 40293 not appear under a Kolbe father?",
+     "BECAUSE INDEXING PARENTS IS PER RECORD, NOT PER COLLECTION — AND TODAY PROVED IT TWICE",
+     "**That file is in collection 2520237 and its Sterfkennis names GEORGE AUGUSTUS KOLBE and MARTHA SOFIA KLOPPER in question 3.** This morning the record’s own index panel was read and says **“no additional people in this group”**. This evening the same collection returns **zero** records with a Kolbe father, while returning 86 with a Booysen one. **The two observations are the same fact approached from opposite ends**: the parents are on the image and were never keyed. **The rule that follows is worth more than either**: in these collections, whether a search can see a parent is a property of the RECORD, not of the collection — so “the collection indexes parents” is never a safe premise, and a father-surname nil can only ever mean *not indexed for the records I want*, never *not his child*.",
+     "yes"
+    ],
+    [
+     "Anything left behind for next time?",
+     "EIGHTY-SIX TRANSVAAL ESTATES WITH A BOOYSEN FATHER, UNREAD",
+     "`q.fatherSurname=Booysen` against the Transvaal probate collection returns **86**, and **this archive has read none of them**. That is the same instrument that produced two of the Commandant’s children this afternoon, pointed at the surname the whole archive is named for. **Not opened here and not counted as a finding** — 86 rows scored by a fuzzy name matcher will not all be this family, as today already demonstrated with Kolobe and Colbert. **It is a seam, recorded so the next session does not have to rediscover the trick.**",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6287,6 +6319,21 @@
     "death-registration"
    ],
    "note": "q.fatherSurname IS A REAL FILTER IN THIS COLLECTION WHEN IT IS THE ONLY NAME TERM - 25 records, every one with a parent whose surname matches Kolbe under fuzzy name matching, though only 15 are the Kolbe family and the rest are Kolobe, Kolkobet, Colbert and Culbert. Combined with a surname it only re-ranks: 1,091 became 804 and the top hits had no Kolbe at all, so a changed count proves the field was read and NOT that it filtered. Found a woman indexed under a married surname the archive did not hold. Also: this index standardised Ladybrand, Orange Free State into Soutpansberg, Transvaal - the third mangled place today, in a collection whose own title says Orange Free State."
+  },
+  {
+   "src": "FamilySearch — father-surname searches across three South African collections: OFS Civil Death Registration (3732502), Transvaal probate (2520237), Cape probate (2517051)",
+   "url": "https://www.familysearch.org/en/search/record/results?f.collectionId=2520237&q.fatherSurname=Booysen",
+   "walked": false,
+   "what": "KOLBE — scoping which indexes can be asked about parents at all, and whether the Commandant's twelfth child is reachable",
+   "when": "2026-10-09",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "booysen",
+    "familysearch",
+    "method"
+   ],
+   "note": "WHETHER AN INDEX CAN BE ASKED ABOUT PARENTS IS A PROPERTY OF THE RECORD, NOT THE COLLECTION. Transvaal probate returns 86 records with a Booysen father and 0 with a Kolbe father - yet TAB MHG 40293 is in that collection and its image names both Kolbe parents in question 3; the record's own index panel says 'no additional people in this group'. Cape probate returns 0 for two different surnames and shows Spouses and Children but never Parents, so a nil there is the question not being askable rather than an absence. Controls were navigated, not fetched: a fetch-based count returns nothing for every query including ones that work, because the pages are client-rendered."
   }
  ]
 }
