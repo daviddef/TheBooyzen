@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import { md, esc } from "../lib/md.js";
 import sr from "../data/searched.json";
 import Searched from "@daviddef/archive-kit/components/Searched.astro";
 import nf from "../data/namefold.json";
@@ -29,10 +30,28 @@ const badge = { yes: ["Found", "doc"], part: ["Partly", "inf"], no: ["Nothing", 
  * mean the search never ran, and counting them as empty would turn thirteen
  * unasked questions into thirteen answers. VOID is not a search at all - a bare
  * surname returning 552 documents, a memoir that turned out unnecessary. */
-const esc = (t) => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;");
+/* THE NOTE AND THE RESULT ARE WRITTEN IN THE ARCHIVE'S MARKUP AND WERE PRINTED
+ * AS ASTERISKS. Measured 9 October 2026 on a build into site/dist-base: 2,428
+ * literal `**` in this page's visible text against 1,564 <strong>, and the
+ * asterisks were the data's own emphasis arriving unrendered — 601 bold pairs,
+ * 36 italics, 7 internal links, every one of them twice because the rows are
+ * drawn once into the index above and once into the sessions below.
+ *
+ * THE QUERY COLUMN IS DELIBERATELY NOT RENDERED, and that is the whole reason
+ * `esc` is still here beside `md`. Twelve of its asterisks are NAAIRS and
+ * FamilySearch wildcards, not emphasis -
+ *     q.surname=B*rry · q.motherSurname=Kolb* and Col*
+ * - and three of those flank a letter on both sides, so a renderer pairs them
+ * into an italic running across two surnames and silently rewrites the query
+ * somebody would re-run to check this archive. One query does carry a real
+ * italic (a book title) and it stays an asterisk; that is the cheaper error.
+ * The note and result columns were counted the same way first: of their 170
+ * single asterisks exactly one is a wildcard - `BOOY* in the Cape depot
+ * returns 0 documents` - and md() leaves it alone, because a delimiter only
+ * opens a span when the next character is not a space. */
 const flat = sets.flatMap(x => x.rows.map(([q, res, note, k]) => ({
   when: x.d, src: x.g, what: "<strong class=\"m\">" + esc(q) + "</strong>",
-  got: esc(res), extra: esc(note), outcome: k, href: x.h,
+  got: md(res), extra: md(note), outcome: k, href: x.h,
 })));
 ---
 <Base title="What Has Been Read"
@@ -69,8 +88,8 @@ const flat = sets.flatMap(x => x.rows.map(([q, res, note, k]) => ({
             {s.rows.map(([q, res, note, k]) => (
               <tr>
                 <td><strong class="m">{q}</strong></td>
-                <td class="m">{res}<div style="margin-top:5px"><span class={"chip " + badge[k][1]}>{badge[k][0]}</span></div></td>
-                <td>{note}</td>
+                <td class="m"><Fragment set:html={md(res)} /><div style="margin-top:5px"><span class={"chip " + badge[k][1]}>{badge[k][0]}</span></div></td>
+                <td set:html={md(note)} />
               </tr>
             ))}
           </tbody>
