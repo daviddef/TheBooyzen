@@ -3,6 +3,13 @@
  "entries": [
   {
    "d": "9 Oct 2026",
+   "k": "find",
+   "t": "The Commandant's eldest, found by asking for a father instead of a name",
+   "w": "**Catharina Wilhelmina Kolbe was an inference built from a year, a town and a surname.** She is now documented, and she is the **eldest of the twelve**. Her 1909 civil death registration gives **father JAN GERSEM ELIEZER KOLBE, STOCK FARMER**, mother **ANNA JACOBA**, and — in the field that asks a twice-married woman to name the other husband — **PIENAAR**, which ties her to the Bloemfontein bride of 8 October 1860. Born **1844 in the Cape Colony**, a year after her parents married; dead at **Veelroem, district Ladybrand**, of heart disease and dropsy. **Her son registered it and signed JAN G. E. ANDERSON**, his grandfather’s three names entire, four lines below where that grandfather is named. **The Commandant gains a trade** — stock farmer, from a document rather than an obituary. **And the method is the part worth keeping.** She is indexed under ANDERSON, a surname this archive never held, so no search for her could have found her. Searching the index for her FATHER did. `q.fatherSurname=Kolbe` returns 25 filtered records in that collection — but only as the sole name term; paired with a surname it merely re-ranks, and a count that moves proves the field was read, not that it filtered.",
+   "h": "/kolbe/#commandant"
+  },
+  {
+   "d": "9 Oct 2026",
    "k": "back",
    "t": "A knot untied in September, still tied on three pages in October",
    "w": "**The John Barry conflation was resolved on 14 September** — the Yorkshire ship owner separated out and followed past the date the Cape man died — **and only his own entry was told.** /tree/ went on ending its panel *“until they are separated nothing above it can be trusted”*; /disputed/ went on grading it **Fatal — Separate them**, on a page that has a **Resolved** status and uses it for four other disputes; and the ancestor chart went on labelling him **1796–1853**, which is the conflated pair, 1796 being the Whitby man's year. **The sentence lived in three places and the finding in a fourth** — a hardcoded panel, a wall node in pedigree.json, a row in disputed.astro, and the person in people.js. **All four now agree, and the wall is stated as what it actually is: not a contradiction but an absence** — no birth, no arrival, no burial, and a son registered in 1903 as an Irishman born in Ireland.",

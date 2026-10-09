@@ -5974,6 +5974,38 @@
      "blocked"
     ]
    ]
+  },
+  {
+   "g": "The Commandant's eldest, found by asking the index for a father instead of a name",
+   "n": "row 199, answered on free records while FindMyPast is locked out",
+   "d": "9 Oct 2026",
+   "h": "/kolbe/#commandant",
+   "rows": [
+    [
+     "Is the probable sixth child, Catharina Wilhelmina, really his daughter?",
+     "YES — AND ONE DOCUMENT CARRIES THE WHOLE CHAIN",
+     "Her civil death registration, **Orange Free State, Births & Deaths Registration Proclamation 1902, sections 27 and 39**, ark **1:1:DH4P-K53Z**, image **643 of 2,709**. **Field 14, father’s name in full and occupation: JAN GERSEM ELIEZER KOLBE, STOCK FARMER.** Field 15, mother: **ANNA JACOBA**. **And field 7 is what makes her the same woman as the 1860 bride.** It asks, of a woman married more than once, to state to whom; the answer is **PIENAAR**. So the Catharina Wilhelmina Kolbe who married Johannes Petrus Pienaar at Bloemfontein on 8 October 1860 and the Katrina Wilhelmina Anderson who died in 1909 are one person, and the user tree’s *“Pienaar Anderson”* was listing two marriages rather than inventing a surname. **She was born 1844 in the Cape Colony**, which makes her the ELDEST of the twelve — the Commandant married on 3 April 1843. **Nine of the twelve were documented; she is the tenth, and the first in order.**",
+     "yes"
+    ],
+    [
+     "What else the form gives",
+     "AN OCCUPATION FOR THE COMMANDANT, AND A GRANDSON WHO CARRIES HIS NAME",
+     "**The Commandant is a STOCK FARMER on this form** — the first trade this archive has for him from a document rather than from an obituary’s account of his soldiering. **The informant is her son, present at the death, signing JAN G. E. ANDERSON** — his grandfather’s three names entire, four lines below where that grandfather is named. A naming pattern is not proof, but a naming pattern on the same page as the parentage is corroboration that costs nothing to notice. She was Dutch, a housewife, of **Veelroem in the district of Ladybrand**; died **3 February 1909** of **heart disease and dropsy** after **one year and six months** ill; buried at Veelroem; the doctor Dr Hofmeyr.",
+     "yes"
+    ],
+    [
+     "How she was found, which is the reusable part",
+     "BY SEARCHING THE INDEX FOR A FATHER, NOT FOR HER",
+     "Searching the collection for her own name fails: the two exact **Catharina Wilhelmina Pienaar** hits are an infant of 0 days and a woman born 1891. **She is indexed under ANDERSON**, a surname this archive did not hold. **What works is `q.fatherSurname=Kolbe` against collection 3732502**, which returns **25 records and is genuinely filtered** — every one has a Kolbe parent. **BUT ONLY WHEN IT IS THE ONLY NAME TERM.** Combined with `q.surname=Pienaar` the same parameter merely re-ranks: 1,091 results became 804, the count moved so the parameter was plainly read, and the top hits still had no Kolbe anywhere. **A count that changes proves the field was read, not that it filtered** — and that is the FindMyPast trap in a different house.",
+     "yes"
+    ],
+    [
+     "Did the index place her correctly?",
+     "NO — LADYBRAND IS NOT IN THE TRANSVAAL",
+     "The record standardises the event place to **“Ladybrand, Soutpansberg, Transvaal”**. The form says **Veelroem, district Ladybrand**, and Ladybrand is in the **Orange Free State**, on the Basutoland border, some four hundred miles from Soutpansberg — in a collection whose own title is *Orange Free State*. **That is the third place this index has mangled today**, after a Wakkerstroom death standardised into Zoutpansberg and a Kokstad estate rendered at Pretoria. **The pattern is worth more than any one of them: the original place field is reliable and the standardised hierarchy is not.**",
+     "no"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6238,6 +6270,23 @@
     "estate"
    ],
    "note": "A CONTROLLED NEGATIVE, NOT A FAILURE TO LOOK. Four of the five are not in the collection's index; the two 1969 references cannot be, because the collection ends in 1961 and that is printed on every record page. The method finding worth keeping: this index does NOT fold BOOYZEN and BOOYSEN - 249 records against 2,417, different populations - so a sweep of this surname is two searches, and the first pass of this one was wrong until that was checked."
+  },
+  {
+   "src": "FamilySearch — South Africa, Orange Free State, Civil Death Registration 1902-1954 (3732502), image 643 of 2,709",
+   "url": "https://www.familysearch.org/ark:/61903/1:1:DH4P-K53Z",
+   "walked": false,
+   "pages": "643",
+   "what": "KOLBE daughters in the Free State civil death registers, searched on the FATHER's surname",
+   "when": "2026-10-09",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "ladybrand",
+    "bloemfontein",
+    "familysearch",
+    "death-registration"
+   ],
+   "note": "q.fatherSurname IS A REAL FILTER IN THIS COLLECTION WHEN IT IS THE ONLY NAME TERM - 25 records, every one with a Kolbe parent. Combined with a surname it only re-ranks: 1,091 became 804 and the top hits had no Kolbe at all, so a changed count proves the field was read and NOT that it filtered. Found a woman indexed under a married surname the archive did not hold. Also: this index standardised Ladybrand, Orange Free State into Soutpansberg, Transvaal - the third mangled place today, in a collection whose own title says Orange Free State."
   }
  ]
 }
