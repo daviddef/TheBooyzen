@@ -667,6 +667,13 @@
    "**THAT IS HIS BAPTISM DATE, AND THE REGISTER RECORDS NO BIRTH DATE FOR HIM AT ALL.** Entry 79 of the Graaff-Reinet baptism register is headed **“Gedoopt 29 Sept. 1861”** — baptised. **The entries on either side carry a birth date and his does not**: 78 is *geb. 24 April 1861*, 80 is *geb. 16 Aug. 1861*, and 79 is a name with no *geb.* **This archive took the one date on the entry and filed it as a birth**, which is the commonest error there is in a baptism register and the easiest to make when an index labels its single date *Event Date*. **What is actually known is that he was baptised on 29 September 1861 and born at some point before it.** **AND A SECOND THING GOES WITH IT:** this archive reasoned from “born 29 September 1861 at Graaff-Reinet” that the household had returned to Graaff-Reinet between Burgersdorp and Dordrecht. **The godparents are the mother's sister and her husband.** A child is christened where its godparents are; a baptism place is where the font was, not where the family slept.",
    "reading",
    "/barry/"
+  ],
+  [
+   "11 Oct 2026",
+   "The people register follows twelve lines, and one of them is called Testimony",
+   "**IT IS A CONFIDENCE LABEL SITTING IN THE LINE FIELD.** One person — a living Booyzen, held on testimony — carried **`l: \"Testimony\"`**, and *Testimony* is this archive's own word for `s: \"lore\"`, three fields away in the same record. So the reader was offered **“Testimony (1)”** in the line filter on /people/, between **Daschner (15)** and **Lerena (1)**, as though this archive followed a family of that name. **NOBODY WAS MISDESCRIBED AND NOTHING WAS CLAIMED ABOUT HER** — the line field only groups — but the register's own list of the families it follows was wrong, and that list is read as a statement. **IT WAS FOUND SIDEWAYS**, while counting the `l` values to answer a different question entirely: what the Record Atlas should be told this archive's families are. **A field whose values are never counted can hold anything.** The line is now **Booyzen**, which is her surname and was always the answer.",
+   "process",
+   "/people/"
   ]
  ]
 }

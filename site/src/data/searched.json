@@ -6122,6 +6122,74 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "Griqua Records read without buying it, and without borrowing it",
+   "n": "rows 120 and 121 — the book this work list calls the one purchase worth making",
+   "d": "11 Oct 2026",
+   "h": "/people/george-augustus-kolbe/",
+   "rows": [
+    [
+     "archive.org · title:(\"griqua records\")",
+     "ONE RECORD",
+     "**`griquarecordsphi0000unse`** — Schoeman (ed.), *Griqua Records: the Philippolis Captaincy, 1825–1861*, Van Riebeeck Society, Cape Town, **1996**, **ISBN 0958411212**, 386 pages. Its collections are `inlibrary` and `printdisabled`, so it is **borrowable, not free full text**, and borrowing wants an account this archive will not open. Row 120 said «no free digitisation found»; that is still true of the TEXT and it was never true of the **index**. **The ISBN and the page count are new here**, and so is the year: row 120 says the volume appeared **two years** after the DSAB draft of February 1992, and the record says **1996**, which is four. The row's reasoning is untouched either way — the point was that Schoeman's own editor could not cite it in the draft — but **the arithmetic in that sentence should be checked against the volume** rather than left standing.",
+     "yes"
+    ],
+    [
+     "archive.org · search inside griquarecordsphi0000unse · Kolbe",
+     "TEN RESULTS, NO LOGIN",
+     "**SEARCH-INSIDE WORKS ON A BORROWABLE BOOK WITHOUT BORROWING IT**, and that is the finding worth more than any one page here. The reader returns page numbers and a snippet for each hit on a book nobody may read entire. **It is not a way round the lending restriction and must not be used as one** — it reads an index, not a text — but where the question is «does this book discuss our man, and where», it answers it from a desk, for nothing. Row 137 reached the same wall at the *Dictionary of South African Biography* Vol. 5 and stopped at borrowing; **this is the move that row did not have**.",
+     "yes"
+    ],
+    [
+     "the book's own index, at page 321",
+     "KOLBE, G.A. — 35, 236, 237 · KOLBE, J. — 130",
+     "**THE INDEX SEPARATES TWO MEN AND THIS ARCHIVE SHOULD TOO.** **G.A. Kolbe** is the Settler's son, the missionary. **J. Kolbe** is somebody else entirely: pages 130 and 268 are one document in Dutch and in English, in which **«den heer J. Kolbe»** is a lessee of a farm owed **Rds1480** under a settlement of Sir Harry Smith's. **Nothing is claimed about him**, and he is written down here only so the next reader does not quietly fold the two initials into one man. **AND IT BOUNDS THE PURCHASE.** The index puts G.A. Kolbe on **three pages**, and search-inside has now shown all three. **That is the index's count of where he is NAMED**, not proof the volume says no more — a document that calls him «their late missionary» without the surname would not be indexed under it, and page 35 contains exactly such a phrase. So the book is **not** exhausted; what has changed is that **row 120 can no longer be sold as the only way to learn what the 1836 charge was**.",
+     "yes"
+    ],
+    [
+     "page 35, and Schoeman's own footnote to it",
+     "THE CHARGE, AND A THIRD NAME IN IT",
+     "The document is the Griquas complaining of **their late missionary Kolbe**, whom they and **Wright and Atkinson** consider dangerous to peace and good order, and their right to make him quit their territory. Schoeman's footnote glosses it: **G.A. Kolbe of Philippolis had incurred the enmity of Hendrik Hendrickze, had been accused of adultery**, and **his colleagues Wright and Atkinson were particularly zealous in pressing the charges**; he had left the station but was still living north of the Orange. **THIS ARCHIVE ALREADY HELD THE ACCUSATION** — from Schoeman's 1992 DSAB draft, which it has always labelled a secondary work it does not take as evidence. **What is new is that the same scholar published the documents behind it four years later, and that a THIRD man is named in the pressing of it: PETER WRIGHT of Griquatown.** The draft named only H. Hendricks and T. Atkinson. **The spelling is the book's: «Hendrickze», and its index says at xiii that the name's spelling is discussed there.**",
+     "yes"
+    ],
+    [
+     "pages 236 and 237, the volume's chronology of Philippolis",
+     "FOUR DATES, AND ONE OF THEM MAY SETTLE AN OPEN CONFLICT",
+     "**May 1828 — James Clark and G.A. Kolbe establish the Bushman School, later Bethulie.** **March 1831 — G.A. Kolbe arrives at Philippolis.** **August 1836 — Theophilus Atkinson arrives at Philippolis.** **March 1837 — G.A. Kolbe leaves Philippolis.** The chronology also has **10 January 1827** for John Melvill's arrival, **March 1832** for his departure, and **28 December 1835** for the grant of land to the Berlin Missionary Society at Bethulie. **THE FIRST OF THOSE BEARS ON A DISAGREEMENT THIS ARCHIVE HAS PUBLISHED AND NOT RESOLVED.** Sibree's *Register* has him accepted provisionally by Mr Miles on **8 February 1829**; the DSAB draft says **8 February 1828**. If he was founding the Bushman School in **May 1828**, then **he was in the field before the Society formally took him on**, and the two dates are not a contradiction at all but an answer and a question — **Sibree is dating the acceptance, the DSAB the posting**. **That is a reading, not a document**, and it is written here as one.",
+     "part"
+    ],
+    [
+     "page 323, the index entry for «missionaries»",
+     "THE ELEVEN WHO SERVED PHILIPPOLIS",
+     "For missionaries stationed at Philippolis the index sends the reader to **Atkinson, Theophilus; Christie, George; Clark, James; Kolbe, G.A.; Melvill, John; Philip, W.B.; Schreiner, Gottlob; Solomon, Edward; Thomson, W.Y.; van der Schalk, C.J.; Wright, Peter**. **Two of those eleven are the men who pressed the charge against the third.** The list is a published roll of the station this archive's man served, and it is worth having whole.",
+     "yes"
+    ],
+    [
+     "archive.org · \"quarterly chronicle\" AND \"missionary society\"",
+     "NOTHING, AND THE ZERO IS TESTED",
+     "The LMS *Quarterly Chronicle of Transactions* — the 1829 printing of the Melvill and Kolbe journal, and **the one text of his own that is out of copyright** — **is not on the Internet Archive under that title**. Row 121 already said so; what it did not have is a control. **A bare phrase query for «london missionary society» returns 736 records on the same endpoint**, and a field query for a known identifier returns exactly one, so **the mechanism can see what is there and the nil is the archive's answer, not the query's**.",
+     "no"
+    ],
+    [
+     "archiveshub.jisc.ac.uk · LMS incoming correspondence, South Africa 1829",
+     "BLOCKED — A BOT CHECK",
+     "A web search says this component lists **letters from John Melvill at Philippolis and George Kolbe at the Bushman mission near the Caledon** in 1829 — which would be item-level references for row 135's SOAS letter. **The page cannot be read from here**: it returns 403 to a fetch and a Cloudflare «performing security verification» interstitial in a browser. **It was not worked around, and no part of its content is recorded here as fact** — the description above is the search engine's, not the catalogue's, and stays an unconfirmed lead until somebody opens the page.",
+     "blocked"
+    ],
+    [
+     "catalog.hathitrust.org · Transactions of the Missionary Society",
+     "BLOCKED — 403",
+     "Row 121 recorded that HathiTrust's bot check had blocked this archive once already. **It still does**, now on the catalogue and not only the reader. Recorded as blocked and left alone.",
+     "blocked"
+    ],
+    [
+     "googleapis.com/books/v1 · the full Quarterly Chronicle title",
+     "BLOCKED — 429",
+     "Row 121 recorded that the Books API rate-limited this query. **It still does.** This is a reproduction of a known condition, not a new finding, and the printed 1829 Chronicle remains unlocated.",
+     "blocked"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6418,6 +6486,35 @@
     "method"
    ],
    "note": "WHETHER AN INDEX CAN BE ASKED ABOUT PARENTS IS A PROPERTY OF THE RECORD, NOT THE COLLECTION. Transvaal probate returns 86 records with a Booysen father and 0 with a Kolbe father - yet TAB MHG 40293 is in that collection and its image names both Kolbe parents in question 3; the record's own index panel says 'no additional people in this group'. Cape probate returns 0 for two different surnames and shows Spouses and Children but never Parents, so a nil there is the question not being askable rather than an absence. Controls were navigated, not fetched: a fetch-based count returns nothing for every query including ones that work, because the pages are client-rendered."
+  },
+  {
+   "src": "Internet Archive — search-inside on Schoeman (ed.), Griqua Records: the Philippolis Captaincy 1825-1861 (Van Riebeeck Society, 1996), a borrowable scan",
+   "url": "https://archive.org/details/griquarecordsphi0000unse",
+   "walked": false,
+   "what": "KOLBE - the 1836 accusation against the missionary G.A. Kolbe, and whether the volume rows 120 and 121 want has to be bought to learn what the charge was",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "philippolis",
+    "archive-org",
+    "method"
+   ],
+   "note": "Search-inside returns page numbers and snippets on a book that may not be read entire, with no account and no borrowing. Ten hits for Kolbe. The volume's own index at p.321 separates Kolbe, G.A. (35, 236, 237) from Kolbe, J. (130), who is a farm lessee and nobody this archive has claimed. Page 35 and its footnote carry the charge - adultery, Hendrik Hendrickze's enmity, and Wright and Atkinson pressing it, where the 1992 DSAB draft named only Hendricks and Atkinson. The chronology at pp.236-237 dates the Bushman School to May 1828, his arrival at Philippolis to March 1831 and his departure to March 1837. Three pages is the index's count of where he is NAMED and not a statement that the book holds no more."
+  },
+  {
+   "src": "Archives Hub (Jisc), HathiTrust catalogue and the Google Books API - three routes to the 1829 printing of the Melvill and Kolbe journal",
+   "url": "https://archiveshub.jisc.ac.uk/",
+   "walked": false,
+   "what": "KOLBE - the LMS Quarterly Chronicle of Transactions for 1829, the one text of his own that is out of copyright",
+   "when": "2026-10-11",
+   "outcome": "blocked",
+   "tags": [
+    "kolbe",
+    "philippolis",
+    "method"
+   ],
+   "note": "Archives Hub returns 403 to a fetch and a Cloudflare bot interstitial in a browser; HathiTrust's catalogue returns 403; the Books API returns 429, which row 121 had already recorded. None was worked around. The Internet Archive does not hold the Quarterly Chronicle under that title, and that nil was taken with a positive control - a phrase query returning 736 records on the same endpoint - so it is the archive's answer and not the query's."
   }
  ]
 }
