@@ -54,10 +54,14 @@ import { u } from "./url.js";
 
 const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;" };
 
-/* Exported because a register has columns that must NOT be rendered — see the
-   query column below — and they still have to be escaped by the same rule as
-   the ones that are. /searched/ had its own, which escaped & and < and left >
-   alone, so `fulltext=<TERM>&items=60` reached the page half-encoded. */
+/* The escape both renderers below are built on, and the reason /searched/ no
+   longer has its own: that one escaped & and < and left > alone, so
+   `fulltext=<TERM>&items=60` reached the page half-encoded.
+
+   It was exported for the column that must not be rendered — the query column
+   of /searched/ — and `mdCode` now serves that column instead, so nothing
+   outside this file imports it today. It stays exported because the next
+   column to arrive on those terms will need exactly this and no more. */
 export const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ESC[c]);
 
 const WS = (c) => c === undefined || /\s/.test(c);
@@ -136,6 +140,17 @@ const LINK = /\[([^\]]+)\]\((\/[^)]*)\)/g;
    three registers. Those are written as backticks now, like the other 719. */
 const SENT = "\uE000";
 const CODE = /`([^`]+)`/g;
+
+/* A COLUMN THAT MUST KEEP ITS ASTERISKS CAN STILL HAVE ITS CODE SPANS. The
+   query column of /searched/ is not rendered through `md` and should not be —
+   its asterisks are NAAIRS and FamilySearch wildcards and three of them flank
+   a letter on both sides, so pairing them rewrites the query somebody would
+   re-run. Backticks carry no such conflict, and the two never collide:
+   measured over all 815 queries on 11 October 2026, exactly ONE holds a
+   backtick, EIGHT hold an asterisk, and NO query holds both. So this renders
+   code spans and nothing else, leaving every asterisk exactly as written.
+   Pair-based, so an unbalanced backtick also stays as itself. */
+export const mdCode = (x) => esc(x).replace(CODE, (_m, c) => `<code>${c}</code>`);
 
 export const md = (x) => {
   const spans = [];

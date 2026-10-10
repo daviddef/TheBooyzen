@@ -6,6 +6,8 @@ import d from "../../data/dossiers.json";
 import pl from "../../data/places.json";
 import pj from "../../data/people.json";
 import PersonTree from "../../components/PersonTree.astro";
+import { md } from "../../lib/md.js";
+import { plain } from "@daviddef/archive-kit/lib/md.js";
 import mg from "../../data/marriages.json";
 import cx from "../../data/corrections.json";
 import cw from "../../data/corrections-who.json";
@@ -89,7 +91,7 @@ const groups = Object.entries(byPage);
             <p style="margin:0 0 13px;font-size:15px;line-height:1.62">
               <b>Married {m.spouse.n}</b><span class="m">{" \u00b7 " + m.d + " \u00b7 " + m.p}</span>{" "}
               <span class={"chip " + (m.via === "doc" ? "doc" : m.via === "tree" ? "lore" : m.via)}>{VIA[m.via] || m.via}</span>
-              {m.n && <span class="cap" style="display:block;margin-top:5px">{m.n}</span>}
+              {m.n && <span class="cap" style="display:block;margin-top:5px" set:html={md(m.n)} />}
               {m.src && <a class="plink" href={u(m.src[1])} style="display:inline-block;margin-top:7px">{m.src[0]} &rarr;</a>}
             </p>
           ))}
@@ -130,7 +132,7 @@ const groups = Object.entries(byPage);
     </div>
     <div class="panel">
       <h2 class="ct" style="margin-top:0">What the archive holds</h2>
-      <p style="font-size:15.5px">{p.r}</p>
+      <p style="font-size:15.5px" set:html={md(p.r)} />
       {p.p && p.p.length > 0 && (
         <p style="margin-top:14px;display:flex;flex-wrap:wrap;gap:6px">
           {p.p.map(([t, h]) => (<a class="plink" href={u(h)}>{t}</a>))}
@@ -147,7 +149,7 @@ const groups = Object.entries(byPage);
     {places.map(x => (
       <a class="cardlink" href={u("/places/" + x.slug + "/")}>
         <div class="nm" style="font-size:16px">{x.n}</div>
-        <div class="txt">{x.k} · {x.r}</div>
+        <div class="txt">{x.k} · <span set:html={md(x.r)} /></div>
       </a>
     ))}
   </div>
@@ -164,8 +166,8 @@ const groups = Object.entries(byPage);
     because merging them silently would be worse than saying so. The surrounding text on each page below
     usually makes it clear which is which.
     <ul style="margin:10px 0 0">
-      <li><b>{p.n}</b> — {p.b} to {p.d}. {p.r}</li>
-      {(p.also || []).map(a => (<li><b>{a.n}</b> — {a.b} to {a.d}. {a.r}</li>))}
+      <li><b>{p.n}</b> — {p.b} to {p.d}. <span set:html={md(p.r)} /></li>
+      {(p.also || []).map(a => (<li><b>{a.n}</b> — {a.b} to {a.d}. <span set:html={md(a.r)} /></li>))}
     </ul>
   </div>
 </section>
@@ -183,8 +185,8 @@ const groups = Object.entries(byPage);
     <ul style="margin:12px 0 0">
       {mine.map(r => (
         <li style="margin-bottom:10px">
-          <span class="m small">{r[0]}</span> — <b>{r[1]}</b><br />
-          <span class="cap">{r[2]}</span>{" "}
+          <span class="m small">{r[0]}</span> — <b set:html={md(r[1])} /><br />
+          <span class="cap" set:html={md(r[2])} />{" "}
           <a href={u(r[4])}>Where it stands &rarr;</a>
         </li>
       ))}
@@ -224,7 +226,7 @@ const groups = Object.entries(byPage);
     {kin.map(k => (
       <a class="cardlink" href={u("/who/" + k.slug + "/")}>
         <div class="nm" style="font-size:16px">{k.n}</div>
-        <div class="txt">{k.b !== "—" || k.d !== "—" ? `${k.b} – ${k.d}` : k.r.slice(0, 70)}</div>
+        <div class="txt">{k.b !== "—" || k.d !== "—" ? `${k.b} – ${k.d}` : plain(k.r).slice(0, 70)}</div>
       </a>
     ))}
   </div>

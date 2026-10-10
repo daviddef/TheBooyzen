@@ -2,7 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
-import { md, esc } from "../lib/md.js";
+import { md, mdCode } from "../lib/md.js";
 import sr from "../data/searched.json";
 import Searched from "@daviddef/archive-kit/components/Searched.astro";
 import nf from "../data/namefold.json";
@@ -37,20 +37,24 @@ const badge = { yes: ["Found", "doc"], part: ["Partly", "inf"], no: ["Nothing", 
  * 36 italics, 7 internal links, every one of them twice because the rows are
  * drawn once into the index above and once into the sessions below.
  *
- * THE QUERY COLUMN IS DELIBERATELY NOT RENDERED, and that is the whole reason
- * `esc` is still here beside `md`. Twelve of its asterisks are NAAIRS and
+ * THE QUERY COLUMN'S EMPHASIS IS DELIBERATELY NOT RENDERED, which is why it
+ * goes through `mdCode` rather than `md`. Twelve of its asterisks are NAAIRS and
  * FamilySearch wildcards, not emphasis -
  *     q.surname=B*rry · q.motherSurname=Kolb* and Col*
  * - and three of those flank a letter on both sides, so a renderer pairs them
  * into an italic running across two surnames and silently rewrites the query
  * somebody would re-run to check this archive. One query does carry a real
  * italic (a book title) and it stays an asterisk; that is the cheaper error.
+ * ITS CODE SPANS DO RENDER, because the two markers never meet here: counted
+ * over all 815 queries on 11 October 2026, one holds a backtick, eight hold an
+ * asterisk, and none holds both. `mdCode` renders the first and cannot touch
+ * the second.
  * The note and result columns were counted the same way first: of their 170
  * single asterisks exactly one is a wildcard - `BOOY* in the Cape depot
  * returns 0 documents` - and md() leaves it alone, because a delimiter only
  * opens a span when the next character is not a space. */
 const flat = sets.flatMap(x => x.rows.map(([q, res, note, k]) => ({
-  when: x.d, src: x.g, what: "<strong class=\"m\">" + esc(q) + "</strong>",
+  when: x.d, src: x.g, what: "<strong class=\"m\">" + mdCode(q) + "</strong>",
   got: md(res), extra: md(note), outcome: k, href: x.h,
 })));
 ---
@@ -87,7 +91,7 @@ const flat = sets.flatMap(x => x.rows.map(([q, res, note, k]) => ({
           <tbody>
             {s.rows.map(([q, res, note, k]) => (
               <tr>
-                <td><strong class="m">{q}</strong></td>
+                <td><strong class="m" set:html={mdCode(q)} /></td>
                 <td class="m"><Fragment set:html={md(res)} /><div style="margin-top:5px"><span class={"chip " + badge[k][1]}>{badge[k][0]}</span></div></td>
                 <td set:html={md(note)} />
               </tr>

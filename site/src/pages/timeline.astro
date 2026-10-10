@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import Timeline from "@daviddef/archive-kit/components/Timeline.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
 import sdx from "../data/sources.json";
 
@@ -22,7 +23,7 @@ const kinds = { doc: "Document", life: "Life", name: "The name", war: "The war",
                 back: "Taken back" };
 const lo = ev[0].y, hi = ev[ev.length - 1].y;
 const events = ev.map((e) => ({
-  year: e.y, when: e.d, title: e.t, what: e.w, kind: kinds[e.k] || e.k, href: e.h, big: e.big,
+  year: e.y, when: e.d, title: e.t, what: md(e.w), kind: kinds[e.k] || e.k, href: e.h, big: e.big,
   tags: [
     ...e.p.filter((n) => byName[n]).map((n) => ({ label: n, href: "/who/" + byName[n] + "/" })),
     ...e.pl.filter((n) => byPlace[n]).map((n) => ({ label: n, href: "/places/" + byPlace[n] + "/" })),

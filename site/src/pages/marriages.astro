@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
 import sdx from "../data/sources.json";
 
@@ -178,7 +179,7 @@ const timelinePoints = rows.map(r => ({
        archive holds nothing else about them. */
     a: r.H ? { name: r.H.n, slug: r.H.missing ? "" : r.H.slug } : { name: "—" },
     b: r.W ? { name: r.W.n, slug: r.W.missing ? "" : r.W.slug } : { name: "—" },
-    when: r.d, where: r.p === "\u2014" ? "" : r.p, note: r.n || "",
+    when: r.d, where: r.p === "\u2014" ? "" : r.p, note: md(r.n || ""),
     vias: [r.via === "tree" ? "family tree" : "a record read here"],
   }))}
   couplesTitle="Every marriage, in order"

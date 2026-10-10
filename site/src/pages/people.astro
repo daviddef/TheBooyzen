@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import FilterTable from "@daviddef/archive-kit/components/FilterTable.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import d from "../data/dossiers.json";
 import pj from "../data/people.json";
 import nf from "../data/namefold.json";
@@ -65,7 +66,7 @@ const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Op
             `<div style="margin-top:6px"><span class="chip ${p.s}">${label[p.s]}</span>` +
             (p.mentions > 0 ? `<span class="cap" style="margin-left:8px">${p.mentions} mention${p.mentions === 1 ? "" : "s"}</span>` : "") + "</div>",
           p.b, p.d,
-          `<div>${p.r}</div><div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">` +
+          `<div>${md(p.r)}</div><div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">` +
             p.p.map(([t, h]) => `<a class="plink" href="${u(h)}">${t}</a>`).join("") + "</div>",
         ],
       }))} />

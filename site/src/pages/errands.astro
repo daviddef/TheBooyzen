@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import Errands from "@daviddef/archive-kit/components/Errands.astro";
 import { u } from "../lib/url.js";
+import { md } from "../lib/md.js";
 import er from "../data/errands.json";
 import L from "../data/letters.json";
 const places = er.places;
@@ -41,8 +42,8 @@ const motifs = ["windpump", "gable", "wagon", "koppie"];
    place is a group and each of its asks is a row. */
 const groups = places.map((pl) => ({
   label: pl.where,
-  note: pl.why,
-  rows: pl.asks.map(([ref, what]) => ({ what, ref })),
+  note: md(pl.why),
+  rows: pl.asks.map(([ref, what]) => ({ what: md(what), ref: md(ref) })),
 }));
 ---
 <Base title="Errands"
@@ -52,7 +53,7 @@ const groups = places.map((pl) => ({
 <section class="blk">
   <h2>Why this page exists</h2>
   <div class="prose">
-    <p>{er.note}</p>
+    <p set:html={md(er.note)} />
     <blockquote>Everything on this site was read from Australia, off microfilm, through a browser. That
       has taken the work a long way and it has now stopped in four specific places &mdash; not for want
       of searching, but because the records are <b>restricted, unfilmed, or catalogued in a way no name
@@ -72,7 +73,7 @@ const groups = places.map((pl) => ({
       <h2>{g.label}</h2>
       <p class="cap" style="margin-top:4px">{places[i].addr}</p>
       <div style="margin-top:18px"><Errands groups={[g]} u={u} html={false} /></div>
-      {places[i].note && <p class="note" style="margin-top:16px">{places[i].note}</p>}
+      {places[i].note && <p class="note" style="margin-top:16px" set:html={md(places[i].note)} />}
     </section>
   </div>
 ))}
@@ -82,7 +83,7 @@ const groups = places.map((pl) => ({
 <section class="blk" id="sent">
   <h2>Sent, and what came back</h2>
   <div class="prose">
-    <p set:html={L.note} />
+    <p set:html={md(L.note)} />
     <p>{cap(word(out))} of the {word(letters.length)} have gone out and {word(answered)}
       {answered === 1 ? "has" : "have"} been answered; {word(owed)} {owed === 1 ? "is" : "are"} still owed an
       answer and {word(drafted)} are drafted and unsent. <a href={u("/worklist/")}>The work list</a> says who has
@@ -96,7 +97,7 @@ const groups = places.map((pl) => ({
           <tr>
             <td class="m">{r.d}</td>
             <td><b>{r.to}</b></td>
-            <td>{r.what}<br /><span class="cap">{r.back}</span></td>
+            <td>{r.what}<br /><span class="cap" set:html={md(r.back)} /></td>
             <td class="m" style={`color:${(S[r.state] || ["", "#666"])[1]}`}>{(S[r.state] || [r.state])[0]}</td>
           </tr>
         ))}
