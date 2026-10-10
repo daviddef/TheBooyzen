@@ -6272,6 +6272,44 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "The rest of the family, swept through the same dictionary",
+   "n": "a bounded negative — and one Barry family that is not this one",
+   "d": "11 Oct 2026",
+   "h": "/people/",
+   "rows": [
+    [
+     "dictionaryofsout0005unse · Daschner",
+     "NOTHING",
+     "**No Daschner anywhere in the volume**, and the name carries no diacritic for the OCR to lose. **The control is in the same search box on the same afternoon**: Mountjoy, Booysen, Barry and Kolbe all return hits from it, so the mechanism was working when it returned nothing here.",
+     "no"
+    ],
+    [
+     "dictionaryofsout0005unse · Mountjoy",
+     "ONE, AND IT IS NOT AN ENTRY",
+     "Page 266, in a **sources** note at the foot of somebody else's life: private information supplied by **“Mrs Margaret Mountjoy (daughter), Jbg.”**, beside a Mr Thomas Fitzgerald and a Mr A. Crawford. **She is a Mountjoy by marriage, in Johannesburg, consulted while the dictionary was being compiled.** **NO DATES, NO MAIDEN NAME, AND NOTHING JOINS HER TO THIS ARCHIVE'S MOUNTJOYS.** It is written down because an informant named in a published source is a findable person, and because this archive has eighty-one Mountjoys and no Johannesburg thread.",
+     "part"
+    ],
+    [
+     "dictionaryofsout0005unse · Booysen",
+     "TWO, AND BOTH ARE THE OTHER SPELLING",
+     "**C. M. Booysen**, co-author of a *Praktiese grammatika van die Afrikaanse taal* (p.383), and **Prinsina Petronella Aletta Booysen**, married 8 February 1899 (p.810). **This archive spells itself BOOYZEN and has measured how far apart the two populations are** — 249 against 2,417 in one index. **Neither is claimed and neither is this family.**",
+     "no"
+    ],
+    [
+     "dictionaryofsout0005unse · Barry",
+     "AN ENTRY, AND IT BELONGS TO A DIFFERENT BARRY FAMILY",
+     "**Barry, Charles Edward, born Sea Point 30 September 1877, died Pretoria 11 April 1956, a jurist, son of JAMES MICHAEL BARRY, a Cape attorney** (p.34) — and the entry points to **Sir Jacob Barry, former Judge President of the Eastern Districts Division of the Supreme Court**, as another member of the same family. **THE EASTERN DISTRICTS IS WHERE THIS ARCHIVE'S BARRYS ARE**, which is exactly why this is written down as a WARNING and not as a lead: a prominent legal Barry family in the same division of the same colony is the strongest possible invitation to merge on a surname, and **nothing whatever connects it to John Barry of Barkly East.** The other Barrys in the volume are **Dr James Barry** the army surgeon, **James Barry Low**, and **James Barry Munnik Hertzog** — none of them relations, all of them noise in a name search.",
+     "part"
+    ],
+    [
+     "what the sweep establishes about the whole run",
+     "THE DICTIONARY HOLDS NOBODY OF THIS FAMILY BUT THE KOLBES",
+     "Across the cumulative index to 1987 and the volume itself: **three Kolbes, none of them George Augustus; no Booyzen; no Daschner; no Mountjoy entry; and a Barry family that is somebody else's.** **A national biographical dictionary is a record of prominence, not of existence**, so this says nothing about whether these people lived well — it says the standard reference work a researcher would reach for first **does not hold them, and now nobody has to look again.**",
+     "no"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6626,6 +6664,23 @@
     "method"
    ],
    "note": "The scan carries no volume number; Volume V's cumulative index puts Kolbe, F. C. at I, 433 and page 433 of this scan is that entry, which identifies it. The entry gives Friedrich Carl Kolbe, born George 28.9.1854, died Sea Point 12.1.1936, son of Friedrich Wilhelm Kolbe of Gutersloh in Westphalia, who came to South Africa in 1844 as one of the earliest Rhenish missionaries in Damaraland, and his wife Isabella Elliott. Two volumes now give the Westphalian birthplace independently. The arrival year 1844 is the year G.A. Kolbe died at Colesberg, which closes the Sibree error that made one man the other's son. F.W. Kolbe's own parents are still not read."
+  },
+  {
+   "src": "Internet Archive - search-inside on Dictionary of South African Biography Volume V, swept for this archive's other surnames",
+   "url": "https://archive.org/details/dictionaryofsout0005unse",
+   "walked": false,
+   "what": "BOOYZEN, BARRY, MOUNTJOY, DASCHNER - whether the standard biographical dictionary holds anybody of this family besides the Kolbes",
+   "when": "2026-10-11",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "barry",
+    "mountjoy",
+    "daschner",
+    "kolbe",
+    "archive-org"
+   ],
+   "note": "Daschner nil, with Mountjoy, Booysen, Barry and Kolbe all returning hits from the same box as the control. Mountjoy appears once, as a married informant's name in a sources note at p.266, not as an entry. Booysen appears twice and both are the other spelling. Barry has an entry at p.34 for a Cape legal family - Charles Edward Barry, his father James Michael Barry and Sir Jacob Barry of the Eastern Districts Division - which is recorded as a warning rather than a lead, because it is a prominent Barry family in the same division of the same colony as this archive's Barrys and nothing connects them. No Booyzen at all."
   }
  ]
 }
