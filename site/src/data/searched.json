@@ -6190,6 +6190,50 @@
      "blocked"
     ]
    ]
+  },
+  {
+   "g": "The same move again, on the volume row 137 stopped at",
+   "n": "rows 137 and 173 — Dictionary of South African Biography V, read by its own index",
+   "d": "11 Oct 2026",
+   "h": "/people/george-augustus-kolbe/",
+   "rows": [
+    [
+     "archive.org search inside dictionaryofsout0005unse · Kolbe",
+     "NINE RESULTS",
+     "Row 137 located this volume on 21 September, found it **borrowable and not open**, and stopped there — **“this no longer needs a library building”**, with borrowing as the route. **IT DID NOT NEED BORROWING EITHER.** The same search-inside that opened *Griqua Records* this morning opens this, and the row's own warning about the `_djvu.txt` wrapper — «a null from the wrong object is not a null» — was a warning about **the wrong door, not a locked one**.",
+     "yes"
+    ],
+    [
+     "the entry at page 419, first of two",
+     "KOLBE, FRIEDRICH WILHELM — GÜTERSLOH, WESTPHALIA, 3.11.1821; CAPE TOWN, 1899",
+     "**THE BIRTHPLACE IS NEW AND IT IS WHAT CLOSES THE SIBREE ERROR.** This archive argued from arithmetic that Sibree's entry 522 was wrong to call him a son of the Rev. G.A. Kolbe — **3 November 1821 against John Gerson Eliezar's 7 July 1822, eight months apart** — and leaned on the New Catholic Encyclopedia's loose phrase about a **Westphalian** missionary. **The dictionary now says it outright and with a town**: born at **Gütersloh in Westphalia**, died at **Cape Town in 1899**, **a missionary and Herero scholar**. A man born in Westphalia in 1821 is not the son of a settler who had been at the Cape since 1820. **The inference from three works is now a named source.** Of his life the snippets also give **Otjikango (Gross Barmen)**, the **Herero** language learnt under **C. H. Hahn**, some **fifty hymns**, and a printing press bought at Cape Town.",
+     "yes"
+    ],
+    [
+     "his parentage, which is what row 137 asked for first",
+     "NOT READ",
+     "**THE ROW WANTED PARENTAGE AND BIRTHPLACE. ONLY ONE OF THE TWO CAME.** The dictionary gives parents in a fixed house form — the Beiderbecke entry at p.41 reads **“the son of Heinrich Christoph Beiderbecke, a teacher, and his wife, Sophia Becker”** — so the sentence almost certainly exists in Kolbe's entry too. **It falls outside every snippet window this archive could open**, and page 419 is one of the pages the preview omits. **Nothing is claimed about his parents and nothing is inferred from the silence.**",
+     "part"
+    ],
+    [
+     "the entry at page 419, second of two",
+     "KOLBE, FREDERICK FORTUNATUS HOFMEYR — AND HE IS NOT A MISREADING",
+     "**Born Wakkerstroom, 27.9.1919; died Wakkerstroom, 18.6.1969, an agricultural extension officer, the son of FREDERICK FORTUNATUS KOLBE and his wife ANNA MARGARETHA CATHARINA MOOLMAN.** **ROW 173 SAID THIS NAME IN THE DSAB INDEX WAS “PROBABLY A MISREADING”. IT IS A FULL BIOGRAPHICAL ENTRY.** The dates match the user tree row 173 found to the day, the place is **Wakkerstroom — this archive's Kolbe place** — and the dictionary **names both his parents**, which the tree did not. **A father called Frederick Fortunatus Kolbe, with a son born at Wakkerstroom in 1919, is a generation this archive should be able to place and currently cannot.** **Nothing is joined to anybody here**: the entry is a published source and this archive has not tied it to a person it holds.",
+     "yes"
+    ],
+    [
+     "the cumulative index at page 922",
+     "EVERY KOLBE THE DICTIONARY HAS, AND ONE IT DOES NOT",
+     "**Kolbe, F. C., I, 433 · Kolbe, F. F. H., V, 419 · Kolbe, F. W., V, 419.** Three Kolbes across five volumes: the Monsignor in **Volume I**, and the two above in **Volume V**. **THERE IS NO GEORGE AUGUSTUS KOLBE IN IT.** That is a published index across the whole run to 1987, and it is the best evidence yet for what row 137 reasoned to in September — **the Settler's entry was written for a volume that never appeared, and the typescript the National Library sent is the only form it exists in**. An index is not a census of what was drafted, so this confirms the reasoning rather than proving the negative.",
+     "yes"
+    ],
+    [
+     "archive.org search inside dictionaryofsout0005unse · Gütersloh",
+     "ZERO, AND THE ZERO IS AN ARTEFACT",
+     "**The word is on page 419 and the search cannot find it.** The index is built from OCR and the umlaut does not survive; the same snippet shows **“Westpha¬ lia”** broken across a line. **A nil from this search box is a statement about the OCR and not about the book**, which is worth more than the query was — every nil taken this way in a scanned volume has to be read that way.",
+     "void"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6515,6 +6559,21 @@
     "method"
    ],
    "note": "Archives Hub returns 403 to a fetch and a Cloudflare bot interstitial in a browser; HathiTrust's catalogue returns 403; the Books API returns 429, which row 121 had already recorded. None was worked around. The Internet Archive does not hold the Quarterly Chronicle under that title, and that nil was taken with a positive control - a phrase query returning 736 records on the same endpoint - so it is the archive's answer and not the query's."
+  },
+  {
+   "src": "Internet Archive - search-inside on Dictionary of South African Biography, Volume V, a borrowable scan",
+   "url": "https://archive.org/details/dictionaryofsout0005unse",
+   "walked": false,
+   "what": "KOLBE - Friedrich Wilhelm Kolbe's birthplace, to close the Sibree error with a named source, and the F.F.H. Kolbe of Wakkerstroom",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "wakkerstroom",
+    "archive-org",
+    "method"
+   ],
+   "note": "Nine hits. p.419 gives Kolbe, Friedrich Wilhelm, born Gutersloh in Westphalia 3.11.1821, died Cape Town 1899, missionary and Herero scholar - the birthplace this archive had only by inference. His parentage falls outside every snippet window and is NOT read. The same page gives Kolbe, Frederick Fortunatus Hofmeyr, born and died at Wakkerstroom 1919-1969, with both parents named, which this archive had called a probable misreading of an index. The cumulative index at p.922 lists three Kolbes across five volumes and no George Augustus. A search for the umlauted spelling returns zero because the OCR drops the umlaut, so a nil from that box describes the OCR and not the book."
   }
  ]
 }
