@@ -6310,6 +6310,56 @@
      "no"
     ]
    ]
+  },
+  {
+   "g": "A free 1876 history of the Free State, and the Commandant is in it seventeen times",
+   "n": "out of copyright, full text, no borrowing and no account — the thing the borrowable books were standing in front of",
+   "d": "11 Oct 2026",
+   "h": "/people/john-gerson-eliezar-kolbe/",
+   "rows": [
+    [
+     "archive.org · title:(\"Oranje-Vrijstaat\")",
+     "TEN, AND EVERY ONE OF THEM IS PUBLIC DOMAIN",
+     "**THE WHOLE DAY HAD BEEN SPENT ON BOOKS THAT CANNOT BE READ.** *Griqua Records* and both dictionary volumes are borrowable scans opened a snippet at a time. **Nothing had asked the opposite question: what about this family is in a book old enough to be free?** Ten titles, all unrestricted, among them **H. J. Hofstede, *Geschiedenis van den Oranje-Vrijstaat* (1876)** — contemporary with the Commandant, and downloadable entire.",
+     "yes"
+    ],
+    [
+     "the OCR text itself, 581 KB of it",
+     "REAL TEXT, CHECKED BEFORE IT WAS TRUSTED",
+     "Row 137 was caught once by a `_djvu.txt` that returned **an HTML wrapper**, counted zero occurrences in it, and recorded that **a null from the wrong object is not a null**. **So the file was opened and looked at before anything was counted**: 581,584 bytes beginning with Google's scanning notice and then the book. **Control: «Vrijstaat» appears 205 times.** Only then was anything searched for.",
+     "yes"
+    ],
+    [
+     "Kolbe, in Hofstede",
+     "SEVENTEEN TIMES, AND ONE OF THEM IS AN OBITUARY",
+     "**“Ik bedoel den kommandant van Bloemfontein J. G. E. KOLBE”** — taken by **“een noodlottige koorts”**, a fatal fever, **“niet op 't bed van eer, maar in het midden zijner betrekkingen”**, and **“bemind en geacht door alle rechtgeaarde Vrijstaters als een goed en verstandig medeburger en een voorganger in den strijd tegen geweldenarij en roof”**. **IT NAMES HIS SEAT — BLOEMFONTEIN — WHICH THIS ARCHIVE DID NOT HAVE**, and it is the first judgement of him from somebody who was neither a newspaper nor kin. **It agrees with the Grahamstown Journal about the fever without having read it**, and adds that he died at home and not in action, which is what a man who carries a camp disease back to his farm looks like.",
+     "yes"
+    ],
+    [
+     "the date Hofstede gives",
+     "4 APRIL 1868 — AND IT DOES NOT DISPLACE THE ARCHIVE'S",
+     "The obituary gives **3 April 1868**; **3 April 1868 was a Friday**; and it was his **twenty-fifth wedding anniversary**, he having married Anna Jacoba van der Merwe on 3 April 1843. **Three facts that lock together beat one that a historian set down eight years later.** 4 April is written down as a variant and **is not adopted**. A death on the night of a Friday is the commonest way a neighbouring date gets into print.",
+     "part"
+    ],
+    [
+     "what he did on commando",
+     "THE FIRST ACCOUNT OF IT THIS ARCHIVE HAS",
+     "He and **Commandant Roos** were sent by the President as **gijzelaars — hostages for Moshesh's own safety** — so the chief would come in to the meeting, and Moshesh came an hour later with his principal sons. At **Klokkelani** he surrounded the Basotho and reported it, bringing up the Armstrong gun. At **the Thiemie** he climbed a footpath with **Commandant Prinsloo** and two hundred men, reached the top with fifty, and **held the captured position that split the mountain** while the others cleared the northern point; the day's taking was **10,657 cattle, 5,468 sheep and goats, 1,007 horses**, and he came in at sunset soaked and spent. **The obituary called him a leader. This is the leading, written down by somebody who was there.**",
+     "yes"
+    ],
+    [
+     "Booyzen, Barry, Mountjoy, Daschner, Downing, McCabe · in Hofstede",
+     "NONE OF THEM",
+     "**Not one occurrence of any of the six**, against 205 for the control. The four hits on «Booy» are **given names of Korana and coloured men — Booy Coetjee, Booy Hermanus, Booy Klaassen** — in a list of the murdered, and **none of them is the surname**. The Commandant is in this book because he commanded; nobody else of this family was.",
+     "no"
+    ],
+    [
+     "Borckenhagen, Aardrijkskunde en Geschiedenis van den Oranje Vrijstaat (1892)",
+     "NOTHING, CONTROLLED",
+     "**No Kolbe at all**, against 92 for «Vrijstaat» and 23 for «Boshof» in the same file. **A geography and a schoolbook history does not name commandants**, and that is what the nil means.",
+     "no"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6681,6 +6731,20 @@
     "archive-org"
    ],
    "note": "Daschner nil, with Mountjoy, Booysen, Barry and Kolbe all returning hits from the same box as the control. Mountjoy appears once, as a married informant's name in a sources note at p.266, not as an entry. Booysen appears twice and both are the other spelling. Barry has an entry at p.34 for a Cape legal family - Charles Edward Barry, his father James Michael Barry and Sir Jacob Barry of the Eastern Districts Division - which is recorded as a warning rather than a lead, because it is a prominent Barry family in the same division of the same colony as this archive's Barrys and nothing connects them. No Booyzen at all."
+  },
+  {
+   "src": "Internet Archive - H. J. Hofstede, Geschiedenis van den Oranje-Vrijstaat (1876), full OCR text, public domain; and Borckenhagen (1892)",
+   "url": "https://archive.org/details/geschiedenisvan00hofsgoog",
+   "walked": false,
+   "what": "KOLBE - the Commandant J.G.E. Kolbe, his command, his service and his death, in a contemporary published history",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "booyzen",
+    "archive-org"
+   ],
+   "note": "Out of copyright, so the whole text was taken rather than snippets, and the file was checked to be book text and not an HTML wrapper before anything was counted; control, Vrijstaat appears 205 times. Seventeen Kolbes. The book calls him the commandant OF BLOEMFONTEIN, which this archive did not have, mourns him in the author's own voice, gives a fatal fever as the cause - agreeing with the Grahamstown Journal's typhoid without having read it - and says he died at home and not in action. It dates the death 4 April 1868 where the obituary gives 3 April, which was a Friday and his twenty-fifth wedding anniversary; the variant is recorded and not adopted. It also gives the first account of his service: hostage for Moshesh's safety alongside Commandant Roos, Klokkelani, and the storming of the Thiemie with Commandant Prinsloo. No Booyzen, Barry, Mountjoy, Daschner, Downing or McCabe anywhere in it. Borckenhagen 1892 holds no Kolbe, controlled the same way."
   }
  ]
 }
