@@ -6234,6 +6234,44 @@
      "void"
     ]
    ]
+  },
+  {
+   "g": "Volume I, page 433 — the son's entry answers the father's",
+   "n": "row 137 — and the Sibree error is now closed twice over",
+   "d": "11 Oct 2026",
+   "h": "/people/george-augustus-kolbe/",
+   "rows": [
+    [
+     "archive.org · which volumes of the DSAB are scanned at all",
+     "FOUR OF THE OLD RUN, AND VOLUME I IS NOT LABELLED",
+     "`dictionaryofsout0005unse` is Volume V; `dictionaryofsout0000unse` is II; `dictionaryofsout0000unse_x2g1` is III; and **`dictionaryofsout0000unse_p0x9` carries no volume number at all** — its catalogue line reads «volumes 1-2, 5», which is a holdings statement and not a label. **It is Volume I**, and the proof is internal: the cumulative index in Volume V puts **Kolbe, F. C. at I, 433**, and page 433 of this scan is the Kolbe entry. **A scan with no volume number is not an unidentified scan** if another volume's index will say what it must contain.",
+     "yes"
+    ],
+    [
+     "the entry at Volume I, page 433",
+     "FRIEDRICH CARL KOLBE, AND HIS FATHER IN THE SAME SENTENCE",
+     "**Kolbe, Friedrich Carl (Frederick Charles), born GEORGE 28 September 1854, died SEA POINT, CAPE TOWN 12 January 1936** — Roman Catholic clergyman, poet, critic, writer, philosopher, theologian and botanist. **He was the son of FRIEDRICH WILHELM KOLBE OF GÜTERSLOH IN WESTPHALIA, WHO CAME TO SOUTH AFRICA IN 1844 as one of the earliest missionaries of the Rhenish mission society in Damaraland, and his wife ISABELLA ELLIOTT.** **THE BIRTHPLACE IS NOW SAID TWICE, IN TWO VOLUMES, BY TWO DIFFERENT ENTRIES** — V, 419 for the father and I, 433 for the son — and the second adds the year he reached the country and the name of his wife.",
+     "yes"
+    ],
+    [
+     "what 1844 does to Sibree's entry 522",
+     "IT ENDS IT",
+     "Sibree's *Register* calls Friedrich Wilhelm Kolbe a son of the Rev. G.A. Kolbe, No. 278. **G.A. KOLBE DIED AT COLESBERG ON 1 DECEMBER 1844. F.W. KOLBE ARRIVED IN SOUTH AFRICA IN 1844, AGED TWENTY-THREE, FROM WESTPHALIA, SENT BY A DIFFERENT SOCIETY TO A DIFFERENT COUNTRY.** This archive had the arithmetic — 3 November 1821 against John Gerson Eliezar's 7 July 1822 — and a loose phrase about a Westphalian missionary. **It now has a birth town, an arrival year, a mission society and a field, from two published entries, and they agree with each other and with Schoeman against Sibree.** A compiler joined two Kolbes; the dictionary never did.",
+     "yes"
+    ],
+    [
+     "his wife's people, which the entry gives and this archive did not ask for",
+     "ISABELLA ELLIOTT, AND A CAPE LINE BEHIND HER",
+     "The entry traces her: **William Caldwell of the British army** and **William Elliott, a Yorkshire clergyman**, in the earlier nineteenth century; and among her South African ancestors **Hans Helm, who emigrated from Holland to the Cape in 1671**, and **H. L. Bletterman, Landdrost of Stellenbosch**, her great-grandfather. **NONE OF IT IS THIS FAMILY** and none of it is claimed here. It is written down because the whole point of the row was to separate two Kolbe families, and **this is what the other one looks like** — the clearest possible statement that it is somebody else's.",
+     "yes"
+    ],
+    [
+     "F. W. Kolbe's own parents",
+     "STILL NOT READ",
+     "**The son's entry names his father and his mother. It does not name his father's father.** That sentence, if it exists, is in the Volume V entry at p.419, in the window the preview will not open. **Row 137 asked for parentage and birthplace; the birthplace is answered twice and the parentage is still answered nowhere.** Nothing is inferred from the silence.",
+     "part"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6574,6 +6612,20 @@
     "method"
    ],
    "note": "Nine hits. p.419 gives Kolbe, Friedrich Wilhelm, born Gutersloh in Westphalia 3.11.1821, died Cape Town 1899, missionary and Herero scholar - the birthplace this archive had only by inference. His parentage falls outside every snippet window and is NOT read. The same page gives Kolbe, Frederick Fortunatus Hofmeyr, born and died at Wakkerstroom 1919-1969, with both parents named, which this archive had called a probable misreading of an index. The cumulative index at p.922 lists three Kolbes across five volumes and no George Augustus. A search for the umlauted spelling returns zero because the OCR drops the umlaut, so a nil from that box describes the OCR and not the book."
+  },
+  {
+   "src": "Internet Archive - search-inside on Dictionary of South African Biography Volume I (scanned as dictionaryofsout0000unse_p0x9, which carries no volume number)",
+   "url": "https://archive.org/details/dictionaryofsout0000unse_p0x9",
+   "walked": false,
+   "what": "KOLBE - Friedrich Wilhelm Kolbe's origins, approached through his son's entry",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "archive-org",
+    "method"
+   ],
+   "note": "The scan carries no volume number; Volume V's cumulative index puts Kolbe, F. C. at I, 433 and page 433 of this scan is that entry, which identifies it. The entry gives Friedrich Carl Kolbe, born George 28.9.1854, died Sea Point 12.1.1936, son of Friedrich Wilhelm Kolbe of Gutersloh in Westphalia, who came to South Africa in 1844 as one of the earliest Rhenish missionaries in Damaraland, and his wife Isabella Elliott. Two volumes now give the Westphalian birthplace independently. The arrival year 1844 is the year G.A. Kolbe died at Colesberg, which closes the Sibree error that made one man the other's son. F.W. Kolbe's own parents are still not read."
   }
  ]
 }
