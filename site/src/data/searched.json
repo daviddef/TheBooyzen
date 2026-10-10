@@ -6392,6 +6392,68 @@
      "yes"
     ]
    ]
+  },
+  {
+   "g": "Four more free books, and two of them had him",
+   "n": "the public-domain sweep — a document he wrote, and a sworn witness at Bethulie",
+   "d": "11 Oct 2026",
+   "h": "/people/george-augustus-kolbe/",
+   "rows": [
+    [
+     "archive.org · public-domain South African histories, 1848–1899",
+     "FIVE TAKEN, FOUR READ ENTIRE",
+     "Hofstede having worked, the same question was put to the rest of the shelf: **what else is old enough to be free?** Theal's *History of South Africa: The Republics and Native Territories 1854–1872*; his *Fragment of Basuto History*; Moodie's *History of the Battles and Adventures of the British, the Boers and the Zulus*; Holden's *History of the Colony of Natal*; and **Theal's *Basutoland Records*, 723 pages of printed official documents**. All five out of copyright, all five downloadable whole. **This is the opposite of the morning**, which was spent reading three books a snippet at a time because they could not be opened.",
+     "yes"
+    ],
+    [
+     "Moodie, page 93 — read as an image",
+     "A DOCUMENT HE WROTE, WITH A DATE, A PLACE AND AN ADDRESSEE",
+     "**“A report from Commandant J. G. E. KOLBE to Commandant Botha, dated PLATBERG, 2nd Nov., 1867”** — the capture of caverns and strongholds at **Mariendall**: one Boer killed, two severely wounded, eleven of the enemy killed as far as known, **120 women and children taken out of the caverns and put across the Caledon**, twenty wagon loads of corn taken. **ROW 170 SAYS THIS ARCHIVE HOLDS NO WORD WRITTEN BY ANYBODY OF THIS FAMILY BETWEEN 1844 AND THE TWENTIETH CENTURY, AND THAT IS STILL LITERALLY TRUE** — Moodie summarises and does not print it. **What has changed is that the document is no longer hypothetical.** It has a date, a place and a man it was sent to, which is what a thing needs before anybody can go and look for it. **The next report on the page gives Botha his initials — J. C. BOTHA** — and Botha is the commandant standing beside Kolbe on the Thiemie in Hofstede: **two books twelve years apart, neither citing the other.**",
+     "yes"
+    ],
+    [
+     "what Moodie prints immediately above it",
+     "SET DOWN, BECAUSE LEAVING IT OUT WOULD BE A CHOICE TOO",
+     "The paragraph before Kolbe's report is the **Rev. Mr Jousse**, writing from Thaba Bosigo in **October 1867**, on a raid in which people were **“killed as dogs indistinctly men, women, and children”**, the women and children outnumbering the men. **Kolbe's report, as summarised, does not describe that** — his women and children were taken out of the caverns and put across the river — **and the juxtaposition is Moodie's, not the record's.** **Both are recorded.** An archive that prints a man's commendations and not the war they were earned in is not describing the same war.",
+     "part"
+    ],
+    [
+     "Basutoland Records, page 436 — read as an image",
+     "A SWORN WITNESS PUTS THE SETTLER AT BETHULIE IN JUNE 1831",
+     "Deposition of **Frans Johannes Cornelis Cronje**, **Smithfield, 14 September 1858**, before **J. J. Sauer, Landdrost of the Caledon River District**. Hunting up from Colesberg in **June 1831** with the three Venters, his brother Stephanus and **Hendrik Weber, Commandant of the District**: **“We then met with the missionaries KOLBE AND KLERK with some BUSHMEN AT BETHULIE.”** **“Klerk” is almost certainly JAMES CLARK**, the man Sibree pairs him with at the Bushman station, written down by a Dutch deponent as he heard it — **and that pairing is what identifies the Kolbe.** **The earliest independent sighting of the Settler this archive has.**",
+     "yes"
+    ],
+    [
+     "and it does not fit the chronology",
+     "SAID PLAINLY RATHER THAN SMOOTHED",
+     "Sibree has him at **Philippolis from 13 March 1831**; Schoeman's chronology says March 1831 as well. **A June 1831 sighting at Bethulie puts him back at his old station three months after leaving it, or puts a year's slip into a deposition sworn twenty-seven years after the fact.** **Nothing here decides which**, and the archive does not get to pick the one that reads better. **The deposition also has a purpose**: these were taken to argue the land had been empty, so «no other native tribes besides a few Bushmen» is interested testimony and is read as such.",
+     "part"
+    ],
+    [
+     "reading the page instead of the transcript",
+     "TWO WORDS CHANGED",
+     "The OCR gives **“Barend Teater”** and **“Bethulle”**; the type says **BAREND VENTER** and **BETHULIE**. Neither alters the finding and both would have gone into this archive as fact. **The leaf was found the way the last one was — the scan's `_djvu.xml`, one page object per leaf — which is now simply how this archive reads a free book.**",
+     "yes"
+    ],
+    [
+     "Theal, The Republics and Native Territories 1854–1872",
+     "NO KOLBE AT ALL, AND THE CONTROLS ARE LOUD",
+     "The standard history of **exactly this Commandant's state and exactly his years**: **516 mentions of Moshesh, 105 of Bloemfontein, 255 of «commandant» — and not one Kolbe.** Nor in Theal's *Fragment of Basuto History*. **A commandant of Bloemfontein who died in office in 1868 is not in the authoritative history of the republic he served**, which is worth knowing both as a fact about the books and as a measure of how far this family sat from the people who wrote them.",
+     "no"
+    ],
+    [
+     "Holden, History of the Colony of Natal (1855)",
+     "THE OTHER KOLBE, CONFIRMED FROM A THIRD DIRECTION",
+     "A Blue Book report on **Damaraland** signed **“F. N. Kolbe, In the service of the Rhenish Missionary Society”** — **the initial is an OCR slip for F. W.** **This is the man the whole day was spent separating from this family**, and here he is in 1855 doing exactly what *Dictionary of South African Biography* I, 433 says he came to do in 1844: Rhenish mission, Damaraland. **Three independent sources now agree about him, and none of them puts him anywhere near the Settler.**",
+     "yes"
+    ],
+    [
+     "Booyzen, Barry, Mountjoy, Daschner · across all five",
+     "NOTHING, EXCEPT TWO MORE BARRYS WHO ARE NOT THESE",
+     "Theal names **Advocate J. D. Barry**, recorder of the high court in Griqualand West. **That is the third Cape legal Barry this archive has met today** and, like Sir Jacob and James Michael, he is written down only so nobody joins him on. **No Booyzen, no Mountjoy, no Daschner in any of the five.**",
+     "no"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6777,6 +6839,23 @@
     "archive-org"
    ],
    "note": "Out of copyright, so the whole text was taken rather than snippets, and the file was checked to be book text and not an HTML wrapper before anything was counted; control, Vrijstaat appears 205 times. Seventeen Kolbes. The book calls him the commandant OF BLOEMFONTEIN, which this archive did not have, mourns him in the author's own voice, gives a fatal fever as the cause - agreeing with the Grahamstown Journal's typhoid without having read it - and says he died at home and not in action. It dates the death 4 April 1868 where the obituary gives 3 April, which was a Friday and his twenty-fifth wedding anniversary; the variant is recorded and not adopted. It also gives the first account of his service: hostage for Moshesh's safety alongside Commandant Roos, Klokkelani, and the storming of the Thiemie with Commandant Prinsloo. No Booyzen, Barry, Mountjoy, Daschner, Downing or McCabe anywhere in it. Borckenhagen 1892 holds no Kolbe, controlled the same way."
+  },
+  {
+   "src": "Internet Archive - five public-domain South African works read in full: Moodie (1888), Theal's Basutoland Records (1883), Theal's Republics and Native Territories (1889), Theal's Fragment of Basuto History (1886), Holden (1855)",
+   "url": "https://archive.org/details/historyofbattles02dcfm",
+   "walked": false,
+   "what": "KOLBE - anything written by or witnessed about the Settler and the Commandant in books old enough to be free",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "booyzen",
+    "barry",
+    "mountjoy",
+    "daschner",
+    "archive-org"
+   ],
+   "note": "Moodie p.93, verified against the page image, cites a report from Commandant J. G. E. Kolbe to Commandant Botha, dated Platberg 2 November 1867, on the capture of caverns at Mariendall - the first document of his authorship this archive can point to, with a date, a place and an addressee. The next report on the page gives Botha as J. C. Botha, the commandant beside Kolbe on the Thiemie in Hofstede. Basutoland Records p.436, also verified against the image, carries the sworn deposition of F. J. C. Cronje at Smithfield on 14 September 1858, which met the missionaries Kolbe and Klerk with Bushmen at Bethulie in June 1831 - Klerk almost certainly James Clark, and the earliest independent sighting of the Settler held here. It conflicts with Sibree's Philippolis date of 13 March 1831 and the conflict is left standing. Theal's history of the republics 1854-1872 names no Kolbe at all against 516 Moshesh and 255 commandant. Holden 1855 carries a Damaraland report signed by the Rhenish missionary F. W. Kolbe, confirming from a third direction that he is a different family. No Booyzen, Mountjoy or Daschner in any of the five."
   }
  ]
 }
