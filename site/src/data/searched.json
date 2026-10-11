@@ -6952,6 +6952,21 @@
     "archive-org"
    ],
    "note": "The 1833 volume prints Extracts from the Journal of Mr George Augustus Kolbe, 8 October 1831 to 3 September 1832, at Philippolis, pp.410-412 - eleven months where this archive held one sentence at second hand. It includes vaccinating twenty-six people in January 1832 and Veld-Cornet Joubert riding in for medical advice in July 1832, which corroborates the 1844 obituary's account of his doctoring sixteen years early. The 1831 volume prints his letter of 30 April 1831 saying he arrived in the Bushman country in April 1828 after nearly three years there before removing to Philippolis; the 1830 volume prints James Clark's letter of 31 December 1828 saying the two of them reached the station in the beginning of May 1828. Together these close the archive's standing conflict between Sibree's 8 February 1829 and the DSAB's 1828: 1828 is the going, 1829 is the Society's formal acceptance. The 1828 and 1829 volumes name him nowhere, so the November 1828 Caledon journey was not printed in the monthly."
+  },
+  {
+   "src": "Internet Archive - Evangelical Magazine 1833, pp.410-412 re-read from the page images after the OCR text proved lossy",
+   "url": "https://archive.org/details/evangelicalmagaz0011unse",
+   "pages": "410-412",
+   "walked": true,
+   "what": "KOLBE - verifying the transcription of his journal against the type, not the OCR",
+   "when": "2026-10-11",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "philippolis",
+    "archive-org"
+   ],
+   "note": "A RELIABILITY FINDING ABOUT THIS SCAN, worth more to the next reader than the pages themselves. The journal was first transcribed from the Internet Archive's OCR text for this volume. Fetching the page images (leaves n435-n437 = printed pp.410-412) showed the OCR had SILENTLY DROPPED FOUR WORDS from the 9 April 1832 entry - the printed line reads 'On my return they (the children in the waggon) sung many hymns' - with no marker of any kind at the omission. A transcription taken from this item's OCR alone will be short and will not say so. A second lesson from the same pass: the MEDIUM-resolution page image is not enough either. At medium size the 5 August 1832 entry appeared to read 'four English traders' against the OCR's 'three'; magnified to the _large derivative the type plainly reads THREE, and the OCR was right. So for this item: distrust the OCR for completeness, and distrust medium images for figures - use archive.org/download/<id>/page/n<leaf>_large.jpg. The leaf-to-page offset for evangelicalmagaz0011unse is 25 (printed p.410 = leaf n435), and the item's scandata.xml carries no pageNumber tags, so the offset must be found by probing."
   }
  ]
 }
