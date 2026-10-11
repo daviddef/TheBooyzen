@@ -1,6 +1,16 @@
 {
  "history": [
   {
+   "checked": "2026-09-20",
+   "dark": [
+    "databases.tanap.net",
+    "kzntl.gov.za",
+    "national.archives.gov.za",
+    "national.archsrch.gov.za"
+   ],
+   "hosts": 47
+  },
+  {
    "checked": "2026-09-15",
    "dark": [
     "databases.tanap.net",
@@ -12,23 +22,25 @@
   }
  ],
  "note": "Written by tools/checkexternal.py. Not part of the build: a network check inside a build fails for reasons that have nothing to do with the change, and a check that fails for the wrong reason is a check people learn to ignore.",
- "checked": "2026-09-20",
+ "checked": "2026-10-11",
  "rows": [
   {
    "host": "www.familysearch.org",
-   "cited": 7276,
+   "cited": 7279,
    "state": "unverified",
    "why": "no response",
    "where": [
     "/register/",
+    "/sources/",
+    "site/src/data/corrections.json",
     "site/src/data/register.json",
+    "site/src/data/searched.json",
     "site/src/pages/sources.astro"
-   ],
-   "changed_from": "down"
+   ]
   },
   {
    "host": "fonts.googleapis.com",
-   "cited": 1594,
+   "cited": 1680,
    "state": "up",
    "why": "200",
    "where": [
@@ -44,7 +56,7 @@
   },
   {
    "host": "fonts.gstatic.com",
-   "cited": 797,
+   "cited": 840,
    "state": "unverified",
    "why": "no response",
    "where": [
@@ -56,12 +68,11 @@
     "/changes/",
     "/corrections/",
     "/cousins/"
-   ],
-   "changed_from": "down"
+   ]
   },
   {
    "host": "www.goatcounter.com",
-   "cited": 797,
+   "cited": 840,
    "state": "up",
    "why": "200",
    "where": [
@@ -76,12 +87,40 @@
    ]
   },
   {
+   "host": "archive.org",
+   "cited": 17,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "/kolbe/",
+    "/sources/",
+    "site/src/data/searched.json",
+    "site/src/data/sources.json",
+    "site/src/data/worklist.json",
+    "site/src/pages/documents.astro",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
+   "host": "angloboerwar.com",
+   "cited": 6,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "/sources/",
+    "site/src/data/dossiers.json",
+    "site/src/data/people.json",
+    "site/src/data/searched.json",
+    "site/src/pages/documents.astro",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
    "host": "dsac.gov.za",
-   "cited": 7,
+   "cited": 6,
    "state": "mail only",
    "why": "no website, but takes mail",
    "where": [
-    "site/src/data/dossiers.json",
     "site/src/data/errands.json",
     "site/src/data/log.json",
     "site/src/data/searched.json",
@@ -89,21 +128,6 @@
     "site/src/pages/open-questions.astro",
     "site/src/pages/sources.astro"
    ]
-  },
-  {
-   "host": "dod.mil.za",
-   "cited": 6,
-   "state": "unverified",
-   "why": "URLError",
-   "where": [
-    "site/src/data/dossiers.json",
-    "site/src/data/letters.json",
-    "site/src/data/log.json",
-    "site/src/data/searched.json",
-    "site/src/data/worklist.json",
-    "site/src/pages/open-questions.astro"
-   ],
-   "changed_from": "down"
   },
   {
    "host": "gendatabase.com",
@@ -117,6 +141,19 @@
     "site/src/data/searched.json",
     "site/src/data/worklist.json",
     "site/src/pages/documents.astro"
+   ]
+  },
+  {
+   "host": "dod.mil.za",
+   "cited": 5,
+   "state": "unverified",
+   "why": "URLError",
+   "where": [
+    "site/src/data/letters.json",
+    "site/src/data/log.json",
+    "site/src/data/searched.json",
+    "site/src/data/worklist.json",
+    "site/src/pages/open-questions.astro"
    ]
   },
   {
@@ -146,31 +183,56 @@
    ]
   },
   {
-   "host": "angloboerwar.com",
+   "host": "nationalarchives.gov.za",
    "cited": 5,
-   "state": "up",
-   "why": "200",
+   "state": "mail only",
+   "why": "no website, but takes mail",
    "where": [
-    "site/src/data/dossiers.json",
-    "site/src/data/people.json",
+    "site/src/data/corrections.json",
+    "site/src/data/retired.json",
     "site/src/data/searched.json",
-    "site/src/pages/documents.astro",
+    "site/src/data/worklist.json",
     "site/src/pages/sources.astro"
    ]
   },
   {
-   "host": "archive.org",
+   "host": "billiongraves.com",
    "cited": 4,
    "state": "up",
    "why": "200",
    "where": [
+    "/sources/",
     "site/src/data/searched.json",
     "site/src/data/worklist.json",
-    "site/src/pages/documents.astro"
+    "site/src/pages/sources.astro"
    ]
   },
   {
-   "host": "dact.kzntl.gov.za",
+   "host": "ancestor.co.za",
+   "cited": 4,
+   "state": "unverified",
+   "why": "URLError",
+   "where": [
+    "site/src/data/dossiers.json",
+    "site/src/data/searched.json",
+    "site/src/data/sources.json",
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "kzntl.gov.za",
+   "cited": 4,
+   "state": "dark",
+   "why": "does not resolve",
+   "where": [
+    "site/src/data/errands.json",
+    "site/src/data/letters.json",
+    "site/src/data/searched.json",
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "kzndac.gov.za",
    "cited": 4,
    "state": "mail only",
    "why": "no website, but takes mail",
@@ -182,10 +244,10 @@
    ]
   },
   {
-   "host": "kzntl.gov.za",
+   "host": "dact.kzntl.gov.za",
    "cited": 4,
-   "state": "dark",
-   "why": "does not resolve",
+   "state": "mail only",
+   "why": "no website, but takes mail",
    "where": [
     "site/src/data/errands.json",
     "site/src/data/letters.json",
@@ -206,27 +268,49 @@
    ]
   },
   {
-   "host": "kzndac.gov.za",
-   "cited": 4,
-   "state": "mail only",
-   "why": "no website, but takes mail",
+   "host": "www.findmypast.com.au",
+   "cited": 3,
+   "state": "up",
+   "why": "200",
    "where": [
-    "site/src/data/errands.json",
-    "site/src/data/letters.json",
+    "/sources/",
     "site/src/data/searched.json",
-    "site/src/data/worklist.json"
+    "site/src/pages/sources.astro"
    ]
   },
   {
-   "host": "nationalarchives.gov.za",
+   "host": "www.findmypast.co.uk",
    "cited": 3,
-   "state": "mail only",
-   "why": "no website, but takes mail",
+   "state": "up",
+   "why": "200",
    "where": [
-    "site/src/data/corrections.json",
-    "site/src/data/searched.json",
-    "site/src/data/worklist.json"
+    "/sources/",
+    "site/src/data/worklist.json",
+    "site/src/pages/sources.astro"
    ]
+  },
+  {
+   "host": "www.nationalarchives.gov.za",
+   "cited": 3,
+   "state": "unverified",
+   "why": "URLError",
+   "where": [
+    "/sources/",
+    "site/src/data/searched.json",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
+   "host": "oldbaileyonline.org",
+   "cited": 3,
+   "state": "unverified",
+   "why": "no response",
+   "where": [
+    "site/src/data/searched.json",
+    "site/src/data/worklist.json",
+    "site/src/pages/documents.astro"
+   ],
+   "changed_from": "up"
   },
   {
    "host": "missiology.org.uk",
@@ -240,23 +324,74 @@
    ]
   },
   {
-   "host": "oldbaileyonline.org",
+   "host": "www.national.archsrch.gov.za",
    "cited": 3,
-   "state": "up",
-   "why": "200",
+   "state": "unverified",
+   "why": "URLError",
    "where": [
+    "site/src/data/log.json",
     "site/src/data/searched.json",
-    "site/src/data/worklist.json",
-    "site/src/pages/documents.astro"
+    "site/src/pages/sources.astro"
    ]
   },
   {
-   "host": "am.org.za",
+   "host": "national.archives.gov.za",
+   "cited": 3,
+   "state": "dark",
+   "why": "does not resolve",
+   "where": [
+    "site/src/data/corrections.json",
+    "site/src/data/retired.json",
+    "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "en.wikipedia.org",
    "cited": 2,
    "state": "up",
    "why": "200",
    "where": [
-    "site/src/data/errands.json",
+    "/sources/",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
+   "host": "scholar.sun.ac.za",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "/sources/",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
+   "host": "www.wmbr.org.za",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "/sources/",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
+   "host": "southafricanbarryfamilytree.wordpress.com",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/searched.json",
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "graves.co.za",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/searched.json",
     "site/src/data/worklist.json"
    ]
   },
@@ -271,15 +406,44 @@
    ]
   },
   {
-   "host": "www.national.archsrch.gov.za",
+   "host": "ed.ac.uk",
    "cited": 2,
    "state": "unverified",
    "why": "URLError",
    "where": [
-    "site/src/data/log.json",
-    "site/src/data/searched.json"
-   ],
-   "changed_from": "down"
+    "site/src/data/letters.json",
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "auth.findmypast.com",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/searched.json",
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "genealogy.com",
+   "cited": 2,
+   "state": "unverified",
+   "why": "no response",
+   "where": [
+    "site/src/data/searched.json",
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "am.org.za",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/errands.json",
+    "site/src/data/worklist.json"
+   ]
   },
   {
    "host": "national.archsrch.gov.za",
@@ -288,16 +452,6 @@
    "why": "does not resolve",
    "where": [
     "site/src/data/log.json",
-    "site/src/data/searched.json"
-   ]
-  },
-  {
-   "host": "national.archives.gov.za",
-   "cited": 2,
-   "state": "dark",
-   "why": "does not resolve",
-   "where": [
-    "site/src/data/corrections.json",
     "site/src/data/searched.json"
    ]
   },
@@ -330,6 +484,36 @@
    ]
   },
   {
+   "host": "findmypast.com.au",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/searched.json",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
+   "host": "findmypast.co.uk",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/searched.json",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
+   "host": "familysearch.org",
+   "cited": 2,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/dossiers.json",
+    "site/src/pages/sources.astro"
+   ]
+  },
+  {
    "host": "westerncape.gov.za",
    "cited": 2,
    "state": "up",
@@ -337,6 +521,15 @@
    "where": [
     "site/src/data/errands.json",
     "site/src/pages/open-questions.astro"
+   ]
+  },
+  {
+   "host": "forebears.io",
+   "cited": 1,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "/sources/"
    ]
   },
   {
@@ -349,7 +542,16 @@
    ]
   },
   {
-   "host": "hipsa.org.za",
+   "host": "www.ancestor.co.za",
+   "cited": 1,
+   "state": "unverified",
+   "why": "URLError",
+   "where": [
+    "site/src/data/sources.json"
+   ]
+  },
+  {
+   "host": "icon.co.za",
    "cited": 1,
    "state": "up",
    "why": "200",
@@ -358,16 +560,7 @@
    ]
   },
   {
-   "host": "ed.ac.uk",
-   "cited": 1,
-   "state": "unverified",
-   "why": "URLError",
-   "where": [
-    "site/src/data/worklist.json"
-   ]
-  },
-  {
-   "host": "annebrest.co.za",
+   "host": "hipsa.org.za",
    "cited": 1,
    "state": "up",
    "why": "200",
@@ -385,38 +578,82 @@
    ]
   },
   {
+   "host": "annebrest.co.za",
+   "cited": 1,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "telkomsa.net",
+   "cited": 1,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
+   "host": "joburg.org.za",
+   "cited": 1,
+   "state": "up",
+   "why": "200",
+   "where": [
+    "site/src/data/worklist.json"
+   ]
+  },
+  {
    "host": "londonancestor.com",
    "cited": 1,
    "state": "unverified",
    "why": "URLError",
    "where": [
     "site/src/data/worklist.json"
-   ],
-   "changed_from": "down"
-  },
-  {
-   "host": "www.findmypast.co.uk",
-   "cited": 1,
-   "state": "up",
-   "why": "200",
-   "where": [
-    "site/src/data/worklist.json"
    ]
   },
   {
-   "host": "icon.co.za",
+   "host": "books.googleapis.com",
    "cited": 1,
-   "state": "up",
-   "why": "200",
+   "state": "unverified",
+   "why": "no response",
    "where": [
-    "site/src/data/worklist.json"
+    "site/src/data/searched.json"
    ]
   },
   {
-   "host": "eggsa.org",
+   "host": "wikitree.com",
    "cited": 1,
    "state": "up",
-   "why": "200",
+   "why": "202",
+   "where": [
+    "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "ia-pub-fts-api.archive.org",
+   "cited": 1,
+   "state": "dark",
+   "why": "does not resolve",
+   "where": [
+    "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "familyhistory.bdm.qld.gov.au",
+   "cited": 1,
+   "state": "unverified",
+   "why": "no response",
+   "where": [
+    "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "archiveshub.jisc.ac.uk",
+   "cited": 1,
+   "state": "unverified",
+   "why": "no response",
    "where": [
     "site/src/data/searched.json"
    ]
@@ -431,29 +668,10 @@
    ]
   },
   {
-   "host": "books.googleapis.com",
-   "cited": 1,
-   "state": "unverified",
-   "why": "no response",
-   "where": [
-    "site/src/data/searched.json"
-   ],
-   "changed_from": "down"
-  },
-  {
-   "host": "wikitree.com",
+   "host": "gravesgauteng.eggsa.org",
    "cited": 1,
    "state": "up",
-   "why": "202",
-   "where": [
-    "site/src/data/searched.json"
-   ]
-  },
-  {
-   "host": "www.national.archives.gov.za",
-   "cited": 1,
-   "state": "unverified",
-   "why": "URLError",
+   "why": "200",
    "where": [
     "site/src/data/searched.json"
    ]
@@ -468,22 +686,66 @@
    ]
   },
   {
-   "host": "familyhistory.bdm.qld.gov.au",
+   "host": "www.national.archives.gov.za",
+   "cited": 1,
+   "state": "unverified",
+   "why": "URLError",
+   "where": [
+    "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "googleapis.com",
    "cited": 1,
    "state": "unverified",
    "why": "no response",
    "where": [
     "site/src/data/searched.json"
-   ],
-   "changed_from": "down"
+   ]
   },
   {
-   "host": "gravesgauteng.eggsa.org",
+   "host": "ia-fts.archive.org",
+   "cited": 1,
+   "state": "dark",
+   "why": "does not resolve",
+   "where": [
+    "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "eggsa.org",
    "cited": 1,
    "state": "up",
    "why": "200",
    "where": [
     "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "catalog.hathitrust.org",
+   "cited": 1,
+   "state": "unverified",
+   "why": "no response",
+   "where": [
+    "site/src/data/searched.json"
+   ]
+  },
+  {
+   "host": "sac.fs.gov.za",
+   "cited": 1,
+   "state": "mail only",
+   "why": "no website, but takes mail",
+   "where": [
+    "site/src/data/letters.json"
+   ]
+  },
+  {
+   "host": "sacr.fs.gov.za",
+   "cited": 1,
+   "state": "mail only",
+   "why": "no website, but takes mail",
+   "where": [
+    "site/src/data/letters.json"
    ]
   },
   {
@@ -498,21 +760,12 @@
   {
    "host": "nationalarchives.gov.uk",
    "cited": 1,
-   "state": "unverified",
-   "why": "URLError",
-   "where": [
-    "site/src/data/errands.json"
-   ],
-   "changed_from": "down"
-  },
-  {
-   "host": "familysearch.org",
-   "cited": 1,
    "state": "up",
    "why": "200",
    "where": [
-    "site/src/pages/sources.astro"
-   ]
+    "site/src/data/errands.json"
+   ],
+   "changed_from": "unverified"
   },
   {
    "host": "wmbr.org.za",
