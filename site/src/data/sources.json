@@ -970,6 +970,142 @@
      ]
     }
    ]
+  },
+  {
+   "id": "printed",
+   "title": "Printed works read here, and what each one carries",
+   "dek": "Books, not manuscripts — but every one of them was read from the page image and not from a transcript, and the pages that matter are published on <a href=\"/documents/\">The documents</a>. Six are out of copyright and were taken whole; three are lending-restricted and were read a page at a time through the Internet Archive's search-inside, which needs no account and is not a way round the restriction.",
+   "cols": [
+    {
+     "label": "Work",
+     "cls": "",
+     "w": "22rem"
+    },
+    {
+     "label": "What it carries, and where",
+     "cls": "",
+     "w": ""
+    }
+   ],
+   "rows": [
+    {
+     "id": "evangelical-magazine-1833-kolbe-journal",
+     "cells": [
+      {
+       "h": "<strong>The Evangelical Magazine and Missionary Chronicle</strong>, 1833 &mdash; pp. 410&ndash;412",
+       "cls": ""
+      },
+      {
+       "h": "<strong>&ldquo;Extracts from the Journal of Mr. George Augustus Kolbe, from 8th October, 1831, to 3rd September, 1832&rdquo;</strong>, and the close of his letter of 1 September 1832 over his own signature. Eleven months at Philippolis: the school roll, the vaccinations, the new chapel, the Temperance Society. <strong>Page 410 is published here.</strong> Out of copyright; the volume was taken whole.",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "evangelical-magazine-1831-kolbe-letter",
+     "cells": [
+      {
+       "h": "<strong>The Evangelical Magazine and Missionary Chronicle</strong>, 1831",
+       "cls": ""
+      },
+      {
+       "h": "His letter <strong>dated Philippolis, 30 April 1831</strong>, to the Foreign Secretary. It dates his own arrival &mdash; <em>&ldquo;When I arrived, in April, 1828, with my colleague, in the Bushman country&rdquo;</em> &mdash; after <em>&ldquo;nearly three years among the Bushmen&rdquo;</em>, and carries his account of the people he worked among.",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "evangelical-magazine-1830-clark-letter",
+     "cells": [
+      {
+       "h": "<strong>The Evangelical Magazine and Missionary Chronicle</strong>, 1830",
+       "cls": ""
+      },
+      {
+       "h": "<strong>James Clark</strong>, writing from the <strong>Bushman Station, near Caledon River, 31 December 1828</strong>: <em>&ldquo;brother Kolbe and myself removed to this station, and arrived here in the beginning of May last.&rdquo;</em> Also the station's origin &mdash; Landdrost Stockenstrom and the Lieutenant-Governor asked for it, and farmers subscribed cattle.",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "moodie-1888-kolbe-report",
+     "cells": [
+      {
+       "h": "<strong>D. C. F. Moodie</strong>, <em>History of the Battles and Adventures of the British, the Boers and the Zulus in Southern Africa</em> (1888) &mdash; p. 93",
+       "cls": ""
+      },
+      {
+       "h": "<strong>A report the Commandant wrote:</strong> &ldquo;A report from Commandant J. G. E. Kolbe to Commandant Botha, dated <strong>Platberg, 2nd Nov., 1867</strong>&rdquo;, on the capture of caverns at Mariendall. Summarised, not printed. The next report on the page gives Botha as <strong>J. C. Botha</strong>. <strong>The page is published here.</strong>",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "basutoland-records-1883-cronje",
+     "cells": [
+      {
+       "h": "<strong>Basutoland Records</strong> (1883), ed. Theal &mdash; p. 436",
+       "cls": ""
+      },
+      {
+       "h": "The sworn deposition of <strong>Frans Johannes Cornelis Cronje</strong>, Smithfield, <strong>14 September 1858</strong>, before Landdrost J. J. Sauer: hunting in <strong>June 1831</strong>, <em>&ldquo;We then met with the missionaries Kolbe and Klerk with some Bushmen at Bethulie.&rdquo;</em> <strong>The page is published here.</strong> Testimony taken to argue the land had been empty, and read as such.",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "hofstede-1876-commandant-kolbe",
+     "cells": [
+      {
+       "h": "<strong>H. J. Hofstede</strong>, <em>Geschiedenis van den Oranje-Vrijstaat</em> (1876) &mdash; pp. 160, 232",
+       "cls": ""
+      },
+      {
+       "h": "Seventeen mentions of the Commandant. <strong>p. 232</strong> mourns him by name &mdash; <em>&ldquo;den kommandant van Bloemfontein J. G. E. Kolbe&rdquo;</em>, taken by a fatal fever, 4 April 1868 &mdash; and names his seat, which this archive did not have. <strong>p. 160</strong> is the <em>Jan Colbe</em> page, read to settle a spelling. <strong>Both are published here.</strong>",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "griqua-records-1996-philippolis",
+     "cells": [
+      {
+       "h": "<strong>Karel Schoeman (ed.)</strong>, <em>Griqua Records: the Philippolis Captaincy, 1825&ndash;1861</em> (Van Riebeeck Society, 1996) &mdash; ISBN 0958411212",
+       "cls": ""
+      },
+      {
+       "h": "Its index puts <strong>Kolbe, G.A. on pp. 35, 236, 237</strong> and a different <strong>Kolbe, J. on p. 130</strong>. p. 35 carries the 1836 charge and Schoeman's footnote naming <strong>Hendrik Hendrickze</strong> and <strong>Wright and Atkinson</strong>. <strong>Lending-restricted:</strong> read by search-inside, no images published here.",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "dsab-v-419-kolbe",
+     "cells": [
+      {
+       "h": "<strong>Dictionary of South African Biography</strong>, Volume V &mdash; p. 419",
+       "cls": ""
+      },
+      {
+       "h": "<strong>Kolbe, Friedrich Wilhelm</strong>, born G&uuml;tersloh in Westphalia 3 November 1821, died Cape Town 1899 &mdash; the Rhenish missionary who is <em>not</em> of this family. And <strong>Kolbe, Frederick Fortunatus Hofmeyr</strong>, Wakkerstroom 1919&ndash;1969, with both parents named. <strong>Lending-restricted;</strong> read by search-inside.",
+       "cls": ""
+      }
+     ]
+    },
+    {
+     "id": "dsab-i-433-kolbe",
+     "cells": [
+      {
+       "h": "<strong>Dictionary of South African Biography</strong>, Volume I &mdash; p. 433",
+       "cls": ""
+      },
+      {
+       "h": "<strong>Kolbe, Friedrich Carl</strong> &mdash; the Monsignor &mdash; <em>&ldquo;son of Friedrich Wilhelm Kolbe of G&uuml;tersloh in Westphalia, who came to South Africa in <strong>1844</strong>&rdquo;</em>, and his wife <strong>Isabella Elliott</strong>. 1844 is the year this archive's Settler died, which ends Sibree's error. The scan carries no volume number and was identified from Volume V's index.",
+       "cls": ""
+      }
+     ]
+    }
+   ]
   }
  ],
  "entries": [
@@ -1302,6 +1438,78 @@
    "section": "estates",
    "url": "https://www.ancestor.co.za",
    "held": "ancestor.co.za — retrieved and uploaded to David’s own account in January 2024, and not yet read into this archive."
+  },
+  {
+   "id": "evangelical-magazine-1833-kolbe-journal",
+   "title": "The Evangelical Magazine and Missionary Chronicle, 1833, pp. 410–412",
+   "kind": "journal of his own, printed",
+   "section": "printed",
+   "url": "https://archive.org/details/evangelicalmagaz0011unse",
+   "held": "Internet Archive, unrestricted — the volume was downloaded whole and page 410 is published on this site."
+  },
+  {
+   "id": "evangelical-magazine-1831-kolbe-letter",
+   "title": "Letter of G. A. Kolbe, Philippolis, 30 April 1831",
+   "kind": "a letter of his own, printed",
+   "section": "printed",
+   "url": "https://archive.org/details/evangelicalmagaz0009unse",
+   "held": "Internet Archive, unrestricted — printed in the Society's monthly for 1831; the volume was downloaded whole."
+  },
+  {
+   "id": "evangelical-magazine-1830-clark-letter",
+   "title": "Letter of James Clark, Bushman Station near Caledon River, 31 December 1828",
+   "kind": "his colleague's letter, printed",
+   "section": "printed",
+   "url": "https://archive.org/details/evangelicalmagaz0008revw",
+   "held": "Internet Archive, unrestricted — printed in the Society's monthly for 1830; the volume was downloaded whole."
+  },
+  {
+   "id": "moodie-1888-kolbe-report",
+   "title": "Moodie, History of the Battles and Adventures (1888), p. 93",
+   "kind": "a document he wrote, cited",
+   "section": "printed",
+   "url": "https://archive.org/details/historyofbattles02dcfm",
+   "held": "Internet Archive, unrestricted — the page image is published on this site. The report itself is summarised by Moodie and has not been read."
+  },
+  {
+   "id": "basutoland-records-1883-cronje",
+   "title": "Basutoland Records (1883), p. 436 — deposition of F. J. C. Cronje",
+   "kind": "sworn deposition, printed",
+   "section": "printed",
+   "url": "https://archive.org/details/basutolandrecor00theagoog",
+   "held": "Internet Archive, unrestricted — the page image is published on this site."
+  },
+  {
+   "id": "hofstede-1876-commandant-kolbe",
+   "title": "Hofstede, Geschiedenis van den Oranje-Vrijstaat (1876), pp. 160 and 232",
+   "kind": "a contemporary history",
+   "section": "printed",
+   "url": "https://archive.org/details/geschiedenisvan00hofsgoog",
+   "held": "Internet Archive, unrestricted — both page images are published on this site."
+  },
+  {
+   "id": "griqua-records-1996-philippolis",
+   "title": "Schoeman (ed.), Griqua Records: the Philippolis Captaincy, 1825–1861 (1996)",
+   "kind": "a scholarly edition of the documents",
+   "section": "printed",
+   "url": "https://archive.org/details/griquarecordsphi0000unse",
+   "held": "Internet Archive, LENDING-RESTRICTED — read page by page through search-inside, which needs no account. No images are published here and the volume has not been borrowed."
+  },
+  {
+   "id": "dsab-v-419-kolbe",
+   "title": "Dictionary of South African Biography, Volume V, p. 419",
+   "kind": "a biographical dictionary",
+   "section": "printed",
+   "url": "https://archive.org/details/dictionaryofsout0005unse",
+   "held": "Internet Archive, LENDING-RESTRICTED — read through search-inside. No images published here."
+  },
+  {
+   "id": "dsab-i-433-kolbe",
+   "title": "Dictionary of South African Biography, Volume I, p. 433",
+   "kind": "a biographical dictionary",
+   "section": "printed",
+   "url": "https://archive.org/details/dictionaryofsout0000unse_p0x9",
+   "held": "Internet Archive, LENDING-RESTRICTED — read through search-inside. The scan carries no volume number; it was identified as Volume I from the cumulative index in Volume V."
   }
  ],
  "entriesNote": "ONE ROW, ONE ID, DERIVED FROM THE ROW'S OWN WORDS. These are the same 46 rows the four tables above are built from — not a second register, which is the thing that would drift. A page that rests on a source names its id, the id has to resolve here or nothing renders, and a build gate counts the ones that do not. THE ID IS NOT A POSITION: it is a slug of the row's first cell, so it travels with the row if a table is reordered, where `read-3` would quietly come to mean a different document."

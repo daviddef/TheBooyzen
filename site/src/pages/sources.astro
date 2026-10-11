@@ -116,6 +116,20 @@ const tally = (id) => {
   </div>
 </section>
 
+<section class="blk" id="printed">
+  <h2>Printed works read here, and what each one carries</h2>
+  <p class="dek" set:html={based(S("printed").dek)} />
+  <div class="scroll" style="margin-top:18px">
+    <table>
+      {S("printed").cols.length > 0 && (
+      <thead><tr>{S("printed").cols.map(c => (
+        <th class={c.cls || null} style={c.w ? "width:" + c.w : null} set:html={c.label} />))}</tr></thead>)}
+      <tbody>{S("printed").rows.map(r => (
+        <tr id={r.id}>{r.cells.map(c => (<td class={c.cls || null} set:html={based(c.h)} />))}</tr>))}</tbody>
+    </table>
+  </div>
+</section>
+
 <section class="blk">
   <h2>Estate and archival references in hand</h2>
   <div class="scroll">
