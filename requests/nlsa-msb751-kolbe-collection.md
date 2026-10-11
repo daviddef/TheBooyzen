@@ -1,6 +1,16 @@
 # Drafted — National Library of South Africa, Special Collections
 
-**Status: DRAFTED, NOT SENT — 15 September 2026.** Sending is David's.
+**Status: SENT 15 September 2026 — ANSWERED IN FULL 18 September 2026.**
+**This status was wrong until 11 October**, when it still read "DRAFTED, NOT SENT" three weeks
+after the reply had arrived and been transcribed. It is corrected here because the `requests/`
+folder is the outbox: anyone working down it would have sent this a second time, to a Senior
+Librarian who had already done the work.
+
+**What it produced.** Melanie Geustyn, Senior Librarian, Special Collections, sent **four pages**
+on 18 September — including the letter of **23 August 1830** from Johan Gottlieb Kolbe in London
+to his son, the first document in this archive that the father wrote himself. It is transcribed
+at `/documents/#msb751`. **The follow-up is a separate draft**, still unsent:
+`requests/nlsa-thank-you-geustyn.md`.
 **To:** `specialcollections@nlsa.ac.za` · +27 (0)21 487 5620 / 5619
 **5 Queen Victoria Street, Cape Town 8000 — the Abe Bailey Reading Room.**
 Special Collections advise an appointment, as some items are stored off site.
