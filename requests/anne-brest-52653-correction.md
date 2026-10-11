@@ -1,6 +1,7 @@
 # Drafted — Anne Brest, holding off on cost
 
 **Status: SENT — 22 September 2026**, Gmail message id `1a0c925de610b3a3`.
+**Row:** none — the five Anne Brest files and the six Anne Brest rows are not one-to-one
 **To:** `digitalphoto@icon.co.za` — reply on the same thread.
 
 **NOT AN ORDER. A HOLD, ON COST, SAID PLAINLY.** An earlier draft of this placed the five files

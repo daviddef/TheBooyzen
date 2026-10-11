@@ -1,6 +1,7 @@
 # Drafted — The National Archives, Kew
 
 **Status: DRAFTED, NOT SENT — 15 September 2026.** Sending is David's.
+**Row:** none — this one file carries BOTH Kew rows (kew-wo97-wo12 and kew-guidance-mountjoy), so no single row is its state
 **To:** the enquiry form at nationalarchives.gov.uk, or Record Copying.
 **Bessborough Road, Kew, Richmond TW9 4DU.**
 

@@ -1,6 +1,7 @@
 # Drafted — thank-you to the National Library of South Africa
 
 **Status: DRAFTED, NOT SENT — 20 September 2026.** Sending is David's.
+**Row:** `nlsa-thankyou-geustyn`
 **To:** Melanie Geustyn, Senior Librarian, Special Collections, National Library of
 South Africa — as a **reply to her email of 18 September 2026**, so that it keeps the
 thread and the MSB 751 reference.

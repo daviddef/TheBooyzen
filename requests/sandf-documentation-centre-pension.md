@@ -1,6 +1,13 @@
 # CORRECTION, 10 September 2026 — this was only half delivered
 
 Reported here and in the archive as **SENT**. It was sent, and one of the two addresses **bounced**.
+**Status: SENT 9 September 2026 — HALF DELIVERED, and that is the whole point of this file.**
+One of the two addresses was accepted and the other was refused by the recipient's own mail
+exchanger. It is recorded as half delivered rather than as sent, because the half that bounced
+is the half that had the records. **This file had no Status line at all until 11 October 2026**,
+when tools/checkletters.py was written and refused on its first run: a letter file that cannot
+say whether it was sent is exactly the gap that lets one be sent twice.
+**Row:** `sandf-udf-booyzen`
 
 | Address | Result |
 |---|---|

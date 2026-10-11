@@ -2,6 +2,7 @@
 
 **Status: DRAFTED, NOT POSTED — 15 September 2026.**
 **Posting is public writing under David's name and is his to do.**
+**Row:** none — a forum post, not a letter; letters.json does not track it
 
 Thread: `wikitree.com/g2g/2082786/magdalena-beers-b6c2-which-married-booysen-heese-villiers`
 

@@ -5,6 +5,7 @@
 the other two put together — **the LMS printed his journal in its own monthly in 1833, over his
 signature** — and, unlike a South African manuscript catalogue, it is free online, so the
 cataloguer can verify it in a minute without taking our word for anything.
+**Row:** `edinburgh-cswc60`
 **To:** `heritagecollections@ed.ac.uk` · +44 (0)131 650 8379
 **Centre for Research Collections, University of Edinburgh Main Library, George Square,
 Edinburgh EH8 9LJ.**

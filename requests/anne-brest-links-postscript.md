@@ -1,6 +1,7 @@
 # Drafted — Anne Brest, a short postscript with the links
 
 **Status: SENT — 21 September 2026**, Gmail message id `1a0c3b1cdc859b23`, on the same thread.
+**Row:** none — see above, the Anne Brest thread is not one file per row
 **To:** `digitalphoto@icon.co.za` — reply on the same thread as the summary.
 
 **Four links, all tested 21 September, all HTTP 200.** `Our-Family/` is framed as **the children's

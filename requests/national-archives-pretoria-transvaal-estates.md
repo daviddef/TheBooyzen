@@ -5,6 +5,7 @@ copied to `Nontembekom@dsac.gov.za`. Gmail message id `1a09790b4b478caa`.
 Mailbox checked immediately after sending: **no bounce so far**, from either address.
 That is not the same as delivered, and the SANDF enquiry is why this file says so.
 Re-check before recording delivery.
+**Row:** `nasa-pretoria-transvaal-estates`
 
 **To:** enquiries2@dsac.gov.za
 **Copy to:** Nontembekom@dsac.gov.za (Ms Nontembeko Matika, Head of Client Services)

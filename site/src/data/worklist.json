@@ -1830,8 +1830,10 @@
    "noun": "letters drafted",
    "dir": "requests",
    "ignore": [
-    "README.md"
-   ]
+    "README.md",
+    "OUTBOX.md"
+   ],
+   "ignoreWhy": "OUTBOX.md is not a drafted letter, it is the index of them, added 11 October 2026. Every letter it lists already has its own work-list row through covers, so counting the index as a twenty-third letter would count the same outstanding work twice."
   }
  ],
  "unreconciled": 0

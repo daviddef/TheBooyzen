@@ -5,6 +5,7 @@
 after the reply had arrived and been transcribed. It is corrected here because the `requests/`
 folder is the outbox: anyone working down it would have sent this a second time, to a Senior
 Librarian who had already done the work.
+**Row:** `nlsa-msb751`
 
 **What it produced.** Melanie Geustyn, Senior Librarian, Special Collections, sent **four pages**
 on 18 September — including the letter of **23 August 1830** from Johan Gottlieb Kolbe in London

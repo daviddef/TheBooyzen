@@ -1,6 +1,7 @@
 # Drafted — Albany Museum, Makhanda (Grahamstown)
 
 **Status: DRAFTED, NOT SENT — 20 September 2026.** Sending is David's.
+**Row:** `albany-museum-1819-certificate`
 **To:** `info@am.org.za` · +27 46 622 2312
 **History Museum, Somerset Street, Makhanda (Grahamstown), Eastern Cape.**
 Monday–Friday 09:00–16:30. **Archive collections are by appointment.**

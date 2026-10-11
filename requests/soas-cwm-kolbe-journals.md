@@ -6,6 +6,7 @@ complete for 1828–1837, and it prints eleven months of his journal. That does 
 letter unnecessary — it makes it narrower and better grounded. The asks below now say what is
 already in hand, so that nobody at SOAS is paid to copy what can be downloaded, and **/108 is
 promoted, because the printed extracts stop six weeks before it starts.**
+**Row:** `soas-cwm-journals`
 **To:** `special.collections@soas.ac.uk` · +44 (0)20 7898 4180
 **Special Collections, SOAS Library, 10 Thornhaugh Street, Russell Square, London WC1H 0XG.**
 

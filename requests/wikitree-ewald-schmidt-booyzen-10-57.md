@@ -1,6 +1,7 @@
 # Message — Ewald Schmidt (WikiTree), estate MHG 10/57
 
 **Status: COMPOSED IN THE FORM, NOT SENT — BLOCKED ON AN ANTI-SPAM QUESTION** — 13 Sep 2026.
+**Row:** none — a WikiTree form submission, not a letter
 
 With the account logged in, the private-message form opens and prefills the name and email.
 The message below was typed into it in full. **It cannot be sent from here**: the form ends

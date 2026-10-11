@@ -2,6 +2,7 @@
 
 **Status: DRAFTED, ADDRESS CHECKED, STILL NOT SENT** — 14 September 2026.
 **Sending is the user's to do.**
+**Row:** `pmb-natal-estates`
 
 **Checked against the National Archives' own entry for the repository**
 (`nationalarchives.gov.za/node/2760`, record submitted 2 July 2015):

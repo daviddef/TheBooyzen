@@ -2,6 +2,7 @@
 
 **Status: POST 1 IS ANSWERED** — checked 14 September 2026. **Two answers in eighteen hours,
 from Pieter van Zyl (G2G-4), five upvotes each.**
+**Row:** none — a WikiTree G2G thread, not a letter
 
 1. The **"Form of information of death"** cited on Booyzen-12 is the *Aangifte van 'n
    Sterfgeval* — the state registration form — and **does not carry parents, spouse or

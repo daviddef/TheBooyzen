@@ -66,9 +66,37 @@ def named_living():
     return sorted(living)
 
 
+def goat_counter():
+    """Which GoatCounter site this archive reports its reads to.
+
+    A DECISION, and one this repository does not contain. The code lives in the
+    SHARED kit (kit/data/archives.json, one row per archive) and is selected by
+    matching that row's `base` against the base this site is built at. So an npm
+    update of the kit can move it with nothing in this repository changing —
+    which is the exact shape of the fault check-decisions.py exists for.
+
+    Resolved the way Base.astro resolves it, not by a second reading: the layout
+    does `ring.archives.find(a => a.base === BASE_URL)` and passes `.counter` to
+    VisitCount. If the kit renames the field, drops the row, or changes the base
+    key, this returns None and the gate refuses rather than agreeing with a
+    template that has quietly stopped counting. Seven archives share that file
+    and the codes differ by one word, so the failure to fear is not «no counter»
+    — it is this archive silently reporting into another family's statistics.
+    """
+    ring = json.load(open(os.path.join(
+        SITE, "node_modules", "@daviddef", "archive-kit", "kit", "data",
+        "archives.json"), encoding="utf-8"))
+    cfg = open(os.path.join(SITE, "astro.config.mjs"), encoding="utf-8").read()
+    m = re.search(r"base:\s*['\"]([^'\"]+)['\"]", cfg)
+    base = (m.group(1) if m else "/").rstrip("/")
+    row = next((a for a in ring.get("archives", []) if a.get("base") == base), None)
+    return row.get("counter") if row else None
+
+
 raise SystemExit(check(os.path.join(SITE, "src", "data", "decisions.json"), {
     "kitPin": kit_pin,
     "livingPolicy": living_policy,
     "kinRatchet": kin_ratchet,
     "namedLiving": named_living,
+    "goatCounter": goat_counter,
 }))

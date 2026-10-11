@@ -1,6 +1,7 @@
 # Drafted — Anne Brest, the summary she asked for
 
 **Status: SENT — 21 September 2026**, Gmail message id `1a0c3a45abd88f27`.
+**Row:** none — see above, the Anne Brest thread is not one file per row
 **To:** `digitalphoto@icon.co.za` — reply on the existing thread.
 **She is offline until Monday night or Tuesday.**
 
