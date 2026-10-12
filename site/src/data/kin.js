@@ -513,7 +513,12 @@ export const families = [
     why: "Named together on the 1901 marriage record kept in a rebel's house under martial law.",
     src: ["The documents", "/documents/"], kids: [] },
 
-  { h: "John Paul Downing", w: null, via: "doc",
-    why: "Margaret's father.",
-    kids: [{ n: "Margaret Downing", via: "doc" }] },
+  { h: "John Paul Downing", w: null, via: "tree",
+    why: "Margaret's father ON THE TREE AND IN NO DOCUMENT. Carried as «doc» — a record " +
+         "read — until 13 October 2026, when the person was regraded to testimony and this " +
+         "relationship was left behind: her 1868 death notice enters her parents as «Both " +
+         "dead» and names neither, and the 1819 marriage allegation gives her no father. " +
+         "FamilySearch cannot hold him steady either, 1769–1839 in one tree and 1765–1839 " +
+         "in another. The matching mother, Mary P King, was never given a record here at all.",
+    kids: [{ n: "Margaret Downing", via: "tree" }] },
 ];
