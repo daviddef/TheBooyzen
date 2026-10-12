@@ -6536,6 +6536,62 @@
      "part"
     ]
    ]
+  },
+  {
+   "g": "FindMyPast has no South African records except a war",
+   "n": "row 78 — the subscription's last days, and the plan for them was impossible",
+   "d": "12 Oct 2026",
+   "h": "/worklist/",
+   "rows": [
+    [
+     "findmypast.co.uk · the record-set catalogue, searched by place name",
+     "TWELVE SETS FOR SOUTH AFRICA AND EVERY ONE IS MILITARY",
+     "**THE BOUNDARY, AND IT RETIRES AN ERRAND RATHER THAN ANSWERING IT.** Row 78 named the two things worth the remaining days: **1819–20 passenger lists**, and the 1903 certificates. The certificates were answered in September. **The passenger lists cannot be answered on this tool at all**, and now there is a tested reason rather than a failed search. Searching the catalogue of all **2,977** record sets by place: **“South Africa” returns 12**, every one of them Anglo-Boer War — nominal rolls, rolls of honour, soldiers' wills, war memorials, and the Australian, New Zealand and Glasgow contingents. **“Natal” returns NOTHING AT ALL.** **“Cape” returns two, and both are Cape Breton in Nova Scotia.** “Transvaal” returns the same nine Boer War sets again. **There is no South African civil registration here, no parish register, no passenger or arrival list, and nothing whatever before 1899.** The four searches are a control on each other: the mechanism plainly works, because it returns twelve relevant sets for one name and zero for another.",
+     "yes"
+    ],
+    [
+     "findmypast.co.uk · travel & migration, BARRY, keyword «cape of good hope»",
+     "178 HITS, AND THE CAPE ONES ARE A NAVAL YARD IN THE 1790s",
+     "The one item row 78 had left. **178 results**, and the genuinely Cape-located ones are **EDWARD BARRY in the British Royal Navy Ships' Musters at the Naval Yard at the Cape of Good Hope, 1797–1800** — a British set that happens to record Cape postings, not a Cape set. The rest drift to Tasmania and Great Britain on a loose keyword. **Bounded to 1819 ±2, travel & migration returns 16 Barrys and every one is Australian** — New South Wales settlers and convicts. **Nothing at the Cape in the year John Augustus Barry I was born «at sea».**",
+     "yes"
+    ],
+    [
+     "WO 127 · South Africa, Local Armed Forces Nominal Rolls, 1899–1902 — 53,416 records",
+     "A SOURCE THIS ARCHIVE HAD NEVER OPENED, AND THE REGISTER PROVES IT",
+     "**The one South African thing FindMyPast does hold, and it is a good one.** A transcription of **TNA WO 127** by Kevin Asplin: name, rank, regimental number, unit, and often dates of enrolment and discharge. **This archive's register holds ZERO rows from any Boer War source**, so despite row 86 re-running the four surnames in September, this set had never reached it. Searched all four surnames with variants on 12 October.",
+     "yes"
+    ],
+    [
+     "WO 127 · KOLBE, with variants",
+     "NIL, AND THE CONTROL IS IN THE RESULT",
+     "**Three hits and not one is a Kolbe** — J M Kilby, Thomas Kilby, A F Kyser. The variant matcher plainly fired, which is what makes this a negative worth recording rather than an empty page: **no Kolbe served in any unit on this roll.**",
+     "no"
+    ],
+    [
+     "WO 127 · MOUNTJOY, with variants",
+     "GEORGE MOUNTJOY, PRIVATE 664, DISTRICT MOUNTED RIFLES",
+     "**One exact Mountjoy in 53,416 records, and the surname is rare enough for that to mean something.** Pte. **664**, **District Mounted Rifles** — a locally raised Cape Colony unit, organised by district, and this family's Mountjoys were at **Cradock, Dordrecht and Barkly East**, which is that recruiting ground. **IT CANNOT YET BE GIVEN TO A MAN.** The transcript carries no age and no district, and this archive holds three Georges who could be of age in 1900: **George Mountjoy of Barkly East**, who has no dates at all; **George Herkules Johannes Mountjoy**, born 16 January 1862; and **George Mountjoy of Kokstad**, born about 1862. The 1889 George was a boy of eleven and the 1823 George was seventy-seven. **Three candidates, no discriminator, nothing claimed.**",
+     "yes"
+    ],
+    [
+     "WO 127 · BOOYZEN / BOOYSEN, with variants",
+     "NICHOLAS GEORGE PETER BOOYSEN, TROOPER, NESBITT'S HORSE",
+     "Eight hits, four of them real and probably one man: **Booysen**, **N. Booysen**, **Nicholas Booysen** and **NICHOLAS GEORGE PETER BOOYSEN — Trooper, Nesbitt's Horse, 26 January to 18 September 1900, remarked “Discharged, services no longer required”**. Nesbitt's Horse was raised in the eastern Cape. **NO MAN OF THIS NAME IS IN THIS ARCHIVE** — its Nicholas-bearing Booysens are a Hendrik Stephanus Nicolaas of 1882, a Hendrik Stefanus Nicolaas of 1862 and a Jacobus Nicholas before 1842. **Not claimed.**",
+     "yes"
+    ],
+    [
+     "WO 127 · BARRY",
+     "34 HITS AND THE INDEX CANNOT CHOOSE AMONG THEM",
+     "Too common a surname for an index with no age and no district. **34 results**, including a J H Barry who could be James Henry and a George Barry who could be several people. **Nothing attributable, and that is the finding**: this set identifies a rare surname and defeats a common one.",
+     "no"
+    ],
+    [
+     "the side of the war these rolls describe",
+     "THE SAME DISTRICTS, THE OTHER SIDE",
+     "**Worth setting down before anybody is adopted off these rolls.** WO 127 lists men who served the BRITISH in locally raised colonial units. The men this archive already holds from that war went the other way: **Fred J. Barry, plaasboer of Ivanhoe, tried as a CAPE REBEL in June 1901**, and the two Kolbes taken prisoner and shipped to Cape Town on **WO 108/368**. So this source describes neighbours, and possibly relatives, who chose the opposite side in the same districts in the same months. **That is a reason to be slower about identification, not faster.**",
+     "yes"
+    ]
+   ]
   }
  ],
  "searched": [
@@ -6967,6 +7023,22 @@
     "archive-org"
    ],
    "note": "A RELIABILITY FINDING ABOUT THIS SCAN, worth more to the next reader than the pages themselves. The journal was first transcribed from the Internet Archive's OCR text for this volume. Fetching the page images (leaves n435-n437 = printed pp.410-412) showed the OCR had SILENTLY DROPPED FOUR WORDS from the 9 April 1832 entry - the printed line reads 'On my return they (the children in the waggon) sung many hymns' - with no marker of any kind at the omission. A transcription taken from this item's OCR alone will be short and will not say so. A second lesson from the same pass: the MEDIUM-resolution page image is not enough either. At medium size the 5 August 1832 entry appeared to read 'four English traders' against the OCR's 'three'; magnified to the _large derivative the type plainly reads THREE, and the OCR was right. So for this item: distrust the OCR for completeness, and distrust medium images for figures - use archive.org/download/<id>/page/n<leaf>_large.jpg. The leaf-to-page offset for evangelicalmagaz0011unse is 25 (printed p.410 = leaf n435), and the item's scandata.xml carries no pageNumber tags, so the offset must be found by probing."
+  },
+  {
+   "src": "FindMyPast - the whole South African catalogue, by place name, and WO 127 for four surnames",
+   "url": "https://www.findmypast.co.uk/search/historical-records",
+   "walked": false,
+   "what": "BOOYZEN BOOYSEN MOUNTJOY KOLBE BARRY - the 1819-20 Cape passenger lists row 78 wanted, and then whatever South African records exist here at all",
+   "when": "2026-10-12",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "mountjoy",
+    "kolbe",
+    "barry",
+    "findmypast"
+   ],
+   "note": "A HARD BOUNDARY ON THE SOURCE, which is the main result. Searching the catalogue of all 2,977 record sets by place: SOUTH AFRICA returns 12 sets and every one is Anglo-Boer War military; NATAL returns zero; CAPE returns two and both are Cape Breton in Nova Scotia; TRANSVAAL returns the same Boer War sets. There is no South African civil registration, no parish register, no passenger or arrival list, and nothing at all before 1899. The four queries control each other - twelve relevant sets for one place name, zero for another, so the mechanism works. THIS RETIRES ROW 78's PLAN rather than completing it: the 1819-20 passenger lists it named for the subscription's last days do not exist on this tool. Travel and migration bounded to 1819 plus or minus two returns 16 Barrys and all are Australian; the only Cape-located Barrys in that category are Edward Barry in the Royal Navy ships' musters at the Cape naval yard, 1797-1800. WHAT IT DOES HOLD, never harvested here before: WO 127, South Africa Local Armed Forces Nominal Rolls 1899-1902, 53,416 records transcribed by Kevin Asplin, giving name, rank, number, unit and often enrolment and discharge dates. KOLBE is a clean nil - three variant hits, no actual Kolbe. MOUNTJOY gives exactly one, George Mountjoy, Private 664, District Mounted Rifles, a locally raised Cape unit; three men in this archive could be him and the transcript has no age or district to choose, so nothing is claimed. BOOYSEN gives Nicholas George Peter Booysen, Trooper, Nesbitt's Horse, 26 January to 18 September 1900, discharged services no longer required - no man of that name is in this archive. BARRY gives 34 and the index cannot discriminate a common surname without ages. AND A CAUTION FOR WHOEVER WORKS IT NEXT: these rolls are men who served the British. The men this archive already holds from that war went the other way - a Cape Rebel tried in June 1901 and two Kolbe prisoners on WO 108/368. Same districts, same months, opposite sides."
   }
  ]
 }
