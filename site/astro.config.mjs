@@ -1,24 +1,27 @@
 import { defineConfig } from 'astro/config';
 
-// GitHub Pages project site. Change `base` to '/' and `site` to the domain
-// if this ever moves to a custom domain.
+// Custom domain, from 12 October 2026: https://booyzen.defranceski.com/
+// Served by GitHub Pages from this project repo. `base` is '/' because every
+// link here is site-root relative, and site/public/CNAME is what keeps the domain
+// attached across Actions deploys — a CNAME that exists only in dist/ is wiped by
+// the next build. The DNS was already right: booyzen.defranceski.com has pointed
+// at daviddef.github.io all along.
 /* Phase 1 of the seven-archive standardisation. Two pages renamed to the
    names the other archives use: the changelog was /changed, the research log
    was /log. Both old addresses stay alive. */
-const BASE = '/TheBooyzen';
 const redirects = {
-  '/changed': `${BASE}/changes/`,
-  '/log': `${BASE}/changes/`,
+  '/changed': '/changes/',
+  '/log': '/changes/',
   /* 9 October 2026: the research log folded into /changes/, which draws the same log.json. */
-  '/research-log': `${BASE}/changes/`,
+  '/research-log': '/changes/',
   /* 9 October 2026: the letters page folded into /errands/, which is the same
      subject. The address was published and linked from other archives. */
-  '/letters': `${BASE}/errands/#sent`,
+  '/letters': '/errands/#sent',
 };
 
 export default defineConfig({
-  site: 'https://daviddef.github.io',
-  base: '/TheBooyzen',
+  site: 'https://booyzen.defranceski.com',
+  base: '/',
   /* WHY outDir IS A VARIABLE. Eight archives share this machine and more than one
      session can build THIS repo at once. astro empties its outDir at the start of a
      build, so a second session building into site/dist while this one's gates are

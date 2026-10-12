@@ -69,10 +69,21 @@ const nav = [
 ];
 
 const here = Astro.url.pathname;
-/* which of the seven this is, worked out the same way the ring does */
-const thisArchive = ring.archives.find(
+/* WHICH OF THE SEVEN THIS IS — answered by ORIGIN, not by base. Every archive on
+   its own domain has base "", so `find(a => a.base === "")` returns the FIRST of
+   them (the Defranceschi archive) and would hand this page that archive's accent
+   and its GoatCounter site. Inlined from the kit's whoami(): lib/ring.js cannot
+   be imported as a bare specifier from a layout (its JSON import has no
+   `with { type: "json" }`, which Node's ESM loader refuses in static generation).
+   Matches import.meta.env.SITE against each entry's url, so astro.config's `site`
+   and the ring's url for this archive have to agree — and now do. */
+const originOf = (x) => { try { return new URL(x).origin; } catch { return ""; } };
+const SITE_ORIGIN = originOf(import.meta.env.SITE || "");
+const onBase = ring.archives.filter(
   (a) => a.base === (import.meta.env.BASE_URL || "/").replace(/\/$/, "")
 );
+const thisArchive =
+  (SITE_ORIGIN && onBase.find((a) => originOf(a.url) === SITE_ORIGIN)) || onBase[0];
 ---
 <html lang="en" data-base={u("")}>
 <head>

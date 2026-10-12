@@ -89,7 +89,19 @@ def goat_counter():
     cfg = open(os.path.join(SITE, "astro.config.mjs"), encoding="utf-8").read()
     m = re.search(r"base:\s*['\"]([^'\"]+)['\"]", cfg)
     base = (m.group(1) if m else "/").rstrip("/")
-    row = next((a for a in ring.get("archives", []) if a.get("base") == base), None)
+    # RESOLVED BY ORIGIN, as Base.astro now does it. Matching on base alone is
+    # ambiguous the moment two archives share an empty base, and by 12 October
+    # 2026 seven of them did, so taking the first match returned the Defranceschi
+    # row for every one of them. This check would have reported the old bug as the
+    # current truth while the layout, and the built page, said otherwise.
+    ms = re.search(r"site:\s*['\"]([^'\"]+)['\"]", cfg)
+    def origin(u):
+        mo = re.match(r"^(https?://[^/]+)", u or "")
+        return mo.group(1) if mo else ""
+    site_origin = origin(ms.group(1)) if ms else ""
+    on_base = [a for a in ring.get("archives", []) if a.get("base") == base]
+    row = next((a for a in on_base if site_origin and origin(a.get("url")) == site_origin),
+               on_base[0] if on_base else None)
     return row.get("counter") if row else None
 
 

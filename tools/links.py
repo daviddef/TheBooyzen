@@ -7,7 +7,13 @@ import os, re, sys, collections
 # session can build this repo at once and astro empties its outDir on the way in.
 # Default stays site/dist - the deploy workflow uploads that exact path.
 DIST = os.path.join("site", os.environ.get("ARCHIVE_OUT") or "dist")
-BASE = "/TheBooyzen"
+# Empty since 12 October 2026: this archive moved to booyzen.defranceski.com and
+# serves from the site root, so a correct internal link carries no prefix at all.
+# It was "/TheBooyzen" while this was a project-pages site, and left at that it
+# failed every link on the site as "not base-prefixed" - the checker agreeing with
+# a base the site no longer had. With an empty prefix the base test below is
+# always true, and a stray RELATIVE link still fails as "missing".
+BASE = ""
 
 pages, assets = set(), set()
 for r, _, fs in os.walk(DIST):
