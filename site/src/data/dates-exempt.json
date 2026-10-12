@@ -1,0 +1,35 @@
+{
+ "_note": "Person records that are DELIBERATELY vaguer than a dated event naming them. tools/checkdates.py refuses any pair it finds that is not declared here, and also reports a declaration it no longer needs — because an exemption that has stopped applying means the record was fixed and the line should go. Declared 12 October 2026, after the same fault was found three times: Johan Casimir in September, Margaret Downing and two others in October. Each entry is keyed on the person's name and the field, b or d.",
+ "exempt": [
+  {
+   "n": "Johanna Booyzen",
+   "f": "b",
+   "why": "Not a disagreement at all. The record and the event carry the SAME date and the same approximation, «c. 20 Mar 1754». The flag is the word «c.», which this gate reads as vagueness and which is here simply honest."
+  },
+  {
+   "n": "Hendrik Stefanus Nicolaas Booijsen",
+   "f": "b",
+   "why": "Two different events in one year. The record holds his BIRTH, about 31 January 1862; the dated event is his BAPTISM at Rustenburg on 25 December 1862, eleven months later. A baptism does not sharpen a birth, and collapsing the two would invent a precision nobody has."
+  },
+  {
+   "n": "John Augustus Barry I",
+   "f": "d",
+   "why": "Deliberately the year only, and it must stay that way. Two death notices were written in 1915 by two different sons and they contradict each other — 3 August 1903 on one, August 1904 reported elsewhere, 25 August 1903 in the tree. The archive holds the dispute open on its own Disputed page. Writing any one of those days into this field would settle by preference what the documents do not settle."
+  },
+  {
+   "n": "David Schalk Booysen",
+   "f": "d",
+   "why": "The field is a BOUND, not a date: «after Nov 1905», and it is bounded by the very events that flag it. He marries again on 27 November 1905, which is why his death must be after that month. The other 1905 event is another man's death. Neither is his own."
+  },
+  {
+   "n": "Elisabetta Johanna Sophia Myburgh",
+   "f": "d",
+   "why": "«bef. Mar 1935» is a bound derived from somebody else's document. The dated event of 1 March 1935 is the death of the transport rider whose notice names her as already dead; it dates HIS death, not hers, and it is the reason her bound exists."
+  },
+  {
+   "n": "Catherine Maria Sophia “Kathleen” Barry",
+   "f": "d",
+   "why": "The burial is known and the death is not. Her record already carries «buried 6 Sep» and the dated event IS that burial, at Brixton, grave 9760. A burial date is not a death date, and the register that gives the one does not give the other."
+  }
+ ]
+}
