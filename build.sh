@@ -169,6 +169,13 @@ STEP="register.py"; python3 tools/register.py
 # SUBSHELLS" above. `cd site && ... && cd ..` does not abort under set -e.
 STEP="second pass - the full build WITH every gate"; ( cd site && npm run build >/dev/null )
 STEP="links.py"; python3 tools/links.py
+# WHOSE READERS IS THIS ARCHIVE COUNTING? Reads the BUILT html and picks the archive by
+# ORIGIN. Added 12 October 2026 after Lerena, D'Arcy and Blazevic spent hours logging
+# every pageview to the Defranceschi counter: Base.astro found its ring entry by base,
+# base became "" for all of them, and find() returned the first. The decisions check
+# did not catch it because it re-derived the counter with the same wrong rule. Written
+# by the D'Arcy session; shown here to fail on a build with the counters swapped.
+STEP="check_counter.py"; python3 tools/check_counter.py
 STEP="checkatlas.py"; python3 tools/checkatlas.py --data site/src/data --dist "$OUT"
 STEP="checkregisters.py"; python3 tools/checkregisters.py --dist "$OUT"
 STEP="drift.py"; python3 tools/drift.py
