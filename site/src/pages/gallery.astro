@@ -17,7 +17,7 @@ const details = items.filter(i => i.detail);
    plate - is the thing the other three do not have and the component now asks
    every archive for. */
 const plates = items.map((i) => ({
-  src: u(i.src.replace("/TheBooyzen", "")),
+  src: u(i.src),
   alt: i.alt,
   title: i.cap,
   kind: i.detail ? "detail" : "whole document",

@@ -135,8 +135,11 @@ def main():
         if p.get("s") == "doc" and not (p.get("p") or []):
             bad.append(f"doc-with-no-link   {p['n']}: marked documented and links nowhere")
 
-    # 2 - corrections that point at nothing
-    base = "/TheBooyzen"
+    # 2 - corrections that point at nothing. The hrefs are compared against the
+    # page and anchor sets already harvested from the build, so they need no base:
+    # a `base = "/TheBooyzen"` sat here until 13 October 2026, assigned and never
+    # read. Harmless, and removed because a stale constant that looks load-bearing
+    # is the thing somebody later trusts.
     for row in load("corrections.json")["rows"]:
         href = (row[4] or "").strip() if len(row) > 4 else ""
         if not href:

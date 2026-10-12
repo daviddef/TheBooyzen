@@ -219,12 +219,24 @@ import glob
 docs_html = built("documents")
 # any heading level can carry an id and be linked to; collecting only h2 made
 # a correct link to an h3 read as dangling, which it did on 14 Sep 2026.
+# THE BASE IS READ, NOT REMEMBERED. This scan hardcoded "/TheBooyzen/documents/#"
+# until 13 October 2026. When the archive moved to booyzen.defranceski.com with
+# base "/", the built pages began saying "/documents/#..." and this pattern
+# matched NOTHING — so `dangling` stayed empty and the check reported no dangling
+# anchors on every run, whatever the pages actually said. A check that cannot
+# fail is worse than no check, because the build prints it under «ok». Derived
+# from astro.config.mjs so it follows the site.
+_cfg = open(os.path.join("site", "astro.config.mjs"), encoding="utf-8").read()
+_m = re.search(r"base:\s*['\"]([^'\"]+)['\"]", _cfg)
+BASE = (_m.group(1) if _m else "/").rstrip("/")
+DOCS_ANCHOR = re.escape(BASE) + r"/documents/#([a-z0-9-]+)"
+
 anchors = set(re.findall(r'<h[2-4] id="([a-z0-9-]+)"', docs_html))
 if anchors:                      # only meaningful after a build has run
     dangling = {}
     for f in glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True):
         t = open(f, encoding="utf-8").read()
-        for a in re.findall(r"/TheBooyzen/documents/#([a-z0-9-]+)", t):
+        for a in re.findall(DOCS_ANCHOR, t):
             if a not in anchors:
                 dangling.setdefault(a, set()).add(f[len(DIST):-len("index.html")])
     if dangling:
