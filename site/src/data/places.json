@@ -1569,7 +1569,7 @@
    "lat": -29.085,
    "lon": 26.159,
    "approx": false,
-   "w": "THE TOWN THE COMMANDANT'S WHOLE PUBLIC LIFE WAS ATTACHED TO, and it took this archive until today to give it a pin. John Gerson Eliezar Kolbe was a DIRECTOR OF THE BLOEMFONTEIN BANK, a Justice of the Peace, Commandant of this district and a deacon of its Dutch Reformed Church; he advertised a lost promissory note for £154 sterling on its MARKET SQUARE in March 1864; he sat as FOREMAN OF THE JURY in a forgery trial here in 1866, before Mr van Soelen. His farm lay about two hours' ride away. AND THE MAN THE FREE STATE ESTATE INDEX HIDES HIS WIDOW BEHIND WAS THIS TOWN'S OWN LANDDROST. Francis McCabe, born at a frontier military post on 29 September 1817, son of Dr Patrick McCabe of the British Army on the Cape Frontier, married Anna Jacoba van der Merwe about April 1871 and was dead by 23 February 1872, of heart disease on the Modder River road after a cart went into a sluit in the moonlight. He was buried here on the Sunday afternoon at six o'clock, the coffin carried from the house by the resident members of the Volksraad and the principal government officers, with the State President and upwards of two hundred people walking behind.",
+   "w": "THE TOWN THE COMMANDANT'S WHOLE PUBLIC LIFE WAS ATTACHED TO, and it took this archive until today to give it a pin. John Gerson Eliezar Kolbe was a DIRECTOR OF THE BLOEMFONTEIN BANK, a Justice of the Peace, Commandant of this district and a deacon of its Dutch Reformed Church; he advertised a lost promissory note for £154 sterling on its MARKET SQUARE in March 1864; he sat as FOREMAN OF THE JURY in a forgery trial here in 1866, before Mr van Soelen. His farm lay about two hours' ride away. AND THE MAN THE FREE STATE ESTATE INDEX HIDES HIS WIDOW BEHIND WAS THIS TOWN'S OWN LANDDROST. Francis McCabe, born at a frontier military post on 29 September 1817, son of Dr Patrick McCabe of the British Army on the Cape Frontier, married Anna Jacoba van der Merwe about April 1871 and was dead by 23 February 1872, of heart disease on the Modder River road after a cart went into a sluit in the moonlight. He was buried here on the Sunday afternoon at six o'clock, the coffin carried from the house by the resident members of the Volksraad and the principal government officers, with the State President and upwards of two hundred people walking behind. AND A DEATH IN THIS DISTRICT, ADDED 13 OCTOBER 2026. WILLEM JOHANNES KOLBE — the Panfontein prisoner this archive argues is General W. J. Kolbe — died at MERIBA in this district on 23 APRIL 1941, aged 93, by his civil death registration. That registration is also the best thing the identification has: it enters him born 1848 at PHILIPPOLIS, which is the birthplace the Afrikaans sources give for the general, reached independently by a registrar who had never read them. MERIBA ITSELF IS NOT PLOTTED — no coordinate has been established for it, and none is invented here, so the fact sits at the district town until the farm can be located.",
    "e": [
     [
      "9 Mar 1864",
@@ -1594,11 +1594,16 @@
     [
      "1896",
      "she dies — VAB MHG M777, filed under McCabe"
+    ],
+    [
+     "23 Apr 1941",
+     "Willem Johannes Kolbe dies at Meriba in this district, aged 93"
     ]
    ],
    "p": [
     "John Gerson Eliezar Kolbe",
-    "Anna Jacoba van der Merwe"
+    "Anna Jacoba van der Merwe",
+    "Williem Johannes Kolbe of Panfontein"
    ],
    "slug": "bloemfontein"
   },
@@ -1635,8 +1640,12 @@
    "k": "Mission station, later town",
    "r": "Southern Orange Free State",
    "s": "doc",
-   "w": "THE OTHER MISSION ON THE CIRCUIT, and a font this family came back to. FREDERIK FORTUNATUS KOLBE was born here in 1839 — the source of a forename that has since crossed into four surnames — and JOHAN CASIMIR in 1844, the year his father died. FORTY-TWO YEARS LATER Frederik Fortunatus brought his own youngest daughter, ADRIANA HENRIETTA JOHANNA, back to be baptised here on 23 October 1881.",
+   "w": "AND THE FAMILY WAS HERE ELEVEN YEARS EARLIER THAN THIS ENTRY USED TO SAY. The station was BOESMANSKOOL when GEORGE AUGUSTUS KOLBE was placed at it, among the San, with JAMES CLARK. He gives the date himself in a letter printed in the Society’s monthly for 1831: “When I arrived, in April, 1828, with my colleague, in the Bushman country”, having resided “nearly three years among the Bushmen previous to my removal to this station”. Clark says it from the other side, writing from the Bushman Station on 31 December 1828: “brother Kolbe and myself removed to this station, and arrived here in the beginning of May last.” Added 13 October 2026 — until then this place began the Kolbe story at 1839, because the 1828 evidence was only found on 11 October. THE OTHER MISSION ON THE CIRCUIT, and a font this family came back to. FREDERIK FORTUNATUS KOLBE was born here in 1839 — the source of a forename that has since crossed into four surnames — and JOHAN CASIMIR in 1844, the year his father died. FORTY-TWO YEARS LATER Frederik Fortunatus brought his own youngest daughter, ADRIANA HENRIETTA JOHANNA, back to be baptised here on 23 October 1881.",
    "e": [
+    [
+     "Apr 1828",
+     "George Augustus Kolbe placed here, at the station then called Boesmanskool, with James Clark"
+    ],
     [
      "1839",
      "Frederik Fortunatus Kolbe born here"
@@ -1651,9 +1660,11 @@
     ]
    ],
    "p": [
+    "George Augustus Kolbe",
     "Frederik Fortunatus Kolbe",
     "Adriana Henrietta Johanna Kolbe",
-    "Johan Casimir Kolbe"
+    "Johan Casimir Kolbe",
+    "James Clark"
    ],
    "slug": "bethulie",
    "lat": -30.494,
