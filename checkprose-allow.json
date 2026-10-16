@@ -1,0 +1,50 @@
+[
+ {
+  "file": "notes/the-barry-marriage.md",
+  "phrase": "david defranceski",
+  "year": "1929",
+  "reason": "a year or life event about someone else in the same block: the life span is the dead grandmother's (feed id person-375)"
+ },
+ {
+  "file": "notes/the-name-change.md",
+  "phrase": "tersia booyzen",
+  "year": "1851",
+  "reason": "a year or life event about someone else in the same block: the life span is a dead man's, and the living person is named only as the source of the account about him (feed id person-373)"
+ },
+ {
+  "file": "notes/the-name-george-downing-mountjoy.md",
+  "phrase": "david defranceski",
+  "year": "1901",
+  "reason": "a year or life event about someone else in the same block: the years and the christening are the dead great-grandfather's (feed id person-375)"
+ },
+ {
+  "file": "site/src/pages/barry.astro",
+  "phrase": "david defranceski",
+  "year": "1929",
+  "reason": "a year or life event about someone else in the same block: the life span is the dead grandmother's (feed id person-375)"
+ },
+ {
+  "file": "site/src/pages/index.astro",
+  "phrase": "david defranceski",
+  "year": "1901",
+  "reason": "a year or life event about someone else in the same block: the birth year is the dead great-grandfather's (feed id person-375)"
+ },
+ {
+  "file": "site/src/pages/sources.astro",
+  "phrase": "david defranceski",
+  "year": "2026",
+  "reason": "the author (feed id person-375) is named beside the date a document was read or supplied, not a life date: the month the MyHeritage tree was read from his account and the month he gave the brief for this archive (two places)"
+ },
+ {
+  "file": "site/src/pages/women.astro",
+  "phrase": "david defranceski",
+  "year": "christened",
+  "reason": "a year or life event about someone else in the same block: the christening is the dead great-grandfather's: the living person is named only as his descendant (feed id person-375)"
+ },
+ {
+  "file": "site/src/pages/women.astro",
+  "phrase": "david defranceski",
+  "year": "1929",
+  "reason": "a year or life event about someone else in the same block: the life span and the death are the dead grandmother's (feed id person-375)"
+ }
+]
