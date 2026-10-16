@@ -32,7 +32,7 @@
     "check:dates": "python3 ../tools/checkdates.py"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#281c8d6520fa14131c70252af52aecc568dd0541",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#9c66e9cb99a5c855388ec29240013cb230b0f30d",
     "astro": "^5.18.2"
   },
   "devDependencies": {
