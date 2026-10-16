@@ -16,11 +16,11 @@ const places = er.places;
    answered. So the counts below are DERIVED from letters.json, and cannot go
    stale the way that sentence did. /letters/ redirects here. */
 const S = {
-  "answered": ["Answered", "#12703F"], "answered in full": ["Answered", "#12703F"],
-  "half delivered": ["Half delivered", "#B04A16"], "sent": ["Sent", "#1E5F8C"],
-  "no answer": ["No answer", "#E9A020"],
-  "drafted": ["Drafted", "#7A7A7A"], "drafted, unsent": ["Drafted", "#7A7A7A"],
-  "not yet written": ["Not written", "#7A7A7A"],
+  "answered": ["Answered", "var(--st-ok)"], "answered in full": ["Answered", "var(--st-ok)"],
+  "half delivered": ["Half delivered", "var(--st-block)"], "sent": ["Sent", "var(--st-running)"],
+  "no answer": ["No answer", "var(--st-next)"],
+  "drafted": ["Drafted", "var(--st-struck)"], "drafted, unsent": ["Drafted", "var(--st-struck)"],
+  "not yet written": ["Not written", "var(--st-struck)"],
 };
 const letters = L.rows;
 const isDraft = (r) => r.state === "drafted" || r.state === "drafted, unsent" || r.state === "not yet written";
@@ -98,7 +98,7 @@ const groups = places.map((pl) => ({
             <td class="m">{r.d}</td>
             <td><b>{r.to}</b></td>
             <td>{r.what}<br /><span class="cap" set:html={md(r.back)} /></td>
-            <td class="m" style={`color:${(S[r.state] || ["", "#666"])[1]}`}>{(S[r.state] || [r.state])[0]}</td>
+            <td class="m" style={`color:${(S[r.state] || ["", "var(--st-struck)"])[1]}`}>{(S[r.state] || [r.state])[0]}</td>
           </tr>
         ))}
       </tbody>

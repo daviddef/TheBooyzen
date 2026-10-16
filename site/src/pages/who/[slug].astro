@@ -30,7 +30,10 @@ const { name, rows } = Astro.props;
 const listed = rows.map(p => ({
   name: p.n, slug: p.slug,
   life: [p.b, p.d].filter(x => x && x !== "—").join(" – "),
-  where: p.p || "",
+  /* p.p is a list of [label, href] pairs; printed as a value it ran the labels and
+     addresses together into one unbreakable string ("The Kolbes/kolbe/#north..."),
+     which also pushed the page sideways on a phone. */
+  where: (p.p || []).length ? "On: " + p.p.map(x => (Array.isArray(x) ? x[0] : x)).join(" · ") : "",
   note: p.v && p.v !== p.n ? `Also written ${p.v}` : "",
 }));
 ---

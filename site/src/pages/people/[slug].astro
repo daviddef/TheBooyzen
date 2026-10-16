@@ -115,7 +115,8 @@ const groups = Object.entries(byPage);
   <div class="grid g2" style="margin-top:4px">
     <div class="panel">
       <h2 class="ct" style="margin-top:0">The record</h2>
-      <table style="width:100%">
+      <div class="scroll">
+      <table class="rec" style="width:100%">
         <tbody>
           <tr><td style="width:7rem">Name</td><td><strong>{p.n}</strong></td></tr>
           {p.v && <tr><td>Also written</td><td>{p.v}</td></tr>}
@@ -129,6 +130,7 @@ const groups = Object.entries(byPage);
             and that part does not.</td></tr>}
         </tbody>
       </table>
+      </div>
     </div>
     <div class="panel">
       <h2 class="ct" style="margin-top:0">What the archive holds</h2>

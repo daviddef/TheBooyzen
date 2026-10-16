@@ -150,7 +150,18 @@ const CODE = /`([^`]+)`/g;
    backtick, EIGHT hold an asterisk, and NO query holds both. So this renders
    code spans and nothing else, leaving every asterisk exactly as written.
    Pair-based, so an unbalanced backtick also stays as itself. */
-export const mdCode = (x) => esc(x).replace(CODE, (_m, c) => `<code>${c}</code>`);
+/* ONE ITALIC IS NOW RENDERED HERE, AND ONLY ONE KIND. A query that quotes a book
+   title (*Afrikaanse Biografiese Woordeboek*) printed its asterisks at the reader.
+   A wildcard never looks like that: every wildcard in this column sits against a
+   letter (Booi*, B*rry, Stef*, Col*), where an italic OPENER must stand at the
+   start or after a space or bracket, with a non-space inside it, and be CLOSED
+   before a space, bracket, punctuation or the end. Checked over all 898 queries on
+   16 October 2026: eight hold an asterisk, one matches this pattern, and it is the
+   title. */
+const TITLE = /(^|[\s(])\*([^\s*](?:[^*]*[^\s*])?)\*(?=[\s).,;:!?]|$)/g;
+export const mdCode = (x) => esc(x)
+  .replace(CODE, (_m, c) => `<code>${c}</code>`)
+  .replace(TITLE, (_m, pre, t) => `${pre}<em>${t}</em>`);
 
 export const md = (x) => {
   const spans = [];

@@ -622,7 +622,7 @@ const tally = (id) => {
         {srcState.rows.filter(r => r.state !== "up").map(r => (
           <tr>
             <td class="m">{r.host}</td>
-            <td class="m" style={`color:${r.state === "dark" ? "#B04A16" : r.state === "mail only" ? "#12703F" : "#E9A020"}`}>{r.state}</td>
+            <td class="m" style={`color:${r.state === "dark" ? "var(--st-block)" : r.state === "mail only" ? "var(--st-ok)" : "var(--st-next)"}`}>{r.state}</td>
             <td class="m">{r.cited}&times;</td>
             <td class="cap">{r.why}</td>
           </tr>

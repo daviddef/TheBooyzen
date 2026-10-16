@@ -4,6 +4,14 @@ import WorkList from "@daviddef/archive-kit/components/WorkList.astro";
 import { u } from "../lib/url.js";
 import work from "../data/worklist.json";
 const rows = work.rows;
+/* The kit's WorkList prints a row's one-line `what` as plain text, so the
+   asterisks and backticks the data is written with reached the reader. Until
+   the component renders it, drop the markers and keep the words (the data is
+   not touched): *Title* -> Title, `code` -> code. */
+const plain = (t) => String(t ?? "")
+  .replace(/`([^`]+)`/g, "$1")
+  .replace(/(^|[\s(])\*([^\s*](?:[^*]*[^\s*])?)\*(?=[\s).,;:!?]|$)/g, "$1$2");
+const shown = { ...work, rows: rows.map((r) => ({ ...r, what: plain(r.what) })) };
 const open = rows.filter(r => !["done", "struck"].includes(r.state)).length;
 ---
 <Base title={work.title}
@@ -26,7 +34,7 @@ const open = rows.filter(r => !["done", "struck"].includes(r.state)).length;
 
 <section class="blk">
   <h2>The list</h2>
-  <WorkList work={work} u={u} />
+  <WorkList work={shown} u={u} />
 </section>
 
 <section class="blk">

@@ -84,7 +84,7 @@ const flat = sets.flatMap(x => x.rows.map(([q, res, note, k]) => ({
     <Rule name={["koppie", "thorn", "windpump", "gable", "awl", "wagon"][i % 6]} />
     <section class="blk">
       <h2>{s.g}</h2>
-      <p class="dek">{s.n} · searched {s.d} · <a href={u(s.h)}>where it is used &rarr;</a></p>
+      <p class="dek"><Fragment set:html={md(s.n)} /> · searched {s.d} · <a href={u(s.h)}>where it is used &rarr;</a></p>
       <div class="scroll" style="margin-top:16px">
         <table>
           <thead><tr><th style="width:17rem">Query</th><th class="m" style="width:8rem">Result</th><th></th></tr></thead>
