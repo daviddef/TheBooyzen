@@ -23,7 +23,8 @@ SITE = os.path.join(ROOT, "site")
 sys.path.insert(0, os.path.join(SITE, "node_modules", "@daviddef", "archive-kit",
                                 "kit", "tools"))
 from decisions import check                                  # noqa: E402
-import checkliving                                           # noqa: E402
+import checkliving                                           # noqa: E402,F401
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 
 def _scripts():
@@ -51,7 +52,11 @@ def kin_ratchet():
 
 
 def named_living():
-    """Whoever the living gate itself would find — not a hand-kept list.
+    """Whoever the estate's one rule finds — not a hand-kept list. (16 October 2026: this now
+    asks tools/livingflags.py, which asks the kit's living_rule.py, instead of the kit's
+    older checkliving harvest, which is still run as its own gate.)
+
+    What follows is the reasoning of the version it replaces, kept because it still holds.
 
     Deliberately routed through the REAL harvest rather than a second reading of
     the data, so this cannot agree with the declaration while disagreeing with
@@ -60,10 +65,30 @@ def named_living():
     have declared «nobody living» in perfect agreement with a gate that also
     could not see her.
     """
-    import datetime
-    living, _presumed, _skipped, _rows = checkliving.from_data(
-        os.path.join(SITE, "src", "data"), datetime.date.today())
-    return sorted(living)
+    import livingflags
+    people = json.load(open(os.path.join(SITE, "src", "data", "people.json"), encoding="utf-8"))["people"]
+    pol = _policy()
+    living, _held = livingflags.classify(people, livingflags.families(), pol.get("heldOut", []),
+                                         pol.get("author", []))
+    return sorted(people[i]["n"] for i in living)
+
+
+def _policy():
+    return json.load(open(os.path.join(SITE, "src", "data", "living-policy.json"), encoding="utf-8"))
+
+
+def living_years():
+    """The 80-year bound, read from the kit's living_rule.py, not copied here."""
+    import living_rule
+    return living_rule.LIVING_YEARS
+
+
+def held_out():
+    return sorted(_policy().get("heldOut", []))
+
+
+def author():
+    return sorted(_policy().get("author", []))
 
 
 def goat_counter():
@@ -110,5 +135,8 @@ raise SystemExit(check(os.path.join(SITE, "src", "data", "decisions.json"), {
     "livingPolicy": living_policy,
     "kinRatchet": kin_ratchet,
     "namedLiving": named_living,
+    "livingYears": living_years,
+    "heldOut": held_out,
+    "author": author,
     "goatCounter": goat_counter,
 }))

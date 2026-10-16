@@ -1,0 +1,21 @@
+{
+ "note": "Who is living in this archive, as decided by the kit's living_rule.py (80 or younger, no death recorded) over people.json, plus anyone the archive records as living in the field a date would occupy. Written by tools/livingflags.py and read by the layout and the person pages; tools/checkliving2.py recomputes it independently and refuses the build if the two differ. A living person is shown with their name, their relationships and their town and country, and nothing more.",
+ "living": [
+  {
+   "slug": "tersia-booyzen",
+   "n": "Tersia Booyzen",
+   "w": ""
+  },
+  {
+   "slug": "cheryl-anne-lerena",
+   "n": "Cheryl Anne Lerena",
+   "w": "Johannesburg, South Africa"
+  },
+  {
+   "slug": "david-defranceski",
+   "n": "David Defranceski",
+   "w": "Johannesburg, South Africa"
+  }
+ ],
+ "heldOut": []
+}

@@ -7,6 +7,7 @@ import { md } from "../lib/md.js";
 import d from "../data/dossiers.json";
 import pj from "../data/people.json";
 import nf from "../data/namefold.json";
+import { livingBySlug } from "../lib/living.js";
 /* THIS PAGE'S OWN NOTE PROMISED IT. "Filter by name, family, year, place, or
    a spelling variant such as Montjoy, Kumm or Booyse" has been printed under
    the box since the page was written, and the box did nothing of the kind -
@@ -59,7 +60,13 @@ const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Op
         extraHay: [...new Set((p.pages || []).map((x) => x.t).join(" ").toLowerCase()
           .split(/\s+/).filter(Boolean))].join(" "),
         facets: { line: p.l },
-        cells: [
+        cells: livingBySlug(p.slug) ? [
+          /* a living person: name, and town and country if there is one. Nothing else. */
+          `<a href="${u("/who/" + p.slug + "/")}"><strong>${p.n}</strong></a>` +
+            `<div style="margin-top:6px"><span class="chip lore">Living</span></div>`,
+          "", "",
+          `<div>${livingBySlug(p.slug).w || ""}</div>`,
+        ] : [
           `<a href="${u("/who/" + p.slug + "/")}"><strong>${p.n}</strong></a>` +
             (p.g ? `<span class="m cap"> · generation ${p.g}</span>` : "") +
             (p.v ? `<div class="cap" style="margin-top:3px">also written ${p.v}</div>` : "") +

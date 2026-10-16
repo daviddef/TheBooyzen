@@ -403,7 +403,9 @@ not 1818; and there is a sibling the tree lacks entirely — **Jacoba Catharina 
 | **Disputed** | Asserted in the record and contradicted elsewhere in it. All fourteen are listed. |
 | **Family lore** | Told, remembered, not corroborated. Kept because it is precious; labelled because pretending otherwise is how family myths become family history. |
 
-**Living people are omitted from the build entirely** — not hidden, not gated, not present in the output.
+**A living person (80 or younger, with no death recorded) is named with their relationships and their town and country, and nothing more.**
+Their page is not indexed and carries no dates, records, photograph or structured data; possible minors are not published at all.
+Who counts as living is decided by the shared kit's `living_rule.py` (`tools/livingflags.py` writes `site/src/data/living.json`; `tools/checkliving2.py` recomputes it and fails the build if a page shows more).
 A removal request is honoured within days, without argument and without requiring a reason.
 
 ## Running it

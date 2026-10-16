@@ -6,8 +6,15 @@ const v = versioner();
 import { u } from "../lib/url.js";
 import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
-import pjLiving from "../data/people.json";
+import { nLiving, STANDARD } from "../lib/living.js";
 /* THE MOST-PUBLISHED SENTENCE IN THIS ARCHIVE, AND IT WAS ASSERTED.
+ *
+ * 16 OCTOBER 2026: the count below is now read from living.json, which
+ * tools/livingflags.py writes with the kit's living_rule.py. It used to filter
+ * people.json for `living === true`, a flag nobody sets, and so said "holds none"
+ * on every page while a woman recorded as b = "living" was in the data. The text
+ * that follows is what that sentence looked like before.
+ *
  *
  * The footer says on 797 pages that this archive holds no living person. It
  * was true when written and true today, and nothing whatever was checking it:
@@ -31,15 +38,13 @@ import pjLiving from "../data/people.json";
    end: six living people named deliberately, recorded honestly in its data,
    and an /about page promising they were absent. An exception that is real and
    unstated is the overclaim. */
-const nLiving = pjLiving.people.filter(
-  (p) => p.living === true || String(p.conf || "").toLowerCase() === "living").length;
 import SocialHead from "@daviddef/archive-kit/components/SocialHead.astro";
 import JsonLd from "@daviddef/archive-kit/components/JsonLd.astro";
 import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import ring from "@daviddef/archive-kit/data/archives.json";
 import { md } from "../lib/md.js";
 import { plain } from "@daviddef/archive-kit/lib/md.js";
-const { title, description = "", dek, eyebrow, bare, noindex } = Astro.props;
+const { title, description = "", dek, eyebrow, bare, noindex, living: livingPage } = Astro.props;
 /* THE DEK IS SPENT THREE WAYS AND ONLY ONE OF THEM MAY CARRY TAGS.
  * It is the visible lead paragraph, the meta description, and the string
  * handed to SocialHead and JsonLd. Rendering it once and using that
@@ -91,11 +96,11 @@ const thisArchive =
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>{title === SITE ? SITE : `${title} — ${SITE}`}</title>
 <meta name="description" content={dekText || "An evidence-first archive of the Booyzen family — the north-eastern Cape, the Anglo-Boer War, and Johannesburg."} />
-<SocialHead title={title} description={dekText || description} site={SITE} />
-<JsonLd type={bare ? "WebSite" : "Article"} name={title} description={dekText || description}
+{!livingPage && <SocialHead title={title} description={dekText || description} site={SITE} />}
+{!livingPage && <JsonLd type={bare ? "WebSite" : "Article"} name={title} description={dekText || description}
         url={Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname}
-        site={SITE} about={Astro.props.person} />
-    {noindex && <meta name="robots" content="noindex" />}
+        site={SITE} about={Astro.props.person} />}
+    {(noindex || livingPage) && <meta name="robots" content="noindex" />}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
@@ -154,7 +159,7 @@ const thisArchive =
   <div class="wrap">
     <SiblingArchives />
     <p class="foot">An evidence-first family archive for the Booyzen family — of Graaff-Reinet and Cradock,
-    of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. <strong>Living people are named</strong> — name and relationship only, never a date, a place, a photograph or a record. <strong>{nLiving === 0 ? "This archive holds none." : nLiving === 1 ? "One person here is living." : nLiving + " people here are living."}</strong> The one exception is the person this archive was built for, who is named with his own places on the <a href={u("/")}>home page</a>, by his own choice and about himself.</p>
+    of Barkly East and Dordrecht, and of Johannesburg. Every claim carries its confidence. <strong>{STANDARD}</strong> {nLiving === 0 ? "This archive holds none." : nLiving === 1 ? "One person here is living." : nLiving + " people here are living."} The one exception is the person this archive was built for, who is named with his own places on the <a href={u("/")}>home page</a>, by his own choice and about himself.</p>
     <p class="foot dim">Built {new Date().getFullYear()} ·
       <a href={u("/sources/")}>Sources</a> ·
       <a href={u("/method/")}>Method</a> ·

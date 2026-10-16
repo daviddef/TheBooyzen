@@ -23,8 +23,17 @@ def slugify(n):
     return re.sub(r"^-+|-+$", "", re.sub(r"[^a-z0-9]+", "-", n.lower()))
 
 people = json.load(open(os.path.join(DATA, "people.json"), encoding="utf-8"))["people"]
+# A LIVING PERSON HAS NO ROW HERE. The register is a list of records, and a living person is
+# shown with their name, their relationships and their town and country only. Who is living
+# is decided by tools/livingflags.py (the kit's living_rule.py) and written to living.json.
+LIVING = {x["slug"] for x in json.load(
+    open(os.path.join(DATA, "living.json"), encoding="utf-8"))["living"]}
+LIVING_NAMES = {x["n"].lower() for x in json.load(
+    open(os.path.join(DATA, "living.json"), encoding="utf-8"))["living"]}
 known = {}
 for p in people:
+    if slugify(p["n"]) in LIVING:
+        continue
     known[p["n"].lower()] = slugify(p["n"])
     for v in re.split(r"[·,]", p.get("v") or ""):
         v = re.sub(r"\(.*?\)", "", v).strip()
@@ -79,6 +88,10 @@ for line in open(os.path.join(HARVEST, "rows.tsv"), encoding="utf-8"):
     rel = p[4] if len(p) > 4 else ""
     if not name:
         continue
+    # a harvested index row that carries a living person's name is not offered: it cannot be
+    # told from a record of them, and the standard shows no record of a living person
+    if name.lower() in LIVING_NAMES:
+        continue
     coll = titles[int(ti)] if ti.isdigit() and int(ti) < len(titles) else ""
     key = (ark, name.lower())
     if key in seen:
@@ -92,6 +105,8 @@ for line in open(os.path.join(HARVEST, "rows.tsv"), encoding="utf-8"):
                  "p": known.get(name.lower(), "")})
 
 for p in people:
+    if slugify(p["n"]) in LIVING:
+        continue
     bd = " · ".join(x for x in [p.get("b", ""), p.get("d", "")] if x and x != "—")
     rows.append({"n": p["n"], "g": group_for(p["n"]), "w": bd or "—",
                  "s": "reconstructed by this archive", "k": "read", "u": "",

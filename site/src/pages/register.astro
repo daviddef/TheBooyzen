@@ -13,7 +13,7 @@ import pjReg from "../data/people.json";
    identical thing in the identical hour, typing «six are named on purpose»
    into its own corrected footer. A number that is right today and asserted is
    a number that goes wrong silently. */
-import LW from "@daviddef/archive-kit/data/living-words.json";
+import { nLiving, STANDARD } from "../lib/living.js";
 const nPeopleReg = pjReg.people.length;
 /* READ THE SAME VOCABULARY THE GATE READS. This counted a living flag and a
    `conf` of "living" and nothing else — so Tersia Booyzen, recorded b = "living",
@@ -22,12 +22,10 @@ const nPeopleReg = pjReg.people.length;
    checkliving.py missed her the same way and for the same reason. Two readers
    agreeing is evidence only when they can disagree; these could not, because
    neither knew the encoding. Both now read kit/data/living-words.json. */
-const LIVING_IS = (p) =>
-  LW.flags.some((k) => p[k] === true) ||
-  LW.confValues.includes(String(p.conf || "").toLowerCase()) ||
-  LW.dateFields.some((k) => LW.saidLiving.includes(String(p[k] || "").trim().toLowerCase()));
-const livingReg = pjReg.people.filter(LIVING_IS);
-const nLivingReg = livingReg.length;
+/* 16 OCTOBER 2026: counted from living.json, which tools/livingflags.py writes with the
+   kit's living_rule.py. This page used to run its own test over the kit's vocabulary, which
+   was a second definition of who is living; the standard allows one. */
+const nLivingReg = nLiving;
 /* THE SEARCH BOX FOLDS SPELLINGS. Without this, a reader typing the surname
    this archive answers to reached 3,504 of the 4,244 times it appears in these
    rows and never learned the other 740 existed - Booijsen, Booysen, Booyzens,
@@ -98,13 +96,9 @@ const regRows = rows.map((r) => ({
     <p style="margin-top:12px">{nLivingReg === 0
         ? <Fragment><b>No living person is in this register</b>, and none is anywhere in
             this archive: of the {nPeopleReg} people it holds, not one is living.</Fragment>
-        : <Fragment><b>{nLivingReg === 1 ? "One living person is in this register" :
-            nLivingReg + " living people are in this register"}</b> — {livingReg.map((p) => p.n).join(", ")} —
-            of the {nPeopleReg} it holds.</Fragment>}
-      The estate's rule is that <b>a living person is named and nothing
-      more</b> — no dates, no places, no photographs. {nLivingReg === 0
-        ? "Here it has not yet had to be applied at all."
-        : "It is applied here: the name above is all this archive publishes of them."}</p>
+        : <Fragment><b>{nLivingReg === 1 ? "One living person is" : nLivingReg + " living people are"} named in this
+            archive, and none has a row in this register</b>, of the {nPeopleReg} people it holds.</Fragment>}
+      {STANDARD} A living person's page is not indexed.</p>
   </div>
 </section>
 

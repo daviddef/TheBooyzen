@@ -7121,26 +7121,51 @@
    ]
   },
   {
+   "n": "James Clark",
+   "b": "—",
+   "d": "—",
+   "l": "Kolbe",
+   "s": "doc",
+   "r": "George Augustus Kolbe's colleague at the mission station Boesmanskool, the present Bethulie: the two were placed there together in 1828, and Clark's own letter of 31 December 1828 says they arrived in the beginning of May. He was named on the Bethulie page without a page of his own; this is it, and it holds only what the archive already says of him.",
+   "p": [
+    [
+     "The Kolbes",
+     "/kolbe/"
+    ],
+    [
+     "Bethulie",
+     "/places/bethulie/"
+    ]
+   ]
+  },
+  {
    "n": "Tersia Booyzen",
    "b": "living",
    "d": "—",
    "l": "Booyzen",
    "s": "lore",
-   "r": "Recorded the name-change and Anglo-Boer War account on the MyHeritage tree, as told to her by her father. It is FAMILY TESTIMONY AND NOT FROM A DOCUMENT — which is exactly why this archive quotes it in full and then tests it against the Cape Rebel rolls and the surname distribution, rather than repeating it.",
-   "p": [
-    [
-     "The Rebels",
-     "/rebels/"
-    ],
-    [
-     "The Name",
-     "/name/"
-    ],
-    [
-     "Sources",
-     "/sources/"
-    ]
-   ]
+   "r": "",
+   "p": []
+  },
+  {
+   "n": "Cheryl Anne Lerena",
+   "b": "living",
+   "d": "—",
+   "l": "Lerena",
+   "s": "lore",
+   "r": "",
+   "p": [],
+   "w": "Johannesburg, South Africa"
+  },
+  {
+   "n": "David Defranceski",
+   "b": "living",
+   "d": "—",
+   "l": "Lerena",
+   "s": "lore",
+   "r": "",
+   "p": [],
+   "w": "Johannesburg, South Africa"
   }
  ],
  "lines": [

@@ -5,6 +5,7 @@
 import Base from "../layouts/Base.astro";
 import About from "@daviddef/archive-kit/components/About.astro";
 import { u } from "../lib/url.js";
+import { STANDARD } from "../lib/living.js";
 import people from "../data/people.json";
 import places from "../data/places.json";
 import register from "../data/register.json";
@@ -19,6 +20,6 @@ const holds = [
 ---
 <Base title="About"
       eyebrow="What this archive is, and what it will not say"
-      dek="Every claim here carries one of five words, every correction it has had to make is published, and living people are named and nothing more. What it holds is counted from its own data, not asserted.">
-  <About holds={holds} u={u} name="The Booyzen Archive" />
+      dek="Every claim here carries one of five words, every correction it has had to make is published, and a living person is named with their relationships and their town and country, and nothing more. What it holds is counted from its own data, not asserted.">
+  <About holds={holds} u={u} name="The Booyzen Archive" living={STANDARD} />
 </Base>

@@ -9,6 +9,7 @@ import Base from "../../layouts/Base.astro";
 import Namesakes from "@daviddef/archive-kit/components/Namesakes.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
+import { isLivingSlug, livingBySlug, STANDARD } from "../../lib/living.js";
 
 export function getStaticPaths() {
   const slugify = (s) => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -27,7 +28,11 @@ export function getStaticPaths() {
 }
 
 const { name, rows } = Astro.props;
-const listed = rows.map(p => ({
+/* A name page whose every bearer is living is noindex and shows names and nothing else. */
+const allLiving = rows.length > 0 && rows.every(p => isLivingSlug(p.slug));
+const listed = rows.map(p => isLivingSlug(p.slug) ? ({
+  name: p.n, slug: p.slug, life: "", where: livingBySlug(p.slug).w || "", note: "",
+}) : ({
   name: p.n, slug: p.slug,
   life: [p.b, p.d].filter(x => x && x !== "—").join(" – "),
   /* p.p is a list of [label, href] pairs; printed as a value it ran the labels and
@@ -39,7 +44,8 @@ const listed = rows.map(p => ({
 ---
 <Base title={name}
       eyebrow={rows.length > 1 ? `${rows.length} people of this name` : "One person of this name"}
-      dek={`Everyone in this archive called ${name}.`}>
+      dek={allLiving ? STANDARD : `Everyone in this archive called ${name}.`}
+      living={allLiving}>
   <section class="blk">
     <Namesakes name={name} people={listed} base={u("/")} />
     <p class="dek" style="margin-top:1.6rem">A name is not a person. This archive keeps the two

@@ -25,6 +25,17 @@ def slug(s):
     return s[:60]
 
 people = json.load(open(os.path.join(DATA, "people.json"), encoding="utf-8"))["people"]
+# A LIVING PERSON'S DOSSIER IS THEIR NAME, LINE AND PLACE AND A COUNT. The mentions are
+# still counted (an integer, so the auto-linker can link their name and checkregisters can
+# see they are discussed), but no excerpt, no page list and no note is stored: dossiers.json is committed to a public repo, and a living person is shown
+# with their name, their relationships and their town and country only. living.json is
+# written by tools/livingflags.py from the kit's living_rule.py.
+LIVING = {x["slug"]: x for x in json.load(
+    open(os.path.join(DATA, "living.json"), encoding="utf-8"))["living"]}
+
+def scrubbed(p):
+    return {"n": p["n"], "b": "living", "d": "—", "l": p["l"], "s": p["s"], "r": "", "p": [],
+            "w": LIVING[slug(p["n"])].get("w", "")}
 
 # ---- 1. page text, cleaned
 TAG = re.compile(r"<(script|style)[^>]*>.*?</\1>", re.S | re.I)
@@ -208,7 +219,7 @@ for p in people:
     sl = slug(name)
     if sl in dossiers:            # two people, one name — merge, flag, and keep both records
         dossiers[sl]["shared"] = True
-        dossiers[sl].setdefault("also", []).append(p)
+        dossiers[sl].setdefault("also", []).append(scrubbed(p) if sl in LIVING else p)
         continue
     hits, seen, hitpages = [], set(), []
     for route, pg in sorted(pages.items()):
@@ -228,8 +239,12 @@ for p in people:
             for f in found[:4]:
                 hits.append({"page": route, "title": pg["title"], "text": f})
         seen = set()
-    dossiers[sl] = {**p, "slug": sl, "mentions": len(hits), "pages": hitpages,
-                    "hits": hits[:26], "shared": False, "also": []}
+    if sl in LIVING:
+        dossiers[sl] = {**scrubbed(p), "slug": sl, "mentions": len(hits), "pages": [],
+                        "hits": [], "shared": False, "also": []}
+    else:
+        dossiers[sl] = {**p, "slug": sl, "mentions": len(hits), "pages": hitpages,
+                        "hits": hits[:26], "shared": False, "also": []}
     if hits:
         # every safe variant links to the dossier, not only the canonical name
         for v in variants(p):

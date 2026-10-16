@@ -41,7 +41,12 @@ def clean(t):
 
 rows = []
 d = json.load(open(os.path.join(DATA, "dossiers.json"), encoding="utf-8"))
+# A LIVING PERSON IS NOT IN THE SEARCH INDEX: their page is noindex, and the standard
+# takes a noindex page out of the sitemap and out of this. living.json is written by
+# tools/livingflags.py from the kit's rule.
+LIVING = {x["slug"] for x in json.load(open(os.path.join(DATA, "living.json"), encoding="utf-8"))["living"]}
 for p in d["people"].values():
+    if p["slug"] in LIVING: continue
     rows.append({"k": "Person", "t": p["n"], "s": f'{p["b"]} – {p["d"]} · {p["l"]}',
                  "x": p["r"], "h": f'/who/{p["slug"]}/'})
 pl = json.load(open(os.path.join(DATA, "places.json"), encoding="utf-8"))
@@ -58,6 +63,8 @@ for f in sorted(glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True
     # and "Redirecting to: ..." was being offered as a search result for /log/ and
     # /changed/. It stays built so the old address keeps working.
     if 'http-equiv="refresh"' in raw[:600]: continue
+    # a page that says noindex is not offered to a search box either (the living)
+    if re.search(r'<meta name="robots" content="[^"]*noindex', raw[:6000]): continue
     title = clean((re.search(r"<title>(.*?)</title>", raw, re.S) or [None, ""])[1]).replace(" — The Booyzen Archive", "")
     body = re.sub(r"<(nav|footer)[^>]*>.*?</\1>", " ", raw, flags=re.S | re.I)
     dek = clean((re.search(r'<p class="dek"[^>]*>(.*?)</p>', body, re.S) or [None, ""])[1])

@@ -21,7 +21,10 @@ import { treeFor, dates, provenance } from "../lib/kin.js";
 import PersonTree from "@daviddef/archive-kit/components/PersonTree.astro";
 import "@daviddef/archive-kit/styles/persontree.css";
 
-const { person, showKey = true } = Astro.props;
+/* `living` draws the relationships and nothing else: no household notes, no source
+   links and no provenance count, because those are records, and a living person is
+   shown with their name, their relationships and their town and country only. */
+const { person, showKey = true, living = false } = Astro.props;
 const t = treeFor(person);
 const prov = provenance(t);
 
@@ -34,10 +37,10 @@ const viaLabel = { line: "direct line", doc: "record", inf: "inferred", tree: "f
 const row = (o, via, slug, showVia = true) => ({
   name: o.n,
   href: u("/who/" + slug + "/"),
-  dates: dates(o),
+  dates: living ? "" : dates(o),
   cls: CLS[via],
-  mark: showVia ? viaLabel[via] : undefined,
-  title: "Recorded by: " + viaLabel[via],
+  mark: showVia && !living ? viaLabel[via] : undefined,
+  title: living ? undefined : "Recorded by: " + viaLabel[via],
 });
 
 /* 89 of this archive's 352 person pages drew no chart at all, and a page that
@@ -58,14 +61,14 @@ const emptyWhy = !nothing ? "" :
     : "A household here names this person as a parent, and records neither a "
       + "spouse nor a child in it. There is nothing more to draw.";
 
-const warns = [
+const warns = living ? [] : [
   ...(t.origin && t.origin.f.warn ? [t.origin.f.warn] : []),
   ...t.unions.filter((x) => x.f.warn).map((x) => x.f.warn),
 ];
 ---
 <PersonTree
   always
-  self={{ name: person.n, dates: dates(person),
+  self={{ name: person.n, dates: living ? "" : dates(person),
           gen: person.g ? `generation ${person.g} \u2014 see the spine \u2192` : "",
           genHref: person.g ? u("/direct-line/") : "",
           note: person.g ? "" : person.l }}
@@ -83,7 +86,7 @@ const warns = [
 >
   {/* No lines are drawn, so a key to four kinds of line explains nothing and
        implies the chart is using them. */}
-  {showKey && !nothing && (
+  {showKey && !nothing && !living && (
     <span slot="keys">
       <span class="key"><i class="sw line"></i> the direct line, argued on <a href={u("/direct-line/")}>the line</a></span>
       <span class="key"><i class="sw doc"></i> from a record this archive has read</span>
@@ -94,7 +97,7 @@ const warns = [
   <Fragment slot="before-caption">
     {warns.map((w) => <p class="warn cap">{w}</p>)}
   </Fragment>
-  <Fragment slot="notes">
+  {!living && (<Fragment slot="notes">
     {nothing && <span style="display:block;margin-top:8px">{emptyWhy}</span>}
     {!nothing && <span style="display:block;margin-top:8px">
       <b>{prov.doc === prov.n
@@ -111,5 +114,5 @@ const warns = [
       <span style="display:block;margin-top:6px">{x.f.why}
         {x.f.src && <span>{" "}<a href={u(x.f.src[1])}>{x.f.src[0]} &rarr;</a></span>}</span>
     ))}
-  </Fragment>
+  </Fragment>)}
 </PersonTree>

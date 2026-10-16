@@ -1,0 +1,7 @@
+{
+ "_note": "The two parts of the living-people standard (v2, 16 October 2026) that no date can decide. Read by tools/livingflags.py and tools/checkliving2.py; each value is also recorded in decisions.json and recomputed from THIS file by tools/check-decisions.py, so changing either is a deliberate act that must change both files in one commit. Recorded by slug, never by anything else about a person.",
+ "author": ["david-defranceski"],
+ "author_why": "The person this archive was built for. Named on the home page with his own places by his own choice (the stated exception, rule 9), and an adult, so the possible-minor test (no birth year and a living parent) must not hold him out. He is shown on his own person page like any living person: name, relationships and town and country.",
+ "heldOut": [],
+ "heldOut_why": "People promised privacy by id. None in this archive. A slug listed here must be absent from people.js, kin.js, every data file and every built page; tools/checkliving2.py fails the build if it is not."
+}

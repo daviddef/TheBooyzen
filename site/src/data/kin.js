@@ -235,7 +235,12 @@ export const families = [
 
   { h: "Nuno Fernando Lerena", w: "Catherine Mary Sophia Booyzen", via: "doc",
     why: "Married 15 January 1949 at St Joseph's, Mayfair — the hinge to the Lerena archive.",
-    kids: [] },
+    kids: [{ n: "Cheryl Anne Lerena", via: "tree" }] },
+
+  /* A LIVING PERSON'S HOUSEHOLD carries no `why` and no `src`: those are records, and a
+     living person is shown with their relationships and nothing more. */
+  { h: "Cheryl Anne Lerena", w: null, via: "tree",
+    kids: [{ n: "David Defranceski", via: "tree" }] },
 
   { h: "Petrus Jacobus Pretorius", w: "Margarietha Wilhelmina Elizabeth Barry", via: "doc",
     why: "Named together as parents in the 1906 Gereformeerde Kerk baptism register, and again on their daughter's 1944 Sterfkennis with their address — 96 James Street, Germiston.",

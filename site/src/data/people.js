@@ -1105,10 +1105,20 @@ export const people = [
  r:"Plaasboer of Caerlaverock, tried as a Cape Rebel in June 1901 — the month before the family married in his house, where he signed the register.",
  p:[["The Rebels","/rebels/"],["Home","/"],["Open Questions","/open-questions/"]]},
 
-// ───────────────────────── voices and context ─────────────────────────
-{n:"Tersia Booyzen", b:"living", d:"—", l:"Booyzen", s:"lore",
- r:"Recorded the name-change and Anglo-Boer War account on the MyHeritage tree, as told to her by her father. It is FAMILY TESTIMONY AND NOT FROM A DOCUMENT — which is exactly why this archive quotes it in full and then tests it against the Cape Rebel rolls and the surname distribution, rather than repeating it.",
- p:[["The Rebels","/rebels/"],["The Name","/name/"],["Sources","/sources/"]]},
+{n:"James Clark", b:"—", d:"—", l:"Kolbe", s:"doc",
+ r:"George Augustus Kolbe's colleague at the mission station Boesmanskool, the present Bethulie: the two were placed there together in 1828, and Clark's own letter of 31 December 1828 says they arrived in the beginning of May. He was named on the Bethulie page without a page of his own; this is it, and it holds only what the archive already says of him.",
+ p:[["The Kolbes","/kolbe/"],["Bethulie","/places/bethulie/"]]},
+
+// ───────────────────────── the living ─────────────────────────
+// A LIVING PERSON IS RECORDED HERE IN ONE SHAPE AND NO OTHER: a name, `b:"living"`
+// (no year, no date, ever - this file is public), `d:"—"`, a line, `s`, `r:""`,
+// `p:[]`, and `w`, the town and country (or nothing when none is recorded).
+// Who is living is decided by tools/livingflags.py with the kit's living_rule.py
+// (80 or younger, no death recorded), and tools/checkliving2.py refuses the build
+// if a living person carries anything else. Their relationships are in kin.js.
+{n:"Tersia Booyzen", b:"living", d:"—", l:"Booyzen", s:"lore", r:"", p:[]},
+{n:"Cheryl Anne Lerena", b:"living", d:"—", l:"Lerena", s:"lore", r:"", p:[], w:"Johannesburg, South Africa"},
+{n:"David Defranceski", b:"living", d:"—", l:"Lerena", s:"lore", r:"", p:[], w:"Johannesburg, South Africa"},
 ];
 
 export const lines = ["Booyzen","Mountjoy","Barry","Kolbe","Downing","Pretorius","Daschner","Schoeman","Olivier","Lerena","McCabe"];

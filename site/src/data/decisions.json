@@ -7,7 +7,7 @@
   },
   "livingPolicy": {
    "value": "named-bare",
-   "why": "A living person is named and nothing else about them is published — David's rule. Read from the check:living script itself, so changing the flag in package.json is what this catches."
+   "why": "Which kit gate policy check:living runs. Kept at named-bare (the kit gate proves no date of a living person is published); the v2 standard (16 October 2026) is enforced by tools/checkliving2.py, which shows a living person's name, relationships and town and country and nothing more. Read from the check:living script itself, so changing the flag in package.json is what this catches."
   },
   "kinRatchet": {
    "value": 0,
@@ -15,13 +15,29 @@
   },
   "namedLiving": {
    "value": [
+    "Cheryl Anne Lerena",
+    "David Defranceski",
     "Tersia Booyzen"
    ],
-   "why": "The one living person this archive names, and she is named because she is a SOURCE: the Anglo-Boer War account and the name-change come from her testimony as told by her father. Recorded b = \"living\", with no flag anywhere — which is why the living gate counted zero here until 27 September 2026. Anyone appearing or disappearing from this list is a change to who this archive publishes. As of 31f7a5c the vocabulary that finds her is declared in kit/data/living-words.json and read by both the gate and /register, because three separate readers of \"is this person alive\" had each missed her in a different way."
+   "why": "The living people this archive names, as the estate's one rule finds them (tools/livingflags.py over the kit's living_rule.py: 80 or younger, no death recorded; plus anyone the archive records as b = \"living\", because a public file may not carry a living person's birth year). Three on 16 October 2026: the woman whose testimony the Anglo-Boer War account rests on, the author's mother, and the author. The author's mother was named in two pages with a birth year and described as omitted: the first census under v2 found her. Anyone appearing or disappearing from this list is a change to who this archive publishes."
   },
   "goatCounter": {
    "value": "thebooyzen",
    "why": "Which GoatCounter site this archive's reads are reported to. It is a decision, and it is NOT in this repository: the code lives in the shared kit's archives.json, one row per archive, selected by matching that row's base against the base this site is built at. An npm update of the kit can therefore move it with nothing here changing — the same shape as the kit pin that moved inside a commit about something else. The seven codes differ by a single word (thebooyzen, theblazevic, thedarcy …), so the failure worth gating is not losing the counter, which would be obvious; it is this archive quietly reporting into another family's statistics, which would not be. Recomputed by tools/check-decisions.py the way Base.astro resolves it, so a renamed field or a dropped row returns None and refuses. 12 OCTOBER 2026: the rule is now to match the ring entry whose url has this site's ORIGIN, because base alone is ambiguous once the archives live on their own domains: six of seven had an empty base and the first match was the Defranceschi row. Base.astro does it inline and this check does it the same way. A check that re-derives the layout's answer is only as good as its copy of the rule, so the REAL test remains the built page: grep data-goatcounter in the output."
+  },
+  "livingYears": {
+   "value": 80,
+   "why": "The bound in the kit's living_rule.py: age by year, 80 or less is living. Recomputed from the installed kit, so a kit that moves it changes this archive's roster and must be accepted here on purpose."
+  },
+  "heldOut": {
+   "value": [],
+   "why": "People promised privacy by id (rule 8). Recorded in living-policy.json by slug and recomputed from it. None in this archive. A slug listed there must be absent from the data and from every built page; tools/checkliving2.py fails the build otherwise."
+  },
+  "author": {
+   "value": [
+    "david-defranceski"
+   ],
+   "why": "The author, named on the home page as a stated exception and an adult, so the possible-minor test (no birth year and a living parent) does not hold him out. Recorded by slug in living-policy.json."
   }
  }
 }

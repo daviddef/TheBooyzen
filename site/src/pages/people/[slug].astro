@@ -24,14 +24,19 @@ import cw from "../../data/corrections-who.json";
  * Domenica Anile. 31 of the 63 corrections name somebody held here. */
 const ckey = (r) => r[0] + " | " + String(r[1]).slice(0, 80);
 import { treeFor, resolve } from "../../lib/kin.js";
+import { livingBySlug, STANDARD } from "../../lib/living.js";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
 const { p } = Astro.props;
+/* A LIVING PERSON gets the page the standard describes and no other: their name, their
+   relationships and their town and country. The branch is taken on living.json, which
+   tools/livingflags.py writes from the kit's rule; nothing below it runs for them. */
+const LV = livingBySlug(p.slug);
 const mine = cx.rows.filter(r => (cw.who[ckey(r)] || []).includes(p.slug));
 const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Open" };
 const all = Object.values(d.people);
-const kin = all.filter(x => x.slug !== p.slug && x.l === p.l).slice(0, 14);
+const kin = all.filter(x => x.slug !== p.slug && x.l === p.l && !livingBySlug(x.slug)).slice(0, 14);
 /* Places name their people, so a person can be given their places for free. */
 const places = pl.places.filter(x => (x.p || []).includes(p.n));
 /* A page may hold more than one person of the same name; each gets its own
@@ -69,6 +74,27 @@ const byPage = {};
 for (const h of p.hits) (byPage[h.page] ||= { title: h.title, hits: [] }).hits.push(h);
 const groups = Object.entries(byPage);
 ---
+{LV && (
+<Base title={p.n} eyebrow="A living person" dek={STANDARD} living>
+<section class="blk">
+  <PersonTree person={{ ...selves[0], l: "", g: undefined }} showKey={false} living />
+  {!hasKin(selves[0]) && (
+    <p class="cap" style="margin-top:12px">No relationship is recorded for this person in this archive.</p>
+  )}
+</section>
+<section class="blk">
+  <div class="panel">
+    <h2 class="ct" style="margin-top:0">Where</h2>
+    <p style="font-size:15.5px;margin:0">{LV.w || "No town or country is recorded for this person."}</p>
+  </div>
+</section>
+<section class="blk">
+  <p class="note">Nothing else about a living person is published here: no dates, no records, no photograph.
+    <a href={u("/method/")}>How the archive decides who is living &rarr;</a></p>
+</section>
+</Base>
+)}
+{!LV && (
 <Base title={p.n}
       eyebrow={`${p.l} · ${p.mentions === 0 ? "not yet discussed on any page" : p.mentions + " mention" + (p.mentions === 1 ? "" : "s") + " across " + p.pages.length + " page" + (p.pages.length === 1 ? "" : "s")}`}
       dek={p.r}>
@@ -240,3 +266,4 @@ const groups = Object.entries(byPage);
   <p class="note" style="margin-top:18px">{d.note}</p>
 </section>
 </Base>
+)}
