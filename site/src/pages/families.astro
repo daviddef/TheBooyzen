@@ -1,0 +1,73 @@
+---
+/* The families this archive has a page for, and the rule for who gets one.
+
+   Drawn with the kit's Families row, the same row D'Arcy, Blazevic and Falco use for their
+   own family pages, from the figures src/lib/families.js computes. The two hand-built pages
+   (Barry, Kolbe) are listed beside the data-driven ones and are counted the same way, so the
+   numbers here are comparable and none of them is typed. */
+import Base from "../layouts/Base.astro";
+import Families from "@daviddef/archive-kit/components/Families.astro";
+import { u } from "../lib/url.js";
+import { esc } from "../lib/md.js";
+import { registry, allModels, hrefOf, linesWithoutPage, otherNames } from "../lib/families.js";
+
+const models = allModels();
+const plural = (k, one, many) => (k === 1 ? one : many);
+const rowsFor = models.map((M) => {
+  const f = M.f;
+  const n = M.members.length;
+  const facts = [];
+  if (M.span) facts.push(["Years named", `${M.span[0]}–${M.span[1]}`]);
+  facts.push(["On the direct line", M.direct.length ? `${M.direct.length} ${plural(M.direct.length, "ancestor", "ancestors")} on the chart` : "none of the chart's ancestors"]);
+  if (M.spellings.length) facts.push(["The name as written", M.spellings.slice(0, 5).map(([s, c]) => `${esc(s)} ${c}`).join(" · ")]);
+  if (M.joins.length) facts.push(["Married into or out of", M.joins.slice(0, 6).map((j) => `${esc(j.label)} ${j.n}`).join(" · ")]);
+  if (M.places.length) facts.push(["Places", M.places.slice(0, 5).map((x) => esc(x.pl.n)).join(" · ")]);
+  return {
+    slug: f.slug,
+    label: esc(f.title),
+    count: n,
+    countLabel: plural(n, "person", "people"),
+    gloss: f.page
+      ? "A page written by hand, with the family's own story."
+      : `${M.nName} ${plural(M.nName, "person carries", "people carry")} or ${plural(M.nName, "was", "were")} born to the name${M.nLineOnly ? `, and ${M.nLineOnly} more ${plural(M.nLineOnly, "is", "are")} filed on its line under another name` : ""}.`,
+    facts,
+    href: hrefOf(f),
+    hrefLabel: f.page ? "The hand-built page" : "The family page",
+  };
+});
+const noPage = linesWithoutPage();
+const others = otherNames(5);
+const groups = [
+  { label: "Families with a page", note: "", rows: rowsFor },
+];
+if (noPage.length) {
+  groups.push({
+    label: "Lines in The People with no family page yet",
+    note: "the archive files them as lines; they are small, or have their own archive",
+    rows: noPage.map((x) => ({ slug: "line-" + x.line.toLowerCase(), label: esc(x.line), count: x.n, countLabel: plural(x.n, "person", "people"), gloss: "", facts: [], href: "/people/", hrefLabel: "The People" })),
+  });
+}
+---
+<Base title="The Families"
+      eyebrow={`${registry.length} families with a page`}
+      dek="A family here is a name: the people who carry it or were born to it, the line the archive filed them on, the households that join it to the others, and the places and records that name them. Each page is counted from the archive's own data.">
+
+<section class="blk">
+  <h2>Who gets a page</h2>
+  <p>A name has a family page when <strong>a direct-line ancestor on the archive's chart carries it</strong>, or <strong>at least eight people on these pages carry it</strong>, or <strong>the archive's own research files treat it as a family under investigation</strong>. The two older pages, <a href={u("/barry/")}>the Barrys</a> and <a href={u("/kolbe/")}>the Kolbes</a>, were written by hand; the rest are drawn from the people, households, chart, places and register the archive already holds. They add no claim to the archive: they count, group and link what is there.</p>
+  <p>A shared surname is not a relationship. These pages group people by the name they carry and by the line the archive filed them on, as <a href={u("/people/")}>The People</a> does, and the only connections they draw are the households the archive has recorded.</p>
+</section>
+
+<section class="blk">
+  <h2>The families</h2>
+  <Families groups={groups} u={u} />
+</section>
+
+{others.length > 0 && (
+<section class="blk">
+  <h2>Names several people carry, with no page</h2>
+  <p class="dek">{others.map((o, i) => <Fragment>{i ? " · " : ""}<strong>{o.label}</strong> {o.n}</Fragment>)}. They are in the archive as in-laws and descendants; they are listed on <a href={u("/people/")}>The People</a> and in the households of the families above.</p>
+</section>
+)}
+
+</Base>

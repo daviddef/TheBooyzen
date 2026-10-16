@@ -17,6 +17,8 @@
   "who/index.astro": "An index of names. The evidence is on the person pages it links to.",
   "who/[slug].astro": "One name at a time, generated. Each carries the documents for that person; a shared block would be the same list on three hundred pages whether or not it applied.",
   "people/[slug].astro": "One person at a time, generated. The documents are named in the person's own record, which is where a reader is looking.",
+  "families.astro": "An index of the family pages, counted from people.json, kin.js and the register. It states no claim of its own: each family page names the pages that carry the evidence.",
+  "families/[slug].astro": "One family name at a time, generated. It counts, groups and links what people.json, kin.js, pedigree.json, places.json and register.json already hold, adds no claim, and points at the person pages and documents that carry the evidence; a shared source block would be the same list on every family whether or not it applied.",
   "places/index.astro": "An index of places, built from places.json.",
   "places/[slug].astro": "One place at a time, generated. Each pin names the document that witnesses it, on the pin.",
   "register.astro": "The harvested FamilySearch register — 7,600 index rows this archive pulled itself. Its source is the harvest, which is named at the head of the page and is not one of the 46 documents.",

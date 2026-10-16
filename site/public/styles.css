@@ -819,3 +819,18 @@ p code,td code,li code,.wl-note code{overflow-wrap:anywhere}
 .wl-pill[style*="#B04A16"]{--c:var(--st-block)!important}
 .wl-pill[style*="#12703F"]{--c:var(--st-ok)!important}
 .wl-pill[style*="#7A7A7A"]{--c:var(--st-struck)!important}
+
+/* ---- family pages (src/pages/families) ----
+   Cells hold names and sentences from the archive's own data, so let them wrap rather than
+   push the page sideways on a phone. */
+.famt td, .famt th{overflow-wrap:anywhere}
+.famt td:first-child{font-weight:500}
+.famlist{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px 28px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.famlist li{font-family:var(--sans);font-size:14.5px;line-height:1.5}
+.famlist .cap{margin:0 0 0 6px;display:inline}
+@media (max-width:600px){
+  .glance, .glance tbody, .glance tr, .glance td{display:block;width:auto !important}
+  .glance tr{padding:10px 0;border-bottom:1px solid var(--rule)}
+  .glance td{border:0;padding:0}
+  .glance td:first-child{font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:3px}
+}

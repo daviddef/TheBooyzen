@@ -1,0 +1,205 @@
+---
+/* One family name, drawn from the archive's own people, households, chart, places and register.
+
+   Until 17 October 2026 this archive had two family pages, /barry/ and /kolbe/, both
+   hand-built, while eleven names are filed as lines in people.json and a dozen more are the
+   surnames of direct-line ancestors. This is the page for the rest. It is data-driven on
+   purpose: src/lib/families.js computes everything printed here from files the research owner
+   already keeps, so that no sentence about a family exists in this template that the archive
+   did not already hold.
+
+   WHAT IT WILL NOT DO. It does not say where a name came from, who a family's founder was, or
+   that two people of one name are related: those are claims, and the archive makes them on the
+   pages it has written (the links below). It groups by the name as namefold.json groups it and
+   by the line the archive filed each person on, and it keeps every person as their own row.
+
+   A LIVING PERSON is a name and a "Living" mark, with relationships and a town and country when
+   the archive records them, and nothing else: no dates, no notes, no records. The decision is
+   living.json's (tools/livingflags.py, on the kit's living_rule.py); this template asks and
+   never tests a date. */
+import Base from "../../layouts/Base.astro";
+import FilterTable from "@daviddef/archive-kit/components/FilterTable.astro";
+import { u } from "../../lib/url.js";
+import { esc } from "../../lib/md.js";
+import nf from "../../data/namefold.json";
+import { registry, model, hrefOf, digest, GRADE, VIA, VIA_CLS } from "../../lib/families.js";
+import { STANDARD } from "../../lib/living.js";
+import { treeFor } from "../../lib/kin.js";
+
+export function getStaticPaths() {
+  return registry.filter((f) => !f.page).map((f) => ({ params: { slug: f.slug }, props: { slug: f.slug } }));
+}
+const { slug } = Astro.props;
+const M = model(slug);
+const { f } = M;
+const n = M.members.length;
+const plural = (k, one, many) => (k === 1 ? one : many);
+const years = (a) => (a ? `${a[0]}–${a[1]}` : "");
+const nameHref = (r) => (r.slug ? u("/who/" + r.slug + "/") : "");
+const link = (r, text = undefined) => (r && r.slug ? `<a href="${nameHref(r)}">${esc(text ?? r.p.n)}</a>` : esc(text ?? (r ? r.p.n : "")));
+const chip = (cls, text) => `<span class="chip ${cls}">${text}</span>`;
+
+/* A living person's relationships come from the same households the person page draws,
+   as names only. */
+const relOf = (r) => {
+  const t = treeFor(r.p);
+  const bits = [];
+  if (t.parents.length) bits.push("child of " + t.parents.map((x) => esc(x.n)).join(" and "));
+  for (const un of t.unions) {
+    if (un.spouse && !un.spouse.missing) bits.push("married to " + esc(un.spouse.n));
+    else if (un.spouse) bits.push("married to " + esc(un.spouse.n));
+  }
+  return bits.join("; ");
+};
+
+const tableRows = M.members.map((m) => {
+  const r = m.r;
+  const why = m.name ? "name" : "line";
+  if (r.living) {
+    const rel = relOf(r);
+    return {
+      facets: { why },
+      cells: [
+        `<a href="${nameHref(r)}"><strong>${esc(r.p.n)}</strong></a><div style="margin-top:6px">${chip("lore", "Living")}</div>`,
+        "", "",
+        `<div>${esc(r.where || "")}</div>${rel ? `<div class="cap" style="margin-top:4px">${rel}</div>` : ""}`,
+      ],
+    };
+  }
+  const also = r.p.v && r.p.v !== r.p.n ? `<div class="cap" style="margin-top:3px">also written ${esc(r.p.v)}</div>` : "";
+  const sh = r.shared ? `<div class="cap" style="margin-top:3px">shares a page with another person of the same name</div>` : "";
+  const onLine = !m.name ? `<div class="cap" style="margin-top:3px">filed on the ${esc(f.line)} line</div>` : "";
+  return {
+    facets: { why },
+    cells: [
+      `${link(r)}${also}${onLine}${sh}`,
+      esc(r.p.b || ""),
+      esc(r.p.d || ""),
+      chip(r.p.s, GRADE[r.p.s] || esc(r.p.s)),
+    ],
+  };
+});
+const facetOpts = [];
+if (M.nName && M.nLineOnly) {
+  facetOpts.push({ v: "name", label: `Carry or were born to the name (${M.nName})` });
+  facetOpts.push({ v: "line", label: `Filed on the line under another name (${M.nLineOnly})` });
+}
+
+const nh = M.marriages.length;
+const joinsHtml = [
+  `${nh} ${plural(nh, "household", "households")} in the archive's records ${plural(nh, "has", "have")} a person of this page as a spouse.`,
+  M.nOut ? `In ${M.nOut} the other spouse is of another name: ${M.joins.map((j) => (j.fam ? `<a href="${u(hrefOf(j.fam))}">${esc(j.label)}</a>` : esc(j.label)) + ` (${j.n})`).join("; ")}.` : "",
+  M.nWithin ? `${M.nWithin} ${plural(M.nWithin, "has", "have")} the name on both sides.` : "",
+  M.nOther ? `${M.nOther} ${plural(M.nOther, "is a household", "are households")} of people the archive filed on this line, neither of whom carries the name.` : "",
+  M.nSingle ? `${M.nSingle} ${plural(M.nSingle, "household records", "households record")} only one parent.` : "",
+].filter(Boolean).join(" ");
+
+const dek = `Everyone this archive holds under the ${f.name} name, how the name is written, where they are placed and which other families they married into. All of it is counted from the archive's own people, households and register; nothing is added to it.`;
+const eyebrow = `${n} ${plural(n, "person", "people")}${M.span ? " · " + years(M.span) : ""}`;
+const regNote = M.register.total
+  ? `${M.register.total.toLocaleString()} rows are filed under ${M.register.groups.join(" and ")} in the register: ${M.register.read.toLocaleString()} reconstructed by this archive and ${M.register.index.toLocaleString()} from surname indexes. ${M.register.linked.toLocaleString()} rows link to a person page.`
+  : "";
+const gradeLine = Object.entries(M.grade).filter(([, c]) => Number(c) > 0)
+  .map(([k, c]) => `${chip(k, GRADE[k])} ${c}`).join(" &nbsp; ");
+---
+<Base title={f.title} eyebrow={eyebrow} dek={dek}>
+
+<section class="blk" id="glance">
+  <h2>The {f.name} name at a glance</h2>
+  <div class="scroll"><table class="famt glance">
+    <tbody>
+      <tr><td style="width:11rem">On these pages</td><td><strong>{n}</strong> {plural(n, "person", "people")}{M.nLineOnly ? <Fragment>: {M.nName} carry or were born to the name, and {M.nLineOnly}{" "}{plural(M.nLineOnly, "is", "are")} filed on the <strong>{f.line}</strong> line under another name</Fragment> : <Fragment>{n === 1 ? ", who carries or was born to the name" : ", all of whom carry or were born to the name"}</Fragment>}.
+        {f.line ? <Fragment> The {f.line} line is one of the lines <a href={u("/people/")}>The People</a> counts as a family.</Fragment> : null}</td></tr>
+      {M.dead.length > 0 && <tr><td>How well known</td><td><Fragment set:html={gradeLine} /> <span class="cap">of the {M.dead.length} who are not living. <a href={u("/method/")}>What the words mean &rarr;</a></span></td></tr>}
+      {M.span && <tr><td>Years named</td><td>{years(M.span)} <span class="cap">in the dates this archive prints for them</span></td></tr>}
+      {M.spellings.length > 0 && <tr><td>The name as written</td><td>{M.spellings.map(([s, c], i) => <Fragment>{i ? " · " : ""}<strong>{s}</strong> <span class="cap">{c}</span></Fragment>)}
+        {M.folded && f.foldWhy ? <span class="cap"> &mdash; grouped here because {f.foldWhy}; the archive's name fold keeps the spellings apart. </span> : null}
+        {M.spellings.length > 1 && !M.folded ? <span class="cap"> The spellings are grouped as the archive's own name fold groups them, which is a search rule and joins no one to anyone. </span> : null}
+        {M.spellings.length > 1 ? <span class="cap"><a href={u("/name/")}>The name &rarr;</a></span> : null}</td></tr>}
+      <tr><td>On the direct line</td><td>{M.direct.length
+        ? <Fragment><strong>{M.direct.length}</strong> {plural(M.direct.length, "ancestor", "ancestors")} on the archive's chart {plural(M.direct.length, "carries", "carry")} the name (below).</Fragment>
+        : <Fragment>None of the ancestors drawn on <a href={u("/bloodline/")}>the chart</a> carries this name.</Fragment>}</td></tr>
+      {M.places.length > 0 && <tr><td>Places</td><td>{M.places.slice(0, 8).map((x, i) => <Fragment>{i ? " · " : ""}<a href={u("/places/" + x.pl.slug + "/")}>{x.pl.n}</a> <span class="cap">{x.n}</span></Fragment>)}{M.places.length > 8 ? <span class="cap"> and {M.places.length - 8} more</span> : null}
+        <span class="cap"> &mdash; the places that name them. <a href={u("/places/")}>Places &rarr;</a></span></td></tr>}
+      {M.living.length > 0 && <tr><td>Living</td><td>{M.living.length} {plural(M.living.length, "person", "people")}. {STANDARD}</td></tr>}
+      {regNote && <tr><td>In the register</td><td>{regNote} <span class="cap">The archive's own caution applies: a shared surname is not a relationship. <a href={u("/register/")}>The Register &rarr;</a></span></td></tr>}
+    </tbody>
+  </table></div>
+</section>
+
+{M.direct.length > 0 && (
+<section class="blk" id="direct">
+  <h2>On the direct line</h2>
+  <p class="dek">Ancestors on <a href={u("/bloodline/")}>the archive's chart</a> who carry the name. The generation is the one <a href={u("/direct-line/")}>the Spine</a> uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page.</p>
+  <div class="grid g2" style="margin-top:18px">
+    {M.direct.map((a) => {
+      const d = digest(a.row.p.r, 320);
+      return (
+      <div class="panel">
+        <div class="lab">Generation {a.gen}</div>
+        <h3 style="margin:6px 0 4px"><a href={nameHref(a.row)}>{a.row.p.n}</a></h3>
+        <p class="cap" style="margin-top:0">{[a.row.p.b, a.row.p.d].filter((x) => x && x !== "—").join(" – ") || "no dates held"} &nbsp; <span class={"chip " + a.row.p.s}>{GRADE[a.row.p.s]}</span></p>
+        {d.text && <p style="font-size:14.5px;margin-top:10px">{d.text}{d.cut ? " …" : ""} {d.cut && <a href={nameHref(a.row)}>The whole note &rarr;</a>}</p>}
+      </div>);
+    })}
+  </div>
+</section>
+)}
+
+{M.marriages.length > 0 && (
+<section class="blk" id="joins">
+  <h2>How this family connects to the others</h2>
+  <p class="dek" set:html={joinsHtml} />
+  <div class="scroll" style="margin-top:18px"><table class="famt">
+    <thead><tr><th>Household</th><th>The other family</th><th>Known from</th><th>Children</th></tr></thead>
+    <tbody>
+      {M.marriages.map((m) => {
+        const anyLiving = [m.h, m.w, ...m.kids.map((k) => k.row)].some((x) => x && x.living);
+        const kidsIn = m.kids.filter((k) => k.row && M.members.some((mm) => mm.r.key === k.row.key)).length;
+        const d = anyLiving ? { text: "", cut: false } : digest(m.f.why, 240);
+        return (
+        <tr>
+          <td>{m.hName ? <Fragment set:html={link(m.h, m.hName)} /> : <span class="cap">no husband recorded</span>}{m.wName ? <Fragment> &amp; <Fragment set:html={link(m.w, m.wName)} /></Fragment> : null}
+            {d.text && <div class="cap" style="margin-top:4px">{d.text}{d.cut ? " …" : ""}{m.f.src && !anyLiving ? <Fragment> <a href={u(m.f.src[1])}>{m.f.src[0]} &rarr;</a></Fragment> : null}</div>}</td>
+          <td>{m.within ? "this name on both sides" : m.sides.length ? m.sides.map((sd, i) => <Fragment>{i ? " · " : ""}{sd.f ? <a href={u(hrefOf(sd.f))}>{sd.label}</a> : sd.label}</Fragment>) : ""}</td>
+          <td><span class={"chip " + VIA_CLS[m.f.via]}>{VIA[m.f.via]}</span></td>
+          <td>{m.kids.length}{kidsIn && kidsIn !== m.kids.length ? <span class="cap"> ({kidsIn} of this page)</span> : null}</td>
+        </tr>);
+      })}
+    </tbody>
+  </table></div>
+  {(M.via.tree || 0) > 0 && <p class="cap">{M.via.tree} of these households {plural(M.via.tree, "rests", "rest")} on a family tree alone, not on a document; the table says so wherever it is the case.</p>}
+</section>
+)}
+
+<section class="blk" id="people">
+  <h2>Everyone on this page</h2>
+  <p class="dek">{n} {plural(n, "person", "people")}, oldest first by the first year the archive prints for them; those with no year come last. Dates are shown exactly as the archive prints them on the person's own page. Two people of one name are two rows.</p>
+  <div class="panel" style="margin-top:16px">
+    <FilterTable
+      unit={plural(n, "person", "people")}
+      fold={nf.fold}
+      columns={[{ label: "Name" }, { label: "Born" }, { label: "Died" }, { label: "Standing" }]}
+      facets={facetOpts.length ? [{ key: "why", label: "On this page because", all: `All (${n})`, options: facetOpts }] : []}
+      rows={tableRows} />
+  </div>
+</section>
+
+{M.discussed.length > 0 && (
+<section class="blk" id="discussed">
+  <h2>Where the archive writes about them</h2>
+  <p class="dek">The pages this archive itself links from these people's entries, with how many of them each one covers.</p>
+  <ul class="famlist">
+    {M.discussed.slice(0, 14).map((d) => <li><a href={u(d.href)}>{d.label}</a> <span class="cap">{d.n} {plural(d.n, "person", "people")}</span></li>)}
+  </ul>
+</section>
+)}
+
+<section class="blk" id="how-we-know">
+  <h2>How we know, and what this page does not say</h2>
+  <p><Fragment set:html={`Every person here carries one of the archive's marks: ${chip("doc", "Documented")} a record was read; ${chip("inf", "Inferred")} reasoned from records; ${chip("lore", "Testimony")} told by the family; ${chip("open", "Open")} an open question.`} /> <a href={u("/method/")}>Method &rarr;</a></p>
+  <p>This page groups people by the name they carry and by the line the archive filed them on. <strong>A shared surname is not a relationship</strong>, as <a href={u("/register/")}>the Register</a> says: where the archive has not connected two people of one name, nothing here connects them, and the households above are the only connections drawn.</p>
+  <p class="cap"><a href={u("/families/")}>&larr; All the families</a></p>
+</section>
+
+</Base>

@@ -44,6 +44,7 @@ HAND_EDITED = {
     "dates-exempt.json",       # reasoned exemptions for tools/checkdates.py
     "dna.json",                # the DNA page
     "errands.json",            # the errands page
+    "families.json",           # which family names have a page (a person edits the list; the pages are drawn from the archive's data)
     "kin.js",                  # households and children (hand-written module)
     "letters.json",            # enquiries sent and answers
     "line.json",               # the direct line

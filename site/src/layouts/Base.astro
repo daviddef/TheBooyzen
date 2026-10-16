@@ -7,6 +7,8 @@ import { u } from "../lib/url.js";
 import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 import { nLiving, STANDARD } from "../lib/living.js";
+import famData from "../data/families.json";
+const familyPages = famData.families;
 /* THE MOST-PUBLISHED SENTENCE IN THIS ARCHIVE, AND IT WAS ASSERTED.
  *
  * 16 OCTOBER 2026: the count below is now read from living.json, which
@@ -59,7 +61,9 @@ const SITE = "The Booyzen Archive";
 const nav = [
   ["Start", [["/", "Home"], ["/about/", "About"], ["/trees/", "The trees"], ["/tree/", "Our line, drawn"], ["/atlas/", "The Atlas"], ["/timeline/", "The Timeline"]]],
   ["Our line", [["/direct-line/", "The Spine"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"]]],
-  ["The families", [["/barry/", "The Barrys"], ["/kolbe/", "The Kolbes"], ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
+  /* The family pages come from src/data/families.json, so a family added there is in this
+     menu, on /families/ and in the sitemap without a second edit. */
+  ["The families", [["/families/", "All the families"], ...familyPages.map((f) => [f.page || `/families/${f.slug}/`, f.title]), ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
   ["People & places", [["/people/", "The People"], ["/who/", "Every Name"], ["/bloodline/", "Blood relatives, drawn"], ["/register/", "The Register"], ["/households/", "Households"], ["/marriages/", "The Marriages"], ["/places/", "Places"]]],
   /* THE NAME IS ITS OWN GROUP, AND IT IS THE ESTATE'S NAME FOR IT.
      Three archives already had one here, between People & places and Evidence.

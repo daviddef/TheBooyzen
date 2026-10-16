@@ -1,0 +1,19 @@
+{
+  "note": "Which family names have a page, and nothing else. A family page is drawn by src/lib/families.js from the archive's own people.json, kin.js households, pedigree.json, places.json and register.json: no sentence on it is typed here. Written 17 October 2026. `fold` is the namefold.json target(s) whose spellings belong to the family (folding is a search rule; this page only groups what the fold already groups); `line` is the people.json `l` label when the archive keeps that family as one of its eleven lines; `register` names the register.json groups filed under the name; `page` is the address of a hand-built page that already exists (Barry and Kolbe), otherwise the page is /families/<slug>/. Core rule, stated on /families/: a name is core if a direct-line ancestor on pedigree.json carries it, or it has at least eight people on these pages, or the archive's own research files treat it as a family under investigation; the twelve most important missing ones were made, direct-line first, then by number of people.",
+  "families": [
+    { "slug": "booyzen", "name": "Booyzen", "title": "The Booyzens", "fold": ["booyzen"], "line": "Booyzen", "register": ["BOOYZEN", "BOOYSEN"], "page": null },
+    { "slug": "mountjoy", "name": "Mountjoy", "title": "The Mountjoys", "fold": ["mountjoy"], "line": "Mountjoy", "register": ["MOUNTJOY"], "page": null },
+    { "slug": "barry", "name": "Barry", "title": "The Barrys", "fold": ["barry"], "line": "Barry", "register": ["BARRY"], "page": "/barry/" },
+    { "slug": "kolbe", "name": "Kolbe", "title": "The Kolbes", "fold": ["kolbe"], "line": "Kolbe", "register": ["KOLBE"], "page": "/kolbe/" },
+    { "slug": "pretorius", "name": "Pretorius", "title": "The Pretoriuses", "fold": ["pretorius"], "line": "Pretorius", "register": [], "page": null },
+    { "slug": "botha", "name": "Botha", "title": "The Bothas", "fold": ["botha"], "line": null, "register": [], "page": null },
+    { "slug": "van-der-merwe", "name": "van der Merwe", "title": "The van der Merwes", "fold": ["merwe"], "line": null, "register": [], "page": null },
+    { "slug": "schoeman", "name": "Schoeman", "title": "The Schoemans", "fold": ["schoeman"], "line": "Schoeman", "register": [], "page": null },
+    { "slug": "downing", "name": "Downing", "title": "The Downings", "fold": ["downing"], "line": "Downing", "register": ["DOWNING"], "page": null },
+    { "slug": "slier", "name": "Slier", "title": "The Sliers", "fold": ["slier", "sleer"], "foldWhy": "the archive writes the same woman Sleer on her page and Slier in its prose, and gives five renderings of the name for her", "line": null, "register": ["SLIER"], "page": null },
+    { "slug": "de-beer", "name": "de Beer", "title": "The de Beers", "fold": ["beer"], "line": null, "register": [], "page": null },
+    { "slug": "daschner", "name": "Daschner", "title": "The Daschners", "fold": ["daschner"], "line": "Daschner", "register": ["DASCHNER"], "page": null },
+    { "slug": "lowies", "name": "Lowies", "title": "The Lowies", "fold": ["lowies"], "line": null, "register": [], "page": null },
+    { "slug": "van-niekerk", "name": "van Niekerk", "title": "The van Niekerks", "fold": ["niekerk"], "line": null, "register": [], "page": null }
+  ]
+}
