@@ -10,8 +10,6 @@
     { "slug": "van-der-merwe", "name": "van der Merwe", "title": "The van der Merwes", "fold": ["merwe"], "line": null, "register": [], "page": null },
     { "slug": "schoeman", "name": "Schoeman", "title": "The Schoemans", "fold": ["schoeman"], "line": "Schoeman", "register": [], "page": null },
     { "slug": "downing", "name": "Downing", "title": "The Downings", "fold": ["downing"], "line": "Downing", "register": ["DOWNING"], "page": null },
-    { "slug": "slier", "name": "Slier", "title": "The Sliers", "fold": ["slier", "sleer"], "foldWhy": "the archive writes the same woman Sleer on her page and Slier in its prose, and gives five renderings of the name for her", "line": null, "register": ["SLIER"], "page": null },
-    { "slug": "de-beer", "name": "de Beer", "title": "The de Beers", "fold": ["beer"], "line": null, "register": [], "page": null },
     { "slug": "daschner", "name": "Daschner", "title": "The Daschners", "fold": ["daschner"], "line": "Daschner", "register": ["DASCHNER"], "page": null },
     { "slug": "lowies", "name": "Lowies", "title": "The Lowies", "fold": ["lowies"], "line": null, "register": [], "page": null },
     { "slug": "van-niekerk", "name": "van Niekerk", "title": "The van Niekerks", "fold": ["niekerk"], "line": null, "register": [], "page": null }

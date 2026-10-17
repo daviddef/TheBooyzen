@@ -2326,7 +2326,7 @@
     {
      "page": "/families/booyzen/",
      "title": "The Booyzens",
-     "text": "2 households record only one parent. Household The other family Known from Children Gerthardus Lodewikus Booysen & Magdelena Elisabeth de Beer Named together in line 3 of their son's 1876 Sterfkennis — the oldest document this archive has read. The 1876 Sterfkennis → de Beer a record read here 1 David Schalk Booijsen & Adriana Christina Viljoen Named together on their daughter's baptism of 13 September 1835. The daughter is ANNA MARIA, called after his own mother — the naming ran up the female line in this generation as it did in the Oliviers'. The 1806 baptism → Viljoen a record read here 1 Petrus Jacobus Booysen & Anna Maria van der Merwe Married 1805 at Graaff-Reinet."
+     "text": "2 households record only one parent. Household The other family Known from Children Gerthardus Lodewikus Booysen & Magdelena Elisabeth de Beer Named together in line 3 of their son's 1876 Sterfkennis — the oldest document this archive has read. The 1876 Sterfkennis → Beer a record read here 1 David Schalk Booijsen & Adriana Christina Viljoen Named together on their daughter's baptism of 13 September 1835. The daughter is ANNA MARIA, called after his own mother — the naming ran up the female line in this generation as it did in the Oliviers'. The 1806 baptism → Viljoen a record read here 1 Petrus Jacobus Booysen & Anna Maria van der Merwe Married 1805 at Graaff-Reinet."
     },
     {
      "page": "/households/",
@@ -11334,7 +11334,7 @@
     ]
    ],
    "slug": "anna-catharina-sleer",
-   "mentions": 92,
+   "mentions": 91,
    "pages": [
     {
      "h": "/direct-line/",
@@ -11347,10 +11347,6 @@
     {
      "h": "/families/mountjoy/",
      "t": "The Mountjoys"
-    },
-    {
-     "h": "/families/slier/",
-     "t": "The Sliers"
     },
     {
      "h": "/gallery/",
@@ -11719,12 +11715,7 @@
     {
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
-     "text": "Household The other family Known from Children Petrus Jacobus Booysen & Johanna Catharina Mountjoy Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children. The 1863 death notice → Booyzen a record read here 9 Hermanus Pietersen & Anna Catharina Sleer Her first husband, married 5 April 1807. De Villiers gives his own parents as unknown. This household used to carry the father and the son under one name; the book separates them. Slier and Pietersen → Pietersen · Slier a record read here 2 James Montjoy & Anna Catharina Sleer Married at Graaff-Reinet, 9 March 1817 — on a page where the clerk recorded everyone else's origin and left his blank."
-    },
-    {
-     "page": "/families/slier/",
-     "title": "The Sliers",
-     "text": "The Register → On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 6 Anna Catharina Sleer bapt. 14 Oct 1787 – 1885 Documented Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of a Pietersen. 15 SEPTEMBER 2026 — SHE HAS PARENTS, A BAPTISM AND THREE SIBLINGS. … The whole note → How this family connects to the others 2 households in the archive's records have a person of this page as a spouse."
+     "text": "Household The other family Known from Children Petrus Jacobus Booysen & Johanna Catharina Mountjoy Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children. The 1863 death notice → Booyzen a record read here 9 Hermanus Pietersen & Anna Catharina Sleer Her first husband, married 5 April 1807. De Villiers gives his own parents as unknown. This household used to carry the father and the son under one name; the book separates them. Slier and Pietersen → Pietersen · Sleer a record read here 2 James Montjoy & Anna Catharina Sleer Married at Graaff-Reinet, 9 March 1817 — on a page where the clerk recorded everyone else's origin and left his blank."
     },
     {
      "page": "/gallery/",
@@ -11835,6 +11826,11 @@
      "page": "/people/david-schalk-van-der-merwe/",
      "title": "David Schalk van der Merwe",
      "text": "The Women Every mention, page by page Others on the Mountjoy side Aletta Johanna Hattingh 1898, Cala, Cape Province – 10 Oct 1939, Bizana Anna Catharina Fortman Her mother. Married Willem Slier of Hamburg on 19 November 1780 and ga Anna Catharina Mountjoy 5 Aug 1852, baptised 11 Jan 1854 – — Anna Catharina Sleer bapt. 14 Oct 1787 – 1885 Annie Louisa Nepgen Daughter; married in community of property to Arnoldus Fredeman Nepgen Aubrey Diesel Grandson, a minor in 1938; the other half, £10. 12. 2. Benjamin Jacobus van Niekerk Ninth, and a minor in 1902. Carolina Deybella Margrietta Alletta Botha c."
+    },
+    {
+     "page": "/people/elizabeth-maria-mountjoy/",
+     "title": "Elizabeth Maria Mountjoy",
+     "text": "The Women What Has Been Read Open questions Every mention, page by page Others on the Mountjoy side Aletta Johanna Hattingh 1898, Cala, Cape Province – 10 Oct 1939, Bizana Anna Catharina Fortman Her mother. Married Willem Slier of Hamburg on 19 November 1780 and ga Anna Catharina Mountjoy 5 Aug 1852, baptised 11 Jan 1854 – — Anna Catharina Sleer bapt. 14 Oct 1787 – 1885 Annie Louisa Nepgen Daughter; married in community of property to Arnoldus Fredeman Nepgen Aubrey Diesel Grandson, a minor in 1938; the other half, £10. 12. 2. Benjamin Jacobus van Niekerk Ninth, and a minor in 1902. Carolina Deybella Margrietta Alletta Botha c."
     }
    ],
    "shared": false,
@@ -29284,7 +29280,7 @@
     ]
    ],
    "slug": "catherine-mary-sophia-booyzen",
-   "mentions": 36,
+   "mentions": 34,
    "pages": [
     {
      "h": "/",
@@ -29315,10 +29311,6 @@
      "t": "The Bothas"
     },
     {
-     "h": "/families/de-beer/",
-     "t": "The de Beers"
-    },
-    {
      "h": "/families/downing/",
      "t": "The Downings"
     },
@@ -29333,10 +29325,6 @@
     {
      "h": "/families/schoeman/",
      "t": "The Schoemans"
-    },
-    {
-     "h": "/families/slier/",
-     "t": "The Sliers"
     },
     {
      "h": "/families/van-der-merwe/",
@@ -29468,11 +29456,6 @@
      "text": "Places Cradock 1 · Dordrecht 1 — the places that name them. Places → On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 6 Magdalena Johanna Botha no dates held Documented Ruben Schoeman's wife. How this family connects to the others 6 households in the archive's records have a person of this page as a spouse."
     },
     {
-     "page": "/families/de-beer/",
-     "title": "The de Beers",
-     "text": "On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 7 Magdelena Elisabeth de Beer 1754 – 1843 Documented Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all — and her name, beside his, is what the 1876 notice puts on the record."
-    },
-    {
      "page": "/families/downing/",
      "title": "The Downings",
      "text": "8 rows link to a person page. The archive's own caution applies: a shared surname is not a relationship. The Register → On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 7 John Paul Downing no dates held Testimony Margaret's father ON THE TREE, AND IN NO DOCUMENT THIS ARCHIVE HAS READ."
@@ -29491,11 +29474,6 @@
      "page": "/families/schoeman/",
      "title": "The Schoemans",
      "text": "Places Caerlaverock 1 — the places that name them. Places → On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 6 Ruben Schoeman no dates held Documented Of Barkly Oost. Father of Anna Johanna Maria Schoeman. Generation 5 Anna Johanna Maria Schoeman no dates held Documented The Schoeman who married into the Barrys — and the reason the 1924 marriage was between cousins."
-    },
-    {
-     "page": "/families/slier/",
-     "title": "The Sliers",
-     "text": "6 rows link to a person page. The archive's own caution applies: a shared surname is not a relationship. The Register → On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 6 Anna Catharina Sleer bapt. 14 Oct 1787 – 1885 Documented Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of a Pietersen. 15 SEPTEMBER 2026 — SHE HAS PARENTS, A BAPTISM AND THREE SIBLINGS."
     },
     {
      "page": "/families/van-der-merwe/",
@@ -29561,6 +29539,16 @@
      "page": "/people/gertrude-booyzen/",
      "title": "Gertrude Booyzen",
      "text": "Parents George Downing Mountjoy Booyzen 1 Jun 1901 – 11 Dec 1947 record Anna Johanna Maria Pretorius 3 Oct 1906 – 26 Feb 1944 record Gertrude Booyzen 11 May 1947 – 11 May 1947 Booyzen 7 siblings Willem Hermanus “Willy” Booyzen 15 Oct 1925 – 1996 Margaretha Wilhelmina Elizabeth “Maggie” Booyzen 14 Oct 1926 – 1966 Catherine Mary Sophia Booyzen 25 Mar 1929 – 25 Dec 2013 Anna Johanna Maria Booyzen (Vermaak) b. 12 Oct 1930 Georgina Jeanette Booyzen (Boshoff) b."
+    },
+    {
+     "page": "/people/gertrude-elizabeth-booyzen/",
+     "title": "Gertrude Elizabeth Booyzen",
+     "text": "Parents George Downing Mountjoy Booyzen 1 Jun 1901 – 11 Dec 1947 record Anna Johanna Maria Pretorius 3 Oct 1906 – 26 Feb 1944 record Gertrude Elizabeth Booyzen 11 May 1946 – 15 May 1946 Booyzen 7 siblings Willem Hermanus “Willy” Booyzen 15 Oct 1925 – 1996 Margaretha Wilhelmina Elizabeth “Maggie” Booyzen 14 Oct 1926 – 1966 Catherine Mary Sophia Booyzen 25 Mar 1929 – 25 Dec 2013 Anna Johanna Maria Booyzen (Vermaak) b. 12 Oct 1930 Georgina Jeanette Booyzen (Boshoff) b."
+    },
+    {
+     "page": "/people/margaretha-wilhelmina-elizabeth-maggie-booyzen/",
+     "title": "Margaretha Wilhelmina Elizabeth “Maggie” Booyzen",
+     "text": "Parents George Downing Mountjoy Booyzen 1 Jun 1901 – 11 Dec 1947 record Anna Johanna Maria Pretorius 3 Oct 1906 – 26 Feb 1944 record Margaretha Wilhelmina Elizabeth “Maggie” Booyzen 14 Oct 1926 – 1966 Booyzen 7 siblings Willem Hermanus “Willy” Booyzen 15 Oct 1925 – 1996 Catherine Mary Sophia Booyzen 25 Mar 1929 – 25 Dec 2013 Anna Johanna Maria Booyzen (Vermaak) b. 12 Oct 1930 Georgina Jeanette Booyzen (Boshoff) b."
     }
    ],
    "shared": false,
@@ -33872,7 +33860,7 @@
     {
      "page": "/families/booyzen/",
      "title": "The Booyzens",
-     "text": "2 households record only one parent. Household The other family Known from Children Gerthardus Lodewikus Booysen & Magdelena Elisabeth de Beer Named together in line 3 of their son's 1876 Sterfkennis — the oldest document this archive has read. The 1876 Sterfkennis → de Beer a record read here 1 David Schalk Booijsen & Adriana Christina Viljoen Named together on their daughter's baptism of 13 September 1835. The daughter is ANNA MARIA, called after his own mother — the naming ran up the female line in this generation as it did in the Oliviers'. The 1806 baptism → Viljoen a record read here 1 Petrus Jacobus Booysen & Anna Maria van der Merwe Married 1805 at Graaff-Reinet."
+     "text": "2 households record only one parent. Household The other family Known from Children Gerthardus Lodewikus Booysen & Magdelena Elisabeth de Beer Named together in line 3 of their son's 1876 Sterfkennis — the oldest document this archive has read. The 1876 Sterfkennis → Beer a record read here 1 David Schalk Booijsen & Adriana Christina Viljoen Named together on their daughter's baptism of 13 September 1835. The daughter is ANNA MARIA, called after his own mother — the naming ran up the female line in this generation as it did in the Oliviers'. The 1806 baptism → Viljoen a record read here 1 Petrus Jacobus Booysen & Anna Maria van der Merwe Married 1805 at Graaff-Reinet."
     },
     {
      "page": "/households/",
@@ -44570,7 +44558,7 @@
     {
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
-     "text": "Slier and Pietersen → Pietersen · Slier a record read here 2 James Montjoy & Anna Catharina Sleer Married at Graaff-Reinet, 9 March 1817 — on a page where the clerk recorded everyone else's origin and left his blank. The 1817 marriage register → Slier a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898."
+     "text": "Slier and Pietersen → Pietersen · Sleer a record read here 2 James Montjoy & Anna Catharina Sleer Married at Graaff-Reinet, 9 March 1817 — on a page where the clerk recorded everyone else's origin and left his blank. The 1817 marriage register → Sleer a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898."
     },
     {
      "page": "/households/",
@@ -45834,7 +45822,7 @@
     ]
    ],
    "slug": "gerthardus-lodewikus-booysen",
-   "mentions": 24,
+   "mentions": 23,
    "pages": [
     {
      "h": "/",
@@ -45855,10 +45843,6 @@
     {
      "h": "/families/booyzen/",
      "t": "The Booyzens"
-    },
-    {
-     "h": "/families/de-beer/",
-     "t": "The de Beers"
     },
     {
      "h": "/gallery/",
@@ -45957,11 +45941,6 @@
      "page": "/families/booyzen/",
      "title": "The Booyzens",
      "text": "The Register → On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 7 Gerthardus Lodewikus Booysen no dates held Documented THE ONE DOCUMENT THAT NAMES HIM HAS BEEN WEAKENED, AND BY SOMEBODY WHO HAD NOT SEEN IT. … The whole note → Generation 6 Petrus Jacobus Booysen c. 21 Sep 1788, Graaff-Reinet – 1 Sep 1876, district Rustenburg Documented Married at about seventeen; died a widower in the Transvaal, eighty-eight years old, on a farm called Brakfontein. His Sterfkennis — No."
-    },
-    {
-     "page": "/families/de-beer/",
-     "title": "The de Beers",
-     "text": "… The whole note → How this family connects to the others 1 household in the archive's records has a person of this page as a spouse. In 1 the other spouse is of another name: Booyzen (1). Household The other family Known from Children Gerthardus Lodewikus Booysen & Magdelena Elisabeth de Beer Named together in line 3 of their son's 1876 Sterfkennis — the oldest document this archive has read. The 1876 Sterfkennis → Booyzen a record read here 1 Everyone on this page 1 person, oldest first by the first year the archive prints for them; those with no year come last. Dates are shown exactly as the archive prints them on the person's own page."
     },
     {
      "page": "/gallery/",
@@ -49763,7 +49742,7 @@
     ]
    ],
    "slug": "hermanus-pietersen",
-   "mentions": 21,
+   "mentions": 20,
    "pages": [
     {
      "h": "/documents/",
@@ -49772,10 +49751,6 @@
     {
      "h": "/families/mountjoy/",
      "t": "The Mountjoys"
-    },
-    {
-     "h": "/families/slier/",
-     "t": "The Sliers"
     },
     {
      "h": "/gallery/",
@@ -49854,11 +49829,6 @@
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
      "text": "14 Oct 1787 1885 Documented Willem Hermanus Pietersen also written Pieterzen · Pieterse — the 1851 godfather filed on the Mountjoy line bapt. 12 Mar 1809 — Documented Johan Christiaan Pietersen filed on the Mountjoy line bapt. 28 Apr 1810 — Documented Hermanus Pietersen also written Harmanus Pieterze (1817) filed on the Mountjoy line — bef."
-    },
-    {
-     "page": "/families/slier/",
-     "title": "The Sliers",
-     "text": "15 SEPTEMBER 2026 — SHE HAS PARENTS, A BAPTISM AND THREE SIBLINGS. … The whole note → How this family connects to the others 2 households in the archive's records have a person of this page as a spouse. In 2 the other spouse is of another name: Mountjoy (1); Pietersen (1). Household The other family Known from Children Hermanus Pietersen & Anna Catharina Sleer Her first husband, married 5 April 1807. De Villiers gives his own parents as unknown. This household used to carry the father and the son under one name; the book separates them."
     },
     {
      "page": "/gallery/",
@@ -52930,7 +52900,7 @@
     ]
    ],
    "slug": "james-montjoy",
-   "mentions": 21,
+   "mentions": 20,
    "pages": [
     {
      "h": "/",
@@ -52947,10 +52917,6 @@
     {
      "h": "/families/mountjoy/",
      "t": "The Mountjoys"
-    },
-    {
-     "h": "/families/slier/",
-     "t": "The Sliers"
     },
     {
      "h": "/gallery/",
@@ -53037,11 +53003,6 @@
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
      "text": "The Register → On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 6 James Montjoy c. 1782, “Europe” – Sep 1827, Cradock Documented Saddler. Owned a house and erf at Cradock worth £90. His 1840 death notice gives his parents as NOT KNOWN — the oldest document here, and the top of this line. 15 SEPTEMBER 2026 — A MAN WHO SLEPT IN HIS HOUSE SAYS WHERE HE CAME FROM."
-    },
-    {
-     "page": "/families/slier/",
-     "title": "The Sliers",
-     "text": "The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 6 Anna Catharina Sleer bapt. 14 Oct 1787 – 1885 Documented Lived to ninety-eight. Married James Montjoy 9 Mar 1817 at Graaff-Reinet, having first been the widow of a Pietersen. 15 SEPTEMBER 2026 — SHE HAS PARENTS, A BAPTISM AND THREE SIBLINGS. … The whole note → How this family connects to the others 2 households in the archive's records have a person of this page as a spouse. In 2 the other spouse is of another name: Mountjoy (1); Pietersen (1)."
     },
     {
      "page": "/gallery/",
@@ -57285,7 +57246,7 @@
     {
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
-     "text": "The 1817 marriage register → Slier a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898. … The thirteen Mountjoy children → Keys a record read here 8 Hercules Johannes Mountjoy & Maria Sophia van Niekerk Married at Dordrecht, 8 October 1888, aged 22 and 20."
+     "text": "The 1817 marriage register → Sleer a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898. … The thirteen Mountjoy children → Keys a record read here 8 Hercules Johannes Mountjoy & Maria Sophia van Niekerk Married at Dordrecht, 8 October 1888, aged 22 and 20."
     },
     {
      "page": "/households/",
@@ -64277,7 +64238,7 @@
     ]
    ],
    "slug": "magdelena-elisabeth-de-beer",
-   "mentions": 25,
+   "mentions": 23,
    "pages": [
     {
      "h": "/direct-line/",
@@ -64294,10 +64255,6 @@
     {
      "h": "/families/booyzen/",
      "t": "The Booyzens"
-    },
-    {
-     "h": "/families/de-beer/",
-     "t": "The de Beers"
     },
     {
      "h": "/gallery/",
@@ -64376,22 +64333,12 @@
     {
      "page": "/families/booyzen/",
      "title": "The Booyzens",
-     "text": "8 are households of people the archive filed on this line, neither of whom carries the name. 2 households record only one parent. Household The other family Known from Children Gerthardus Lodewikus Booysen & Magdelena Elisabeth de Beer Named together in line 3 of their son's 1876 Sterfkennis — the oldest document this archive has read. The 1876 Sterfkennis → de Beer a record read here 1 David Schalk Booijsen & Adriana Christina Viljoen Named together on their daughter's baptism of 13 September 1835."
+     "text": "8 are households of people the archive filed on this line, neither of whom carries the name. 2 households record only one parent. Household The other family Known from Children Gerthardus Lodewikus Booysen & Magdelena Elisabeth de Beer Named together in line 3 of their son's 1876 Sterfkennis — the oldest document this archive has read. The 1876 Sterfkennis → Beer a record read here 1 David Schalk Booijsen & Adriana Christina Viljoen Named together on their daughter's baptism of 13 September 1835."
     },
     {
      "page": "/families/booyzen/",
      "title": "The Booyzens",
      "text": "29 Jan 1741 bef. c. 1836 Inferred Johanna Booyzen c. 20 Mar 1754, “this Colony” 16 Jun 1843, 28 Roze Street, Cape Town Documented Magdelena Elisabeth de Beer also written Magdalena de Beer (1876) filed on the Booyzen line 1754 1843 Documented Jan Jonathan Booijsen bapt. 11 Jul 1779 — Documented Magdalena Booijsen of 1782 bapt. 29 Sep 1782 — Documented Anna Maria van der Merwe filed on the Booyzen line 1785 bef. Mar 1825 Documented Petrus Jacobus Booysen also written Petrus Jacobus Booijsen (1876) shares a page with another person of the same name c."
-    },
-    {
-     "page": "/families/de-beer/",
-     "title": "The de Beers",
-     "text": "On the direct line Ancestors on the archive's chart who carry the name. The generation is the one the Spine uses, where the chart's starting point, Catherine Mary Sophia Booyzen, is generation 2. Each note is the opening of what the archive says on that person's own page. Generation 7 Magdelena Elisabeth de Beer 1754 – 1843 Documented Wife of Gerthardus Lodewikus. Her 1754 birth is what dates him at all — and her name, beside his, is what the 1876 notice puts on the record. … The whole note → How this family connects to the others 1 household in the archive's records has a person of this page as a spouse. In 1 the other spouse is of another name: Booyzen (1)."
-    },
-    {
-     "page": "/families/de-beer/",
-     "title": "The de Beers",
-     "text": "Dates are shown exactly as the archive prints them on the person's own page. Two people of one name are two rows. Search 1 person · everything is listed; the filters only narrow it Name Born Died Standing Magdelena Elisabeth de Beer also written Magdalena de Beer (1876) 1754 1843 Documented Nothing matches that. Where the archive writes about them The pages this archive itself links from these people's entries, with how many of them each one covers."
     },
     {
      "page": "/gallery/",
@@ -67348,7 +67295,7 @@
     {
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
-     "text": "Slier and Pietersen → Pietersen · Slier a record read here 2 James Montjoy & Anna Catharina Sleer Married at Graaff-Reinet, 9 March 1817 — on a page where the clerk recorded everyone else's origin and left his blank. The 1817 marriage register → Slier a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898."
+     "text": "Slier and Pietersen → Pietersen · Sleer a record read here 2 James Montjoy & Anna Catharina Sleer Married at Graaff-Reinet, 9 March 1817 — on a page where the clerk recorded everyone else's origin and left his blank. The 1817 marriage register → Sleer a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898."
     },
     {
      "page": "/households/",
@@ -71946,7 +71893,7 @@
     {
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
-     "text": "In 7 the other spouse is of another name: Booyzen (1); Botha (1); Keys (1); Kumm (1); Slier (1); van Niekerk (1); van der Merwe (1). 2 are households of people the archive filed on this line, neither of whom carries the name. 3 households record only one parent. Household The other family Known from Children Petrus Jacobus Booysen & Johanna Catharina Mountjoy Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children. The 1863 death notice → Booyzen a record read here 9 Hermanus Pietersen & Anna Catharina Sleer Her first husband, married 5 April 1807. De Villiers gives his own parents as unknown."
+     "text": "In 7 the other spouse is of another name: Booyzen (1); Botha (1); Keys (1); Kumm (1); Sleer (1); van Niekerk (1); van der Merwe (1). 2 are households of people the archive filed on this line, neither of whom carries the name. 3 households record only one parent. Household The other family Known from Children Petrus Jacobus Booysen & Johanna Catharina Mountjoy Married at Cradock 4 November 1838. He signed her death notice in 1863; it names her parents and their eight surviving children. The 1863 death notice → Booyzen a record read here 9 Hermanus Pietersen & Anna Catharina Sleer Her first husband, married 5 April 1807. De Villiers gives his own parents as unknown."
     },
     {
      "page": "/families/pretorius/",
@@ -79631,7 +79578,7 @@
     ]
    ],
    "slug": "willem-slier",
-   "mentions": 89,
+   "mentions": 88,
    "pages": [
     {
      "h": "/documents/",
@@ -79640,10 +79587,6 @@
     {
      "h": "/families/mountjoy/",
      "t": "The Mountjoys"
-    },
-    {
-     "h": "/families/slier/",
-     "t": "The Sliers"
     },
     {
      "h": "/marriages/",
@@ -80002,11 +79945,6 @@
      "text": "Where the archive writes about them The pages this archive itself links from these people's entries, with how many of them each one covers."
     },
     {
-     "page": "/families/slier/",
-     "title": "The Sliers",
-     "text": "Dates are shown exactly as the archive prints them on the person's own page. Two people of one name are two rows. Search 2 people · everything is listed; the filters only narrow it Name Born Died Standing Anna Catharina Sleer also written Slier · Schleher · Sher · Hier — five renderings, five sources bapt. 14 Oct 1787 1885 Documented Willem Slier also written van Hamburg — — Documented Nothing matches that. Where the archive writes about them The pages this archive itself links from these people's entries, with how many of them each one covers."
-    },
-    {
      "page": "/marriages/",
      "title": "The Marriages",
      "text": "12 Mar 1809 — Willem Hermanus Pieterzen — — Willem Slier — — William Henry Keys 1854 — William Henry Keys the younger 10 Jun 1882, baptised 23 Jul 1882 at Dordrecht — Xaverius Hermanus Pieterzen — — Held on 69 a record read here · 12 inferred."
@@ -80120,6 +80058,11 @@
      "page": "/people/elizabeth-maria-mountjoy/",
      "title": "Elizabeth Maria Mountjoy",
      "text": "The Women What Has Been Read Open questions Every mention, page by page Others on the Mountjoy side Aletta Johanna Hattingh 1898, Cala, Cape Province – 10 Oct 1939, Bizana Anna Catharina Fortman Her mother. Married Willem Slier of Hamburg on 19 November 1780 and ga Anna Catharina Mountjoy 5 Aug 1852, baptised 11 Jan 1854 – — Anna Catharina Sleer bapt. 14 Oct 1787 – 1885 Annie Louisa Nepgen Daughter; married in community of property to Arnoldus Fredeman Nepgen Aubrey Diesel Grandson, a minor in 1938; the other half, £10. 12. 2. Benjamin Jacobus van Niekerk Ninth, and a minor in 1902."
+    },
+    {
+     "page": "/people/ellen-sophia-schmidt/",
+     "title": "Ellen Sophia Schmidt",
+     "text": "The Documents The Women Every mention, page by page Others on the Mountjoy side Aletta Johanna Hattingh 1898, Cala, Cape Province – 10 Oct 1939, Bizana Anna Catharina Fortman Her mother. Married Willem Slier of Hamburg on 19 November 1780 and ga Anna Catharina Mountjoy 5 Aug 1852, baptised 11 Jan 1854 – — Anna Catharina Sleer bapt. 14 Oct 1787 – 1885 Annie Louisa Nepgen Daughter; married in community of property to Arnoldus Fredeman Nepgen Aubrey Diesel Grandson, a minor in 1938; the other half, £10. 12. 2. Benjamin Jacobus van Niekerk Ninth, and a minor in 1902."
     }
    ],
    "shared": false,
@@ -80565,7 +80508,7 @@
     {
      "page": "/families/mountjoy/",
      "title": "The Mountjoys",
-     "text": "The 1817 marriage register → Slier a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898. … The thirteen Mountjoy children → Keys a record read here 8 Hercules Johannes Mountjoy & Maria Sophia van Niekerk Married at Dordrecht, 8 October 1888, aged 22 and 20."
+     "text": "The 1817 marriage register → Sleer a record read here 5 George Mountjoy & Maria Sophia Botha Married at Cradock, 20 August 1848, certificate 735. THIRTEEN children, of whom this archive could name one until the Dutch Reformed baptism registers were read. … The thirteen Mountjoy children → Botha a record read here 7 William Henry Keys & Johanna Catharina Mountjoy of Burgersdorp Eight children baptised at Dordrecht, Barkly East and Barkly West between 1878 and 1898. … The thirteen Mountjoy children → Keys a record read here 8 Hercules Johannes Mountjoy & Maria Sophia van Niekerk Married at Dordrecht, 8 October 1888, aged 22 and 20."
     },
     {
      "page": "/households/",
