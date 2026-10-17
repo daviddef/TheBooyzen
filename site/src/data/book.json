@@ -1,0 +1,327 @@
+{
+ "title": "The Booyzen Archive",
+ "front": {
+  "label": "Front matter",
+  "intro": "How to read this book, and the rules it keeps.",
+  "chapters": [
+   {
+    "path": "/",
+    "title": "The cover",
+    "blurb": "A Cape Dutch family that kept marrying British women, changed one letter of its name in a war, and came off the train at Johannesburg with nothing."
+   },
+   {
+    "path": "/about/",
+    "title": "About",
+    "blurb": "Every claim carries one of five words and every correction is published; a living person is named with relationships and town and country, and nothing more."
+   },
+   {
+    "path": "/method/",
+    "title": "Method",
+    "blurb": "Every claim carries a label saying how well it is known."
+   }
+  ]
+ },
+ "parts": [
+  {
+   "id": "where-from",
+   "numeral": "I",
+   "title": "One letter, and the Karoo it came from",
+   "intro": "The home page opens on one letter of a surname, changed on purpose. This part starts with the name itself, with the forenames that outlast a surname, and with the Atlas: a band of Karoo and north-eastern Cape districts, Graaff-Reinet and Cradock among them, a jump of four hundred miles to the Rand, and one district that shares the surname and is not the family at all.",
+   "flags": "🇿🇦 🇮🇪",
+   "chapters": [
+    {
+     "path": "/name/",
+     "title": "The Name",
+     "blurb": "Booyzen is one family's deliberate break from a mass surname, and the distribution figures say so."
+    },
+    {
+     "path": "/namesakes/",
+     "title": "The forenames",
+     "blurb": "A forename is inherited property: it travels through daughters and outlives a change of surname."
+    },
+    {
+     "path": "/atlas/",
+     "title": "The Atlas",
+     "blurb": "Where this family was, plotted from latitude and longitude: Karoo and north-eastern Cape districts, and the Rand."
+    }
+   ]
+  },
+  {
+   "id": "the-line",
+   "numeral": "II",
+   "title": "The line, and the names around it",
+   "intro": "The descent from the Spine, drawn three ways, and then every family name the archive has researched. Each family page is counted from the archive's own people, households and register. The Mountjoys are where the line meets the Booyzens; the Barrys gave the family its English forenames, and the Kolbes were a German tailor's family.",
+   "flags": "🇿🇦 🇬🇧 🇩🇪",
+   "chapters": [
+    {
+     "path": "/direct-line/",
+     "title": "The Spine",
+     "blurb": "The descent from the grandmother back to a man with no dates and no parents; two links in it are in dispute.",
+     "group": "The line, drawn"
+    },
+    {
+     "path": "/tree/",
+     "title": "Our line, drawn",
+     "blurb": "An ancestor chart: every box is a person a document names, and a wall is where the parents cannot be named.",
+     "group": "The line, drawn"
+    },
+    {
+     "path": "/trees/",
+     "title": "The trees",
+     "blurb": "The Booyzen line and the families that join it, each drawn in the form its own evidence supports.",
+     "group": "The line, drawn"
+    },
+    {
+     "path": "/families/",
+     "title": "The Families",
+     "blurb": "A family here is a name: the people who carry it, its line, its households, places and records.",
+     "group": "The family pages"
+    },
+    {
+     "path": "/families/booyzen/",
+     "title": "The Booyzens",
+     "blurb": "Everyone held under the Booyzen name, where they are placed, and the families they married into.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/families/mountjoy/",
+     "title": "The Mountjoys",
+     "blurb": "Everyone held under the Mountjoy name; the Mountjoy–Booysen junction is on this page.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/barry/",
+     "title": "The Barrys",
+     "blurb": "English forenames, a farm at Manor Owen, a politics, and the archive's most contradictory record.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/kolbe/",
+     "title": "The Kolbes",
+     "blurb": "A German tailor's family in Bond Street, a missionary's circuit through the Orange Free State, and a Karoo farm named for a country its owner had never seen.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/families/pretorius/",
+     "title": "The Pretoriuses",
+     "blurb": "Everyone held under the Pretorius name, where they are placed, and the families they married into.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/families/schoeman/",
+     "title": "The Schoemans",
+     "blurb": "Everyone held under the Schoeman name, where they are placed, and the families they married into.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/families/downing/",
+     "title": "The Downings",
+     "blurb": "Everyone held under the Downing name, where they are placed, and the families they married into.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/families/daschner/",
+     "title": "The Daschners",
+     "blurb": "Everyone held under the Daschner name, where they are placed, and the families they married into.",
+     "group": "Names on the archive's own lines"
+    },
+    {
+     "path": "/families/botha/",
+     "title": "The Bothas",
+     "blurb": "Everyone held under the Botha name, where they are placed, and the families they married into.",
+     "group": "Other names with a page"
+    },
+    {
+     "path": "/families/van-der-merwe/",
+     "title": "The van der Merwes",
+     "blurb": "Everyone held under the van der Merwe name, where they are placed, and the families they married into.",
+     "group": "Other names with a page"
+    },
+    {
+     "path": "/families/lowies/",
+     "title": "The Lowies",
+     "blurb": "Everyone held under the Lowies name, where they are placed, and the families they married into.",
+     "group": "Other names with a page"
+    },
+    {
+     "path": "/families/van-niekerk/",
+     "title": "The van Niekerks",
+     "blurb": "Everyone held under the van Niekerk name, where they are placed, and the families they married into.",
+     "group": "Other names with a page"
+    }
+   ]
+  },
+  {
+   "id": "war-and-the-rand",
+   "numeral": "III",
+   "title": "A war, a train and the Rand",
+   "intro": "One paragraph of family testimony names a war, a betrayal, an execution, a camp, a burned farm and a train, and the archive tests each claim in turn. Then the other end of the journey: a family that arrived from the Cape, settled in the southern and western suburbs of Johannesburg, and buried most of itself there.",
+   "flags": "🇿🇦",
+   "chapters": [
+    {
+     "path": "/rebels/",
+     "title": "The rebels",
+     "blurb": "One paragraph of family testimony, with each of its claims taken apart and tested."
+    },
+    {
+     "path": "/johannesburg/",
+     "title": "Johannesburg",
+     "blurb": "What the record shows at the other end of the train: the southern and western suburbs, and the family buried there."
+    }
+   ]
+  },
+  {
+   "id": "who-married-whom",
+   "numeral": "IV",
+   "title": "Who married whom",
+   "intro": "A marriage is where two lines join, and it is also where a family chooses a town, a church and a witness. Every marriage a document places, the households assembled from them, the one marriage that folds the tree back on itself, the women through whom the forenames, the politics, the religion, the 1820 Settler descent and the German origins arrived, and a chart of blood relatives built around any person.",
+   "flags": "🇿🇦 🇬🇧 🇩🇪",
+   "chapters": [
+    {
+     "path": "/marriages/",
+     "title": "The Marriages",
+     "blurb": "Every marriage a document places, in order."
+    },
+    {
+     "path": "/households/",
+     "title": "Households",
+     "blurb": "Every family group assembled, with the document that records the marriage and the one that puts each child in it."
+    },
+    {
+     "path": "/cousins/",
+     "title": "The cousin marriage",
+     "blurb": "The marriage that folds the family tree back on itself."
+    },
+    {
+     "path": "/women/",
+     "title": "The women",
+     "blurb": "The male line is Cape Dutch and almost unbroken; the forenames, politics, religion and Settler descent arrived through the women."
+    },
+    {
+     "path": "/bloodline/",
+     "title": "Blood relatives",
+     "blurb": "Choose a person and the chart is built around them: parents, brothers and sisters, and their children."
+    }
+   ]
+  },
+  {
+   "id": "everyone",
+   "numeral": "V",
+   "title": "Everyone, and everything in order",
+   "intro": "The index of the whole archive: every named person, every name and how many people bore it, every place a person can be put, every entry in the register, and the timeline of dated events. Each person page also belongs to The People and links back to it; each name page to Every Name; each place page to Places.",
+   "chapters": [
+    {
+     "path": "/people/",
+     "title": "The People",
+     "blurb": "Every named person, with the records that carry them and the pages where they are discussed."
+    },
+    {
+     "path": "/who/",
+     "title": "Every Name",
+     "blurb": "Every name in the archive, and how many different people bore it."
+    },
+    {
+     "path": "/places/",
+     "title": "Places",
+     "blurb": "Every place a named person can be put, with the document that puts them there."
+    },
+    {
+     "path": "/register/",
+     "title": "The Register",
+     "blurb": "The raw catch from the registers: not a family tree, and most of it is not this family."
+    },
+    {
+     "path": "/timeline/",
+     "title": "The Timeline",
+     "blurb": "Everything a document can be put behind, in order."
+    }
+   ]
+  },
+  {
+   "id": "how-we-know",
+   "numeral": "VI",
+   "title": "How we know, and what is missing",
+   "intro": "The working notes, kept inside the book. What the archive rests on, the documents and plates read, every search that was run and what it returned, the DNA, the contradictions found in the tree and the claims taken back, and the errands and the work list for what is still missing.",
+   "chapters": [
+    {
+     "path": "/sources/",
+     "title": "Sources",
+     "blurb": "Everything documented traces to one of the records listed here.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/documents/",
+     "title": "The documents",
+     "blurb": "Scans the family tree carried untranscribed for years; reading them corrected three dates and one family legend.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/gallery/",
+     "title": "The plates",
+     "blurb": "Every document image on the site in one place, each with its caption and a link back.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/dna/",
+     "title": "The DNA",
+     "blurb": "What the tests of two descendants say about the Cape cousinhood and the families that keep arriving.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/searched/",
+     "title": "What Has Been Read",
+     "blurb": "A search that returns nothing is worth something only if the search is written down.",
+     "group": "What was searched"
+    },
+    {
+     "path": "/disputed/",
+     "title": "Disputed",
+     "blurb": "Every contradiction found in the tree behind this archive, including the ones that damage the family's own story.",
+     "group": "What is doubted"
+    },
+    {
+     "path": "/open-questions/",
+     "title": "Open Questions",
+     "blurb": "Everything it knows it does not know, with the record set that would answer each.",
+     "group": "What is doubted"
+    },
+    {
+     "path": "/corrections/",
+     "title": "What was taken back",
+     "blurb": "Every claim published and then withdrawn, with the cause named.",
+     "group": "What is doubted"
+    },
+    {
+     "path": "/changes/",
+     "title": "What changed",
+     "blurb": "Every finding and withdrawal, by the day it happened.",
+     "group": "What is doubted"
+    },
+    {
+     "path": "/errands/",
+     "title": "Errands",
+     "blurb": "Questions that now end at a building rather than a search box.",
+     "group": "What is still to do"
+    },
+    {
+     "path": "/worklist/",
+     "title": "The work list",
+     "blurb": "What is being done here, as opposed to what is known.",
+     "group": "What is still to do"
+    }
+   ]
+  }
+ ],
+ "inherit": {
+  "/people/": "/people/",
+  "/who/": "/who/",
+  "/places/": "/places/"
+ },
+ "outside": [
+  "/search/",
+  "/changed/",
+  "/letters/",
+  "/log/",
+  "/research-log/"
+ ]
+}

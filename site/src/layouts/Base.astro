@@ -6,6 +6,12 @@ const v = versioner();
 import { u } from "../lib/url.js";
 import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
+/* THE BOOK (17 October 2026): every page is a chapter, or belongs to one by prefix, in the order of
+   src/data/book.json. The running head sits below the site header and Previous / Next above the footer;
+   kit/tools/checkbook.py (npm run check:book) fails the build on a page nobody placed. */
+import BookHead from "@daviddef/archive-kit/components/BookHead.astro";
+import BookFoot from "@daviddef/archive-kit/components/BookFoot.astro";
+import book from "../data/book.json";
 import { nLiving, STANDARD } from "../lib/living.js";
 import famData from "../data/families.json";
 const familyPages = famData.families;
@@ -144,6 +150,7 @@ const thisArchive =
     </div></div>
   </div>
 </header>
+<BookHead book={book} u={u} />
 
 <main id="main" tabindex="-1">
   <div class="wrap">
@@ -158,6 +165,8 @@ const thisArchive =
     <slot />
   </div>
 </main>
+
+<BookFoot book={book} u={u} />
 
 <footer class="site">
   <div class="wrap">

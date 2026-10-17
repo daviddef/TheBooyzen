@@ -858,3 +858,8 @@ td, th{overflow-wrap:break-word;word-break:normal;hyphens:manual}
      (a couple, a person) next to a long sentence column, which otherwise takes it all. */
   table:has(td:nth-child(4)) td:first-child:not(.mono):not(.m){min-width:11rem}
 }
+
+/* THE BOOK (17 October 2026). The kit's running head, Previous / Next and Contents take their colours from
+   --ink, --ink-2, --ink-3, --rule, --panel, --accent, --sans and --serif, which this stylesheet already defines
+   for light and dark. Only the width needs saying: line the head and the foot up with .wrap. */
+:root{--bk-width:var(--maxw)}

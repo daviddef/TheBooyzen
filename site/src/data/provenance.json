@@ -25,6 +25,8 @@
   "trees.astro": "A chooser for the drawn lines. The evidence is on /tree/, which declares.",
   "bloodline.astro": "A chart built around whichever person a reader picks. It rests on the whole register rather than on any part of it, and /tree/ carries the declaration for the drawn line.",
   "atlas.astro": "The map. Every pin on it already carries its own witness in places.json, and a gate refuses an unwitnessed pin — so the provenance is per-pin and finer than a page-level block.",
+  "contents.astro": "The book's table of contents, read from book.json. It states no claim of its own: each line is a page's own title and description, and the page it links to declares what it rests on.",
+  "part/[id].astro": "A part opener, generated from book.json: the part's paragraph and its chapters. It adds no claim; the chapters it lists carry the evidence.",
   "dna.astro": "Two DNA kits. Its evidence is a pair of test results and a shared-match list, which are not documents and are not in the source register. The one thing on this page that IS documentary is argued at /cousins/, which declares."
  }
 }

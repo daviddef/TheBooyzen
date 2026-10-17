@@ -38,6 +38,7 @@ DATA = "site/src/data"
 
 # Data files a person edits (or a person's session appends to). Each is read by the gate.
 HAND_EDITED = {
+    "book.json",               # the book: part titles, intros and chapter blurbs, written by hand
     "corrections.json",        # the corrections page, written by hand
     "corrections-who-deny.json",  # the deny list tools/correctionswho.py reads; typed
     "custody.json",            # what the archive physically holds

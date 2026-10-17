@@ -87,6 +87,11 @@ def page_text(p):
     t = re.sub(r"<head[^>]*>.*?</head>", " ", t, flags=re.S | re.I)
     t = re.sub(r'<a class="skiplink"[^>]*>.*?</a>', " ", t, flags=re.S | re.I)
     t = re.sub(r"<header[^>]*>.*?</header>", " ", t, flags=re.S | re.I)
+    # THE BOOK'S RUNNING HEAD IS CHROME TOO (17 October 2026). BookHead is a <div> below the site header, so
+    # "Part V . Everyone, and everything in order . The People Contents" was being harvested into the front
+    # of every page's excerpt. Previous / Next at the foot is a <nav> and goes with the other navs. The head's
+    # own text sits in its first inner <div>, so the first </div> after it ends the text.
+    t = re.sub(r'<div class="bk-head"[^>]*>.*?</div>', " ", t, flags=re.S | re.I)
     t = re.sub(r"<nav[^>]*>.*?</nav>", " ", t, flags=re.S | re.I)
     t = re.sub(r"<footer[^>]*>.*?</footer>", " ", t, flags=re.S | re.I)
     # THE GENERATOR MUST NOT READ ITS OWN OUTPUT — 21 SEPTEMBER 2026.

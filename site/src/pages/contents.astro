@@ -1,0 +1,13 @@
+---
+/* The book's own table: front matter and every part, each chapter with its one line.
+   Everything on it is read from src/data/book.json. */
+import Base from "../layouts/Base.astro";
+import BookContents from "@daviddef/archive-kit/components/BookContents.astro";
+import { u } from "../lib/url.js";
+import book from "../data/book.json";
+---
+<Base title="Contents"
+      eyebrow="The Booyzen Archive, as one book"
+      dek="Front matter and six parts, read in order or entered anywhere. Every page of the archive is a chapter, or belongs to one, and the menus above stay as shortcuts.">
+  <BookContents book={book} u={u} />
+</Base>
