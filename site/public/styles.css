@@ -103,8 +103,8 @@ td.m,th.m{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nu
 /* The record table on a person's page holds sentences, not just dates: a death cell can
    carry a place and an estate reference. Let those wrap (and break at a long reference)
    instead of pushing the page sideways on a phone. */
-table.rec td.m{white-space:normal;overflow-wrap:anywhere}
-table.rec td{overflow-wrap:anywhere}
+table.rec td.m{white-space:normal;overflow-wrap:break-word}
+table.rec td{overflow-wrap:break-word}
 table.rec td:first-child{overflow-wrap:normal;white-space:nowrap}
 .chip{display:inline-block;font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.04em;
   padding:3px 9px;border-radius:2px;border:1px solid var(--rule-strong);color:var(--ink-2)}
@@ -823,7 +823,7 @@ p code,td code,li code,.wl-note code{overflow-wrap:anywhere}
 /* ---- family pages (src/pages/families) ----
    Cells hold names and sentences from the archive's own data, so let them wrap rather than
    push the page sideways on a phone. */
-.famt td, .famt th{overflow-wrap:anywhere}
+.famt td, .famt th{overflow-wrap:break-word}
 .famt td:first-child{font-weight:500}
 .famlist{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px 28px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
 .famlist li{font-family:var(--sans);font-size:14.5px;line-height:1.5}
@@ -833,4 +833,28 @@ p code,td code,li code,.wl-note code{overflow-wrap:anywhere}
   .glance tr{padding:10px 0;border-bottom:1px solid var(--rule)}
   .glance td{border:0;padding:0}
   .glance td:first-child{font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:3px}
+}
+
+/* ---- Layout: table cells, table width, and tables inside a prose column (17 Oct 2026) ----
+   overflow-wrap:anywhere lets a table column shrink to ONE character, so a cell broke mid-word
+   in a narrow box. break-word keeps the longest word as the column's minimum. A phone has no
+   room to spare, so below 600px the cells that hold names and sentences may break anywhere again. */
+td, th{overflow-wrap:break-word;word-break:normal;hyphens:manual}
+@media (max-width:600px){
+  table.rec td, table.rec td.m, .famt td, .famt th{overflow-wrap:anywhere}
+}
+/* A table uses the width of its column. */
+.scroll{width:100%}
+/* A table, figure or card inside a prose column is the width of the page container, not of the
+   text measure: the paragraphs keep their 80ch, the table does not. */
+.prose:has(> .scroll, > table){max-width:none}
+.prose:has(> .scroll, > table) > :not(.scroll):not(table):not(figure):not(.grid):not(.panel){max-width:80ch}
+/* A date or a short code is not broken across lines: this column is given room for a date such as
+   "23 February 1846" (set in the mono face), and a cell that also carries a place may still wrap.
+   Screen only, and not on a phone, where the table scrolls instead. */
+@media screen and (min-width:601px){
+  td.mono{min-width:8.5rem}
+  /* The leading name or label of a table with four or more columns keeps room for a name
+     (a couple, a person) next to a long sentence column, which otherwise takes it all. */
+  table:has(td:nth-child(4)) td:first-child:not(.mono):not(.m){min-width:11rem}
 }
