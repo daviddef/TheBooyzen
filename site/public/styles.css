@@ -863,3 +863,5 @@ td, th{overflow-wrap:break-word;word-break:normal;hyphens:manual}
    --ink, --ink-2, --ink-3, --rule, --panel, --accent, --sans and --serif, which this stylesheet already defines
    for light and dark. Only the width needs saying: line the head and the foot up with .wrap. */
 :root{--bk-width:var(--maxw)}
+/* The home page's hero image used to sit flush under the site header; under the running head it needs a little air. */
+body.is-home .bk-head{margin-bottom:16px}
