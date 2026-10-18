@@ -32,9 +32,12 @@ RECLINK = re.compile(r'<a class="lk-rec"[^>]*>(.*?)</a>', re.S)
 # The «at the time» note the kit's EraNote draws beside a dated place (EraNote.astro, kit/lib/era.js renderEra): one span carrying data-era, holding the
 # prefix span, the label span and the source (a link, or a span). It says what the Record Atlas holds about the ground, not what the page says, so
 # these tools take it out whole: a person page reads the same with the note or without it, and nothing they write (an excerpt, a search row, a
-# fenced-name phrase) can quote it. Matched on its whole shape, so a change in the kit's markup makes it stop matching (check:era then finds the
+# fenced-name phrase) can quote it. The attributes after data-era-year are the kit's (era notes version 4): data-era-boundary, -assessed, -approx,
+# -contested, -margin-unsourced and -edge-agree, each "1" or "0", in any order. The note's own <style data-era-css> is not text: every reader here skips <style>.
+# Matched on its whole shape, so a change in the kit's markup makes it stop matching (check:era then finds the
 # note, and the dossiers and the search index change visibly) rather than quietly leave the words in.
-ERANOTE = re.compile(r'<span class="era-note" data-era="[^"]*" data-era-year="[^"]*"(?: data-era-boundary="1")?>'
+ERANOTE = re.compile(r'<span class="era-note" data-era="[^"]*" data-era-year="[^"]*"'
+                     r'(?: data-era-(?:boundary|assessed|approx|contested|margin-unsourced|edge-agree)="[01]")*>'
                      r'<span class="era-pre">[^<]*</span><span class="era-lab">[^<]*</span> '
                      r'(?:<a class="era-src" [^>]*>[^<]*</a>|<span class="era-src">[^<]*</span>)</span>')
 

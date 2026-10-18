@@ -1,16 +1,47 @@
 {
  "atlas": {
   "base": "https://recordatlas.org",
-  "rings_sha256": "da1972abcb8b3fee942ad2e123dd9151a3e499a7647a597a9ad96f519e80b338"
+  "rings_sha256": null,
+  "rings_source": "contract"
  },
  "built": "2026-10-18",
  "contract": {
   "generated": "2026-10-18",
   "name": "recordatlas-context",
-  "sha256": "894aa556ba590f37af42b70b7b22c27671d0f7c401a67036bf77cf36d8b444a2",
-  "version": "1.8.0"
+  "sha256": "e649c1c925dbf4da9f54c1ebadf1a10c7c7da45d3d7512b42c7bf3405e7772e3",
+  "version": "1.12.0"
  },
- "dropped": [],
+ "dropped": [
+  {
+   "from": 1795,
+   "id": "cape--era-1795",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "cape",
+   "to": 1803
+  },
+  {
+   "from": 1803,
+   "id": "cape--era-1803",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "cape",
+   "to": 1806
+  },
+  {
+   "from": 1806,
+   "id": "cape--era-1806",
+   "reason": "contested about its regime or a part, not its bounds only (contestedScope)",
+   "region": "cape",
+   "to": 1910
+  }
+ ],
+ "edge_neighbours": {
+  "vereeniging": {
+   "kind": "edge",
+   "regions": [
+    "orange-free-state"
+   ]
+  }
+ },
  "places": {
   "bloemfontein": "orange-free-state",
   "cradock": "cape",
@@ -18,16 +49,21 @@
   "london": "england",
   "middelburg cape": "cape",
   "orange free state": "orange-free-state",
-  "st josephs mayfair": "transvaal"
+  "st josephs mayfair": "transvaal",
+  "vereeniging": "transvaal"
  },
  "places_silent": {
   "caerlaverock barkly oost": "edge",
-  "dordrecht": "edge",
-  "vereeniging": "edge"
+  "dordrecht": "edge"
  },
  "policy": {
+  "approx": "margin",
   "boundary": "newer",
+  "contested": "scope",
+  "edge": "agree",
   "edge_km": 15,
+  "margin_years": 5,
+  "margins": {},
   "recent_from": 1990,
   "unassessed": "allow"
  },
@@ -42,281 +78,431 @@
  "regions": {
   "cape": [
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": true,
+    "contested_scope": "bounds",
     "from": 1652,
+    "from_margin": 134,
     "id": "cape--era-1652",
     "label": "Dutch — the Company and the Batavian Republic",
+    "margin_ok": {
+     "first": 1787,
+     "kind": "both",
+     "last": 1789
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Dutch East India Company — Cape of Good Hope",
     "present": false,
     "regime": "dutch",
     "seeded_from_archive": false,
     "to": 1795,
-    "url": "/region/cape/#era-1652"
+    "to_margin": 0,
+    "url": "/region/cape/#era-1652",
+    "why": "Dutch settlement at the Cape founded April 1652 (van Riebeeck); that is a founding date, not control of the district. For the eastern ground this is far earlier than any control: the Great Fish River was agreed as the boundary only in 1780 (Wikipedia: many Xhosa already lived west of it), and the Graaff-Reinet magistracy dates from 1786. FIX: for the eastern Cape the Dutch era effectively begins about 1780-1786, not 1652; the earlier ground was held by Khoikhoi and Xhosa polities."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
-    "from": 1795,
-    "id": "cape--era-1795",
-    "label": "Britain and its colonies",
-    "polity": "First British occupation",
-    "present": false,
-    "regime": "britain",
-    "seeded_from_archive": false,
-    "to": 1803,
-    "url": "/region/cape/#era-1795"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1803,
-    "id": "cape--era-1803",
-    "label": "Dutch — the Company and the Batavian Republic",
-    "polity": "Batavian Republic",
-    "present": false,
-    "regime": "dutch",
-    "seeded_from_archive": false,
-    "to": 1806,
-    "url": "/region/cape/#era-1803"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
-    "from": 1806,
-    "id": "cape--era-1806",
-    "label": "Britain and its colonies",
-    "polity": "Cape Colony",
-    "present": false,
-    "regime": "britain",
-    "seeded_from_archive": false,
-    "to": 1910,
-    "url": "/region/cape/#era-1806"
-   },
-   {
-    "approx": null,
-    "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1910,
+    "from_margin": 0,
     "id": "cape--era-1910",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1916,
+     "kind": "margin",
+     "last": 1955
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Union of South Africa",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1961,
-    "url": "/region/cape/#era-1910"
+    "to_margin": 0,
+    "url": "/region/cape/#era-1910",
+    "why": "Union of South Africa came into existence 31 May 1910; Cape Colony ended then. Later wars east of the Fish are outside this ring."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1961,
+    "from_margin": 0,
     "id": "cape--era-1961",
     "label": "South Africa",
+    "margin_ok": {
+     "first": 1967,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "South Africa — Eastern Cape",
     "present": true,
     "regime": "southafrica",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/cape/#era-1961"
+    "to_margin": null,
+    "url": "/region/cape/#era-1961",
+    "why": "Republic of South Africa 31 May 1961. Ciskei (nominal independence 4 Dec 1981 to 27 Apr 1994, unrecognised) lay east of this ring's towns; Graaff-Reinet, Cradock and Somerset East are not in it, though the ring's eastern edge near 26.5-27E is marginal."
    }
   ],
   "england": [
    {
-    "approx": null,
+    "approx": true,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1538,
+    "from_margin": 0,
     "id": "england--era-1538",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1544,
+     "kind": "approx",
+     "last": 1831
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "England — the parish register",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1837,
-    "url": "/region/england/#era-1538"
+    "to_margin": 0,
+    "url": "/region/england/#era-1538",
+    "why": "Cromwell's injunction to keep registers is dated 5 Sept 1538 (Wikipedia), but a search found other sources giving 29 Sept 1538 for publication, compliance was uneven, and it was repeated in 1547 and reaffirmed in 1597; this is a record-keeping start, not a change of sovereignty. England under Henry VIII governed through Cromwell as Vicar General, no rival authority reported."
    },
    {
-    "approx": null,
+    "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
-    "contested": null,
+    "contested": false,
+    "contested_scope": "none",
     "from": 1837,
+    "from_margin": 0,
     "id": "england--era-1837",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1843,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "England and Wales — civil registration",
     "present": true,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/england/#era-1837"
+    "to_margin": null,
+    "url": "/region/england/#era-1837",
+    "why": "Civil registration began 1 July 1837 (Wikipedia GRO; several family-history sites agree; one source cites 1 March 1837 as the Act's commencement, registration itself started 1 July). Registration became compulsory only in 1874/75 (Wikipedia says 1875, other sources the 1874 Act), which the era note already says. No rival authority."
    }
   ],
   "orange-free-state": [
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1848,
+    "from_margin": 0,
     "id": "orange-free-state--era-1848",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1854,
+     "kind": "margin",
+     "last": 1848
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Orange River Sovereignty",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1854,
-    "url": "/region/orange-free-state/#era-1848"
+    "to_margin": 0,
+    "url": "/region/orange-free-state/#era-1848",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1854,
+    "from_margin": 0,
     "id": "orange-free-state--era-1854",
     "label": "The Boer republics and the Voortrekker states",
+    "margin_ok": {
+     "first": 1860,
+     "kind": "margin",
+     "last": 1896
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Orange Free State",
     "present": false,
     "regime": "boer",
     "seeded_from_archive": false,
     "to": 1902,
-    "url": "/region/orange-free-state/#era-1854"
+    "to_margin": 2,
+    "url": "/region/orange-free-state/#era-1854",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1902,
+    "from_margin": 2,
     "id": "orange-free-state--era-1902",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1908,
+     "kind": "margin",
+     "last": 1904
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Orange River Colony",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1910,
-    "url": "/region/orange-free-state/#era-1902"
+    "to_margin": 0,
+    "url": "/region/orange-free-state/#era-1902",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1910,
+    "from_margin": 0,
     "id": "orange-free-state--era-1910",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1916,
+     "kind": "margin",
+     "last": 1955
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Union of South Africa — Province of the Orange Free State",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1961,
-    "url": "/region/orange-free-state/#era-1910"
+    "to_margin": 0,
+    "url": "/region/orange-free-state/#era-1910",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1961,
+    "from_margin": 0,
     "id": "orange-free-state--era-1961",
     "label": "South Africa",
+    "margin_ok": {
+     "first": 1967,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "South Africa — Free State",
     "present": true,
     "regime": "southafrica",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/orange-free-state/#era-1961"
+    "to_margin": null,
+    "url": "/region/orange-free-state/#era-1961",
+    "why": null
    }
   ],
   "transvaal": [
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1852,
+    "from_margin": 5,
     "id": "transvaal--era-1852",
     "label": "The Boer republics and the Voortrekker states",
+    "margin_ok": {
+     "first": 1863,
+     "kind": "margin",
+     "last": 1866
+    },
+    "margin_sourced": false,
+    "margin_src": "contract",
     "polity": "South African Republic (Transvaal)",
     "present": false,
     "regime": "boer",
     "seeded_from_archive": false,
     "to": 1877,
-    "url": "/region/transvaal/#era-1852"
+    "to_margin": 0,
+    "url": "/region/transvaal/#era-1852",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1877,
+    "from_margin": 0,
     "id": "transvaal--era-1877",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1883,
+     "kind": "margin",
+     "last": 1875
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Transvaal — British annexation",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1881,
-    "url": "/region/transvaal/#era-1877"
+    "to_margin": 1,
+    "url": "/region/transvaal/#era-1877",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1881,
+    "from_margin": 1,
     "id": "transvaal--era-1881",
     "label": "The Boer republics and the Voortrekker states",
+    "margin_ok": {
+     "first": 1887,
+     "kind": "margin",
+     "last": 1896
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "South African Republic (Transvaal)",
     "present": false,
     "regime": "boer",
     "seeded_from_archive": false,
     "to": 1902,
-    "url": "/region/transvaal/#era-1881"
+    "to_margin": 2,
+    "url": "/region/transvaal/#era-1881",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1902,
+    "from_margin": 2,
     "id": "transvaal--era-1902",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1908,
+     "kind": "margin",
+     "last": 1904
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Transvaal Colony",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1910,
-    "url": "/region/transvaal/#era-1902"
+    "to_margin": 0,
+    "url": "/region/transvaal/#era-1902",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1910,
+    "from_margin": 0,
     "id": "transvaal--era-1910",
     "label": "Britain and its colonies",
+    "margin_ok": {
+     "first": 1916,
+     "kind": "margin",
+     "last": 1955
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "Union of South Africa — Province of the Transvaal",
     "present": false,
     "regime": "britain",
     "seeded_from_archive": false,
     "to": 1961,
-    "url": "/region/transvaal/#era-1910"
+    "to_margin": 0,
+    "url": "/region/transvaal/#era-1910",
+    "why": null
    },
    {
     "approx": false,
+    "assessed": true,
     "basis": "not-recorded",
     "contested": false,
+    "contested_scope": "none",
     "from": 1961,
+    "from_margin": 0,
     "id": "transvaal--era-1961",
     "label": "South Africa",
+    "margin_ok": {
+     "first": 1967,
+     "kind": "margin",
+     "last": null
+    },
+    "margin_sourced": true,
+    "margin_src": "contract",
     "polity": "South Africa — the former Transvaal",
     "present": true,
     "regime": "southafrica",
     "seeded_from_archive": false,
     "to": null,
-    "url": "/region/transvaal/#era-1961"
+    "to_margin": null,
+    "url": "/region/transvaal/#era-1961",
+    "why": null
    }
   ]
  },
  "unchecked_edge": [
   "orange free state"
  ],
- "version": 2
+ "version": 4
 }

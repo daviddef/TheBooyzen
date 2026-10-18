@@ -1,11 +1,12 @@
-# Which Record Atlas region (context.json, with the rings in regions.json) each place string this archive prints beside a DATE on a
+# Which Record Atlas region (the contract context.json, which carries the rings too) each place string this archive prints beside a DATE on a
 # person's page belongs to, for the 'at the time' notes (site/src/pages/people/[slug].astro, kit/docs/era-notes.md). The only such
 # place on a person's page is the place of a marriage record (site/src/data/marriages.json, drawn in «The marriage record»); a born or
 # died line carries no place here. One row per place string AS PRINTED. A region of '-' means: looked at, and no Atlas region clearly
 # covers it, so no note. A new place string in marriages.json fails tools/build_era.py --check until it is decided here. Mapped by hand
 # against the Atlas's regions, and only where a region clearly covers the place: a town the region's ring does not reach is '-', not a
 # guess. erasnap.py then refuses any town whose point (data/era-towns.tsv, column 4 here names the town) falls in a DIFFERENT region's
-# ring, or within 15 km of its own region's ring edge (so a town on a ring line, such as Vereeniging, stays silent).
+# ring, or within 15 km of its own region's ring edge, unless a region across the edge exists and carries the same label in the year (a town on a
+# ring line, such as Vereeniging, then keeps its note only in such a year; one with nothing across the edge stays silent).
 place	region	why	town
 Bloemfontein	orange-free-state	capital of the Orange Free State, inside its ring	Bloemfontein
 Colesberg	-	a Cape Colony town 45 km north of the cape ring and 36 km from the Orange Free State ring: no ring clearly covers it	
@@ -18,5 +19,5 @@ London	england	inside the england ring (England and Wales)	London
 Middelburg, Cape	cape	the Cape Colony's Middelburg (not the Transvaal town), inside the cape ring	Middelburg
 Orange Free State	orange-free-state	the state itself, which is the region: no town point, so the edge rule cannot check it	
 St Joseph's, Mayfair	transvaal	Mayfair, Johannesburg, inside the transvaal ring	Mayfair
-Vereeniging	transvaal	on the Vaal, the Transvaal side: on the line between the transvaal and orange-free-state rings (6 km), kept so the edge rule counts it	Vereeniging
+Vereeniging	transvaal	on the Vaal, the Transvaal side: 6 km inside the transvaal ring and 7 km from the orange-free-state ring; the edge rule keeps a note only in a year both regions carry the same label	Vereeniging
 Caerlaverock, Barkly Oost	cape	a farm of the Wodehouse and Barkly East country, 15 km outside the cape ring: kept so the edge rule counts it	Caerlaverock
