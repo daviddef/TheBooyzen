@@ -231,7 +231,9 @@ _m = re.search(r"base:\s*['\"]([^'\"]+)['\"]", _cfg)
 BASE = (_m.group(1) if _m else "/").rstrip("/")
 DOCS_ANCHOR = re.escape(BASE) + r"/documents/#([a-z0-9-]+)"
 
-anchors = set(re.findall(r'<h[2-4] id="([a-z0-9-]+)"', docs_html))
+# A PLATE'S FIGURE CARRIES id="plate-<stem>" SINCE 18 OCTOBER 2026 (the linking standard: a passage that cites a record links to its plate),
+# and records.json points at those ids, so a figure id is an anchor a link may name; it is still only valid if the id is on the built page.
+anchors = set(re.findall(r'<(?:h[2-4]|figure) id="([a-z0-9-]+)"', docs_html))
 if anchors:                      # only meaningful after a build has run
     dangling = {}
     for f in glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True):
