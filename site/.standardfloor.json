@@ -1,0 +1,18 @@
+{
+ "version": 1,
+ "note": "Per page, per rule: violations of the linking standard. A number may only go down. Written by checkstandard.py --write-floor; raise one only by hand, in a commit that says why. Counts only: no name.",
+ "pages": {
+  "/barry/": {"L1": 0, "L2": 21, "L3": 2, "L4": 0, "L5": 36, "EX": 1},
+  "/direct-line/": {"L1": 0, "L2": 6, "L3": 3, "L4": 0, "L5": 13, "EX": 3},
+  "/disputed/": {"L1": 0, "L2": 1, "L3": 0, "L4": 0, "L5": 0, "EX": 1},
+  "/dna/": {"L1": 0, "L2": 0, "L3": 0, "L4": 0, "L5": 1, "EX": 0},
+  "/documents/": {"L1": 0, "L2": 251, "L3": 111, "L4": 0, "L5": 492, "EX": 21},
+  "/johannesburg/": {"L1": 0, "L2": 4, "L3": 0, "L4": 0, "L5": 6, "EX": 0},
+  "/kolbe/": {"L1": 0, "L2": 33, "L3": 4, "L4": 0, "L5": 36, "EX": 0},
+  "/marriages/": {"L1": 0, "L2": 0, "L3": 1, "L4": 0, "L5": 0, "EX": 0},
+  "/name/": {"L1": 0, "L2": 9, "L3": 4, "L4": 0, "L5": 5, "EX": 1},
+  "/open-questions/": {"L1": 0, "L2": 10, "L3": 10, "L4": 0, "L5": 93, "EX": 1},
+  "/rebels/": {"L1": 0, "L2": 7, "L3": 0, "L4": 0, "L5": 11, "EX": 0},
+  "/women/": {"L1": 0, "L2": 20, "L3": 5, "L4": 0, "L5": 16, "EX": 2}
+ }
+}
