@@ -1,4 +1,5 @@
 ---
+import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
@@ -53,7 +54,7 @@ const kids = [
   <p class="dek">The tree carried a long research note describing three conflicting documents. One of the
     three — <b>the 1915 death notice, typewritten and therefore unarguable</b> — turned out to be sitting
     in the tree's own photo store, unread. It can now be quoted rather than paraphrased.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-death-notice-1915-john-barry" style="margin:22px 0 0">
     <img src={u("/docs/death-notice-1915-john-barry.jpg")} loading="lazy" decoding="async"
          alt="Typewritten 1915 death notice for John Barry of Barkly East." />
     <figcaption class="cap">Death Notice of John Barry, prepared at Barkly East and signed by his second
@@ -200,7 +201,7 @@ const kids = [
   <p>The tree lists <b>Catherine Maria Sophia "Kathleen" Barry (1859–1940), married Booyzen</b> and,
     separately, a sister <b>Kathleen Mary Barry (Booysen)</b> with no dates — implying two Barry sisters
     married two Booysens.</p>
-  <p>The 1915 death notice lists <b>only one</b> Barry daughter married to a Boyson:
+  <p>The <Rec id="plate-death-notice-1915-john-barry">1915 death notice</Rec> lists <b>only one</b> Barry daughter married to a Boyson:
     <em>"Kathleen Mary Boyson, born Barry, married in community of property to William Boyson."</em>
     And the arithmetic closes exactly — the tree's <b>11</b> children equal the notice's <b>8</b> surviving,
     plus the <b>2</b> who predeceased him (Catherina Maria Sophia, d. 1859; Willem Frederick Thomas,
@@ -271,11 +272,11 @@ const kids = [
   <h2>How far the Barry names travel</h2>
   <p class="dek">There is no Barry surname left in this family after 1859. There is a great deal of
     Barry <em>name</em>.</p>
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1942-eleven-children" style="margin:20px 0">
     <img src={u("/docs/detail-1942-eleven-children.jpg")} loading="lazy" decoding="async"
          alt="Eleven Daschner children listed on a 1942 death notice, several carrying Barry and Booyzen forenames." />
     <figcaption class="cap">The children of <strong>Catharina Maria Sophia Booysen</strong> &mdash;
-      Kathleen Barry's daughter &mdash; on her husband's 1942 death notice.</figcaption>
+      Kathleen Barry's daughter &mdash; on her husband's <Rec id="plate-death-notice-1942-daschner">1942 death notice</Rec>.</figcaption>
   </figure>
   <div class="prose">
     <p>Kathleen Barry married a Booyzen in the 1880s, so the surname stops with her. Her daughter married
@@ -319,19 +320,19 @@ const kids = [
     seventy-eight years, alphabetically, with the death-notice number beside each name. <b>Barry runs
     across three pages and this family is on none of them.</b></p>
   <div class="grid g3" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-index-estates-barry-p232" style="margin:0">
       <img src={u("/docs/index-estates-barry-p232.jpg")} loading="lazy" decoding="async"
            alt="Page 232 of the Cape Master's Index of Estates: Barry, A to H." />
       <figcaption class="cap"><strong>232</strong> &mdash; A to H. Two Fredericks, <em>Johannes</em>
         and <em>William</em>. <b>No Fortunatus.</b></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-index-estates-barry-p233" style="margin:0">
       <img src={u("/docs/index-estates-barry-p233.jpg")} loading="lazy" decoding="async"
            alt="Page 233 of the Cape Master's Index of Estates: Barry, H to J." />
       <figcaption class="cap"><strong>233</strong> &mdash; the Johns. Five plain, then Charles, Daniel,
         Henry, Henry, Joseph, William. <b>No John Augustus.</b></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-index-estates-barry-p234" style="margin:0">
       <img src={u("/docs/index-estates-barry-p234.jpg")} loading="lazy" decoding="async"
            alt="Page 234 of the Cape Master's Index of Estates: Barry, M to W, then Barsby." />
       <figcaption class="cap"><strong>234</strong> &mdash; M to W, then Barsby. Two Richards, 1836 and
@@ -379,7 +380,7 @@ const kids = [
 
 <section class="blk">
   <h2 id="the-missing-two">Eleven, nine, eight &mdash; and a candidate that dissolved</h2>
-  <p class="dek">Three documents count this family and no two agree. The 1903 death registration says
+  <p class="dek">Three documents count this family and no two agree. The <Rec id="plate-death-registration-1903-john-barry">1903 death registration</Rec> says
     <b>eleven</b> children. John Augustus Barry's own death notice names <b>eight</b>. His wife's,
     estate 1291, names <b>nine</b> &mdash; the ninth being <b>William</b>, who appears on nothing else
     at all. <b>Two children have never been identified.</b></p>

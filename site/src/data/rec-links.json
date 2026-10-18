@@ -1,0 +1,131 @@
+{
+ "note": "The records the open questions cite, linked (the linking standard, L3). The questions are data (questions.json) and the kit's Questions draws their fields as HTML, so src/pages/open-questions.astro gives the citation words the author wrote their link from the records table: [row, field, the author's words, the record's id]. The words are not changed; a phrase that is not in the field stops the build.",
+ "open-questions": [
+  [
+   0,
+   "known",
+   "1876 Rustenburg Sterfkennis",
+   "plate-sterfkennis-1876-petrus-jacobus"
+  ],
+  [
+   0,
+   "tried",
+   "1876 Sterfkennis",
+   "plate-sterfkennis-1876-petrus-jacobus"
+  ],
+  [
+   0,
+   "tried",
+   "1876 death notice",
+   "plate-sterfkennis-1876-petrus-jacobus"
+  ],
+  [
+   1,
+   "known",
+   "1915 death notice",
+   "plate-death-notice-1915-margaretha-kolbe"
+  ],
+  [
+   4,
+   "known",
+   "1851 Graaff-Reinet baptism register",
+   "plate-baptism-register-1851"
+  ],
+  [
+   5,
+   "known",
+   "1915 death notice",
+   "plate-death-notice-1915-john-barry"
+  ],
+  [
+   7,
+   "known",
+   "1863 death notice",
+   "plate-death-notice-1863-johanna-catharina"
+  ],
+  [
+   7,
+   "known",
+   "baptised on 19 June 1870",
+   "plate-doopregister-1870-gert-jacobus"
+  ],
+  [
+   8,
+   "known",
+   "1803 baptism",
+   "plate-kolbe-baptism-register-1803"
+  ],
+  [
+   8,
+   "known",
+   "baptised 2 Feb 1803",
+   "plate-kolbe-baptism-register-1803"
+  ],
+  [
+   8,
+   "known",
+   "1891 baptism",
+   "plate-doopregister-1891-barkly"
+  ],
+  [
+   9,
+   "known",
+   "1819 marriage allegation",
+   "plate-kolbe-marriage-allegation-1819"
+  ],
+  [
+   10,
+   "known",
+   "marriage register",
+   "plate-marriage-1908-indwe"
+  ],
+  [
+   12,
+   "known",
+   "1:1:QP4Z-WK68",
+   "ark-1:1:QP4Z-WK68"
+  ],
+  [
+   12,
+   "known",
+   "film 007844936",
+   "film-007844936"
+  ],
+  [
+   12,
+   "known",
+   "KAB MOOC 6/9/21 ref 4393",
+   "src-kab-mooc-6-9-21-4393-1840"
+  ],
+  [
+   12,
+   "tried",
+   "1817 marriage register",
+   "plate-marriage-register-1817-graaff-reinet"
+  ],
+  [
+   13,
+   "known",
+   "1903 death registration",
+   "plate-death-registration-1903-john-barry"
+  ],
+  [
+   13,
+   "settles",
+   "baptised in 1853",
+   "plate-doopregister-1853-burgersdorp"
+  ],
+  [
+   15,
+   "known",
+   "1908 death notice",
+   "plate-death-notice-1908-hendrik-stephanus"
+  ],
+  [
+   15,
+   "known",
+   "1850 Potchefstroom marriage",
+   "plate-huwelijksregister-1850-potchefstroom"
+  ]
+ ]
+}

@@ -23,8 +23,14 @@ def slug(s):
 AUTOLINK = re.compile(r'<a href="[^"]*" data-autolink>(.*?)</a>', re.S)
 
 
+# The anchor the kit's Rec draws round a citation the author wrote (linking standard, L3): <a class="lk-rec" href=... data-rec=... data-cite>words</a>.
+# It adds a link and no text, so these tools take it out the same way, and what they write is the same whether the citations are linked or not.
+# (No thumb figure is ever drawn here: the records table carries no plate, so a Rec is always the anchor.)
+RECLINK = re.compile(r'<a class="lk-rec"[^>]*>(.*?)</a>', re.S)
+
+
 def unlink(html):
-    return AUTOLINK.sub(r"\1", html)
+    return RECLINK.sub(r"\1", AUTOLINK.sub(r"\1", html))
 
 
 def make(people):

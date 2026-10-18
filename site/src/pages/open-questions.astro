@@ -1,8 +1,12 @@
 ---
+import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import Questions from "@daviddef/archive-kit/components/Questions.astro";
 import qd from "../data/questions.json";
+import { index, describe, renderRec } from "@daviddef/archive-kit/lib/rec.js";
+import records from "../data/records.json";
+import recLinks from "../data/rec-links.json";
 /* SIXTEEN QUESTIONS, AND THE PAGE SAID THIRTEEN.
  *
  * They were written inline as tuples and destructured as
@@ -15,7 +19,23 @@ import qd from "../data/questions.json";
  * only safe while every row is the same length, and nothing was checking.
  *
  * The count comes off the rows now, so the eyebrow cannot go stale again. */
-const rows = qd.rows;
+/* THE RECORDS THESE QUESTIONS CITE, LINKED (the linking standard, L3). The rows are data and the kit's Questions draws their
+ * fields as HTML, so the citation words the author wrote get their link here, from the records table, by the kit's own
+ * renderer: [row, field, the author's words, the record's id]. The words are not changed; a phrase that is not in the field
+ * stops the build. */
+const RECS = recLinks["open-questions"];
+const ix = index(records);
+const linked = qd.rows.map((r, n) => {
+  const out = { ...r };
+  for (const [row, field, words, id] of RECS) {
+    if (row !== n) continue;
+    if (!String(out[field] ?? "").includes(words)) throw new Error(`open-questions: row ${row} ${field} does not hold "${words}"`);
+    const a = renderRec(describe(ix, { id }, { root: u }), "\u0000").replace("\u0000", words);
+    out[field] = out[field].replace(words, () => a);
+  }
+  return out;
+});
+const rows = linked;
 const WORD = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight",
               "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
               "sixteen"];
@@ -177,7 +197,7 @@ const eyebrow = count[0].toUpperCase() + count.slice(1) + " \u2014 " + tally.joi
       a man born in July 1866 is 74 in May 1941. His <b>marriage at Dordrecht on 8 October 1888, aged
       22</b>, is a year before the 1889 font. The chain closes.</p>
     <p style="font-size:16px;margin-top:10px"><b>James Jonathan is "James John."</b> His estate is
-      <span class="m">KAB MOOC 6/9/5047, ref 58379 (1938)</span>, and his wife's is the very next file,
+      <span class="m"><Rec id="src-kab-mooc-6-9-5047-58379-1938">KAB MOOC 6/9/5047, ref 58379</Rec> (1938)</span>, and his wife's is the very next file,
       <span class="m">58380</span> — Maria Louisa Bertha née Kumm. Their children's baptisms enter the
       father under both name forms and spell the mother's surname five ways (Kumm, Kuen, Kunn, Kum, Keem).</p>
     <p style="font-size:16px;margin-top:10px"><b>Hercules Johannes has no estate file at all.</b> The Cape
@@ -192,14 +212,14 @@ const eyebrow = count[0].toUpperCase() + count.slice(1) + " \u2014 " + tally.joi
       of her children, and the index keys every name on a page. The absence is real, and this is what
       it looks like from the inside. <a href={u("/documents/#van-niekerk-1902")}>Her notice &rarr;</a></p>
     <p class="cap" style="margin-top:12px"><strong>What is left:</strong> the four small corrections for
-      our own tree — <b>Sleer/Slier</b> vs Schleher (the 1863 death notice now settles this in favour of
-      an <em>l</em>), the 1817 Graaff-Reinet marriage, Thomas Jacobus living to 1827, and the missing
+      our own tree — <b>Sleer/Slier</b> vs Schleher (the <Rec id="plate-death-notice-1863-johanna-catharina">1863 death notice</Rec> now settles this in favour of
+      an <em>l</em>), the <Rec id="plate-marriage-register-1817-graaff-reinet">1817 Graaff-Reinet marriage</Rec>, Thomas Jacobus living to 1827, and the missing
       sibling <b>Jacoba Catharina (1820–1842)</b>.</p>
   </div>
   <div class="panel" style="margin-top:16px">
     <div class="lab"><span class="m">§ 15</span> · High priority</div>
     <h3 style="margin:8px 0 10px">Why was Kathleen Barry a "Military Pensioner"?</h3>
-    <p style="font-size:16px">Her 1940 death certificate records her, at eighty-two, as a
+    <p style="font-size:16px">Her <Rec id="plate-kathleen-barry-death-1940">1940 death certificate</Rec> records her, at eighty-two, as a
       <b>Military Pensioner</b>. Her husband had been dead thirty-five years and died of a stomach ulcer.
       <b>13 September 2026 — one candidate found and rejected the same day.</b> A ninth son turned up in
       the Brixton burial register, RICHARD PETER BOOYZEN, dead at twenty-four on 25 October 1918, in the
@@ -237,7 +257,7 @@ const eyebrow = count[0].toUpperCase() + count.slice(1) + " \u2014 " + tally.joi
   <div class="panel" style="margin-top:16px">
     <div class="lab"><span class="m">§ 14</span> · High priority</div>
     <h3 style="margin:8px 0 10px">Did any of the Bond Street money reach the Cape?</h3>
-    <p style="font-size:16px">Johan Gottlieb Kolbe's 1842 will divides his residue among his children,
+    <p style="font-size:16px">Johan Gottlieb Kolbe's <Rec id="src-will-of-john-gottlob-kolbe-1842">1842 will</Rec> divides his residue among his children,
       with <b>the issue of any dead child taking that child's share</b>, and a later clause names
       <b>"my said children or grandchildren"</b> outright. <b>George Augustus Kolbe died eleven months
       before his father.</b> On paper his share therefore fell to his children at Burgersdorp — including

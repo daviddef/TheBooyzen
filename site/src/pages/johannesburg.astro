@@ -1,4 +1,5 @@
 ---
+import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
@@ -120,7 +121,7 @@ const drift = [
     <b>Clerk, South African Railways, Johannesburg</b>. <b>The mines belong to the generation that came
     off the train, not to his.</b> <a href={u("/documents/")}>The documents &rarr;</a>
   </div>
-  <p><b>West Park Cemetery holds both George and Anna</b> — her 1944 death form names it, where the tree
+  <p><b>West Park Cemetery holds both George and Anna</b> — her <Rec id="plate-anna-death-form-1944">1944 death form</Rec> names it, where the tree
     gives only "Johannesburg". <b>Kathleen Barry is at Brixton Cemetery</b>, which the tree records
     nowhere at all. Three burial places recovered from three certificates.
     <a href={u("/open-questions/")}>Open questions &rarr;</a></p>

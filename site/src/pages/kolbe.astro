@@ -1,4 +1,5 @@
 ---
+import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
@@ -85,7 +86,7 @@ const north = [
     buried beside him at Burgersdorp. <b>The stone is still standing</b>, and it names them both.
     <a href={u("/documents/")}>The grave &rarr;</a>
   </div>
-  <figure style="margin:24px 0 0;max-width:420px">
+  <figure id="plate-kolbe-george-painted-portrait" style="margin:24px 0 0;max-width:420px">
     <img src={u("/docs/kolbe-george-painted-portrait.jpg")} loading="lazy" decoding="async"
          alt="Painted portrait of a young man with reddish-brown curling hair, high white stock and tan coat." />
     <figcaption class="cap"><strong>George Augustus Kolbe</strong> — a <strong>painting</strong>,
@@ -93,7 +94,7 @@ const north = [
       years old; a likeness of him could only ever have been painted.
       <a href={u("/documents/")}>The portraits &rarr;</a></figcaption>
   </figure>
-  <figure style="margin:24px 0 0;max-width:640px">
+  <figure id="plate-kolbe-grave-inscription" style="margin:24px 0 0;max-width:640px">
     <img src={u("/docs/kolbe-grave-inscription.jpg")} loading="lazy" decoding="async"
          alt="Cut inscription on the Kolbe monument at Burgersdorp naming George Augustus Kolbe and Margaret Downing." />
     <figcaption class="cap">"SACRED TO THE MEMORY OF <strong>GEORGE AUGUSTUS KOLBE</strong>, BORN IN
@@ -101,7 +102,7 @@ const north = [
       1 DECEMBER 1844. ALSO HIS RELICT <strong>MARGARET DOWNING</strong>, BORN IN LONDON
       <strong>23 FEBRUARY 1803</strong>, AND DIED AT BURGHERSDORP <strong>2_ NOVEMBER 1867</strong>."
       Burgersdorp Old Cemetery. <b>The gap in &ldquo;2_ NOVEMBER&rdquo; is the stone&rsquo;s own and is left
-      exactly as cut &mdash; but it is no longer an open question. Her death notice, filed here on 30 January
+      exactly as cut &mdash; but it is no longer an open question. Her <Rec id="src-death-notice-margaret-downing-1868">death notice</Rec>, filed here on 30 January
       1868, answers it: <b>&ldquo;25th November 1867&rdquo;</b>, with her age given as <b>64 years 9 months and
       2 days</b>, which counted back lands on 23 February 1803 &mdash; the very birth this stone cuts. The two
       documents confirm each other.</b> <b>This caption used to stop at her name.</b> The two lines under it
@@ -350,7 +351,7 @@ const north = [
     <b>read from the type rather than from the transcript</b>, which corrected the transcript twice.
     <a href={u("/sources/#printed")}>The printed works, in the register &rarr;</a></p>
 
-  <figure style="margin:24px 0 0">
+  <figure id="plate-evangelical-magazine-1833-p410-kolbe-journal" style="margin:24px 0 0">
     <img src={u("/docs/evangelical-magazine-1833-p410-kolbe-journal.jpg")} loading="lazy" decoding="async"
          alt="Page 410 of the Missionary Chronicle for 1833, carrying the end of Kolbe's letter over his signature and the opening of his journal." />
     <figcaption class="cap"><b>The Evangelical Magazine and Missionary Chronicle, 1833, p. 410.</b> The
@@ -362,7 +363,7 @@ const north = [
   </figure>
 
   <div class="grid g2" style="margin-top:24px">
-    <figure style="margin:0">
+    <figure id="plate-basutoland-records-p436-cronje-deposition" style="margin:0">
       <img src={u("/docs/basutoland-records-p436-cronje-deposition.jpg")} loading="lazy" decoding="async"
            alt="Page 436 of Basutoland Records, carrying the sworn deposition of F. J. C. Cronje." />
       <figcaption class="cap"><b>Basutoland Records (1883), p. 436.</b> <b>Frans Johannes Cornelis
@@ -371,7 +372,7 @@ const north = [
         Bethulie.&rdquo;</em> <b>&ldquo;Klerk&rdquo; is almost certainly James Clark</b>, and the pairing is
         what identifies the Kolbe. Testimony taken to argue the land had been empty.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-moodie-1888-p93-kolbe-report" style="margin:0">
       <img src={u("/docs/moodie-1888-p93-kolbe-report.jpg")} loading="lazy" decoding="async"
            alt="Page 93 of Moodie's Battles and Adventures, citing a report from Commandant J. G. E. Kolbe." />
       <figcaption class="cap"><b>Moodie, <i>Battles and Adventures</i> (1888), p. 93.</b> <b>&ldquo;A report
@@ -383,7 +384,7 @@ const north = [
   </div>
 
   <div class="grid g2" style="margin-top:22px">
-    <figure style="margin:0">
+    <figure id="plate-hofstede-1876-p232-commandant-kolbe" style="margin:0">
       <img src={u("/docs/hofstede-1876-p232-commandant-kolbe.jpg")} loading="lazy" decoding="async"
            alt="Page 232 of Hofstede's history, mourning Commandant J. G. E. Kolbe by name." />
       <figcaption class="cap"><b>Hofstede, <i>Geschiedenis van den Oranje-Vrijstaat</i> (1876), p. 232.</b>
@@ -392,7 +393,7 @@ const north = [
         betrekkingen&rdquo;</em>. <b>It names his seat</b>, which this archive did not have. The obituary&rsquo;s
         <b>3 April</b> stands: it was a Friday and his twenty-fifth wedding anniversary.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-hofstede-1876-p160-jan-colbe" style="margin:0">
       <img src={u("/docs/hofstede-1876-p160-jan-colbe.jpg")} loading="lazy" decoding="async"
            alt="Page 160 of Hofstede's history, naming Jan Colbe among the men who recovered Louw Wepener's bones." />
       <figcaption class="cap"><b>The same book, p. 160 &mdash; and this one withdrew a find.</b> Three men
@@ -657,7 +658,7 @@ const north = [
         → <b>Margaret Georgina Elizabeth Downing</b> (1803–1867)
       </p>
       <p class="cap" style="margin-top:10px"><b>Trick</b>, <b>Heard</b> and <b>Hooper</b> are
-        distinctively <b>Devon</b> surnames. Untested — and note that Margaret's own 1867 death notice
+        distinctively <b>Devon</b> surnames. Untested — and note that Margaret's own <Rec id="plate-downing-death-notice-1867">1867 death notice</Rec>
         records her parents only as <b>"Both dead"</b>, naming neither.</p>
     </div>
   </div>

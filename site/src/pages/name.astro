@@ -1,4 +1,5 @@
 ---
+import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import Distribution from "@daviddef/archive-kit/components/Distribution.astro";
@@ -46,13 +47,13 @@ const srows = [
     appear <strong>on a single sheet of paper in September 1905</strong>.
   </p>
   <div class="grid g2" style="margin:22px 0">
-    <figure style="margin:0">
+    <figure id="plate-detail-1905-clerk-booysen" style="margin:0">
       <img src={u("/docs/detail-1905-clerk-booysen.jpg")} loading="lazy" decoding="async"
            alt="1905 death form, clerk's hand, reading Willem Hermanus Booysen with an s." />
       <figcaption class="cap">The registering clerk names the dead man:
         <strong>Willem Hermanus Boo<em>y</em>sen</strong></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-detail-1905-signature-booyzen" style="margin:0">
       <img src={u("/docs/detail-1905-signature-booyzen.jpg")} loading="lazy" decoding="async"
            alt="1905 death form, informant signature reading J B Booyzen with a clear z." />
       <figcaption class="cap">Four lines below, his son signs:
@@ -77,10 +78,10 @@ const srows = [
 
 <section class="blk">
   <h2>The complication: he may have been signing a z in 1879</h2>
-  <figure style="margin:18px 0;max-width:520px">
+  <figure id="plate-detail-1879-groom-signature" style="margin:18px 0;max-width:520px">
     <img src={u("/docs/detail-1879-groom-signature.jpg")} loading="lazy" decoding="async"
          alt="Extreme magnification of an 1879 signature surname reading Booij, then an ambiguous letter, then en." />
-    <figcaption class="cap">The groom's own signature on the 1879 marriage register, at maximum available
+    <figcaption class="cap">The groom's own signature on the <Rec id="plate-marriage-1879-booysen-barry">1879 marriage register</Rec>, at maximum available
       magnification. The clerk, on the same page, wrote <strong>Booysen</strong>.</figcaption>
   </figure>
   <p>
@@ -107,13 +108,13 @@ const srows = [
 <section class="blk">
   <h2>The control that changes what a z is worth</h2>
   <p>
-    <span class="chip doc">Documented</span> The archive has now read the <strong>1851 Graaff-Reinet
-    baptism register</strong> from the Cape Town Archives scan rather than from a photograph of it. Entry
-    <strong>No. 2809</strong>, Willem Hermanus, born 4 May 1851, baptised 31 October 1851 at
+    <span class="chip doc">Documented</span> The archive has now read the <strong><Rec id="plate-baptism-register-1851">1851 Graaff-Reinet
+    baptism register</Rec></strong> from the Cape Town Archives scan rather than from a photograph of it. Entry
+    <strong>No. 2809</strong>, Willem Hermanus, born 4 May 1851, <Rec id="plate-baptism-register-1851">baptised 31 October 1851</Rec> at
     <em>Achter Sneeuwberg</em>. The father's name is written out, unambiguously, with a
     <strong>z</strong>:
   </p>
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1851-father-booyzen" style="margin:18px 0">
     <img src={u("/docs/detail-1851-father-booyzen.jpg")} loading="lazy" decoding="async"
          alt="1851 baptism register, father's name reading Petrus Jacobus Booyzen with a clear z." />
     <figcaption class="cap">1851: <strong>Petrus Jacobus Boo<em>y</em><em>z</em>en</strong> — fifty-four
@@ -124,7 +125,7 @@ const srows = [
     and the same entry says why. Three lines below, the <strong>same clerk in the same ink</strong> writes
     the godparents' surname twice — and writes it the same way:
   </p>
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1851-pieterzen-control" style="margin:18px 0">
     <img src={u("/docs/detail-1851-pieterzen-control.jpg")} loading="lazy" decoding="async"
          alt="1851 baptism register witnesses, reading Willem Hermanus Pieterzen and Xaverius Hermanus Pieterzen, both with the same z letterform." />
     <figcaption class="cap">The witnesses: <strong>Willem Hermanus Pieter<em>z</em>en</strong> and
@@ -195,7 +196,7 @@ const srows = [
       was created — invented by a great-grandfather, coined on the road north, made up to escape the
       joiners. It was ordinary Cape orthography before the family in question was born.</p>
     <p style="margin:10px 0 0"><b>Left standing:</b> that <em>this family</em> changed which of the two
-      existing spellings it used. That is a different claim, and the <b>1905 death registration</b> still
+      existing spellings it used. That is a different claim, and the <b><Rec id="plate-death-1905-willem-hermanus">1905 death registration</Rec></b> still
       supports it — the clerk writes <b>Booysen</b> and the son signs <b>Booyzen</b> four lines below, on
       one sheet. Choosing an old spelling is still choosing.</p>
     <p style="margin:10px 0 0"><b>Untouched:</b> the distribution figures below. 646 against 53,764,
@@ -260,7 +261,7 @@ const srows = [
 
   <div class="note">
     <p style="margin:0"><strong>What this does to the archive's own centrepiece.</strong> This site has
-      leaned hard on the <b>1905 death registration</b>: the clerk writes <em>Booysen</em>, the son signs
+      leaned hard on the <b><Rec id="plate-death-1905-willem-hermanus">1905 death registration</Rec></b>: the clerk writes <em>Booysen</em>, the son signs
       <em>Booyzen</em>, four lines apart. That has been read as the change caught in the act.</p>
     <p style="margin:10px 0 0">These seven files say that in <b>exactly those years</b>, in official Cape
       writing, <b>the two spellings were interchangeable labels for one person</b>. So the clerk's
@@ -430,7 +431,7 @@ const srows = [
   <h2>1942 &middot; A clerk who typed the z</h2>
   <p class="dek">The one document in this archive where an official, unprompted, spells it the family's
     way.</p>
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1942-born-booyzen" style="margin:20px 0">
     <img src={u("/docs/detail-1942-born-booyzen.jpg")} loading="lazy" decoding="async"
          alt="Question seven of the 1942 Daschner death notice, typed: Catherine Mary Sophia Daschner, born Booyzen." />
     <figcaption class="cap">Estate <strong>TAB MHG 1928/42</strong>, Johannesburg, April 1942 &mdash;
@@ -440,7 +441,7 @@ const srows = [
     <p>Every other official spelling this archive has read runs the other way. The Indwe clerk in 1905
       wrote <b>Booysen</b> on Willem Hermanus's death form, and his son signed <b>Booyzen</b> four lines
       below it. The Middelburg files spell one constable both ways twice inside a single year. The
-      Johannesburg registrar typed <b>Booysen</b> on Anna Pretorius's 1944 death registration.</p>
+      Johannesburg registrar typed <b>Booysen</b> on Anna Pretorius's <Rec id="plate-anna-death-form-1944">1944 death registration</Rec>.</p>
     <blockquote>Here, thirty-seven years after Indwe, a Johannesburg typist taking down a widow's
       account of her own maiden name types <b>Booyzen</b> &mdash; and there is no signature anywhere on
       the page to have copied it from. <b>The only source for the z was her saying it.</b></blockquote>

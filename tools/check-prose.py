@@ -58,6 +58,7 @@ HAND_EDITED = {
     "people.js",               # every named person: the source of truth for people.json
     "places.json",             # the places page
     "provenance.json",         # which pages declare their sources
+    "rec-links.json",          # the citation words of the open questions and the record each links to
     "questions.json",          # open questions
     "retired.json",            # withdrawn readings
     "searched.json",           # the searches run
@@ -78,6 +79,8 @@ GENERATED = {
     "living.json",             # tools/livingflags.py (holds living names on purpose: it IS the feed's source)
     "namefold.json",           # kit namefold.py
     "people.json",             # tools/people-json.mjs, from people.js
+    "readnames.json",          # tools/readnames.py, from data/read-names.tsv and register.json
+    "records.json",            # tools/build_records.py, from the pages and the data
     "register.json",           # tools/register.py
     "sources-state.json",      # tools/checkexternal.py, link status
 }

@@ -1,4 +1,5 @@
 ---
+import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
@@ -137,7 +138,7 @@ const jobs = [
 <section class="blk">
   <h2>Margaret Downing signed with a cross</h2>
   <div class="prose">
-    <p>The <b>1819 marriage register</b> at St Leonard's Shoreditch records the entry in the usual form —
+    <p>The <b><Rec id="plate-kolbe-marriage-entry-1819">1819 marriage register</Rec></b> at St Leonard's Shoreditch records the entry in the usual form —
       and then, where the bride should sign:</p>
     <blockquote><b>Margaret Downing † her mark.</b></blockquote>
     <p><b>She could not write her own name.</b> She was fifteen years old, and had that morning been
@@ -153,7 +154,7 @@ const jobs = [
 <Rule name="thorn" />
 <section class="blk">
   <h2>Her brother's family was still there in 1889</h2>
-  <p class="dek">Reading a Booyzen baptism in the 1889 register of Barkly Oost, the archive noticed
+  <p class="dek">Reading a Booyzen <Rec id="plate-doopregister-1889-barkly">baptism in the 1889</Rec> register of Barkly Oost, the archive noticed
     <strong>Mountjoys on the facing page</strong>. They turned out to be family.</p>
   <div class="scroll" style="margin-top:20px">
     <pre class="mono" style="line-height:1.5;white-space:pre;margin:0;padding:20px;background:var(--panel);border:1px solid var(--rule);border-radius:3px">{`JAMES MOUNTJOY (1786-1827)  ===  ANNA CATHARINA SLIER / SCHLEHER (1787- )
@@ -227,7 +228,7 @@ JOHANNA CATHARINA MOUNTJOY            GEORGE MOUNTJOY (b. 1823, Cradock)
     is <strong>30 April 1819</strong>, at <b>Graaff Reinet</b>, which the same document gives as her
     birthplace. <a href={u("/documents/")}>The death notice &rarr;</a></p>
   <p class="cap" style="margin-top:14px"><b>Four corrections it offers our own tree:</b> Anna Catharina is
-    recorded there as <b>Slier</b>, not Schleher; her marriage to James Mountjoy is dated
+    recorded there as <b>Slier</b>, not Schleher; her <Rec id="plate-marriage-register-1817-graaff-reinet">marriage</Rec> to James Mountjoy is dated
     <b>9 March 1817 at Graaff-Reinet</b>; <b>Thomas Jacobus lived to 1827</b>, not 1818; and there is a
     sibling our tree lacks entirely — <b>Jacoba Catharina Mountjoy (1820–1842)</b>.</p>
 </section>
@@ -237,24 +238,24 @@ JOHANNA CATHARINA MOUNTJOY            GEORGE MOUNTJOY (b. 1823, Cradock)
   <p class="dek">She was the hardest person in this archive to find, and the reason is worth as much as
     the answer.</p>
   <div class="prose">
-    <p>Petrus Jacobus Booysen's first wife died in <b>1863</b>. His own death notice of <b>1884</b> enters
+    <p>Petrus Jacobus Booysen's first wife died in <b>1863</b>. His own <Rec id="plate-death-notice-1884-petrus-jacobus">death notice of <b>1884</b></Rec> enters
       him as <b>married</b> — twenty-one years later — and names a child, <b>Gerrit Jacobus, born 19
       January 1870</b>, who could only be another woman's. Three children in all were born after 1863,
       and the family tree had attached every one of them to a woman already in her grave.</p>
     <p>So the archive knew she existed, and went looking. <b>It looked in the wrong kind of document, for
       months.</b></p>
     <ul>
-      <li><b>His 1884 death notice</b> proves her and never asks her name. The form has no line for a
+      <li><b>His <Rec id="plate-death-notice-1884-petrus-jacobus">1884 death notice</Rec></b> proves her and never asks her name. The form has no line for a
         wife.</li>
-      <li><b>Her son Stephanus Francois's death notice of 1940</b> does have a line for his mother. His
+      <li><b>Her son Stephanus Francois's <Rec id="plate-sterfkennis-1940-stephanus-francois">death notice of 1940</Rec></b> does have a line for his mother. His
         widow wrote <b>"oorlede"</b> — deceased.</li>
       <li>Her <b>own</b> death notice, if one exists, has never been found under any spelling.</li>
     </ul>
     <blockquote>Every route ran through a death, and death is exactly where this family stops
       remembering its women.</blockquote>
     <p><b>She was named by a christening.</b> A baptism register asks for both parents, at the moment
-      when everyone concerned is alive and standing in the same room. Gert Jacobus was baptised on
-      <b>19 June 1870</b>:</p>
+      when everyone concerned is alive and standing in the same room. Gert Jacobus was <Rec id="plate-doopregister-1870-gert-jacobus">baptised on
+      <b>19 June 1870</b></Rec>:</p>
     <p class="m" style="font-size:16px;margin-top:10px"><b>Oud: Petrus Jacobus Booyzen en Johanna
       Margaritha Pretorius</b></p>
     <p style="margin-top:14px">And at the font stood <b>Petrus Jacobus Booijzen junior</b> (b. 1839) and
@@ -359,13 +360,13 @@ JOHANNA CATHARINA MOUNTJOY            GEORGE MOUNTJOY (b. 1823, Cradock)
   <h2>The oldest woman in the archive</h2>
   <p><b>Anna Catharina Sleer / Slier / Schleher</b> (1787–1885), mother of Johanna Catharina Mountjoy,
     lived to <b>ninety-eight</b>. <span class="chip doc">Documented</span> Her daughter's
-    <b>1863 death notice</b> names her, in the informant's hand, as <b>Anna Catharina Sleer</b> — the
+    <b><Rec id="plate-death-notice-1863-johanna-catharina">1863 death notice</Rec></b> names her, in the informant's hand, as <b>Anna Catharina Sleer</b> — the
     first time this archive has had her from a document rather than from a tree. The hand is ambiguous
     between <em>Sleer</em> and <em>Steer</em>, and it is settled from outside: the tree carries
     <b>Schleher</b>, FamilySearch <b>Slier</b>. Three renderings, three independent sources, all with an
     <b>l</b> and none with a <b>t</b>.
     <span class="chip doc">Documented</span> Her first marriage is now on record too: her second husband's
-    <b>1840 death notice</b> describes her as <b>"Catharina Sl[i/e]er, widow of William Pietersen"</b>.
+    <b><Rec id="plate-death-notice-1840-james-montjoy">1840 death notice</Rec></b> describes her as <b>"Catharina Sl[i/e]er, widow of William Pietersen"</b>.
     The archive had only inferred the Pieterzen marriage, from a godparent standing at an 1851 font.
     Here it is named, in a document eleven years older.
     She married a <b>Pieterzen</b> first — four sons between 1808 and 1813 — and then

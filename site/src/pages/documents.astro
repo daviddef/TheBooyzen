@@ -1,4 +1,5 @@
 ---
+import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
@@ -38,9 +39,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="contents">What is on this page</h2>
   <p class="dek">{toc.length} documents, in the order the events happened rather than the order they were
     read. Every one of them has been read from the image unless the entry says otherwise.</p>
+  <div data-cite-exempt="the contents list: each entry is the title of a section of this page and links to that section, which holds the record, its scan and its reading; no entry quotes a record for a claim">
   <Documents u={u}
     rows={toc.map((t) => ({ year: t.year === 9999 ? null : t.year,
                             title: t.label, href: "#" + t.id }))} />
+  </div>
 </section>
 
 <Rule name="thorn" label="The documents, oldest first" />
@@ -49,10 +52,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="death-registration-settles-1905">1905 · The death registration that settles the biggest question</h2>
   <p class="dek">Cape Colony, <em>Form of Information of a Death, Act No. 7 of 1894</em>. Entry 299,
     sub-district Indwe, district Wodehouse. Registered 14 September 1905.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-death-1905-willem-hermanus" style="margin:22px 0 0">
     <img src={u("/docs/death-1905-willem-hermanus.jpg")} loading="lazy" decoding="async"
          alt="Cape Colony death registration form for Willem Hermanus Booysen, 1905, handwritten in ink." />
-    <figcaption class="cap">Death registration of <strong>Willem Hermanus Booysen</strong>, Indwe, 1905.
+    <figcaption class="cap"><Rec id="scan-death-1905-willem-hermanus">Death registration</Rec> of <strong>Willem Hermanus Booysen</strong>, Indwe, 1905.
       MyHeritage tree <em>Defranceski Family Site (23andMe)</em>, extracted 9 September 2026.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:24px">
@@ -99,12 +102,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">The registering clerk writes the deceased's surname. Four lines below, his son signs his
     own. They are not the same word.</p>
   <div class="grid g2" style="margin-top:22px">
-    <figure style="margin:0">
+    <figure id="plate-detail-1905-clerk-booysen" style="margin:0">
       <img src={u("/docs/detail-1905-clerk-booysen.jpg")} loading="lazy" decoding="async"
            alt="Handwritten name on the 1905 form reading Willem Hermanus Booysen, with an s." />
       <figcaption class="cap">The clerk, September 1905: <strong>Willem Hermanus Boo<em>y</em>sen</strong></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-detail-1905-signature-booyzen" style="margin:0">
       <img src={u("/docs/detail-1905-signature-booyzen.jpg")} loading="lazy" decoding="async"
            alt="Informant signature on the 1905 form reading J B Booyzen, with a clear z." />
       <figcaption class="cap">His son, the same day: <strong>J. B. Boo<em>y</em><em>z</em>en</strong></figcaption>
@@ -125,7 +128,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek"><em>Duplicaat Origineel Register</em>, in Dutch. Entry 15, 22 December 1879. Married in
     the <strong>Nederduits Gereformeerde Kerk at Barkly</strong>, after banns, by <strong>David Ross</strong>,
     <em>consulent</em>.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-marriage-1879-booysen-barry" style="margin:22px 0 0">
     <img src={u("/docs/marriage-1879-booysen-barry.jpg")} loading="lazy" decoding="async"
          alt="Dutch-language duplicate marriage register page for 1879, Barkly, Wodehouse district." />
     <figcaption class="cap">Marriage of Willem Hermanus Booysen and Catharine Mary Barry, Barkly, 1879.</figcaption>
@@ -150,7 +153,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <a href={u("/rebels/")}>The rebels &rarr;</a></p>
 
   <h3 style="margin-top:32px">The most consequential letter in the archive</h3>
-  <figure style="margin:18px 0 0;max-width:520px">
+  <figure id="plate-detail-1879-groom-signature" style="margin:18px 0 0;max-width:520px">
     <img src={u("/docs/detail-1879-groom-signature.jpg")} loading="lazy" decoding="async"
          alt="Extreme magnification of the groom's 1879 signature surname, reading Booij-something-en." />
     <figcaption class="cap">The groom's own signature, 1879, at maximum available magnification.</figcaption>
@@ -178,10 +181,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Prepared by solicitors at Barkly East, stamped 18 April 1915, No. 925. Signed by
     <strong>James H. Barry, "Son (second)"</strong>. <b>This is the very document the family's earlier
     research note describes</b> — it can now be quoted rather than paraphrased.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-death-notice-1915-john-barry" style="margin:22px 0 0">
     <img src={u("/docs/death-notice-1915-john-barry.jpg")} loading="lazy" decoding="async"
          alt="Typewritten 1915 death notice for John Barry, Barkly East." />
-    <figcaption class="cap">Death Notice of John Barry, died 1903, notice prepared 1915.</figcaption>
+    <figcaption class="cap"><Rec id="scan-death-notice-1915-john-barry">Death Notice</Rec> of John Barry, died 1903, notice prepared 1915.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:24px">
     <table>
@@ -233,13 +236,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="georges-death-notice-1947">1947 · George's death notice corrects his own death date</h2>
   <p class="dek">Signed by <strong>G. Booyzen</strong> at Johannesburg on 21 February 1948 under the
     Administration of Estates Act 1913.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-death-notice-1947-george" style="margin:22px 0 0">
     <img src={u("/docs/death-notice-1947-george.jpg")} loading="lazy" decoding="async"
          alt="Handwritten 1947 death notice for George Downing Mountjoy Booyzen, Johannesburg." />
     <figcaption class="cap">Death Notice of <strong>George Downing Mountjoy Booyzen</strong>, died
       11 December 1947 at Forest Hill, Johannesburg.</figcaption>
   </figure>
-  <figure style="margin:24px 0 0">
+  <figure id="plate-detail-1947-death-date" style="margin:24px 0 0">
     <img src={u("/docs/detail-1947-death-date.jpg")} loading="lazy" decoding="async"
          alt="Detail of the 1947 death notice showing the day of decease as 11th December 1947." />
     <figcaption class="cap">"The day of the decease: On <strong>11th December 1947</strong>" — died at
@@ -253,21 +256,21 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p style="margin-top:16px">This also dissolves an anomaly this archive had itself flagged: a burial at
     West Park recorded on <b>14 December 1947</b> looked like a ten-month delay. It was not.
     <b>He died on the 11th and was buried on the 14th — three days later</b>, exactly as one would expect.</p>
-  <figure style="margin:26px 0 0">
+  <figure id="plate-detail-1947-occupation" style="margin:26px 0 0">
     <img src={u("/docs/detail-1947-occupation.jpg")} loading="lazy" decoding="async"
          alt="Detail showing age 46 years 6 months and occupation S.A.R. and H." />
     <figcaption class="cap">Age <strong>46 years 6 months</strong>; occupation
       <strong>S.A.R. &amp; H.</strong> — the South African Railways and Harbours; residence
       <strong>85 Rheeden Street, Forest Hill</strong>.</figcaption>
   </figure>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-detail-1947-spouses" style="margin:22px 0 0">
     <img src={u("/docs/detail-1947-spouses.jpg")} loading="lazy" decoding="async"
          alt="Detail showing surviving spouse Gertruida Alexandra born Kinnear and pre-deceased spouse Anna Johanna Maria born Pretorius." />
     <figcaption class="cap">Surviving spouse <strong>Gertruida Alexandra Booyzen, born Kinnear</strong>, in
       community of property; pre-deceased spouse <strong>Anna Johanna Maria Booyzen (Pretorius), died 26
       February 1944</strong>.</figcaption>
   </figure>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-detail-1947-children" style="margin:22px 0 0">
     <img src={u("/docs/detail-1947-children.jpg")} loading="lazy" decoding="async"
          alt="Detail listing the children of the prior marriage with birth dates for the minors." />
     <figcaption class="cap">Children of the prior marriage. The two eldest are entered as majors; the four
@@ -289,7 +292,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <Rule name="koppie" />
 <section class="blk">
   <h2 id="photographs">The photographs</h2>
-  <figure style="margin:20px 0 0;max-width:560px">
+  <figure id="plate-photo-george-isaak-transkei" style="margin:20px 0 0;max-width:560px">
     <img src={u("/docs/photo-george-isaak-transkei.jpg")} loading="lazy" decoding="async"
          alt="Two men shaking hands in open grassland, one young in a 1930s suit, one elderly with a white moustache and walking stick." />
     <figcaption class="cap"><strong>"George Booyzen and Isaak Pretorius In Transkei"</strong> — the tree's
@@ -303,7 +306,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Attached to George's profile with no caption, no date and no tagging. The identifications
     below are <span class="chip inf">Inferred</span> — reasoning is given so it can be overturned.</p>
   <div class="grid g3" style="margin-top:20px;align-items:start">
-    <figure style="margin:0">
+    <figure id="plate-photo-untitled-43" style="margin:0">
       <img src={u("/docs/photo-untitled-43.jpg")} loading="lazy" decoding="async"
            alt="A young woman in a patterned dress, an elderly woman seated in black, and a young man outside a house." />
       <figcaption class="cap">An <strong>elderly woman seated in full black</strong> between two young
@@ -311,15 +314,15 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
         <strong>Kathleen Barry (1859–1940)</strong> in widow's black — the dress and print date the image
         to the 1930s, when she was in her seventies and living in Johannesburg. <strong>Unverified.</strong></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-photo-untitled-45" style="margin:0">
       <img src={u("/docs/photo-untitled-45.jpg")} loading="lazy" decoding="async"
            alt="A young man in a dark uniform tunic and peaked cap standing in a yard by a bare tree." />
       <figcaption class="cap">A young man in a <strong>dark uniform tunic and peaked cap</strong>.
         <em>Hypothesis:</em> <strong>George Downing Mountjoy Booyzen in South African Railways and
-        Harbours uniform</strong> — the employer his 1947 death notice names.
+        Harbours uniform</strong> — the employer his <Rec id="plate-death-notice-1947-george">1947 death notice</Rec> names.
         <strong>Unverified.</strong></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-photo-untitled-46" style="margin:0">
       <img src={u("/docs/photo-untitled-46.jpg")} loading="lazy" decoding="async"
            alt="A man in a light suit and fedora leaning on a late-1920s sedan with a small boy beside him." />
       <figcaption class="cap">A man in a light suit and fedora on a late-1920s sedan, registration
@@ -331,9 +334,9 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="sworn-falsehood-shoreditch-1819">1819 · A sworn falsehood in Shoreditch</h2>
-  <p class="dek">A marriage allegation of the <strong>London Diocese</strong>, 20 January 1819 — the sworn
+  <p class="dek">A <Rec id="plate-kolbe-marriage-allegation-1819">marriage allegation</Rec> of the <strong>London Diocese</strong>, 20 January 1819 — the sworn
     statement required before a marriage licence could be issued. Fee, 2/6.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-kolbe-marriage-allegation-1819" style="margin:22px 0 0">
     <img src={u("/docs/kolbe-marriage-allegation-1819.jpg")} loading="lazy" decoding="async"
          alt="Handwritten 1819 marriage allegation from the London Diocese for George Kolbe and Margaret Downing." />
     <figcaption class="cap">Marriage allegation of George Kolbe and Margaret Downing, London Diocese,
@@ -345,7 +348,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     Twenty-one Years and upwards</strong>, and intendeth to marry with <strong>Margaret Downing</strong> of
     the same Parish, <strong>a Spinster of the age of Twenty-one Years and upwards</strong>…"
   </blockquote>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-kolbe-allegation-age-detail" style="margin:20px 0 0">
     <img src={u("/docs/kolbe-allegation-age-detail.jpg")} loading="lazy" decoding="async"
          alt="Magnified detail of the oath reading a Bachelor of the age of Twenty-one Years and upwards." />
     <figcaption class="cap">"…a Bachelor of the age of <strong>Twenty-one Years and upwards</strong>."</figcaption>
@@ -368,17 +371,17 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="estate-archive-reference-1844">1844 · The estate the archive had a reference for but had never read</h2>
-  <p class="dek">The Cape Archives reference <span class="m">KAB MOOC 6/9/35: 7698 (1845)</span> was
+  <p class="dek">The Cape Archives reference <span class="m"><Rec id="src-kab-mooc-6-9-35-7698-1845">KAB MOOC 6/9/35: 7698</Rec> (1845)</span> was
     already noted here as "not yet ordered". It was in the family tree all along — the estate number
     <strong>7698</strong> is written at the head of the page.</p>
-  <figure style="margin:22px 0 0;max-width:820px">
+  <figure id="plate-kolbe-death-notice-1844-zoom" style="margin:22px 0 0;max-width:820px">
     <img src={u("/docs/kolbe-death-notice-1844-zoom.jpg")} loading="lazy" decoding="async"
          alt="1845 death notice for George Augustus Kolbe under Ordinance 104, estate number 7698." />
     <figcaption class="cap">Death Notice of <strong>George Augustus Kolbe</strong>, made under Section 9,
       Ordinance 104, at Colesberg in January 1845 and signed <strong>M. Kolbe</strong> — Margaret, his
       widow.</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-kolbe-death-notice-1844" style="margin:20px 0 0">
     <img src={u("/docs/kolbe-death-notice-1844.jpg")} loading="lazy" decoding="async"
          alt="The complete 1845 death notice page for George Augustus Kolbe." />
     <figcaption class="cap">The whole sheet, for anyone who wants to check the reading against it.</figcaption>
@@ -424,11 +427,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="margarets-death-notice-1867">1867 · Margaret's death notice solves a problem this archive had raised</h2>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-downing-death-notice-1867" style="margin:22px 0 0">
     <img src={u("/docs/downing-death-notice-1867.jpg")} loading="lazy" decoding="async"
          alt="1867 death notice for Margaret Downing, widow of George Augustus Kolbe, Burghersdorp." />
     <figcaption class="cap">Death Notice of <strong>Margaret Downing, widow of the late George Augustus
-      Kolbe</strong>, estate 4094, filed 30 January 1868 and signed by her son-in-law
+      Kolbe</strong>, <Rec id="scan-downing-death-notice-1867">estate 4094</Rec>, filed 30 January 1868 and signed by her son-in-law
       <strong>G. D. O. Werdmuller</strong>.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:24px">
@@ -465,12 +468,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <section class="blk">
   <h2 id="grave-burgersdorp">The grave at Burgersdorp</h2>
   <div class="grid g2" style="margin-top:20px;align-items:start">
-    <figure style="margin:0">
+    <figure id="plate-kolbe-grave-monument" style="margin:0">
       <img src={u("/docs/kolbe-grave-monument.jpg")} loading="lazy" decoding="async"
            alt="A tall urn-topped granite monument inside a cast-iron railed enclosure in a grassy cemetery." />
       <figcaption class="cap">The monument, inside its cast-iron enclosure, Burgersdorp Old Cemetery.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-kolbe-grave-inscription" style="margin:0">
       <img src={u("/docs/kolbe-grave-inscription.jpg")} loading="lazy" decoding="async"
            alt="Close view of the cut inscription on the Kolbe monument." />
       <figcaption class="cap">The inscription.</figcaption>
@@ -499,20 +502,20 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <section class="blk">
   <h2 id="portraits-cannot-says">The portraits — and one that cannot be who it says</h2>
   <div class="grid g3" style="margin-top:20px;align-items:start">
-    <figure style="margin:0">
+    <figure id="plate-kolbe-couple-misattributed" style="margin:0">
       <img src={u("/docs/kolbe-couple-misattributed.jpg")} loading="lazy" decoding="async"
            alt="Carte-de-visite of a seated bearded man and a standing woman in a bustle dress." />
       <figcaption class="cap"><strong>Captioned "Margaret Elizabeth Georgina Downing and George Kolbe"
         — and it is not them.</strong> See below.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-downing-margaret-portrait" style="margin:0">
       <img src={u("/docs/downing-margaret-portrait.jpg")} loading="lazy" decoding="async"
            alt="Heavily retouched head-and-shoulders portrait of a woman with centre-parted hair and a white collar." />
       <figcaption class="cap"><strong>Margaret Downing.</strong> Heavily hand-retouched, but the centre
         parting and plain white collar fit the <strong>1850s–60s</strong>, which fits a woman who died in
         1867. <span class="chip inf">Plausible</span></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-kolbe-george-portrait" style="margin:0">
       <img src={u("/docs/kolbe-george-portrait.jpg")} loading="lazy" decoding="async"
            alt="Vignetted portrait of a young man with dark curling hair and a high collar." />
       <figcaption class="cap"><strong>George Augustus Kolbe.</strong> He died in <strong>1844</strong>,
@@ -533,11 +536,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     obvious route by which a caption goes astray. <b>Unproved.</b>
   </div>
   <div class="grid g2" style="margin-top:26px;align-items:start">
-    <figure style="margin:0">
+    <figure id="plate-st-annes-soho" style="margin:0">
       <img src={u("/docs/st-annes-soho.jpg")} loading="lazy" decoding="async" alt="St Anne's church, Soho, Westminster." />
       <figcaption class="cap"><strong>St Anne's, Soho</strong> — where he was christened, 2 February 1803.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-st-leonards-shoreditch" style="margin:0">
       <img src={u("/docs/st-leonards-shoreditch.jpg")} loading="lazy" decoding="async" alt="St Leonard's church, Shoreditch." />
       <figcaption class="cap"><strong>St Leonard's, Shoreditch</strong> — where he swore the oath and
         married, 20 January 1819.</figcaption>
@@ -549,13 +552,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="will-bond-street-1842">1842 · The will of a Bond Street tailor</h2>
   <p class="dek">A <strong>Prerogative Court of Canterbury</strong> register copy, from the Public Record
     Office. Signed <strong>25 May 1842</strong>; proved at London <strong>23 February 1846</strong>.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-kolbe-will-1" style="margin:22px 0 0">
     <img src={u("/docs/kolbe-will-1.jpg")} loading="lazy" decoding="async"
          alt="Blackletter heading reading This is the last Will and Testament, with a marginal note naming John Gottlob Kolbe." />
     <figcaption class="cap">"<strong>This is the last Will and Testament</strong> of me
       <strong>John Gottlob Kolbe of Conduit Street, Bond Street</strong>, in the County…"</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-kolbe-will-2" style="margin:20px 0 0">
     <img src={u("/docs/kolbe-will-2.jpg")} loading="lazy" decoding="async"
          alt="Dense register-hand page of the will naming trustees and the partnership." />
     <figcaption class="cap">"…of Middlesex <strong>Tailor</strong> I give devise and bequeath all my
@@ -563,10 +566,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <strong>Christian William Kent</strong> of Bentinck Street, Poland Street, Tailor, and
       <strong>my daughter Marian Kolbe</strong> … <strong>upon Trust</strong>."</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-kolbe-will-4" style="margin:20px 0 0">
     <img src={u("/docs/kolbe-will-4.jpg")} loading="lazy" decoding="async"
          alt="Closing page of the will carrying the probate act clause." />
-    <figcaption class="cap">The closing page and the probate act — proved at London,
+    <figcaption class="cap">The closing page and the <Rec id="scan-kolbe-will-4">probate</Rec> act — proved at London,
       <strong>23 February 1846</strong>, three months after his burial at the Savoy.</figcaption>
   </figure>
 
@@ -597,7 +600,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     spinster daughters, and an incentive not to leave.
   </div>
 
-  <figure style="margin:26px 0 0">
+  <figure id="plate-kolbe-will-3" style="margin:26px 0 0">
     <img src={u("/docs/kolbe-will-3.jpg")} loading="lazy" decoding="async"
          alt="Page of the will setting out the residue clause and division among children." />
     <figcaption class="cap">The residue: "…<strong>unto for and amongst all and every my child and
@@ -618,7 +621,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     is unknown and untested — it would show in the PCC estate papers and in the Cape estate files.
     <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
 
-  <figure style="margin:26px 0 0">
+  <figure id="plate-kolbe-will-5" style="margin:26px 0 0">
     <img src={u("/docs/kolbe-will-5.jpg")} loading="lazy" decoding="async"
          alt="Final page of the will with signature, witnesses and the probate act." />
     <figcaption class="cap">Signed <strong>"J. G. Kolbe"</strong>, 25 May 1842, "written in one sheet of
@@ -631,10 +634,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="documents-correct-tree-1845">1845 · Two documents correct the tree twice over</h2>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-kolbe-death-certificate-1845" style="margin:20px 0 0">
     <img src={u("/docs/kolbe-death-certificate-1845.jpg")} loading="lazy" decoding="async"
          alt="1845 General Register Office death certificate for John Gottlob Kolbe, May Fair district." />
-    <figcaption class="cap">General Register Office, entry <strong>206</strong>, district of
+    <figcaption class="cap">General Register Office, <Rec id="scan-kolbe-death-certificate-1845">entry <strong>206</strong></Rec>, district of
       <strong>May Fair</strong> within <strong>St George Hanover Square</strong>.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:22px">
@@ -673,7 +676,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
         photographed a real 34 — just not his.</p>
       <p style="margin-top:12px"><b>He lived and died above his own shop, in Mayfair.</b></p>
     </div>
-    <figure style="margin:0">
+    <figure id="plate-kolbe-wrong-building" style="margin:0">
       <img src={u("/docs/kolbe-wrong-building.jpg")} loading="lazy" decoding="async"
            alt="Modern photograph of a shopfront reading Langham Gallery, with doors numbered 34 and 34A." />
       <figcaption class="cap">34 Lamb's Conduit Street, Bloomsbury — <strong>not</strong> the Kolbe
@@ -683,24 +686,24 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:36px">Correction 2 — he was not buried in Warwickshire</h3>
   <p class="dek">The tree records <em>"St John the Baptist, Leamington, Warwickshire."</em></p>
-  <figure style="margin:18px 0 0">
+  <figure id="plate-kolbe-burial-heading" style="margin:18px 0 0">
     <img src={u("/docs/kolbe-burial-heading.jpg")} loading="lazy" decoding="async"
          alt="Register heading reading Burials in the Parish of St John Baptist in the German Savoy Church in the County of Middlesex." />
     <figcaption class="cap">The register's own heading: <strong>"BURIALS in the Parish of St John Baptist,
       in the GERMAN SAVOY CHURCH, in the County of Middlesex."</strong></figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-kolbe-burial-detail" style="margin:20px 0 0">
     <img src={u("/docs/kolbe-burial-detail.jpg")} loading="lazy" decoding="async"
          alt="Burial register entry number 55 for Mr John Gottlob Kolbe of Conduit Street, Regent Street." />
-    <figcaption class="cap">Entry <strong>No. 55</strong>: <strong>Mr John Gottlob Kolbe</strong>, abode
+    <figcaption class="cap"><Rec id="scan-kolbe-burial-detail">Entry <strong>No. 55</strong></Rec>: <strong>Mr John Gottlob Kolbe</strong>, abode
       <strong>Conduit Street, Regent Street</strong>; died 18 Nov, <strong>buried 26 November 1845</strong>,
       aged <strong>81</strong>; ceremony by <strong>Revd Dr Steinkopff</strong>, <strong>Grave 7,
       Rows 1–2</strong>.</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-kolbe-burial-register-1845" style="margin:20px 0 0">
     <img src={u("/docs/kolbe-burial-register-1845.jpg")} loading="lazy" decoding="async"
          alt="The full 1845 burial register page of the German Savoy Church showing entry 55." />
-    <figcaption class="cap">The full page. Entry 55 sits in a column of German names — which is rather the
+    <figcaption class="cap">The full page. <Rec id="scan-kolbe-burial-register-1845">Entry 55</Rec> sits in a column of German names — which is rather the
       point of the correction.</figcaption>
   </figure>
   <div class="note" style="margin-top:24px">
@@ -722,7 +725,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="wedding-rebels-house-1901">1901 · A wedding in a rebel's house, under martial law</h2>
   <p class="dek">The archive knew from a note in the tree that this marriage was held "at the home of
     D Schoeman". The original register gives the man a <strong>signature</strong>.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-marriage-1901-caerlaverock" style="margin:22px 0 0">
     <img src={u("/docs/marriage-1901-caerlaverock.jpg")} loading="lazy" decoding="async"
          alt="Dutch-language duplicate marriage register for 1901, Caerlaverock, Barkly East district." />
     <figcaption class="cap">Marriage of <strong>Petrus Jacobus Pretorius</strong> and
@@ -743,7 +746,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     "Getrouwd in <strong>woonhuis D. Schoeman</strong> te <strong>Caerlaverock</strong> voormeld, na
     huwelijksgeboden, door mij: <strong>J. G. van der Walt, Pred. Geref. Kerk</strong>."
   </blockquote>
-  <figure style="margin:22px 0 0;max-width:620px">
+  <figure id="plate-detail-1901-witnesses" style="margin:22px 0 0;max-width:620px">
     <img src={u("/docs/detail-1901-witnesses.jpg")} loading="lazy" decoding="async"
          alt="Two witness signatures reading J. J. Parsons and D. W. Schoeman." />
     <figcaption class="cap">The witnesses: <strong>J. J. Parsons</strong> and
@@ -780,7 +783,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <section class="blk">
   <h2 id="anna-pretorius-aged-1909">c. 1909 · Anna Pretorius, aged about four</h2>
   <div class="grid g2" style="margin-top:20px;align-items:start">
-    <figure style="margin:0">
+    <figure id="plate-photo-pretorius-family-c1909" style="margin:0">
       <img src={u("/docs/photo-pretorius-family-c1909.jpg")} loading="lazy" decoding="async"
            alt="Studio portrait of a man, a woman, a boy of about seven and a small girl in a white dress." />
       <figcaption class="cap">Captioned in the tree
@@ -806,11 +809,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <Rule name="gable" />
 <section class="blk">
   <h2 id="kathleen-barrys-death-1940">1940 · Kathleen Barry's death certificate, and one unexpected word</h2>
-  <figure style="margin:22px 0 0;max-width:860px">
+  <figure id="plate-kathleen-barry-death-1940" style="margin:22px 0 0;max-width:860px">
     <img src={u("/docs/kathleen-barry-death-1940.jpg")} loading="lazy" decoding="async"
          alt="1940 South African death form for Catherine Mary Sophia Booyzen, born Barry." />
     <figcaption class="cap"><em>Form of Information of a Death / Aangifte van 'n Sterfgeval</em>,
-      Act No. 17 of 1923. Entry <strong>5970</strong>, district Johannesburg.</figcaption>
+      <Rec id="scan-kathleen-barry-death-1940">Act No. 17</Rec> of 1923. Entry <strong>5970</strong>, district Johannesburg.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:24px">
     <table>
@@ -825,7 +828,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
         <tr><td>Informant</td><td><strong>M. v. Rensburg</strong>, "Causing Burial", of 20 Commercial Road, <strong>Fordsburg</strong></td></tr>
       </tbody>
     </table>
-  <figure style="margin:24px 0 0">
+  <figure id="plate-detail-1940-address-burial" style="margin:24px 0 0">
     <img src={u("/docs/detail-1940-address-burial.jpg")} loading="lazy" decoding="async"
          alt="Detail of the 1940 death form showing the Mayfair address and Brixton Cemetery." />
     <figcaption class="cap">The two lines that place her at the end: <strong>No. 1, Fifteenth Avenue,
@@ -833,7 +836,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       way from Barkly East.</figcaption>
   </figure>
   </div>
-  <figure style="margin:24px 0 0">
+  <figure id="plate-detail-1940-military-pensioner" style="margin:24px 0 0">
     <img src={u("/docs/detail-1940-military-pensioner.jpg")} loading="lazy" decoding="async"
          alt="Detail of the death form reading Occupation Home Duties, Pensioner or dependent of pensioner: Military Pensioner." />
     <figcaption class="cap">"8. Occupation — <strong>Home Duties</strong>. 9. Pensioner or dependent of
@@ -861,14 +864,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <b>13 May 1915</b>, nearly three years later. That gap matters — and it is the same gap as the
     <b>1840 Montjoy notice</b>, written thirteen years after that death, which answers the same question
     with <em>"Not Known."</em> In both cases the delay is part of the reason the answer is empty.</span></p>
-  <figure style="margin:22px 0 0;max-width:900px">
+  <figure id="plate-kolbe-barry-death-notice-1912" style="margin:22px 0 0;max-width:900px">
     <img src={u("/docs/kolbe-barry-death-notice-1912.jpg")} loading="lazy" decoding="async"
          alt="1915 death notice for Margaret Elizabeth Barry, born Kolbe, of Manorowen, Barkly East." />
     <figcaption class="cap">Death Notice for <strong>Margaret Elizabeth Barry, born Kolbe</strong>,
       who died 2 August 1912 in the house of her son at <strong>Manorowen</strong>. Signed
       <strong>R. P. Barry</strong>, <em>"Son in whose house deceased died"</em>, Barkly East, 13 May 1915.</figcaption>
   </figure>
-  <figure style="margin:24px 0 0">
+  <figure id="plate-detail-1912-father-unknown" style="margin:24px 0 0">
     <img src={u("/docs/detail-1912-father-unknown.jpg")} loading="lazy" decoding="async"
          alt="Detail of the form: Father — Kolbe, thinks James was christian name. Mother — Unknown." />
     <figcaption class="cap">"3. Names and addresses of the Parents of the Deceased —
@@ -900,7 +903,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
   <p class="cap" style="margin-top:18px">This notice also supplies a <strong>third</strong> date for John
     Barry's death — <strong>"August 1904"</strong> — against the <strong>3 August 1903</strong> of his own
-    1915 death notice and the <strong>25 August 1903</strong> in the tree. Both notices were made in 1915,
+    <Rec id="plate-death-notice-1915-john-barry">1915 death notice</Rec> and the <strong>25 August 1903</strong> in the tree. Both notices were made in 1915,
     by two different sons, and they contradict each other.
     <a href={u("/disputed/")}>Disputed &rarr;</a></p>
 </section>
@@ -909,7 +912,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="schoemans-get-name-1923">1923 · The Schoemans get a name</h2>
   <p class="dek">The archive has been chasing a "D. Schoeman" of Caerlaverock since the beginning. This
     document does not name him — but it plants his family.</p>
-  <figure style="margin:22px 0 0;max-width:760px">
+  <figure id="plate-schoeman-barry-sterfkennis-1923" style="margin:22px 0 0;max-width:760px">
     <img src={u("/docs/schoeman-barry-sterfkennis-1923.jpg")} loading="lazy" decoding="async"
          alt="1923 Sterfkennis for Anna Johanna Maria Barry, born Schoeman, of Evaton." />
     <figcaption class="cap"><em>Unie van Zuid-Afrika — Sterfkennis</em> for
@@ -956,14 +959,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">A baptism register index from <strong>St Anne's, Soho</strong> — birth date at the left,
     day of baptism at the right. A note on the same page records that the register holds
     <em>"410 Baptisms for the Year 1802."</em></p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-detail-1803-baptism-entry" style="margin:22px 0 0">
     <img src={u("/docs/detail-1803-baptism-entry.jpg")} loading="lazy" decoding="async"
          alt="Register entry under the heading February 1803 reading 1802 Dec 7 George Augustus Kolbe of John Gottlob and Mary, 2." />
     <figcaption class="cap">Under <strong>FEBRUARY 1803</strong>, the second entry:
       <strong>"1802 Dec: 7 — George Augustus Kolbe of John Gottlob &amp; Mary — 2"</strong></figcaption>
   </figure>
   <div class="prose" style="margin-top:24px">
-    <p>Born <b>7 December 1802</b>. Baptised <b>2 February 1803</b>. Son of <b>John Gottlob and Mary</b>.</p>
+    <p>Born <b>7 December 1802</b>. <Rec id="plate-kolbe-baptism-register-1803">Baptised <b>2 February 1803</b></Rec>. Son of <b>John Gottlob and Mary</b>.</p>
     <blockquote>
       An English parish register and a Karoo gravestone, written ninety years and six thousand miles
       apart, give the same birth date to the day: <strong>7 December 1802</strong>.
@@ -977,7 +980,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       tree and from nowhere else this archive has read</b>, and for an afternoon this page said it was
       on the register. <b>It is not.</b> <a href={u("/corrections/")}>Corrections &rarr;</a></p>
   </div>
-  <figure style="margin:26px 0 0">
+  <figure id="plate-kolbe-baptism-register-1803" style="margin:26px 0 0">
     <img src={u("/docs/kolbe-baptism-register-1803.jpg")} loading="lazy" decoding="async"
          alt="Full two-page baptism register index for December 1802 to May 1803." />
     <figcaption class="cap">The full opening, December 1802 to May 1803. Westminster parish records,
@@ -998,7 +1001,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="anna-1944-civil">1906 · A one-digit slip, caught by two documents</h2>
   <p class="dek">A <strong>Gereformeerde Kerk</strong> baptism register. Entry 29, under
     <em>Gedoopt 11 Nov. 1906</em>:</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-detail-1906-anna-baptism" style="margin:22px 0 0">
     <img src={u("/docs/detail-1906-anna-baptism.jpg")} loading="lazy" decoding="async"
          alt="Baptism register entry reading Anna Johanna Maria, geb. 3 Oct. 1906, Petrus Jacobus Pretorius, Margaretha Wilhelmina Elizabeth Berry, ouders." />
     <figcaption class="cap"><strong>"29. Anna Johanna Maria, geb. 3 Oct. 1906 — Petrus Jacobus Pretorius,
@@ -1017,10 +1020,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       the tree.
     </blockquote>
   </div>
-  <figure style="margin:26px 0 0;max-width:760px">
+  <figure id="plate-anna-death-form-1944" style="margin:26px 0 0;max-width:760px">
     <img src={u("/docs/anna-death-form-1944.jpg")} loading="lazy" decoding="async"
          alt="1944 death form for Anna Johanna Maria Booysen, born Pretorius." />
-    <figcaption class="cap">Entry <strong>2045</strong>, Johannesburg. Note the surname typed
+    <figcaption class="cap"><Rec id="scan-anna-death-form-1944">Entry <strong>2045</strong></Rec>, Johannesburg. Note the surname typed
       <strong>Booysen</strong>, with an <em>s</em>, in 1944.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:22px">
@@ -1039,10 +1042,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <Rule name="wagon" />
 <section class="blk">
   <h2 id="margarietha-barry-pension-1961">1961 · Margarietha Barry, and a pension that is only ordinary</h2>
-  <figure style="margin:20px 0 0;max-width:700px">
+  <figure id="plate-margarietha-death-form-1961" style="margin:20px 0 0;max-width:700px">
     <img src={u("/docs/margarietha-death-form-1961.jpg")} loading="lazy" decoding="async"
          alt="Typewritten 1961 death form for Margerietha Wilhelmina Elizabeth Pretorius, born Barry." />
-    <figcaption class="cap">Entry <strong>180/61</strong>, district Germiston.</figcaption>
+    <figcaption class="cap"><Rec id="scan-margarietha-death-form-1961">Entry <strong>180/61</strong></Rec>, district Germiston.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:22px">
     <table>
@@ -1099,16 +1102,16 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="baptism-settles-age-1851">1851 · The baptism that settles an age, and names a godfather</h2>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-baptism-register-1851" style="margin:22px 0 0">
     <img src={u("/docs/baptism-register-1851.jpg")} loading="lazy" decoding="async"
          alt="The full Graaff-Reinet baptism register opening for 1851, entries 2808 to 2815." />
-    <figcaption class="cap">The register opening, entries <strong>2808&ndash;2815</strong>. Entry
-      <strong>2809</strong> is second down on the left.</figcaption>
+    <figcaption class="cap">The register opening, entries <strong>2808&ndash;2815</strong>. <Rec id="scan-baptism-register-1851">Entry
+      <strong>2809</strong></Rec> is second down on the left.</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-detail-1851-baptism-entry" style="margin:20px 0 0">
     <img src={u("/docs/detail-1851-baptism-entry.jpg")} loading="lazy" decoding="async"
          alt="Dutch Reformed baptism register entry 2809 for Willem Hermanus, born 4 May 1851." />
-    <figcaption class="cap">Entry <strong>No. 2809</strong>: <em>Het Kind</em>
+    <figcaption class="cap"><Rec id="scan-detail-1851-baptism-entry">Entry <strong>No. 2809</strong></Rec>: <em>Het Kind</em>
       <strong>Willem Hermanus</strong>, <em>Geboren</em> <strong>4 Mei 1851</strong>, <em>Vader</em>
       <strong>Petrus Jacobus Booyzen</strong>, <em>Moeder</em>
       <strong>Johanna Catharina Mountjoy</strong>, <em>Gedoopt</em>
@@ -1150,12 +1153,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       not ambiguous at all:</p>
   </div>
   <div class="grid g2" style="margin-top:20px">
-    <figure style="margin:0">
+    <figure id="plate-detail-1851-father-booyzen" style="margin:0">
       <img src={u("/docs/detail-1851-father-booyzen.jpg")} loading="lazy" decoding="async"
            alt="1851 register, father's name reading Petrus Jacobus Booyzen with a clear z." />
       <figcaption class="cap">The father: <strong>Petrus Jacobus Boo<em>y</em><em>z</em>en</strong></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-detail-1851-pieterzen-control" style="margin:0">
       <img src={u("/docs/detail-1851-pieterzen-control.jpg")} loading="lazy" decoding="async"
            alt="1851 register witnesses, both reading Pieterzen with the same z letterform." />
       <figcaption class="cap">The witnesses, same hand, same ink:
@@ -1171,7 +1174,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       ordinary Cape-Dutch spelling, sitting in the registers in 1851. The <b>1879 signature question is
       not merely unsettled but largely emptied</b>: a z-shaped letter in a Dutch hand is not evidence of
       intent.</p>
-    <p><b>What survives, unchanged.</b> The <b>1905 death registration</b>, which turns on
+    <p><b>What survives, unchanged.</b> The <b><Rec id="plate-death-1905-willem-hermanus">1905 death registration</Rec></b>, which turns on
       <em>two spellings of one man's name on one sheet</em> — clerk <b>Booysen</b>, son
       <b>Booyzen</b> — and not on the shape of any single letter. The tree's recorded
       <b>"Former name: Booysen"</b>. And the <b>distribution data</b>: 646 against 53,764, Gauteng against
@@ -1188,15 +1191,15 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     same name and the same birthday — or one record duplicated a year out.</p>
   <p><b>Both certificates exist, and they are irreconcilably different documents.</b></p>
   <div class="grid g2" style="margin-top:22px;align-items:start">
-    <figure style="margin:0">
+    <figure id="plate-gertrude-1-death-1946" style="margin:0">
       <img src={u("/docs/gertrude-1-death-1946.jpg")} loading="lazy" decoding="async"
            alt="1946 death form for Gertrude Elizabeth Booyzen, aged 4 days." />
-      <figcaption class="cap">Entry <strong>4256</strong>, registered 16 May 1946.</figcaption>
+      <figcaption class="cap"><Rec id="scan-gertrude-1-death-1946">Entry <strong>4256</strong></Rec>, registered 16 May 1946.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-gertrude-2-death-1947" style="margin:0">
       <img src={u("/docs/gertrude-2-death-1947.jpg")} loading="lazy" decoding="async"
            alt="1947 typewritten death form for Gertrude Booyzen, aged 6 hours." />
-      <figcaption class="cap">Entry <strong>3920</strong>, registered 13 Mei 1947.</figcaption>
+      <figcaption class="cap"><Rec id="scan-gertrude-2-death-1947">Entry <strong>3920</strong></Rec>, registered 13 Mei 1947.</figcaption>
     </figure>
   </div>
   <div class="scroll" style="margin-top:24px">
@@ -1240,7 +1243,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="marriage-entry-bride-1819">1819 · The marriage entry — and a bride who could not sign her name</h2>
   <p class="dek">The allegation was sworn that morning. This is the register entry itself,
     <strong>St Leonard's Shoreditch, No. 858</strong>.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-kolbe-marriage-entry-1819" style="margin:22px 0 0">
     <img src={u("/docs/kolbe-marriage-entry-1819.jpg")} loading="lazy" decoding="async"
          alt="1819 marriage register entry for George Kolbe and Margaret Downing at St Leonard's Shoreditch." />
     <figcaption class="cap">"George Kolbe of this Parish, Bachelor, and Margaret Downing of this Parish,
@@ -1283,7 +1286,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <section class="blk">
   <h2 id="portrait-painting">The portrait is a painting — as it had to be</h2>
   <div class="grid g2" style="margin-top:20px;align-items:start">
-    <figure style="margin:0">
+    <figure id="plate-kolbe-george-painted-portrait" style="margin:0">
       <img src={u("/docs/kolbe-george-painted-portrait.jpg")} loading="lazy" decoding="async"
            alt="Painted portrait of a young man with reddish-brown curling hair, high white stock and tan coat." />
       <figcaption class="cap"><strong>George Augustus Kolbe</strong> — a painting, photographed under
@@ -1305,7 +1308,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="tree-nurseryman-marries-1924">1924 · A tree nurseryman marries at Vereeniging</h2>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-marriage-1924-vereeniging" style="margin:22px 0 0">
     <img src={u("/docs/marriage-1924-vereeniging.jpg")} loading="lazy" decoding="async"
          alt="1924 duplicate original marriage register for George Downing Montjoy Booyzen and Anna Johanna Maria Pretorius." />
     <figcaption class="cap">No. <strong>15/24</strong>, solemnized at <strong>Vereeniging</strong>,
@@ -1344,10 +1347,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="death-registration-garbled-1947">1947 · The death registration, and a garbled memory vindicated</h2>
-  <figure style="margin:20px 0 0;max-width:680px">
+  <figure id="plate-george-death-registration-1947" style="margin:20px 0 0;max-width:680px">
     <img src={u("/docs/george-death-registration-1947.jpg")} loading="lazy" decoding="async"
          alt="1947 death registration for George Downing Mountjay Booyzen, entry 10,899." />
-    <figcaption class="cap">Entry <strong>10,899</strong>, Johannesburg, registered 12 December 1947 —
+    <figcaption class="cap"><Rec id="scan-george-death-registration-1947">Entry <strong>10,899</strong></Rec>, Johannesburg, registered 12 December 1947 —
       a <em>second</em> document, distinct from the death notice.</figcaption>
   </figure>
   <div class="scroll" style="margin-top:22px">
@@ -1374,16 +1377,16 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="grandparents-font-name-1889">1889 · Two grandparents at a font, and a name on the facing page</h2>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-doopregister-1889-barkly" style="margin:22px 0 0">
     <img src={u("/docs/doopregister-1889-barkly.jpg")} loading="lazy" decoding="async"
          alt="The full Doop Register page for Barkly Oost, 1889." />
     <figcaption class="cap">The <strong>Doop Register, Barkly Oost</strong> page itself — the Booyzen and
       Mountjoy baptisms sit three weeks and one page apart.</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-detail-1889-godparents" style="margin:20px 0 0">
     <img src={u("/docs/detail-1889-godparents.jpg")} loading="lazy" decoding="async"
          alt="1889 baptism register entry 40 for Johanna Catharina, with godparents John Barry and Margaret Wilhelmina Elizabeth Kolby." />
-    <figcaption class="cap"><em>Doop Register, Barkly Oost</em>, entry <strong>40</strong>, 15 September
+    <figcaption class="cap"><em>Doop Register, Barkly Oost</em>, <Rec id="scan-detail-1889-godparents">entry <strong>40</strong></Rec>, 15 September
       1889: <strong>Johanna Catharina</strong>, geb. 20 Juni 1889; <em>Ouders</em>
       <strong>Willem Hermanus Booijsen</strong> and <strong>Catharina Maria Sophia Barry</strong>;
       <em>Getuigen</em> <strong>John Barry</strong> and <strong>Margaret Wilhelmina Elizabeth
@@ -1399,7 +1402,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <a href={u("/kolbe/")}>The Kolbes &rarr;</a></p>
 
   <h3 style="margin-top:34px">And on the facing page, entirely by accident</h3>
-  <figure style="margin:18px 0 0">
+  <figure id="plate-detail-1889-mountjoy" style="margin:18px 0 0">
     <img src={u("/docs/detail-1889-mountjoy.jpg")} loading="lazy" decoding="async"
          alt="1889 baptism entry for George, son of Hercules Johannes Mountjoy and Maria Sophia van Niekerk." />
     <figcaption class="cap">6 October 1889: <strong>George</strong>, geb. 21 Juli 1889; <em>Ouders</em>
@@ -1437,7 +1440,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </table>
   </div>
   <div class="grid g2" style="margin:24px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1863-johanna-catharina" style="margin:0">
       <img src={u("/docs/death-notice-1863-johanna-catharina.jpg")} loading="lazy" decoding="async"
            alt="Printed Cape death notice form of 1863 for Johanna Catharina Montjoy, completed in ink." />
       <figcaption class="cap">Filed <strong>25 July 1863</strong>, reference <strong>499</strong>.</figcaption>
@@ -1459,7 +1462,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       </table>
     </div>
   </div>
-  <figure style="margin:22px 0">
+  <figure id="plate-detail-1863-parents" style="margin:22px 0">
     <img src={u("/docs/detail-1863-parents.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1863 death notice, reading James Montjoy and Anna Catharina Sleer." />
     <figcaption class="cap">Line 3 — the generation the archive did not have from any document:
@@ -1484,7 +1487,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
   <h3 style="margin-top:34px">Eight children, and one of them is the direct line</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1863-children" style="margin:16px 0">
     <img src={u("/docs/detail-1863-children.jpg")} loading="lazy" decoding="async"
          alt="Line nine of the 1863 death notice listing eight children, one major and seven minors." />
     <figcaption class="cap">One <em>Major</em>, seven <em>Minors</em>.</figcaption>
@@ -1495,8 +1498,8 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     Jacoba Catharina.
   </p>
   <div class="note">
-    <p style="margin:0"><strong>The fifth child is the man the 1905 death registration is about.</strong>
-      <b>Willem Hermanus Booyzen</b>, baptised at Achter Sneeuwberg on 31 October 1851, twelve years old
+    <p style="margin:0"><strong>The fifth child is the man the <Rec id="plate-death-1905-willem-hermanus">1905 death registration</Rec> is about.</strong>
+      <b>Willem Hermanus Booyzen</b>, <Rec id="plate-baptism-register-1851">baptised</Rec> at Achter Sneeuwberg on 31 October 1851, twelve years old
       and a minor when his mother died. His parentage — <b>Petrus Jacobus Booyzen and Johanna Catharina
       Montjoy</b> — is now carried by two original registers that agree, and the Mountjoy descent enters
       this family through <em>his mother</em>.</p>
@@ -1507,7 +1510,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     mother, and the notice is silent about her, as these forms are.
   </p>
   <h3 style="margin-top:34px">The signature</h3>
-  <figure style="margin:16px 0;max-width:560px">
+  <figure id="plate-detail-1863-signature" style="margin:16px 0;max-width:560px">
     <img src={u("/docs/detail-1863-signature.jpg")} loading="lazy" decoding="async"
          alt="Signature at the foot of the 1863 death notice reading P. J. Booy, an angular letter, then en." />
     <figcaption class="cap">The widower signs.</figcaption>
@@ -1520,7 +1523,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     claimed for nothing.
   </p>
   <div class="note" style="margin-top:22px">
-    <p style="margin:0"><strong>Still to be read: MOOC 6/9/21, reference 4393 — the 1840 death notice of
+    <p style="margin:0"><strong>Still to be read: <Rec id="src-kab-mooc-6-9-21-4393-1840">MOOC 6/9/21, reference 4393</Rec> — the <Rec id="plate-death-notice-1840-james-montjoy">1840 death notice</Rec> of
       James Montjoy himself.</strong> It would name <em>his</em> parents, and with them the point at
       which the name entered the Cape. It is not name-indexed; the probate collection's 846 films are
       catalogued by film number alone, so reaching it means finding the film that covers the 1840 volume.
@@ -1531,7 +1534,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <Rule name="windpump" />
 <section class="blk">
   <h2 id="oldest-document-archive-1840">1840 &middot; The oldest document in this archive — and it answers by refusing</h2>
-  <p class="dek">KAB MOOC 6/9/21, reference 4393. Named on the previous page as the most valuable unread
+  <p class="dek"><Rec id="src-kab-mooc-6-9-21-4393-1840">KAB MOOC 6/9/21, reference 4393</Rec>. Named on the previous page as the most valuable unread
     document here. It has now been read.</p>
   <div class="note" style="margin:20px 0">
     <p style="margin:0"><strong>How it was found.</strong> It is not name-indexed, and the probate
@@ -1546,7 +1549,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       death notice of <strong>Christoffel Hendrik Olivier</strong>, trader, dead at his own house in the
       town of Graaff-Reinet on 15 June 1840; <strong>340</strong> is <strong>Willem Jacobus van der
       Merwe</strong> of Bouwbosch Fontein; Montjoy is at <strong>339</strong>, which is also where the
-      FamilySearch record <span class="m">1:1:QP4Z-WK68</span> lands. <strong>The arithmetic above is
+      FamilySearch record <span class="m"><Rec id="ark-1:1:QP4Z-WK68">1:1:QP4Z-WK68</Rec></span> lands. <strong>The arithmetic above is
       why it was off, and it is worth keeping rather than tidying away.</strong> References do
       <em>not</em> ascend by exactly one per image &mdash; an estate running to two or three frames
       breaks the step &mdash; so from image 330 at 4386 the method predicts 4393 at image 337, and the
@@ -1555,7 +1558,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       Nothing in the reading below changed: every line of it is confirmed.</p>
   </div>
   <div class="grid g2" style="margin:24px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1840-james-montjoy" style="margin:0">
       <img src={u("/docs/death-notice-1840-james-montjoy.jpg")} loading="lazy" decoding="async"
            alt="Cape death notice of 1840 for James Montjoy, completed in ink on a printed form." />
       <figcaption class="cap">Filed <strong>9 July 1840</strong>, reference <strong>4393</strong>.</figcaption>
@@ -1582,7 +1585,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Line 3</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1840-parents-not-known" style="margin:16px 0">
     <img src={u("/docs/detail-1840-parents-not-known.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1840 death notice: Names of the Parents of the Deceased — Not Known." />
     <figcaption class="cap">Names of the Parents of the Deceased. <strong>Not Known.</strong></figcaption>
@@ -1597,7 +1600,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       his father.</p>
     <blockquote>The wall at the top of this line is not a gap in the archive. It is a gap in the family,
       and it was already there in 1840.</blockquote>
-    <p>It is the same sentence the archive found on the <b>1915 death notice</b> at Barkly East, where a
+    <p>It is the same sentence the archive found on the <b><Rec id="plate-death-notice-1915-margaretha-kolbe">1915 death notice</Rec></b> at Barkly East, where a
       grandson wrote <em>"Father: Kolbe, thinks James was christian name. Mother: Unknown"</em> with the
       man's carved headstone standing forty miles away. Two families, two centuries, the same box on the
       same printed form, the same answer. <a href={u("/")}>Why this archive exists &rarr;</a></p>
@@ -1608,7 +1611,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <div class="grid g2" style="margin-top:30px">
     <div class="panel">
       <h3 style="margin-top:0">A trade, passed down</h3>
-      <figure style="margin:0 0 12px">
+      <figure id="plate-detail-1840-saddler" style="margin:0 0 12px">
         <img src={u("/docs/detail-1840-saddler.jpg")} loading="lazy" decoding="async"
              alt="Line five of the 1840 death notice, reading Saddler." />
         <figcaption class="cap">1840, line 5 — <strong>Saddler</strong></figcaption>
@@ -1621,7 +1624,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
     <div class="panel">
       <h3 style="margin-top:0">The Pietersen marriage, confirmed</h3>
-      <figure style="margin:0 0 12px">
+      <figure id="plate-detail-1840-married-pietersen" style="margin:0 0 12px">
         <img src={u("/docs/detail-1840-married-pietersen.jpg")} loading="lazy" decoding="async"
              alt="Line six of the 1840 death notice: Married to Catharina Slier, widow of William Pietersen." />
         <figcaption class="cap">1840, line 6 — <strong>"Married to Catharina Sl[i/e]er, widow of William
@@ -1637,12 +1640,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">Four children, and a date this archive had flagged as a contradiction</h3>
   <div class="grid g2" style="margin-top:16px">
-    <figure style="margin:0">
+    <figure id="plate-detail-1840-death-1827" style="margin:0">
       <img src={u("/docs/detail-1840-death-1827.jpg")} loading="lazy" decoding="async"
            alt="Line seven of the 1840 death notice, reading September 1827." />
       <figcaption class="cap">Line 7: <strong>September 1827</strong>.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-detail-1840-children" style="margin:0">
       <img src={u("/docs/detail-1840-children.jpg")} loading="lazy" decoding="async"
            alt="Line nine of the 1840 death notice listing James, George, Johanna and Jacoba, all minors." />
       <figcaption class="cap">Line 9: <strong>James · George · Johanna · Jacoba</strong>, all minors.</figcaption>
@@ -1655,7 +1658,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     the file carries the filing year. <strong>The tree was correct and the contradiction was mine.</strong>
   </p>
   <p style="margin-top:14px">The four children fix the family at September 1827 exactly.
-    <b>Johanna Catharina</b> was eight — her own 1863 death notice puts her birth at 30 April 1819.
+    <b>Johanna Catharina</b> was eight — her own <Rec id="plate-death-notice-1863-johanna-catharina">1863 death notice</Rec> puts her birth at 30 April 1819.
     <b>Jacoba</b> was seven, <b>George</b> four, <b>James</b> one. And <b>Thomas Jacobus</b>, born 1818,
     is <em>not on the list</em> — which independently supports the correction that he died in 1827 rather
     than in infancy in 1818.</p>
@@ -1678,10 +1681,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="farmer-died-owning-1884">1884 &middot; A farmer who died owning his clothes — and a third "not known"</h2>
   <p class="dek">The tree had carried this image for years under its own citation. Nobody had opened it.</p>
   <div class="grid g2" style="margin:22px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1884-petrus-jacobus" style="margin:0">
       <img src={u("/docs/death-notice-1884-petrus-jacobus.jpg")} loading="lazy" decoding="async"
            alt="1884 Cape death notice for Petrus Jacobus Booysen, estate number 8907." />
-      <figcaption class="cap">Filed <strong>1 August 1884</strong>, estate <strong>8907</strong>.</figcaption>
+      <figcaption class="cap">Filed <strong>1 August 1884</strong>, <Rec id="scan-death-notice-1884-petrus-jacobus">estate <strong>8907</strong></Rec>.</figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">The form, as completed</h3>
@@ -1705,7 +1708,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:32px">It happens a third time</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1884-mother-not-known" style="margin:16px 0">
     <img src={u("/docs/detail-1884-mother-not-known.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1884 death notice: Petrus Jacobus Booysen, mother's name not known, underlined." />
     <figcaption class="cap">"<strong>Petrus Jacobus Booÿsen</strong> — <strong>mother's name, not
@@ -1736,7 +1739,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">The second wife, confirmed but still not named</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1884-children" style="margin:16px 0">
     <img src={u("/docs/detail-1884-children.jpg")} loading="lazy" decoding="async"
          alt="Line nine of the 1884 death notice naming Gerrit Jacobus Booysen born 19 January 1870." />
     <figcaption class="cap">The only child entered: <strong>Gerrit Jacobus Booÿsen, geboren 19 Januarij
@@ -1757,7 +1760,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </p>
 
   <h3 style="margin-top:34px">"Moveables only"</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1884-moveables" style="margin:16px 0">
     <img src={u("/docs/detail-1884-moveables.jpg")} loading="lazy" decoding="async"
          alt="Line ten of the 1884 death notice: moveables only, such as wearing apparel etc." />
     <figcaption class="cap">"<strong>Moveables only. Such as wearing apparel &amp;c.</strong>"</figcaption>
@@ -1771,7 +1774,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <blockquote>The family was already landless in 1884 — <b>fifteen years before the war</b>.</blockquote>
     <p><span class="chip inf">Inferred, and it cuts both ways</span> This does <em>not</em> dispose of the
       burned-farm claim: <b>Willem Hermanus is entered as a <em>boer</em>, farmer, of Lady Grey at his
-      marriage in 1879</b> — five years <em>after</em> his father's estate showed nothing. A son can farm
+      <Rec id="plate-marriage-1879-booysen-barry">marriage in 1879</Rec></b> — five years <em>after</em> his father's estate showed nothing. A son can farm
       land his father never owned, by lease, by marriage or by his wife's people. But it does mean the
       family's landlessness cannot simply be dated to the war, and any account that starts with a
       prosperous farm being burned has to explain 1884 first.
@@ -1783,13 +1786,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="marriage-register-where-1817">1817 &middot; The marriage register — where the blank actually begins</h2>
   <p class="dek">Two index entries existed for this marriage and neither carried an image. A third
     indexing, under the spelling <em>Montyoy</em>, did.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-marriage-register-1817-graaff-reinet" style="margin:22px 0 0">
     <img src={u("/docs/marriage-register-1817-graaff-reinet.jpg")} loading="lazy" decoding="async"
          alt="Graaff-Reinet Dutch Reformed marriage register opening for March 1817." />
     <figcaption class="cap">Graaff-Reinet marriage register, folios 60&ndash;61.
       <strong>"Den 9 Maart 1817 getrouwd"</strong> — married on 9 March 1817.</figcaption>
   </figure>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-detail-1817-montjoy-entry" style="margin:22px 0 0">
     <img src={u("/docs/detail-1817-montjoy-entry.jpg")} loading="lazy" decoding="async"
          alt="Register entry reading James Montjoy, Met Anna Catharina Slier weduwe van Harmanus Pieterzen." />
     <figcaption class="cap">The entry, with a pencil cross beside it:
@@ -1805,7 +1808,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <p style="margin-top:12px">Against James Montjoy's name there is <b>a long ruled dash and nothing
         else</b>.</p>
       <blockquote style="margin-top:12px">He arrived in the record already without a past.</blockquote>
-      <p style="margin-top:12px">So the silence is not a failure of the 1840 death notice, written
+      <p style="margin-top:12px">So the silence is not a failure of the <Rec id="plate-death-notice-1840-james-montjoy">1840 death notice</Rec>, written
         thirteen years after his death. <b>It was there at his wedding, twenty-three years earlier, while
         he was standing in the room.</b></p>
     </div>
@@ -1837,7 +1840,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:36px">And a name in this family turns out not to be a family name</h3>
   <div class="grid g2" style="margin-top:16px">
-    <figure style="margin:0">
+    <figure id="plate-detail-1840-first-husband" style="margin:0">
       <img src={u("/docs/detail-1840-first-husband.jpg")} loading="lazy" decoding="async"
            alt="1840 death notice line reading widow of William Pietersen." />
       <figcaption class="cap"><strong>1840:</strong> "widow of <strong>William Pietersen</strong>"</figcaption>
@@ -1883,16 +1886,16 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="same-font-years-1891">1891 &middot; The same font, two years on — and the name that runs three generations</h2>
   <p class="dek">One of the last unread images on the tree, and it turns out to be the same register as
     the 1889 page, at pages 262&ndash;263.</p>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-doopregister-1891-barkly" style="margin:22px 0 0">
     <img src={u("/docs/doopregister-1891-barkly.jpg")} loading="lazy" decoding="async"
          alt="The Doop Register Barkly Oost opening for 1891, pages 262 and 263." />
-    <figcaption class="cap">Pages <strong>262&ndash;263</strong> — the same register as the 1889
-      baptisms, fifty pages further on.</figcaption>
+    <figcaption class="cap">Pages <strong>262&ndash;263</strong> — the same register as the <Rec id="plate-doopregister-1889-barkly">1889
+      baptisms</Rec>, fifty pages further on.</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-detail-1891-baptism-entry" style="margin:20px 0 0">
     <img src={u("/docs/detail-1891-baptism-entry.jpg")} loading="lazy" decoding="async"
          alt="Doop Register Barkly Oost 1891 entry 120 for Catharina Maria Sophia, parents Willem Hermanus Booysen and Catharina Maria Sophia Barry." />
-    <figcaption class="cap">Entry <strong>120</strong>, <em>gedoopt</em> <strong>24 Mei 1891</strong>:
+    <figcaption class="cap"><Rec id="scan-detail-1891-baptism-entry">Entry <strong>120</strong></Rec>, <em>gedoopt</em> <strong>24 Mei 1891</strong>:
       <strong>Catharina Maria Sophia</strong>, <em>geb.</em> <strong>22 April 1891</strong>.</figcaption>
   </figure>
   <div class="grid g2" style="margin-top:24px">
@@ -1939,10 +1942,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Found only after this archive noticed it had spent its whole life searching one province
     out of nine. <span class="m">TAB MHG 2428/40</span></p>
   <div class="grid g2" style="margin:22px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfkennis-1940-stephanus-francois" style="margin:0">
       <img src={u("/docs/sterfkennis-1940-stephanus-francois.jpg")} loading="lazy" decoding="async"
            alt="1940 Sterfkennis for Stephanus Francois Booyzen, estate 2428/40, Pretoria." />
-      <figcaption class="cap"><strong>Sterfkennis</strong> under the Estates Act 1913, filed at Pretoria
+      <figcaption class="cap"><strong><Rec id="scan-sterfkennis-1940-stephanus-francois">Sterfkennis</Rec></strong> under the Estates Act 1913, filed at Pretoria
         <strong>29 July 1940</strong>.</figcaption>
     </figure>
     <div class="panel">
@@ -1966,7 +1969,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:30px">Line 3</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1940-ouers-oorlede" style="margin:16px 0">
     <img src={u("/docs/detail-1940-ouers-oorlede.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1940 Sterfkennis: Name en adresse van ouers van oorledene — Vader oorlede, Moeder oorlede." />
     <figcaption class="cap"><em>"Name en adresse van ouers van oorledene"</em> — <strong>Vader: oorlede ·
@@ -1997,14 +2000,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">And a second mason</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1940-messelaar" style="margin:16px 0">
     <img src={u("/docs/detail-1940-messelaar.jpg")} loading="lazy" decoding="async"
          alt="Line five of the 1940 Sterfkennis, occupation: Messelaar." />
     <figcaption class="cap">5. Beroep van oorledene — <strong>Messelaar</strong></figcaption>
   </figure>
   <p>
     <b>Messelaar</b> is a mason. His half-brother <b>Willem Hermanus Booyzen</b> is entered as a
-    <b>mason</b> on his own death registration at Indwe in 1905.
+    <b>mason</b> on his own <Rec id="plate-death-1905-willem-hermanus">death registration</Rec> at Indwe in 1905.
   </p>
   <div class="note">
     <p style="margin:0"><strong>Two brothers, both in stone.</strong> The testimony ends with the boys
@@ -2024,22 +2027,22 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     than a death.</p>
   <div class="note" style="margin:20px 0">
     <p style="margin:0"><strong>What had been established.</strong> Petrus Jacobus Booysen's first wife
-      died in <b>1863</b>. His own 1884 death notice enters him as <b>married</b> twenty-one years later
+      died in <b>1863</b>. His own <Rec id="plate-death-notice-1884-petrus-jacobus">1884 death notice</Rec> enters him as <b>married</b> twenty-one years later
       and names one child — <b>Gerrit Jacobus, born 19 January 1870</b> — who can only be a second wife's.
       Three children in all were born after 1863 and the tree had wrongly attached them to a woman already
       dead. <b>But no document would give her name.</b> Not his death notice, which does not ask. Not her
       son Stephanus Francois's, read this morning, where the widow wrote only <em>"oorlede"</em>.</p>
     <p style="margin:10px 0 0"><strong>The mistake was looking at deaths.</strong> A baptism names both
-      parents, and the child whose birth date the 1884 notice gives to the day was baptised
-      <b>19 June 1870</b>.</p>
+      parents, and the child whose birth date the 1884 notice gives to the day was <Rec id="plate-doopregister-1870-gert-jacobus">baptised
+      <b>19 June 1870</b></Rec>.</p>
   </div>
-  <figure style="margin:22px 0 0">
+  <figure id="plate-doopregister-1870-gert-jacobus" style="margin:22px 0 0">
     <img src={u("/docs/doopregister-1870-gert-jacobus.jpg")} loading="lazy" decoding="async"
          alt="Dutch Reformed baptism register opening for 1870, pages 1296 and 1297." />
     <figcaption class="cap">The register opening, pages <strong>1296&ndash;1297</strong>. The entry is
       low on the right-hand page.</figcaption>
   </figure>
-  <figure style="margin:20px 0 0">
+  <figure id="plate-detail-1870-second-wife" style="margin:20px 0 0">
     <img src={u("/docs/detail-1870-second-wife.jpg")} loading="lazy" decoding="async"
          alt="1870 baptism register entry naming the parents as Petrus Jacobus Booyzen and Johanna Margaritha Pretorius." />
     <figcaption class="cap"><em>Oud:</em> <strong>Petrus Jacobus Booyzen</strong> en
@@ -2097,10 +2100,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Anna Pretorius's Sterfkennis. <span class="m">TAB MHG 2945/44</span> — the second of the
     nine Transvaal estates, and the first in this archive where question three gets a real answer.</p>
   <div class="grid g2" style="margin:22px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfkennis-1944-anna-pretorius" style="margin:0">
       <img src={u("/docs/sterfkennis-1944-anna-pretorius.jpg")} loading="lazy" decoding="async"
            alt="1944 Sterfkennis for Anna Johanna Maria Booyzen born Pretorius, estate 2945/44." />
-      <figcaption class="cap">Estate <strong>2945/44</strong>. Signed by her husband,
+      <figcaption class="cap"><Rec id="scan-sterfkennis-1944-anna-pretorius">Estate <strong>2945/44</strong></Rec>. Signed by her husband,
         <strong>G. D. M. Booyzen</strong>.</figcaption>
     </figure>
     <div class="panel">
@@ -2121,7 +2124,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:30px">Line 3, filled in</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1944-parents-named" style="margin:16px 0">
     <img src={u("/docs/detail-1944-parents-named.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1944 Sterfkennis, naming both parents with their address at 96 James Street, Germiston." />
     <figcaption class="cap">Both parents, <strong>and their address</strong> — 96 James Street,
@@ -2153,7 +2156,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Six children, all minors</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1944-six-children" style="margin:16px 0">
     <img src={u("/docs/detail-1944-six-children.jpg")} loading="lazy" decoding="async"
          alt="Line ten of the 1944 Sterfkennis listing six children with their birth dates, all minors." />
     <figcaption class="cap"><strong>(Alle Minderjarig)</strong></figcaption>
@@ -2188,10 +2191,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Joseph Heinrich Daschner's death notice. <span class="m">TAB MHG 1928/42</span> &mdash;
     opened to check a marriage, and it returned a branch.</p>
   <div class="grid g2" style="margin:22px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1942-daschner" style="margin:0">
       <img src={u("/docs/death-notice-1942-daschner.jpg")} loading="lazy" decoding="async"
            alt="Typewritten 1942 death notice for Joseph Heinrich Daschner, estate 1928/42, filed at Pretoria." />
-      <figcaption class="cap">Estate <strong>1928/42</strong>, stamped <span class="m">13-5-1942,
+      <figcaption class="cap"><Rec id="scan-death-notice-1942-daschner">Estate <strong>1928/42</strong></Rec>, stamped <span class="m">13-5-1942,
         Pretoria</span>. Typewritten throughout &mdash; the first document in this archive that is.</figcaption>
     </figure>
     <div class="panel">
@@ -2217,7 +2220,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:30px">Two words that close a marriage</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1942-born-booyzen" style="margin:16px 0">
     <img src={u("/docs/detail-1942-born-booyzen.jpg")} loading="lazy" decoding="async"
          alt="Question seven of the 1942 death notice: Catherine Mary Sophia Daschner, born Booyzen, married in community of property; place of last marriage, Indwe, Cape Colony." />
     <figcaption class="cap"><strong>"CATHERINE MARY SOPHIA DASCHNER (born Booyzen)"</strong> &mdash; and
@@ -2225,21 +2228,21 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </figure>
   <div class="prose">
     <p>This archive already held the marriage, from the family tree: <b>Catharina Maria Sophia
-      Booysen</b>, baptised at Barkly Oost on 24 May 1891, married Joseph Heinrich Daschner. What it did
+      Booysen</b>, <Rec id="plate-doopregister-1891-barkly">baptised</Rec> at Barkly Oost on 24 May 1891, married Joseph Heinrich Daschner. What it did
       not have was a document. Here are two lines of one, and they do more than confirm a husband's
       name.</p>
     <blockquote><b>They married at Indwe.</b> Indwe is where her father, <b>Willem Hermanus
       Booyzen</b>, died in September 1905, when she was fourteen. It is a colliery village in the
       north-eastern Cape that appears in this archive for exactly one reason &mdash; a death form. Now it
       appears for a wedding as well.</blockquote>
-    <p>And note the spelling. The clerk who filled in her father's 1905 death form wrote
+    <p>And note the spelling. The clerk who filled in her father's <Rec id="plate-death-1905-willem-hermanus">1905 death form</Rec> wrote
       <b>Booysen</b>, with an <em>s</em>, and this archive has spent some care on how little that proves.
       Thirty-seven years later, a Johannesburg typist taking dictation from his daughter typed
       <b>Booyzen</b>, with a <em>z</em>. <a href={u("/name/")}>The name &rarr;</a></p>
   </div>
 
   <h3 style="margin-top:34px">Eleven children</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1942-eleven-children" style="margin:16px 0">
     <img src={u("/docs/detail-1942-eleven-children.jpg")} loading="lazy" decoding="async"
          alt="Question ten of the 1942 death notice, listing eleven Daschner children, six majors and five minors with dates of birth." />
     <figcaption class="cap">Six majors, then five minors <em>with dates</em> &mdash; because the form
@@ -2286,7 +2289,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">And what question three actually depends on</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1942-daschner-parents" style="margin:16px 0">
     <img src={u("/docs/detail-1942-daschner-parents.jpg")} loading="lazy" decoding="async"
          alt="Question three of the 1942 death notice: Father, Joseph Daschner, Deceased; Mother, Sophia Daschner born Stoter, Deceased." />
     <figcaption class="cap"><strong>Joseph Daschner</strong> &mdash; deceased.
@@ -2323,10 +2326,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     under the Transvaal Republic's <em>Wet op de Weeskamer</em>. It is the document this archive has been
     looking for since the first page was written.</p>
   <div class="grid g2" style="margin:22px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfkennis-1876-petrus-jacobus" style="margin:0">
       <img src={u("/docs/sterfkennis-1876-petrus-jacobus.jpg")} loading="lazy" decoding="async"
            alt="1876 Sterfkennis No. 678 for Petrus Jacobus Booijsen, born Graaff-Reinet, died district Rustenburg." />
-      <figcaption class="cap">Notice <strong>678</strong>. Countersigned by the
+      <figcaption class="cap"><Rec id="scan-sterfkennis-1876-petrus-jacobus">Notice <strong>678</strong></Rec>. Countersigned by the
         <strong>veldkornet</strong> and by <strong>H. S. Booijsen</strong> &mdash; Hendrik Stefanus, one
         of the sons listed four lines above his own signature.</figcaption>
     </figure>
@@ -2352,7 +2355,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:30px">The top of the line, in someone's handwriting</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1876-parents-named" style="margin:16px 0">
     <img src={u("/docs/detail-1876-parents-named.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1876 Sterfkennis reading Gerthardus Lodewikus Booijsen and Magdalena de Beer." />
     <figcaption class="cap"><strong>"Gerthardus L&ouml;dewikus Booijsen"</strong> &mdash;
@@ -2379,7 +2382,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Eight children, and three names that come back</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1876-eight-children" style="margin:16px 0">
     <img src={u("/docs/detail-1876-eight-children.jpg")} loading="lazy" decoding="async"
          alt="Line twelve of the 1876 Sterfkennis listing eight Booijsen children, all majors." />
     <figcaption class="cap">All eight entered <em>mondig</em> &mdash; the eldest was in his sixties.</figcaption>
@@ -2437,7 +2440,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">"Niets nagelaten"</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1876-niets-nagelaten" style="margin:16px 0">
     <img src={u("/docs/detail-1876-niets-nagelaten.jpg")} loading="lazy" decoding="async"
          alt="Lines eight to eleven: district Rustenburg; no will; nothing left; nothing known." />
     <figcaption class="cap"><strong>Destrikt Rustenburg &middot; Neen &middot; Niets nagelaten &middot;
@@ -2485,13 +2488,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:28px">The two notices, written the same afternoon</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1937-james-john-mountjoy" style="margin:0">
       <img src={u("/docs/death-notice-1937-james-john-mountjoy.jpg")} loading="lazy" decoding="async"
            alt="1938 death notice number 58379 for James John Mountjoy, retired builder of Barkly East." />
       <figcaption class="cap"><strong>58379</strong> &mdash; <b>James John Mountjoy</b>, retired builder,
         Barkly East. Died 22 December 1937, aged <b>83 years 6 months</b>.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1938-maria-kumm" style="margin:0">
       <img src={u("/docs/death-notice-1938-maria-kumm.jpg")} loading="lazy" decoding="async"
            alt="1938 death notice number 58380 for Maria Louisa Bertha Mountjoy, born Kumm." />
       <figcaption class="cap"><strong>58380</strong> &mdash; <b>Maria Louisa Bertha Mountjoy, born
@@ -2502,7 +2505,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     signed <b>G. Mountjoy &mdash; son, present at place of death</b>. She had been dead for three years
     and seven months.</p>
 
-  <figure style="margin:22px 0">
+  <figure id="plate-detail-1937-kumm-not-reported" style="margin:22px 0">
     <img src={u("/docs/detail-1937-kumm-not-reported.jpg")} loading="lazy" decoding="async"
          alt="Question seven of the 1938 notice: Maria Louisa Bertha Mountjoy, born Kumm, died 3rd July 1934 — death not reported." />
     <figcaption class="cap"><strong>"died 3rd July, 1934 &mdash; death not reported."</strong></figcaption>
@@ -2521,7 +2524,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">And question three, twice more</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1937-parents-deceased" style="margin:16px 0">
     <img src={u("/docs/detail-1937-parents-deceased.jpg")} loading="lazy" decoding="async"
          alt="Question three of the 1938 death notice: Father, Deceased. Mother, Deceased." />
     <figcaption class="cap"><strong>Father &mdash; "Deceased." Mother &mdash; "Deceased."</strong> The
@@ -2535,7 +2538,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">The account</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-liquidation-1938-mountjoy" style="margin:0">
       <img src={u("/docs/liquidation-1938-mountjoy.jpg")} loading="lazy" decoding="async"
            alt="First and final liquidation and distribution account in the estate of James John Mountjoy, Barkly East 58379." />
       <figcaption class="cap">The debit side. <strong>&pound;87. 19. 2.</strong> in costs and debts.</figcaption>
@@ -2568,12 +2571,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">"The deceased died intestate"</h3>
   <div class="grid g2" style="margin:16px 0">
-    <figure style="margin:0">
+    <figure id="plate-detail-1938-died-intestate" style="margin:0">
       <img src={u("/docs/detail-1938-died-intestate.jpg")} loading="lazy" decoding="async"
            alt="Distribution account: the deceased died intestate and the balance is awarded to his heirs ab intestato, in tenth shares of twenty-one pounds four shillings and five pence." />
       <figcaption class="cap"><strong>&pound;21. 4. 5.</strong> &mdash; one tenth share.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-distribution-1938-mountjoy" style="margin:0">
       <img src={u("/docs/distribution-1938-mountjoy.jpg")} loading="lazy" decoding="async"
            alt="The full distribution account for estate 58379, listing eleven heirs and their shares." />
       <figcaption class="cap">The whole page. <strong>Eleven heirs</strong>, and the balance
@@ -2631,10 +2634,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Searching the Cape probate index for <b>Hercules Johannes Mountjoy</b> returns exactly one
     hit. It is not his.</p>
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1902-van-niekerk" style="margin:0">
       <img src={u("/docs/death-notice-1902-van-niekerk.jpg")} loading="lazy" decoding="async"
            alt="1902 Kennisgeving van Sterfgeval for Carolina Deybella Margrietta Alletta van Niekerk, born Botha, of Dordrecht." />
-      <figcaption class="cap"><em>Kennisgeving van Sterfgeval</em>, filed 3 January 1903.
+      <figcaption class="cap"><em>Kennisgeving van <Rec id="scan-death-notice-1902-van-niekerk">Sterfgeval</Rec></em>, filed 3 January 1903.
         <strong>Carolina Deybella Margrietta Alletta van Niekerk, geboren Botha</strong>, died at her own
         house at <strong>Dordrecht</strong>, 18 December 1902.</figcaption>
     </figure>
@@ -2678,7 +2681,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:28px">First, the confirmation class of 1907</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-detail-1907-confirmation-class" style="margin:0">
       <img src={u("/docs/detail-1907-confirmation-class.jpg")} loading="lazy" decoding="async"
            alt="Page of the Indwe lidmaten register listing thirty-two young people confirmed on 31 May 1907, including Booijzen, Willem Hermanus, aged 21." />
       <figcaption class="cap"><em>Lidmaten Register, Gemeente Indwe</em> &mdash; thirty-two young people
@@ -2700,13 +2703,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
         page, on one afternoon, in one room.</p>
     </div>
   </div>
-  <figure style="margin:16px 0;max-width:620px">
+  <figure id="plate-lidmaten-1907-indwe" style="margin:16px 0;max-width:620px">
     <img src={u("/docs/lidmaten-1907-indwe.jpg")} loading="lazy" decoding="async"
          alt="The full right-hand page of the Indwe lidmaten register for 1907, page 456, signed by the kerkeraad." />
     <figcaption class="cap">The page entire, <span class="m">456</span>. At the foot,
       <strong>"Indwe, 31 Aug 1907 &mdash; Leden des Kerkeraads"</strong> and three signatures.</figcaption>
   </figure>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1907-booijzen-21" style="margin:16px 0">
     <img src={u("/docs/detail-1907-booijzen-21.jpg")} loading="lazy" decoding="async"
          alt="Line eight of the 1907 confirmation list: Booijzen, Willem Hermanus, aged 21." />
     <figcaption class="cap"><strong>"8. Booijzen, Willem Hermanus &mdash; 21"</strong> &mdash; and note the
@@ -2719,11 +2722,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">Then a marriage, and one word in it</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-marriage-1908-indwe" style="margin:0">
       <img src={u("/docs/marriage-1908-indwe.jpg")} loading="lazy" decoding="async"
            alt="Duplicaat Origineel Register: marriage number 13 at Indwe, 21 September 1908, William Hermanus Booyzen and Susanna Adriana Roodt." />
       <figcaption class="cap"><em>Duplicaat Origineel Register</em>, Indwe, parish of Indwe, district
-        <strong>Wodehouse</strong>. Certificate <strong>13</strong>.</figcaption>
+        <strong>Wodehouse</strong>. <Rec id="scan-marriage-1908-indwe">Certificate <strong>13</strong></Rec>.</figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">21 September 1908</h3>
@@ -2739,7 +2742,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       </table>
     </div>
   </div>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1908-mijnwerker" style="margin:16px 0">
     <img src={u("/docs/detail-1908-mijnwerker.jpg")} loading="lazy" decoding="async"
          alt="The occupation and residence columns of the 1908 marriage register: Jonkman, Mijnwerker, Dugmore Mijn." />
     <figcaption class="cap"><strong>Rang of Beroep: Mijnwerker. Woonplaats tijdens het Huwelijk:
@@ -2767,11 +2770,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">And his mother was standing at the font</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-doopregister-1908-indwe" style="margin:0">
       <img src={u("/docs/doopregister-1908-indwe.jpg")} loading="lazy" decoding="async"
            alt="Doop Register, Gemeente Indwe, page 381, entry 15: Booyzen, Willem Hermanus, born 31 May 1908." />
       <figcaption class="cap"><em>Doop Register, Gemeente Indwe</em>, page 381. Entry <strong>15</strong>,
-        baptised <strong>6 December 1908</strong>.</figcaption>
+        <Rec id="scan-doopregister-1908-indwe">baptised <strong>6 December 1908</strong></Rec>.</figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">Entry 15</h3>
@@ -2787,7 +2790,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       </table>
     </div>
   </div>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1908-barry-godmother" style="margin:16px 0">
     <img src={u("/docs/detail-1908-barry-godmother.jpg")} loading="lazy" decoding="async"
          alt="The parents and godparents columns of the 1908 baptism, ending with Catharina Maria Sophia Barry, and the remark onecht." />
     <figcaption class="cap"><strong>Catharina Maria Sophia Barry</strong> &mdash; third godparent. And in
@@ -2811,11 +2814,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">And then a second child, by a second Roodt</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-doopregister-1910-indwe" style="margin:0">
       <img src={u("/docs/doopregister-1910-indwe.jpg")} loading="lazy" decoding="async"
            alt="Doop Register, Gemeente Indwe, July 1910 to July 1911, entry 12." />
-      <figcaption class="cap">The next book &mdash; <em>1 Julie 1910 &ndash; 30 Julie 1911</em>, entry
-        <strong>12</strong>.</figcaption>
+      <figcaption class="cap">The next book &mdash; <em>1 Julie 1910 &ndash; 30 Julie 1911</em>, <Rec id="scan-doopregister-1910-indwe">entry
+        <strong>12</strong></Rec>.</figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">Entry 12</h3>
@@ -2832,7 +2835,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       </table>
     </div>
   </div>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1910-second-roodt" style="margin:16px 0">
     <img src={u("/docs/detail-1910-second-roodt.jpg")} loading="lazy" decoding="async"
          alt="The 1910 entry naming the father as Willem Hermanus Booyzen and the mother as Catharina Maria Elizabeth Roodt, with the remark onecht, gratis." />
     <figcaption class="cap"><strong>Moeder: Catharina Maria Elizabeth Roodt.</strong></figcaption>
@@ -2871,7 +2874,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <div class="prose">
     <p>Since the Transvaal references were first pulled out of NAAIRS, this archive has carried a row
       saying <span class="m">TAB MHG O/2899 &mdash; Jan Gerhardus Lodewikus Booyzen &mdash; 1885</span>,
-      and attached it to the seventh child on the 1863 death notice: <b>Jan Gerhardus Lodewicus Booysen,
+      and attached it to the seventh child on the <Rec id="plate-death-notice-1863-johanna-catharina">1863 death notice</Rec>: <b>Jan Gerhardus Lodewicus Booysen,
       born 4 December 1855</b>. His entry on
       <a href={u("/people/")}>the people index</a> read <em>"he died in the Transvaal at about
       thirty."</em></p>
@@ -2901,7 +2904,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <div class="prose">
     <p><b>A man born in 1818 is not a man born in 1855.</b> And the archive already holds a
       <b>Jan Gerthardus Lodewikus Booijsen</b> born in the right decade in the right place: he is
-      <b>fifth on the 1876 Sterfkennis</b> of Petrus Jacobus Booysen of Brakfontein, born Graaff-Reinet
+      <b>fifth on the <Rec id="plate-sterfkennis-1876-petrus-jacobus">1876 Sterfkennis</Rec></b> of Petrus Jacobus Booysen of Brakfontein, born Graaff-Reinet
       about 1788. <a href="#sterfkennis-1876">The 1876 notice &rarr;</a></p>
     <p>So the estate is <b>the uncle's</b>, not the nephew's, and two things follow.</p>
   </div>
@@ -2950,7 +2953,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     because the Master's own index files it under <b>BOOYZEN, with a z</b>. It found that, and a
     correction of exactly the kind it had just finished making about somebody else.</p>
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1943-isabella-coetzee" style="margin:0">
       <img src={u("/docs/death-notice-1943-isabella-coetzee.jpg")} loading="lazy" decoding="async"
            alt="1943 death notice number 84992 for Isabella Fredrika Booyzen, born Coetzee, of Middelburg, Cape." />
       <figcaption class="cap">Stamped <strong>No. 84992 &middot; 12 April 1943</strong>. Signed
@@ -2974,7 +2977,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1930-married-and-died" style="margin:18px 0">
     <img src={u("/docs/detail-1930-married-and-died.jpg")} loading="lazy" decoding="async"
          alt="Questions seven and eight: married to Gert Jacobus Booyzen in community of property, at Middelburg Cape; died 31st March 1930." />
     <figcaption class="cap"><strong>"31st March 1930."</strong> The form is dated <strong>1 April
@@ -2995,7 +2998,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <b>deceased</b>. The Cape civil index gives a Petrus Jacobus Booyzen dying at Middelburg on
       <b>7 June 1937</b>, aged about thirty-two.</p>
   </div>
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1943-coetzee-parents" style="margin:18px 0">
     <img src={u("/docs/detail-1943-coetzee-parents.jpg")} loading="lazy" decoding="async"
          alt="Question three of the 1943 notice: Father Pieter Coetzee, deceased; Mother Isabella Fredrika Coetzee, deceased." />
     <figcaption class="cap">Question three, answered. <strong>Pieter Coetzee</strong> and
@@ -3011,10 +3014,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <Rule name="koppie" />
 <section class="blk">
   <h2 id="johanna-1843">1843 &middot; The oldest Booyzen death notice in the Cape &mdash; and a warning</h2>
-  <p class="dek">Death notice <span class="m">6167</span>, filed at Cape Town on 21 June 1843. It is not
+  <p class="dek"><Rec id="plate-death-notice-1843-johanna-booyzen">Death notice</Rec> <span class="m">6167</span>, filed at Cape Town on 21 June 1843. It is not
     this family. It is put here because of what it nearly is.</p>
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1843-johanna-booyzen" style="margin:0">
       <img src={u("/docs/death-notice-1843-johanna-booyzen.jpg")} loading="lazy" decoding="async"
            alt="1843 death notice number 6167 for Johanna Booyzen, widow of Charles du Plessis, of 28 Roze Street, Cape Town." />
       <figcaption class="cap">Under <em>Section 9, Ordinance 104</em> &mdash; a generation older than
@@ -3038,7 +3041,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1843-age-89" style="margin:18px 0">
     <img src={u("/docs/detail-1843-age-89.jpg")} loading="lazy" decoding="async"
          alt="Question four of the 1843 death notice: age of the deceased, 89 years 2 months and 26 days." />
     <figcaption class="cap"><strong>&ldquo;89 years, 2 months &amp; 26 days.&rdquo;</strong> An age given
@@ -3047,7 +3050,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       Magdelena Elisabeth de Beer</b>, and they came off a family tree with no source.</figcaption>
   </figure>
 
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1843-both-dead" style="margin:18px 0">
     <img src={u("/docs/detail-1843-both-dead.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1843 death notice: Names of the Parents of the Deceased — both dead." />
     <figcaption class="cap"><strong>"both dead."</strong> 1843 &mdash; and the printed question is the
@@ -3088,11 +3091,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     who was standing there &mdash; and it settles a question this archive has carried since its first
     week.</p>
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-registration-1903-john-barry" style="margin:0">
       <img src={u("/docs/death-registration-1903-john-barry.jpg")} loading="lazy" decoding="async"
            alt="1903 Form of Information of a Death for John Barry of Manor Owen, Barkly East." />
       <figcaption class="cap"><em>Form of Information of a Death, Act No. 7 of 1894.</em> Registered
-        <strong>28 October 1903</strong>, entry <strong>74</strong>.</figcaption>
+        <strong>28 October 1903</strong>, <Rec id="scan-death-registration-1903-john-barry">entry <strong>74</strong></Rec>.</figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">The form, as completed</h3>
@@ -3113,7 +3116,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1903-irishman" style="margin:18px 0">
     <img src={u("/docs/detail-1903-irishman.jpg")} loading="lazy" decoding="async"
          alt="Question five of the 1903 registration: Race — Irishman born in Ireland." />
     <figcaption class="cap"><strong>5. Race &mdash; "Irishman born in Ireland."</strong></figcaption>
@@ -3123,7 +3126,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       Not at sea, not in Sunderland, not in an unknown place. His son wrote it down eight weeks after
       burying him, on a form that carries the penalties for perjury at the top of the page.</blockquote>
     <p>This archive has run that question three ways for weeks. The family tree guessed
-      <em>Sunderland, Durham</em> with a question mark. His own <b>1915</b> death notice &mdash; sworn by
+      <em>Sunderland, Durham</em> with a question mark. His own <Rec id="plate-death-notice-1915-john-barry"><b>1915</b> death notice</Rec> &mdash; sworn by
       a different son, twelve years after the fact &mdash; types
       <em>"At sea, exact whereabouts unknown. British."</em> And a research note on the same tree called
       him <em>"an Irishman &hellip; reputed to be anti English."</em></p>
@@ -3137,13 +3140,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <div class="grid g2" style="margin:22px 0">
-    <figure style="margin:0">
+    <figure id="plate-detail-1903-carpenter" style="margin:0">
       <img src={u("/docs/detail-1903-carpenter.jpg")} loading="lazy" decoding="async"
            alt="Questions six to eight: married, occupation Carpenter, date of death 25th August 1903." />
       <figcaption class="cap"><strong>Carpenter.</strong> Not a farmer &mdash; and the first trade this
         archive has for him.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-detail-1903-richard-son" style="margin:0">
       <img src={u("/docs/detail-1903-richard-son.jpg")} loading="lazy" decoding="async"
            alt="Informant: Richard Barry, son present at death." />
       <figcaption class="cap"><strong>Richard Barry &mdash; "Son present at death."</strong> He signs;
@@ -3165,7 +3168,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Nine years later, the same farm, the same registrar's form &mdash; and a grandchild of
     the Irishman is entered under a different nation.</p>
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-registration-1912-harriet-barry" style="margin:0">
       <img src={u("/docs/death-registration-1912-harriet-barry.jpg")} loading="lazy" decoding="async"
            alt="1912 death registration for Harriet Louisa Barry of Manor Owen, Barkly East." />
       <figcaption class="cap">Registered <strong>5 November 1912</strong>, district Barkly East.</figcaption>
@@ -3188,7 +3191,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       </table>
     </div>
   </div>
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1912-dutch" style="margin:18px 0">
     <img src={u("/docs/detail-1912-dutch.jpg")} loading="lazy" decoding="async"
          alt="Questions four and five of the 1912 registration: age eighteen years five months and three days; race Dutch, born in the District of Barkly East." />
     <figcaption class="cap"><strong>"Dutch, born in the District of Barkly East."</strong></figcaption>
@@ -3214,11 +3217,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <section class="blk">
   <h2 id="hendrik-1908">1908 &middot; The son who signed the 1876 notice, found &mdash; and a mother nobody had</h2>
   <p class="dek">Estate <span class="m">14380</span>, Transvaal. <b>Hendrik Stephanus Booysen</b> put his
-    name to his father's Sterfkennis at Brakfontein in September 1876. Thirty-two years later his own
+    name to his father's <Rec id="plate-sterfkennis-1876-petrus-jacobus">Sterfkennis</Rec> at Brakfontein in September 1876. Thirty-two years later his own
     was filed, and it resolves a contradiction this archive has carried as <em>Serious</em> since the
     first week.</p>
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1908-hendrik-stephanus" style="margin:0">
       <img src={u("/docs/death-notice-1908-hendrik-stephanus.jpg")} loading="lazy" decoding="async"
            alt="1908 Transvaal death notice for Hendrik Stephanus Booysen, estate 14380." />
       <figcaption class="cap">Under the <em>Administration of Estates Ordinance 1902</em>, stamped
@@ -3245,7 +3248,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:30px">A mother this archive did not have</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1908-elizabetha-van-der-merwe" style="margin:16px 0">
     <img src={u("/docs/detail-1908-elizabetha-van-der-merwe.jpg")} loading="lazy" decoding="async"
          alt="Line three of the 1908 notice: Father Petrus Jacobus Booysen; Mother Elizabetha Booysen, born van der Merwe." />
     <figcaption class="cap"><strong>"Elizabetha Booysen, born van der Merwe."</strong></figcaption>
@@ -3261,14 +3264,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       puts his birth at about June 1828, three years after the first wife died. Two van der Merwe wives,
       one after the other. The contradiction was never a contradiction; it was a missing row.</p>
     <p>And it repairs something this page has been apologising for. The
-      <a href="#sterfkennis-1876">1876 Sterfkennis</a> lists eight children and names no mother for any
+      <a href="#sterfkennis-1876"><Rec id="plate-sterfkennis-1876-petrus-jacobus">1876 Sterfkennis</Rec></a> lists eight children and names no mother for any
       of them, so this archive drew them all under Anna Maria van der Merwe with a warning printed
       beside them. <b>At least one of the eight is Elizabetha's.</b>
       <a href={u("/households/")}>The households &rarr;</a></p>
   </div>
 
   <h3 style="margin-top:34px">And then the place of the marriage</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1908-zeerust" style="margin:16px 0">
     <img src={u("/docs/detail-1908-zeerust.jpg")} loading="lazy" decoding="async"
          alt="Place of last marriage: Zeerust, Transvaal; died eleventh day of May 1908." />
     <figcaption class="cap"><strong>"Zeerust, Transvaal."</strong></figcaption>
@@ -3292,11 +3295,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 <section class="blk">
   <h2 id="huwelijk-1892">1892 &middot; The marriage the 1908 notice named, found &mdash; and it takes four children off one mother</h2>
   <p class="dek">Entry <span class="m">13</span> of the <em>Duplicaat Origineel Register</em>,
-    Huwelijks-Bevestiging te <b>Zeerust, Distrikt Marico</b>, <b>14 April 1892</b>. The 1908 death
-    notice said only <em>Zeerust, Transvaal</em>. Here is the register page, and it answers three
+    Huwelijks-Bevestiging te <b>Zeerust, Distrikt Marico</b>, <b>14 April 1892</b>. The <Rec id="plate-death-notice-1908-hendrik-stephanus">1908 death
+    notice</Rec> said only <em>Zeerust, Transvaal</em>. Here is the register page, and it answers three
     questions the notice left open and contradicts one thing this archive published about it.</p>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-huwelijk-1892-zeerust" style="margin:20px 0">
     <img src={u("/docs/huwelijk-1892-zeerust.jpg")} loading="lazy" decoding="async"
          alt="The full page of the Zeerust duplicate marriage register for April 1892, one entry on the sheet." />
     <figcaption class="cap"><strong>DUPLICAAT ORIGINEEL REGISTER &middot; Huwelijks-Bevestiging te
@@ -3305,7 +3308,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       the black cloth the page was photographed on.</figcaption>
   </figure>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1892-entry-13" style="margin:20px 0">
     <img src={u("/docs/detail-1892-entry-13.jpg")} loading="lazy" decoding="async"
          alt="Entry thirteen of the Zeerust marriage register, 14 April 1892: Hendrik Stefanus Booijzen, 63, Graaff-Reinet, widower; Charlotta Elizabeth Roos born Dormehl, 51, Graaff-Reinet, widow." />
     <figcaption class="cap">Entry thirteen, entire. The columns are
@@ -3361,7 +3364,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:26px 0">
+  <figure id="plate-detail-1892-signatures" style="margin:26px 0">
     <img src={u("/docs/detail-1892-signatures.jpg")} loading="lazy" decoding="async"
          alt="The foot of the page: witnesses J.H.J. Joubert and A.S. Engelbrecht, and the signatures H S Booysen and C E Roos geb. Dormehl." />
     <figcaption class="cap">Witnesses <strong>J. H. J. Joubert</strong> and
@@ -3394,7 +3397,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <b>Elizabetha van der Merwe</b> in this family. What 1892 adds is the town, the farm, the
       condition of both parties, and a date the archive did not have.</p>
     <p class="cap">South Africa, Transvaal, Civil Marriages, 1870&ndash;1931 &middot; FamilySearch
-      <span class="m">1:1:QPH1-9CX8</span>, film <span class="m">007747932</span> image
+      <span class="m"><Rec id="ark-1:1:QPH1-9CX8">1:1:QPH1-9CX8</Rec></span>, film <span class="m">007747932</span> image
       <span class="m">01608</span>, read 13 September 2026.</p>
   </div>
 </section>
@@ -3409,7 +3412,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     no <em>t</em> and no <em>s</em> in it.</p>
 
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfkennis-1891-anna-olivier" style="margin:0">
       <img src={u("/docs/sterfkennis-1891-anna-olivier.jpg")} loading="lazy" decoding="async"
            alt="Sterfkennis 6332, 1891: Anna Johanna Booijzen, born Olivier, of Brakfontein, district Rustenburg." />
       <figcaption class="cap"><strong>Sterfkennis 6332</strong> &mdash; <em>Overeenkomstig de Wet op de
@@ -3437,7 +3440,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1891-anna-name-parents" style="margin:20px 0">
     <img src={u("/docs/detail-1891-anna-name-parents.jpg")} loading="lazy" decoding="async"
          alt="Questions one to three of Sterfkennis 6332: Anna Johanna Booijzen gebooren Oliefier; District Cradock, Cap Kolonie; Ocken Johannes Oliefier en Anna Johanna Botha." />
     <figcaption class="cap">The first three questions. <strong>"Anna Johanna Booijzen, gebooren
@@ -3446,7 +3449,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </figure>
 
   <h3 style="margin-top:34px">First, the farm</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1891-anna-brakfontein" style="margin:16px 0">
     <img src={u("/docs/detail-1891-anna-brakfontein.jpg")} loading="lazy" decoding="async"
          alt="Questions six to eight: gehuwd; 9 May 1891; op de plaas Brakfontijn, district Rustenburg." />
     <figcaption class="cap"><strong>"op de plaas Brakfontijn, Destrict Rustenburg."</strong> This archive
@@ -3462,7 +3465,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Then the name</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1891-the-maiden-name" style="margin:16px 0">
     <img src={u("/docs/detail-1891-the-maiden-name.jpg")} loading="lazy" decoding="async"
          alt="The maiden name on line one of Sterfkennis 6332, enlarged: gebooren Oliefier." />
     <figcaption class="cap">Line one, enlarged three times. <strong>"Gebooren Oliefier."</strong></figcaption>
@@ -3482,7 +3485,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Seven children, all of age</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1891-anna-children" style="margin:16px 0">
     <img src={u("/docs/detail-1891-anna-children.jpg")} loading="lazy" decoding="async"
          alt="Question twelve of Sterfkennis 6332, listing seven children, all of age." />
     <figcaption class="cap">Question twelve, entire. <strong>"Allen mondig."</strong></figcaption>
@@ -3510,7 +3513,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:36px">And five days later, her son</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfkennis-1891-hendrik-nicolaas" style="margin:0">
       <img src={u("/docs/sterfkennis-1891-hendrik-nicolaas.jpg")} loading="lazy" decoding="async"
            alt="Sterfkennis 6361, 1891: Hendrick Stefanus Booijsen, 29, of Brakfontein, district Rustenburg." />
       <figcaption class="cap"><strong>Sterfkennis 6361.</strong> The sheet is torn across below question
@@ -3536,14 +3539,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       </div>
     </div>
   </div>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1891-nicolaas-brakfontein" style="margin:16px 0">
     <img src={u("/docs/detail-1891-nicolaas-brakfontein.jpg")} loading="lazy" decoding="async"
          alt="Questions four to nine of Sterfkennis 6361: 29 jaar 3 maanden en 14 dagen; landbouwer; ongehuwd; 14 Mei 1891; op de plaas Brakfontijn, Destrict Rustenburg." />
     <figcaption class="cap"><strong>"ongehuwd" &middot; "14 Mei 1891" &middot; "op de plaas Brakfontijn,
       Destrict Rustenburg."</strong> The same farm as his mother's, five days on.</figcaption>
   </figure>
 
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1891-nicolaas-parents" style="margin:16px 0">
     <img src={u("/docs/detail-1891-nicolaas-parents.jpg")} loading="lazy" decoding="async"
          alt="Line three of Sterfkennis 6361: Hendrick Stefanus Booijsen en Anna Catrena gebooren Oliefier." />
     <figcaption class="cap">Line three, enlarged. <strong>"Hendrick Stefanes Booijsen en Anna Catrena
@@ -3562,9 +3565,9 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       site had already found, already filed, and read wrongly twice.</blockquote>
     <p class="cap">South Africa, Transvaal, Probate Records from the Master of the Supreme Court,
       1869&ndash;1961 &middot; Sterfkennis <span class="m">6332</span> (FamilySearch
-      <span class="m">1:1:QPTM-SCPJ</span>, film <span class="m">007897335</span> image
+      <span class="m"><Rec id="ark-1:1:QPTM-SCPJ">1:1:QPTM-SCPJ</Rec></span>, film <span class="m">007897335</span> image
       <span class="m">00647</span>) and Sterfkennis <span class="m">6361</span> (FamilySearch
-      <span class="m">1:1:QPRB-R43G</span>, same film image <span class="m">00675</span>).
+      <span class="m"><Rec id="ark-1:1:QPRB-R43G">1:1:QPRB-R43G</Rec></span>, same film image <span class="m">00675</span>).
       Read 13 September 2026.</p>
   </div>
 </section>
@@ -3667,7 +3670,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     he died in a Johannesburg hospital on <b>29 July 1932</b>, an <b>ex-miner</b>, and was buried at
     Brixton two days later.</p>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-huwelijk-1908-indwe" style="margin:20px 0">
     <img src={u("/docs/huwelijk-1908-indwe.jpg")} loading="lazy" decoding="async"
          alt="The Indwe duplicate marriage register sheet for 21 September 1908, one entry to the page." />
     <figcaption class="cap"><strong>DUPLICAAT ORIGINEEL REGISTER &middot; Huwelijk bevestigd te Indwe, in
@@ -3675,11 +3678,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       printed warning pasted beside it that the document is damaged.</figcaption>
   </figure>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1908-indwe-entry-13" style="margin:20px 0">
     <img src={u("/docs/detail-1908-indwe-entry-13.jpg")} loading="lazy" decoding="async"
          alt="Entry thirteen of the Indwe marriage register, 21 September 1908: William Hermanus Booyzen, 22, jongman, mijnwerker, of Dugmore Mijn; Susanna Adriana Roodt, 16, jongedochter, of Dugmore Mijn." />
     <figcaption class="cap">Entry thirteen, <em>Duplicaat Origineel Register</em>, Huwelijk bevestigd te
-      <strong>Indwe</strong>, District <strong>Wodehouse</strong>. Certificate 13, reference 3857.</figcaption>
+      <strong>Indwe</strong>, District <strong>Wodehouse</strong>. <Rec id="scan-detail-1908-indwe-entry-13">Certificate 13</Rec>, reference 3857.</figcaption>
   </figure>
 
   <div class="scroll">
@@ -3710,10 +3713,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:36px">And twenty-four years later, Johannesburg</h3>
   <div class="grid g2" style="margin:18px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfgeval-1932-william-herman" style="margin:0">
       <img src={u("/docs/sterfgeval-1932-william-herman.jpg")} loading="lazy" decoding="async"
            alt="Form of Information of a Death, 1932: William Herman Booyzen, 47, born Cape Province, married, ex miner underground." />
-      <figcaption class="cap"><strong>Informasievorm van Sterfgeval</strong>, under Act 17 of 1923.
+      <figcaption class="cap"><strong>Informasievorm van <Rec id="plate-schoeman-barry-sterfkennis-1923">Sterfgeval</Rec></strong>, under Act 17 of 1923.
         Registered at Johannesburg 30 July 1932, entry <span class="m">4009</span>.</figcaption>
     </figure>
     <div class="panel">
@@ -3737,7 +3740,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1932-ex-miner" style="margin:20px 0">
     <img src={u("/docs/detail-1932-ex-miner.jpg")} loading="lazy" decoding="async"
          alt="Questions three to eight of the 1932 death form: 47 years, Cape Province, Married, Ex Miner (told) Underground." />
     <figcaption class="cap"><strong>"47 years" &middot; "Cape Province" &middot; "Married" &middot;
@@ -3775,11 +3778,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Grave 6889 &mdash; and the identification closes</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1968-grave-6889" style="margin:16px 0">
     <img src={u("/docs/detail-1968-grave-6889.jpg")} loading="lazy" decoding="async"
          alt="Grave 6889 in the Town Council of Johannesburg consecutive grave-number register: Boysen William, folio 49; Susanna Adriana Booyzen, 29.8.68." />
     <figcaption class="cap"><strong>TOWN COUNCIL OF JOHANNESBURG &middot; CONSECUTIVE GRAVE NUMBERS.</strong>
-      Grave <strong>6889</strong>: <strong>Boysen, William</strong> &mdash; folio 49; and beneath him
+      Grave <strong>6889</strong>: <strong>Boysen, William</strong> &mdash; <Rec id="scan-detail-1968-grave-6889">folio 49</Rec>; and beneath him
       <strong>Susanna Adriana Booyzen &middot; 29.8.68</strong>.</figcaption>
   </figure>
   <div class="note">
@@ -3806,11 +3809,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <a href={u("/atlas/")}>The atlas &rarr;</a> &middot;
       <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
     <p class="cap">South Africa, Civil Marriage Records, 1801&ndash;1974 &middot; FamilySearch
-      <span class="m">1:1:6ZHR-PCSV</span>, film <span class="m">007729488</span> image
+      <span class="m"><Rec id="ark-1:1:6ZHR-PCSV">1:1:6ZHR-PCSV</Rec></span>, film <span class="m">007729488</span> image
       <span class="m">02719</span>. South Africa, Transvaal, Civil Death, 1869&ndash;1954 &middot;
-      <span class="m">1:1:736J-96W2</span>, film <span class="m">007731503</span> image
+      <span class="m"><Rec id="ark-1:1:736J-96W2">1:1:736J-96W2</Rec></span>, film <span class="m">007731503</span> image
       <span class="m">01056</span>. Johannesburg Cemetery Records &middot;
-      <span class="m">1:1:6N1B-JVP9</span> and <span class="m">1:1:6J3R-2Q1R</span>.
+      <span class="m"><Rec id="ark-1:1:6N1B-JVP9">1:1:6N1B-JVP9</Rec></span> and <span class="m"><Rec id="ark-1:1:6J3R-2Q1R">1:1:6J3R-2Q1R</Rec></span>.
       Read 13 September 2026.</p>
   </div>
 </section>
@@ -3821,7 +3824,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     nothing else. The <b>City of Johannesburg Register of Persons Buried at New Cemetery</b> gives the
     day, the section and the number of the grave.</p>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-begraafregister-1940-new-cemetery" style="margin:20px 0">
     <img src={u("/docs/begraafregister-1940-new-cemetery.jpg")} loading="lazy" decoding="async"
          alt="A page of the City of Johannesburg Register of Persons Buried at New Cemetery, August to December 1940." />
     <figcaption class="cap"><strong>CITY OF JOHANNESBURG &middot; REGISTER OF PERSONS BURIED AT NEW
@@ -3829,7 +3832,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       remarks. Late August to December 1940, about forty burials to the page.</figcaption>
   </figure>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1940-grave-9760" style="margin:20px 0">
     <img src={u("/docs/detail-1940-grave-9760.jpg")} loading="lazy" decoding="async"
          alt="The register row: Booyzen Catherine M.S., 82, female, buried 6 September, section D.R., grave 9760." />
     <figcaption class="cap">Her row, enlarged and sharpened. <strong>Booyzen Catherine M.S. &middot; 82
@@ -3876,19 +3879,19 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <b>George Downing Mountjoy Booyzen</b> went to <b>West Park</b> instead, in December 1947.
       <a href={u("/places/brixton-cemetery/")}>Brixton &rarr;</a></p>
     <p class="cap">South Africa, Gauteng, Johannesburg, Cemetery Records, 1840&ndash;2019 &middot;
-      FamilySearch <span class="m">1:1:6NBS-NR1Q</span>, film <span class="m">107663873</span> image
+      FamilySearch <span class="m"><Rec id="ark-1:1:6NBS-NR1Q">1:1:6NBS-NR1Q</Rec></span>, film <span class="m">107663873</span> image
       <span class="m">00020</span>. Read 13 September 2026.</p>
   </div>
 </section>
 <section class="blk">
   <h2 id="charlotta-1902">1902 &middot; Charlotta&rsquo;s own death notice &mdash; three husbands, six children, and none of them his</h2>
-  <p class="dek">Death Notice <span class="m">844</span>, filed 11 September 1902 and stamped by the
+  <p class="dek"><Rec id="plate-death-notice-1902-charlotta">Death Notice</Rec> <span class="m">844</span>, filed 11 September 1902 and stamped by the
     Master of the Supreme Court, Transvaal, on 23 September. This archive has carried the second wife as
     <b>Charlotta Elizabetha Dormehl, died before 1908</b>. Here she is entire, and she proves from a
-    second direction the thing the 1892 marriage register only implied.</p>
+    second direction the thing the <Rec id="plate-huwelijk-1892-zeerust">1892 marriage register</Rec> only implied.</p>
 
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1902-charlotta" style="margin:0">
       <img src={u("/docs/death-notice-1902-charlotta.jpg")} loading="lazy" decoding="async"
            alt="Death Notice 844 of 1902 for Charlotta Elizabetha Booysen, born Dormehl, of Driefontein, Groot Marico." />
       <figcaption class="cap">Under <em>The Administration of Estates Ordinance, 1901</em> &mdash; the
@@ -3919,7 +3922,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Three husbands, in her own notice</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1902-three-husbands" style="margin:16px 0">
     <img src={u("/docs/detail-1902-three-husbands.jpg")} loading="lazy" decoding="async"
          alt="Question six: surviving spouse Hendrik Stefanus Booysen; previous spouses Jacob van Staden, unknown; Matthys Roos, unknown. Died 6 February 1902 at Driefontein, Groot Marico." />
     <figcaption class="cap"><strong>&ldquo;Hendrik Stefanus Booysen &middot; Jacob van Staden. unknown.
@@ -3934,7 +3937,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Six children, and the point of them</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1902-six-children" style="margin:16px 0">
     <img src={u("/docs/detail-1902-six-children.jpg")} loading="lazy" decoding="async"
          alt="Question nine: Jacob Alewyn van Staden and Coenrad Sybert van Staden, majors; Gert Johannes Roos, Matthys Johannes Roos, Johannes Sybert Roos, Anna Francisa Roos, majors." />
     <figcaption class="cap">Question nine asks for the children <em>&ldquo;stating separately those born
@@ -3956,7 +3959,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <a href="#brakfontein-1891">The children belong to the first wife &rarr;</a>
   </div>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1902-wagon-and-will" style="margin:20px 0">
     <img src={u("/docs/detail-1902-wagon-and-will.jpg")} loading="lazy" decoding="async"
          alt="Question ten: Yes, one wagon and household furniture valued at £51 8s 0d; the deceased has left a will. Dated at Zeerust, 21 August 1902, signed H. S. Booysen, Husband." />
     <figcaption class="cap"><strong>&ldquo;1 wagon + household furniture valued at £51.8.0&rdquo;</strong>
@@ -3966,7 +3969,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </figure>
 
   <h3 style="margin-top:34px">And one more parent nobody could name</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1902-name-father" style="margin:16px 0">
     <img src={u("/docs/detail-1902-name-father.jpg")} loading="lazy" decoding="async"
          alt="Questions one to four: Charlotta Elizabetta Booysen born Dormehl; Graaff-Reinet C.C.; father Jacob Dormehl, mother unknown; 60 years 4 months." />
     <figcaption class="cap"><strong>&ldquo;Father: Jacob Dormehl. Mother: unknown.&rdquo;</strong></figcaption>
@@ -3976,14 +3979,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       A husband of ten years knew his wife&rsquo;s father&rsquo;s name and not her mother&rsquo;s.
       It is the same failure as <b>James Montjoy in 1840</b>, as <b>John Barry&rsquo;s son in 1915</b>
       writing <em>Neagle</em> and admitting he had neither her Christian names nor an address, and as the
-      1876 Sterfkennis that names eight children and no mother for any of them.</blockquote>
+      <Rec id="plate-sterfkennis-1876-petrus-jacobus">1876 Sterfkennis</Rec> that names eight children and no mother for any of them.</blockquote>
     <p>She never left Marico. In April 1892 she gave her home as <b>Driefontein, Marico</b> and married a
       man of Brakfontein in Rustenburg; ten years later she died at <b>Driefontein, Groot Marico</b>. He
       signed her notice at <b>Zeerust</b>, the town they had married in, six months after her death and
       three months after the peace. <b>She had one wagon and her furniture.</b>
       <a href={u("/atlas/")}>The atlas &rarr;</a></p>
     <p class="cap">South Africa, Transvaal, Probate Records from the Master of the Supreme Court,
-      1869&ndash;1961 &middot; Death Notice <span class="m">844</span> of 1902 &middot; FamilySearch
+      1869&ndash;1961 &middot; <Rec id="plate-death-notice-1902-charlotta">Death Notice <span class="m">844</span> of 1902</Rec> &middot; FamilySearch
       <span class="m">1:1:7FTM-QD6Z</span>, film <span class="m">007897350</span> image
       <span class="m">00906</span>. Read 13 September 2026.</p>
   </div>
@@ -3996,7 +3999,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     One of the two, though, is worth the whole search.</p>
 
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfkennis-1935-diederik-arnoldus" style="margin:0">
       <img src={u("/docs/sterfkennis-1935-diederik-arnoldus.jpg")} loading="lazy" decoding="async"
            alt="Sterfkennis 87882 of 1935 for Diederik Arnoldus Booysen of Zwartruggens, karweier." />
       <figcaption class="cap"><strong>Sterfkennis 87882</strong>, <em>volgens die voorskrifte vervat in
@@ -4026,7 +4029,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">The line that matters</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1935-parents" style="margin:16px 0">
     <img src={u("/docs/detail-1935-parents.jpg")} loading="lazy" decoding="async"
          alt="Question three: Vader Ockert Johannes Stephanus Booysen, oorlede; Moeder Elizabeth Johanna Sophia Booysen gebore Myburgh, oorlede." />
     <figcaption class="cap"><strong>&ldquo;Vader: Ockert Johannes Stephanus Booysen &mdash; oorlede.
@@ -4043,7 +4046,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Two families on one form, and a pencil correction</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1935-two-families" style="margin:16px 0">
     <img src={u("/docs/detail-1935-two-families.jpg")} loading="lazy" decoding="async"
          alt="Question ten, the children: two Jouberts braced apart from three Booysens, with a pencil note in the margin." />
     <figcaption class="cap">Question ten, entire, with a <strong>pencil note in the margin</strong>
@@ -4102,14 +4105,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <h2 id="olivier-line">1824 &amp; 1850 &middot; The Olivier line, and the marriage that puts this family north of the Vaal in 1850</h2>
   <p class="dek">Yesterday <b>Anna Catharina Johanna Olivier</b> did not exist on this site. This morning
     she was recovered from a death notice the archive had misread twice. This afternoon there are two
-    more documents: <b>her baptism at Cradock in 1824</b> and <b>her marriage at Potchefstroom in 1850</b>
+    more documents: <b>her <Rec id="plate-doopregister-1824-cradock">baptism at Cradock in 1824</Rec></b> and <b>her <Rec id="plate-huwelijksregister-1850-potchefstroom">marriage at Potchefstroom in 1850</Rec></b>
     &mdash; and the second of them moves the whole family&rsquo;s history twenty-six years.</p>
 
   <h3 style="margin-top:30px">Cradock, 4 October 1824</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-doopregister-1824-cradock" style="margin:16px 0">
     <img src={u("/docs/doopregister-1824-cradock.jpg")} loading="lazy" decoding="async"
          alt="A page of the Cradock Dutch Reformed baptism register for 1824." />
-    <figcaption class="cap">The Cradock <em>doopregister</em> for 1824 &mdash; the church her family
+    <figcaption class="cap">The Cradock <Rec id="scan-doopregister-1824-cradock"><em>doopregister</em> for 1824</Rec> &mdash; the church her family
       baptised in, and the district her death notice gives sixty-seven years later.</figcaption>
   </figure>
   <div class="scroll">
@@ -4134,7 +4137,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:36px">Potchefstroom, 3 July 1850</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-huwelijksregister-1850-potchefstroom" style="margin:16px 0">
     <img src={u("/docs/huwelijksregister-1850-potchefstroom.jpg")} loading="lazy" decoding="async"
          alt="A page of the Potchefstroom marriage register, entries 189 to 207, 1850." />
     <figcaption class="cap">Entries <strong>189 to 207</strong>, June and July 1850. Three columns only:
@@ -4142,10 +4145,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       no occupations &mdash; a frontier register keeping the minimum.</figcaption>
   </figure>
 
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1850-entry-206" style="margin:16px 0">
     <img src={u("/docs/detail-1850-entry-206.jpg")} loading="lazy" decoding="async"
          alt="Entry 206 of the Potchefstroom marriage register: Hendrik Stephanus Booijzen, 23; Anna Johanna Olivier, 25." />
-    <figcaption class="cap">Entry <strong>206</strong>. <em>Namen der Gehuwden &middot; Ouderdom &middot;
+    <figcaption class="cap"><Rec id="scan-detail-1850-entry-206">Entry <strong>206</strong></Rec>. <em>Namen der Gehuwden &middot; Ouderdom &middot;
       Wanneer gehuwd.</em> <strong>Hendrik Stephanus Booijzen, 23 &middot; Anna Johanna Olivier,
       25</strong> &mdash; the date carried down by ditto marks from <strong>3 July 1850</strong>.</figcaption>
   </figure>
@@ -4153,7 +4156,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <div class="grid g2" style="margin-top:18px">
     <div class="panel">
       <h3 style="margin-top:0">Her name, written plainly, forty-one years early</h3>
-      <p>The 1891 death notice spells her maiden name <b>Oliefier</b> in a hand so bad this archive read
+      <p>The <Rec id="plate-sterfkennis-1891-anna-olivier">1891 death notice</Rec> spells her maiden name <b>Oliefier</b> in a hand so bad this archive read
         it as <em>Alberts</em> and threw her out of the family for a week. Here it is in 1850, in a clerk
         who could write: <b>OLIVIER</b>. Four documents now agree &mdash;
         <b>1850 Potchefstroom</b>, <b>1862 Rustenburg</b>, <b>1891 Brakfontein</b>,
@@ -4163,7 +4166,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <h3 style="margin-top:0">And the ages hold</h3>
       <p><b>He was 23</b> in July 1850, so born about 1827 &mdash; against <em>about June 1828</em> from
         the 1908 notice and <em>63</em> at Zeerust in 1892. <b>She was 25</b>, so born about 1825
-        &mdash; against a baptism of <b>10 September 1824</b>. Four independent estimates, all inside two
+        &mdash; against a <Rec id="plate-doopregister-1824-cradock">baptism of <b>10 September 1824</b></Rec>. Four independent estimates, all inside two
         years. Their eldest son <b>Petrus Jacobus was born on 20 April 1851</b>, nine and a half months
         after the wedding.</p>
     </div>
@@ -4250,7 +4253,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <div class="panel">
       <h3 style="margin-top:0">What is now proved</h3>
       <p>Anna Maria van der Merwe <b>was married to Pieter Jacobus Booijzen</b> and <b>bore him a son in
-        1806</b> who is the eldest of the eight on the 1876 Sterfkennis. She is a real, documented wife
+        1806</b> who is the eldest of the eight on the <Rec id="plate-sterfkennis-1876-petrus-jacobus">1876 Sterfkennis</Rec>. She is a real, documented wife
         and mother in this family.</p>
     </div>
     <div class="panel">
@@ -4277,7 +4280,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </table>
   </div>
   <div class="prose" style="margin-top:16px">
-    <p>This is the eldest of the eight on the <a href="#marais-1900">1900 Pretoria death notice</a>
+    <p>This is the eldest of the eight on the <a href="#marais-1900"><Rec id="plate-death-notice-1900-elizabetha-marais">1900 Pretoria death notice</Rec></a>
       &mdash; <em>&ldquo;Petrus Jacobus Booijzen (unmarried &mdash; major)&rdquo;</em> &mdash; and he now
       has a birth date and a font. <b>And the font is Lady Grey</b>, which is where his parents married
       and where his uncle Willem Hermanus would marry Kathleen Barry <b>six years later</b>. The family
@@ -4297,10 +4300,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <b>David Schalk Booysen</b>, born 9 June 1848 &mdash; <b>the brother of the direct ancestor</b>.</p>
 
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1900-elizabetha-marais" style="margin:0">
       <img src={u("/docs/death-notice-1900-elizabetha-marais.jpg")} loading="lazy" decoding="async"
            alt="Death Notice 4795 of 1900 for Elizabetha Margaretha Booijzen, born Marais, of Pretoria." />
-      <figcaption class="cap"><strong>Death Notice 4795</strong>, filed 18 March 1904 and stamped by the
+      <figcaption class="cap"><strong><Rec id="scan-death-notice-1900-elizabetha-marais">Death Notice</Rec> 4795</strong>, filed 18 March 1904 and stamped by the
         Master of the Supreme Court, Transvaal, on 2 May 1904 &mdash; <b>nearly four years after the
         death</b>. Under <em>The Administration of Estates Proclamation, 1902</em>: the proclamation did
         not exist when she died.</figcaption>
@@ -4331,7 +4334,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1900-marais-parents" style="margin:20px 0">
     <img src={u("/docs/detail-1900-marais-parents.jpg")} loading="lazy" decoding="async"
          alt="Questions one to four: Elizabetha Margaretha Booijzen born Marais; District Cradock, Cape Colonial; father Stephanus François Marais, mother Elizabetha Margaretha Marais; 50 years 2 months." />
     <figcaption class="cap"><strong>&ldquo;Elizabetha Margaretha Booijzen (born Marais)&rdquo; &middot;
@@ -4341,7 +4344,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </figure>
 
   <h3 style="margin-top:34px">Lady Grey, which this archive already knows</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1900-lady-grey" style="margin:16px 0">
     <img src={u("/docs/detail-1900-lady-grey.jpg")} loading="lazy" decoding="async"
          alt="Question six: surviving spouse David Schalk Booijzen, in community of property; place of last marriage Lady Grey, near Aliwal North, Cape Colony; died 1st June 1900 in a zinc building in Market Street, Pretoria." />
     <figcaption class="cap"><strong>&ldquo;Lady Grey, near Aliwal North, Cape Colony.&rdquo;</strong></figcaption>
@@ -4359,7 +4362,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">Eight children</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1900-seven-children" style="margin:16px 0">
     <img src={u("/docs/detail-1900-seven-children.jpg")} loading="lazy" decoding="async"
          alt="Question nine, the children: Petrus Jacobus, Stephanus François, Johanna Margaretha Delport, Magdalena Johanna Vogel, Rachel Margaretha Williamse, Anna Susanna, Elizabeth Margarietha died a minor, David Schalk 15 years." />
     <figcaption class="cap">Question nine, with a name <b>squeezed in between the lines</b> after the
@@ -4386,7 +4389,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     as it does in the Olivier household. <a href={u("/namesakes/")}>The namesakes &rarr;</a></p>
 
   <h3 style="margin-top:34px">She died four days before Pretoria fell</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1900-compensation-claim" style="margin:16px 0">
     <img src={u("/docs/detail-1900-compensation-claim.jpg")} loading="lazy" decoding="async"
          alt="Question ten: has the deceased left any movable property? — none, compensation claim filed." />
     <figcaption class="cap"><strong>&ldquo;none. Compensation claim filed.&rdquo;</strong></figcaption>
@@ -4424,7 +4427,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <p class="cap" style="margin-top:16px">South Africa, Transvaal, Probate Records from the Master of the
     Supreme Court, 1869&ndash;1961 &middot; Death Notice <span class="m">4795</span> &middot; FamilySearch
-    <span class="m">1:1:QPLV-G1R4</span> and nine sibling personas on the same record, film
+    <span class="m"><Rec id="ark-1:1:QPLV-G1R4">1:1:QPLV-G1R4</Rec></span> and nine sibling personas on the same record, film
     <span class="m">007897354</span> image <span class="m">00802</span>. Read 13 September 2026.</p>
 </section>
 
@@ -4435,7 +4438,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     again &mdash; and the <em>Remarks</em> column does something this archive has never seen a marriage
     register do.</p>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-huwelijk-1905-pretoria" style="margin:20px 0">
     <img src={u("/docs/huwelijk-1905-pretoria.jpg")} loading="lazy" decoding="async"
          alt="The Pretoria duplicate marriage register sheet for 27 November 1905." />
     <figcaption class="cap"><strong>DUPLICATE ORIGINAL REGISTER &middot; Marriage Solemnized at Pretoria,
@@ -4443,10 +4446,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       three years after the British took the town.</figcaption>
   </figure>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1905-entry-105" style="margin:20px 0">
     <img src={u("/docs/detail-1905-entry-105.jpg")} loading="lazy" decoding="async"
          alt="Entry 105 of the Pretoria marriage register, 27 November 1905: David Schalk Booyzen, 56, Cradock, Cape Colony, widower, of Goede Hoop, Pretoria; Johanna Elena Lowies born Stols, 51, Potchefstroom district, widow, of Skinners Court, Pretoria." />
-    <figcaption class="cap">Entry <strong>105</strong> (RM 524), <em>Duplicate Original Register</em>,
+    <figcaption class="cap"><Rec id="scan-detail-1905-entry-105">Entry <strong>105</strong></Rec> (RM 524), <em>Duplicate Original Register</em>,
       marriage solemnized at Pretoria. Eleven columns, and the last one is what matters.</figcaption>
   </figure>
 
@@ -4466,7 +4469,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </table>
   </div>
 
-  <figure style="margin:22px 0">
+  <figure id="plate-detail-1905-certificate-4795" style="margin:22px 0">
     <img src={u("/docs/detail-1905-certificate-4795.jpg")} loading="lazy" decoding="async"
          alt="The remarks column: Remarriage Certificate from Master Supreme Court No. 4795 dated 4/11/05." />
     <figcaption class="cap"><strong>&ldquo;Remarriage Certificate from Master Supreme Court No. 4795,
@@ -4503,7 +4506,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <a href={u("/errands/")}>What is still to ask &rarr;</a></p>
     <p class="cap">South Africa, Transvaal, Civil Marriages, 1870&ndash;1931 &middot; entry
       <span class="m">105</span>, RM <span class="m">524</span>, reference <span class="m">3149</span>
-      &middot; FamilySearch <span class="m">1:1:QGR1-Q7WY</span>. Solemnized by
+      &middot; FamilySearch <span class="m"><Rec id="ark-1:1:QGR1-Q7WY">1:1:QGR1-Q7WY</Rec></span>. Solemnized by
       <b>J. B. Klopper</b>, minister; witnesses <b>J. P. Stols</b> and <b>A. Vaughan</b>.
       Read 13 September 2026.</p>
   </div>
@@ -4511,16 +4514,16 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="estate-7081">1905 &middot; Estate 7081 &mdash; the other number, and the same address</h2>
-  <p class="dek">The Pretoria marriage register of 27 November 1905 cites <b>two</b> remarriage
+  <p class="dek">The Pretoria <Rec id="plate-huwelijk-1905-pretoria">marriage register</Rec> of 27 November 1905 cites <b>two</b> remarriage
     certificates from the Master, one for each party. <b>4795</b> was David Schalk&rsquo;s and led back to
     his first wife&rsquo;s death notice. This is <b>7081</b>, read entire &mdash; and it is not the
     document this archive expected.</p>
 
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1905-lowies" style="margin:0">
       <img src={u("/docs/death-notice-1905-lowies.jpg")} loading="lazy" decoding="async"
            alt="Death Notice 7081 of 1905 for Charles Petrus Barend Lowies of Goedehoop, Pretoria." />
-      <figcaption class="cap"><strong>Death Notice 7081</strong>, filed <strong>28 October 1905</strong>.
+      <figcaption class="cap"><strong><Rec id="scan-death-notice-1905-lowies">Death Notice</Rec> 7081</strong>, filed <strong>28 October 1905</strong>.
         Under <em>The Administration of Estates Proclamation, 1902</em> &mdash; the same wartime
         proclamation as the Marais notice.</figcaption>
     </figure>
@@ -4550,7 +4553,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">The address</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1905-goedehoop" style="margin:16px 0">
     <img src={u("/docs/detail-1905-goedehoop.jpg")} loading="lazy" decoding="async"
          alt="Line one: Charles Petrus Barend Lowies, of Goedehoop, Pretoria, Transvaal Colony; line two: Dutch, Cradock District, Cape Colony." />
     <figcaption class="cap"><strong>&ldquo;of GOEDEHOOP, Pretoria, Transvaal Colony&rdquo;</strong> &middot;
@@ -4568,7 +4571,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">And where he died</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1905-lunatic-asylum" style="margin:16px 0">
     <img src={u("/docs/detail-1905-lunatic-asylum.jpg")} loading="lazy" decoding="async"
          alt="Question eight: where the person died — House, Lunatic Asylum; Town or place, Pretoria; District, Pretoria District." />
     <figcaption class="cap"><strong>&ldquo;House: Lunatic Asylum. Town or place: Pretoria.&rdquo;</strong>
@@ -4718,7 +4721,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="dek">Three more register images read page by page, and three more graves this family could
     stand at. One of them is the <b>direct line</b>.</p>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-begraafregister-1947-west-park" style="margin:20px 0">
     <img src={u("/docs/begraafregister-1947-west-park.jpg")} loading="lazy" decoding="async"
          alt="Page 54 of the City of Johannesburg register of persons buried at West Park Cemetery, October to December 1947." />
     <figcaption class="cap"><strong>CITY OF JOHANNESBURG &middot; REGISTER OF PERSONS BURIED AT WEST PARK
@@ -4726,7 +4729,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       the page. Sections run GEN, D.R., E.C., R.C. and PAUPER.</figcaption>
   </figure>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1947-grave-2171" style="margin:20px 0">
     <img src={u("/docs/detail-1947-grave-2171.jpg")} loading="lazy" decoding="async"
          alt="The register row: Booyzen, George Downing M., 46, M, 14.12.47, D.R., grave 2171." />
     <figcaption class="cap"><strong>Booyzen, George Downing M. &middot; 46 &middot; M &middot; 14.12.47
@@ -4747,15 +4750,15 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">And a double plot, bought in 1942</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1942-grave-50-51" style="margin:16px 0">
     <img src={u("/docs/detail-1942-grave-50-51.jpg")} loading="lazy" decoding="async"
          alt="The register row: Daschner, Joseph Heinrich, 58, M, 21-4-1942, D.R., grave 50/51, buried in 50, Private Folio 69, memorial by L. Canata and Son." />
     <figcaption class="cap"><strong>Daschner, Joseph Heinrich &middot; 58 &middot; 21-4-1942 &middot; D.R.
-      &middot; 50/51</strong> &mdash; <em>&ldquo;Buried in 50. Private Folio 69.&rdquo;</em> and a
+      &middot; 50/51</strong> &mdash; <em>&ldquo;Buried in 50. Private <Rec id="scan-detail-1942-grave-50-51">Folio 69</Rec>.&rdquo;</em> and a
       memorial by <strong>L. Canata &amp; Son</strong>, monumental masons.</figcaption>
   </figure>
 
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-grave-50-and-51" style="margin:16px 0">
     <img src={u("/docs/detail-grave-50-and-51.jpg")} loading="lazy" decoding="async"
          alt="The consecutive grave-number register: 50 Daschner Joseph H., folio 136; 51 Daschner Catherine M.S., folio 147, braced together." />
     <figcaption class="cap">The consecutive grave-number register, braced as one plot:
@@ -4825,13 +4828,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">Grave 1119, and the page it sits on</h3>
   <div class="grid g2" style="margin:16px 0">
-    <figure style="margin:0">
+    <figure id="plate-detail-1918-grave-1119" style="margin:0">
       <img src={u("/docs/detail-1918-grave-1119.jpg")} loading="lazy" decoding="async"
            alt="The register row: Booyzen Richard Peter, 24, M, 27, D.R., grave 1119." />
       <figcaption class="cap"><strong>Booyzen Richard Peter &middot; 24 &middot; M &middot; 27 &middot;
         D.R. &middot; 1119.</strong></figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-begraafregister-1918-brixton" style="margin:0">
       <img src={u("/docs/begraafregister-1918-brixton.jpg")} loading="lazy" decoding="async"
            alt="Page 58 of the Brixton burial register for 1918, thirty-nine burials of surnames beginning with B between 21 October and 12 November." />
       <figcaption class="cap">Page 58, <strong>1918</strong>.</figcaption>
@@ -4847,7 +4850,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     looks like in a ledger.
   </div>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1916-grave-2951" style="margin:20px 0">
     <img src={u("/docs/detail-1916-grave-2951.jpg")} loading="lazy" decoding="async"
          alt="The register row: Booyzen John Barry, 2 years, M, 28 December, D.R., grave 2951." />
     <figcaption class="cap"><strong>Booyzen John Barry &middot; 2 &middot; M &middot; 28 &middot; D.R.
@@ -4856,14 +4859,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:34px">Two children who were not stillborn</h3>
   <div class="grid g2" style="margin-top:16px">
-    <figure style="margin:0">
+    <figure id="plate-detail-1914-grave-2472" style="margin:0">
       <img src={u("/docs/detail-1914-grave-2472.jpg")} loading="lazy" decoding="async"
            alt="The register row: Booyzen Anna J. Mary, 6 months, F, 23 January, D.R., grave 2472, Private." />
       <figcaption class="cap"><strong>Booyzen Anna J. Mary &middot; 6 &middot; F &middot; 23 &middot; D.R.
         &middot; 2472 &middot; Private.</strong> The <b>6</b> sits in the <em>Months</em> column, not
         Years.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-detail-1925-grave-4410" style="margin:0">
       <img src={u("/docs/detail-1925-grave-4410.jpg")} loading="lazy" decoding="async"
            alt="The register row: Daschner George Downing, 3 months 5 days, M, 20 June, D.R., grave 4410." />
       <figcaption class="cap"><strong>Daschner George Downing &middot; 3 &middot; 5 &middot; M &middot;
@@ -4882,11 +4885,11 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:36px">And one that is not in Johannesburg at all</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-begraafregister-1959-roodepoort" style="margin:16px 0">
     <img src={u("/docs/begraafregister-1959-roodepoort.jpg")} loading="lazy" decoding="async"
          alt="A torn page headed Municipality of Roodepoort-Maraisburg, Register of Persons Buried at the Central Cemetery, with entry 96 Booysen Hendrik Stephanus Nicolaas, 77, 12.10.59, Sek I DR." />
     <figcaption class="cap"><strong>MUNICIPALITY OF ROODEPOORT&ndash;MARAISBURG &middot; REGISTER OF
-      PERSONS BURIED AT THE CENTRAL CEMETERY.</strong> Entry <strong>96</strong>: Booysen Hendrik
+      PERSONS BURIED AT THE CENTRAL CEMETERY.</strong> <Rec id="scan-begraafregister-1959-roodepoort">Entry <strong>96</strong></Rec>: Booysen Hendrik
       Stephanus Nicolaas, 77, 12.10.59, Sek I D.R. The page is torn across and the grave-number column is
       on the piece that is gone.</figcaption>
   </figure>
@@ -4900,12 +4903,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:36px">Henry James, in full</h3>
   <div class="grid g2" style="margin:16px 0">
-    <figure style="margin:0">
+    <figure id="plate-detail-1956-grave-7110" style="margin:0">
       <img src={u("/docs/detail-1956-grave-7110.jpg")} loading="lazy" decoding="async"
            alt="Entry 163: Booyzen Henry James, grave 7110/1, D.R., M, 69, address at time of death Florence Nightingale Nursing Home, usual residence 3 15th Ave Mayfair." />
-      <figcaption class="cap">Entry <strong>163</strong>, City of Johannesburg Cemetery register.</figcaption>
+      <figcaption class="cap"><Rec id="scan-detail-1956-grave-7110">Entry <strong>163</strong></Rec>, City of Johannesburg Cemetery register.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-detail-1956-cause-of-death" style="margin:0">
       <img src={u("/docs/detail-1956-cause-of-death.jpg")} loading="lazy" decoding="async"
            alt="The right-hand page: date of death 8-12-56, cause coronary pulmonary sclerosis, burial order 5013 dated 11-12-56." />
       <figcaption class="cap">The right-hand page carries <em>date of death</em>, <em>cause of death</em>
@@ -6217,7 +6220,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <p class="note" style="margin-top:18px"><b>One genuinely new name, and it is tree-only.</b>
     FamilySearch gives <b>Margaret Downing&rsquo;s mother as MARY KING POOLEY, 1768&ndash;1834</b>, and
-    her father as John Paul Downing, 1765&ndash;1839. <b>Margaret&rsquo;s own death notice of 1867 says
+    her father as John Paul Downing, 1765&ndash;1839. <b>Margaret&rsquo;s own <Rec id="plate-downing-death-notice-1867">death notice of 1867</Rec> says
     her parents were &ldquo;Both dead&rdquo; and gives no names at all</b>, so this archive has never had
     a mother for her. <b>It still does not.</b> But it now has a name to look for in the London
     registers, which is not nothing &mdash; and a Downing&ndash;Pooley marriage in the 1790s would be a
@@ -6542,8 +6545,8 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <p class="cap" style="margin-top:14px"><b>A near-miss worth recording, because it nearly went the
     other way.</b> A first pass matched <em>Rachel Margarita Marais</em> against this archive and
     reported her as already held. She is not. The match was on the fragment <em>&ldquo;Rachel
-    Marg&rdquo;</em> hitting <b>Rachel Margaretha Williamse</b>, a different woman on a 1900 death
-    notice at Pretoria. <b>Had it stood, an unrelated Indwe household would have been welded to this
+    Marg&rdquo;</em> hitting <b>Rachel Margaretha Williamse</b>, a different woman on a <Rec id="plate-death-notice-1900-elizabetha-marais">1900 death
+    notice</Rec> at Pretoria. <b>Had it stood, an unrelated Indwe household would have been welded to this
     family on three letters of a forename.</b></p>
 </section>
 
@@ -7251,12 +7254,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     great deal stronger, and it <b>kills the best theory this archive had</b> about his mother.</p>
 
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-sterfgeval-1918-richard-peter" style="margin:0">
       <img src={u("/docs/sterfgeval-1918-richard-peter.jpg")} loading="lazy" decoding="async"
            alt="Form of Information of a Death, 1918: Richard Peter Booyzen, 24, of 18 Anderson Street, Turffontein, European, born Cape of Good Hope, married, died of influenza and pneumonia." />
       <figcaption class="cap"><strong>Form of Information of a Death</strong>, Ordinance 19 of 1906
         (Transvaal), no. <span class="m">11487</span>. Registered at Johannesburg
-        <strong>27 October 1918</strong>, entry <span class="m">4983</span>.</figcaption>
+        <strong>27 October 1918</strong>, <Rec id="scan-sterfgeval-1918-richard-peter">entry <span class="m">4983</span></Rec>.</figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">The form, as completed</h3>
@@ -7279,7 +7282,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1918-influenza-pneumonia" style="margin:20px 0">
     <img src={u("/docs/detail-1918-influenza-pneumonia.jpg")} loading="lazy" decoding="async"
          alt="Lines five to eleven: European, born C. of G. Hope; Married; Occupation Sawyer; died twenty-fifth October 1918; causes of death influenza and pneumonia; duration eleven days." />
     <figcaption class="cap"><strong>&ldquo;C. of G. Hope&rdquo; &middot; &ldquo;Married&rdquo; &middot;
@@ -7361,7 +7364,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     at <b>Grahamstown</b> &mdash; which is exactly how a record hides.</p>
 
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1915-margaretha-kolbe" style="margin:0">
       <img src={u("/docs/death-notice-1915-margaretha-kolbe.jpg")} loading="lazy" decoding="async"
            alt="Death Notice 1291 of 1915 for Margaret Louisa Elizabeth Barry, born Kolbe, of Manorowen, Barkly East." />
       <figcaption class="cap">Form 52C, stamped <strong>25 May 1915</strong>. The left-hand page is the
@@ -7392,7 +7395,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:20px 0">
+  <figure id="plate-detail-1915-kolbe-parents" style="margin:20px 0">
     <img src={u("/docs/detail-1915-kolbe-parents.jpg")} loading="lazy" decoding="async"
          alt="Questions one to three: Margaret Louisa Elizabeth Barry born Kolbe; Believe Colesberg District, Afrikander of European extraction; father Kolbe, thinks James was Christian name; mother Unknown." />
     <figcaption class="cap"><strong>&ldquo;Afrikander of European extraction&rdquo;</strong> &middot;
@@ -7402,7 +7405,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </figure>
 
   <h3 style="margin-top:34px">Nine children, and one of them is new</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1915-nine-children" style="margin:16px 0">
     <img src={u("/docs/detail-1915-nine-children.jpg")} loading="lazy" decoding="async"
          alt="Question ten of the 1915 notice: John, James, Henry, George, Frederick, William, Catharina, Margaret, and Richard Peter — all majors." />
     <figcaption class="cap">Question ten, entire. <strong>John &middot; Richard Peter &middot; James
@@ -7441,7 +7444,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <h3 style="margin-top:34px">And two things the family had lost</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1915-john-barry-1904" style="margin:16px 0">
     <img src={u("/docs/detail-1915-john-barry-1904.jpg")} loading="lazy" decoding="async"
          alt="Question seven: name and date of death of previous spouse — John Barry in August 1904; place of last marriage, Unknown; died 2nd August 1912 at the house of son R. P. Barry, Manorowen, Barkly East." />
     <figcaption class="cap"><strong>&ldquo;John Barry in August 1904&rdquo;</strong> &middot;
@@ -7457,7 +7460,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       either.</b> Her father is <em>&ldquo;Kolbe, thinks James was Christian name&rdquo;</em>; her mother
       is <em>&ldquo;Unknown&rdquo;</em>, when the archive knows both names stand cut into a gravestone at
       Burgersdorp. <a href={u("/disputed/")}>What that is worth &rarr;</a></p>
-    <figure style="margin:20px 0">
+    <figure id="plate-detail-1915-nothing-at-all" style="margin:20px 0">
       <img src={u("/docs/detail-1915-nothing-at-all.jpg")} loading="lazy" decoding="async"
            alt="Questions eleven to fourteen: no movable property, no immovable property, estate Nil, no will; signed R. P. Barry, son in whose house deceased died." />
       <figcaption class="cap"><strong>No &middot; No &middot; Nil &middot; No.</strong> And the capacity
@@ -7500,7 +7503,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     clerk erred, and the 1866 entry gives the mother a surname this archive cannot read as Kolbe.</p>
 
   <h3 style="margin-top:34px">Entry 2187, and the entry above it</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-doopregister-1853-burgersdorp" style="margin:16px 0">
     <img src={u("/docs/doopregister-1853-burgersdorp.jpg")} loading="lazy" decoding="async"
          alt="A double page of the Burgersdorp Dutch Reformed baptism register for 1853, entries 2184 to 2192." />
     <figcaption class="cap"><strong>Het Jaar 1853.</strong> Nine baptisms to the opening, each one set out
@@ -7508,7 +7511,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <em>getuigen</em> who stood for it.</figcaption>
   </figure>
 
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1853-two-sisters" style="margin:16px 0">
     <img src={u("/docs/detail-1853-two-sisters.jpg")} loading="lazy" decoding="async"
          alt="Entries 2186 and 2187 of the Burgersdorp baptism register, 23 October 1853: Augustus Kolbe, son of George Fredk Enslin and Mary Elizabeth Kolbe; and William Fredrik, son of John Barry and Margareth Kolbe." />
     <figcaption class="cap">Two entries, one page, one afternoon &mdash; <strong>23 October 1853</strong>.</figcaption>
@@ -7550,7 +7553,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <div class="prose" style="margin-top:22px">
-    <p><b>And it puts them at Burgersdorp.</b> The 1915 death notice says the marriage was at
+    <p><b>And it puts them at Burgersdorp.</b> The <Rec id="plate-death-notice-1915-john-barry">1915 death notice</Rec> says the marriage was at
       <em>&ldquo;Burghersdorp (probably)&rdquo;</em> &mdash; a son guessing, sixty-five years on, at
       something nobody had told him. They were baptising a child in that church in 1853, and the
       godparents were her own brothers. The guess was right.</p>
@@ -7618,8 +7621,8 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="barry-eleven">1847&ndash;1863 &middot; The two missing Barry children, found &mdash; and an API that lies by wrapping</h2>
-  <p class="dek">Open question 13 has been on this site since it was written: the 1903 death
-    registration says John Augustus Barry left <b>eleven</b> children, his own death notice names
+  <p class="dek">Open question 13 has been on this site since it was written: the <Rec id="plate-death-registration-1903-john-barry">1903 death
+    registration</Rec> says John Augustus Barry left <b>eleven</b> children, his own death notice names
     <b>eight</b>, his wife&rsquo;s names <b>nine</b>, and two have never been identified. The question&rsquo;s
     own note said the index route was closed. <b>It was closed to a name search. It was never closed to
     a relationship search.</b></p>
@@ -7660,7 +7663,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       <h3 style="margin-top:0">And the count comes right</h3>
       <p><b>Nine baptisms in the registers, plus Hendrik Nicholaas and Richard Peter</b> &mdash; both
         named on their parents&rsquo; death notices and in no register this archive can find &mdash;
-        <b>makes eleven</b>, which is exactly the number the 1903 death registration gives.</p>
+        <b>makes eleven</b>, which is exactly the number the <Rec id="plate-death-registration-1903-john-barry">1903 death registration</Rec> gives.</p>
       <p><b>Margaret Mary</b>, named on the death notices and never placed, is almost certainly
         <b>Margrith Louisa Maria</b>: it is her mother&rsquo;s name, and there is no other candidate in
         the sibling group. <span class="chip inf">Inferred from the count and the name</span></p>
@@ -7676,7 +7679,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <span class="m">3:1:3Q9M-CSVC-XPSY</span> and <span class="m">3:1:3Q9M-CSFQ-QLQN</span> &mdash; the
     second of which is on <b>film 008039088</b>, the Burgersdorp register this archive has been sweeping
     by hand. William Frederick Thomas: <span class="m">1:1:623R-9MM9</span> and
-    <span class="m">1:1:62GJ-SD8Z</span>, images <span class="m">3:1:3Q9M-CSK6-9S81-J</span> and
+    <span class="m">1:1:62GJ-SD8Z</span>, images <span class="m"><Rec id="ark-3:1:3Q9M-CSK6-9S81">3:1:3Q9M-CSK6-9S81</Rec>-J</span> and
     <span class="m">3:1:3Q9M-CSVD-5VNZ</span>. <b>Each child is indexed twice, and neither index pass
     agrees with the other about the spelling.</b></p>
 
@@ -8041,7 +8044,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       </tbody>
     </table>
   </div>
-  <p class="cap" style="margin-top:14px"><b>Margaret Downing signed her marriage allegation with a
+  <p class="cap" style="margin-top:14px"><b>Margaret Downing signed her <Rec id="plate-kolbe-marriage-allegation-1819">marriage allegation</Rec> with a
     mark in 1819</b>, aged fifteen, swearing she was twenty-one. A hundred and thirty years later women
     in three provinces were being christened with the whole of her name.
     <a href={u("/namesakes/")}>Namesakes &rarr;</a></p>
@@ -8103,8 +8106,8 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <p style="margin-top:16px"><b>This archive has been running a father and a son together.</b> The entry
     here reads &ldquo;Willem Hermanus Pieterzen &mdash; Anna Catharina Slier&rsquo;s first husband&rdquo;,
-    built out of two documents that spell him differently: the 1817 marriage register, which calls him
-    <em>Harmanus Pieterze</em>, and the 1840 death notice, which calls him <em>William Pietersen</em>.
+    built out of two documents that spell him differently: the <Rec id="plate-marriage-register-1817-graaff-reinet">1817 marriage register</Rec>, which calls him
+    <em>Harmanus Pieterze</em>, and the <Rec id="plate-death-notice-1840-james-montjoy">1840 death notice</Rec>, which calls him <em>William Pietersen</em>.
     Two spellings looked like one man with a long name. <b>They are two men.</b> The husband is
     <b>Hermanus</b>, married on 5 April 1807. <b>Willem Hermanus is his son</b>, baptised 12 March 1809
     &mdash; and this archive already half knew it, because its own note says the 1851 godfather who
@@ -8557,8 +8560,8 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="question-zero">Question 0, answered by two people who own the book this archive does not</h2>
-  <p class="dek">The oldest open question on this site is one line of one form. The 1876 Rustenburg
-    Sterfkennis of Petrus Jacobus Booijsen names his father <b>Gerthardus L&ouml;dewikus Booijsen</b>,
+  <p class="dek">The oldest open question on this site is one line of one form. The <Rec id="plate-sterfkennis-1876-petrus-jacobus">1876 Rustenburg
+    Sterfkennis</Rec> of Petrus Jacobus Booijsen names his father <b>Gerthardus L&ouml;dewikus Booijsen</b>,
     and the printed Cape genealogy of 1893 names him <b>Jan</b>. One of them is wrong, and this archive
     could not say which without a book it has never seen.</p>
 
@@ -9041,13 +9044,13 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <div class="panel">
       <h3 style="margin-top:0">And which JGL Booyzen &mdash; not answered</h3>
       <p>This archive holds two men of those initials. <b>Jan Gerthardus Lodewikus Booijsen</b>, fifth of
-        the eight children on the 1876 Sterfkennis, born district Graaff-Reinet about 1818, <b>died on
+        the eight children on the <Rec id="plate-sterfkennis-1876-petrus-jacobus">1876 Sterfkennis</Rec>, born district Graaff-Reinet about 1818, <b>died on
         the farm Vaalbank in the district of Lichtenburg on 25 May 1885</b> &mdash; so he is thirteen
         years dead and cannot be this man. His nephew and namesake <b>Jan Gerhardus Lodewicus Booysen,
         born 4 December 1855</b>, seventh on the 1863 list, is a man of whom this archive has said for
         months that <b>nothing is known of what became of him</b>. In 1898 he would be forty-two.</p>
       <p><b>That is a candidate and not an identification.</b> Marico adjoins Lichtenburg, this family is
-        documented in Marico from the 1892 Zeerust marriage, and Jan Gerhardus Lodewicus is the name at
+        documented in Marico from the <Rec id="plate-huwelijk-1892-zeerust">1892 Zeerust marriage</Rec>, and Jan Gerhardus Lodewicus is the name at
         the top of this line. It is also one of the commonest name-strings in the whole surname. The
         index line gives initials, a farm and a post office, and no more. <b>Recorded open.</b></p>
     </div>
@@ -9285,14 +9288,14 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </div>
 
   <div class="grid g2" style="margin-top:22px">
-    <figure style="margin:0">
+    <figure id="plate-evangelical-magazine-1833-p411-kolbe-journal" style="margin:0">
       <img src={u("/docs/evangelical-magazine-1833-p411-kolbe-journal.jpg")} loading="lazy" decoding="async"
            alt="Page 411 of the Missionary Chronicle for 1833, carrying the February to May entries of Kolbe's journal." />
       <figcaption class="cap"><b>p. 411</b> &mdash; the heifers and the whipping, the chapel opened on
         1 April 1832 with a hundred left standing in the street, and the children singing in the
         waggon.</figcaption>
     </figure>
-    <figure style="margin:0">
+    <figure id="plate-evangelical-magazine-1833-p412-kolbe-journal" style="margin:0">
       <img src={u("/docs/evangelical-magazine-1833-p412-kolbe-journal.jpg")} loading="lazy" decoding="async"
            alt="Page 412 of the Missionary Chronicle for 1833, ending with the founding of the Temperance Society." />
       <figcaption class="cap"><b>p. 412</b> &mdash; the Veld-Cornet riding in for medical advice, Captain
@@ -9818,9 +9821,9 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   <div class="grid g2" style="margin-top:20px">
     <div class="panel">
       <h3 style="margin-top:0">Elizabetha van der Merwe&rsquo;s marriage</h3>
-      <p>The second wife of Petrus Jacobus Booysen (1788&ndash;1876), named on her son&rsquo;s 1908 death
-        notice. If the marriage could be dated it would <b>split the eight children of the 1876
-        Sterfkennis between two mothers</b> instead of leaving all eight under a printed warning.
+      <p>The second wife of Petrus Jacobus Booysen (1788&ndash;1876), named on her son&rsquo;s <Rec id="plate-death-notice-1908-hendrik-stephanus">1908 death
+        notice</Rec>. If the marriage could be dated it would <b>split the eight children of the <Rec id="plate-sterfkennis-1876-petrus-jacobus">1876
+        Sterfkennis</Rec> between two mothers</b> instead of leaving all eight under a printed warning.
         <b>Searched</b>: Booysen &times; van der Merwe marriages across all South African collections;
         Elizabeth van der Merwe with a Booysen spouse; the Cape registers 1820&ndash;1835.
         <b>Nothing.</b> Every Booysen&ndash;van der Merwe marriage the indexes carry is twentieth
@@ -9829,7 +9832,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     <div class="panel">
       <h3 style="margin-top:0">The four remaining 1876 children</h3>
       <p><b>David Schalk</b>, <b>Magdalena Johanna</b>, <b>Anna Eliezabet</b>, <b>Eliezabet Cornelia</b>
-        and <b>Anna Maria Booijsen</b> &mdash; five of the eight on the 1876 Sterfkennis with no document
+        and <b>Anna Maria Booijsen</b> &mdash; five of the eight on the <Rec id="plate-sterfkennis-1876-petrus-jacobus">1876 Sterfkennis</Rec> with no document
         of their own. <b>Still none.</b> The Transvaal probate index carries nobody of those names who
         can be tied to this family, and the Cape index carries too many. The three that <em>were</em>
         settled today &mdash; Petrus Jacobus, Jan Gerthardus Lodewikus and Hendrik Stefanus &mdash; were
@@ -9863,12 +9866,12 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <h3 style="margin-top:28px">1 &middot; Whose son was Stephanus Francois Booyzen?</h3>
   <p>He sits on this site as a son of <b>Petrus Jacobus Booysen</b> and his second wife
-    <b>Johanna Margaritha Pretorius</b>, placed there <b>on his birth date alone</b> because his own 1940
-    Sterfkennis names neither parent &mdash; his widow wrote <em>oorlede</em> for both. Then the 1900
-    death notice of Elizabetha Margaretha Marais named a <b>Stephanus François Booijzen</b> as a son of
+    <b>Johanna Margaritha Pretorius</b>, placed there <b>on his birth date alone</b> because his own <Rec id="plate-sterfkennis-1940-stephanus-francois">1940
+    Sterfkennis</Rec> names neither parent &mdash; his widow wrote <em>oorlede</em> for both. Then the <Rec id="plate-death-notice-1900-elizabetha-marais">1900
+    death notice</Rec> of Elizabetha Margaretha Marais named a <b>Stephanus François Booijzen</b> as a son of
     <b>DAVID SCHALK BOOIJZEN</b>, and the dispute opened.</p>
 
-  <figure style="margin:18px 0">
+  <figure id="plate-huwelijk-1905-mosselbaai" style="margin:18px 0">
     <img src={u("/docs/huwelijk-1905-mosselbaai.jpg")} loading="lazy" decoding="async"
          alt="The Mossel Bay duplicate marriage register sheet for 5 September 1905, one entry to the page." />
     <figcaption class="cap"><strong>DUPLICAAT ORIGINEEL REGISTER &middot; Huwelijk bevestigd te
@@ -9876,10 +9879,10 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
       the whole difficulty.</figcaption>
   </figure>
 
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1905-woonplaats-pretoria" style="margin:18px 0">
     <img src={u("/docs/detail-1905-woonplaats-pretoria.jpg")} loading="lazy" decoding="async"
          alt="Entry 1318 of the Mossel Bay marriage register, 5 September 1905: Stefanus Francois Booyzen, 30, jonkman, metselaar, woonplaats Pretoria; Beatrix Magdalena Catharina Boshoff, 16, jongdochter, of Mosselbaai, parents consenting." />
-    <figcaption class="cap">Entry <strong>1318</strong>, <em>Duplicaat Origineel Register</em>,
+    <figcaption class="cap"><Rec id="scan-detail-1905-woonplaats-pretoria">Entry <strong>1318</strong></Rec>, <em>Duplicaat Origineel Register</em>,
       Mosselbaai, <strong>5 September 1905</strong>.</figcaption>
   </figure>
 
@@ -9949,7 +9952,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
   <p class="cap" style="margin-top:16px">Marriage: South Africa, Civil Marriage Records, 1801&ndash;1974
     &middot; Mosselbaai certificate <span class="m">1318</span>, FamilySearch
-    <span class="m">1:1:6ZH5-CQZW</span>. Oliviers: Dutch Reformed Church Registers (Cape Town Archives)
+    <span class="m"><Rec id="ark-1:1:6ZH5-CQZW">1:1:6ZH5-CQZW</Rec></span>. Oliviers: Dutch Reformed Church Registers (Cape Town Archives)
     &middot; <span class="m">1:1:62V5-DRCK</span> (marriage, image unavailable),
     <span class="m">1:1:6LXQ-ZMNM</span>, <span class="m">1:1:6KRL-Q4H7</span>,
     <span class="m">1:1:6KRN-K37Y</span>, <span class="m">1:1:6LX3-J5WM</span>.
@@ -9973,7 +9976,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     shown the top of this page for weeks and quoted four lines from it. The children's list is further
     down, and it contradicts this site in two places.</p>
   <div class="grid g2" style="margin:20px 0">
-    <figure style="margin:0">
+    <figure id="plate-death-notice-1915-john-barry-full" style="margin:0">
       <img src={u("/docs/death-notice-1915-john-barry-full.jpg")} loading="lazy" decoding="async"
            alt="The full 1915 death notice for John Barry, estate 925, showing the list of eight children." />
       <figcaption class="cap">Dated Barkly East, <strong>29 March 1915</strong>. Signed
@@ -9998,7 +10001,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
   </div>
 
-  <figure style="margin:18px 0">
+  <figure id="plate-detail-1915-kolbe-died-1912" style="margin:18px 0">
     <img src={u("/docs/detail-1915-kolbe-died-1912.jpg")} loading="lazy" decoding="async"
          alt="Question seven: Margaret Wilhelmina Elizabeth Barry born Kolbe, died 2nd August 1912, in community." />
     <figcaption class="cap"><strong>"died 2nd August 1912."</strong> This archive has carried her death
@@ -10006,7 +10009,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
   </figure>
 
   <h3 style="margin-top:30px">Eight children, where the registration said eleven</h3>
-  <figure style="margin:16px 0">
+  <figure id="plate-detail-1915-eight-children" style="margin:16px 0">
     <img src={u("/docs/detail-1915-eight-children.jpg")} loading="lazy" decoding="async"
          alt="Question ten of the 1915 notice, listing eight children of John Barry." />
     <figcaption class="cap">Question ten, entire.</figcaption>
@@ -10433,7 +10436,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
         GRO index vol AZ, 840, p.16.</p>
       <p><b>&ldquo;Ford&rdquo; is Matilda&rsquo;s maiden name</b>, carried as a forename in the way
         families did carry them, and there is no other Ford anywhere near this family. <b>She is very
-        probably John Henry and Matilda&rsquo;s daughter</b>, born after the 1819 marriage and married
+        probably John Henry and Matilda&rsquo;s daughter</b>, born after the <Rec id="plate-kolbe-marriage-entry-1819">1819 marriage</Rec> and married
         fifteen years after her father died.</p>
       <p class="note" style="margin-top:10px">That is an inference from a forename and it is written down
         as one. <b>The certificate would settle it, and it has not been ordered.</b></p>
@@ -10499,7 +10502,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
 
 <section class="blk">
   <h2 id="church-street-south">1800&ndash;1845 &middot; Not Brunswick Square: a tailor rated in Soho for thirty-one years</h2>
-  <p class="dek">An 1844 obituary puts the family at <b>Brunswick-square</b>. His own 1842 will and 1845
+  <p class="dek">An 1844 obituary puts the family at <b>Brunswick-square</b>. His own <Rec id="src-will-of-john-gottlob-kolbe-1842">1842 will</Rec> and 1845
     death put him in <b>Conduit Street</b>, off Bond Street. Those are different parts of London and this
     archive could not choose between them. It has been waiting for a trade directory. What decided it was
     a <b>rate book</b> &mdash; the list of who paid the parish rates, house by house, year after year.</p>
@@ -10647,7 +10650,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </div>
     <div class="panel">
       <h3 style="margin-top:0">4 &middot; No Cork baptism for a Barry born to a Neagle</h3>
-      <p>John Augustus Barry&rsquo;s 1903 death registration, made by a son who was in the room, answers
+      <p>John Augustus Barry&rsquo;s <Rec id="plate-death-registration-1903-john-barry">1903 death registration</Rec>, made by a son who was in the room, answers
         <em>Irishman born in Ireland</em> and gives his mother only as <b>&ldquo;born Neagle&rdquo;</b>.
         The family says County Cork. He was 84 years 2 months, so born about November 1818.</p>
       <p><b>The controls.</b> Irish Roman Catholic baptisms in Cork <b>for 1818 alone: 12,273</b>. John
@@ -10690,7 +10693,7 @@ const toc = [...src.matchAll(/<h2 id="([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/h2>/g)]
     </table>
   </div>
   <p style="margin-top:16px">Five further images already downloaded from Willem Hermanus's and George's
-    profiles are not yet read (the <strong>1851 baptism</strong> has since been read, above, from the
+    profiles are not yet read (the <strong><Rec id="plate-baptism-register-1851">1851 baptism</Rec></strong> has since been read, above, from the
     archive scan): the <strong>1891 birth</strong> of
     Catherine Mary Sophia, a <strong>Johanna Catharina birth</strong> entry, the
     <strong>Anna–George marriage certificate</strong>, and two further pages of death information.</p>

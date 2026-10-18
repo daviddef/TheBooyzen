@@ -1,0 +1,18 @@
+---
+/* <Rec id="plate-death-notice-1915-john-barry">1915 death notice</Rec>
+ *
+ * The kit's Rec with this archive's records table (src/data/records.json, made by tools/build_records.py from the pages and
+ * data) already passed to it. The text between the tags is the citation the author wrote, word for word; this only gives
+ * those words the link to the record, so a reader who meets "the 1915 death notice" can go to it (L3 of the linking standard).
+ *
+ *   id     a row of the table: plate-<stem> (the figure on /documents/), scan-<stem> (the scan itself), src-<id>
+ *          (/sources/), ark-<FamilySearch id>, film-<number>
+ *
+ * An id the table does not hold STOPS THE BUILD: a link that is a guess is worse than no link. No scan is ever drawn from here:
+ * the table has no `plate`/`show` fields, so the `thumb` prop is not passed on (David has not ruled on MyHeritage terms).
+ */
+import KitRec from "@daviddef/archive-kit/components/Rec.astro";
+import records from "../data/records.json";
+const { id } = Astro.props;
+---
+<KitRec records={records} id={id}><slot /></KitRec>
