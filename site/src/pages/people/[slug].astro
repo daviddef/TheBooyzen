@@ -25,6 +25,9 @@ import cw from "../../data/corrections-who.json";
 const ckey = (r) => r[0] + " | " + String(r[1]).slice(0, 80);
 import { treeFor, resolve } from "../../lib/kin.js";
 import { livingBySlug, STANDARD } from "../../lib/living.js";
+import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
+import { eraAt, plainYear } from "@daviddef/archive-kit/lib/era.js";
+import eraSnapshot from "../../data/era-snapshot.json";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
@@ -70,6 +73,18 @@ const marrOf = (self) => mg.rows
   .filter((x) => keyOf(x.H) === keyOf(self) || keyOf(x.W) === keyOf(self))
   .map((x) => ({ ...x.r, spouse: keyOf(x.H) === keyOf(self) ? x.W : x.H }))
   .sort((a, b) => (a.ds < b.ds ? -1 : 1));
+/* AN «AT THE TIME» NOTE beside a dated place (kit/docs/era-notes.md; David, 18 October 2026): who held that ground in that year,
+ * from the Record Atlas's REGION eras, as this archive committed them (src/data/era-snapshot.json, rebuilt deliberately by
+ * tools/build_era.py --snapshot; the place -> region table is data/era-ground.tsv). Context about the ground, never a claim about
+ * the family, and it says where it came from.
+ *
+ * The only place this page prints beside a date is the place of a MARRIAGE RECORD above; the lifespan carries years and no place.
+ * The year is the one the record holds (ds), and plainYear refuses it unless the whole date as printed is a plain one («9 March
+ * 1817», «1805»): «bef. 1828» gives no note, and eraAt gives none for a year on an era's edge, a place with no region, a town near
+ * its region's edge or an era the Atlas calls shorthand.
+ * NEVER on a living person's page: the branch above draws none of this for them, and the build gate check:era fails a note found
+ * on a living, held-out or noindex page. */
+const eraOf = (m) => LV || !m.p ? null : eraAt(eraSnapshot, m.p, plainYear(m.d, Number(String(m.ds).slice(0, 4)) || null));
 const byPage = {};
 for (const h of p.hits) (byPage[h.page] ||= { title: h.title, hits: [] }).hits.push(h);
 const groups = Object.entries(byPage);
@@ -117,6 +132,7 @@ const groups = Object.entries(byPage);
             <p style="margin:0 0 13px;font-size:15px;line-height:1.62">
               <b>Married {m.spouse.n}</b><span class="m">{" \u00b7 " + m.d + " \u00b7 " + m.p}</span>{" "}
               <span class={"chip " + (m.via === "doc" ? "doc" : m.via === "tree" ? "lore" : m.via)}>{VIA[m.via] || m.via}</span>
+              <EraNote era={eraOf(m)} />
               {m.n && <span class="cap" style="display:block;margin-top:5px" set:html={md(m.n)} />}
               {m.src && <a class="plink" href={u(m.src[1])} style="display:inline-block;margin-top:7px">{m.src[0]} &rarr;</a>}
             </p>

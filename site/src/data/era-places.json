@@ -1,0 +1,56 @@
+{
+ "_about": "Built by tools/build_era.py from data/era-ground.tsv and data/era-towns.tsv. Place as printed -> {region, lat, lon}, or null where no Atlas region covers it. Read by kit erasnap.py.",
+ "places": {
+  "Bloemfontein": {
+   "lat": -29.085,
+   "lon": 26.159,
+   "region": "orange-free-state"
+  },
+  "Caerlaverock, Barkly Oost": {
+   "lat": -31.1,
+   "lon": 27.1,
+   "region": "cape"
+  },
+  "Colesberg": null,
+  "Cradock": {
+   "lat": -32.164,
+   "lon": 25.619,
+   "region": "cape"
+  },
+  "Dordrecht": {
+   "lat": -31.372,
+   "lon": 27.041,
+   "region": "cape"
+  },
+  "Graaff-Reinet": {
+   "lat": -32.252,
+   "lon": 24.533,
+   "region": "cape"
+  },
+  "Indwe": null,
+  "Lady Grey": null,
+  "London": {
+   "lat": 51.51,
+   "lon": -0.13,
+   "region": "england"
+  },
+  "Middelburg, Cape": {
+   "lat": -31.494,
+   "lon": 25.01,
+   "region": "cape"
+  },
+  "Orange Free State": {
+   "region": "orange-free-state"
+  },
+  "St Joseph's, Mayfair": {
+   "lat": -26.204,
+   "lon": 28.006,
+   "region": "transvaal"
+  },
+  "Vereeniging": {
+   "lat": -26.673,
+   "lon": 27.928,
+   "region": "transvaal"
+  }
+ }
+}

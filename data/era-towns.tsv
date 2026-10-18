@@ -1,0 +1,16 @@
+# Where each town named in data/era-ground.tsv is, for ONE purpose: tools/build_era.py hands the point to the kit's erasnap.py, which
+# REFUSES a place whose point falls inside a DIFFERENT region's ring than the one it was given, or within 15 km of its own region's
+# ring edge (the Atlas's rings are 4-13 vertex shapes, "approximate by design"). It decides nothing else: the region of a place is the
+# row in era-ground.tsv.
+# how: «places.json» = the point this archive's own places data (site/src/data/places.json) holds for the place, to three decimals;
+# «hand» = the centre of the town to two decimals, written by hand for this file (a cross-check, never a boundary).
+town	lat	lon	how
+Bloemfontein	-29.085	26.159	places.json
+Caerlaverock	-31.1	27.1	places.json (approximate: the farm)
+Cradock	-32.164	25.619	places.json
+Dordrecht	-31.372	27.041	places.json
+Graaff-Reinet	-32.252	24.533	places.json
+London	51.51	-0.13	hand
+Mayfair	-26.204	28.006	places.json
+Middelburg	-31.494	25.01	places.json
+Vereeniging	-26.673	27.928	places.json

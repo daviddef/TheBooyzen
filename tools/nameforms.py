@@ -29,8 +29,18 @@ AUTOLINK = re.compile(r'<a href="[^"]*" data-autolink>(.*?)</a>', re.S)
 RECLINK = re.compile(r'<a class="lk-rec"[^>]*>(.*?)</a>', re.S)
 
 
+# The «at the time» note the kit's EraNote draws beside a dated place (EraNote.astro, kit/lib/era.js renderEra): one span carrying data-era, holding the
+# prefix span, the label span and the source (a link, or a span). It says what the Record Atlas holds about the ground, not what the page says, so
+# these tools take it out whole: a person page reads the same with the note or without it, and nothing they write (an excerpt, a search row, a
+# fenced-name phrase) can quote it. Matched on its whole shape, so a change in the kit's markup makes it stop matching (check:era then finds the
+# note, and the dossiers and the search index change visibly) rather than quietly leave the words in.
+ERANOTE = re.compile(r'<span class="era-note" data-era="[^"]*" data-era-year="[^"]*"(?: data-era-boundary="1")?>'
+                     r'<span class="era-pre">[^<]*</span><span class="era-lab">[^<]*</span> '
+                     r'(?:<a class="era-src" [^>]*>[^<]*</a>|<span class="era-src">[^<]*</span>)</span>')
+
+
 def unlink(html):
-    return RECLINK.sub(r"\1", AUTOLINK.sub(r"\1", html))
+    return ERANOTE.sub("", RECLINK.sub(r"\1", AUTOLINK.sub(r"\1", html)))
 
 
 def make(people):

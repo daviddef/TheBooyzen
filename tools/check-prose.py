@@ -75,6 +75,8 @@ GENERATED = {
     "corrections-who.json",    # tools/correctionswho.py
     "decisions.json",          # recomputed by tools/check-decisions.py (also excluded by the kit's defaults)
     "dossiers.json",           # tools/dossiers.py
+    "era-places.json",         # tools/build_era.py, from data/era-ground.tsv and data/era-towns.tsv: place strings and a region id, no names
+    "era-snapshot.json",       # tools/build_era.py --snapshot, from the Record Atlas's context.json: region eras and regime labels, no names
     "gallery.json",            # tools/gallery.py, read out of the built HTML
     "living.json",             # tools/livingflags.py (holds living names on purpose: it IS the feed's source)
     "namefold.json",           # kit namefold.py
