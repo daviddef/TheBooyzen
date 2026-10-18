@@ -24,8 +24,13 @@ Published at **https://daviddef.github.io/TheBooyzen/** — 139 pages, built wit
 | **[The research log](https://daviddef.github.io/TheBooyzen/log/)** | 29 entries, 14 of them retractions |
 | **[Search](https://daviddef.github.io/TheBooyzen/search/)** | One box over people, places, pages and 310 section headings |
 
-Person names anywhere on the site link themselves to that person's dossier, including spelling
-variants — *Montjoy*, *Mondjoy* and *Herklaas* all reach the right page.
+Person names link themselves to that person's page **when the site is built**, not in the browser
+(`npm run autolink`, the kit's `autolink.py`, run right after `astro build`): the first mention of each
+person in each section of a page. `tools/namesindex.py` decides which names are safe — a full name only
+one person bears, or a recorded spelling of it that is still a full name; a name several people bear goes
+to the page or the search that shows all of them; a living or held-out person is never linked — and
+`npm run check:links` holds the count (`site/.linkfloor.json`) so it can only improve. The person pages,
+the name pages and the register are left alone (`data-no-autolink`, set in `Base.astro`).
 
 ### Building it
 

@@ -17,12 +17,8 @@ import json, os, re, glob, unicodedata, html, collections
 DIST = os.path.join("site", os.environ.get("ARCHIVE_OUT") or "dist")
 DATA = "site/src/data"
 
-def slug(s):
-    s = unicodedata.normalize("NFD", s)
-    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    s = s.replace("ÿ", "y").replace("Ÿ", "Y")
-    s = re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-").lower()
-    return s[:60]
+from nameforms import slug, make, unlink   # lifted out unchanged on 18 October 2026; tools/namesindex.py uses it too
+
 
 people = json.load(open(os.path.join(DATA, "people.json"), encoding="utf-8"))["people"]
 # A LIVING PERSON'S DOSSIER IS THEIR NAME, LINE AND PLACE AND A COUNT. The mentions are
@@ -72,7 +68,9 @@ MENTION_BLK = re.compile(r'<section class="blk">.*?</section>', re.S)
 NARRATIVE = ("/changes/", "/corrections/", "/open-questions/", "/method/",
              "/searched/", "/worklist/", "/errands/")
 def page_text(p):
-    t = open(p, encoding="utf-8").read()
+    # The build-time name linker (kit autolink.py) may have run on this page. Its anchors carry data-autolink and no text of
+    # their own, so they come out here; left in, the tag strip below would put a space where each one ends ("Booyzen 's").
+    t = unlink(open(p, encoding="utf-8").read())
     title = (re.search(r"<title>(.*?)</title>", t, re.S) or [None, ""])[1]
     title = html.unescape(re.sub(r"\s+", " ", title)).replace(" — The Booyzen Archive", "").strip()
     t = TAG.sub(" ", t)
@@ -144,71 +142,8 @@ for f in glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True):
     title, text = page_text(f)
     pages[route] = {"title": title or route, "text": text}
 
-# ---- 2. what to look for
-ALLNAMES = set()
-for _p in people:
-    _n = _p["n"]
-    ALLNAMES.add(_n)
-    ALLNAMES.add(re.sub(r"\s*[“\"][^”\"]+[”\"]\s*", " ", _n).replace("  ", " ").strip())
-    ALLNAMES.add(re.sub(r"\s*\(.*?\)\s*", " ", _n).strip())
-ALLNAMES = {x for x in ALLNAMES if x}
-
-def variants(p):
-    """Forms of this person's name safe to search for.
-
-    Two rules keep people apart. A variant is dropped if it is exactly another
-    person's name; and a variant that is a strict PREFIX of another person's
-    name is KEPT, but fenced, so it cannot claim the longer person's mentions.
-
-    17 SEPTEMBER 2026 — THIS USED TO DROP THE SHORTER NAME OUTRIGHT, and that
-    was the bug. 'George Augustus Kolbe' is a prefix of 'George Augustus Kolbe
-    of Wakkerstroom', so the Settler — the most documented person on the site,
-    named 155 times in the built pages — was given a variant list of nothing,
-    scored zero mentions, and his own page said "not yet discussed on any page".
-    Seventeen people were affected, including John Barry, George Mountjoy,
-    Petrus Jacobus Booysen and Johanna Catharina Mountjoy. The data was fine;
-    this function threw it away; nothing refused the build.
-
-    The fence is a negative lookahead per longer name: 'George Augustus Kolbe'
-    now matches everywhere EXCEPT where it is followed by ' of Wakkerstroom',
-    ' of Bethulie' or ' of Burgersdorp'. The longer name still collects its own.
-    See tools/checkregisters.py, which now refuses the build if this ever
-    silently drops a person again."""
-    n = p["n"]
-    v = {n}
-    v.add(re.sub(r"[“”\"']", "", re.sub(r"\s*\(.*?\)\s*", " ", n)).strip())
-    v.add(re.sub(r"\s*[“\"][^”\"]+[”\"]\s*", " ", n).replace("  ", " ").strip())
-    for x in (p.get("v") or "").split("·"):
-        x = re.sub(r"\(.*?\)", "", x)
-        x = re.split(r"\s[—–-]\s", x)[0].strip(" ,;")   # cut trailing prose after a dash
-        if len(x) < 5: continue
-        if re.search(r"\b(spelling|across|five|the|and|also|written|source|index|tree|register)\b", x, re.I):
-            continue
-        if not re.match(r"^[A-ZÀ-Ž][\w'’ÿÀ-ž.-]*(\s+[A-Za-zÀ-ž'’ÿ.-]+){0,4}$", x): continue
-        v.add(x)
-    others = ALLNAMES - {n}
-    keep = []
-    for x in v:
-        if len(x) < 6 or x.startswith("—"): continue
-        # a bare surname would link every Booysen on the site to one man
-        if len(x.split()) < 2: continue
-        if x in others: continue
-        keep.append(x)
-    # TOTAL ORDER, NOT JUST BY LENGTH. `keep` becomes a set, and CPython randomises
-    # string hashing per process, so set iteration order differs between runs. Sorting
-    # on length alone is stable but leaves ties in that arbitrary order - and because
-    # this list drives the ORDER OF MATCHING below, the excerpts in every dossier came
-    # out shuffled. Two runs over identical source produced ~30,000-line diffs for a
-    # few hundred real changes, which made `git diff --stat` useless for telling a real
-    # regeneration from a no-op. Breaking ties on the string itself fixes it.
-    return sorted(set(keep), key=lambda x: (-len(x), x))
-
-def fence(v):
-    """The suffixes that must NOT follow variant `v`, because they would make it
-    a different, longer-named person."""
-    return sorted({o[len(v):] for o in ALLNAMES
-                   if o != v and o.startswith(v + " ")},
-                  key=lambda x: (-len(x), x))   # total order - see variants()
+# ---- 2. what to look for (the rules live in tools/nameforms.py)
+ALLNAMES, variants, fence = make(people)
 
 SENT = re.compile(r"(?<=[.!?])\s+")
 def excerpt(text, i, j):
@@ -218,7 +153,7 @@ def excerpt(text, i, j):
     if len(parts) > 2: seg = " ".join(parts[1:-1]) or seg
     return seg.strip()
 
-dossiers, index = {}, []
+dossiers = {}
 for p in people:
     name = p["n"]
     sl = slug(name)
@@ -250,10 +185,6 @@ for p in people:
     else:
         dossiers[sl] = {**p, "slug": sl, "mentions": len(hits), "pages": hitpages,
                         "hits": hits[:26], "shared": False, "also": []}
-    if hits:
-        # every safe variant links to the dossier, not only the canonical name
-        for v in variants(p):
-            index.append([v, sl, len(hits)])
 
 out = {
  "note": ("A dossier is every mention of a person anywhere in this archive, gathered automatically after "
@@ -263,18 +194,8 @@ out = {
           "brought together."),
  "people": dict(sorted(dossiers.items()))}   # by slug, so the file is diffable
 json.dump(out, open(os.path.join(DATA, "dossiers.json"), "w"), ensure_ascii=False, indent=1)
-# a variant claimed by two people is ambiguous — drop it rather than link it wrong
-owner = {}
-for nm, sl, k in index:
-    owner.setdefault(nm.lower(), set()).add(sl)
-index = [r for r in index if len(owner[r[0].lower()]) == 1]
-seenv = set(); uniq = []
-for r in index:
-    if r[0].lower() in seenv: continue
-    seenv.add(r[0].lower()); uniq.append(r)
-index = uniq
-index.sort(key=lambda r: (-len(r[0]), r[0], r[1]))   # total order - see variants()
-json.dump(index, open("site/public/whoindex.json", "w"), ensure_ascii=False)
-print(f"{len(dossiers)} dossiers · {sum(v['mentions'] for v in dossiers.values())} mentions · {len(index)} auto-link names")
+# site/public/whoindex.json, the index public/wholink.js read in the browser, is no longer written (18 October 2026):
+# the kit links the names when the site is built, from tools/namesindex.py, which applies the rules in tools/nameforms.py.
+print(f"{len(dossiers)} dossiers · {sum(v['mentions'] for v in dossiers.values())} mentions")
 for b in sorted(dossiers.values(), key=lambda v: -v["mentions"])[:8]:
     print(f"  {b['mentions']:4d}  {b['n']}")

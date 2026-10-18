@@ -21,3 +21,6 @@ site/public/atlas-data.json
 # estate more than once tonight.
 site/dist-*/
 private/
+
+# The names index and living list the build-time name linker reads (tools/namesindex.py writes both on every build; the living list carries names).
+site/.autolink/

@@ -573,14 +573,15 @@ main section > h2 { scroll-margin-top: 18px }
   .toc > nav a:last-child { border-bottom: 0 }
 }
 
-/* person links injected by wholink.js */
-a.wholink{
+/* person links the build adds (kit autolink.py: <a href data-autolink>). Until 18 October 2026 public/wholink.js
+   wrote the same link in the browser, as a.wholink; these are the same two rules under the new selector. */
+a[data-autolink]{
   color:inherit;
   text-decoration:none;
   border-bottom:1px dotted var(--rule,#c9c2b6);
   transition:border-color .15s,background .15s;
 }
-a.wholink:hover{
+a[data-autolink]:hover{
   border-bottom-color:var(--accent,#9a3b26);
   background:color-mix(in srgb,var(--accent,#9a3b26) 8%,transparent);
 }
@@ -659,10 +660,10 @@ body.is-home #onthispage{display:none}
 .feat .dek{margin-top:8px}
 
 /* ---------- who / places / search: the connective tissue ---------- */
-a.wholink{color:inherit;text-decoration:none;
+a[data-autolink]{color:inherit;text-decoration:none;
   border-bottom:1px solid color-mix(in srgb,var(--accent) 45%,transparent);
   text-underline-offset:2px}
-a.wholink:hover{color:var(--accent);border-bottom-color:var(--accent)}
+a[data-autolink]:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .plink{font-size:13px;padding:3px 9px;border:1px solid var(--rule);border-radius:999px;
   text-decoration:none;white-space:nowrap;display:inline-block}
 .plink:hover{border-color:var(--accent)}

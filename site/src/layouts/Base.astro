@@ -84,6 +84,12 @@ const nav = [
 ];
 
 const here = Astro.url.pathname;
+/* THE BUILD-TIME NAME LINKER (kit autolink.py, run by `npm run autolink` after astro build) leaves these pages alone
+   (18 October 2026). A person page, a name page and the people index already link every person they draw, and on a
+   person page the linker could only link a man to his own page and turn each quoted excerpt under "Every mention"
+   into a thicket of links. The register is a transcription of index lines, most of them not this family, so a name
+   there is a string in somebody else's record and not a reference to the person who happens to share it. */
+const noAutolink = /^\/(people|who|register)\//.test(here);
 /* WHICH OF THE SEVEN THIS IS — answered by ORIGIN, not by base. Every archive on
    its own domain has base "", so `find(a => a.base === "")` returns the FIRST of
    them (the Defranceschi archive) and would hand this page that archive's accent
@@ -152,7 +158,7 @@ const thisArchive =
 </header>
 <BookHead book={book} u={u} />
 
-<main id="main" tabindex="-1">
+<main id="main" tabindex="-1" data-no-autolink={noAutolink ? "" : undefined}>
   <div class="wrap">
     {!bare && (
       <div class="pagehead">
@@ -259,6 +265,5 @@ const thisArchive =
     });
   })();
 </script>
-<script src={u("/wholink.js") + v("wholink.js")} defer></script>
 </body>
 </html>

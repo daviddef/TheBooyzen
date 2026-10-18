@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
     "site", "node_modules", "@daviddef", "archive-kit", "kit", "tools"))
 import searchkit  # noqa: E402
+from nameforms import unlink  # noqa: E402  (this script's own folder is already on sys.path)
 
 _fold = searchkit.fold
 
@@ -58,7 +59,8 @@ SKIP = ("/who/", "/places/", "/search/")
 for f in sorted(glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True)):
     route = f[len(DIST):-len("index.html")] or "/"
     if any(route.startswith(s) for s in SKIP): continue
-    raw = open(f, encoding="utf-8").read()
+    # a page the build-time name linker has been over reads the same as one it has not (see nameforms.unlink)
+    raw = unlink(open(f, encoding="utf-8").read())
     # A redirect page is an address that moved, not a page: it has no body to find,
     # and "Redirecting to: ..." was being offered as a search result for /log/ and
     # /changed/. It stays built so the old address keeps working.
