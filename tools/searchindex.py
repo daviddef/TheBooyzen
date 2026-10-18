@@ -67,6 +67,10 @@ for f in sorted(glob.glob(os.path.join(DIST, "**", "index.html"), recursive=True
     if re.search(r'<meta name="robots" content="[^"]*noindex', raw[:6000]): continue
     title = clean((re.search(r"<title>(.*?)</title>", raw, re.S) or [None, ""])[1]).replace(" — The Booyzen Archive", "")
     body = re.sub(r"<(nav|footer)[^>]*>.*?</\1>", " ", raw, flags=re.S | re.I)
+    # The book's chapter REFERENCE ("I.2", "F.1") printed beside each title on /contents/ is navigation
+    # furniture, like the running head and the foot, not something a reader searches for: left in, it
+    # turned four /contents/ rows into "f.1 the cover ..." and drifted the committed index with no page changed.
+    body = re.sub(r'<b class="bk-r"[^>]*>.*?</b>', " ", body, flags=re.S | re.I)
     dek = clean((re.search(r'<p class="dek"[^>]*>(.*?)</p>', body, re.S) or [None, ""])[1])
     rows.append({"k": "Page", "t": title, "s": route, "x": dek[:300], "h": route})
     # split the body at every <h2> so each heading takes the text that follows it,
