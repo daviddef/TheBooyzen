@@ -32,6 +32,27 @@ to the page or the search that shows all of them; a living or held-out person is
 `npm run check:links` holds the count (`site/.linkfloor.json`) so it can only improve. The person pages,
 the name pages and the register are left alone (`data-no-autolink`, set in `Base.astro`).
 
+**The linking standard** (the kit's `checkstandard.py`, `site/standard.json`, the floor `site/.standardfloor.json`; `npm run check:standard`,
+last in the build) holds the twelve research narratives to five things, and only ever lets a number go down: a named dead person has an
+entry (L2), a passage that cites a record links to it (L3), a scan may sit beside its passage where the archive may show it (L4), a bare
+given name is written in full in its section (L5), and the first mention is linked (L1). How each is met here:
+
+- **L2, the second source of names.** `data/read-names.tsv` is the reviewed list of names the pages use that the archive read in a
+  FamilySearch index row and holds in no family file; `tools/readnames.py` makes `site/src/data/readnames.json` from it and
+  `register.json`, and holds a name out if the living rule (or David's hold-out of rows after 1945 with no death event), a person who already
+  bears the name, or more than four rows say so. `tools/namesindex.py` feeds them to the linker and `/who/<slug>/` draws each (`ReadName.astro`).
+  `npm run check:readnames` fails if the committed file is not what the list and the register give.
+- **L3, the records table.** `tools/build_records.py` makes `site/src/data/records.json` (plates, scans, `/sources/` entries, FamilySearch ids
+  the pages write out and the data holds, a film with one image address); every plate figure carries `id="plate-<stem>"`. `<Rec id="...">the
+  author's words</Rec>` (`src/components/Rec.astro`, the kit's Rec with that table) gives those words the link; an id the table does not hold
+  stops the build. The open questions are data, so their links are listed in `src/data/rec-links.json`. `tools/check_rec.py` holds every link
+  in the built site to its row. Where no address is held the words stay plain and are counted in the floor.
+- **L4.** No scan is placed beside a passage: the 207 published images are MyHeritage-sourced or of no recorded provenance and David has not
+  ruled on MyHeritage terms, so every typed record pattern is in `scans.link_only` in `standard.json` (take an id out of that list and L4
+  counts it). **Tables** are not read (`tables: skip`; the reason is in the config's `_why`).
+- **L5.** A ratchet only. `tools/dossiers.py` and `tools/searchindex.py` take the Rec anchor out as they take the autolink out
+  (`tools/nameforms.unlink`), so what they write is the same whether the citations are linked or not.
+
 ### Building it
 
 ```sh
