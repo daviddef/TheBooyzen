@@ -91,6 +91,27 @@ def living_rows(people):
     return set(living), set(held), pol
 
 
+def given_words():
+    """The words the archive's own data uses as a first name, for the linking standard's gate (checkstandard.py reads
+    .autolink/given.json as `names.given_names_file`): the first word of every multi-word name of the register, of
+    people.json and of the register's "with:" parents and spouses, when at least two such names begin with it and it ends
+    fewer than three names (a word that ends three is a surname, the gate's own rule). Committed data only."""
+    import collections
+    reg = read_json(os.path.join(DATA, "register.json"))["rows"]
+    people = read_json(os.path.join(DATA, "people.json"))["people"]
+    names = [r["n"] for r in reg] + [p["n"] for p in people]
+    for r in reg:
+        if "with:" in r["w"]:
+            names.extend(x for x in r["w"].split("with:", 1)[1].split("·") if x.strip())
+    first, last = collections.Counter(), collections.Counter()
+    for n in names:
+        t = re.sub(r"[^A-Za-z\u00C0-\u024F' ]", " ", re.sub(r"\(.*?\)", " ", str(n))).split()
+        if len(t) >= 2:
+            first[t[0].casefold()] += 1
+            last[t[-1].casefold()] += 1
+    return sorted(w.capitalize() for w, c in first.items() if c >= 2 and last[w] < 3 and len(w) > 2)
+
+
 def build(dist, out_dir):
     people = read_json(os.path.join(DATA, "people.json"))["people"]
     committed = read_json(os.path.join(DATA, "living.json"))
@@ -196,7 +217,8 @@ def build(dist, out_dir):
     search_ok = os.path.isfile(os.path.join(dist, "search", "index.html")) and bool(person_hay)
 
     stats = dict(people=0, aliases=0, ambiguous_people_page=0, ambiguous_search=0,
-                 left_out_living=0, left_out_search_unproven=0, left_out_not_a_full_name=0, left_out_no_page=0, left_out_short=0, ambiguous_continuation=0, fenced_name_sent_to_search=0)
+                 left_out_living=0, left_out_search_unproven=0, left_out_not_a_full_name=0, left_out_no_page=0, left_out_short=0, ambiguous_continuation=0, fenced_name_sent_to_search=0,
+                 read_names=0, read_aliases=0, read_left_out_name_taken=0, read_left_out_no_page=0, read_alias_left_out=0)
     people_out, amb_out = [], []
     for s in sorted(dead_slugs):
         rows = groups[s]
@@ -249,6 +271,39 @@ def build(dist, out_dir):
         from urllib.parse import quote
         amb_out.append({"name": spelling, "url": "/search/?q=" + quote(spelling, safe="")})
         stats["ambiguous_search"] += 1
+
+    # ---- THE SECOND SOURCE (the linking standard's L2): names the archive READ in a record and holds in no family file.
+    # src/data/readnames.json is made by tools/readnames.py from the reviewed list data/read-names.tsv and register.json;
+    # it is COMMITTED, so CI builds the same index. Each name is one `people` row whose address is its /who/ NAME page
+    # (a page that lists the index rows and never says two of them are one person). The same living test as above
+    # applies to it, and it is added only where no person, spelling or other read name already uses the folded string.
+    # It also carries the few spellings the REGISTER states for a person who has a page (every register row of the
+    # spelling carries that person's page): they become aliases of that person's entry, on the same conditions.
+    rn_path = os.path.join(DATA, "readnames.json")
+    if os.path.isfile(rn_path):
+        rn = read_json(rn_path)
+        taken = {key(e["name"]) for e in people_out} | {key(a) for e in people_out for a in e["aliases"]} \
+            | {key(e["name"]) for e in amb_out}
+        for n in rn.get("names", []):
+            k, url = key(n["name"]), "/who/%s/" % n["slug"]
+            if k in lk or k in owners or k in taken or url.split("/")[2] in off:
+                stats["read_left_out_name_taken"] += 1
+            elif not page_ok(url):
+                stats["read_left_out_no_page"] += 1
+            else:
+                people_out.append({"name": n["name"], "aliases": [], "url": url})
+                taken.add(k)
+                stats["read_names"] += 1
+        by_url = {e["url"]: e for e in people_out}
+        for a in rn.get("aliases", []):
+            e, k = by_url.get("/people/%s/" % a["person"]), key(a["name"])
+            if e is None or k in lk or owners.get(k, {a["person"]}) != {a["person"]} or k in taken \
+                    or k == key(e["name"]) or any(key(x) == k for x in e["aliases"]):
+                stats["read_alias_left_out"] += 1
+                continue
+            e["aliases"].append(a["name"])
+            taken.add(k)
+            stats["read_aliases"] += 1
 
     # ---- A NAME THAT IS THE FIRST WORDS OF ANOTHER PERSON'S NAME, followed in the prose by a word that makes it someone else.
     # 'George Augustus Kolbe' is the Settler, and 'George Augustus Kolbe of Bethulie' is another man. The linker matches
@@ -349,6 +404,9 @@ def build(dist, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     with io.open(os.path.join(out_dir, "names-index.json"), "w", encoding="utf-8") as fh:
         json.dump({"people": people_out, "ambiguous": amb_out}, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
+    with io.open(os.path.join(out_dir, "given.json"), "w", encoding="utf-8") as fh:
+        json.dump(given_words(), fh, ensure_ascii=False)
         fh.write("\n")
     lp = os.path.join(out_dir, "living.json")
     fd = os.open(lp, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)

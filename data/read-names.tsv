@@ -1,0 +1,19 @@
+# The reviewed list of names the narrative pages use that the archive READ in a FamilySearch index row and holds in no family file.
+# tools/readnames.py makes site/src/data/readnames.json from this list and src/data/register.json, and refuses any line that fails a rule.
+# Columns: NAME <TAB> the name as the register spells it <TAB> the narrative pages that use it <TAB> why it was accepted (the prose agrees with the row)
+#          ALIAS <TAB> a spelling <TAB> the person's slug <TAB> why (only where every register row of the spelling carries that person's page)
+# 18 October 2026: reviewed from the gate's L2 list by reading each name in its sentence; names whose prose does not agree with the rows, fragments of longer names, and names a person already bears are not here.
+NAME	Sasanna Adriana Booyzen	/documents/	The Johannesburg cemetery register: buried at Johannesburg in 1968. The cemetery-records row says Burial 1968, Johannesburg.
+NAME	Jacobus Wynand Louw Kolbe	/documents/	Named among six Kolbe applicants of 1931. The civil death row gives birth 1884 and death 1960, so he was of age in 1931.
+NAME	Gersom Eliezär Kolbe	/documents/	The page gives his birth (1868) and death (1902); the probate row gives birth 1868 and death 1902.
+NAME	Susanna Frederik Alettha Booyzen	/documents/	Bride of the 1928 Marriage Transcription Database entry; the Transvaal civil-marriage row names her and her husband.
+NAME	Cornelius Abraham Luus	/documents/	Groom of the same 1928 entry; named in the bride's marriage row.
+NAME	Elizabeth Hendrina Murray	/documents/	Bride of the 1935 Daschner marriage; named in the groom's civil-marriage row.
+NAME	Margaret Wilhelmina Elizabeth Jeanette Daschner	/barry/,/documents/	Bride of the 1935 Van Jaarsveld marriage; the civil-marriage row gives birth 1913.
+NAME	Jacobus Nicolas Booyzen	/documents/	On the 1925-31 voters' roll; the one baptism row of the name is 1901, Middelburg.
+NAME	Herculas Johannes Mountjoy	/open-questions/,/women/	The prose cites his baptism of 29 July 1866 (father George Mountjoy, mother Maria Sophia Botha); that row is the first below.
+NAME	Pieter Jacobus Booijzen	/documents/	Father in the 1807 baptism of David Schalk Booijzen; the one index row of the name is that baptism.
+NAME	Stefanus Francois Booyzen	/documents/	Died 1940 at Silverton; the Find a Grave row and the 1905 marriage row agree.
+ALIAS	David Schalk Booijzen	david-schalk-booysen	Every register row of this spelling carries the person page David Schalk Booysen (the register's own p field).
+ALIAS	Gert Jacobus Booyzen	gerrit-jacobus-booysen	Every register row of this spelling carries the person page Gerrit Jacobus Booysen.
+ALIAS	Susanna Adriana Booyzen	susanna-adriana-roodt	Every register row of this spelling carries the person page Susanna Adriana Roodt.

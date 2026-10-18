@@ -165,6 +165,9 @@ STEP="gallery.py"; python3 tools/gallery.py
 # watching the kit's check name it.
 STEP="searchindex.py"; python3 tools/searchindex.py
 STEP="register.py"; python3 tools/register.py
+# THE SECOND SOURCE OF NAMES (the linking standard, 18 October 2026): people read from FamilySearch index rows who get a /who/ page.
+# Made from the reviewed list data/read-names.tsv and register.json, both committed; `npm run build` only CHECKS the committed file.
+STEP="readnames.py"; python3 tools/readnames.py
 # The brackets are LOAD-BEARING, not style - see "THE TWO BUILD STEPS RUN IN
 # SUBSHELLS" above. `cd site && ... && cd ..` does not abort under set -e.
 STEP="second pass - the full build WITH every gate"; ( cd site && npm run build >/dev/null )

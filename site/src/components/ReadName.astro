@@ -1,0 +1,55 @@
+---
+/* One /who/ page body for a NAME that the archive read in a FamilySearch index row and holds in no family file.
+ *
+ * /people/<person> is one human; /who/<name> is everyone who bore the name. For these there is no person page and none is
+ * made: the index says a name, an event and a collection, and that is what this page says, and no more. It never says two
+ * rows are one man; the archive's oldest rule is that a name alone does not merge anyone.
+ * Made from src/data/readnames.json (tools/readnames.py), which holds only names the living rule shows dead and which the
+ * narrative pages use.
+ *
+ *   name   the name as the register prints it
+ *   role   "indexed"  the name is the indexed person of each row
+ *          "named"    the name is a parent or spouse the row gives; the indexed person is not named here
+ *   rows   [{ what, source, url }]   the event text of the row, its collection, and its FamilySearch address
+ *   pages  [[route, title]]          the narrative pages that use the name
+ */
+import { u } from "../lib/url.js";
+const { name, role = "indexed", rows = [], pages = [], base = "" } = Astro.props;
+const many = rows.length > 1;
+const safe = (h) => (typeof h === "string" && /^https:\/\/www\.familysearch\.org\/ark:\/[A-Za-z0-9:\/.-]+$/.test(h)) ? h : null;
+---
+<div class="rdn">
+  <p class="rdn-lede">
+    <strong>{name}</strong> is not in this archive's family file. {role === "named"
+      ? <>The name is given as a parent or spouse in {many ? <><strong>{rows.length} FamilySearch index entries</strong> of other people</> : <>one FamilySearch index entry of another person</>}, listed below.</>
+      : <>The name was read in {many ? <><strong>{rows.length} FamilySearch index entries</strong></> : <>one FamilySearch index entry</>}, listed below.</>}
+    {many && <> They are not claimed to be one person: this page says where the name was read, not who bore it.</>}
+  </p>
+  <ol class="rdn-list">
+    {rows.map((r) => {
+      const h = safe(r.url);
+      return (
+        <li>
+          <span class="rdn-act">{r.what}</span>
+          <span class="rdn-said">{r.source}</span>
+          {h && <span class="rdn-where"><a href={h} rel="noopener">The FamilySearch record</a></span>}
+        </li>
+      );
+    })}
+  </ol>
+  {pages.length > 0 && (
+    <p class="rdn-pages">Used on {pages.map(([route, title], i) => (<>{i > 0 && ", "}<a href={u(route)}>{title}</a></>))}.</p>
+  )}
+  <p class="rdn-warn">Nothing else is known here: no dates beyond the entries, no family, no page of their own.</p>
+</div>
+
+<style>
+  .rdn-lede { font-size: 17px; line-height: 1.6; color: var(--ink-2); }
+  .rdn-list { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .rdn-list li { border-left: 3px solid var(--rule-strong); padding: 8px 0 8px 14px; }
+  .rdn-act { display: block; font-family: var(--serif); font-size: 18px; overflow-wrap: anywhere; }
+  .rdn-said { display: block; font-size: 15px; color: var(--ink-2); margin-top: 3px; }
+  .rdn-where { display: block; font-family: var(--sans); font-size: 13px; color: var(--ink-3); margin-top: 3px; }
+  .rdn-pages { margin-top: 18px; font-size: 15px; color: var(--ink-2); }
+  .rdn-warn { margin-top: 18px; font-size: 14px; color: var(--ink-3); border-left: 2px solid var(--ochre); padding-left: 12px; }
+</style>

@@ -1,0 +1,103 @@
+{
+ "note": "People the archive READ in a FamilySearch index row and holds in no family file, one /who/ name page each, and the spellings the register itself states for people who have a page. Made by tools/readnames.py from data/read-names.tsv (the reviewed list) and src/data/register.json; the rules are in that file. A page names a NAME and its index rows; it never says that two rows are one person.",
+ "names": [
+  {
+   "slug": "cornelius-abraham-luus",
+   "name": "Cornelius Abraham Luus",
+   "role": "named",
+   "basis": "Groom of the same 1928 entry; named in the bride's marriage row.",
+   "rows": [
+    {
+     "what": "Birth 1908",
+     "source": "South Africa, Transvaal, Civil Marriages, 1870-1931",
+     "url": "https://www.familysearch.org/ark:/61903/1:1:QPWJ-H9N3"
+    },
+    {
+     "what": "Birth 1908",
+     "source": "South Africa, Transvaal, Civil Marriages, 1870-1931",
+     "url": "https://www.familysearch.org/ark:/61903/1:1:QP3K-4WMJ"
+    }
+   ],
+   "pages": [
+    [
+     "/documents/",
+     "The documents"
+    ]
+   ]
+  },
+  {
+   "slug": "elizabeth-hendrina-murray",
+   "name": "Elizabeth Hendrina Murray",
+   "role": "named",
+   "basis": "Bride of the 1935 Daschner marriage; named in the groom's civil-marriage row.",
+   "rows": [
+    {
+     "what": "Birth 1911",
+     "source": "South Africa, Civil Marriage Records, 1801-1974",
+     "url": "https://www.familysearch.org/ark:/61903/1:1:6ZC9-CZM9"
+    }
+   ],
+   "pages": [
+    [
+     "/documents/",
+     "The documents"
+    ]
+   ]
+  },
+  {
+   "slug": "gersom-eliezar-kolbe",
+   "name": "Gersom Eliezär Kolbe",
+   "role": "indexed",
+   "basis": "The page gives his birth (1868) and death (1902); the probate row gives birth 1868 and death 1902.",
+   "rows": [
+    {
+     "what": "Birth 1868 Colesburg Cape Colony | Death 1902 Burgher Camp Volksrust | Probate 1902 Transvaal, South Africa",
+     "source": "South Africa, Transvaal, Probate Records from the Master of the Supreme Court, 1869-1961",
+     "url": "https://www.familysearch.org/ark:/61903/1:1:Q2DG-RZGM"
+    }
+   ],
+   "pages": [
+    [
+     "/documents/",
+     "The documents"
+    ]
+   ]
+  },
+  {
+   "slug": "jacobus-wynand-louw-kolbe",
+   "name": "Jacobus Wynand Louw Kolbe",
+   "role": "indexed",
+   "basis": "Named among six Kolbe applicants of 1931. The civil death row gives birth 1884 and death 1960, so he was of age in 1931.",
+   "rows": [
+    {
+     "what": "Birth 1884 Oranje Vrystaat, Suid Afrika | Death 7 Jun 1960 Kroonstad, Orange Free State, South Africa",
+     "source": "South Africa, Civil Death Registration, 1953-1967",
+     "url": "https://www.familysearch.org/ark:/61903/1:1:6Z9S-D6NW"
+    }
+   ],
+   "pages": [
+    [
+     "/documents/",
+     "The documents"
+    ]
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "person": "david-schalk-booysen",
+   "name": "David Schalk Booijzen",
+   "basis": "Every register row of this spelling carries the person page David Schalk Booysen (the register's own p field)."
+  },
+  {
+   "person": "gerrit-jacobus-booysen",
+   "name": "Gert Jacobus Booyzen",
+   "basis": "Every register row of this spelling carries the person page Gerrit Jacobus Booysen."
+  },
+  {
+   "person": "susanna-adriana-roodt",
+   "name": "Susanna Adriana Booyzen",
+   "basis": "Every register row of this spelling carries the person page Susanna Adriana Roodt."
+  }
+ ]
+}

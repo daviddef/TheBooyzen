@@ -5,6 +5,7 @@ import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
+import readNames from "../../data/readnames.json";
 
 function slugify(s) {
   return String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -14,7 +15,7 @@ const by = new Map();
 for (const p of Object.values(d.people)) {
   const k = slugify(p.n);
   if (!by.has(k)) by.set(k, { name: p.n, n: 0 });
-  by.get(k).n += 1;
+  by.get(k).n += 1 + (p.also || []).length;   /* the other men of a shared name are in `also` */
 }
 const names = [...by.entries()].map(([slug, v]) => ({ slug, ...v }))
   .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
@@ -30,4 +31,12 @@ const shared = names.filter(n => n.n > 1);
   <section class="blk">
     <EveryName names={names} u={u} />
   </section>
+  {readNames.names.length > 0 && (
+  <section class="blk">
+    <h2>Names read from the records</h2>
+    <p class="dek">{readNames.names.length} names that the narrative pages use, read in FamilySearch index entries and in no
+      family file. A page for each says where the name was read; it does not say who bore it.</p>
+    <ul>{readNames.names.map((n) => (<li><a href={u(`/who/${n.slug}/`)}>{n.name}</a></li>))}</ul>
+  </section>
+  )}
 </Base>

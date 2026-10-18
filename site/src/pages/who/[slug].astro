@@ -9,6 +9,8 @@ import Base from "../../layouts/Base.astro";
 import Namesakes from "@daviddef/archive-kit/components/Namesakes.astro";
 import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
+import readNames from "../../data/readnames.json";
+import ReadName from "../../components/ReadName.astro";
 import { isLivingSlug, livingBySlug, STANDARD } from "../../lib/living.js";
 
 export function getStaticPaths() {
@@ -16,18 +18,26 @@ export function getStaticPaths() {
     .replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").toLowerCase();
   const by = new Map();
   for (const p of Object.values(d.people)) {
+    /* A dossier stands for everyone of the name: the other men of a shared name are in `also`, with no slug of their
+       own, and they all live on the one person page. They are rows of this page too, or it says "one person" of a
+       name three men bear (Petrus Jacobus Booysen). */
+    const members = [p, ...(p.also || []).map((a) => ({ ...a, slug: p.slug }))];
     /* keyed on the person slug as well as the name, so every address this
        archive has ever published keeps resolving */
     for (const k of new Set([p.slug, slugify(p.n)])) {
       if (!k) continue;
-      if (!by.has(k)) by.set(k, { name: p.n, rows: [] });
-      if (!by.get(k).rows.includes(p)) by.get(k).rows.push(p);
+      if (!by.has(k)) by.set(k, { name: p.n, rows: [], seen: new Set() });
+      if (!by.get(k).seen.has(p)) { by.get(k).seen.add(p); by.get(k).rows.push(...members); }
     }
   }
-  return [...by.entries()].map(([slug, v]) => ({ params: { slug }, props: v }));
+  /* People READ from FamilySearch index rows and in no family file (tools/readnames.py, data/read-names.tsv): one name
+     page each, built from the rows the name was read in. None of these names is borne by anyone in dossiers.json. */
+  const read = (readNames.names || []).filter((n) => !by.has(n.slug))
+    .map((n) => ({ params: { slug: n.slug }, props: { name: n.name, rows: [], read: n } }));
+  return [...[...by.entries()].map(([slug, v]) => ({ params: { slug }, props: { name: v.name, rows: v.rows } })), ...read];
 }
 
-const { name, rows } = Astro.props;
+const { name, rows, read = null } = Astro.props;
 /* A name page whose every bearer is living is noindex and shows names and nothing else. */
 const allLiving = rows.length > 0 && rows.every(p => isLivingSlug(p.slug));
 const listed = rows.map(p => isLivingSlug(p.slug) ? ({
@@ -42,6 +52,17 @@ const listed = rows.map(p => isLivingSlug(p.slug) ? ({
   note: p.v && p.v !== p.n ? `Also written ${p.v}` : "",
 }));
 ---
+{read ? (
+<Base title={name}
+      eyebrow="A name read from the records"
+      dek={`${name} is in a FamilySearch index entry and in no family file here. This page says where the name was read.`}>
+  <section class="blk">
+    <ReadName name={name} role={read.role} rows={read.rows} pages={read.pages} base={u("/")} />
+    <p class="dek" style="margin-top:1.6rem">A name is not a person. This page does not say that the entries above
+    are one man or one woman: this archive never merges records on a name alone.</p>
+  </section>
+</Base>
+) : (
 <Base title={name}
       eyebrow={rows.length > 1 ? `${rows.length} people of this name` : "One person of this name"}
       dek={allLiving ? STANDARD : `Everyone in this archive called ${name}.`}
@@ -53,3 +74,4 @@ const listed = rows.map(p => isLivingSlug(p.slug) ? ({
     its six sibling archives.</p>
   </section>
 </Base>
+)}

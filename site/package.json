@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --port 4324",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run check:pin && npm run living:flags && npm run check:decisions && npm run check:letters && npm run check:dates && npm run atlas && npm run namefold && npm run ra && astro build && npm run autolink && npm run sitemap && npm run check:book && npm run check:living && npm run check:living2 && npm run check:families && npm run check:prose && npm run check:kin && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav && npm run check:links",
+    "build": "npm run check:pin && npm run living:flags && npm run check:decisions && npm run check:letters && npm run check:dates && npm run check:readnames && npm run atlas && npm run namefold && npm run ra && astro build && npm run autolink && npm run sitemap && npm run check:book && npm run check:living && npm run check:living2 && npm run check:families && npm run check:prose && npm run check:kin && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav && npm run check:links",
     "build:pages": "npm run living:flags && npm run atlas && astro build && npm run sitemap",
     "preview": "astro preview --port 4324",
     "autolink": "python3 ../tools/namesindex.py --dist \"${ARCHIVE_OUT:-dist}\" --out .autolink && python3 node_modules/@daviddef/archive-kit/kit/tools/autolink.py --dist \"${ARCHIVE_OUT:-dist}\" --index .autolink/names-index.json --living .autolink/living.json --allow-prefix /people/ --allow-prefix /who/ --allow-prefix /search/",
@@ -37,7 +37,8 @@
     "check:kin": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkkin.py --data src/data/people.json --born b --died d --max 0 --name n",
     "check:decisions": "python3 ../tools/check-decisions.py",
     "check:letters": "python3 ../tools/checkletters.py",
-    "check:dates": "python3 ../tools/checkdates.py"
+    "check:dates": "python3 ../tools/checkdates.py",
+    "check:readnames": "python3 ../tools/readnames.py --check"
   },
   "dependencies": {
     "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#09ee04023590894e5cf943b07ee9ad8db33f9abb",
