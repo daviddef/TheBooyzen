@@ -1,17 +1,158 @@
 ---
 /* Every line this archive follows, each stated in the form its own evidence
    supports. The component is shared across the seven archives; the rows are
-   this archive's own, generated from its own data. */
+   this archive's own, generated from its own data.
+
+   THE PAGE USED TO SAY "4 LINES FOLLOWED" and listed four rows, one of which (the British
+   women) is a route and not a line, while The People filters 11 lines and The Families
+   has a page for 12 names. Each number was right about something different and none said
+   what. This page now lists all eleven lines people.json files its people on, the same
+   eleven the Line filter on The People counts, and says what the other two numbers count.
+   Everything numeric below is computed: the counts and the grade split from people.json
+   (through src/lib/families.js, which asks living.json who is living), the register
+   figures from register.json. The only typed words are each line's origin label, in
+   trees.json, which restate what the archive's own pages already say. */
 import Base from "../layouts/Base.astro";
 import Trees from "@daviddef/archive-kit/components/Trees.astro";
+import Families from "@daviddef/archive-kit/components/Families.astro";
 import { u } from "../lib/url.js";
+import { esc } from "../lib/md.js";
 import t from "../data/trees.json";
+import P from "../data/people.json";
+import REG from "../data/register.json";
+import D from "../data/dossiers.json";
+import { registry, rows as personRows, model, linesWithoutPage, GRADE } from "../lib/families.js";
 
-const rows = t.rows.map(r => ({ ...r, href: r.href ? u(r.href) : null }));
-const doors = (t.doors || []).map(([h, n, b]) => [u(h), n, b]);
+const plural = (k, one, many) => (k === 1 ? one : many);
+const fmt = (n) => n.toLocaleString("en-GB");
+const YR = /\b(1[5-9]\d\d|20\d\d)\b/g;
+
+/* ---- one line: how many people, how they grade, which years, how it begins ---- */
+function stats(line) {
+  const all = personRows.filter((r) => r.p.l === line);
+  const dead = all.filter((r) => !r.living);
+  const grade = {};
+  for (const r of dead) grade[r.p.s] = (grade[r.p.s] || 0) + 1;
+  const yrs = dead.flatMap((r) => [r.p.b, r.p.d].flatMap((f) => (String(f ?? "").match(YR) || []).map(Number)));
+  const span = !yrs.length ? "" : Math.min(...yrs) === Math.max(...yrs) ? String(yrs[0]) : `${Math.min(...yrs)}–${Math.max(...yrs)}`;
+  const g = ["doc", "inf", "lore", "open"].filter((k) => grade[k]).map((k) => `${GRADE[k]} ${grade[k]}`).join(" · ");
+  const evidence = dead.length
+    ? `${g} of the ${dead.length} not living${all.length > dead.length ? `, and ${all.length - dead.length} living, not graded here` : ""}`
+    : `${all.length} living, not graded here`;
+  const o = t.origins[line];
+  const origin = `Origin ${o.kind}: ${o.text}.`;
+  return { line, n: all.length, evidence, span, origin };
+}
+const lineRows = P.lines.map(stats);
+const byLine = Object.fromEntries(lineRows.map((s) => [s.line, s]));
+const familyOf = (line) => registry.find((f) => f.line === line);
+
+/* ---- the rows the shared component draws: the lines with a chart form of their own ---- */
+const charted = new Set(t.rows.filter((r) => P.lines.includes(r.name)).map((r) => r.name));
+const rows = t.rows.map((r) => {
+  const s = byLine[r.name];
+  const what = s ? `${r.what}\n\n**${s.n} ${plural(s.n, "person", "people")} filed on this line: ${s.evidence}.** ${s.origin}` : r.what;
+  return { ...r, what, href: r.href ? u(r.href) : null };
+});
+
+/* ---- the other lines, drawn with the row /families/ uses for the same lines ---- */
+const others = lineRows.filter((s) => !charted.has(s.line)).sort((a, b) => b.n - a.n || (a.line < b.line ? -1 : 1));
+const otherRows = others.map((s) => {
+  const f = familyOf(s.line);
+  const m = f ? model(f.slug) : null;
+  const extra = m && m.members.length !== s.n
+    ? `The family page counts ${m.members.length}, because it also counts the ${m.members.length - s.n} who carry the name and are filed on another line.` : "";
+  const facts = [["Evidence", s.evidence]];
+  if (s.span) facts.push([s.span.includes("–") ? "Years named" : "Year named", s.span]);
+  return {
+    slug: "line-" + s.line.toLowerCase(),
+    label: esc(s.line),
+    count: s.n,
+    countLabel: plural(s.n, "person", "people"),
+    gloss: esc(s.origin),
+    facts,
+    note: extra,
+    href: f ? (f.page || `/families/${f.slug}/`) : "/people/",
+    hrefLabel: f ? "The family page" : "The People, Line filter",
+  };
+});
+const groups = [{ label: `The other ${others.length} ${plural(others.length, "line", "lines")}`, note: "filed in The People like the rest, and drawn nowhere as a chart", rows: otherRows }];
+
+/* ---- what the other two numbers count ---- */
+const nLines = P.lines.length;
+const withPage = registry.filter((f) => f.line);
+const namesOnly = registry.filter((f) => !f.line);
+const noPage = linesWithoutPage();
+const list = (a) => (a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1]);
+const nRoutes = t.rows.filter((r) => !P.lines.includes(r.name)).length;
+
+/* ---- not placed on any line ---- */
+const regRows = REG.rows;
+const noPerson = regRows.filter((r) => !r.p).length;
+const maricoRows = regRows.filter((r) => /marico/i.test(`${r.n} ${r.w}`)).length;
+const notHarvested = Object.entries(REG.caps || {}).filter(([, c]) => c.total > 0 && c.got === 0);
+const unharvestedTop = [...notHarvested].sort((a, b) => b[1].total - a[1].total).slice(0, 3)
+  .map(([n, c]) => `${esc(n.toUpperCase())} ${fmt(c.total)}`);
+const placed = P.people.filter((p) => p.l).length;
+const notPlaced = [{
+  label: "", note: "",
+  rows: [
+    {
+      slug: "np-marico",
+      label: "The Marico claims",
+      count: t.notPlaced.maricoClaims,
+      countLabel: "claims",
+      gloss: `${t.notPlaced.maricoClaims} Booyzen claims for compensation were filed from the district of Marico in 1903–04, indexed by initials. Unresolved: no document joins any of them to a person on these lines, and none is placed on a line here. The register holds ${maricoRows} ${plural(maricoRows, "row", "rows")} that mention Marico.`,
+      facts: [], href: "/atlas/", hrefLabel: "The atlas, Marico",
+    },
+    {
+      slug: "np-register",
+      label: "Register rows with no person page",
+      count: fmt(noPerson),
+      countLabel: `of ${fmt(regRows.length)}`,
+      gloss: `${fmt(regRows.length - noPerson)} register rows are joined to a person page. The other ${fmt(noPerson)} are the raw catch from surname indexes: a shared surname is not a relationship, and none is placed on a line.`,
+      facts: [], href: "/register/", hrefLabel: "The register",
+    },
+    {
+      slug: "np-names",
+      label: "Surnames not harvested",
+      count: notHarvested.length,
+      countLabel: plural(notHarvested.length, "surname", "surnames"),
+      gloss: `Too common to be evidence, so the register holds none of their records: ${unharvestedTop.join(", ")} and ${notHarvested.length - unharvestedTop.length} more.`,
+      facts: [], href: "/register/", hrefLabel: "What was harvested",
+    },
+  ],
+}];
+
+/* ---- the door to Every Name: the count is the one /who/ prints ---- */
+const slugify = (s) => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").toLowerCase();
+const nameCount = new Map();
+for (const p of Object.values(D.people)) nameCount.set(slugify(p.n), (nameCount.get(slugify(p.n)) || 0) + 1);
+const nNames = nameCount.size;
+if ([...nameCount.values()].some((n) => n > 1)) throw new Error("trees.json says no name is shared; /who/ now shows one that is. Reword the Every Name door.");
+const doors = (t.doors || []).map(([h, n, b]) => [u(h), n, b.replace("{names}", fmt(nNames))]);
 ---
-<Base title="The trees" eyebrow={`${t.rows.length} lines followed`} dek="The Booyzen line and the families that join it — each drawn in the form its own evidence supports.">
+<Base title="The trees" eyebrow={`${nLines} lines followed${nRoutes ? `, and ${nRoutes === 1 ? "one route" : nRoutes + " routes"}` : ""}`} dek="The Booyzen line and the families that join it — each drawn in the form its own evidence supports.">
   <section class="blk">
-    <Trees rows={rows} note={t.note} close={t.close} doors={doors} drawn={u("/tree/")} />
+    <Trees rows={rows} note={t.note} close={t.close} drawn={u("/tree/")} />
   </section>
+
+  <section class="blk">
+    <h2>The other lines</h2>
+    <Families groups={groups} u={u} />
+  </section>
+
+  <section class="blk">
+    <h2>Not placed on any line</h2>
+    <p class="dek">All {fmt(placed)} people in The People carry exactly one line, so no person is unplaced. What is not placed is below.</p>
+    <Families groups={notPlaced} u={u} />
+  </section>
+
+  <section class="blk">
+    <h2>Three numbers, one archive</h2>
+    <p><b>{nLines} lines</b> is what this page lists, and what the Line filter on <a href={u("/people/")}>The People</a> counts: the {nLines} lines the archive files its {fmt(placed)} people on. The route above, <i>{t.rows.filter((r) => !P.lines.includes(r.name)).map((r) => r.name).join(", ")}</i>, is not a line and is not one of the {nLines}.</p>
+    <p><b>{registry.length} families</b> is what <a href={u("/families/")}>The Families</a> counts: the names that have a page. {withPage.length} of them are lines on this page ({list(withPage.map((f) => f.name))}); the other {namesOnly.length} ({list(namesOnly.map((f) => f.name))}) are names that a direct-line ancestor carries, or at least eight people carry, and are not lines. {noPage.length === 1 ? "One line has" : `${noPage.length} lines have`} no page: {list(noPage.map((x) => x.line))}.</p>
+  </section>
+
+  <Trees rows={[]} doors={doors} />
 </Base>

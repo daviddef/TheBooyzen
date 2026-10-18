@@ -3,6 +3,12 @@ import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
 import sdx from "../data/sources.json";
+import REG from "../data/register.json";
+
+/* The register's size is counted from register.json, not typed: it was typed as 7,543 rows and
+   3,653 names when the Jonas test below was run, and the register has grown since. */
+const nRegRows = REG.rows.length.toLocaleString("en-GB");
+const nRegNames = new Set(REG.rows.map((r) => r.n)).size.toLocaleString("en-GB");
 
 const kids = [
   ["John Augustus II", "1847–1935", "Burgersdorp", "m. Alida Jacoba van Ellinckhuyzen, 1870, DRC Colesberg"],
@@ -463,7 +469,7 @@ const kids = [
       replaced by a hard one that fits better, and the two names still differ on paper.</blockquote>
     <p><b>One thing cuts the other way, and it belongs here too.</b> This family reuses forenames
       relentlessly &mdash; that is the whole argument of <a href={u("/namesakes/")}>the namesakes
-      page</a>. So the archive's own <a href={u("/register/")}>register</a>, 7,543 rows and 3,653
+      page</a>. So the archive's own <a href={u("/register/")}>register</a>, {nRegRows} rows and {nRegNames}
       distinct names gathered out of this family's records, was searched for <b>Jonas</b>. It appears
       four times and every one of them is an unrelated Cape Booyzen household &mdash; a Jonas Booyzen
       who married a Leah Olifant, and an estate at Grahamstown in 1920. <b>Not once among the Barrys or
