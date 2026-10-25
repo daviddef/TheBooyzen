@@ -68,9 +68,23 @@ def said_living(p):
             or str(p.get("d") or "").strip().lower() in SAID_LIVING)
 
 
-def recorded_dead(p):
+def death_kind(p):
+    """The kit's classification of what the `d` field holds: "record" (a date, a place, a
+    register line), "flag" (the bare word `deceased`, no date) or None (no death)."""
     d = str(p.get("d") or "").strip()
-    return d not in ("", "—", "-") and d.lower() not in SAID_LIVING
+    if d.lower() in SAID_LIVING:
+        return None
+    return lr.death_kind(died=d)
+
+
+def recorded_dead(p):
+    """A death RECORD. A bare flag is not one (kit 341af33): see undated_dead."""
+    return death_kind(p) == "record"
+
+
+def undated_dead(p):
+    """Only a bare death flag: for a person born inside the window it is ignored, they stay living."""
+    return death_kind(p) == "flag"
 
 
 def citations(p):
@@ -103,10 +117,12 @@ def classify(people, fams, held_slugs=(), author_slugs=(), today_year=None):
     living = []
     for i, p in enumerate(people):
         cites = citations(p)
-        if lr.public_source(cites) or recorded_dead(p):
+        if recorded_dead(p):
             continue
         by = birth_year(p)
-        if said_living(p) or lr.is_living(by, False, cites, y):
+        # A public-source citation no longer frees a person born inside the window (kit 341af33),
+        # and a bare death flag is passed as undated_dead, never as a record.
+        if said_living(p) or lr.is_living(by, False, cites, y, undated_dead=undated_dead(p)):
             living.append(i)
     liv = set(living)
     parents_of = {}
@@ -123,7 +139,7 @@ def classify(people, fams, held_slugs=(), author_slugs=(), today_year=None):
             continue                      # the author: an adult, named on purpose (decisions.json)
         parent_living = any(q in liv for q in parents_of.get(i, ()))
         if lr.is_held_out(s, birth_year(p), recorded_dead(p), citations(p), parent_living,
-                          held_slugs, y):
+                          held_slugs, y, undated_dead=undated_dead(p)):
             held.append(i)
     return living, held
 

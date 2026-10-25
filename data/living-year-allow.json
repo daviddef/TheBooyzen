@@ -1,0 +1,12 @@
+{
+ "_why": [
+  "Text that carries a year of 1946 or later that is not a living person's birth, or the birth of a person the archive records as dead.",
+  "Read by the kit's livingyears gate (checkliving.py --years, standard.json living_years). Each entry is a decision with a reason: add one only where the year belongs to someone who is not living, or is not a person's birth. Never record a death that no source in the archive gives."
+ ],
+ "allow": [
+  {
+   "text": "was born on <b>11 May 1947</b>",
+   "why": "Gertrude Booyzen, a daughter who lived six hours: her death certificate is read (entry 3920, registered 13 May 1947, Turf Club Nursing Home) and people.json records the death on the same date, so she is not living. The line says 'lived six hours' in place of a death word. First-run hit of the kit's year gate, 25 October 2026; no death added."
+  }
+ ]
+}

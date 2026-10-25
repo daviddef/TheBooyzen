@@ -77,9 +77,19 @@ def by_of(p):
     return int(m.group(1)) if m else None
 
 
-def dead_of(p):
+def kind_of(p):
+    """The kit's own classification of the `d` field: "record", "flag" (the bare word) or None."""
     d = str(p.get("d") or "").strip()
-    return d not in ("", "—", "-") and d.lower() not in SAID
+    return None if d.lower() in SAID else lr.death_kind(died=d)
+
+
+def dead_of(p):
+    """A death RECORD. The bare word `deceased` is a flag, not a record (kit 341af33)."""
+    return kind_of(p) == "record"
+
+
+def flag_of(p):
+    return kind_of(p) == "flag"
 
 
 def stated(p):
@@ -93,9 +103,9 @@ def roster(w):
     living = []
     for i, p in enumerate(people):
         cites = [str(c) for c in (p.get("c") or [])]
-        if dead_of(p) or lr.public_source(cites):
+        if dead_of(p):
             continue
-        if stated(p) or lr.is_living(by_of(p), False, cites, y):
+        if stated(p) or lr.is_living(by_of(p), False, cites, y, undated_dead=flag_of(p)):
             living.append(i)
     liv = set(living)
     parents = {}
@@ -113,7 +123,7 @@ def roster(w):
             continue
         cites = [str(c) for c in (p.get("c") or [])]
         if lr.is_held_out(s, by_of(p), dead_of(p), cites, any(q in liv for q in parents.get(i, ())),
-                          pol.get("heldOut", []), y):
+                          pol.get("heldOut", []), y, undated_dead=flag_of(p)):
             held.append(i)
     return living, held
 
