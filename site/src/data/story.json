@@ -1,0 +1,2551 @@
+{
+ "title": "From the Karoo to the Rand",
+ "eyebrow": "The story · six generations · Graaff-Reinet to Johannesburg",
+ "dek": "The line this archive descends from, told once as a short book: a name with no dates at the top, a farmer who died beyond the Vaal with nothing, a farmer behind the Sneeuberg, a mason at Indwe, a railway clerk in Forest Hill, and a girl of eighteen with no parents. Every paragraph says how well it is known.",
+ "prologue": {
+  "title": "Start here",
+  "paragraphs": [
+   {
+    "id": "start-1",
+    "grade": "doc",
+    "text": "This is the short version of a long archive: six generations of one family, told in order, from a man nobody can date at the top of the line to a girl of eighteen in Johannesburg who had just lost both her parents, and then, briefly, to the living. It is a first telling; [corrections](/corrections/) are welcome.",
+    "evidence": [
+     {
+      "href": "/direct-line/",
+      "why": "The Spine: the generations, one row each"
+     }
+    ]
+   },
+   {
+    "id": "start-2",
+    "grade": "doc",
+    "text": "Everything said here about a person comes from a paper the archive holds, or is marked when it does not. A small mark ends each paragraph: **doc** where a document says so, **inf** where the archive reasons from documents, **lore** where it rests on the family's memory, the family's tree, or a printed genealogy the archive does not take as evidence on its own. A paragraph takes the mark of its weakest sentence, and every mark links to where it can be checked.",
+    "evidence": [
+     {
+      "href": "/method/",
+      "why": "Method: how every claim is labelled"
+     }
+    ]
+   },
+   {
+    "id": "start-3",
+    "grade": "doc",
+    "text": "Some passages are set in from the margin under the words *In the world around them*. They describe the place and the years, never what these particular people did or saw. Their marks say where the detail comes from: **archive** for this archive's own pages, **history** for general history, listed at the foot of the page.",
+    "evidence": [
+     {
+      "href": "/method/",
+      "why": "Method"
+     }
+    ]
+   },
+   {
+    "id": "start-4",
+    "grade": "doc",
+    "text": "The name will not sit still. Clerks wrote Booysen, Booijsen and Booyzen, sometimes all three in one decade, and the family has its own story about the z, told and tested in chapter V. Each chapter ends with *the papers for this chapter*.",
+    "evidence": [
+     {
+      "href": "/name/",
+      "why": "The Name"
+     }
+    ]
+   }
+  ]
+ },
+ "ribbon": {
+  "note": "Each card names that generation's person and where the archive puts the start of their life, with the place a document later finds them where it differs, and the spouse and where the spouse came from. The outline carries the evidence for the place of origin: solid documented, dashed inferred, dotted family memory or a printed genealogy. The last two cards are the living, by name and town only.",
+  "cards": [
+   {
+    "name": "Gerthardus Lodewikus Booysen",
+    "years": "",
+    "origin": "the Cape, place not known",
+    "originGrade": "inf",
+    "spouse": "Magdalena de Beer",
+    "spouseOrigin": "place not known",
+    "atPlace": "",
+    "atYear": "",
+    "living": false,
+    "chapter": "origin",
+    "person": "gerthardus-lodewikus-booysen",
+    "spousePerson": "magdelena-elisabeth-de-beer",
+    "title": "Named only as a parent, on his son's death notice of 1876; no dates"
+   },
+   {
+    "name": "Petrus Jacobus Booysen",
+    "years": "c. 1788–1876",
+    "origin": "Graaff-Reinet",
+    "originGrade": "doc",
+    "spouse": "Anna Maria van der Merwe",
+    "spouseOrigin": "place not known",
+    "atPlace": "district Rustenburg",
+    "atYear": "1876",
+    "living": false,
+    "chapter": "pj1788",
+    "person": "petrus-jacobus-booysen",
+    "spousePerson": "anna-maria-van-der-merwe",
+    "title": "Born at Graaff-Reinet by his death notice; died a widower in the Transvaal; a second wife, Elizabetha van der Merwe"
+   },
+   {
+    "name": "Petrus Jacobus Booysen",
+    "years": "1812–1884",
+    "origin": "district Graaff-Reinet",
+    "originGrade": "doc",
+    "spouse": "Johanna Catharina Mountjoy",
+    "spouseOrigin": "of Graaff-Reinet",
+    "atPlace": "Zevenfontein",
+    "atYear": "1884",
+    "living": false,
+    "chapter": "pj1812",
+    "person": "petrus-jacobus-booysen",
+    "spousePerson": "johanna-catharina-mountjoy",
+    "title": "Born in the district of Graaff-Reinet by his death notice; a farmer at Zevenfontein who owned his clothes"
+   },
+   {
+    "name": "Willem Hermanus Booyzen",
+    "years": "1851–1905",
+    "origin": "achter Sneeuwberg",
+    "originGrade": "doc",
+    "spouse": "Kathleen Barry",
+    "spouseOrigin": "baptised at Graaff-Reinet and Dordrecht, 1859",
+    "atPlace": "Indwe",
+    "atYear": "1905",
+    "living": false,
+    "chapter": "wh",
+    "person": "willem-hermanus-william-henry-booyzen",
+    "spousePerson": "catherine-maria-sophia-kathleen-barry",
+    "title": "Baptised behind the Sneeuberg in 1851; a farmer of Lady Grey in 1879, a mason at Indwe in 1905"
+   },
+   {
+    "name": "George Downing Mountjoy Booyzen",
+    "years": "1901–1947",
+    "origin": "the Cape",
+    "originGrade": "inf",
+    "spouse": "Anna Johanna Maria Pretorius",
+    "spouseOrigin": "of Barkly East",
+    "atPlace": "Forest Hill, Johannesburg",
+    "atYear": "1947",
+    "living": false,
+    "chapter": "george",
+    "person": "george-downing-mountjoy-booyzen",
+    "spousePerson": "anna-johanna-maria-pretorius",
+    "title": "Born in the Cape in 1901 by the family's tree; no birthplace read; a railway clerk in Johannesburg"
+   },
+   {
+    "name": "Catherine Mary Sophia Booyzen",
+    "years": "1929–2013",
+    "origin": "South Africa, town not recorded",
+    "originGrade": "doc",
+    "spouse": "Nuno Fernando Lerena",
+    "spouseOrigin": "of an Argentine-descended family",
+    "atPlace": "Johannesburg",
+    "atYear": "2013",
+    "living": false,
+    "chapter": "catherine",
+    "person": "catherine-mary-sophia-booyzen",
+    "spousePerson": "nuno-fernando-lerena",
+    "title": "Her birthday is in both her parents' death notices; married at St Joseph's, Mayfair, 1949"
+   },
+   {
+    "name": "Cheryl Anne Lerena",
+    "years": "",
+    "origin": "Johannesburg, South Africa",
+    "originGrade": "doc",
+    "spouse": "",
+    "spouseOrigin": "",
+    "atPlace": "",
+    "atYear": "",
+    "living": true,
+    "chapter": "us",
+    "title": "Living: named with a relationship and a town, nothing more"
+   },
+   {
+    "name": "David Defranceski",
+    "years": "",
+    "origin": "Johannesburg, South Africa",
+    "originGrade": "doc",
+    "spouse": "",
+    "spouseOrigin": "",
+    "atPlace": "Brisbane, Australia",
+    "atYear": "",
+    "living": true,
+    "chapter": "us",
+    "title": "Living: named by his own choice, with a relationship and towns, nothing more"
+   }
+  ]
+ },
+ "chapters": [
+  {
+   "id": "origin",
+   "numeral": "I",
+   "title": "Two names on line 3",
+   "place": "The Cape",
+   "years": "before 1788",
+   "paragraphs": [
+    {
+     "id": "o-1",
+     "grade": "doc",
+     "text": "On 14 September 1876, at a farm called Brakfontein in the district of Rustenburg, somebody filled in a death notice for an old man and came to line 3, which asks for the parents. The hand wrote «Gerthardus Lödewikus Booijsen» and «Magdalena de Beer». They are the top of the line this book follows, and line 3 of that form is the only place the name Gerthardus Lodewikus has ever been found for him.",
+     "evidence": [
+      {
+       "href": "/documents/#sterfkennis-1876",
+       "why": "Sterfkennis No. 678, 14 September 1876, line 3"
+      }
+     ]
+    },
+    {
+     "id": "o-2",
+     "grade": "inf",
+     "text": "Nine lines lower on the same sheet the dead man's eight children are listed, and the fifth of them is Jan Gerthardus Lodewikus Booijsen. The name in the parents' box is the back half of a son's name. The form is countersigned by H. S. Booijsen, whom the archive reads as Hendrik Stefanus, the seventh child, born about 1828: a son writing down a grandfather he had very probably never met.",
+     "evidence": [
+      {
+       "href": "/documents/#question-zero",
+       "why": "Question 0: line 12 of the same notice, and who signed it"
+      }
+     ]
+    },
+    {
+     "id": "o-3",
+     "grade": "lore",
+     "text": "The printed Cape genealogy of 1893, and its revision of 1981, give the old man's baptism as 21 September 1788 and his father as Jan Booijsen, who had married in 1770 and was dead more than forty years before 1876. A genealogist who went looking found no marriage of a Gerhardus Lodewicus to a Magdalena de Beer. The archive has not moved the top of its line on this. A printed book agreeing with its own earlier edition is one source, and against it stands a page signed by a son. What would end it is the baptism entry of 1788 itself, which is at Cape Town and has not been read.",
+     "evidence": [
+      {
+       "href": "/documents/#question-zero",
+       "why": "Question 0, and the two editions of the genealogy"
+      },
+      {
+       "href": "/direct-line/#gen-7",
+       "why": "The Spine, generation 7: why the row stays"
+      }
+     ]
+    },
+    {
+     "id": "o-4",
+     "grade": "lore",
+     "text": "What can be said of him beyond that is arithmetic. The family's tree gives his wife's birth as 1754, and his son was eighty-eight in 1876, so he was probably born somewhere between about 1745 and 1760. No paper gives him a birth, a death, a farm, a father or a mother.",
+     "evidence": [
+      {
+       "href": "/direct-line/#gen-7",
+       "why": "The Spine: the arithmetic, and what it rests on"
+      }
+     ]
+    },
+    {
+     "id": "o-5",
+     "grade": "inf",
+     "text": "Behind him, the archive says, stands a man known quite apart from this family: Boij Boijeszoon, Boy Booysen in modern spelling, who came into the Dutch East India Company's service from Barlt in Northern Friesland and settled at Stellenbosch and Drakenstein in the middle of the seventeenth century. Every South African Booysen is presumed to descend from him. This family's link to him is not demonstrated, and this book does not assume it.",
+     "evidence": [
+      {
+       "href": "/direct-line/#gen-7",
+       "why": "The Spine: the Cape progenitor of the surname"
+      }
+     ]
+    },
+    {
+     "id": "o-6",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The surname is common and this spelling of it is not. Booysen is borne today by about fifty-four thousand people and Booyzen by six hundred and forty-six, and where Booysen is a Cape name, Booyzen gathers in Gauteng, round Johannesburg. The z itself is old. The Cape archives hold documents under BOOYZEN from 1779, and in 1851 a Cape clerk wrote this family Booyzen in the same hand in which he wrote its godparents Pieterzen.",
+     "evidence": [
+      {
+       "kind": "archive",
+       "href": "/name/",
+       "why": "The Name: the distribution figures and the registers"
+      }
+     ]
+    },
+    {
+     "id": "o-7",
+     "grade": "lore",
+     "text": "The family's own account is that one of its men changed the s to a z in the Anglo-Boer War, so as not to be taken for Booysens who fought on the British side. That story belongs to chapter V, where it is tested.",
+     "evidence": [
+      {
+       "href": "/rebels/",
+       "why": "The Rebels: the testimony in full"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "note": "Both parents are names on their son's death notice of 1876 and nothing more; the printed Cape genealogy gives the father as Jan. The tree follows the archive's spine and the thread is dashed.",
+    "thread": "o-pj",
+    "rows": [
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "o-gl",
+        "name": "Gerthardus Lodewikus Booysen",
+        "years": "named 1876",
+        "grade": "doc",
+        "person": "gerthardus-lodewikus-booysen"
+       },
+       {
+        "id": "o-mdb",
+        "name": "Magdalena de Beer",
+        "years": "named 1876",
+        "grade": "doc",
+        "person": "magdelena-elisabeth-de-beer"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "o-pj",
+        "name": "Petrus Jacobus",
+        "years": "c. 1788–1876",
+        "grade": "inf",
+        "person": "petrus-jacobus-booysen"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": {
+    "label": "1876 · Brakfontein, district Rustenburg",
+    "title": "Line 3: the parents",
+    "text": "Gerthardus Lödewikus Booijsen. Magdalena de Beer.",
+    "source": "Sterfkennis No. 678, line 3, written 14 September 1876",
+    "hardLimit": "The notice dates neither of them and names neither of their parents. Line 12 of the same sheet names a son, Jan Gerthardus Lodewikus, and the printed genealogy names the father Jan."
+   },
+   "plates": [],
+   "papers": [
+    {
+     "title": "The 1876 Sterfkennis",
+     "href": "/documents/#sterfkennis-1876"
+    },
+    {
+     "title": "Question 0, answered by two people who own the book",
+     "href": "/documents/#question-zero"
+    },
+    {
+     "title": "The Spine, generation 7",
+     "href": "/direct-line/#gen-7"
+    },
+    {
+     "title": "The Name",
+     "href": "/name/"
+    },
+    {
+     "title": "Gerthardus Lodewikus Booysen",
+     "href": "person:gerthardus-lodewikus-booysen"
+    }
+   ]
+  },
+  {
+   "id": "pj1788",
+   "numeral": "II",
+   "title": "Nothing left, nothing known",
+   "place": "Graaff-Reinet · district Rustenburg",
+   "years": "c. 1788–1876",
+   "paragraphs": [
+    {
+     "id": "a-1",
+     "grade": "doc",
+     "text": "The same form says what he left. Line 9, a will: «Neen», no. Line 10, property: «Niets nagelaten», nothing left. Line 11, anything worth more than twenty-five pounds: «Niets bekend», nothing known. [Petrus Jacobus Booijsen](person:petrus-jacobus-booysen), landbouwer, a farmer, born at Graaff-Reinet, eighty-eight years old and a widower, had died on 1 September 1876 in the district of Rustenburg, in the Transvaal. The form was written at the farm Brakfontein thirteen days later.",
+     "evidence": [
+      {
+       "href": "/documents/#sterfkennis-1876",
+       "why": "Sterfkennis No. 678, lines 1 to 12"
+      }
+     ]
+    },
+    {
+     "id": "a-2",
+     "grade": "lore",
+     "text": "The printed Cape genealogy has him baptised on 21 September 1788, and in another volume has a girl, [Anna Maria van der Merwe](person:anna-maria-van-der-merwe), baptised on 5 October 1788 and married to him: two babies a fortnight apart, in the same colony, who grew up to marry each other. The family's tree gives the wedding as 1805, at Graaff-Reinet, when he would have been about seventeen, and has her dead before March 1825.",
+     "evidence": [
+      {
+       "href": "/documents/#kaapsche-2-3",
+       "why": "The Cape genealogies, volumes 1 and 2"
+      },
+      {
+       "href": "/marriages/",
+       "why": "The Marriages: the 1805 row, from the family tree"
+      }
+     ]
+    },
+    {
+     "id": "a-3",
+     "grade": "inf",
+     "text": "A Dutch Reformed register makes the marriage real. On 4 January 1807 a boy, David Schalk, born on 12 December 1806, was baptised as the son of Pieter Jacobus Booijzen and Anna Maria van der Merwe, and he heads the list of eight children on the 1876 notice. His names came from his mother's side: in the whole first volume of the Cape genealogies, which holds every Booijsen its compiler found, David Schalk occurs once, and it is this child. In the van der Merwe pages of the second volume it occurs again and again.",
+     "evidence": [
+      {
+       "href": "/documents/#anna-maria-1806",
+       "why": "The baptism of 4 January 1807, read from the index"
+      },
+      {
+       "href": "/documents/#kaapsche-2-3",
+       "why": "Where the name David Schalk comes from"
+      }
+     ]
+    },
+    {
+     "id": "a-4",
+     "grade": "doc",
+     "text": "The notice lists the eight, all of age: David Schalk, Magdalena Johanna, Petrus Jacobus, Anna Eliezabet, Jan Gerthardus Lodewikus, Eliezabet Cornelia, Hendrik Stefanus and Anna Maria. It names no mother for any of them. A second wife, [Elizabetha van der Merwe](person:elizabetha-van-der-merwe), is named as the mother of Hendrik Stefanus on his own death notice of 1908, which puts his birth in about June 1828. Two wives of one surname, one after the other, and the middle of the family assigned to neither.",
+     "evidence": [
+      {
+       "href": "/documents/#sterfkennis-1876",
+       "why": "The eight children, line 12"
+      },
+      {
+       "href": "/documents/#hendrik-1908",
+       "why": "Hendrik Stephanus's death notice, 1908"
+      }
+     ]
+    },
+    {
+     "id": "a-5",
+     "grade": "inf",
+     "text": "The third name on the list is the man of the next chapter. The archive reads that Petrus Jacobus as the farmer who died at Zevenfontein in 1884, whose own death notice gives his birthplace as the district of Graaff-Reinet and his father as Petrus Jacobus Booÿsen. Which of the two wives was his mother, no paper says.",
+     "evidence": [
+      {
+       "href": "/documents/#anna-maria-1806",
+       "why": "What is proved, and what is still not"
+      },
+      {
+       "href": "/documents/#farmer-died-owning-1884",
+       "why": "The 1884 death notice"
+      }
+     ]
+    },
+    {
+     "id": "a-6",
+     "register": "world",
+     "worldSource": "history",
+     "text": "Graaff-Reinet had been made the seat of a new district on the colony's eastern frontier in 1786, two years before the baptism the genealogy gives. In the eastern districts in those years most colonists were stock farmers, grazing sheep and cattle over wide farms held from the government on loan, and many of them moved their herds with the seasons.",
+     "evidence": [
+      {
+       "kind": "history",
+       "href": "#world-H1",
+       "why": "Graaff-Reinet, 1786"
+      },
+      {
+       "kind": "history",
+       "href": "#world-H2",
+       "why": "The stock farmers of the eastern districts"
+      }
+     ]
+    },
+    {
+     "id": "a-7",
+     "grade": "doc",
+     "text": "When he went north the papers do not say. His son Hendrik Stefanus married Anna Johanna Olivier at Potchefstroom, north of the Vaal, on 3 July 1850. By 1876 the old man was in the district of Rustenburg. Hendrik Stefanus's first wife died at Brakfontein in May 1891, and at his second marriage, the next year, he still gave Brakfontein as his home.",
+     "evidence": [
+      {
+       "href": "/documents/#olivier-line",
+       "why": "Potchefstroom, 3 July 1850, entry 206"
+      },
+      {
+       "href": "/documents/#brakfontein-1891",
+       "why": "Brakfontein, 1891"
+      }
+     ]
+    },
+    {
+     "id": "a-8",
+     "register": "world",
+     "worldSource": "history",
+     "text": "From the later 1830s thousands of Dutch-speaking farmers of the eastern Cape left the colony northward, over the Orange and then the Vaal, in what came to be called the Great Trek. Britain recognised the republic north of the Vaal at the Sand River Convention of 1852. A wedding at Potchefstroom in 1850 was, in the archive's words, fourteen years after the Great Trek and two years before the convention made the South African Republic a state at all.",
+     "evidence": [
+      {
+       "kind": "history",
+       "href": "#world-H3",
+       "why": "The Great Trek and the Sand River Convention"
+      },
+      {
+       "kind": "history",
+       "href": "/documents/#olivier-line",
+       "why": "The archive on Potchefstroom, 1850"
+      }
+     ]
+    },
+    {
+     "id": "a-9",
+     "grade": "doc",
+     "text": "So he was born at Graaff-Reinet and died in the Transvaal, a farmer with nothing to leave. No paper says what he farmed, what his house was, or whether Brakfontein was his. His son's notice, eight years later, would read much the same.",
+     "evidence": [
+      {
+       "href": "/documents/#sterfkennis-1876",
+       "why": "Niets nagelaten"
+      },
+      {
+       "href": "/documents/#farmer-died-owning-1884",
+       "why": "Moveables only, 1884"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "note": "Two wives, both van der Merwe: Anna Maria, drawn, and after her Elizabetha, the mother of Hendrik Stefanus. David Schalk is Anna Maria's; no paper names the mother of the man in the next chapter, so his thread is dashed. Five of the eight children are not drawn.",
+    "thread": "a-pj",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "a-gl",
+        "name": "Gerthardus Lodewikus",
+        "years": "named 1876",
+        "grade": "doc",
+        "person": "gerthardus-lodewikus-booysen"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "a-pj88",
+        "name": "Petrus Jacobus Booysen",
+        "years": "c. 1788–1876, farmer",
+        "grade": "doc",
+        "person": "petrus-jacobus-booysen"
+       },
+       {
+        "id": "a-am",
+        "name": "Anna Maria van der Merwe",
+        "years": "† before 1825",
+        "grade": "doc",
+        "person": "anna-maria-van-der-merwe"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "a-ds",
+        "name": "David Schalk",
+        "years": "1806",
+        "grade": "doc"
+       },
+       {
+        "id": "a-pj",
+        "name": "Petrus Jacobus",
+        "years": "1812–1884",
+        "grade": "inf",
+        "person": "petrus-jacobus-booysen"
+       },
+       {
+        "id": "a-hs",
+        "name": "Hendrik Stefanus",
+        "years": "c. 1828–1908, Elizabetha's",
+        "grade": "doc"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": {
+    "label": "1876 · Brakfontein",
+    "title": "What he left",
+    "text": "Testament: Neen. Goederen: Niets nagelaten. Boven £25: Niets bekend.",
+    "source": "Sterfkennis No. 678, lines 9 to 11, 14 September 1876",
+    "hardLimit": "The form does not say what he farmed or whether Brakfontein was his, and it names no mother for any of his eight children."
+   },
+   "plates": [],
+   "papers": [
+    {
+     "title": "The 1876 Sterfkennis",
+     "href": "/documents/#sterfkennis-1876"
+    },
+    {
+     "title": "1806: Anna Maria van der Merwe stops being a rumour",
+     "href": "/documents/#anna-maria-1806"
+    },
+    {
+     "title": "The Cape genealogies, volumes two and three",
+     "href": "/documents/#kaapsche-2-3"
+    },
+    {
+     "title": "1908: the son who signed the 1876 notice",
+     "href": "/documents/#hendrik-1908"
+    },
+    {
+     "title": "The Olivier line, and Potchefstroom 1850",
+     "href": "/documents/#olivier-line"
+    },
+    {
+     "title": "The Spine, generation 6",
+     "href": "/direct-line/#gen-6"
+    }
+   ]
+  },
+  {
+   "id": "pj1812",
+   "numeral": "III",
+   "title": "Behind the Sneeuberg",
+   "place": "Graaff-Reinet · Cradock · Zevenfontein",
+   "years": "1812–1884",
+   "paragraphs": [
+    {
+     "id": "b-1",
+     "grade": "doc",
+     "text": "On 25 July 1863 a death notice was filed for a farmer's wife, [Johanna Catharina Montjoy](person:johanna-catharina-mountjoy), who had died on 19 May at Zevenfontein, on the Brak River. The form asked her age in years. Whoever answered wrote «44 years & 19 days», which puts her birth on 30 April 1819, at Graaff-Reinet. Her husband, [Petrus Jacobus Booysen](person:petrus-jacobus-booysen), signed it.",
+     "evidence": [
+      {
+       "href": "/documents/#death-notice-adds-1863",
+       "why": "Her death notice, KAB MOOC 6/9/104: 499"
+      }
+     ]
+    },
+    {
+     "id": "b-2",
+     "grade": "inf",
+     "text": "It lists eight children, one of age and seven minors: Jacobus Nicholas, Johanna Catharina, Petrus Jacobus, David Schalk, Willem Hermanus, Magdalena Johanna, Jan Gerhardus Lodewicus and Jacoba Catharina. Seven of them are found in the baptism registers of Graaff-Reinet. A ninth, Anna Catharina, baptised in 1842, is not on the list; the archive takes it that she had died before her mother, and the form, as these forms do, says nothing of her.",
+     "evidence": [
+      {
+       "href": "/documents/#death-notice-adds-1863",
+       "why": "The children, line 9"
+      }
+     ]
+    },
+    {
+     "id": "b-3",
+     "grade": "doc",
+     "text": "They had married at Cradock on 4 November 1838. By 1851 the register puts them elsewhere: the register of the baptism of their son Willem Hermanus, born on 4 May and baptised on 31 October that year, writes the place as «achter Sneeuwberg», behind the Sneeuberg. The first godfather was Willem Hermanus Pieterzen, one of the mother's half-brothers, and the boy carries his two names.",
+     "evidence": [
+      {
+       "href": "/marriages/",
+       "why": "The Marriages: Cradock, 4 November 1838"
+      },
+      {
+       "href": "/documents/#baptism-settles-age-1851",
+       "why": "The 1851 baptism, entry 2809"
+      }
+     ]
+    },
+    {
+     "id": "b-4",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "Achter Sneeuwberg is a district, not a farm: the country behind the Sneeuberg, a wide stretch of the Karoo north of Graaff-Reinet. The registers use the name for the farms out beyond the mountain, as against the town.",
+     "evidence": [
+      {
+       "kind": "archive",
+       "href": "/places/achter-sneeuwberg/",
+       "why": "The place, in the archive's gazetteer"
+      }
+     ]
+    },
+    {
+     "id": "b-5",
+     "grade": "doc",
+     "text": "Her father had been dead for most of her life. [James Montjoy](person:james-montjoy), a saddler, died in the village of Cradock in September 1827, when she was eight. His death notice was not written until 1840, at Colesberg, by a Montjoy who knew his trade, his house and erf at Cradock and their value, ninety pounds, and the name of his widow's first husband. Asked where he was born, the informant wrote «Europe». Asked for his parents, «Not Known».",
+     "evidence": [
+      {
+       "href": "/documents/#oldest-document-archive-1840",
+       "why": "James Montjoy's death notice, KAB MOOC 6/9/21: 4393"
+      }
+     ]
+    },
+    {
+     "id": "b-6",
+     "grade": "inf",
+     "text": "A man who lodged in his house says a little more. Writing in 1869 of a cold January in 1822, when Cradock had about half a dozen inhabitants, John Montgomery, the founder of Burgersdorp, remembered [«James Mountjoy (a saddler, who was discharged from the 21st Light Dragoons)»](person:james-montjoy), who took him in for the night. There was no room in a village that size for two saddlers of one name, and the archive takes him for this man. A soldier who came out with his regiment is on no passenger list, which may be why no Cape paper could say where he came from.",
+     "evidence": [
+      {
+       "href": "/documents/#mountjoy-dragoons",
+       "why": "The Friend of the Free State, 25 November 1869"
+      }
+     ]
+    },
+    {
+     "id": "b-7",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The 21st Light Dragoons came to the Cape with the expedition of 1806 and were the cavalry of its garrison. In September 1817 a letter from the Cape, printed that November in five London papers, reported that they had embarked for India.",
+     "evidence": [
+      {
+       "kind": "archive",
+       "href": "/documents/#dragoons-cape",
+       "why": "The regiment, tracked through the London papers"
+      }
+     ]
+    },
+    {
+     "id": "b-8",
+     "grade": "doc",
+     "text": "He had married [Anna Catharina Slier](person:anna-catharina-sleer), a widow, at Graaff-Reinet on 9 March 1817, six months before his regiment sailed. On a page where the clerk filled in everyone else's origin, the column for his is blank. Her first husband had been a Pietersen, and one of her sons by him stood godfather to her grandson behind the Sneeuberg in 1851.",
+     "evidence": [
+      {
+       "href": "/marriages/",
+       "why": "The Marriages: Graaff-Reinet, 9 March 1817"
+      },
+      {
+       "href": "/documents/#oldest-document-archive-1840",
+       "why": "Line 6: widow of William Pietersen"
+      },
+      {
+       "href": "/documents/#baptism-settles-age-1851",
+       "why": "The Pieterzen godparents, 1851"
+      }
+     ]
+    },
+    {
+     "id": "b-9",
+     "grade": "doc",
+     "text": "Petrus Jacobus outlived his wife by twenty-one years and married again. A christening of 19 June 1870 names the second wife, [Johanna Margaritha Pretorius](person:johanna-margaritha-pretorius), as the mother of a son, Gert Jacobus, and two children of the first marriage stood as his godparents. On 30 March 1884 Petrus Jacobus Booysen, Senior, farmer, died at Zevenfontein, by then counted in the district of Middelburg, aged seventy-two. His death notice names his father and says of his mother: «mother's name, not known». The informant underlined it.",
+     "evidence": [
+      {
+       "href": "/documents/#second-wife-named-1870",
+       "why": "The 1870 Doop Register"
+      },
+      {
+       "href": "/documents/#farmer-died-owning-1884",
+       "why": "The 1884 death notice, estate 8907"
+      }
+     ]
+    },
+    {
+     "id": "b-10",
+     "grade": "inf",
+     "text": "And it says what he had: «Moveables only, such as wearing apparel &c». He is a farmer on line 5, and on line 10 he owns no land at all. He lived at Zevenfontein; he did not own it. His father-in-law the saddler had owned a house in Cradock; he owned his clothes. The archive draws the hard conclusion: the household was already landless in 1884, fifteen years before the war.",
+     "evidence": [
+      {
+       "href": "/documents/#farmer-died-owning-1884",
+       "why": "Moveables only, and what it means for the burned farm"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "note": "Her father was James Montjoy, saddler of Cradock, who died in 1827. Eight children on the 1863 notice; five are drawn. The second wife, Johanna Margaritha Pretorius, and her children are not.",
+    "thread": "b-wh",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "b-pj88",
+        "name": "Petrus Jacobus",
+        "years": "† 1876",
+        "grade": "inf",
+        "person": "petrus-jacobus-booysen"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "b-pj",
+        "name": "Petrus Jacobus Booysen",
+        "years": "1812–1884, farmer",
+        "grade": "doc",
+        "person": "petrus-jacobus-booysen"
+       },
+       {
+        "id": "b-jcm",
+        "name": "Johanna Catharina Montjoy",
+        "years": "1819–1863",
+        "grade": "doc",
+        "person": "johanna-catharina-mountjoy"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "b-pj39",
+        "name": "Petrus Jacobus",
+        "years": "1839",
+        "grade": "doc"
+       },
+       {
+        "id": "b-ds",
+        "name": "David Schalk",
+        "years": "1848",
+        "grade": "doc",
+        "person": "david-schalk-booysen"
+       },
+       {
+        "id": "b-wh",
+        "name": "Willem Hermanus",
+        "years": "1851–1905",
+        "grade": "doc",
+        "person": "willem-hermanus-william-henry-booyzen"
+       },
+       {
+        "id": "b-mj",
+        "name": "Magdalena Johanna",
+        "years": "1853",
+        "grade": "doc"
+       },
+       {
+        "id": "b-jg",
+        "name": "Jan Gerhardus Lodewicus",
+        "years": "1855",
+        "grade": "doc"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1884 · Zevenfontein",
+     "title": "What he had",
+     "text": "Moveables only, such as wearing apparel &c.",
+     "source": "Death notice of Petrus Jacobus Booysen, Senior, estate 8907, filed 1 August 1884, line 10",
+     "hardLimit": "The form never asks for the second wife's name, and it gives his mother none."
+    },
+    {
+     "label": "1840 · Colesberg",
+     "title": "The saddler's parents",
+     "text": "Names of the Parents of the Deceased: Not Known.",
+     "source": "Death notice of James Montjoy, KAB MOOC 6/9/21: 4393, filed 9 July 1840, line 3",
+     "hardLimit": "For his birthplace the notice gives only «Europe»."
+    }
+   ],
+   "plates": [],
+   "papers": [
+    {
+     "title": "1863: the death notice that adds a generation",
+     "href": "/documents/#death-notice-adds-1863"
+    },
+    {
+     "title": "1851: the baptism that settles an age",
+     "href": "/documents/#baptism-settles-age-1851"
+    },
+    {
+     "title": "1840: the oldest document in this archive",
+     "href": "/documents/#oldest-document-archive-1840"
+    },
+    {
+     "title": "1822: a man who lodged in James Mountjoy's house",
+     "href": "/documents/#mountjoy-dragoons"
+    },
+    {
+     "title": "1870: the second wife, named at last",
+     "href": "/documents/#second-wife-named-1870"
+    },
+    {
+     "title": "1884: a farmer who died owning his clothes",
+     "href": "/documents/#farmer-died-owning-1884"
+    },
+    {
+     "title": "The Spine, generation 5",
+     "href": "/direct-line/#gen-5"
+    }
+   ]
+  },
+  {
+   "id": "wh",
+   "numeral": "IV",
+   "title": "A farmer, then a mason",
+   "place": "Lady Grey · Barkly East · Indwe",
+   "years": "1851–1905",
+   "paragraphs": [
+    {
+     "id": "c-1",
+     "grade": "doc",
+     "text": "On 13 September 1905, in Doorn Street, Indwe, a mason of fifty-five died of an ulcer of the stomach after fourteen months of illness, attended by a doctor, W. C. Macdonald. The next day his eldest son, John Barry Booyzen, who had been present at the death, gave the particulars to the registrar. The clerk wrote the dead man as [Willem Hermanus Booysen](person:willem-hermanus-william-henry-booyzen). Four lines below, the son signed his own name: Booyzen.",
+     "evidence": [
+      {
+       "href": "/documents/#death-registration-settles-1905",
+       "why": "Death registration, entry 299, Indwe"
+      },
+      {
+       "href": "/documents/#name-changing-one-sheet",
+       "why": "The name changing, on one sheet of paper"
+      }
+     ]
+    },
+    {
+     "id": "c-2",
+     "grade": "doc",
+     "text": "The form asks how many children he had had. The answer is twelve. It gives the public cemetery at Indwe as the place of burial.",
+     "evidence": [
+      {
+       "href": "/documents/#death-registration-settles-1905",
+       "why": "The 1905 registration"
+      }
+     ]
+    },
+    {
+     "id": "c-3",
+     "grade": "doc",
+     "text": "He was the boy baptised behind the Sneeuberg in 1851, the fifth of the eight children on his mother's death notice, twelve when she died. The next paper to find him is his marriage. On 22 December 1879, in the Dutch Reformed church at Barkly, after banns, he married Catharine Mary Barry. The register calls him a jongman of Lady Grey and a boer, a farmer, and gives his age as twenty-two; he was twenty-eight. The witnesses were J. Sutherland and P. Schoeman.",
+     "evidence": [
+      {
+       "href": "/documents/#marriage-register-ambiguous-1879",
+       "why": "The marriage register, entry 15, 22 December 1879"
+      }
+     ]
+    },
+    {
+     "id": "c-4",
+     "grade": "inf",
+     "text": "He signed the register himself, and the archive spent a long time on one letter of that signature, which may be an s or a z. A better scan of his 1851 baptism later showed that the clerks of his childhood already wrote the family Booyzen, with a z, in the same hand in which they wrote other families Pieterzen. A z in a Dutch hand is no evidence of anybody's intent. What survives is the form of 1905: two spellings of one man's name on one sheet.",
+     "evidence": [
+      {
+       "href": "/documents/#marriage-register-ambiguous-1879",
+       "why": "The most consequential letter in the archive"
+      },
+      {
+       "href": "/documents/#baptism-settles-age-1851",
+       "why": "Resolved, and not in the direction expected"
+      }
+     ]
+    },
+    {
+     "id": "c-5",
+     "grade": "doc",
+     "text": "Their children were christened at Barkly East. On 15 September 1889 a daughter born that June, Johanna Catharina, her father's mother's name, was baptised there, and her godparents were her grandparents on the other side, [John Barry](person:john-augustus-barry-i) and Margaret Wilhelmina Elizabeth Kolbe, written Kolby. In May 1891 another daughter, born that April, was christened with her mother's names entire, Catharina Maria Sophia. On every register entry the archive has read for him, the father is Booysen, with an s.",
+     "evidence": [
+      {
+       "href": "/documents/#grandparents-font-name-1889",
+       "why": "Barkly Oost, entry 40, 15 September 1889"
+      },
+      {
+       "href": "/documents/#same-font-years-1891",
+       "why": "Barkly Oost, entry 120, 24 May 1891"
+      }
+     ]
+    },
+    {
+     "id": "c-6",
+     "grade": "doc",
+     "text": "His wife was [Catherina Mary Sophia Barry](person:catherine-maria-sophia-kathleen-barry), Kathleen in the archive, born on 4 August 1859. Her father, [John Barry](person:john-augustus-barry-i), was a carpenter. When he died at his own house, Manor Owen, in Barkly East, on 25 August 1903, aged eighty-four, the son who had been in the room registered him as «Irishman born in Ireland». Twelve years later another son swore on his death notice that he had been born at sea, exact whereabouts unknown. The archive follows the earlier paper.",
+     "evidence": [
+      {
+       "href": "/documents/#barry-fonts",
+       "why": "The Barry children at the font"
+      },
+      {
+       "href": "/documents/#barry-1903",
+       "why": "John Barry's death registration, entry 74, 1903"
+      }
+     ]
+    },
+    {
+     "id": "c-7",
+     "grade": "doc",
+     "text": "Her mother was a Kolbe, [Margaretha Wilhelmina Elizabeth](person:margaretha-wilhelmina-elizabeth-mary-kolbe), who had married [John Barry](person:john-augustus-barry-i) at Colesberg on 23 February 1846 and signed the register herself. The clerk wrote the bridegroom's name as Berry; he signed it Barry. In the column for consent, where other entries name two fathers, the register reads «de Weduwe Kolbe, moeder»: the widow Kolbe, the mother. Her father had died fourteen months before.",
+     "evidence": [
+      {
+       "href": "person:margaretha-wilhelmina-elizabeth-mary-kolbe",
+       "why": "Her page: the Colesberg register, entry 735"
+      }
+     ]
+    },
+    {
+     "id": "c-8",
+     "grade": "doc",
+     "text": "That father was [George Augustus Kolbe](person:george-augustus-kolbe), born in Soho on 7 December 1802, the son of a London tailor, John Gottlob Kolbe. On 20 January 1819, at sixteen, he swore before the diocese of London that he was «of the age of Twenty-one Years and upwards», and the same day he married [Margaret Downing](person:margaret-downing), who was fifteen, at St Leonard's, Shoreditch. She signed with her mark. Eleven months later they sailed from Gravesend on the Nautilus, in Owen's party, and the settler roll entered him as a chemist of twenty.",
+     "evidence": [
+      {
+       "href": "/documents/#kolbe-baptism-1803",
+       "why": "St Anne's Soho, the baptism register"
+      },
+      {
+       "href": "/documents/#sworn-falsehood-shoreditch-1819",
+       "why": "The marriage allegation, 20 January 1819"
+      },
+      {
+       "href": "/documents/#marriage-entry-bride-1819",
+       "why": "The Shoreditch register, No. 858"
+      },
+      {
+       "href": "/documents/#nautilus-roll",
+       "why": "Owen's party on the Nautilus"
+      }
+     ]
+    },
+    {
+     "id": "c-9",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "Owen's party was fifty-two people, probably recruited in London: among its trades a bricklayer, a ropemaker, a goldsmith, two edged-tool makers, a smith, three farmers and one chemist. A man of another party on the same ship wrote home that a day out of Gravesend it came on to blow, the ship went aground on the sands, and a later storm lasted three days. The Nautilus reached Algoa Bay on 14 April 1820. Early in 1821 Owen left the location and the party dispersed.",
+     "evidence": [
+      {
+       "kind": "archive",
+       "href": "/documents/#nautilus-roll",
+       "why": "Owen's party, from the settler handbook"
+      },
+      {
+       "kind": "archive",
+       "href": "/documents/#nautilus-storm",
+       "why": "What the voyage was like, from a man on the same deck"
+      }
+     ]
+    },
+    {
+     "id": "c-10",
+     "register": "world",
+     "worldSource": "history",
+     "text": "The 1820 settlers were some four thousand British emigrants landed at Algoa Bay that year under a government scheme to put farmers on the colony's eastern frontier.",
+     "evidence": [
+      {
+       "kind": "history",
+       "href": "#world-H4",
+       "why": "The 1820 settlers"
+      }
+     ]
+    },
+    {
+     "id": "c-11",
+     "grade": "doc",
+     "text": "He became a missionary. From 1828 he worked with James Clark at a station among the San, the Bushman station that became Bethulie, and from 1831 at Philippolis, where in January 1832 his journal records twenty-six people vaccinated, until the London Missionary Society dissolved its connection with him in 1837. He died on 1 December 1844 on his own farm, Wurthemburg, and lies at Burgersdorp under a cut-stone monument that also names Margaret Downing, born in London, dead at Burgersdorp in 1867.",
+     "evidence": [
+      {
+       "href": "person:george-augustus-kolbe",
+       "why": "His page: the mission years, his journal, the obituary"
+      },
+      {
+       "href": "/documents/#grave-burgersdorp",
+       "why": "The grave at Burgersdorp"
+      }
+     ]
+    },
+    {
+     "id": "c-12",
+     "grade": "doc",
+     "text": "Seventy years later his grandson could not name him. Margaretha Kolbe died on 2 August 1912 in her son Richard's house at Manorowen, in Barkly East, and in 1915 he filled in her death notice. For her parents he wrote: «Father: Kolbe, thinks James was christian name. Mother: Unknown.» The stone at Burgersdorp, with both their names cut in it, stood about forty miles away.",
+     "evidence": [
+      {
+       "href": "/documents/#father-kolbe-thinks-1912",
+       "why": "Death notice of Margaret Elizabeth Barry, born Kolbe, 1915"
+      }
+     ]
+    },
+    {
+     "id": "c-13",
+     "grade": "inf",
+     "text": "Between the wedding and the death the trade changed. In 1879 he was a farmer; in 1905 he was a mason, living in a street in a colliery town. A man who works land and then works stone has very often lost the land in between, and the war lies in that interval. But his father had died owning his clothes in 1884, and no paper the archive has found names a farm that Willem Hermanus owned.",
+     "evidence": [
+      {
+       "href": "/documents/#death-registration-settles-1905",
+       "why": "A farmer who became a mason"
+      },
+      {
+       "href": "/documents/#farmer-died-owning-1884",
+       "why": "Landless in 1884"
+      }
+     ]
+    },
+    {
+     "id": "c-14",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "Barkly East lies under the Stormberg in the north-eastern Cape, and in 1899 to 1902 it was the most rebellious corner of the colony. Indwe, in the district of Wodehouse, was a colliery town: its mine was coal, not gold.",
+     "evidence": [
+      {
+       "kind": "archive",
+       "href": "/places/barkly-east/",
+       "why": "Barkly East, in the archive's gazetteer"
+      },
+      {
+       "kind": "archive",
+       "href": "/places/indwe/",
+       "why": "Indwe, in the archive's gazetteer"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "note": "Kathleen's father, the carpenter of Manor Owen, died in 1903; her mother, Margaretha Kolbe, was the 1820 settler's daughter. Twelve children by the 1905 registration; four are drawn. No paper the archive has read names George's parents: the family's tree does, and his forenames are this household's surnames, so his thread is dashed.",
+    "thread": "c-gd",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "c-pj",
+        "name": "Petrus Jacobus",
+        "years": "† 1884",
+        "grade": "doc",
+        "person": "petrus-jacobus-booysen"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "c-wh",
+        "name": "Willem Hermanus Booyzen",
+        "years": "1851–1905, mason",
+        "grade": "doc",
+        "person": "willem-hermanus-william-henry-booyzen"
+       },
+       {
+        "id": "c-kb",
+        "name": "Kathleen Barry",
+        "years": "1859–1940",
+        "grade": "doc",
+        "person": "catherine-maria-sophia-kathleen-barry"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "c-jbb",
+        "name": "John Barry",
+        "years": "1884–1952",
+        "grade": "doc",
+        "person": "john-barry-booyzen"
+       },
+       {
+        "id": "c-jc",
+        "name": "Johanna Catharina",
+        "years": "1889",
+        "grade": "doc"
+       },
+       {
+        "id": "c-cms",
+        "name": "Catharina Maria Sophia",
+        "years": "1891–1946",
+        "grade": "doc"
+       },
+       {
+        "id": "c-gd",
+        "name": "George Downing Mountjoy",
+        "years": "1901–1947",
+        "grade": "inf",
+        "person": "george-downing-mountjoy-booyzen"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1905 · Indwe",
+     "title": "The death registration",
+     "text": "Mason. Ulcer of Stomach. Fourteen months. Informant: J. B. Booyzen, present at death.",
+     "source": "Form of Information of a Death, entry 299, sub-district Indwe, registered 14 September 1905",
+     "hardLimit": "The form gives his trade and his street. It says nothing about the war, and nothing about a farm."
+    },
+    {
+     "label": "1915 · Barkly East",
+     "title": "A grandson's answer",
+     "text": "Father: Kolbe, thinks James was christian name. Mother: Unknown.",
+     "source": "Death notice of Margaret Elizabeth Barry, born Kolbe, signed R. P. Barry, 13 May 1915, line 3"
+    }
+   ],
+   "plates": [],
+   "papers": [
+    {
+     "title": "1905: the death registration",
+     "href": "/documents/#death-registration-settles-1905"
+    },
+    {
+     "title": "The name changing, on one sheet of paper",
+     "href": "/documents/#name-changing-one-sheet"
+    },
+    {
+     "title": "1879: the marriage register",
+     "href": "/documents/#marriage-register-ambiguous-1879"
+    },
+    {
+     "title": "1889: two grandparents at a font",
+     "href": "/documents/#grandparents-font-name-1889"
+    },
+    {
+     "title": "1903: Irishman born in Ireland",
+     "href": "/documents/#barry-1903"
+    },
+    {
+     "title": "1915: Father: Kolbe, thinks James",
+     "href": "/documents/#father-kolbe-thinks-1912"
+    },
+    {
+     "title": "The Kolbes",
+     "href": "/kolbe/"
+    },
+    {
+     "title": "The Barrys",
+     "href": "/barry/"
+    },
+    {
+     "title": "The Spine, generation 4",
+     "href": "/direct-line/#gen-4"
+    }
+   ]
+  },
+  {
+   "id": "testimony",
+   "numeral": "V",
+   "title": "What the family remembered",
+   "place": "Barkly East · Indwe · Johannesburg",
+   "years": "1899–1940",
+   "paragraphs": [
+    {
+     "id": "t-1",
+     "grade": "lore",
+     "text": "One paragraph of family memory sits at the centre of this archive. It is recorded on the family's tree in the words of a descendant of Willem Hermanus, who had it from her father. It says that they were living in the Cape Colony and were rebels on the side of the Boer republics; that some Booysens were joiners, fighting for the British, so a great-grandfather changed the spelling to Booyzen; that a great-great-grandfather was shot and killed by the British; that the women and children were put in a concentration camp and the family farm in the Eastern Cape was burned; and that after the war a great-great-grandmother, «with nothing but a pumpkin to eat», took her children on a train to Johannesburg, where the boys went onto the mines.",
+     "evidence": [
+      {
+       "href": "/rebels/",
+       "why": "The Rebels: the testimony, in full"
+      }
+     ]
+    },
+    {
+     "id": "t-2",
+     "grade": "doc",
+     "text": "The archive takes it apart one claim at a time, and so does this chapter. They were living in the Cape Colony: that holds. Every paper the archive has read for Willem Hermanus's household, from 1851 to 1905, is a Cape paper.",
+     "evidence": [
+      {
+       "href": "/rebels/",
+       "why": "The claims, one at a time"
+      },
+      {
+       "href": "/documents/",
+       "why": "The documents"
+      }
+     ]
+    },
+    {
+     "id": "t-3",
+     "grade": "doc",
+     "text": "They were rebels. For the Booyzens this is not shown. Twenty-six Booysens are on the roll of Cape Rebels, and every one of them is from the Northern Cape or Griqualand West; Booyzen, with a z, is on no roll at all. But the family's other surname is there. A Fred J. Barry of Ivanhoe, in Barkly East and Wodehouse, was tried in June 1901, and a farmer of Jerpoint on the roll carries the forenames of Kathleen's brother, Richard Peter. The roll gives no parents and no birth dates, and the archive has not shown that either man is her kin.",
+     "evidence": [
+      {
+       "href": "/rebels/",
+       "why": "The Cape Rebel roll, searched three ways"
+      }
+     ]
+    },
+    {
+     "id": "t-4",
+     "grade": "inf",
+     "text": "On 8 July 1901, under martial law, Kathleen's niece Margarietha Barry married Petrus Jacobus Pretorius in a private house, «in woonhuis D. Schoeman te Caerlaverock». The witness who signed, D. W. Schoeman, the archive reads as [Daniel Willem Schoeman](person:daniel-willem-schoeman), farmer of Caerlaverock, who had been tried as a Cape Rebel the month before. Their daughter would marry Kathleen's son.",
+     "evidence": [
+      {
+       "href": "/documents/#wedding-rebels-house-1901",
+       "why": "The 1901 register, book 4584, entry 5"
+      },
+      {
+       "href": "/rebels/",
+       "why": "Caerlaverock on the Cape Rebel roll"
+      }
+     ]
+    },
+    {
+     "id": "t-5",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "A Cape Rebel was a British subject of the Cape who took up arms with the Transvaal and the Free State: in law, high treason. About fifteen thousand are documented, and they were not evenly spread. Burgersdorp alone sent 1,048, and Barkly East and Dordrecht together about 550 before the battle of Stormberg in December 1899, with a commando of their own. From April 1901 military courts tried some eight hundred cases, and forty-four Cape colonists were hanged or shot for high treason.",
+     "evidence": [
+      {
+       "kind": "archive",
+       "href": "/rebels/",
+       "why": "They lived in the most rebellious corner of the Colony"
+      }
+     ]
+    },
+    {
+     "id": "t-6",
+     "grade": "doc",
+     "text": "Some Booysens were joiners. The register of joiners, 952 names, holds one Booysen: J. J. Booysen, of Heilbron, in the Orange Free State. He was a real man, but not a Cape colonist and not of this district. The claim is neither confirmed nor refuted.",
+     "evidence": [
+      {
+       "href": "/rebels/",
+       "why": "The joiners register"
+      }
+     ]
+    },
+    {
+     "id": "t-7",
+     "grade": "inf",
+     "text": "A great-grandfather changed the spelling. The change is on paper: on the form of 1905 the clerk writes Booysen and the son signs Booyzen. But the z was not invented. The Cape archives hold documents under BOOYZEN from 1779, a hundred and twenty years before the war, and an 1851 register writes this family with a z. The change is real; the spelling it changed to was not new. Why it was made, only the family says.",
+     "evidence": [
+      {
+       "href": "/documents/#name-changing-one-sheet",
+       "why": "Two spellings on one sheet"
+      },
+      {
+       "href": "/name/",
+       "why": "The Name"
+      }
+     ]
+    },
+    {
+     "id": "t-8",
+     "grade": "doc",
+     "text": "A great-great-grandfather was shot and killed by the British. Neither man the story can mean was. Petrus Jacobus died at Zevenfontein in 1884, fifteen years before the war, and Willem Hermanus died at Indwe in 1905, three years after it, of an ulcer. Whoever the story means, it is not either of them.",
+     "evidence": [
+      {
+       "href": "/documents/#farmer-died-owning-1884",
+       "why": "1884"
+      },
+      {
+       "href": "/documents/#death-registration-settles-1905",
+       "why": "1905"
+      }
+     ]
+    },
+    {
+     "id": "t-9",
+     "grade": "inf",
+     "text": "The war did take men of the name. On 25 April 1901, at Tolosberg in the eastern Transvaal, three Booysens of the Pretoria commando were captured on one day: Stefanus Francois, twenty-six, Petrus Jacobus, twenty-seven, and David Schalk, fifty-three. Six weeks later they sailed together as prisoners 18463, 18464 and 18465 on the City of Cambridge. The archive thinks the oldest may be Willem Hermanus's elder brother [David Schalk](person:david-schalk-booysen), born at Cradock in 1848, whose age fits within weeks. No paper on either list names a parent, and the identification is unproven.",
+     "evidence": [
+      {
+       "href": "/documents/#tolosberg-1901",
+       "why": "Tolosberg, 25 April 1901: the register that names the commando"
+      },
+      {
+       "href": "/documents/#pow-1901",
+       "why": "Three Booyzens on the City of Cambridge"
+      }
+     ]
+    },
+    {
+     "id": "t-10",
+     "register": "world",
+     "worldSource": "archive",
+     "text": "The transports of 1901 carried Transvaal prisoners of war out of the country, to Ceylon, India, Bermuda and St Helena.",
+     "evidence": [
+      {
+       "kind": "archive",
+       "href": "/documents/#pow-1901",
+       "why": "Where the ships went"
+      }
+     ]
+    },
+    {
+     "id": "t-11",
+     "grade": "doc",
+     "text": "The women and children were put in a camp. The University of Cape Town's database of the camps has been searched: Barry returns nothing, and the Booyzens in it are all from the Transvaal. That database is built largely from lists of the dead, and records those who died far better than those who came out, so the claim is unsupported, not disproved.",
+     "evidence": [
+      {
+       "href": "/",
+       "why": "The front page: what the family remembers, and how it has held up"
+      },
+      {
+       "href": "/searched/",
+       "why": "What was searched"
+      }
+     ]
+    },
+    {
+     "id": "t-12",
+     "register": "world",
+     "worldSource": "history",
+     "text": "In the last two years of the war the British army burned farms across the republics and in the rebel districts, and moved Boer women and children into camps, where more than twenty-five thousand of them died.",
+     "evidence": [
+      {
+       "kind": "history",
+       "href": "#world-H5",
+       "why": "Farm burning and the camps"
+      }
+     ]
+    },
+    {
+     "id": "t-13",
+     "grade": "inf",
+     "text": "The farm was burned. No farm has been identified. The museum's Farm List, searched for the farm names in this family's papers, turned out to be a land register of the Orange Free State and could never have answered. Willem Hermanus was a farmer in 1879 and a mason in 1905, which fits a lost farm; his father was landless in 1884, which means the loss need not have been the war's. The claim is untested.",
+     "evidence": [
+      {
+       "href": "/rebels/",
+       "why": "The Farm List: a category error, not a finding"
+      }
+     ]
+    },
+    {
+     "id": "t-14",
+     "grade": "inf",
+     "text": "After the war the boys went onto the mines. One did, but not where the story puts him. On 21 September 1908, at Indwe, a William Hermanus Booyzen of twenty-two was married; the register gives his trade as «mijnwerker», mineworker, and his home as Dugmore Mijn. Kathleen Barry stood godmother at his son's christening there that December, and the archive reads him as her son. Indwe's mine was coal, in the Cape, and Kathleen was still at Indwe more than three years after her husband died there.",
+     "evidence": [
+      {
+       "href": "/documents/#indwe-1907",
+       "why": "Indwe, 1907 to 1910: the word mijnwerker"
+      }
+     ]
+    },
+    {
+     "id": "t-15",
+     "grade": "inf",
+     "text": "And the train to Johannesburg. Nobody wrote down the day. The family's last recorded birth in the Cape is in 1907 and its first in Johannesburg in 1932, and Kathleen died at Mayfair, in Johannesburg, in 1940. The testimony has folded a slow move of years into one journey. The pumpkin is the family's own, and no paper will confirm it or take it away.",
+     "evidence": [
+      {
+       "href": "/johannesburg/",
+       "why": "Johannesburg: the move, as the birthplaces record it"
+      }
+     ]
+    },
+    {
+     "id": "t-16",
+     "grade": "inf",
+     "text": "One more paper argues with the story from the other side. When Kathleen died in 1940 her death form called her a «Military Pensioner». Her husband had died of an ulcer, so it was not his service. The archive first guessed a son killed in the First World War, then searched, and found no son of hers among the dead of that war; the pension belongs, it now thinks, to a man who served and came home.",
+     "evidence": [
+      {
+       "href": "/documents/#kathleen-barrys-death-1940",
+       "why": "Kathleen Barry's death certificate, 1940"
+      },
+      {
+       "href": "/searched/",
+       "why": "What was searched"
+      }
+     ],
+     "tbc": "Who earned the pension is not known; the Union Defence Force files in Pretoria are not online."
+    }
+   ],
+   "quote": {
+    "label": "c. 1902 · as told",
+    "title": "The family's own words",
+    "text": "with nothing but a pumpkin to eat",
+    "source": "The family testimony, recorded on the family tree by a descendant, as her father told it",
+    "hardLimit": "Third-hand at best. No document can confirm the pumpkin or take it away."
+   },
+   "plates": [],
+   "papers": [
+    {
+     "title": "The Rebels: the testimony, and each claim tested",
+     "href": "/rebels/"
+    },
+    {
+     "title": "1901: a wedding in a rebel's house",
+     "href": "/documents/#wedding-rebels-house-1901"
+    },
+    {
+     "title": "1901: Tolosberg, and the City of Cambridge",
+     "href": "/documents/#tolosberg-1901"
+    },
+    {
+     "title": "1907 to 1910: the word mijnwerker",
+     "href": "/documents/#indwe-1907"
+    },
+    {
+     "title": "1940: Kathleen Barry's death certificate",
+     "href": "/documents/#kathleen-barrys-death-1940"
+    },
+    {
+     "title": "Johannesburg",
+     "href": "/johannesburg/"
+    },
+    {
+     "title": "What was searched",
+     "href": "/searched/"
+    }
+   ]
+  },
+  {
+   "id": "george",
+   "numeral": "VI",
+   "title": "Trees, then the railways",
+   "place": "Vereeniging · Forest Hill, Johannesburg",
+   "years": "1901–1947",
+   "paragraphs": [
+    {
+     "id": "g-1",
+     "grade": "doc",
+     "text": "On 30 December 1924, at Vereeniging, a tree nurseryman of twenty-four married a girl of eighteen. The register gives his trade as «Boomkweker» and both their homes as Evaton. He gave his own consent; hers was given by her parents, because she was under age. He was [George Downing Mountjoy Booyzen](person:george-downing-mountjoy-booyzen). She was [Anna Johanna Maria Pretorius](person:anna-johanna-maria-pretorius).",
+     "evidence": [
+      {
+       "href": "/documents/#tree-nurseryman-marries-1924",
+       "why": "Marriage No. 15/24, Vereeniging"
+      }
+     ]
+    },
+    {
+     "id": "g-2",
+     "grade": "lore",
+     "text": "He had been born in the Cape in the middle of the war: the family's tree gives 1 June 1901, and the age on his death notice agrees to the month. No paper the archive has read names his parents, or a town for his birth. The family's tree makes him the son of Willem Hermanus and Kathleen, and his names say the same thing another way: Downing and Mountjoy are the maiden names of two women of this family, and George was the name of the 1820 settler.",
+     "evidence": [
+      {
+       "href": "/documents/#georges-death-notice-1947",
+       "why": "Age 46 years 6 months, December 1947"
+      },
+      {
+       "href": "/women/",
+       "why": "The Women: the names inside the men's names"
+      }
+     ],
+     "tbc": "A birth registration or baptism naming his parents has not been found."
+    },
+    {
+     "id": "g-3",
+     "grade": "inf",
+     "text": "Anna was born on 3 October 1906 at Barkly East, the daughter of Petrus Jacobus Pretorius and Margarietha Barry, whose wedding in a rebel's house is in the last chapter. Her mother was a daughter of Kathleen's brother Hendrik Nicholaas Barry. So George and Anna were first cousins once removed, and their children descend twice from [John Barry](person:john-augustus-barry-i) and Margaretha Kolbe.",
+     "evidence": [
+      {
+       "href": "/documents/#anna-1944-civil",
+       "why": "Her baptism, 11 November 1906"
+      },
+      {
+       "href": "/documents/#parents-line-filled-1944",
+       "why": "Her death notice: born Barkly Oos"
+      },
+      {
+       "href": "/cousins/",
+       "why": "The cousin marriage"
+      }
+     ]
+    },
+    {
+     "id": "g-4",
+     "grade": "doc",
+     "text": "Both were living at Evaton, where Anna's grandmother, Anna Johanna Maria Schoeman, had died the year before.",
+     "evidence": [
+      {
+       "href": "/documents/#tree-nurseryman-marries-1924",
+       "why": "Evaton, 1923 and 1924"
+      }
+     ]
+    },
+    {
+     "id": "g-5",
+     "grade": "inf",
+     "text": "Six children followed, and their mother's death notice gives their birthdays: Willem Hermanus in October 1925, Margrett Wilhelmina Elizabeth in October 1926, Catherine Mary Sophia on 25 March 1929, Anna Johanna Maria in 1930, Georgina Jeanette in 1932 and Petrus Jacobus in January 1934. The names run back up the family: a Willem Hermanus; a Margaretha Wilhelmina Elizabeth, the names of their mother's mother and of the Kolbe great-grandmother before her; a Catherine Mary Sophia like Kathleen.",
+     "evidence": [
+      {
+       "href": "/documents/#parents-line-filled-1944",
+       "why": "The six children, «Alle Minderjarig»"
+      },
+      {
+       "href": "/cousins/",
+       "why": "The names give it away"
+      }
+     ]
+    },
+    {
+     "id": "g-6",
+     "register": "world",
+     "worldSource": "history",
+     "text": "Johannesburg was a city of one generation. It had grown on the gold found on the Witwatersrand in 1886, and the railway from the Cape reached it in 1892.",
+     "evidence": [
+      {
+       "kind": "history",
+       "href": "#world-H6",
+       "why": "The Witwatersrand and its railway"
+      }
+     ]
+    },
+    {
+     "id": "g-7",
+     "grade": "doc",
+     "text": "By 1947 George was a clerk on the South African Railways, in Johannesburg, and the family lived at 85 Rheeders Street, Forest Hill.",
+     "evidence": [
+      {
+       "href": "/documents/#death-registration-garbled-1947",
+       "why": "His death registration: Clerk, South African Railways"
+      },
+      {
+       "href": "/documents/#georges-death-notice-1947",
+       "why": "His death notice: S.A.R. & H."
+      }
+     ]
+    },
+    {
+     "id": "g-8",
+     "grade": "doc",
+     "text": "On 26 February 1944 Anna died in that house, aged thirty-seven, of a haemorrhage from a ruptured tubal pregnancy. The form adds: «Not 1st child». She was buried at West Park. George filled in her death notice himself, and on the line that asks for the parents, which earlier notices in this family had answered «Not Known», «not known» and «Unknown», he wrote both their names and their address, 96 James Street, Germiston. The six children are bracketed underneath: «Alle Minderjarig», all minors.",
+     "evidence": [
+      {
+       "href": "/documents/#anna-1944-civil",
+       "why": "The death form, entry 2045"
+      },
+      {
+       "href": "/documents/#parents-line-filled-1944",
+       "why": "The Sterfkennis, TAB MHG 2945/44"
+      }
+     ]
+    },
+    {
+     "id": "g-9",
+     "grade": "doc",
+     "text": "He married again; his widow was Gertruida Alexandra, born Kinnear. A daughter, Gertrude Elizabeth, was born on 11 May 1946 and died four days later, at the Queen Victoria Hospital. A second daughter, Gertrude, was born on 11 May 1947 and died six hours later, at the Turf Club Nursing Home. Two hospitals, two doctors, two certificates: two children, and the shared birthday is a coincidence.",
+     "evidence": [
+      {
+       "href": "/documents/#gertrudes-contradiction-resolved-1946",
+       "why": "The two Gertrudes"
+      },
+      {
+       "href": "/documents/#georges-death-notice-1947",
+       "why": "The surviving spouse, born Kinnear"
+      }
+     ]
+    },
+    {
+     "id": "g-10",
+     "grade": "doc",
+     "text": "George died on 11 December 1947 at Forest Hill, aged forty-six, of a coronary thrombosis after eleven months of heart disease, and was buried three days later at West Park, grave 2171 of the Dutch Reformed section. His death notice was signed in February 1948; a transcriber later took that date for his death and lost ten months, and the documents gave them back.",
+     "evidence": [
+      {
+       "href": "/documents/#death-registration-garbled-1947",
+       "why": "The death registration, entry 10,899"
+      },
+      {
+       "href": "/documents/#west-park",
+       "why": "West Park, grave 2171"
+      },
+      {
+       "href": "/documents/#georges-death-notice-1947",
+       "why": "The death notice corrects his death date"
+      }
+     ]
+    },
+    {
+     "id": "g-11",
+     "grade": "inf",
+     "text": "The household had lost a mother, two infants and a father inside three years and ten months. Catherine was eighteen.",
+     "evidence": [
+      {
+       "href": "/johannesburg/",
+       "why": "Three years that emptied a house"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "note": "Anna's parents were Petrus Jacobus Pretorius and Margarietha Barry. The line from Willem Hermanus is dashed: George's parentage rests on the family's tree and his names. The two daughters of his second marriage are not drawn.",
+    "thread": "g-cms",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "g-wh",
+        "name": "Willem Hermanus",
+        "years": "† 1905",
+        "grade": "inf",
+        "person": "willem-hermanus-william-henry-booyzen"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "g-gd",
+        "name": "George Downing Mountjoy Booyzen",
+        "years": "1901–1947, railway clerk",
+        "grade": "doc",
+        "person": "george-downing-mountjoy-booyzen"
+       },
+       {
+        "id": "g-ap",
+        "name": "Anna Johanna Maria Pretorius",
+        "years": "1906–1944",
+        "grade": "doc",
+        "person": "anna-johanna-maria-pretorius"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "g-whw",
+        "name": "Willem Hermanus",
+        "years": "1925–1996",
+        "grade": "doc"
+       },
+       {
+        "id": "g-mwe",
+        "name": "Margaretha W. E.",
+        "years": "1926–1966",
+        "grade": "doc"
+       },
+       {
+        "id": "g-cms",
+        "name": "Catherine Mary Sophia",
+        "years": "1929–2013",
+        "grade": "doc",
+        "person": "catherine-mary-sophia-booyzen"
+       },
+       {
+        "id": "g-ajm",
+        "name": "Anna Johanna Maria",
+        "years": "1930",
+        "grade": "doc"
+       },
+       {
+        "id": "g-gj",
+        "name": "Georgina Jeanette",
+        "years": "1932",
+        "grade": "doc"
+       },
+       {
+        "id": "g-pjb",
+        "name": "Petrus Jacobus",
+        "years": "1934–2003",
+        "grade": "doc"
+       }
+      ]
+     }
+    ]
+   },
+   "quote": [
+    {
+     "label": "1924 · Vereeniging",
+     "title": "His trade",
+     "text": "Boomkweker.",
+     "source": "Marriage register No. 15/24, Vereeniging, 30 December 1924",
+     "hardLimit": "The register gives his trade and his home, Evaton. It does not give his birthplace or his parents."
+    },
+    {
+     "label": "1944 · Forest Hill",
+     "title": "Six children",
+     "text": "Alle Minderjarig.",
+     "source": "Anna's Sterfkennis, TAB MHG 2945/44, signed G. D. M. Booyzen",
+     "hardLimit": "The form names the children and their mother's parents. It does not say who looked after the children when their father died."
+    }
+   ],
+   "plates": [],
+   "papers": [
+    {
+     "title": "1924: a tree nurseryman marries at Vereeniging",
+     "href": "/documents/#tree-nurseryman-marries-1924"
+    },
+    {
+     "title": "1944: the parents line, filled in",
+     "href": "/documents/#parents-line-filled-1944"
+    },
+    {
+     "title": "1906: a one-digit slip, caught by two documents",
+     "href": "/documents/#anna-1944-civil"
+    },
+    {
+     "title": "1946 and 1947: the two Gertrudes",
+     "href": "/documents/#gertrudes-contradiction-resolved-1946"
+    },
+    {
+     "title": "1947: George's death notice",
+     "href": "/documents/#georges-death-notice-1947"
+    },
+    {
+     "title": "West Park, grave 2171",
+     "href": "/documents/#west-park"
+    },
+    {
+     "title": "The cousin marriage",
+     "href": "/cousins/"
+    },
+    {
+     "title": "The Spine, generation 3",
+     "href": "/direct-line/#gen-3"
+    }
+   ]
+  },
+  {
+   "id": "catherine",
+   "numeral": "VII",
+   "title": "Eighteen, with no parents",
+   "place": "Johannesburg",
+   "years": "1929–2013",
+   "paragraphs": [
+    {
+     "id": "k-1",
+     "grade": "doc",
+     "text": "Her birthday is written in both her parents' death notices: in her mother's of 1944, among six children under age, and in her father's, among the four still under age at his death, as «25/3/29». [Catherine Mary Sophia Booyzen](person:catherine-mary-sophia-booyzen) was born on 25 March 1929. No paper the archive holds says where.",
+     "evidence": [
+      {
+       "href": "/documents/#parents-line-filled-1944",
+       "why": "Her mother's Sterfkennis, 1944"
+      },
+      {
+       "href": "/documents/#georges-death-notice-1947",
+       "why": "Her father's death notice: the minors' birth dates"
+      }
+     ]
+    },
+    {
+     "id": "k-2",
+     "grade": "inf",
+     "text": "She carried her grandmother's names. Kathleen Barry was baptised Catherina Mary Sophia in 1859, a daughter of Kathleen's was christened Catharina Maria Sophia in 1891, and her granddaughter was Catherine Mary Sophia in 1929: three women in seventy years, one name, with the surname shifting underneath it while the given names held.",
+     "evidence": [
+      {
+       "href": "/documents/#same-font-years-1891",
+       "why": "1891: the name that runs three generations"
+      }
+     ]
+    },
+    {
+     "id": "k-3",
+     "grade": "inf",
+     "text": "She was fourteen when her mother died and eighteen when her father died. The archive does not know who kept the house, or where she lived, in the year after.",
+     "evidence": [
+      {
+       "href": "/johannesburg/",
+       "why": "Three years that emptied a house"
+      }
+     ]
+    },
+    {
+     "id": "k-4",
+     "grade": "inf",
+     "text": "On 15 January 1949 she married [Nuno Fernando Lerena](person:nuno-fernando-lerena) at St Joseph's Catholic Church, Mayfair. Mayfair was already the family's ground: her grandmother Kathleen had died at No. 1, Fifteenth Avenue, Mayfair, nine years before.",
+     "evidence": [
+      {
+       "href": "/direct-line/#gen-2",
+       "why": "The Spine, generation 2"
+      },
+      {
+       "href": "/documents/#kathleen-barrys-death-1940",
+       "why": "No. 1, Fifteenth Avenue, Mayfair"
+      }
+     ]
+    },
+    {
+     "id": "k-5",
+     "grade": "inf",
+     "text": "The family had married and christened in the Dutch Reformed churches for as long as there are papers. The wedding was in a Catholic church because the bridegroom was a Catholic, of an Argentine-descended family. That marriage is where this archive stops and the [Lerena archive](https://lerena.defranceski.com/) begins.",
+     "evidence": [
+      {
+       "href": "/johannesburg/",
+       "why": "Mayfair closes a circle"
+      }
+     ]
+    },
+    {
+     "id": "k-6",
+     "grade": "lore",
+     "text": "What follows rests on the family's tree, not on papers this archive has read. She buried her husband in 1971 and a second husband in 2004, and two of her five children, in 1999 and 2000. She died in Johannesburg on Christmas Day 2013, aged eighty-four.",
+     "evidence": [
+      {
+       "href": "/johannesburg/",
+       "why": "Johannesburg: the later years, from the tree"
+      }
+     ]
+    },
+    {
+     "id": "k-7",
+     "grade": "doc",
+     "text": "She is the person this archive begins with and works backwards from. The first papers it read were already in the family's own tree, scanned and attached and never transcribed.",
+     "evidence": [
+      {
+       "href": "/",
+       "why": "The front page: why this archive exists"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "note": "Five children by the family's tree; the one who carries the line on is living and is drawn without dates.",
+    "thread": "k-ch",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "k-gd",
+        "name": "George Downing Mountjoy",
+        "years": "† 1947",
+        "grade": "doc",
+        "person": "george-downing-mountjoy-booyzen"
+       }
+      ]
+     },
+     {
+      "kind": "couple",
+      "nodes": [
+       {
+        "id": "k-cms",
+        "name": "Catherine Mary Sophia Booyzen",
+        "years": "1929–2013",
+        "grade": "doc",
+        "person": "catherine-mary-sophia-booyzen"
+       },
+       {
+        "id": "k-nl",
+        "name": "Nuno Fernando Lerena",
+        "years": "1924–1971",
+        "grade": "doc",
+        "person": "nuno-fernando-lerena"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "k-ch",
+        "name": "Cheryl Anne Lerena",
+        "living": true
+       }
+      ]
+     }
+    ]
+   },
+   "plates": [],
+   "papers": [
+    {
+     "title": "Johannesburg",
+     "href": "/johannesburg/"
+    },
+    {
+     "title": "The Spine, generation 2",
+     "href": "/direct-line/#gen-2"
+    },
+    {
+     "title": "1944: the parents line, filled in",
+     "href": "/documents/#parents-line-filled-1944"
+    },
+    {
+     "title": "1947: George's death notice",
+     "href": "/documents/#georges-death-notice-1947"
+    },
+    {
+     "title": "Catherine Mary Sophia Booyzen",
+     "href": "person:catherine-mary-sophia-booyzen"
+    }
+   ]
+  },
+  {
+   "id": "us",
+   "numeral": "VIII",
+   "title": "And then it is us",
+   "place": "South Africa · Australia",
+   "years": "",
+   "paragraphs": [
+    {
+     "id": "u-1",
+     "grade": "doc",
+     "text": "Catherine's daughter, Cheryl Anne Lerena, is living, and so is Cheryl's son, David Defranceski, for whom this archive was built. By the archive's rule the living are named with their relationships and their towns and countries and nothing more: Cheryl at Johannesburg, South Africa, as this archive records her, and David in Brisbane, Australia.",
+     "evidence": [
+      {
+       "href": "/direct-line/",
+       "why": "The Spine: the living generations"
+      },
+      {
+       "href": "/",
+       "why": "The front page"
+      }
+     ]
+    },
+    {
+     "id": "u-2",
+     "grade": "inf",
+     "text": "Under the Booyzen name the line ends with Catherine. It goes on through her daughter under other names, Lerena and then Defranceski, and those families are told in their own archives. A Cape Dutch line that kept marrying women of other names, Mountjoy, Barry, and behind the Barrys Kolbe and Downing, is carried on, in the end, through a daughter.",
+     "evidence": [
+      {
+       "href": "/",
+       "why": "The shape of it"
+      },
+      {
+       "href": "/women/",
+       "why": "The Women"
+      }
+     ]
+    }
+   ],
+   "tree": {
+    "note": "Living people are drawn filled, by name, without dates.",
+    "thread": "u-cheryl",
+    "rows": [
+     {
+      "kind": "above",
+      "nodes": [
+       {
+        "id": "u-cms",
+        "name": "Catherine Mary Sophia",
+        "years": "† 2013",
+        "grade": "doc",
+        "person": "catherine-mary-sophia-booyzen"
+       }
+      ]
+     },
+     {
+      "kind": "children",
+      "nodes": [
+       {
+        "id": "u-cheryl",
+        "name": "Cheryl Anne Lerena",
+        "living": true
+       }
+      ]
+     },
+     {
+      "kind": "grandchildren",
+      "nodes": [
+       {
+        "id": "u-david",
+        "name": "David Defranceski",
+        "living": true
+       }
+      ]
+     }
+    ]
+   },
+   "plates": [],
+   "papers": [
+    {
+     "title": "The Spine",
+     "href": "/direct-line/"
+    },
+    {
+     "title": "About this archive, and the living rule",
+     "href": "/about/"
+    }
+   ]
+  }
+ ],
+ "maps": [
+  {
+   "id": "north",
+   "title": "Out of the Karoo, over the Vaal",
+   "chapter": "pj1788",
+   "extent": {
+    "west": 23.2,
+    "east": 29.6,
+    "south": -33.0,
+    "north": -25.0,
+    "projection": "equirectangular"
+   },
+   "places": [
+    {
+     "id": "graaff-reinet",
+     "name": "Graaff-Reinet",
+     "lat": -32.252,
+     "lon": 24.533,
+     "chapter": "pj1788",
+     "dx": 8,
+     "dy": 14,
+     "note": "born; baptised 1788 by the printed genealogy"
+    },
+    {
+     "id": "potchefstroom",
+     "name": "Potchefstroom",
+     "lat": -26.716,
+     "lon": 27.097,
+     "chapter": "pj1788",
+     "dx": -8,
+     "dy": 14,
+     "note": "a son married here, 1850",
+     "anchor": "end"
+    },
+    {
+     "id": "brakfontein",
+     "name": "Brakfontein",
+     "lat": -25.75,
+     "lon": 27.3,
+     "chapter": "pj1788",
+     "dx": 8,
+     "dy": -8,
+     "note": "died in the district, 1876; the pin stands for the district"
+    }
+   ],
+   "legs": [
+    {
+     "from": "graaff-reinet",
+     "to": "brakfontein",
+     "grade": "doc",
+     "chapter": "pj1788",
+     "years": "1788 → 1876",
+     "routeKnown": false,
+     "evidence": "/documents/#sterfkennis-1876"
+    }
+   ]
+  },
+  {
+   "id": "karoo",
+   "title": "Behind the Sneeuberg",
+   "chapter": "pj1812",
+   "extent": {
+    "west": 23.9,
+    "east": 26.3,
+    "south": -32.6,
+    "north": -31.15,
+    "projection": "equirectangular"
+   },
+   "places": [
+    {
+     "id": "graaff-reinet",
+     "name": "Graaff-Reinet",
+     "lat": -32.252,
+     "lon": 24.533,
+     "chapter": "pj1788",
+     "dx": 8,
+     "dy": 14,
+     "note": "born in the district, 1812"
+    },
+    {
+     "id": "cradock",
+     "name": "Cradock",
+     "lat": -32.164,
+     "lon": 25.619,
+     "chapter": "pj1812",
+     "dx": 8,
+     "dy": 14,
+     "note": "married 1838; James Montjoy died here, 1827"
+    },
+    {
+     "id": "achter-sneeuwberg",
+     "name": "Achter Sneeuwberg",
+     "lat": -31.95,
+     "lon": 24.75,
+     "chapter": "pj1812",
+     "dx": 8,
+     "dy": -8,
+     "note": "a son baptised, 1851; the pin stands for the area"
+    },
+    {
+     "id": "zevenfontein",
+     "name": "Zevenfontein",
+     "lat": -31.49,
+     "lon": 25.01,
+     "chapter": "pj1812",
+     "dx": 8,
+     "dy": -8,
+     "note": "his wife died 1863, he 1884; pin approximate"
+    }
+   ],
+   "legs": [
+    {
+     "from": "graaff-reinet",
+     "to": "cradock",
+     "grade": "doc",
+     "chapter": "pj1812",
+     "years": "1812 → 1838",
+     "evidence": "/marriages/",
+     "bend": 0.15
+    },
+    {
+     "from": "cradock",
+     "to": "achter-sneeuwberg",
+     "grade": "doc",
+     "chapter": "pj1812",
+     "years": "1838 → 1851",
+     "evidence": "/documents/#baptism-settles-age-1851",
+     "bend": -0.15
+    },
+    {
+     "from": "achter-sneeuwberg",
+     "to": "zevenfontein",
+     "grade": "doc",
+     "chapter": "pj1812",
+     "years": "1851 → 1863",
+     "evidence": "/documents/#death-notice-adds-1863",
+     "bend": 0.15
+    }
+   ]
+  },
+  {
+   "id": "northeast",
+   "title": "Into the north-east",
+   "chapter": "wh",
+   "extent": {
+    "west": 24.4,
+    "east": 28.1,
+    "south": -32.2,
+    "north": -30.25,
+    "projection": "equirectangular"
+   },
+   "places": [
+    {
+     "id": "achter-sneeuwberg",
+     "name": "Achter Sneeuwberg",
+     "lat": -31.95,
+     "lon": 24.75,
+     "chapter": "pj1812",
+     "dx": 8,
+     "dy": -8,
+     "note": "baptised 1851"
+    },
+    {
+     "id": "colesberg",
+     "name": "Colesberg",
+     "lat": -30.719,
+     "lon": 25.098,
+     "chapter": "wh",
+     "dx": 8,
+     "dy": -8,
+     "note": "Kathleen's parents married here, 1846"
+    },
+    {
+     "id": "burgersdorp",
+     "name": "Burgersdorp",
+     "lat": -30.996,
+     "lon": 26.329,
+     "chapter": "wh",
+     "dx": 8,
+     "dy": 14,
+     "note": "the Kolbe grave"
+    },
+    {
+     "id": "lady-grey",
+     "name": "Lady Grey",
+     "lat": -30.71,
+     "lon": 27.22,
+     "chapter": "wh",
+     "dx": -8,
+     "dy": -8,
+     "note": "a farmer of Lady Grey, 1879",
+     "anchor": "end"
+    },
+    {
+     "id": "barkly-east",
+     "name": "Barkly East",
+     "lat": -30.515,
+     "lon": 27.596,
+     "chapter": "wh",
+     "dx": 8,
+     "dy": -8,
+     "note": "children christened, 1889 and 1891"
+    },
+    {
+     "id": "indwe",
+     "name": "Indwe",
+     "lat": -31.47,
+     "lon": 27.339,
+     "chapter": "wh",
+     "dx": 8,
+     "dy": 14,
+     "note": "a mason; died 1905"
+    }
+   ],
+   "legs": [
+    {
+     "from": "achter-sneeuwberg",
+     "to": "lady-grey",
+     "grade": "doc",
+     "chapter": "wh",
+     "years": "1851 → 1879",
+     "evidence": "/documents/#marriage-register-ambiguous-1879",
+     "bend": -0.12
+    },
+    {
+     "from": "lady-grey",
+     "to": "barkly-east",
+     "grade": "doc",
+     "chapter": "wh",
+     "years": "1879 → 1889",
+     "evidence": "/documents/#grandparents-font-name-1889",
+     "bend": 0.2
+    },
+    {
+     "from": "barkly-east",
+     "to": "indwe",
+     "grade": "doc",
+     "chapter": "wh",
+     "years": "1891 → 1905",
+     "evidence": "/documents/#death-registration-settles-1905",
+     "bend": 0.2
+    }
+   ]
+  },
+  {
+   "id": "rand",
+   "title": "To the Rand",
+   "chapter": "george",
+   "extent": {
+    "west": 25.6,
+    "east": 29.6,
+    "south": -31.9,
+    "north": -25.6,
+    "projection": "equirectangular"
+   },
+   "places": [
+    {
+     "id": "barkly-east",
+     "name": "Barkly East",
+     "lat": -30.515,
+     "lon": 27.596,
+     "chapter": "wh",
+     "dx": 8,
+     "dy": -8,
+     "note": "Anna born here, 1906"
+    },
+    {
+     "id": "caerlaverock",
+     "name": "Caerlaverock",
+     "lat": -31.1,
+     "lon": 27.1,
+     "chapter": "testimony",
+     "dx": -8,
+     "dy": 14,
+     "note": "a wedding in a rebel's house, 1901; pin approximate",
+     "anchor": "end"
+    },
+    {
+     "id": "indwe",
+     "name": "Indwe",
+     "lat": -31.47,
+     "lon": 27.339,
+     "chapter": "wh",
+     "dx": 8,
+     "dy": 14,
+     "note": "Kathleen still here, 1908"
+    },
+    {
+     "id": "vereeniging",
+     "name": "Vereeniging",
+     "lat": -26.673,
+     "lon": 27.928,
+     "chapter": "george",
+     "dx": 8,
+     "dy": 14,
+     "note": "married 1924"
+    },
+    {
+     "id": "johannesburg",
+     "name": "Johannesburg",
+     "lat": -26.204,
+     "lon": 28.047,
+     "chapter": "george",
+     "dx": 8,
+     "dy": -8,
+     "note": "Forest Hill, Mayfair; 1940 to 2013"
+    }
+   ],
+   "legs": [
+    {
+     "from": "indwe",
+     "to": "johannesburg",
+     "grade": "doc",
+     "chapter": "testimony",
+     "years": "1908 → 1940",
+     "routeKnown": false,
+     "evidence": "/johannesburg/"
+    },
+    {
+     "from": "barkly-east",
+     "to": "vereeniging",
+     "grade": "doc",
+     "chapter": "george",
+     "years": "1906 → 1924",
+     "evidence": "/documents/#tree-nurseryman-marries-1924",
+     "bend": -0.15
+    },
+    {
+     "from": "vereeniging",
+     "to": "johannesburg",
+     "grade": "doc",
+     "chapter": "george",
+     "years": "1924 → 1944",
+     "evidence": "/documents/#parents-line-filled-1944",
+     "bend": 0.3
+    }
+   ]
+  },
+  {
+   "id": "world",
+   "title": "And then it is us",
+   "chapter": "us",
+   "extent": {
+    "west": 5.0,
+    "east": 165.0,
+    "south": -46.0,
+    "north": 5.0,
+    "projection": "equirectangular"
+   },
+   "places": [
+    {
+     "id": "johannesburg",
+     "name": "Johannesburg",
+     "lat": -26.204,
+     "lon": 28.047,
+     "chapter": "george",
+     "dx": 8,
+     "dy": -8
+    },
+    {
+     "id": "south-africa",
+     "name": "South Africa",
+     "lat": -28.81662,
+     "lon": 24.99164,
+     "chapter": "us",
+     "country": true,
+     "living": true,
+     "dx": -8,
+     "dy": 16,
+     "anchor": "end"
+    },
+    {
+     "id": "australia",
+     "name": "Australia",
+     "lat": -28.3865,
+     "lon": 134.5885,
+     "chapter": "us",
+     "country": true,
+     "living": true,
+     "dx": 8,
+     "dy": -8
+    }
+   ],
+   "legs": [
+    {
+     "from": "johannesburg",
+     "to": "australia",
+     "grade": "doc",
+     "chapter": "us",
+     "living": true,
+     "evidence": "/",
+     "bend": 0.15
+    }
+   ]
+  }
+ ],
+ "closing": {
+  "unknown": {
+   "title": "What we do not know",
+   "lead": "Every chapter has its silences. These are the ones a single register, a letter or an afternoon in a reading room could break.",
+   "items": [
+    {
+     "text": "**Who the father of the old man of 1876 was.** Line 3 of his death notice says Gerthardus Lodewikus; the printed genealogy says Jan. The baptism entry of 21 September 1788, at Cape Town, would settle it.",
+     "href": "/documents/#question-zero"
+    },
+    {
+     "text": "**Which wife was the mother of the Petrus Jacobus born in 1812.** No document names her. His own baptism would.",
+     "href": "/documents/#anna-maria-1806"
+    },
+    {
+     "text": "**When and how the old man went north**, and whether Brakfontein was ever his.",
+     "href": "/places/brakfontein/"
+    },
+    {
+     "text": "**Where James Montjoy was born.** The discharge papers of the 21st Light Dragoons at Kew give a soldier's parish and county.",
+     "href": "/documents/#mountjoy-dragoons"
+    },
+    {
+     "text": "**Whether a farm was lost, or burned.** The Cape's compensation claims and the farm-burning returns have not been read.",
+     "href": "/rebels/"
+    },
+    {
+     "text": "**Whether Kathleen and her children were ever in a camp.** The camp registers of the living, not only lists of the dead.",
+     "href": "/searched/"
+    },
+    {
+     "text": "**Whether the two Barrys on the Cape Rebel roll are Kathleen's kin.**",
+     "href": "/rebels/"
+    },
+    {
+     "text": "**Where George was born, and a paper that names his parents.**",
+     "href": "/direct-line/#gen-3"
+    },
+    {
+     "text": "**Who earned Kathleen's military pension.** The Union Defence Force files are in Pretoria and not online.",
+     "href": "/documents/#kathleen-barrys-death-1940"
+    },
+    {
+     "text": "**When the family reached Johannesburg.** The birthplaces say between 1907 and 1932.",
+     "href": "/johannesburg/"
+    }
+   ]
+  },
+  "papers": {
+   "title": "Read the papers",
+   "lead": "This book is the front door. The evidence is behind it.",
+   "links": [
+    {
+     "title": "The Spine",
+     "href": "/direct-line/",
+     "why": "the generations, a row each, and where they stop"
+    },
+    {
+     "title": "The Documents",
+     "href": "/documents/",
+     "why": "every death notice, register and certificate the chapters quote, transcribed"
+    },
+    {
+     "title": "The Rebels",
+     "href": "/rebels/",
+     "why": "the testimony in full, and each claim tested"
+    },
+    {
+     "title": "The Name",
+     "href": "/name/",
+     "why": "Booysen and Booyzen, and the figures"
+    },
+    {
+     "title": "The Kolbes",
+     "href": "/kolbe/",
+     "why": "the 1820 settler and the London tailor"
+    },
+    {
+     "title": "The Barrys",
+     "href": "/barry/",
+     "why": "an Irishman's family in Barkly East"
+    },
+    {
+     "title": "The Women",
+     "href": "/women/",
+     "why": "the names inside the men's names"
+    },
+    {
+     "title": "The cousin marriage",
+     "href": "/cousins/",
+     "why": "why Catherine descends from one couple twice"
+    },
+    {
+     "title": "Johannesburg",
+     "href": "/johannesburg/",
+     "why": "the move, the addresses and the graves"
+    },
+    {
+     "title": "Open questions",
+     "href": "/open-questions/",
+     "why": "what is still being asked, and what would settle it"
+    },
+    {
+     "title": "Corrections",
+     "href": "/corrections/",
+     "why": "what this archive got wrong, and how it found out"
+    }
+   ]
+  },
+  "notes": {
+   "title": "Where the world comes from",
+   "lead": "Passages marked history draw on general history, not on this archive's papers; these are the claims, and where they can be checked.",
+   "items": [
+    {
+     "key": "H1",
+     "claim": "Graaff-Reinet was made the seat of a new district on the colony's eastern frontier in 1786.",
+     "source": "General history of the Cape Colony; the archive's own era data (from the Record Atlas) gives the Graaff-Reinet magistracy from 1786."
+    },
+    {
+     "key": "H2",
+     "claim": "In the eastern districts in the late eighteenth century most colonists were stock farmers grazing sheep and cattle over large loan farms, and many moved their herds with the seasons.",
+     "source": "Hermann Giliomee, The Afrikaners: Biography of a People (2003); Nigel Penn, The Forgotten Frontier (2005)."
+    },
+    {
+     "key": "H3",
+     "claim": "From the later 1830s thousands of Dutch-speaking farmers left the eastern Cape northwards (the Great Trek); Britain recognised the republic north of the Vaal at the Sand River Convention of 1852.",
+     "source": "Giliomee (2003); standard histories of South Africa."
+    },
+    {
+     "key": "H4",
+     "claim": "The 1820 settlers were some four thousand British emigrants landed at Algoa Bay in 1820 under a government scheme to settle the eastern frontier.",
+     "source": "General history; M. D. Nash, The Settler Handbook, which the archive already uses for Owen's party."
+    },
+    {
+     "key": "H5",
+     "claim": "In 1900 to 1902 the British army burned farms and moved Boer women and children into camps, where more than twenty-five thousand of them died.",
+     "source": "Elizabeth van Heyningen, The Concentration Camps of the Anglo-Boer War (2013); Thomas Pakenham, The Boer War (1979)."
+    },
+    {
+     "key": "H6",
+     "claim": "Gold was found on the Witwatersrand in 1886 and Johannesburg grew on it; the railway from the Cape reached Johannesburg in 1892.",
+     "source": "General history of South Africa."
+    }
+   ]
+  },
+  "mapNote": "The maps: coastlines and borders from Natural Earth (public domain, naturalearthdata.com), simplified and clipped for this page. Town dots stand at this archive's own gazetteer coordinates and only where a document puts the family; where the gazetteer marks a pin approximate (Achter Sneeuwberg, Zevenfontein, Brakfontein, Caerlaverock) the dot stands for a district, not a farmstead. The two country dots for the living are placed from the estate's shared country data, not a town, and carry no dates. A solid leg has a document at each end; a dashed leg is inferred; a dotted leg is family memory; a move whose road nobody recorded is listed and not drawn."
+ },
+ "conflicts": [
+  {
+   "chapter": "pj1788",
+   "note": "The archive's section on the 1806 baptism says no document makes Anna Maria van der Merwe the mother of the man born in 1812; its section on the 1884 death notice says «His mother was Anna Maria van der Merwe». This book follows the first and marks the second here."
+  },
+  {
+   "chapter": "wh",
+   "note": "The 1879 marriage register says the wedding was in the Dutch Reformed church «at Barkly»; the archive's list of marriages, its households and its page on Kathleen's grave put it at Lady Grey, which is where the register says the bridegroom lived."
+  },
+  {
+   "chapter": "wh",
+   "note": "Where Kathleen was born: two of the archive's pages say Barkly East; her baptisms in the archive's table are at Graaff-Reinet and Dordrecht in 1859, and her death form says only «Cape Province». This book gives no birthplace."
+  },
+  {
+   "chapter": "testimony",
+   "note": "The archive's front page counts seven claims in the testimony and says no miner has been found; its page on the rebels counts eight and gives the Indwe mijnwerker of 1908, and calls the camp claim untested where the front page reports the camp database searched. This chapter uses the documents both pages cite."
+  },
+  {
+   "chapter": "testimony",
+   "note": "Kathleen's military pension: the documents, rebels and Johannesburg pages still give a son's First World War service as the likeliest route; the archive's later search found no son of hers killed and reads the pension as a man's who came home."
+  },
+  {
+   "chapter": "george",
+   "note": "How George died: his death registration gives coronary thrombosis after eleven months of chronic myocarditis; the archive's section on the West Park graves says «a perforated ulcer». This book follows the registration."
+  }
+ ]
+}

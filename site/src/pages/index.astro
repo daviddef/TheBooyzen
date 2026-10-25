@@ -145,6 +145,12 @@ const spineRows = LINE.line.map(([g, n, b, d, m, note, note2]) => {
   farm, and this archive does not invent one.</p>
 
 <section class="opener">
+  <a class="startbook" href={u("/story/")}>
+    <span class="sb-k">Start here</span>
+    <span class="sb-t">Start with the story: <em>From the Karoo to the Rand</em></span>
+    <span class="sb-d">The line told once, as a short book: two names on a death notice, a farmer who died beyond the Vaal with nothing, a farmer behind the Sneeuberg, a mason at Indwe, the family's own war story tested claim by claim, a railway clerk in Forest Hill and a girl of eighteen with no parents, with a small family tree and the documents under every chapter.</span>
+    <span class="sb-c">Begin reading →</span>
+  </a>
   <p class="lede">
     This archive was built for <b>David Defranceski</b>, born in Johannesburg, living in Brisbane. It runs
     backwards from his grandmother <b>Catherine Mary Sophia Booyzen</b> (1929–2013) — who married
@@ -383,3 +389,16 @@ const spineRows = LINE.line.map(([g, n, b, d, m, note, note2]) => {
 <SourceBlock ids={["death-registration-willem-hermanus-booysen-1905", "gravestone-burgersdorp-old-cemetery", "letter-johan-gottlieb-kolbe-to-his-son-23-august-183"]} sources={sdx.entries} u={u}
              note="Three documents the front page argues from directly. Everything else it says is argued somewhere further in, with its own sources named there." />
 </Base>
+
+<style>
+  /* The one calm way in, above the doors (25 October 2026): David asked for an easy first place to go. The same card
+     as the Defranceschi archive's, on this archive's own tokens. */
+  .startbook { display: block; max-width: 760px; margin: 0 0 26px; padding: 18px 22px 16px; text-decoration: none;
+    background: var(--panel); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 2px; color: var(--ink); }
+  .startbook:hover { border-color: var(--accent); }
+  .startbook:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .sb-k { display: block; font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  .sb-t { display: block; font-family: var(--serif); font-size: clamp(22px, 3vw, 27px); line-height: 1.2; margin-top: 6px; }
+  .sb-d { display: block; font-family: var(--serif); font-size: 17px; line-height: 1.5; color: var(--ink-2, var(--ink)); margin-top: 8px; }
+  .sb-c { display: block; font-family: var(--sans); font-size: 13.5px; font-weight: 600; color: var(--accent); margin-top: 10px; }
+</style>

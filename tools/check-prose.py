@@ -52,6 +52,7 @@ HAND_EDITED = {
     "line.json",               # the direct line
     "living-policy.json",      # the author and the held-out slugs
     "log.json",                # the research log
+    "story.json",              # the story at /story/: the direct line told as a short book, every paragraph typed by hand
     "marriages.json",          # the marriages page
     "namefold-extra.json",     # hand additions to the name fold
     "namesakes.json",          # the namesakes page
@@ -167,6 +168,11 @@ def main(argv=None):
         cmd += ["--include", inc]
     if os.path.exists(ALLOW):
         cmd += ["--allow", ALLOW]
+    # THE STORY'S RIBBON CARDS (story.json, 25 October 2026) name the living with the kit's own field names for the
+    # standard's town and country: `origin` and `atPlace` are towns, `originGrade` is the evidence mark on the origin,
+    # `chapter` is the card's link to its chapter. None of them can hold a date (the kit's checkfamilystory.py fails a
+    # living card with one); `years` and `atYear` stay outside the allowance, so a date in either still fails here too.
+    cmd += ["--allow-keys", "origin,originGrade,atPlace,chapter"]
     return subprocess.run(cmd).returncode
 
 

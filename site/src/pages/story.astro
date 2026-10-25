@@ -1,0 +1,26 @@
+---
+/* THE STORY (25 October 2026). The direct line told once as a short book: one chapter per generation, from
+   Gerthardus Lodewikus Booysen at the top of the spine to Catherine Mary Sophia Booyzen, a chapter on the family's
+   own war testimony tested claim by claim, and a short closing chapter for the living. David asked for one easy
+   first place to go, and this is it: the first chapter after the cover in book.json, a card on the home page and
+   the first item in the Start menu.
+
+   EVERYTHING ON THE PAGE IS DATA. The words, the marks, the trees and the maps are src/data/story.json; the page,
+   ribbon, trees and maps are the kit's (StoryBook, kit/docs/story.md). `npm run check:story` (the kit's
+   checkfamilystory.py) holds the data to its grammar and reads the built page back: a grade on every paragraph,
+   a source on every passage about the world, a link under every chapter, the living with no dates.
+
+   NO PLATES. Every scan in this archive is MyHeritage-sourced or of no recorded provenance, and David has not ruled
+   on MyHeritage's terms, so the linking standard keeps every scan link-only (standard.json scans.link_only). The
+   chapters quote the documents in words and link to the transcriptions on /documents/. */
+import Base from "../layouts/Base.astro";
+import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
+import book from "../data/story.json";
+import { u } from "../lib/url.js";
+/* Generations five and six are both Petrus Jacobus Booysen and share one person page, which holds both men
+   (dossiers.json `also`); the story links both to it and says in words which man is meant. */
+const personHref = (slug) => u(`/people/${slug}/`);
+---
+<Base title={book.title} eyebrow={book.eyebrow} dek={book.dek}>
+  <StoryBook book={book} personHref={personHref} u={u} />
+</Base>
