@@ -48,6 +48,7 @@ HAND_EDITED = {
     "families.json",           # which family names have a page (a person edits the list; the pages are drawn from the archive's data)
     "kin.js",                  # households and children (hand-written module)
     "letters.json",            # enquiries sent and answers
+    "lines-meta.json",         # the lines page: each line's status, its note and its few dated places, typed (tools/lines.py holds the status to trees.json)
     "line.json",               # the direct line
     "living-policy.json",      # the author and the held-out slugs
     "log.json",                # the research log
@@ -78,6 +79,7 @@ GENERATED = {
     "era-places.json",         # tools/build_era.py, from data/era-ground.tsv and data/era-towns.tsv: place strings and a region id, no names
     "era-snapshot.json",       # tools/build_era.py --snapshot, from the Record Atlas's context.json: region eras and regime labels, no names
     "gallery.json",            # tools/gallery.py, read out of the built HTML
+    "lines.json",              # tools/lines.py, from lines-meta.json, dossiers.json, living.json, trees.json and register.json
     "living.json",             # tools/livingflags.py (holds living names on purpose: it IS the feed's source)
     "namefold.json",           # kit namefold.py
     "people.json",             # tools/people-json.mjs, from people.js

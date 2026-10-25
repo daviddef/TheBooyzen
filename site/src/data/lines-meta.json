@@ -1,0 +1,133 @@
+{
+ "_note": "The research decisions and the presentation of the lines page, by line. tools/lines.py reads this with people.json, dossiers.json, living.json, trees.json and register.json and writes lines.json; it REFUSES a status that disagrees with trees.json `origins` (the archive's own statement of how each line begins), so no status here is stronger than what /trees/ already says. Notes are those origin statements, shortened to fit the lane's status line (100 characters with the span in front). A node is a dated place the archive's own origin statement names, with the person who is there; a line with none draws its spine and its people only. 25 October 2026.",
+ "lines": {
+  "Booyzen": {
+   "colour": "var(--accent)",
+   "label": "Booyzen, the line this archive carries",
+   "href": "/direct-line/",
+   "read": "The Spine →",
+   "status": "origin-unknown",
+   "statusNote": "the chart stops at generation 7, a man with no dates and no parents"
+  },
+  "Kolbe": {
+   "colour": "var(--r-habsburg)",
+   "label": "Kolbe",
+   "href": "/kolbe/",
+   "read": "The Kolbes →",
+   "status": "documented",
+   "statusNote": "origin London 1802, a gravestone and the church book agree",
+   "nodes": [
+    {
+     "place": "London (Soho)",
+     "year": "1802",
+     "person": "george-augustus-kolbe",
+     "why": "Born 7 December 1802 in Soho and baptised at Westminster. The gravestone at Burgersdorp and the London church book give the same day."
+    }
+   ]
+  },
+  "Mountjoy": {
+   "colour": "var(--ochre)",
+   "label": "Mountjoy",
+   "href": "/families/mountjoy/",
+   "read": "The Mountjoys →",
+   "status": "origin-unknown",
+   "statusNote": "earliest man born “Europe” c. 1782, parents not known",
+   "nodes": [
+    {
+     "place": "“Europe”",
+     "year": "c. 1782",
+     "person": "james-montjoy",
+     "why": "Born “Europe” about 1782, as his death notice has it; the notice enters his parents as not known."
+    }
+   ]
+  },
+  "Barry": {
+   "colour": "var(--terra)",
+   "label": "Barry",
+   "href": "/barry/",
+   "read": "The Barrys →",
+   "status": "origin-unknown",
+   "statusNote": "an Overberg merchant house or a common surname, not settled"
+  },
+  "Daschner": {
+   "colour": "var(--r-croatia)",
+   "label": "Daschner",
+   "href": "/families/daschner/",
+   "read": "The Daschners →",
+   "status": "origin-unknown",
+   "statusNote": "earliest born Stutterheim c. 1883, parents named but undated",
+   "nodes": [
+    {
+     "place": "Stutterheim",
+     "year": "c. 1883",
+     "person": "joseph-heinrich-daschner",
+     "why": "Born about November 1883 at Stutterheim. His 1942 death notice names his father and mother, with no dates for either."
+    }
+   ]
+  },
+  "Olivier": {
+   "colour": "var(--r-napo)",
+   "label": "Olivier",
+   "href": "/people/",
+   "read": "The People, Line filter →",
+   "status": "origin-unknown",
+   "statusNote": "earliest baptised Cradock 1820, parents named but undated",
+   "nodes": [
+    {
+     "place": "Cradock",
+     "year": "1820",
+     "person": "gert-cornelis-olivier",
+     "why": "Born 25 July 1820 and baptised at Cradock on 2 October. His parents are named, undated, on an 1891 death notice."
+    }
+   ]
+  },
+  "Pretorius": {
+   "colour": "var(--r-venice)",
+   "label": "Pretorius",
+   "href": "/families/pretorius/",
+   "read": "The Pretoriuses →",
+   "status": "origin-unknown",
+   "statusNote": "a wife, her father and two more of the name, the men undated"
+  },
+  "Schoeman": {
+   "colour": "var(--r-italy)",
+   "label": "Schoeman",
+   "href": "/families/schoeman/",
+   "read": "The Schoemans →",
+   "status": "origin-unknown",
+   "statusNote": "four people, none with a date, around a man of Barkly Oost"
+  },
+  "Lerena": {
+   "colour": "var(--r-feudal)",
+   "label": "Lerena",
+   "href": "/people/",
+   "read": "The People, Line filter →",
+   "status": "origin-unknown",
+   "statusNote": "the Lerena family has its own archive"
+  },
+  "Downing": {
+   "colour": "var(--r-german)",
+   "label": "Downing",
+   "href": "/families/downing/",
+   "read": "The Downings →",
+   "status": "origin-unknown",
+   "statusNote": "born London 1803; her father is on the family tree only",
+   "nodes": [
+    {
+     "place": "London",
+     "year": "1803",
+     "person": "margaret-downing",
+     "why": "Born 23 February 1803 in London: documented. Her father is on the family tree and in no document this archive has read."
+    }
+   ]
+  },
+  "McCabe": {
+   "colour": "var(--accent-2)",
+   "label": "McCabe",
+   "href": "/people/",
+   "read": "The People, Line filter →",
+   "status": "origin-unknown",
+   "statusNote": "one woman, no parent entered on the line"
+  }
+ }
+}

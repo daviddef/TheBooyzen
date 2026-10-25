@@ -1,0 +1,61 @@
+---
+/* THE LINES (25 October 2026). The archive had four rows on /trees/ and a Line filter on The People,
+   and no one picture of all eleven lines it files people on, with how far each one's evidence reaches.
+   This is that picture: the kit's rivers drawing (components/BranchRivers.astro, contract
+   kit/docs/lines.md), one lane to a line.
+
+   NOTHING ON THIS PAGE IS TYPED THAT COULD GO STALE. The lanes, their members, their spans and the two
+   pens are made by tools/lines.py from people.json, dossiers.json, living.json, trees.json and
+   register.json (plus the research decisions in lines-meta.json, which the tool holds to trees.json), and
+   every count printed below is read back out of that file with the kit's ledger(). npm run check:lines
+   (the kit's checklines.py) holds the file to its own claims on the built site. */
+import Base from "../layouts/Base.astro";
+import BranchRivers from "@daviddef/archive-kit/components/BranchRivers.astro";
+import { ledger, statusLine } from "@daviddef/archive-kit/lib/lines.js";
+import { u } from "../lib/url.js";
+import lines from "../data/lines.json";
+import D from "../data/dossiers.json";
+import t from "../data/trees.json";
+
+const L = ledger(lines);
+const names = Object.fromEntries(Object.values(D.people).map((p) => [p.slug, p.n]));
+const plural = (n, one, many) => (n === 1 ? one : many);
+const T = L.tiers;
+const stated = ["documented", "origin-unknown", "inferred", "family-lore"].filter((k) => T[k]);
+const WORD = { documented: "documented from the start", "origin-unknown": "documented from its first dated person, with where it began not found", inferred: "documented, with where it began inferred", "family-lore": "told, not documented" };
+const tierList = stated.map((k) => `${T[k]} ${WORD[k]}`);
+const joined = tierList.length < 2 ? tierList.join("") : tierList.slice(0, -1).join(", ") + " and " + tierList[tierList.length - 1];
+const withSpan = lines.lanes.filter((l) => l.span).length;
+---
+<Base title="The Lines">
+  <section class="blk">
+    <p class="lede">
+      This archive files every person it names on exactly one line, and there are {L.lanes} {plural(L.lanes, "line", "lines")}.
+      Each is a lane below, and under its title the drawing says how far that line's evidence reaches: {joined}.
+      {L.peopleOnLanes} {plural(L.peopleOnLanes, "person", "people")} stand on the lanes, every one a person who has died; people who may be living are
+      kept off this page.
+    </p>
+    <p>
+      The lines are shorter than the surnames. {T.documented} of the {L.lanes} {plural(T.documented, "begins", "begin")} in a document. The Booyzen line, the one this archive
+      descends from, is not one of them: {t.origins.Booyzen.text}. {withSpan < L.lanes ? `${plural(L.lanes - withSpan, "One line has", L.lanes - withSpan + " lines have")} no dated person at all, so ${plural(L.lanes - withSpan, "it claims", "they claim")} no years. ` : ""}Nothing on this page joins two lines: a join is drawn only where a document makes it.
+    </p>
+  </section>
+
+  <section class="blk">
+    <BranchRivers rivers={lines} title={lines.title} caption={lines.caption} personBase="/people/" names={names} />
+  </section>
+
+  <section class="blk">
+    <h2>Where each line is told</h2>
+    <ul>
+      {lines.lanes.map((l) => (
+        <li><a href={u(l.href)}><b>{l.label}</b></a> — {statusLine(l).text}</li>
+      ))}
+    </ul>
+    <p class="dim">
+      The same lines, with the grade of every person on them, are counted on <a href={u("/trees/")}>The trees</a>; the people are in
+      <a href={u("/people/")}>The People</a>, where the Line filter picks one lane out, and the families that carry a name without being a line are on
+      <a href={u("/families/")}>The Families</a>.
+    </p>
+  </section>
+</Base>

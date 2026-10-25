@@ -72,6 +72,12 @@
      "group": "The line, drawn"
     },
     {
+     "path": "/lines/",
+     "title": "The Lines",
+     "blurb": "Every line the archive files people on, drawn as a lane, with how far each one's evidence reaches and what is not on any of them.",
+     "group": "The line, drawn"
+    },
+    {
      "path": "/families/",
      "title": "The Families",
      "blurb": "A family here is a name: the people who carry it, its line, its households, places and records.",

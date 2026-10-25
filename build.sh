@@ -151,6 +151,8 @@ STEP="people.json from people.js"; node tools/people-json.mjs
 STEP="first pass - build:pages, checks deliberately skipped"; ( cd site && npm run build:pages >/dev/null )
 STEP="dossiers.py"; python3 tools/dossiers.py
 STEP="gallery.py"; python3 tools/gallery.py
+# THE LINES PAGE'S DATA (25 October 2026): made from the person pages dossiers.py has just written, living.json and trees.json; `npm run check:lines` only CHECKS the committed file.
+STEP="lines.py"; python3 tools/lines.py
 # SEARCHINDEX IS A COMMITTED ARTEFACT THAT ONLY THIS SCRIPT REGENERATES, AND
 # THAT ASYMMETRY BITES EXACTLY ONCE, CONFUSINGLY. `npm run build` - which is all
 # GitHub Actions runs - VALIDATES site/public/searchindex.json against the built
