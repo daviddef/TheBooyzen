@@ -9,14 +9,20 @@ import Spine from "@daviddef/archive-kit/components/Spine.astro";
 import LINE from "../data/line.json";
 /* THE TINT (27 October 2026): a row of someone on our direct line is tinted (the kit's Spine, `directLine`), and the
    row says whom by the person page of the story ribbon's card for that generation, matched on the birth year the
-   row prints (on the name where it prints none). Generation five has no card person: he and his father share one
-   page, so his row is left plain rather than pointed at his father's (the kit: never guessed). */
+   row prints (on the name where it prints none). Generation five's card names no person, because he and his father
+   share one page (dossiers.json `also`); his row says whom by that page, the one that holds him, matched the same way
+   on his own name and birth year. The tint carries no generation number, so it says only what is true of him: he is
+   on the line. Nothing is linked: the Spine's names stay unlinked, as below. */
 import directLine from "../data/direct-line.json";
 import story from "../data/story.json";
+import D from "../data/dossiers.json";
 const ribbonPerson = (n, b) => {
   const y = (String(b ?? "").match(/\d{4}/) || [])[0];
-  const c = story.ribbon.cards.find((x) => x.person && (y ? String(x.years).includes(y) : x.name === n));
-  return c ? c.person : undefined;
+  const c = story.ribbon.cards.find((x) => (y ? String(x.years).split("–")[0].endsWith(y) : x.name === n));
+  if (!c || c.living) return undefined;
+  if (c.person) return c.person;
+  const host = Object.values(D.people).filter((d) => (d.also || []).some((a) => a.n === n && String(a.b ?? "").includes(y)));
+  return host.length === 1 ? host[0].slug : undefined;
 };
 /* The line moved to src/data/line.json on 22 September, so the homepage
    ladder reads the same rows. A line that exists twice is a line that
