@@ -17,10 +17,15 @@ import Base from "../layouts/Base.astro";
 import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
 import book from "../data/story.json";
 import { u } from "../lib/url.js";
-/* Generations five and six are both Petrus Jacobus Booysen and share one person page, which holds both men
-   (dossiers.json `also`); the story links both to it and says in words which man is meant. */
+/* Generations five and six (the ribbon's two and three) are both Petrus Jacobus Booysen and share one person page,
+   which holds both men (dossiers.json `also`). Since 27 October 2026 the ribbon's card for the son names no person:
+   direct-line.json (made from this ribbon by the kit's directline.py) lists each person once, and a card that pointed
+   at his father's page would tint and band that page as two generations. He is on the line all the same (the file's
+   `unlinked`, tinted as gen:3), and the prose and trees still link him to the shared page and say which man is meant.
+   THE TINT: `directLine` tints every ribbon card and tree node of someone on our direct line (kit/docs/family-ribbon.md). */
+import directLine from "../data/direct-line.json";
 const personHref = (slug) => u(`/people/${slug}/`);
 ---
 <Base title={book.title} eyebrow={book.eyebrow} dek={book.dek}>
-  <StoryBook book={book} personHref={personHref} u={u} />
+  <StoryBook book={book} personHref={personHref} u={u} directLine={directLine} />
 </Base>

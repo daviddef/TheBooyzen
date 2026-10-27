@@ -28,6 +28,13 @@ import { livingBySlug, STANDARD } from "../../lib/living.js";
 import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
 import { eraAt, plainYear } from "@daviddef/archive-kit/lib/era.js";
 import eraSnapshot from "../../data/era-snapshot.json";
+/* ON OUR DIRECT LINE (27 October 2026): the kit's quiet band under the name, "On our direct line · generation n" with a
+   link into the story, on the page of everyone in src/data/direct-line.json (the story ribbon's persons and the wives the
+   ribbon marks as our ancestors) and on no other; the kit's OursBand draws nothing for anyone else. The generation is the
+   ribbon's (Gerthardus Lodewikus is 1), which counts the other way from the Spine's in the record table below, so the
+   band says "story generation" (direct-line.json generationLabel, written by directline.py --label). */
+import OursBand from "@daviddef/archive-kit/components/OursBand.astro";
+import directLine from "../../data/direct-line.json";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
@@ -115,6 +122,7 @@ const groups = Object.entries(byPage);
       dek={p.r}>
 
 <section class="blk">
+  <OursBand directLine={directLine} slug={p.slug} u={u} />
   {selves.map((self, i) => (
     <div>
       {selves.length > 1 && (

@@ -1,0 +1,90 @@
+{
+ "_note": "Made by kit/tools/directline.py from the story's ribbon; do not edit by hand.",
+ "generationLabel": "story generation",
+ "people": [
+  {
+   "slug": "gerthardus-lodewikus-booysen",
+   "generation": 1,
+   "storyChapter": "origin",
+   "name": "Gerthardus Lodewikus Booysen"
+  },
+  {
+   "slug": "petrus-jacobus-booysen",
+   "generation": 2,
+   "storyChapter": "pj1788",
+   "name": "Petrus Jacobus Booysen"
+  },
+  {
+   "slug": "willem-hermanus-william-henry-booyzen",
+   "generation": 4,
+   "storyChapter": "wh",
+   "name": "Willem Hermanus Booyzen"
+  },
+  {
+   "slug": "george-downing-mountjoy-booyzen",
+   "generation": 5,
+   "storyChapter": "george",
+   "name": "George Downing Mountjoy Booyzen"
+  },
+  {
+   "slug": "catherine-mary-sophia-booyzen",
+   "generation": 6,
+   "storyChapter": "catherine",
+   "name": "Catherine Mary Sophia Booyzen"
+  }
+ ],
+ "partners": [
+  {
+   "slug": "magdelena-elisabeth-de-beer",
+   "generation": 1,
+   "storyChapter": "origin",
+   "partnerOf": "gerthardus-lodewikus-booysen",
+   "name": "Magdalena de Beer"
+  },
+  {
+   "slug": "johanna-catharina-mountjoy",
+   "generation": 3,
+   "storyChapter": "pj1812",
+   "partnerOf": "",
+   "name": "Johanna Catharina Mountjoy"
+  },
+  {
+   "slug": "catherine-maria-sophia-kathleen-barry",
+   "generation": 4,
+   "storyChapter": "wh",
+   "partnerOf": "willem-hermanus-william-henry-booyzen",
+   "name": "Kathleen Barry"
+  },
+  {
+   "slug": "anna-johanna-maria-pretorius",
+   "generation": 5,
+   "storyChapter": "george",
+   "partnerOf": "george-downing-mountjoy-booyzen",
+   "name": "Anna Johanna Maria Pretorius"
+  },
+  {
+   "slug": "nuno-fernando-lerena",
+   "generation": 6,
+   "storyChapter": "catherine",
+   "partnerOf": "catherine-mary-sophia-booyzen",
+   "name": "Nuno Fernando Lerena"
+  }
+ ],
+ "unlinked": [
+  {
+   "generation": 3,
+   "storyChapter": "pj1812",
+   "name": "Petrus Jacobus Booysen"
+  },
+  {
+   "generation": 7,
+   "storyChapter": "us",
+   "name": "Cheryl Anne Lerena"
+  },
+  {
+   "generation": 8,
+   "storyChapter": "us",
+   "name": "David Defranceski"
+  }
+ ]
+}

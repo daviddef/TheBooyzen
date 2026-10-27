@@ -20,6 +20,11 @@ import { u } from "../lib/url.js";
 import { treeFor, dates, provenance } from "../lib/kin.js";
 import PersonTree from "@daviddef/archive-kit/components/PersonTree.astro";
 import "@daviddef/archive-kit/styles/persontree.css";
+/* THE TINT (27 October 2026): a relative on our direct line is tinted (the kit's PersonTree draws `ours`), named by
+   src/lib/ours.js from direct-line.json, matched on name and birth; the chart then carries the key that says what the
+   tint means, whatever else its key shows. Never on a living person's chart. */
+import "@daviddef/archive-kit/styles/ours.css";
+import { oursKey } from "../lib/ours.js";
 
 /* `living` draws the relationships and nothing else: no household notes, no source
    links and no provenance count, because those are records, and a living person is
@@ -41,6 +46,7 @@ const row = (o, via, slug, showVia = true) => ({
   cls: CLS[via],
   mark: showVia && !living ? viaLabel[via] : undefined,
   title: living ? undefined : "Recorded by: " + viaLabel[via],
+  ours: living ? undefined : oursKey(o),
 });
 
 /* 89 of this archive's 352 person pages drew no chart at all, and a page that
@@ -61,6 +67,7 @@ const emptyWhy = !nothing ? "" :
     : "A household here names this person as a parent, and records neither a "
       + "spouse nor a child in it. There is nothing more to draw.";
 
+const anyOurs = !living && [...t.parents, ...t.siblings, ...t.unions.flatMap((un) => [un.spouse, ...un.kids])].some((x) => oursKey(x));
 const warns = living ? [] : [
   ...(t.origin && t.origin.f.warn ? [t.origin.f.warn] : []),
   ...t.unions.filter((x) => x.f.warn).map((x) => x.f.warn),
@@ -86,12 +93,15 @@ const warns = living ? [] : [
 >
   {/* No lines are drawn, so a key to four kinds of line explains nothing and
        implies the chart is using them. */}
-  {showKey && !nothing && !living && (
+  {((showKey && !nothing && !living) || anyOurs) && (
     <span slot="keys">
+      {showKey && !nothing && !living && <Fragment>
       <span class="key"><i class="sw line"></i> the direct line, argued on <a href={u("/direct-line/")}>the line</a></span>
       <span class="key"><i class="sw doc"></i> from a record this archive has read</span>
       <span class="key"><i class="sw inferred"></i> inferred, not stated</span>
       <span class="key"><i class="sw tree"></i> from the family tree, unverified</span>
+      </Fragment>}
+      {anyOurs && <span class="key"><span class="ours-sw"></span>tinted = our direct line</span>}
     </span>
   )}
   <Fragment slot="before-caption">

@@ -153,6 +153,9 @@ STEP="dossiers.py"; python3 tools/dossiers.py
 STEP="gallery.py"; python3 tools/gallery.py
 # THE LINES PAGE'S DATA (25 October 2026): made from the person pages dossiers.py has just written, living.json and trees.json; `npm run check:lines` only CHECKS the committed file.
 STEP="lines.py"; python3 tools/lines.py
+# THE DIRECT LINE (27 October 2026): direct-line.json is made from the story's ribbon by the kit's directline.py;
+# `npm run check:directline` only CHECKS the committed file.
+STEP="direct-line.json"; ( cd site && python3 node_modules/@daviddef/archive-kit/kit/tools/directline.py --story src/data/story.json --write src/data/direct-line.json --label "story generation" )
 # SEARCHINDEX IS A COMMITTED ARTEFACT THAT ONLY THIS SCRIPT REGENERATES, AND
 # THAT ASYMMETRY BITES EXACTLY ONCE, CONFUSINGLY. `npm run build` - which is all
 # GitHub Actions runs - VALIDATES site/public/searchindex.json against the built

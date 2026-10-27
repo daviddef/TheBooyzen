@@ -7,6 +7,17 @@ import sdx from "../data/sources.json";
 
 import Spine from "@daviddef/archive-kit/components/Spine.astro";
 import LINE from "../data/line.json";
+/* THE TINT (27 October 2026): a row of someone on our direct line is tinted (the kit's Spine, `directLine`), and the
+   row says whom by the person page of the story ribbon's card for that generation, matched on the birth year the
+   row prints (on the name where it prints none). Generation five has no card person: he and his father share one
+   page, so his row is left plain rather than pointed at his father's (the kit: never guessed). */
+import directLine from "../data/direct-line.json";
+import story from "../data/story.json";
+const ribbonPerson = (n, b) => {
+  const y = (String(b ?? "").match(/\d{4}/) || [])[0];
+  const c = story.ribbon.cards.find((x) => x.person && (y ? String(x.years).includes(y) : x.name === n));
+  return c ? c.person : undefined;
+};
 /* The line moved to src/data/line.json on 22 September, so the homepage
    ladder reads the same rows. A line that exists twice is a line that
    drifts, and this one has two Petrus Jacobus Booysens in consecutive
@@ -54,7 +65,7 @@ const placePart = (v) => {
   return i < 0 ? "" : head.slice(i + 2).trim();
 };
 const rows = line.map(([g, n, b, d, m, note, m2]) => ({
-  gen: g, name: n, trade: trades[g] || "",
+  gen: g, name: n, trade: trades[g] || "", person: ribbonPerson(n, b),
   /* Her cell carries the same three things his does, in a different
      order: "Johanna Catharina Mountjoy (30 Apr 1819 – 19 May 1863) —
      DOCUMENTED, m. 4 Nov 1838 Cradock". Splitting only on ", m. " left
@@ -107,7 +118,7 @@ const sibs = [
     after the first had been written down. Both second marriages are given in the Married column; the
     ancestor chart has one slot for a mother and can only draw one of them.
     <a href={u("/tree/")}>The chart &rarr;</a></p>
-  <Spine rows={rows} u={u} />
+  <Spine rows={rows} u={u} directLine={directLine} />
   <p class="cap">All from the MyHeritage tree <em>Defranceski Family Site (23andMe)</em>, read 9 September
     2026. Most dates there carry a FamilySearch citation to Dutch Reformed Church registers or to Cape and
     Transvaal probate records; those citations are listed on <a href={u("/sources/")}>Sources</a>.</p>

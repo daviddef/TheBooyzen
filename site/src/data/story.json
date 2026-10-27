@@ -67,6 +67,7 @@
     "chapter": "origin",
     "person": "gerthardus-lodewikus-booysen",
     "spousePerson": "magdelena-elisabeth-de-beer",
+    "spouseDirect": true,
     "title": "Named only as a parent, on his son's death notice of 1876; no dates"
    },
    {
@@ -95,9 +96,9 @@
     "atYear": "1884",
     "living": false,
     "chapter": "pj1812",
-    "person": "petrus-jacobus-booysen",
     "spousePerson": "johanna-catharina-mountjoy",
-    "title": "Born in the district of Graaff-Reinet by his death notice; a farmer at Zevenfontein who owned his clothes"
+    "spouseDirect": true,
+    "title": "Born in the district of Graaff-Reinet by his death notice; a farmer at Zevenfontein who owned his clothes; he shares his father's person page, so this card has no link of its own"
    },
    {
     "name": "Willem Hermanus Booyzen",
@@ -112,6 +113,7 @@
     "chapter": "wh",
     "person": "willem-hermanus-william-henry-booyzen",
     "spousePerson": "catherine-maria-sophia-kathleen-barry",
+    "spouseDirect": true,
     "title": "Baptised behind the Sneeuberg in 1851; a farmer of Lady Grey in 1879, a mason at Indwe in 1905"
    },
    {
@@ -127,6 +129,7 @@
     "chapter": "george",
     "person": "george-downing-mountjoy-booyzen",
     "spousePerson": "anna-johanna-maria-pretorius",
+    "spouseDirect": true,
     "title": "Born in the Cape in 1901 by the family's tree; no birthplace read; a railway clerk in Johannesburg"
    },
    {
@@ -142,6 +145,7 @@
     "chapter": "catherine",
     "person": "catherine-mary-sophia-booyzen",
     "spousePerson": "nuno-fernando-lerena",
+    "spouseDirect": true,
     "title": "Her birthday is in both her parents' death notices; married at St Joseph's, Mayfair, 1949"
    },
    {

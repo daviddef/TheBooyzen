@@ -14,6 +14,13 @@ import BranchRivers from "@daviddef/archive-kit/components/BranchRivers.astro";
 import { ledger, statusLine } from "@daviddef/archive-kit/lib/lines.js";
 import { u } from "../lib/url.js";
 import lines from "../data/lines.json";
+/* THE TINT (27 October 2026): the lane our direct line runs along has a tinted band (the kit's BranchRivers, a lane
+   with `ours`). Which lane that is comes from the data, not from a typed flag: the lane whose members include the
+   people of src/data/direct-line.json (the story ribbon's persons; their partners are not counted, so the lanes they
+   married in from stay plain). */
+import directLine from "../data/direct-line.json";
+const linePeople = new Set(directLine.people.map((x) => x.slug));
+const rivers = { ...lines, lanes: lines.lanes.map((l) => ((l.members || []).some((m) => linePeople.has(m)) ? { ...l, ours: true } : l)) };
 import D from "../data/dossiers.json";
 import t from "../data/trees.json";
 
@@ -42,7 +49,7 @@ const withSpan = lines.lanes.filter((l) => l.span).length;
   </section>
 
   <section class="blk">
-    <BranchRivers rivers={lines} title={lines.title} caption={lines.caption} personBase="/people/" names={names} />
+    <BranchRivers rivers={rivers} title={lines.title} caption={lines.caption} personBase="/people/" names={names} directLine={directLine} />
   </section>
 
   <section class="blk">
