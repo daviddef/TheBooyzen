@@ -32,13 +32,15 @@ import { treeFor } from "../../lib/kin.js";
 import FamilyRibbon from "@daviddef/archive-kit/components/FamilyRibbon.astro";
 import familyLines from "../../data/family-lines.json";
 import directLine from "../../data/direct-line.json";
+/* THE MINI FLAGS (27 October 2026): each card's flags are in src/data/ribbon-flags.json (tools/ribbonflags.py, the kit's generator); storyWithFlags/familyWithFlags put them on the cards. */
+import { familyWithFlags } from "../../lib/ribbonflags.js";
 
 export function getStaticPaths() {
   return registry.filter((f) => !f.page).map((f) => ({ params: { slug: f.slug }, props: { slug: f.slug } }));
 }
 const { slug } = Astro.props;
 const M = model(slug);
-const ribbon = familyLines.families.find((x) => x.id === slug);
+const ribbon = familyWithFlags(familyLines.families.find((x) => x.id === slug));
 const { f } = M;
 const n = M.members.length;
 const plural = (k, one, many) => (k === 1 ? one : many);

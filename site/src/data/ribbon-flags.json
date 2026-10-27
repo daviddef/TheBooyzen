@@ -1,0 +1,782 @@
+{
+ "_note": "Made by tools/ribbonflags.py (the kit's ribbonflags.py) from story.json, family-lines.json, era-snapshot.json, flag-places.json and flag-countries.json; do not edit by hand. Each ribbon card's mini flags, by ribbon ('story', or a family's id), card position and the card's name; site/src/lib/ribbonflags.js puts them on the cards when the pages are built. The contract is the kit's kit/docs/ribbon-flags.md; the art and its credit are the kit's (kit/data/flags/index.json).",
+ "story": [
+  {
+   "card": 1,
+   "name": "Gerthardus Lodewikus Booysen",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "the Cape, place not known",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from the Cape, place not known: South Africa today",
+     "grade": "inf"
+    }
+   ]
+  },
+  {
+   "card": 2,
+   "name": "Petrus Jacobus Booysen",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Graaff-Reinet",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from Graaff-Reinet: South Africa today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "district Rustenburg",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "at district Rustenburg: South Africa today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 3,
+   "name": "Petrus Jacobus Booysen",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "district Graaff-Reinet",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from district Graaff-Reinet: South Africa today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Zevenfontein",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "at Zevenfontein: South Africa today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Graaff-Reinet",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "spouse of Graaff-Reinet: South Africa today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 4,
+   "name": "Willem Hermanus Booyzen",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "achter Sneeuwberg",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from achter Sneeuwberg: South Africa today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Indwe",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "at Indwe: South Africa today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 5,
+   "name": "George Downing Mountjoy Booyzen",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "the Cape",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from the Cape: South Africa today",
+     "grade": "inf"
+    },
+    {
+     "kind": "era",
+     "line": "at",
+     "place": "Forest Hill, Johannesburg",
+     "svg": "south-africa-flags--era-1928.svg",
+     "flag": "south-africa-flags--era-1928",
+     "era": "transvaal--era-1910",
+     "year": 1947,
+     "label": "at Forest Hill, Johannesburg, 1947: Britain and its colonies then",
+     "grade": "inf",
+     "assessed": true
+    },
+    {
+     "kind": "today",
+     "line": "spouse",
+     "place": "Barkly East",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "spouse of Barkly East: South Africa today",
+     "grade": "inf"
+    }
+   ]
+  },
+  {
+   "card": 6,
+   "name": "Catherine Mary Sophia Booyzen",
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "South Africa, town not recorded",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from South Africa, town not recorded: South Africa today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Johannesburg",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "at Johannesburg: South Africa today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 7,
+   "living": true,
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Johannesburg, South Africa",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from Johannesburg, South Africa: South Africa today",
+     "grade": "doc"
+    }
+   ]
+  },
+  {
+   "card": 8,
+   "living": true,
+   "flags": [
+    {
+     "kind": "today",
+     "line": "from",
+     "place": "Johannesburg, South Africa",
+     "svg": "south-africa-flags--era-1994.svg",
+     "flag": "south-africa-flags--era-1994",
+     "country": "ZA",
+     "year": null,
+     "label": "from Johannesburg, South Africa: South Africa today",
+     "grade": "doc"
+    },
+    {
+     "kind": "today",
+     "line": "at",
+     "place": "Brisbane, Australia",
+     "svg": "australia-flags--era-1901.svg",
+     "flag": "australia-flags--era-1901",
+     "country": "AU",
+     "year": null,
+     "label": "at Brisbane, Australia: Australia today",
+     "grade": "doc"
+    }
+   ]
+  }
+ ],
+ "families": {
+  "booyzen": [
+   {
+    "card": 1,
+    "name": "Gerthardus Lodewikus Booysen",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "the Cape, place not known",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from the Cape, place not known: South Africa today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Petrus Jacobus Booysen",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Graaff-Reinet",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from Graaff-Reinet: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "district Rustenburg",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at district Rustenburg: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Petrus Jacobus Booysen",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "district Graaff-Reinet",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from district Graaff-Reinet: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Zevenfontein",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at Zevenfontein: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Graaff-Reinet",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of Graaff-Reinet: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 4,
+    "name": "Willem Hermanus Booyzen",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "achter Sneeuwberg",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from achter Sneeuwberg: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Indwe",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at Indwe: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 5,
+    "name": "George Downing Mountjoy Booyzen",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "the Cape",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from the Cape: South Africa today",
+      "grade": "inf"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Forest Hill, Johannesburg",
+      "svg": "south-africa-flags--era-1928.svg",
+      "flag": "south-africa-flags--era-1928",
+      "era": "transvaal--era-1910",
+      "year": 1947,
+      "label": "at Forest Hill, Johannesburg, 1947: Britain and its colonies then",
+      "grade": "inf",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Barkly East",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of Barkly East: South Africa today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 6,
+    "name": "Catherine Mary Sophia Booyzen",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "South Africa, town not recorded",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from South Africa, town not recorded: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Johannesburg",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at Johannesburg: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "mountjoy": [
+   {
+    "card": 1,
+    "name": "James Montjoy",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Cradock",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at Cradock: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "Johanna Catharina Mountjoy",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Graaff-Reinet",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from Graaff-Reinet: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Zevenfontein, Brak River",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at Zevenfontein, Brak River: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "district Graaff-Reinet",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of district Graaff-Reinet: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "barry": [
+   {
+    "card": 1,
+    "name": "John Barry",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "de Bruins Poort",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at de Bruins Poort: South Africa today",
+      "grade": "inf"
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Catherine Maria Sophia “Kathleen” Barry",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Johannesburg",
+      "svg": "south-africa-flags--era-1928.svg",
+      "flag": "south-africa-flags--era-1928",
+      "era": "transvaal--era-1910",
+      "year": 1940,
+      "label": "at Johannesburg, 1940: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "achter Sneeuwberg",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of achter Sneeuwberg: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "kolbe": [
+   {
+    "card": 1,
+    "name": "Johan Gottlieb Kolbe",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "London",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1837",
+      "year": 1845,
+      "label": "at London, 1845: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 2,
+    "name": "George Augustus Kolbe",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "Soho",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1802,
+      "label": "from Soho, 1802: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "“Wurtemburg”, Colesberg",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at “Wurtemburg”, Colesberg: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "London",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1802,
+      "label": "spouse of London, 1802: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   },
+   {
+    "card": 3,
+    "name": "Margaretha Wilhelmina Elizabeth Mary Kolbe",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Manorowen, Barkly East",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at Manorowen, Barkly East: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "pretorius": [
+   {
+    "card": 2,
+    "name": "Anna Johanna Maria Pretorius",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Forest Hill, Johannesburg",
+      "svg": "south-africa-flags--era-1928.svg",
+      "flag": "south-africa-flags--era-1928",
+      "era": "transvaal--era-1910",
+      "year": 1944,
+      "label": "at Forest Hill, Johannesburg, 1944: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "the Cape",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of the Cape: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "van-der-merwe": [
+   {
+    "card": 1,
+    "name": "Anna Maria van der Merwe",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Graaff-Reinet",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of Graaff-Reinet: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "downing": [
+   {
+    "card": 2,
+    "name": "Margaret Downing",
+    "flags": [
+     {
+      "kind": "era",
+      "line": "from",
+      "place": "London",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1803,
+      "label": "from London, 1803: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "Burgersdorp",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at Burgersdorp: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "spouse",
+      "place": "Soho",
+      "svg": "uk-flags--era-1801.svg",
+      "flag": "uk-flags--era-1801",
+      "era": "england--era-1538",
+      "year": 1803,
+      "label": "spouse of Soho, 1803: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "daschner": [
+   {
+    "card": 2,
+    "name": "Joseph Heinrich Daschner",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "Stutterheim",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from Stutterheim: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "era",
+      "line": "at",
+      "place": "Kenilworth",
+      "svg": "south-africa-flags--era-1928.svg",
+      "flag": "south-africa-flags--era-1928",
+      "era": "transvaal--era-1910",
+      "year": 1942,
+      "label": "at Kenilworth, 1942: Britain and its colonies then",
+      "grade": "doc",
+      "assessed": true
+     }
+    ]
+   }
+  ],
+  "lowies": [
+   {
+    "card": 2,
+    "name": "Charles Petrus Barend Lowies",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "from",
+      "place": "district Cradock",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "from district Cradock: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "at",
+      "place": "the Lunatic Asylum, Pretoria",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "at the Lunatic Asylum, Pretoria: South Africa today",
+      "grade": "doc"
+     },
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "Potchefstroom district",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of Potchefstroom district: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ],
+  "van-niekerk": [
+   {
+    "card": 1,
+    "name": "Jan Dirk Abram Frans van Niekerk",
+    "flags": [
+     {
+      "kind": "today",
+      "line": "spouse",
+      "place": "district Cradock",
+      "svg": "south-africa-flags--era-1994.svg",
+      "flag": "south-africa-flags--era-1994",
+      "country": "ZA",
+      "year": null,
+      "label": "spouse of district Cradock: South Africa today",
+      "grade": "doc"
+     }
+    ]
+   }
+  ]
+ }
+}

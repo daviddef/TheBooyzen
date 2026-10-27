@@ -46,6 +46,8 @@ HAND_EDITED = {
     "dna.json",                # the DNA page
     "errands.json",            # the errands page
     "families.json",           # which family names have a page (a person edits the list; the pages are drawn from the archive's data)
+    "flag-countries.json",     # the ribbon flags: today's country of a card's place the kit cannot name, with its evidence (typed)
+    "flag-places.json",        # the ribbon flags: a card's town -> the era table's place in the same Atlas region, with its evidence (typed)
     "kin.js",                  # households and children (hand-written module)
     "letters.json",            # enquiries sent and answers
     "lines-meta.json",         # the lines page: each line's status, its note and its few dated places, typed (tools/lines.py holds the status to trees.json)
@@ -89,6 +91,7 @@ GENERATED = {
     "readnames.json",          # tools/readnames.py, from data/read-names.tsv and register.json
     "records.json",            # tools/build_records.py, from the pages and the data
     "register.json",           # tools/register.py
+    "ribbon-flags.json",       # tools/ribbonflags.py (the kit's generator), from story.json, family-lines.json, era-snapshot.json and the two flag tables: place names, Atlas labels and years of the dead, no living name
     "sources-state.json",      # tools/checkexternal.py, link status
 }
 

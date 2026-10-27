@@ -1,0 +1,15 @@
+{
+ "_about": "A ribbon card's place -> the place of this archive's era table (data/era-ground.tsv, era-snapshot.json) that stands in the same Record Atlas region, for the ERA flag of the kit's ribbonflags.py (its --alias file; kit/docs/ribbon-flags.md). Its only effect is the region the era is read from. Given only for a town or suburb (a point; never a district, whose bounds a ring cannot test) that lies inside the same region's ring as the era-table place, inside no other region's ring, and well clear of the ring's edge (more than the era table's 15 km), tested against the Atlas's rings in context.json. Typed by hand; tools/ribbonflags.py reads it. Each entry's evidence is in _evidence.",
+ "_evidence": {
+  "Johannesburg": "The city of the era table's 'St Joseph's, Mayfair' row (Mayfair is a Johannesburg suburb; era-ground.tsv: 'Mayfair, Johannesburg, inside the transvaal ring'). Centre -26.204, 28.047: in the transvaal ring only, 58 km from its edge.",
+  "Forest Hill, Johannesburg": "A Johannesburg suburb (people.js: Anna Johanna Maria Pretorius died at 85 Rheeders Street, Forest Hill, Johannesburg; places.json 'Johannesburg': 'Forest Hill, Mayfair, Fordsburg and Germiston all appear on its certificates'). About -26.247, 28.032: in the transvaal ring only, 53 km from its edge.",
+  "Kenilworth": "Kenilworth, Johannesburg, not the Cape Town suburb or the English town: Joseph Heinrich Daschner was 'of 132 Sheffield Street, Kenilworth', his estate is TAB MHG 1928/42 (the Master, Johannesburg) and he is buried at West Park, Johannesburg (people.js); places.json names 'Forest Hill and Kenilworth where this family actually lived in the 1940s'. About -26.245, 28.042: in the transvaal ring only, 54 km from its edge.",
+  "the Lunatic Asylum, Pretoria": "Pretoria, Transvaal (places.json 'Pretoria', -25.746, 28.188, region Transvaal): in the transvaal ring only, 111 km from its edge; the same region as the era table's Mayfair row.",
+  "Soho": "St Anne's, Soho, Westminster, London, where George Augustus Kolbe was baptised on 2 February 1803 (places.json 'Soho, London', Middlesex; people.js 'born 7 Dec 1802, Soho - baptised 2 Feb 1803, Westminster'). In the england ring only, 118 km from its edge, as the era table's London row is."
+ },
+ "Johannesburg": "St Joseph's, Mayfair",
+ "Forest Hill, Johannesburg": "St Joseph's, Mayfair",
+ "Kenilworth": "St Joseph's, Mayfair",
+ "the Lunatic Asylum, Pretoria": "St Joseph's, Mayfair",
+ "Soho": "London"
+}

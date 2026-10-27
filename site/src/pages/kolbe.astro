@@ -7,7 +7,9 @@ import { u } from "../lib/url.js";
 import FamilyRibbon from "@daviddef/archive-kit/components/FamilyRibbon.astro";
 import familyLines from "../data/family-lines.json";
 import directLine from "../data/direct-line.json";
-const ribbon = familyLines.families.find((x) => x.id === "kolbe");
+/* THE MINI FLAGS (27 October 2026): each card's flags are in src/data/ribbon-flags.json (tools/ribbonflags.py, the kit's generator); storyWithFlags/familyWithFlags put them on the cards. */
+import { familyWithFlags } from "../lib/ribbonflags.js";
+const ribbon = familyWithFlags(familyLines.families.find((x) => x.id === "kolbe"));
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
 import sdx from "../data/sources.json";
 

@@ -16,6 +16,8 @@
 import Base from "../layouts/Base.astro";
 import StoryBook from "@daviddef/archive-kit/components/StoryBook.astro";
 import book from "../data/story.json";
+/* THE MINI FLAGS (27 October 2026): each card's flags are in src/data/ribbon-flags.json (tools/ribbonflags.py, the kit's generator); storyWithFlags/familyWithFlags put them on the cards. */
+import { storyWithFlags } from "../lib/ribbonflags.js";
 import { u } from "../lib/url.js";
 /* Generations five and six (the ribbon's two and three) are both Petrus Jacobus Booysen and share one person page,
    which holds both men (dossiers.json `also`). Since 27 October 2026 the ribbon's card for the son names no person:
@@ -27,5 +29,5 @@ import directLine from "../data/direct-line.json";
 const personHref = (slug) => u(`/people/${slug}/`);
 ---
 <Base title={book.title} eyebrow={book.eyebrow} dek={book.dek}>
-  <StoryBook book={book} personHref={personHref} u={u} directLine={directLine} />
+  <StoryBook book={storyWithFlags(book)} personHref={personHref} u={u} directLine={directLine} />
 </Base>

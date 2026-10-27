@@ -158,6 +158,12 @@ STEP="lines.py"; python3 tools/lines.py
 # written) by tools/familylines.mjs. `npm run check:directline` and `check:familyribbon` only CHECK the committed files.
 STEP="direct-line.json"; ( cd site && python3 node_modules/@daviddef/archive-kit/kit/tools/directline.py --story src/data/story.json --write src/data/direct-line.json --label "story generation" )
 STEP="familylines.mjs"; node tools/familylines.mjs
+# THE MINI FLAGS ON THE RIBBON CARDS (27 October 2026): the kit's ribbonflags.py, through tools/ribbonflags.py, writes
+# site/src/data/ribbon-flags.json (each story and family ribbon card's flags) from story.json, family-lines.json, the era
+# snapshot and the archive's two hand tables (flag-places.json, flag-countries.json); the pages put them on the cards
+# (site/src/lib/ribbonflags.js). It MUST run after familylines.mjs, whose cards it reads. `npm run build` only CHECKS the
+# committed file and the built pages (check:ribbonflags) and the built boxes (check:flagfit).
+STEP="ribbonflags.py"; python3 tools/ribbonflags.py --quiet
 # SEARCHINDEX IS A COMMITTED ARTEFACT THAT ONLY THIS SCRIPT REGENERATES, AND
 # THAT ASYMMETRY BITES EXACTLY ONCE, CONFUSINGLY. `npm run build` - which is all
 # GitHub Actions runs - VALIDATES site/public/searchindex.json against the built

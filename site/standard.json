@@ -3,6 +3,7 @@
   "tables": "skip. The tables on these pages are either drawn by a kit component from data (the 407 marriages of /marriages/, whose cells this archive cannot put a record link in without editing the kit) or they transcribe, field by field, the scan in the figure directly above them (/documents/): the figure and its caption are their citation, and the names in them are the document's own spellings. Reading them as narrative would add 148 passages to L3 that no edit here can reach.",
   "scans.link_only": "every typed record pattern. The 207 published images are MyHeritage-sourced (101 in sources/booyzen-photos carry mhcache.com addresses) or have no recorded provenance (the 29 in sources/archive-scans); none is Antenati or the family's own papers. David has not ruled on MyHeritage terms, so no scan is placed beside a passage: the passage links to the record instead. Remove an id from this list when a scan may be shown and L4 counts it.",
   "names.never_complete": "living people named bare under the archive's named-bare policy.",
+  "names.skip": "[data-flag-credit]: the one line under a ribbon that keys its mini flags and credits their art ('Flags: Flags Atlas, by David Defranceski, drawn for this project', the kit's FLAG_CREDIT, required wherever the flags are shown; 27 October 2026). It names the artist of the flags, not a person of this family, so its words are not read for names.",
   "citations.patterns": "heuristic, the archive's own wording: a record type tied to a year (year-doc, doc-year), or an MOOC/KAB/CSC/MSB/SAB reference, a film, image, folio or ark, or an estate/entry/notice/certificate/act number.",
   "names.not_names": "phrases that are not people, cured here and not in the tool: Afrikaans headings and form titles (Unie van Zuid-Afrika, Kennisgeving van Sterfgeval, Ter gedachtenis van, Van hun kinders), a division and a place (Division of Albert, Van Stadens), and runs a sentence's capitals joined to a following word (a name + 'is recorded', + 'Sterfkennis'); months, places, offices and surname words are in the lists above."
  },
@@ -36,7 +37,7 @@
    "/who/"
   ],
   "read_blocks": [],
-  "skip": [],
+  "skip": ["[data-flag-credit]"],
   "stop_words": [
    "January",
    "February",
