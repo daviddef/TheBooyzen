@@ -1,0 +1,672 @@
+{
+ "_note": "Made by tools/familylines.mjs from families.json, people.json, kin.js and pedigree.json (through site/src/lib/families.js and kin.js), story.json, direct-line.json, lines.json and dossiers.json; do not edit by hand. The contract is the kit's kit/docs/family-ribbon.md.",
+ "families": [
+  {
+   "id": "booyzen",
+   "title": "Booyzen",
+   "page": "/families/booyzen/",
+   "status": "origin-unknown",
+   "statusNote": "the chart stops at generation 7, a man with no dates and no parents",
+   "span": [
+    1754,
+    2013
+   ],
+   "cards": [
+    {
+     "name": "Gerthardus Lodewikus Booysen",
+     "years": "",
+     "origin": "the Cape, place not known",
+     "originGrade": "inf",
+     "spouse": "Magdalena de Beer",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "gerthardus-lodewikus-booysen",
+     "spousePerson": "magdelena-elisabeth-de-beer"
+    },
+    {
+     "name": "Petrus Jacobus Booysen",
+     "years": "c. 1788–1876",
+     "origin": "Graaff-Reinet",
+     "originGrade": "doc",
+     "spouse": "Anna Maria van der Merwe",
+     "spouseOrigin": "place not known",
+     "atPlace": "district Rustenburg",
+     "atYear": "1876",
+     "living": false,
+     "person": "petrus-jacobus-booysen",
+     "spousePerson": "anna-maria-van-der-merwe"
+    },
+    {
+     "name": "Petrus Jacobus Booysen",
+     "years": "1812–1884",
+     "origin": "district Graaff-Reinet",
+     "originGrade": "doc",
+     "spouse": "Johanna Catharina Mountjoy",
+     "spouseOrigin": "of Graaff-Reinet",
+     "atPlace": "Zevenfontein",
+     "atYear": "1884",
+     "living": false,
+     "title": "On our direct line, generation 3. Born in the district of Graaff-Reinet by his death notice; a farmer at Zevenfontein who owned his clothes; he shares his father's person page, so this card has no link of its own",
+     "spousePerson": "johanna-catharina-mountjoy"
+    },
+    {
+     "name": "Willem Hermanus Booyzen",
+     "years": "1851–1905",
+     "origin": "achter Sneeuwberg",
+     "originGrade": "doc",
+     "spouse": "Kathleen Barry",
+     "spouseOrigin": "baptised at Graaff-Reinet and Dordrecht, 1859",
+     "atPlace": "Indwe",
+     "atYear": "1905",
+     "living": false,
+     "person": "willem-hermanus-william-henry-booyzen",
+     "spousePerson": "catherine-maria-sophia-kathleen-barry"
+    },
+    {
+     "name": "George Downing Mountjoy Booyzen",
+     "years": "1901–1947",
+     "origin": "the Cape",
+     "originGrade": "inf",
+     "spouse": "Anna Johanna Maria Pretorius",
+     "spouseOrigin": "of Barkly East",
+     "atPlace": "Forest Hill, Johannesburg",
+     "atYear": "1947",
+     "living": false,
+     "person": "george-downing-mountjoy-booyzen",
+     "spousePerson": "anna-johanna-maria-pretorius"
+    },
+    {
+     "name": "Catherine Mary Sophia Booyzen",
+     "years": "1929–2013",
+     "origin": "South Africa, town not recorded",
+     "originGrade": "doc",
+     "spouse": "Nuno Fernando Lerena",
+     "spouseOrigin": "of an Argentine-descended family",
+     "atPlace": "Johannesburg",
+     "atYear": "2013",
+     "living": false,
+     "person": "catherine-mary-sophia-booyzen",
+     "spousePerson": "nuno-fernando-lerena"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "petrus-jacobus-booysen",
+     "ourGeneration": 2,
+     "theirSlug": "gerthardus-lodewikus-booysen",
+     "theirName": "Gerthardus Lodewikus Booysen",
+     "relation": "son of",
+     "grade": "inf",
+     "storyHref": "/story/#pj1788"
+    },
+    {
+     "ourSlug": "george-downing-mountjoy-booyzen",
+     "ourGeneration": 5,
+     "theirSlug": "willem-hermanus-william-henry-booyzen",
+     "theirName": "Willem Hermanus “William Henry” Booyzen",
+     "relation": "son of",
+     "grade": "inf",
+     "storyHref": "/story/#george"
+    },
+    {
+     "ourSlug": "catherine-mary-sophia-booyzen",
+     "ourGeneration": 6,
+     "theirSlug": "george-downing-mountjoy-booyzen",
+     "theirName": "George Downing Mountjoy Booyzen",
+     "relation": "daughter of",
+     "grade": "doc",
+     "storyHref": "/story/#catherine"
+    }
+   ]
+  },
+  {
+   "id": "mountjoy",
+   "title": "Mountjoy",
+   "page": "/families/mountjoy/",
+   "status": "origin-unknown",
+   "statusNote": "earliest man born “Europe” c. 1782, parents not known",
+   "span": [
+    1782,
+    1961
+   ],
+   "cards": [
+    {
+     "name": "James Montjoy",
+     "years": "c. 1782–1827",
+     "origin": "“Europe”",
+     "originGrade": "doc",
+     "spouse": "Anna Catharina Sleer",
+     "spouseOrigin": "place not known",
+     "atPlace": "Cradock",
+     "atYear": "1827",
+     "living": false,
+     "spousePerson": "anna-catharina-sleer",
+     "person": "james-montjoy"
+    },
+    {
+     "name": "Johanna Catharina Mountjoy",
+     "years": "1819–1863",
+     "origin": "Graaff-Reinet",
+     "originGrade": "doc",
+     "spouse": "Petrus Jacobus Booysen",
+     "spouseOrigin": "of district Graaff-Reinet",
+     "atPlace": "Zevenfontein, Brak River",
+     "atYear": "1863",
+     "living": false,
+     "person": "johanna-catharina-mountjoy"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "johanna-catharina-mountjoy",
+     "ourGeneration": 3,
+     "theirSlug": "james-montjoy",
+     "theirName": "James Montjoy",
+     "relation": "daughter of",
+     "grade": "doc",
+     "storyHref": "/story/#pj1812"
+    },
+    {
+     "ourSlug": "willem-hermanus-william-henry-booyzen",
+     "ourGeneration": 4,
+     "theirSlug": "johanna-catharina-mountjoy",
+     "theirName": "Johanna Catharina Mountjoy",
+     "relation": "son of",
+     "grade": "doc",
+     "storyHref": "/story/#wh"
+    }
+   ]
+  },
+  {
+   "id": "barry",
+   "title": "Barry",
+   "page": "/barry/",
+   "status": "origin-unknown",
+   "statusNote": "an Overberg merchant house or a common surname, not settled",
+   "span": [
+    1819,
+    1961
+   ],
+   "cards": [
+    {
+     "name": "John Barry",
+     "years": "d. 1853",
+     "origin": "place not known",
+     "originGrade": "inf",
+     "spouse": "spouse not named in the records",
+     "spouseOrigin": "",
+     "atPlace": "de Bruins Poort",
+     "atYear": "1853",
+     "living": false,
+     "person": "john-barry"
+    },
+    {
+     "name": "John Augustus Barry I",
+     "years": "1819–1903",
+     "origin": "“at sea, British”",
+     "originGrade": "doc",
+     "spouse": "Margaretha Wilhelmina Elizabeth Mary Kolbe",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "margaretha-wilhelmina-elizabeth-mary-kolbe",
+     "person": "john-augustus-barry-i"
+    },
+    {
+     "name": "Catherine Maria Sophia “Kathleen” Barry",
+     "years": "1859–1940",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Willem Hermanus “William Henry” Booyzen",
+     "spouseOrigin": "of achter Sneeuwberg",
+     "atPlace": "Johannesburg",
+     "atYear": "1940",
+     "living": false,
+     "spousePerson": "willem-hermanus-william-henry-booyzen",
+     "person": "catherine-maria-sophia-kathleen-barry"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "willem-hermanus-william-henry-booyzen",
+     "ourGeneration": 4,
+     "theirSlug": "catherine-maria-sophia-kathleen-barry",
+     "theirName": "Catherine Maria Sophia “Kathleen” Barry",
+     "theirOrigin": "baptised at Graaff-Reinet and Dordrecht, 1859",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#wh",
+     "note": "Married 22 December 1879 — the marriage register that carries the disputed signature."
+    },
+    {
+     "ourSlug": "catherine-maria-sophia-kathleen-barry",
+     "ourGeneration": 4,
+     "theirSlug": "john-augustus-barry-i",
+     "theirName": "John Augustus Barry I",
+     "relation": "daughter of",
+     "grade": "doc",
+     "storyHref": "/story/#wh"
+    },
+    {
+     "ourSlug": "george-downing-mountjoy-booyzen",
+     "ourGeneration": 5,
+     "theirSlug": "catherine-maria-sophia-kathleen-barry",
+     "theirName": "Catherine Maria Sophia “Kathleen” Barry",
+     "relation": "son of",
+     "grade": "inf",
+     "storyHref": "/story/#george"
+    },
+    {
+     "ourSlug": "anna-johanna-maria-pretorius",
+     "ourGeneration": 5,
+     "theirSlug": "margarietha-wilhelmina-elizabeth-barry",
+     "theirName": "Margarietha Wilhelmina Elizabeth Barry",
+     "relation": "daughter of",
+     "grade": "doc",
+     "storyHref": "/story/#george"
+    }
+   ]
+  },
+  {
+   "id": "kolbe",
+   "title": "Kolbe",
+   "page": "/kolbe/",
+   "status": "documented",
+   "statusNote": "origin London 1802, a gravestone and the church book agree",
+   "span": [
+    1764,
+    1959
+   ],
+   "cards": [
+    {
+     "name": "Johan Gottlieb Kolbe",
+     "years": "c. 1764–1845",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "spouse not named in the records",
+     "spouseOrigin": "",
+     "atPlace": "London",
+     "atYear": "1845",
+     "living": false,
+     "person": "johan-gottlieb-kolbe"
+    },
+    {
+     "name": "George Augustus Kolbe",
+     "years": "1802–1844",
+     "origin": "Soho",
+     "originGrade": "doc",
+     "spouse": "Margaret Downing",
+     "spouseOrigin": "of London",
+     "atPlace": "“Wurtemburg”, Colesberg",
+     "atYear": "1844",
+     "living": false,
+     "spousePerson": "margaret-downing",
+     "person": "george-augustus-kolbe"
+    },
+    {
+     "name": "Margaretha Wilhelmina Elizabeth Mary Kolbe",
+     "years": "1826–1912",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "John Augustus Barry I",
+     "spouseOrigin": "of “at sea, British”",
+     "atPlace": "Manorowen, Barkly East",
+     "atYear": "1912",
+     "living": false,
+     "spousePerson": "john-augustus-barry-i",
+     "person": "margaretha-wilhelmina-elizabeth-mary-kolbe"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "catherine-maria-sophia-kathleen-barry",
+     "ourGeneration": 4,
+     "theirSlug": "margaretha-wilhelmina-elizabeth-mary-kolbe",
+     "theirName": "Margaretha Wilhelmina Elizabeth Mary Kolbe",
+     "relation": "daughter of",
+     "grade": "doc",
+     "storyHref": "/story/#wh"
+    }
+   ]
+  },
+  {
+   "id": "pretorius",
+   "title": "Pretorius",
+   "page": "/families/pretorius/",
+   "status": "origin-unknown",
+   "statusNote": "a wife, her father and two more of the name, the men undated",
+   "span": [
+    1906,
+    1944
+   ],
+   "cards": [
+    {
+     "name": "Petrus Jacobus Pretorius",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Margarietha Wilhelmina Elizabeth Barry",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "margarietha-wilhelmina-elizabeth-barry",
+     "person": "petrus-jacobus-pretorius"
+    },
+    {
+     "name": "Anna Johanna Maria Pretorius",
+     "years": "1906–1944",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "George Downing Mountjoy Booyzen",
+     "spouseOrigin": "of the Cape",
+     "atPlace": "Forest Hill, Johannesburg",
+     "atYear": "1944",
+     "living": false,
+     "spousePerson": "george-downing-mountjoy-booyzen",
+     "person": "anna-johanna-maria-pretorius"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "george-downing-mountjoy-booyzen",
+     "ourGeneration": 5,
+     "theirSlug": "anna-johanna-maria-pretorius",
+     "theirName": "Anna Johanna Maria Pretorius",
+     "theirOrigin": "of Barkly East",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#george",
+     "note": "Married at Vereeniging, 30 December 1924 — a tree nurseryman and a girl of eighteen who were first cousins once removed."
+    },
+    {
+     "ourSlug": "anna-johanna-maria-pretorius",
+     "ourGeneration": 5,
+     "theirSlug": "petrus-jacobus-pretorius",
+     "theirName": "Petrus Jacobus Pretorius",
+     "relation": "daughter of",
+     "grade": "doc",
+     "storyHref": "/story/#george"
+    },
+    {
+     "ourSlug": "catherine-mary-sophia-booyzen",
+     "ourGeneration": 6,
+     "theirSlug": "anna-johanna-maria-pretorius",
+     "theirName": "Anna Johanna Maria Pretorius",
+     "relation": "daughter of",
+     "grade": "doc",
+     "storyHref": "/story/#catherine"
+    }
+   ]
+  },
+  {
+   "id": "botha",
+   "title": "Botha",
+   "page": "/families/botha/",
+   "status": "origin-unknown",
+   "statusNote": "not one of the archive's lines; the earliest card's parents are not in its households",
+   "cards": [
+    {
+     "name": "Magdalena Johanna Botha",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Ruben Schoeman",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "ruben-schoeman",
+     "person": "magdalena-johanna-botha"
+    }
+   ],
+   "notConnected": {
+    "why": "No one on the story's ribbon, or married to one of them, is the child, parent, spouse or sibling of a Botha. The nearest the archive's households and chart bring the family to the line: Magdalena Johanna Botha was the mother of Anna Johanna Maria Schoeman, the mother of Margarietha Wilhelmina Elizabeth Barry, the mother of Anna Johanna Maria Pretorius (our line, generation 5)."
+   }
+  },
+  {
+   "id": "van-der-merwe",
+   "title": "van der Merwe",
+   "page": "/families/van-der-merwe/",
+   "status": "origin-unknown",
+   "statusNote": "not one of the archive's lines; the earliest card's parents are not in its households",
+   "span": [
+    1785,
+    1825
+   ],
+   "cards": [
+    {
+     "name": "Anna Maria van der Merwe",
+     "years": "1785–bef. 1825",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Petrus Jacobus Booysen",
+     "spouseOrigin": "of Graaff-Reinet",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "petrus-jacobus-booysen",
+     "person": "anna-maria-van-der-merwe"
+    }
+   ],
+   "connections": [
+    {
+     "ourSlug": "petrus-jacobus-booysen",
+     "ourGeneration": 2,
+     "theirSlug": "anna-maria-van-der-merwe",
+     "theirName": "Anna Maria van der Merwe",
+     "theirOrigin": "place not known",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#pj1788",
+     "note": "Married 1805 at Graaff-Reinet."
+    },
+    {
+     "ourSlug": "petrus-jacobus-booysen",
+     "ourGeneration": 2,
+     "theirSlug": "elizabetha-van-der-merwe",
+     "theirName": "Elizabetha van der Merwe",
+     "relation": "married",
+     "grade": "doc",
+     "storyHref": "/story/#pj1788",
+     "note": "A second marriage, and a second van der Merwe."
+    }
+   ]
+  },
+  {
+   "id": "schoeman",
+   "title": "Schoeman",
+   "page": "/families/schoeman/",
+   "status": "origin-unknown",
+   "statusNote": "four people, none with a date, around a man of Barkly Oost",
+   "cards": [
+    {
+     "name": "Anna Johanna Maria Schoeman",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Hendrik Nicholaas Barry",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "hendrik-nicholaas-barry",
+     "person": "anna-johanna-maria-schoeman"
+    }
+   ],
+   "notConnected": {
+    "why": "No one on the story's ribbon, or married to one of them, is the child, parent, spouse or sibling of a Schoeman. The nearest the archive's households and chart bring the family to the line: Anna Johanna Maria Schoeman was the mother of Margarietha Wilhelmina Elizabeth Barry, the mother of Anna Johanna Maria Pretorius (our line, generation 5)."
+   }
+  },
+  {
+   "id": "downing",
+   "title": "Downing",
+   "page": "/families/downing/",
+   "status": "origin-unknown",
+   "statusNote": "born London 1803; her father is on the family tree only",
+   "span": [
+    1803,
+    1867
+   ],
+   "cards": [
+    {
+     "name": "John Paul Downing",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "lore",
+     "spouse": "spouse not named in the records",
+     "spouseOrigin": "",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "person": "john-paul-downing"
+    },
+    {
+     "name": "Margaret Downing",
+     "years": "1803–1867",
+     "origin": "London",
+     "originGrade": "doc",
+     "spouse": "George Augustus Kolbe",
+     "spouseOrigin": "of Soho",
+     "atPlace": "Burgersdorp",
+     "atYear": "1867",
+     "living": false,
+     "spousePerson": "george-augustus-kolbe",
+     "person": "margaret-downing"
+    }
+   ],
+   "notConnected": {
+    "why": "No one on the story's ribbon, or married to one of them, is the child, parent, spouse or sibling of a Downing. The nearest the archive's households and chart bring the family to the line: Margaret Downing was the mother of Margaretha Wilhelmina Elizabeth Mary Kolbe, the mother of Catherine Maria Sophia “Kathleen” Barry (our line, generation 4)."
+   }
+  },
+  {
+   "id": "daschner",
+   "title": "Daschner",
+   "page": "/families/daschner/",
+   "status": "origin-unknown",
+   "statusNote": "earliest born Stutterheim c. 1883, parents named but undated",
+   "span": [
+    1883,
+    1963
+   ],
+   "cards": [
+    {
+     "name": "Joseph Daschner",
+     "years": "d. bef. 1942",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Sophia Daschner",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "sophia-daschner",
+     "person": "joseph-daschner"
+    },
+    {
+     "name": "Joseph Heinrich Daschner",
+     "years": "c. 1883–1942",
+     "origin": "Stutterheim",
+     "originGrade": "doc",
+     "spouse": "Catharina Maria Sophia Booysen",
+     "spouseOrigin": "place not known",
+     "atPlace": "Kenilworth",
+     "atYear": "1942",
+     "living": false,
+     "spousePerson": "catharina-maria-sophia-booysen",
+     "person": "joseph-heinrich-daschner"
+    }
+   ],
+   "notConnected": {
+    "why": "No one on the story's ribbon, or married to one of them, is the child, parent, spouse or sibling of a Daschner. The nearest the archive's households and chart bring the family to the line: Joseph Heinrich Daschner married Catharina Maria Sophia Booysen, the daughter of Willem Hermanus “William Henry” Booyzen (our line, generation 4)."
+   }
+  },
+  {
+   "id": "lowies",
+   "title": "Lowies",
+   "page": "/families/lowies/",
+   "status": "origin-unknown",
+   "statusNote": "not one of the archive's lines; the earliest card's parents are not in its households",
+   "span": [
+    1848,
+    1905
+   ],
+   "cards": [
+    {
+     "name": "Jan Lowies",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Elisabetha Maria Lubbe",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "elisabetha-maria-lubbe",
+     "person": "jan-lowies"
+    },
+    {
+     "name": "Charles Petrus Barend Lowies",
+     "years": "c. 1848–1905",
+     "origin": "district Cradock",
+     "originGrade": "doc",
+     "spouse": "Johanna Elena Stols",
+     "spouseOrigin": "of Potchefstroom district",
+     "atPlace": "the Lunatic Asylum, Pretoria",
+     "atYear": "1905",
+     "living": false,
+     "spousePerson": "johanna-elena-stols",
+     "person": "charles-petrus-barend-lowies"
+    }
+   ],
+   "notConnected": {
+    "why": "No one on the story's ribbon, or married to one of them, is the child, parent, spouse or sibling of a Lowies. The nearest the archive's households and chart bring the family to the line: Charles Petrus Barend Lowies married Johanna Elena Stols, who married David Schalk Booysen, the son of Petrus Jacobus Booysen (our line, generation 3)."
+   }
+  },
+  {
+   "id": "van-niekerk",
+   "title": "van Niekerk",
+   "page": "/families/van-niekerk/",
+   "status": "origin-unknown",
+   "statusNote": "not one of the archive's lines; the earliest card's parents are not in its households",
+   "span": [
+    1868,
+    1961
+   ],
+   "cards": [
+    {
+     "name": "Jan Dirk Abram Frans van Niekerk",
+     "years": "",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Carolina Deybella Margrietta Alletta Botha",
+     "spouseOrigin": "of district Cradock",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "carolina-deybella-margrietta-alletta-botha",
+     "person": "jan-dirk-abram-frans-van-niekerk"
+    },
+    {
+     "name": "Maria Sophia van Niekerk",
+     "years": "1868–1961",
+     "origin": "place not known",
+     "originGrade": "doc",
+     "spouse": "Hercules Johannes Mountjoy",
+     "spouseOrigin": "place not known",
+     "atPlace": "",
+     "atYear": "",
+     "living": false,
+     "spousePerson": "hercules-johannes-mountjoy",
+     "person": "maria-sophia-van-niekerk"
+    }
+   ],
+   "notConnected": {
+    "why": "No one on the story's ribbon, or married to one of them, is the child, parent, spouse or sibling of a van Niekerk. The nearest the archive's households and chart bring the family to the line: Maria Sophia van Niekerk married Hercules Johannes Mountjoy, the son of George Mountjoy, the son of James Montjoy, the father of Johanna Catharina Mountjoy (our line, generation 3)."
+   }
+  }
+ ]
+}

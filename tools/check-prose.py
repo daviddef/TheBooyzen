@@ -78,6 +78,7 @@ GENERATED = {
     "decisions.json",          # recomputed by tools/check-decisions.py (also excluded by the kit's defaults)
     "dossiers.json",           # tools/dossiers.py
     "direct-line.json",        # the kit's directline.py, from story.json's ribbon (build.sh): slugs, generations, chapters
+    "family-lines.json",       # tools/familylines.mjs, from people.json, kin.js, pedigree.json, story.json and direct-line.json
     "era-places.json",         # tools/build_era.py, from data/era-ground.tsv and data/era-towns.tsv: place strings and a region id, no names
     "era-snapshot.json",       # tools/build_era.py --snapshot, from the Record Atlas's context.json: region eras and regime labels, no names
     "gallery.json",            # tools/gallery.py, read out of the built HTML

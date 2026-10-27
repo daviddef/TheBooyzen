@@ -25,12 +25,20 @@ import nf from "../../data/namefold.json";
 import { registry, model, hrefOf, digest, GRADE, VIA, VIA_CLS } from "../../lib/families.js";
 import { STANDARD } from "../../lib/living.js";
 import { treeFor } from "../../lib/kin.js";
+/* THE FAMILY RIBBON (27 October 2026): the family's own line of generations and, under it, how our direct line
+   connects to it, drawn by the kit's FamilyRibbon from src/data/family-lines.json (made by tools/familylines.mjs from
+   the same people, households and chart this page is drawn from) and src/data/direct-line.json (made from the story by
+   the kit's directline.py). npm run check:familyribbon holds both to the built page. */
+import FamilyRibbon from "@daviddef/archive-kit/components/FamilyRibbon.astro";
+import familyLines from "../../data/family-lines.json";
+import directLine from "../../data/direct-line.json";
 
 export function getStaticPaths() {
   return registry.filter((f) => !f.page).map((f) => ({ params: { slug: f.slug }, props: { slug: f.slug } }));
 }
 const { slug } = Astro.props;
 const M = model(slug);
+const ribbon = familyLines.families.find((x) => x.id === slug);
 const { f } = M;
 const n = M.members.length;
 const plural = (k, one, many) => (k === 1 ? one : many);
@@ -103,6 +111,12 @@ const gradeLine = Object.entries(M.grade).filter(([, c]) => Number(c) > 0)
   .map(([k, c]) => `${chip(k, GRADE[k])} ${c}`).join(" &nbsp; ");
 ---
 <Base title={f.title} eyebrow={eyebrow} dek={dek}>
+
+{ribbon && (
+<section class="blk" id="ribbon">
+  <FamilyRibbon family={ribbon} directLine={directLine} personHref={(s) => u(`/people/${s}/`)} u={u} />
+</section>
+)}
 
 <section class="blk" id="glance">
   <h2>The {f.name} name at a glance</h2>

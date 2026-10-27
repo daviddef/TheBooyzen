@@ -2,6 +2,12 @@
 import Rec from "../components/Rec.astro";
 import Base from "../layouts/Base.astro";
 import { u } from "../lib/url.js";
+/* The family ribbon (27 October 2026): the Kolbes' own line of generations and how our direct line connects to it,
+   from src/data/family-lines.json (tools/familylines.mjs) and src/data/direct-line.json (the kit's directline.py). */
+import FamilyRibbon from "@daviddef/archive-kit/components/FamilyRibbon.astro";
+import familyLines from "../data/family-lines.json";
+import directLine from "../data/direct-line.json";
+const ribbon = familyLines.families.find((x) => x.id === "kolbe");
 import SourceBlock from "@daviddef/archive-kit/components/SourceBlock.astro";
 import sdx from "../data/sources.json";
 
@@ -50,6 +56,12 @@ const north = [
 <Base title="The Kolbes"
       eyebrow="Württemberg · Soho · the Nautilus · the Karoo"
       dek="A German tailor's family in Bond Street, a boy married at sixteen and a settler at seventeen, a missionary's circuit through the Orange Free State, and a Karoo farm named for a country its owner had never seen.">
+
+{ribbon && (
+<section class="blk" id="ribbon">
+  <FamilyRibbon family={ribbon} directLine={directLine} personHref={(s) => u(`/people/${s}/`)} u={u} />
+</section>
+)}
 
 <section class="blk">
   <h2>George Augustus Kolbe, 1802–1844 — an 1820 Settler</h2>
