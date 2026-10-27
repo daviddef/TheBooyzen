@@ -446,7 +446,10 @@ function build() {
     const cards = chain.map((l) => cardOf(l, conns));
     const lane = laneOf(f);
     const topHasParents = chain.length ? !!KIN.treeFor(chain[0].row.p).origin : false;
-    const ys = cards.flatMap((c) => (c.living ? [] : (c.years.match(/(1[5-9]\d\d|20\d\d)/g) || []).map(Number)));
+    /* a family that is not one of the lines has no lane span; its span is the lines page's rule applied to its cards:
+       the years of documented, not-living cards, leaving out a year beside c., bef., aft. or bapt. */
+    const ys = cards.filter((c) => !c.living && c.originGrade === "doc")
+      .flatMap((c) => [...c.years.matchAll(/(c\.|bef\.|aft\.|bapt\.|b\.|d\.)?\s*(1[5-9]\d\d|20\d\d)/g)].filter((m) => !m[1] || m[1] === "b." || m[1] === "d.").map((m) => Number(m[2])));
     const entry = {
       id: f.slug, title: f.name, page: FAM.hrefOf(f),
       status: lane && lane.status ? lane.status : "origin-unknown",
