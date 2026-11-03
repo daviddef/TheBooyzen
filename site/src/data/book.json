@@ -329,7 +329,7 @@
   "/places/": "/places/"
  },
  "outside": [
-  "/search/",
+  "/search/", "/privacy/",
   "/changed/",
   "/letters/",
   "/log/",
