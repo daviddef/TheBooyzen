@@ -30,6 +30,20 @@ export function getStaticPaths() {
       if (!by.get(k).seen.has(p)) { by.get(k).seen.add(p); by.get(k).rows.push(...members); }
     }
   }
+  /* A man of a shared name whose dossier is named with a qualifier, "George Mountjoy of Kokstad", "George Augustus Kolbe of 1845",
+     is another bearer of the name "George Mountjoy" / "George Augustus Kolbe", kept on a page of his own because the name alone
+     could not tell the men apart. The name page counted only the dossier named plainly (and its `also`), so it said "2 people"
+     when four George Mountjoys have a page and "3" for six George Augustus Kolbes, and linked only the plain one. A qualified
+     dossier now joins the name page of the name before " of ", when this archive has one and the person slug says the same
+     (<name slug>-of-...). Only names this archive already has a page for gain bearers; 11 do on 5 November 2026. */
+  for (const p of Object.values(d.people)) {
+    const m = /^(.+?) of (.+)$/.exec(String(p.n ?? ""));
+    if (!m) continue;
+    const base = slugify(m[1]);
+    const page = by.get(base);
+    if (!page || !String(p.slug).startsWith(`${base}-of-`) || page.seen.has(p)) continue;
+    page.seen.add(p); page.rows.push(p, ...(p.also || []).map((a) => ({ ...a, slug: p.slug })));
+  }
   /* People READ from FamilySearch index rows and in no family file (tools/readnames.py, data/read-names.tsv): one name
      page each, built from the rows the name was read in. None of these names is borne by anyone in dossiers.json. */
   const read = (readNames.names || []).filter((n) => !by.has(n.slug))

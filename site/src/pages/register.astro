@@ -49,7 +49,10 @@ const capped = Object.entries(reg.caps || {}).filter(([, c]) => c.got < c.total)
    most of this page is not this family. */
 const regRows = rows.map((r) => ({
   name: r.n, surname: r.g,
-  href: r.p ? "/who/" + r.p + "/" : "",
+  /* r.p is a dossier slug, which is the address of that person's own page. It used to open /who/<slug>/, the page of the
+     name, so a row for George Mountjoy of Kokstad (or any of three Petrus Jacobus Booysens) opened a page about the
+     name and left the reader to find the man again (5 November 2026). All 818 linked rows name a dossier. */
+  href: r.p ? "/people/" + r.p + "/" : "",
   kind: kindLabel[r.k] || r.k,
   chip: r.k === "read" ? "reconstructed" : "",
   detail: r.w,
