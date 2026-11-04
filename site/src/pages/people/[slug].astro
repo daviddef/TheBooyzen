@@ -5,7 +5,6 @@ import { u } from "../../lib/url.js";
 import d from "../../data/dossiers.json";
 import pl from "../../data/places.json";
 import pj from "../../data/people.json";
-import PersonTree from "../../components/PersonTree.astro";
 import { md } from "../../lib/md.js";
 import { plain } from "@daviddef/archive-kit/lib/md.js";
 import mg from "../../data/marriages.json";
@@ -23,8 +22,8 @@ import cw from "../../data/corrections-who.json";
  * part of a name is how this estate once turned Domenica Prostamo into
  * Domenica Anile. 31 of the 63 corrections name somebody held here. */
 const ckey = (r) => r[0] + " | " + String(r[1]).slice(0, 80);
-import { treeFor, resolve } from "../../lib/kin.js";
-import { livingBySlug, STANDARD } from "../../lib/living.js";
+import { treeFor, resolve, slugify } from "../../lib/kin.js";
+import { livingBySlug, isLivingSlug, STANDARD } from "../../lib/living.js";
 import EraNote from "@daviddef/archive-kit/components/EraNote.astro";
 import { eraAt, plainYear } from "@daviddef/archive-kit/lib/era.js";
 import eraSnapshot from "../../data/era-snapshot.json";
@@ -33,8 +32,14 @@ import eraSnapshot from "../../data/era-snapshot.json";
    ribbon marks as our ancestors) and on no other; the kit's OursBand draws nothing for anyone else. The generation is the
    ribbon's (Gerthardus Lodewikus is 1), which counts the other way from the Spine's in the record table below, so the
    band says "story generation" (direct-line.json generationLabel, written by directline.py --label). */
-import OursBand from "@daviddef/archive-kit/components/OursBand.astro";
 import directLine from "../../data/direct-line.json";
+import PersonPage from "@daviddef/archive-kit/components/PersonPage.astro";
+import PersonChart from "@daviddef/archive-kit/components/PersonChart.astro";
+import PersonSection from "@daviddef/archive-kit/components/PersonSection.astro";
+import "@daviddef/archive-kit/styles/persontree.css";
+import "@daviddef/archive-kit/styles/personpage.css";
+import PS from "@daviddef/archive-kit/data/public-sources.json";
+import { isLiving as isLivingKit } from "@daviddef/archive-kit/lib/person.js";
 export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
@@ -95,76 +100,137 @@ const eraOf = (m) => LV || !m.p ? null : eraAt(eraSnapshot, m.p, plainYear(m.d, 
 const byPage = {};
 for (const h of p.hits) (byPage[h.page] ||= { title: h.title, hits: [] }).hits.push(h);
 const groups = Object.entries(byPage);
+
+/* THE PAGE IS THE KIT'S PersonPage (4 November 2026, people pages v2): the header, the family chart, "What the record says", "Where this comes from",
+   the namesakes and the notes, in the order and under the headings the estate shares. What this archive keeps is what only it has: the marks on
+   every link (a record read, inferred from one, the family tree, the direct line), the marriage records, the corrections that name the person,
+   the pages that write about them. The living get the kit's page: a name, their relationships, their town and country, and nothing else. */
+const keyOf2 = (x) => x.n + "|" + (x.b || "");
+const DKEY = new Map();
+for (const q of all) { DKEY.set(keyOf2(q), q); for (const a of q.also || []) DKEY.set(keyOf2(a), q); }
+const MON = { jan: "Jan", feb: "Feb", mar: "Mar", apr: "Apr", may: "May", jun: "Jun", jul: "Jul", aug: "Aug", sep: "Sep", oct: "Oct", nov: "Nov", dec: "Dec" };
+/* A chart date is a day and month and year, or a year, with "c." where the field says circa, and nothing else. The field also holds where
+   and what ("9 Sep 1840, district Rustenburg", "bapt. 13 Jan 1806", "bef. 1828", "1884 (probate)", "a minor, bef. 1904"): the part before the first
+   comma, dash or bracket is read, a baptism or a bound or a probate is not a birth or a death and is left to the record table, and a month with no day
+   gives its year. The year still reaches the kit's living rule through birthYear and deathRecorded. */
+const canonDate = (s) => {
+  const t = String(s ?? "").trim();
+  if (!t || t === "—" || /\(probate\)/i.test(t)) return undefined;
+  const head = t.split(/[,—(]/)[0].trim();
+  const m = /^(c\.\s*)?(?:(\d{1,2})\s+)?(?:([A-Za-z]{3})\s+)?(\d{4})$/.exec(head);
+  if (!m) return undefined;
+  const [, c, day, mon, y] = m;
+  const mm = mon && MON[mon.toLowerCase()];
+  if (mon && !mm) return undefined;
+  if (day && !mm) return undefined;
+  return (c ? "c. " : "") + (day && mm ? `${+day} ${mm} ` : "") + y;
+};
+const yearIn = (s) => { const m = String(s ?? "").match(/\b(\d{4})\b/); return m ? Number(m[1]) : undefined; };
+const diedSaid = (s) => !!(s && s !== "—" && !/^living$/i.test(String(s).trim())) || undefined;
+const VIAWORD = { line: "read", doc: "read", inf: "inferred", tree: "tree" };
+/* ONE CHART ROW from a person kin.js resolved. A relative this archive holds has a page at /people/<dossier slug> (the shared page of one name
+   for every man who bears it); the living are a name and the relationship. */
+const relRow = (o, via, extra = {}) => {
+  const dp = DKEY.get(keyOf2(o));
+  const lv = !!(dp && isLivingSlug(dp.slug));
+  return {
+    id: slugify(keyOf2(o)), slug: dp ? dp.slug : undefined, name: o.n, href: dp ? u(`/people/${dp.slug}/`) : undefined,
+    ...(lv ? { saidLiving: true } : { born: canonDate(o.b), died: canonDate(o.d), birthYear: yearIn(o.b), deathRecorded: diedSaid(o.d) }),
+    source: lv ? "" : VIAWORD[via] || "tree",
+    line: !lv && via === "line" ? true : undefined,
+    ...extra };
+};
+const relationsOf = (self, lv) => {
+  const t = treeFor(self);
+  return { t, relations: {
+    parents: t.parents.map((o) => relRow(o, t.parentVia)),
+    spouses: t.unions.filter((un) => un.spouse).map((un) => relRow(un.spouse, un.f.via, { mar: "married" })),
+    children: t.unions.flatMap((un) => un.kids.map((k) => relRow(k, k.via))),
+    siblings: t.siblings.map((o) => relRow(o, o.via)),
+  } };
+};
+const kperson = (self, sl, lv) => {
+  const { t, relations } = relationsOf(self, lv);
+  const base = { id: sl, slug: p.slug, name: self.n, relations };
+  return { t, k: lv
+    ? { ...base, saidLiving: true, place: (LV && LV.w) || "" }
+    : { ...base, born: canonDate(self.b), died: canonDate(self.d), birthYear: yearIn(self.b), deathRecorded: diedSaid(self.d), citations: [] } };
+};
+const mainK = kperson(selves[0], p.slug, !!LV);
+const KPERSON = mainK.k;
+if (!LV) {
+  const q = KPERSON;
+  if (isLivingKit({ id: q.id, born: q.born, died: q.died, birthYear: q.birthYear, deathRecorded: q.deathRecorded, citations: [] }, { now: new Date().getFullYear(), sources: PS }))
+    throw new Error(`people/${p.slug}: the kit's living rule says this person is living but living.json does not; decide it in tools/livingflags.py, not here`);
+}
+/* what the notes under the chart say (kept from this archive's old chart): how much of what is drawn is a record read, inferred, or the tree */
+const chartNotes = (t) => {
+  const vias = [];
+  if (t.origin) { for (const _ of t.parents) vias.push(t.origin.f.via); vias.push(t.origin.via); }
+  for (const s of t.siblings) vias.push(s.via);
+  for (const un of t.unions) { if (un.spouse) vias.push(un.f.via); for (const k of un.kids) vias.push(k.via); }
+  const prov = { n: vias.length, doc: vias.filter((v) => v === "doc" || v === "line").length, tree: vias.filter((v) => v === "tree").length, inf: vias.filter((v) => v === "inf").length };
+  const nKids = t.unions.reduce((n, un) => n + un.kids.length, 0);
+  const nothing = !t.parents.length && !t.siblings.length && !nKids && !t.unions.some((un) => un.spouse);
+  const emptyText = !nothing ? "" :
+    (!t.origin && !t.unions.length)
+      ? "No household in this archive names this person, as a child or as a parent. They are here because a record names them, and that record stands alone."
+    : (t.origin && !t.unions.length)
+      ? "A household here names this person as a child, and records neither parent nor any other child in it. There is nothing more to draw."
+    : "A household here names this person as a parent, and records neither a spouse nor a child in it. There is nothing more to draw.";
+  return { prov, nothing, emptyText,
+    warns: [...(t.origin && t.origin.f.warn ? [t.origin.f.warn] : []), ...t.unions.filter((x) => x.f.warn).map((x) => x.f.warn)] };
+};
+const mainNotes = LV ? null : chartNotes(mainK.t);
+/* every document this page's households and marriage records stand on, and the pages of this archive that discuss the person */
+const sourceLinks = [];
+const addSrc = (a) => { if (a && a[1] && !sourceLinks.some((x) => x[1] === a[1])) sourceLinks.push(a); };
+if (!LV) {
+  for (const self of selves) {
+    const t = treeFor(self);
+    if (t.origin) addSrc(t.origin.f.src);
+    for (const un of t.unions) addSrc(un.f.src);
+    for (const m of marrOf(self)) addSrc(m.src);
+  }
+  for (const x of p.p || []) addSrc(x);
+}
+const firstSentence = (s) => { const t = plain(String(s || "")).replace(/\s+/g, " ").trim(); const m = /^(.{20,240}?[.!?])(\s|$)/.exec(t); return m ? m[1] : t.slice(0, 200); };
+const metaDek = LV ? STANDARD : firstSentence(p.r);
 ---
-{LV && (
-<Base title={p.n} eyebrow="A living person" dek={STANDARD} living>
-<section class="blk">
-  <PersonTree person={{ ...selves[0], l: "", g: undefined }} showKey={false} living />
-  {!hasKin(selves[0]) && (
-    <p class="cap" style="margin-top:12px">No relationship is recorded for this person in this archive.</p>
-  )}
-</section>
-<section class="blk">
-  <div class="panel">
-    <h2 class="ct" style="margin-top:0">Where</h2>
-    <p style="font-size:15.5px;margin:0">{LV.w || "No town or country is recorded for this person."}</p>
-  </div>
-</section>
-<section class="blk">
-  <p class="note">Nothing else about a living person is published here: no dates, no records, no photograph.
-    <a href={u("/method/")}>How the archive decides who is living &rarr;</a></p>
-</section>
+{LV ? (
+<Base title={p.n} dek={metaDek} ownHeader living>
+  <PersonPage person={KPERSON} peopleHref={u("/people/")} plainFamilyOfLiving directLine={directLine} storyHref={u("/story/")} />
 </Base>
-)}
-{!LV && (
-<Base title={p.n}
-      eyebrow={`${p.l} · ${p.mentions === 0 ? "not yet discussed on any page" : p.mentions + " mention" + (p.mentions === 1 ? "" : "s") + " across " + p.pages.length + " page" + (p.pages.length === 1 ? "" : "s")}`}
-      dek={p.r}>
+) : (
+<Base title={p.n} dek={metaDek} ownHeader>
+  <PersonPage person={KPERSON} peopleHref={u("/people/")} registerHref={u("/register/?q=" + encodeURIComponent(p.n.replace(/[“”]/g, "")))}
+              directLine={directLine} storyHref={u("/story/")} stubNote="a document" emptyText={mainNotes.emptyText || null}>
 
-<section class="blk">
-  <OursBand directLine={directLine} slug={p.slug} u={u} />
-  {selves.map((self, i) => (
-    <div>
-      {selves.length > 1 && (
-        <h2 style={i ? "margin-top:34px" : "margin-top:0"}>{self.n}<span class="m" style="font-weight:400">{` · ${self.b} – ${self.d}`}</span></h2>
-      )}
-      <PersonTree person={self} showKey={i === 0} />
-      <p class="cap" style="margin:-10px 0 22px">
-        <a href={u("/register/?q=" + encodeURIComponent(self.n.replace(/[“”]/g, "")))}>
-          Every record naming {self.n.replace(/[“”]/g, "")} &rarr;</a>
+    <Fragment slot="chart-notes">
+      {mainNotes.warns.map((w) => <p class="warn cap">{w}</p>)}
+      {mainNotes.nothing
+        ? <span style="display:block;margin-top:8px">{mainNotes.emptyText}</span>
+        : <span style="display:block;margin-top:8px">
+            <b>{mainNotes.prov.doc === mainNotes.prov.n
+                  ? `All ${mainNotes.prov.n} relationships shown`
+                  : `${mainNotes.prov.doc} of the ${mainNotes.prov.n} relationships shown`}</b>{" "}are written in a record this archive has read.
+            {mainNotes.prov.inf > 0 && <span>{` ${mainNotes.prov.inf} ${mainNotes.prov.inf === 1 ? "is" : "are"} inferred from one.`}</span>}
+            {mainNotes.prov.tree > 0 && <span>{` ${mainNotes.prov.tree} ${mainNotes.prov.tree === 1 ? "comes" : "come"} from the family tree and ${mainNotes.prov.tree === 1 ? "is" : "are"} unverified.`}</span>}
+            {mainK.t.origin && mainK.t.origin.f.src && (
+              <span>{" "}<a href={u(mainK.t.origin.f.src[1])}>{mainK.t.origin.f.src[0]} &rarr;</a></span>
+            )}
+          </span>}
+      {mainK.t.origin && mainK.t.origin.f.why && <span style="display:block;margin-top:6px">{mainK.t.origin.f.why}</span>}
+      {mainK.t.unions.filter((x) => x.f.why).map((x) => (
+        <span style="display:block;margin-top:6px">{x.f.why}
+          {x.f.src && <span>{" "}<a href={u(x.f.src[1])}>{x.f.src[0]} &rarr;</a></span>}</span>
+      ))}
+    </Fragment>
+
+    <Fragment slot="record">
+      <p class="cap" style="margin:0 0 14px">
+        <a href={u("/register/?q=" + encodeURIComponent(selves[0].n.replace(/[“”]/g, "")))}>Every record naming {selves[0].n.replace(/[“”]/g, "")} &rarr;</a>
       </p>
-      {marrOf(self).length > 0 && (
-        <div class="panel" style="padding:15px 17px;margin:0 0 22px">
-          <h3 class="ct" style="margin:0 0 12px">{marrOf(self).length === 1 ? "The marriage record" : "The marriage records"}</h3>
-          {marrOf(self).map(m => (
-            <p style="margin:0 0 13px;font-size:15px;line-height:1.62">
-              <b>Married {m.spouse.n}</b><span class="m">{" \u00b7 " + m.d + " \u00b7 " + m.p}</span>{" "}
-              <span class={"chip " + (m.via === "doc" ? "doc" : m.via === "tree" ? "lore" : m.via)}>{VIA[m.via] || m.via}</span>
-              <EraNote era={eraOf(m)} />
-              {m.n && <span class="cap" style="display:block;margin-top:5px" set:html={md(m.n)} />}
-              {m.src && <a class="plink" href={u(m.src[1])} style="display:inline-block;margin-top:7px">{m.src[0]} &rarr;</a>}
-            </p>
-          ))}
-          <p class="cap" style="margin:0"><a href={u("/marriages/")}>Every marriage this archive places &rarr;</a></p>
-        </div>
-      )}
-      {!hasKin(self) && marrOf(self).length === 0 && (
-        <p class="note">
-          <b>No family is drawn here, because none is recorded.</b> This archive holds
-          {" "}{self.n}{" "} as a name on a document &mdash; a witness at a font, a signature on a form, a
-          person named in someone else's list &mdash; and has no record of who their parents, spouse or
-          children were. That is a statement about the sources, not about the person.
-          <a href={u("/register/")}> Every record naming them &rarr;</a>
-        </p>
-      )}
-    </div>
-  ))}
-</section>
-
-<section class="blk">
-  <div class="grid g2" style="margin-top:4px">
-    <div class="panel">
-      <h2 class="ct" style="margin-top:0">The record</h2>
       <div class="scroll">
       <table class="rec" style="width:100%">
         <tbody>
@@ -181,113 +247,130 @@ const groups = Object.entries(byPage);
         </tbody>
       </table>
       </div>
-    </div>
-    <div class="panel">
-      <h2 class="ct" style="margin-top:0">What the archive holds</h2>
+      <h3 class="ct" style="margin:1.4rem 0 .5rem">What the archive holds</h3>
       <p style="font-size:15.5px" set:html={md(p.r)} />
-      {p.p && p.p.length > 0 && (
-        <p style="margin-top:14px;display:flex;flex-wrap:wrap;gap:6px">
-          {p.p.map(([t, h]) => (<a class="plink" href={u(h)}>{t}</a>))}
-        </p>
-      )}
-    </div>
-  </div>
-</section>
-
-{places.length > 0 && (
-<section class="blk">
-  <h2>Where the archive puts {p.n.split(" ")[0]}</h2>
-  <div class="grid g3" style="margin-top:14px">
-    {places.map(x => (
-      <a class="cardlink" href={u("/places/" + x.slug + "/")}>
-        <div class="nm" style="font-size:16px">{x.n}</div>
-        <div class="txt">{x.k} · <span set:html={md(x.r)} /></div>
-      </a>
-    ))}
-  </div>
-  <p class="cap" style="margin-top:12px">Each carries the document that puts them there.
-    <a href={u("/atlas/")}>The atlas &rarr;</a></p>
-</section>
-)}
-
-{p.shared && (
-<section class="blk">
-  <div class="note">
-    <strong>More than one person of this name.</strong> This archive holds
-    {1 + (p.also || []).length} people called <strong>{p.n}</strong>, and they are gathered here together
-    because merging them silently would be worse than saying so. The surrounding text on each page below
-    usually makes it clear which is which.
-    <ul style="margin:10px 0 0">
-      <li><b>{p.n}</b> — {p.b} to {p.d}. <span set:html={md(p.r)} /></li>
-      {(p.also || []).map(a => (<li><b>{a.n}</b> — {a.b} to {a.d}. <span set:html={md(a.r)} /></li>))}
-    </ul>
-  </div>
-</section>
-)}
-
-{mine.length > 0 && (
-<section class="blk">
-  <div class="note">
-    <strong>{mine.length === 1
-      ? "One correction on this site names " + p.n + "."
-      : mine.length + " corrections on this site name " + p.n + "."}</strong>
-    {" "}A correction here is filed against the page it changed, not against a person,
-    so until now it could be read on the corrections register and nowhere else — least
-    of all on the page of the person it was about.
-    <ul style="margin:12px 0 0">
-      {mine.map(r => (
-        <li style="margin-bottom:10px">
-          <span class="m small">{r[0]}</span> — <b set:html={md(r[1])} /><br />
-          <span class="cap" set:html={md(r[2])} />{" "}
-          <a href={u(r[4])}>Where it stands &rarr;</a>
-        </li>
-      ))}
-    </ul>
-  </div>
-</section>
-)}
-
-{groups.length > 0 && <Rule name="koppie" label="Every mention, page by page" />}
-
-{groups.map(([route, g]) => (
-  <section class="blk">
-    <h2><a href={u(route)}>{g.title}</a></h2>
-    <div style="margin-top:14px;display:flex;flex-direction:column;gap:13px">
-      {g.hits.map(h => (
-        <div class="panel" style="padding:14px 16px">
-          <p style="font-size:14.5px;line-height:1.66;margin:0">…{h.text}…</p>
+      {selves.map((self) => marrOf(self).length > 0 && (
+        <div class="panel" style="padding:15px 17px;margin:18px 0 0">
+          <h3 class="ct" style="margin:0 0 12px">{(selves.length > 1 ? self.n + " \u00b7 " : "") + (marrOf(self).length === 1 ? "The marriage record" : "The marriage records")}</h3>
+          {marrOf(self).map(m => (
+            <p style="margin:0 0 13px;font-size:15px;line-height:1.62">
+              <b>Married {m.spouse.n}</b><span class="m">{" \u00b7 " + m.d + " \u00b7 " + m.p}</span>{" "}
+              <span class={"chip " + (m.via === "doc" ? "doc" : m.via === "tree" ? "lore" : m.via)}>{VIA[m.via] || m.via}</span>
+              <EraNote era={eraOf(m)} />
+              {m.n && <span class="cap" style="display:block;margin-top:5px" set:html={md(m.n)} />}
+              {m.src && <a class="plink" href={u(m.src[1])} style="display:inline-block;margin-top:7px">{m.src[0]} &rarr;</a>}
+            </p>
+          ))}
+          <p class="cap" style="margin:0"><a href={u("/marriages/")}>Every marriage this archive places &rarr;</a></p>
         </div>
       ))}
-    </div>
-  </section>
-))}
+    </Fragment>
 
-{groups.length === 0 && (
-<section class="blk">
-  <p class="note">This person is recorded in the archive's index but is not yet discussed on any page.
-    That is itself worth knowing — it usually means a name read off a single document and not yet
-    followed up. <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
-</section>
-)}
+    {sourceLinks.length > 0 && (
+      <Fragment slot="sources">
+        <p class="small">The documents the households and marriages above stand on, and the pages of this archive that discuss {p.n}.</p>
+        <p style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">
+          {sourceLinks.map(([t, h]) => (<a class="plink" href={u(h)}>{t}</a>))}
+        </p>
+      </Fragment>
+    )}
 
-<Rule name="thorn" />
+    {p.shared && (
+      <Fragment slot="namesakes">
+        <p class="note">
+          <strong>More than one person of this name.</strong> This archive holds
+          {" "}{1 + (p.also || []).length} people called <strong>{p.n}</strong>, and they are gathered here together
+          because merging them silently would be worse than saying so. The surrounding text on each page below
+          usually makes it clear which is which. Each has a chart of their own further down.
+        </p>
+        <ul style="margin:10px 0 0">
+          <li><b>{p.n}</b> — {p.b} to {p.d}. <span set:html={md(p.r)} /></li>
+          {(p.also || []).map(a => (<li><b>{a.n}</b> — {a.b} to {a.d}. <span set:html={md(a.r)} /></li>))}
+        </ul>
+      </Fragment>
+    )}
 
-<section class="blk">
-  <h2>Others on the {p.l} side</h2>
-  <div class="grid g3" style="margin-top:16px">
-    {kin.map(k => (
-      <a class="cardlink" href={u("/who/" + k.slug + "/")}>
-        <div class="nm" style="font-size:16px">{k.n}</div>
-        <div class="txt">{k.b !== "—" || k.d !== "—" ? `${k.b} – ${k.d}` : plain(k.r).slice(0, 70)}</div>
-      </a>
-    ))}
-  </div>
-  <p class="cap" style="margin-top:18px">
-    <a href={u("/people/")}>All {all.length} people &rarr;</a> ·
-    <a href={u("/places/")}>The places &rarr;</a> ·
-    <a href={u("/search/")}>Search the archive &rarr;</a>
-  </p>
-  <p class="note" style="margin-top:18px">{d.note}</p>
-</section>
+    {mine.length > 0 && (
+      <Fragment slot="notes">
+        <p class="note">
+          <strong>{mine.length === 1
+            ? "One correction on this site names " + p.n + "."
+            : mine.length + " corrections on this site name " + p.n + "."}</strong>
+          {" "}A correction here is filed against the page it changed, not against a person.
+        </p>
+        <ul style="margin:12px 0 0">
+          {mine.map(r => (
+            <li style="margin-bottom:10px">
+              <span class="m small">{r[0]}</span> — <b set:html={md(r[1])} /><br />
+              <span class="cap" set:html={md(r[2])} />{" "}
+              <a href={u(r[4])}>Where it stands &rarr;</a>
+            </li>
+          ))}
+        </ul>
+      </Fragment>
+    )}
+
+    {selves.slice(1).map((self, i) => {
+      const o = kperson(self, p.slug + "-" + slugify(self.b || String(i + 2)), false);
+      return (
+        <PersonSection kind="more" title={`The family of ${self.n}, ${self.b}`}>
+          <PersonChart person={o.k} directLine={directLine} />
+          <p class="cap" style="margin-top:.6rem">
+            <a href={u("/register/?q=" + encodeURIComponent(self.n.replace(/[“”]/g, "")))}>Every record naming {self.n.replace(/[“”]/g, "")} &rarr;</a></p>
+        </PersonSection>
+      );
+    })}
+
+    {places.length > 0 && (
+      <PersonSection kind="more" title={`Where the archive puts ${p.n.split(" ")[0]}`}>
+        <div class="grid g3" style="margin-top:14px">
+          {places.map(x => (
+            <a class="cardlink" href={u("/places/" + x.slug + "/")}>
+              <div class="nm" style="font-size:16px">{x.n}</div>
+              <div class="txt">{x.k} · <span set:html={md(x.r)} /></div>
+            </a>
+          ))}
+        </div>
+        <p class="cap" style="margin-top:12px">Each carries the document that puts them there.
+          <a href={u("/atlas/")}>The atlas &rarr;</a></p>
+      </PersonSection>
+    )}
+
+    <PersonSection kind="more" title="Every mention, page by page">
+      {groups.length === 0 ? (
+        <p class="note">This person is recorded in the archive's index but is not yet discussed on any page.
+          That is itself worth knowing — it usually means a name read off a single document and not yet
+          followed up. <a href={u("/open-questions/")}>Open questions &rarr;</a></p>
+      ) : groups.map(([route, g]) => (
+        <div style="margin-top:14px">
+          <h3 style="margin:0 0 8px"><a href={u(route)}>{g.title}</a></h3>
+          <div style="display:flex;flex-direction:column;gap:13px">
+            {g.hits.map(h => (
+              <div class="panel" style="padding:14px 16px">
+                <p style="font-size:14.5px;line-height:1.66;margin:0">…{h.text}…</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </PersonSection>
+
+    <PersonSection kind="more" title={`Others on the ${p.l} side`}>
+      <div class="grid g3" style="margin-top:16px">
+        {kin.map(k => (
+          <a class="cardlink" href={u("/people/" + k.slug + "/")}>
+            <div class="nm" style="font-size:16px">{k.n}</div>
+            <div class="txt">{k.b !== "—" || k.d !== "—" ? `${k.b} – ${k.d}` : plain(k.r).slice(0, 70)}</div>
+          </a>
+        ))}
+      </div>
+      <p class="cap" style="margin-top:18px">
+        <a href={u("/people/")}>All {all.length} people &rarr;</a> ·
+        <a href={u("/places/")}>The places &rarr;</a> ·
+        <a href={u("/search/")}>Search the archive &rarr;</a>
+      </p>
+      <p class="note" style="margin-top:18px">{d.note}</p>
+    </PersonSection>
+  </PersonPage>
 </Base>
 )}

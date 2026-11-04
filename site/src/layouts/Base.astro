@@ -52,7 +52,7 @@ import VisitCount from "@daviddef/archive-kit/components/VisitCount.astro";
 import ring from "@daviddef/archive-kit/data/archives.json";
 import { md } from "../lib/md.js";
 import { plain } from "@daviddef/archive-kit/lib/md.js";
-const { title, description = "", dek, eyebrow, bare, noindex, living: livingPage } = Astro.props;
+const { title, description = "", dek, eyebrow, bare, noindex, living: livingPage, ownHeader = false } = Astro.props;
 /* THE DEK IS SPENT THREE WAYS AND ONLY ONE OF THEM MAY CARRY TAGS.
  * It is the visible lead paragraph, the meta description, and the string
  * handed to SocialHead and JsonLd. Rendering it once and using that
@@ -160,7 +160,7 @@ const thisArchive =
 
 <main id="main" tabindex="-1" data-no-autolink={noAutolink ? "" : undefined}>
   <div class="wrap">
-    {!bare && (
+    {!bare && !ownHeader && (
       <div class="pagehead">
         {eyebrow && <div class="lab">{eyebrow}</div>}
         <h1>{title}</h1>
