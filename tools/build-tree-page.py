@@ -361,6 +361,14 @@ def undrawn_list(people, fields, pid, pages, M, drawn, pm, okp, rep):
     rep["not_drawn_not_listed_no_death_recorded"] = unlisted
     return out
 
+def write_roots_links(tree):
+    """site/public/roots-links.json: the people Roots & Routes DRAWS, by tree id (P<position in people.json + 1>). A person's page offers 'Where they lived' only for those,
+    and only a page that is a story (a living person is never drawn here, and their page is never a story)."""
+    ids = sorted((p["id"] for p in jl(tree)["people"]), key=lambda x: int(x[1:]))
+    out = {"note": "The people Roots & Routes draws, by tree id (P plus the person's position in people.json, from 1). Made by tools/build-tree-page.py; do not edit by hand.", "people": ids}
+    io.open(os.path.join(ROOT, "site", "public", "roots-links.json"), "w", encoding="utf-8").write(json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n")
+    print("roots-links: %d people" % len(ids))
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true"); ap.add_argument("--accept-unique", action="store_true")
@@ -381,5 +389,6 @@ def main():
     run([sys.executable, os.path.join(TP, "build_page.py"), "--template", tpl, "--tree", tree, "--atlas-data", ad, "--out", embed, "--embed", "--ext", EXT])
     run([sys.executable, os.path.join(TP, "check_tree_page.py"), "--tree", tree, "--atlas-data", ad, "--page", page])
     run([sys.executable, os.path.join(TP, "check_tree_page.py"), "--tree", tree, "--atlas-data", ad, "--page", embed])
+    write_roots_links(tree)
 
 if __name__ == "__main__": main()

@@ -11,6 +11,7 @@ Ink ledger, Household, Generations, Where they lived). It is served at `/roots/`
 | `place-additions.json` | place strings decided by hand, each with its reason | yes, with a reason |
 | `atlas-data.json` | the Record Atlas slice: outlines, regimes, flags, events, collections | no, generated |
 | `roots.html`, `roots.embed.html` | the page, whole and as a fragment for the site layout | no, generated |
+| `site/public/roots-links.json` (written beside these) | the tree ids Roots & Routes draws (P + position in people.json); a person's page offers "Where they lived" for those, through `site/src/pages/roots/view.html.js` | no, generated |
 | `tree.report.json` | counts, and the places not yet resolved | read it |
 | `people.ged`, `slugs.json` | intermediates, not committed (a GEDCOM is never published) | no |
 
