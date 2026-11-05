@@ -24,3 +24,8 @@ private/
 
 # The names index and living list the build-time name linker reads (tools/namesindex.py writes both on every build; the living list carries names).
 site/.autolink/
+
+# Roots & Routes: the intermediate GEDCOM written from people.json, kin.js and marriages.json (tools/build-tree-page.py), rebuilt every time. A GEDCOM is never published.
+data/tree-page/people.ged
+data/tree-page/slugs.json
+*.ged

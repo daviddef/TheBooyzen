@@ -36,6 +36,11 @@ import directLine from "../../data/direct-line.json";
 import PersonPage from "@daviddef/archive-kit/components/PersonPage.astro";
 import PersonChart from "@daviddef/archive-kit/components/PersonChart.astro";
 import PersonSection from "@daviddef/archive-kit/components/PersonSection.astro";
+import PersonStory from "@daviddef/archive-kit/components/PersonStory.astro";
+import PersonRootsViews from "@daviddef/archive-kit/components/PersonRootsViews.astro";
+import { ledeOf, chaptersOf, familyOf, ancestryOf, famNode, storyOf, hasStory, GRADE_SAY } from "@daviddef/archive-kit/lib/personstory.js";
+import { storyTree, canonDate, yearIn, diedSaid, idOf } from "../../lib/storytree.js";
+import rootsLinks from "../../../public/roots-links.json";
 import "@daviddef/archive-kit/styles/persontree.css";
 import "@daviddef/archive-kit/styles/personpage.css";
 import PS from "@daviddef/archive-kit/data/public-sources.json";
@@ -108,25 +113,6 @@ const groups = Object.entries(byPage);
 const keyOf2 = (x) => x.n + "|" + (x.b || "");
 const DKEY = new Map();
 for (const q of all) { DKEY.set(keyOf2(q), q); for (const a of q.also || []) DKEY.set(keyOf2(a), q); }
-const MON = { jan: "Jan", feb: "Feb", mar: "Mar", apr: "Apr", may: "May", jun: "Jun", jul: "Jul", aug: "Aug", sep: "Sep", oct: "Oct", nov: "Nov", dec: "Dec" };
-/* A chart date is a day and month and year, or a year, with "c." where the field says circa, and nothing else. The field also holds where
-   and what ("9 Sep 1840, district Rustenburg", "bapt. 13 Jan 1806", "bef. 1828", "1884 (probate)", "a minor, bef. 1904"): the part before the first
-   comma, dash or bracket is read, a baptism or a bound or a probate is not a birth or a death and is left to the record table, and a month with no day
-   gives its year. The year still reaches the kit's living rule through birthYear and deathRecorded. */
-const canonDate = (s) => {
-  const t = String(s ?? "").trim();
-  if (!t || t === "—" || /\(probate\)/i.test(t)) return undefined;
-  const head = t.split(/[,—(]/)[0].trim();
-  const m = /^(c\.\s*)?(?:(\d{1,2})\s+)?(?:([A-Za-z]{3})\s+)?(\d{4})$/.exec(head);
-  if (!m) return undefined;
-  const [, c, day, mon, y] = m;
-  const mm = mon && MON[mon.toLowerCase()];
-  if (mon && !mm) return undefined;
-  if (day && !mm) return undefined;
-  return (c ? "c. " : "") + (day && mm ? `${+day} ${mm} ` : "") + y;
-};
-const yearIn = (s) => { const m = String(s ?? "").match(/\b(\d{4})\b/); return m ? Number(m[1]) : undefined; };
-const diedSaid = (s) => !!(s && s !== "—" && !/^living$/i.test(String(s).trim())) || undefined;
 const VIAWORD = { line: "read", doc: "read", inf: "inferred", tree: "tree" };
 /* ONE CHART ROW from a person kin.js resolved. A relative this archive holds has a page at /people/<dossier slug> (the shared page of one name
    for every man who bears it); the living are a name and the relationship. */
@@ -196,6 +182,67 @@ if (!LV) {
 }
 const firstSentence = (s) => { const t = plain(String(s || "")).replace(/\s+/g, " ").trim(); const m = /^(.{20,240}?[.!?])(\s|$)/.exec(t); return m ? m[1] : t.slice(0, 200); };
 const metaDek = LV ? STANDARD : firstSentence(p.r);
+/* the spouses the households give (the chart draws them; the story does not, so the record table does): a name, linked to the page, with the
+   dates the chart drew and the word for what the household rests on. A living spouse is a name and a link and nothing else. */
+const spouseRows = LV ? [] : mainK.t.unions.filter((un) => un.spouse).map((un) => {
+  const o = un.spouse, dp = DKEY.get(keyOf2(o)), lv = !!(dp && isLivingSlug(dp.slug));
+  const b = canonDate(o.b), d = canonDate(o.d);
+  return { name: o.n, href: dp ? u(`/people/${dp.slug}/`) : undefined, living: lv, via: un.f.via,
+           dates: b && d ? `${b} \u2013 ${d}` : b ? `b. ${b}` : d ? `d. ${d}` : "" };
+});
+
+/* STORY MODE (kit PERSON-PAGE-SPEC.md section 2a, ruled 4 November 2026; Booyzen from 5 November 2026).
+ *
+ * A page whose person has anything to tell is a story and not a chart: where they came from (parents and grandparents, and the line of fathers up
+ * as far as this archive's households go), their brothers and sisters, what the archive's own note says, and the children. The words are the
+ * archive's: the note p.r is cut into chapters at its own bold leads (chaptersOf) and laid on the timeline (storyOf), and nothing is rewritten or
+ * added. A page with no household, no brother or sister, no child and no note has nothing to tell and keeps the chart (and says why, as before).
+ * A LIVING person's page is never a story: it is the name, the relationships and the town and country, drawn by the branch above.
+ *
+ * THE FAMILY comes from lib/storytree.js (the households in kin.js, the same ones the chart reads). The kit's living rule applies to every relative
+ * (famNode): a living relative is a name and a relationship, a relative the rule holds out is not drawn. A brother or sister is a child of THIS
+ * household only (what the chart draws), not a half-brother through another household.
+ *
+ * THE MARKS on a card: the grade this archive gives that person (people.json `s`: documented, inferred, testimony) and, on a parent, a brother or
+ * sister and a child, the word for what the LINK rests on (the household's own `via`), the same words the chart showed. The direct line is the bar
+ * at the top of the page. */
+const RULE = { now: new Date().getFullYear(), sources: PS };
+/* a long card is folded behind «Read on» at a sentence, and a bold span can run across that cut; the half left with a lone «**» would print the marks, so
+   a fragment that still shows them is drawn without the bold (the words are the same) */
+const mdCard = (x) => { let h = md(x); if (h.includes("**")) h = md(String(x).replace(/\*\*/g, "")); return "<p>" + h + "</p>"; };
+const treeIndex = pj.people.findIndex((y) => y.n === selves[0].n && y.b === selves[0].b);
+/* Roots & Routes draws a person under "P<position in people.json + 1>" (tools/build-tree-page.py); site/public/roots-links.json lists the ones it draws */
+const TREEID = treeIndex >= 0 ? "P" + (treeIndex + 1) : null;
+const inRoots = !LV && !!TREEID && (rootsLinks.people || []).includes(TREEID);
+const EVTIER = { doc: "doc", inf: "inf", lore: "lore" };
+let LEDE = "", FAM = null, THREADS = [], STORY = [], STORYMODE = false;
+if (!LV) {
+  const TREE = storyTree();
+  const selfId = idOf(selves[0]);
+  const t0 = mainK.t;
+  const viaOf = {};
+  for (const o of t0.parents) viaOf[idOf(o)] = t0.parentVia;
+  for (const o of t0.siblings) viaOf[idOf(o)] = o.via;
+  for (const un of t0.unions) for (const k of un.kids) viaOf[idOf(k)] = k.via;
+  const mark = (n, linked) => {
+    if (!n || n.unknown || !n.id || n.living) return;
+    const g = TREE[n.id] && TREE[n.id].grade;
+    if (EVTIER[g]) n.ev = { tier: EVTIER[g] };
+    const v = linked && viaOf[n.id];
+    if (v) n.link = { grade: v === "line" ? "doc" : v };
+  };
+  LEDE = ledeOf({ note: p.r });
+  FAM = familyOf(TREE, selfId, RULE);
+  const byBirth = (a, b) => (TREE[a].by || 9999) - (TREE[b].by || 9999);
+  FAM.siblings = [...new Set(t0.siblings.map((o) => idOf(o)))].filter((id) => TREE[id]).sort(byBirth)
+    .map((id) => famNode(TREE, id, "Brother or sister", "", RULE)).filter(Boolean);
+  THREADS = ancestryOf(TREE, selfId, null, RULE);
+  for (const list of [FAM.parents, FAM.siblings, FAM.children]) list.forEach((n) => mark(n, true));
+  FAM.grand.forEach((n) => mark(n, false));
+  for (const th of THREADS) { mark(th.earliest, false); th.between.forEach((n) => mark(n, false)); }
+  STORY = storyOf(chaptersOf(p.r, LEDE), FAM, [], { b: canonDate(p.b), d: canonDate(p.d) }, THREADS, { metaRx: /(?!)/ });
+  STORYMODE = hasStory(STORY);
+}
 ---
 {LV ? (
 <Base title={p.n} dek={metaDek} ownHeader living>
@@ -204,7 +251,9 @@ const metaDek = LV ? STANDARD : firstSentence(p.r);
 ) : (
 <Base title={p.n} dek={metaDek} ownHeader>
   <PersonPage person={KPERSON} peopleHref={u("/people/")} registerHref={u("/register/?q=" + encodeURIComponent(p.n.replace(/[“”]/g, "")))}
-              directLine={directLine} storyHref={u("/story/")} stubNote="a document" emptyText={mainNotes.emptyText || null}>
+              directLine={directLine} storyHref={u("/story/")} stubNote="a document" emptyText={mainNotes.emptyText || null} lede={LEDE}>
+
+    {STORYMODE && <Fragment slot="story"><PersonStory stages={STORY} md={mdCard} gradeSay={GRADE_SAY} u={u} /></Fragment>}
 
     <Fragment slot="chart-notes">
       {mainNotes.warns.map((w) => <p class="warn cap">{w}</p>)}
@@ -239,6 +288,13 @@ const metaDek = LV ? STANDARD : firstSentence(p.r);
           <tr><td>Born</td><td class="m">{p.b}</td></tr>
           <tr><td>Died</td><td class="m">{p.d}</td></tr>
           <tr><td>Line</td><td><a href={u("/people/")}>{p.l}</a></td></tr>
+          {STORYMODE && spouseRows.length > 0 && <tr><td>Married to</td><td>
+            {spouseRows.map((x) => (<span style="display:block">
+              {x.href ? <a href={x.href}>{x.name}</a> : x.name}
+              {!x.living && x.dates && <span class="m">{" \u00b7 " + x.dates}</span>}
+              {!x.living && x.via && <span>{" "}<span class={"chip " + (x.via === "tree" ? "lore" : x.via === "line" ? "doc" : x.via)}>{VIA[x.via] || "a record read here"}</span></span>}
+            </span>))}
+          </td></tr>}
           {p.g && <tr><td>Generation</td><td class="m">{p.g} — on the direct line</td></tr>}
           <tr><td>Confidence</td><td><span class={"chip " + p.s}>{label[p.s]}</span></td></tr>
           {p.tree && <tr><td>From a tree</td><td><span class="chip lore">not documented</span>{" "}
@@ -247,8 +303,8 @@ const metaDek = LV ? STANDARD : firstSentence(p.r);
         </tbody>
       </table>
       </div>
-      <h3 class="ct" style="margin:1.4rem 0 .5rem">What the archive holds</h3>
-      <p style="font-size:15.5px" set:html={md(p.r)} />
+      {!STORYMODE && <h3 class="ct" style="margin:1.4rem 0 .5rem">What the archive holds</h3>}
+      {!STORYMODE && <p style="font-size:15.5px" set:html={md(p.r)} />}
       {selves.map((self) => marrOf(self).length > 0 && (
         <div class="panel" style="padding:15px 17px;margin:18px 0 0">
           <h3 class="ct" style="margin:0 0 12px">{(selves.length > 1 ? self.n + " \u00b7 " : "") + (marrOf(self).length === 1 ? "The marriage record" : "The marriage records")}</h3>
@@ -266,14 +322,41 @@ const metaDek = LV ? STANDARD : firstSentence(p.r);
       ))}
     </Fragment>
 
-    {sourceLinks.length > 0 && (
+    {(sourceLinks.length > 0 || STORYMODE) && (
       <Fragment slot="sources">
-        <p class="small">The documents the households and marriages above stand on, and the pages of this archive that discuss {p.n}.</p>
-        <p style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">
-          {sourceLinks.map(([t, h]) => (<a class="plink" href={u(h)}>{t}</a>))}
-        </p>
+        {STORYMODE && (
+          <div class="cap" style="margin:0 0 14px">
+            <h3 class="ct" style="margin:0 0 6px;font-size:1.05rem">How the family is known</h3>
+            {mainNotes.warns.map((w) => <p class="warn cap">{w}</p>)}
+            {mainNotes.nothing
+              ? <span style="display:block">{mainNotes.emptyText}</span>
+              : <span style="display:block">
+                  <b>{mainNotes.prov.doc === mainNotes.prov.n
+                        ? `All ${mainNotes.prov.n} relationships shown`
+                        : `${mainNotes.prov.doc} of the ${mainNotes.prov.n} relationships shown`}</b>{" "}are written in a record this archive has read.
+                  {mainNotes.prov.inf > 0 && <span>{` ${mainNotes.prov.inf} ${mainNotes.prov.inf === 1 ? "is" : "are"} inferred from one.`}</span>}
+                  {mainNotes.prov.tree > 0 && <span>{` ${mainNotes.prov.tree} ${mainNotes.prov.tree === 1 ? "comes" : "come"} from the family tree and ${mainNotes.prov.tree === 1 ? "is" : "are"} unverified.`}</span>}
+                  {mainK.t.origin && mainK.t.origin.f.src && (
+                    <span>{" "}<a href={u(mainK.t.origin.f.src[1])}>{mainK.t.origin.f.src[0]} &rarr;</a></span>
+                  )}
+                </span>}
+            {mainK.t.origin && mainK.t.origin.f.why && <span style="display:block;margin-top:6px">{mainK.t.origin.f.why}</span>}
+            {mainK.t.unions.filter((x) => x.f.why).map((x) => (
+              <span style="display:block;margin-top:6px">{x.f.why}
+                {x.f.src && <span>{" "}<a href={u(x.f.src[1])}>{x.f.src[0]} &rarr;</a></span>}</span>
+            ))}
+          </div>
+        )}
+        {sourceLinks.length > 0 && <p class="small">The documents the households and marriages above stand on, and the pages of this archive that discuss {p.n}.</p>}
+        {sourceLinks.length > 0 && (
+          <p style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">
+            {sourceLinks.map(([t, h]) => (<a class="plink" href={u(h)}>{t}</a>))}
+          </p>
+        )}
       </Fragment>
     )}
+
+    {STORYMODE && inRoots && <Fragment slot="where"><PersonRootsViews pid={TREEID} u={u} /></Fragment>}
 
     {p.shared && (
       <Fragment slot="namesakes">
