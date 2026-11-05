@@ -1,0 +1,464 @@
+{
+ "_about": "Place strings decided by hand, each with its reason. Merged over the seeded place map by tools/build-tree-page.py; a string already placed (data/era-ground.tsv) is left alone. Points are the Record Atlas's own; nothing is geocoded from the string.",
+ "places": {
+  "Barkly East": {
+   "name": "Barkly East",
+   "lat": -30.515,
+   "lon": 27.596,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "barkly-east",
+   "how": "the string names this place; the Record Atlas has it once, as barkly-east, in South Africa, and no other place of that name"
+  },
+  "BARKLY EAST": {
+   "name": "Barkly East",
+   "lat": -30.515,
+   "lon": 27.596,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "barkly-east",
+   "how": "the string names this place; the Record Atlas has it once, as barkly-east, in South Africa, and no other place of that name"
+  },
+  "Bethulie": {
+   "name": "Bethulie",
+   "lat": -30.494,
+   "lon": 25.976,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "bethulie",
+   "how": "the string names this place; the Record Atlas has it once, as bethulie, in South Africa, and no other place of that name"
+  },
+  "Bethulie, Orange Free State": {
+   "name": "Bethulie",
+   "lat": -30.494,
+   "lon": 25.976,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "bethulie",
+   "how": "the string names this place; the Record Atlas has it once, as bethulie, in South Africa, and no other place of that name; the second part of the string (Orange Free State) agrees with the Atlas"
+  },
+  "Burgersdorp": {
+   "name": "Burgersdorp",
+   "lat": -30.996,
+   "lon": 26.329,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "burgersdorp",
+   "how": "the string names this place; the Record Atlas has it once, as burgersdorp, in South Africa, and no other place of that name"
+  },
+  "Colesberg": {
+   "name": "Colesberg",
+   "lat": -30.719,
+   "lon": 25.098,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "colesberg",
+   "how": "the string names this place; the Record Atlas has it once, as colesberg, in South Africa, and no other place of that name"
+  },
+  "East London": {
+   "name": "East London",
+   "lat": -33.01916,
+   "lon": 27.89986,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "east-london",
+   "how": "the string names this place; the Record Atlas has it once, as east-london, in South Africa, and no other place of that name"
+  },
+  "Indwe": {
+   "name": "Indwe",
+   "lat": -31.47,
+   "lon": 27.339,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "indwe",
+   "how": "the string names this place; the Record Atlas has it once, as indwe, in South Africa, and no other place of that name"
+  },
+  "Johannesburg": {
+   "name": "Johannesburg",
+   "lat": -26.2023,
+   "lon": 28.0436,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "johannesburg",
+   "how": "the string names this place; the Record Atlas has it once, as johannesburg, in South Africa, and no other place of that name"
+  },
+  "Klerksdorp": {
+   "name": "Klerksdorp",
+   "lat": -26.852,
+   "lon": 26.666,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "klerksdorp",
+   "how": "the string names this place; the Record Atlas has it once, as klerksdorp, in South Africa, and no other place of that name"
+  },
+  "Lady Grey": {
+   "name": "Lady Grey",
+   "lat": -30.71,
+   "lon": 27.22,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "lady-grey",
+   "how": "the string names this place; the Record Atlas has it once, as lady-grey, in South Africa, and no other place of that name"
+  },
+  "Mossel Bay": {
+   "name": "Mossel Bay",
+   "lat": -34.183,
+   "lon": 22.146,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "mossel-bay",
+   "how": "the string names this place; the Record Atlas has it once, as mossel-bay, in South Africa, and no other place of that name"
+  },
+  "Piet Retief": {
+   "name": "Piet Retief",
+   "lat": -27.005,
+   "lon": 30.81,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "piet-retief",
+   "how": "the string names this place; the Record Atlas has it once, as piet-retief, in South Africa, and no other place of that name"
+  },
+  "Rustenburg": {
+   "name": "Rustenburg",
+   "lat": -25.667,
+   "lon": 27.242,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "rustenburg",
+   "how": "the string names this place; the Record Atlas has it once, as rustenburg, in South Africa, and no other place of that name"
+  },
+  "Stutterheim": {
+   "name": "Stutterheim",
+   "lat": -32.573,
+   "lon": 27.424,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "stutterheim",
+   "how": "the string names this place; the Record Atlas has it once, as stutterheim, in South Africa, and no other place of that name"
+  },
+  "Turffontein": {
+   "name": "Turffontein",
+   "lat": -26.246,
+   "lon": 28.047,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "turffontein",
+   "how": "the string names this place; the Record Atlas has it once, as turffontein, in South Africa, and no other place of that name"
+  },
+  "Uitenhage": {
+   "name": "Uitenhage",
+   "lat": -33.766,
+   "lon": 25.398,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "uitenhage",
+   "how": "the string names this place; the Record Atlas has it once, as uitenhage, in South Africa, and no other place of that name"
+  },
+  "Wakkerstroom": {
+   "name": "Wakkerstroom",
+   "lat": -27.353,
+   "lon": 30.144,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "wakkerstroom",
+   "how": "the string names this place; the Record Atlas has it once, as wakkerstroom, in South Africa, and no other place of that name"
+  },
+  "Wodehouse": {
+   "name": "Wodehouse",
+   "lat": -31.372,
+   "lon": 27.041,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "wodehouse",
+   "how": "the string names this place; the Record Atlas has it once, as wodehouse, in South Africa, and no other place of that name"
+  },
+  "Zwartruggens": {
+   "name": "Zwartruggens",
+   "lat": -25.65,
+   "lon": 26.68,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "zwartruggens",
+   "how": "the string names this place; the Record Atlas has it once, as zwartruggens, in South Africa, and no other place of that name"
+  },
+  "Cape Town": {
+   "name": "Cape Town",
+   "lat": -33.92883,
+   "lon": 18.41722,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "cape-town",
+   "how": "the string names this place; the Record Atlas has it once, as cape-town, in South Africa, and no other place of that name"
+  },
+  "Hoopstad, Orange Free State": {
+   "name": "Hoopstad",
+   "lat": -27.833,
+   "lon": 25.91,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "hoopstad",
+   "how": "the string names this place; the Record Atlas has it once, as hoopstad, in South Africa, and no other place of that name; the second part of the string (Orange Free State) agrees with the Atlas"
+  },
+  "Zevenfontein, Brak River": {
+   "name": "Zevenfontein",
+   "lat": -31.49,
+   "lon": 25.01,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "zevenfontein",
+   "how": "the string names this place; the Record Atlas has it once, as zevenfontein, in South Africa, and no other place of that name; the second part of the string (Brak River) agrees with the Atlas"
+  },
+  "Cherryville, Barkly East": {
+   "name": "Cherryville",
+   "lat": -30.97,
+   "lon": 27.6,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "cherryville",
+   "how": "the string names this place; the Record Atlas has it once, as cherryville, in South Africa, and no other place of that name; the second part of the string (Barkly East) agrees with the Atlas"
+  },
+  "Manorowen, Barkly East": {
+   "name": "Manorowen",
+   "lat": -30.515,
+   "lon": 27.596,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "manorowen",
+   "how": "the string names this place; the Record Atlas has it once, as manorowen, in South Africa, and no other place of that name; the second part of the string (Barkly East) agrees with the Atlas"
+  },
+  "Cape Colony": {
+   "name": "Cape Colony",
+   "lat": -32.21718,
+   "lon": 26.63864,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "cape-colony",
+   "how": "the string names a region, not a town; drawn at the Atlas's own point for cape-colony, so it marks the region and not a settlement"
+  },
+  "Cape Province": {
+   "name": "Cape Province",
+   "lat": -33.11,
+   "lon": 22.0552,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "cape-province",
+   "how": "the string names a region, not a town; drawn at the Atlas's own point for cape-province, so it marks the region and not a settlement"
+  },
+  "district Cradock": {
+   "name": "Cradock",
+   "lat": -32.164,
+   "lon": 25.619,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "cradock",
+   "how": "the string names a farm, street, institution or district INSIDE Cradock and the Atlas does not place that part; drawn at Cradock (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "district Graaff-Reinet": {
+   "name": "Graaff-Reinet",
+   "lat": -32.252,
+   "lon": 24.533,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "graaff-reinet",
+   "how": "the string names a farm, street, institution or district INSIDE Graaff-Reinet and the Atlas does not place that part; drawn at Graaff-Reinet (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "district Rustenburg": {
+   "name": "Rustenburg",
+   "lat": -25.667,
+   "lon": 27.242,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "rustenburg",
+   "how": "the string names a farm, street, institution or district INSIDE Rustenburg and the Atlas does not place that part; drawn at Rustenburg (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Brakfontein, district Rustenburg": {
+   "name": "Rustenburg",
+   "lat": -25.667,
+   "lon": 27.242,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "rustenburg",
+   "how": "the string names a farm, street, institution or district INSIDE Rustenburg and the Atlas does not place that part; drawn at Rustenburg (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Koedoesfontein, district Rustenburg": {
+   "name": "Rustenburg",
+   "lat": -25.667,
+   "lon": 27.242,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "rustenburg",
+   "how": "the string names a farm, street, institution or district INSIDE Rustenburg and the Atlas does not place that part; drawn at Rustenburg (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Vaalbank, district Lichtenburg": {
+   "name": "Lichtenburg",
+   "lat": -26.15,
+   "lon": 26.16,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "lichtenburg",
+   "how": "the string names a farm, street, institution or district INSIDE Lichtenburg and the Atlas does not place that part; drawn at Lichtenburg (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Bloemspruit, district Bloemfontein": {
+   "name": "Bloemfontein",
+   "lat": -29.085,
+   "lon": 26.159,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "bloemfontein",
+   "how": "the string names a farm, street, institution or district INSIDE Bloemfontein and the Atlas does not place that part; drawn at Bloemfontein (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Meriba, district Bloemfontein": {
+   "name": "Bloemfontein",
+   "lat": -29.085,
+   "lon": 26.159,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "bloemfontein",
+   "how": "the string names a farm, street, institution or district INSIDE Bloemfontein and the Atlas does not place that part; drawn at Bloemfontein (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "the Modder River road, district Bloemfontein": {
+   "name": "Bloemfontein",
+   "lat": -29.085,
+   "lon": 26.159,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "bloemfontein",
+   "how": "the string names a farm, street, institution or district INSIDE Bloemfontein and the Atlas does not place that part; drawn at Bloemfontein (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Villieria, a portion of Kleinfontein, district Wakkerstroom": {
+   "name": "Wakkerstroom",
+   "lat": -27.353,
+   "lon": 30.144,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "wakkerstroom",
+   "how": "the string names a farm, street, institution or district INSIDE Wakkerstroom and the Atlas does not place that part; drawn at Wakkerstroom (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "her husband’s residence, Barkly East": {
+   "name": "Barkly East",
+   "lat": -30.515,
+   "lon": 27.596,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "barkly-east",
+   "how": "the string names a farm, street, institution or district INSIDE Barkly East and the Atlas does not place that part; drawn at Barkly East (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Potchefstroom district": {
+   "name": "Potchefstroom",
+   "lat": -26.716,
+   "lon": 27.097,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "potchefstroom",
+   "how": "the string names a farm, street, institution or district INSIDE Potchefstroom and the Atlas does not place that part; drawn at Potchefstroom (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "“Wurtemburg”, Colesberg": {
+   "name": "Colesberg",
+   "lat": -30.719,
+   "lon": 25.098,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "colesberg",
+   "how": "the string names a farm, street, institution or district INSIDE Colesberg and the Atlas does not place that part; drawn at Colesberg (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "East Lynne, Pretoria": {
+   "name": "Pretoria",
+   "lat": -25.746,
+   "lon": 28.188,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "pretoria",
+   "how": "the string names a farm, street, institution or district INSIDE Pretoria and the Atlas does not place that part; drawn at Pretoria (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Market Street, Pretoria": {
+   "name": "Pretoria",
+   "lat": -25.746,
+   "lon": 28.188,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "pretoria",
+   "how": "the string names a farm, street, institution or district INSIDE Pretoria and the Atlas does not place that part; drawn at Pretoria (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "REBECCA STREET, Pretoria": {
+   "name": "Pretoria",
+   "lat": -25.746,
+   "lon": 28.188,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "pretoria",
+   "how": "the string names a farm, street, institution or district INSIDE Pretoria and the Atlas does not place that part; drawn at Pretoria (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "ZANDFONTEIN, Pretoria": {
+   "name": "Pretoria",
+   "lat": -25.746,
+   "lon": 28.188,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "pretoria",
+   "how": "the string names a farm, street, institution or district INSIDE Pretoria and the Atlas does not place that part; drawn at Pretoria (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "SILVERTON, Pretoria": {
+   "name": "Pretoria",
+   "lat": -25.746,
+   "lon": 28.188,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "pretoria",
+   "how": "the string names a farm, street, institution or district INSIDE Pretoria and the Atlas does not place that part; drawn at Pretoria (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "the Lunatic Asylum, Pretoria": {
+   "name": "Pretoria",
+   "lat": -25.746,
+   "lon": 28.188,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "pretoria",
+   "how": "the string names a farm, street, institution or district INSIDE Pretoria and the Atlas does not place that part; drawn at Pretoria (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Forest Hill, Johannesburg": {
+   "name": "Johannesburg",
+   "lat": -26.2023,
+   "lon": 28.0436,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "johannesburg",
+   "how": "the string names a farm, street, institution or district INSIDE Johannesburg and the Atlas does not place that part; drawn at Johannesburg (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "Johannesburg Hospital": {
+   "name": "Johannesburg",
+   "lat": -26.2023,
+   "lon": 28.0436,
+   "country": "South Africa",
+   "iso": "ZA",
+   "atlas_id": "johannesburg",
+   "how": "the string names a farm, street, institution or district INSIDE Johannesburg and the Atlas does not place that part; drawn at Johannesburg (the Atlas's point), so the pin is the town or district seat, not the spot"
+  },
+  "St James, Westminster": {
+   "name": "London",
+   "lat": 51.5085,
+   "lon": -0.1257,
+   "country": "United Kingdom",
+   "iso": "GB",
+   "atlas_id": "london",
+   "how": "St James's Westminster is a London parish and the string names it; drawn at London (the Atlas's point), so the pin is the city, not the parish"
+  },
+  "ST ANNE’S SOHO": {
+   "name": "London",
+   "lat": 51.5085,
+   "lon": -0.1257,
+   "country": "United Kingdom",
+   "iso": "GB",
+   "atlas_id": "london",
+   "how": "St Anne's, Soho is a London church and the string names it; drawn at London (the Atlas's point), so the pin is the city, not the parish"
+  },
+  "St Anne’s Soho": {
+   "name": "London",
+   "lat": 51.5085,
+   "lon": -0.1257,
+   "country": "United Kingdom",
+   "iso": "GB",
+   "atlas_id": "london",
+   "how": "St Anne's, Soho is a London church and the string names it; drawn at London (the Atlas's point), so the pin is the city, not the parish"
+  }
+ }
+}
