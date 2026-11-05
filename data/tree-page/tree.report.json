@@ -60,7 +60,14 @@
   "death_year_qualified_by_the_archive": 16,
   "drawn_at_a_relatives_birth_place": 214,
   "second_parentage_not_drawn": 1,
-  "sex_unknown_drawn": 196,
+  "sex_unknown_drawn": 171,
+  "sex_by_source_drawn": {
+   "household": 97,
+   "wording": 13,
+   "born": 12,
+   "marriage": 3
+  },
+  "sex_conflicts": 0,
   "place_strings_total": 101,
   "place_strings_resolved": 60,
   "from_era_ground": 9,

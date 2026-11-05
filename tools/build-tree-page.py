@@ -108,6 +108,21 @@ def km(a, b, c, d):
 # ---------------------------------------------------------------- the people, the households, the marriages -> a small GEDCOM
 VIA_GRADE = {"doc": 2, "line": 2, "inf": 1, "tree": 0}   # the page's grades: 2 read from a register, 1 household tree, 0 index entry only (drawn dashed)
 
+# SEX is kept only where the archive's own data states or entails it, never from a first name. A husband or a wife in a household or marriage (below); then the archive's own wording:
+# a note that opens "Daughter of ...", "His daughter", "Her second son" or "Wife of ..." says what the person is, and a married woman's birth name in the variants field
+# ("born Mountjoy", "geboren Dormehl"; the archive's own bornInto() reads it as the family a married woman was born into). Everything else is unknown ('u').
+_ORD = r"(?:(?:eldest|elder|younger|second|third|fourth|fifth|sixth|seventh|eighth|youngest|only|first)\s+)?"
+WORD_F = re.compile(r"^\W*(?:(?:his|her)\s+)?%s(?:daughter|sister|wife|widow)\b" % _ORD, re.I)
+WORD_M = re.compile(r"^\W*(?:(?:his|her)\s+)?%s(?:son|brother|husband|widower)\b" % _ORD, re.I)
+BORN = re.compile(r"(?:^|[,(·]\s*)(?:born|geboren|gebore|gebooren)\s+[A-Za-zÀ-ÿ'’]", re.I)
+def stated_sex(p):
+    r = re.sub(r"[*_]", "", str(p.get("r") or "")).strip()
+    f, m = bool(WORD_F.match(r)), bool(WORD_M.match(r))
+    if f and not m: return "F", "wording"
+    if m and not f: return "M", "wording"
+    if BORN.search(str(p.get("v") or "")): return "F", "born"
+    return None, None
+
 def load():
     people = jl(os.path.join(DATA, "people.json"))["people"]
     pol = jl(os.path.join(DATA, "living-policy.json"))
@@ -143,14 +158,22 @@ def build_model():
         if w is not None: sex[w] = "F"
         hh.append((h, w, [(lf.resolve(k["n"], people), k.get("via")) for k in f.get("kids", [])], f.get("via")))
     marr = []
+    sexsrc = {i: "household" for i in sex}
     for r in jl(os.path.join(DATA, "marriages.json"))["rows"]:
         h, w = resolve_strict(r.get("h"), people), resolve_strict(r.get("w"), people)
         if h is not None and w is not None and h != w:
-            sex.setdefault(h, "M"); sex.setdefault(w, "F"); marr.append((h, w))
-    return people, living, held, omitted, hh, marr, sex, pid
+            for x, v in ((h, "M"), (w, "F")):
+                if x not in sex: sex[x] = v; sexsrc[x] = "marriage"
+            marr.append((h, w))
+    for i, p in enumerate(people):
+        v, how = stated_sex(p)
+        if not v: continue
+        if i in sex and sex[i] != v: sexsrc[i] = "conflict-household-kept"; continue   # a household role wins; the disagreement is reported
+        if i not in sex: sex[i] = v; sexsrc[i] = how
+    return people, living, held, omitted, hh, marr, sex, pid, sexsrc
 
 def write_ged(path):
-    people, living, held, omitted, hh, marr, sex, pid = build_model()
+    people, living, held, omitted, hh, marr, sex, pid, sexsrc = build_model()
     fam_of = {}; famrec = {}; childgrade = {}; second_parentage = 0
     def fam(h, w):
         k = (h, w)
@@ -202,7 +225,7 @@ def write_ged(path):
     out.append("0 TRLR")
     io.open(path, "w", encoding="utf-8").write("\n".join(out) + "\n")
     return {"people": people, "fields": fields, "childgrade": childgrade, "sex": sex, "omitted": omitted, "living": living, "held": held,
-            "second_parentage": second_parentage, "pid": pid}
+            "second_parentage": second_parentage, "pid": pid, "sexsrc": sexsrc}
 
 # ---------------------------------------------------------------- places the archive has already placed
 TOWN_ROW = re.compile(r"^(.*?)\s*$")
@@ -293,6 +316,8 @@ def build(a):
                       "birth_year_qualified_by_the_archive": est_b, "death_year_qualified_by_the_archive": est_d,
                       "drawn_at_a_relatives_birth_place": relpl, "second_parentage_not_drawn": M["second_parentage"],
                       "sex_unknown_drawn": sum(1 for p in t["people"] if p["sex"] == "u"),
+                      "sex_by_source_drawn": dict(collections.Counter(M["sexsrc"].get(byid[p["id"]], "none") for p in t["people"] if p["sex"] != "u")),
+                      "sex_conflicts": sum(1 for v in M["sexsrc"].values() if v == "conflict-household-kept"),
                       "place_strings_total": len(pm_), "place_strings_resolved": sum(1 for k in pm_ if okp(k)),
                       "from_era_ground": sum(1 for v in pm_.values() if (v.get("how") or "").startswith("data/era-ground")),
                       "from_place_additions": sum(1 for k in jl(os.path.join(OUT, "place-additions.json"))["places"] if okp(k)) if os.path.exists(os.path.join(OUT, "place-additions.json")) else 0,

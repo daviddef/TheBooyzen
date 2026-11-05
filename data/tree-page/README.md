@@ -28,8 +28,9 @@ Needs the Record Atlas checkout (`RECORD_ATLAS`, default `~/Projects/Family Proj
 
 - **People**: `site/src/data/people.json`. **Parent, child and spouse links**: the households in `site/src/data/kin.js` (a person's first household as a child is the one their page
   draws; a second is not drawn) and the marriages in `site/src/data/marriages.json` (only where each name is borne by one person). Nothing else links anyone.
-- **Sex** is a husband or a wife in a household or marriage and nothing else (no first name is read). Most of the people drawn have no household role, so their sex is
-  unknown (`u`); **the shared viewer has no unknown state and labels them with the male words in Kinship and on cards.** That needs a change in the viewer, or the sex recorded.
+- **Sex** is kept only where the archive's own data states or entails it, never from a first name: a husband or a wife in a household or marriage; a note that opens "Daughter of ...", "His wife", "Her elder
+  son"; or a married woman's birth name in the variants field ("born Mountjoy", "geboren Dormehl"). Everything else is unknown (`u`), and the viewer (skill 1.7.0) then says parent, child, spouse,
+  sibling and "uncle or aunt". `tree.report.json` (`adapter.sex_by_source_drawn`) counts each source.
 - **Dates and places** are the archive's born and died fields, read the way `tools/familylines.mjs` reads them (`field()` is ported into `tools/build-tree-page.py` and was checked against
   the JavaScript on every person: no difference). A year the field qualifies (c., bef., aft., bapt.) is drawn as an estimate. A burial place is not a death place.
 - **Estimates the converter makes** are flagged on the page: "c. 1760" is a birth taken from a child, parent or spouse; "1760–?" is a death not recorded. They are estimates for drawing, not findings.
