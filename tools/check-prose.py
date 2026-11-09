@@ -66,6 +66,7 @@ HAND_EDITED = {
     "questions.json",          # open questions
     "retired.json",            # withdrawn readings
     "searched.json",           # the searches run
+    "searched-map.json",       # which source each set in searched.json was run against; a person states it, tools/searched_flat.py reads it
     "sources.json",            # the source register (lifted off sources.astro once, edited by hand since)
     "timeline.json",           # the dated events
     "trees.json",              # the trees page
