@@ -1,5 +1,5 @@
 {
- "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped. **AND A SECOND, FLAT REGISTER SITS BESIDE THE SETS SINCE 7 OCTOBER 2026, FOR A MACHINE RATHER THAN A READER.** Record Atlas imports each archive's searched.json, and it reads a list of OBJECTS under `searched`, `rows` or `entries`. This file keys its work under `sets`, and each row inside is a LIST — a question, an answer, a note and a verdict. **So the importer read 0 rows from this archive while reading 1,525 from the other seven**, and every search recorded here since the project began has been invisible to the shared map. The `sets` are what the page is built from and what a person reads; the `searched` array is the same work stated in the fields the atlas keys on — source, url, film, pages, outcome. **The duplication is a known cost and is recorded as one**: the two can drift, and the proper fix is to retrofit the sets, which is a deliberate job and not a thing to do in passing.",
+ "note": "A search that returns nothing is only worth anything if the search itself is written down. Every query below was actually run, on the date given, and its result is recorded whether or not it helped. **AND A SECOND, FLAT REGISTER SITS BESIDE THE SETS SINCE 7 OCTOBER 2026, FOR A MACHINE RATHER THAN A READER.** Record Atlas imports each archive's searched.json, and it reads a list of OBJECTS under `searched`, `rows` or `entries`. This file keys its work under `sets`, and each row inside is a LIST — a question, an answer, a note and a verdict. **So the importer read 0 rows from this archive while reading 1,525 from the other seven**, and every search recorded here since the project began has been invisible to the shared map. The `sets` are what the page is built from and what a person reads; the `searched` array is the same work stated in the fields the atlas keys on — source, url, film, pages, outcome. **The duplication is a known cost and is recorded as one**: the two can drift, and the proper fix is to retrofit the sets, which is a deliberate job and not a thing to do in passing. **FROM 9 NOVEMBER 2026 THE FLAT REGISTER IS NO LONGER ONLY WRITTEN BY HAND.** Rows marked `\"derived\": \"sets\"` are made from `sets` by tools/searched_flat.py, using the source each set was run against, which site/src/data/searched-map.json states; a set that names no single source contributes nothing and says so there. Do not edit a derived row: change the set or the map and run `python3 tools/searched_flat.py --write`. The build fails if they differ, or if a new set has no entry in the map.",
  "sets": [
   {
    "g": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
@@ -7039,6 +7039,3070 @@
     "findmypast"
    ],
    "note": "A HARD BOUNDARY ON THE SOURCE, which is the main result. Searching the catalogue of all 2,977 record sets by place: SOUTH AFRICA returns 12 sets and every one is Anglo-Boer War military; NATAL returns zero; CAPE returns two and both are Cape Breton in Nova Scotia; TRANSVAAL returns the same Boer War sets. There is no South African civil registration, no parish register, no passenger or arrival list, and nothing at all before 1899. The four queries control each other - twelve relevant sets for one place name, zero for another, so the mechanism works. THIS RETIRES ROW 78's PLAN rather than completing it: the 1819-20 passenger lists it named for the subscription's last days do not exist on this tool. Travel and migration bounded to 1819 plus or minus two returns 16 Barrys and all are Australian; the only Cape-located Barrys in that category are Edward Barry in the Royal Navy ships' musters at the Cape naval yard, 1797-1800. WHAT IT DOES HOLD, never harvested here before: WO 127, South Africa Local Armed Forces Nominal Rolls 1899-1902, 53,416 records transcribed by Kevin Asplin, giving name, rank, number, unit and often enrolment and discharge dates. KOLBE is a clean nil - three variant hits, no actual Kolbe. MOUNTJOY gives exactly one, George Mountjoy, Private 664, District Mounted Rifles, a locally raised Cape unit; three men in this archive could be him and the transcript has no age or district to choose, so nothing is claimed. BOOYSEN gives Nicholas George Peter Booysen, Trooper, Nesbitt's Horse, 26 January to 18 September 1900, discharged services no longer required - no man of that name is in this archive. BARRY gives 34 and the index cannot discriminate a common surname without ages. AND A CAUTION FOR WHOEVER WORKS IT NEXT: these rolls are men who served the British. The men this archive already holds from that war went the other way - a Cape Rebel tried in June 1901 and two Kolbe prisoners on WO 108/368. Same districts, same months, opposite sides."
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Father John Barry, mother a Kolbe, child's own name left blank",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "MARGRITH LOUISA MARIA, baptised Burgersdorp 5 April 1852",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "burgersdorp",
+    "familysearch"
+   ],
+   "note": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "WILLIAM FREDERICK THOMAS BARRY, born 29 September 1861, baptised Graaff-Reinet",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "graaff-reinet",
+    "familysearch"
+   ],
+   "note": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Does the count come right",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "q.filmNumber on the search API",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Can the film be paged out",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "So is the hand sweep abandoned",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "MOUNTJOY, MONTJOY, MOUNTJOYE and MUNTJOY across the WO series at The National Archives",
+   "when": "2026-09-15",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "the"
+   ],
+   "note": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "Is that a negative or an indexing gap",
+   "when": "2026-09-15",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "Why he is absent, most likely",
+   "when": "2026-09-15",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "What to read instead",
+   "when": "2026-09-15",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "And what that did to the letter",
+   "when": "2026-09-15",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
+   "derived": "sets"
+  },
+  {
+   "src": "FreeBMD",
+   "what": "Why FreeBMD was the right place to start",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "freebmd"
+   ],
+   "note": "The London end — item 5, and a tool that will not be driven",
+   "derived": "sets"
+  },
+  {
+   "src": "FreeBMD",
+   "what": "Items 6 and 7, which were queued behind it",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "freebmd"
+   ],
+   "note": "The London end — item 5, and a tool that will not be driven",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The image viewer, for the Burgersdorp register sweep",
+   "when": "2026-09-14",
+   "outcome": "blocked",
+   "tags": [
+    "burgersdorp",
+    "familysearch"
+   ],
+   "note": "FamilySearch has signed out, and it fails in the worst possible way",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Items 8, 9, 12 and 19, which needed it",
+   "when": "2026-09-14",
+   "outcome": "blocked",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch has signed out, and it fails in the worst possible way",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "newspapers.eggsa.org · KOLBE",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "The same notice, tested rather than swallowed",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "newspapers.eggsa.org · BOOYZEN",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "newspapers.eggsa.org · MOUNTJOY",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "newspapers.eggsa.org · DASCHNER",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "daschner",
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "newspapers.eggsa.org · BOOIJSEN",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "DASCHNER · all repositories",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "daschner",
+    "naairs"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "MOUNTJOY · all repositories",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "naairs"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BARRY · all repositories",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "naairs"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BARRY AND BURGERSDORP · BARRY AND INDWE",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "burgersdorp",
+    "indwe",
+    "naairs"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BARRY AND BARKLY",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "naairs"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Eastern Cape · BARRY",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "eggsa"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Eastern Cape · MOUNTJOY",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "eggsa"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Gauteng · MOUNTJOY",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "eggsa"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Eastern Cape and Mpumalanga · DASCHNER",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "daschner",
+    "eggsa"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Gauteng · DASCHNER",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "daschner",
+    "eggsa"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Mpumalanga · KOLBE — the one this archive did not expect",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "eggsa"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Gauteng · KOLBE",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "eggsa"
+   ],
+   "note": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "How the graves site is organised",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "eggsa"
+   ],
+   "note": "eGGSA's gravestone photographs — and two of this family are in them",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Eastern Cape · surname BOOY",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "eggsa"
+   ],
+   "note": "eGGSA's gravestone photographs — and two of this family are in them",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "BOOYZEN Gert Jacobus 1870–1951 · BOOYZEN Isabella Fredericka nee Coetsee 1874–1930",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "eggsa"
+   ],
+   "note": "eGGSA's gravestone photographs — and two of this family are in them",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "The addresses, which have all just changed",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — the right country's papers, opened",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "The search, which does not work",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — the right country's papers, opened",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "What is actually there",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — the right country's papers, opened",
+   "derived": "sets"
+  },
+  {
+   "src": "eGGSA",
+   "what": "Graaff-Reinet Herald · 1852 Oct–Dec, 1853 Jan–Mar, Apr–Jun, Jul–Sep",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "graaff-reinet",
+    "eggsa"
+   ],
+   "note": "eGGSA's newspaper extracts — the right country's papers, opened",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "The NAAIRS address, resolved",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "NAAIRS, working again — and KOLBE had never been searched in it",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "RSA · KOLBE",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "naairs"
+   ],
+   "note": "NAAIRS, working again — and KOLBE had never been searched in it",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "RSA · KOLBE AND COLESBERG",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "colesberg",
+    "naairs"
+   ],
+   "note": "NAAIRS, working again — and KOLBE had never been searched in it",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "The other five of the six",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "NAAIRS, working again — and KOLBE had never been searched in it",
+   "derived": "sets"
+  },
+  {
+   "src": "The Gazette",
+   "what": "text=Kolbe · 1834–1838 · thegazette.co.uk",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "the"
+   ],
+   "note": "The London Gazette — free, and it had a document nobody here had looked for",
+   "derived": "sets"
+  },
+  {
+   "src": "The Gazette",
+   "what": "What the notice does not say",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The London Gazette — free, and it had a document nobody here had looked for",
+   "derived": "sets"
+  },
+  {
+   "src": "FreeBMD",
+   "what": "Deaths · surname Kolbe · 1845–1846 · England and Wales",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "freebmd"
+   ],
+   "note": "FreeBMD — never used before, and it had exactly one thing to give",
+   "derived": "sets"
+  },
+  {
+   "src": "FreeBMD",
+   "what": "What FreeBMD cannot do for this family, stated so nobody tries",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "freebmd"
+   ],
+   "note": "FreeBMD — never used before, and it had exactly one thing to give",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "The state of it before today",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast, opened properly for the first time",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Search syntax, established",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast, opened properly for the first time",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "LastName=Barry · FirstName=John · KeywordsPlace=Bilsdale, Yorkshire",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast, opened properly for the first time",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "FirstName=John Augustus · LastName=Barry · Keywords=Neagle",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast, opened properly for the first time",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "LastName=Barry · FirstName=John · YearOfBirth=1796 ±3 · KeywordsPlace=Yorkshire",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast, opened properly for the first time",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Newspapers: keywords=Booyzen, 107,989,139 pages",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "findmypast"
+   ],
+   "note": "FindMyPast, opened properly for the first time",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Keywords=Booyzen across all record sets",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "findmypast"
+   ],
+   "note": "FindMyPast, opened properly for the first time",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Full-text search, q.text=Barry Kolbe, South Africa",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Full-text search, q.text=Booyzen",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "RAK 2508, “Ewaton Book 2” — the land-register index, images 14 and 15",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "RAK 2384, Wonderboom South — the folios followed into a transfer register",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "“De List”, Military Records 1901–1903, image 51 of 69 — read from the image",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "SO/POW film 008019246 — what the nine items actually are",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Bisecting Item 1 to Nos. 18463–18465",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The B surnames in the May–June 1901 batch, checked",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The B pages of the 5 April–27 May 1901 batch, walked",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Tolosberg, looked up",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "tolosberg",
+    "familysearch"
+   ],
+   "note": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "q.givenName=Petrus Jacobus · q.surname=Booi* · 1786–1790 · South Africa",
+   "when": "2026-09-14",
+   "outcome": "blocked",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "q.surname=Booij* · q.fatherGivenName=Jan · q.motherSurname=de Beer",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "q.surname=Barry · q.fatherGivenName=John Augustus · South Africa",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The two 1848 Barry index entries, opened and compared",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Film 008119684, image 930 — the entry itself, read",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "q.motherSurname=Olivier · q.fatherGivenName=Hendrik Stef* — the three untraced daughters, again",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "olivier",
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Film 008119684, image 876 — John Augustus Barry II's font, 1847",
+   "when": "2026-09-14",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "q.surname=B*rry · q.motherSurname=Kolb* and Col* — every spelling the index uses",
+   "when": "2026-09-14",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The register that would settle it, located and measured",
+   "when": "2026-09-14",
+   "outcome": "blocked",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "familyhistory.bdm.qld.gov.au · subjectfamilyname=BOOYZEN · births, marriages and deaths",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "· subjectfamilyname=BOOYSEN",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "· MOUNTJOY, KOLBE, DASCHNER, PRETORIUS, OLIVIER, ENGELBRECHT, ENSLIN",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "kolbe",
+    "daschner",
+    "pretorius",
+    "olivier",
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "What the null actually closes",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "Boijens-9 and De_Beer-638 — following the contradiction one generation up",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "The Booysen surname index on WikiTree, and the parent-field search",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "Heese, Suid-Afrikaanse Geslagsregisters — a route that does not wait on the forum",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "Queensland Historical BDM Index",
+   "what": "de Villiers 1893, read in full instead of asked about",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "queensland"
+   ],
+   "note": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "derived": "sets"
+  },
+  {
+   "src": "WikiTree",
+   "what": "wikitree.com/genealogy/Booyzen — the whole surname index",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "wikitree"
+   ],
+   "note": "WikiTree, never once opened in this project until somebody asked",
+   "derived": "sets"
+  },
+  {
+   "src": "WikiTree",
+   "what": "Booysen-267 — Petrus Jacobus, b. bef 21 Sep 1788, d. 1 Sep 1876",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "wikitree"
+   ],
+   "note": "WikiTree, never once opened in this project until somebody asked",
+   "derived": "sets"
+  },
+  {
+   "src": "WikiTree",
+   "what": "Booysen-293 — Hendrik Stefanus, d. 11 May 1908 Rustenburg",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "rustenburg",
+    "wikitree"
+   ],
+   "note": "WikiTree, never once opened in this project until somebody asked",
+   "derived": "sets"
+  },
+  {
+   "src": "WikiTree",
+   "what": "Booyzen-12 and Booyzen-11 — Henry James and Jacobus Nicolaas",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "wikitree"
+   ],
+   "note": "WikiTree, never once opened in this project until somebody asked",
+   "derived": "sets"
+  },
+  {
+   "src": "WikiTree",
+   "what": "Booyzen-2 — Hendrik Stiphanis, 1830–1905, Graaff-Reinet",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "graaff-reinet",
+    "wikitree"
+   ],
+   "note": "WikiTree, never once opened in this project until somebody asked",
+   "derived": "sets"
+  },
+  {
+   "src": "WikiTree",
+   "what": "Henry James Booyzen's profile sources — “Form of information of death”",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "wikitree"
+   ],
+   "note": "WikiTree, never once opened in this project until somebody asked",
+   "derived": "sets"
+  },
+  {
+   "src": "WikiTree",
+   "what": "G2G — a public question, posted",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "wikitree"
+   ],
+   "note": "WikiTree, never once opened in this project until somebody asked",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYZEN — Cape depot only (KAB)",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYZEN — all repositories (RSA)",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "TAB MHG — the direct line",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "TAB MHG — two of the 1863 children",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "TAB MHG — both sons of the second marriage",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYZEN + KATHLEEN · BOOYZEN + CATHERINE",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "TAB CJC — Claims for Compensation, Burghers",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + WILLEM + HERMANUS",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · all repositories — three questions answered by absence",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYZEN + MINE / MINER / MYN",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · all repositories — three questions answered by absence",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYZEN + FOREST HILL / MAYFAIR",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "mayfair",
+    "naairs"
+   ],
+   "note": "National Archives · all repositories — three questions answered by absence",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BARRY + BARKLY (all repositories)",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "naairs"
+   ],
+   "note": "National Archives · all repositories — three questions answered by absence",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + CATHERINE / KATHLEEN (all repositories)",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · all repositories — three questions answered by absence",
+   "derived": "sets"
+  },
+  {
+   "src": "Anglo-Boer War Museum",
+   "what": "BOOYSEN",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "angloboer"
+   ],
+   "note": "Anglo-Boer War Museum · Cape Rebel register",
+   "derived": "sets"
+  },
+  {
+   "src": "Anglo-Boer War Museum",
+   "what": "BOOYZEN",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "angloboer"
+   ],
+   "note": "Anglo-Boer War Museum · Cape Rebel register",
+   "derived": "sets"
+  },
+  {
+   "src": "Anglo-Boer War Museum",
+   "what": "BARRY",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "angloboer"
+   ],
+   "note": "Anglo-Boer War Museum · Cape Rebel register",
+   "derived": "sets"
+  },
+  {
+   "src": "Anglo-Boer War Museum",
+   "what": "SCHOEMAN, D. W.",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "schoeman",
+    "angloboer"
+   ],
+   "note": "Anglo-Boer War Museum · Cape Rebel register",
+   "derived": "sets"
+  },
+  {
+   "src": "Anglo-Boer War Museum",
+   "what": "BOOYSEN",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "angloboer"
+   ],
+   "note": "Anglo-Boer War Museum · Joiners register",
+   "derived": "sets"
+  },
+  {
+   "src": "Anglo-Boer War Museum",
+   "what": "BOOYZEN",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "angloboer"
+   ],
+   "note": "Anglo-Boer War Museum · Joiners register",
+   "derived": "sets"
+  },
+  {
+   "src": "University of Cape Town — British Concentration Camps of the South African War",
+   "what": "BOOYZEN",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "university"
+   ],
+   "note": "University of Cape Town · British Concentration Camps of the South African War",
+   "derived": "sets"
+  },
+  {
+   "src": "University of Cape Town — British Concentration Camps of the South African War",
+   "what": "BARRY",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "university"
+   ],
+   "note": "University of Cape Town · British Concentration Camps of the South African War",
+   "derived": "sets"
+  },
+  {
+   "src": "University of Cape Town — British Concentration Camps of the South African War",
+   "what": "BOOYSEN + Catherine / Kathleen / John Barry / Willem Hermanus",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "barry",
+    "university"
+   ],
+   "note": "University of Cape Town · British Concentration Camps of the South African War",
+   "derived": "sets"
+  },
+  {
+   "src": "University of Cape Town — British Concentration Camps of the South African War",
+   "what": "BOOYZEN + Catharina",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "university"
+   ],
+   "note": "University of Cape Town · British Concentration Camps of the South African War",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "MOUNTJOY (re-run, no date filter)",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "MOUNTJOY, wills",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "MOUNTJOY, Colonial Office",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BARRY + RICHARD + PETER",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "JERPOINT",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "jerpoint",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BARRY + JERPOINT / BARRY + IVANHOE",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "jerpoint",
+    "ivanhoe",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + CONSTABLE · BOOYSEN + MIDDELBURG",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "middelburg",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "MOUNTJOY",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "MONTJOY",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "MOUNTJOY + HERKLAAS / HERCULES / WODEHOUSE / BARKLY",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "wodehouse",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYZEN",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOIJZEN",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "DE BEER + MAGDELENA",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BEER + MAGDELENA + ELISABETH",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + MAGDELENA",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOIJSEN + MAGDELENA",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + GERTHARDUS",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + GERHARDUS",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYZEN + GERHARDUS",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + LODEWIKUS / LODEWICUS",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "BOOYSEN + BEER",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Full-text search: “Johannes Mountjoy”",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "familysearch"
+   ],
+   "note": "FamilySearch",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Probate collection, MONTJOY / MOUNTJOY",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "familysearch"
+   ],
+   "note": "FamilySearch",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Marriage, MONTJOY 1817",
+   "when": "2026-09-09",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "familysearch"
+   ],
+   "note": "FamilySearch",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "MOUNTJOY, born about 1782 ±5",
+   "when": "2026-09-09",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "findmypast"
+   ],
+   "note": "FindMyPast · world records",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "TAB MHG 2945/44 — Anna Johanna Maria Booyzen, born Pretorius",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "pretorius",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal estate films",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "TAB MHG 1095/48, 5155/51, 769/52, 10/57, 3734/46, 52653, O/2899",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal estate films",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Surname BOOYZEN, exact, collection 2520237 (Transvaal probate, 1869–1961)",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal probate index, by collection",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Surname DASCHNER, exact, same collection",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "daschner",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal probate index, by collection",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Given name MOUNTJOY, same collection",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal probate index, by collection",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Surname DASCHNER — Minnie Bertha Sophia",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "daschner",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal probate index, by collection",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "BOOYSEN + PETRUS JACOBUS, exact surname, collection 2520237",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal probate, reading the whole surname",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "BOOYZEN, exact surname, same collection, second page of results",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal probate, reading the whole surname",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "TAB MHG O/2899 — Jan Gerhardus Lodewikus Booyzen, 1885",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Transvaal probate, reading the whole surname",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "MOUNTJOY, exact, collection 2517051 (Cape probate, 1822–1990)",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Cape probate, the whole surname at once",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "MOUNTJOY + Hercules Johannes",
+   "when": "2026-09-10",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "familysearch"
+   ],
+   "note": "FamilySearch · Cape probate, the whole surname at once",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Film 007735716, images 766–771, read directly",
+   "when": "2026-09-10",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · Cape probate, the whole surname at once",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Film access across the whole collection, 762 films, 007805260 to 007831001",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · can the last six Transvaal estates be read at all?",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "TAB MHG 3734/46, 1095/48, 5155/51, 769/52, 10/57",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · can the last six Transvaal estates be read at all?",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "TAB MHG 52653 (1923) — in the open half",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · can the last six Transvaal estates be read at all?",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "q.filmNumber as a search term",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · can the last six Transvaal estates be read at all?",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "BOOYZEN, exact, collection 2517051 (Cape probate, 1822–1990)",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the whole BOOYZEN surname in the CAPE probate collection",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Estate 84992, read from the image",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · the whole BOOYZEN surname in the CAPE probate collection",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The oldest Booyzen in the Cape probate series",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the whole BOOYZEN surname in the CAPE probate collection",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "MOOC 7/1/268: 87 (the 1845 will) and MOOC 13/1/221: 6 (the 1866 account)",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch · the whole BOOYZEN surname in the CAPE probate collection",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "What IS the Cape equivalent of the Transvaal CJC?",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "NAAIRS · the Cape compensation series, found and then tested",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "KAB · BOOYZEN and BOOYSEN against COMPENSATION and LOSSES",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "naairs"
+   ],
+   "note": "NAAIRS · the Cape compensation series, found and then tested",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "The control — is the Commission indexed by claimant at all?",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "naairs"
+   ],
+   "note": "NAAIRS · the Cape compensation series, found and then tested",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "NAAIRS wildcards",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "naairs"
+   ],
+   "note": "NAAIRS · the Cape compensation series, found and then tested",
+   "derived": "sets"
+  },
+  {
+   "src": "NAAIRS",
+   "what": "The NAAIRS address",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "naairs"
+   ],
+   "note": "NAAIRS · the Cape compensation series, found and then tested",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Johanna Catharina Mountjoy, membership Indwe 23 July 1907",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "mountjoy",
+    "indwe",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Indwe congregation, and Barkly East by place",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Willem Hermanus Booyzen of Indwe, after September 1910",
+   "when": "2026-09-13",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "indwe",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Indwe congregation, and Barkly East by place",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "BARRY ranked by place — Barkly East",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "barkly-east",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Indwe congregation, and Barkly East by place",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Where John Barry's 1915 estate was administered",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Indwe congregation, and Barkly East by place",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "JOHN BARRY, died 1903, Barkly East",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "barkly-east",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Cape civil death registers, Barkly East",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "HARRIET LOUISA BARRY, died 1912",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Cape civil death registers, Barkly East",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "RICHARD PIETER KOLBE BARRY — whose son?",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "barry",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Cape civil death registers, Barkly East",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The children of Hendrik Nicholaas Barry and Anna Johanna Maria Schoeman",
+   "when": "2026-09-13",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "schoeman",
+    "familysearch"
+   ],
+   "note": "FamilySearch · the Cape civil death registers, Barkly East",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Westminster Rate Books 1634–1900, surname Kolbe",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Westminster land tax, 1829",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "England Births & Baptisms, surname Kolbe, London 1790–1850",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "George Augustus Kolbe's own baptism, as a control",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Frederick Kolbe, baptised Westminster 16 Dec 1816",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Henry Kolbe, baptised Southwark 2 Feb 1800",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "England & Wales Non-Conformist Burials, surname Kolbe",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "England & Wales Non-Conformist BAPTISMS, surname Kolbe",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Westminster Burials, surname Kolbe",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Old Bailey Court Records, surname Kolbe",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Westminster Baptisms — the county set, not the FamilySearch index",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Westminster Marriages, surname Kolbe",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "The GRO marriage index, surname Kolbe, London 1825–1875",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast, day one — the Kolbes of Soho",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "British Army Service Records, surname Mountjoy, no year",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Regiment = “21st Dragoons”",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Regiment = “21st Regt Of Light Dragoons”",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Regiment = “21st Light Dragoons” and “21st Hussars”",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "All four strings swept in full — 1,110 records",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Controls: WO 23/136 (1806–07) and WO 23/147 (1817–26)",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Pre-1860 Mountjoys in the whole set",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Why the negative is not a surprise",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "What the WO 97 string actually resolves to",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Margaret Downing, born London 23 Feb 1803",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "downing",
+    "findmypast"
+   ],
+   "note": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Margaret Downing in the Roman Catholic banns of St Patrick's, Soho Square",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "downing",
+    "findmypast"
+   ],
+   "note": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "John Barry buried at St Hilda's, Bilsdale, 3 January 1853",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "John Augustus Barry, a Cork baptism to a mother “born Neagle”",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "The four South African surnames",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "R_177176049779, cited here for Petrus Jacobus Booysen's 1812 birth",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "findmypast"
+   ],
+   "note": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Three David Schalk Booysens, prisoners of war, 1901",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "booyzen",
+    "booysens",
+    "findmypast"
+   ],
+   "note": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "derived": "sets"
+  },
+  {
+   "src": "The Gazette",
+   "what": "thegazette.co.uk, text=Kolbe, 1815–1850",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "the"
+   ],
+   "note": "The London Gazette, searched again with the dates widened",
+   "derived": "sets"
+  },
+  {
+   "src": "The Gazette",
+   "what": "12 May 1824, issue 18027 p.796",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The London Gazette, searched again with the dates widened",
+   "derived": "sets"
+  },
+  {
+   "src": "The Gazette",
+   "what": "9 October and 16 November 1824, issues 18069 p.1668 and 18080 p.1900",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The London Gazette, searched again with the dates widened",
+   "derived": "sets"
+  },
+  {
+   "src": "The Gazette",
+   "what": "21 March 1845, issue 20455 p.930",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The London Gazette, searched again with the dates widened",
+   "derived": "sets"
+  },
+  {
+   "src": "The Gazette",
+   "what": "The same search for the other four surnames, 1800–1920",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "the"
+   ],
+   "note": "The London Gazette, searched again with the dates widened",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Barry in the 1841 census, Yorkshire (North Riding)",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the censuses finish open question 6",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Barry in the 1851 census, Yorkshire (North Riding)",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the censuses finish open question 6",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "The only John Barry born 1796 in the North Riding",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "barry",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the censuses finish open question 6",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Holly Bower, Bilsdale",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the censuses finish open question 6",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "A note on how the place filter behaves",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the censuses finish open question 6",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Kolbe in Prisoners of War 1715–1945, South Africa",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the Boer prisoner-of-war list, WO 108/368",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Booysen and Booyens in the same set",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "booyzen",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the Boer prisoner-of-war list, WO 108/368",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Mountjoy in the same set",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the Boer prisoner-of-war list, WO 108/368",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "A transcription rule that will cost somebody a day",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the Boer prisoner-of-war list, WO 108/368",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "FamilySearch personas API, Kolbe, London 1806–1820",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "familysearch"
+   ],
+   "note": "FamilySearch — the Savoy German Lutheran baptism register",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "FamilySearch catalogue, keyword “Savoy German Lutheran”",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch — the Savoy German Lutheran baptism register",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "Opening film 008004264 on a signed-in account",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch — the Savoy German Lutheran baptism register",
+   "derived": "sets"
+  },
+  {
+   "src": "FamilySearch",
+   "what": "The catalogue search URL that works",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "familysearch"
+   ],
+   "note": "FamilySearch — the Savoy German Lutheran baptism register",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“Kolbe” + “Conduit-street”, 1832–1836",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“Kolbe” + “tailor”, 1820–1850",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“Kolbe” + “Soho”, 1795–1832",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "The May 1824 dissolution",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“Nautilus” + “settlers”, 1819–1821",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“Mountjoy” + “Cradock”",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "mountjoy",
+    "cradock",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "What the newspaper engine is, for the next session",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“Kolbe” + “Colesberg” and “Kolbe” + commando, 1900–1902",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "colesberg",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“G. A. Kolbe”, 1910–1920",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "The coverage facet, and the limit it shows",
+   "when": "2026-09-16",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "“21st Light Dragoons” + “Cape”, 1806–1825",
+   "when": "2026-09-16",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "The full WO 12 run for the 21st Light Dragoons",
+   "when": "2026-09-17",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue, gone back to — and it found an error in this archive's own letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "WO 12/1430, the piece this archive put in a letter to Kew",
+   "when": "2026-09-17",
+   "outcome": "nothing",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue, gone back to — and it found an error in this archive's own letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "Soldiers' description books for the regiment",
+   "when": "2026-09-17",
+   "outcome": "nothing",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue, gone back to — and it found an error in this archive's own letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "The departure date, checked against the catalogue",
+   "when": "2026-09-17",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue, gone back to — and it found an error in this archive's own letter",
+   "derived": "sets"
+  },
+  {
+   "src": "The National Archives",
+   "what": "A control on the search itself",
+   "when": "2026-09-17",
+   "outcome": "yield",
+   "tags": [
+    "the"
+   ],
+   "note": "The Kew catalogue, gone back to — and it found an error in this archive's own letter",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Surname KOLBE in the 1841 census, England Wales and Scotland",
+   "when": "2026-09-17",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "The whole English Kolbe family, counted rather than sampled",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "The same search, 1851 / 1861 / 1871",
+   "when": "2026-09-17",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "The whole English Kolbe family, counted rather than sampled",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Every KOLBE death registered in England and Wales, 1837–1867",
+   "when": "2026-09-17",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "The whole English Kolbe family, counted rather than sampled",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Every KOLBE marriage registered in England and Wales, 1837–1867",
+   "when": "2026-09-17",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "findmypast"
+   ],
+   "note": "The whole English Kolbe family, counted rather than sampled",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "What the two tables say together",
+   "when": "2026-09-17",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "The whole English Kolbe family, counted rather than sampled",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "And the thing that got harder",
+   "when": "2026-09-17",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "The whole English Kolbe family, counted rather than sampled",
+   "derived": "sets"
+  },
+  {
+   "src": "SOAS Archives — CWM",
+   "what": "Does SOAS hold anything in George Augustus Kolbe’s own hand?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "soas"
+   ],
+   "note": "The CWM archive at SOAS — searched, and it is item-level",
+   "derived": "sets"
+  },
+  {
+   "src": "SOAS Archives — CWM",
+   "what": "Is the correspondence for the year of the accusation identifiable?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "soas"
+   ],
+   "note": "The CWM archive at SOAS — searched, and it is item-level",
+   "derived": "sets"
+  },
+  {
+   "src": "SOAS Archives — CWM",
+   "what": "Is there a portrait of a Kolbe at SOAS?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "kolbe",
+    "soas"
+   ],
+   "note": "The CWM archive at SOAS — searched, and it is item-level",
+   "derived": "sets"
+  },
+  {
+   "src": "SOAS Archives — CWM",
+   "what": "Does the archive corroborate the F.W. Kolbe resolution?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "soas"
+   ],
+   "note": "The CWM archive at SOAS — searched, and it is item-level",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Is this the same circular trap as the MyHeritage result?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Does it agree with anything this archive can check?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Is it therefore evidence?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Does it settle the Kolbe–McCabe question this archive raised?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "kolbe",
+    "mccabe",
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Is this Frederik Fortunatus one of the men this archive already holds?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Had this archive ever opened the FamilySearch FAMILY TREE?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Does the FamilySearch tree match documents held here?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Geni",
+   "what": "Where does it lose?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "geni"
+   ],
+   "note": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Is there a Downing–Pooley marriage before civil registration?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "downing",
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Does the county fit?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Can it be tied to Margaret Downing?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "downing",
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Was the name that launched the search even right?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Does the FindMyPast `Keywords` filter actually filter?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "And under KING, the other surname the trees give her?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Is there a better filter field than Keywords for a marriage?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Is there a London baptism for Margaret Georgina Elizabeth Downing in 1803?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "downing",
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Is DOWNING a West Country surname, as the Welcombe case would like it to be?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "downing",
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Did the Welcombe couple stay in Devon?",
+   "when": "2026-09-20",
+   "outcome": "nothing",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
+  },
+  {
+   "src": "Findmypast",
+   "what": "Where did “Pooley” come from, then?",
+   "when": "2026-09-20",
+   "outcome": "yield",
+   "tags": [
+    "findmypast"
+   ],
+   "note": "FindMyPast swept for a Downing–Pooley marriage",
+   "derived": "sets"
   }
  ]
 }

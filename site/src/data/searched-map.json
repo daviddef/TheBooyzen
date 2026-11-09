@@ -1,0 +1,825 @@
+{
+ "note": "Which source each set in searched.json was run against, so that the flat `searched` list Record Atlas imports can be DERIVED from `sets` rather than written twice. A set is listed here by its title (g) and date (d). `src` names the one source the whole set was run against — the provider's own name as Record Atlas writes it, or the real name where Atlas has no provider yet. `skip` says why a set contributes no flat rows: `not-a-search` (an audit, a reading of this archive's own files, an answer received) or `source-not-named` (the title does not name ONE source, and the rows do not either, so none is guessed). Nothing is inferred from the rows' wording. tools/searched_flat.py derives the rows and fails the build if a set has no entry here or if the committed flat rows differ from what this map derives.",
+ "sets": [
+  {
+   "g": "FamilySearch signed back in — and the two missing Barry children fell in under an hour",
+   "d": "16 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "The Vaalbank school file finished, and the Johannesburg directories priced out",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The gravestone collection swept, with the controls run first",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The camps database at source, the voters' rolls, and where the paywall falls on an address",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Cape estate index for Mountjoy, a surname sweep abandoned, and the 1931 six given parents",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The memoir did not need reading, and the ship did",
+   "d": "15 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Natal opened, the Transvaal swept for the other surnames, and a link this archive nearly invented",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Kew catalogue searched before the Kew letter was written — and it changed the letter",
+   "d": "15 Sep 2026",
+   "src": "The National Archives"
+  },
+  {
+   "g": "The Free State depot swept properly — and a library catalogue makes the Settler a missionary",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "A check for sources that have gone dark — and it called three live ones dead",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Volume 3 answers Anna Catharina Slier, and shows this archive had two men under one name",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "A memoirist in Burgersdorp answers Question 12, and the atlas gets the gate it never had",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Baptism Finder, the Land & Deeds finder and the marriage transcriptions",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The MOOC8 inventories — opened to look for Mountjoys, and the Booijsens were in them",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "gendatabase.com, which this project had never once opened",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Two answers in one morning — Pretoria on binding, and the forum on Question 0",
+   "d": "15 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Parts 2 and 3 of the Cape genealogies, downloaded at last — and the name David Schalk has a source",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Free State papers, worked properly — McCabe named, the farm placed, and a son of the twelve",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The seven Marico claims read to the bottom — and a farm school nobody had asked for",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Nine places put on the atlas — items 4 and 6",
+   "d": "15 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The Friend of the Free State — the paper that printed the obituary first",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Margaret Downing — item 11, answered by a photograph already in this archive",
+   "d": "15 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The Werdmuller question, closed on dates — items 12 and 13",
+   "d": "15 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The Free State archives, opened for the first time",
+   "d": "15 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The London end — item 5, and a tool that will not be driven",
+   "d": "14 Sep 2026",
+   "src": "FreeBMD"
+  },
+  {
+   "g": "The Pietermaritzburg address, checked before anything is posted",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "FamilySearch has signed out, and it fails in the worst possible way",
+   "d": "14 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "The 184 enumerated properly — and seven Booyzens claiming war compensation in Marico",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Piet Retief and Wakkerstroom stones, read",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The other forty Kolbe newspaper hits — and the Settler's eldest son gets a life",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The newspapers, worked properly — and the Settler's fourth daughter comes back",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "G2G answers again — and takes away the only document that names the top of the line",
+   "d": "14 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The Burgersdorp register, swept image by image — the standing errand of this project",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The G2G question was answered — twice, in eighteen hours, by a stranger",
+   "d": "14 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Tolosberg on Jeppe's map of 1899 — the hill three Booyzens were taken on",
+   "d": "14 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "eGGSA's newspaper extracts — and the Settler's obituary, found in a search that took four minutes",
+   "d": "14 Sep 2026",
+   "src": "eGGSA"
+  },
+  {
+   "g": "The 184 RSA Booyzen documents, enumerated for the first time",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "BARRY, MOUNTJOY and DASCHNER on NAAIRS — the first time these three surnames have been asked",
+   "d": "14 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "The rest of the Gauteng Booyzen stones, enumerated at last",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "BARRY, MOUNTJOY and DASCHNER on eGGSA — never run before today",
+   "d": "14 Sep 2026",
+   "src": "eGGSA"
+  },
+  {
+   "g": "The four Middelburg stones, located a day ago and read today",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Silverton pillar, matched name by name against the 1940 estate",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Wakkerstroom proved a second time — not by a name but by a household",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The entity audit — sweeping for other things that travel through data",
+   "d": "14 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Wakkerstroom PROVED — a man who carries both family names",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Cape genealogical codes, resolved — and G2G answers back twice more",
+   "d": "14 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The Wakkerstroom convergence, tested",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The last two provinces — Northern Cape and Mpumalanga",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Gauteng gravestones — the Johannesburg and Pretoria family, photographed",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "eGGSA's gravestone photographs — and two of this family are in them",
+   "d": "14 Sep 2026",
+   "src": "eGGSA"
+  },
+  {
+   "g": "eGGSA's newspaper extracts — the right country's papers, opened",
+   "d": "14 Sep 2026",
+   "src": "eGGSA"
+  },
+  {
+   "g": "Gravestones — NAAIRS's GEN database, and eGGSA",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "NAAIRS, working again — and KOLBE had never been searched in it",
+   "d": "14 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "The Savoy registers, located — and RootsChat, which could not be used",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The London Gazette — free, and it had a document nobody here had looked for",
+   "d": "14 Sep 2026",
+   "src": "The Gazette"
+  },
+  {
+   "g": "FreeBMD — never used before, and it had exactly one thing to give",
+   "d": "14 Sep 2026",
+   "src": "FreeBMD"
+  },
+  {
+   "g": "The London end, opened — Kolbe and Downing, not Montjoy",
+   "d": "14 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "FindMyPast, opened properly for the first time",
+   "d": "14 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "FamilySearch Full-Text — four South African collections this archive had never opened",
+   "d": "14 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "FamilySearch, back after two days — the queued queries, and one that paid",
+   "d": "14 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "Queensland's historical index — did any branch reach Australia before the living generation?",
+   "d": "13 Sep 2026",
+   "src": "Queensland Historical BDM Index"
+  },
+  {
+   "g": "WikiTree, never once opened in this project until somebody asked",
+   "d": "13 Sep 2026",
+   "src": "WikiTree"
+  },
+  {
+   "g": "Three questions put to the index directly — and one that answered back",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "David Schalk Booysen after November 1905 — and the rest of the 1876 eight",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Following the estate numbers out of a marriage register's last column",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Johannesburg Booyzens who are NOT claimed",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Grahamstown depot, swept for Barry, Mountjoy and Booyzen",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Marico question, re-run on the grandsons — and the reason for dismissing it withdrawn",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Johannesburg cemetery registers — the whole family, swept",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Ockert Johannes Stephanus Booysen (1852–1921) — an estate of his own",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "National Archives · ALL repositories (RSA) — the search this archive should have been running all along",
+   "d": "10 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "National Archives · all repositories — three questions answered by absence",
+   "d": "10 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "Anglo-Boer War Museum · Cape Rebel register",
+   "d": "9 Sep 2026",
+   "src": "Anglo-Boer War Museum"
+  },
+  {
+   "g": "Anglo-Boer War Museum · Joiners register",
+   "d": "9 Sep 2026",
+   "src": "Anglo-Boer War Museum"
+  },
+  {
+   "g": "University of Cape Town · British Concentration Camps of the South African War",
+   "d": "9 Sep 2026",
+   "src": "University of Cape Town — British Concentration Camps of the South African War"
+  },
+  {
+   "g": "National Archives · Cape Town Archives Repository — the searches this archive got wrong first time",
+   "d": "9 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "National Archives · Cape Town Archives Repository (NAAIRS)",
+   "d": "9 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "FamilySearch",
+   "d": "9 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "Anglo-Boer War Museum · Farm List",
+   "d": "9 Sep 2026",
+   "src": "Anglo-Boer War Museum"
+  },
+  {
+   "g": "First World War service records",
+   "d": "9 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Master of the Supreme Court · the office's own index of death notices, 1834–1912",
+   "d": "9 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "FindMyPast · world records",
+   "d": "9 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "FamilySearch · Transvaal estate films",
+   "d": "10 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "FamilySearch · Transvaal probate index, by collection",
+   "d": "10 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "FamilySearch · Transvaal probate, reading the whole surname",
+   "d": "10 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "FamilySearch · Cape probate, the whole surname at once",
+   "d": "10 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "The register, used as a search tool for the first time",
+   "d": "10 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Transvaal probate index, read against itself",
+   "d": "13 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "FamilySearch · can the last six Transvaal estates be read at all?",
+   "d": "13 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "FamilySearch · the whole BOOYZEN surname in the CAPE probate collection",
+   "d": "13 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "The Marico question, tested on names",
+   "d": "13 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "NAAIRS · the Cape compensation series, found and then tested",
+   "d": "13 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "The Cape Master's Index of Estates, 1834–1912 — read at Barry",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "FamilySearch · the Indwe congregation, and Barkly East by place",
+   "d": "13 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "FamilySearch · the Cape civil death registers, Barkly East",
+   "d": "13 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "An audit of this archive's own negatives",
+   "d": "13 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Grahamstown, the depot nobody had searched",
+   "d": "13 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "FindMyPast, day one — the Kolbes of Soho",
+   "d": "16 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "FindMyPast — the 21st Light Dragoons, and a regiment indexed four ways",
+   "d": "16 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "FindMyPast — four more negatives, and a citation of this archive's own that does not open",
+   "d": "16 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "The London Gazette, searched again with the dates widened",
+   "d": "16 Sep 2026",
+   "src": "The Gazette"
+  },
+  {
+   "g": "FindMyPast — the censuses finish open question 6",
+   "d": "16 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "FindMyPast — the Boer prisoner-of-war list, WO 108/368",
+   "d": "16 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "FamilySearch — the Savoy German Lutheran baptism register",
+   "d": "16 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "FindMyPast — the British and Irish newspapers, 108 million pages",
+   "d": "16 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "The 21st Light Dragoons at the Cape, read in the London papers",
+   "d": "16 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Kew catalogue, gone back to — and it found an error in this archive's own letter",
+   "d": "17 Sep 2026",
+   "src": "The National Archives"
+  },
+  {
+   "g": "The whole English Kolbe family, counted rather than sampled",
+   "d": "17 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "The Burgersdorp register finished — images 605 to 818, and the API that replaced the eye",
+   "d": "17 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Natal estate index — and the family turns out to have moved to Utrecht",
+   "d": "17 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The death form of Henry James Booyzen, opened at last",
+   "d": "17 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Indwe and Barkly East past 1910 — and the sweep that mostly confirmed what was here",
+   "d": "17 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "MSB 751 — the letter arrived, and it is the first thing he wrote himself",
+   "d": "20 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The DSAB draft on George Augustus Kolbe — and the eleven sources it names",
+   "d": "20 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "MSB 751 read again, from the file rather than from a preview",
+   "d": "20 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Sibree’s Register of LMS Missionaries — found free, and it is the best source on him yet",
+   "d": "20 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Nautilus roll, and the story from The Mirror",
+   "d": "20 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The CWM archive at SOAS — searched, and it is item-level",
+   "d": "20 Sep 2026",
+   "src": "SOAS Archives — CWM"
+  },
+  {
+   "g": "A Geni profile for the Commandant’s son — tested, not adopted",
+   "d": "20 Sep 2026",
+   "src": "Geni"
+  },
+  {
+   "g": "FindMyPast swept for a Downing–Pooley marriage",
+   "d": "20 Sep 2026",
+   "src": "Findmypast"
+  },
+  {
+   "g": "The tailor’s own marriage — a controlled negative, and an Act of Parliament",
+   "d": "20 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "A forty-one page Kolbe register report on a Barry family website, never opened here",
+   "d": "21 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The two gravestone databases this archive had never opened — one is dead and the other cannot see South Africa",
+   "d": "21 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Casmier and Rector — testing the two names the 2012 compiled report has and this archive does not",
+   "d": "21 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The tailor's marriage, in a German index this archive had written off — and a place filter that answers 0 to everything",
+   "d": "21 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Casmier and Rector, answered out of this archive's own shelves",
+   "d": "21 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Nienaber 1947 — the one page that would carry the General's pedigree, and it is not digitised",
+   "d": "21 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The two Kolbe–McCabe marriage images, read at last",
+   "d": "27 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "The Commandant's children, searched on their mother's name",
+   "d": "27 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Colesberg font for Johan Casimir — asked for, and not there",
+   "d": "27 Sep 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "The same URL, 3,499 results and then 0, forty minutes apart",
+   "d": "27 Sep 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "NAAIRS, swept at last for DASCHNER and MOUNTJOY — and there are now two databases",
+   "d": "27 Sep 2026",
+   "src": "NAAIRS"
+  },
+  {
+   "g": "A letter about the Barrys that sat unread in an inbox for eighteen years",
+   "d": "28 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Three Barry letters from 1999, in David's own files",
+   "d": "28 Sep 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "Pama's Barry migration, tested against this archive's own fonts",
+   "d": "7 Oct 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The Irish end of John Augustus Barry, with seven days of subscription left",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Colesberg marriage found at last, under a spelling nobody searched",
+   "d": "9 Oct 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "The 1861 font read, and it was never a return journey",
+   "d": "9 Oct 2026",
+   "src": "FamilySearch"
+  },
+  {
+   "g": "Sources given ids, and the silent failure the component was built around",
+   "d": "9 Oct 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The other thirty-seven pages, and the twenty-five that should say nothing",
+   "d": "9 Oct 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The publishing debt closed, and two gates that were being told the truth and could not hear it",
+   "d": "9 Oct 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The estates are not behind a counter. They are filmed, indexed by name, and free",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "TAB MHG 40293 is read. It names his parents, and the index was wrong about where he died",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "James Montjoy's death notice, read a second time by somebody who did not know it had been read",
+   "d": "9 Oct 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The ten Mountjoy estates, opened one by one — and two of them were this archive's own daughters",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The last six of the ten, and the ten turn out to be two different Mountjoy families",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Pretoria order, tested against the film — and a collection that stops before two of its references begin",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The same mistake twice in one day, caught by a citation list on a page I was not reading",
+   "d": "9 Oct 2026",
+   "skip": "not-a-search"
+  },
+  {
+   "g": "The Cape Mounted Rifles were never his regiment, and the subscription is signed out with seven days left",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The Commandant's eldest, found by asking the index for a father instead of a name",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Which indexes will answer a question about parents, and which cannot be asked it at all",
+   "d": "9 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Two public routes into a borrowable scan, both closed, and the control that proves it",
+   "d": "10 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "A 1973 local history turns out to be the memorial of a drowned valley — which is why the portrait is in it",
+   "d": "10 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "The inbox again: two death notices already bought, and a supplier this archive has never listed",
+   "d": "10 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Griqua Records read without buying it, and without borrowing it",
+   "d": "11 Oct 2026",
+   "src": "Internet Archive"
+  },
+  {
+   "g": "The same move again, on the volume row 137 stopped at",
+   "d": "11 Oct 2026",
+   "src": "Internet Archive"
+  },
+  {
+   "g": "Volume I, page 433 — the son's entry answers the father's",
+   "d": "11 Oct 2026",
+   "src": "Internet Archive"
+  },
+  {
+   "g": "The rest of the family, swept through the same dictionary",
+   "d": "11 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "A free 1876 history of the Free State, and the Commandant is in it seventeen times",
+   "d": "11 Oct 2026",
+   "src": "Internet Archive"
+  },
+  {
+   "g": "Two more Kolbes in the same free book, and neither is adopted",
+   "d": "11 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "Four more free books, and two of them had him",
+   "d": "11 Oct 2026",
+   "src": "Internet Archive"
+  },
+  {
+   "g": "The Society's own magazine printed him, and it is free",
+   "d": "11 Oct 2026",
+   "src": "Internet Archive"
+  },
+  {
+   "g": "A Kolbe in Westminster paying for the mission at Philippolis",
+   "d": "11 Oct 2026",
+   "skip": "source-not-named"
+  },
+  {
+   "g": "FindMyPast has no South African records except a war",
+   "d": "12 Oct 2026",
+   "src": "Findmypast"
+  }
+ ]
+}
