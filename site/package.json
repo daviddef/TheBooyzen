@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev --port 4324",
     "atlas": "python3 ../tools/atlas.py",
-    "build": "npm run check:pin && npm run living:flags && npm run check:decisions && npm run check:letters && npm run check:dates && npm run check:searched && npm run check:readnames && npm run atlas && npm run namefold && npm run ra && astro build && npm run autolink && npm run sitemap && npm run check:book && npm run check:lines && npm run check:living && npm run check:living2 && npm run check:families && npm run check:prose && npm run check:kin && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav && npm run check:links && npm run check:story && npm run check:directline && npm run check:familyribbon && npm run check:ribbonflags && npm run check:rec && npm run check:standard && npm run check:era-ground && npm run check:era && npm run check:era:selftest",
+    "build": "npm run check:pin && npm run living:flags && npm run check:decisions && npm run check:letters && npm run check:dates && npm run check:searched && npm run check:readnames && npm run atlas && npm run namefold && npm run ra && astro build && npm run autolink && npm run sitemap && npm run check:book && npm run check:pulse && npm run check:lines && npm run check:living && npm run check:living2 && npm run check:families && npm run check:prose && npm run check:kin && npm run check:templates && npm run check:kit && npm run check:places && npm run check:evidence && npm run check:corrections && npm run check:retired && npm run check:worklist && npm run check:covers && npm run check:pages && npm run check:inline && npm run check:rows && npm run check:nav && npm run check:links && npm run check:story && npm run check:directline && npm run check:familyribbon && npm run check:ribbonflags && npm run check:rec && npm run check:standard && npm run check:era-ground && npm run check:era && npm run check:era:selftest",
     "build:pages": "npm run living:flags && npm run atlas && astro build && npm run sitemap",
     "preview": "astro preview --port 4324",
     "autolink": "python3 ../tools/namesindex.py --dist \"${ARCHIVE_OUT:-dist}\" --out .autolink && python3 node_modules/@daviddef/archive-kit/kit/tools/autolink.py --dist \"${ARCHIVE_OUT:-dist}\" --index .autolink/names-index.json --living .autolink/living.json --allow-prefix /people/ --allow-prefix /who/ --allow-prefix /search/",
@@ -17,6 +17,7 @@
     "check:ribbonflags": "python3 ../tools/ribbonflags.py --check --quiet --merged ../private/ribbonflags && python3 node_modules/@daviddef/archive-kit/kit/tools/checkribbonflags.py --snapshot src/data/era-snapshot.json --story ../private/ribbonflags/story.json --family-lines ../private/ribbonflags/family-lines.json --alias src/data/flag-places.json --countries src/data/flag-countries.json --dist \"${ARCHIVE_OUT:-dist}\" && python3 node_modules/@daviddef/archive-kit/kit/tools/checkribbonflags.py --selftest",
     "check:flagfit": "node ../tools/flagfit.mjs",
     "sitemap": "python3 node_modules/@daviddef/archive-kit/kit/tools/sitemap.py --dist \"${ARCHIVE_OUT:-dist}\"",
+    "check:pulse": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkpulse.py --dist \"${ARCHIVE_OUT:-dist}\"",
     "check:book": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkbook.py --dist \"${ARCHIVE_OUT:-dist}\" --book src/data/book.json",
     "check:lines": "python3 ../tools/lines.py --check --living-out ../private/lines-living.json && python3 node_modules/@daviddef/archive-kit/kit/tools/checklines.py --lines src/data/lines.json --dist \"${ARCHIVE_OUT:-dist}\" --config standard.json --living ../private/lines-living.json && python3 node_modules/@daviddef/archive-kit/kit/tools/checklines.py --selftest",
     "check:kit": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkarchive.py --dist \"${ARCHIVE_OUT:-dist}\"",
@@ -53,7 +54,7 @@
     "check:standard": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkstandard.py --dist \"${ARCHIVE_OUT:-dist}\" --index .autolink/names-index.json --config standard.json --living .autolink/living.json --floor .standardfloor.json --strict-config"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#24def5394a25bf39e030b4818498434dc3672263",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#b18bd3e41e2907a0cf2069706724efb32a340f2c",
     "astro": "^5.18.2"
   },
   "devDependencies": {
