@@ -54,7 +54,7 @@
     "check:standard": "python3 node_modules/@daviddef/archive-kit/kit/tools/checkstandard.py --dist \"${ARCHIVE_OUT:-dist}\" --index .autolink/names-index.json --config standard.json --living .autolink/living.json --floor .standardfloor.json --strict-config"
   },
   "dependencies": {
-    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#50235814381b58a6ea9d68c1fc11b123953c154a",
+    "@daviddef/archive-kit": "github:daviddef/TheArchiveKit#3048668c8ff3302b4ccfc85088b60d561221cfa6",
     "astro": "^5.18.2"
   },
   "devDependencies": {
