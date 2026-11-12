@@ -4,7 +4,7 @@ import { versioner } from "@daviddef/archive-kit/lib/assetv.js";
 /* every public asset gets a fingerprint, so a fix is never served stale */
 const v = versioner();
 import { u } from "../lib/url.js";
-import { navGroups } from "../lib/research-menu.js";
+import { MENU } from "../lib/site-menu.js";
 import SiblingArchives from "@daviddef/archive-kit/components/SiblingArchives.astro";
 import SkipLink from "@daviddef/archive-kit/components/SkipLink.astro";
 /* THE BOOK (17 October 2026): every page is a chapter, or belongs to one by prefix, in the order of
@@ -17,8 +17,6 @@ import SearchPop from "@daviddef/archive-kit/components/SearchPop.astro";
 import { pulse } from "../lib/pulse.js";
 import book from "../data/book.json";
 import { nLiving, STANDARD } from "../lib/living.js";
-import famData from "../data/families.json";
-const familyPages = famData.families;
 /* THE MOST-PUBLISHED SENTENCE IN THIS ARCHIVE, AND IT WAS ASSERTED.
  *
  * 16 OCTOBER 2026: the count below is now read from living.json, which
@@ -68,27 +66,8 @@ const { title, description = "", dek, eyebrow, bare, noindex, living: livingPage
 const dekHtml = dek ? md(dek) : null;
 const dekText = dek ? plain(dek) : "";
 const SITE = "The Booyzen Archive";
-const nav = [
-  ["Start", [["/", "Home"], ["/story/", "The story"], ["/about/", "About"], ["/trees/", "The trees"], ["/lines/", "The Lines"], ["/tree/", "Our line, drawn"], ["/roots/", "Roots & Routes"], ["/atlas/", "The Atlas"], ["/timeline/", "The Timeline"], ["/whats-new/", "What's new"]]],
-  ["Our line", [["/direct-line/", "The Spine"], ["/rebels/", "The Rebels"], ["/johannesburg/", "Johannesburg"]]],
-  /* The family pages come from src/data/families.json, so a family added there is in this
-     menu, on /families/ and in the sitemap without a second edit. */
-  ["The families", [["/families/", "All the families"], ...familyPages.map((f) => [f.page || `/families/${f.slug}/`, f.title]), ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"]]],
-  ["People & places", [["/people/", "The People"], ["/who/", "Every Name"], ["/bloodline/", "Blood relatives, drawn"], ["/register/", "The Register"], ["/households/", "Households"], ["/marriages/", "The Marriages"], ["/places/", "Places"]]],
-  /* THE NAME IS ITS OWN GROUP, AND IT IS THE ESTATE'S NAME FOR IT.
-     Three archives already had one here, between People & places and Evidence.
-     The other five had name pages in five different parents: this archive kept
-     The Name under Our line and the forenames under People & places, Blazevic
-     filed Say Your Name under Origins, Luwinski under People & names. A reader
-     moving between two of these sites had to learn where each one hides the
-     same page. */
-  ["The name", [["/name/", "The Name"], ["/namesakes/", "The forenames"]]],
-  /* 12 November 2026 (the research-menu trial, wave 2): "Evidence" and "Investigations" are one "Research" menu with three groups, as
-     David chose. The list is lib/research-menu.js (the header, the drawer and the group pages all read it). A menu is a flat list of
-     [href, label], or a list of groups { head, href, items }, an item being [href, label] or { sub } (a plain sub-label). Every address
-     of the two old menus is still a built page; none moved. */
-  ["Research", navGroups],
-];
+/* the whole menu is src/lib/site-menu.js (12 November 2026, the menu regroup): one list, read here for the header and the drawer */
+const nav = MENU;
 
 const here = Astro.url.pathname;
 /* THE BUILD-TIME NAME LINKER (kit autolink.py, run by `npm run autolink` after astro build) leaves these pages alone
@@ -148,7 +127,7 @@ const thisArchive =
             {links[0] && links[0].items
               ? links.map((g) => (
                   <div class="pg">
-                    <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a>
+                    {g.href ? <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a> : <span class="ps">{g.head}</span>}
                     {g.items.map((x) => Array.isArray(x)
                       ? <a href={u(x[0])} class={here === u(x[0]) ? "on" : ""}>{x[1]}</a>
                       : <span class="ps">{x.sub}</span>)}
@@ -166,7 +145,7 @@ const thisArchive =
         {links[0] && links[0].items
           ? links.map((g) => (
               <div class="dsub">
-                <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a>
+                {g.href ? <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a> : <span class="ps">{g.head}</span>}
                 {g.items.map((x) => Array.isArray(x)
                   ? <a href={u(x[0])} class={here === u(x[0]) ? "on" : ""}>{x[1]}</a>
                   : <span class="ps">{x.sub}</span>)}

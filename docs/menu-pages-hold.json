@@ -1,15 +1,15 @@
 {
- "/method/": "How a claim is graded (doc, inf, lore, open) and the rules for reading a register. Nothing else states them.",
- "/sources/": "The register of sources, with how each was read and how well each claim resting on it is known. Now also carries the Deep dives section (the DNA, Disputed) and an Atlas note.",
- "/searched/": "Every query this archive ran, in sets, with its question, answer, note and verdict. The Atlas has the source and volume marks only. Now carries an Atlas note.",
- "/open-questions/": "The open questions, each with the record set that would answer it.",
- "/errands/": "The places where someone standing at a counter could settle a question, with addresses.",
- "/worklist/": "The work list: every task by number, owner and date. The only place the reason for a decision is kept.",
- "/corrections/": "Every claim published and taken back, with the cause named.",
- "/changes/": "What changed, most recent first.",
- "/documents/": "The transcribed documents, read from the images.",
- "/gallery/": "Every document image on the site with its caption and a link to where it is read.",
- "/whats-new/": "What was read, found and corrected lately, newest first.",
- "/dna/": "Two descendants' DNA tests and what they say about the Cape. A deep dive, now under Sources & method.",
- "/disputed/": "The MyHeritage tree's contradictions, set side by side. A deep dive, now under Sources & method."
+ "/": "The home page. Not edited.",
+ "/tree/": "Our line, drawn: the pedigree chart. Moved in the menu from Start to People / Drawn.",
+ "/trees/": "The trees: where to start among the drawn trees. Moved from Start to People / Drawn (not folded into /tree/; that is PR B).",
+ "/roots/": "Roots & Routes, the ten interactive views. Moved from Start to People / Drawn.",
+ "/timeline/": "The dated events. Moved from Start to People / Drawn.",
+ "/bloodline/": "Blood relatives, drawn. Stays in People / Drawn.",
+ "/lines/": "The Lines. Moved from Start to Places & families / Places.",
+ "/atlas/": "The Atlas of places. Moved from Start to Places & families / Places.",
+ "/places/": "The places. Moved from People & places to Places & families / Places.",
+ "/whats-new/": "What's new. Left the Start menu; it heads Research / What's new and has the pulse button.",
+ "/families/": "The families index, which links every family page. Now the way into the eight family pages that left the menu.",
+ "/women/": "The Women. Not linked from the families index, so it stays in the menu until the index is fixed.",
+ "/cousins/": "The Cousin Marriage. Not linked from the families index, so it stays in the menu until the index is fixed."
 }
