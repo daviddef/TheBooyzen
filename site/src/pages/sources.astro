@@ -1,5 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
+import AtlasNote from "../components/AtlasNote.astro";
+import { deepDives } from "../lib/research-menu.js";
 import srcState from "../data/sources-state.json";
 import { u } from "../lib/url.js";
 import sd from "../data/sources.json";
@@ -42,6 +44,16 @@ const tally = (id) => {
 <Base title="Sources"
       eyebrow="What is behind each claim"
       dek="Everything documented in this archive traces to one of the records below. Where a claim is inferred or is family testimony, the page carrying it says so.">
+
+<AtlasNote
+  only={[
+    ["The register of sources", null, "each source, how it was read, and how well each claim resting on it is known"],
+    ["Deep dives", "#deep-dives", "the DNA and the disputed tree, each studied on its own"],
+  ]}
+  atlas={[
+    ["Providers and what each holds", "https://recordatlas.org/providers/"],
+    ["Source and volume marks (My research)", "https://recordatlas.org/my-research/"],
+  ]} />
 
 <section class="blk">
   <h2>The primary tree</h2>
@@ -676,4 +688,13 @@ const tally = (id) => {
   <p><b>David Defranceski</b>, September 2026 — the brief for this archive and the identification of
     Catherine Mary Sophia Booyzen as its starting point.</p>
 </section>
+
+<section class="blk" id="deep-dives">
+  <h2>Deep dives</h2>
+  <p class="cap">A single body of evidence studied on its own, at length, and kept off this register so that this page stays a list.</p>
+  <ul>
+    {deepDives.map(([label, href, blurb]) => (<li><a href={u(href)}>{label}</a> — {blurb}</li>))}
+  </ul>
+</section>
+
 </Base>

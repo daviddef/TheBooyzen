@@ -261,6 +261,24 @@
    "intro": "The working notes, kept inside the book. What the archive rests on, the documents and plates read, every search that was run and what it returned, the DNA, the contradictions found in the tree and the claims taken back, and the errands and the work list for what is still missing.",
    "chapters": [
     {
+     "path": "/research/",
+     "title": "Research",
+     "blurb": "How this archive works in the open: what is to do, what is new, and what it stands on.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/research/to-do/",
+     "title": "To do",
+     "blurb": "Open questions, errands and the work list.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/research/sources-and-method/",
+     "title": "Sources & method",
+     "blurb": "What this archive stands on, how it grades a claim, and the longer studies of one source.",
+     "group": "What it rests on"
+    },
+    {
      "path": "/sources/",
      "title": "Sources",
      "blurb": "Everything documented traces to one of the records listed here.",

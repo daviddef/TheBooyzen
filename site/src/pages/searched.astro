@@ -6,7 +6,12 @@ import { md, mdCode } from "../lib/md.js";
 import sr from "../data/searched.json";
 import Searched from "@daviddef/archive-kit/components/Searched.astro";
 import nf from "../data/namefold.json";
+import AtlasNote from "../components/AtlasNote.astro";
+import smap from "../data/searched-map.json";
 const sets = sr.sets;
+const mapped = smap.sets.filter((e) => e.src).length;
+const unmapped = smap.sets.length - mapped;
+const handRows = sr.searched.filter((r) => !r.derived).length;
 const rows = sets.reduce((n, s) => n + s.rows.length, 0);
 const nothing = sets.reduce((n, s) => n + s.rows.filter(r => r[3] === "no").length, 0);
 const found = sets.reduce((n, s) => n + s.rows.filter(r => r[3] === "yes").length, 0);
@@ -61,6 +66,18 @@ const flat = sets.flatMap(x => x.rows.map(([q, res, note, k]) => ({
 <Base title="What Has Been Read"
       eyebrow={`${rows} queries · ${nothing} returned nothing · ${found} found something`}
       dek={sr.note}>
+
+<AtlasNote
+  only={[
+    ["Each query's question, answer and note", null, `the ${sets.length} sets below, ${rows} queries in all`],
+    ["Which source each set was run against", null, `${mapped} sets name one source; the other ${unmapped} name none and are left out of the Atlas rather than guessed`],
+    ["The hand-written rows", null, `${handRows} rows that also carry the film number and the pages`],
+  ]}
+  atlas={[
+    ["Source and volume marks (My research)", "https://recordatlas.org/my-research/"],
+    ["Booyzen and its spellings", "https://recordatlas.org/surname/booyzen/"],
+    ["All surname families", "https://recordatlas.org/surname-families/"],
+  ]} />
 
 <section class="blk">
   <div class="note">
