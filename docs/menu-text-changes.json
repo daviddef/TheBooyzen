@@ -1,24 +1,7 @@
 {
- "note": "What the Research menu (12 November 2026, wave 2) changed ON PURPOSE, so that menu-inventory.py compare does not call it a loss. Nothing was reworded or removed in this archive: no outcome word, severity label or data changed. Pages gained blocks (an Atlas note on /searched/ and /sources/, a Deep dives section on /sources/); no old block is changed.",
+ "note": "PR A, the menu regroup (12 November 2026): what was changed ON PURPOSE, read by tools/menu-inventory-kit.py. MENU ONLY: no page content was edited, so there is nothing to declare beyond the menu itself, which sits in the header and is not part of a page's text. The research menu's declarations are kept in docs/menu-text-changes-research-trial.json.",
  "token_swaps": [],
  "accepted": [],
  "snapshot_pages": {},
- "site_changes": [
-  {
-   "page": "/part/how-we-know/",
-   "why": "the book's part VI lists three new chapters (Research, To do, Sources & method) at its head, so every later chapter's number moves up by three; no chapter was removed or renamed"
-  },
-  {
-   "page": "/contents/",
-   "why": "the same three new chapters in part VI and the same renumbering of the ones after them"
-  },
-  {
-   "page": "/sources/",
-   "why": "gained an Atlas note at the top and a Deep dives section (the DNA, Disputed) at the foot; no existing block changed"
-  },
-  {
-   "page": "/searched/",
-   "why": "gained an Atlas note at the top; no existing block changed"
-  }
- ]
+ "site_changes": []
 }
