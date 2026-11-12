@@ -14,9 +14,9 @@ that each one is caught (see selftest()).
 
   1. every family in families.json has a built page (its hand-built address, or /families/<slug>/),
      with a title, a canonical, no `noindex`, and an entry in sitemap.xml
-  2. the main menu links /families/ (from its "Places & families" group, or "The families" before the 12 November 2026 regroup),
-     and every one of them is on /families/. A family need not be NAMED in the menu: the menu names the four with a page of their
-     own and reaches the rest through /families/, so what is required of every family is that /families/ links it.
+  2. THE ESTATE'S ONE FAMILY-GATE RULE (David, 13 November 2026: "we need consistency across all sites"): the main menu links
+     /families/, and every family page is linked from the menu OR from the /families/ index. Either is enough; neither is a failure.
+     (Before 13 November this file required the index leg for every family; a family named in the menu but not on the index is now fine.)
   3. the page's people table has exactly as many rows as this file computes for that family, and
      its eyebrow says the same number
   4. no living person's row carries a digit (a year), a record or a note: a name, a "Living" mark and
@@ -113,13 +113,11 @@ def href_of(f):
 
 
 def menu_links(index_html):
+    """Every address the main menu (the header's topnav) links, in any of its menus; None when the page has no menu."""
     nav = re.search(r'<nav[^>]*class="[^"]*topnav[^"]*".*?</nav>', index_html, re.S)
     if not nav:
         return None
-    for m in re.finditer(r"<details[^>]*>\s*<summary[^>]*>(.*?)</summary>(.*?)</details>", nav.group(0), re.S):
-        if html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip() in ("Places & families", "The families"):
-            return set(html.unescape(a) for a in re.findall(r'href="([^"]*)"', m.group(2)))
-    return set()
+    return set(html.unescape(a) for a in re.findall(r'href="([^"]*)"', nav.group(0)))
 
 
 def check(dist, data_dir):
@@ -144,7 +142,7 @@ def check(dist, data_dir):
     if sitemap is None:
         raise FileNotFoundError("no sitemap.xml under %s" % dist)
     if "/families/" not in menu:
-        fails.append("the main menu's families group does not link /families/")
+        fails.append("the main menu does not link /families/")
 
     for f in D.fam:
         href = href_of(f)
@@ -153,8 +151,8 @@ def check(dist, data_dir):
         if not mem:
             fails.append("%s: the family matches nobody in people.json (a typo in families.json?)" % name)
             continue
-        if fam_html and ('href="%s"' % href) not in fam_html:
-            fails.append("%s: /families/ does not link %s" % (name, href))
+        if href not in menu and ('href="%s"' % href) not in fam_html:
+            fails.append("%s: %s is linked from neither the menu nor /families/" % (name, href))
         if ("<loc>https://booyzen.defranceski.com%s</loc>" % href) not in sitemap:
             fails.append("%s: %s is not in sitemap.xml" % (name, href))
         pp = page_path(dist, href)
@@ -238,9 +236,27 @@ def selftest(dist, data_dir):
         case("the menu forgets the families index",
              lambda d: edit(os.path.join(d, "index.html"), lambda s: s.replace('href="/families/"', 'href="/families/gone/"')),
              "does not link /families/")
-        case("the index forgets a family",
-             lambda d: edit(page_path(d, "/families/"), lambda s: s.replace('href="/families/%s/"' % plain["slug"], 'href="/families/gone/"')),
-             "does not link")
+        # the shared rule: linked from the menu OR from /families/. Pick one family the menu does not name and one it does.
+        menu_set = menu_links(read(os.path.join(dist, "index.html")))
+        unnamed = next((f for f in D.fam if href_of(f) not in menu_set), None)
+        named = next((f for f in D.fam if href_of(f) in menu_set), None)
+        if unnamed is not None:
+            case("a family in neither the menu nor the index",
+                 lambda d: edit(page_path(d, "/families/"), lambda s: s.replace('href="%s"' % href_of(unnamed), 'href="/families/gone/"')),
+                 "linked from neither")
+        else:
+            results.append(("a family in neither the menu nor the index (no family is unnamed in this menu: planted by hand)", False, []))
+        if named is not None:
+            d = fresh()
+            edit(page_path(d, "/families/"), lambda s: s.replace('href="%s"' % href_of(named), 'href="/families/gone/"'))
+            got = check(d, data_dir)
+            results.append(("a family named in the menu but not on the index still passes", not any("linked from neither" in x for x in got), got[:1]))
+        # the opposite leg: a family on the index but taken out of the menu still passes (the menu's links to it are removed)
+        if named is not None:
+            d = fresh()
+            edit(os.path.join(d, "index.html"), lambda s: s.replace('href="%s"' % href_of(named), 'href="/families/gone/"'))
+            got = check(d, data_dir)
+            results.append(("a family on the index but not in the menu still passes", not any("linked from neither" in x for x in got), got[:1]))
         case("a family page goes noindex",
              lambda d: edit(page_path(d, href_of(plain)), lambda s: s.replace("</head>", '<meta name="robots" content="noindex"></head>', 1)),
              "noindex")
