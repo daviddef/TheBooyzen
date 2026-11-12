@@ -2,6 +2,26 @@
  "note": "What this archive did, in order, and what it had to take back. A family history that only shows its conclusions is asking to be believed on trust. This page exists so the reasoning can be checked — including the parts that were wrong.",
  "entries": [
   {
+   "d": "13 Nov 2026",
+   "k": "work",
+   "t": "What's new shows whether a finding reached the Atlas",
+   "h": "/whats-new/",
+   "w": "Each search row on What's new now says whether it is in the Record Atlas (In the Atlas, Sent, going live, or Not sent yet) and which pages of this archive the finding updated. New found rows from 13 November must name those pages or say they are log only. Kit 0521bf1."
+  },
+  {
+   "d": "12 Nov 2026",
+   "k": "work",
+   "t": "The families menu follows one sort rule",
+   "h": "/families/",
+   "w": "The Families menu lists the families index first, then this archive's own line (Booyzen), then the other surnames A to Z (Barry, Kolbe, Mountjoy), each as the bare surname, with no \"The\". The Women and The Cousin Marriage left the menu once the families index linked them. Nothing was removed; every page is still reachable."
+  },
+  {
+   "d": "12 Nov 2026",
+   "k": "work",
+   "t": "Menus regrouped: one Research tab",
+   "w": "The menus now follow one shape across the family archives: Start, Our line, People, Places & families, The name and Research. Research holds What's new, the search log, corrections, what changed and the to-do pages. Nothing was removed; every page is still reachable."
+  },
+  {
    "d": "10 Oct 2026",
    "k": "work",
    "t": "A gate added yesterday was grading a build from a fortnight ago",
