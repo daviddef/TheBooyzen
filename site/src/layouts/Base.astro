@@ -127,7 +127,7 @@ const thisArchive =
             {links[0] && links[0].items
               ? links.map((g) => (
                   <div class="pg">
-                    <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a>
+                    {g.href ? <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a> : <span class="ps">{g.head}</span>}
                     {g.items.map((x) => Array.isArray(x)
                       ? <a href={u(x[0])} class={here === u(x[0]) ? "on" : ""}>{x[1]}</a>
                       : <span class="ps">{x.sub}</span>)}
@@ -145,7 +145,7 @@ const thisArchive =
         {links[0] && links[0].items
           ? links.map((g) => (
               <div class="dsub">
-                <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a>
+                {g.href ? <a href={u(g.href)} class={"ph" + (here === u(g.href) ? " on" : "")}>{g.head}</a> : <span class="ps">{g.head}</span>}
                 {g.items.map((x) => Array.isArray(x)
                   ? <a href={u(x[0])} class={here === u(x[0]) ? "on" : ""}>{x[1]}</a>
                   : <span class="ps">{x.sub}</span>)}
