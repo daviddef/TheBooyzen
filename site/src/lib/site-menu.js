@@ -13,10 +13,14 @@
 import famData from "../data/families.json";
 import { navGroups } from "./research-menu.js";
 
-/* the four families with a page of their own stay named in the menu; the others are reached through /families/ */
-const NAMED = ["booyzen", "mountjoy", "barry", "kolbe"];
-const named = famData.families.filter((f) => NAMED.includes(f.slug))
-  .map((f) => [f.page || `/families/${f.slug}/`, f.title]);
+/* the four families with a page of their own stay named in the menu; the others are reached through /families/.
+   Labels follow the estate's family-menu rule (David, 12 Nov 2026, "own line first then A to Z"): the bare surname, the archive's own
+   line (Booyzen) first, then the other surnames A to Z. The page titles ("The Booyzens") are not touched; only the menu's label is. */
+const NAMED = [["booyzen", "Booyzen"], ["barry", "Barry"], ["kolbe", "Kolbe"], ["mountjoy", "Mountjoy"]];
+const named = NAMED.map(([slug, label]) => {
+  const f = famData.families.find((x) => x.slug === slug);
+  return f && [f.page || `/families/${f.slug}/`, label];
+}).filter(Boolean);
 
 export const MENU = [
   ["Start", [
@@ -36,8 +40,8 @@ export const MENU = [
     ] },
   ]],
   ["Places & families", [
-    { head: "Places", items: [
-      ["/lines/", "The Lines"], ["/atlas/", "The Atlas"], ["/places/", "Places"],
+    { head: "Places", href: "/places/", items: [
+      ["/lines/", "The Lines"], ["/atlas/", "The Atlas"],
     ] },
     { head: "The families", items: [
       ["/families/", "All the families"], ...named, ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"],
