@@ -14,7 +14,9 @@ that each one is caught (see selftest()).
 
   1. every family in families.json has a built page (its hand-built address, or /families/<slug>/),
      with a title, a canonical, no `noindex`, and an entry in sitemap.xml
-  2. every one of them is in the main menu's "The families" group, and on /families/
+  2. the main menu links /families/ (from its "Places & families" group, or "The families" before the 12 November 2026 regroup),
+     and every one of them is on /families/. A family need not be NAMED in the menu: the menu names the four with a page of their
+     own and reaches the rest through /families/, so what is required of every family is that /families/ links it.
   3. the page's people table has exactly as many rows as this file computes for that family, and
      its eyebrow says the same number
   4. no living person's row carries a digit (a year), a record or a note: a name, a "Living" mark and
@@ -115,7 +117,7 @@ def menu_links(index_html):
     if not nav:
         return None
     for m in re.finditer(r"<details[^>]*>\s*<summary[^>]*>(.*?)</summary>(.*?)</details>", nav.group(0), re.S):
-        if html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip() == "The families":
+        if html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip() in ("Places & families", "The families"):
             return set(html.unescape(a) for a in re.findall(r'href="([^"]*)"', m.group(2)))
     return set()
 
@@ -142,7 +144,7 @@ def check(dist, data_dir):
     if sitemap is None:
         raise FileNotFoundError("no sitemap.xml under %s" % dist)
     if "/families/" not in menu:
-        fails.append("the main menu's 'The families' group does not link /families/")
+        fails.append("the main menu's families group does not link /families/")
 
     for f in D.fam:
         href = href_of(f)
@@ -151,8 +153,6 @@ def check(dist, data_dir):
         if not mem:
             fails.append("%s: the family matches nobody in people.json (a typo in families.json?)" % name)
             continue
-        if href not in menu:
-            fails.append("%s: %s is not in the main menu's 'The families' group" % (name, href))
         if fam_html and ('href="%s"' % href) not in fam_html:
             fails.append("%s: /families/ does not link %s" % (name, href))
         if ("<loc>https://booyzen.defranceski.com%s</loc>" % href) not in sitemap:
@@ -235,9 +235,9 @@ def selftest(dist, data_dir):
         case("the sitemap forgets a family",
              lambda d: edit(os.path.join(d, "sitemap.xml"), lambda s: s.replace("/families/%s/</loc>" % plain["slug"], "/families/gone/</loc>")),
              "not in sitemap.xml")
-        case("the menu forgets a family",
-             lambda d: edit(os.path.join(d, "index.html"), lambda s: s.replace('href="/families/%s/"' % plain["slug"], 'href="/families/gone/"')),
-             "not in the main menu")
+        case("the menu forgets the families index",
+             lambda d: edit(os.path.join(d, "index.html"), lambda s: s.replace('href="/families/"', 'href="/families/gone/"')),
+             "does not link /families/")
         case("the index forgets a family",
              lambda d: edit(page_path(d, "/families/"), lambda s: s.replace('href="/families/%s/"' % plain["slug"], 'href="/families/gone/"')),
              "does not link")
@@ -284,7 +284,7 @@ def main():
     D = Data(a.data)
     n = sum(1 for f in D.fam if not f.get("page"))
     print("  ok    families  %d family pages agree with people.json (second implementation), each built, "
-          "in the menu, on /families/ and in the sitemap; %d hand-built pages present; %d planted faults caught"
+          "reached from the menu through /families/, on /families/ and in the sitemap; %d hand-built pages present; %d planted faults caught"
           % (n, len(D.fam) - n, 0 if a.no_selftest else len(res) - 1))
     return 0
 
