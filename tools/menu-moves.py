@@ -10,7 +10,8 @@ import os, re, sys, html
 HUB = "/families/"
 DROPPED = {h: (HUB, "a family page; the families index %s is in the menu and links it" % HUB)
            for h in ["/families/pretorius/", "/families/botha/", "/families/van-der-merwe/", "/families/schoeman/", "/families/downing/",
-                     "/families/daschner/", "/families/lowies/", "/families/van-niekerk/"]}
+                     "/families/daschner/", "/families/lowies/", "/families/van-niekerk/",
+                     "/women/", "/cousins/"]}
 
 
 def menu(dist):

@@ -9,7 +9,7 @@
      /whats-new/       left Start: it is the heading of Research / What's new, and the pulse button in the header.
      eight family pages (Pretorius, Botha, van der Merwe, Schoeman, Downing, Daschner, Lowies, van Niekerk) left the menu: the families
                        index /families/ ("All the families") links every one of them (proved in docs/menu-reach.md).
-   /women/ and /cousins/ are NOT linked from the /families/ index, so they stay in the menu until the index is fixed. */
+   /women/ and /cousins/ left the menu once the /families/ index linked them (PR #7); they are reached from "All the families". */
 import famData from "../data/families.json";
 import { navGroups } from "./research-menu.js";
 
@@ -44,7 +44,7 @@ export const MENU = [
       ["/lines/", "The Lines"], ["/atlas/", "The Atlas"],
     ] },
     { head: "The families", items: [
-      ["/families/", "All the families"], ...named, ["/women/", "The Women"], ["/cousins/", "The Cousin Marriage"],
+      ["/families/", "All the families"], ...named,
     ] },
   ]],
   /* THE NAME IS ITS OWN GROUP, AND IT IS THE ESTATE'S NAME FOR IT (unchanged). */
