@@ -9,4 +9,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 KIT = os.path.join(HERE, "..", "site", "node_modules", "@daviddef", "archive-kit", "kit", "tools", "menu_inventory.py")
 os.chdir(os.path.join(HERE, ".."))
 g = {"__file__": os.path.join(HERE, "menu_inventory.py"), "__name__": "__main__"}
-exec(compile(open(KIT, encoding="utf-8").read(), KIT, "exec"), g)
+src = open(KIT, encoding="utf-8").read()
+# LOCAL PATCH (not an edit of the kit): the kit's all_blocks() skips /person/, /people/ and /who/, so compare reports their blocks
+# as lost even when main is compared with itself. Same workaround as TheMazza's tools. The kit is fixed separately; when it is,
+# the assert below fails and this patch is to be deleted.
+SKIP = 'if url.startswith(("/person/", "/people/", "/who/")):'
+assert SKIP in src, "kit menu_inventory.py no longer has the /person/ /people/ /who/ skip line: remove this patch from tools/menu-inventory-kit.py"
+src = src.replace(SKIP, "if False:  # patched locally by tools/menu-inventory-kit.py")
+exec(compile(src, KIT, "exec"), g)
