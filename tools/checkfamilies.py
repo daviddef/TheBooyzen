@@ -300,7 +300,7 @@ def main():
     D = Data(a.data)
     n = sum(1 for f in D.fam if not f.get("page"))
     print("  ok    families  %d family pages agree with people.json (second implementation), each built, "
-          "reached from the menu through /families/, on /families/ and in the sitemap; %d hand-built pages present; %d planted faults caught"
+          "each linked from the menu or /families/ (the menu links /families/) and in the sitemap; %d hand-built pages present; %d planted faults caught"
           % (n, len(D.fam) - n, 0 if a.no_selftest else len(res) - 1))
     return 0
 
