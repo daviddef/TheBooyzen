@@ -1,0 +1,15 @@
+{
+ "/": "The home page. Not edited.",
+ "/tree/": "Our line, drawn: the pedigree chart. Moved in the menu from Start to People / Drawn.",
+ "/trees/": "The trees: where to start among the drawn trees. Moved from Start to People / Drawn (not folded into /tree/; that is PR B).",
+ "/roots/": "Roots & Routes, the ten interactive views. Moved from Start to People / Drawn.",
+ "/timeline/": "The dated events. Moved from Start to People / Drawn.",
+ "/bloodline/": "Blood relatives, drawn. Stays in People / Drawn.",
+ "/lines/": "The Lines. Moved from Start to Places & families / Places.",
+ "/atlas/": "The Atlas of places. Moved from Start to Places & families / Places.",
+ "/places/": "The places. Moved from People & places to Places & families / Places.",
+ "/whats-new/": "What's new. Left the Start menu; it heads Research / What's new and has the pulse button.",
+ "/families/": "The families index, which links every family page. Now the way into the eight family pages that left the menu.",
+ "/women/": "The Women. Not linked from the families index, so it stays in the menu until the index is fixed.",
+ "/cousins/": "The Cousin Marriage. Not linked from the families index, so it stays in the menu until the index is fixed."
+}

@@ -2,7 +2,6 @@
 
 | address | was | now |
 |---|---|---|
-| `/` | Start: Home | Start: Home; People / Lists: Lists  (group heading); People / Drawn: Drawn  (group heading); Places & families / Places: Places  (group heading); Places & families / The families: The families  (group heading) |
 | `/trees/` | Start: The trees | People / Drawn: The trees |
 | `/lines/` | Start: The Lines | Places & families / Places: The Lines |
 | `/tree/` | Start: Our line, drawn | People / Drawn: Our line, drawn |
