@@ -10,6 +10,10 @@ open a register, write to an archive, or find a source the atlas does
 not list — as you do it, not in a sweep at the end. Record the
 FamilySearch waypoint, not just the film number; the skill explains why.
 
+## Given names and old place names
+
+Given-name forms (Ivan = Johann = Giovanni = Zuane = Joannes) and a place's name in the year of the record (Salisbury before 1982, Fiume before 1945) come only from the Record Atlas catalogues, as surnames do: invoke the user-level `name-variants` skill, run `given_name_variants.py terms` / `place_names.py at PLACE YEAR` before searching, `cover` before any nil, `add` (with evidence) for every new form, `publish` once at the end. Keep no table of given-name forms or old place names here. Nothing about a person goes in the catalogues; `lead` is never a finding.
+
 ## Writing a found row (What's new)
 
 Every search row that reads as found (a `yes` or `part` outcome, in `searched.json` or derived by `tools/searched_flat.py` from `site/src/data/searched-map.json`) must say two things. The kit gate `check:row-pages` reads `docs/row-pages.json` and fails the build otherwise.
