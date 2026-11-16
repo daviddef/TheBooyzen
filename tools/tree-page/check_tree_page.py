@@ -9,9 +9,24 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--tree', required=True); ap.add_argument('--atlas-data', required=True); ap.add_argument('--page')
     a = ap.parse_args()
     t = json.load(open(a.tree)); at = json.load(open(a.atlas_data))
+    # A living person may be in the file only as a name-and-family-only row for the Record Atlas Tree Canvas, and only when the build says so (meta.livingNames): exactly these keys, flagged
+    # living, no date, place, page, route, source or count. Everything below then runs on the people who are not those rows. (Booyzen, 17 Nov 2026, David's decision.)
+    LIVING_KEYS = {'id', 'sex', 'given', 'sur', 'father', 'mother', 'spouse', 'kids', 'living'}
+    lrows = [p for p in t['people'] if p.get('living') is True]
+    t['people'] = [p for p in t['people'] if p.get('living') is not True]
     P = {p['id']: p for p in t['people']}; places = {p['n'] for p in at['places']}
     errs = []; warn = []
     pol = (t.get('meta') or {}).get('living', 'omit')
+    if lrows and (t.get('meta') or {}).get('livingNames') != 'name-and-family-only': errs.append('living rows are in the file but meta.livingNames does not say name-and-family-only')
+    allids = set(P) | {u['id'] for u in t.get('undrawn', [])} | {p['id'] for p in lrows}
+    for p in lrows:
+        extra = sorted(set(p) - LIVING_KEYS)
+        if extra: errs.append('%s is living and carries more than a name and family: %s' % (p['id'], ', '.join(extra)))
+        for k in ('father', 'mother'):
+            if p.get(k) and p[k] not in allids: errs.append('%s: living row links %s %s who is not in the file' % (p['id'], k, p[k]))
+        for k in ('spouse', 'kids'):
+            for x in p.get(k) or []:
+                if x not in allids: errs.append('%s: living row links %s %s who is not in the file' % (p['id'], k, x))
     for p in P.values():
         for k in ('bp', 'dp'):
             if p.get(k) and p[k] not in places: errs.append('%s: place %r is not in atlas-data' % (p['id'], p[k]))

@@ -746,6 +746,7 @@ function loadTree(T){
   while(FAMS.length<8)FAMS.push({sur:'Other',host:'',m:[],f:[],places:[]});
   const P={},list=[];
   for(const r of T.people){
+    if(r.living)continue;   // a living person is in the file for the Record Atlas Tree Canvas (name and family only); this page draws and names none of them
     const p={id:r.id,sex:r.sex==='f'?'f':r.sex==='m'?'m':'u',fi:r.line==null?7:r.line,sur:r.sur||'',given:r.given||'',by:r.by,bp:r.bp,dy:r.dy==null?null:r.dy,hid:r.hid===1?1:0,dp:r.dp||r.bp,my:r.my||null,occ:r.occ||null,
       father:r.father||null,mother:r.mother||null,spouse:r.spouse||[],kids:r.kids||[],g:0,src:(r.srcs||[]).length,srcs:r.srcs||null,slug:r.slug||null,href:r.href||null,page:r.page||null,route:r.route||null,mye:!!r.mye,bye:!!r.bye,dye:!!r.dye,bpe:!!r.bpe,bpr:r.bpr||null,dpr:r.dpr||null,sk:r.sk||null,note:r.note||null,fg:r.fg==null?null:r.fg,mg:r.mg==null?null:r.mg,gaps:r.gaps||null};
     if(p.dy==null)p.dp=null;
