@@ -47,6 +47,10 @@ Needs the Record Atlas checkout (`RECORD_ATLAS`, default `~/Projects/Family Proj
 
 `tree.json` carries one more optional field per person, `cx`: how many of this archive's corrections name that person, an integer of at least 1, left out when there are none. The Record Atlas Tree Canvas shows it as a small pencil and count linking to `/corrections/`. It is a count only; nothing a correction says is in it. It is read from `site/src/data/corrections-who.json`, the file `tools/correctionswho.py` derives (a person is attached only when their whole held name appears, less what `corrections-who-deny.json` refuses) and `check:corrections` holds current, so the number is the one a reader sees on the corrections page. A correction naming two people counts for each. Only the people the converter draws can have one, so never a living or held-out person. Written by `tools/build-tree-page.py`.
 
+## Everyone is in tree.json (`undrawn`)
+
+`tree.json` lists every published person, drawn or not (David, 17 Nov 2026: what the archive publishes, the Record Atlas Tree Canvas draws). The people the maps can draw are in `people`. The rest are in `undrawn`, each with `why`: `year` or `place` (a recorded death the maps could not place) or `death` (no death recorded, and older than the living line, so not living by the estate rule), and the details the Canvas draws an unplaced card from: `given`, `sur`, `sex`, `by`, `dy`, `bd`, `dd`, `cx`, `slug`, `page`, and `father`, `mother`, `spouse`, `kids` (tree ids, only of people who are themselves in the file; the links run from an undrawn person to the people around them, and a drawn person's own lists are not extended, so the maps do not change). Living and held-out people are never listed (see "Who is not here").
+
 ## Who is not here
 
 - **No living person is written into the GEDCOM at all**: whoever `tools/livingflags.py` (the kit's `living_rule.py`) calls living or holds out is dropped before the converter sees them. The
