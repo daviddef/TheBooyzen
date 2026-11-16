@@ -43,6 +43,10 @@ Needs the Record Atlas checkout (`RECORD_ATLAS`, default `~/Projects/Family Proj
 
 `tree.json` carries two optional fields per person, for the Record Atlas Tree Canvas: `bd` (full birth date) and `dd` (full death date), each as the person page prints the date: `"23 Mar 1850"` (day not padded, English month abbreviation), cut from the front of `people.json`'s own `b` / `d`. The place and the rest of the field are not part of it. A field is present only when a day is known: a year alone, a year and month, an approximate date (`c. 1850`, `bef.`), a baptism (`bapt. 4 Jul 1810`) or a burial gets none (`by` / `dy` and the `bye` / `dye` flags carry those). Only people the converter draws can have one, so never a living person. Written by `tools/build-tree-page.py` (`FULLDATE`).
 
+## Corrections (cx)
+
+`tree.json` carries one more optional field per person, `cx`: how many of this archive's corrections name that person, an integer of at least 1, left out when there are none. The Record Atlas Tree Canvas shows it as a small pencil and count linking to `/corrections/`. It is a count only; nothing a correction says is in it. It is read from `site/src/data/corrections-who.json`, the file `tools/correctionswho.py` derives (a person is attached only when their whole held name appears, less what `corrections-who-deny.json` refuses) and `check:corrections` holds current, so the number is the one a reader sees on the corrections page. A correction naming two people counts for each. Only the people the converter draws can have one, so never a living or held-out person. Written by `tools/build-tree-page.py`.
+
 ## Who is not here
 
 - **No living person is written into the GEDCOM at all**: whoever `tools/livingflags.py` (the kit's `living_rule.py`) calls living or holds out is dropped before the converter sees them. The
