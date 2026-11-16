@@ -44,5 +44,8 @@ const EMBED = `<script>
 .emb-profile #panel .rrg>h3:first-child{margin-top:0}
 </style>`;
 
+/* This page carries the same tree.json as /roots/, which names the three living people (name and family only), so it is noindex like /roots/ (David's rule, 17 Nov 2026). */
+const NOINDEX = '<meta name="robots" content="noindex">';
+
 export const GET = () =>
-  new Response(page.replace(/<head>/i, (h) => h + EMBED), { headers: { "content-type": "text/html; charset=utf-8" } });
+  new Response(page.replace(/<head>/i, (h) => h + NOINDEX + EMBED), { headers: { "content-type": "text/html; charset=utf-8" } });
