@@ -878,3 +878,8 @@ td, th{overflow-wrap:break-word;word-break:normal;hyphens:manual}
 :root{--bk-width:var(--maxw)}
 /* The home page's hero image used to sit flush under the site header; under the running head it needs a little air. */
 body.is-home .bk-head{margin-bottom:16px}
+/* Tree Canvas: the same round orange button in every archive's header (Record Atlas). Last in the header icon group; 34px like the kit's pulse buttons. */
+header.site nav.topnav a.tcanvas{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:34px;height:34px;padding:0;margin-left:6px;border-radius:50%;
+  background:#D9822B;border:1px solid #D9822B;color:#fff;text-decoration:none;line-height:1;cursor:pointer}
+header.site nav.topnav a.tcanvas:hover,header.site nav.topnav a.tcanvas:focus-visible{background:#C4721F;border-color:#C4721F;color:#fff}
+header.site nav.topnav a.tcanvas:focus-visible{outline:2px solid #C4721F;outline-offset:2px}
