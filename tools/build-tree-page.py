@@ -422,8 +422,17 @@ def undrawn_list(people, fields, pid, pages, M, drawn, pm, okp, rep, cx_by_slug=
             e["slug"] = pages[i]; e["page"] = "/people/%s/" % pages[i]
             if cx_by_slug and cx_by_slug.get(pages[i]): e["cx"] = cx_by_slug[pages[i]]
         out.append(e); ent[pid(i)] = e
+    # PLACEHOLDERS (David, 17 Nov 2026, the estate rule: stand-in records are research hotspots and are shown). A register row whose name is a stand-in ("Unnamed Child Booijsen", "Unknown ...")
+    # and who is not a person with a page is added as a plain "Unknown" card flagged `placeholder: true`: no date, place or page, because the row stands for nobody yet. Derived from
+    # register.json, never hand-kept. The rest of the register's index lines are source lines, not people, and stay out (David: keep the 375).
+    held_names = {p["n"].strip() for p in people}
+    for ri, r in enumerate(jl(os.path.join(DATA, "register.json"))["rows"]):
+        nm = r["n"].strip()
+        if nm in held_names or not re.search(r"^(unnamed|unknown)\b|\bplaceholder\b", nm, re.I): continue
+        out.append({"id": "R%d" % (ri + 1), "name": nm, "href": None, "b": None, "place": None, "why": "year", "given": "Unknown", "sur": nm.split()[-1], "sex": "u", "placeholder": True})
     here = set(drawn) | set(ent)
     for e in out:
+        if e.get("placeholder"): continue
         l = links.get(e["id"], {})
         for k in ("father", "mother"):
             if l.get(k) in here: e[k] = l[k]
