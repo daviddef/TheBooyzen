@@ -39,6 +39,10 @@ Needs the Record Atlas checkout (`RECORD_ATLAS`, default `~/Projects/Family Proj
 - **Colour** is the archive's own line (the `l` of a person in people.json: the seven with most people drawn, the rest together), not a surname spelling. Which spellings are one name is the
   Record Atlas catalogue's to say; nothing here lists them.
 
+## Full dates (bd, dd)
+
+`tree.json` carries two optional fields per person, for the Record Atlas Tree Canvas: `bd` (full birth date) and `dd` (full death date), each as the person page prints the date: `"23 Mar 1850"` (day not padded, English month abbreviation), cut from the front of `people.json`'s own `b` / `d`. The place and the rest of the field are not part of it. A field is present only when a day is known: a year alone, a year and month, an approximate date (`c. 1850`, `bef.`), a baptism (`bapt. 4 Jul 1810`) or a burial gets none (`by` / `dy` and the `bye` / `dye` flags carry those). Only people the converter draws can have one, so never a living person. Written by `tools/build-tree-page.py` (`FULLDATE`).
+
 ## Who is not here
 
 - **No living person is written into the GEDCOM at all**: whoever `tools/livingflags.py` (the kit's `living_rule.py`) calls living or holds out is dropped before the converter sees them. The
