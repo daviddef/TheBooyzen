@@ -291,6 +291,11 @@ def build(a):
     t["lines"] = [{"sur": l, "host": HOST} for l in top] + [{"sur": "Other", "host": HOST}]
     t["meta"].update({"rowLabel": "Family line", "lineLabel": "Family line"})
     pm_ = jl(pm); okp = lambda k: bool(k and pm_.get(k) and pm_[k].get("lat") is not None and pm_[k].get("name"))
+    # CORRECTIONS (cx): how many of this archive's corrections name a person, for the Atlas Tree Canvas's pencil mark. A count only, never what a correction says. It is read from
+    # corrections-who.json, the file tools/correctionswho.py derives (a person attached only when their whole held name appears, minus what corrections-who-deny.json refuses) and
+    # that `check:corrections` holds current, so the number is the one a reader sees on /corrections/ and on the person's page. A correction naming two people counts for each.
+    # Only the people the converter drew are here, so never a living or held-out person; a person with none gets no field.
+    cx_by_slug = collections.Counter(sl for sls in jl(os.path.join(DATA, "corrections-who.json"))["who"].values() for sl in sls)
     est_b = est_d = relpl = 0
     for p in t["people"]:
         i = byid[p["id"]]; bf, df = fields[i]
@@ -302,6 +307,8 @@ def build(a):
         # The value is the date as the person page prints it, "23 Mar 1850" (day not padded, English month abbreviation), cut from the front of people.json's own `b` / `d`; the
         # place and the rest of the field are not part of it. A year alone, a year-month, an approximate date ("c. 1850"), a baptism ("bapt. 4 Jul 1810") or a burial gets no field:
         # `by` / `dy` and the `bye` / `dye` flags already carry those.
+        cx = cx_by_slug.get((p.get("page") or "").strip("/").split("/")[-1], 0)
+        if cx: p["cx"] = cx
         mb = FULLDATE.match(str(people[i].get("b") or "")); md = FULLDATE.match(str(people[i].get("d") or ""))
         if mb: p["bd"] = mb.group(1)
         if md: p["dd"] = md.group(1)
