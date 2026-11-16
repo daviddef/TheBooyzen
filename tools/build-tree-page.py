@@ -59,6 +59,7 @@ def atlas_path():
     sys.exit("Record Atlas checkout not found (set RECORD_ATLAS)")
 
 # ---------------------------------------------------------------- the archive's own born/died field (ported from tools/familylines.mjs field())
+FULLDATE = re.compile(r"^(\d{1,2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4})(?=$|,| — )")   # "23 Mar 1850": a day, an English month abbreviation, a year, at the START of the field (no c. / bapt. / buried / bef. before it)
 YEAR = re.compile(r"(1[5-9]\d\d|20\d\d)")
 QUAL = re.compile(r"(c\.|ca\.|bef\.|aft\.|after|before|about|abt\.?|bapt\.|buried)\s+(?:\d{1,2}\s+)?(?:[A-Z][a-z]{2,8}\.?\s+)?$", re.I)
 QMAP = {"ca.": "c.", "about": "c.", "abt.": "c.", "abt": "c.", "before": "bef.", "after": "aft.", "buried": ""}
@@ -297,6 +298,13 @@ def build(a):
         p["page"] = "/people/%s/" % pages[i] if pages[i] else None
         if p["page"] is None: p.pop("page")
         # a year the archive's own field qualifies (c., bef., aft., bapt.) is an estimate, drawn as "c. 1788"
+        # FULL DATES (bd, dd), for DEAD people only: this loop only sees the people the converter drew (--living omit, and its 110-year floor), so a living person never gets one.
+        # The value is the date as the person page prints it, "23 Mar 1850" (day not padded, English month abbreviation), cut from the front of people.json's own `b` / `d`; the
+        # place and the rest of the field are not part of it. A year alone, a year-month, an approximate date ("c. 1850"), a baptism ("bapt. 4 Jul 1810") or a burial gets no field:
+        # `by` / `dy` and the `bye` / `dye` flags already carry those.
+        mb = FULLDATE.match(str(people[i].get("b") or "")); md = FULLDATE.match(str(people[i].get("d") or ""))
+        if mb: p["bd"] = mb.group(1)
+        if md: p["dd"] = md.group(1)
         if re.match(r"(c\.|bef\.|aft\.|bapt\.)", bf["year"]) and not p["bye"]: p["bye"] = True; est_b += 1
         if re.match(r"(c\.|bef\.|aft\.|bapt\.)", df["year"]) and not p["dye"]: p["dye"] = True; est_d += 1
         # the place of a person with no resolvable birth place of their own was taken from a relative: the page marks it with *
