@@ -337,6 +337,10 @@ def build(a):
                       "from_era_ground": sum(1 for v in pm_.values() if (v.get("how") or "").startswith("data/era-ground")),
                       "from_place_additions": sum(1 for k in jl(os.path.join(OUT, "place-additions.json"))["places"] if okp(k)) if os.path.exists(os.path.join(OUT, "place-additions.json")) else 0,
                       "conflicts_not_drawn": len(conflicts)}
+    lr = living_rows(t)
+    t["people"] += lr; t["meta"]["livingNames"] = "name-and-family-only"
+    json.dump(t, io.open(tree, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    rep["living_rows"] = len(lr)
     if conflicts: rep["conflicts"] = conflicts
     io.open(rep_path, "w", encoding="utf-8").write(json.dumps(rep, indent=1, ensure_ascii=False))
 
@@ -429,10 +433,40 @@ def undrawn_list(people, fields, pid, pages, M, drawn, pm, okp, rep, cx_by_slug=
     rep["not_drawn_listed"] = {"with_a_recorded_death": sum(1 for e in out if e["why"] != "death"), "no_death_recorded": sum(1 for e in out if e["why"] == "death")}
     return out
 
+def living_rows(t):
+    """The people this archive lists as living, as name-and-family-only rows for the Record Atlas Tree Canvas (David, 17 Nov 2026: what the archive publishes, the Canvas draws; he
+    decided this knowing /roots/ is indexed and these pages are noindex). Each row is {id, sex, given, sur, father, mother, spouse, kids, living: true} and NOTHING else: no date, no place,
+    no route, no page, no corrections count. The links are the people around them, only those who are themselves in this file. Held-out people (no page, no name anywhere) are never here.
+    The page's own views skip these rows (the template's loadTree), and check_tree_page.py allows a living row only with exactly these keys and meta.livingNames set."""
+    people, living, held, omitted, hh, marr, sex, pid, sexsrc = build_model()
+    here = {p["id"] for p in t["people"]} | {u["id"] for u in t["undrawn"]} | {pid(i) for i in living}
+    rows = []
+    for i in sorted(living):
+        if i in held: continue
+        g, sur = split_name(people[i]["n"])
+        father = mother = None; spouse = []; kids = []
+        for h, w, ks, _via in hh:
+            if i in [k for k, _ in ks]:
+                father = father or (pid(h) if h is not None and h not in held else None); mother = mother or (pid(w) if w is not None and w not in held else None)
+            if i == h and w is not None and w not in held: spouse.append(pid(w))
+            if i == w and h is not None and h not in held: spouse.append(pid(h))
+            if i in (h, w): kids += [pid(k) for k, _ in ks if k is not None and k not in held]
+        for h, w in marr:
+            if i == h and w not in held and pid(w) not in spouse: spouse.append(pid(w))
+            if i == w and h not in held and pid(h) not in spouse: spouse.append(pid(h))
+        row = {"id": pid(i), "sex": {"M": "m", "F": "f"}.get(sex.get(i), "u"), "given": g, "sur": sur, "living": True}
+        if father in here: row["father"] = father
+        if mother in here: row["mother"] = mother
+        sp = [x for x in dict.fromkeys(spouse) if x in here]; ks_ = [x for x in dict.fromkeys(kids) if x in here]
+        if sp: row["spouse"] = sp
+        if ks_: row["kids"] = ks_
+        rows.append(row)
+    return rows
+
 def write_roots_links(tree):
     """site/public/roots-links.json: the people Roots & Routes DRAWS, by tree id (P<position in people.json + 1>). A person's page offers 'Where they lived' only for those,
     and only a page that is a story (a living person is never drawn here, and their page is never a story)."""
-    ids = sorted((p["id"] for p in jl(tree)["people"]), key=lambda x: int(x[1:]))
+    ids = sorted((p["id"] for p in jl(tree)["people"] if not p.get("living")), key=lambda x: int(x[1:]))
     out = {"note": "The people Roots & Routes draws, by tree id (P plus the person's position in people.json, from 1). Made by tools/build-tree-page.py; do not edit by hand.", "people": ids}
     io.open(os.path.join(ROOT, "site", "public", "roots-links.json"), "w", encoding="utf-8").write(json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n")
     print("roots-links: %d people" % len(ids))
