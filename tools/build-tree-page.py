@@ -325,7 +325,7 @@ def build(a):
     keep_death_place(t, people, fields, byid)
     rep_path = os.path.splitext(tree)[0] + ".report.json"; rep = jl(rep_path)
     drawn = {p["id"] for p in t["people"]}
-    t["undrawn"] = undrawn_list(people, fields, pid, pages, M, drawn, pm_, okp, rep)
+    t["undrawn"] = undrawn_list(people, fields, pid, pages, M, drawn, pm_, okp, rep, cx_by_slug)
     json.dump(t, io.open(tree, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     rep["adapter"] = {"people_in_archive": len(people), "living_withheld": len(M["living"]), "held_out": len(M["held"]),
                       "birth_year_qualified_by_the_archive": est_b, "death_year_qualified_by_the_archive": est_d,
@@ -363,17 +363,70 @@ def keep_death_place(t, people, fields, byid):
         if r and r.get("lat") is not None and r.get("name") and r["name"] != p["dp"]: p["dp"] = r["name"]; n += 1
     print("death places: %d put back to the recorded place of death" % n)
 
-def undrawn_list(people, fields, pid, pages, M, drawn, pm, okp, rep):
-    """The people the archive records as having died who are NOT drawn, each with why: no year, or no place. Only a recorded death qualifies for a name here: a person with no death
-    recorded who is not drawn may be living by the converter's floor, so is counted in tree.report.json and never named. A living person is never listed."""
-    out = []; unlisted = 0
+def ged_links(path):
+    """father, mother, spouses and children of every person in the GEDCOM this build wrote (the same households and marriages the drawn people come from)."""
+    famc, fams, fam = {}, collections.defaultdict(list), {}
+    cur = None
+    for ln in io.open(path, encoding="utf-8"):
+        m = re.match(r"0 @(\w+)@ (INDI|FAM)", ln)
+        if m: cur = (m.group(1), m.group(2)); fam.setdefault(cur[0], {"h": None, "w": None, "k": []}) if cur[1] == "FAM" else None; continue
+        m = re.match(r"1 (FAMC|FAMS|HUSB|WIFE|CHIL) @(\w+)@", ln)
+        if not m or not cur: continue
+        tag, ref = m.groups()
+        if cur[1] == "INDI":
+            if tag == "FAMC": famc[cur[0]] = ref
+            elif tag == "FAMS": fams[cur[0]].append(ref)
+        else:
+            if tag == "HUSB": fam[cur[0]]["h"] = ref
+            elif tag == "WIFE": fam[cur[0]]["w"] = ref
+            elif tag == "CHIL": fam[cur[0]]["k"].append(ref)
+    out = {}
+    for pid_ in set(famc) | set(fams):
+        fa = fam.get(famc.get(pid_), {})
+        sp, kids = [], []
+        for fx in fams.get(pid_, []):
+            r = fam[fx]
+            other = r["w"] if r["h"] == pid_ else r["h"]
+            if other and other not in sp: sp.append(other)
+            kids += [k for k in r["k"] if k not in kids]
+        out[pid_] = {"father": fa.get("h"), "mother": fa.get("w"), "spouse": sp, "kids": kids}
+    return out
+
+def undrawn_list(people, fields, pid, pages, M, drawn, pm, okp, rep, cx_by_slug=None):
+    """EVERY published person the converter did not draw, each with why and with the details the Record Atlas Tree Canvas needs to draw them as an unplaced card: given, sur, sex,
+    by / dy, bd / dd, cx, and father / mother / spouse / kids (tree ids, only of people who are themselves in this file, drawn or listed here). `why` is "year" or "place" for a person
+    with a recorded death the maps could not place, and "death" for a person with no death recorded (older than the living line, so not living by the estate rule: the 80-year rule
+    puts anyone born in the last 80 years with no death into the living list, which is never listed here). A living or held-out person is never listed: they are not in `fields`."""
+    out = []; ent = {}
+    sexm = {"M": "m", "F": "f"}
+    links = ged_links(os.path.join(OUT, "people.ged"))
     for i, (bf, df) in fields.items():
         if pid(i) in drawn: continue
-        if not lf.death_kind(people[i]): unlisted += 1; continue
+        recorded = bool(lf.death_kind(people[i]))
         yr = re.search(r"\d{4}", bf["year"] or df["year"] or "")
-        out.append({"id": pid(i), "name": people[i]["n"], "href": "/people/%s/" % pages[i] if pages[i] else None, "b": int(yr.group(0)) if yr else None,
-                    "place": bf["place"] or df["place"] or None, "why": "year" if not bf["year"] else "place"})
-    rep["not_drawn_not_listed_no_death_recorded"] = unlisted
+        why = ("year" if not bf["year"] else "place") if recorded else "death"
+        e = {"id": pid(i), "name": people[i]["n"], "href": "/people/%s/" % pages[i] if pages[i] else None, "b": int(yr.group(0)) if yr else None,
+             "place": bf["place"] or df["place"] or None, "why": why}
+        g, sur = split_name(people[i]["n"]); e["given"] = g; e["sur"] = sur; e["sex"] = sexm.get(M["sex"].get(i), "u")
+        by = re.search(r"\d{4}", bf["year"] or ""); dy = re.search(r"\d{4}", df["year"] or "")
+        if by: e["by"] = int(by.group(0))
+        if dy: e["dy"] = int(dy.group(0))
+        mb = FULLDATE.match(str(people[i].get("b") or "")); md = FULLDATE.match(str(people[i].get("d") or ""))
+        if mb: e["bd"] = mb.group(1)
+        if md: e["dd"] = md.group(1)
+        if pages[i]:
+            e["slug"] = pages[i]; e["page"] = "/people/%s/" % pages[i]
+            if cx_by_slug and cx_by_slug.get(pages[i]): e["cx"] = cx_by_slug[pages[i]]
+        out.append(e); ent[pid(i)] = e
+    here = set(drawn) | set(ent)
+    for e in out:
+        l = links.get(e["id"], {})
+        for k in ("father", "mother"):
+            if l.get(k) in here: e[k] = l[k]
+        for k in ("spouse", "kids"):
+            v = [x for x in l.get(k, []) if x in here]
+            if v: e[k] = v
+    rep["not_drawn_listed"] = {"with_a_recorded_death": sum(1 for e in out if e["why"] != "death"), "no_death_recorded": sum(1 for e in out if e["why"] == "death")}
     return out
 
 def write_roots_links(tree):

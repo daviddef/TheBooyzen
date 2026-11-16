@@ -51,7 +51,10 @@
   "Veelroem, district Ladybrand": 1
  },
  "focus": "P52",
- "not_drawn_not_listed_no_death_recorded": 46,
+ "not_drawn_listed": {
+  "with_a_recorded_death": 30,
+  "no_death_recorded": 46
+ },
  "adapter": {
   "people_in_archive": 375,
   "living_withheld": 3,
