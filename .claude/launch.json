@@ -16,7 +16,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/D'arcy Family/site",
+        "/Volumes/DJ - Crucial - 4TB-SSD/Claude Projects/Family Projects/D'arcy Family/site",
         "run",
         "dev"
       ],
@@ -27,7 +27,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/Our Family/site",
+        "/Volumes/DJ - Crucial - 4TB-SSD/Claude Projects/Family Projects/Our Family/site",
         "run",
         "dev"
       ],
@@ -38,7 +38,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/Defranceski Family/site",
+        "/Volumes/DJ - Crucial - 4TB-SSD/Claude Projects/Family Projects/Defranceski Family/site",
         "run",
         "dev"
       ],
@@ -49,7 +49,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/Blazevic Family/site",
+        "/Volumes/DJ - Crucial - 4TB-SSD/Claude Projects/Family Projects/Blazevic Family/site",
         "run",
         "dev"
       ],
@@ -60,7 +60,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/Luwinski Family/site",
+        "/Volumes/DJ - Crucial - 4TB-SSD/Claude Projects/Family Projects/Luwinski Family/site",
         "run",
         "dev"
       ],
@@ -71,7 +71,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "--prefix",
-        "/Users/daviddefranceski/Claude/Projects/Falco Family/site",
+        "/Volumes/DJ - Crucial - 4TB-SSD/Claude Projects/Family Projects/Falco Family/site",
         "run",
         "dev"
       ],
