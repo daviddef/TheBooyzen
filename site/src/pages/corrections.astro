@@ -5,7 +5,16 @@ import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import { md } from "../lib/md.js";
 import c from "../data/corrections.json";
+import placeRows from "../data/correction-places.json";
+import placeFlags from "../data/correction-place-flags.json";
+import { correctionRows, corrIds } from "../lib/pulse.js";
+import { placeIndex } from "@daviddef/archive-kit/lib/placelinks.js";
 const rows = c.rows;
+/* the kit's flag art, served from the build: placeIndex asks for the address of a flag file by name */
+const FLAGS = import.meta.glob("../../node_modules/@daviddef/archive-kit/kit/data/flags/*.svg", { eager: true, query: "?url", import: "default" });
+const flagUrl = (svg) => { const k = Object.keys(FLAGS).find((f) => f.endsWith("/" + svg)); return k ? FLAGS[k] : ""; };
+/* places that have a page (/places/<slug>/), from tools/build_correction_places.py; a flag only where the era snapshot assesses that place and year, or today's where the kit can place it */
+const places = placeIndex(placeRows, placeFlags, flagUrl);
 const causes = c.causes;
 const counted = Object.keys(causes)
   .map(k => [k, rows.filter(r => r[3] === k).length])
@@ -25,8 +34,8 @@ const label = { population: "A list mistaken for a population", scope: "A part s
     <p>A family history that only shows its conclusions is asking to be believed on trust. This one has
       been wrong nineteen times, and the corrections are more useful than most of the findings, because
       they are the only part of the site that says anything about <b>how the work goes wrong</b>.</p>
-    <p>The right-hand column is the point. Sort by it and a pattern appears that no single correction
-      would have shown.</p>
+    <p>The cause named on each entry is the point. Filter the list by it and a pattern appears that no
+      single correction would have shown.</p>
   </div>
   <div class="grid g3" style="margin-top:20px">
     {counted.map(([k, n]) => (
@@ -43,23 +52,14 @@ const label = { population: "A list mistaken for a population", scope: "A part s
 
 <section class="blk">
   <h2>The list</h2>
-  <div class="panel" style="margin-top:16px">
-    <label for="q" style="display:block;font-size:14px;margin-bottom:8px">
-      <strong>Filter</strong> — a name, a year, a word from any of them</label>
-    <input id="q" type="search" autocomplete="off" placeholder="Start typing…"
-           style="width:100%;padding:11px 13px;font-size:16px;font-family:inherit;border:1px solid var(--rule);border-radius:3px;background:var(--ground);color:inherit" />
-    <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:7px">
-      <button class="fbtn on" data-f="">All <span class="m">{rows.length}</span></button>
-      {counted.map(([k, n]) => (<button class="fbtn" data-f={k}>{label[k]} <span class="m">{n}</span></button>))}
-    </div>
-    <p id="count" class="cap" style="margin:12px 0 0" aria-live="polite"></p>
-  </div>
 </section>
 
 <section class="blk">
-  <Corrections u={u} rows={rows.map(([d, was, now, cause, href]) => ({
+  <Corrections u={u} places={places} kindLabel="Cause" rows={rows.map(([d, was, now, cause, href], i) => ({
     when: d,
-    sev: label[cause],
+    id: corrIds.get(correctionRows[i]),   /* the anchor /whats-new/ links a Corrected card to; rows stay in FILE order, the component sorts newest first */
+    about: correctionRows[i].for,
+    kind: label[cause],   /* the cause, filtered by the kit's own bar (kindLabel below); this archive grades no severity, so there is no `sev` */
     /* The curly quotes were named entities here while the data was raw HTML.
        Both sides are escaped text now, so they are the characters themselves —
        an entity written into a data string reaches the reader as literal text
@@ -95,33 +95,4 @@ const label = { population: "A list mistaken for a population", scope: "A part s
   </div>
 </section>
 
-<script is:inline>
-(function () {
-  var q = document.getElementById("q"), out = document.getElementById("count");
-  if (!q) return;
-  var rows = Array.prototype.slice.call(document.querySelectorAll("#ctable tbody tr"));
-  var btns = Array.prototype.slice.call(document.querySelectorAll(".fbtn"));
-  var filter = "";
-  function run() {
-    var v = q.value.trim().toLowerCase(), n = 0;
-    for (var i = 0; i < rows.length; i++) {
-      var hit = (!v || rows[i].getAttribute("data-hay").indexOf(v) > -1) &&
-                (!filter || rows[i].getAttribute("data-cause") === filter);
-      rows[i].hidden = !hit;
-      if (hit) n++;
-    }
-    out.textContent = n + (n === 1 ? " correction shown" : " corrections shown");
-  }
-  q.addEventListener("input", run);
-  btns.forEach(function (b) {
-    b.addEventListener("click", function () {
-      btns.forEach(function (x) { x.classList.remove("on"); });
-      b.classList.add("on");
-      filter = b.getAttribute("data-f");
-      run();
-    });
-  });
-  run();
-})();
-</script>
 </Base>

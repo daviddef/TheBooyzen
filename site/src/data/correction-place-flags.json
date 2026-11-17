@@ -1,0 +1,141 @@
+{
+ "Graaff-Reinet": {
+  "today": {
+   "svg": "south-africa-flags--era-1994.svg",
+   "label": "South Africa"
+  },
+  "eras": [
+   [
+    1916,
+    1928,
+    "south-africa-flags--era-1910.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1928,
+    1956,
+    "south-africa-flags--era-1928.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1967,
+    1990,
+    "south-africa-flags--era-1928.svg",
+    "South Africa"
+   ]
+  ]
+ },
+ "Cradock": {
+  "today": {
+   "svg": "south-africa-flags--era-1994.svg",
+   "label": "South Africa"
+  },
+  "eras": [
+   [
+    1916,
+    1928,
+    "south-africa-flags--era-1910.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1928,
+    1956,
+    "south-africa-flags--era-1928.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1967,
+    1990,
+    "south-africa-flags--era-1928.svg",
+    "South Africa"
+   ]
+  ]
+ },
+ "Johannesburg": {
+  "today": {
+   "svg": "south-africa-flags--era-1994.svg",
+   "label": "South Africa"
+  },
+  "eras": []
+ },
+ "Vereeniging": {
+  "today": {
+   "svg": "south-africa-flags--era-1994.svg",
+   "label": "South Africa"
+  },
+  "eras": [
+   [
+    1916,
+    1928,
+    "south-africa-flags--era-1910.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1928,
+    1956,
+    "south-africa-flags--era-1928.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1967,
+    1990,
+    "south-africa-flags--era-1928.svg",
+    "South Africa"
+   ]
+  ]
+ },
+ "Soho, London": {
+  "today": {
+   "svg": "uk-flags--era-1922.svg",
+   "label": "the United Kingdom"
+  },
+  "eras": []
+ },
+ "Brisbane": {
+  "today": {
+   "svg": "australia-flags--era-1901.svg",
+   "label": "Australia"
+  },
+  "eras": []
+ },
+ "Pretoria": {
+  "today": {
+   "svg": "south-africa-flags--era-1994.svg",
+   "label": "South Africa"
+  },
+  "eras": []
+ },
+ "Market Street, Pretoria": {
+  "today": {
+   "svg": "south-africa-flags--era-1994.svg",
+   "label": "South Africa"
+  },
+  "eras": []
+ },
+ "Bloemfontein": {
+  "today": {
+   "svg": "south-africa-flags--era-1994.svg",
+   "label": "South Africa"
+  },
+  "eras": [
+   [
+    1916,
+    1928,
+    "south-africa-flags--era-1910.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1928,
+    1956,
+    "south-africa-flags--era-1928.svg",
+    "Britain and its colonies"
+   ],
+   [
+    1967,
+    1990,
+    "south-africa-flags--era-1928.svg",
+    "South Africa"
+   ]
+  ]
+ }
+}
