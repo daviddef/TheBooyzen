@@ -5,13 +5,16 @@ import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import { md } from "../lib/md.js";
 import c from "../data/corrections.json";
-import pl from "../data/places.json";
+import placeRows from "../data/correction-places.json";
+import placeFlags from "../data/correction-place-flags.json";
 import { correctionRows, corrIds } from "../lib/pulse.js";
 import { placeIndex } from "@daviddef/archive-kit/lib/placelinks.js";
 const rows = c.rows;
-/* The places that have a page, so a place named in a correction links to it (kit/docs/corrections.md). Flags are not drawn here yet: they need the kit's flag SVGs served
-   and the placeflags.py table built, so the flag table is {} and flagUrl says no. */
-const places = placeIndex(pl.places.map((p) => ({ name: p.n, href: `/places/${p.slug}/` })), {}, () => "");
+/* the kit's flag art, served from the build: placeIndex asks for the address of a flag file by name */
+const FLAGS = import.meta.glob("../../node_modules/@daviddef/archive-kit/kit/data/flags/*.svg", { eager: true, query: "?url", import: "default" });
+const flagUrl = (svg) => { const k = Object.keys(FLAGS).find((f) => f.endsWith("/" + svg)); return k ? FLAGS[k] : ""; };
+/* places that have a page (/places/<slug>/), from tools/build_correction_places.py; a flag only where the era snapshot assesses that place and year, or today's where the kit can place it */
+const places = placeIndex(placeRows, placeFlags, flagUrl);
 const causes = c.causes;
 const counted = Object.keys(causes)
   .map(k => [k, rows.filter(r => r[3] === k).length])
