@@ -92,6 +92,8 @@ GENERATED = {
     "readnames.json",          # tools/readnames.py, from data/read-names.tsv and register.json
     "records.json",            # tools/build_records.py, from the pages and the data
     "register.json",           # tools/register.py
+    "correction-places.json",  # tools/build_correction_places.py, from places.json: the place names and /places/<slug>/ addresses the corrections page may link, no person
+    "correction-place-flags.json",  # tools/build_correction_places.py (the kit's placeflags.py) over era-snapshot.json: a flag file name and an Atlas regime label per place and year, no person
     "ribbon-flags.json",       # tools/ribbonflags.py (the kit's generator), from story.json, family-lines.json, era-snapshot.json and the two flag tables: place names, Atlas labels and years of the dead, no living name
     "sources-state.json",      # tools/checkexternal.py, link status
 }
