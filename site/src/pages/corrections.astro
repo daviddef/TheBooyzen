@@ -10,8 +10,8 @@ import placeFlags from "../data/correction-place-flags.json";
 import { correctionRows, corrIds } from "../lib/pulse.js";
 import { placeIndex } from "@daviddef/archive-kit/lib/placelinks.js";
 const rows = c.rows;
-/* the kit's flag art, served from the build: placeIndex asks for the address of a flag file by name */
-const FLAGS = import.meta.glob("../../node_modules/@daviddef/archive-kit/kit/data/flags/*.svg", { eager: true, query: "?url", import: "default" });
+/* the kit's flag art, served from the build as FILES (?no-inline: Vite would otherwise inline each small svg as a data: URI, once per use): placeIndex asks for the address of a flag file by name */
+const FLAGS = import.meta.glob("../../node_modules/@daviddef/archive-kit/kit/data/flags/*.svg", { eager: true, query: "?no-inline", import: "default" });
 const flagUrl = (svg) => { const k = Object.keys(FLAGS).find((f) => f.endsWith("/" + svg)); return k ? FLAGS[k] : ""; };
 /* places that have a page (/places/<slug>/), from tools/build_correction_places.py; a flag only where the era snapshot assesses that place and year, or today's where the kit can place it */
 const places = placeIndex(placeRows, placeFlags, flagUrl);
