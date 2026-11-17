@@ -5,7 +5,13 @@ import Rule from "../components/Rule.astro";
 import { u } from "../lib/url.js";
 import { md } from "../lib/md.js";
 import c from "../data/corrections.json";
+import pl from "../data/places.json";
+import { correctionRows, corrIds } from "../lib/pulse.js";
+import { placeIndex } from "@daviddef/archive-kit/lib/placelinks.js";
 const rows = c.rows;
+/* The places that have a page, so a place named in a correction links to it (kit/docs/corrections.md). Flags are not drawn here yet: they need the kit's flag SVGs served
+   and the placeflags.py table built, so the flag table is {} and flagUrl says no. */
+const places = placeIndex(pl.places.map((p) => ({ name: p.n, href: `/places/${p.slug}/` })), {}, () => "");
 const causes = c.causes;
 const counted = Object.keys(causes)
   .map(k => [k, rows.filter(r => r[3] === k).length])
@@ -57,8 +63,10 @@ const label = { population: "A list mistaken for a population", scope: "A part s
 </section>
 
 <section class="blk">
-  <Corrections u={u} rows={rows.map(([d, was, now, cause, href]) => ({
+  <Corrections u={u} places={places} rows={rows.map(([d, was, now, cause, href], i) => ({
     when: d,
+    id: corrIds.get(correctionRows[i]),   /* the anchor /whats-new/ links a Corrected card to; rows stay in FILE order, the component sorts newest first */
+    about: correctionRows[i].for,
     sev: label[cause],
     /* The curly quotes were named entities here while the data was raw HTML.
        Both sides are escaped text now, so they are the characters themselves —
