@@ -65,6 +65,12 @@
      "group": "The line, drawn"
     },
     {
+     "path": "/drawn/",
+     "title": "Drawn",
+     "blurb": "The pages that draw the family rather than list it: the ancestor chart, the trees, the blood relatives of anyone you choose, and the timeline.",
+     "group": "The line, drawn"
+    },
+    {
      "path": "/tree/",
      "title": "Our line, drawn",
      "blurb": "An ancestor chart: every box is a person a document names, and a wall is where the parents cannot be named.",
@@ -270,6 +276,12 @@
      "path": "/research/sources-and-method/",
      "title": "Sources & method",
      "blurb": "What this archive stands on, how it grades a claim, and the longer studies of one source.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/research/deep-dives/",
+     "title": "Deep dives",
+     "blurb": "The longer studies, each of one body of evidence: the DNA results and the readings in the family tree that conflict.",
      "group": "What it rests on"
     },
     {

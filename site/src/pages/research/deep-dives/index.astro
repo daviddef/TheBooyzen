@@ -1,0 +1,17 @@
+---
+/* DEEP DIVES: the hub. 23 November 2026 (estate clean-up, Task C): the Research menu shows "Deep dives" as one link to this page and no longer
+   lists each study; this page does, from the same list (lib/research-menu.js) that the Sources page reads, so they cannot disagree. */
+import Base from "../../../layouts/Base.astro";
+import ResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { u } from "../../../lib/url.js";
+import { RESEARCH } from "../../../lib/research-menu.js";
+const s = RESEARCH.flatMap((g) => g.items).find((x) => x.id === "deep-dives");
+---
+<Base title="Deep dives" eyebrow="Research · what this archive stands on"
+      dek={s.note}
+      description="The longer studies in the Booyzen Archive, each of one body of evidence: the DNA results, and the readings in the family tree that conflict.">
+  <section class="blk">
+    <ResearchList items={s.items} />
+    <p class="cap" style="margin-top:22px">Back to <a href={u("/research/sources-and-method/")}>Sources &amp; method</a> · <a href={u("/sources/")}>Sources</a> · <a href={u("/research/")}>all of Research on one page</a>.</p>
+  </section>
+</Base>

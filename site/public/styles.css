@@ -888,3 +888,9 @@ header.site nav.topnav a.tcanvas:focus-visible{outline:2px solid #C4721F;outline
    person ->" under the framed "Where they lived" panel; that link would only land on the tree page, so it is not shown. The frames themselves
    (/roots/view.html) stay. The link is still in the HTML (the kit draws it; remove it there with a prop). */
 .rv-open{display:none}
+
+/* a sub-group label that is itself a link (Research / Deep dives): drawn as the small label the other sub-groups are, a link on hover */
+.topnav .panel a.ps{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding:11px 11px 3px;border-radius:0;text-decoration:none}
+.topnav .panel a.ps:hover,.topnav .panel a.ps.on{background:transparent;color:var(--accent)}
+.drawer a.ps{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding:8px 0 2px;text-decoration:none}
+.drawer a.ps:hover,.drawer a.ps.on{color:var(--accent)}

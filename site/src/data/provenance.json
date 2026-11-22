@@ -29,6 +29,8 @@
   "part/[id].astro": "A part opener, generated from book.json: the part's paragraph and its chapters. It adds no claim; the chapters it lists carry the evidence.",
   "dna.astro": "Two DNA kits. Its evidence is a pair of test results and a shared-match list, which are not documents and are not in the source register. The one thing on this page that IS documentary is argued at /cousins/, which declares.",
   "story.astro": "The direct line told as a short book, from src/data/story.json. It states no claim of its own that is not marked: every paragraph carries a grade and links to the document or page it rests on, every passage about the world names its source, and every chapter ends with its papers; the kit's checkfamilystory.py holds the data and the built page to that grammar.",
-  "lines.astro": "A drawing of the lines the archive files people on, made by tools/lines.py from people.json, dossiers.json, trees.json and the register. It states no claim of its own: each lane names the page that carries its evidence, and each person's own page carries the documents."
+  "lines.astro": "A drawing of the lines the archive files people on, made by tools/lines.py from people.json, dossiers.json, trees.json and the register. It states no claim of its own: each lane names the page that carries its evidence, and each person's own page carries the documents.",
+  "drawn.astro": "A hub: one line for each page that draws the family (the ancestor chart, the trees, the blood relatives, the timeline), read from lib/drawn.js. It states no claim of its own; each page it links carries its own evidence.",
+  "research/deep-dives/index.astro": "A hub: one line for each longer study (the DNA, Disputed), read from lib/research-menu.js. It states no claim of its own; each study declares or explains its own evidence."
  }
 }
