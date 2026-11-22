@@ -9,6 +9,8 @@
      /whats-new/       left Start: it is the heading of Research / What's new, and the pulse button in the header.
      eight family pages (Pretorius, Botha, van der Merwe, Schoeman, Downing, Daschner, Lowies, van Niekerk) left the menu: the families
                        index /families/ ("All the families") links every one of them (proved in docs/menu-reach.md).
+   23 November 2026 (estate clean-up, Task C): People / Drawn is ONE link, to the hub /drawn/ (lib/drawn.js), which lists the four drawn pages that left the
+   menu (the tree, the trees, blood relatives, the timeline; Roots & Routes was removed). Research / Deep dives is one link, to /research/deep-dives/.
    /women/ and /cousins/ left the menu once the /families/ index linked them (PR #7); they are reached from "All the families". */
 import famData from "../data/families.json";
 import { navGroups } from "./research-menu.js";
@@ -34,10 +36,7 @@ export const MENU = [
       ["/people/", "The People"], ["/who/", "Every Name"], ["/register/", "The Register"], ["/households/", "Households"],
       ["/marriages/", "The Marriages"],
     ] },
-    { head: "Drawn", items: [
-      ["/tree/", "Our line, drawn"], ["/trees/", "The trees"], ["/roots/", "Roots & Routes"], ["/timeline/", "The Timeline"],
-      ["/bloodline/", "Blood relatives, drawn"],
-    ] },
+    { head: "Drawn", href: "/drawn/", items: [] },
   ]],
   ["Places & families", [
     { head: "Places", href: "/places/", items: [

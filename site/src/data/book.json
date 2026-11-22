@@ -55,7 +55,7 @@
    "id": "the-line",
    "numeral": "II",
    "title": "The line, and the names around it",
-   "intro": "The descent from the Spine, drawn three ways, and then every family name the archive has researched. Each family page is counted from the archive's own people, households and register. The Mountjoys are where the line meets the Booyzens; the Barrys gave the family its English forenames, and the Kolbes were a German tailor's family.",
+   "intro": "The descent from the Spine, drawn two ways, and then every family name the archive has researched. Each family page is counted from the archive's own people, households and register. The Mountjoys are where the line meets the Booyzens; the Barrys gave the family its English forenames, and the Kolbes were a German tailor's family.",
    "flags": "🇿🇦 🇬🇧 🇩🇪",
    "chapters": [
     {
@@ -65,15 +65,15 @@
      "group": "The line, drawn"
     },
     {
-     "path": "/tree/",
-     "title": "Our line, drawn",
-     "blurb": "An ancestor chart: every box is a person a document names, and a wall is where the parents cannot be named.",
+     "path": "/drawn/",
+     "title": "Drawn",
+     "blurb": "The pages that draw the family rather than list it: the ancestor chart, the trees, the blood relatives of anyone you choose, and the timeline.",
      "group": "The line, drawn"
     },
     {
-     "path": "/roots/",
-     "title": "Roots & Routes",
-     "blurb": "Everyone in the archive who has died, drawn ten ways from its own households: by generation, by place, by era, and as the route a life took. Whoever has no year or no place is listed, not drawn.",
+     "path": "/tree/",
+     "title": "Our line, drawn",
+     "blurb": "An ancestor chart: every box is a person a document names, and a wall is where the parents cannot be named.",
      "group": "The line, drawn"
     },
     {
@@ -276,6 +276,12 @@
      "path": "/research/sources-and-method/",
      "title": "Sources & method",
      "blurb": "What this archive stands on, how it grades a claim, and the longer studies of one source.",
+     "group": "What it rests on"
+    },
+    {
+     "path": "/research/deep-dives/",
+     "title": "Deep dives",
+     "blurb": "The longer studies, each of one body of evidence: the DNA results and the readings in the family tree that conflict.",
      "group": "What it rests on"
     },
     {

@@ -883,3 +883,14 @@ header.site nav.topnav a.tcanvas{display:inline-flex;align-items:center;justify-
   background:#D9822B;border:1px solid #D9822B;color:#fff;text-decoration:none;line-height:1;cursor:pointer}
 header.site nav.topnav a.tcanvas:hover,header.site nav.topnav a.tcanvas:focus-visible{background:#C4721F;border-color:#C4721F;color:#fff}
 header.site nav.topnav a.tcanvas:focus-visible{outline:2px solid #C4721F;outline-offset:2px}
+
+/* 23 Nov 2026: the Roots & Routes page was removed (its address now redirects to /tree/). The kit's PersonRootsViews still draws "Open Roots & Routes on this
+   person ->" under the framed "Where they lived" panel; that link would only land on the tree page, so it is not shown. The frames themselves
+   (/roots/view.html) stay. The link is still in the HTML (the kit draws it; remove it there with a prop). */
+.rv-open{display:none}
+
+/* a sub-group label that is itself a link (Research / Deep dives): drawn as the small label the other sub-groups are, a link on hover */
+.topnav .panel a.ps{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding:11px 11px 3px;border-radius:0;text-decoration:none}
+.topnav .panel a.ps:hover,.topnav .panel a.ps.on{background:transparent;color:var(--accent)}
+.drawer a.ps{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding:8px 0 2px;text-decoration:none}
+.drawer a.ps:hover,.drawer a.ps.on{color:var(--accent)}

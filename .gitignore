@@ -29,3 +29,6 @@ site/.autolink/
 data/tree-page/people.ged
 data/tree-page/slugs.json
 *.ged
+
+# The fragment the old /roots/ page rendered (removed 23 Nov 2026). tools/build-tree-page.py still writes it; nothing reads it.
+data/tree-page/roots.embed.html

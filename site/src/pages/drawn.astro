@@ -1,0 +1,16 @@
+---
+/* DRAWN: the hub for the pages that draw the family rather than list it. 23 November 2026 (estate clean-up, Task C): the People menu's
+   "Drawn" group of four links became one link to this page. The list is lib/drawn.js. No page was renamed, moved or deleted. */
+import Base from "../layouts/Base.astro";
+import ResearchList from "@daviddef/archive-kit/components/ResearchList.astro";
+import { u } from "../lib/url.js";
+import { DRAWN } from "../lib/drawn.js";
+---
+<Base title="Drawn" eyebrow="The family, drawn rather than listed"
+      dek="Four pages draw the people the lists hold: an ancestor chart, the families beside it, the blood relatives of anyone you choose, and everything in date order."
+      description="The pages of the Booyzen Archive that draw the family: the line as an ancestor chart, the trees of the families that join it, a blood-relatives chart built round any person, and the timeline.">
+  <section class="blk">
+    <ResearchList items={DRAWN} />
+    <p class="cap" style="margin-top:22px">Also drawn, and kept under Our line: <a href={u("/direct-line/")}>The Spine</a>, the descent from the grandmother back to the first man the archive can name. The lists these pages are drawn from are <a href={u("/people/")}>The People</a>, <a href={u("/who/")}>Every Name</a>, <a href={u("/register/")}>The Register</a>, <a href={u("/households/")}>Households</a> and <a href={u("/marriages/")}>The Marriages</a>; <a href={u("/lines/")}>The Lines</a> draws every line the archive files people on.</p>
+  </section>
+</Base>

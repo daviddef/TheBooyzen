@@ -15,7 +15,7 @@ import { RESEARCH } from "../../lib/research-menu.js";
       <ResearchList items={g.items.filter((x) => !x.sub)} />
       {g.items.filter((x) => x.sub).map((s) => (
         <>
-          <h3 id={s.id} style="margin-top:28px">{s.sub}</h3>
+          <h3 id={s.id} style="margin-top:28px"><a href={u(s.href)}>{s.sub}</a></h3>
           <p class="cap">{s.note}</p>
           <ResearchList items={s.items} />
         </>

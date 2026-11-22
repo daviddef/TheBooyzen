@@ -24,7 +24,7 @@ export const RESEARCH = [
       { href: "/method/", label: "Method", asks: "What would make you believe or not believe this?" },
       { href: "/documents/", label: "Documents", asks: "What is reproduced whole, and what does it say?" },
       { href: "/gallery/", label: "Gallery", asks: "What do the pages themselves look like?" },
-      { sub: "Deep dives", id: "deep-dives",
+      { sub: "Deep dives", id: "deep-dives", href: "/research/deep-dives/",
         note: "A single body of evidence studied on its own, at length. Each is also linked from the Sources page.",
         items: [
           { href: "/dna/", label: "The DNA", blurb: "Two descendants have tested: what the results say about the Cape, the cousinhood counted, the families that keep arriving out of strangers' trees." },
@@ -32,10 +32,12 @@ export const RESEARCH = [
         ] },
     ] },
 ];
-/* the header menu's shape: [group, ...] with { head, href, items: [[href, label] | { sub }] } */
+/* the header menu's shape: [group, ...] with { head, href, items: [[href, label] | { sub, href }] }.
+   23 November 2026 (estate clean-up, Task C): a sub-group (Deep dives) is ONE link in the menu, to its hub page (/research/deep-dives/); the
+   studies themselves are listed on that hub and on /research/ and /research/sources-and-method/, which read this same list. */
 export const navGroups = RESEARCH.map((g) => ({
   head: g.head, href: g.href,
-  items: g.items.flatMap((x) => x.sub ? [{ sub: x.sub }, ...x.items.map((y) => [y.href, y.label])] : [[x.href, x.label]]),
+  items: g.items.map((x) => x.sub ? { sub: x.sub, href: x.href } : [x.href, x.label]),
 }));
 
 /* the deep dives, for the Sources page: [[label, href, blurb]] */
