@@ -17,6 +17,10 @@ const redirects = {
   /* 9 October 2026: the letters page folded into /errands/, which is the same
      subject. The address was published and linked from other archives. */
   '/letters': '/errands/#sent',
+  /* 23 November 2026: Roots & Routes was removed (David: "roots and routes, remove it"); the Tree Canvas on recordatlas.org replaced it. The
+     address was published and indexed, so it keeps answering and lands on the archive's own drawn tree. Only /roots/ itself: /roots/view.html
+     is the bare viewer a person's page frames for "Where they lived" (src/pages/roots/view.html.js) and stays. */
+  '/roots': '/tree/',
 };
 
 export default defineConfig({

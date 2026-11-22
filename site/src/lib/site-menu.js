@@ -35,7 +35,7 @@ export const MENU = [
       ["/marriages/", "The Marriages"],
     ] },
     { head: "Drawn", items: [
-      ["/tree/", "Our line, drawn"], ["/trees/", "The trees"], ["/roots/", "Roots & Routes"], ["/timeline/", "The Timeline"],
+      ["/tree/", "Our line, drawn"], ["/trees/", "The trees"], ["/timeline/", "The Timeline"],
       ["/bloodline/", "Blood relatives, drawn"],
     ] },
   ]],

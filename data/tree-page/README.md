@@ -2,7 +2,9 @@
 
 Ten views of the people this archive records as having died, drawn from its own people, households and marriages: hourglass, fan, whole-tree and close-family
 maps, Atlas map, movements, kinship, place lanes, eras, lifespans, surnames, an Orphans tab with a "Not drawn yet" list, and the five animated views (Night sky,
-Ink ledger, Household, Generations, Where they lived). It is served at `/roots/`.
+Ink ledger, Household, Generations, Where they lived).
+
+**23 Nov 2026: the page at `/roots/` is gone** (David: "roots and routes, remove it"); the address redirects to `/tree/` (`site/astro.config.mjs`) and the Tree Canvas on recordatlas.org replaces it. What stays, because something else reads it: `tree.json` (the Record Atlas Tree Canvas's data), `roots.html` and the bare viewer `/roots/view.html` (`site/src/pages/roots/view.html.js`, framed by the "Where they lived" panel on each person's page), and `site/public/roots-links.json`. `roots.embed.html` (the fragment the old page used) is no longer committed or read; `tools/build-tree-page.py` still writes it, and is left as it is because editing it would make `tree.json` read as stale (the builder is part of the hash), so drop those lines the next time the tree page is rebuilt.
 
 | File | What it is | Edit by hand? |
 |---|---|---|
@@ -10,7 +12,7 @@ Ink ledger, Household, Generations, Where they lived). It is served at `/roots/`
 | `place_map.json` | each place string with coordinates, country and Record Atlas id; a string with no coordinates is unresolved | no, generated (see below) |
 | `place-additions.json` | place strings decided by hand, each with its reason | yes, with a reason |
 | `atlas-data.json` | the Record Atlas slice: outlines, regimes, flags, events, collections | no, generated |
-| `roots.html`, `roots.embed.html` | the page, whole and as a fragment for the site layout | no, generated |
+| `roots.html` | the viewer, whole: served bare as `/roots/view.html` for framing on a person's page (`roots.embed.html`, the fragment for the old `/roots/` page, is no longer committed) | no, generated |
 | `site/public/roots-links.json` (written beside these) | the tree ids Roots & Routes draws (P + position in people.json); a person's page offers "Where they lived" for those, through `site/src/pages/roots/view.html.js` | no, generated |
 | `tree.report.json` | counts, and the places not yet resolved | read it |
 | `people.ged`, `slugs.json` | intermediates, not committed (a GEDCOM is never published) | no |
