@@ -18,8 +18,8 @@ const childCount = rows.reduce((n, r) => n + r.kids.length, 0);
 const docHouses = rows.filter(r => r.f.via === "doc").length;
 const sorted = [...rows].sort((a, b) => b.kids.length - a.kids.length);
 const shared = rows.map(({ f, h, w, kids }) => ({
-  head: h ? h.n : "unnamed", headHref: h ? "/who/" + h.slug + "/" : null,
-  spouse: w ? w.n : "", spouseHref: w ? "/who/" + w.slug + "/" : null,
+  head: h ? h.n : "unnamed", headHref: h ? "/people/" + h.slug + "/" : null,
+  spouse: w ? w.n : "", spouseHref: w ? "/people/" + w.slug + "/" : null,
   born: h && dates(h) ? dates(h) : "",
   via: viaLabel[f.via],
   note: [f.why || "",
@@ -27,7 +27,7 @@ const shared = rows.map(({ f, h, w, kids }) => ({
          f.warn ? `<span class="note" style="display:block;margin-top:8px">${f.warn}</span>` : ""]
         .filter(Boolean).join(" "),
   children: kids.map((k) => ({
-    name: k.n, href: "/who/" + k.slug + "/", dates: dates(k) || "", via: viaLabel[k.via],
+    name: k.n, href: "/people/" + k.slug + "/", dates: dates(k) || "", via: viaLabel[k.via],
   })),
 }));
 ---

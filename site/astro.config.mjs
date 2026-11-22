@@ -1,4 +1,6 @@
 import { defineConfig } from 'astro/config';
+import { readFileSync } from 'node:fs';
+import { whoRedirects } from './src/lib/namesets.js';
 
 // Custom domain, from 12 October 2026: https://booyzen.defranceski.com/
 // Served by GitHub Pages from this project repo. `base` is '/' because every
@@ -22,6 +24,16 @@ const redirects = {
      is the bare viewer a person's page frames for "Where they lived" (src/pages/roots/view.html.js) and stays. */
   '/roots': '/tree/',
 };
+
+/* ONE PAGE PER PERSON (23 November 2026, trial). A name used to have a page, /who/<name>/, beside the person's page. It does not any
+   more: every one of those addresses is a static redirect (a meta refresh and a canonical, not in the sitemap). A name one person
+   bears goes to that person's page; a name several bear goes to its first bearer's page at #others-of-this-name, the section that
+   lists the others (lib/namesets.js: the earliest born who is not living, else slug order). The names read from FamilySearch index
+   rows and held in no family file keep their own page, so they are not here. */
+const readJson = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url), 'utf8'));
+const livingSlugs = new Set(readJson('./src/data/living.json').living.map((x) => x.slug));
+const dossiers = Object.values(readJson('./src/data/dossiers.json').people);
+Object.assign(redirects, whoRedirects(dossiers, (slug) => livingSlugs.has(slug)));
 
 export default defineConfig({
   site: 'https://booyzen.defranceski.com',

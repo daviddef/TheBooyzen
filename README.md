@@ -53,6 +53,21 @@ given name is written in full in its section (L5), and the first mention is link
 - **L5.** A ratchet only. `tools/dossiers.py` and `tools/searchindex.py` take the Rec anchor out as they take the autolink out
   (`tools/nameforms.unlink`), so what they write is the same whether the citations are linked or not.
 
+### One page per person, and the old name pages
+
+A person has one page, `/people/<slug>/`. When other people in the archive carry the same name (the rule the old name pages used, in
+`site/src/lib/namesets.js`: accents and case folded, "George Mountjoy of Kokstad" a bearer of "George Mountjoy"), the page ends with an
+"Others of the same name" section (`#namesakes`, the list inside it at `#others-of-this-name`): each a link to that person's own page, with
+the life span and places the name page showed. A living person is a name and a town there, as before.
+
+The old name addresses `/who/<name>/` are static redirects made by `astro.config.mjs` from the same file: a name one person bears goes to
+that person's page; a name several bear goes to its first bearer's page at `#others-of-this-name` (the earliest born who is not living,
+else slug order). `/who/` ("Every Name") is still an alphabetical list of names and links each to the person page(s) of that name. What
+still has a page under `/who/` is a name the archive only READ in a FamilySearch index row (`readnames.json`): no person page exists to send it to.
+`npm run check:namesakes` (`tools/checknamesakes.py`, with its own planted faults) derives the sets again from the built person pages and
+fails when a page's list is not exactly the other bearers of its name, when an old address lands nowhere or on the wrong section, or when
+`/who/` links a name page.
+
 ### Building it
 
 ```sh

@@ -55,7 +55,7 @@ const near = pl.places.filter(x => x.slug !== p.slug && x.r === p.r).slice(0, 6)
 <section class="blk">
   <div class="grid g3" style="margin-top:10px">
     {folk.map(f => (
-      <a class="cardlink" href={u("/who/" + f.slug + "/")}>
+      <a class="cardlink" href={u("/people/" + f.slug + "/")}>
         <div class="nm" style="font-size:16px">{f.n}</div>
         <div class="txt">{f.b !== "—" || f.d !== "—" ? `${f.b} – ${f.d}` : f.l}</div>
       </a>

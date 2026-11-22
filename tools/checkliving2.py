@@ -19,7 +19,8 @@ generator's answer could only ever agree with it.
   R3  no data file puts a date beside a living person's name.
   R4  a living person's pages (/people/<slug>/, /who/<slug>/) exist, are noindex, are not
       in the sitemap or the search index, and carry no Person JSON-LD, table, image, or
-      year. A name page whose every bearer is living is noindex too.
+      year. /who/<slug>/ is a redirect stub to /people/ (one page per person, 23 Nov 2026),
+      which is allowed the canonical link a redirect carries and no other.
   R5  no page of the site puts a date beside a living person's name.
   R6  held out means absent: nobody the rule holds out (a possible minor, or listed by id
       in living-policy.json) is in the data, a page, a link, or an index.
@@ -308,8 +309,17 @@ def check(w):
                 add("R4", f"{route}: a living person's page is in the search index")
             if "application/ld+json" in raw:
                 add("R4", f"{route}: carries structured data")
-            if "og:image" in raw or 'rel="canonical"' in raw:
-                add("R4", f"{route}: carries an image or canonical link in its head")
+            if "og:image" in raw:
+                add("R4", f"{route}: carries an image in its head")
+            if 'rel="canonical"' in raw:
+                # ONE PAGE PER PERSON (23 Nov 2026): /who/<slug>/ is no longer a name page, it is a static redirect to the person's
+                # page, and a redirect stub carries a canonical to its target by construction. That is the one place a canonical
+                # is allowed, and only when the stub says noindex (checked above), lands on a /people/ page and is no page of its
+                # own (no body to carry a name, a date or an image: the checks below still run on it).
+                stub = route.startswith("/who/") and 'http-equiv="refresh"' in raw[:700]
+                tgt = re.search(r'http-equiv="refresh" content="0;url=(/people/[^"#]+/)(?:#[^"]*)?"', raw[:900]) if stub else None
+                if not (stub and tgt and tgt.group(1) in pages):
+                    add("R4", f"{route}: carries a canonical link in its head (only a redirect to a built /people/ page may)")
             m = main_text(raw)
             if re.search(r"<(table|img|svg|picture|canvas|video)\b", m, re.I):
                 add("R4", f"{route}: shows a table or an image")

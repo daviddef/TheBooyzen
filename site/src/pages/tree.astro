@@ -34,7 +34,7 @@ const toChart = (n) => n && ({
   m: toChart(n.m),
 });
 const root = toChart(ped.root);
-const chartHref = (b) => (slugOf[b.n] ? u("/who/" + slugOf[b.n] + "/") : null);
+const chartHref = (b) => (slugOf[b.n] ? u("/people/" + slugOf[b.n] + "/") : null);
 
 const flat = [];
 (function walk(n) { if (!n) return; flat.push(n); walk(n.f); walk(n.m); })(ped.root);
@@ -127,7 +127,7 @@ const walls = flat.filter((n) => n.wall);
         <h3 style="margin-top:0">{a.n}</h3>
         <p class="cap" style="margin-top:-6px">also married <b>{a.of.n}</b> <span class="m">({a.of.b} – {a.of.d})</span></p>
         <p>{a.why}</p>
-        {slugOf[a.n] && <p><a href={u("/who/" + slugOf[a.n] + "/")}>Her page &rarr;</a></p>}
+        {slugOf[a.n] && <p><a href={u("/people/" + slugOf[a.n] + "/")}>Her page &rarr;</a></p>}
       </div>
     ))}
   </div>
