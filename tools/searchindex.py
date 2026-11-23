@@ -49,7 +49,7 @@ LIVING = {x["slug"] for x in json.load(open(os.path.join(DATA, "living.json"), e
 for p in d["people"].values():
     if p["slug"] in LIVING: continue
     rows.append({"k": "Person", "t": p["n"], "s": f'{p["b"]} – {p["d"]} · {p["l"]}',
-                 "x": p["r"], "h": f'/who/{p["slug"]}/'})
+                 "x": p["r"], "h": f'/people/{p["slug"]}/'})   # one page per person (23 Nov 2026): the name pages are gone
 pl = json.load(open(os.path.join(DATA, "places.json"), encoding="utf-8"))
 for p in pl["places"]:
     rows.append({"k": "Place", "t": p["n"], "s": f'{p["k"]} · {p["r"]}',

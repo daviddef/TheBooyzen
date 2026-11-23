@@ -62,12 +62,12 @@ const label = { doc: "Documented", inf: "Inferred", lore: "Testimony", open: "Op
         facets: { line: p.l },
         cells: livingBySlug(p.slug) ? [
           /* a living person: name, and town and country if there is one. Nothing else. */
-          `<a href="${u("/who/" + p.slug + "/")}"><strong>${p.n}</strong></a>` +
+          `<a href="${u("/people/" + p.slug + "/")}"><strong>${p.n}</strong></a>` +
             `<div style="margin-top:6px"><span class="chip lore">Living</span></div>`,
           "", "",
           `<div>${livingBySlug(p.slug).w || ""}</div>`,
         ] : [
-          `<a href="${u("/who/" + p.slug + "/")}"><strong>${p.n}</strong></a>` +
+          `<a href="${u("/people/" + p.slug + "/")}"><strong>${p.n}</strong></a>` +
             (p.g ? `<span class="m cap"> · generation ${p.g}</span>` : "") +
             (p.v ? `<div class="cap" style="margin-top:3px">also written ${p.v}</div>` : "") +
             `<div style="margin-top:6px"><span class="chip ${p.s}">${label[p.s]}</span>` +

@@ -3,9 +3,9 @@
 # build → derive → build again so the pages carry the fresh indexes.
 #
 # The FIRST pass runs `build:pages`, which is the build without the archive
-# checks. That is deliberate. dossiers.py writes the /who/ pages, and it cannot
+# checks. That is deliberate. dossiers.py writes the data the person pages (and, until 23 Nov 2026, the /who/ pages) are drawn from, and it cannot
 # run until there are built pages to count mentions in — so on any commit that
-# adds a person, the first pass necessarily has links pointing at a /who/ page
+# adds a person, the first pass necessarily has links pointing at a /people/ page
 # that does not exist yet. Running the checks there fails every single time and
 # tells you nothing. They run on the SECOND pass, over the finished site, where
 # a broken link is a real broken link.
@@ -178,7 +178,7 @@ STEP="ribbonflags.py"; python3 tools/ribbonflags.py --quiet
 # watching the kit's check name it.
 STEP="searchindex.py"; python3 tools/searchindex.py
 STEP="register.py"; python3 tools/register.py
-# THE SECOND SOURCE OF NAMES (the linking standard, 18 October 2026): people read from FamilySearch index rows who get a /who/ page.
+# THE SECOND SOURCE OF NAMES (the linking standard, 18 October 2026): people read from FamilySearch index rows, the only names that still have a /who/ page.
 # Made from the reviewed list data/read-names.tsv and register.json, both committed; `npm run build` only CHECKS the committed file.
 STEP="readnames.py"; python3 tools/readnames.py
 # THE RECORDS TABLE (L3): every plate figure, /sources/ entry and FamilySearch id a passage can link to. Committed; check:rec only CHECKS it.

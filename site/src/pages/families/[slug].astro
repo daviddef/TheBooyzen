@@ -45,7 +45,7 @@ const { f } = M;
 const n = M.members.length;
 const plural = (k, one, many) => (k === 1 ? one : many);
 const years = (a) => (a ? `${a[0]}–${a[1]}` : "");
-const nameHref = (r) => (r.slug ? u("/who/" + r.slug + "/") : "");
+const nameHref = (r) => (r.slug ? u("/people/" + r.slug + "/") : "");
 const link = (r, text = undefined) => (r && r.slug ? `<a href="${nameHref(r)}">${esc(text ?? r.p.n)}</a>` : esc(text ?? (r ? r.p.n : "")));
 const chip = (cls, text) => `<span class="chip ${cls}">${text}</span>`;
 

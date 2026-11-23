@@ -1,0 +1,35 @@
+---
+/* THE OTHER PEOPLE WHO CARRY THE SAME NAME, on a person's page (one page per person; 23 November 2026, trial).
+ * Each is a link to that person's own page with the life span and places the name page used to show beside them.
+ * A living person is a name and a town and nothing else: `others` is built by lib/namesakes.js, which gives the living no dates.
+ * Drawn inside the kit's "Others of the same name" section (#namesakes), wrapped in #others-of-this-name, the address the old
+ * /who/<name>/ pages of a shared name now land on. */
+const { others = [] } = Astro.props;
+const n = others.length;
+---
+{n > 0 && (
+  <Fragment>
+    <p class="oth-lede"><strong>{n === 1 ? "One other person" : `${n} other people`}</strong> in this archive {n === 1 ? "carries" : "carry"} this name.
+      {" "}They are different people: this archive does not join two of them without a record that says to.</p>
+    <ul class="oth-list">
+      {others.map((o) => (
+        <li>
+          <a href={o.href}>{o.name}</a>
+          <span class="oth-life">{o.life || (o.living ? "" : "no dates recorded")}</span>
+          {o.where && <span class="oth-where">{o.where}</span>}
+          {o.note && <span class="oth-note">{o.note}</span>}
+        </li>
+      ))}
+    </ul>
+  </Fragment>
+)}
+<style>
+  .oth-lede { margin: 0 0 .9rem; line-height: 1.6; color: var(--ink-2); }
+  .oth-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .6rem; }
+  .oth-list li { border-left: 3px solid var(--rule-strong, var(--rule, #ccc)); padding: .35rem 0 .35rem .8rem; min-width: 0; overflow-wrap: anywhere; }
+  .oth-list a { font-size: 1.05rem; }
+  .oth-life, .oth-where, .oth-note { display: block; margin-top: .15rem; }
+  .oth-life { font-family: var(--mono, monospace); font-size: .78rem; color: var(--ink-2); }
+  .oth-where { font-size: .85rem; color: var(--ink-3); }
+  .oth-note { font-size: .82rem; color: var(--ink-3); font-style: italic; }
+</style>

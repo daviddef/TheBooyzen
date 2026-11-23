@@ -41,6 +41,8 @@ import PersonRootsViews from "@daviddef/archive-kit/components/PersonRootsViews.
 import { ledeOf, chaptersOf, familyOf, ancestryOf, famNode, storyOf, hasStory, GRADE_SAY } from "@daviddef/archive-kit/lib/personstory.js";
 import { storyTree, canonDate, yearIn, diedSaid, idOf } from "../../lib/storytree.js";
 import rootsLinks from "../../../public/roots-links.json";
+import OthersOfThisName from "../../components/OthersOfThisName.astro";
+import { othersFor, SECTION_ID } from "../../lib/namesakes.js";
 import "@daviddef/archive-kit/styles/persontree.css";
 import "@daviddef/archive-kit/styles/personpage.css";
 import PS from "@daviddef/archive-kit/data/public-sources.json";
@@ -49,6 +51,9 @@ export function getStaticPaths() {
   return Object.values(d.people).map(p => ({ params: { slug: p.slug }, props: { p } }));
 }
 const { p } = Astro.props;
+/* THE OTHER PEOPLE OF THIS NAME (one page per person, 23 November 2026): the people the old /who/<name>/ page listed besides this one,
+   each a link to their own page; none when nobody shares the name. lib/namesets.js says who shares a name. */
+const others = othersFor(p);
 /* A LIVING PERSON gets the page the standard describes and no other: their name, their
    relationships and their town and country. The branch is taken on living.json, which
    tools/livingflags.py writes from the kit's rule; nothing below it runs for them. */
@@ -246,7 +251,11 @@ if (!LV) {
 ---
 {LV ? (
 <Base title={p.n} dek={metaDek} ownHeader living>
-  <PersonPage person={KPERSON} peopleHref={u("/people/")} plainFamilyOfLiving directLine={directLine} storyHref={u("/story/")} />
+  <PersonPage person={KPERSON} peopleHref={u("/people/")} plainFamilyOfLiving directLine={directLine} storyHref={u("/story/")}>
+    {others.length > 0 && (
+      <Fragment slot="namesakes"><div id={SECTION_ID} style="scroll-margin-top:8.5rem"><OthersOfThisName others={others} /></div></Fragment>
+    )}
+  </PersonPage>
 </Base>
 ) : (
 <Base title={p.n} dek={metaDek} ownHeader>
@@ -358,8 +367,11 @@ if (!LV) {
 
     {STORYMODE && inRoots && <Fragment slot="where"><PersonRootsViews pid={TREEID} u={u} /></Fragment>}
 
-    {p.shared && (
+    {(p.shared || others.length > 0) && (
       <Fragment slot="namesakes">
+        <div id={SECTION_ID} style="scroll-margin-top:8.5rem">
+        {p.shared && (
+          <Fragment>
         <p class="note">
           <strong>More than one person of this name.</strong> This archive holds
           {" "}{1 + (p.also || []).length} people called <strong>{p.n}</strong>, and they are gathered here together
@@ -370,6 +382,10 @@ if (!LV) {
           <li><b>{p.n}</b> — {p.b} to {p.d}. <span set:html={md(p.r)} /></li>
           {(p.also || []).map(a => (<li><b>{a.n}</b> — {a.b} to {a.d}. <span set:html={md(a.r)} /></li>))}
         </ul>
+          </Fragment>
+        )}
+        {others.length > 0 && <div style={p.shared ? "margin-top:1.4rem" : undefined}><OthersOfThisName others={others} /></div>}
+        </div>
       </Fragment>
     )}
 

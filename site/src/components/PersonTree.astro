@@ -41,7 +41,7 @@ const viaLabel = { line: "direct line", doc: "record", inf: "inferred", tree: "f
 
 const row = (o, via, slug, showVia = true) => ({
   name: o.n,
-  href: u("/who/" + slug + "/"),
+  href: u("/people/" + slug + "/"),
   dates: living ? "" : dates(o),
   cls: CLS[via],
   mark: showVia && !living ? viaLabel[via] : undefined,

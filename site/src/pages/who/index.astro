@@ -1,35 +1,49 @@
 ---
-/* Every name in the archive, and how many people bore it. */
+/* Every name in the archive, and how many people bore it. One page per person (23 November 2026, trial): a name no longer has a
+   page of its own, so each entry here goes straight to the person page(s) of that name: one link for a name one person bears, and
+   every bearer listed for a name several people bear. */
 import Base from "../../layouts/Base.astro";
 import NameLists from "@daviddef/archive-kit/components/NameLists.astro";
 import EveryName from "@daviddef/archive-kit/components/EveryName.astro";
 import { u } from "../../lib/url.js";
-import d from "../../data/dossiers.json";
 import readNames from "../../data/readnames.json";
+import { SETS, firstOf, isShared, SECTION_ID, slugify } from "../../lib/namesakes.js";
+import { byAge } from "../../lib/namesets.js";
+import { isLivingSlug } from "../../lib/living.js";
 
-function slugify(s) {
-  return String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").toLowerCase();
-}
-const by = new Map();
-for (const p of Object.values(d.people)) {
-  const k = slugify(p.n);
-  if (!by.has(k)) by.set(k, { name: p.n, n: 0 });
-  by.get(k).n += 1 + (p.also || []).length;   /* the other men of a shared name are in `also` */
-}
-const names = [...by.entries()].map(([slug, v]) => ({ slug, ...v }))
-  .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
-const shared = names.filter(n => n.n > 1);
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+/* One entry per NAME: the name of a dossier (the keys that are only a person slug are another route to the same people) */
+const names = [...SETS.values()].filter((s) => s.key === slugify(s.name)).map((s) => {
+  const first = firstOf(s);
+  return {
+    slug: s.key, name: s.name, n: s.rows.length, set: s,
+    href: u(`/people/${first.slug}/`) + (isShared(s) ? `#${SECTION_ID}` : ""),
+    /* every bearer of a shared name, each a link to that person's own page: the name as that page has it (a qualified name tells them
+       apart) and the year born; a living person is "a living person" and nothing more; a page that holds several men says how many */
+    detail: isShared(s)
+      ? s.dossiers.slice().sort(byAge).map((b) => {
+          const yr = /\b(1[0-9]{3}|20[0-9]{2})\b/.exec(String(b.b ?? ""));
+          const men = 1 + (b.also || []).length;
+          const text = isLivingSlug(b.slug) ? "a living person" : esc(b.n) + (yr ? ` (b. ${yr[1]})` : "") + (men > 1 ? `, ${men} men on this page` : "");
+          return `<a href="${esc(u(`/people/${b.slug}/`))}">${text}</a>`;
+        }).join("<br>")
+      : "",
+  };
+}).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
+const shared = names.filter((n) => n.n > 1);
+/* EveryName draws each name as a link to /who/<slug>/; hand it the person page instead */
+const hrefOf = new Map(names.map((n) => [`/who/${n.slug}/`, n.href]));
+const toPerson = (p) => hrefOf.get(p) ?? u(p);
 ---
 <Base title="Every Name"
       eyebrow={`${names.length} names · ${shared.length} held by more than one person`}
-      dek="A name is not a person. This is every name in the archive, and how many different people bore it.">
+      dek="A name is not a person. This is every name in the archive, and how many different people bore it. Each links to the person: a name more than one person bears lists them all.">
 
 <NameLists here="who" u={u} />
 
 
   <section class="blk">
-    <EveryName names={names} u={u} />
+    <EveryName names={names} u={toPerson} detailLabel="Everyone of this name" />
   </section>
   {readNames.names.length > 0 && (
   <section class="blk">

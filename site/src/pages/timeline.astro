@@ -25,7 +25,7 @@ const lo = ev[0].y, hi = ev[ev.length - 1].y;
 const events = ev.map((e) => ({
   year: e.y, when: e.d, title: e.t, what: md(e.w), kind: kinds[e.k] || e.k, href: e.h, big: e.big,
   tags: [
-    ...e.p.filter((n) => byName[n]).map((n) => ({ label: n, href: "/who/" + byName[n] + "/" })),
+    ...e.p.filter((n) => byName[n]).map((n) => ({ label: n, href: "/people/" + byName[n] + "/" })),
     ...e.pl.filter((n) => byPlace[n]).map((n) => ({ label: n, href: "/places/" + byPlace[n] + "/" })),
   ],
 }));
