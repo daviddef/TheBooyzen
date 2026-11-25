@@ -18,6 +18,7 @@ import sdx from "../data/sources.json";
 import ped from "../data/pedigree.json";
 import d from "../data/dossiers.json";
 import AncChart from "@daviddef/archive-kit/components/AncChart.astro";
+import CanvasLink from "@daviddef/archive-kit/components/CanvasLink.astro";
 
 const slugOf = {};
 for (const p of Object.values(d.people)) slugOf[p.n] = p.slug;
@@ -47,6 +48,10 @@ const walls = flat.filter((n) => n.wall);
 <Base title="Our line, drawn"
       eyebrow={`${named.length} named ancestors · ${walls.length} walls`}
       dek={ped.note}>
+
+<section class="blk">
+  <CanvasLink archive="booyzen" person="catherine-mary-sophia-booyzen" />
+</section>
 
 <section class="blk">
   <AncChart root={root} personHref={chartHref} lists={false} />
